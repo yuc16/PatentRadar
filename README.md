@@ -2,7 +2,7 @@
 
 > **专利侵权线索挖掘系统** — 输入中文专利公开号，输出围绕权利要求 1 的 Top5 疑似侵权竞品分析报告（PRD §14）。
 
-参考产品需求：[`专利侵权线索挖掘系统.md`](专利侵权线索挖掘系统.md)（PRD v1.0）
+参考产品需求：[`docs/专利侵权线索挖掘系统（AI版）.md`](docs/专利侵权线索挖掘系统（AI版）.md)（PRD v1.0）
 
 ---
 
@@ -193,7 +193,8 @@ uv run patentradar decompose $PUB \
 ```
 PatentRadar/
 ├── README.md                        # 本文件
-├── 专利侵权线索挖掘系统.md           # PRD v1.0
+├── docs/
+│   └── 专利侵权线索挖掘系统（AI版）.md  # PRD v1.0
 ├── pyproject.toml / uv.lock         # 依赖锁
 ├── .env.example / .env              # 配置模板 / 实际配置（git 忽略）
 │
@@ -392,7 +393,7 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 
 ## 11. 致谢
 
-- 系统架构源自项目 PRD v1.0（《专利侵权线索挖掘系统》）。
+- 系统架构源自项目 PRD v1.0（[《专利侵权线索挖掘系统（AI版）》](docs/专利侵权线索挖掘系统（AI版）.md)）。
 - 模型：GPT-5.5（OpenAI Codex）、deepseek-v4-pro、kimi-k2.6、glm-5.1（aihubmix 中转）。
 - 搜索：Bocha、Exa、Brave、Tavily。
 - 数据源：Google Patents 公开数据。
