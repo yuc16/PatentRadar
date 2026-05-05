@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from .dates import is_after_application
 from .schemas import (
     Candidate,
     ClaimFeature,
@@ -31,8 +32,6 @@ def candidate_total_score(
         total = sum(by_id.get(fid).score if fid in by_id else JUDGEMENT_SCORE["证据不足"]
                     for fid in feature_ids)
         return round(total / len(feature_ids) * 100, 2)
-    if feature_ids == []:
-        return 0.0
     total = sum(m.score for m in matches)
     return round(total / len(matches) * 100, 2)
 
@@ -45,7 +44,7 @@ def normalize_feature_matches(
 
     LLM 偶尔会漏掉难判断特征，或返回与 judgement 不一致的 score。这里做代码级
     兜底：按权利要求 1 的特征顺序输出完整表；缺失项统一按"证据不足"计 0.3；
-    无 URL 证据的"明确满足/明确不满足"降级为"证据不足"。
+    无 URL 证据的强判断降级为"证据不足"；"可能满足"必须有 URL 证据和推理链。
     """
     raw_by_id: dict[str, FeatureMatch] = {}
     valid_ids = {f.feature_id for f in claim_features}
@@ -73,8 +72,10 @@ def normalize_feature_matches(
         downgrade_reason: str | None = None
         if judgement in {"明确满足", "明确不满足"} and not has_url_evidence:
             downgrade_reason = "缺少公开证据 URL，按证据不足处理。"
-        elif judgement == "可能满足" and len(reasoning) < 20:
-            downgrade_reason = "可能满足缺少足够推理链，按证据不足处理。"
+        elif judgement == "可能满足" and not has_url_evidence:
+            downgrade_reason = "可能满足缺少公开证据 URL，按证据不足处理。"
+        elif judgement == "可能满足" and not reasoning:
+            downgrade_reason = "可能满足缺少推理链，按证据不足处理。"
 
         if downgrade_reason:
             judgement = "证据不足"
@@ -128,15 +129,24 @@ def evaluate_hard_rules(
     assignees: list[str],
     evidence_urls: list[str],
     feature_matches: list[FeatureMatch],
+    patent_application_date: str | None = None,
+    product_launch_date: str | None = None,
 ) -> HardRuleCheck:
     """对一个候选执行 PRD §9 排除规则的可机读检查。"""
     is_owner = _is_patent_owner(company, assignees)
+    launch_after_application = is_after_application(
+        product_launch_date,
+        patent_application_date,
+    )
     return HardRuleCheck(
         is_patent_owner_product=is_owner,
         has_clear_company=_looks_clear(company),
         has_clear_product=_looks_clear(product),
         has_public_evidence=bool(evidence_urls),
         has_any_clearly_unmatched_feature=has_clearly_unmatched(feature_matches),
+        patent_application_date=patent_application_date,
+        product_launch_date=product_launch_date,
+        product_launch_after_application=launch_after_application,
     )
 
 
@@ -150,6 +160,12 @@ def passes_hard_rules(check: HardRuleCheck) -> tuple[bool, str | None]:
         return False, "无明确产品名/型号"
     if not check.has_public_evidence:
         return False, "无任何公开证据 URL"
+    if check.product_launch_after_application is False:
+        return False, (
+            "竞品上市/发布/量产日期不晚于专利申请日"
+            f"（竞品: {check.product_launch_date or '未知'}；申请日: "
+            f"{check.patent_application_date or '未知'}）"
+        )
     if check.has_any_clearly_unmatched_feature:
         return False, "存在明确不满足的必要技术特征"
     return True, None

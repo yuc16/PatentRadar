@@ -10,6 +10,7 @@ import httpx
 from bs4 import BeautifulSoup
 
 from ..config import PATENT_FETCH_TIMEOUT
+from ..dates import normalize_date_string
 from ..schemas import PatentMeta
 
 UA = (
@@ -79,6 +80,8 @@ def fetch_patent(pub_no: str, *, retries: int = 3) -> FetchResult:
     title = _meta(soup, "DC.title")
     assignees = [a.get_text(strip=True) for a in soup.find_all("dd", {"itemprop": "assigneeOriginal"})]
     inventors = [i.get_text(strip=True) for i in soup.find_all("dd", {"itemprop": "inventor"})]
+    application_date = _itemprop_date(soup, "filingDate")
+    priority_date = _itemprop_date(soup, "priorityDate")
 
     claim1_text, claims_block, has_formula_loss = _extract_claim_1(soup)
     if not claim1_text:
@@ -94,6 +97,8 @@ def fetch_patent(pub_no: str, *, retries: int = 3) -> FetchResult:
         title=title,
         assignees=assignees,
         inventors=inventors,
+        application_date=application_date,
+        priority_date=priority_date,
         source_url=url,
         fetched_at=datetime.now(SHANGHAI_TZ).isoformat(timespec="seconds"),
     )
@@ -112,6 +117,19 @@ def _meta(soup: BeautifulSoup, name: str) -> str | None:
     if tag and tag.get("content"):
         return tag["content"].strip() or None
     return None
+
+
+def _itemprop_date(soup: BeautifulSoup, itemprop: str) -> str | None:
+    tag = soup.find(attrs={"itemprop": itemprop})
+    if not tag:
+        return None
+    raw = (
+        tag.get("datetime")
+        or tag.get("content")
+        or tag.get("title")
+        or tag.get_text(" ", strip=True)
+    )
+    return normalize_date_string(str(raw) if raw else None)
 
 
 def _extract_claim_1(soup: BeautifulSoup) -> tuple[str, str, bool]:

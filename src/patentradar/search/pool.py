@@ -1,12 +1,13 @@
-"""共享证据检索工具池（PRD §7.3）。
+"""共享证据检索工具池。
 
 - ``search(query, engines=...)`` 多引擎并行搜索 + URL 黑名单 + 去重合并。
-- ``read_url(url)`` 抽取 URL 正文（Tavily Extract → Exa Contents 兜底链）。
+- ``read_url(url)`` 抽取 URL 正文（Exa Contents → Tavily Extract 兜底链）。
 """
 
 from __future__ import annotations
 
 import logging
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Callable
 
@@ -38,6 +39,8 @@ DEFAULT_EXCLUDE_DOMAINS = (
     "ip.com",
 )
 
+READ_URL_ORDER = ("exa", "tavily")
+
 
 def _is_excluded(url: str, exclude_domains: tuple[str, ...]) -> bool:
     if not url:
@@ -52,6 +55,7 @@ def search(
     engines: list[str] | tuple[str, ...] = DEFAULT_SEARCH_ENGINES,
     num_per_engine: int = 8,
     exclude_domains: tuple[str, ...] = DEFAULT_EXCLUDE_DOMAINS,
+    log_context: str = "",
 ) -> list[SearchHit]:
     """并行调用多个搜索引擎，按 URL 去重 + 黑名单过滤，保留首次出现的源信息。"""
     fns: dict[str, Callable[[], list[SearchHit]]] = {
@@ -61,55 +65,130 @@ def search(
         "tavily": lambda: tavily.search(query, num=num_per_engine),
         "cninfo": lambda: cninfo.search(query, num=num_per_engine),
     }
-    selected = [e for e in engines if e in fns]
-
     aggregated: dict[str, SearchHit] = {}
     sources_per_url: dict[str, list[str]] = {}
+    ctx = f"{log_context} " if log_context else ""
+    selected = [e for e in engines if e in fns]
+    t_pool = time.monotonic()
+    logger.info(
+        "%ssearch POOL START engines=%s num_per_engine=%d query=%r",
+        ctx, "+".join(selected), num_per_engine, query,
+    )
+
+    def _run_engine(name: str) -> list[SearchHit]:
+        t0 = time.monotonic()
+        logger.info("%ssearch START engine=%s query=%r", ctx, name, query)
+        hits = fns[name]()
+        logger.info(
+            "%ssearch DONE engine=%s raw_hits=%d elapsed=%.2fs",
+            ctx, name, len(hits), time.monotonic() - t0,
+        )
+        for i, h in enumerate(hits, start=1):
+            logger.info(
+                "%ssearch HIT engine=%s rank=%d title=%r url=%s",
+                ctx, name, i, (h.title or "")[:160], h.url,
+            )
+        return hits
 
     with ThreadPoolExecutor(max_workers=len(selected) or 1) as ex:
-        futures = {ex.submit(fns[name]): name for name in selected}
+        futures = {ex.submit(_run_engine, name): name for name in selected}
         for fut in as_completed(futures):
             name = futures[fut]
             try:
                 hits = fut.result()
             except SearchError as exc:
-                logger.warning("search engine failed: %s", exc)
+                logger.warning("%ssearch FAIL engine=%s error=%s", ctx, name, exc)
                 continue
             except Exception as exc:  # noqa: BLE001
-                logger.warning("search engine %s 异常: %s", name, exc)
+                logger.warning("%ssearch FAIL engine=%s error=%s", ctx, name, exc)
                 continue
             for h in hits:
-                if not h.url or _is_excluded(h.url, exclude_domains):
+                if not h.url:
+                    logger.info("%ssearch SKIP engine=%s reason=empty_url title=%r", ctx, name, h.title)
+                    continue
+                if _is_excluded(h.url, exclude_domains):
+                    logger.info("%ssearch SKIP engine=%s reason=excluded url=%s", ctx, name, h.url)
                     continue
                 sources_per_url.setdefault(h.url, []).append(name)
                 if h.url not in aggregated:
                     aggregated[h.url] = h
+                    logger.info("%ssearch KEEP engine=%s url=%s", ctx, name, h.url)
+                else:
+                    logger.info("%ssearch DUP engine=%s url=%s", ctx, name, h.url)
 
     merged: list[SearchHit] = []
     for url, h in aggregated.items():
         h.raw = {**h.raw, "_sources": sources_per_url[url]}
         merged.append(h)
+    logger.info(
+        "%ssearch POOL DONE engines=%s kept=%d elapsed=%.2fs query=%r",
+        ctx, "+".join(selected), len(merged), time.monotonic() - t_pool, query,
+    )
     return merged
 
 
-def read_url(url: str) -> ExtractedPage:
-    """正文抽取兜底链：tavily_extract → exa_contents。"""
+def read_url(url: str, *, log_context: str = "") -> ExtractedPage:
+    """正文抽取兜底链。
+
+    Exa Contents 优先，读不到正文时使用 Tavily Extract 兜底。
+    """
     last_exc: Exception | None = None
-    try:
-        pages = tavily.extract([url])
-        if pages and pages[0].text.strip():
-            return pages[0]
-    except Exception as exc:  # noqa: BLE001
-        last_exc = exc
-    try:
-        pages = exa.contents([url])
-        if pages and pages[0].text.strip():
-            return pages[0]
-    except Exception as exc:  # noqa: BLE001
-        last_exc = exc
+    ctx = f"{log_context} " if log_context else ""
+    logger.info("%sread START url=%s", ctx, url)
+    for reader in READ_URL_ORDER:
+        if reader == "tavily":
+            try:
+                t0 = time.monotonic()
+                logger.info("%sread TRY reader=tavily_extract url=%s", ctx, url)
+                pages = tavily.extract([url])
+                if pages and pages[0].text.strip():
+                    logger.info(
+                        "%sread DONE reader=tavily_extract chars=%d elapsed=%.2fs url=%s",
+                        ctx, len(pages[0].text), time.monotonic() - t0, url,
+                    )
+                    return pages[0]
+                logger.info("%sread EMPTY reader=tavily_extract url=%s", ctx, url)
+            except Exception as exc:  # noqa: BLE001
+                last_exc = exc
+                logger.info("%sread FAIL reader=tavily_extract url=%s error=%s", ctx, url, exc)
+        elif reader == "exa":
+            try:
+                t0 = time.monotonic()
+                logger.info("%sread TRY reader=exa_contents url=%s", ctx, url)
+                pages = exa.contents([url])
+                if pages and pages[0].text.strip():
+                    logger.info(
+                        "%sread DONE reader=exa_contents chars=%d elapsed=%.2fs url=%s",
+                        ctx, len(pages[0].text), time.monotonic() - t0, url,
+                    )
+                    return pages[0]
+                logger.info("%sread EMPTY reader=exa_contents url=%s", ctx, url)
+            except Exception as exc:  # noqa: BLE001
+                last_exc = exc
+                logger.info("%sread FAIL reader=exa_contents url=%s error=%s", ctx, url, exc)
+    logger.info("%sread FAILED_ALL url=%s last_error=%s", ctx, url, last_exc)
     raise SearchError("read_url", f"所有 reader 均失败: {last_exc}")
 
 
-def crawl_url(url: str, *, max_depth: int = 1, limit: int = 5) -> list[ExtractedPage]:
+def crawl_url(
+    url: str,
+    *,
+    max_depth: int = 1,
+    limit: int = 4,
+    log_context: str = "",
+) -> list[ExtractedPage]:
     """Tavily Crawl 站点深挖入口。"""
-    return tavily.crawl(url, max_depth=max_depth, limit=limit)
+    ctx = f"{log_context} " if log_context else ""
+    t0 = time.monotonic()
+    logger.info("%scrawl START url=%s max_depth=%d limit=%d", ctx, url, max_depth, limit)
+    pages = tavily.crawl(url, max_depth=max_depth, limit=limit)
+    logger.info(
+        "%scrawl DONE pages=%d elapsed=%.2fs url=%s",
+        ctx, len(pages), time.monotonic() - t0, url,
+    )
+    for i, p in enumerate(pages, start=1):
+        logger.info(
+            "%scrawl PAGE rank=%d chars=%d title=%r url=%s",
+            ctx, i, len(p.text or ""), (p.title or "")[:160], p.url,
+        )
+    return pages

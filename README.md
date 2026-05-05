@@ -1,8 +1,6 @@
 # PatentRadar v1
 
-> **专利侵权线索挖掘系统** — 输入中文专利公开号，输出围绕权利要求 1 的 Top5 疑似侵权竞品分析报告（PRD §14）。
-
-参考产品需求：[`docs/专利侵权线索挖掘系统（AI版）.md`](docs/专利侵权线索挖掘系统（AI版）.md)（PRD v1.0）
+> **专利侵权线索挖掘系统** — 输入中文专利公开号，输出围绕权利要求 1 的 Top5 疑似侵权竞品分析报告。
 
 ---
 
@@ -11,11 +9,11 @@
 输入中文专利公开号（例 `CN107423660B`），系统自动完成：
 
 1. 抓取并解析专利全文；**多模态 GPT-5.5 重建权利要求 1 含 LaTeX 公式的完整原文**；
-2. 拆解权利要求 1 为 F1/F2/F3... 原子技术特征（PRD §10）；
+2. 拆解权利要求 1 为 F1/F2/F3... 原子技术特征；
 3. **三个搜索 Agent 并行**（DeepSeek / Kimi / GLM）从不同视角挖掘**中国大陆市场可见的竞品**；
 4. 每个 Agent 自成闭环：找竞品 → 找证据 → 按特征匹配 → 硬规则过滤 → 输出 Top5；
 5. **GPT-5.5 最终复核**：复核前自动补搜证据，跨候选合并去重（凭行业知识识别同义）、证据真实性校验、代码级重算分数与风险等级；
-6. 输出 PRD §14 结构的 Markdown 报告。
+6. 输出结构化 Markdown 报告。
 
 定位：**专利竞品侵权线索挖掘与证据整理辅助工具**，不构成法律意见或正式侵权结论。
 
@@ -64,7 +62,7 @@
         final_report.json
                ↓
 ┌─────────────────────────────┐
-│ Markdown 报告 (PRD §14)      │
+│ Markdown 报告                │
 └──────────────┬──────────────┘
                ↓
    output/<pub_no>/final_report.md
@@ -72,9 +70,9 @@
 
 ---
 
-## 3. 当前实现状态（PRD §18.1 MVP 9 项 ✅）
+## 3. 当前实现状态
 
-| # | PRD MVP 项 | 状态 |
+| # | 功能项 | 状态 |
 |---|---|---|
 | 1 | 输入专利公开号 | ✅ |
 | 2 | GPT-5.5 拆解权要 1（含 LaTeX 公式视觉重建） | ✅ |
@@ -88,7 +86,7 @@
 
 **MVP 9/9 全部完成**。
 
-额外实现了四个质量兜底：Agent 证据阶段按每个技术特征逐项补搜；所有 Agent 证据阶段统一调用 Bocha / Exa / Brave / Tavily；有效候选不足时自动二次搜索；最终复核后由代码补齐特征表并按完整权利要求 1 重算分数。
+额外实现了平衡证据模式：证据阶段默认共享 Bocha / Exa / Brave / Tavily，先用中英双语通用证据做首轮判断，再只针对缺口特征逐项补搜；高价值官网 / 产品页 / 文档中心才触发 Tavily Crawl；证据按来源分层后再进入 LLM；最终复核会跳过 Agent 已搜过的 query，针对缺口特征补搜，并由代码补齐特征表、重算分数。
 
 ---
 
@@ -149,6 +147,11 @@ AGENT_LLM_TIMEOUT=240
 COMPACTOR_BUDGET_RATIO=0.7              # 上下文预算 = ctx_window * 此比例 - output_reserve
 COMPACTOR_OUTPUT_RESERVE=4096
 COMPACTOR_LLM=agent3                    # 长文摘要用的便宜 LLM 端点
+REVIEWER_LLM_RETRY_ATTEMPTS=3           # 最终复核遇到限流/网络抖动时的重试次数
+REVIEWER_LLM_RETRY_DELAY_SECONDS=60     # 最终复核重试基础等待秒数（第 n 次等待 n 倍）
+CODEX_STREAM_TIMEOUT=420                # GPT-5.5 SSE 流单次读超时秒数
+CODEX_JSON_RETRY_ATTEMPTS=3             # GPT-5.5 JSON 调用网络/限流重试次数
+CODEX_JSON_RETRY_DELAY_SECONDS=30       # GPT-5.5 JSON 重试基础等待秒数
 ```
 
 ---
@@ -198,10 +201,8 @@ uv run patentradar decompose $PUB \
 ```
 PatentRadar/
 ├── README.md                        # 本文件
-├── docs/
-│   └── 专利侵权线索挖掘系统（AI版）.md  # PRD v1.0
 ├── pyproject.toml / uv.lock         # 依赖锁
-├── .env.example / .env              # 配置模板 / 实际配置（git 忽略）
+├── .env.example / .env              # 配置模板 / 实际配置（git 忽略，优先于 shell 环境变量）
 │
 ├── data/                            # 用户输入
 │   ├── 候选专利清单.xlsx
@@ -221,11 +222,12 @@ PatentRadar/
 │       ├── agent_glm.json
 │       ├── agent_outputs.json       # 三 Agent 合并视图
 │       ├── candidate_pool.json      # 三 Agent Top 候选归并快照
+│       ├── review_supplement_cache.json # 最终复核补搜缓存，可续跑
 │       └── final_report.json        # 阶段 4
 │
 ├── output/                          # 最终用户产物（git 忽略）
 │   └── <pub_no>/
-│       ├── final_report.md          # 阶段 5（PRD §14）
+│       ├── final_report.md          # 阶段 5
 │       └── runs/
 │           └── <TS>_<cmd>.log       # 每次 CLI 运行日志（含 stdout 镜像）
 │
@@ -233,7 +235,8 @@ PatentRadar/
     ├── cli.py                       # Typer CLI 入口
     ├── config.py                    # .env 加载 + 端点路由
     ├── schemas.py                   # 全流程 Pydantic schema
-    ├── scoring.py                   # 硬规则 + 计分（PRD §9/§10）
+    ├── scoring.py                   # 硬规则 + 计分
+    ├── evidence.py                  # 深度证据策略：分层、query、crawl 目标筛选
     ├── compactor.py                 # 上下文动态压缩 + LLM 摘要
     │
     ├── llm/
@@ -258,10 +261,10 @@ PatentRadar/
     │
     ├── reviewer/
     │   ├── reviewer.py              # 最终补搜 + GPT-5.5 复核 + 代码重算
-    │   └── merger.py                # 旧版代码合并器（已废弃，保留兼容）
+    │   └── merger.py                # candidate_pool.json 合并快照
     │
     ├── report/
-    │   └── markdown.py              # PRD §14 渲染
+    │   └── markdown.py              # Markdown 报告渲染
     │
     └── prompts/                     # 所有长 prompt 单独维护
         ├── claim_decompose_*.md
@@ -283,7 +286,7 @@ GPT-5.5 是**多模态模型**，本系统已经使用其视觉能力：
 - **按需视觉**：无公式专利走纯文本路径（省 vision token），有公式才下载 PDF 渲染。258 篇全量验证：仅约 0.4% 触发视觉路径。
 - **未来可扩展**：让 GPT-5.5 看候选产品的拆解图、PCB 照片、结构示意图等，做更深入的特征匹配（v1 暂未启用，留作 v2 方向）。
 
-### 8.2 三 Agent 视角差异化（PRD §6.3）
+### 8.2 三 Agent 视角差异化
 
 | Agent | 模型 | 主搜索源 | 视角 |
 |---|---|---|---|
@@ -293,30 +296,45 @@ GPT-5.5 是**多模态模型**，本系统已经使用其视觉能力：
 
 **所有 Agent 共同遵守一条硬规则**：候选必须是**中国大陆市场可见的产品**——CN 专利仅在中国大陆境内有禁止权。GLM 用英文/语义扩展是发现手段，但目标候选仍须有中国销售迹象（中国代理 / 中文资料 / 国内整机集成 / 京东淘宝在售等）。
 
-### 8.3 单 Agent 工作流 S1~S10（PRD §8.1）
+### 8.3 单 Agent 工作流 S1~S10
 
 ```
 S0  接收任务包
-S1  生成候选发现 query (LLM, 6~10 条; 不足时自动补调)
+S1  生成候选发现 query (LLM, 默认最多 10 条; 不足时自动补调)
 S2  调用主搜索源召回 hits
-S3  建立粗候选池 (≤40，URL 黑名单源头过滤专利文献站)
+S3  建立粗候选池 (默认 ≤50，URL 黑名单源头过滤专利文献站)
 S4  LLM 归一化 + 严苛筛选（无明确公司 / 专利文献站 / 无中国市场迹象 → 直接丢）
-S5  保留重点候选 8~12 个
+S5  保留重点候选（默认 12 个）
 S6  对每个候选执行共享证据池补搜：
-    - company + product 通用补搜
-    - company + product + F1/F2/F3... 逐特征补搜
-    - Bocha / Exa / Brave / Tavily Search 全量共享
-    - 正文读取：Tavily Extract → Exa Contents，必要时 Tavily Crawl 深挖
+    - company + product 先跑中英双语通用证据 query
+    - Bocha / Exa / Brave / Tavily 共同作为默认证据搜索池
+    - 正文读取：Exa Contents → Tavily Extract 兜底
+    - 首轮特征判断后，只对“证据不足 / remaining gap / 缺 URL”的特征做中英双语 gap 补搜
+    - 仅对官网 / 产品页 / 文档中心等高价值 URL 触发 Tavily Crawl
+    - 证据按 Tier 1/2/3/4 分层后再交给 LLM
     → ★ compactor 动态压缩 ★（按 ctx_window 预算，长文 LLM 摘要）
 S7  LLM 把证据绑定到 F1/F2/F3 + 给出四档判断
-S8  代码级补齐缺失特征 + 硬规则过滤（PRD §9）
+S8  代码级补齐缺失特征 + 硬规则过滤
 S9  按完整特征表重算分数 + 证据质量同分排序
 S10 输出 Top5 JSON
 
-如果首轮有效候选少于 5 个，Agent 会生成新 query 并二次搜索候选池；仍不足时宁缺毋滥。
+如果首轮有效候选明显不足（默认少于 3 个），Agent 会生成新 query 并二次搜索候选池；仍不足时宁缺毋滥。
 ```
 
-### 8.4 上下文动态压缩 + LLM 摘要
+### 8.4 证据策略：中英双语 + gap 补搜
+
+系统默认先保证证据广度，再用 gap 补搜控制重复调用。实现集中在 [`src/patentradar/evidence.py`](src/patentradar/evidence.py) 与 [`src/patentradar/search/pool.py`](src/patentradar/search/pool.py)：
+
+- **中英双语证据 query**：通用产品证据和逐特征证据都会同时生成中文、英文和混合 PDF / datasheet / technical document 方向，国内厂商也会查英文公开资料。
+- **两段式证据流程**：Agent 先用 company + product 通用证据做首轮特征判断；只有证据不足、有 remaining gap、或判断缺少 URL 的特征才触发逐特征补搜。
+- **共享搜索池**：证据阶段默认同时调用 Bocha / Exa / Brave / Tavily。任一搜索源失败或额度不足时，`pool.search` 会记录失败并继续使用其他搜索源返回结果。
+- **正文抽取顺序**：Exa Contents 优先，读不到正文时 Tavily Extract 兜底，减少不必要的正文抽取调用。
+- **来源分层**：官方网页、官方 PDF、产品手册、白皮书、年报、招股书、标准、认证资料为 Tier 1；行业报告 / 权威媒体 / 展会资料为 Tier 2；普通新闻 / 代理商 / 电商等为 Tier 3；自媒体 / 论坛 / 二手转载为低可靠线索。
+- **Crawl 目标筛选**：Tavily Crawl 只深挖官网产品页、下载页、支持页、文档中心、SDK/开发者资料页，不爬新闻站、论坛、自媒体、电商或专利站。
+- **证据-特征提示**：进入 LLM 的证据块会标注 `线索特征: F3, F5` 和来源 Tier，减少证据错配。
+- **复核补搜去重**：Reviewer 会读取 Agent 已执行的 query，跳过重复 query，只对仍为"证据不足"或有 remaining gap 的特征补搜，并额外加入反证 / 不支持 / 原理冲突方向。
+
+### 8.5 上下文动态压缩 + LLM 摘要
 
 每个 LLM 调用前根据 ``ctx_window``（从 `.env` 读，每个端点独立）算实际预算：
 
@@ -330,9 +348,9 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 
 实现：[`src/patentradar/compactor.py`](src/patentradar/compactor.py)。
 
-### 8.5 GPT-5.5 复核：先补搜，再合并去重
+### 8.6 GPT-5.5 复核：先补搜，再合并去重
 
-复核阶段先对 Agent 输出中"证据不足"、有 remaining gap、或缺少 URL 证据的高价值候选做一轮代码侧补搜。补搜仍使用 Bocha / Exa / Brave / Tavily Search，并用 Tavily Extract / Exa Contents 抽正文，把新增证据作为输入材料交给 GPT-5.5。
+复核阶段先对 Agent 输出中"证据不足"、有 remaining gap、或缺少 URL 证据的高价值候选做一轮代码侧补搜。补搜默认继续使用 Bocha / Exa / Brave / Tavily 的共享证据池，并跳过 Agent 阶段已经执行过的 query，重点补官方资料、长文资料和反证方向，把新增证据作为输入材料交给 GPT-5.5。
 
 候选同义合并不依赖代码层正则归一化——GPT-5.5 用**行业知识**自动识别同义：
 
@@ -342,9 +360,9 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 "汇顶科技 / Goodix"          ⇨  汇顶科技
 ```
 
-复核还做：证据真实性校验、四档判断重判、风险等级（PRD §15）。模型返回后，代码会再次补齐 F1/F2/F3... 全量特征表，按完整权利要求 1 重算分数，自动排除无明确公司 / 产品 / 公开证据 URL 或存在"明确不满足"必要特征的候选。
+复核还做：证据真实性校验、四档判断重判、风险等级。模型返回后，代码会再次补齐 F1/F2/F3... 全量特征表，按完整权利要求 1 重算分数，自动排除无明确公司 / 产品 / 公开证据 URL、存在"明确不满足"必要特征，或已知产品上市/发布/量产日期不晚于专利申请日的候选。
 
-### 8.6 四档判断 + 风险等级（PRD §10 / §15）
+### 8.7 四档判断 + 风险等级
 
 | 判断 | 分数 |
 |---|---:|
@@ -359,9 +377,9 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 
 - LLM 漏返回的特征按"证据不足"补齐，避免用较少特征做分母导致高估；
 - "明确满足 / 明确不满足"没有公开证据 URL 时降级为"证据不足"；
-- "可能满足"缺少推理链时降级为"证据不足"。
+- "可能满足"缺少公开证据 URL 或推理链时降级为"证据不足"。
 
-### 8.7 缓存策略
+### 8.8 缓存策略
 
 - **阶段 1 拆解结果**默认缓存（`task_package.json` 存在则跳过）
 - **阶段 3** 每个 Agent 独立缓存（`agent_<n>.json` 存在则跳过该 Agent）
@@ -369,19 +387,19 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 - **阶段 5** 渲染瞬完，每次都重新生成
 - 全部命令支持 `--force` 反向开关
 
-### 8.8 中国行业垂类专项检索（DeepSeek 视角增强）
+### 8.9 中国行业垂类专项检索（DeepSeek 视角增强）
 
 通用搜索引擎对中文营销话术的召回有限，因此 DeepSeek Agent 上又叠了三层增强：
 
 1. **行业宣传语扩展（拆解阶段）** — GPT-5.5 在权要拆解时同时给出每条特征的 `marketing_terms`（中文行业宣传语，例：把"电池单体在长度方向上沿厚度方向叠置" 翻成 "刀片电池 / 长方形方壳电芯 / CTP 无模组"），并打一个 `industry_tag ∈ {battery, semiconductor, automotive, display, general}`，固化到 `task_package.json`。DeepSeek 视角 query 生成时优先用宣传语而不是工程术语。
 2. **行业站点定向召回（候选发现阶段）** — 按 `industry_tag` 加载 [`data/cn_industry_sites/`](data/cn_industry_sites/) 下对应白名单（自动叠加 `general.json` 通用站点），把 LLM 已生成的最聚焦的前 1~2 条 query **包装成 `(query) (site:domain1 OR site:domain2 ...)`** 用 Bocha 单独召回。媒体/协会组与厂商官网组分两条 query，互不干扰。
-3. **巨潮资讯证据补搜（证据收集阶段）** — 候选公司确定后，DeepSeek 自动用 `公司名 + 产品/型号` 查 [`巨潮资讯`](http://www.cninfo.com.cn/)（A 股 / 港股年报、招股书、公告全文）。返回的 PDF URL 直接进证据池，由 Tavily Extract 抽正文。年报/招股书是上市企业最权威的产品技术披露源。
+3. **巨潮资讯证据补搜（证据收集阶段）** — 候选公司确定后，DeepSeek 自动用 `公司名 + 产品/型号` 查 [`巨潮资讯`](http://www.cninfo.com.cn/)（A 股 / 港股年报、招股书、公告全文）。返回的 PDF URL 直接进证据池，由 Exa Contents / Tavily Extract 兜底链抽正文。年报/招股书是上市企业最权威的产品技术披露源。
 
 **调整白名单**：直接编辑 [`data/cn_industry_sites/<tag>.json`](data/cn_industry_sites/)，新增/删除 `domain` 即可。新增领域只需新建 `<tag>.json` 并在 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 的 industry_tag 枚举里加上同名 tag，否则 LLM 不会用。
 
 仅 DeepSeek 视角启用此路由（`AgentPerspective.cn_industry_routing=True`）；Kimi / GLM 不变，保持视角差异。
 
-### 8.9 日志与可追溯性
+### 8.10 日志与可追溯性
 
 每次 CLI 运行的**完整日志**（含 logger.info 的 S1~S10 阶段输出 + console.print 镜像）自动写到：
 
@@ -391,6 +409,10 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 
 包含：每条 query 的命中数 + 来源、每个候选的特征判断结果、compactor 压缩统计、复核备注。
 
+更细的排查点也会进入同一个日志文件：Agent 当前阶段、每次 LLM 调用的 START/DONE 和耗时、每个搜索引擎的 START/HIT/KEEP/DUP/SKIP/FAIL、URL 抽取与 crawl 结果、最终复核补搜的每条 query 和新增 URL、补搜缓存命中、GPT-5.5 复核重试记录。
+
+最终复核补搜会写入 `tmp/<pub_no>/review_supplement_cache.json`。如果补搜完成后最终模型调用被限流，重新执行 `review` 会直接复用缓存，继续进入最终复核，不会重复跑完整补搜。
+
 ---
 
 ## 9. 已知限制
@@ -398,9 +420,9 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 | 限制 | 说明 | 改进方向 |
 |---|---|---|
 | 仅支持中文专利 (CN) | Google Patents 中文页 + 中文权要文本 | 扩展 US/EP 需重写权要抽取逻辑 |
-| 仅独立权利要求 1 | 不分析从属权利要求 / 等同特征 | PRD §2.2 明确为 v1 非目标 |
-| 海外候选地域过滤靠 prompt + 证据 | candidate_filter 阶段排除无中国销售迹象的海外候选；DeepSeek 已叠加行业站点定向 + 巨潮资讯（§8.8） | 行业白名单需人工维护；新增领域要同步改拆解 prompt 的 industry_tag 枚举 |
-| 最终补搜有预算上限 | 复核前只对最多 15 个候选、每候选最多 4 个缺口特征补搜，避免成本失控 | 对重点案件可调大补搜预算或改成多轮人工确认 |
+| 仅独立权利要求 1 | 不分析从属权利要求 / 等同特征 | 后续可扩展从属权利要求、等同特征和 FTO 分析 |
+| 海外候选地域过滤靠 prompt + 证据 | candidate_filter 阶段排除无中国销售迹象的海外候选；DeepSeek 已叠加行业站点定向 + 巨潮资讯 | 行业白名单需人工维护；新增领域要同步改拆解 prompt 的 industry_tag 枚举 |
+| 最终补搜仍有上下文上限 | 复核前默认最多处理 15 个候选、每候选最多 4 个缺口特征；进入 LLM 前仍会分层和压缩 | 后续可把证据 appendix 独立落盘 |
 | 摘要 LLM 与主 Agent 同源 | 当前 compactor 默认用 deepseek，与 deepseek_agent 共账号 | 可换为更便宜的独立模型 |
 
 ---
@@ -414,7 +436,6 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 
 ## 11. 致谢
 
-- 系统架构源自项目 PRD v1.0（[《专利侵权线索挖掘系统（AI版）》](docs/专利侵权线索挖掘系统（AI版）.md)）。
 - 模型：GPT-5.5（OpenAI Codex）、deepseek-v4-pro、kimi-k2.6、glm-5.1（aihubmix 中转）。
 - 搜索：Bocha、Exa、Brave、Tavily。
 - 数据源：Google Patents 公开数据。

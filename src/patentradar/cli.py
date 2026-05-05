@@ -539,8 +539,15 @@ def review_cmd(
 
     # GPT-5.5 复核（合并去重 + 重打分 + 风险等级一并完成）
     eff = reasoning or config.REVIEWER_REASONING_EFFORT
+    supplement_cache_path = target_dir / "review_supplement_cache.json"
     console.print(f"调用 GPT-5.5 复核（reasoning={eff}）...")
-    final = review_agent_outputs(agent_outputs, task, reasoning_effort=eff)
+    console.print(f"复核补搜缓存: [dim]{supplement_cache_path}[/]")
+    final = review_agent_outputs(
+        agent_outputs,
+        task,
+        reasoning_effort=eff,
+        supplement_cache_path=supplement_cache_path,
+    )
 
     final_path.write_text(
         json.dumps(final.model_dump(), ensure_ascii=False, indent=2),

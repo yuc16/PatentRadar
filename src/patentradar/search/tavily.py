@@ -5,6 +5,9 @@ PRD 角色：search 通用补充；extract 抽 PDF/长文；crawl 站点深挖�
 
 from __future__ import annotations
 
+import asyncio
+import os
+
 import httpx
 
 from ..config import SEARCH_KEYS
@@ -14,6 +17,8 @@ SEARCH_URL = "https://api.tavily.com/search"
 EXTRACT_URL = "https://api.tavily.com/extract"
 CRAWL_URL = "https://api.tavily.com/crawl"
 DEFAULT_TIMEOUT = 60
+EXTRACT_TIMEOUT = 60
+CRAWL_TIMEOUT = 90
 
 
 def _key() -> str:
@@ -21,6 +26,47 @@ def _key() -> str:
     if not key:
         raise SearchError("tavily", "TAVILY_API_KEY 未配置")
     return key
+
+
+def _headers() -> dict[str, str]:
+    headers = {
+        "Authorization": f"Bearer {_key()}",
+        "Content-Type": "application/json",
+    }
+    project_id = os.getenv("TAVILY_PROJECT", "").strip()
+    if project_id:
+        headers["X-Project-ID"] = project_id
+    return headers
+
+
+async def _post_json_async(
+    url: str,
+    body: dict,
+    *,
+    timeout_s: int,
+) -> dict:
+    timeout = httpx.Timeout(
+        connect=min(15.0, float(timeout_s)),
+        read=min(30.0, float(timeout_s)),
+        write=15.0,
+        pool=15.0,
+    )
+    async with httpx.AsyncClient(timeout=timeout) as client:
+        response = await asyncio.wait_for(
+            client.post(url, headers=_headers(), json=body),
+            timeout=float(timeout_s),
+        )
+        response.raise_for_status()
+        return response.json()
+
+
+def _post_json(url: str, body: dict, *, timeout_s: int) -> dict:
+    try:
+        return asyncio.run(_post_json_async(url, body, timeout_s=timeout_s))
+    except TimeoutError as exc:
+        raise SearchError("tavily", f"total timeout after {timeout_s}s") from exc
+    except httpx.HTTPError as exc:
+        raise SearchError("tavily", str(exc)) from exc
 
 
 def search(
@@ -33,7 +79,6 @@ def search(
     include_raw_content: bool = False,
 ) -> list[SearchHit]:
     body = {
-        "api_key": _key(),
         "query": query,
         "search_depth": depth,
         "max_results": max(1, min(num, 20)),
@@ -43,12 +88,7 @@ def search(
         body["include_domains"] = include_domains
     if exclude_domains:
         body["exclude_domains"] = exclude_domains
-    try:
-        r = httpx.post(SEARCH_URL, json=body, timeout=DEFAULT_TIMEOUT)
-        r.raise_for_status()
-        data = r.json()
-    except httpx.HTTPError as exc:
-        raise SearchError("tavily", str(exc)) from exc
+    data = _post_json(SEARCH_URL, body, timeout_s=DEFAULT_TIMEOUT)
 
     hits: list[SearchHit] = []
     for item in data.get("results", []) or []:
@@ -71,16 +111,10 @@ def extract(urls: list[str]) -> list[ExtractedPage]:
     if not urls:
         return []
     body = {
-        "api_key": _key(),
         "urls": urls,
         "extract_depth": "advanced",
     }
-    try:
-        r = httpx.post(EXTRACT_URL, json=body, timeout=120)
-        r.raise_for_status()
-        data = r.json()
-    except httpx.HTTPError as exc:
-        raise SearchError("tavily", str(exc)) from exc
+    data = _post_json(EXTRACT_URL, body, timeout_s=EXTRACT_TIMEOUT)
 
     out: list[ExtractedPage] = []
     for item in data.get("results", []) or []:
@@ -99,17 +133,11 @@ def extract(urls: list[str]) -> list[ExtractedPage]:
 def crawl(url: str, *, max_depth: int = 1, limit: int = 20) -> list[ExtractedPage]:
     """站点抓取。"""
     body = {
-        "api_key": _key(),
         "url": url,
         "max_depth": max_depth,
         "limit": limit,
     }
-    try:
-        r = httpx.post(CRAWL_URL, json=body, timeout=180)
-        r.raise_for_status()
-        data = r.json()
-    except httpx.HTTPError as exc:
-        raise SearchError("tavily", str(exc)) from exc
+    data = _post_json(CRAWL_URL, body, timeout_s=CRAWL_TIMEOUT)
     out: list[ExtractedPage] = []
     for item in data.get("results", []) or []:
         out.append(

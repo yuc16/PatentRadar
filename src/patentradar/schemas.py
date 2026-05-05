@@ -31,6 +31,8 @@ class PatentMeta(BaseModel):
     title: Optional[str] = None
     assignees: list[str] = Field(default_factory=list)
     inventors: list[str] = Field(default_factory=list)
+    application_date: Optional[str] = Field(None, description="专利申请日，YYYY-MM-DD")
+    priority_date: Optional[str] = Field(None, description="优先权日，YYYY-MM-DD")
     source_url: str
     fetched_at: str
 
@@ -109,6 +111,12 @@ class HardRuleCheck(BaseModel):
     has_clear_product: bool = True
     has_public_evidence: bool = True
     has_any_clearly_unmatched_feature: bool = False
+    patent_application_date: Optional[str] = None
+    product_launch_date: Optional[str] = None
+    product_launch_after_application: Optional[bool] = Field(
+        None,
+        description="True=上市/发布/量产日期明确晚于申请日；False=明确不晚于申请日；None=无法确定",
+    )
     notes: Optional[str] = None
 
 
@@ -118,6 +126,11 @@ class Candidate(BaseModel):
     company: str
     product: str
     aliases: list[str] = Field(default_factory=list)
+    product_launch_date: Optional[str] = Field(
+        None,
+        description="公开证据中可识别的产品上市/发布/量产日期；无法确定时为空",
+    )
+    product_launch_date_evidence_url: Optional[str] = None
     score: float = Field(..., description="0~100 范围，按 PRD §10.3 计算")
     hard_rule_check: HardRuleCheck
     feature_match_table: list[FeatureMatch]
@@ -211,6 +224,8 @@ class FinalCandidate(BaseModel):
     company: str
     product: str
     aliases: list[str] = Field(default_factory=list)
+    product_launch_date: Optional[str] = None
+    product_launch_date_evidence_url: Optional[str] = None
     score: float
     risk_level: RiskLevel
     final_feature_table: list[FeatureMatch]

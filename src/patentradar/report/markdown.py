@@ -41,6 +41,7 @@ def render_markdown(
     parts.append(f"- **专利公开号**：{task.patent.publication_no}")
     parts.append(f"- **专利名称**：{task.patent.title or '(未知)'}")
     parts.append(f"- **专利权人**：{', '.join(task.patent.assignees) or '(未知)'}")
+    parts.append(f"- **申请日**：{task.patent.application_date or '(未知)'}")
     parts.append(f"- **发明人**：{', '.join(task.patent.inventors) or '(未知)'}")
     parts.append(f"- **数据来源**：[Google Patents]({task.patent.source_url})")
     parts.append(f"- **检索目标**：围绕权利要求 1 挖掘可能落入其技术特征范围的公开竞品 Top5")
@@ -109,13 +110,14 @@ def render_markdown(
         parts.append("> 无合格候选（宁缺毋滥，PRD §9.2）。")
     else:
         parts.append(
-            "| 排名 | 公司 | 产品 / 型号 | 分数 | 风险等级 | 主要证据数 | 主要缺口 |"
+            "| 排名 | 公司 | 产品 / 型号 | 上市/发布/量产日期 | 分数 | 风险等级 | 主要证据数 | 主要缺口 |"
         )
-        parts.append("|---:|---|---|---:|---|---:|---|")
+        parts.append("|---:|---|---|---|---:|---|---:|---|")
         for c in final.top5:
             gaps = "、".join(g.get("feature_id", "") for g in c.remaining_gaps)
             parts.append(
                 f"| {c.rank} | {c.company} | {c.product[:50]} | "
+                f"{c.product_launch_date or '待核查'} | "
                 f"{c.score:.1f} | {c.risk_level} | "
                 f"{len(c.main_evidence_urls)} | {gaps or '—'} |"
             )
@@ -130,6 +132,10 @@ def render_markdown(
         if c.aliases:
             parts.append(f"**别名**：{', '.join(c.aliases)}")
             parts.append("")
+        parts.append(f"**上市/发布/量产日期**：{c.product_launch_date or '待核查'}")
+        if c.product_launch_date_evidence_url:
+            parts.append(f"**日期证据**：{c.product_launch_date_evidence_url}")
+        parts.append("")
         parts.append(f"**最终分数**：{c.score:.1f}　**风险等级**：{c.risk_level}")
         parts.append("")
         if c.reason_for_top5:

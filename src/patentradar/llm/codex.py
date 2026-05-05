@@ -11,7 +11,9 @@ from __future__ import annotations
 
 import base64
 import json
+import logging
 import os
+import time
 from pathlib import Path
 from typing import Any, Iterator
 
@@ -20,6 +22,7 @@ import httpx
 CODEX_URL = "https://chatgpt.com/backend-api/codex/responses"
 DEFAULT_MODEL = "gpt-5.5"
 AUTH_PATH = Path.home() / ".codex" / "auth.json"
+logger = logging.getLogger(__name__)
 
 
 class CodexAuthError(RuntimeError):
@@ -70,10 +73,11 @@ def chat(
     model: str | None = None,
     reasoning_effort: str = "medium",
     verbosity: str = "medium",
-    timeout: int = 240,
+    timeout: int | None = None,
 ) -> str:
     """单轮调用 Codex Responses。返回模型输出的纯文本。"""
     model = model or os.getenv("REVIEWER_MODEL", "").strip() or DEFAULT_MODEL
+    timeout = timeout or int(os.getenv("CODEX_STREAM_TIMEOUT", "420"))
 
     user_content: list[dict[str, Any]] = [{"type": "input_text", "text": user_text}]
     for img in images or []:
@@ -124,18 +128,35 @@ def chat_json(
     model: str | None = None,
     reasoning_effort: str = "medium",
     verbosity: str = "medium",
-    timeout: int = 240,
+    timeout: int | None = None,
 ) -> dict[str, Any]:
-    text = chat(
-        system=system,
-        user_text=user_text,
-        images=images,
-        model=model,
-        reasoning_effort=reasoning_effort,
-        verbosity=verbosity,
-        timeout=timeout,
-    )
-    return _parse_json(text)
+    attempts = _env_int("CODEX_JSON_RETRY_ATTEMPTS", 3, minimum=1)
+    delay = _env_float("CODEX_JSON_RETRY_DELAY_SECONDS", 30.0, minimum=0.0)
+    last_exc: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            text = chat(
+                system=system,
+                user_text=user_text,
+                images=images,
+                model=model,
+                reasoning_effort=reasoning_effort,
+                verbosity=verbosity,
+                timeout=timeout,
+            )
+            return _parse_json(text)
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            if attempt >= attempts or not _is_retryable_error(exc):
+                raise
+            sleep_s = delay * attempt
+            logger.warning(
+                "Codex JSON call retry %d/%d sleep=%.0fs error=%s",
+                attempt, attempts, sleep_s, exc,
+            )
+            if sleep_s > 0:
+                time.sleep(sleep_s)
+    raise RuntimeError(str(last_exc) if last_exc else "Codex JSON call failed")
 
 
 # =============== 工具 ===============
@@ -177,6 +198,41 @@ def _parse_json(text: str) -> dict[str, Any]:
         if s >= 0 and e > s:
             return json.loads(text[s : e + 1])
         raise
+
+
+def _is_retryable_error(exc: Exception) -> bool:
+    if isinstance(exc, (httpx.TimeoutException, httpx.TransportError)):
+        return True
+    msg = str(exc).lower()
+    return any(
+        key in msg
+        for key in (
+            "429",
+            "限流",
+            "配额",
+            "rate limit",
+            "timeout",
+            "timed out",
+            "server disconnected",
+            "connection",
+            "temporarily",
+            "try again",
+        )
+    )
+
+
+def _env_int(name: str, default: int, *, minimum: int) -> int:
+    try:
+        return max(minimum, int(os.getenv(name, str(default))))
+    except ValueError:
+        return default
+
+
+def _env_float(name: str, default: float, *, minimum: float) -> float:
+    try:
+        return max(minimum, float(os.getenv(name, str(default))))
+    except ValueError:
+        return default
 
 
 def _friendly_error(code: int, raw: str) -> str:

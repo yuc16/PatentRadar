@@ -6,13 +6,13 @@ import logging
 import time
 from typing import Any
 
-from .. import compactor, prompts, scoring
+from .. import compactor, evidence as evidence_strategy, prompts, scoring
 from ..config import AGENT_LLM_TIMEOUT
+from ..dates import normalize_date_string
 from ..llm.client import chat_json
 from ..schemas import (
     AgentOutput,
     Candidate,
-    ClaimFeature,
     DiscardedCandidate,
     Evidence,
     FeatureMatch,
@@ -26,21 +26,28 @@ from .perspectives import AgentPerspective
 logger = logging.getLogger("patentradar.agent")
 
 
-# 每阶段的可调参数（PRD §8.2 / §17.4 成本控制）
-MIN_QUERIES = 5                  # 候选发现 query 数下界（不足会触发二次补全）
-MAX_QUERIES = 10                 # 候选发现 query 数上界
-MAX_HITS_PER_ENGINE = 8          # 每引擎单次返回 hits 数
-COARSE_POOL_LIMIT = 40           # 粗候选池上限（黑名单过滤后实际有效 < 此数）
-FOCUS_POOL_LIMIT = 12            # 重点候选数（PRD §8.2: 8~12）
-EVIDENCE_PER_CANDIDATE = 8       # 每个候选最多读取的正文数
-EVIDENCE_URL_POOL_LIMIT = 24     # 每个候选进入正文抽取前的 URL 池上限
-EVIDENCE_HITS_PER_QUERY = 3      # 证据阶段每个引擎每条 query 返回数
+# 候选发现保持宽召回；证据阶段靠“先判定、后补 gap”控制调用量。
+MIN_QUERIES = 5
+MAX_QUERIES = 10
+MAX_HITS_PER_ENGINE = 8
+COARSE_POOL_LIMIT = 50
+FOCUS_POOL_LIMIT = 12
+EVIDENCE_READ_URL_LIMIT = 12
+EVIDENCE_PAGE_LIMIT = 24
+EVIDENCE_URL_POOL_LIMIT = 60
+EVIDENCE_HITS_PER_QUERY = 3
+GENERAL_EVIDENCE_QUERY_LIMIT = 4
+FEATURE_EVIDENCE_QUERY_LIMIT = 2
+GAP_FEATURE_SUPPLEMENT_LIMIT = 5
+CRAWL_TARGETS_PER_CANDIDATE = 2
+CRAWL_PAGES_PER_TARGET = 3
+SECOND_SEARCH_MIN_VALID = 3
 TOP_K = 5
 
 # 中国行业路由：每条原 query 衍生出 site: 限定 query 的最大数（媒体组 + 厂商组）
 CN_INDUSTRY_DERIVED_QUERIES = 2
 # 巨潮资讯证据补搜上限（每个候选最多取 N 篇公告）
-CNINFO_HITS_PER_CANDIDATE = 3
+CNINFO_HITS_PER_CANDIDATE = 2
 
 # Pydantic Literal 严格枚举；LLM 自由输出常见的非枚举别名，这里做归一化映射
 VALID_SOURCE_TYPES = {
@@ -82,7 +89,6 @@ def _normalize_reliability(s: str | None) -> str:
     if raw in {"低", "low level", "untrusted"}:
         return "low"
     return "medium"
-
 
 class SearchAgent:
     def __init__(self, perspective: AgentPerspective):
@@ -187,11 +193,11 @@ class SearchAgent:
 
         _evaluate_focus_list(focus_candidates, "首轮")
 
-        # 若首轮有效候选不足，按 PRD §6.1/§8.1 重新搜索一轮，而不是用低质量候选凑数。
-        if len(scored) < TOP_K:
+        # 若首轮有效候选明显不足，重新搜索一轮，而不是用低质量候选凑数。
+        if len(scored) < SECOND_SEARCH_MIN_VALID:
             logger.info(
-                "%s   有效候选 %d < Top%d，触发二次候选搜索",
-                self.tag, len(scored), TOP_K,
+                "%s   有效候选 %d < %d，触发二次候选搜索",
+                self.tag, len(scored), SECOND_SEARCH_MIN_VALID,
             )
             rescue_queries = [
                 q for q in self._gen_queries_once(task, existing=queries)
@@ -269,6 +275,11 @@ class SearchAgent:
                 + f"\n\n请再生成至少 {MIN_QUERIES} 条**与上面不同视角**的 query，"
                 + "重点尝试加入行业知名厂商名（中文+英文）作为搜索锚点。"
             )
+        logger.info(
+            "%s   query generation LLM START mode=%s",
+            self.tag, "supplement" if existing else "initial",
+        )
+        t0 = time.monotonic()
         data = chat_json(
             self.persp.llm_endpoint,
             system=system,
@@ -276,7 +287,12 @@ class SearchAgent:
             temperature=0.3 if existing else 0.2,
             timeout=AGENT_LLM_TIMEOUT,
         )
-        return [str(q).strip() for q in data.get("queries", []) if str(q).strip()]
+        queries = [str(q).strip() for q in data.get("queries", []) if str(q).strip()]
+        logger.info(
+            "%s   query generation LLM DONE count=%d elapsed=%.2fs",
+            self.tag, len(queries), time.monotonic() - t0,
+        )
+        return queries
 
     # ----------- S2-S3 ------------
     def _search_candidates(
@@ -292,6 +308,7 @@ class SearchAgent:
                     q,
                     engines=self.persp.primary_engines,
                     num_per_engine=MAX_HITS_PER_ENGINE,
+                    log_context=self.tag,
                 )
             except Exception as exc:  # noqa: BLE001
                 logger.warning("%s   search %r 失败: %s", self.tag, q, exc)
@@ -359,7 +376,12 @@ class SearchAgent:
         )
         for q, group_name in derived:
             try:
-                hits = pool.search(q, engines=("bocha",), num_per_engine=MAX_HITS_PER_ENGINE)
+                hits = pool.search(
+                    q,
+                    engines=("bocha",),
+                    num_per_engine=MAX_HITS_PER_ENGINE,
+                    log_context=self.tag,
+                )
             except Exception as exc:  # noqa: BLE001
                 logger.warning("%s   cn_industry %r 失败: %s", self.tag, group_name, exc)
                 hits = []
@@ -393,25 +415,39 @@ class SearchAgent:
         hits_block_lines: list[str] = []
         for i, h in enumerate(hits, start=1):
             hits_block_lines.append(
-                f"[{i}] (源={h.source}) {h.title}\n    URL: {h.url}\n    摘要: {h.snippet[:240]}"
+                f"[{i}] (源={h.source}) {h.title}\n"
+                f"    URL: {h.url}\n"
+                f"    发布时间: {h.published_date or '(未知)'}\n"
+                f"    摘要: {h.snippet[:240]}"
             )
         user = prompts.render(
             "agent_candidate_filter_user",
             pub_no=task.patent.publication_no,
             title=task.patent.title or "(未知)",
             assignees=", ".join(task.patent.assignees) or "(未知)",
+            application_date=task.patent.application_date or "(未知)",
             claim_1_text=task.claim_1_text,
             features_block=_format_features(task),
             n_hits=len(hits),
             hits_block="\n".join(hits_block_lines),
         )
-        return chat_json(
+        logger.info("%s   candidate_filter LLM START hits=%d", self.tag, len(hits))
+        t0 = time.monotonic()
+        data = chat_json(
             self.persp.llm_endpoint,
             system=system,
             user=user,
             temperature=0.1,
             timeout=AGENT_LLM_TIMEOUT,
         )
+        logger.info(
+            "%s   candidate_filter LLM DONE candidates=%d discarded=%d elapsed=%.2fs",
+            self.tag,
+            len(data.get("candidates") or []),
+            len(data.get("discarded_candidates") or []),
+            time.monotonic() - t0,
+        )
+        return data
 
     # ----------- S6-S7 ------------
     def _evaluate_candidate(
@@ -423,12 +459,14 @@ class SearchAgent:
         company = (cand.get("company") or "").strip()
         product = (cand.get("product") or "").strip()
         aliases = [str(a) for a in (cand.get("aliases") or [])]
+        product_launch_date = normalize_date_string(cand.get("product_launch_date"))
+        product_launch_date_evidence_url = str(
+            cand.get("product_launch_date_evidence_url") or ""
+        ).strip() or None
         initial_ev = cand.get("initial_evidence") or []
 
-        # S6 证据补充检索：
-        #   1) company + product 做通用证据召回；
-        #   2) company + product + 每个技术特征关键词逐项召回；
-        #   3) 所有 Agent 均使用完整共享证据池（Bocha / Exa / Brave / Tavily）。
+        # S6 证据补充检索先用中英双语通用 query 建立产品证据面；
+        # 逐特征 query 只在首轮判断后对 gap 特征触发，避免盲扫所有 Fi。
         ev_urls: list[str] = [e.get("url", "") for e in initial_ev if e.get("url")]
         ev_titles: dict[str, str] = {
             e.get("url", ""): e.get("title", "") for e in initial_ev
@@ -437,56 +475,33 @@ class SearchAgent:
             e.get("url", ""): e.get("snippet", "") for e in initial_ev
         }
         ev_feature_hints: dict[str, set[str]] = {}
-        evidence_engines = pool.DEFAULT_SEARCH_ENGINES
-        evidence_queries: list[tuple[str, str | None]] = [
-            (f"{company} {product}".strip(), None)
-        ]
-        for feature in task.claim_features:
-            evidence_queries.append((
-                self._feature_evidence_query(company, product, feature),
-                feature.feature_id,
-            ))
-
-        for query, feature_id in evidence_queries:
-            if not query:
-                continue
-            try:
-                extra = pool.search(
-                    query,
-                    engines=evidence_engines,
-                    num_per_engine=EVIDENCE_HITS_PER_QUERY,
-                )
-            except Exception as exc:  # noqa: BLE001
-                logger.warning("%s     evidence search %r 失败: %s", self.tag, query, exc)
-                extra = []
-            queries_used.append(QueryRecord(
+        seen_evidence_queries: set[str] = set()
+        for query in evidence_strategy.build_general_evidence_queries(company, product)[
+            :GENERAL_EVIDENCE_QUERY_LIMIT
+        ]:
+            self._search_evidence_query(
                 query=query,
-                search_engine="+".join(evidence_engines),
-                purpose="证据检索",
-                n_results=len(extra),
-            ))
-            logger.info(
-                "%s     证据补搜 [%s]%s → %d 条",
-                self.tag,
-                "+".join(evidence_engines),
-                f" {feature_id}" if feature_id else "",
-                len(extra),
+                feature_id=None,
+                purpose="证据检索-通用",
+                queries_used=queries_used,
+                seen_queries=seen_evidence_queries,
+                ev_urls=ev_urls,
+                ev_titles=ev_titles,
+                ev_summaries=ev_summaries,
+                ev_feature_hints=ev_feature_hints,
             )
-            for h in extra:
-                if not h.url:
-                    continue
-                if feature_id:
-                    ev_feature_hints.setdefault(h.url, set()).add(feature_id)
-                if h.url not in ev_urls and len(ev_urls) < EVIDENCE_URL_POOL_LIMIT:
-                    ev_urls.append(h.url)
-                    ev_titles[h.url] = h.title
-                    ev_summaries[h.url] = h.snippet
 
         # 中国上市公司：用巨潮资讯查公告 / 年报全文（仅 deepseek 视角触发）
         if self.persp.cn_industry_routing and company:
             cninfo_query = f"{company} {product}".strip() or company
             try:
+                logger.info("%s     cninfo START query=%r", self.tag, cninfo_query)
+                t0 = time.monotonic()
                 cn_hits = cninfo.search(cninfo_query, num=CNINFO_HITS_PER_CANDIDATE)
+                logger.info(
+                    "%s     cninfo DONE hits=%d elapsed=%.2fs query=%r",
+                    self.tag, len(cn_hits), time.monotonic() - t0, cninfo_query,
+                )
             except SearchError as exc:
                 logger.info("%s     cninfo 查询失败: %s", self.tag, exc)
                 cn_hits = []
@@ -504,53 +519,298 @@ class SearchAgent:
                         ev_titles[h.url] = h.title
                         ev_summaries[h.url] = h.snippet
                         added += 1
+                        logger.info("%s     cninfo HIT title=%r url=%s", self.tag, h.title[:160], h.url)
                 logger.info(
                     "%s     cninfo 公告补搜 %r → %d 条 (%d 新)",
                     self.tag, cninfo_query, len(cn_hits), added,
                 )
 
-        # 抽取正文（最多 EVIDENCE_PER_CANDIDATE 条）
-        pages: list[ExtractedPage] = []
-        for url in ev_urls[:EVIDENCE_PER_CANDIDATE]:
+        ev_urls = self._sort_and_log_evidence_urls(ev_urls, ev_titles, phase="initial")
+        pages_by_url: dict[str, ExtractedPage] = {}
+        crawled_targets: set[str] = set()
+        pages = self._read_candidate_pages(
+            ev_urls=ev_urls,
+            ev_titles=ev_titles,
+            ev_summaries=ev_summaries,
+            pages_by_url=pages_by_url,
+            crawled_targets=crawled_targets,
+            queries_used=queries_used,
+        )
+        match = self._run_feature_match(
+            task=task,
+            company=company,
+            product=product,
+            aliases=aliases,
+            pages=pages,
+            ev_titles=ev_titles,
+            ev_feature_hints=ev_feature_hints,
+            pass_label="initial",
+        )
+
+        gap_features = self._gap_features_for_supplement(
+            task,
+            match["feature_matches"],
+            match["remaining_gaps"],
+        )
+        if gap_features:
+            logger.info(
+                "%s     gap supplement START features=%s",
+                self.tag,
+                ",".join(f.feature_id for f in gap_features),
+            )
+            before_urls = set(ev_urls)
+            for feature in gap_features:
+                for query in evidence_strategy.build_feature_evidence_queries(
+                    company,
+                    product,
+                    feature,
+                )[:FEATURE_EVIDENCE_QUERY_LIMIT]:
+                    self._search_evidence_query(
+                        query=query,
+                        feature_id=feature.feature_id,
+                        purpose="证据检索-gap补搜",
+                        queries_used=queries_used,
+                        seen_queries=seen_evidence_queries,
+                        ev_urls=ev_urls,
+                        ev_titles=ev_titles,
+                        ev_summaries=ev_summaries,
+                        ev_feature_hints=ev_feature_hints,
+                    )
+            ev_urls = self._sort_and_log_evidence_urls(ev_urls, ev_titles, phase="gap")
+            pages = self._read_candidate_pages(
+                ev_urls=ev_urls,
+                ev_titles=ev_titles,
+                ev_summaries=ev_summaries,
+                pages_by_url=pages_by_url,
+                crawled_targets=crawled_targets,
+                queries_used=queries_used,
+            )
+            logger.info(
+                "%s     gap supplement DONE new_urls=%d pages=%d",
+                self.tag,
+                len(set(ev_urls) - before_urls),
+                len(pages),
+            )
+            match = self._run_feature_match(
+                task=task,
+                company=company,
+                product=product,
+                aliases=aliases,
+                pages=pages,
+                ev_titles=ev_titles,
+                ev_feature_hints=ev_feature_hints,
+                pass_label="gap",
+            )
+        else:
+            logger.info("%s     gap supplement SKIP reason=no_target_gap", self.tag)
+
+        feature_matches = match["feature_matches"]
+        page_url_set = match["packed_urls"]
+        evidence_url_set = sorted({
+            ev.url for fm in feature_matches for ev in fm.evidence if ev.url
+        } | set(ev_urls[:EVIDENCE_READ_URL_LIMIT]) | page_url_set)
+        hard = scoring.evaluate_hard_rules(
+            company=company,
+            product=product,
+            assignees=task.patent.assignees,
+            evidence_urls=evidence_url_set,
+            feature_matches=feature_matches,
+            patent_application_date=task.patent.application_date,
+            product_launch_date=product_launch_date,
+        )
+        total = scoring.candidate_total_score(
+            feature_matches,
+            feature_ids=[f.feature_id for f in task.claim_features],
+        )
+        return Candidate(
+            rank=0,
+            company=company,
+            product=product,
+            aliases=aliases,
+            product_launch_date=product_launch_date,
+            product_launch_date_evidence_url=product_launch_date_evidence_url,
+            score=total,
+            hard_rule_check=hard,
+            feature_match_table=feature_matches,
+            main_evidence_urls=evidence_url_set,
+            remaining_gaps=match["remaining_gaps"],
+            reason_for_top5=match["reason_for_top5"],
+        )
+
+    def _search_evidence_query(
+        self,
+        *,
+        query: str,
+        feature_id: str | None,
+        purpose: str,
+        queries_used: list[QueryRecord],
+        seen_queries: set[str],
+        ev_urls: list[str],
+        ev_titles: dict[str, str],
+        ev_summaries: dict[str, str],
+        ev_feature_hints: dict[str, set[str]],
+    ) -> None:
+        if not query:
+            return
+        qkey = evidence_strategy.normalize_query(query)
+        if qkey in seen_queries:
+            logger.info("%s     evidence query SKIP duplicate query=%r", self.tag, query)
+            return
+        seen_queries.add(qkey)
+        evidence_engines = pool.DEFAULT_SEARCH_ENGINES
+        try:
+            extra = pool.search(
+                query,
+                engines=evidence_engines,
+                num_per_engine=EVIDENCE_HITS_PER_QUERY,
+                log_context=self.tag,
+            )
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("%s     evidence search %r 失败: %s", self.tag, query, exc)
+            extra = []
+        queries_used.append(QueryRecord(
+            query=query,
+            search_engine="+".join(evidence_engines),
+            purpose=purpose,
+            n_results=len(extra),
+        ))
+        logger.info(
+            "%s     证据补搜 [%s]%s → %d 条 query=%r",
+            self.tag,
+            "+".join(evidence_engines),
+            f" {feature_id}" if feature_id else "",
+            len(extra),
+            query,
+        )
+        for h in extra:
+            if not h.url:
+                continue
+            if feature_id:
+                ev_feature_hints.setdefault(h.url, set()).add(feature_id)
+            if h.url not in ev_urls and len(ev_urls) < EVIDENCE_URL_POOL_LIMIT:
+                ev_urls.append(h.url)
+                ev_titles[h.url] = h.title
+                ev_summaries[h.url] = h.snippet
+
+    def _sort_and_log_evidence_urls(
+        self,
+        ev_urls: list[str],
+        ev_titles: dict[str, str],
+        *,
+        phase: str,
+    ) -> list[str]:
+        sorted_urls = evidence_strategy.sort_urls_by_value(ev_urls, ev_titles)
+        logger.info(
+            "%s     evidence URL pool sorted phase=%s total=%d",
+            self.tag, phase, len(sorted_urls),
+        )
+        for i, url in enumerate(sorted_urls, start=1):
+            logger.info(
+                "%s     evidence URL[%d] tier=%s title=%r url=%s",
+                self.tag,
+                i,
+                evidence_strategy.tier_label(url, ev_titles.get(url, "")),
+                (ev_titles.get(url, "") or "")[:160],
+                url,
+            )
+        return sorted_urls
+
+    def _read_candidate_pages(
+        self,
+        *,
+        ev_urls: list[str],
+        ev_titles: dict[str, str],
+        ev_summaries: dict[str, str],
+        pages_by_url: dict[str, ExtractedPage],
+        crawled_targets: set[str],
+        queries_used: list[QueryRecord],
+    ) -> list[ExtractedPage]:
+        # 抽取正文（优先官方 / 产品手册 / PDF / 文档中心等高价值来源）
+        for url in ev_urls[:EVIDENCE_READ_URL_LIMIT]:
+            if url in pages_by_url:
+                continue
             try:
-                p = pool.read_url(url)
-                pages.append(p)
+                p = pool.read_url(url, log_context=self.tag)
+                pages_by_url[url] = p
                 logger.info(
                     "%s     read %s → %s, %d chars",
                     self.tag, url[:60], p.source, len(p.text),
                 )
             except Exception as exc:  # noqa: BLE001
                 logger.info("%s     read %s 失败 (用 snippet 兜底): %s", self.tag, url[:60], exc)
-                pages.append(ExtractedPage(
+                pages_by_url[url] = ExtractedPage(
                     url=url,
                     title=ev_titles.get(url, ""),
                     text=ev_summaries.get(url, ""),
                     source="snippet_fallback",
-                ))
+                )
 
-        # Tavily Crawl 作为站点深挖辅助：在 extract/contents 之外补官网或产品页子页面。
-        if ev_urls and len(pages) < EVIDENCE_PER_CANDIDATE:
+        # Tavily Crawl 只深挖官网 / 产品页 / 文档中心，避免把新闻站或论坛页当成站点入口。
+        crawl_targets = [
+            url for url in ev_urls
+            if evidence_strategy.is_crawl_worthy(url, ev_titles.get(url, ""))
+        ][:CRAWL_TARGETS_PER_CANDIDATE]
+        skipped_crawl = [url for url in ev_urls if url not in crawl_targets]
+        for url in skipped_crawl[:10]:
+            logger.info(
+                "%s     crawl SKIP reason=not_crawl_worthy tier=%s url=%s",
+                self.tag, evidence_strategy.tier_label(url, ev_titles.get(url, "")), url,
+            )
+        for crawl_url in crawl_targets:
+            if len(pages_by_url) >= EVIDENCE_PAGE_LIMIT or crawl_url in crawled_targets:
+                continue
+            crawled_targets.add(crawl_url)
             try:
-                crawled = pool.crawl_url(ev_urls[0], max_depth=1, limit=3)
+                crawled = pool.crawl_url(
+                    crawl_url,
+                    max_depth=1,
+                    limit=CRAWL_PAGES_PER_TARGET,
+                    log_context=self.tag,
+                )
             except Exception as exc:  # noqa: BLE001
-                logger.info("%s     tavily crawl 失败: %s", self.tag, exc)
+                logger.info("%s     crawl FAIL url=%s error=%s", self.tag, crawl_url[:60], exc)
                 crawled = []
-            added_urls = {p.url for p in pages}
             for p in crawled:
-                if p.url and p.url not in added_urls:
-                    pages.append(p)
-                    added_urls.add(p.url)
-                if len(pages) >= EVIDENCE_PER_CANDIDATE:
+                if p.url and p.url not in pages_by_url:
+                    pages_by_url[p.url] = p
+                if len(pages_by_url) >= EVIDENCE_PAGE_LIMIT:
                     break
             if crawled:
                 queries_used.append(QueryRecord(
-                    query=ev_urls[0],
+                    query=crawl_url,
                     search_engine="tavily_crawl",
                     purpose="证据检索",
                     n_results=len(crawled),
                 ))
 
-        # ↓↓↓ 上下文动态压缩（PRD §17.4）
+        ordered: list[ExtractedPage] = []
+        seen: set[str] = set()
+        for url in ev_urls[:EVIDENCE_READ_URL_LIMIT]:
+            page = pages_by_url.get(url)
+            if page and page.url not in seen:
+                ordered.append(page)
+                seen.add(page.url)
+        for page in pages_by_url.values():
+            if len(ordered) >= EVIDENCE_PAGE_LIMIT:
+                break
+            if page.url and page.url not in seen:
+                ordered.append(page)
+                seen.add(page.url)
+        return ordered[:EVIDENCE_PAGE_LIMIT]
+
+    def _run_feature_match(
+        self,
+        *,
+        task: TaskPackage,
+        company: str,
+        product: str,
+        aliases: list[str],
+        pages: list[ExtractedPage],
+        ev_titles: dict[str, str],
+        ev_feature_hints: dict[str, set[str]],
+        pass_label: str,
+    ) -> dict[str, Any]:
+        # ↓↓↓ 上下文动态压缩
         feat_block = _format_features(task)
         fixed_overhead_chars = (
             len(prompts.load("agent_feature_match"))
@@ -582,13 +842,18 @@ class SearchAgent:
         for j, p in enumerate(packed_pages, start=1):
             hints = sorted(ev_feature_hints.get(p.url, set()))
             hint_text = f"\n     线索特征: {', '.join(hints)}" if hints else ""
+            source_label = evidence_strategy.tier_label(p.url, p.title or ev_titles.get(p.url, ""))
             evidence_block_lines.append(
                 f"[E{j}] {p.title or ev_titles.get(p.url, '')}\n"
-                f"     URL: {p.url}{hint_text}\n"
+                f"     URL: {p.url}\n"
+                f"     来源层级: {source_label}{hint_text}\n"
                 f"     正文片段: {p.text}"
             )
 
-        logger.info("%s     LLM 特征匹配中 …", self.tag)
+        logger.info(
+            "%s     feature_match LLM START pass=%s candidate=%s/%s evidence_pages=%d",
+            self.tag, pass_label, company, product, len(evidence_block_lines),
+        )
         system = prompts.load("agent_feature_match")
         user = prompts.render(
             "agent_feature_match_user",
@@ -603,12 +868,17 @@ class SearchAgent:
             n_evidence=len(evidence_block_lines),
             evidence_block="\n\n".join(evidence_block_lines) or "(无证据)",
         )
+        t0 = time.monotonic()
         data = chat_json(
             self.persp.llm_endpoint,
             system=system,
             user=user,
             temperature=0.1,
             timeout=AGENT_LLM_TIMEOUT,
+        )
+        logger.info(
+            "%s     feature_match LLM DONE pass=%s candidate=%s/%s elapsed=%.2fs",
+            self.tag, pass_label, company, product, time.monotonic() - t0,
         )
 
         feature_matches: list[FeatureMatch] = []
@@ -649,60 +919,40 @@ class SearchAgent:
         feature_matches = scoring.normalize_feature_matches(feature_matches, task.claim_features)
         # 紧凑日志：每个特征一行 judgement
         judg_summary = ", ".join(f"{m.feature_id}={m.judgement}" for m in feature_matches)
-        logger.info("%s     特征判断: %s", self.tag, judg_summary)
+        logger.info("%s     特征判断 pass=%s: %s", self.tag, pass_label, judg_summary)
+        return {
+            "feature_matches": feature_matches,
+            "remaining_gaps": data.get("remaining_gaps", []) or [],
+            "reason_for_top5": str(data.get("reason_for_top5", "")).strip(),
+            "packed_urls": {p.url for p in packed_pages if p.url},
+        }
 
-        evidence_url_set = sorted({
-            ev.url for fm in feature_matches for ev in fm.evidence if ev.url
-        } | set(ev_urls[:EVIDENCE_PER_CANDIDATE]))
-        hard = scoring.evaluate_hard_rules(
-            company=company,
-            product=product,
-            assignees=task.patent.assignees,
-            evidence_urls=evidence_url_set,
-            feature_matches=feature_matches,
-        )
-        total = scoring.candidate_total_score(
-            feature_matches,
-            feature_ids=[f.feature_id for f in task.claim_features],
-        )
-        return Candidate(
-            rank=0,
-            company=company,
-            product=product,
-            aliases=aliases,
-            score=total,
-            hard_rule_check=hard,
-            feature_match_table=feature_matches,
-            main_evidence_urls=evidence_url_set,
-            remaining_gaps=data.get("remaining_gaps", []) or [],
-            reason_for_top5=str(data.get("reason_for_top5", "")).strip(),
-        )
-
-    def _feature_evidence_query(
+    def _gap_features_for_supplement(
         self,
-        company: str,
-        product: str,
-        feature: ClaimFeature,
-    ) -> str:
-        """为单个候选 × 单个权利特征生成证据补搜 query。"""
-        terms: list[str] = []
-        terms.extend(feature.marketing_terms[:2])
-        terms.extend(feature.engineering_terms[:3])
-        if "公式" in feature.feature_text or "$" in feature.feature_text:
-            terms.extend(["算法", "SDK", "校准", "补偿"])
-        if not terms:
-            terms.append(feature.feature_text[:80])
-        deduped: list[str] = []
-        seen: set[str] = set()
-        for term in terms:
-            t = str(term).strip()
-            if t and t not in seen:
-                deduped.append(t)
-                seen.add(t)
-        return " ".join(
-            part for part in [company, product, *deduped[:5], "规格书 OR 产品手册 OR datasheet"]
-            if part
-        ).strip()
+        task: TaskPackage,
+        feature_matches: list[FeatureMatch],
+        remaining_gaps: list[Any],
+    ):
+        gap_ids: set[str] = set()
+        for item in remaining_gaps:
+            if isinstance(item, dict):
+                fid = str(item.get("feature_id", "")).strip()
+            else:
+                fid = str(item).strip()
+            if fid:
+                gap_ids.add(fid)
+
+        match_by_id = {fm.feature_id: fm for fm in feature_matches}
+        targets = []
+        for feature in task.claim_features:
+            fm = match_by_id.get(feature.feature_id)
+            if fm is None or fm.judgement == "明确不满足":
+                continue
+            has_url = any(ev.url for ev in fm.evidence)
+            if fm.judgement == "证据不足" or feature.feature_id in gap_ids or not has_url:
+                targets.append(feature)
+        targets.sort(key=lambda f: not f.is_essential)
+        return targets[:GAP_FEATURE_SUPPLEMENT_LIMIT]
 
 
 def _format_features(task: TaskPackage) -> str:
