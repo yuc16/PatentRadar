@@ -8,3 +8,12 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Secrets
+.env
+
+# Run outputs
+output/
+tmp/
+*.log
+.DS_Store
