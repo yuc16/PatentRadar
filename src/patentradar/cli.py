@@ -527,6 +527,16 @@ def review_cmd(
         f"（GPT-5.5 将自行合并去重 + 复核）"
     )
 
+    # 产出 candidate_pool.json，便于人工检查三 Agent 合并前后的证据归并关系。
+    from .reviewer.merger import merge_agent_outputs
+    candidate_pool = merge_agent_outputs(task, agent_outputs)
+    pool_path = target_dir / "candidate_pool.json"
+    pool_path.write_text(
+        json.dumps(candidate_pool.model_dump(), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    console.print(f"已写入候选池快照: [green]{pool_path}[/]")
+
     # GPT-5.5 复核（合并去重 + 重打分 + 风险等级一并完成）
     eff = reasoning or config.REVIEWER_REASONING_EFFORT
     console.print(f"调用 GPT-5.5 复核（reasoning={eff}）...")

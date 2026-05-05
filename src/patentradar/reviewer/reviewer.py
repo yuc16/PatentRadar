@@ -14,8 +14,9 @@ from __future__ import annotations
 
 import os
 import time
+import logging
 
-from .. import prompts
+from .. import prompts, scoring
 from ..agents.base import _normalize_reliability, _normalize_source_type
 from ..llm import codex
 from ..schemas import (
@@ -29,6 +30,14 @@ from ..schemas import (
     ReviewExcluded,
     TaskPackage,
 )
+from ..search import pool
+
+logger = logging.getLogger("patentradar.reviewer")
+
+REVIEW_SUPPLEMENT_MAX_CANDIDATES = 15
+REVIEW_SUPPLEMENT_FEATURES_PER_CANDIDATE = 4
+REVIEW_SUPPLEMENT_HITS_PER_FEATURE = 2
+REVIEW_SUPPLEMENT_SUMMARY_CHARS = 1200
 
 
 def _format_features_block(task: TaskPackage) -> str:
@@ -99,6 +108,7 @@ def review_agent_outputs(
     t0 = time.monotonic()
     model = (os.getenv("REVIEWER_MODEL") or "gpt-5.5").strip()
 
+    agent_outputs, supplement_count = _supplement_agent_outputs(agent_outputs, task)
     candidates_block, n_candidates = _format_candidates_block(agent_outputs)
 
     system = prompts.load("reviewer_system")
@@ -138,6 +148,10 @@ def review_agent_outputs(
             if not isinstance(re_ev, dict):
                 continue
             url = str(re_ev.get("url", "")).strip()
+            if not url or url not in evidence_lookup:
+                if url:
+                    logger.info("丢弃未出现在复核输入中的证据 URL: %s", url[:80])
+                continue
             ref = evidence_lookup.get(url)
             out.append(Evidence(
                 url=url,
@@ -173,30 +187,63 @@ def review_agent_outputs(
             ))
         return out
 
+    auto_excluded: list[ReviewExcluded] = []
     top5: list[FinalCandidate] = []
-    for i, raw in enumerate(payload.get("top5", []) or [], start=1):
+    for raw in payload.get("top5", []) or []:
         if not isinstance(raw, dict):
             continue
-        fmt = _build_feature_matches(raw.get("final_feature_table"))
-        score = float(raw.get("score") or 0)
-        risk = str(raw.get("risk_level") or "弱相关").strip()
-        if risk not in {"高度疑似落入", "中度疑似", "局部相似", "弱相关"}:
-            risk = _risk_from_score(score, fmt)
+        fmt = scoring.normalize_feature_matches(
+            _build_feature_matches(raw.get("final_feature_table")),
+            task.claim_features,
+        )
+        score = scoring.candidate_total_score(
+            fmt,
+            feature_ids=[f.feature_id for f in task.claim_features],
+        )
+        risk = _risk_from_score(score, fmt)
+        raw_main_urls = {
+            str(u) for u in (raw.get("main_evidence_urls") or [])
+            if str(u) in evidence_lookup
+        }
+        evidence_urls = sorted({
+            ev.url for fm in fmt for ev in fm.evidence if ev.url
+        } | raw_main_urls)
+        company = str(raw.get("company", "")).strip()
+        product = str(raw.get("product", "")).strip()
+        hard = scoring.evaluate_hard_rules(
+            company=company,
+            product=product,
+            assignees=task.patent.assignees,
+            evidence_urls=evidence_urls,
+            feature_matches=fmt,
+        )
+        ok, reason = scoring.passes_hard_rules(hard)
+        if not ok:
+            auto_excluded.append(ReviewExcluded(
+                candidate_id=str(raw.get("candidate_id", "")).strip(),
+                company=company,
+                product=product,
+                discard_reason=reason or "最终复核代码校验未通过",
+                evidence_urls=evidence_urls,
+            ))
+            continue
         top5.append(FinalCandidate(
-            rank=i,
-            candidate_id=str(raw.get("candidate_id", "")).strip() or f"M{i:03d}",
-            company=str(raw.get("company", "")).strip(),
-            product=str(raw.get("product", "")).strip(),
+            rank=len(top5) + 1,
+            candidate_id=str(raw.get("candidate_id", "")).strip() or f"M{len(top5)+1:03d}",
+            company=company,
+            product=product,
             aliases=[str(a) for a in (raw.get("aliases") or [])],
             score=round(score, 1),
             risk_level=risk,  # type: ignore[arg-type]
             final_feature_table=fmt,
-            main_evidence_urls=[str(u) for u in (raw.get("main_evidence_urls") or [])],
+            main_evidence_urls=evidence_urls,
             reason_for_top5=str(raw.get("reason_for_top5", "")).strip(),
             remaining_gaps=raw.get("remaining_gaps") or [],
         ))
+        if len(top5) >= 5:
+            break
 
-    excluded = [
+    excluded = auto_excluded + [
         ReviewExcluded(
             candidate_id=str(x.get("candidate_id", "")),
             company=str(x.get("company", "")),
@@ -217,6 +264,11 @@ def review_agent_outputs(
         for x in (payload.get("needs_manual_review") or []) if isinstance(x, dict)
     ]
 
+    notes = str(payload.get("notes", "")).strip()
+    if supplement_count:
+        supplement_note = f"最终复核前已执行代码侧补搜，新增 {supplement_count} 条证据线索。"
+        notes = f"{notes} {supplement_note}".strip()
+
     return FinalReport(
         patent_publication_no=task.patent.publication_no,
         claim_1_text=task.claim_1_text,
@@ -226,7 +278,7 @@ def review_agent_outputs(
         needs_manual_review=needs,
         reviewer_model=f"codex:{model}",
         elapsed_seconds=round(time.monotonic() - t0, 2),
-        notes=str(payload.get("notes", "")).strip(),
+        notes=notes,
     )
 
 
@@ -247,3 +299,131 @@ def _risk_from_score(score: float, fmt: list[FeatureMatch]) -> str:
     if score >= 50:
         return "局部相似"
     return "弱相关"
+
+
+def _supplement_agent_outputs(
+    agent_outputs: list[AgentOutput],
+    task: TaskPackage,
+) -> tuple[list[AgentOutput], int]:
+    """最终复核前对证据不足项执行代码侧补搜。"""
+    outputs = [ao.model_copy(deep=True) for ao in agent_outputs]
+    added = 0
+    seen_candidates = 0
+    for ao in outputs:
+        for cand in ao.top5_candidates:
+            if seen_candidates >= REVIEW_SUPPLEMENT_MAX_CANDIDATES:
+                return outputs, added
+            seen_candidates += 1
+            cand.feature_match_table = scoring.normalize_feature_matches(
+                cand.feature_match_table,
+                task.claim_features,
+            )
+            cand.score = scoring.candidate_total_score(
+                cand.feature_match_table,
+                feature_ids=[f.feature_id for f in task.claim_features],
+            )
+            added += _supplement_candidate(cand, task)
+    return outputs, added
+
+
+def _supplement_candidate(cand: Candidate, task: TaskPackage) -> int:
+    existing_urls = {
+        ev.url
+        for fm in cand.feature_match_table
+        for ev in fm.evidence
+        if ev.url
+    } | set(cand.main_evidence_urls)
+    gap_ids = {
+        str(g.get("feature_id", "")).strip()
+        for g in cand.remaining_gaps
+        if isinstance(g, dict)
+    }
+    target_features = [
+        fm for fm in cand.feature_match_table
+        if (
+            fm.judgement == "证据不足"
+            or not any(ev.url for ev in fm.evidence)
+            or fm.feature_id in gap_ids
+        )
+    ][:REVIEW_SUPPLEMENT_FEATURES_PER_CANDIDATE]
+
+    added = 0
+    feature_by_id = {f.feature_id: f for f in task.claim_features}
+    for fm in target_features:
+        cf = feature_by_id.get(fm.feature_id)
+        if cf is None:
+            continue
+        query = _review_supplement_query(cand.company, cand.product, cf)
+        try:
+            hits = pool.search(
+                query,
+                engines=pool.DEFAULT_SEARCH_ENGINES,
+                num_per_engine=REVIEW_SUPPLEMENT_HITS_PER_FEATURE,
+            )
+        except Exception as exc:  # noqa: BLE001
+            logger.info("review supplement search failed %r: %s", query, exc)
+            continue
+        for hit in hits[:REVIEW_SUPPLEMENT_HITS_PER_FEATURE]:
+            if not hit.url or hit.url in existing_urls:
+                continue
+            evidence = _evidence_from_hit(hit, fm.feature_id)
+            fm.evidence.append(evidence)
+            cand.main_evidence_urls.append(hit.url)
+            existing_urls.add(hit.url)
+            added += 1
+    if added:
+        cand.main_evidence_urls = sorted(set(cand.main_evidence_urls))
+    return added
+
+
+def _review_supplement_query(company: str, product: str, feature) -> str:
+    terms: list[str] = []
+    terms.extend(feature.marketing_terms[:2])
+    terms.extend(feature.engineering_terms[:3])
+    if "公式" in feature.feature_text or "$" in feature.feature_text:
+        terms.extend(["算法", "SDK", "校准", "补偿"])
+    if not terms:
+        terms.append(feature.feature_text[:80])
+    return " ".join(
+        part for part in [company, product, *terms[:5], "规格书 OR 产品手册 OR 白皮书 OR datasheet"]
+        if part
+    ).strip()
+
+
+def _evidence_from_hit(hit, feature_id: str) -> Evidence:
+    text = hit.snippet or ""
+    title = hit.title or ""
+    try:
+        page = pool.read_url(hit.url)
+        text = page.text or text
+        title = page.title or title
+    except Exception as exc:  # noqa: BLE001
+        logger.info("review supplement read failed %s: %s", hit.url[:80], exc)
+    return Evidence(
+        url=hit.url,
+        title=title,
+        source_type=_guess_source_type(hit.url, title),
+        source_reliability=_guess_reliability(hit.url),
+        summary=("[最终复核补搜] " + text[:REVIEW_SUPPLEMENT_SUMMARY_CHARS]).strip(),
+        supported_features=[feature_id],
+    )
+
+
+def _guess_source_type(url: str, title: str) -> str:
+    low = f"{url} {title}".lower()
+    if ".pdf" in low:
+        return "官方PDF"
+    if "cninfo.com.cn" in low or "static.cninfo.com.cn" in low:
+        return "年报"
+    if "datasheet" in low or "数据手册" in title:
+        return "产品手册"
+    return "其他"
+
+
+def _guess_reliability(url: str) -> str:
+    low = url.lower()
+    if ".pdf" in low or "cninfo.com.cn" in low:
+        return "high"
+    if any(x in low for x in ("weixin", "zhihu", "csdn", "blog")):
+        return "low"
+    return "medium"

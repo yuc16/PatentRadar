@@ -108,3 +108,8 @@ def read_url(url: str) -> ExtractedPage:
     except Exception as exc:  # noqa: BLE001
         last_exc = exc
     raise SearchError("read_url", f"所有 reader 均失败: {last_exc}")
+
+
+def crawl_url(url: str, *, max_depth: int = 1, limit: int = 5) -> list[ExtractedPage]:
+    """Tavily Crawl 站点深挖入口。"""
+    return tavily.crawl(url, max_depth=max_depth, limit=limit)

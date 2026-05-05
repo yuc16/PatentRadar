@@ -14,7 +14,7 @@
 2. 拆解权利要求 1 为 F1/F2/F3... 原子技术特征（PRD §10）；
 3. **三个搜索 Agent 并行**（DeepSeek / Kimi / GLM）从不同视角挖掘**中国大陆市场可见的竞品**；
 4. 每个 Agent 自成闭环：找竞品 → 找证据 → 按特征匹配 → 硬规则过滤 → 输出 Top5；
-5. **GPT-5.5 最终复核**：跨候选合并去重（凭行业知识识别同义）、证据真实性校验、重打分、风险等级判定；
+5. **GPT-5.5 最终复核**：复核前自动补搜证据，跨候选合并去重（凭行业知识识别同义）、证据真实性校验、代码级重算分数与风险等级；
 6. 输出 PRD §14 结构的 Markdown 报告。
 
 定位：**专利竞品侵权线索挖掘与证据整理辅助工具**，不构成法律意见或正式侵权结论。
@@ -51,11 +51,14 @@
                ↓
    agent_<deepseek|kimi|glm>.json × 3
                ↓
+        candidate_pool.json
+               ↓
 ┌─────────────────────────────┐
 │ GPT-5.5 Final Reviewer       │
+│  - 证据不足项代码侧补搜       │
 │  - 合并去重（行业知识同义识别）│
 │  - 证据真实性校验             │
-│  - 统一打分 + 风险等级        │
+│  - 代码级统一打分 + 风险等级   │
 └──────────────┬──────────────┘
                ↓
         final_report.json
@@ -80,10 +83,12 @@
 | 5 | 每个 Agent 输出 Top5 | ✅ |
 | 6 | 汇总最多 15 个候选 | ✅ |
 | 7 | 候选去重（GPT-5.5 智能合并） | ✅ |
-| 8 | GPT-5.5 最终复核 | ✅ |
+| 8 | GPT-5.5 最终复核（含代码侧补搜 / 重算校验） | ✅ |
 | 9 | 输出最终 Top5 Markdown 报告 | ✅ |
 
 **MVP 9/9 全部完成**。
+
+额外实现了四个质量兜底：Agent 证据阶段按每个技术特征逐项补搜；所有 Agent 证据阶段统一调用 Bocha / Exa / Brave / Tavily；有效候选不足时自动二次搜索；最终复核后由代码补齐特征表并按完整权利要求 1 重算分数。
 
 ---
 
@@ -215,6 +220,7 @@ PatentRadar/
 │       ├── agent_kimi.json
 │       ├── agent_glm.json
 │       ├── agent_outputs.json       # 三 Agent 合并视图
+│       ├── candidate_pool.json      # 三 Agent Top 候选归并快照
 │       └── final_report.json        # 阶段 4
 │
 ├── output/                          # 最终用户产物（git 忽略）
@@ -248,10 +254,10 @@ PatentRadar/
     │   ├── bocha.py / exa.py / brave.py / tavily.py
     │   ├── cninfo.py                # 巨潮资讯全文检索（无需 key，DeepSeek 证据补搜用）
     │   ├── cn_industry.py           # 行业白名单加载 + site: 限定 query 拼接
-    │   └── pool.py                  # 多引擎并行 + URL 黑名单 + reader 兜底链
+    │   └── pool.py                  # 多引擎并行 + URL 黑名单 + extract/contents/crawl
     │
     ├── reviewer/
-    │   ├── reviewer.py              # GPT-5.5 复核（合并 + 重打分）
+    │   ├── reviewer.py              # 最终补搜 + GPT-5.5 复核 + 代码重算
     │   └── merger.py                # 旧版代码合并器（已废弃，保留兼容）
     │
     ├── report/
@@ -296,12 +302,18 @@ S2  调用主搜索源召回 hits
 S3  建立粗候选池 (≤40，URL 黑名单源头过滤专利文献站)
 S4  LLM 归一化 + 严苛筛选（无明确公司 / 专利文献站 / 无中国市场迹象 → 直接丢）
 S5  保留重点候选 8~12 个
-S6  对每个候选共享证据池补搜 + 抽正文（tavily_extract → exa_contents 兜底）
+S6  对每个候选执行共享证据池补搜：
+    - company + product 通用补搜
+    - company + product + F1/F2/F3... 逐特征补搜
+    - Bocha / Exa / Brave / Tavily Search 全量共享
+    - 正文读取：Tavily Extract → Exa Contents，必要时 Tavily Crawl 深挖
     → ★ compactor 动态压缩 ★（按 ctx_window 预算，长文 LLM 摘要）
 S7  LLM 把证据绑定到 F1/F2/F3 + 给出四档判断
-S8  硬规则过滤（PRD §9）
-S9  极简计分排序（PRD §10.3）
+S8  代码级补齐缺失特征 + 硬规则过滤（PRD §9）
+S9  按完整特征表重算分数 + 证据质量同分排序
 S10 输出 Top5 JSON
+
+如果首轮有效候选少于 5 个，Agent 会生成新 query 并二次搜索候选池；仍不足时宁缺毋滥。
 ```
 
 ### 8.4 上下文动态压缩 + LLM 摘要
@@ -318,9 +330,11 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 
 实现：[`src/patentradar/compactor.py`](src/patentradar/compactor.py)。
 
-### 8.5 GPT-5.5 复核：合并去重交给模型
+### 8.5 GPT-5.5 复核：先补搜，再合并去重
 
-不依赖代码层正则归一化——GPT-5.5 用**行业知识**自动识别同义：
+复核阶段先对 Agent 输出中"证据不足"、有 remaining gap、或缺少 URL 证据的高价值候选做一轮代码侧补搜。补搜仍使用 Bocha / Exa / Brave / Tavily Search，并用 Tavily Extract / Exa Contents 抽正文，把新增证据作为输入材料交给 GPT-5.5。
+
+候选同义合并不依赖代码层正则归一化——GPT-5.5 用**行业知识**自动识别同义：
 
 ```
 "Cypress CYFP1-8080-FPG1"  ⇨  Infineon Technologies   (Cypress 已被 Infineon 收购)
@@ -328,7 +342,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 "汇顶科技 / Goodix"          ⇨  汇顶科技
 ```
 
-复核还做：证据真实性校验、四档判断重判、风险等级（PRD §15）。地域性已经由 Agent 阶段过滤前置，复核不再重复判定。
+复核还做：证据真实性校验、四档判断重判、风险等级（PRD §15）。模型返回后，代码会再次补齐 F1/F2/F3... 全量特征表，按完整权利要求 1 重算分数，自动排除无明确公司 / 产品 / 公开证据 URL 或存在"明确不满足"必要特征的候选。
 
 ### 8.6 四档判断 + 风险等级（PRD §10 / §15）
 
@@ -340,6 +354,12 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 | 明确不满足（须有反证） | 排除 |
 
 候选总分 = 各特征分数之和 / 特征总数 × 100，对应风险：≥85 高度疑似落入 / 70~84 中度疑似 / 50~69 局部相似 / <50 弱相关。
+
+代码层会强制执行三条兜底：
+
+- LLM 漏返回的特征按"证据不足"补齐，避免用较少特征做分母导致高估；
+- "明确满足 / 明确不满足"没有公开证据 URL 时降级为"证据不足"；
+- "可能满足"缺少推理链时降级为"证据不足"。
 
 ### 8.7 缓存策略
 
@@ -380,6 +400,7 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 | 仅支持中文专利 (CN) | Google Patents 中文页 + 中文权要文本 | 扩展 US/EP 需重写权要抽取逻辑 |
 | 仅独立权利要求 1 | 不分析从属权利要求 / 等同特征 | PRD §2.2 明确为 v1 非目标 |
 | 海外候选地域过滤靠 prompt + 证据 | candidate_filter 阶段排除无中国销售迹象的海外候选；DeepSeek 已叠加行业站点定向 + 巨潮资讯（§8.8） | 行业白名单需人工维护；新增领域要同步改拆解 prompt 的 industry_tag 枚举 |
+| 最终补搜有预算上限 | 复核前只对最多 15 个候选、每候选最多 4 个缺口特征补搜，避免成本失控 | 对重点案件可调大补搜预算或改成多轮人工确认 |
 | 摘要 LLM 与主 Agent 同源 | 当前 compactor 默认用 deepseek，与 deepseek_agent 共账号 | 可换为更便宜的独立模型 |
 
 ---

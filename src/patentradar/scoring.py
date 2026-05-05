@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from .schemas import (
     Candidate,
+    ClaimFeature,
     FeatureMatch,
     HardRuleCheck,
     Judgement,
@@ -17,12 +18,77 @@ JUDGEMENT_SCORE: dict[Judgement, float] = {
 }
 
 
-def candidate_total_score(matches: list[FeatureMatch]) -> float:
+def candidate_total_score(
+    matches: list[FeatureMatch],
+    *,
+    feature_ids: list[str] | None = None,
+) -> float:
     """PRD §10.3: 候选得分 = 各特征得分之和 / 特征总数 × 100。"""
-    if not matches:
+    if not matches and not feature_ids:
+        return 0.0
+    by_id = {m.feature_id: m for m in matches}
+    if feature_ids:
+        total = sum(by_id.get(fid).score if fid in by_id else JUDGEMENT_SCORE["证据不足"]
+                    for fid in feature_ids)
+        return round(total / len(feature_ids) * 100, 2)
+    if feature_ids == []:
         return 0.0
     total = sum(m.score for m in matches)
     return round(total / len(matches) * 100, 2)
+
+
+def normalize_feature_matches(
+    matches: list[FeatureMatch],
+    claim_features: list[ClaimFeature],
+) -> list[FeatureMatch]:
+    """补齐并校正候选的逐项特征表。
+
+    LLM 偶尔会漏掉难判断特征，或返回与 judgement 不一致的 score。这里做代码级
+    兜底：按权利要求 1 的特征顺序输出完整表；缺失项统一按"证据不足"计 0.3；
+    无 URL 证据的"明确满足/明确不满足"降级为"证据不足"。
+    """
+    raw_by_id: dict[str, FeatureMatch] = {}
+    valid_ids = {f.feature_id for f in claim_features}
+    for m in matches:
+        if m.feature_id in valid_ids and m.feature_id not in raw_by_id:
+            raw_by_id[m.feature_id] = m
+
+    normalized: list[FeatureMatch] = []
+    for cf in claim_features:
+        m = raw_by_id.get(cf.feature_id)
+        if m is None:
+            normalized.append(FeatureMatch(
+                feature_id=cf.feature_id,
+                claim_feature=cf.feature_text,
+                judgement="证据不足",
+                score=JUDGEMENT_SCORE["证据不足"],
+                reasoning="LLM 未返回该特征判断，按证据不足处理。",
+                evidence=[],
+            ))
+            continue
+
+        judgement = m.judgement
+        reasoning = (m.reasoning or "").strip()
+        has_url_evidence = any(ev.url for ev in m.evidence)
+        downgrade_reason: str | None = None
+        if judgement in {"明确满足", "明确不满足"} and not has_url_evidence:
+            downgrade_reason = "缺少公开证据 URL，按证据不足处理。"
+        elif judgement == "可能满足" and len(reasoning) < 20:
+            downgrade_reason = "可能满足缺少足够推理链，按证据不足处理。"
+
+        if downgrade_reason:
+            judgement = "证据不足"
+            reasoning = f"{reasoning} {downgrade_reason}".strip()
+
+        normalized.append(FeatureMatch(
+            feature_id=cf.feature_id,
+            claim_feature=m.claim_feature or cf.feature_text,
+            judgement=judgement,  # type: ignore[arg-type]
+            score=JUDGEMENT_SCORE[judgement],
+            reasoning=reasoning,
+            evidence=m.evidence,
+        ))
+    return normalized
 
 
 def has_clearly_unmatched(matches: list[FeatureMatch]) -> bool:
