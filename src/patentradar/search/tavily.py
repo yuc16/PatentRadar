@@ -6,11 +6,13 @@ PRD 角色：search 通用补充；extract 抽 PDF/长文；crawl 站点深挖�
 from __future__ import annotations
 
 import asyncio
+import logging
 import os
+import threading
 
 import httpx
 
-from ..config import SEARCH_KEYS
+from ..config import SEARCH_KEY_RINGS, SEARCH_KEYS
 from .base import ExtractedPage, SearchError, SearchHit
 
 SEARCH_URL = "https://api.tavily.com/search"
@@ -19,18 +21,34 @@ CRAWL_URL = "https://api.tavily.com/crawl"
 DEFAULT_TIMEOUT = 60
 EXTRACT_TIMEOUT = 60
 CRAWL_TIMEOUT = 90
+RETRYABLE_KEY_STATUS = {401, 402, 403, 429}
+
+logger = logging.getLogger(__name__)
+_KEY_LOCK = threading.Lock()
+_KEY_INDEX = 0
 
 
-def _key() -> str:
-    key = SEARCH_KEYS.get("tavily")
-    if not key:
+def _keys() -> list[str]:
+    keys = SEARCH_KEY_RINGS.get("tavily") or []
+    if not keys and SEARCH_KEYS.get("tavily"):
+        keys = [SEARCH_KEYS["tavily"]]
+    if not keys:
         raise SearchError("tavily", "TAVILY_API_KEY 未配置")
-    return key
+    return keys
 
 
-def _headers() -> dict[str, str]:
+def _next_key() -> tuple[str, int, int]:
+    global _KEY_INDEX
+    keys = _keys()
+    with _KEY_LOCK:
+        idx = _KEY_INDEX % len(keys)
+        _KEY_INDEX += 1
+    return keys[idx], idx + 1, len(keys)
+
+
+def _headers(key: str) -> dict[str, str]:
     headers = {
-        "Authorization": f"Bearer {_key()}",
+        "Authorization": f"Bearer {key}",
         "Content-Type": "application/json",
     }
     project_id = os.getenv("TAVILY_PROJECT", "").strip()
@@ -44,6 +62,7 @@ async def _post_json_async(
     body: dict,
     *,
     timeout_s: int,
+    key: str,
 ) -> dict:
     timeout = httpx.Timeout(
         connect=min(15.0, float(timeout_s)),
@@ -53,7 +72,7 @@ async def _post_json_async(
     )
     async with httpx.AsyncClient(timeout=timeout) as client:
         response = await asyncio.wait_for(
-            client.post(url, headers=_headers(), json=body),
+            client.post(url, headers=_headers(key), json=body),
             timeout=float(timeout_s),
         )
         response.raise_for_status()
@@ -61,12 +80,34 @@ async def _post_json_async(
 
 
 def _post_json(url: str, body: dict, *, timeout_s: int) -> dict:
-    try:
-        return asyncio.run(_post_json_async(url, body, timeout_s=timeout_s))
-    except TimeoutError as exc:
-        raise SearchError("tavily", f"total timeout after {timeout_s}s") from exc
-    except httpx.HTTPError as exc:
-        raise SearchError("tavily", str(exc)) from exc
+    n_keys = len(_keys())
+    last_exc: Exception | None = None
+    for _ in range(n_keys):
+        key, key_idx, total = _next_key()
+        try:
+            return asyncio.run(_post_json_async(
+                url,
+                body,
+                timeout_s=timeout_s,
+                key=key,
+            ))
+        except TimeoutError as exc:
+            raise SearchError("tavily", f"total timeout after {timeout_s}s") from exc
+        except httpx.HTTPStatusError as exc:
+            last_exc = exc
+            status = exc.response.status_code
+            if status in RETRYABLE_KEY_STATUS and total > 1:
+                logger.info(
+                    "tavily key slot %d/%d failed with status=%d, trying next key",
+                    key_idx,
+                    total,
+                    status,
+                )
+                continue
+            raise SearchError("tavily", str(exc)) from exc
+        except httpx.HTTPError as exc:
+            raise SearchError("tavily", str(exc)) from exc
+    raise SearchError("tavily", f"所有 Tavily key 均失败: {last_exc}")
 
 
 def search(

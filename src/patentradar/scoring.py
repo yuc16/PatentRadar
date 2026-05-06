@@ -160,9 +160,9 @@ def passes_hard_rules(check: HardRuleCheck) -> tuple[bool, str | None]:
         return False, "无明确产品名/型号"
     if not check.has_public_evidence:
         return False, "无任何公开证据 URL"
-    if check.product_launch_after_application is False:
+    if check.product_launch_after_application is True:
         return False, (
-            "竞品上市/发布/量产日期不晚于专利申请日"
+            "竞品上市/发布/量产日期晚于专利申请日"
             f"（竞品: {check.product_launch_date or '未知'}；申请日: "
             f"{check.patent_application_date or '未知'}）"
         )

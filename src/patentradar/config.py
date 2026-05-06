@@ -41,11 +41,40 @@ AGENT_1 = _ep("SEARCH_AGENT_1", "agent1_glm", default_window=128_000)
 AGENT_2 = _ep("SEARCH_AGENT_2", "agent2_kimi", default_window=200_000)
 AGENT_3 = _ep("SEARCH_AGENT_3", "agent3_deepseek", default_window=128_000)
 
+
+def _split_api_keys(value: str) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for raw in value.replace("\n", ",").replace(";", ",").split(","):
+        key = raw.strip()
+        if key and key not in seen:
+            seen.add(key)
+            out.append(key)
+    return out
+
+
+def _search_key_ring(prefix: str) -> list[str]:
+    multi = _split_api_keys(os.getenv(f"{prefix}_API_KEYS", ""))
+    single = _split_api_keys(os.getenv(f"{prefix}_API_KEY", ""))
+    out: list[str] = []
+    seen: set[str] = set()
+    for key in [*multi, *single]:
+        if key not in seen:
+            seen.add(key)
+            out.append(key)
+    return out
+
+
+SEARCH_KEY_RINGS = {
+    "bocha": _search_key_ring("BOCHA"),
+    "exa": _search_key_ring("EXA"),
+    "brave": _search_key_ring("BRAVE"),
+    "tavily": _search_key_ring("TAVILY"),
+}
+
 SEARCH_KEYS = {
-    "bocha": os.getenv("BOCHA_API_KEY", "").strip(),
-    "exa": os.getenv("EXA_API_KEY", "").strip(),
-    "brave": os.getenv("BRAVE_API_KEY", "").strip(),
-    "tavily": os.getenv("TAVILY_API_KEY", "").strip(),
+    name: keys[0] if keys else ""
+    for name, keys in SEARCH_KEY_RINGS.items()
 }
 
 DECOMPOSER_LLM = os.getenv("DECOMPOSER_LLM", "reviewer").strip().lower()

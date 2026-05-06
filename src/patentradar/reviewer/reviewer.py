@@ -42,6 +42,8 @@ logger = logging.getLogger("patentradar.reviewer")
 
 REVIEW_SUPPLEMENT_MAX_CANDIDATES = 15
 REVIEW_SUPPLEMENT_FEATURES_PER_CANDIDATE = 4
+REVIEW_SUPPLEMENT_TARGETS_PER_CANDIDATE = 3
+REVIEW_SUPPLEMENT_QUERIES_PER_TARGET = 2
 REVIEW_SUPPLEMENT_HITS_PER_FEATURE = 3
 REVIEW_SUPPLEMENT_SUMMARY_CHARS = 1000
 REVIEW_SUPPLEMENT_ENGINES = pool.DEFAULT_SEARCH_ENGINES
@@ -566,26 +568,49 @@ def _supplement_candidate(
 
     added = 0
     feature_by_id = {f.feature_id: f for f in task.claim_features}
-    for fm in target_features:
-        cf = feature_by_id.get(fm.feature_id)
-        if cf is None:
+    target_match_by_id = {fm.feature_id: fm for fm in target_features}
+    claim_targets = [
+        feature_by_id[fm.feature_id]
+        for fm in target_features
+        if fm.feature_id in feature_by_id
+    ]
+    evidence_targets = evidence_strategy.build_evidence_targets(
+        cand.company,
+        cand.product,
+        claim_targets,
+        industry_tag=task.industry_tag,
+        include_counter=True,
+    )
+    for target in evidence_targets[:REVIEW_SUPPLEMENT_TARGETS_PER_CANDIDATE]:
+        target_feature_ids = tuple(
+            fid for fid in target.feature_ids
+            if fid in target_match_by_id
+        )
+        if not target_feature_ids:
             continue
         logger.info(
-            "[reviewer] supplement START candidate=%s/%s feature=%s judgement=%s",
-            cand.company, cand.product, fm.feature_id, fm.judgement,
-        )
-        for query in evidence_strategy.build_feature_evidence_queries(
+            "[reviewer] supplement START candidate=%s/%s target=%s features=%s",
             cand.company,
             cand.product,
-            cf,
-            include_counter=True,
-        ):
+            target.label,
+            ",".join(target_feature_ids),
+        )
+        for query in target.queries[:REVIEW_SUPPLEMENT_QUERIES_PER_TARGET]:
             qkey = evidence_strategy.normalize_query(query)
             if qkey in seen_queries:
-                logger.info("[reviewer] supplement SKIP duplicate_query feature=%s query=%r", fm.feature_id, query)
+                logger.info(
+                    "[reviewer] supplement SKIP duplicate_query target=%s query=%r",
+                    target.target_id,
+                    query,
+                )
                 continue
             seen_queries.add(qkey)
-            logger.info("[reviewer] supplement query feature=%s query=%r", fm.feature_id, query)
+            logger.info(
+                "[reviewer] supplement query target=%s features=%s query=%r",
+                target.target_id,
+                ",".join(target_feature_ids),
+                query,
+            )
             try:
                 hits = pool.search(
                     query,
@@ -622,14 +647,15 @@ def _supplement_candidate(
                     )
                     continue
                 hit.url = hit_url
-                evidence = _evidence_from_hit(hit, fm.feature_id)
-                fm.evidence.append(evidence)
+                evidence = _evidence_from_hit(hit, target_feature_ids)
+                for fid in target_feature_ids:
+                    target_match_by_id[fid].evidence.append(evidence)
                 cand.main_evidence_urls.append(hit_url)
                 existing_urls.add(hit_url)
                 added += 1
                 logger.info(
-                    "[reviewer] supplement ADD feature=%s tier=%s source=%s url=%s",
-                    fm.feature_id,
+                    "[reviewer] supplement ADD features=%s tier=%s source=%s url=%s",
+                    ",".join(target_feature_ids),
                     evidence_strategy.tier_label(hit.url, hit.title),
                     evidence.source_type,
                     hit.url,
@@ -639,7 +665,7 @@ def _supplement_candidate(
     return added
 
 
-def _evidence_from_hit(hit, feature_id: str) -> Evidence:
+def _evidence_from_hit(hit, feature_ids: tuple[str, ...]) -> Evidence:
     text = hit.snippet or ""
     title = hit.title or ""
     try:
@@ -657,5 +683,5 @@ def _evidence_from_hit(hit, feature_id: str) -> Evidence:
             f"[最终复核补搜 / {evidence_strategy.tier_label(hit.url, title)}] "
             + text[:REVIEW_SUPPLEMENT_SUMMARY_CHARS]
         ).strip(),
-        supported_features=[feature_id],
+        supported_features=list(feature_ids),
     )

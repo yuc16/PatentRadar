@@ -26,7 +26,7 @@ from .perspectives import AgentPerspective
 logger = logging.getLogger("patentradar.agent")
 
 
-# 候选发现保持宽召回；证据阶段靠“先判定、后补 gap”控制调用量。
+# 候选发现保持宽召回；证据阶段按“证据目标”分组检索，避免逐特征盲扫。
 MIN_QUERIES = 5
 MAX_QUERIES = 10
 MAX_HITS_PER_ENGINE = 8
@@ -36,9 +36,12 @@ EVIDENCE_READ_URL_LIMIT = 8
 EVIDENCE_PAGE_LIMIT = 14
 EVIDENCE_URL_POOL_LIMIT = 36
 EVIDENCE_HITS_PER_QUERY = 3
-GENERAL_EVIDENCE_QUERY_LIMIT = 3
-FEATURE_EVIDENCE_QUERY_LIMIT = 2
+EVIDENCE_TARGET_LIMIT = 4
+EVIDENCE_QUERIES_PER_TARGET = 3
+GAP_EVIDENCE_TARGET_LIMIT = 3
+GAP_EVIDENCE_QUERIES_PER_TARGET = 2
 GAP_FEATURE_SUPPLEMENT_LIMIT = 5
+INDUSTRY_SITE_EVIDENCE_QUERY_LIMIT = 2
 CRAWL_TARGETS_PER_CANDIDATE = 2
 CRAWL_PAGES_PER_TARGET = 3
 SECOND_SEARCH_MIN_VALID = 3
@@ -175,9 +178,9 @@ class SearchAgent:
                     self.tag, stage, idx, len(focus_list), label,
                 )
                 product_launch_date = normalize_date_string(c.get("product_launch_date"))
-                if is_after_application(product_launch_date, task.patent.application_date) is False:
+                if is_after_application(product_launch_date, task.patent.application_date) is True:
                     reason = (
-                        "竞品上市/发布/量产日期不晚于专利申请日"
+                        "竞品上市/发布/量产日期晚于专利申请日"
                         f"（竞品: {product_launch_date or '未知'}；申请日: "
                         f"{task.patent.application_date or '未知'}）"
                     )
@@ -444,6 +447,69 @@ class SearchAgent:
             if len(all_hits) >= COARSE_POOL_LIMIT:
                 return
 
+    def _search_industry_evidence_sites(
+        self,
+        *,
+        task: TaskPackage,
+        company: str,
+        product: str,
+        aliases: list[str],
+        queries_used: list[QueryRecord],
+        seen_queries: set[str],
+        ev_urls: list[str],
+        ev_titles: dict[str, str],
+        ev_summaries: dict[str, str],
+        ev_feature_hints: dict[str, set[str]],
+    ) -> None:
+        sites = cn_industry.load_sites(task.industry_tag)
+        evidence_sites = [
+            s for s in sites
+            if "论坛" not in s.type
+            if any(
+                token in s.type
+                for token in ("厂商官网", "规格", "资料", "经销", "代理", "供应", "手册", "PDF")
+            )
+        ]
+        evidence_sites.sort(key=self._evidence_site_priority)
+        site_filter = cn_industry.build_site_filter(evidence_sites, max_sites=8)
+        if not site_filter:
+            return
+        feature_ids = tuple(f.feature_id for f in task.claim_features if f.feature_id)
+        base = f"{company} {product}".strip()
+        queries = [
+            f"{base} datasheet specification 规格书 参数 产品手册 {site_filter}",
+            f"{base} 经销商 供应商 代理商 PDF 规格 资料 {site_filter}",
+        ]
+        logger.info(
+            "%s     evidence site seeds tag=%s sites=%d",
+            self.tag,
+            task.industry_tag or "(未识别)",
+            len(evidence_sites),
+        )
+        for query in queries[:INDUSTRY_SITE_EVIDENCE_QUERY_LIMIT]:
+            self._search_evidence_query(
+                query=query,
+                feature_ids=feature_ids,
+                purpose="证据检索",
+                queries_used=queries_used,
+                seen_queries=seen_queries,
+                ev_urls=ev_urls,
+                ev_titles=ev_titles,
+                ev_summaries=ev_summaries,
+                ev_feature_hints=ev_feature_hints,
+                company=company,
+                product=product,
+                aliases=aliases,
+            )
+
+    @staticmethod
+    def _evidence_site_priority(site) -> tuple[int, str]:
+        if any(token in site.type for token in ("规格", "资料", "经销", "代理", "供应", "PDF")):
+            return (0, site.domain)
+        if "厂商官网" in site.type:
+            return (1, site.domain)
+        return (2, site.domain)
+
     # ----------- S4-S5 ------------
     def _filter_candidates(
         self,
@@ -506,8 +572,9 @@ class SearchAgent:
         ).strip() or None
         initial_ev = cand.get("initial_evidence") or []
 
-        # S6 证据补充检索先用中英双语通用 query 建立产品证据面；
-        # 逐特征 query 只在首轮判断后对 gap 特征触发，避免盲扫所有 Fi。
+        # S6 证据补充检索按“证据目标”分组：一份规格书/产品页可同时支撑
+        # 多个相关特征，因此先按目标生成中英 query，再把命中的 URL 标注到
+        # 对应的一组 Fi 上。
         ev_urls: list[str] = []
         ev_titles: dict[str, str] = {}
         ev_summaries: dict[str, str] = {}
@@ -526,23 +593,52 @@ class SearchAgent:
                 ev_summaries[url] = snippet
         ev_feature_hints: dict[str, set[str]] = {}
         seen_evidence_queries: set[str] = set()
-        for query in evidence_strategy.build_general_evidence_queries(company, product)[
-            :GENERAL_EVIDENCE_QUERY_LIMIT
-        ]:
-            self._search_evidence_query(
-                query=query,
-                feature_id=None,
-                purpose="证据检索",
-                queries_used=queries_used,
-                seen_queries=seen_evidence_queries,
-                ev_urls=ev_urls,
-                ev_titles=ev_titles,
-                ev_summaries=ev_summaries,
-                ev_feature_hints=ev_feature_hints,
-                company=company,
-                product=product,
-                aliases=aliases,
+        evidence_targets = evidence_strategy.build_evidence_targets(
+            company,
+            product,
+            task.claim_features,
+            industry_tag=task.industry_tag,
+        )
+        logger.info(
+            "%s     evidence targets START count=%d",
+            self.tag,
+            len(evidence_targets),
+        )
+        for target in evidence_targets[:EVIDENCE_TARGET_LIMIT]:
+            logger.info(
+                "%s     evidence target=%s features=%s queries=%d",
+                self.tag,
+                target.label,
+                ",".join(target.feature_ids) or "(候选事实)",
+                min(len(target.queries), EVIDENCE_QUERIES_PER_TARGET),
             )
+            for query in target.queries[:EVIDENCE_QUERIES_PER_TARGET]:
+                self._search_evidence_query(
+                    query=query,
+                    feature_ids=target.feature_ids,
+                    purpose="证据检索",
+                    queries_used=queries_used,
+                    seen_queries=seen_evidence_queries,
+                    ev_urls=ev_urls,
+                    ev_titles=ev_titles,
+                    ev_summaries=ev_summaries,
+                    ev_feature_hints=ev_feature_hints,
+                    company=company,
+                    product=product,
+                    aliases=aliases,
+                )
+        self._search_industry_evidence_sites(
+            task=task,
+            company=company,
+            product=product,
+            aliases=aliases,
+            queries_used=queries_used,
+            seen_queries=seen_evidence_queries,
+            ev_urls=ev_urls,
+            ev_titles=ev_titles,
+            ev_summaries=ev_summaries,
+            ev_feature_hints=ev_feature_hints,
+        )
 
         # 中国上市公司：用巨潮资讯查公告 / 年报全文（仅 deepseek 视角触发）
         if self.persp.cn_industry_routing and company:
@@ -631,15 +727,49 @@ class SearchAgent:
                 ",".join(f.feature_id for f in gap_features),
             )
             before_urls = set(ev_urls)
+            gap_targets = evidence_strategy.build_evidence_targets(
+                company,
+                product,
+                gap_features,
+                industry_tag=task.industry_tag,
+                include_counter=True,
+            )
+            for target in gap_targets[:GAP_EVIDENCE_TARGET_LIMIT]:
+                if not target.feature_ids:
+                    continue
+                logger.info(
+                    "%s     gap target=%s features=%s queries=%d",
+                    self.tag,
+                    target.label,
+                    ",".join(target.feature_ids) or "(候选事实)",
+                    min(len(target.queries), GAP_EVIDENCE_QUERIES_PER_TARGET),
+                )
+                for query in target.queries[:GAP_EVIDENCE_QUERIES_PER_TARGET]:
+                    self._search_evidence_query(
+                        query=query,
+                        feature_ids=target.feature_ids,
+                        purpose="证据检索",
+                        queries_used=queries_used,
+                        seen_queries=seen_evidence_queries,
+                        ev_urls=ev_urls,
+                        ev_titles=ev_titles,
+                        ev_summaries=ev_summaries,
+                        ev_feature_hints=ev_feature_hints,
+                        company=company,
+                        product=product,
+                        aliases=aliases,
+                    )
             for feature in gap_features:
+                if any(feature.feature_id in target.feature_ids for target in gap_targets):
+                    continue
                 for query in evidence_strategy.build_feature_evidence_queries(
                     company,
                     product,
                     feature,
-                )[:FEATURE_EVIDENCE_QUERY_LIMIT]:
+                )[:GAP_EVIDENCE_QUERIES_PER_TARGET]:
                     self._search_evidence_query(
                         query=query,
-                        feature_id=feature.feature_id,
+                        feature_ids=(feature.feature_id,),
                         purpose="证据检索",
                         queries_used=queries_used,
                         seen_queries=seen_evidence_queries,
@@ -716,7 +846,7 @@ class SearchAgent:
         self,
         *,
         query: str,
-        feature_id: str | None,
+        feature_ids: list[str] | tuple[str, ...] | None,
         purpose: str,
         queries_used: list[QueryRecord],
         seen_queries: set[str],
@@ -730,6 +860,7 @@ class SearchAgent:
     ) -> None:
         if not query:
             return
+        feature_ids = tuple(fid for fid in (feature_ids or ()) if fid)
         qkey = evidence_strategy.normalize_query(query)
         if qkey in seen_queries:
             logger.info("%s     evidence query SKIP duplicate query=%r", self.tag, query)
@@ -756,7 +887,7 @@ class SearchAgent:
             "%s     证据补搜 [%s]%s → %d 条 query=%r",
             self.tag,
             "+".join(evidence_engines),
-            f" {feature_id}" if feature_id else "",
+            f" {','.join(feature_ids)}" if feature_ids else "",
             len(extra),
             query,
         )
@@ -777,7 +908,7 @@ class SearchAgent:
                     self.tag, h.source, (h.title or "")[:120], url,
                 )
                 continue
-            if feature_id:
+            for feature_id in feature_ids:
                 ev_feature_hints.setdefault(url, set()).add(feature_id)
             if url not in ev_urls and len(ev_urls) < EVIDENCE_URL_POOL_LIMIT:
                 ev_urls.append(url)

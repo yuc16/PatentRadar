@@ -8,6 +8,7 @@ low-authority material only as leads.
 from __future__ import annotations
 
 import re
+from dataclasses import dataclass
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from .schemas import ClaimFeature
@@ -120,6 +121,16 @@ _GENERIC_TERMS = {
     "battery",
     "cell",
 }
+
+
+@dataclass(frozen=True)
+class EvidenceTarget:
+    """A focused evidence goal that may support several linked claim features."""
+
+    target_id: str
+    label: str
+    feature_ids: tuple[str, ...]
+    queries: tuple[str, ...]
 
 
 def normalize_query(query: str) -> str:
@@ -312,6 +323,116 @@ def build_general_evidence_queries(company: str, product: str) -> list[str]:
     ])
 
 
+def build_evidence_targets(
+    company: str,
+    product: str,
+    features: list[ClaimFeature],
+    *,
+    industry_tag: str | None = None,
+    include_counter: bool = False,
+) -> list[EvidenceTarget]:
+    """Generate bilingual evidence goals for a candidate product.
+
+    One datasheet or product page often supports several features at once
+    (dimensions, capacity, structure, parameters).  Targets therefore group
+    related features before query generation instead of searching Fi one by one.
+    """
+    base = f"{company} {product}".strip()
+    if not base:
+        return []
+
+    feature_ids = tuple(f.feature_id for f in features if f.feature_id)
+    targets: list[EvidenceTarget] = []
+
+    def add_target(
+        target_id: str,
+        label: str,
+        ids: list[str] | tuple[str, ...],
+        queries: list[str],
+    ) -> None:
+        deduped = tuple(_dedupe_queries(queries))
+        if not deduped:
+            return
+        targets.append(EvidenceTarget(
+            target_id=target_id,
+            label=label,
+            feature_ids=tuple(dict.fromkeys(ids)),
+            queries=deduped,
+        ))
+
+    spec_ids = _feature_ids_by_predicate(features, _is_spec_or_parameter_feature)
+    if spec_ids or (industry_tag or "").lower() == "battery":
+        spec_queries = [
+            f"{base} 规格 参数 规格书 产品手册 datasheet PDF",
+            f"{base} datasheet specification product manual parameters pdf",
+            f"{base} filetype:pdf datasheet specification 规格书 产品手册",
+            f"{base} 经销商 代理商 供应商 规格 参数 产品手册",
+            f"{base} distributor supplier dealer product specification datasheet",
+        ]
+        if (industry_tag or "").lower() == "battery":
+            spec_queries.extend([
+                f"{base} 电芯 规格书 容量 电压 尺寸 datasheet",
+                f"{base} battery cell datasheet capacity voltage dimensions",
+                f"{base} LiFePO4 NMC cell specification pdf",
+            ])
+        add_target("spec", "规格/参数/手册证据", spec_ids or list(feature_ids), spec_queries)
+    else:
+        add_target("product_docs", "产品/技术资料证据", feature_ids, [
+            f"{base} 官网 产品 技术资料 白皮书 说明",
+            f"{base} product page technical document white paper solution",
+            f"{base} 技术方案 使用说明 SDK API 案例",
+            f"{base} documentation guide case study product description",
+        ])
+
+    structure_ids = _feature_ids_by_predicate(features, _is_structure_feature)
+    if structure_ids:
+        add_target("structure", "结构/形态/连接证据", structure_ids, [
+            f"{base} 结构 外形 连接 壳体 拆解 图示 规格书",
+            f"{base} structure housing package connection teardown diagram",
+            f"{base} 产品页 结构图 技术资料 white paper",
+            f"{base} technical document structure diagram product page",
+        ])
+
+    algorithm_ids = _feature_ids_by_predicate(features, _is_algorithm_feature)
+    if algorithm_ids:
+        add_target("algorithm", "算法/控制/流程证据", algorithm_ids, [
+            f"{base} 算法 控制 方法 SDK API 白皮书 技术文档",
+            f"{base} algorithm control method SDK API white paper technical document",
+            f"{base} calibration compensation workflow developer documentation",
+            f"{base} 技术方案 说明书 软件 算法 校准 补偿",
+        ])
+
+    covered = {fid for t in targets for fid in t.feature_ids}
+    for feature in features:
+        if feature.feature_id in covered:
+            continue
+        add_target(
+            f"feature_{feature.feature_id}",
+            f"{feature.feature_id} 定向证据",
+            [feature.feature_id],
+            build_feature_evidence_queries(
+                company,
+                product,
+                feature,
+                include_counter=include_counter,
+            ),
+        )
+
+    add_target("market_date", "上市/发布/量产日期证据", (), [
+        f"{base} 上市 发布时间 发布 量产 首发",
+        f"{base} launch release mass production announced availability",
+        f"{base} product launch date released supplier catalog",
+    ])
+
+    if include_counter and feature_ids:
+        add_target("counter", "反证/差异证据", feature_ids, [
+            f"{base} difference limitation not support conflict principle 反证 不支持 差异",
+            f"{base} review teardown comparison limitation 缺陷 不同 技术路线",
+        ])
+
+    return _dedupe_targets(targets)
+
+
 def build_feature_evidence_queries(
     company: str,
     product: str,
@@ -407,9 +528,72 @@ def _feature_suffix(feature: ClaimFeature) -> str:
     return "规格书 产品手册 白皮书 技术资料"
 
 
+def _feature_ids_by_predicate(
+    features: list[ClaimFeature],
+    predicate,
+) -> list[str]:
+    return [f.feature_id for f in features if f.feature_id and predicate(f)]
+
+
+def _is_spec_or_parameter_feature(feature: ClaimFeature) -> bool:
+    text = _feature_text_with_terms(feature)
+    return bool(re.search(r"\d", text)) or any(
+        x in text
+        for x in (
+            "长度", "宽度", "厚度", "高度", "尺寸", "长宽", "比例", "表面积",
+            "体积", "容量", "电压", "电流", "能量", "密度", "质量", "重量",
+            "参数", "规格", "diameter", "length", "width", "height", "thickness",
+            "dimension", "capacity", "voltage", "current", "density", "volume",
+        )
+    )
+
+
+def _is_structure_feature(feature: ClaimFeature) -> bool:
+    text = _feature_text_with_terms(feature)
+    return any(
+        x in text
+        for x in (
+            "结构", "壳体", "外壳", "封装", "连接", "极柱", "极耳", "层叠",
+            "叠置", "方壳", "刀片", "长方体", "矩形", "安装", "布置",
+            "structure", "housing", "package", "connection", "terminal", "tab",
+            "prismatic", "blade", "rectangular",
+        )
+    )
+
+
 def _is_algorithm_feature(feature: ClaimFeature) -> bool:
-    text = feature.feature_text.lower()
+    text = _feature_text_with_terms(feature)
     return "$" in text or "公式" in text or any(x in text for x in ("算法", "计算", "修正", "校准", "系数"))
+
+
+def _feature_text_with_terms(feature: ClaimFeature) -> str:
+    return " ".join(
+        [feature.feature_text, *feature.marketing_terms, *feature.engineering_terms]
+    ).lower()
+
+
+def _dedupe_targets(targets: list[EvidenceTarget]) -> list[EvidenceTarget]:
+    out: list[EvidenceTarget] = []
+    seen_ids: set[str] = set()
+    seen_queries: set[str] = set()
+    for target in targets:
+        if target.target_id in seen_ids:
+            continue
+        queries: list[str] = []
+        for query in target.queries:
+            key = normalize_query(query)
+            if key and key not in seen_queries:
+                seen_queries.add(key)
+                queries.append(query)
+        if queries:
+            out.append(EvidenceTarget(
+                target_id=target.target_id,
+                label=target.label,
+                feature_ids=target.feature_ids,
+                queries=tuple(queries),
+            ))
+            seen_ids.add(target.target_id)
+    return out
 
 
 def _dedupe_queries(queries: list[str]) -> list[str]:

@@ -39,7 +39,8 @@ DEFAULT_EXCLUDE_DOMAINS = (
     "ip.com",
 )
 
-READ_URL_ORDER = ("exa", "tavily")
+# Tavily 支持多 key 轮换，正文读取优先用 Tavily Extract；Exa Contents 作为兜底。
+READ_URL_ORDER = ("tavily", "exa")
 
 
 def _is_excluded(url: str, exclude_domains: tuple[str, ...]) -> bool:
@@ -130,7 +131,7 @@ def search(
 def read_url(url: str, *, log_context: str = "") -> ExtractedPage:
     """正文抽取兜底链。
 
-    Exa Contents 优先，读不到正文时使用 Tavily Extract 兜底。
+    Tavily Extract 优先，读不到正文时使用 Exa Contents 兜底。
     """
     last_exc: Exception | None = None
     ctx = f"{log_context} " if log_context else ""
