@@ -545,11 +545,11 @@ def _supplement_candidate(
     seen_queries: set[str],
 ) -> int:
     existing_urls = {
-        ev.url
+        evidence_strategy.canonicalize_url(ev.url)
         for fm in cand.feature_match_table
         for ev in fm.evidence
         if ev.url
-    } | set(cand.main_evidence_urls)
+    } | {evidence_strategy.canonicalize_url(url) for url in cand.main_evidence_urls}
     gap_ids = {
         str(g.get("feature_id", "")).strip()
         for g in cand.remaining_gaps
@@ -602,14 +602,30 @@ def _supplement_candidate(
                 reverse=True,
             )
             for hit in hits:
-                if not hit.url or hit.url in existing_urls:
+                hit_url = evidence_strategy.canonicalize_url(hit.url)
+                if not hit_url or hit_url in existing_urls:
                     if hit.url:
-                        logger.info("[reviewer] supplement SKIP duplicate_url url=%s", hit.url)
+                        logger.info("[reviewer] supplement SKIP duplicate_url url=%s", hit_url)
                     continue
+                if not evidence_strategy.is_relevant_hit(
+                    hit_url,
+                    hit.title,
+                    hit.snippet,
+                    cand.company,
+                    cand.product,
+                    cand.aliases,
+                ):
+                    logger.info(
+                        "[reviewer] supplement SKIP low_relevance title=%r url=%s",
+                        (hit.title or "")[:120],
+                        hit_url,
+                    )
+                    continue
+                hit.url = hit_url
                 evidence = _evidence_from_hit(hit, fm.feature_id)
                 fm.evidence.append(evidence)
-                cand.main_evidence_urls.append(hit.url)
-                existing_urls.add(hit.url)
+                cand.main_evidence_urls.append(hit_url)
+                existing_urls.add(hit_url)
                 added += 1
                 logger.info(
                     "[reviewer] supplement ADD feature=%s tier=%s source=%s url=%s",

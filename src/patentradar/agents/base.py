@@ -8,7 +8,7 @@ from typing import Any
 
 from .. import compactor, evidence as evidence_strategy, prompts, scoring
 from ..config import AGENT_LLM_TIMEOUT
-from ..dates import normalize_date_string
+from ..dates import is_after_application, normalize_date_string
 from ..llm.client import chat_json
 from ..schemas import (
     AgentOutput,
@@ -32,16 +32,18 @@ MAX_QUERIES = 10
 MAX_HITS_PER_ENGINE = 8
 COARSE_POOL_LIMIT = 50
 FOCUS_POOL_LIMIT = 12
-EVIDENCE_READ_URL_LIMIT = 12
-EVIDENCE_PAGE_LIMIT = 24
-EVIDENCE_URL_POOL_LIMIT = 60
+EVIDENCE_READ_URL_LIMIT = 8
+EVIDENCE_PAGE_LIMIT = 14
+EVIDENCE_URL_POOL_LIMIT = 36
 EVIDENCE_HITS_PER_QUERY = 3
-GENERAL_EVIDENCE_QUERY_LIMIT = 4
+GENERAL_EVIDENCE_QUERY_LIMIT = 3
 FEATURE_EVIDENCE_QUERY_LIMIT = 2
 GAP_FEATURE_SUPPLEMENT_LIMIT = 5
 CRAWL_TARGETS_PER_CANDIDATE = 2
 CRAWL_PAGES_PER_TARGET = 3
 SECOND_SEARCH_MIN_VALID = 3
+MIN_INITIAL_SCORE_FOR_GAP = 55.0
+MIN_INITIAL_POSITIVE_FEATURES_FOR_GAP = 2
 TOP_K = 5
 
 # 中国行业路由：每条原 query 衍生出 site: 限定 query 的最大数（媒体组 + 厂商组）
@@ -150,8 +152,19 @@ class SearchAgent:
         scored: list[Candidate] = []
         attempted_labels: set[str] = set()
 
-        def _evaluate_focus_list(focus_list: list[dict[str, Any]], stage: str) -> None:
+        def _evaluate_focus_list(
+            focus_list: list[dict[str, Any]],
+            stage: str,
+            *,
+            stop_when_valid: int | None = None,
+        ) -> None:
             for idx, c in enumerate(focus_list, start=1):
+                if stop_when_valid is not None and len(scored) >= stop_when_valid:
+                    logger.info(
+                        "%s   %s 已补足有效候选 %d/%d，停止继续二轮处理",
+                        self.tag, stage, len(scored), stop_when_valid,
+                    )
+                    return
                 label = f"{c.get('company')}/{c.get('product')}"
                 label_key = label.lower().strip()
                 if label_key in attempted_labels:
@@ -161,6 +174,24 @@ class SearchAgent:
                     "%s S6-S7 %s [%d/%d] 处理候选 %s",
                     self.tag, stage, idx, len(focus_list), label,
                 )
+                product_launch_date = normalize_date_string(c.get("product_launch_date"))
+                if is_after_application(product_launch_date, task.patent.application_date) is False:
+                    reason = (
+                        "竞品上市/发布/量产日期不晚于专利申请日"
+                        f"（竞品: {product_launch_date or '未知'}；申请日: "
+                        f"{task.patent.application_date or '未知'}）"
+                    )
+                    logger.info("%s   %s 预排除: %s", self.tag, label, reason)
+                    discarded.append(DiscardedCandidate(
+                        company=c.get("company", ""),
+                        product=c.get("product", ""),
+                        discard_reason=reason,
+                        evidence_urls=[
+                            e.get("url", "") for e in (c.get("initial_evidence") or [])
+                            if isinstance(e, dict) and e.get("url")
+                        ],
+                    ))
+                    continue
                 try:
                     cand = self._evaluate_candidate(task, c, queries_used)
                 except Exception as exc:  # noqa: BLE001
@@ -190,6 +221,12 @@ class SearchAgent:
                     self.tag, label, cand.score, n_match, len(cand.feature_match_table),
                 )
                 scored.append(cand)
+                if stop_when_valid is not None and len(scored) >= stop_when_valid:
+                    logger.info(
+                        "%s   %s 已补足有效候选 %d/%d，停止继续二轮处理",
+                        self.tag, stage, len(scored), stop_when_valid,
+                    )
+                    return
 
         _evaluate_focus_list(focus_candidates, "首轮")
 
@@ -213,7 +250,11 @@ class SearchAgent:
                     for d in rescue_decisions.get("discarded_candidates", [])
                 )
                 logger.info("%s   二次搜索保留重点候选 %d", self.tag, len(rescue_focus))
-                _evaluate_focus_list(rescue_focus, "二轮")
+                _evaluate_focus_list(
+                    rescue_focus,
+                    "二轮",
+                    stop_when_valid=SECOND_SEARCH_MIN_VALID,
+                )
 
         # ---------- S9-S10: 排序 + Top5 ----------
         scored.sort(key=lambda c: (c.score, *scoring.tiebreak_key(c)), reverse=True)
@@ -467,13 +508,22 @@ class SearchAgent:
 
         # S6 证据补充检索先用中英双语通用 query 建立产品证据面；
         # 逐特征 query 只在首轮判断后对 gap 特征触发，避免盲扫所有 Fi。
-        ev_urls: list[str] = [e.get("url", "") for e in initial_ev if e.get("url")]
-        ev_titles: dict[str, str] = {
-            e.get("url", ""): e.get("title", "") for e in initial_ev
-        }
-        ev_summaries: dict[str, str] = {
-            e.get("url", ""): e.get("snippet", "") for e in initial_ev
-        }
+        ev_urls: list[str] = []
+        ev_titles: dict[str, str] = {}
+        ev_summaries: dict[str, str] = {}
+        for e in initial_ev:
+            if not isinstance(e, dict) or not e.get("url"):
+                continue
+            url = evidence_strategy.canonicalize_url(str(e.get("url", "")))
+            title = str(e.get("title", "") or "")
+            snippet = str(e.get("snippet", "") or "")
+            if not evidence_strategy.is_relevant_hit(url, title, snippet, company, product, aliases):
+                logger.info("%s     initial evidence SKIP low_relevance url=%s", self.tag, url)
+                continue
+            if url not in ev_urls:
+                ev_urls.append(url)
+                ev_titles[url] = title
+                ev_summaries[url] = snippet
         ev_feature_hints: dict[str, set[str]] = {}
         seen_evidence_queries: set[str] = set()
         for query in evidence_strategy.build_general_evidence_queries(company, product)[
@@ -482,13 +532,16 @@ class SearchAgent:
             self._search_evidence_query(
                 query=query,
                 feature_id=None,
-                purpose="证据检索-通用",
+                purpose="证据检索",
                 queries_used=queries_used,
                 seen_queries=seen_evidence_queries,
                 ev_urls=ev_urls,
                 ev_titles=ev_titles,
                 ev_summaries=ev_summaries,
                 ev_feature_hints=ev_feature_hints,
+                company=company,
+                product=product,
+                aliases=aliases,
             )
 
         # 中国上市公司：用巨潮资讯查公告 / 年报全文（仅 deepseek 视角触发）
@@ -514,12 +567,13 @@ class SearchAgent:
                 ))
                 added = 0
                 for h in cn_hits:
-                    if h.url and h.url not in ev_urls:
-                        ev_urls.append(h.url)
-                        ev_titles[h.url] = h.title
-                        ev_summaries[h.url] = h.snippet
+                    url = evidence_strategy.canonicalize_url(h.url)
+                    if url and url not in ev_urls:
+                        ev_urls.append(url)
+                        ev_titles[url] = h.title
+                        ev_summaries[url] = h.snippet
                         added += 1
-                        logger.info("%s     cninfo HIT title=%r url=%s", self.tag, h.title[:160], h.url)
+                        logger.info("%s     cninfo HIT title=%r url=%s", self.tag, h.title[:160], url)
                 logger.info(
                     "%s     cninfo 公告补搜 %r → %d 条 (%d 新)",
                     self.tag, cninfo_query, len(cn_hits), added,
@@ -552,6 +606,24 @@ class SearchAgent:
             match["feature_matches"],
             match["remaining_gaps"],
         )
+        initial_score = scoring.candidate_total_score(
+            match["feature_matches"],
+            feature_ids=[f.feature_id for f in task.claim_features],
+        )
+        initial_positive = sum(
+            1 for fm in match["feature_matches"]
+            if fm.judgement in ("明确满足", "可能满足")
+        )
+        if (
+            gap_features
+            and initial_score < MIN_INITIAL_SCORE_FOR_GAP
+            and initial_positive < MIN_INITIAL_POSITIVE_FEATURES_FOR_GAP
+        ):
+            logger.info(
+                "%s     gap supplement SKIP reason=low_initial_signal score=%.1f positives=%d",
+                self.tag, initial_score, initial_positive,
+            )
+            gap_features = []
         if gap_features:
             logger.info(
                 "%s     gap supplement START features=%s",
@@ -568,13 +640,16 @@ class SearchAgent:
                     self._search_evidence_query(
                         query=query,
                         feature_id=feature.feature_id,
-                        purpose="证据检索-gap补搜",
+                        purpose="证据检索",
                         queries_used=queries_used,
                         seen_queries=seen_evidence_queries,
                         ev_urls=ev_urls,
                         ev_titles=ev_titles,
                         ev_summaries=ev_summaries,
                         ev_feature_hints=ev_feature_hints,
+                        company=company,
+                        product=product,
+                        aliases=aliases,
                     )
             ev_urls = self._sort_and_log_evidence_urls(ev_urls, ev_titles, phase="gap")
             pages = self._read_candidate_pages(
@@ -649,6 +724,9 @@ class SearchAgent:
         ev_titles: dict[str, str],
         ev_summaries: dict[str, str],
         ev_feature_hints: dict[str, set[str]],
+        company: str,
+        product: str,
+        aliases: list[str],
     ) -> None:
         if not query:
             return
@@ -685,12 +763,26 @@ class SearchAgent:
         for h in extra:
             if not h.url:
                 continue
+            url = evidence_strategy.canonicalize_url(h.url)
+            if not evidence_strategy.is_relevant_hit(
+                url,
+                h.title,
+                h.snippet,
+                company,
+                product,
+                aliases,
+            ):
+                logger.info(
+                    "%s     evidence HIT SKIP low_relevance source=%s title=%r url=%s",
+                    self.tag, h.source, (h.title or "")[:120], url,
+                )
+                continue
             if feature_id:
-                ev_feature_hints.setdefault(h.url, set()).add(feature_id)
-            if h.url not in ev_urls and len(ev_urls) < EVIDENCE_URL_POOL_LIMIT:
-                ev_urls.append(h.url)
-                ev_titles[h.url] = h.title
-                ev_summaries[h.url] = h.snippet
+                ev_feature_hints.setdefault(url, set()).add(feature_id)
+            if url not in ev_urls and len(ev_urls) < EVIDENCE_URL_POOL_LIMIT:
+                ev_urls.append(url)
+                ev_titles[url] = h.title
+                ev_summaries[url] = h.snippet
 
     def _sort_and_log_evidence_urls(
         self,

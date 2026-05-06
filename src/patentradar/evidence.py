@@ -8,7 +8,7 @@ low-authority material only as leads.
 from __future__ import annotations
 
 import re
-from urllib.parse import urlparse
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from .schemas import ClaimFeature
 
@@ -21,9 +21,17 @@ _LOW_VALUE_DOMAINS = (
     "xjishu.com",
     "zhuanlichaxun.net",
     "soopat.com",
+    "datasheet.eeworld.com.cn",
+    "datasheetarchive.com",
+    "datasheetq.com",
     "book118.com",
+    "max.book118.com",
     "docin.com",
     "doc88.com",
+    "taodocs.com",
+    "souwenku.com",
+    "wendoc.com",
+    "scribd.com",
     "weixin.qq.com",
     "zhihu.com",
     "csdn.net",
@@ -72,6 +80,47 @@ _CRAWL_PATH_HINTS = (
     "解决方案",
 )
 
+_TRACKING_QUERY_KEYS = {
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_term",
+    "utm_content",
+    "utm_id",
+    "srsltid",
+    "fbclid",
+    "gclid",
+    "yclid",
+    "spm",
+}
+
+_GENERIC_TERMS = {
+    "公司",
+    "股份",
+    "有限",
+    "集团",
+    "科技",
+    "能源",
+    "动力",
+    "电子",
+    "电池",
+    "电芯",
+    "产品",
+    "技术",
+    "方案",
+    "系统",
+    "官网",
+    "规格",
+    "规格书",
+    "手册",
+    "datasheet",
+    "specification",
+    "manual",
+    "product",
+    "battery",
+    "cell",
+}
+
 
 def normalize_query(query: str) -> str:
     return _SPACE_RE.sub(" ", (query or "").strip().lower())
@@ -81,9 +130,36 @@ def domain_of(url: str) -> str:
     return urlparse(url or "").netloc.lower().lstrip("www.")
 
 
+def canonicalize_url(url: str) -> str:
+    """Normalize URLs for evidence de-duplication without losing semantic query args."""
+    parsed = urlparse((url or "").strip())
+    if not parsed.netloc:
+        return (url or "").strip()
+    query_items = []
+    for key, value in parse_qsl(parsed.query, keep_blank_values=True):
+        low_key = key.lower()
+        if low_key.startswith("utm_") or low_key in _TRACKING_QUERY_KEYS:
+            continue
+        query_items.append((key, value))
+    path = parsed.path or "/"
+    if path != "/":
+        path = path.rstrip("/")
+    return urlunparse((
+        parsed.scheme.lower() or "https",
+        parsed.netloc.lower(),
+        path,
+        "",
+        urlencode(query_items, doseq=True),
+        "",
+    ))
+
+
 def source_type_from_url_title(url: str, title: str = "") -> str:
     low = f"{url} {title}".lower()
     title_cn = title or ""
+    domain = domain_of(url)
+    if any(x in domain for x in _LOW_VALUE_DOMAINS):
+        return "二手转载"
     if ".pdf" in low:
         if any(x in low for x in ("datasheet", "data-sheet", "数据手册", "规格书", "specification")):
             return "产品手册"
@@ -104,11 +180,11 @@ def source_type_from_url_title(url: str, title: str = "") -> str:
         return "白皮书"
     if any(x in low for x in ("report", "研究报告", "行业报告")):
         return "行业报告"
-    if any(x in domain_of(url) for x in ("weixin", "zhihu", "csdn", "blog")):
+    if any(x in domain for x in ("weixin", "zhihu", "csdn", "blog")):
         return "自媒体"
-    if any(x in domain_of(url) for x in ("taobao", "tmall", "jd.com", "amazon", "aliexpress")):
+    if any(x in domain for x in ("taobao", "tmall", "jd.com", "amazon", "aliexpress")):
         return "二手转载"
-    if any(x in domain_of(url) for x in _NEWS_DOMAINS) or "新闻" in title_cn:
+    if any(x in domain for x in _NEWS_DOMAINS) or "新闻" in title_cn:
         return "普通新闻"
     if _looks_official_product_page(url):
         return "官网"
@@ -125,6 +201,8 @@ def reliability_from_url_title(url: str, title: str = "") -> str:
 
 
 def tier_rank(url: str, title: str = "") -> int:
+    if any(x in domain_of(url) for x in _LOW_VALUE_DOMAINS):
+        return 0
     st = source_type_from_url_title(url, title)
     if st in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
         return 3
@@ -152,6 +230,62 @@ def sort_urls_by_value(urls: list[str], titles: dict[str, str]) -> list[str]:
         key=lambda u: (tier_rank(u, titles.get(u, "")), _looks_crawlable_path(u), -len(u)),
         reverse=True,
     )
+
+
+def relevance_score(
+    url: str,
+    title: str,
+    snippet: str,
+    company: str,
+    product: str,
+    aliases: list[str] | tuple[str, ...] = (),
+) -> int:
+    haystack = _SPACE_RE.sub(" ", f"{url} {title} {snippet}".lower())
+    score = 0
+    company_low = (company or "").lower().strip()
+    product_low = (product or "").lower().strip()
+    if company_low and company_low in haystack:
+        score += 3
+    if product_low and product_low in haystack:
+        score += 5
+    for alias in aliases:
+        alias_low = str(alias or "").lower().strip()
+        if alias_low and alias_low in haystack:
+            score += 3
+    for term in _company_variants(company):
+        if term in haystack:
+            score += 2
+    for term in _search_terms(company):
+        if term in haystack:
+            score += 1
+    for term in _search_terms(product):
+        if term in haystack:
+            score += 3 if any(ch.isdigit() for ch in term) else 2
+    for alias in aliases:
+        for term in _search_terms(str(alias)):
+            if term in haystack:
+                score += 2
+    return score
+
+
+def is_relevant_hit(
+    url: str,
+    title: str,
+    snippet: str,
+    company: str,
+    product: str,
+    aliases: list[str] | tuple[str, ...] = (),
+) -> bool:
+    """Keep evidence leads that mention the target company/product strongly enough."""
+    if not company and not product:
+        return True
+    if product and not _has_product_signal(url, title, snippet, product, aliases):
+        return False
+    score = relevance_score(url, title, snippet, company, product, aliases)
+    domain = domain_of(url)
+    if any(d in domain for d in _LOW_VALUE_DOMAINS):
+        return score >= 5
+    return score >= 3
 
 
 def is_crawl_worthy(url: str, title: str = "") -> bool:
@@ -307,3 +441,70 @@ def tier_rank_by_domain(url: str) -> int:
     if any(d in domain for d in _NEWS_DOMAINS):
         return 0
     return 1
+
+
+def _search_terms(text: str) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for raw in re.findall(r"[a-z0-9][a-z0-9+_.-]{1,}", (text or "").lower()):
+        if raw not in _GENERIC_TERMS and raw not in seen:
+            out.append(raw)
+            seen.add(raw)
+    for raw in re.findall(r"[\u4e00-\u9fff]{2,}", text or ""):
+        if raw not in _GENERIC_TERMS and raw not in seen:
+            out.append(raw)
+            seen.add(raw)
+    return out
+
+
+def _has_product_signal(
+    url: str,
+    title: str,
+    snippet: str,
+    product: str,
+    aliases: list[str] | tuple[str, ...] = (),
+) -> bool:
+    haystack = _SPACE_RE.sub(" ", f"{url} {title} {snippet}".lower())
+    product_low = (product or "").lower().strip()
+    if product_low and product_low in haystack:
+        return True
+    for alias in aliases:
+        alias_low = str(alias or "").lower().strip()
+        if alias_low and alias_low in haystack:
+            return True
+    strong_terms = [
+        term for term in _search_terms(product)
+        if any(ch.isdigit() for ch in term) or len(term) >= 4
+    ]
+    for alias in aliases:
+        strong_terms.extend(
+            term for term in _search_terms(str(alias))
+            if any(ch.isdigit() for ch in term) or len(term) >= 4
+        )
+    return any(term in haystack for term in strong_terms)
+
+
+def _company_variants(text: str) -> list[str]:
+    clean = re.sub(r"\s+", "", text or "")
+    if not clean:
+        return []
+    variants = {clean.lower()}
+    stripped = clean
+    for suffix in (
+        "股份有限公司",
+        "有限责任公司",
+        "有限公司",
+        "股份",
+        "集团",
+        "科技",
+        "能源",
+        "动力",
+        "电子",
+        "公司",
+    ):
+        if stripped.endswith(suffix) and len(stripped) > len(suffix) + 1:
+            stripped = stripped[: -len(suffix)]
+            variants.add(stripped.lower())
+    if len(stripped) >= 4:
+        variants.add(stripped[:4].lower())
+    return [v for v in variants if v and v not in _GENERIC_TERMS]

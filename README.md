@@ -86,7 +86,7 @@
 
 **MVP 9/9 全部完成**。
 
-额外实现了平衡证据模式：证据阶段默认共享 Bocha / Exa / Brave / Tavily，先用中英双语通用证据做首轮判断，再只针对缺口特征逐项补搜；高价值官网 / 产品页 / 文档中心才触发 Tavily Crawl；证据按来源分层后再进入 LLM；最终复核会跳过 Agent 已搜过的 query，针对缺口特征补搜，并由代码补齐特征表、重算分数。
+额外实现了平衡证据模式：证据阶段默认共享 Bocha / Exa / Brave / Tavily，先用中英双语通用证据做首轮判断，再只针对缺口特征逐项补搜；URL 会先规范化去重，并要求命中当前公司 / 产品 / 别名后才进入正文读取；首轮信号过弱的候选不做全量 gap 补搜；二次候选搜索补足到 3 个有效候选即停止；高价值官网 / 产品页 / 文档中心才触发 Tavily Crawl；最终复核会跳过 Agent 已搜过的 query，针对缺口特征补搜，并由代码补齐特征表、重算分数。
 
 ---
 
@@ -308,17 +308,19 @@ S5  保留重点候选（默认 12 个）
 S6  对每个候选执行共享证据池补搜：
     - company + product 先跑中英双语通用证据 query
     - Bocha / Exa / Brave / Tavily 共同作为默认证据搜索池
+    - URL 去除跟踪参数、规范化去重，并过滤明显不含当前公司 / 产品 / 别名的结果
     - 正文读取：Exa Contents → Tavily Extract 兜底
     - 首轮特征判断后，只对“证据不足 / remaining gap / 缺 URL”的特征做中英双语 gap 补搜
+    - 首轮分数和命中特征都过低时跳过 gap 补搜，避免低质量候选继续消耗搜索额度
     - 仅对官网 / 产品页 / 文档中心等高价值 URL 触发 Tavily Crawl
-    - 证据按 Tier 1/2/3/4 分层后再交给 LLM
+    - 证据按 Tier 1/2/3/4 分层后再交给 LLM，单候选默认读取前 8 个 URL、最多 14 页证据
     → ★ compactor 动态压缩 ★（按 ctx_window 预算，长文 LLM 摘要）
 S7  LLM 把证据绑定到 F1/F2/F3 + 给出四档判断
 S8  代码级补齐缺失特征 + 硬规则过滤
 S9  按完整特征表重算分数 + 证据质量同分排序
 S10 输出 Top5 JSON
 
-如果首轮有效候选明显不足（默认少于 3 个），Agent 会生成新 query 并二次搜索候选池；仍不足时宁缺毋滥。
+如果首轮有效候选明显不足（默认少于 3 个），Agent 会生成新 query 并二次搜索候选池；二轮一旦补足 3 个有效候选就立即停止，仍不足时宁缺毋滥。
 ```
 
 ### 8.4 证据策略：中英双语 + gap 补搜
@@ -327,12 +329,15 @@ S10 输出 Top5 JSON
 
 - **中英双语证据 query**：通用产品证据和逐特征证据都会同时生成中文、英文和混合 PDF / datasheet / technical document 方向，国内厂商也会查英文公开资料。
 - **两段式证据流程**：Agent 先用 company + product 通用证据做首轮特征判断；只有证据不足、有 remaining gap、或判断缺少 URL 的特征才触发逐特征补搜。
+- **候选相关性过滤**：搜索命中的 URL 会去除 `utm_*` / `srsltid` 等跟踪参数后去重；正文读取前必须在 URL / title / snippet 中匹配当前公司、产品型号或别名。通用 datasheet 聚合站、文档下载站、电商和论坛会被降级，且需要更强产品信号才保留。
+- **低信号候选止损**：首轮判断如果分数低于阈值且命中特征少于 2 个，不继续做逐特征 gap 搜索，避免把明显弱相关候选扩成几十页证据。
 - **共享搜索池**：证据阶段默认同时调用 Bocha / Exa / Brave / Tavily。任一搜索源失败或额度不足时，`pool.search` 会记录失败并继续使用其他搜索源返回结果。
 - **正文抽取顺序**：Exa Contents 优先，读不到正文时 Tavily Extract 兜底，减少不必要的正文抽取调用。
+- **正文预算**：单候选默认最多读取前 8 个高价值 URL、最多保留 14 页证据；进入 LLM 前再由 compactor 摘要 / 截断长文。
 - **来源分层**：官方网页、官方 PDF、产品手册、白皮书、年报、招股书、标准、认证资料为 Tier 1；行业报告 / 权威媒体 / 展会资料为 Tier 2；普通新闻 / 代理商 / 电商等为 Tier 3；自媒体 / 论坛 / 二手转载为低可靠线索。
 - **Crawl 目标筛选**：Tavily Crawl 只深挖官网产品页、下载页、支持页、文档中心、SDK/开发者资料页，不爬新闻站、论坛、自媒体、电商或专利站。
 - **证据-特征提示**：进入 LLM 的证据块会标注 `线索特征: F3, F5` 和来源 Tier，减少证据错配。
-- **复核补搜去重**：Reviewer 会读取 Agent 已执行的 query，跳过重复 query，只对仍为"证据不足"或有 remaining gap 的特征补搜，并额外加入反证 / 不支持 / 原理冲突方向。
+- **复核补搜去重**：Reviewer 会读取 Agent 已执行的 query，跳过重复 query，只对仍为"证据不足"或有 remaining gap 的特征补搜，并复用同一套 URL 规范化与候选相关性过滤。
 
 ### 8.5 上下文动态压缩 + LLM 摘要
 
@@ -350,7 +355,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 
 ### 8.6 GPT-5.5 复核：先补搜，再合并去重
 
-复核阶段先对 Agent 输出中"证据不足"、有 remaining gap、或缺少 URL 证据的高价值候选做一轮代码侧补搜。补搜默认继续使用 Bocha / Exa / Brave / Tavily 的共享证据池，并跳过 Agent 阶段已经执行过的 query，重点补官方资料、长文资料和反证方向，把新增证据作为输入材料交给 GPT-5.5。
+复核阶段先对 Agent 输出中"证据不足"、有 remaining gap、或缺少 URL 证据的高价值候选做一轮代码侧补搜。补搜默认继续使用 Bocha / Exa / Brave / Tavily 的共享证据池，并跳过 Agent 阶段已经执行过的 query；新增 URL 同样需要通过公司 / 产品 / 别名相关性过滤，避免把无关长 PDF 塞进复核上下文。
 
 候选同义合并不依赖代码层正则归一化——GPT-5.5 用**行业知识**自动识别同义：
 
@@ -409,7 +414,7 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 
 包含：每条 query 的命中数 + 来源、每个候选的特征判断结果、compactor 压缩统计、复核备注。
 
-更细的排查点也会进入同一个日志文件：Agent 当前阶段、每次 LLM 调用的 START/DONE 和耗时、每个搜索引擎的 START/HIT/KEEP/DUP/SKIP/FAIL、URL 抽取与 crawl 结果、最终复核补搜的每条 query 和新增 URL、补搜缓存命中、GPT-5.5 复核重试记录。
+更细的排查点也会进入同一个日志文件：Agent 当前阶段、每次 LLM 调用的 START/DONE 和耗时、每个搜索引擎的 START/HIT/KEEP/DUP/SKIP/FAIL、低相关 URL 过滤、URL 抽取与 crawl 结果、最终复核补搜的每条 query 和新增 URL、补搜缓存命中、GPT-5.5 复核重试记录。
 
 最终复核补搜会写入 `tmp/<pub_no>/review_supplement_cache.json`。如果补搜完成后最终模型调用被限流，重新执行 `review` 会直接复用缓存，继续进入最终复核，不会重复跑完整补搜。
 
