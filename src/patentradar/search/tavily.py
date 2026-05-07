@@ -21,7 +21,7 @@ CRAWL_URL = "https://api.tavily.com/crawl"
 DEFAULT_TIMEOUT = 60
 EXTRACT_TIMEOUT = 60
 CRAWL_TIMEOUT = 90
-RETRYABLE_KEY_STATUS = {401, 402, 403, 429}
+RETRYABLE_KEY_STATUS = {401, 402, 403, 429, 432}
 
 logger = logging.getLogger(__name__)
 _KEY_LOCK = threading.Lock()

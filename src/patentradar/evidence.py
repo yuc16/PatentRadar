@@ -9,9 +9,11 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
+from string import Formatter
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from .schemas import ClaimFeature
+from .search import cn_industry
 
 
 _SPACE_RE = re.compile(r"\s+")
@@ -25,6 +27,13 @@ _LOW_VALUE_DOMAINS = (
     "datasheet.eeworld.com.cn",
     "datasheetarchive.com",
     "datasheetq.com",
+    "alldatasheet.com",
+    "alldatasheet.net",
+    "alldatasheetde.com",
+    "datasheetcatalog.net",
+    "manualslib.com",
+    "semiee.com",
+    "findic.us",
     "book118.com",
     "max.book118.com",
     "docin.com",
@@ -39,6 +48,9 @@ _LOW_VALUE_DOMAINS = (
     "taobao.com",
     "tmall.com",
     "jd.com",
+    "1688.com",
+    "dhgate.com",
+    "made-in-china.com",
     "amazon.",
     "aliexpress.",
 )
@@ -104,8 +116,6 @@ _GENERIC_TERMS = {
     "能源",
     "动力",
     "电子",
-    "电池",
-    "电芯",
     "产品",
     "技术",
     "方案",
@@ -118,9 +128,19 @@ _GENERIC_TERMS = {
     "specification",
     "manual",
     "product",
-    "battery",
-    "cell",
 }
+
+_COMMERCE_DOMAINS = (
+    "alibaba.",
+    "1688.com",
+    "dhgate.com",
+    "made-in-china.com",
+    "taobao.com",
+    "tmall.com",
+    "jd.com",
+    "amazon.",
+    "aliexpress.",
+)
 
 
 @dataclass(frozen=True)
@@ -165,7 +185,12 @@ def canonicalize_url(url: str) -> str:
     ))
 
 
-def source_type_from_url_title(url: str, title: str = "") -> str:
+def source_type_from_url_title(
+    url: str,
+    title: str = "",
+    *,
+    industry_tag: str | None = None,
+) -> str:
     low = f"{url} {title}".lower()
     title_cn = title or ""
     domain = domain_of(url)
@@ -187,6 +212,8 @@ def source_type_from_url_title(url: str, title: str = "") -> str:
         return "认证资料"
     if any(x in low for x in ("datasheet", "manual", "specification", "product guide", "产品手册", "规格书")):
         return "产品手册"
+    if _looks_product_spec_page(url, title, industry_tag=industry_tag):
+        return "产品手册"
     if any(x in low for x in ("whitepaper", "白皮书")):
         return "白皮书"
     if any(x in low for x in ("report", "研究报告", "行业报告")):
@@ -202,8 +229,13 @@ def source_type_from_url_title(url: str, title: str = "") -> str:
     return "其他"
 
 
-def reliability_from_url_title(url: str, title: str = "") -> str:
-    st = source_type_from_url_title(url, title)
+def reliability_from_url_title(
+    url: str,
+    title: str = "",
+    *,
+    industry_tag: str | None = None,
+) -> str:
+    st = source_type_from_url_title(url, title, industry_tag=industry_tag)
     if st in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
         return "high"
     if st in {"权威媒体", "行业报告", "研究报告", "普通新闻", "展会报道", "其他"}:
@@ -211,10 +243,10 @@ def reliability_from_url_title(url: str, title: str = "") -> str:
     return "low"
 
 
-def tier_rank(url: str, title: str = "") -> int:
+def tier_rank(url: str, title: str = "", *, industry_tag: str | None = None) -> int:
     if any(x in domain_of(url) for x in _LOW_VALUE_DOMAINS):
         return 0
-    st = source_type_from_url_title(url, title)
+    st = source_type_from_url_title(url, title, industry_tag=industry_tag)
     if st in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
         return 3
     if st in {"权威媒体", "行业报告", "研究报告", "展会报道"}:
@@ -224,8 +256,8 @@ def tier_rank(url: str, title: str = "") -> int:
     return 0
 
 
-def tier_label(url: str, title: str = "") -> str:
-    rank = tier_rank(url, title)
+def tier_label(url: str, title: str = "", *, industry_tag: str | None = None) -> str:
+    rank = tier_rank(url, title, industry_tag=industry_tag)
     if rank >= 3:
         return "Tier 1 官方/高可靠"
     if rank == 2:
@@ -235,10 +267,19 @@ def tier_label(url: str, title: str = "") -> str:
     return "Tier 4 低可靠线索"
 
 
-def sort_urls_by_value(urls: list[str], titles: dict[str, str]) -> list[str]:
+def sort_urls_by_value(
+    urls: list[str],
+    titles: dict[str, str],
+    *,
+    industry_tag: str | None = None,
+) -> list[str]:
     return sorted(
         dict.fromkeys(urls),
-        key=lambda u: (tier_rank(u, titles.get(u, "")), _looks_crawlable_path(u), -len(u)),
+        key=lambda u: (
+            tier_rank(u, titles.get(u, ""), industry_tag=industry_tag),
+            _looks_crawlable_path(u),
+            -len(u),
+        ),
         reverse=True,
     )
 
@@ -250,6 +291,8 @@ def relevance_score(
     company: str,
     product: str,
     aliases: list[str] | tuple[str, ...] = (),
+    *,
+    industry_tag: str | None = None,
 ) -> int:
     haystack = _SPACE_RE.sub(" ", f"{url} {title} {snippet}".lower())
     score = 0
@@ -266,16 +309,49 @@ def relevance_score(
     for term in _company_variants(company):
         if term in haystack:
             score += 2
-    for term in _search_terms(company):
+    for term in _search_terms(company, industry_tag=industry_tag):
         if term in haystack:
             score += 1
-    for term in _search_terms(product):
+    for term in _search_terms(product, industry_tag=industry_tag):
         if term in haystack:
             score += 3 if any(ch.isdigit() for ch in term) else 2
     for alias in aliases:
-        for term in _search_terms(str(alias)):
+        for term in _search_terms(str(alias), industry_tag=industry_tag):
             if term in haystack:
                 score += 2
+    return score
+
+
+def product_specificity_score(
+    product: str,
+    aliases: list[str] | tuple[str, ...] = (),
+    *,
+    industry_tag: str | None = None,
+) -> int:
+    """Score whether a candidate name points to a concrete product/model."""
+    text = " ".join([product or "", *(str(a) for a in aliases)]).lower()
+    score = 0
+    if any(hint in text for hint in _industry_strings(industry_tag, "named_product_hints")):
+        score += 2
+    terms = _search_terms(
+        " ".join([product or "", *(str(a) for a in aliases)]),
+        industry_tag=industry_tag,
+    )
+    if any(term.isascii() and term.isalpha() and len(term) >= 4 for term in terms):
+        score += 2
+    if any(_looks_named_cn_product_term(term, industry_tag=industry_tag) for term in terms):
+        score += 2
+    if re.search(r"\b[a-z]{1,8}[-_ ]?\d{2,}[a-z0-9-]*\b", text):
+        score += 3
+    if re.search(r"\b\d{2,4}(?:\.\d+)?\s?ah\b", text):
+        score += 1
+    numeric_context_terms = _industry_strings(industry_tag, "numeric_model_context_terms")
+    if re.search(r"\b\d{3,5}\b", text) and any(hint in text for hint in numeric_context_terms):
+        score += 1
+    generic_terms = _generic_terms(industry_tag)
+    useful_terms = [term for term in terms if term not in generic_terms and len(term) >= 3]
+    if len(useful_terms) >= 2:
+        score += 1
     return score
 
 
@@ -286,29 +362,73 @@ def is_relevant_hit(
     company: str,
     product: str,
     aliases: list[str] | tuple[str, ...] = (),
+    *,
+    industry_tag: str | None = None,
 ) -> bool:
     """Keep evidence leads that mention the target company/product strongly enough."""
     if not company and not product:
         return True
-    if product and not _has_product_signal(url, title, snippet, product, aliases):
+    if product and not _has_product_signal(
+        url,
+        title,
+        snippet,
+        product,
+        aliases,
+        industry_tag=industry_tag,
+    ):
         return False
-    score = relevance_score(url, title, snippet, company, product, aliases)
+    score = relevance_score(
+        url,
+        title,
+        snippet,
+        company,
+        product,
+        aliases,
+        industry_tag=industry_tag,
+    )
     domain = domain_of(url)
+    if product_specificity_score(product, aliases, industry_tag=industry_tag) < 2:
+        return score >= 6
     if any(d in domain for d in _LOW_VALUE_DOMAINS):
         return score >= 5
     return score >= 3
 
 
-def is_crawl_worthy(url: str, title: str = "") -> bool:
+def should_read_url(url: str, title: str = "", *, industry_tag: str | None = None) -> bool:
+    """Whether a URL is worth paid/full-text extraction."""
+    domain = domain_of(url)
+    if not url or any(d in domain for d in _LOW_VALUE_DOMAINS):
+        return False
+    if any(d in domain for d in _COMMERCE_DOMAINS):
+        return False
+    if any(d in domain for d in ("facebook.com", "reddit.com", "youtube.com", "linkedin.com")):
+        return False
+    st = source_type_from_url_title(url, title, industry_tag=industry_tag)
+    if st in {"自媒体", "论坛", "二手转载"}:
+        return False
+    if st in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
+        return True
+    if st in {"行业报告", "研究报告", "权威媒体", "展会报道"}:
+        return True
+    return ".pdf" in (url or "").lower() and tier_rank(url, title, industry_tag=industry_tag) >= 2
+
+
+def is_crawl_worthy(url: str, title: str = "", *, industry_tag: str | None = None) -> bool:
     low = (url or "").lower()
     if not low or ".pdf" in low:
         return False
     domain = domain_of(url)
     if any(d in domain for d in _LOW_VALUE_DOMAINS):
         return False
+    if any(d in domain for d in _COMMERCE_DOMAINS):
+        return False
     if any(d in domain for d in _NEWS_DOMAINS):
         return False
-    return _looks_crawlable_path(url) or source_type_from_url_title(url, title) == "官网"
+    st = source_type_from_url_title(url, title, industry_tag=industry_tag)
+    return st == "官网" or (
+        st == "产品手册"
+        and any(hint in low for hint in ("download", "downloads", "datasheet", "specification", "规格"))
+    )
 
 
 def build_general_evidence_queries(company: str, product: str) -> list[str]:
@@ -361,7 +481,8 @@ def build_evidence_targets(
         ))
 
     spec_ids = _feature_ids_by_predicate(features, _is_spec_or_parameter_feature)
-    if spec_ids or (industry_tag or "").lower() == "battery":
+    industry_spec_queries = _industry_query_templates(industry_tag, "spec_queries", base=base)
+    if spec_ids or industry_spec_queries:
         spec_queries = [
             f"{base} 规格 参数 规格书 产品手册 datasheet PDF",
             f"{base} datasheet specification product manual parameters pdf",
@@ -369,12 +490,7 @@ def build_evidence_targets(
             f"{base} 经销商 代理商 供应商 规格 参数 产品手册",
             f"{base} distributor supplier dealer product specification datasheet",
         ]
-        if (industry_tag or "").lower() == "battery":
-            spec_queries.extend([
-                f"{base} 电芯 规格书 容量 电压 尺寸 datasheet",
-                f"{base} battery cell datasheet capacity voltage dimensions",
-                f"{base} LiFePO4 NMC cell specification pdf",
-            ])
+        spec_queries.extend(industry_spec_queries)
         add_target("spec", "规格/参数/手册证据", spec_ids or list(feature_ids), spec_queries)
     else:
         add_target("product_docs", "产品/技术资料证据", feature_ids, [
@@ -384,7 +500,10 @@ def build_evidence_targets(
             f"{base} documentation guide case study product description",
         ])
 
-    structure_ids = _feature_ids_by_predicate(features, _is_structure_feature)
+    structure_ids = _feature_ids_by_predicate(
+        features,
+        lambda feature: _is_structure_feature(feature, industry_tag=industry_tag),
+    )
     if structure_ids:
         add_target("structure", "结构/形态/连接证据", structure_ids, [
             f"{base} 结构 外形 连接 壳体 拆解 图示 规格书",
@@ -414,6 +533,7 @@ def build_evidence_targets(
                 company,
                 product,
                 feature,
+                industry_tag=industry_tag,
                 include_counter=include_counter,
             ),
         )
@@ -438,12 +558,13 @@ def build_feature_evidence_queries(
     product: str,
     feature: ClaimFeature,
     *,
+    industry_tag: str | None = None,
     include_counter: bool = False,
 ) -> list[str]:
     base = f"{company} {product}".strip()
     terms = _feature_terms(feature)
     core = " ".join(terms[:5]) or feature.feature_text[:80]
-    english_core = " ".join(_english_feature_terms(feature)[:6]) or core
+    english_core = " ".join(_english_feature_terms(feature, industry_tag=industry_tag)[:6]) or core
     suffix = _feature_suffix(feature)
     queries = [
         f"{base} {core} {suffix}",
@@ -478,7 +599,7 @@ def _feature_terms(feature: ClaimFeature) -> list[str]:
     return out
 
 
-def _english_feature_terms(feature: ClaimFeature) -> list[str]:
+def _english_feature_terms(feature: ClaimFeature, *, industry_tag: str | None = None) -> list[str]:
     text = feature.feature_text.lower()
     terms: list[str] = []
 
@@ -490,14 +611,10 @@ def _english_feature_terms(feature: ClaimFeature) -> list[str]:
             terms.extend(re.findall(r"[A-Za-z][A-Za-z0-9 /+_.-]{1,}", raw))
 
     keyword_map = [
-        (("电芯", "电池单体", "单体电池"), ("battery cell", "cell")),
-        (("方壳",), ("prismatic cell",)),
-        (("刀片", "短刀", "长条"), ("blade battery", "short blade battery", "long cell")),
-        (("长度", "长宽", "厚度", "宽度"), ("cell length", "cell width", "cell thickness")),
-        (("壳体", "外壳", "结构", "封装"), ("cell structure", "housing", "package")),
-        (("极柱", "极耳", "连接"), ("terminal", "tab", "connection")),
-        (("能量密度", "空间利用率", "体积"), ("energy density", "space utilization", "volumetric efficiency")),
-        (("安全", "热失控", "散热"), ("safety", "thermal runaway", "thermal management")),
+        (("长度", "长宽", "厚度", "宽度", "尺寸"), ("length", "width", "thickness", "dimensions")),
+        (("壳体", "外壳", "结构", "封装"), ("structure", "housing", "package")),
+        (("连接", "安装", "布置"), ("connection", "mounting", "layout")),
+        (("体积", "容量", "电压", "电流", "密度"), ("volume", "capacity", "voltage", "current", "density")),
         (("算法", "计算", "校准", "补偿", "系数"), ("algorithm", "calibration", "compensation")),
         (("传感", "检测", "识别"), ("sensor", "detection", "recognition")),
         (("控制", "生成", "提示", "方法", "流程"), ("control method", "generation", "notification")),
@@ -505,6 +622,11 @@ def _english_feature_terms(feature: ClaimFeature) -> list[str]:
     for needles, mapped in keyword_map:
         if any(n in text for n in needles):
             terms.extend(mapped)
+    for item in _industry_feature_term_map(industry_tag):
+        needles = tuple(item.get("needles") or ())
+        mapped = tuple(item.get("terms") or ())
+        if needles and mapped and any(str(n) in text for n in needles):
+            terms.extend(str(t) for t in mapped if str(t).strip())
 
     out: list[str] = []
     seen: set[str] = set()
@@ -548,17 +670,19 @@ def _is_spec_or_parameter_feature(feature: ClaimFeature) -> bool:
     )
 
 
-def _is_structure_feature(feature: ClaimFeature) -> bool:
+def _is_structure_feature(feature: ClaimFeature, *, industry_tag: str | None = None) -> bool:
     text = _feature_text_with_terms(feature)
-    return any(
+    generic_hit = any(
         x in text
         for x in (
-            "结构", "壳体", "外壳", "封装", "连接", "极柱", "极耳", "层叠",
-            "叠置", "方壳", "刀片", "长方体", "矩形", "安装", "布置",
-            "structure", "housing", "package", "connection", "terminal", "tab",
-            "prismatic", "blade", "rectangular",
+            "结构", "壳体", "外壳", "封装", "连接", "层叠", "叠置",
+            "长方体", "矩形", "安装", "布置",
+            "structure", "housing", "package", "connection", "rectangular",
         )
     )
+    if generic_hit:
+        return True
+    return any(hint in text for hint in _industry_strings(industry_tag, "structure_feature_hints"))
 
 
 def _is_algorithm_feature(feature: ClaimFeature) -> bool:
@@ -612,6 +736,45 @@ def _looks_official_product_page(url: str) -> bool:
     return _looks_crawlable_path(url) and tier_rank_by_domain(url) >= 1
 
 
+def _looks_product_spec_page(
+    url: str,
+    title: str = "",
+    *,
+    industry_tag: str | None = None,
+) -> bool:
+    low = f"{url} {title}".lower()
+    if any(
+        hint in low
+        for hint in (
+            "datasheet",
+            "data-sheet",
+            "specification",
+            "product manual",
+            "manual",
+            "capacity",
+            "voltage",
+            "dimension",
+            "规格书",
+            "产品手册",
+            "参数",
+            "容量",
+            "电压",
+            "尺寸",
+        )
+    ):
+        return True
+    industry_hints = _industry_strings(industry_tag, "product_spec_page_hints")
+    if industry_hints and any(hint in low for hint in industry_hints):
+        return True
+    context_terms = _industry_strings(industry_tag, "product_spec_context_terms")
+    if re.search(r"\b\d{2,4}(?:\.\d+)?\s?ah\b", low) and any(
+        token in low
+        for token in context_terms
+    ):
+        return True
+    return False
+
+
 def _looks_crawlable_path(url: str) -> bool:
     parsed = urlparse(url or "")
     haystack = f"{parsed.path} {parsed.query}".lower()
@@ -627,18 +790,90 @@ def tier_rank_by_domain(url: str) -> int:
     return 1
 
 
-def _search_terms(text: str) -> list[str]:
+def _industry_profile(industry_tag: str | None) -> dict:
+    if not industry_tag:
+        return {}
+    return cn_industry.load_evidence_profile(industry_tag)
+
+
+def _industry_strings(industry_tag: str | None, key: str) -> tuple[str, ...]:
+    raw = _industry_profile(industry_tag).get(key) or []
+    if not isinstance(raw, list):
+        return ()
+    return tuple(
+        str(item).strip().lower()
+        for item in raw
+        if str(item).strip()
+    )
+
+
+def _all_industry_strings(key: str) -> tuple[str, ...]:
     out: list[str] = []
     seen: set[str] = set()
+    for tag in cn_industry.known_tags():
+        for item in _industry_strings(tag, key):
+            if item not in seen:
+                out.append(item)
+                seen.add(item)
+    return tuple(out)
+
+
+def _industry_feature_term_map(industry_tag: str | None) -> list[dict]:
+    raw = _industry_profile(industry_tag).get("feature_term_map") or []
+    return [item for item in raw if isinstance(item, dict)]
+
+
+def _industry_query_templates(industry_tag: str | None, key: str, **values: str) -> list[str]:
+    raw = _industry_profile(industry_tag).get(key) or []
+    out: list[str] = []
+    for template in raw:
+        if not isinstance(template, str) or not template.strip():
+            continue
+        try:
+            fields = {name for _, name, _, _ in Formatter().parse(template) if name}
+            context = {field: values.get(field, "") for field in fields}
+            out.append(template.format(**context))
+        except (KeyError, ValueError):
+            continue
+    return out
+
+
+def _generic_terms(industry_tag: str | None = None) -> set[str]:
+    return set(_GENERIC_TERMS) | set(_industry_strings(industry_tag, "generic_terms"))
+
+
+def _search_terms(text: str, *, industry_tag: str | None = None) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    generic_terms = _generic_terms(industry_tag)
     for raw in re.findall(r"[a-z0-9][a-z0-9+_.-]{1,}", (text or "").lower()):
-        if raw not in _GENERIC_TERMS and raw not in seen:
+        if raw not in generic_terms and raw not in seen:
             out.append(raw)
             seen.add(raw)
     for raw in re.findall(r"[\u4e00-\u9fff]{2,}", text or ""):
-        if raw not in _GENERIC_TERMS and raw not in seen:
+        if raw not in generic_terms and raw not in seen:
             out.append(raw)
             seen.add(raw)
     return out
+
+
+def _looks_named_cn_product_term(term: str, *, industry_tag: str | None = None) -> bool:
+    if not re.fullmatch(r"[\u4e00-\u9fff]{4,}", term or ""):
+        return False
+    generic_suffixes = (
+        "系统",
+        "产品",
+        "方案",
+        "技术",
+        "平台",
+        "模块",
+        "组件",
+    )
+    industry_suffixes = tuple(
+        suffix for suffix in _all_industry_strings("generic_terms")
+        if re.fullmatch(r"[\u4e00-\u9fff]{2,4}", suffix)
+    )
+    return not any(term.endswith(suffix) for suffix in (*generic_suffixes, *industry_suffixes))
 
 
 def _has_product_signal(
@@ -647,6 +882,8 @@ def _has_product_signal(
     snippet: str,
     product: str,
     aliases: list[str] | tuple[str, ...] = (),
+    *,
+    industry_tag: str | None = None,
 ) -> bool:
     haystack = _SPACE_RE.sub(" ", f"{url} {title} {snippet}".lower())
     product_low = (product or "").lower().strip()
@@ -657,12 +894,12 @@ def _has_product_signal(
         if alias_low and alias_low in haystack:
             return True
     strong_terms = [
-        term for term in _search_terms(product)
+        term for term in _search_terms(product, industry_tag=industry_tag)
         if any(ch.isdigit() for ch in term) or len(term) >= 4
     ]
     for alias in aliases:
         strong_terms.extend(
-            term for term in _search_terms(str(alias))
+            term for term in _search_terms(str(alias), industry_tag=industry_tag)
             if any(ch.isdigit() for ch in term) or len(term) >= 4
         )
     return any(term in haystack for term in strong_terms)

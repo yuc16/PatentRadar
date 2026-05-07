@@ -36,6 +36,7 @@ from ..schemas import (
     TaskPackage,
 )
 from ..search import pool
+from ..search.session import SearchSession
 
 logger = logging.getLogger("patentradar.reviewer")
 
@@ -47,6 +48,16 @@ REVIEW_SUPPLEMENT_QUERIES_PER_TARGET = 2
 REVIEW_SUPPLEMENT_HITS_PER_FEATURE = 3
 REVIEW_SUPPLEMENT_SUMMARY_CHARS = 1000
 REVIEW_SUPPLEMENT_ENGINES = pool.DEFAULT_SEARCH_ENGINES
+
+
+def _review_engines_for_target(target: evidence_strategy.EvidenceTarget) -> tuple[str, ...]:
+    if target.target_id == "market_date":
+        return ("bocha", "tavily")
+    if target.target_id == "spec":
+        return ("tavily", "brave", "exa")
+    if target.target_id in {"structure", "algorithm", "product_docs"}:
+        return ("tavily", "exa", "brave")
+    return REVIEW_SUPPLEMENT_ENGINES
 
 
 def _format_features_block(task: TaskPackage) -> str:
@@ -140,6 +151,7 @@ def review_agent_outputs(
     *,
     reasoning_effort: str = "medium",
     supplement_cache_path: str | Path | None = None,
+    search_session: SearchSession | None = None,
 ) -> FinalReport:
     """主入口：直接接收三 Agent 输出，平铺给 GPT-5.5。"""
     t0 = time.monotonic()
@@ -150,7 +162,11 @@ def review_agent_outputs(
     if cached is not None:
         agent_outputs, supplement_count = cached
     else:
-        agent_outputs, supplement_count = _supplement_agent_outputs(agent_outputs, task)
+        agent_outputs, supplement_count = _supplement_agent_outputs(
+            agent_outputs,
+            task,
+            search_session=search_session or SearchSession(),
+        )
         if cache_file:
             _write_supplement_cache(cache_file, agent_outputs, task, supplement_count)
     candidates_block, n_candidates = _format_candidates_block(agent_outputs)
@@ -513,6 +529,8 @@ def _risk_from_score(score: float, fmt: list[FeatureMatch]) -> str:
 def _supplement_agent_outputs(
     agent_outputs: list[AgentOutput],
     task: TaskPackage,
+    *,
+    search_session: SearchSession,
 ) -> tuple[list[AgentOutput], int]:
     """最终复核前对证据不足项执行代码侧补搜。"""
     outputs = [ao.model_copy(deep=True) for ao in agent_outputs]
@@ -537,7 +555,7 @@ def _supplement_agent_outputs(
                 cand.feature_match_table,
                 feature_ids=[f.feature_id for f in task.claim_features],
             )
-            added += _supplement_candidate(cand, task, seen_queries)
+            added += _supplement_candidate(cand, task, seen_queries, search_session)
     return outputs, added
 
 
@@ -545,6 +563,7 @@ def _supplement_candidate(
     cand: Candidate,
     task: TaskPackage,
     seen_queries: set[str],
+    search_session: SearchSession,
 ) -> int:
     existing_urls = {
         evidence_strategy.canonicalize_url(ev.url)
@@ -612,9 +631,9 @@ def _supplement_candidate(
                 query,
             )
             try:
-                hits = pool.search(
+                hits = search_session.search(
                     query,
-                    engines=REVIEW_SUPPLEMENT_ENGINES,
+                    engines=_review_engines_for_target(target),
                     num_per_engine=REVIEW_SUPPLEMENT_HITS_PER_FEATURE,
                     log_context="[reviewer]",
                 )
@@ -623,7 +642,11 @@ def _supplement_candidate(
                 continue
             hits = sorted(
                 hits,
-                key=lambda h: evidence_strategy.tier_rank(h.url, h.title),
+                key=lambda h: evidence_strategy.tier_rank(
+                    h.url,
+                    h.title,
+                    industry_tag=task.industry_tag,
+                ),
                 reverse=True,
             )
             for hit in hits:
@@ -639,6 +662,7 @@ def _supplement_candidate(
                     cand.company,
                     cand.product,
                     cand.aliases,
+                    industry_tag=task.industry_tag,
                 ):
                     logger.info(
                         "[reviewer] supplement SKIP low_relevance title=%r url=%s",
@@ -647,7 +671,12 @@ def _supplement_candidate(
                     )
                     continue
                 hit.url = hit_url
-                evidence = _evidence_from_hit(hit, target_feature_ids)
+                evidence = _evidence_from_hit(
+                    hit,
+                    target_feature_ids,
+                    search_session,
+                    industry_tag=task.industry_tag,
+                )
                 for fid in target_feature_ids:
                     target_match_by_id[fid].evidence.append(evidence)
                 cand.main_evidence_urls.append(hit_url)
@@ -656,7 +685,11 @@ def _supplement_candidate(
                 logger.info(
                     "[reviewer] supplement ADD features=%s tier=%s source=%s url=%s",
                     ",".join(target_feature_ids),
-                    evidence_strategy.tier_label(hit.url, hit.title),
+                    evidence_strategy.tier_label(
+                        hit.url,
+                        hit.title,
+                        industry_tag=task.industry_tag,
+                    ),
                     evidence.source_type,
                     hit.url,
                 )
@@ -665,22 +698,43 @@ def _supplement_candidate(
     return added
 
 
-def _evidence_from_hit(hit, feature_ids: tuple[str, ...]) -> Evidence:
+def _evidence_from_hit(
+    hit,
+    feature_ids: tuple[str, ...],
+    search_session: SearchSession,
+    *,
+    industry_tag: str | None = None,
+) -> Evidence:
     text = hit.snippet or ""
     title = hit.title or ""
-    try:
-        page = pool.read_url(hit.url, log_context="[reviewer]")
-        text = page.text or text
-        title = page.title or title
-    except Exception as exc:  # noqa: BLE001
-        logger.info("review supplement read failed %s: %s", hit.url[:80], exc)
+    if evidence_strategy.should_read_url(hit.url, title, industry_tag=industry_tag):
+        try:
+            page = search_session.read_url(hit.url, log_context="[reviewer]")
+            text = page.text or text
+            title = page.title or title
+        except Exception as exc:  # noqa: BLE001
+            logger.info("review supplement read failed %s: %s", hit.url[:80], exc)
+    else:
+        logger.info(
+            "review supplement read skipped low_value_source tier=%s url=%s",
+            evidence_strategy.tier_label(hit.url, title, industry_tag=industry_tag),
+            hit.url[:120],
+        )
     return Evidence(
         url=hit.url,
         title=title,
-        source_type=evidence_strategy.source_type_from_url_title(hit.url, title),
-        source_reliability=evidence_strategy.reliability_from_url_title(hit.url, title),
+        source_type=evidence_strategy.source_type_from_url_title(
+            hit.url,
+            title,
+            industry_tag=industry_tag,
+        ),
+        source_reliability=evidence_strategy.reliability_from_url_title(
+            hit.url,
+            title,
+            industry_tag=industry_tag,
+        ),
         summary=(
-            f"[最终复核补搜 / {evidence_strategy.tier_label(hit.url, title)}] "
+            f"[最终复核补搜 / {evidence_strategy.tier_label(hit.url, title, industry_tag=industry_tag)}] "
             + text[:REVIEW_SUPPLEMENT_SUMMARY_CHARS]
         ).strip(),
         supported_features=list(feature_ids),

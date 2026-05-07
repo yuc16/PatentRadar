@@ -14,6 +14,7 @@ import logging
 from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
@@ -30,6 +31,7 @@ class IndustryGroup:
     industry_tag: str
     label: str
     sites: tuple[Site, ...]
+    evidence_profile: dict[str, Any]
 
 
 _DATA_DIR = Path(__file__).resolve().parents[3] / "data" / "cn_industry_sites"
@@ -62,6 +64,7 @@ def _load_all() -> dict[str, IndustryGroup]:
             industry_tag=tag,
             label=str(data.get("label") or tag),
             sites=sites,
+            evidence_profile=data.get("evidence_profile") if isinstance(data.get("evidence_profile"), dict) else {},
         )
     return out
 
@@ -96,6 +99,32 @@ def load_sites(industry_tag: str | None) -> list[Site]:
     _extend(get_group(industry_tag))
     _extend(get_group(GENERAL_TAG))
     return out
+
+
+def load_evidence_profile(industry_tag: str | None) -> dict[str, Any]:
+    """返回 ``general`` + 指定行业合并后的证据策略配置。
+
+    当前只合并列表型字段；领域文件中的 ``evidence_profile`` 用于存放行业专属
+    商品名、query 模板、特征英文映射和规格页路径提示，避免把这些词写进通用策略。
+    """
+    merged: dict[str, Any] = {}
+
+    def _merge(profile: dict[str, Any]) -> None:
+        for key, value in profile.items():
+            if isinstance(value, list):
+                existing = merged.setdefault(key, [])
+                if isinstance(existing, list):
+                    existing.extend(value)
+            elif key not in merged:
+                merged[key] = value
+
+    general = get_group(GENERAL_TAG)
+    if general:
+        _merge(general.evidence_profile)
+    group = get_group(industry_tag)
+    if group and group.industry_tag != GENERAL_TAG:
+        _merge(group.evidence_profile)
+    return merged
 
 
 def build_site_filter(sites: list[Site] | tuple[Site, ...], *, max_sites: int = 8) -> str:

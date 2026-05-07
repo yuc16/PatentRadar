@@ -1,4 +1,4 @@
-"""把 FinalReport / 上游产物渲染为 Markdown（PRD §14 结构）。"""
+"""把 FinalReport / 上游产物渲染为 Markdown 报告。"""
 
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ def render_markdown(
     agent_outputs: list[AgentOutput],
     final: FinalReport,
 ) -> str:
-    """渲染 PRD §14 结构的 Markdown 报告。"""
+    """渲染 Markdown 报告。"""
     parts: list[str] = []
     parts.append(f"# 专利竞品侵权线索挖掘报告 — {task.patent.publication_no}")
     parts.append("")
@@ -107,7 +107,7 @@ def render_markdown(
     parts.append("## 5. 最终 Top5 候选竞品")
     parts.append("")
     if not final.top5:
-        parts.append("> 无合格候选（宁缺毋滥，PRD §9.2）。")
+        parts.append("> 无合格候选（宁缺毋滥）。")
     else:
         parts.append(
             "| 排名 | 公司 | 产品 / 型号 | 上市/发布/量产日期 | 分数 | 风险等级 | 主要证据数 | 主要缺口 |"

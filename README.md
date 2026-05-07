@@ -86,7 +86,7 @@
 
 **MVP 9/9 全部完成**。
 
-额外实现了平衡证据模式：证据阶段默认共享 Bocha / Exa / Brave / Tavily，按“规格参数 / 结构形态 / 算法流程 / 上市日期”等证据目标生成中英双语 query，一份规格书或产品页可同时支撑多个相关特征；URL 会先规范化去重，并要求命中当前公司 / 产品 / 别名后才进入正文读取；首轮信号过弱的候选不做扩展补搜；二次候选搜索补足到 3 个有效候选即停止；高价值官网 / 产品页 / 文档中心才触发 Tavily Crawl；最终复核会跳过 Agent 已搜过的 query，针对缺口目标补搜，并由代码补齐特征表、重算分数。
+额外实现了平衡证据模式：证据阶段按“规格参数 / 结构形态 / 算法流程 / 上市日期”等证据目标生成中英双语 query，一份规格书或产品页可同时支撑多个相关特征；不同目标会选择更合适的搜索源，缺口补搜才扩到更广的共享池；URL 会先规范化去重，并要求命中当前公司 / 产品 / 别名后才进入正文读取；首轮信号过弱的候选不做扩展补搜；二次候选搜索补足到 3 个有效候选或已有强候选即停止；高价值官网 / 产品页 / 文档中心才触发 Tavily Crawl；同一轮任务共享搜索、正文抽取和 crawl 缓存；最终复核会跳过 Agent 已搜过的 query，针对缺口目标补搜，并由代码补齐特征表、重算分数。
 
 ---
 
@@ -305,18 +305,18 @@ S1  生成候选发现 query (LLM, 默认最多 10 条; 不足时自动补调)
 S2  调用主搜索源召回 hits
 S3  建立粗候选池 (默认 ≤50，URL 黑名单源头过滤专利文献站)
 S4  LLM 归一化 + 严苛筛选（无明确公司 / 专利文献站 / 无中国市场迹象 → 直接丢）
-S5  保留重点候选（默认 12 个）
-S6  对每个候选执行共享证据池补搜：
+S5  保留重点候选（默认 8 个）
+S6  对每个候选执行目标化证据补搜：
     - 按证据目标分组生成中英双语 query，而不是机械逐特征搜索
     - 规格书 / 产品页 / PDF 可同时支撑尺寸、参数、结构等多个相关特征
-    - Bocha / Exa / Brave / Tavily 共同作为默认证据搜索池
+    - 按目标选择搜索源：Tavily 默认参与，规格类偏 Tavily + Brave + Exa，上市日期偏 Bocha + Tavily，缺口 / 反证再扩到全搜索池
     - URL 去除跟踪参数、规范化去重，并过滤明显不含当前公司 / 产品 / 别名的结果
     - 正文读取：Tavily Extract → Exa Contents 兜底
     - 首轮特征判断后，只对“证据不足 / remaining gap / 缺 URL”的证据目标补搜
     - 首轮分数和命中特征都过低时跳过扩展补搜，避免低质量候选继续消耗搜索额度
     - 行业种子站可派生少量 site: query，用于召回规格页、经销商规格和 PDF 索引
     - 仅对官网 / 产品页 / 文档中心等高价值 URL 触发 Tavily Crawl
-    - 证据按 Tier 1/2/3/4 分层后再交给 LLM，单候选默认读取前 8 个 URL、最多 14 页证据
+    - 证据按 Tier 1/2/3/4 分层后再交给 LLM，单候选默认读取前 5 个高价值 URL、最多 9 页证据；高明确度产品或高分缺口补搜会小幅放宽预算
     → ★ compactor 动态压缩 ★（按 ctx_window 预算，长文 LLM 摘要）
 S7  LLM 把证据绑定到 F1/F2/F3 + 给出四档判断
 S8  代码级补齐缺失特征 + 硬规则过滤
@@ -333,12 +333,13 @@ S10 输出 Top5 JSON
 - **证据目标分组**：系统会把相关特征合并成“规格/参数/手册”“结构/形态/连接”“算法/控制/流程”“上市/发布/量产日期”等目标。一份 datasheet、产品规格页或 PDF 可能同时支撑多个 F 项。
 - **中英双语 query**：每个目标都会生成中文、英文和混合 PDF / datasheet / specification / technical document 方向；国内厂商也会查英文公开资料。
 - **缺口补搜**：Agent 首轮判断后，只对仍为“证据不足”、有 remaining gap、或判断缺少 URL 的目标继续补搜。首轮信号过低的候选会止损，避免把明显弱相关候选扩成几十页证据。
-- **行业种子站**：`data/cn_industry_sites/<tag>.json` 可放行业媒体、厂商官网、规格资料站和经销商站点。证据阶段会为高价值站点派生少量 `site:` query，用来追规格页、PDF 索引和经销商产品参数。
+- **行业种子站与行业 profile**：`data/cn_industry_sites/<tag>.json` 可放行业媒体、厂商官网、规格资料站和经销商站点，也可在 `evidence_profile` 中放该行业专属商品名、英文特征映射、规格页路径提示和补搜 query 模板。通用 `evidence.py` 不写入电池、半导体、汽车等专用词，避免污染其他领域搜索。
 - **候选相关性过滤**：搜索命中的 URL 会去除 `utm_*` / `srsltid` 等跟踪参数后去重；正文读取前必须在 URL / title / snippet 中匹配当前公司、产品型号或别名。
-- **共享搜索池**：证据阶段默认同时调用 Bocha / Exa / Brave / Tavily。任一搜索源失败或额度不足时，`pool.search` 会记录失败并继续使用其他搜索源返回结果。
+- **搜索源选择**：证据阶段不再所有 query 都打满 Bocha / Exa / Brave / Tavily，而是按目标选择。规格 / datasheet 目标偏 Tavily + Brave + Exa；结构 / 算法 / 产品文档偏 Tavily + Exa + Brave；上市日期偏 Bocha + Tavily；缺口或反证补搜才扩到全搜索池。任一搜索源失败或额度不足时，`pool.search` 会记录失败并继续使用其他搜索源返回结果。
 - **Tavily 多 key 轮换**：`TAVILY_API_KEYS` 可配置多个 key；遇到额度、权限或限流错误时自动换下一个 key。`TAVILY_API_KEY` 仍可单独使用。
 - **正文抽取顺序**：Tavily Extract 优先，读不到正文时 Exa Contents 兜底。
-- **正文预算**：单候选默认最多读取前 8 个高价值 URL、最多保留 14 页证据；进入 LLM 前再由 compactor 摘要 / 截断长文。
+- **正文预算**：单候选默认最多读取前 5 个高价值 URL、最多保留 9 页证据；产品型号足够明确时提升到 6 个 URL / 10 页，高分候选的缺口补搜最多 8 个 URL / 12 页；进入 LLM 前再由 compactor 摘要 / 截断长文。
+- **运行级缓存**：`find-competitors-all` 的三个 Agent 和后续 `review` 复用同一个 `SearchSession` 缓存目录，搜索结果、正文抽取结果和 crawl 结果分别落到 `tmp/<pub_no>/search_cache.json`、`page_cache.json`、`crawl_cache.json`，避免并行 Agent 和复核阶段重复请求同一 query / URL。
 - **来源分层**：官方网页、官方 PDF、产品手册、白皮书、年报、招股书、标准、认证资料为 Tier 1；行业报告 / 权威媒体 / 展会资料为 Tier 2；普通新闻 / 代理商 / 电商等为 Tier 3；自媒体 / 论坛 / 二手转载为低可靠线索。
 - **Crawl 目标筛选**：Tavily Crawl 只深挖官网产品页、下载页、支持页、文档中心、SDK/开发者资料页，不爬新闻站、论坛、自媒体、电商或专利站。
 - **证据-特征提示**：进入 LLM 的证据块会标注 `线索特征: F3, F5` 和来源 Tier，减少证据错配。
@@ -360,7 +361,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 
 ### 8.6 GPT-5.5 复核：先补搜，再合并去重
 
-复核阶段先对 Agent 输出中"证据不足"、有 remaining gap、或缺少 URL 证据的高价值候选做一轮代码侧补搜。补搜默认继续使用 Bocha / Exa / Brave / Tavily 的共享证据池，并跳过 Agent 阶段已经执行过的 query；新增 URL 同样需要通过公司 / 产品 / 别名相关性过滤，避免把无关长 PDF 塞进复核上下文。
+复核阶段先对 Agent 输出中"证据不足"、有 remaining gap、或缺少 URL 证据的高价值候选做一轮代码侧补搜。补搜会按证据目标选择搜索源，并跳过 Agent 阶段已经执行过的 query；新增 URL 同样需要通过公司 / 产品 / 别名相关性过滤，避免把无关长 PDF 塞进复核上下文。
 
 候选同义合并不依赖代码层正则归一化——GPT-5.5 用**行业知识**自动识别同义：
 
@@ -395,6 +396,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 - **阶段 3** 每个 Agent 独立缓存（`agent_<n>.json` 存在则跳过该 Agent）
 - **阶段 4** 默认缓存（`final_report.json` 存在则跳过）
 - **阶段 5** 渲染瞬完，每次都重新生成
+- **搜索会话缓存**：`tmp/<pub_no>/search_cache.json` / `page_cache.json` / `crawl_cache.json` 记录本专利运行中的搜索、正文读取和 crawl 结果；同一 query / URL 重跑时优先命中缓存，使用 `--force` 重跑阶段产物时缓存文件仍可复用，手动删除这些文件即可强制重新请求搜索 API。
 - 全部命令支持 `--force` 反向开关
 
 ### 8.9 中国行业垂类专项检索（DeepSeek 视角增强）
@@ -405,9 +407,9 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 2. **行业站点定向召回（候选发现阶段）** — 按 `industry_tag` 加载 [`data/cn_industry_sites/`](data/cn_industry_sites/) 下对应白名单（自动叠加 `general.json` 通用站点），把 LLM 已生成的最聚焦的前 1~2 条 query **包装成 `(query) (site:domain1 OR site:domain2 ...)`** 用 Bocha 单独召回。媒体/协会组与厂商官网组分两条 query，互不干扰。
 3. **巨潮资讯证据补搜（证据收集阶段）** — 候选公司确定后，DeepSeek 自动用 `公司名 + 产品/型号` 查 [`巨潮资讯`](http://www.cninfo.com.cn/)（A 股 / 港股年报、招股书、公告全文）。返回的 PDF URL 直接进证据池，由 Exa Contents / Tavily Extract 兜底链抽正文。年报/招股书是上市企业最权威的产品技术披露源。
 
-**调整白名单**：直接编辑 [`data/cn_industry_sites/<tag>.json`](data/cn_industry_sites/)，新增/删除 `domain` 即可。新增领域只需新建 `<tag>.json` 并在 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 的 industry_tag 枚举里加上同名 tag，否则 LLM 不会用。
+**调整白名单 / 行业 profile**：直接编辑 [`data/cn_industry_sites/<tag>.json`](data/cn_industry_sites/)，新增/删除 `sites[].domain` 即可；行业专属证据策略放在同文件的 `evidence_profile`，包括 `generic_terms`、`named_product_hints`、`spec_queries`、`feature_term_map` 等。新增领域只需新建 `<tag>.json` 并在 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 的 industry_tag 枚举里加上同名 tag，否则 LLM 不会用。
 
-`battery.json` 已放入若干电芯规格资料与经销商站点作为试点种子；候选发现阶段仍只由 DeepSeek 启用行业站点路由（`AgentPerspective.cn_industry_routing=True`），证据阶段的高价值规格站 `site:` 召回会对三个 Agent 生效。
+`battery.json` 已放入若干电芯规格资料、经销商站点和电池专属 `evidence_profile` 作为试点；候选发现阶段仍只由 DeepSeek 启用行业站点路由（`AgentPerspective.cn_industry_routing=True`），证据阶段的高价值规格站 `site:` 召回和行业专属 query / 翻译映射会对三个 Agent 生效。
 
 ### 8.10 日志与可追溯性
 

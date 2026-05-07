@@ -25,6 +25,7 @@ from .patent.fetcher import fetch_patent
 from .report import render_markdown
 from .reviewer import review_agent_outputs
 from .schemas import AgentOutput, FinalReport, TaskPackage
+from .search.session import SearchSession
 
 app = typer.Typer(add_completion=False, help="PatentRadar v1 - 专利侵权线索挖掘系统")
 console = Console()
@@ -311,7 +312,7 @@ def find_competitors_all_cmd(
     ),
     verbose: int = typer.Option(1, "--verbose", "-v", count=True),
 ) -> None:
-    """阶段 3：三 Agent 并行 → agent_outputs.json（PRD §12.1）。"""
+    """阶段 3：三 Agent 并行 → agent_outputs.json。"""
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
     pub_no = pub_no.strip().upper()
@@ -334,6 +335,7 @@ def find_competitors_all_cmd(
         console.print(f"[dim]日志: {log_file}[/]")
 
     target_dir.mkdir(parents=True, exist_ok=True)
+    search_session = SearchSession(target_dir)
 
     # 缓存判断：默认 agent_<n>.json 存在就跳过该 Agent
     todo: list[str] = []
@@ -348,7 +350,7 @@ def find_competitors_all_cmd(
 
     def _run_one(name: str):
         persp = get_perspective(name)
-        agent = SearchAgent(persp)
+        agent = SearchAgent(persp, search_session=search_session)
         return name, agent.run(task)
 
     results: dict[str, AgentOutput] = dict(cached)
@@ -384,7 +386,7 @@ def find_competitors_all_cmd(
                 encoding="utf-8",
             )
 
-    # 合并 agent_outputs.json（PRD §12.1）
+    # 合并 agent_outputs.json
     aggregate = {
         "patent_publication_no": pub_no,
         "agent_outputs": [
@@ -439,7 +441,7 @@ def report_cmd(
     ),
     verbose: int = typer.Option(1, "--verbose", "-v", count=True),
 ) -> None:
-    """阶段 5：把 final_report.json 渲染为 Markdown（PRD §14） → output/<pub_no>/final_report.md。"""
+    """阶段 5：把 final_report.json 渲染为 Markdown → output/<pub_no>/final_report.md。"""
     pub_no = pub_no.strip().upper()
     _setup_logging(verbose, pub_no=pub_no, cmd="report")
     inter = intermediate or (config.INTERMEDIATE_DIR / pub_no)
@@ -542,11 +544,13 @@ def review_cmd(
     supplement_cache_path = target_dir / "review_supplement_cache.json"
     console.print(f"调用 GPT-5.5 复核（reasoning={eff}）...")
     console.print(f"复核补搜缓存: [dim]{supplement_cache_path}[/]")
+    search_session = SearchSession(target_dir)
     final = review_agent_outputs(
         agent_outputs,
         task,
         reasoning_effort=eff,
         supplement_cache_path=supplement_cache_path,
+        search_session=search_session,
     )
 
     final_path.write_text(
@@ -603,7 +607,8 @@ def find_competitors_cmd(
         f"  主搜索源: {', '.join(persp.primary_engines)}"
     )
 
-    agent_obj = SearchAgent(persp)
+    search_session = SearchSession(target_dir)
+    agent_obj = SearchAgent(persp, search_session=search_session)
     output = agent_obj.run(task)
 
     target_dir.mkdir(parents=True, exist_ok=True)

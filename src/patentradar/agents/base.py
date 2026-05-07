@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import time
+from dataclasses import dataclass
 from typing import Any
 
 from .. import compactor, evidence as evidence_strategy, prompts, scoring
@@ -21,30 +22,34 @@ from ..schemas import (
 )
 from ..search import cn_industry, cninfo, pool
 from ..search.base import ExtractedPage, SearchError, SearchHit
+from ..search.session import SearchSession
 from .perspectives import AgentPerspective
 
 logger = logging.getLogger("patentradar.agent")
 
 
-# 候选发现保持宽召回；证据阶段按“证据目标”分组检索，避免逐特征盲扫。
+# 候选发现保持宽召回；证据阶段按“核心证据 → 缺口证据”递进，避免低信号候选盲扫。
 MIN_QUERIES = 5
 MAX_QUERIES = 10
 MAX_HITS_PER_ENGINE = 8
 COARSE_POOL_LIMIT = 50
-FOCUS_POOL_LIMIT = 12
-EVIDENCE_READ_URL_LIMIT = 8
-EVIDENCE_PAGE_LIMIT = 14
-EVIDENCE_URL_POOL_LIMIT = 36
+FOCUS_POOL_LIMIT = 8
+SECOND_FOCUS_POOL_LIMIT = 5
+EVIDENCE_READ_URL_LIMIT = 5
+EVIDENCE_PAGE_LIMIT = 9
+EVIDENCE_URL_POOL_LIMIT = 24
 EVIDENCE_HITS_PER_QUERY = 3
-EVIDENCE_TARGET_LIMIT = 4
-EVIDENCE_QUERIES_PER_TARGET = 3
-GAP_EVIDENCE_TARGET_LIMIT = 3
+EVIDENCE_TARGET_LIMIT = 2
+EVIDENCE_QUERIES_PER_TARGET = 2
+GAP_EVIDENCE_TARGET_LIMIT = 2
 GAP_EVIDENCE_QUERIES_PER_TARGET = 2
 GAP_FEATURE_SUPPLEMENT_LIMIT = 5
 INDUSTRY_SITE_EVIDENCE_QUERY_LIMIT = 2
-CRAWL_TARGETS_PER_CANDIDATE = 2
-CRAWL_PAGES_PER_TARGET = 3
+CRAWL_TARGETS_PER_CANDIDATE = 1
+CRAWL_PAGES_PER_TARGET = 2
 SECOND_SEARCH_MIN_VALID = 3
+SECOND_SEARCH_STOP_SCORE = 90.0
+SECOND_SEARCH_TRIGGER_SCORE = 80.0
 MIN_INITIAL_SCORE_FOR_GAP = 55.0
 MIN_INITIAL_POSITIVE_FEATURES_FOR_GAP = 2
 TOP_K = 5
@@ -78,6 +83,16 @@ SOURCE_TYPE_ALIAS = {
 VALID_RELIABILITIES = {"high", "medium", "low"}
 
 
+@dataclass(frozen=True)
+class EvidenceBudget:
+    read_url_limit: int = EVIDENCE_READ_URL_LIMIT
+    page_limit: int = EVIDENCE_PAGE_LIMIT
+    url_pool_limit: int = EVIDENCE_URL_POOL_LIMIT
+    crawl_targets: int = CRAWL_TARGETS_PER_CANDIDATE
+    crawl_pages: int = CRAWL_PAGES_PER_TARGET
+    hits_per_query: int = EVIDENCE_HITS_PER_QUERY
+
+
 def _normalize_source_type(s: str | None) -> str:
     raw = (s or "").strip()
     if raw in VALID_SOURCE_TYPES:
@@ -95,9 +110,11 @@ def _normalize_reliability(s: str | None) -> str:
         return "low"
     return "medium"
 
+
 class SearchAgent:
-    def __init__(self, perspective: AgentPerspective):
+    def __init__(self, perspective: AgentPerspective, search_session: SearchSession | None = None):
         self.persp = perspective
+        self.search_session = search_session or SearchSession()
         if not perspective.llm_endpoint.is_configured:
             raise RuntimeError(
                 f"Agent {perspective.name} 的 LLM 端点未完整配置 (api_key/base_url/model)"
@@ -173,28 +190,23 @@ class SearchAgent:
                 if label_key in attempted_labels:
                     continue
                 attempted_labels.add(label_key)
-                logger.info(
-                    "%s S6-S7 %s [%d/%d] 处理候选 %s",
-                    self.tag, stage, idx, len(focus_list), label,
-                )
-                product_launch_date = normalize_date_string(c.get("product_launch_date"))
-                if is_after_application(product_launch_date, task.patent.application_date) is True:
-                    reason = (
-                        "竞品上市/发布/量产日期晚于专利申请日"
-                        f"（竞品: {product_launch_date or '未知'}；申请日: "
-                        f"{task.patent.application_date or '未知'}）"
-                    )
-                    logger.info("%s   %s 预排除: %s", self.tag, label, reason)
+                admission_failure = self._candidate_admission_failure(c, task)
+                if admission_failure:
+                    logger.info("%s   %s 预排除: %s", self.tag, label, admission_failure)
                     discarded.append(DiscardedCandidate(
                         company=c.get("company", ""),
                         product=c.get("product", ""),
-                        discard_reason=reason,
+                        discard_reason=admission_failure,
                         evidence_urls=[
                             e.get("url", "") for e in (c.get("initial_evidence") or [])
                             if isinstance(e, dict) and e.get("url")
                         ],
                     ))
                     continue
+                logger.info(
+                    "%s S6-S7 %s [%d/%d] 处理候选 %s",
+                    self.tag, stage, idx, len(focus_list), label,
+                )
                 try:
                     cand = self._evaluate_candidate(task, c, queries_used)
                 except Exception as exc:  # noqa: BLE001
@@ -224,20 +236,24 @@ class SearchAgent:
                     self.tag, label, cand.score, n_match, len(cand.feature_match_table),
                 )
                 scored.append(cand)
-                if stop_when_valid is not None and len(scored) >= stop_when_valid:
+                best_score = max((item.score for item in scored), default=0.0)
+                if (
+                    stop_when_valid is not None
+                    and (len(scored) >= stop_when_valid or best_score >= SECOND_SEARCH_STOP_SCORE)
+                ):
                     logger.info(
-                        "%s   %s 已补足有效候选 %d/%d，停止继续二轮处理",
-                        self.tag, stage, len(scored), stop_when_valid,
+                        "%s   %s 已达到停止条件 valid=%d/%d best=%.1f，停止继续二轮处理",
+                        self.tag, stage, len(scored), stop_when_valid, best_score,
                     )
                     return
 
         _evaluate_focus_list(focus_candidates, "首轮")
 
-        # 若首轮有效候选明显不足，重新搜索一轮，而不是用低质量候选凑数。
-        if len(scored) < SECOND_SEARCH_MIN_VALID:
+        # 若首轮没有强候选或整体信号明显不足，才重新搜索一轮。
+        if self._should_trigger_second_search(scored):
             logger.info(
-                "%s   有效候选 %d < %d，触发二次候选搜索",
-                self.tag, len(scored), SECOND_SEARCH_MIN_VALID,
+                "%s   首轮候选信号不足 valid=%d best=%.1f，触发二次候选搜索",
+                self.tag, len(scored), max((c.score for c in scored), default=0.0),
             )
             rescue_queries = [
                 q for q in self._gen_queries_once(task, existing=queries)
@@ -247,7 +263,7 @@ class SearchAgent:
                 queries.extend(rescue_queries)
                 rescue_hits = self._search_candidates(task, rescue_queries, queries_used)
                 rescue_decisions = self._filter_candidates(task, rescue_hits)
-                rescue_focus = (rescue_decisions.get("candidates") or [])[:FOCUS_POOL_LIMIT]
+                rescue_focus = (rescue_decisions.get("candidates") or [])[:SECOND_FOCUS_POOL_LIMIT]
                 discarded.extend(
                     DiscardedCandidate(**d)
                     for d in rescue_decisions.get("discarded_candidates", [])
@@ -258,6 +274,11 @@ class SearchAgent:
                     "二轮",
                     stop_when_valid=SECOND_SEARCH_MIN_VALID,
                 )
+        else:
+            logger.info(
+                "%s   首轮已有足够强候选 valid=%d best=%.1f，跳过二次候选搜索",
+                self.tag, len(scored), max((c.score for c in scored), default=0.0),
+            )
 
         # ---------- S9-S10: 排序 + Top5 ----------
         scored.sort(key=lambda c: (c.score, *scoring.tiebreak_key(c)), reverse=True)
@@ -348,7 +369,7 @@ class SearchAgent:
         all_hits: dict[str, SearchHit] = {}
         for q in queries:
             try:
-                hits = pool.search(
+                hits = self.search_session.search(
                     q,
                     engines=self.persp.primary_engines,
                     num_per_engine=MAX_HITS_PER_ENGINE,
@@ -420,7 +441,7 @@ class SearchAgent:
         )
         for q, group_name in derived:
             try:
-                hits = pool.search(
+                hits = self.search_session.search(
                     q,
                     engines=("bocha",),
                     num_per_engine=MAX_HITS_PER_ENGINE,
@@ -446,6 +467,40 @@ class SearchAgent:
             ))
             if len(all_hits) >= COARSE_POOL_LIMIT:
                 return
+
+    def _candidate_admission_failure(self, cand: dict[str, Any], task: TaskPackage) -> str | None:
+        company = str(cand.get("company") or "").strip()
+        product = str(cand.get("product") or "").strip()
+        aliases = [str(a) for a in (cand.get("aliases") or [])]
+        if not _is_clear_label(company):
+            return "缺少明确竞品公司"
+        if not _is_clear_label(product):
+            return "缺少明确竞品产品/型号"
+        if evidence_strategy.product_specificity_score(
+            product,
+            aliases,
+            industry_tag=task.industry_tag,
+        ) < 2:
+            return "产品名称过泛，缺少可定位的型号、系列名或专有商品名"
+        product_launch_date = normalize_date_string(cand.get("product_launch_date"))
+        if is_after_application(product_launch_date, task.patent.application_date) is True:
+            return (
+                "竞品上市/发布/量产日期晚于专利申请日"
+                f"（竞品: {product_launch_date or '未知'}；申请日: "
+                f"{task.patent.application_date or '未知'}）"
+            )
+        return None
+
+    @staticmethod
+    def _should_trigger_second_search(scored: list[Candidate]) -> bool:
+        if not scored:
+            return True
+        best = max(c.score for c in scored)
+        if best >= SECOND_SEARCH_STOP_SCORE:
+            return False
+        if len(scored) < SECOND_SEARCH_MIN_VALID and best < SECOND_SEARCH_TRIGGER_SCORE:
+            return True
+        return all(c.score < 70.0 for c in scored)
 
     def _search_industry_evidence_sites(
         self,
@@ -500,6 +555,9 @@ class SearchAgent:
                 company=company,
                 product=product,
                 aliases=aliases,
+                industry_tag=task.industry_tag,
+                engines=("tavily", "brave", "bocha"),
+                url_pool_limit=EVIDENCE_URL_POOL_LIMIT,
             )
 
     @staticmethod
@@ -584,7 +642,15 @@ class SearchAgent:
             url = evidence_strategy.canonicalize_url(str(e.get("url", "")))
             title = str(e.get("title", "") or "")
             snippet = str(e.get("snippet", "") or "")
-            if not evidence_strategy.is_relevant_hit(url, title, snippet, company, product, aliases):
+            if not evidence_strategy.is_relevant_hit(
+                url,
+                title,
+                snippet,
+                company,
+                product,
+                aliases,
+                industry_tag=task.industry_tag,
+            ):
                 logger.info("%s     initial evidence SKIP low_relevance url=%s", self.tag, url)
                 continue
             if url not in ev_urls:
@@ -605,6 +671,8 @@ class SearchAgent:
             len(evidence_targets),
         )
         for target in evidence_targets[:EVIDENCE_TARGET_LIMIT]:
+            if target.target_id == "market_date":
+                continue
             logger.info(
                 "%s     evidence target=%s features=%s queries=%d",
                 self.tag,
@@ -626,6 +694,9 @@ class SearchAgent:
                     company=company,
                     product=product,
                     aliases=aliases,
+                    industry_tag=task.industry_tag,
+                    engines=self._engines_for_evidence_target(target, phase="initial"),
+                    url_pool_limit=EVIDENCE_URL_POOL_LIMIT,
                 )
         self._search_industry_evidence_sites(
             task=task,
@@ -675,7 +746,13 @@ class SearchAgent:
                     self.tag, cninfo_query, len(cn_hits), added,
                 )
 
-        ev_urls = self._sort_and_log_evidence_urls(ev_urls, ev_titles, phase="initial")
+        ev_urls = self._sort_and_log_evidence_urls(
+            ev_urls,
+            ev_titles,
+            phase="initial",
+            industry_tag=task.industry_tag,
+        )
+        budget = self._evidence_budget(cand, phase="initial", industry_tag=task.industry_tag)
         pages_by_url: dict[str, ExtractedPage] = {}
         crawled_targets: set[str] = set()
         pages = self._read_candidate_pages(
@@ -685,6 +762,8 @@ class SearchAgent:
             pages_by_url=pages_by_url,
             crawled_targets=crawled_targets,
             queries_used=queries_used,
+            budget=budget,
+            industry_tag=task.industry_tag,
         )
         match = self._run_feature_match(
             task=task,
@@ -695,6 +774,7 @@ class SearchAgent:
             ev_titles=ev_titles,
             ev_feature_hints=ev_feature_hints,
             pass_label="initial",
+            industry_tag=task.industry_tag,
         )
 
         gap_features = self._gap_features_for_supplement(
@@ -712,8 +792,10 @@ class SearchAgent:
         )
         if (
             gap_features
-            and initial_score < MIN_INITIAL_SCORE_FOR_GAP
-            and initial_positive < MIN_INITIAL_POSITIVE_FEATURES_FOR_GAP
+            and (
+                initial_score < MIN_INITIAL_SCORE_FOR_GAP
+                or initial_positive < MIN_INITIAL_POSITIVE_FEATURES_FOR_GAP
+            )
         ):
             logger.info(
                 "%s     gap supplement SKIP reason=low_initial_signal score=%.1f positives=%d",
@@ -737,6 +819,8 @@ class SearchAgent:
             for target in gap_targets[:GAP_EVIDENCE_TARGET_LIMIT]:
                 if not target.feature_ids:
                     continue
+                if target.target_id == "market_date":
+                    continue
                 logger.info(
                     "%s     gap target=%s features=%s queries=%d",
                     self.tag,
@@ -758,6 +842,9 @@ class SearchAgent:
                         company=company,
                         product=product,
                         aliases=aliases,
+                        industry_tag=task.industry_tag,
+                        engines=self._engines_for_evidence_target(target, phase="gap"),
+                        url_pool_limit=budget.url_pool_limit,
                     )
             for feature in gap_features:
                 if any(feature.feature_id in target.feature_ids for target in gap_targets):
@@ -766,6 +853,7 @@ class SearchAgent:
                     company,
                     product,
                     feature,
+                    industry_tag=task.industry_tag,
                 )[:GAP_EVIDENCE_QUERIES_PER_TARGET]:
                     self._search_evidence_query(
                         query=query,
@@ -780,8 +868,22 @@ class SearchAgent:
                         company=company,
                         product=product,
                         aliases=aliases,
+                        industry_tag=task.industry_tag,
+                        engines=pool.DEFAULT_SEARCH_ENGINES,
+                        url_pool_limit=budget.url_pool_limit,
                     )
-            ev_urls = self._sort_and_log_evidence_urls(ev_urls, ev_titles, phase="gap")
+            ev_urls = self._sort_and_log_evidence_urls(
+                ev_urls,
+                ev_titles,
+                phase="gap",
+                industry_tag=task.industry_tag,
+            )
+            gap_budget = self._evidence_budget(
+                cand,
+                phase="gap",
+                initial_score=initial_score,
+                industry_tag=task.industry_tag,
+            )
             pages = self._read_candidate_pages(
                 ev_urls=ev_urls,
                 ev_titles=ev_titles,
@@ -789,6 +891,8 @@ class SearchAgent:
                 pages_by_url=pages_by_url,
                 crawled_targets=crawled_targets,
                 queries_used=queries_used,
+                budget=gap_budget,
+                industry_tag=task.industry_tag,
             )
             logger.info(
                 "%s     gap supplement DONE new_urls=%d pages=%d",
@@ -805,6 +909,7 @@ class SearchAgent:
                 ev_titles=ev_titles,
                 ev_feature_hints=ev_feature_hints,
                 pass_label="gap",
+                industry_tag=task.industry_tag,
             )
         else:
             logger.info("%s     gap supplement SKIP reason=no_target_gap", self.tag)
@@ -842,6 +947,45 @@ class SearchAgent:
             reason_for_top5=match["reason_for_top5"],
         )
 
+    def _engines_for_evidence_target(
+        self,
+        target: evidence_strategy.EvidenceTarget,
+        *,
+        phase: str,
+    ) -> tuple[str, ...]:
+        if phase == "gap" and target.target_id in {"counter", "feature"}:
+            return pool.DEFAULT_SEARCH_ENGINES
+        if target.target_id == "market_date":
+            return ("bocha", "tavily")
+        if target.target_id == "spec":
+            return ("tavily", "brave", "exa")
+        if target.target_id in {"structure", "algorithm", "product_docs"}:
+            return ("tavily", "exa", "brave")
+        if target.target_id == "counter":
+            return pool.DEFAULT_SEARCH_ENGINES
+        return ("tavily", "exa", "brave")
+
+    def _evidence_budget(
+        self,
+        cand: dict[str, Any],
+        *,
+        phase: str,
+        initial_score: float | None = None,
+        industry_tag: str | None = None,
+    ) -> EvidenceBudget:
+        product = str(cand.get("product") or "")
+        aliases = [str(a) for a in (cand.get("aliases") or [])]
+        specificity = evidence_strategy.product_specificity_score(
+            product,
+            aliases,
+            industry_tag=industry_tag,
+        )
+        if phase == "gap" and (initial_score or 0.0) >= 75.0:
+            return EvidenceBudget(read_url_limit=8, page_limit=12, url_pool_limit=30)
+        if specificity >= 3:
+            return EvidenceBudget(read_url_limit=6, page_limit=10, url_pool_limit=28)
+        return EvidenceBudget()
+
     def _search_evidence_query(
         self,
         *,
@@ -857,6 +1001,9 @@ class SearchAgent:
         company: str,
         product: str,
         aliases: list[str],
+        industry_tag: str | None = None,
+        engines: list[str] | tuple[str, ...] | None = None,
+        url_pool_limit: int = EVIDENCE_URL_POOL_LIMIT,
     ) -> None:
         if not query:
             return
@@ -866,9 +1013,9 @@ class SearchAgent:
             logger.info("%s     evidence query SKIP duplicate query=%r", self.tag, query)
             return
         seen_queries.add(qkey)
-        evidence_engines = pool.DEFAULT_SEARCH_ENGINES
+        evidence_engines = tuple(engines or pool.DEFAULT_SEARCH_ENGINES)
         try:
-            extra = pool.search(
+            extra = self.search_session.search(
                 query,
                 engines=evidence_engines,
                 num_per_engine=EVIDENCE_HITS_PER_QUERY,
@@ -902,6 +1049,7 @@ class SearchAgent:
                 company,
                 product,
                 aliases,
+                industry_tag=industry_tag,
             ):
                 logger.info(
                     "%s     evidence HIT SKIP low_relevance source=%s title=%r url=%s",
@@ -910,7 +1058,7 @@ class SearchAgent:
                 continue
             for feature_id in feature_ids:
                 ev_feature_hints.setdefault(url, set()).add(feature_id)
-            if url not in ev_urls and len(ev_urls) < EVIDENCE_URL_POOL_LIMIT:
+            if url not in ev_urls and len(ev_urls) < url_pool_limit:
                 ev_urls.append(url)
                 ev_titles[url] = h.title
                 ev_summaries[url] = h.snippet
@@ -921,8 +1069,13 @@ class SearchAgent:
         ev_titles: dict[str, str],
         *,
         phase: str,
+        industry_tag: str | None = None,
     ) -> list[str]:
-        sorted_urls = evidence_strategy.sort_urls_by_value(ev_urls, ev_titles)
+        sorted_urls = evidence_strategy.sort_urls_by_value(
+            ev_urls,
+            ev_titles,
+            industry_tag=industry_tag,
+        )
         logger.info(
             "%s     evidence URL pool sorted phase=%s total=%d",
             self.tag, phase, len(sorted_urls),
@@ -932,7 +1085,11 @@ class SearchAgent:
                 "%s     evidence URL[%d] tier=%s title=%r url=%s",
                 self.tag,
                 i,
-                evidence_strategy.tier_label(url, ev_titles.get(url, "")),
+                evidence_strategy.tier_label(
+                    url,
+                    ev_titles.get(url, ""),
+                    industry_tag=industry_tag,
+                ),
                 (ev_titles.get(url, "") or "")[:160],
                 url,
             )
@@ -947,13 +1104,35 @@ class SearchAgent:
         pages_by_url: dict[str, ExtractedPage],
         crawled_targets: set[str],
         queries_used: list[QueryRecord],
+        budget: EvidenceBudget,
+        industry_tag: str | None = None,
     ) -> list[ExtractedPage]:
         # 抽取正文（优先官方 / 产品手册 / PDF / 文档中心等高价值来源）
-        for url in ev_urls[:EVIDENCE_READ_URL_LIMIT]:
+        read_candidates = [
+            url for url in ev_urls
+            if evidence_strategy.should_read_url(
+                url,
+                ev_titles.get(url, ""),
+                industry_tag=industry_tag,
+            )
+        ]
+        skipped_read = [url for url in ev_urls if url not in read_candidates]
+        for url in skipped_read[:10]:
+            logger.info(
+                "%s     read SKIP reason=low_value_source tier=%s url=%s",
+                self.tag,
+                evidence_strategy.tier_label(
+                    url,
+                    ev_titles.get(url, ""),
+                    industry_tag=industry_tag,
+                ),
+                url,
+            )
+        for url in read_candidates[:budget.read_url_limit]:
             if url in pages_by_url:
                 continue
             try:
-                p = pool.read_url(url, log_context=self.tag)
+                p = self.search_session.read_url(url, log_context=self.tag)
                 pages_by_url[url] = p
                 logger.info(
                     "%s     read %s → %s, %d chars",
@@ -971,23 +1150,33 @@ class SearchAgent:
         # Tavily Crawl 只深挖官网 / 产品页 / 文档中心，避免把新闻站或论坛页当成站点入口。
         crawl_targets = [
             url for url in ev_urls
-            if evidence_strategy.is_crawl_worthy(url, ev_titles.get(url, ""))
-        ][:CRAWL_TARGETS_PER_CANDIDATE]
+            if evidence_strategy.is_crawl_worthy(
+                url,
+                ev_titles.get(url, ""),
+                industry_tag=industry_tag,
+            )
+        ][:budget.crawl_targets]
         skipped_crawl = [url for url in ev_urls if url not in crawl_targets]
         for url in skipped_crawl[:10]:
             logger.info(
                 "%s     crawl SKIP reason=not_crawl_worthy tier=%s url=%s",
-                self.tag, evidence_strategy.tier_label(url, ev_titles.get(url, "")), url,
+                self.tag,
+                evidence_strategy.tier_label(
+                    url,
+                    ev_titles.get(url, ""),
+                    industry_tag=industry_tag,
+                ),
+                url,
             )
         for crawl_url in crawl_targets:
-            if len(pages_by_url) >= EVIDENCE_PAGE_LIMIT or crawl_url in crawled_targets:
+            if len(pages_by_url) >= budget.page_limit or crawl_url in crawled_targets:
                 continue
             crawled_targets.add(crawl_url)
             try:
-                crawled = pool.crawl_url(
+                crawled = self.search_session.crawl_url(
                     crawl_url,
                     max_depth=1,
-                    limit=CRAWL_PAGES_PER_TARGET,
+                    limit=budget.crawl_pages,
                     log_context=self.tag,
                 )
             except Exception as exc:  # noqa: BLE001
@@ -996,7 +1185,7 @@ class SearchAgent:
             for p in crawled:
                 if p.url and p.url not in pages_by_url:
                     pages_by_url[p.url] = p
-                if len(pages_by_url) >= EVIDENCE_PAGE_LIMIT:
+                if len(pages_by_url) >= budget.page_limit:
                     break
             if crawled:
                 queries_used.append(QueryRecord(
@@ -1008,18 +1197,18 @@ class SearchAgent:
 
         ordered: list[ExtractedPage] = []
         seen: set[str] = set()
-        for url in ev_urls[:EVIDENCE_READ_URL_LIMIT]:
+        for url in read_candidates[:budget.read_url_limit]:
             page = pages_by_url.get(url)
             if page and page.url not in seen:
                 ordered.append(page)
                 seen.add(page.url)
         for page in pages_by_url.values():
-            if len(ordered) >= EVIDENCE_PAGE_LIMIT:
+            if len(ordered) >= budget.page_limit:
                 break
             if page.url and page.url not in seen:
                 ordered.append(page)
                 seen.add(page.url)
-        return ordered[:EVIDENCE_PAGE_LIMIT]
+        return ordered[:budget.page_limit]
 
     def _run_feature_match(
         self,
@@ -1032,6 +1221,7 @@ class SearchAgent:
         ev_titles: dict[str, str],
         ev_feature_hints: dict[str, set[str]],
         pass_label: str,
+        industry_tag: str | None = None,
     ) -> dict[str, Any]:
         # ↓↓↓ 上下文动态压缩
         feat_block = _format_features(task)
@@ -1065,7 +1255,11 @@ class SearchAgent:
         for j, p in enumerate(packed_pages, start=1):
             hints = sorted(ev_feature_hints.get(p.url, set()))
             hint_text = f"\n     线索特征: {', '.join(hints)}" if hints else ""
-            source_label = evidence_strategy.tier_label(p.url, p.title or ev_titles.get(p.url, ""))
+            source_label = evidence_strategy.tier_label(
+                p.url,
+                p.title or ev_titles.get(p.url, ""),
+                industry_tag=industry_tag,
+            )
             evidence_block_lines.append(
                 f"[E{j}] {p.title or ev_titles.get(p.url, '')}\n"
                 f"     URL: {p.url}\n"
@@ -1189,3 +1383,27 @@ def _format_features(task: TaskPackage) -> str:
             f"      行业宣传语: {mkts}"
         )
     return "\n".join(lines)
+
+
+def _is_clear_label(value: str) -> bool:
+    raw = (value or "").strip()
+    if len(raw) < 2:
+        return False
+    low = raw.lower()
+    vague = {
+        "unknown",
+        "n/a",
+        "na",
+        "none",
+        "未知",
+        "不详",
+        "未明确",
+        "未识别",
+        "竞品",
+        "产品",
+        "电池",
+        "电芯",
+        "动力电池",
+        "方形电池",
+    }
+    return low not in vague and raw not in vague
