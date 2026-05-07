@@ -1,0 +1,75 @@
+{
+  "patent": {
+    "publication_no": "CN223014515U",
+    "title": "车载显示设备及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "黄付田",
+      "钟燕军",
+      "吴天宇",
+      "岑俊辉",
+      "谢明"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223014515U/zh",
+    "fetched_at": "2026-05-02T20:50:48+08:00"
+  },
+  "claim_1_text": "1.一种车载显示设备，其特征在于，包括：\n显示器；\n第一驱动机构，与所述显示器连接，用于驱动所述显示器转动；\n第二驱动机构，与所述显示器连接，用于驱动所述显示器及所述第一驱动机构作直线运动。",
+  "claim_1_text_html": "1.一种车载显示设备，其特征在于，包括：\n显示器；\n第一驱动机构，与所述显示器连接，用于驱动所述显示器转动；\n第二驱动机构，与所述显示器连接，用于驱动所述显示器及所述第一驱动机构作直线运动。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车载显示设备，其特征在于，包括：",
+      "engineering_terms": [
+        "车载显示装置",
+        "车机显示屏",
+        "vehicle display device",
+        "in-vehicle display"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "显示器；",
+      "engineering_terms": [
+        "显示屏",
+        "屏幕",
+        "显示面板",
+        "display",
+        "monitor"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第一驱动机构，与所述显示器连接，用于驱动所述显示器转动；",
+      "engineering_terms": [
+        "旋转驱动机构",
+        "转动驱动组件",
+        "rotary actuator",
+        "rotation drive mechanism"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "第二驱动机构，与所述显示器连接，用于驱动所述显示器及所述第一驱动机构作直线运动。",
+      "engineering_terms": [
+        "直线驱动机构",
+        "线性驱动组件",
+        "linear actuator",
+        "translation drive mechanism",
+        "滑移驱动机构"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/8c/4d/b3/223eed81f9fd3f/CN223014515U.pdf"
+}

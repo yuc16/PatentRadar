@@ -1,0 +1,65 @@
+{
+  "patent": {
+    "publication_no": "CN223023785U",
+    "title": "一种连接器护套、连接器及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "韩佳鹏",
+      "胡振方",
+      "刘琛琛",
+      "贾世杰",
+      "王文艳"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223023785U/zh",
+    "fetched_at": "2026-05-02T20:52:45+08:00"
+  },
+  "claim_1_text": "1.一种连接器护套，用于车辆，其特征在于，包括：\n护套本体(1)，所述护套本体(1)适于供连接端子插入，所述护套本体(1)设有第一卡槽(14)；\n卡止结构(2)，所述卡止结构(2)适于连接板体(3)，所述卡止结构(2)与所述护套本体(1)可拆卸连接，所述卡止结构(2)设有第一锁扣(100)，所述第一锁扣(100)与所述第一卡槽(14)卡接。",
+  "claim_1_text_html": "1.一种连接器护套，用于车辆，其特征在于，包括：\n护套本体(1)，所述护套本体(1)适于供连接端子插入，所述护套本体(1)设有第一卡槽(14)；\n卡止结构(2)，所述卡止结构(2)适于连接板体(3)，所述卡止结构(2)与所述护套本体(1)可拆卸连接，所述卡止结构(2)设有第一锁扣(100)，所述第一锁扣(100)与所述第一卡槽(14)卡接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接器护套，用于车辆，其特征在于，包括：",
+      "engineering_terms": [
+        "连接器外壳",
+        "连接器护套",
+        "connector housing",
+        "connector sheath"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "护套本体(1)，所述护套本体(1)适于供连接端子插入，所述护套本体(1)设有第一卡槽(14)；",
+      "engineering_terms": [
+        "护套主体",
+        "连接器壳体",
+        "端子容纳部",
+        "卡槽",
+        "housing body",
+        "terminal insertion cavity"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "卡止结构(2)，所述卡止结构(2)适于连接板体(3)，所述卡止结构(2)与所述护套本体(1)可拆卸连接，所述卡止结构(2)设有第一锁扣(100)，所述第一锁扣(100)与所述第一卡槽(14)卡接。",
+      "engineering_terms": [
+        "卡接结构",
+        "锁止结构",
+        "固定卡扣",
+        "可拆卸连接结构",
+        "locking structure",
+        "snap-fit structure"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/0e/4e/91/85611e8ee57543/CN223023785U.pdf"
+}

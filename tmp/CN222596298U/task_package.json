@@ -1,0 +1,65 @@
+{
+  "patent": {
+    "publication_no": "CN222596298U",
+    "title": "压缩机、热管理系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "邝彦宁",
+      "杨应葵",
+      "任光远",
+      "吴业艺",
+      "叶天志"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222596298U/zh",
+    "fetched_at": "2026-05-02T20:27:17+08:00"
+  },
+  "claim_1_text": "1.一种压缩机，其特征在于，包括压缩部和电控部，所述压缩部包括电机总成，所述压缩机还包括霍尔采集部，用于采集所述电机总成的转动信息，其中，所述霍尔采集部集成设置在所述电控部上。",
+  "claim_1_text_html": "1.一种压缩机，其特征在于，包括压缩部和电控部，所述压缩部包括电机总成，所述压缩机还包括霍尔采集部，用于采集所述电机总成的转动信息，其中，所述霍尔采集部集成设置在所述电控部上。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压缩机，其特征在于，包括压缩部和电控部，",
+      "engineering_terms": [
+        "compressor",
+        "压缩机",
+        "压缩机构",
+        "电控单元",
+        "electronic control unit"
+      ],
+      "is_essential": true,
+      "notes": "原文未采用冒号罗列结构，故将“包括压缩部和电控部”并入前序/总体组成特征。"
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述压缩部包括电机总成，",
+      "engineering_terms": [
+        "压缩部",
+        "电机总成",
+        "motor assembly",
+        "compression unit",
+        "驱动电机"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述压缩机还包括霍尔采集部，用于采集所述电机总成的转动信息，其中，所述霍尔采集部集成设置在所述电控部上。",
+      "engineering_terms": [
+        "霍尔采集部",
+        "Hall sensor",
+        "Hall acquisition unit",
+        "转速采集",
+        "转子位置检测",
+        "集成电控"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/f9/c2/96/52aa075ef5b7c4/CN222596298U.pdf"
+}

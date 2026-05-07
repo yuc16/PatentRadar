@@ -1,0 +1,64 @@
+{
+  "patent": {
+    "publication_no": "CN223093125U",
+    "title": "压接件、连接端子、连接器和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "姚东泉",
+      "曹阳",
+      "蒋俊",
+      "彭告"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223093125U/zh",
+    "fetched_at": "2026-05-02T20:55:45+08:00"
+  },
+  "claim_1_text": "1.一种压接件，用于压接线缆，其特征在于，所述线缆包括导电线和包裹所述导电线的绝缘层，所述绝缘层包括沿所述导电线的延伸方向间隔设置的第一绝缘部和第二绝缘部，且部分所述导电线暴露于所述第一绝缘部和所述第二绝缘部之间，\n所述压接件包括第一压接部、第二压接部和第三压接部，所述第一压接部用于压接所述第一绝缘部，所述第二压接部用于压接暴露的部分所述导电线，所述第三压接部用于压接所述第二绝缘部。",
+  "claim_1_text_html": "1.一种压接件，用于压接线缆，其特征在于，所述线缆包括导电线和包裹所述导电线的绝缘层，所述绝缘层包括沿所述导电线的延伸方向间隔设置的第一绝缘部和第二绝缘部，且部分所述导电线暴露于所述第一绝缘部和所述第二绝缘部之间，\n所述压接件包括第一压接部、第二压接部和第三压接部，所述第一压接部用于压接所述第一绝缘部，所述第二压接部用于压接暴露的部分所述导电线，所述第三压接部用于压接所述第二绝缘部。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压接件，用于压接线缆，其特征在于，",
+      "engineering_terms": [
+        "crimping member",
+        "压接结构",
+        "线缆压接件",
+        "端子压接部件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述线缆包括导电线和包裹所述导电线的绝缘层，所述绝缘层包括沿所述导电线的延伸方向间隔设置的第一绝缘部和第二绝缘部，且部分所述导电线暴露于所述第一绝缘部和所述第二绝缘部之间，",
+      "engineering_terms": [
+        "cable",
+        "conductor",
+        "insulation layer",
+        "剥线段",
+        "导体外露段",
+        "绝缘被覆"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述压接件包括第一压接部、第二压接部和第三压接部，所述第一压接部用于压接所述第一绝缘部，所述第二压接部用于压接暴露的部分所述导电线，所述第三压接部用于压接所述第二绝缘部。",
+      "engineering_terms": [
+        "crimping portions",
+        "insulation crimp",
+        "conductor crimp",
+        "三段式压接",
+        "压接翼",
+        "端子压接区"
+      ],
+      "is_essential": true,
+      "notes": "三个压接部及其分别对应的压接对象共同限定压接件结构，合并为一条部件组合特征。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/9d/85/ae/2bec71f6f5a66c/CN223093125U.pdf"
+}

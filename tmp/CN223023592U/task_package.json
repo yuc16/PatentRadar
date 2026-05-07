@@ -1,0 +1,63 @@
+{
+  "patent": {
+    "publication_no": "CN223023592U",
+    "title": "一种天线装置和电子产品",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "岳艳涛",
+      "林少彬",
+      "谭勇",
+      "方宇灏",
+      "钟俊城"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223023592U/zh",
+    "fetched_at": "2026-05-02T20:51:53+08:00"
+  },
+  "claim_1_text": "1.一种天线装置，其特征在于，包括：\n第一天线，所述第一天线设有与其开路端距离不同的第一馈电点、第二馈电点；\n天线开关，所述天线开关连接至所述第一馈电点、第二馈电点并分别形成通路，且所述第一馈电点、所述第二馈电点中的一者处于工作状态时，另一者处于断开状态。",
+  "claim_1_text_html": "1.一种天线装置，其特征在于，包括：\n第一天线，所述第一天线设有与其开路端距离不同的第一馈电点、第二馈电点；\n天线开关，所述天线开关连接至所述第一馈电点、第二馈电点并分别形成通路，且所述第一馈电点、所述第二馈电点中的一者处于工作状态时，另一者处于断开状态。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种天线装置，其特征在于，包括：",
+      "engineering_terms": [
+        "天线组件",
+        "antenna device",
+        "antenna apparatus"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一天线，所述第一天线设有与其开路端距离不同的第一馈电点、第二馈电点；",
+      "engineering_terms": [
+        "主天线",
+        "辐射体",
+        "馈电点",
+        "open end",
+        "feed point",
+        "antenna radiator"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "天线开关，所述天线开关连接至所述第一馈电点、第二馈电点并分别形成通路，且所述第一馈电点、所述第二馈电点中的一者处于工作状态时，另一者处于断开状态。",
+      "engineering_terms": [
+        "射频开关",
+        "RF switch",
+        "antenna switch",
+        "切换开关",
+        "通断控制"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/93/5d/fb/0db3578106d0e9/CN223023592U.pdf"
+}

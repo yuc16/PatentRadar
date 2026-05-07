@@ -1,0 +1,61 @@
+{
+  "patent": {
+    "publication_no": "CN222868202U",
+    "title": "一种连接器和汽车",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "杨培"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222868202U/zh",
+    "fetched_at": "2026-05-02T20:41:50+08:00"
+  },
+  "claim_1_text": "1.一种连接器，其特征在于，包括：\n第一连接件，包括第一护套，所述第一护套上设有导向槽以及连通所述导向槽的弧形开口；在所述导向槽朝向所述弧形开口的方向上，所述弧形开口的宽度逐渐增大；\n第二连接件，包括外壁上凸出设置有限位筋的第二护套；所述限位筋用于穿过所述弧形开口插入所述导向槽，以将所述第二护套定位插接至所述第一护套中。",
+  "claim_1_text_html": "1.一种连接器，其特征在于，包括：\n第一连接件，包括第一护套，所述第一护套上设有导向槽以及连通所述导向槽的弧形开口；在所述导向槽朝向所述弧形开口的方向上，所述弧形开口的宽度逐渐增大；\n第二连接件，包括外壁上凸出设置有限位筋的第二护套；所述限位筋用于穿过所述弧形开口插入所述导向槽，以将所述第二护套定位插接至所述第一护套中。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接器，其特征在于，包括：",
+      "engineering_terms": [
+        "连接器",
+        "connector",
+        "插接件",
+        "电连接器"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一连接件，包括第一护套，所述第一护套上设有导向槽以及连通所述导向槽的弧形开口；在所述导向槽朝向所述弧形开口的方向上，所述弧形开口的宽度逐渐增大；",
+      "engineering_terms": [
+        "第一连接件",
+        "第一护套",
+        "导向槽",
+        "弧形开口",
+        "guide groove",
+        "arc opening"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第二连接件，包括外壁上凸出设置有限位筋的第二护套；所述限位筋用于穿过所述弧形开口插入所述导向槽，以将所述第二护套定位插接至所述第一护套中。",
+      "engineering_terms": [
+        "第二连接件",
+        "第二护套",
+        "限位筋",
+        "定位插接",
+        "positioning rib",
+        "plug-in positioning"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/3f/06/f5/dbed39803ec837/CN222868202U.pdf"
+}

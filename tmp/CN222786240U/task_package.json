@@ -1,0 +1,58 @@
+{
+  "patent": {
+    "publication_no": "CN222786240U",
+    "title": "功率器件、电子设备和车辆",
+    "assignees": [
+      "BYD Semiconductor Co Ltd"
+    ],
+    "inventors": [
+      "左欣欣",
+      "卢汉汉",
+      "吴海平",
+      "滕美玲"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222786240U/zh",
+    "fetched_at": "2026-05-02T20:36:13+08:00"
+  },
+  "claim_1_text": "1.一种功率器件，其特征在于，包括：\n第一导电类型的衬底；\n第一导电类型的漂移区，在第一方向上，所述漂移区位于所述衬底上，在第二方向上，所述漂移区的侧面具有至少一个凹陷，其中，所述第一方向与所述第二方向相垂直。",
+  "claim_1_text_html": "1.一种功率器件，其特征在于，包括：\n第一导电类型的衬底；\n第一导电类型的漂移区，在第一方向上，所述漂移区位于所述衬底上，在第二方向上，所述漂移区的侧面具有至少一个凹陷，其中，所述第一方向与所述第二方向相垂直。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种功率器件，其特征在于，包括：",
+      "engineering_terms": [
+        "power device",
+        "功率半导体器件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一导电类型的衬底；",
+      "engineering_terms": [
+        "substrate",
+        "半导体衬底",
+        "第一导电类型衬底"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第一导电类型的漂移区，在第一方向上，所述漂移区位于所述衬底上，在第二方向上，所述漂移区的侧面具有至少一个凹陷，其中，所述第一方向与所述第二方向相垂直。",
+      "engineering_terms": [
+        "drift region",
+        "漂移层",
+        "第一导电类型漂移区",
+        "侧面凹陷",
+        "recess"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/0b/8a/cc/10a5dbd9726ddb/CN222786240U.pdf"
+}

@@ -1,0 +1,63 @@
+{
+  "patent": {
+    "publication_no": "CN222995805U",
+    "title": "一种天线、天线阵列、终端设备及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "符其略",
+      "李阿标",
+      "赵修茂"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222995805U/zh",
+    "fetched_at": "2026-05-02T20:49:25+08:00"
+  },
+  "claim_1_text": "1.一种天线，其特征在于，包括：\n第一介质板，具有相背的第一侧和第二侧，所述第一侧设置有辐射贴片，所述第二侧设置有金属地，所述辐射贴片与馈电网络连接；\n第二介质板，设置在所述第一介质板的第一侧，且与所述第一介质板之间具有第一间距，所述第二介质板远离所述辐射贴片的一侧上设置有金属加载片。",
+  "claim_1_text_html": "1.一种天线，其特征在于，包括：\n第一介质板，具有相背的第一侧和第二侧，所述第一侧设置有辐射贴片，所述第二侧设置有金属地，所述辐射贴片与馈电网络连接；\n第二介质板，设置在所述第一介质板的第一侧，且与所述第一介质板之间具有第一间距，所述第二介质板远离所述辐射贴片的一侧上设置有金属加载片。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种天线，其特征在于，包括：",
+      "engineering_terms": [
+        "天线",
+        "antenna",
+        "微带天线",
+        "贴片天线"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一介质板，具有相背的第一侧和第二侧，所述第一侧设置有辐射贴片，所述第二侧设置有金属地，所述辐射贴片与馈电网络连接；",
+      "engineering_terms": [
+        "介质基板",
+        "dielectric substrate",
+        "辐射贴片",
+        "radiating patch",
+        "接地金属层",
+        "馈电网络"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第二介质板，设置在所述第一介质板的第一侧，且与所述第一介质板之间具有第一间距，所述第二介质板远离所述辐射贴片的一侧上设置有金属加载片。",
+      "engineering_terms": [
+        "介质层",
+        "寄生介质板",
+        "dielectric superstrate",
+        "空气间隙",
+        "metal loading patch",
+        "金属加载片"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/27/79/5d/1c22369a99944b/CN222995805U.pdf"
+}

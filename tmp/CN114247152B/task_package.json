@@ -1,0 +1,111 @@
+{
+  "patent": {
+    "publication_no": "CN114247152B",
+    "title": "一种数据处理方法、车载主机及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "张静乐",
+      "曾董",
+      "赵自强"
+    ],
+    "source_url": "https://patents.google.com/patent/CN114247152B/zh",
+    "fetched_at": "2026-05-02T17:50:45+08:00"
+  },
+  "claim_1_text": "1.一种数据处理方法，其特征在于，应用于车辆，包括：\n在所述车辆行驶过程中，获取第一视角的实时路面数据，其中，所述第一视角包括处于所述车辆的第一位置的第一用户的视角；\n根据所述实时路面数据，构建用于进行车载游戏的游戏画面；\n控制与第二用户对应的显示装置展示所述游戏画面，以供所述第二用户进行所述车载游戏，其中，所述第二用户包括处于所述车辆的第二位置的用户；\n在所述车辆停止行驶之后，获取所述第一用户操作所述车辆的第一操作信息；以及\n获取所述第二用户在所述车载游戏中操作游戏车辆的第二操作信息，其中，所述游戏车辆用于在所述游戏画面中映射所述车辆；\n获取所述第一操作信息和所述第二操作信息之间的对比信息以及匹配结果；\n控制与所述第二用户对应的显示装置展示所述对比信息以及所述匹配结果。",
+  "claim_1_text_html": "1.一种数据处理方法，其特征在于，应用于车辆，包括：\n在所述车辆行驶过程中，获取第一视角的实时路面数据，其中，所述第一视角包括处于所述车辆的第一位置的第一用户的视角；\n根据所述实时路面数据，构建用于进行车载游戏的游戏画面；\n控制与第二用户对应的显示装置展示所述游戏画面，以供所述第二用户进行所述车载游戏，其中，所述第二用户包括处于所述车辆的第二位置的用户；\n在所述车辆停止行驶之后，获取所述第一用户操作所述车辆的第一操作信息；以及\n获取所述第二用户在所述车载游戏中操作游戏车辆的第二操作信息，其中，所述游戏车辆用于在所述游戏画面中映射所述车辆；\n获取所述第一操作信息和所述第二操作信息之间的对比信息以及匹配结果；\n控制与所述第二用户对应的显示装置展示所述对比信息以及所述匹配结果。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种数据处理方法，其特征在于，应用于车辆，包括：",
+      "engineering_terms": [
+        "车载数据处理方法",
+        "vehicle data processing",
+        "车载交互方法"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "在所述车辆行驶过程中，获取第一视角的实时路面数据，其中，所述第一视角包括处于所述车辆的第一位置的第一用户的视角；",
+      "engineering_terms": [
+        "实时路面数据采集",
+        "第一视角数据",
+        "驾驶员视角",
+        "road surface data",
+        "real-time road data"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "根据所述实时路面数据，构建用于进行车载游戏的游戏画面；",
+      "engineering_terms": [
+        "游戏画面生成",
+        "车载游戏场景构建",
+        "game rendering",
+        "in-vehicle game image"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "控制与第二用户对应的显示装置展示所述游戏画面，以供所述第二用户进行所述车载游戏，其中，所述第二用户包括处于所述车辆的第二位置的用户；",
+      "engineering_terms": [
+        "显示控制",
+        "车载显示装置",
+        "乘客显示屏",
+        "display device",
+        "车载游戏交互"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "在所述车辆停止行驶之后，获取所述第一用户操作所述车辆的第一操作信息；以及\n获取所述第二用户在所述车载游戏中操作游戏车辆的第二操作信息，其中，所述游戏车辆用于在所述游戏画面中映射所述车辆；",
+      "engineering_terms": [
+        "操作信息采集",
+        "驾驶操作信息",
+        "游戏操作信息",
+        "operation data",
+        "车辆映射"
+      ],
+      "is_essential": true,
+      "notes": "两类操作信息获取共同服务于后续对比与匹配，且第二操作信息包含游戏车辆映射限定，合并为一条特征。"
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "获取所述第一操作信息和所述第二操作信息之间的对比信息以及匹配结果；",
+      "engineering_terms": [
+        "操作对比",
+        "匹配结果",
+        "comparison information",
+        "matching result",
+        "行为匹配"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F7",
+      "feature_text": "控制与所述第二用户对应的显示装置展示所述对比信息以及所述匹配结果。",
+      "engineering_terms": [
+        "结果展示",
+        "显示控制",
+        "匹配结果显示",
+        "comparison display",
+        "display output"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/50/6d/d9/52b51e60314fa9/CN114247152B.pdf"
+}

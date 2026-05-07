@@ -1,0 +1,88 @@
+{
+  "patent": {
+    "publication_no": "CN222869099U",
+    "title": "氛围灯驱动芯片、系统及车辆",
+    "assignees": [
+      "BYD Co Ltd",
+      "Changsha BYD Automobile Co Ltd"
+    ],
+    "inventors": [
+      "卜万锦",
+      "郑锦锋",
+      "王友",
+      "刘圣坤",
+      "陈广炎"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222869099U/zh",
+    "fetched_at": "2026-05-02T20:43:07+08:00"
+  },
+  "claim_1_text": "1.一种氛围灯驱动芯片，其特征在于，包括：氛围灯驱动模块、CAN通信模块以及控制模块，\n所述控制模块分别与所述CAN通信模块和所述氛围灯驱动模块连接；\n其中，所述CAN通信模块用于接收氛围灯显示请求，并将所述请求传输至所述控制模块；\n所述控制模块用于响应所述请求，向所述氛围灯驱动模块输出控制指令；\n所述氛围灯驱动模块根据所述控制指令驱动氛围灯进行显示。",
+  "claim_1_text_html": "1.一种氛围灯驱动芯片，其特征在于，包括：氛围灯驱动模块、CAN通信模块以及控制模块，\n所述控制模块分别与所述CAN通信模块和所述氛围灯驱动模块连接；\n其中，所述CAN通信模块用于接收氛围灯显示请求，并将所述请求传输至所述控制模块；\n所述控制模块用于响应所述请求，向所述氛围灯驱动模块输出控制指令；\n所述氛围灯驱动模块根据所述控制指令驱动氛围灯进行显示。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种氛围灯驱动芯片，其特征在于，包括：",
+      "engineering_terms": [
+        "氛围灯控制芯片",
+        "ambient light driver IC",
+        "车载灯光驱动芯片"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "氛围灯驱动模块、CAN通信模块以及控制模块，\n所述控制模块分别与所述CAN通信模块和所述氛围灯驱动模块连接；",
+      "engineering_terms": [
+        "驱动模块",
+        "CAN收发模块",
+        "控制单元",
+        "模块连接架构",
+        "control module"
+      ],
+      "is_essential": true,
+      "notes": "该特征为芯片内部模块组成及模块间连接关系，合并作为结构限定。"
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "其中，所述CAN通信模块用于接收氛围灯显示请求，并将所述请求传输至所述控制模块；",
+      "engineering_terms": [
+        "CAN通信接口",
+        "CAN总线模块",
+        "CAN transceiver",
+        "显示请求接收模块"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述控制模块用于响应所述请求，向所述氛围灯驱动模块输出控制指令；",
+      "engineering_terms": [
+        "控制器",
+        "MCU",
+        "逻辑控制模块",
+        "control unit",
+        "指令输出模块"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "所述氛围灯驱动模块根据所述控制指令驱动氛围灯进行显示。",
+      "engineering_terms": [
+        "灯光驱动模块",
+        "LED驱动模块",
+        "ambient light driver",
+        "lamp driver",
+        "氛围灯显示驱动"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/0d/e0/40/2e432dd09f36d3/CN222869099U.pdf"
+}

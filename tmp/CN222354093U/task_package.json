@@ -1,0 +1,51 @@
+{
+  "patent": {
+    "publication_no": "CN222354093U",
+    "title": "光波导结构、光波导显示系统、车载抬头显示设备和车辆",
+    "assignees": [
+      "BYD Co Ltd",
+      "BYD Auto Co Ltd"
+    ],
+    "inventors": [
+      "夏苏",
+      "黄江",
+      "余峰",
+      "苏锋武",
+      "魏衍福"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222354093U/zh",
+    "fetched_at": "2026-05-02T20:58:34+08:00"
+  },
+  "claim_1_text": "1.一种光波导结构(100)，其特征在于，包括：\n光传输介质(10)和纯反射光栅(20)，所述纯反射光栅(20)设置在所述光传输介质(10)内，用于使光传输介质(10)内的至少部分光线分束成反射光和透射光。",
+  "claim_1_text_html": "1.一种光波导结构(100)，其特征在于，包括：\n光传输介质(10)和纯反射光栅(20)，所述纯反射光栅(20)设置在所述光传输介质(10)内，用于使光传输介质(10)内的至少部分光线分束成反射光和透射光。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种光波导结构(100)，其特征在于，包括：",
+      "engineering_terms": [
+        "光波导",
+        "waveguide",
+        "optical waveguide structure"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "光传输介质(10)和纯反射光栅(20)，所述纯反射光栅(20)设置在所述光传输介质(10)内，用于使光传输介质(10)内的至少部分光线分束成反射光和透射光。",
+      "engineering_terms": [
+        "光传输介质",
+        "纯反射光栅",
+        "反射光栅",
+        "optical transmission medium",
+        "reflective grating",
+        "beam splitter"
+      ],
+      "is_essential": true,
+      "notes": "光传输介质与纯反射光栅及其设置位置、分束功能共同构成该结构的核心限定，合并为一条特征。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/b7/6b/5a/cb1a018bb15359/CN222354093U.pdf"
+}

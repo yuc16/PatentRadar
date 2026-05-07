@@ -1,0 +1,95 @@
+{
+  "patent": {
+    "publication_no": "CN222352658U",
+    "title": "散热器、冰箱及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "文丹华",
+      "蒋嗣本"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222352658U/zh",
+    "fetched_at": "2026-05-02T19:42:22+08:00"
+  },
+  "claim_1_text": "1.一种散热器，其特征在于，包括：\n安装座；\n传热件，固定于所述安装座；\n密封罩，罩设于所述传热件且连接于所述安装座；\n风扇，安装于所述密封罩；以及\n导风壳，所述导风壳形成有导风空间以及与所述导风空间相连通的进风口和排风口，所述导风壳设置于所述密封罩上并与所述密封罩连通，用于定向导出风流，所述传热件位于所述安装座、所述密封罩、所述风扇以及所述导风壳所围成的包围空间中。",
+  "claim_1_text_html": "1.一种散热器，其特征在于，包括：\n安装座；\n传热件，固定于所述安装座；\n密封罩，罩设于所述传热件且连接于所述安装座；\n风扇，安装于所述密封罩；以及\n导风壳，所述导风壳形成有导风空间以及与所述导风空间相连通的进风口和排风口，所述导风壳设置于所述密封罩上并与所述密封罩连通，用于定向导出风流，所述传热件位于所述安装座、所述密封罩、所述风扇以及所述导风壳所围成的包围空间中。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种散热器，其特征在于，包括：",
+      "engineering_terms": [
+        "散热装置",
+        "heat sink",
+        "radiator",
+        "thermal management device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "安装座；",
+      "engineering_terms": [
+        "安装基座",
+        "固定座",
+        "mounting base",
+        "mounting seat"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "传热件，固定于所述安装座；",
+      "engineering_terms": [
+        "导热件",
+        "换热件",
+        "heat transfer member",
+        "thermal conductor"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "密封罩，罩设于所述传热件且连接于所述安装座；",
+      "engineering_terms": [
+        "罩壳",
+        "密封壳体",
+        "sealed cover",
+        "enclosure"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "风扇，安装于所述密封罩；",
+      "engineering_terms": [
+        "散热风扇",
+        "轴流风扇",
+        "fan",
+        "cooling fan"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "导风壳，所述导风壳形成有导风空间以及与所述导风空间相连通的进风口和排风口，所述导风壳设置于所述密封罩上并与所述密封罩连通，用于定向导出风流，所述传热件位于所述安装座、所述密封罩、所述风扇以及所述导风壳所围成的包围空间中。",
+      "engineering_terms": [
+        "导风罩",
+        "风道壳体",
+        "air guide housing",
+        "air duct",
+        "shroud"
+      ],
+      "is_essential": true,
+      "notes": "将导风壳的结构、连通关系、导风功能以及包围空间内传热件位置关系合并为同一连续特征。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/98/87/d6/c5a75b824b2508/CN222352658U.pdf"
+}

@@ -1,0 +1,78 @@
+{
+  "patent": {
+    "publication_no": "CN222346693U",
+    "title": "制热装置、制热系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "杨林伟",
+      "吴辉",
+      "任茂林",
+      "黄金明",
+      "章云"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222346693U/zh",
+    "fetched_at": "2026-05-02T18:04:40+08:00"
+  },
+  "claim_1_text": "1.一种制热装置，其特征在于，包括：\n副水箱，所述副水箱的内部具有水室；\n加热器，所述加热器集成于所述副水箱的外部，用于加热流经所述加热器的液体并输送至所述水室；\n水泵，所述水泵用于将液体泵出所述水室。",
+  "claim_1_text_html": "1.一种制热装置，其特征在于，包括：\n副水箱，所述副水箱的内部具有水室；\n加热器，所述加热器集成于所述副水箱的外部，用于加热流经所述加热器的液体并输送至所述水室；\n水泵，所述水泵用于将液体泵出所述水室。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种制热装置，其特征在于，包括：",
+      "engineering_terms": [
+        "加热装置",
+        "制热模块",
+        "thermal device",
+        "heating device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "副水箱，所述副水箱的内部具有水室；",
+      "engineering_terms": [
+        "辅助水箱",
+        "储液箱",
+        "膨胀水箱",
+        "水室",
+        "auxiliary tank",
+        "water chamber"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "加热器，所述加热器集成于所述副水箱的外部，用于加热流经所述加热器的液体并输送至所述水室；",
+      "engineering_terms": [
+        "加热单元",
+        "电加热器",
+        "液体加热器",
+        "集成式加热器",
+        "heater",
+        "liquid heater"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "水泵，所述水泵用于将液体泵出所述水室。",
+      "engineering_terms": [
+        "泵",
+        "循环泵",
+        "液泵",
+        "water pump",
+        "circulation pump"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/0b/1f/d1/4c3b44d6be1bb7/CN222346693U.pdf"
+}

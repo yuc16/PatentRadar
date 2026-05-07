@@ -1,0 +1,76 @@
+{
+  "patent": {
+    "publication_no": "CN222994762U",
+    "title": "光学系统及图像显示装置、车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "李晶",
+      "董一甲",
+      "高明",
+      "高桂华",
+      "苗婷"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222994762U/zh",
+    "fetched_at": "2026-05-02T20:48:46+08:00"
+  },
+  "claim_1_text": "1.一种光学系统，用于形成目标图像的虚像；其特征在于，包括：\n图像生成单元，用于生成目标图像；\n光学件，用于接收且反射所述目标图像的光束；\n其中，所述图像生成单元相对所述光学件可动设置，以改变所述光束进入所述光学件的光路。",
+  "claim_1_text_html": "1.一种光学系统，用于形成目标图像的虚像；其特征在于，包括：\n图像生成单元，用于生成目标图像；\n光学件，用于接收且反射所述目标图像的光束；\n其中，所述图像生成单元相对所述光学件可动设置，以改变所述光束进入所述光学件的光路。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种光学系统，用于形成目标图像的虚像；其特征在于，包括：",
+      "engineering_terms": [
+        "光学成像系统",
+        "虚像显示系统",
+        "optical system",
+        "virtual image system"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "图像生成单元，用于生成目标图像；",
+      "engineering_terms": [
+        "图像源",
+        "显示单元",
+        "图像发生器",
+        "image generation unit",
+        "picture generation unit"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "光学件，用于接收且反射所述目标图像的光束；",
+      "engineering_terms": [
+        "光学元件",
+        "反射光学件",
+        "反射镜",
+        "optical element",
+        "reflective optical element"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "其中，所述图像生成单元相对所述光学件可动设置，以改变所述光束进入所述光学件的光路。",
+      "engineering_terms": [
+        "可动设置",
+        "相对运动机构",
+        "光路调节",
+        "movable arrangement",
+        "optical path adjustment"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/39/46/a9/40acefb86a5d39/CN222994762U.pdf"
+}

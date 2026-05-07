@@ -1,0 +1,97 @@
+{
+  "patent": {
+    "publication_no": "CN117584868B",
+    "title": "显示终端的执行机构、车载显示终端及具有其的车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "王晓文"
+    ],
+    "source_url": "https://patents.google.com/patent/CN117584868B/zh",
+    "fetched_at": "2026-05-02T17:56:43+08:00"
+  },
+  "claim_1_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+  "claim_1_text_html": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：",
+      "engineering_terms": [
+        "display terminal actuator",
+        "执行机构",
+        "驱动机构",
+        "转动机构",
+        "车载显示屏转向机构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "用于安装所述显示终端的安装支架；",
+      "engineering_terms": [
+        "安装支架",
+        "mounting bracket",
+        "显示屏支架",
+        "支撑架"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；",
+      "engineering_terms": [
+        "旋转盘",
+        "turntable",
+        "rotary disk",
+        "配合槽",
+        "配合凸起",
+        "同步转动连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；",
+      "engineering_terms": [
+        "多点配合",
+        "一一对应配合",
+        "multiple protrusions and grooves",
+        "定位配合结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "多个所述配合凸起在所述显示终端的长度方向上间隔设置；",
+      "engineering_terms": [
+        "间隔设置",
+        "长度方向布置",
+        "spaced arrangement",
+        "longitudinal arrangement"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+      "engineering_terms": [
+        "同步转动",
+        "无相对运动",
+        "rigid coupling",
+        "integral rotation",
+        "联动结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/1c/45/a3/cf885ac7cf6895/CN117584868B.pdf"
+}

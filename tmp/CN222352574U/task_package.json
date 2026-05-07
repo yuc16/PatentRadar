@@ -1,0 +1,74 @@
+{
+  "patent": {
+    "publication_no": "CN222352574U",
+    "title": "控温装置和检测设备",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "宫清",
+      "周维",
+      "李世超",
+      "林世荣"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222352574U/zh",
+    "fetched_at": "2026-05-02T20:58:00+08:00"
+  },
+  "claim_1_text": "1.一种控温装置，其特征在于，所述控温装置包括：\n至少一个半导体制冷片，所述半导体制冷片包括第一表面和第二表面，所述第一表面和所述第二表面的其中一个为制热表面，另一个为制冷表面；\n控温平台，设置于所述第一表面，用于放置物体，以对所述物体进行降温或者升温；\n风力控温器，设置于所述第二表面，用于对所述半导体制冷片进行散热或者加热。",
+  "claim_1_text_html": "1.一种控温装置，其特征在于，所述控温装置包括：\n至少一个半导体制冷片，所述半导体制冷片包括第一表面和第二表面，所述第一表面和所述第二表面的其中一个为制热表面，另一个为制冷表面；\n控温平台，设置于所述第一表面，用于放置物体，以对所述物体进行降温或者升温；\n风力控温器，设置于所述第二表面，用于对所述半导体制冷片进行散热或者加热。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种控温装置，其特征在于，所述控温装置包括：",
+      "engineering_terms": [
+        "温控装置",
+        "temperature control device",
+        "thermal control apparatus"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "至少一个半导体制冷片，所述半导体制冷片包括第一表面和第二表面，所述第一表面和所述第二表面的其中一个为制热表面，另一个为制冷表面；",
+      "engineering_terms": [
+        "半导体制冷片",
+        "TEC",
+        "thermoelectric cooler",
+        "Peltier module",
+        "热电制冷片"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "控温平台，设置于所述第一表面，用于放置物体，以对所述物体进行降温或者升温；",
+      "engineering_terms": [
+        "控温平台",
+        "温控台",
+        "sample stage",
+        "temperature-controlled platform",
+        "载物平台"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "风力控温器，设置于所述第二表面，用于对所述半导体制冷片进行散热或者加热。",
+      "engineering_terms": [
+        "风力控温器",
+        "风冷温控器",
+        "fan cooling unit",
+        "air cooling module",
+        "forced-air thermal controller"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/0b/10/84/23504b225632f4/CN222352574U.pdf"
+}

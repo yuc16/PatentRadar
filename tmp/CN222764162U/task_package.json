@@ -1,0 +1,74 @@
+{
+  "patent": {
+    "publication_no": "CN222764162U",
+    "title": "换热结构、功率模块、节流装置、空调系统和用电设备",
+    "assignees": [
+      "BYD Semiconductor Co Ltd"
+    ],
+    "inventors": [
+      "阳盼",
+      "骆传名",
+      "杨胜松",
+      "陈刚"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222764162U/zh",
+    "fetched_at": "2026-05-02T20:36:01+08:00"
+  },
+  "claim_1_text": "1.一种换热结构，其特征在于，包括：\n换热管，所述换热管具有进口和出口，所述换热管包括第一换热管和多个第二换热管，所述第一换热管的一端与所述进口相连，所述多个第二换热管位于所述第一换热管的两侧，所述多个第二换热管的一端均与所述第一换热管的另一端连通，每个所述多个第二换热管的另一端沿朝向远离所述第一换热管的方向呈S形延伸，每个所述多个第二换热管的所述另一端与所述出口相连。",
+  "claim_1_text_html": "1.一种换热结构，其特征在于，包括：\n换热管，所述换热管具有进口和出口，所述换热管包括第一换热管和多个第二换热管，所述第一换热管的一端与所述进口相连，所述多个第二换热管位于所述第一换热管的两侧，所述多个第二换热管的一端均与所述第一换热管的另一端连通，每个所述多个第二换热管的另一端沿朝向远离所述第一换热管的方向呈S形延伸，每个所述多个第二换热管的所述另一端与所述出口相连。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种换热结构，其特征在于，包括：",
+      "engineering_terms": [
+        "heat exchange structure",
+        "换热组件",
+        "热交换结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "换热管，所述换热管具有进口和出口，所述换热管包括第一换热管和多个第二换热管，",
+      "engineering_terms": [
+        "heat exchange tube",
+        "换热管路",
+        "热交换管",
+        "inlet",
+        "outlet"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述第一换热管的一端与所述进口相连，",
+      "engineering_terms": [
+        "first heat exchange tube",
+        "第一管路",
+        "入口连接",
+        "管端连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述多个第二换热管位于所述第一换热管的两侧，所述多个第二换热管的一端均与所述第一换热管的另一端连通，每个所述多个第二换热管的另一端沿朝向远离所述第一换热管的方向呈S形延伸，每个所述多个第二换热管的所述另一端与所述出口相连。",
+      "engineering_terms": [
+        "second heat exchange tubes",
+        "分支换热管",
+        "S-shaped tube",
+        "serpentine tube",
+        "管路连通",
+        "出口连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/88/a0/40/dbe9623583205c/CN222764162U.pdf"
+}

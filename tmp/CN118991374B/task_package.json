@@ -1,0 +1,127 @@
+{
+  "patent": {
+    "publication_no": "CN118991374B",
+    "title": "车辆及其热管理系统",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "向熊",
+      "汪健",
+      "潘刚",
+      "孙亚轩"
+    ],
+    "source_url": "https://patents.google.com/patent/CN118991374B/zh",
+    "fetched_at": "2026-05-02T18:03:29+08:00"
+  },
+  "claim_1_text": "1.一种车辆热管理系统，其特征在于，包括：\n调湿器，用于调节外部空间与座舱空间交互的气体的湿度；\n压缩机，用于驱动换热工质；\n其中，所述调湿器的工作状态包括可切换的除湿状态和释放状态，所述调湿器处于除湿状态时吸附水汽以降低外部空间与座舱空间交互的气体的湿度；所述调湿器处于除湿状态时释放水汽以增加外部空间与座舱空间交互的气体的湿度；\n所述调湿器包括：\n换热装置，用于改变所述调湿器的温度从而使所述调湿器的温度高于或低于环境温度；\n所述车辆热管理系统包括多个所述调湿器；以及，\n配热装置，用于为多个所述调湿器的换热装置配置换热工质，以使多个所述调湿器具有相同或相异的工作状态；\n多个所述调湿器包括：\n第一调湿器和第二调湿器；\n其中，所述配热装置分别连接所述第一调湿器和所述第二调湿器；\n所述配热装置还包括：\n第一膨胀阀，连接至所述第一调湿器上；\n第一旁通阀，连接至所述第一调湿器上且在所述第一膨胀阀开启时关闭；\n其中，当所述第一调湿器处于除湿状态或释放状态时，所述第一膨胀阀和所述第一旁通阀中的至少一个开启以使所述换热工质在所述第一调湿器和所述第二调湿器之间流通。",
+  "claim_1_text_html": "1.一种车辆热管理系统，其特征在于，包括：\n调湿器，用于调节外部空间与座舱空间交互的气体的湿度；\n压缩机，用于驱动换热工质；\n其中，所述调湿器的工作状态包括可切换的除湿状态和释放状态，所述调湿器处于除湿状态时吸附水汽以降低外部空间与座舱空间交互的气体的湿度；所述调湿器处于除湿状态时释放水汽以增加外部空间与座舱空间交互的气体的湿度；\n所述调湿器包括：\n换热装置，用于改变所述调湿器的温度从而使所述调湿器的温度高于或低于环境温度；\n所述车辆热管理系统包括多个所述调湿器；以及，\n配热装置，用于为多个所述调湿器的换热装置配置换热工质，以使多个所述调湿器具有相同或相异的工作状态；\n多个所述调湿器包括：\n第一调湿器和第二调湿器；\n其中，所述配热装置分别连接所述第一调湿器和所述第二调湿器；\n所述配热装置还包括：\n第一膨胀阀，连接至所述第一调湿器上；\n第一旁通阀，连接至所述第一调湿器上且在所述第一膨胀阀开启时关闭；\n其中，当所述第一调湿器处于除湿状态或释放状态时，所述第一膨胀阀和所述第一旁通阀中的至少一个开启以使所述换热工质在所述第一调湿器和所述第二调湿器之间流通。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车辆热管理系统，其特征在于，包括：",
+      "engineering_terms": [
+        "车辆热管理",
+        "汽车热管理系统",
+        "thermal management system",
+        "vehicle HVAC"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "调湿器，用于调节外部空间与座舱空间交互的气体的湿度；",
+      "engineering_terms": [
+        "湿度调节器",
+        "调湿装置",
+        "humidity regulator",
+        "dehumidifier",
+        "humidifier"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "压缩机，用于驱动换热工质；",
+      "engineering_terms": [
+        "制冷压缩机",
+        "热泵压缩机",
+        "compressor",
+        "冷媒驱动装置"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "其中，所述调湿器的工作状态包括可切换的除湿状态和释放状态，所述调湿器处于除湿状态时吸附水汽以降低外部空间与座舱空间交互的气体的湿度；所述调湿器处于除湿状态时释放水汽以增加外部空间与座舱空间交互的气体的湿度；",
+      "engineering_terms": [
+        "除湿状态",
+        "释放状态",
+        "吸附水汽",
+        "释放水汽",
+        "humidity adsorption/desorption"
+      ],
+      "is_essential": true,
+      "notes": "原文第二句为“所述调湿器处于除湿状态时释放水汽”，可能存在表述异常；因无附图，按用户提供文字原样保留。"
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "所述调湿器包括：\n换热装置，用于改变所述调湿器的温度从而使所述调湿器的温度高于或低于环境温度；",
+      "engineering_terms": [
+        "换热器",
+        "热交换装置",
+        "heat exchanger",
+        "温度调节装置",
+        "thermal conditioning device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "所述车辆热管理系统包括多个所述调湿器；以及，\n配热装置，用于为多个所述调湿器的换热装置配置换热工质，以使多个所述调湿器具有相同或相异的工作状态；",
+      "engineering_terms": [
+        "多调湿器系统",
+        "配热装置",
+        "冷媒分配装置",
+        "refrigerant distribution",
+        "thermal distribution device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F7",
+      "feature_text": "多个所述调湿器包括：\n第一调湿器和第二调湿器；\n其中，所述配热装置分别连接所述第一调湿器和所述第二调湿器；",
+      "engineering_terms": [
+        "第一调湿器",
+        "第二调湿器",
+        "双调湿器",
+        "dual humidity regulators",
+        "并联调湿单元"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F8",
+      "feature_text": "所述配热装置还包括：\n第一膨胀阀，连接至所述第一调湿器上；\n第一旁通阀，连接至所述第一调湿器上且在所述第一膨胀阀开启时关闭；\n其中，当所述第一调湿器处于除湿状态或释放状态时，所述第一膨胀阀和所述第一旁通阀中的至少一个开启以使所述换热工质在所述第一调湿器和所述第二调湿器之间流通。",
+      "engineering_terms": [
+        "膨胀阀",
+        "旁通阀",
+        "expansion valve",
+        "bypass valve",
+        "冷媒流通控制",
+        "refrigerant flow control"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/12/d9/8b/442707fd44f9d6/CN118991374B.pdf"
+}

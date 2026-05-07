@@ -1,0 +1,104 @@
+{
+  "patent": {
+    "publication_no": "CN222979873U",
+    "title": "抬头显示装置的镜片总成、抬头显示装置和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "傅仰柱",
+      "刘磊",
+      "李健",
+      "黄凯",
+      "陈祖炜"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222979873U/zh",
+    "fetched_at": "2026-05-02T20:44:44+08:00"
+  },
+  "claim_1_text": "1.一种抬头显示装置的镜片总成，其特征在于，包括：\n反射镜（10），所述反射镜（10）在第一方向的至少一侧设置有转轴（11）；\n缓冲组件（20），所述缓冲组件（20）设置于所述反射镜（10）在第一方向的至少一侧，所述缓冲组件（20）包括：\n转接件（21），所述转接件（21）在第一方向的一端和所述转轴（11）固定连接；\n阻尼器（22），所述阻尼器（22）和所述转接件（21）在第一方向的另一端固定连接；\n安装支架（23），所述安装支架（23）朝向所述阻尼器（22）的一端设置有第一安装孔（231），所述阻尼器（22）的至少一部分安装于所述第一安装孔（231）内。",
+  "claim_1_text_html": "1.一种抬头显示装置的镜片总成，其特征在于，包括：\n反射镜（10），所述反射镜（10）在第一方向的至少一侧设置有转轴（11）；\n缓冲组件（20），所述缓冲组件（20）设置于所述反射镜（10）在第一方向的至少一侧，所述缓冲组件（20）包括：\n转接件（21），所述转接件（21）在第一方向的一端和所述转轴（11）固定连接；\n阻尼器（22），所述阻尼器（22）和所述转接件（21）在第一方向的另一端固定连接；\n安装支架（23），所述安装支架（23）朝向所述阻尼器（22）的一端设置有第一安装孔（231），所述阻尼器（22）的至少一部分安装于所述第一安装孔（231）内。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种抬头显示装置的镜片总成，其特征在于，包括：",
+      "engineering_terms": [
+        "HUD镜片总成",
+        "抬头显示镜片组件",
+        "head-up display mirror assembly",
+        "HUD optical assembly"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "反射镜（10），所述反射镜（10）在第一方向的至少一侧设置有转轴（11）；",
+      "engineering_terms": [
+        "反射镜",
+        "反射镜片",
+        "mirror",
+        "reflector",
+        "转轴",
+        "pivot shaft"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "缓冲组件（20），所述缓冲组件（20）设置于所述反射镜（10）在第一方向的至少一侧，所述缓冲组件（20）包括：",
+      "engineering_terms": [
+        "缓冲组件",
+        "阻尼组件",
+        "缓冲机构",
+        "damping assembly",
+        "buffer assembly"
+      ],
+      "is_essential": true,
+      "notes": "该片段为缓冲组件的设置位置及其包括下列部件的引出限定，内部部件另行拆分。"
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "转接件（21），所述转接件（21）在第一方向的一端和所述转轴（11）固定连接；",
+      "engineering_terms": [
+        "转接件",
+        "连接件",
+        "适配件",
+        "adapter",
+        "connector"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "阻尼器（22），所述阻尼器（22）和所述转接件（21）在第一方向的另一端固定连接；",
+      "engineering_terms": [
+        "阻尼器",
+        "减振器",
+        "阻尼件",
+        "damper",
+        "damping device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "安装支架（23），所述安装支架（23）朝向所述阻尼器（22）的一端设置有第一安装孔（231），所述阻尼器（22）的至少一部分安装于所述第一安装孔（231）内。",
+      "engineering_terms": [
+        "安装支架",
+        "支撑架",
+        "固定支架",
+        "mounting bracket",
+        "安装孔",
+        "mounting hole"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/b3/79/fa/0ee96356640f1a/CN222979873U.pdf"
+}

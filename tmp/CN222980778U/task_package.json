@@ -1,0 +1,50 @@
+{
+  "patent": {
+    "publication_no": "CN222980778U",
+    "title": "天线及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "段浩澜",
+      "钟俊城",
+      "谭勇",
+      "林少彬",
+      "方宇灏"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222980778U/zh",
+    "fetched_at": "2026-05-02T20:45:04+08:00"
+  },
+  "claim_1_text": "1.一种天线，其特征在于，包括：\n辐射片，所述辐射片具有直线边以及缝隙边；所述直线边具有第一端和第二端；所述缝隙边的一端与所述第一端连接，沿所述第一端至所述第二端的方向，所述缝隙边由与所述第一端连接的一端延伸至另一端，且与所述直线边有间隙。",
+  "claim_1_text_html": "1.一种天线，其特征在于，包括：\n辐射片，所述辐射片具有直线边以及缝隙边；所述直线边具有第一端和第二端；所述缝隙边的一端与所述第一端连接，沿所述第一端至所述第二端的方向，所述缝隙边由与所述第一端连接的一端延伸至另一端，且与所述直线边有间隙。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种天线，其特征在于，包括：",
+      "engineering_terms": [
+        "antenna",
+        "天线装置",
+        "辐射结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "辐射片，所述辐射片具有直线边以及缝隙边；所述直线边具有第一端和第二端；所述缝隙边的一端与所述第一端连接，沿所述第一端至所述第二端的方向，所述缝隙边由与所述第一端连接的一端延伸至另一端，且与所述直线边有间隙。",
+      "engineering_terms": [
+        "radiating patch",
+        "辐射贴片",
+        "天线辐射片",
+        "slot edge",
+        "缝隙边",
+        "直线边"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/80/d7/22/16eb7b94e35449/CN222980778U.pdf"
+}

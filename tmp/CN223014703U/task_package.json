@@ -1,0 +1,63 @@
+{
+  "patent": {
+    "publication_no": "CN223014703U",
+    "title": "冗余装置、电动助力转向系统和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "王永",
+      "钟国强",
+      "董理",
+      "李辙",
+      "赵伟冰"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223014703U/zh",
+    "fetched_at": "2026-05-02T20:50:57+08:00"
+  },
+  "claim_1_text": "1.一种冗余装置，其特征在于，包括：\n控制单元，用于接收方向盘的调节数据，输出驱动控制信号；\n第一执行单元和第二执行单元，与所述控制单元连接，用于接收所述驱动控制信号，并在其中一个故障时，基于所述第一执行单元和所述第二执行单元中未故障的一个控制电机运行。",
+  "claim_1_text_html": "1.一种冗余装置，其特征在于，包括：\n控制单元，用于接收方向盘的调节数据，输出驱动控制信号；\n第一执行单元和第二执行单元，与所述控制单元连接，用于接收所述驱动控制信号，并在其中一个故障时，基于所述第一执行单元和所述第二执行单元中未故障的一个控制电机运行。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种冗余装置，其特征在于，包括：",
+      "engineering_terms": [
+        "冗余控制装置",
+        "redundancy device",
+        "backup control device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "控制单元，用于接收方向盘的调节数据，输出驱动控制信号；",
+      "engineering_terms": [
+        "控制器",
+        "控制模块",
+        "control unit",
+        "ECU",
+        "驱动控制信号输出模块"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第一执行单元和第二执行单元，与所述控制单元连接，用于接收所述驱动控制信号，并在其中一个故障时，基于所述第一执行单元和所述第二执行单元中未故障的一个控制电机运行。",
+      "engineering_terms": [
+        "执行器",
+        "冗余执行单元",
+        "actuator unit",
+        "dual actuator",
+        "故障切换执行模块",
+        "电机控制执行单元"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/3c/cb/68/b38b0d600f503f/CN223014703U.pdf"
+}

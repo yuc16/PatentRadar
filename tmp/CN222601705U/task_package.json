@@ -1,0 +1,79 @@
+{
+  "patent": {
+    "publication_no": "CN222601705U",
+    "title": "光收发一体单管封装器件",
+    "assignees": [
+      "BYD Semiconductor Co Ltd"
+    ],
+    "inventors": [
+      "祁金鹏",
+      "郑茂铃",
+      "孟奇",
+      "冯琪顺",
+      "王月月"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222601705U/zh",
+    "fetched_at": "2026-05-02T20:29:38+08:00"
+  },
+  "claim_1_text": "1.一种光收发一体单管封装器件，其特征在于，包括底座以及设置于所述底座的发光芯片(1)、功率探测器(3)和棱镜(9)；\n所述发光芯片(1)及所述功率探测器(3)位于同一平面；\n所述棱镜(9)位于所述发光芯片(1)的上方，所述棱镜(9)为平行四边形结构，所述发光芯片(1)发射的部分光线经所述棱镜(9)反射至所述功率探测器(3)。",
+  "claim_1_text_html": "1.一种光收发一体单管封装器件，其特征在于，包括底座以及设置于所述底座的发光芯片(1)、功率探测器(3)和棱镜(9)；\n所述发光芯片(1)及所述功率探测器(3)位于同一平面；\n所述棱镜(9)位于所述发光芯片(1)的上方，所述棱镜(9)为平行四边形结构，所述发光芯片(1)发射的部分光线经所述棱镜(9)反射至所述功率探测器(3)。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种光收发一体单管封装器件，其特征在于，包括",
+      "engineering_terms": [
+        "光收发器件",
+        "光收发一体模块",
+        "单管封装器件",
+        "optical transceiver device",
+        "TOSA/ROSA integrated package"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "底座以及设置于所述底座的发光芯片(1)、功率探测器(3)和棱镜(9)；",
+      "engineering_terms": [
+        "基座",
+        "底板",
+        "发光芯片",
+        "功率监测探测器",
+        "棱镜",
+        "base"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述发光芯片(1)及所述功率探测器(3)位于同一平面；",
+      "engineering_terms": [
+        "共面布置",
+        "同平面设置",
+        "芯片平面布局",
+        "coplanar arrangement",
+        "same-plane configuration"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述棱镜(9)位于所述发光芯片(1)的上方，所述棱镜(9)为平行四边形结构，所述发光芯片(1)发射的部分光线经所述棱镜(9)反射至所述功率探测器(3)。",
+      "engineering_terms": [
+        "反射棱镜",
+        "平行四边形棱镜",
+        "光路反射",
+        "功率监测光路",
+        "reflecting prism",
+        "parallelogram prism"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/f8/5b/ff/804ee9b0799b87/CN222601705U.pdf"
+}

@@ -1,0 +1,73 @@
+{
+  "patent": {
+    "publication_no": "CN222354995U",
+    "title": "开关、喇叭系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "刘文展",
+      "宋新新",
+      "马兰",
+      "陈梁"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222354995U/zh",
+    "fetched_at": "2026-05-02T20:19:33+08:00"
+  },
+  "claim_1_text": "1.一种开关，其特征在于，包括：\n触发轨道，具有环形空间；所述环形空间内设置有第一接触件和第二接触件，所述第一接触件和所述第二接触件间隔设置；\n导体，用于在所述环形空间内运动；以及\n开关按钮，用于驱动所述导体在所述环形空间运动，以使所述导体经过所述第一接触件与所述第二接触件之间时，所述导体电连接于所述第一接触件和所述第二接触件。",
+  "claim_1_text_html": "1.一种开关，其特征在于，包括：\n触发轨道，具有环形空间；所述环形空间内设置有第一接触件和第二接触件，所述第一接触件和所述第二接触件间隔设置；\n导体，用于在所述环形空间内运动；以及\n开关按钮，用于驱动所述导体在所述环形空间运动，以使所述导体经过所述第一接触件与所述第二接触件之间时，所述导体电连接于所述第一接触件和所述第二接触件。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种开关，其特征在于，包括：",
+      "engineering_terms": [
+        "开关装置",
+        "switch",
+        "电气开关"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "触发轨道，具有环形空间；所述环形空间内设置有第一接触件和第二接触件，所述第一接触件和所述第二接触件间隔设置；",
+      "engineering_terms": [
+        "触发环轨",
+        "环形轨道",
+        "annular track",
+        "接触端子",
+        "contact piece"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "导体，用于在所述环形空间内运动；",
+      "engineering_terms": [
+        "导电件",
+        "导电体",
+        "conductor",
+        "移动导体"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "开关按钮，用于驱动所述导体在所述环形空间运动，以使所述导体经过所述第一接触件与所述第二接触件之间时，所述导体电连接于所述第一接触件和所述第二接触件。",
+      "engineering_terms": [
+        "按钮开关",
+        "switch button",
+        "按键",
+        "驱动按钮",
+        "触发按钮"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/41/8f/0c/3ca8caad9fdc7f/CN222354995U.pdf"
+}

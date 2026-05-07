@@ -1,0 +1,93 @@
+{
+  "patent": {
+    "publication_no": "CN222867350U",
+    "title": "终端电阻、线束组件及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "卢建中",
+      "刘彦超",
+      "李凤侠",
+      "张永鹏",
+      "刘柳婧"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222867350U/zh",
+    "fetched_at": "2026-05-02T20:40:36+08:00"
+  },
+  "claim_1_text": "1.一种终端电阻，其特征在于，所述终端电阻包括：\n电阻器，所述电阻器包括位于其相对两端的两个引脚；\n导电端子，两个所述导电端子分别连接于两个所述引脚的端部，其中一导电端子朝第一方向引出，另一导电端子朝第二方向引出，所述第一方向与所述第二方向相反；\n外壳，所述外壳套设于所述电阻器和所述导电端子，所述外壳的相对两端分别设有插接槽，其中一所述导电端子远离所述电阻器的一端延伸至对应的插接槽，另一所述导电端子远离所述电阻器的一端延伸至对应的插接槽；以及\n防水插接头，两个所述防水插接头分别插接于所述外壳的两个插接槽。",
+  "claim_1_text_html": "1.一种终端电阻，其特征在于，所述终端电阻包括：\n电阻器，所述电阻器包括位于其相对两端的两个引脚；\n导电端子，两个所述导电端子分别连接于两个所述引脚的端部，其中一导电端子朝第一方向引出，另一导电端子朝第二方向引出，所述第一方向与所述第二方向相反；\n外壳，所述外壳套设于所述电阻器和所述导电端子，所述外壳的相对两端分别设有插接槽，其中一所述导电端子远离所述电阻器的一端延伸至对应的插接槽，另一所述导电端子远离所述电阻器的一端延伸至对应的插接槽；以及\n防水插接头，两个所述防水插接头分别插接于所述外壳的两个插接槽。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种终端电阻，其特征在于，所述终端电阻包括：",
+      "engineering_terms": [
+        "终端电阻",
+        "端接电阻",
+        "termination resistor",
+        "terminal resistor"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "电阻器，所述电阻器包括位于其相对两端的两个引脚；",
+      "engineering_terms": [
+        "电阻器",
+        "电阻元件",
+        "电阻体",
+        "resistor",
+        "resistive element",
+        "lead pin"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "导电端子，两个所述导电端子分别连接于两个所述引脚的端部，其中一导电端子朝第一方向引出，另一导电端子朝第二方向引出，所述第一方向与所述第二方向相反；",
+      "engineering_terms": [
+        "导电端子",
+        "连接端子",
+        "电连接端子",
+        "conductive terminal",
+        "electrical terminal",
+        "opposite lead-out directions"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "外壳，所述外壳套设于所述电阻器和所述导电端子，所述外壳的相对两端分别设有插接槽，其中一所述导电端子远离所述电阻器的一端延伸至对应的插接槽，另一所述导电端子远离所述电阻器的一端延伸至对应的插接槽；",
+      "engineering_terms": [
+        "外壳",
+        "壳体",
+        "绝缘壳体",
+        "housing",
+        "case",
+        "plug-in slot"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "防水插接头，两个所述防水插接头分别插接于所述外壳的两个插接槽。",
+      "engineering_terms": [
+        "防水插接头",
+        "防水连接头",
+        "防水接插件",
+        "waterproof plug connector",
+        "sealed connector",
+        "waterproof connector"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/94/30/e8/a563142e188156/CN222867350U.pdf"
+}

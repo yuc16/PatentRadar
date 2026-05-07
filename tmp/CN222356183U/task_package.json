@@ -1,0 +1,91 @@
+{
+  "patent": {
+    "publication_no": "CN222356183U",
+    "title": "供电电路和电子设备",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "唐馨",
+      "姚展鹏",
+      "韦兴辉",
+      "周立华",
+      "黄政益"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222356183U/zh",
+    "fetched_at": "2026-05-02T20:21:55+08:00"
+  },
+  "claim_1_text": "1.一种供电电路，其特征在于，包括：\n电源接口，具有正极和负极；所述电源接口的正极和负极用于分别连接电源的正极和负极；\n电源芯片，具有供电端和参考电压端；\n触发电路，包括RC串联电路；所述RC串联电路的第一端连接所述电源接口的正极，所述RC串联电路的第二端连接所述供电端；\n变压器电路，包括原边和副边；其中，所述原边的正极连接所述电源接口的正极，所述原边的负极连接接地端；所述副边的正极连接所述供电端，所述副边的负极连接所述接地端。",
+  "claim_1_text_html": "1.一种供电电路，其特征在于，包括：\n电源接口，具有正极和负极；所述电源接口的正极和负极用于分别连接电源的正极和负极；\n电源芯片，具有供电端和参考电压端；\n触发电路，包括RC串联电路；所述RC串联电路的第一端连接所述电源接口的正极，所述RC串联电路的第二端连接所述供电端；\n变压器电路，包括原边和副边；其中，所述原边的正极连接所述电源接口的正极，所述原边的负极连接接地端；所述副边的正极连接所述供电端，所述副边的负极连接所述接地端。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种供电电路，其特征在于，包括：",
+      "engineering_terms": [
+        "电源电路",
+        "供电模块",
+        "power supply circuit",
+        "power circuit"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "电源接口，具有正极和负极；所述电源接口的正极和负极用于分别连接电源的正极和负极；",
+      "engineering_terms": [
+        "电源输入接口",
+        "供电接口",
+        "输入端子",
+        "power connector",
+        "power input port"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "电源芯片，具有供电端和参考电压端；",
+      "engineering_terms": [
+        "电源管理芯片",
+        "供电芯片",
+        "PMIC",
+        "power management IC",
+        "power IC"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "触发电路，包括RC串联电路；所述RC串联电路的第一端连接所述电源接口的正极，所述RC串联电路的第二端连接所述供电端；",
+      "engineering_terms": [
+        "启动电路",
+        "触发模块",
+        "RC串联网络",
+        "RC circuit",
+        "trigger circuit",
+        "startup circuit"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "变压器电路，包括原边和副边；其中，所述原边的正极连接所述电源接口的正极，所述原边的负极连接接地端；所述副边的正极连接所述供电端，所述副边的负极连接所述接地端。",
+      "engineering_terms": [
+        "变压器模块",
+        "隔离变压器电路",
+        "原边绕组",
+        "副边绕组",
+        "transformer circuit",
+        "primary side and secondary side"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/92/1e/fb/52680d2f79e941/CN222356183U.pdf"
+}

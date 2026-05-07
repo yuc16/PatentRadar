@@ -1,0 +1,93 @@
+{
+  "patent": {
+    "publication_no": "CN222591336U",
+    "title": "冰箱、热管理系统和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "尚鑫",
+      "许家华",
+      "邹小童",
+      "李海燕",
+      "叶天志"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222591336U/zh",
+    "fetched_at": "2026-05-02T20:26:23+08:00"
+  },
+  "claim_1_text": "1.一种冰箱，其特征在于，包括冰箱换热模块，所述冰箱换热模块包括直接换热器、间接换热器和蓄能材料件，所述直接换热器和所述间接换热器串联成第一冷媒流路，所述蓄能材料件适于与所述间接换热器热交换，当所述冰箱换热模块工作时、所述直接换热器和所述蓄能材料件中的至少一个用于换热。",
+  "claim_1_text_html": "1.一种冰箱，其特征在于，包括冰箱换热模块，所述冰箱换热模块包括直接换热器、间接换热器和蓄能材料件，所述直接换热器和所述间接换热器串联成第一冷媒流路，所述蓄能材料件适于与所述间接换热器热交换，当所述冰箱换热模块工作时、所述直接换热器和所述蓄能材料件中的至少一个用于换热。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种冰箱，其特征在于，包括冰箱换热模块，",
+      "engineering_terms": [
+        "refrigerator",
+        "冷藏设备",
+        "车载冰箱",
+        "制冷箱体",
+        "heat exchange module",
+        "换热模块"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述冰箱换热模块包括直接换热器、间接换热器和蓄能材料件，",
+      "engineering_terms": [
+        "直接换热器",
+        "direct heat exchanger",
+        "间接换热器",
+        "indirect heat exchanger",
+        "蓄冷材料",
+        "energy storage material"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述直接换热器和所述间接换热器串联成第一冷媒流路，",
+      "engineering_terms": [
+        "串联冷媒回路",
+        "refrigerant flow path",
+        "冷媒流路",
+        "制冷剂回路",
+        "series connection"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述蓄能材料件适于与所述间接换热器热交换，",
+      "engineering_terms": [
+        "热交换",
+        "heat exchange",
+        "蓄能件",
+        "蓄冷件",
+        "thermal storage member",
+        "相变蓄能材料"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "当所述冰箱换热模块工作时、所述直接换热器和所述蓄能材料件中的至少一个用于换热。",
+      "engineering_terms": [
+        "工作状态换热",
+        "heat transfer operation",
+        "直接制冷",
+        "蓄冷换热",
+        "thermal management"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/3a/ed/01/46da82f3bb741c/CN222591336U.pdf"
+}

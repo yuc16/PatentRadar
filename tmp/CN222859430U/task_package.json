@@ -1,0 +1,90 @@
+{
+  "patent": {
+    "publication_no": "CN222859430U",
+    "title": "穿戴设备、车辆及穿戴设备的控制系统",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "李大闯",
+      "潘丽红",
+      "李林",
+      "赵伟冰",
+      "梁方正"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222859430U/zh",
+    "fetched_at": "2026-05-02T20:39:40+08:00"
+  },
+  "claim_1_text": "1.一种穿戴设备，其特征在于，包括设备本体、设置在所述设备本体内的供电单元、第一通讯单元以及刺激单元，所述第一通讯单元和所述刺激单元均与所述供电单元电性连接，所述穿戴设备通过所述第一通讯单元与车辆通讯连接，所述供电单元用于为所述第一通讯单元和所述刺激单元供电；\n所述第一通讯单元，配置为接收所述车辆发送的当前动作类型信息，所述当前动作类型信息用于标识车辆座舱空间中目标对象的当前动作类型；\n所述刺激单元，配置为根据所述当前动作类型信息，刺激单元所述目标对象。",
+  "claim_1_text_html": "1.一种穿戴设备，其特征在于，包括设备本体、设置在所述设备本体内的供电单元、第一通讯单元以及刺激单元，所述第一通讯单元和所述刺激单元均与所述供电单元电性连接，所述穿戴设备通过所述第一通讯单元与车辆通讯连接，所述供电单元用于为所述第一通讯单元和所述刺激单元供电；\n所述第一通讯单元，配置为接收所述车辆发送的当前动作类型信息，所述当前动作类型信息用于标识车辆座舱空间中目标对象的当前动作类型；\n所述刺激单元，配置为根据所述当前动作类型信息，刺激单元所述目标对象。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种穿戴设备，其特征在于，包括",
+      "engineering_terms": [
+        "wearable device",
+        "可穿戴设备",
+        "智能穿戴终端"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "设备本体、",
+      "engineering_terms": [
+        "设备主体",
+        "壳体",
+        "device body",
+        "wearable housing"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "设置在所述设备本体内的供电单元、第一通讯单元以及刺激单元，所述第一通讯单元和所述刺激单元均与所述供电单元电性连接，所述穿戴设备通过所述第一通讯单元与车辆通讯连接，所述供电单元用于为所述第一通讯单元和所述刺激单元供电；",
+      "engineering_terms": [
+        "供电模块",
+        "电源单元",
+        "通信模块",
+        "刺激模块",
+        "power supply unit",
+        "communication unit"
+      ],
+      "is_essential": true,
+      "notes": "供电单元、第一通讯单元以及刺激单元在原文中共享设置位置、电性连接及供电关系，合并为一条整体结构连接特征。"
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述第一通讯单元，配置为接收所述车辆发送的当前动作类型信息，所述当前动作类型信息用于标识车辆座舱空间中目标对象的当前动作类型；",
+      "engineering_terms": [
+        "通信单元",
+        "无线通信模块",
+        "车端通信",
+        "动作类型信息",
+        "communication module",
+        "vehicle communication"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "所述刺激单元，配置为根据所述当前动作类型信息，刺激单元所述目标对象。",
+      "engineering_terms": [
+        "刺激模块",
+        "触觉反馈单元",
+        "提醒单元",
+        "haptic actuator",
+        "stimulation unit",
+        "feedback module"
+      ],
+      "is_essential": true,
+      "notes": "原文为“刺激单元所述目标对象”，按用户提供文字版忠实保留，疑似为“刺激所述目标对象”的文字缺漏或抽取错误。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/7c/69/4f/2e521b7073178e/CN222859430U.pdf"
+}

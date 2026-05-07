@@ -1,0 +1,62 @@
+{
+  "patent": {
+    "publication_no": "CN222734296U",
+    "title": "导光板、发光组件、显示设备及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "房志远",
+      "郑翔远"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222734296U/zh",
+    "fetched_at": "2026-05-02T20:34:59+08:00"
+  },
+  "claim_1_text": "1.一种导光板，其特征在于，包括：\n本体，具有进光面和出光面，所述进光面位于所述出光面的侧面；和\n散射结构，设于所述进光面，以向所述本体内扩散来自发光件发射的光；\n所述散射结构为齿状结构和/或波浪结构。",
+  "claim_1_text_html": "1.一种导光板，其特征在于，包括：\n本体，具有进光面和出光面，所述进光面位于所述出光面的侧面；和\n散射结构，设于所述进光面，以向所述本体内扩散来自发光件发射的光；\n所述散射结构为齿状结构和/或波浪结构。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种导光板，其特征在于，包括：",
+      "engineering_terms": [
+        "导光板",
+        "light guide plate",
+        "LGP",
+        "光导板"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "本体，具有进光面和出光面，所述进光面位于所述出光面的侧面；",
+      "engineering_terms": [
+        "导光板本体",
+        "基板",
+        "进光面",
+        "出光面",
+        "入光面",
+        "light incident surface"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "散射结构，设于所述进光面，以向所述本体内扩散来自发光件发射的光；\n所述散射结构为齿状结构和/或波浪结构。",
+      "engineering_terms": [
+        "散射结构",
+        "扩散结构",
+        "齿形结构",
+        "波纹结构",
+        "scattering structure",
+        "diffusion structure"
+      ],
+      "is_essential": true,
+      "notes": "散射结构的位置、功能及具体形状限定属于同一部件的一组限定，合并为一条。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/c5/53/48/c3d1fc2c69f95f/CN222734296U.pdf"
+}

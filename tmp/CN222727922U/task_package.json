@@ -1,0 +1,72 @@
+{
+  "patent": {
+    "publication_no": "CN222727922U",
+    "title": "车载屏幕的翻转装置、车载屏幕总成和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "双鹭",
+      "王军司",
+      "白胜",
+      "张晓茹"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222727922U/zh",
+    "fetched_at": "2026-05-02T20:32:20+08:00"
+  },
+  "claim_1_text": "1.一种车载屏幕的翻转装置，其特征在于，包括：\n板体，包括相背的第一端和第二端，所述板体适于与车载屏幕连接；\n从动轴组件，与所述第一端连接；\n翻转组件，与所述第二端连接，以带动所述板体转动。",
+  "claim_1_text_html": "1.一种车载屏幕的翻转装置，其特征在于，包括：\n板体，包括相背的第一端和第二端，所述板体适于与车载屏幕连接；\n从动轴组件，与所述第一端连接；\n翻转组件，与所述第二端连接，以带动所述板体转动。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车载屏幕的翻转装置，其特征在于，包括：",
+      "engineering_terms": [
+        "车载显示屏翻转机构",
+        "vehicle display flipping device",
+        "车载屏幕调节装置"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "板体，包括相背的第一端和第二端，所述板体适于与车载屏幕连接；",
+      "engineering_terms": [
+        "安装板",
+        "支撑板",
+        "screen mounting plate",
+        "连接板"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "从动轴组件，与所述第一端连接；",
+      "engineering_terms": [
+        "从动转轴组件",
+        "slave shaft assembly",
+        "支撑轴组件",
+        "被动轴组件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "翻转组件，与所述第二端连接，以带动所述板体转动。",
+      "engineering_terms": [
+        "翻转机构",
+        "驱动翻转组件",
+        "tilting assembly",
+        "rotating drive assembly",
+        "屏幕翻转驱动机构"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/a4/3b/dc/ee2a6ea6c9aea8/CN222727922U.pdf"
+}

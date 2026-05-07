@@ -1,0 +1,77 @@
+{
+  "patent": {
+    "publication_no": "CN222353241U",
+    "title": "传感器以及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "李宗宝",
+      "张庆锋",
+      "周剑昆",
+      "朱建国"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222353241U/zh",
+    "fetched_at": "2026-05-02T19:59:09+08:00"
+  },
+  "claim_1_text": "1.一种传感器(1)，其特征在于，包括：\n壳体(10)，所述壳体(10)设置有第一定位部(13)；\n压力感应组件(20)，所述压力感应组件(20)包括：支撑件(21)，所述支撑件(21)设置于所述壳体(10)上，所述支撑件(21)设置有第二定位部(211)；\n连接件(30)，所述连接件(30)设置有第三定位部(31)，所述第三定位部(31)与所述第一定位部(13)定位配合，且所述第三定位部(31)与所述第二定位部(211)定位配合。",
+  "claim_1_text_html": "1.一种传感器(1)，其特征在于，包括：\n壳体(10)，所述壳体(10)设置有第一定位部(13)；\n压力感应组件(20)，所述压力感应组件(20)包括：支撑件(21)，所述支撑件(21)设置于所述壳体(10)上，所述支撑件(21)设置有第二定位部(211)；\n连接件(30)，所述连接件(30)设置有第三定位部(31)，所述第三定位部(31)与所述第一定位部(13)定位配合，且所述第三定位部(31)与所述第二定位部(211)定位配合。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种传感器(1)，其特征在于，包括：",
+      "engineering_terms": [
+        "传感器",
+        "sensor",
+        "检测器",
+        "感测装置"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "壳体(10)，所述壳体(10)设置有第一定位部(13)；",
+      "engineering_terms": [
+        "壳体",
+        "housing",
+        "外壳",
+        "机壳",
+        "定位结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "压力感应组件(20)，所述压力感应组件(20)包括：支撑件(21)，所述支撑件(21)设置于所述壳体(10)上，所述支撑件(21)设置有第二定位部(211)；",
+      "engineering_terms": [
+        "压力感应组件",
+        "pressure sensing assembly",
+        "压力传感组件",
+        "支撑件",
+        "support member",
+        "定位部"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "连接件(30)，所述连接件(30)设置有第三定位部(31)，所述第三定位部(31)与所述第一定位部(13)定位配合，且所述第三定位部(31)与所述第二定位部(211)定位配合。",
+      "engineering_terms": [
+        "连接件",
+        "connector",
+        "连接构件",
+        "定位配合",
+        "定位连接",
+        "positioning engagement"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/d9/68/81/2d54d1346bb863/CN222353241U.pdf"
+}

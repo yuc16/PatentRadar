@@ -1,0 +1,65 @@
+{
+  "patent": {
+    "publication_no": "CN222654958U",
+    "title": "转子组件的平衡块、转子组件、电机、压缩机、热管理系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "张经科",
+      "黄晓强",
+      "高珊玲",
+      "赖佑奎",
+      "雷达"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222654958U/zh",
+    "fetched_at": "2026-05-02T20:31:52+08:00"
+  },
+  "claim_1_text": "1.一种转子组件的平衡块(1)，所述平衡块(1)安装至所述转子组件(100)的转子铁芯(2)，其特征在于，在厚度方向(L1)上，所述平衡块(1)包括安装面(11)和导流面(12)，所述安装面(11)适于安装至转子铁芯(2)，所述导流面(12)和所述安装面(11)相对设置且所述导流面(12)形成为弧形面；其中，在长度方向(L2)上，所述平衡块(1)的厚度先逐渐增大后再逐渐减小。",
+  "claim_1_text_html": "1.一种转子组件的平衡块(1)，所述平衡块(1)安装至所述转子组件(100)的转子铁芯(2)，其特征在于，在厚度方向(L1)上，所述平衡块(1)包括安装面(11)和导流面(12)，所述安装面(11)适于安装至转子铁芯(2)，所述导流面(12)和所述安装面(11)相对设置且所述导流面(12)形成为弧形面；其中，\n在长度方向(L2)上，所述平衡块(1)的厚度先逐渐增大后再逐渐减小。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种转子组件的平衡块(1)，所述平衡块(1)安装至所述转子组件(100)的转子铁芯(2)，其特征在于，",
+      "engineering_terms": [
+        "平衡块",
+        "转子平衡块",
+        "counterweight",
+        "balance weight",
+        "转子组件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "在厚度方向(L1)上，所述平衡块(1)包括安装面(11)和导流面(12)，所述安装面(11)适于安装至转子铁芯(2)，所述导流面(12)和所述安装面(11)相对设置且所述导流面(12)形成为弧形面；",
+      "engineering_terms": [
+        "安装面",
+        "导流面",
+        "弧形面",
+        "curved surface",
+        "mounting surface",
+        "flow guide surface"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "其中，在长度方向(L2)上，所述平衡块(1)的厚度先逐渐增大后再逐渐减小。",
+      "engineering_terms": [
+        "厚度渐变",
+        "变厚度结构",
+        "variable thickness",
+        "tapered thickness",
+        "轴向厚度分布"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/d1/b1/2b/9dae3139354aed/CN222654958U.pdf"
+}

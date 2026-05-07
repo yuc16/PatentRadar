@@ -1,0 +1,65 @@
+{
+  "patent": {
+    "publication_no": "CN222865688U",
+    "title": "微通道扁管、微通道换热器、热管理系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "高珊玲",
+      "刘公正",
+      "雷达",
+      "陈平平",
+      "刘永强"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222865688U/zh",
+    "fetched_at": "2026-05-02T20:40:25+08:00"
+  },
+  "claim_1_text": "1.一种微通道扁管，其特征在于，包括：扁管本体，所述扁管本体内设有多条沿第一方向排布的导流微通道，每条所述导流微通道具有设于所述扁管本体的相对端壁的入口端和出口端；\n所述扁管本体内设有混流区域，所述混流区域位于所述入口端和所述出口端之间，至少两条所述导流微通道通过所述混流区域连通。",
+  "claim_1_text_html": "1.一种微通道扁管，其特征在于，包括：扁管本体，所述扁管本体内设有多条沿第一方向排布的导流微通道，每条所述导流微通道具有设于所述扁管本体的相对端壁的入口端和出口端；\n所述扁管本体内设有混流区域，所述混流区域位于所述入口端和所述出口端之间，至少两条所述导流微通道通过所述混流区域连通。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种微通道扁管，其特征在于，包括：",
+      "engineering_terms": [
+        "微通道扁管",
+        "microchannel flat tube",
+        "扁管",
+        "换热扁管"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "扁管本体，所述扁管本体内设有多条沿第一方向排布的导流微通道，每条所述导流微通道具有设于所述扁管本体的相对端壁的入口端和出口端；",
+      "engineering_terms": [
+        "扁管本体",
+        "导流微通道",
+        "microchannel",
+        "流道",
+        "入口端",
+        "出口端"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述扁管本体内设有混流区域，所述混流区域位于所述入口端和所述出口端之间，至少两条所述导流微通道通过所述混流区域连通。",
+      "engineering_terms": [
+        "混流区域",
+        "混合区",
+        "mixing region",
+        "连通区域",
+        "流体连通",
+        "通道连通"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/6a/0f/0a/dd165a8b833fcd/CN222865688U.pdf"
+}

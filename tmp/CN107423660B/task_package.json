@@ -1,0 +1,123 @@
+{
+  "patent": {
+    "publication_no": "CN107423660B",
+    "title": "指纹识别装置、指纹识别方法和终端设备",
+    "assignees": [
+      "BYD Semiconductor Co Ltd"
+    ],
+    "inventors": [
+      "李振刚",
+      "徐坤平",
+      "杨云"
+    ],
+    "source_url": "https://patents.google.com/patent/CN107423660B/zh",
+    "fetched_at": "2026-05-02T17:47:04+08:00"
+  },
+  "claim_1_text": "1.一种指纹识别装置，其特征在于，包括：\n电路板；\n芯片，所述芯片设置在所述电路板的上表面，所述芯片包括芯片塑料封装和芯片晶圆，所述芯片晶圆通过引线组和焊锡与所述电路板电连接；\n覆盖层，所述覆盖层设置在所述芯片的上表面，且所述覆盖层上设置有图案，所述覆盖层为喷涂在所述芯片上表面的带有图案的涂层，所述涂层由至少一种颜色涂料形成，且所述涂层不透明；\n其中，所述芯片包括：\n采集模块，用于采集用户指纹覆盖所述覆盖层时生成的指纹数据；\n处理模块，用于根据比对数据和所述指纹数据生成修正指纹数据，并根据所述修正指纹数据进行指纹识别，所述比对数据为导电物覆盖所述覆盖层时生成的数据；\n所述处理模块，具体用于：\n通过如下公式计算所述修正指纹数据：\n$$X'=X-a*X_j,$$\n其中，$X$为所述指纹数据，$X'$为所述修正指纹数据，$a$为变化系数，$X_j$为所述比对数据；\n通过如下公式计算所述变化系数$a$：\n$$a=X_z/b,$$\n其中，$b$为固定值，$X_z$为所述指纹数据$X$的总和。",
+  "claim_1_text_html": "1.一种指纹识别装置，其特征在于，包括：\n电路板；\n芯片，所述芯片设置在所述电路板的上表面，所述芯片包括芯片塑料封装和芯片晶圆，所述芯片晶圆通过引线组和焊锡与所述电路板电连接；\n覆盖层，所述覆盖层设置在所述芯片的上表面，且所述覆盖层上设置有图案，所述覆盖层为喷涂在所述芯片上表面的带有图案的涂层，所述涂层由至少一种颜色涂料形成，且所述涂层不透明；\n其中，所述芯片包括：\n采集模块，用于采集用户指纹覆盖所述覆盖层时生成的指纹数据；\n处理模块，用于根据比对数据和所述指纹数据生成修正指纹数据，并根据所述修正指纹数据进行指纹识别，所述比对数据为导电物覆盖所述覆盖层时生成的数据；\n所述处理模块，具体用于：\n通过如下公式计算所述修正指纹数据：\n，\n其中， 为所述指纹数据， 为所述修正指纹数据， 为变化系数， 为所述比对数据；\n通过如下公式计算所述变化系数 ：\n，\n其中， 为固定值， 为所述指纹数据 的总和。",
+  "claim_1_source": "vision_pdf",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种指纹识别装置，其特征在于，包括：",
+      "engineering_terms": [
+        "fingerprint recognition device",
+        "指纹识别模组",
+        "指纹传感装置"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "电路板；",
+      "engineering_terms": [
+        "PCB",
+        "printed circuit board",
+        "基板",
+        "线路板"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "芯片，所述芯片设置在所述电路板的上表面，所述芯片包括芯片塑料封装和芯片晶圆，所述芯片晶圆通过引线组和焊锡与所述电路板电连接；",
+      "engineering_terms": [
+        "fingerprint chip",
+        "传感器芯片",
+        "封装芯片",
+        "die",
+        "bonding wires",
+        "solder connection"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "覆盖层，所述覆盖层设置在所述芯片的上表面，且所述覆盖层上设置有图案，所述覆盖层为喷涂在所述芯片上表面的带有图案的涂层，所述涂层由至少一种颜色涂料形成，且所述涂层不透明；",
+      "engineering_terms": [
+        "cover layer",
+        "coating layer",
+        "喷涂涂层",
+        "decorative coating",
+        "opaque coating",
+        "patterned cover"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "采集模块，用于采集用户指纹覆盖所述覆盖层时生成的指纹数据；",
+      "engineering_terms": [
+        "acquisition module",
+        "sensing module",
+        "fingerprint data acquisition",
+        "指纹采集单元"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "处理模块，用于根据比对数据和所述指纹数据生成修正指纹数据，并根据所述修正指纹数据进行指纹识别，所述比对数据为导电物覆盖所述覆盖层时生成的数据；",
+      "engineering_terms": [
+        "processing module",
+        "processor",
+        "fingerprint matching",
+        "data correction",
+        "reference data"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F7",
+      "feature_text": "所述处理模块，具体用于：\n通过如下公式计算所述修正指纹数据：\n$$X'=X-a*X_j,$$\n其中，$X$为所述指纹数据，$X'$为所述修正指纹数据，$a$为变化系数，$X_j$为所述比对数据；",
+      "engineering_terms": [
+        "corrected fingerprint data",
+        "data compensation",
+        "signal correction",
+        "comparison data subtraction"
+      ],
+      "is_essential": true,
+      "notes": "公式依据扫描图还原。"
+    },
+    {
+      "feature_id": "F8",
+      "feature_text": "通过如下公式计算所述变化系数$a$：\n$$a=X_z/b,$$\n其中，$b$为固定值，$X_z$为所述指纹数据$X$的总和。",
+      "engineering_terms": [
+        "variation coefficient",
+        "correction coefficient",
+        "normalization factor",
+        "fixed value parameter"
+      ],
+      "is_essential": true,
+      "notes": "公式依据扫描图还原。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/3c/23/c4/50b1db7ce781e9/CN107423660B.pdf"
+}

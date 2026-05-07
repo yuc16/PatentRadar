@@ -1,0 +1,77 @@
+{
+  "patent": {
+    "publication_no": "CN222993545U",
+    "title": "换热装置和换热系统",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "潘刚",
+      "陈博",
+      "张思权",
+      "罗晶晶"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222993545U/zh",
+    "fetched_at": "2026-05-02T20:48:19+08:00"
+  },
+  "claim_1_text": "1.一种换热装置，用于通过调温介质加热或冷却电子产品，其特征在于，包括：\n容纳腔体，形成有至少一个用于容纳电子产品的容纳腔；\n其中，所述容纳腔体形成至少一个供调温介质流经的介质槽，所述介质槽的槽口朝向所述容纳腔以使所述介质槽与所述容纳腔连通；\n所述容纳腔体形成或安装有设置于所述介质槽内部的扰流体，所述扰流体至少具有一个与调温介质流动方向相交的沿导流方向延伸的扰流面。",
+  "claim_1_text_html": "1.一种换热装置，用于通过调温介质加热或冷却电子产品，其特征在于，包括：\n容纳腔体，形成有至少一个用于容纳电子产品的容纳腔；\n其中，所述容纳腔体形成至少一个供调温介质流经的介质槽，所述介质槽的槽口朝向所述容纳腔以使所述介质槽与所述容纳腔连通；\n所述容纳腔体形成或安装有设置于所述介质槽内部的扰流体，所述扰流体至少具有一个与调温介质流动方向相交的沿导流方向延伸的扰流面。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种换热装置，用于通过调温介质加热或冷却电子产品，其特征在于，包括：",
+      "engineering_terms": [
+        "热交换装置",
+        "换热器",
+        "温控装置",
+        "thermal management device",
+        "heat exchange device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "容纳腔体，形成有至少一个用于容纳电子产品的容纳腔；",
+      "engineering_terms": [
+        "壳体",
+        "容置腔体",
+        "产品容纳腔",
+        "housing",
+        "accommodation cavity"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "其中，所述容纳腔体形成至少一个供调温介质流经的介质槽，所述介质槽的槽口朝向所述容纳腔以使所述介质槽与所述容纳腔连通；",
+      "engineering_terms": [
+        "介质流道",
+        "冷却液槽",
+        "调温介质通道",
+        "fluid channel",
+        "medium groove"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述容纳腔体形成或安装有设置于所述介质槽内部的扰流体，所述扰流体至少具有一个与调温介质流动方向相交的沿导流方向延伸的扰流面。",
+      "engineering_terms": [
+        "扰流结构",
+        "导流件",
+        "扰流件",
+        "turbulator",
+        "flow disturbing body",
+        "baffle"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/9d/aa/d1/993a7e7eaf025f/CN222993545U.pdf"
+}

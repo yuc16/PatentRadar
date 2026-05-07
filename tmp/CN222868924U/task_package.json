@@ -1,0 +1,61 @@
+{
+  "patent": {
+    "publication_no": "CN222868924U",
+    "title": "射频电路、天线信号放大器和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "王文松",
+      "赵修茂"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222868924U/zh",
+    "fetched_at": "2026-05-02T20:42:57+08:00"
+  },
+  "claim_1_text": "1.一种射频电路，其特征在于，包括：调幅电路、调频电路；\n所述调幅电路包括调幅滤波电路，所述调幅滤波电路与天线和信号输出端连接；\n所述调频电路包括放大电路、匹配电路和调频滤波电路，所述放大电路的第一端与所述天线连接，所述放大电路的第二端与所述匹配电路的第一端连接，所述匹配电路的第二端与所述调频滤波电路的第一端连接，所述调频滤波电路的第二端与所述信号输出端连接。",
+  "claim_1_text_html": "1.一种射频电路，其特征在于，包括：调幅电路、调频电路；\n所述调幅电路包括调幅滤波电路，所述调幅滤波电路与天线和信号输出端连接；\n所述调频电路包括放大电路、匹配电路和调频滤波电路，所述放大电路的第一端与所述天线连接，所述放大电路的第二端与所述匹配电路的第一端连接，所述匹配电路的第二端与所述调频滤波电路的第一端连接，所述调频滤波电路的第二端与所述信号输出端连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种射频电路，其特征在于，包括：调幅电路、调频电路；",
+      "engineering_terms": [
+        "RF circuit",
+        "射频前端电路",
+        "AM/FM射频电路",
+        "无线电接收电路"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述调幅电路包括调幅滤波电路，所述调幅滤波电路与天线和信号输出端连接；",
+      "engineering_terms": [
+        "AM circuit",
+        "调幅接收电路",
+        "AM filter circuit",
+        "调幅滤波器",
+        "天线信号滤波电路"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述调频电路包括放大电路、匹配电路和调频滤波电路，所述放大电路的第一端与所述天线连接，所述放大电路的第二端与所述匹配电路的第一端连接，所述匹配电路的第二端与所述调频滤波电路的第一端连接，所述调频滤波电路的第二端与所述信号输出端连接。",
+      "engineering_terms": [
+        "FM circuit",
+        "调频接收电路",
+        "RF amplifier",
+        "阻抗匹配电路",
+        "FM filter circuit",
+        "射频信号链路"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/f5/82/f1/7dbaf92e54484c/CN222868924U.pdf"
+}

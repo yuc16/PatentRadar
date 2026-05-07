@@ -1,0 +1,125 @@
+{
+  "patent": {
+    "publication_no": "CN116338695B",
+    "title": "道路栅栏检测方法、装置、车辆及介质",
+    "assignees": [
+      "BYD Co Ltd",
+      "BYD Auto Co Ltd"
+    ],
+    "inventors": [
+      "崔智华",
+      "黄增锐"
+    ],
+    "source_url": "https://patents.google.com/patent/CN116338695B/zh",
+    "fetched_at": "2026-05-02T17:52:57+08:00"
+  },
+  "claim_1_text": "1.一种道路栅栏检测方法，其特征在于，包括：\n获取雷达信号；\n根据所述雷达信号确定有效目标点，并确定所述有效目标点的距离信息和速度信息；\n根据所述有效目标点的速度信息确定速度为零的有效目标点的距离，作为零速度点距离；\n根据零速度点距离和自车车速确定道路栅栏的RV曲线关系，并根据所述道路栅栏的RV曲线、所述有效目标点的距离信息和速度信息对所述有效目标点进行筛选，获得栅栏有效点；其中，$R$为所述距离信息；$V$为所述速度信息；\n根据所述栅栏有效点进行道路栅栏识别；\n所述RV曲线关系满足以下公式：\n$$\\frac{V}{V0}=\\frac{\\sqrt{R^2-X0^2}}{R}$$\n其中，$V0$为所述自车车速，$X0$为所述零速度点距离；\n根据所述道路栅栏的RV曲线、所述有效目标点的距离信息和速度信息对所述有效目标点进行筛选，包括：\n将所述有效目标点的距离信息和速度信息中的一个代入所述公式，获得待筛选距离和待筛选速度中的另一个；\n将所述待筛选距离和待筛选速度中的另一个与所述有效目标点的距离信息和速度信息中的另一个进行比较，以对所述有效目标点进行筛选。",
+  "claim_1_text_html": "1.一种道路栅栏检测方法，其特征在于，包括：\n获取雷达信号；\n根据所述雷达信号确定有效目标点，并确定所述有效目标点的距离信息和速度信息；\n根据所述有效目标点的速度信息确定速度为零的有效目标点的距离，作为零速度点距离；\n根据零速度点距离和自车车速确定道路栅栏的RV曲线关系，并根据所述道路栅栏的RV曲线、所述有效目标点的距离信息和速度信息对所述有效目标点进行筛选，获得栅栏有效点；其中，R为所述距离信息；V为所述速度信息；\n根据所述栅栏有效点进行道路栅栏识别；\n所述RV曲线关系满足以下公式：\n其中，V0为所述自车车速，X0为所述零速度点距离；\n根据所述道路栅栏的RV曲线、所述有效目标点的距离信息和速度信息对所述有效目标点进行筛选，包括：\n将所述有效目标点的距离信息和速度信息中的一个代入所述公式，获得待筛选距离和待筛选速度中的另一个；\n将所述待筛选距离和待筛选速度中的另一个与所述有效目标点的距离信息和速度信息中的另一个进行比较，以对所述有效目标点进行筛选。",
+  "claim_1_source": "vision_pdf",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种道路栅栏检测方法，其特征在于，包括：",
+      "engineering_terms": [
+        "道路栅栏检测",
+        "护栏检测",
+        "road guardrail detection",
+        "fence detection"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "获取雷达信号；",
+      "engineering_terms": [
+        "雷达回波",
+        "雷达数据采集",
+        "radar signal",
+        "radar data acquisition"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "根据所述雷达信号确定有效目标点，并确定所述有效目标点的距离信息和速度信息；",
+      "engineering_terms": [
+        "目标点提取",
+        "有效点检测",
+        "距离速度信息",
+        "target point extraction",
+        "range velocity measurement"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "根据所述有效目标点的速度信息确定速度为零的有效目标点的距离，作为零速度点距离；",
+      "engineering_terms": [
+        "零速度点",
+        "静止目标点",
+        "零多普勒点",
+        "zero velocity point",
+        "zero Doppler point"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "根据零速度点距离和自车车速确定道路栅栏的RV曲线关系，并根据所述道路栅栏的RV曲线、所述有效目标点的距离信息和速度信息对所述有效目标点进行筛选，获得栅栏有效点；其中，$R$为所述距离信息；$V$为所述速度信息；",
+      "engineering_terms": [
+        "RV曲线",
+        "距离速度曲线",
+        "栅栏有效点筛选",
+        "range-velocity curve",
+        "RV relationship"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "根据所述栅栏有效点进行道路栅栏识别；",
+      "engineering_terms": [
+        "栅栏识别",
+        "护栏识别",
+        "目标识别",
+        "guardrail recognition",
+        "fence recognition"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F7",
+      "feature_text": "所述RV曲线关系满足以下公式：\n$$\\frac{V}{V0}=\\frac{\\sqrt{R^2-X0^2}}{R}$$\n其中，$V0$为所述自车车速，$X0$为所述零速度点距离；",
+      "engineering_terms": [
+        "RV曲线公式",
+        "距离速度模型",
+        "自车车速",
+        "range-velocity model",
+        "ego vehicle speed"
+      ],
+      "is_essential": true,
+      "notes": "根据扫描图还原HTML草稿中缺失的公式，并将公式及变量定义合并为同一公式特征。"
+    },
+    {
+      "feature_id": "F8",
+      "feature_text": "根据所述道路栅栏的RV曲线、所述有效目标点的距离信息和速度信息对所述有效目标点进行筛选，包括：\n将所述有效目标点的距离信息和速度信息中的一个代入所述公式，获得待筛选距离和待筛选速度中的另一个；\n将所述待筛选距离和待筛选速度中的另一个与所述有效目标点的距离信息和速度信息中的另一个进行比较，以对所述有效目标点进行筛选。",
+      "engineering_terms": [
+        "点云筛选",
+        "目标点过滤",
+        "距离速度匹配",
+        "target filtering",
+        "range-velocity comparison"
+      ],
+      "is_essential": true,
+      "notes": "该片段为对前述有效目标点筛选步骤的具体限定，合并为一条筛选规则特征。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/84/ae/65/1b1833c966afce/CN116338695B.pdf"
+}

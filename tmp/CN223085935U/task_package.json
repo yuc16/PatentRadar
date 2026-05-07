@@ -1,0 +1,62 @@
+{
+  "patent": {
+    "publication_no": "CN223085935U",
+    "title": "防眩光系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "莫恒",
+      "郭晓伟",
+      "韦雄富",
+      "徐曼",
+      "令高远"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223085935U/zh",
+    "fetched_at": "2026-05-02T20:53:49+08:00"
+  },
+  "claim_1_text": "1.一种防眩光系统，其特征在于，所述防眩光系统包括：\n第一摄像头，所述第一摄像头为电子外后视镜摄像头；\n可调玻璃罩，所述可调玻璃罩与所述第一摄像头连接。",
+  "claim_1_text_html": "1.一种防眩光系统，其特征在于，所述防眩光系统包括：\n第一摄像头，所述第一摄像头为电子外后视镜摄像头；\n可调玻璃罩，所述可调玻璃罩与所述第一摄像头连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种防眩光系统，其特征在于，所述防眩光系统包括：",
+      "engineering_terms": [
+        "防眩光装置",
+        "anti-glare system",
+        "眩光抑制系统",
+        "车辆防眩系统"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一摄像头，所述第一摄像头为电子外后视镜摄像头；",
+      "engineering_terms": [
+        "电子外后视镜摄像头",
+        "CMS摄像头",
+        "camera monitor system camera",
+        "外后视摄像头"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "可调玻璃罩，所述可调玻璃罩与所述第一摄像头连接。",
+      "engineering_terms": [
+        "可调光玻璃罩",
+        "调光玻璃罩",
+        "adjustable glass cover",
+        "可变透光罩",
+        "摄像头玻璃罩"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/73/36/6e/5bf679a83638c3/CN223085935U.pdf"
+}

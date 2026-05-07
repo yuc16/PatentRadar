@@ -1,0 +1,75 @@
+{
+  "patent": {
+    "publication_no": "CN222346907U",
+    "title": "车载遮阳板、遮阳板组件、投影组件和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "张荣麟",
+      "钟益林",
+      "范照辉",
+      "左鹏程",
+      "韩振"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222346907U/zh",
+    "fetched_at": "2026-05-02T18:06:33+08:00"
+  },
+  "claim_1_text": "1.一种车载遮阳板，其特征在于，包括：\n本体；和\n显示装置，所述显示装置设置在所述本体上，所述显示装置通过光波导显示的方式将图像光线发出至所述本体外，所述显示装置包括发光元件和光波导元件，所述光波导元件用于将所述发光元件发出的光线导出至所述本体外，及所述车载遮阳板被配置为在车辆的座椅的靠背相对于所述车辆的座椅的坐垫转动时与所述车辆的靠背联动调节。",
+  "claim_1_text_html": "1.一种车载遮阳板，其特征在于，包括：\n本体；和\n显示装置，所述显示装置设置在所述本体上，所述显示装置通过光波导显示的方式将图像光线发出至所述本体外，所述显示装置包括发光元件和光波导元件，所述光波导元件用于将所述发光元件发出的光线导出至所述本体外，及所述车载遮阳板被配置为在车辆的座椅的靠背相对于所述车辆的座椅的坐垫转动时与所述车辆的靠背联动调节。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车载遮阳板，其特征在于，包括：",
+      "engineering_terms": [
+        "车载遮阳板",
+        "vehicle sun visor",
+        "汽车遮阳板"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "本体；",
+      "engineering_terms": [
+        "遮阳板本体",
+        "主体",
+        "基体",
+        "visor body"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "显示装置，所述显示装置设置在所述本体上，所述显示装置通过光波导显示的方式将图像光线发出至所述本体外，所述显示装置包括发光元件和光波导元件，所述光波导元件用于将所述发光元件发出的光线导出至所述本体外，",
+      "engineering_terms": [
+        "显示模组",
+        "光波导显示装置",
+        "waveguide display",
+        "发光器件",
+        "光波导元件",
+        "display device"
+      ],
+      "is_essential": true,
+      "notes": "将显示装置的位置、光波导显示方式、内部组成及光波导元件功能合并为同一部件特征。"
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述车载遮阳板被配置为在车辆的座椅的靠背相对于所述车辆的座椅的坐垫转动时与所述车辆的靠背联动调节。",
+      "engineering_terms": [
+        "联动调节",
+        "随动调节",
+        "座椅靠背联动",
+        "linked adjustment",
+        "synchronized adjustment"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/0e/30/93/cdf049d7de2266/CN222346907U.pdf"
+}

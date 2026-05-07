@@ -1,0 +1,76 @@
+{
+  "patent": {
+    "publication_no": "CN222992708U",
+    "title": "Led单元、前照灯模组及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "钟益林",
+      "吴春芬",
+      "余峰",
+      "黄江",
+      "苏锋武"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222992708U/zh",
+    "fetched_at": "2026-05-02T20:48:00+08:00"
+  },
+  "claim_1_text": "1.一种LED单元，用于车辆的前照灯模组，其特征在于，所述LED单元包括：\nLED，所述LED用于发射光线；及\n透镜，所述透镜设置于所述LED的发光光路上，所述LED位于所述透镜的焦平面上，所述透镜对所述LED发出的光线进行光束整形以形成照明光斑；\n其中，所述LED的光轴与所述透镜的光轴偏置的情况下，所述LED的光轴与所述透镜的光轴的偏置距离，与所述LED单元和所述前照灯模组的光轴中心的距离正相关。",
+  "claim_1_text_html": "1.一种LED单元，用于车辆的前照灯模组，其特征在于，所述LED单元包括：\nLED，所述LED用于发射光线；及\n透镜，所述透镜设置于所述LED的发光光路上，所述LED位于所述透镜的焦平面上，所述透镜对所述LED发出的光线进行光束整形以形成照明光斑；\n其中，所述LED的光轴与所述透镜的光轴偏置的情况下，所述LED的光轴与所述透镜的光轴的偏置距离，与所述LED单元和所述前照灯模组的光轴中心的距离正相关。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种LED单元，用于车辆的前照灯模组，其特征在于，所述LED单元包括：",
+      "engineering_terms": [
+        "LED单元",
+        "LED module",
+        "前照灯光源单元",
+        "车辆照明单元"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "LED，所述LED用于发射光线；及",
+      "engineering_terms": [
+        "发光二极管",
+        "LED light source",
+        "半导体光源",
+        "光源芯片"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "透镜，所述透镜设置于所述LED的发光光路上，所述LED位于所述透镜的焦平面上，所述透镜对所述LED发出的光线进行光束整形以形成照明光斑；",
+      "engineering_terms": [
+        "lens",
+        "光学透镜",
+        "准直透镜",
+        "成像透镜",
+        "光束整形元件",
+        "beam shaping lens"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "其中，所述LED的光轴与所述透镜的光轴偏置的情况下，所述LED的光轴与所述透镜的光轴的偏置距离，与所述LED单元和所述前照灯模组的光轴中心的距离正相关。",
+      "engineering_terms": [
+        "光轴偏置",
+        "optical axis offset",
+        "偏置距离",
+        "光轴中心距离",
+        "正相关关系"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/2a/43/d5/a6c0d06bd517b4/CN222992708U.pdf"
+}

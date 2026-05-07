@@ -1,0 +1,64 @@
+{
+  "patent": {
+    "publication_no": "CN222350942U",
+    "title": "压缩机的排气组件、压缩机、热管理系统和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "田博士",
+      "蔡鹏�",
+      "高珊玲",
+      "雷达",
+      "宫铭远"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222350942U/zh",
+    "fetched_at": "2026-05-02T18:08:29+08:00"
+  },
+  "claim_1_text": "1.一种压缩机的排气组件，其特征在于，包括第一涡盘(2)和排气阀片(3)，所述第一涡盘(2)具有排气孔(21)，所述排气阀片(3)用于打开和关闭所述排气孔(21)，所述排气阀片(3)具有凸部，所述排气阀片(3)关闭时所述凸部与所述第一涡盘(2)密封配合。",
+  "claim_1_text_html": "1.一种压缩机的排气组件，其特征在于，包括第一涡盘(2)和排气阀片(3)，所述第一涡盘(2)具有排气孔(21)，所述排气阀片(3)用于打开和关闭所述排气孔(21)，所述排气阀片(3)具有凸部，所述排气阀片(3)关闭时所述凸部与所述第一涡盘(2)密封配合。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压缩机的排气组件，其特征在于，包括第一涡盘(2)和排气阀片(3)",
+      "engineering_terms": [
+        "压缩机排气组件",
+        "排气结构",
+        "compressor discharge assembly",
+        "排气机构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述第一涡盘(2)具有排气孔(21)",
+      "engineering_terms": [
+        "固定涡盘",
+        "静涡盘",
+        "排气口",
+        "discharge port",
+        "scroll plate"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述排气阀片(3)用于打开和关闭所述排气孔(21)，所述排气阀片(3)具有凸部，所述排气阀片(3)关闭时所述凸部与所述第一涡盘(2)密封配合",
+      "engineering_terms": [
+        "排气阀片",
+        "阀板",
+        "簧片阀",
+        "discharge valve plate",
+        "reed valve",
+        "密封凸起"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/71/5a/b4/ce00e450e99530/CN222350942U.pdf"
+}

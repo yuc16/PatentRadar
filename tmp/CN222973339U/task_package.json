@@ -1,0 +1,86 @@
+{
+  "patent": {
+    "publication_no": "CN222973339U",
+    "title": "控制器模组及车辆",
+    "assignees": [
+      "BYD Co Ltd",
+      "BYD Precision Manufacturing Co Ltd"
+    ],
+    "inventors": [
+      "池春元",
+      "于文倩"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222973339U/zh",
+    "fetched_at": "2026-05-02T20:43:38+08:00"
+  },
+  "claim_1_text": "1.一种控制器模组，其特征在于，包括：\n控制器；\n第一测量电路，所述第一测量电路与待识别的方向盘连接；\n电压转换电路，所述电压转换电路与所述控制器和所述第一测量电路连接，所述电压转换电路被配置为将所述控制器输出的脉宽调制信号转化成测试电压并提供给所述第一测量电路；\n第一识别电路，所述第一识别电路与所述第一测量电路连接并根据所述第一测量电路产生的第一识别信号，识别所述待识别的方向盘。",
+  "claim_1_text_html": "1.一种控制器模组，其特征在于，包括：\n控制器；\n第一测量电路，所述第一测量电路与待识别的方向盘连接；\n电压转换电路，所述电压转换电路与所述控制器和所述第一测量电路连接，所述电压转换电路被配置为将所述控制器输出的脉宽调制信号转化成测试电压并提供给所述第一测量电路；\n第一识别电路，所述第一识别电路与所述第一测量电路连接并根据所述第一测量电路产生的第一识别信号，识别所述待识别的方向盘。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种控制器模组，其特征在于，包括：",
+      "engineering_terms": [
+        "控制器模块",
+        "控制器组件",
+        "controller module",
+        "control unit"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "控制器；",
+      "engineering_terms": [
+        "控制单元",
+        "主控器",
+        "MCU",
+        "controller"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第一测量电路，所述第一测量电路与待识别的方向盘连接；",
+      "engineering_terms": [
+        "测量电路",
+        "检测电路",
+        "采样电路",
+        "measurement circuit",
+        "sensing circuit"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "电压转换电路，所述电压转换电路与所述控制器和所述第一测量电路连接，所述电压转换电路被配置为将所述控制器输出的脉宽调制信号转化成测试电压并提供给所述第一测量电路；",
+      "engineering_terms": [
+        "电压变换电路",
+        "PWM转电压电路",
+        "PWM DAC",
+        "voltage conversion circuit",
+        "PWM-to-voltage converter"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "第一识别电路，所述第一识别电路与所述第一测量电路连接并根据所述第一测量电路产生的第一识别信号，识别所述待识别的方向盘。",
+      "engineering_terms": [
+        "识别电路",
+        "判别电路",
+        "检测识别模块",
+        "identification circuit",
+        "recognition circuit"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/f8/1f/4f/7229d199a2d815/CN222973339U.pdf"
+}

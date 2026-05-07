@@ -1,0 +1,78 @@
+{
+  "patent": {
+    "publication_no": "CN222346886U",
+    "title": "电子后视镜和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "陈广炎",
+      "王皓",
+      "聂燕红",
+      "莫恒",
+      "刘圣坤"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222346886U/zh",
+    "fetched_at": "2026-05-02T18:06:16+08:00"
+  },
+  "claim_1_text": "1.一种电子后视镜，其特征在于，包括摄像头模组、处理模块和显示屏，所述摄像头模组与所述处理模块电连接，所述摄像头模组包括近夜视摄像头、远夜视摄像头和后视摄像头，所述处理模块用于根据摄像头模组输出的第一图像数据生成显示图像，所述显示屏用于显示所述显示图像。",
+  "claim_1_text_html": "1.一种电子后视镜，其特征在于，包括摄像头模组、处理模块和显示屏，所述摄像头模组与所述处理模块电连接，所述摄像头模组包括近夜视摄像头、远夜视摄像头和后视摄像头，所述处理模块用于根据摄像头模组输出的第一图像数据生成显示图像，所述显示屏用于显示所述显示图像。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种电子后视镜，其特征在于，包括摄像头模组、处理模块和显示屏，",
+      "engineering_terms": [
+        "电子后视镜",
+        "流媒体后视镜",
+        "车载后视系统",
+        "electronic rearview mirror",
+        "camera monitor system"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述摄像头模组与所述处理模块电连接，所述摄像头模组包括近夜视摄像头、远夜视摄像头和后视摄像头，",
+      "engineering_terms": [
+        "摄像头组件",
+        "相机模组",
+        "夜视摄像头",
+        "后视摄像头",
+        "camera module",
+        "night vision camera"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述处理模块用于根据摄像头模组输出的第一图像数据生成显示图像，",
+      "engineering_terms": [
+        "处理器",
+        "图像处理模块",
+        "视频处理单元",
+        "image processor",
+        "image processing module"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述显示屏用于显示所述显示图像。",
+      "engineering_terms": [
+        "显示屏",
+        "显示器",
+        "车载显示屏",
+        "display",
+        "monitor"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/e5/8c/09/f7df73c4da19e7/CN222346886U.pdf"
+}

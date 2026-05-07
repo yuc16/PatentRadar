@@ -1,0 +1,88 @@
+{
+  "patent": {
+    "publication_no": "CN222451905U",
+    "title": "出风口装置、空调系统和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "王金秋",
+      "陈梁",
+      "马兰",
+      "刘文展",
+      "宋新新"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222451905U/zh",
+    "fetched_at": "2026-05-02T20:22:51+08:00"
+  },
+  "claim_1_text": "1.一种出风口装置，其特征在于，包括：\n出风口组件，至少部分为透光构件；\n发光件，与所述出风口组件连接，用于向所述出风口组件的透光部分发射光线；\n电路板，与所述出风口组件连接固定，并与所述发光件电连接，所述电路板用于控制所述发光件的发光；\n引线，所述引线的一端伸入所述出风口组件，并与所述电路板电连接，另一端用于与电源连接。",
+  "claim_1_text_html": "1.一种出风口装置，其特征在于，包括：\n出风口组件，至少部分为透光构件；\n发光件，与所述出风口组件连接，用于向所述出风口组件的透光部分发射光线；\n电路板，与所述出风口组件连接固定，并与所述发光件电连接，所述电路板用于控制所述发光件的发光；\n引线，所述引线的一端伸入所述出风口组件，并与所述电路板电连接，另一端用于与电源连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种出风口装置，其特征在于，包括：",
+      "engineering_terms": [
+        "air outlet device",
+        "出风口总成",
+        "空调出风口",
+        "vent outlet"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "出风口组件，至少部分为透光构件；",
+      "engineering_terms": [
+        "air outlet assembly",
+        "出风口总成",
+        "透光件",
+        "light-transmitting member"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "发光件，与所述出风口组件连接，用于向所述出风口组件的透光部分发射光线；",
+      "engineering_terms": [
+        "light emitting element",
+        "发光元件",
+        "LED",
+        "光源",
+        "illumination device"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "电路板，与所述出风口组件连接固定，并与所述发光件电连接，所述电路板用于控制所述发光件的发光；",
+      "engineering_terms": [
+        "circuit board",
+        "PCB",
+        "控制板",
+        "printed circuit board",
+        "lighting control board"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "引线，所述引线的一端伸入所述出风口组件，并与所述电路板电连接，另一端用于与电源连接。",
+      "engineering_terms": [
+        "lead wire",
+        "导线",
+        "线束",
+        "wiring harness",
+        "power lead"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/22/2f/57/2c78076514e269/CN222451905U.pdf"
+}

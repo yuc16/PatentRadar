@@ -1,0 +1,86 @@
+{
+  "patent": {
+    "publication_no": "CN222845219U",
+    "title": "车载冰箱系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "朱鹏",
+      "张香倩"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222845219U/zh",
+    "fetched_at": "2026-05-02T20:36:29+08:00"
+  },
+  "claim_1_text": "1.一种车载冰箱系统，适于布置在车辆的乘员舱内，其特征在于，包括：\n多个车载冰箱；\n其中，每个所述车载冰箱包括：\n内胆，具有储藏腔；\n蒸发组件，设置于所述内胆的外围，与所述内胆热导通；以及，\n制热件，设置于所述内胆的外围，与所述内胆热导通。",
+  "claim_1_text_html": "1.一种车载冰箱系统，适于布置在车辆的乘员舱内，其特征在于，包括：\n多个车载冰箱；\n其中，每个所述车载冰箱包括：\n内胆，具有储藏腔；\n蒸发组件，设置于所述内胆的外围，与所述内胆热导通；以及，\n制热件，设置于所述内胆的外围，与所述内胆热导通。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车载冰箱系统，适于布置在车辆的乘员舱内，其特征在于，包括：",
+      "engineering_terms": [
+        "车载冷藏系统",
+        "车载冰箱总成",
+        "vehicle refrigerator system",
+        "in-vehicle refrigerator system"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "多个车载冰箱；",
+      "engineering_terms": [
+        "多冰箱",
+        "多冷藏箱",
+        "车载冷藏箱",
+        "vehicle refrigerator",
+        "car fridge"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "其中，每个所述车载冰箱包括：\n内胆，具有储藏腔；",
+      "engineering_terms": [
+        "内胆",
+        "储藏腔",
+        "箱胆",
+        "liner",
+        "storage cavity"
+      ],
+      "is_essential": true,
+      "notes": "将“其中，每个所述车载冰箱包括：”并入内胆特征，以保留该内部组成限定的上下文。"
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "蒸发组件，设置于所述内胆的外围，与所述内胆热导通；",
+      "engineering_terms": [
+        "蒸发器组件",
+        "制冷蒸发组件",
+        "evaporator assembly",
+        "evaporation unit",
+        "thermal conduction"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "制热件，设置于所述内胆的外围，与所述内胆热导通。",
+      "engineering_terms": [
+        "加热件",
+        "加热器",
+        "电加热元件",
+        "heating element",
+        "heater"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/50/56/4a/a9e5d3ce18fca0/CN222845219U.pdf"
+}

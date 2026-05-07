@@ -1,0 +1,125 @@
+{
+  "patent": {
+    "publication_no": "CN116691724B",
+    "title": "车辆及其远程召唤方法和召唤装置",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "梁宏锦",
+      "刘杰"
+    ],
+    "source_url": "https://patents.google.com/patent/CN116691724B/zh",
+    "fetched_at": "2026-05-02T17:54:02+08:00"
+  },
+  "claim_1_text": "1.一种车辆的远程召唤方法，其特征在于，包括：\n接收并响应于目标车辆的召唤命令，获取所述目标车辆的周围环境信息；\n在根据所述周围环境信息确定所述目标车辆的行驶方向存在障碍车辆时，获取所述障碍车辆的移车信息，所述移车信息用于通知所述障碍车辆的车主进行移车；\n在确定所述障碍车辆移开后，提醒用户按照指令执行召唤任务，控制所述目标车辆自动行驶至目标位置；\n在完成所述召唤任务时，提醒用户已完成智能召唤；\n获取所述障碍车辆的移车信息之前，所述方法还包括：\n根据所述目标车辆的周围环境信息确定所述障碍车辆里是否有人；\n若所述障碍车辆内有人时，则发出提醒信息；\n若所述障碍车辆内无人时，则获取所述障碍车辆的移车信息。",
+  "claim_1_text_html": "1.一种车辆的远程召唤方法，其特征在于，包括：\n接收并响应于目标车辆的召唤命令，获取所述目标车辆的周围环境信息；\n在根据所述周围环境信息确定所述目标车辆的行驶方向存在障碍车辆时，获取所述障碍车辆的移车信息，所述移车信息用于通知所述障碍车辆的车主进行移车；\n在确定所述障碍车辆移开后，提醒用户按照指令执行召唤任务，控制所述目标车辆自动行驶至目标位置；\n在完成所述召唤任务时，提醒用户已完成智能召唤；\n获取所述障碍车辆的移车信息之前，所述方法还包括：\n根据所述目标车辆的周围环境信息确定所述障碍车辆里是否有人；\n若所述障碍车辆内有人时，则发出提醒信息；\n若所述障碍车辆内无人时，则获取所述障碍车辆的移车信息。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车辆的远程召唤方法，其特征在于，包括：",
+      "engineering_terms": [
+        "远程召唤",
+        "智能召唤",
+        "车辆自动召唤",
+        "remote summon",
+        "smart summon"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "接收并响应于目标车辆的召唤命令，获取所述目标车辆的周围环境信息；",
+      "engineering_terms": [
+        "召唤指令",
+        "环境感知",
+        "周边环境信息",
+        "surrounding environment information",
+        "summon command"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "在根据所述周围环境信息确定所述目标车辆的行驶方向存在障碍车辆时，获取所述障碍车辆的移车信息，所述移车信息用于通知所述障碍车辆的车主进行移车；",
+      "engineering_terms": [
+        "障碍车辆检测",
+        "行驶方向障碍物",
+        "移车通知",
+        "obstacle vehicle",
+        "vehicle removal information"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "在确定所述障碍车辆移开后，提醒用户按照指令执行召唤任务，控制所述目标车辆自动行驶至目标位置；",
+      "engineering_terms": [
+        "障碍清除确认",
+        "用户提醒",
+        "自动驾驶至目标位置",
+        "召唤任务执行",
+        "autonomous driving"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "在完成所述召唤任务时，提醒用户已完成智能召唤；",
+      "engineering_terms": [
+        "任务完成提醒",
+        "智能召唤完成",
+        "completion notification",
+        "smart summon completion"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "获取所述障碍车辆的移车信息之前，所述方法还包括：\n根据所述目标车辆的周围环境信息确定所述障碍车辆里是否有人；",
+      "engineering_terms": [
+        "车内人员检测",
+        "乘员检测",
+        "障碍车辆占用状态",
+        "occupant detection",
+        "in-vehicle person detection"
+      ],
+      "is_essential": true,
+      "notes": "该特征为获取移车信息之前的前置判断步骤，与后续有人/无人分支配合限定。"
+    },
+    {
+      "feature_id": "F7",
+      "feature_text": "若所述障碍车辆内有人时，则发出提醒信息；",
+      "engineering_terms": [
+        "有人提醒",
+        "提醒信息",
+        "车内人员提醒",
+        "alert message",
+        "occupant alert"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F8",
+      "feature_text": "若所述障碍车辆内无人时，则获取所述障碍车辆的移车信息。",
+      "engineering_terms": [
+        "无人车辆",
+        "获取移车信息",
+        "车主移车通知",
+        "unoccupied vehicle",
+        "vehicle removal request"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/83/36/5a/fcf555844d2e89/CN116691724B.pdf"
+}

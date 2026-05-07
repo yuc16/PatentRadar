@@ -1,0 +1,73 @@
+{
+  "patent": {
+    "publication_no": "CN222346694U",
+    "title": "加热器、空调及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "党武榆",
+      "任茂林",
+      "黄金明"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222346694U/zh",
+    "fetched_at": "2026-05-02T18:04:56+08:00"
+  },
+  "claim_1_text": "1.一种加热器，其特征在于，所述加热器包括加热组件、电控板和壳体，所述电控板收容于所述壳体内，所述电控板上设有第一插片；所述加热组件的电极连接有插接端子，所述插接端子伸入所述壳体内并与所述第一插片对插连接，所述电控板用于控制所述加热组件的输出功率。",
+  "claim_1_text_html": "1.一种加热器，其特征在于，所述加热器包括加热组件、电控板和壳体，所述电控板收容于所述壳体内，所述电控板上设有第一插片；所述加热组件的电极连接有插接端子，所述插接端子伸入所述壳体内并与所述第一插片对插连接，所述电控板用于控制所述加热组件的输出功率。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种加热器，其特征在于，所述加热器包括加热组件、电控板和壳体，",
+      "engineering_terms": [
+        "heater",
+        "加热装置",
+        "PTC加热器",
+        "电加热器"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述电控板收容于所述壳体内，所述电控板上设有第一插片；",
+      "engineering_terms": [
+        "控制板",
+        "PCB",
+        "电路板",
+        "housing",
+        "插片端子"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述加热组件的电极连接有插接端子，所述插接端子伸入所述壳体内并与所述第一插片对插连接，",
+      "engineering_terms": [
+        "heating assembly",
+        "电极端子",
+        "插接端子",
+        "plug-in terminal",
+        "对插连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述电控板用于控制所述加热组件的输出功率。",
+      "engineering_terms": [
+        "功率控制",
+        "输出功率调节",
+        "power control",
+        "加热功率控制"
+      ],
+      "is_essential": true,
+      "notes": "该功能限定在原文中位于句末，因需保持feature_text为连续片段，单独列为一项。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/2d/2e/c6/441fe142addc68/CN222346694U.pdf"
+}

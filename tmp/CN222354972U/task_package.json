@@ -1,0 +1,76 @@
+{
+  "patent": {
+    "publication_no": "CN222354972U",
+    "title": "车辆喇叭开关及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "刘文展",
+      "宋新新",
+      "马兰",
+      "陈梁"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222354972U/zh",
+    "fetched_at": "2026-05-02T20:19:15+08:00"
+  },
+  "claim_1_text": "1.一种车辆喇叭开关，其特征在于，包括：与第一端子(1)连接的电极片(3)、与第二端子(2)连接的电极(4)以及磁性件(5)，当所述电极片(3)处于第一状态时，所述电极片(3)和所述电极(4)相抵靠，以使所述第一端子(1)和所述第二端子(2)处于导通状态，当所述电极片(3)处于第二状态时，所述磁性件(5)将所述电极片(3)吸附，以使所述第一端子(1)和所述第二端子(2)处于断开状态。",
+  "claim_1_text_html": "1.一种车辆喇叭开关，其特征在于，包括：与第一端子(1)连接的电极片(3)、与第二端子(2)连接的电极(4)以及磁性件(5)，当所述电极片(3)处于第一状态时，所述电极片(3)和所述电极(4)相抵靠，以使所述第一端子(1)和所述第二端子(2)处于导通状态，当所述电极片(3)处于第二状态时，所述磁性件(5)将所述电极片(3)吸附，以使所述第一端子(1)和所述第二端子(2)处于断开状态。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车辆喇叭开关，其特征在于，包括：",
+      "engineering_terms": [
+        "喇叭开关",
+        "汽车喇叭按钮",
+        "horn switch",
+        "vehicle horn switch"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "与第一端子(1)连接的电极片(3)、与第二端子(2)连接的电极(4)以及磁性件(5)",
+      "engineering_terms": [
+        "端子",
+        "电极片",
+        "触点",
+        "磁性元件",
+        "terminal",
+        "magnetic member"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "当所述电极片(3)处于第一状态时，所述电极片(3)和所述电极(4)相抵靠，以使所述第一端子(1)和所述第二端子(2)处于导通状态",
+      "engineering_terms": [
+        "接触导通",
+        "闭合状态",
+        "电连接",
+        "contact closure",
+        "conductive state"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "当所述电极片(3)处于第二状态时，所述磁性件(5)将所述电极片(3)吸附，以使所述第一端子(1)和所述第二端子(2)处于断开状态",
+      "engineering_terms": [
+        "磁吸复位",
+        "磁性吸附",
+        "断开状态",
+        "open circuit",
+        "magnetic attraction"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/1c/d6/76/24805f1374f7d5/CN222354972U.pdf"
+}

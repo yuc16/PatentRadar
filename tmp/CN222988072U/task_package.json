@@ -1,0 +1,72 @@
+{
+  "patent": {
+    "publication_no": "CN222988072U",
+    "title": "后视镜及车辆",
+    "assignees": [
+      "BYD Co Ltd",
+      "BYD Precision Manufacturing Co Ltd"
+    ],
+    "inventors": [
+      "宁攀升",
+      "罗若虚",
+      "钟燕军"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222988072U/zh",
+    "fetched_at": "2026-05-02T20:47:01+08:00"
+  },
+  "claim_1_text": "1.一种后视镜，其特征在于，包括：\n壳体；\n摄影模组，所述摄影模组的至少部分位于所述壳体内；及\n支撑组件，所述支撑组件的一端与所述壳体连接，所述摄影模组放置于所述支撑组件上，所述支撑组件被配置为限制所述摄影模组在所述壳体内的位置以使得所述摄影模组的光轴与预设光轴重合。",
+  "claim_1_text_html": "1.一种后视镜，其特征在于，包括：\n壳体；\n摄影模组，所述摄影模组的至少部分位于所述壳体内；及\n支撑组件，所述支撑组件的一端与所述壳体连接，所述摄影模组放置于所述支撑组件上，所述支撑组件被配置为限制所述摄影模组在所述壳体内的位置以使得所述摄影模组的光轴与预设光轴重合。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种后视镜，其特征在于，包括：",
+      "engineering_terms": [
+        "rearview mirror",
+        "vehicle mirror",
+        "后视镜总成"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "壳体；",
+      "engineering_terms": [
+        "housing",
+        "外壳",
+        "壳罩",
+        "mirror shell"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "摄影模组，所述摄影模组的至少部分位于所述壳体内；",
+      "engineering_terms": [
+        "camera module",
+        "摄像模组",
+        "影像模组",
+        "camera unit"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "支撑组件，所述支撑组件的一端与所述壳体连接，所述摄影模组放置于所述支撑组件上，所述支撑组件被配置为限制所述摄影模组在所述壳体内的位置以使得所述摄影模组的光轴与预设光轴重合。",
+      "engineering_terms": [
+        "support assembly",
+        "支架组件",
+        "定位支撑件",
+        "mounting bracket",
+        "camera holder"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/fd/94/f2/c703a775237fc4/CN222988072U.pdf"
+}

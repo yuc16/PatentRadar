@@ -1,0 +1,75 @@
+{
+  "patent": {
+    "publication_no": "CN222995951U",
+    "title": "连接器和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "杨培"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222995951U/zh",
+    "fetched_at": "2026-05-02T20:49:45+08:00"
+  },
+  "claim_1_text": "1.一种连接器(10)，用于车辆(100)，其特征在于，所述连接器包括：\n护套(11)，所述护套(11)设有容置腔(111)；\n外壳(12)，所述外壳(12)包括固定盖部(121)、连接部(122)和尾盖部(123)，所述固定盖部(121)通过所述连接部(122)与所述尾盖部(123)连接；\n在所述护套(11)连接所述外壳(12)的情况下，所述固定盖部(121)和所述连接部(122)位于所述容置腔(111)中。",
+  "claim_1_text_html": "1.一种连接器(10)，用于车辆(100)，其特征在于，所述连接器包括：\n护套(11)，所述护套(11)设有容置腔(111)；\n外壳(12)，所述外壳(12)包括固定盖部(121)、连接部(122)和尾盖部(123)，所述固定盖部(121)通过所述连接部(122)与所述尾盖部(123)连接；\n在所述护套(11)连接所述外壳(12)的情况下，所述固定盖部(121)和所述连接部(122)位于所述容置腔(111)中。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接器(10)，用于车辆(100)，其特征在于，所述连接器包括：",
+      "engineering_terms": [
+        "连接器",
+        "车用连接器",
+        "vehicle connector",
+        "connector assembly"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "护套(11)，所述护套(11)设有容置腔(111)；",
+      "engineering_terms": [
+        "护套",
+        "连接器护套",
+        "壳套",
+        "sheath",
+        "housing cavity",
+        "容纳腔"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "外壳(12)，所述外壳(12)包括固定盖部(121)、连接部(122)和尾盖部(123)，所述固定盖部(121)通过所述连接部(122)与所述尾盖部(123)连接；",
+      "engineering_terms": [
+        "外壳",
+        "连接器外壳",
+        "housing",
+        "固定盖",
+        "尾盖",
+        "连接部"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "在所述护套(11)连接所述外壳(12)的情况下，所述固定盖部(121)和所述连接部(122)位于所述容置腔(111)中。",
+      "engineering_terms": [
+        "装配状态",
+        "连接状态",
+        "容置配合",
+        "assembled state",
+        "housing engagement",
+        "cavity accommodation"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/59/33/9a/61eddf10a66eb2/CN222995951U.pdf"
+}

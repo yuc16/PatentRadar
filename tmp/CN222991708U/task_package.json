@@ -1,0 +1,63 @@
+{
+  "patent": {
+    "publication_no": "CN222991708U",
+    "title": "压缩机、空调及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "奚周瑾",
+      "张楠",
+      "李祖航",
+      "杜文清",
+      "曾麟"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222991708U/zh",
+    "fetched_at": "2026-05-02T20:47:21+08:00"
+  },
+  "claim_1_text": "1.一种压缩机，其特征在于，包括：\n机壳，所述机壳形成有压缩腔，所述机壳开设有油道，所述油道设有进油口和第一出油口，所述第一出油口与所述压缩腔连通；\n压缩组件，安装于所述压缩腔，包括静盘、动盘以及限位件，所述静盘与所述动盘相对设置，所述限位件连接于所述动盘背离所述静盘的一侧，用于防止所述动盘自转，所述第一出油口朝向所述限位件设置。",
+  "claim_1_text_html": "1.一种压缩机，其特征在于，包括：\n机壳，所述机壳形成有压缩腔，所述机壳开设有油道，所述油道设有进油口和第一出油口，所述第一出油口与所述压缩腔连通；\n压缩组件，安装于所述压缩腔，包括静盘、动盘以及限位件，所述静盘与所述动盘相对设置，所述限位件连接于所述动盘背离所述静盘的一侧，用于防止所述动盘自转，所述第一出油口朝向所述限位件设置。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压缩机，其特征在于，包括：",
+      "engineering_terms": [
+        "压缩机",
+        "compressor"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "机壳，所述机壳形成有压缩腔，所述机壳开设有油道，所述油道设有进油口和第一出油口，所述第一出油口与所述压缩腔连通；",
+      "engineering_terms": [
+        "壳体",
+        "外壳",
+        "压缩腔",
+        "油路",
+        "进油口",
+        "housing"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "压缩组件，安装于所述压缩腔，包括静盘、动盘以及限位件，所述静盘与所述动盘相对设置，所述限位件连接于所述动盘背离所述静盘的一侧，用于防止所述动盘自转，所述第一出油口朝向所述限位件设置。",
+      "engineering_terms": [
+        "压缩机构",
+        "静涡盘",
+        "动涡盘",
+        "限位结构",
+        "防自转机构",
+        "compression assembly"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/fc/ac/87/1cb0960b30c15a/CN222991708U.pdf"
+}

@@ -1,0 +1,77 @@
+{
+  "patent": {
+    "publication_no": "CN222355541U",
+    "title": "连接器和具有其的连接器组件、车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "秦乙婷",
+      "朱彦程",
+      "聂燕红",
+      "陈跃洋",
+      "唐友奇"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222355541U/zh",
+    "fetched_at": "2026-05-02T20:20:18+08:00"
+  },
+  "claim_1_text": "1.一种连接器，其特征在于，包括：\n壳体，所述壳体限定出对接腔，所述对接腔具有适于与对配端插配的对接口；\n密封盖，所述密封盖用于密封所述对接腔；以及，\n连接组件，所述壳体通过所述连接组件与所述密封盖相连，所述密封盖能相对所述壳体运动，且所述密封盖有密封状态和收纳状态，在所述密封状态，所述密封盖密封所述对接腔，在所述收纳状态，所述密封盖位于所述对接腔外且避让所述对接口。",
+  "claim_1_text_html": "1.一种连接器，其特征在于，包括：\n壳体，所述壳体限定出对接腔，所述对接腔具有适于与对配端插配的对接口；\n密封盖，所述密封盖用于密封所述对接腔；以及，\n连接组件，所述壳体通过所述连接组件与所述密封盖相连，所述密封盖能相对所述壳体运动，且所述密封盖有密封状态和收纳状态，在所述密封状态，所述密封盖密封所述对接腔，在所述收纳状态，所述密封盖位于所述对接腔外且避让所述对接口。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接器，其特征在于，包括：",
+      "engineering_terms": [
+        "connector",
+        "电连接器",
+        "接插件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "壳体，所述壳体限定出对接腔，所述对接腔具有适于与对配端插配的对接口；",
+      "engineering_terms": [
+        "housing",
+        "外壳",
+        "壳体结构",
+        "mating cavity",
+        "对接腔",
+        "mating interface"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "密封盖，所述密封盖用于密封所述对接腔；",
+      "engineering_terms": [
+        "sealing cover",
+        "密封盖板",
+        "防尘盖",
+        "保护盖",
+        "seal cap"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "连接组件，所述壳体通过所述连接组件与所述密封盖相连，所述密封盖能相对所述壳体运动，且所述密封盖有密封状态和收纳状态，在所述密封状态，所述密封盖密封所述对接腔，在所述收纳状态，所述密封盖位于所述对接腔外且避让所述对接口。",
+      "engineering_terms": [
+        "connecting assembly",
+        "连接机构",
+        "铰接组件",
+        "linkage assembly",
+        "movable cover mechanism",
+        "收纳状态"
+      ],
+      "is_essential": true,
+      "notes": "连接组件及密封盖相对壳体运动、密封状态和收纳状态均为同一连接/运动关系下的限定，合并为一条。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/e1/2d/29/df4e1948a5166d/CN222355541U.pdf"
+}

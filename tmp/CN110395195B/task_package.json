@@ -1,0 +1,99 @@
+{
+  "patent": {
+    "publication_no": "CN110395195B",
+    "title": "用于调节显示终端的执行机构、显示终端组件和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "王晓文",
+      "白胜"
+    ],
+    "source_url": "https://patents.google.com/patent/CN110395195B/zh",
+    "fetched_at": "2026-05-02T17:48:28+08:00"
+  },
+  "claim_1_text": "1.一种用于调节显示终端的执行机构，其特征在于，包括：\n动力源；\n驱动机构，所述驱动机构与所述动力源相连，所述驱动机构与显示终端连接以驱动所述显示终端偏心转动，以使所述显示终端在横屏和竖屏之间切换；\n所述驱动机构包括：滑动机构和旋转机构，所述滑动机构与所述显示终端连接，所述动力源用于通过所述旋转机构驱动所述滑动机构联动以使所述显示终端移动；\n所述滑动机构包括可相对滑动的第一滑动部和第二滑动部，所述第一滑动部与显示终端相连，所述旋转机构的输出端与所述第二滑动部相连，且在所述旋转机构工作时驱动所述第一滑动部和所述第二滑动部相对滑动；\n所述显示终端为触摸屏幕或安装于仪表台管梁的显示面板。",
+  "claim_1_text_html": "1.一种用于调节显示终端的执行机构，其特征在于，包括：\n动力源；\n驱动机构，所述驱动机构与所述动力源相连，所述驱动机构与显示终端连接以驱动所述显示终端偏心转动，以使所述显示终端在横屏和竖屏之间切换；\n所述驱动机构包括：滑动机构和旋转机构，所述滑动机构与所述显示终端连接，所述动力源用于通过所述旋转机构驱动所述滑动机构联动以使所述显示终端移动；\n所述滑动机构包括可相对滑动的第一滑动部和第二滑动部，所述第一滑动部与显示终端相连，所述旋转机构的输出端与所述第二滑动部相连，且在所述旋转机构工作时驱动所述第一滑动部和所述第二滑动部相对滑动；\n所述显示终端为触摸屏幕或安装于仪表台管梁的显示面板。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种用于调节显示终端的执行机构，其特征在于，包括：",
+      "engineering_terms": [
+        "显示终端调节机构",
+        "执行机构",
+        "actuator",
+        "display adjustment mechanism"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "动力源；",
+      "engineering_terms": [
+        "电机",
+        "马达",
+        "驱动源",
+        "power source",
+        "motor"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "驱动机构，所述驱动机构与所述动力源相连，所述驱动机构与显示终端连接以驱动所述显示终端偏心转动，以使所述显示终端在横屏和竖屏之间切换；",
+      "engineering_terms": [
+        "传动机构",
+        "驱动组件",
+        "偏心旋转机构",
+        "drive mechanism",
+        "transmission mechanism"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述驱动机构包括：滑动机构和旋转机构，所述滑动机构与所述显示终端连接，所述动力源用于通过所述旋转机构驱动所述滑动机构联动以使所述显示终端移动；",
+      "engineering_terms": [
+        "滑移机构",
+        "转动机构",
+        "联动机构",
+        "sliding mechanism",
+        "rotary mechanism"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "所述滑动机构包括可相对滑动的第一滑动部和第二滑动部，所述第一滑动部与显示终端相连，所述旋转机构的输出端与所述第二滑动部相连，且在所述旋转机构工作时驱动所述第一滑动部和所述第二滑动部相对滑动；",
+      "engineering_terms": [
+        "滑动副",
+        "滑块组件",
+        "导轨滑块",
+        "sliding pair",
+        "slider assembly"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "所述显示终端为触摸屏幕或安装于仪表台管梁的显示面板。",
+      "engineering_terms": [
+        "触摸屏",
+        "车载显示屏",
+        "显示面板",
+        "touch screen",
+        "display panel"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/3e/ad/a3/28b20563210ba4/CN110395195B.pdf"
+}

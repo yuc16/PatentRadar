@@ -1,0 +1,74 @@
+{
+  "patent": {
+    "publication_no": "CN223023651U",
+    "title": "连接器、控制器及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "张振明"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223023651U/zh",
+    "fetched_at": "2026-05-02T20:52:35+08:00"
+  },
+  "claim_1_text": "1.一种连接器，其特征在于，包括：\n第一导体，构造有第一安装通道，所述第一安装通道在所述第一导体的外表面形成有第一装配口；\n第二导体，自所述第一装配口穿设于所述第一安装通道内，其中，所述第二导体的外表面与所述第一导体的内表面间隔设置；\n弹性件，连接于所述第一导体的内表面与所述第二导体的外表面之间，所述弹性件沿所述第一安装通道的轴向倾斜设置。",
+  "claim_1_text_html": "1.一种连接器，其特征在于，包括：\n第一导体，构造有第一安装通道，所述第一安装通道在所述第一导体的外表面形成有第一装配口；\n第二导体，自所述第一装配口穿设于所述第一安装通道内，其中，所述第二导体的外表面与所述第一导体的内表面间隔设置；\n弹性件，连接于所述第一导体的内表面与所述第二导体的外表面之间，所述弹性件沿所述第一安装通道的轴向倾斜设置。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接器，其特征在于，包括：",
+      "engineering_terms": [
+        "连接器",
+        "connector",
+        "电连接器",
+        "导电连接件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一导体，构造有第一安装通道，所述第一安装通道在所述第一导体的外表面形成有第一装配口；",
+      "engineering_terms": [
+        "第一导电件",
+        "第一导体件",
+        "conductor",
+        "安装孔道",
+        "装配口"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第二导体，自所述第一装配口穿设于所述第一安装通道内，其中，所述第二导体的外表面与所述第一导体的内表面间隔设置；",
+      "engineering_terms": [
+        "第二导电件",
+        "第二导体件",
+        "插入导体",
+        "穿设",
+        "间隙配合",
+        "spaced arrangement"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "弹性件，连接于所述第一导体的内表面与所述第二导体的外表面之间，所述弹性件沿所述第一安装通道的轴向倾斜设置。",
+      "engineering_terms": [
+        "弹性连接件",
+        "弹簧片",
+        "弹性导电件",
+        "elastic member",
+        "倾斜设置",
+        "轴向倾斜"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/33/3c/cc/e7851a110aacf4/CN223023651U.pdf"
+}

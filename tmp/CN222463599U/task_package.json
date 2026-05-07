@@ -1,0 +1,72 @@
+{
+  "patent": {
+    "publication_no": "CN222463599U",
+    "title": "密封结构、控制系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "蓝仰勇",
+      "刘开宇",
+      "许州",
+      "刘常志",
+      "陆腾飞"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222463599U/zh",
+    "fetched_at": "2026-05-02T20:24:51+08:00"
+  },
+  "claim_1_text": "1.一种密封结构，其特征在于，包括：\n电阻；\n导线，与所述电阻电连接；以及\n绝缘件，包覆于所述电阻的外表面并与所述电阻的外表面相贴合，以及包覆于至少部分所述导线的外表面并与所述导线的外表面相贴合。",
+  "claim_1_text_html": "1.一种密封结构，其特征在于，包括：\n电阻；\n导线，与所述电阻电连接；以及\n绝缘件，包覆于所述电阻的外表面并与所述电阻的外表面相贴合，以及包覆于至少部分所述导线的外表面并与所述导线的外表面相贴合。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种密封结构，其特征在于，包括：",
+      "engineering_terms": [
+        "密封组件",
+        "sealing structure",
+        "封装结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "电阻；",
+      "engineering_terms": [
+        "电阻器",
+        "resistor",
+        "阻性元件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "导线，与所述电阻电连接；以及",
+      "engineering_terms": [
+        "引线",
+        "wire",
+        "lead wire",
+        "电连接线"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "绝缘件，包覆于所述电阻的外表面并与所述电阻的外表面相贴合，以及包覆于至少部分所述导线的外表面并与所述导线的外表面相贴合。",
+      "engineering_terms": [
+        "绝缘包覆件",
+        "insulating member",
+        "绝缘封装",
+        "包胶件",
+        "绝缘层"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/37/e4/84/91edaede64c3bb/CN222463599U.pdf"
+}

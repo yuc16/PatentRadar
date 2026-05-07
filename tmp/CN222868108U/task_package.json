@@ -1,0 +1,63 @@
+{
+  "patent": {
+    "publication_no": "CN222868108U",
+    "title": "一种触头",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "姚东泉",
+      "曹阳",
+      "蒋俊",
+      "彭告"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222868108U/zh",
+    "fetched_at": "2026-05-02T20:41:16+08:00"
+  },
+  "claim_1_text": "1.一种触头，用于电连接器，其特征在于，包括：\n主体部，所述主体部设有主体限制部；以及\n接触针，所述接触针设有接触限制部，用于与所述主体限制部配合实现电气连接。",
+  "claim_1_text_html": "1.一种触头，用于电连接器，其特征在于，包括：\n主体部，所述主体部设有主体限制部；以及\n接触针，所述接触针设有接触限制部，用于与所述主体限制部配合实现电气连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种触头，用于电连接器，其特征在于，包括：",
+      "engineering_terms": [
+        "触头",
+        "电连接器触头",
+        "contact",
+        "electrical connector contact"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "主体部，所述主体部设有主体限制部；",
+      "engineering_terms": [
+        "主体部",
+        "本体",
+        "触头主体",
+        "body portion",
+        "main body"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "接触针，所述接触针设有接触限制部，用于与所述主体限制部配合实现电气连接。",
+      "engineering_terms": [
+        "接触针",
+        "针脚",
+        "插针",
+        "contact pin",
+        "pin contact",
+        "电气连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/a2/81/39/104bae8b13d91e/CN222868108U.pdf"
+}

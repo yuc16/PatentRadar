@@ -1,0 +1,87 @@
+{
+  "patent": {
+    "publication_no": "CN223023585U",
+    "title": "一种天线",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "赵修茂",
+      "李晓瑜",
+      "符其略"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223023585U/zh",
+    "fetched_at": "2026-05-02T20:51:44+08:00"
+  },
+  "claim_1_text": "1.一种天线，其特征在于，包括：\n参考地(101)；\n辐射体(102)；\n馈电结构(103)，所述馈电结构(103)包括信号传输部和接地部，所述信号传输部与所述辐射体(102)电连接，所述接地部与所述参考地(101)电连接；\n接地件(104)，所述接地件(104)的一端与所述辐射体(102)电连接，所述接地件(104)的另一端与所述参考地(101)电连接。",
+  "claim_1_text_html": "1.一种天线，其特征在于，包括：\n参考地(101)；\n辐射体(102)；\n馈电结构(103)，所述馈电结构(103)包括信号传输部和接地部，所述信号传输部与所述辐射体(102)电连接，所述接地部与所述参考地(101)电连接；\n接地件(104)，所述接地件(104)的一端与所述辐射体(102)电连接，所述接地件(104)的另一端与所述参考地(101)电连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种天线，其特征在于，包括：",
+      "engineering_terms": [
+        "天线",
+        "antenna",
+        "无线辐射结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "参考地(101)；",
+      "engineering_terms": [
+        "参考地",
+        "地平面",
+        "接地平面",
+        "ground plane",
+        "reference ground"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "辐射体(102)；",
+      "engineering_terms": [
+        "辐射体",
+        "天线辐射体",
+        "radiator",
+        "radiating element"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "馈电结构(103)，所述馈电结构(103)包括信号传输部和接地部，所述信号传输部与所述辐射体(102)电连接，所述接地部与所述参考地(101)电连接；",
+      "engineering_terms": [
+        "馈电结构",
+        "馈线结构",
+        "feed structure",
+        "feeding structure",
+        "信号传输部",
+        "接地部"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "接地件(104)，所述接地件(104)的一端与所述辐射体(102)电连接，所述接地件(104)的另一端与所述参考地(101)电连接。",
+      "engineering_terms": [
+        "接地件",
+        "短路件",
+        "接地连接件",
+        "grounding element",
+        "shorting element",
+        "ground connector"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/9e/41/ee/0fde8c99c39971/CN223023585U.pdf"
+}

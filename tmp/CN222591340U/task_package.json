@@ -1,0 +1,59 @@
+{
+  "patent": {
+    "publication_no": "CN222591340U",
+    "title": "安装支架、冰箱和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "曾令国",
+      "姜微"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222591340U/zh",
+    "fetched_at": "2026-05-02T20:26:49+08:00"
+  },
+  "claim_1_text": "1.一种安装支架，其特征在于，包括：\n支架本体，所述支架本体的一端形成有至少一个安装槽，所述安装槽的侧壁上形成有至少一个开口；\n至少一个卡夹，所述卡夹设在所述安装槽处，所述卡夹包括至少一个夹持部，所述夹持部伸出所述开口。",
+  "claim_1_text_html": "1.一种安装支架，其特征在于，包括：\n支架本体，所述支架本体的一端形成有至少一个安装槽，所述安装槽的侧壁上形成有至少一个开口；\n至少一个卡夹，所述卡夹设在所述安装槽处，所述卡夹包括至少一个夹持部，所述夹持部伸出所述开口。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种安装支架，其特征在于，包括：",
+      "engineering_terms": [
+        "安装支架",
+        "mounting bracket",
+        "支撑结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "支架本体，所述支架本体的一端形成有至少一个安装槽，所述安装槽的侧壁上形成有至少一个开口；",
+      "engineering_terms": [
+        "支架本体",
+        "bracket body",
+        "安装槽",
+        "mounting groove",
+        "开口"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "至少一个卡夹，所述卡夹设在所述安装槽处，所述卡夹包括至少一个夹持部，所述夹持部伸出所述开口。",
+      "engineering_terms": [
+        "卡夹",
+        "clip",
+        "clamp",
+        "夹持部",
+        "clamping portion"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/46/6d/95/a6a7dc2bbdb3f2/CN222591340U.pdf"
+}

@@ -1,0 +1,71 @@
+{
+  "patent": {
+    "publication_no": "CN223085853U",
+    "title": "功率集成模组、充电器及车辆",
+    "assignees": [
+      "BYD Semiconductor Co Ltd"
+    ],
+    "inventors": [
+      "胡睿",
+      "胡一丁",
+      "杨胜松"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223085853U/zh",
+    "fetched_at": "2026-05-02T20:53:38+08:00"
+  },
+  "claim_1_text": "1.一种功率集成模组，其特征在于，所述功率集成模组包括：\n功率因数校正电路(10)，所述功率因数校正电路(10)的输入端用于连接三相交流电网；\n三相谐振电路(20)，所述三相谐振电路(20)的输入端与所述功率因数校正电路(10)的输出端连接；\n直流变换电路(30)，所述直流变换电路(30)与所述三相谐振电路(20)的输出端连接。",
+  "claim_1_text_html": "1.一种功率集成模组，其特征在于，所述功率集成模组包括：\n功率因数校正电路(10)，所述功率因数校正电路(10)的输入端用于连接三相交流电网；\n三相谐振电路(20)，所述三相谐振电路(20)的输入端与所述功率因数校正电路(10)的输出端连接；\n直流变换电路(30)，所述直流变换电路(30)与所述三相谐振电路(20)的输出端连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种功率集成模组，其特征在于，所述功率集成模组包括：",
+      "engineering_terms": [
+        "功率模块",
+        "集成功率模块",
+        "power integrated module",
+        "power module"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "功率因数校正电路(10)，所述功率因数校正电路(10)的输入端用于连接三相交流电网；",
+      "engineering_terms": [
+        "PFC电路",
+        "功率因数校正模块",
+        "power factor correction circuit",
+        "三相交流输入"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "三相谐振电路(20)，所述三相谐振电路(20)的输入端与所述功率因数校正电路(10)的输出端连接；",
+      "engineering_terms": [
+        "三相谐振变换电路",
+        "谐振电路",
+        "three-phase resonant circuit",
+        "LLC谐振电路"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "直流变换电路(30)，所述直流变换电路(30)与所述三相谐振电路(20)的输出端连接。",
+      "engineering_terms": [
+        "DC-DC变换电路",
+        "直流变换器",
+        "DC converter",
+        "直流转换电路"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/5e/68/cf/ad4740f430350b/CN223085853U.pdf"
+}

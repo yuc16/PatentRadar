@@ -1,0 +1,65 @@
+{
+  "patent": {
+    "publication_no": "CN222457775U",
+    "title": "压缩机及其转动位置检测机构、热管理系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "邝彦宁",
+      "杨应葵",
+      "任光远",
+      "吴业艺",
+      "罗全明"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222457775U/zh",
+    "fetched_at": "2026-05-02T20:23:51+08:00"
+  },
+  "claim_1_text": "1.一种压缩机的转动位置检测机构，所述压缩机包括固定部和运动部，其特征在于，所述转动位置检测机构包括：\n目标齿轮，用于设置在所述运动部上，以与所述运动部同步转动；\n传感器，用于设置在所述固定部上，并与所述目标齿轮相对设置，以通过所述目标齿轮确定所述运动部的运动信息。",
+  "claim_1_text_html": "1.一种压缩机的转动位置检测机构，所述压缩机包括固定部和运动部，其特征在于，所述转动位置检测机构包括：\n目标齿轮，用于设置在所述运动部上，以与所述运动部同步转动；\n传感器，用于设置在所述固定部上，并与所述目标齿轮相对设置，以通过所述目标齿轮确定所述运动部的运动信息。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压缩机的转动位置检测机构，所述压缩机包括固定部和运动部，其特征在于，所述转动位置检测机构包括：",
+      "engineering_terms": [
+        "转动位置检测装置",
+        "旋转位置检测机构",
+        "压缩机位置传感机构",
+        "rotational position detection mechanism"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "目标齿轮，用于设置在所述运动部上，以与所述运动部同步转动；",
+      "engineering_terms": [
+        "靶轮",
+        "检测齿轮",
+        "信号齿轮",
+        "目标轮",
+        "target gear",
+        "tone wheel"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "传感器，用于设置在所述固定部上，并与所述目标齿轮相对设置，以通过所述目标齿轮确定所述运动部的运动信息。",
+      "engineering_terms": [
+        "位置传感器",
+        "转速传感器",
+        "齿轮传感器",
+        "霍尔传感器",
+        "position sensor",
+        "gear tooth sensor"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/d8/7a/3d/30665762b0b7ee/CN222457775U.pdf"
+}

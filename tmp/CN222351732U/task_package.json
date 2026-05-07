@@ -1,0 +1,87 @@
+{
+  "patent": {
+    "publication_no": "CN222351732U",
+    "title": "连接器和冷却系统",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "徐永兆",
+      "谭超智",
+      "徐浩东"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222351732U/zh",
+    "fetched_at": "2026-05-02T18:10:31+08:00"
+  },
+  "claim_1_text": "1.一种连接器，其特征在于，包括：\n第一插头，具有第一流道腔，所述第一流道腔的外腔壁面设有第一通槽；\n套筒，所述套筒活动套设于所述第一插头外，所述套筒与所述第一插头之间具有间隙，所述间隙通过所述第一通槽与所述第一流道腔相连通；\n第二插头，所述第二插头用于插入所述第一流道腔内；\n锁止件，所述锁止件活动设于所述第一通槽内，所述锁止件用于与所述套筒的内壁面线接触，以将所述第二插头锁止于所述第一流道腔内。",
+  "claim_1_text_html": "1.一种连接器，其特征在于，包括：\n第一插头，具有第一流道腔，所述第一流道腔的外腔壁面设有第一通槽；\n套筒，所述套筒活动套设于所述第一插头外，所述套筒与所述第一插头之间具有间隙，所述间隙通过所述第一通槽与所述第一流道腔相连通；\n第二插头，所述第二插头用于插入所述第一流道腔内；\n锁止件，所述锁止件活动设于所述第一通槽内，所述锁止件用于与所述套筒的内壁面线接触，以将所述第二插头锁止于所述第一流道腔内。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接器，其特征在于，包括：",
+      "engineering_terms": [
+        "连接器",
+        "connector",
+        "接头",
+        "流体连接器"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一插头，具有第一流道腔，所述第一流道腔的外腔壁面设有第一通槽；",
+      "engineering_terms": [
+        "第一插头",
+        "plug",
+        "流道腔",
+        "通槽",
+        "flow channel cavity"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "套筒，所述套筒活动套设于所述第一插头外，所述套筒与所述第一插头之间具有间隙，所述间隙通过所述第一通槽与所述第一流道腔相连通；",
+      "engineering_terms": [
+        "套筒",
+        "sleeve",
+        "活动套设",
+        "间隙",
+        "连通结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "第二插头，所述第二插头用于插入所述第一流道腔内；",
+      "engineering_terms": [
+        "第二插头",
+        "plug",
+        "插接件",
+        "插入端",
+        "male connector"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "锁止件，所述锁止件活动设于所述第一通槽内，所述锁止件用于与所述套筒的内壁面线接触，以将所述第二插头锁止于所述第一流道腔内。",
+      "engineering_terms": [
+        "锁止件",
+        "locking member",
+        "锁扣",
+        "止锁结构",
+        "线接触"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/ef/1a/52/52f79a5d47ca26/CN222351732U.pdf"
+}

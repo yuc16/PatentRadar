@@ -1,0 +1,90 @@
+{
+  "patent": {
+    "publication_no": "CN223014452U",
+    "title": "热管理系统和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "方金容",
+      "张经科",
+      "胡培根",
+      "张雨明",
+      "陆俊宇"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223014452U/zh",
+    "fetched_at": "2026-05-02T20:50:03+08:00"
+  },
+  "claim_1_text": "1.一种热管理系统，其特征在于，包括：\n压缩机；以及，\n冷暖箱组件，包括冷暖箱本体、第一换热管路、第一流量阀和第二流量阀；\n所述第一换热管路与所述压缩机连接形成冷暖箱换热回路，且所述第一换热管路具有换热段，所述换热段用于与所述冷暖箱本体进行热交换；\n所述第一流量阀和所述第二流量阀均设于所述第一换热管路上，且所述换热段位于所述第一流量阀和所述第二流量阀之间。",
+  "claim_1_text_html": "1.一种热管理系统，其特征在于，包括：\n压缩机；以及，\n冷暖箱组件，包括冷暖箱本体、第一换热管路、第一流量阀和第二流量阀；\n所述第一换热管路与所述压缩机连接形成冷暖箱换热回路，且所述第一换热管路具有换热段，所述换热段用于与所述冷暖箱本体进行热交换；\n所述第一流量阀和所述第二流量阀均设于所述第一换热管路上，且所述换热段位于所述第一流量阀和所述第二流量阀之间。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种热管理系统，其特征在于，包括：",
+      "engineering_terms": [
+        "热管理系统",
+        "thermal management system",
+        "车辆热管理",
+        "thermal control system"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "压缩机；以及，",
+      "engineering_terms": [
+        "压缩机",
+        "compressor",
+        "制冷压缩机",
+        "冷媒压缩机"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "冷暖箱组件，包括冷暖箱本体、第一换热管路、第一流量阀和第二流量阀；",
+      "engineering_terms": [
+        "冷暖箱组件",
+        "冷热箱组件",
+        "cooling and heating box assembly",
+        "thermal box assembly",
+        "换热组件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述第一换热管路与所述压缩机连接形成冷暖箱换热回路，且所述第一换热管路具有换热段，所述换热段用于与所述冷暖箱本体进行热交换；",
+      "engineering_terms": [
+        "换热管路",
+        "heat exchange pipeline",
+        "换热回路",
+        "heat exchange circuit",
+        "换热段",
+        "heat exchange section"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "所述第一流量阀和所述第二流量阀均设于所述第一换热管路上，且所述换热段位于所述第一流量阀和所述第二流量阀之间。",
+      "engineering_terms": [
+        "流量阀",
+        "flow valve",
+        "调节阀",
+        "control valve",
+        "节流阀",
+        "valve arrangement"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/87/b5/78/d5532fee455515/CN223014452U.pdf"
+}

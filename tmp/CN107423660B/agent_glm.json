@@ -1,0 +1,909 @@
+{
+  "agent_name": "glm_agent",
+  "search_perspective": "语义扩展视角",
+  "patent_publication_no": "CN107423660B",
+  "queries_used": [
+    {
+      "query": "fingerprint sensor chip with opaque patterned spray coating on PCB",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 15
+    },
+    {
+      "query": "fingerprint recognition module decorative coating correction algorithm conductive reference data",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "under-display or top-mount fingerprint sensor opaque ink coating signal compensation",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 14
+    },
+    {
+      "query": "Fingerprint Cards (FPC) FPC1020AM / Touch Fingerprint Sensor",
+      "search_engine": "brave+exa+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "Infineon Technologies CYFP1-8080-FPG1 Fingerprint Sensor",
+      "search_engine": "brave+exa+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "Synochip (杭州晟元) AS608 Optical Fingerprint Sensor Module",
+      "search_engine": "brave+exa+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "CQRobot Capacitive Fingerprint Recognition Module",
+      "search_engine": "brave+exa+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "Blue PCB Electronics Optical Fingerprint Sensor Module",
+      "search_engine": "brave+exa+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "Analog Devices Fingerprint Sensor & Blackfin Processor Solution",
+      "search_engine": "brave+exa+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    }
+  ],
+  "top5_candidates": [
+    {
+      "rank": 1,
+      "company": "Infineon Technologies",
+      "product": "CYFP1-8080-FPG1 Fingerprint Sensor",
+      "aliases": [
+        "Infineon 指纹传感器"
+      ],
+      "score": 66.25,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种指纹识别装置，其特征在于，包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料E5明确指出该产品为Fingerprint Sensor，即指纹识别装置，直接对应该技术特征。",
+          "evidence": [
+            {
+              "url": "https://biometrics.mainguet.org/types/fingerprint/product/Cypress/CYFP1-8080_CYFP10020I00_preliminary.pdf",
+              "title": "CYFP1-8080 Datasheet",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "Features ■Fingerprint Sensor",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电路板；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料E5显示该传感器采用BGA封装，由die mounted on a polymer substrate构成；虽未直接使用“电路板”一词，但结合半导体封装常识，polymer substrate即聚合物基板，起到PCB/电路板的承载与电连接作用，可合理推断其包含电路板结构。",
+          "evidence": [
+            {
+              "url": "https://biometrics.mainguet.org/types/fingerprint/product/Cypress/CYFP1-8080_CYFP10020I00_preliminary.pdf",
+              "title": "CYFP1-8080 Datasheet",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "BGA package consisting of a die mounted on a polymer substrate sensor",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "芯片，所述芯片设置在所述电路板的上表面，所述芯片包括芯片塑料封装和芯片晶圆，所述芯片晶圆通过引线组和焊锡与所述电路板电连接；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料E5显示该产品为BGA package，die mounted on a polymer substrate；虽未直接描述“芯片塑料封装”和“引线组”，但结合BGA封装行业常识，此类封装通常包含塑封料且die通过焊锡（BGA球）与基板电连接，部分也可能保留引线键合，可合理推断其具备芯片与电路板通过焊锡电连接的结构。",
+          "evidence": [
+            {
+              "url": "https://biometrics.mainguet.org/types/fingerprint/product/Cypress/CYFP1-8080_CYFP10020I00_preliminary.pdf",
+              "title": "CYFP1-8080 Datasheet",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "BGA package consisting of a die mounted on a polymer substrate sensor",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "覆盖层，所述覆盖层设置在所述芯片的上表面，且所述覆盖层上设置有图案，所述覆盖层为喷涂在所述芯片上表面的带有图案的涂层，所述涂层由至少一种颜色涂料形成，且所述涂层不透明；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料E5明确指出传感器表面有polymer, plastic, and ceramic coatings（涂层），厚度<100µ；虽未直接描述涂层为“喷涂形成”、“带有图案”及“由至少一种颜色涂料形成且不透明”，但结合指纹传感器行业常识，表面涂层通常需要不透明以遮蔽内部电路，且常通过喷涂工艺形成带有装饰图案的涂层，可合理推断其可能具备此特征。",
+          "evidence": [
+            {
+              "url": "https://biometrics.mainguet.org/types/fingerprint/product/Cypress/CYFP1-8080_CYFP10020I00_preliminary.pdf",
+              "title": "CYFP1-8080 Datasheet",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "Great image quality with polymer, plastic, and ceramic coatings < 100µ in overall thickness",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "采集模块，用于采集用户指纹覆盖所述覆盖层时生成的指纹数据；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料E5指出该传感器具有107x107像素阵列及8位像素分辨率，并具备Live Finger Complete Acquisition Time (Get_Image)功能，直接表明其包含用于采集指纹数据的采集模块。",
+          "evidence": [
+            {
+              "url": "https://biometrics.mainguet.org/types/fingerprint/product/Cypress/CYFP1-8080_CYFP10020I00_preliminary.pdf",
+              "title": "CYFP1-8080 Datasheet",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "107  107 pixel array at 8-bits per pixel resolution; Live Finger Complete Acquisition Time (Get_Image): ~160ms",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "处理模块，用于根据比对数据和所述指纹数据生成修正指纹数据，并根据所述修正指纹数据进行指纹识别，所述比对数据为导电物覆盖所述覆盖层时生成的数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料E5显示该产品包含32-bit Arm Cortex-M0 CPU作为处理模块，且有on-chip baseline storage（片上基线存储）；虽暗示可能进行数据校准，但未直接描述“比对数据为导电物覆盖覆盖层时生成的数据”及“生成修正指纹数据”的机制，缺乏直接或较强推理支撑。",
+          "evidence": [
+            {
+              "url": "https://biometrics.mainguet.org/types/fingerprint/product/Cypress/CYFP1-8080_CYFP10020I00_preliminary.pdf",
+              "title": "CYFP1-8080 Datasheet",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "32-bit Arm® Cortex®-M0 CPU; Factory tuned with on-chip baseline storage",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F7",
+          "claim_feature": "所述处理模块，具体用于：\n通过如下公式计算所述修正指纹数据：\n$$X'=X-a*X_j,$$\n其中，$X$为所述指纹数据，$X'$为所述修正指纹数据，$a$为变化系数，$X_j$为所述比对数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未发现任何关于修正指纹数据计算公式（X'=X-a*Xj）的描述或相关算法细节，无法形成推理链。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F8",
+          "claim_feature": "通过如下公式计算所述变化系数$a$：\n$$a=X_z/b,$$\n其中，$b$为固定值，$X_z$为所述指纹数据$X$的总和。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未发现任何关于变化系数计算公式（a=Xz/b）的描述或相关算法细节，无法形成推理链。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "https://biometrics.mainguet.org/types/fingerprint/product/Cypress/CYFP1-8080_CYFP10020I00_preliminary.pdf",
+        "https://infineon.com/assets/row/public/documents/30/57/infineon-cyfp1-8080-fpg1-fingerprint-sensor-datasheet-additionaltechnicalinformation-en.pdf",
+        "https://infineon.com/product-table/psoc-fingerprint-fpg1",
+        "https://www.infineon.com/cms/en/product/microcontroller/32-bit-psoc-arm-cortex-microcontroller/32-bit-psoc-fingerprint-arm-cortex-m0-plus/psoc-fingerprint-fpg1/",
+        "https://www.newweb-dev.infineon.com/product-table/psoc-fingerprint-fpg1"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F4",
+          "gap": "未找到覆盖层为“喷涂形成”、“带有图案”及“由至少一种颜色涂料形成且不透明”的直接公开证据，建议查官方拆解报告或表面处理工艺文档"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到“比对数据为导电物覆盖覆盖层时生成的数据”及“生成修正指纹数据”的直接公开证据，建议查算法白皮书或开发者手册"
+        },
+        {
+          "feature_id": "F7",
+          "gap": "未找到修正指纹数据计算公式X'=X-a*Xj的任何证据，建议查底层驱动代码或专利引用"
+        },
+        {
+          "feature_id": "F8",
+          "gap": "未找到变化系数计算公式a=Xz/b的任何证据，建议查底层驱动代码或专利引用"
+        }
+      ],
+      "reason_for_top5": "该候选产品为明确的指纹识别装置，具备芯片、聚合物基板（电路板）、表面涂层及处理模块的基本架构（F1, F5明确满足；F2, F3, F4可能满足），证据质量较高（基于官方Datasheet）；但在核心的信号修正算法（F6, F7, F8）上缺乏直接公开证据，值得进一步深入调查其算法细节以确认是否落入权要核心保护范围。"
+    },
+    {
+      "rank": 2,
+      "company": "CQRobot",
+      "product": "Capacitive Fingerprint Recognition Module",
+      "aliases": [
+        "CQRobot 电容指纹模组"
+      ],
+      "score": 60.0,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种指纹识别装置，其特征在于，包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料显示该产品为'Capacitive Fingerprint Recognition Module'及'integrated semiconductor fingerprint module'，直接指向指纹识别装置。",
+          "evidence": [
+            {
+              "url": "https://www.cqrobot.com/index.php?route=product/product&product_id=2216",
+              "title": "Capacitive Fingerprint Recognition Module",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "ZW111 is an integrated semiconductor fingerprint module...",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电路板；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示产品具有'1.0mm connector, supports reliable connection'及'1.0mm - 6Pin terminal head'；虽未直接描述'电路板'，但结合指纹模组的行业常识，连接器需焊接在PCB上实现电气和物理连接，可合理推断该模块包含电路板作为载体。",
+          "evidence": [
+            {
+              "url": "https://www.cqrobot.com/index.php?route=product/product&product_id=2216",
+              "title": "Capacitive Fingerprint Recognition Module",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "1.Omm connector, supports reliable connection; 1.0mm - 6Pin terminal head",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "芯片，所述芯片设置在所述电路板的上表面，所述芯片包括芯片塑料封装和芯片晶圆，所述芯片晶圆通过引线组和焊锡与所述电路板电连接；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示产品'Adopts wafer plastic sealing technology'（采用晶圆塑料封装技术）；虽未直接描述芯片设置在电路板上表面及引线组/焊锡连接，但结合半导体指纹模组常见的COB（Chip On Board）封装工艺及晶圆塑料封装的描述，可合理推断芯片晶圆通过引线组和焊锡与电路板电连接。",
+          "evidence": [
+            {
+              "url": "https://www.cqrobot.com/index.php?product_id=2210&route=product%2Fproduct",
+              "title": "Capacitive Fingerprint Recognition Module",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "Adopts wafer plastic sealing technology...",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "覆盖层，所述覆盖层设置在所述芯片的上表面，且所述覆盖层上设置有图案，所述覆盖层为喷涂在所述芯片上表面的带有图案的涂层，所述涂层由至少一种颜色涂料形成，且所述涂层不透明；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料显示'Sensor surface covered with protective coating'及'surface is coated with high hardness'，但未提及涂层上设置有图案，也未说明该涂层为喷涂的带有图案的不透明颜色涂料。专利要求的涂层具有特定装饰图案且不透明，与常规透明硬质保护涂层存在差异，现有证据无法支撑该特定结构。",
+          "evidence": [
+            {
+              "url": "https://www.cqrobot.com/index.php?route=product/product&product_id=2216",
+              "title": "Capacitive Fingerprint Recognition Module",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "Sensor surface covered with protective coating",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "采集模块，用于采集用户指纹覆盖所述覆盖层时生成的指纹数据；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料显示产品包含'active semiconductor fingerprint acquisition sensor'及'fingerprint collection'，直接指向采集用户指纹数据的采集模块。",
+          "evidence": [
+            {
+              "url": "https://www.cqrobot.com/index.php?route=product/product&product_id=2216",
+              "title": "Capacitive Fingerprint Recognition Module",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "consisting of an active semiconductor fingerprint acquisition sensor...",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "处理模块，用于根据比对数据和所述指纹数据生成修正指纹数据，并根据所述修正指纹数据进行指纹识别，所述比对数据为导电物覆盖所述覆盖层时生成的数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料显示产品能'effectively identify fake fingers'，说明可能具备防伪检测机制，但未直接描述根据比对数据（导电物覆盖时生成的数据）生成修正指纹数据的处理机制，无法形成较强推理链。",
+          "evidence": [
+            {
+              "url": "https://www.cqrobot.com/index.php?product_id=2210&route=product%2Fproduct",
+              "title": "Capacitive Fingerprint Recognition Module",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "effectively identify fake fingers such as plastic, silicone...",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F7",
+          "claim_feature": "所述处理模块，具体用于：\n通过如下公式计算所述修正指纹数据：\n$$X'=X-a*X_j,$$\n其中，$X$为所述指纹数据，$X'$为所述修正指纹数据，$a$为变化系数，$X_j$为所述比对数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提及任何关于修正指纹数据的具体算法公式，完全无证据支撑。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F8",
+          "claim_feature": "通过如下公式计算所述变化系数$a$：\n$$a=X_z/b,$$\n其中，$b$为固定值，$X_z$为所述指纹数据$X$的总和。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提及任何关于变化系数计算的具体算法公式，完全无证据支撑。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "https://www.cqrobot.com/index.php?product_id=2196&route=product%2Fproduct",
+        "https://www.cqrobot.com/index.php?product_id=2205&route=product%2Fproduct",
+        "https://www.cqrobot.com/index.php?product_id=2210&route=product%2Fproduct",
+        "https://www.cqrobot.com/index.php?product_id=2235&route=product%2Fproduct",
+        "https://www.cqrobot.com/index.php?route=product/product&product_id=2216"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F4",
+          "gap": "未找到覆盖层为'带有图案的喷涂涂层且不透明'的直接公开证据，建议查产品外观高清图或结构拆解报告以确认是否有装饰性图案"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到'根据比对数据生成修正指纹数据'的直接公开证据，建议查算法白皮书或开发文档确认其防伪/信号修正逻辑"
+        },
+        {
+          "feature_id": "F7",
+          "gap": "未找到修正指纹数据公式 X'=X-a*X_j 的公开证据，建议查底层算法接口或专利引用"
+        },
+        {
+          "feature_id": "F8",
+          "gap": "未找到变化系数公式 a=X_z/b 的公开证据，建议查底层算法接口或专利引用"
+        }
+      ],
+      "reason_for_top5": "该候选竞品在基础物理结构（指纹识别装置F1、采集模块F5）上明确满足，在电路板F2和芯片封装连接F3上可能满足，整体硬件架构与专利高度相似；但在核心的涂层图案F4及信号修正算法F6/F7/F8上证据不足，作为潜在竞品值得进一步深入排查其内部算法和涂层工艺。"
+    },
+    {
+      "rank": 3,
+      "company": "Fingerprint Cards (FPC)",
+      "product": "FPC1020AM / Touch Fingerprint Sensor",
+      "aliases": [
+        "FPC1020",
+        "FPC Touch传感器"
+      ],
+      "score": 53.75,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种指纹识别装置，其特征在于，包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确指出FPC1020AM是一款电容式指纹区域传感器，属于指纹识别装置范畴。",
+          "evidence": [
+            {
+              "url": "https://www.idwdfp.com/fpc1020-fingerprint-sensor.html",
+              "title": "FPC1020 Fingerprint Sensor | FPC1020AM Capacitive Fingerprint Sensor",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "The FPC1020 is a high-performance capacitive fingerprint area sensor engineered for devices that require fast, reliable, and secure user authentication.",
+              "supported_features": [
+                "F1"
+              ]
+            },
+            {
+              "url": "https://www.indiamart.com/proddetail/touch-fingerprint-sensor-fpc1020-9282417897.html",
+              "title": "Touch Fingerprint Sensor FPC1020 at best price in Delhi by Ashtopus Technologies",
+              "source_type": "其他",
+              "source_reliability": "low",
+              "summary": "This biometric product consists of touch fingerprint sensor FPC1020 and fingerprint recognition algorithm optimized for integration into consumer electronics.",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电路板；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示FPC1020AM采用Ultra-thin 16-pin PCB flexible film connector；虽未直接描述内部包含独立的电路板基板，但结合电容式指纹传感器的常见模组结构，芯片通常需绑定在PCB基板上以实现电气和物理连接，可合理推断其包含电路板。",
+          "evidence": [
+            {
+              "url": "https://www.idwdfp.com/fpc1020-fingerprint-sensor.html",
+              "title": "FPC1020 Fingerprint Sensor | FPC1020AM Capacitive Fingerprint Sensor",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "Ultra-thin 16-pin PCB flexible film connector",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "芯片，所述芯片设置在所述电路板的上表面，所述芯片包括芯片塑料封装和芯片晶圆，所述芯片晶圆通过引线组和焊锡与所述电路板电连接；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提供FPC1020AM内部封装结构的详细描述，无法确认芯片是否包含塑料封装和晶圆，也无法确认晶圆是否通过引线组和焊锡与电路板电连接。",
+          "evidence": [
+            {
+              "url": "https://www.idwdfp.com/fpc1020-fingerprint-sensor.html",
+              "title": "FPC1020 Fingerprint Sensor | FPC1020AM Capacitive Fingerprint Sensor",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "资料仅提及外部接口和尺寸，未涉及内部芯片封装及引线键合细节。",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "覆盖层，所述覆盖层设置在所述芯片的上表面，且所述覆盖层上设置有图案，所述覆盖层为喷涂在所述芯片上表面的带有图案的涂层，所述涂层由至少一种颜色涂料形成，且所述涂层不透明；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料显示FPC1020AM具有Protective Coating以承受千万次按压；虽可推断其可能为不透明涂层以遮蔽内部电路，但完全缺乏关于该涂层为'喷涂形成'、'带有图案'及'由至少一种颜色涂料形成'的直接证据或强推理线索。",
+          "evidence": [
+            {
+              "url": "https://www.idwdfp.com/fpc1020-fingerprint-sensor.html",
+              "title": "FPC1020 Fingerprint Sensor | FPC1020AM Capacitive Fingerprint Sensor",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "Protective Coating | Fingerprint press endurance | > 10 million | times",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "采集模块，用于采集用户指纹覆盖所述覆盖层时生成的指纹数据；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确指出FPC1020能够捕获3D指纹图像和详细的指纹数据，具备指纹采集模块的功能。",
+          "evidence": [
+            {
+              "url": "https://www.idwdfp.com/fpc1020-fingerprint-sensor.html",
+              "title": "FPC1020 Fingerprint Sensor | FPC1020AM Capacitive Fingerprint Sensor",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "The sensor captures detailed fingerprint data with consistent image quality...",
+              "supported_features": [
+                "F5"
+              ]
+            },
+            {
+              "url": "https://www.indiamart.com/proddetail/touch-fingerprint-sensor-fpc1020-9282417897.html",
+              "title": "Touch Fingerprint Sensor FPC1020",
+              "source_type": "其他",
+              "source_reliability": "low",
+              "summary": "Fingerprint image data is captured in three dimensions (3D) delivering superior image quality at 508 dpi resolution.",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "处理模块，用于根据比对数据和所述指纹数据生成修正指纹数据，并根据所述修正指纹数据进行指纹识别，所述比对数据为导电物覆盖所述覆盖层时生成的数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料提及FPC1020包含指纹识别算法，但未提及'比对数据'（导电物覆盖时生成的数据）及'修正指纹数据'的概念，无法推断其采用了该特定的数据处理机制。",
+          "evidence": [
+            {
+              "url": "https://www.indiamart.com/proddetail/touch-fingerprint-sensor-fpc1020-9282417897.html",
+              "title": "Touch Fingerprint Sensor FPC1020",
+              "source_type": "其他",
+              "source_reliability": "low",
+              "summary": "This biometric product consists of touch fingerprint sensor FPC1020 and fingerprint recognition algorithm...",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F7",
+          "claim_feature": "所述处理模块，具体用于：\n通过如下公式计算所述修正指纹数据：\n$$X'=X-a*X_j,$$\n其中，$X$为所述指纹数据，$X'$为所述修正指纹数据，$a$为变化系数，$X_j$为所述比对数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中没有任何关于修正指纹数据公式 X'=X-a*X_j 的记载或暗示。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F8",
+          "claim_feature": "通过如下公式计算所述变化系数$a$：\n$$a=X_z/b,$$\n其中，$b$为固定值，$X_z$为所述指纹数据$X$的总和。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中没有任何关于变化系数计算公式 a=X_z/b 的记载或暗示。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "https://www.edgeelectronics.com/touch-fingerprint-sensors/fpc1020am/",
+        "https://www.fingerprints.com/2016/02/18/fingerprint-cards-launches-touch-fingerprint-sensor-under-cover-glass/",
+        "https://www.idwdfp.com/fpc1020-fingerprint-sensor.html",
+        "https://www.indiamart.com/proddetail/touch-fingerprint-sensor-fpc1020-9282417897.html",
+        "https://www.shenzhen2u.com/FPC1020AM"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F3",
+          "gap": "未找到芯片内部封装结构（塑料封装、晶圆、引线组、焊锡连接）的直接公开证据，建议查阅FPC1020AM的官方Datasheet或硬件拆解报告"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到覆盖层为'喷涂涂层'且'带有图案'及'颜色涂料'的直接公开证据，建议查阅官方结构图纸或表面工艺说明"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到'导电物覆盖生成比对数据'及'修正指纹数据'的算法逻辑证据，建议查阅FPC算法白皮书或相关专利"
+        },
+        {
+          "feature_id": "F7",
+          "gap": "未找到特定修正公式 X'=X-a*X_j 的任何线索，需深度检索算法底层技术文档"
+        },
+        {
+          "feature_id": "F8",
+          "gap": "未找到特定系数公式 a=X_z/b 的任何线索，需深度检索算法底层技术文档"
+        }
+      ],
+      "reason_for_top5": "候选竞品FPC1020AM在F1(指纹识别装置)和F5(采集模块)上明确满足，F2(电路板)可能满足，作为行业主流电容指纹传感器，其硬件架构具有较高相似度；虽然核心算法特征(F6-F8)和特定涂层工艺(F4)在公开资料中证据不足，但值得进入Top5以进一步通过官方Datasheet、拆解报告或算法专利调查其内部封装及信号处理细节。"
+    },
+    {
+      "rank": 4,
+      "company": "Analog Devices",
+      "product": "Fingerprint Sensor & Blackfin Processor Solution",
+      "aliases": [
+        "ADI 指纹方案"
+      ],
+      "score": 53.75,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种指纹识别装置，其特征在于，包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料直接表明ADI提供指纹传感器与Blackfin处理器组合方案，用于增强生物识别设备设计，构成指纹识别装置。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章标题及正文明确指出ADI的指纹传感器与Blackfin处理器方案用于生物识别设备设计。",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电路板；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示ADI提供指纹传感器与Blackfin处理器组合方案；虽未直接描述指纹识别模组的电路板，但结合电子硬件行业常识，传感器芯片与处理器必然搭载于电路板（PCB）上进行电连接与信号传输，可合理推断该方案包含电路板。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章描述了指纹传感器与处理器的系统级应用，此类硬件系统通常依赖电路板互连。",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "芯片，所述芯片设置在所述电路板的上表面，所述芯片包括芯片塑料封装和芯片晶圆，所述芯片晶圆通过引线组和焊锡与所述电路板电连接；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料仅提及指纹传感器（如CMOS IC），未公开其内部是否包含塑料封装和芯片晶圆，以及是否通过引线组和焊锡与电路板电连接的特定结构细节。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章仅泛泛提及传感器类型（如RF、热敏、CMOS IC），缺乏芯片封装及电气连接细节。",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "覆盖层，所述覆盖层设置在所述芯片的上表面，且所述覆盖层上设置有图案，所述覆盖层为喷涂在所述芯片上表面的带有图案的涂层，所述涂层由至少一种颜色涂料形成，且所述涂层不透明；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提及覆盖层结构，更未描述覆盖层为喷涂在芯片上表面的带有图案的涂层、由至少一种颜色涂料形成且不透明等特征。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章未涉及传感器的表面覆盖层、涂层或图案设计。",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "采集模块，用于采集用户指纹覆盖所述覆盖层时生成的指纹数据；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确指出指纹传感器用于读取手指表面并将模拟读数转换为数字形式，采集指纹数据，具备采集模块的功能。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章明确指出：Fingerprint sensors “read” the finger surface and convert the analog reading into digital form... acquire fingerprint data.",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "处理模块，用于根据比对数据和所述指纹数据生成修正指纹数据，并根据所述修正指纹数据进行指纹识别，所述比对数据为导电物覆盖所述覆盖层时生成的数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料仅提及处理器用于特征提取和模式匹配，未提及根据导电物覆盖覆盖层时生成的比对数据来生成修正指纹数据。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章仅提及feature extraction和pattern matching，未涉及比对数据及修正指纹数据的概念。",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F7",
+          "claim_feature": "所述处理模块，具体用于：\n通过如下公式计算所述修正指纹数据：\n$$X'=X-a*X_j,$$\n其中，$X$为所述指纹数据，$X'$为所述修正指纹数据，$a$为变化系数，$X_j$为所述比对数据；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中没有任何关于修正指纹数据计算公式（X'=X-a*X_j）的描述或暗示。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章未包含任何指纹数据修正算法的数学公式。",
+              "supported_features": [
+                "F7"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F8",
+          "claim_feature": "通过如下公式计算所述变化系数$a$：\n$$a=X_z/b,$$\n其中，$b$为固定值，$X_z$为所述指纹数据$X$的总和。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中没有任何关于变化系数计算公式（a=X_z/b）的描述或暗示。",
+          "evidence": [
+            {
+              "url": "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html",
+              "title": "Fingerprint Sensor and Blackfin Processor Enhance Biometric-Identification Equipment Design",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "文章未包含任何指纹数据修正算法的数学公式。",
+              "supported_features": [
+                "F8"
+              ]
+            }
+          ]
+        }
+      ],
+      "main_evidence_urls": [
+        "http://www.analog.com/blip",
+        "https://electronicspecifier.com/news/analysis/biometric-access-chooses-adis-blackfin",
+        "https://www.analog.com/en/lp/001/adsp-bf70xseries.html",
+        "https://www.analog.com/en/products/adsp-bf527.html",
+        "https://www.analog.com/en/resources/analog-dialogue/articles/fingerprint-sensor-blackfin-enhance-biometric-id-equip-design.html"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F3",
+          "gap": "未找到芯片塑料封装、芯片晶圆、引线组及焊锡连接方式的直接公开证据，建议查阅具体传感器型号的封装图纸或数据手册"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到喷涂涂层、图案及不透明特性的公开证据，建议查阅产品结构拆解报告或外观材质说明"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到基于导电物比对数据生成修正指纹数据的公开证据，建议查阅算法白皮书或开发者指南"
+        },
+        {
+          "feature_id": "F7",
+          "gap": "未找到修正指纹数据公式 X'=X-a*X_j 的公开证据，建议深入检索相关专利或技术文档"
+        },
+        {
+          "feature_id": "F8",
+          "gap": "未找到变化系数公式 a=X_z/b 的公开证据，建议深入检索相关专利或技术文档"
+        }
+      ],
+      "reason_for_top5": "候选竞品ADI的指纹方案明确满足F1（指纹识别装置）和F5（采集模块），可能满足F2（电路板）。作为知名的指纹传感器与处理器组合方案，其硬件架构和基础采集功能有直接的高质量官方证据支撑，但在特定的封装结构（F3）、覆盖层（F4）以及核心的修正算法（F6-F8）上缺乏直接公开证据，值得进一步深入检索其具体传感器型号的规格书或算法文档以确认是否落入专利核心权要。"
+    }
+  ],
+  "discarded_candidates": [
+    {
+      "company": "未知",
+      "product": "PMC学术文章/指纹传感器综述",
+      "discard_reason": "学术文献，无明确公司及真实可购买产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "Nature/MDPI/IEEE等学术文章",
+      "discard_reason": "学术文献，非真实竞品产品资料",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "Sensing chip, fingerprint recognition module (CN105868736A)",
+      "discard_reason": "专利文献站，非产品资料",
+      "evidence_urls": []
+    },
+    {
+      "company": "NBD Nano",
+      "product": "InvisiPrint Glass Coating",
+      "discard_reason": "防指纹残留涂层，与指纹识别装置及修正算法不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "Fraunhofer IFAM",
+      "product": "Anti-finger Coating",
+      "discard_reason": "防指纹残留涂层，与指纹识别装置不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "Henkel",
+      "product": "Loctite Invisiprint",
+      "discard_reason": "防指纹残留涂层，与指纹识别装置不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "法医指纹导电标记技术",
+      "discard_reason": "法医科学应用，非指纹识别装置商业产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "HilPCB",
+      "product": "Fingerprint Reader PCB Blog",
+      "discard_reason": "PCB制造商博客，非具体指纹识别模组产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "Bayometric",
+      "product": "Fingerprint Reference Point Detection",
+      "discard_reason": "软件算法介绍，非硬件模组产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "Android Authority/Reddit/AllPCB 科普文章",
+      "discard_reason": "科普与论坛讨论，非明确公司产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "Syntec Optics",
+      "product": "Under-Display Optical Fingerprint Sensor",
+      "discard_reason": "光学组件供应商，非完整指纹识别模组，且无明确算法特征",
+      "evidence_urls": []
+    },
+    {
+      "company": "Synochip (杭州晟元)",
+      "product": "AS608 Optical Fingerprint Sensor Module",
+      "discard_reason": "存在明确不满足的必要技术特征",
+      "evidence_urls": [
+        "https://handsontec.com/dataspecs/sensor/AS608%20Finger%20print%20Sensor.pdf",
+        "https://juejin.cn/post/6978662994511134733",
+        "https://manuals.plus/m/cffdbb24cd3866fba69c9b815bc10888a8f2b8e8f8957807b9af77ce00c469dc",
+        "https://synochip.en.made-in-china.com/product/kawrSFbvpyhc/China-Am160-Yyh360-Biometric-Synochip-As608-Chip-Fingerprint-Biometric-Scan-Reader-Sensor-Module.html",
+        "https://www.mo4tech.com/as608-fingerprint-module-more-challenges-in-august.html"
+      ]
+    },
+    {
+      "company": "Blue PCB Electronics",
+      "product": "Optical Fingerprint Sensor Module",
+      "discard_reason": "存在明确不满足的必要技术特征",
+      "evidence_urls": [
+        "https://www.adafruit.com/product/4651?u=",
+        "https://www.blue-pcb.com/products/optical-fingerprint-sensor-fingerprint-module",
+        "https://www.circuitstate.com/tutorials/interfacing-r307-optical-fingerprint-scanner-with-arduino-boards-for-biometric-authentication/",
+        "https://www.elecbee.com/en/product-detail/fpc1020a-capacitive-fingerprint-identification-module-uart-semiconductor-capacitive-fingerprint-reader-module_25542",
+        "https://www.irishelectronics.ie/product/Electro-Fashion-LED-Board-Blue-p550781565"
+      ]
+    }
+  ],
+  "notes": null,
+  "elapsed_seconds": 779.56,
+  "llm_model": "glm-5.1"
+}

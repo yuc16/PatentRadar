@@ -1,0 +1,62 @@
+{
+  "patent": {
+    "publication_no": "CN223089491U",
+    "title": "压缩机、热管理系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "李宾",
+      "王海锋",
+      "秦锦峰",
+      "雷冬",
+      "马花瑞"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223089491U/zh",
+    "fetched_at": "2026-05-02T20:54:41+08:00"
+  },
+  "claim_1_text": "1.一种压缩机，其特征在于，包括壳体、压缩部件和隔热组件，所述壳体收容所述压缩部件，所述隔热组件围设于所述壳体的外周面，所述隔热组件形成有第一腔室，所述第一腔室包围在所述壳体的外周面。",
+  "claim_1_text_html": "1.一种压缩机，其特征在于，包括壳体、压缩部件和隔热组件，所述壳体收容所述压缩部件，所述隔热组件围设于所述壳体的外周面，所述隔热组件形成有第一腔室，所述第一腔室包围在所述壳体的外周面。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压缩机，其特征在于，包括壳体、压缩部件和隔热组件，",
+      "engineering_terms": [
+        "compressor",
+        "压缩机总成",
+        "制冷压缩机"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述壳体收容所述压缩部件，",
+      "engineering_terms": [
+        "housing",
+        "casing",
+        "compressing component",
+        "压缩机构",
+        "压缩单元"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述隔热组件围设于所述壳体的外周面，所述隔热组件形成有第一腔室，所述第一腔室包围在所述壳体的外周面。",
+      "engineering_terms": [
+        "隔热结构",
+        "thermal insulation assembly",
+        "insulating jacket",
+        "insulation sleeve",
+        "外周隔热腔"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/49/65/3b/cacbc82934e683/CN223089491U.pdf"
+}

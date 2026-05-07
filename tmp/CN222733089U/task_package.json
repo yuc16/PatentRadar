@@ -1,0 +1,91 @@
+{
+  "patent": {
+    "publication_no": "CN222733089U",
+    "title": "车载冰箱和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "陈作",
+      "魏运东",
+      "陶柱权",
+      "李汕",
+      "叶梅娇"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222733089U/zh",
+    "fetched_at": "2026-05-02T20:34:01+08:00"
+  },
+  "claim_1_text": "1.一种车载冰箱，其特征在于，所述车载冰箱包括箱体、风道和风机，所述箱体包括进风口和出风口，所述箱体相对的两个箱壁分别设置有所述进风口，所述出风口位于两个所述进风口之间，所述风机布置在所述出风口处，所述风道布置在所述箱体外并通过所述进风口和所述出风口与所述箱体的内部连通，所述风机用于使所述箱体的内部的空气在所述箱体与所述风道之间循环流通。",
+  "claim_1_text_html": "1.一种车载冰箱，其特征在于，所述车载冰箱包括箱体、风道和风机，所述箱体包括进风口和出风口，所述箱体相对的两个箱壁分别设置有所述进风口，所述出风口位于两个所述进风口之间，所述风机布置在所述出风口处，所述风道布置在所述箱体外并通过所述进风口和所述出风口与所述箱体的内部连通，所述风机用于使所述箱体的内部的空气在所述箱体与所述风道之间循环流通。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车载冰箱，其特征在于，所述车载冰箱包括箱体、风道和风机，",
+      "engineering_terms": [
+        "vehicle refrigerator",
+        "car refrigerator",
+        "车用冰箱",
+        "车载冷藏箱"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述箱体包括进风口和出风口，所述箱体相对的两个箱壁分别设置有所述进风口，所述出风口位于两个所述进风口之间，",
+      "engineering_terms": [
+        "箱体结构",
+        "cabinet",
+        "housing",
+        "air inlet",
+        "air outlet",
+        "进出风口布置"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述风机布置在所述出风口处，",
+      "engineering_terms": [
+        "fan",
+        "blower",
+        "风扇",
+        "送风机",
+        "出风口风机"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述风道布置在所述箱体外并通过所述进风口和所述出风口与所述箱体的内部连通，",
+      "engineering_terms": [
+        "air duct",
+        "风道",
+        "外置风道",
+        "air passage",
+        "ducting",
+        "循环风道"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "所述风机用于使所述箱体的内部的空气在所述箱体与所述风道之间循环流通。",
+      "engineering_terms": [
+        "air circulation",
+        "forced convection",
+        "循环送风",
+        "空气循环",
+        "箱体风道循环"
+      ],
+      "is_essential": true,
+      "notes": "风机的功能限定与其位置限定在原文中被风道限定隔开；为满足feature_text取自连续片段，单独列出。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/cc/f0/f7/9202dbe5984802/CN222733089U.pdf"
+}

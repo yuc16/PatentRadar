@@ -1,0 +1,52 @@
+{
+  "patent": {
+    "publication_no": "CN222597472U",
+    "title": "车辆灯具和车辆",
+    "assignees": [
+      "BYD Co Ltd",
+      "Shaoguan BYD Industrial Co Ltd"
+    ],
+    "inventors": [
+      "李世祥",
+      "余梦杰",
+      "梁德昌",
+      "赵坤海",
+      "晏长海"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222597472U/zh",
+    "fetched_at": "2026-05-02T20:27:51+08:00"
+  },
+  "claim_1_text": "1.一种车辆灯具，其特征在于，所述车辆灯具包括导光条、光源和透光隔热件，所述透光隔热件布置在所述导光条和所述光源之间，以隔绝所述导光条和所述光源并将所述光源发出的光传导至所述导光条。",
+  "claim_1_text_html": "1.一种车辆灯具，其特征在于，所述车辆灯具包括导光条、光源和透光隔热件，所述透光隔热件布置在所述导光条和所述光源之间，以隔绝所述导光条和所述光源并将所述光源发出的光传导至所述导光条。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车辆灯具，其特征在于，所述车辆灯具包括导光条、光源和透光隔热件，",
+      "engineering_terms": [
+        "vehicle lamp",
+        "汽车灯具",
+        "车灯",
+        "导光组件",
+        "光源组件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述透光隔热件布置在所述导光条和所述光源之间，以隔绝所述导光条和所述光源并将所述光源发出的光传导至所述导光条。",
+      "engineering_terms": [
+        "透光隔热结构",
+        "transparent thermal insulator",
+        "隔热透光件",
+        "光学隔热件",
+        "导光隔热件"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/4f/68/83/9482e216828d6f/CN222597472U.pdf"
+}

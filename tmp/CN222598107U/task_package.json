@@ -1,0 +1,62 @@
+{
+  "patent": {
+    "publication_no": "CN222598107U",
+    "title": "储液罐、空调装置和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "朱雷",
+      "张经科",
+      "刘公正",
+      "丁银辉",
+      "郑政"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222598107U/zh",
+    "fetched_at": "2026-05-02T20:28:01+08:00"
+  },
+  "claim_1_text": "1.一种储液罐，其特征在于，包括：\n罐体，所述罐体形成有储液腔、第一液体出口和第二液体出口，在所述储液罐处于工作状态的情况下，所述第二液体出口高于所述第一液体出口；\n阀门，所述阀门设置在所述第一液体出口处。",
+  "claim_1_text_html": "1.一种储液罐，其特征在于，包括：\n罐体，所述罐体形成有储液腔、第一液体出口和第二液体出口，在所述储液罐处于工作状态的情况下，所述第二液体出口高于所述第一液体出口；\n阀门，所述阀门设置在所述第一液体出口处。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种储液罐，其特征在于，包括：",
+      "engineering_terms": [
+        "储液罐",
+        "液体储罐",
+        "reservoir",
+        "liquid storage tank"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "罐体，所述罐体形成有储液腔、第一液体出口和第二液体出口，在所述储液罐处于工作状态的情况下，所述第二液体出口高于所述第一液体出口；",
+      "engineering_terms": [
+        "罐体",
+        "储液腔",
+        "液体出口",
+        "tank body",
+        "liquid outlet"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "阀门，所述阀门设置在所述第一液体出口处。",
+      "engineering_terms": [
+        "阀门",
+        "控制阀",
+        "开关阀",
+        "valve"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/09/bf/e7/11d61c0b33d786/CN222598107U.pdf"
+}

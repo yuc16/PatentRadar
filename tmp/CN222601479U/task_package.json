@@ -1,0 +1,65 @@
+{
+  "patent": {
+    "publication_no": "CN222601479U",
+    "title": "线连接器、线束组件以及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "卢建中",
+      "刘彦超",
+      "朱彦程",
+      "张建波",
+      "王腾达"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222601479U/zh",
+    "fetched_at": "2026-05-02T20:29:06+08:00"
+  },
+  "claim_1_text": "1.一种线连接器，其特征在于，包括：\n壳体，所述壳体具有安装腔，所述壳体一侧具有与所述安装腔相连通的开口；\n盖体，所述盖体设置于所述开口，所述盖体用于锁止线束端子，所述盖体背离所述安装腔一侧相较于所述开口的边缘，更靠近所述安装腔的底部。",
+  "claim_1_text_html": "1.一种线连接器，其特征在于，包括：\n壳体，所述壳体具有安装腔，所述壳体一侧具有与所述安装腔相连通的开口；\n盖体，所述盖体设置于所述开口，所述盖体用于锁止线束端子，所述盖体背离所述安装腔一侧相较于所述开口的边缘，更靠近所述安装腔的底部。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种线连接器，其特征在于，包括：",
+      "engineering_terms": [
+        "线连接器",
+        "wire connector",
+        "电连接器",
+        "connector"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "壳体，所述壳体具有安装腔，所述壳体一侧具有与所述安装腔相连通的开口；",
+      "engineering_terms": [
+        "壳体",
+        "外壳",
+        "housing",
+        "安装腔",
+        "容纳腔",
+        "开口"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "盖体，所述盖体设置于所述开口，所述盖体用于锁止线束端子，所述盖体背离所述安装腔一侧相较于所述开口的边缘，更靠近所述安装腔的底部。",
+      "engineering_terms": [
+        "盖体",
+        "端盖",
+        "cover",
+        "锁止件",
+        "线束端子",
+        "terminal lock"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/7d/76/eb/c7f1f79aec26df/CN222601479U.pdf"
+}

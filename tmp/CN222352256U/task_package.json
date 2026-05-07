@@ -1,0 +1,73 @@
+{
+  "patent": {
+    "publication_no": "CN222352256U",
+    "title": "灯具",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "张文强"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222352256U/zh",
+    "fetched_at": "2026-05-02T18:13:37+08:00"
+  },
+  "claim_1_text": "1.一种灯具(1)，其特征在于，包括：\n控制组件(10)；\n驱蚊组件(20)，所述驱蚊组件(20)与所述控制组件(10)电连接；\n照明组件(30)，所述照明组件(30)包括：灯罩(31)和灯带(32)，所述灯罩(31)连接于所述控制组件(10)上，所述灯带(32)设置于所述灯罩(31)内，且所述灯带(32)与所述控制组件(10)电连接。",
+  "claim_1_text_html": "1.一种灯具(1)，其特征在于，包括：\n控制组件(10)；\n驱蚊组件(20)，所述驱蚊组件(20)与所述控制组件(10)电连接；\n照明组件(30)，所述照明组件(30)包括：灯罩(31)和灯带(32)，所述灯罩(31)连接于所述控制组件(10)上，所述灯带(32)设置于所述灯罩(31)内，且所述灯带(32)与所述控制组件(10)电连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种灯具(1)，其特征在于，包括：",
+      "engineering_terms": [
+        "灯具",
+        "照明装置",
+        "lamp",
+        "lighting fixture"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "控制组件(10)；",
+      "engineering_terms": [
+        "控制组件",
+        "控制模块",
+        "控制单元",
+        "controller",
+        "control assembly"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "驱蚊组件(20)，所述驱蚊组件(20)与所述控制组件(10)电连接；",
+      "engineering_terms": [
+        "驱蚊组件",
+        "驱蚊模块",
+        "灭蚊组件",
+        "mosquito repellent assembly",
+        "insect repellent module"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "照明组件(30)，所述照明组件(30)包括：灯罩(31)和灯带(32)，所述灯罩(31)连接于所述控制组件(10)上，所述灯带(32)设置于所述灯罩(31)内，且所述灯带(32)与所述控制组件(10)电连接。",
+      "engineering_terms": [
+        "照明组件",
+        "灯罩",
+        "灯带",
+        "lighting assembly",
+        "lampshade",
+        "LED strip"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/bb/be/61/44625ee209f355/CN222352256U.pdf"
+}

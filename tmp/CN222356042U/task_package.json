@@ -1,0 +1,75 @@
+{
+  "patent": {
+    "publication_no": "CN222356042U",
+    "title": "无线充电装置和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "梁林",
+      "于海苗",
+      "付花",
+      "冯定",
+      "顾建军"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222356042U/zh",
+    "fetched_at": "2026-05-02T20:21:23+08:00"
+  },
+  "claim_1_text": "1.一种无线充电装置，其特征在于，包括：\n安装座，用于放置电子设备；\n无线充电本体，可移动地安装在所述安装座的下方，所述无线充电本体包括线圈以及与所述线圈电连接的电流检测模块；以及\n驱动组件，所述驱动组件配置成根据所述电流检测模块检测到的电流大小驱动所述无线充电本体移动。",
+  "claim_1_text_html": "1.一种无线充电装置，其特征在于，包括：\n安装座，用于放置电子设备；\n无线充电本体，可移动地安装在所述安装座的下方，所述无线充电本体包括线圈以及与所述线圈电连接的电流检测模块；以及\n驱动组件，所述驱动组件配置成根据所述电流检测模块检测到的电流大小驱动所述无线充电本体移动。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种无线充电装置，其特征在于，包括：",
+      "engineering_terms": [
+        "无线充电器",
+        "wireless charging device",
+        "车载无线充电装置"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "安装座，用于放置电子设备；",
+      "engineering_terms": [
+        "支座",
+        "承载座",
+        "放置座",
+        "mounting base",
+        "device holder"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "无线充电本体，可移动地安装在所述安装座的下方，所述无线充电本体包括线圈以及与所述线圈电连接的电流检测模块；",
+      "engineering_terms": [
+        "无线充电模块",
+        "充电线圈组件",
+        "wireless charging module",
+        "charging coil",
+        "current detection module"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "驱动组件，所述驱动组件配置成根据所述电流检测模块检测到的电流大小驱动所述无线充电本体移动。",
+      "engineering_terms": [
+        "驱动机构",
+        "执行机构",
+        "移动机构",
+        "drive assembly",
+        "actuator"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/ce/55/6a/252e49b0963566/CN222356042U.pdf"
+}

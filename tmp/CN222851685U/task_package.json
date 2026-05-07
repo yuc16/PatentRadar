@@ -1,0 +1,75 @@
+{
+  "patent": {
+    "publication_no": "CN222851685U",
+    "title": "连接端子、连接器、控制器及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "曹阳",
+      "彭梦杰"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222851685U/zh",
+    "fetched_at": "2026-05-02T20:37:29+08:00"
+  },
+  "claim_1_text": "1.一种连接端子，其特征在于，包括：\n主体；\n夹持组，包括两个相对设置的夹持弹片，所述夹持弹片的一端与所述主体连接，所述夹持弹片的另一端为夹持部，两个所述夹持弹片的所述夹持部互相靠近设置，两个所述夹持弹片的所述夹持部之间的间距为夹持间隙；\n其中，所述夹持组有多个，多个所述夹持组间隔设置，且至少部分所述夹持组的所述夹持间隙的间距不同。",
+  "claim_1_text_html": "1.一种连接端子，其特征在于，包括：\n主体；\n夹持组，包括两个相对设置的夹持弹片，所述夹持弹片的一端与所述主体连接，所述夹持弹片的另一端为夹持部，两个所述夹持弹片的所述夹持部互相靠近设置，两个所述夹持弹片的所述夹持部之间的间距为夹持间隙；\n其中，所述夹持组有多个，多个所述夹持组间隔设置，且至少部分所述夹持组的所述夹持间隙的间距不同。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接端子，其特征在于，包括：",
+      "engineering_terms": [
+        "连接端子",
+        "terminal",
+        "electrical terminal",
+        "connector terminal"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "主体；",
+      "engineering_terms": [
+        "主体",
+        "端子主体",
+        "本体",
+        "main body",
+        "terminal body"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "夹持组，包括两个相对设置的夹持弹片，所述夹持弹片的一端与所述主体连接，所述夹持弹片的另一端为夹持部，两个所述夹持弹片的所述夹持部互相靠近设置，两个所述夹持弹片的所述夹持部之间的间距为夹持间隙；",
+      "engineering_terms": [
+        "夹持组",
+        "夹持弹片",
+        "弹性夹片",
+        "夹持部",
+        "clamping spring",
+        "contact spring"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "其中，所述夹持组有多个，多个所述夹持组间隔设置，且至少部分所述夹持组的所述夹持间隙的间距不同。",
+      "engineering_terms": [
+        "多个夹持组",
+        "间隔设置",
+        "夹持间隙",
+        "不同间距",
+        "spaced clamping groups",
+        "variable gap"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/c9/c9/71/7211b6095292fe/CN222851685U.pdf"
+}

@@ -1,0 +1,63 @@
+{
+  "patent": {
+    "publication_no": "CN223022470U",
+    "title": "一种抬头显示器组件、抬头显示器系统和车辆",
+    "assignees": [
+      "BYD Co Ltd",
+      "Shanwei BYD Industrial Co Ltd"
+    ],
+    "inventors": [
+      "梅中政",
+      "王浩麟",
+      "旷志华",
+      "何健颖",
+      "余欣"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223022470U/zh",
+    "fetched_at": "2026-05-02T20:51:10+08:00"
+  },
+  "claim_1_text": "1.一种抬头显示器组件，其特征在于，包括图像单元(3)、安装座(2)和预紧结构，所述图像单元(3)与所述安装座(2)连接，所述预紧结构与所述图像单元(3)以及所述安装座(2)连接，以对所述图像单元(3)形成预紧力。",
+  "claim_1_text_html": "1.一种抬头显示器组件，其特征在于，包括图像单元(3)、安装座(2)和预紧结构，所述图像单元(3)与所述安装座(2)连接，所述预紧结构与所述图像单元(3)以及所述安装座(2)连接，以对所述图像单元(3)形成预紧力。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种抬头显示器组件，其特征在于，包括",
+      "engineering_terms": [
+        "抬头显示器组件",
+        "HUD组件",
+        "head-up display assembly"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "图像单元(3)、安装座(2)和预紧结构，所述图像单元(3)与所述安装座(2)连接，",
+      "engineering_terms": [
+        "图像生成单元",
+        "显示单元",
+        "安装支座",
+        "mounting bracket",
+        "image unit"
+      ],
+      "is_essential": true,
+      "notes": "将图像单元、安装座及二者连接关系合并为一条部件及连接限定特征。"
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述预紧结构与所述图像单元(3)以及所述安装座(2)连接，以对所述图像单元(3)形成预紧力。",
+      "engineering_terms": [
+        "预紧机构",
+        "预加载结构",
+        "弹性预紧件",
+        "preload structure",
+        "biasing mechanism"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/f2/24/cd/a9bba93a859e0d/CN223022470U.pdf"
+}

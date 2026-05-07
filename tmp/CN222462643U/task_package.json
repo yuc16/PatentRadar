@@ -1,0 +1,102 @@
+{
+  "patent": {
+    "publication_no": "CN222462643U",
+    "title": "一种开关机构及用电设备",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "刘文展",
+      "宋新新",
+      "马兰",
+      "陈梁"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222462643U/zh",
+    "fetched_at": "2026-05-02T20:24:28+08:00"
+  },
+  "claim_1_text": "1.一种开关机构，其特征在于，所述开关机构包括：\n连接件(10)；\n第一电极(11)，所述第一电极(11)转动安装于所述连接件(10)，所述第一电极(11)可相对所述连接件(10)转动；\n第二电极(12)，所述第二电极(12)固定安装于所述连接件(10)，所述第二电极(12)设置在所述第一电极(11)的一侧，且所述第二电极(12)的至少部分结构位于所述第一电极(11)的转动轨迹上；\n第一驱动件(13)，所述第一驱动件(13)滑动设置于所述连接件(10)，所述第一驱动件(13)可相对所述连接件(10)平移运动；\n所述第一驱动件(13)在外力作用下平移运动以驱动所述第一电极(11)转动；\n对应于所述开关机构的电路具有断开状态和导通状态，仅在所述第一电极(11)转动并触碰所述第二电极(12)的情况下，所述电路从断开状态切换至导通状态。",
+  "claim_1_text_html": "1.一种开关机构，其特征在于，所述开关机构包括：\n连接件(10)；\n第一电极(11)，所述第一电极(11)转动安装于所述连接件(10)，所述第一电极(11)可相对所述连接件(10)转动；\n第二电极(12)，所述第二电极(12)固定安装于所述连接件(10)，所述第二电极(12)设置在所述第一电极(11)的一侧，且所述第二电极(12)的至少部分结构位于所述第一电极(11)的转动轨迹上；\n第一驱动件(13)，所述第一驱动件(13)滑动设置于所述连接件(10)，所述第一驱动件(13)可相对所述连接件(10)平移运动；\n所述第一驱动件(13)在外力作用下平移运动以驱动所述第一电极(11)转动；\n对应于所述开关机构的电路具有断开状态和导通状态，仅在所述第一电极(11)转动并触碰所述第二电极(12)的情况下，所述电路从断开状态切换至导通状态。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种开关机构，其特征在于，所述开关机构包括：",
+      "engineering_terms": [
+        "开关机构",
+        "switch mechanism",
+        "switch assembly"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "连接件(10)；",
+      "engineering_terms": [
+        "连接件",
+        "连接座",
+        "支撑件",
+        "connector",
+        "mounting member"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第一电极(11)，所述第一电极(11)转动安装于所述连接件(10)，所述第一电极(11)可相对所述连接件(10)转动；",
+      "engineering_terms": [
+        "第一电极",
+        "动触头",
+        "可动电极",
+        "movable electrode",
+        "rotatable contact"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "第二电极(12)，所述第二电极(12)固定安装于所述连接件(10)，所述第二电极(12)设置在所述第一电极(11)的一侧，且所述第二电极(12)的至少部分结构位于所述第一电极(11)的转动轨迹上；",
+      "engineering_terms": [
+        "第二电极",
+        "静触头",
+        "固定电极",
+        "fixed electrode",
+        "stationary contact"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "第一驱动件(13)，所述第一驱动件(13)滑动设置于所述连接件(10)，所述第一驱动件(13)可相对所述连接件(10)平移运动；\n所述第一驱动件(13)在外力作用下平移运动以驱动所述第一电极(11)转动；",
+      "engineering_terms": [
+        "第一驱动件",
+        "滑动驱动件",
+        "致动件",
+        "actuator",
+        "sliding actuator",
+        "drive member"
+      ],
+      "is_essential": true,
+      "notes": "将第一驱动件的设置方式、运动方式及驱动第一电极转动的功能限定合并为同一部件特征。"
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "对应于所述开关机构的电路具有断开状态和导通状态，仅在所述第一电极(11)转动并触碰所述第二电极(12)的情况下，所述电路从断开状态切换至导通状态。",
+      "engineering_terms": [
+        "断开状态",
+        "导通状态",
+        "电路通断",
+        "open state",
+        "closed state",
+        "electrical conduction"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/c2/64/cb/5eed8998cf48f7/CN222462643U.pdf"
+}

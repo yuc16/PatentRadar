@@ -1,0 +1,62 @@
+{
+  "patent": {
+    "publication_no": "CN222978953U",
+    "title": "测温元件底座、测温组件、传感器、热管理系统和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "白胜",
+      "万理平",
+      "张晓茹"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222978953U/zh",
+    "fetched_at": "2026-05-02T20:44:25+08:00"
+  },
+  "claim_1_text": "1.一种测温元件底座，其特征在于，包括：\n座体，所述座体包括座板和凸台，所述凸台设置于所述座板且沿第一方向凸出于所述座板，所述座体设置有沿第一方向至少贯通所述座板的通孔；\n导电片，所述导电片具有导电端，所述导电片适于穿设于所述通孔，所述凸台用于支撑所述导电端。",
+  "claim_1_text_html": "1.一种测温元件底座，其特征在于，包括：\n座体，所述座体包括座板和凸台，所述凸台设置于所述座板且沿第一方向凸出于所述座板，所述座体设置有沿第一方向至少贯通所述座板的通孔；\n导电片，所述导电片具有导电端，所述导电片适于穿设于所述通孔，所述凸台用于支撑所述导电端。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种测温元件底座，其特征在于，包括：",
+      "engineering_terms": [
+        "测温元件安装座",
+        "温度传感器底座",
+        "temperature sensing element base",
+        "mounting base"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "座体，所述座体包括座板和凸台，所述凸台设置于所述座板且沿第一方向凸出于所述座板，所述座体设置有沿第一方向至少贯通所述座板的通孔；",
+      "engineering_terms": [
+        "基座",
+        "座板",
+        "凸台",
+        "通孔",
+        "base body",
+        "through hole"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "导电片，所述导电片具有导电端，所述导电片适于穿设于所述通孔，所述凸台用于支撑所述导电端。",
+      "engineering_terms": [
+        "导电片",
+        "导电端子",
+        "金属导片",
+        "conductive sheet",
+        "conductive terminal"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/6f/bc/7b/38d8496c666201/CN222978953U.pdf"
+}

@@ -1,0 +1,126 @@
+{
+  "patent": {
+    "publication_no": "CN118494516B",
+    "title": "车辆的控制方法、云服务器、车辆控制器、客户端和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "钟益林",
+      "刘兵",
+      "华高明",
+      "刘杰",
+      "李紫飞"
+    ],
+    "source_url": "https://patents.google.com/patent/CN118494516B/zh",
+    "fetched_at": "2026-05-02T17:58:41+08:00"
+  },
+  "claim_1_text": "1.一种车辆的控制方法，用于云服务器，其特征在于，所述控制方法包括：\n根据客户端信息确定用户需求；\n根据所述用户需求和整车电器状态信息确定整车交互智能体的目标场景；\n发送所述整车交互智能体的目标场景的信息；\n其中，所述控制方法还包括：\n获取所述整车交互智能体中目标交互智能体执行所述目标场景后的反馈信息；\n根据所述反馈信息生成对应所述目标交互智能体的交互信息，其中，所述交互信息为符合所述目标交互智能体的交互风格的拟人化交互信息；\n发送所述交互信息；\n其中，所述整车交互智能体包括车载多媒体、音响设备和氛围灯，所述目标交互智能体包括所述车载多媒体，所述目标场景的信息包括所述车载多媒体播放的目标声音，所述控制方法还包括：\n根据所述反馈信息确定所述车载多媒体因未联网或者存在权限问题未搜索到所述目标声音，则控制所述音响设备播放对应所述目标声音的替代声音，以及控制所述氛围灯执行默认动效。",
+  "claim_1_text_html": "1.一种车辆的控制方法，用于云服务器，其特征在于，所述控制方法包括：\n根据客户端信息确定用户需求；\n根据所述用户需求和整车电器状态信息确定整车交互智能体的目标场景；\n发送所述整车交互智能体的目标场景的信息；\n其中，所述控制方法还包括：\n获取所述整车交互智能体中目标交互智能体执行所述目标场景后的反馈信息；\n根据所述反馈信息生成对应所述目标交互智能体的交互信息，其中，所述交互信息为符合所述目标交互智能体的交互风格的拟人化交互信息；\n发送所述交互信息；\n其中，所述整车交互智能体包括车载多媒体、音响设备和氛围灯，所述目标交互智能体包括所述车载多媒体，所述目标场景的信息包括所述车载多媒体播放的目标声音，所述控制方法还包括：\n根据所述反馈信息确定所述车载多媒体因未联网或者存在权限问题未搜索到所述目标声音，则控制所述音响设备播放对应所述目标声音的替代声音，以及控制所述氛围灯执行默认动效。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种车辆的控制方法，用于云服务器，其特征在于，所述控制方法包括：",
+      "engineering_terms": [
+        "车辆控制方法",
+        "云端控制",
+        "cloud server control",
+        "vehicle control method"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "根据客户端信息确定用户需求；",
+      "engineering_terms": [
+        "用户需求识别",
+        "客户端信息分析",
+        "user intent determination",
+        "client data"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "根据所述用户需求和整车电器状态信息确定整车交互智能体的目标场景；",
+      "engineering_terms": [
+        "目标场景确定",
+        "整车电器状态",
+        "车载智能体",
+        "scenario determination",
+        "vehicle electrical status"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "发送所述整车交互智能体的目标场景的信息；",
+      "engineering_terms": [
+        "场景信息发送",
+        "目标场景下发",
+        "scenario information transmission",
+        "command dispatch"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "其中，所述控制方法还包括：\n获取所述整车交互智能体中目标交互智能体执行所述目标场景后的反馈信息；",
+      "engineering_terms": [
+        "反馈信息获取",
+        "执行反馈",
+        "目标交互智能体",
+        "feedback acquisition",
+        "execution feedback"
+      ],
+      "is_essential": true,
+      "notes": "将“其中，所述控制方法还包括：”与其后的反馈获取步骤合并，作为附加方法步骤的引入和具体限定。"
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "根据所述反馈信息生成对应所述目标交互智能体的交互信息，其中，所述交互信息为符合所述目标交互智能体的交互风格的拟人化交互信息；",
+      "engineering_terms": [
+        "交互信息生成",
+        "拟人化交互",
+        "交互风格",
+        "personalized interaction",
+        "anthropomorphic interaction"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F7",
+      "feature_text": "发送所述交互信息；",
+      "engineering_terms": [
+        "交互信息发送",
+        "响应信息下发",
+        "interaction message transmission",
+        "response dispatch"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F8",
+      "feature_text": "其中，所述整车交互智能体包括车载多媒体、音响设备和氛围灯，所述目标交互智能体包括所述车载多媒体，所述目标场景的信息包括所述车载多媒体播放的目标声音，所述控制方法还包括：\n根据所述反馈信息确定所述车载多媒体因未联网或者存在权限问题未搜索到所述目标声音，则控制所述音响设备播放对应所述目标声音的替代声音，以及控制所述氛围灯执行默认动效。",
+      "engineering_terms": [
+        "车载多媒体",
+        "音响设备",
+        "氛围灯",
+        "替代声音播放",
+        "默认灯效",
+        "fallback control"
+      ],
+      "is_essential": true,
+      "notes": "该片段先限定整车交互智能体、目标交互智能体及目标场景信息，再限定在目标声音未搜索到时的替代控制逻辑，合并为同一场景下的完整条件控制特征。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/6c/eb/c7/5232244a6e994d/CN118494516B.pdf"
+}

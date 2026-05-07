@@ -1,0 +1,101 @@
+{
+  "patent": {
+    "publication_no": "CN222596374U",
+    "title": "风机盖、车载冰箱和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "魏运东",
+      "陶柱权",
+      "郜银铭",
+      "陈作",
+      "叶梅娇"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222596374U/zh",
+    "fetched_at": "2026-05-02T20:27:38+08:00"
+  },
+  "claim_1_text": "1.一种风机盖，其特征在于，包括：\n第一盖板；\n第二盖板，与所述第一盖板相对且间隔设置；\n风扇，包括叶轮，所述叶轮设置在所述第一盖板和所述第二盖板之间，所述叶轮包括多个绕中心轴的周向依次设置的叶片，所述叶片远离所述中心轴的端部为第一端部；\n导流筋，连接所述第一盖板和所述第二盖板，并位于所述风扇的外周，所述导流筋靠近所述风扇的端部为第二端部；\n其中，所述叶轮旋转过程中，距离最近的所述第一端部的切线与所述第二端部的切线具有夹角A，满足：65°≤A≤120°。",
+  "claim_1_text_html": "1.一种风机盖，其特征在于，包括：\n第一盖板；\n第二盖板，与所述第一盖板相对且间隔设置；\n风扇，包括叶轮，所述叶轮设置在所述第一盖板和所述第二盖板之间，所述叶轮包括多个绕中心轴的周向依次设置的叶片，所述叶片远离所述中心轴的端部为第一端部；\n导流筋，连接所述第一盖板和所述第二盖板，并位于所述风扇的外周，所述导流筋靠近所述风扇的端部为第二端部；\n其中，所述叶轮旋转过程中，距离最近的所述第一端部的切线与所述第二端部的切线具有夹角A，满足：65°≤A≤120°。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种风机盖，其特征在于，包括：",
+      "engineering_terms": [
+        "风机罩",
+        "风扇盖",
+        "fan cover",
+        "blower cover"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "第一盖板；",
+      "engineering_terms": [
+        "盖板",
+        "第一面板",
+        "cover plate",
+        "housing plate"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第二盖板，与所述第一盖板相对且间隔设置；",
+      "engineering_terms": [
+        "盖板",
+        "第二面板",
+        "opposed cover plate",
+        "spaced plate"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "风扇，包括叶轮，所述叶轮设置在所述第一盖板和所述第二盖板之间，所述叶轮包括多个绕中心轴的周向依次设置的叶片，所述叶片远离所述中心轴的端部为第一端部；",
+      "engineering_terms": [
+        "风扇组件",
+        "叶轮",
+        "叶片",
+        "fan",
+        "impeller",
+        "blade"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "导流筋，连接所述第一盖板和所述第二盖板，并位于所述风扇的外周，所述导流筋靠近所述风扇的端部为第二端部；",
+      "engineering_terms": [
+        "导流肋",
+        "导风筋",
+        "导风叶片",
+        "air guide rib",
+        "flow guide rib",
+        "guide vane"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "其中，所述叶轮旋转过程中，距离最近的所述第一端部的切线与所述第二端部的切线具有夹角A，满足：65°≤A≤120°。",
+      "engineering_terms": [
+        "切线夹角",
+        "导流角",
+        "angle range",
+        "tangent angle"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/03/47/a7/8cbb7a0de9e88b/CN222596374U.pdf"
+}

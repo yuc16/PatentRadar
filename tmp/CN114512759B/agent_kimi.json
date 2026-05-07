@@ -1,0 +1,954 @@
+{
+  "agent_name": "kimi_agent",
+  "search_perspective": "官方/长文资料视角",
+  "patent_publication_no": "CN114512759B",
+  "queries_used": [
+    {
+      "query": "-BYD -比亚迪 刀片电池 竞品 方壳电芯 长度 400mm~2500mm 厚度体积比 动力电池",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 8
+    },
+    {
+      "query": "亿纬锂能 LF560K 方壳电池 数据手册 长度 厚度 能量密度 参数",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "蜂巢能源 短刀电池 L600 产品手册 尺寸 规格 中国",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "宁德时代 长电芯 方壳电池 CTP 尺寸参数 中文 数据手册",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） datasheet specification product manual parameters pdf",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） filetype:pdf datasheet specification 规格书 产品手册",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） structure housing package connection teardown diagram",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） 产品页 结构图 技术资料 white paper",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） launch release mass production announced availability",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） product launch date released supplier catalog",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技有限公司 短刀电池（L600/L300系列） 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "https://www.svolt.cn/solution/passenger",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 3
+    },
+    {
+      "query": "filetype:pdf Gotion 国轩高科 方壳电芯 长薄电芯 尺寸规格 能量密度",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "REPT 瑞浦兰钧 问顶电池 方壳电芯 长度 厚度 尺寸参数 中国",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "-BYD -比亚迪 Sunwoda 欣旺达 方壳动力电池 长电芯 400mm 以上 中文 数据手册",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 15
+    },
+    {
+      "query": "白皮书 OR 数据手册 OR 拆解报告 OR 中文 \"LG Energy Solution\" 方壳电池 长电芯 尺寸",
+      "search_engine": "tavily+exa",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） datasheet specification product manual parameters pdf",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） filetype:pdf datasheet specification 规格书 产品手册",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） structure housing package connection teardown diagram",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） 产品页 结构图 技术资料 white paper",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） launch release mass production announced availability",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） product launch date released supplier catalog",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧能源股份有限公司 问顶电池（Wending Battery） 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "https://cn.reptbattero.com/download",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 3
+    },
+    {
+      "query": "https://cn.reptbattero.com/downloads",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 3
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 datasheet specification product manual parameters pdf",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 filetype:pdf datasheet specification 规格书 产品手册",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 7
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 structure housing package connection teardown diagram",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 产品页 结构图 技术资料 white paper",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 launch release mass production announced availability",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 product launch date released supplier catalog",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "欣旺达动力科技股份有限公司 方形闪充电池 / 动力电池 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    }
+  ],
+  "top5_candidates": [
+    {
+      "rank": 1,
+      "company": "蜂巢能源科技有限公司",
+      "product": "短刀电池（L600/L300系列）",
+      "aliases": [
+        "短刀片电池",
+        "L600",
+        "L300",
+        "短刀电芯"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 90.0,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确将蜂巢能源短刀电池描述为“方形硬壳电池”及“长薄型铝壳电芯”，直接对应权利要求中“硬壳电池”的技术特征。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "high",
+              "summary": "蜂巢能源推出短刀电池……长薄型铝壳电芯……方形（短刀）……",
+              "supported_features": [
+                "F1"
+              ]
+            },
+            {
+              "url": "http://svolt.zhuangbei.cn/introduce",
+              "title": "公司介绍_蜂巢能源科技股份有限公司-高端装备网",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "蜂巢能源在全球范围内创新性地率先将高速叠片工艺应用在方形硬壳电池领域……",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料直接披露了L600短刀电池的具体尺寸为长度574 mm、高度118 mm、厚度21.8 mm，满足长方体形且L＞H＞D的尺寸关系，直接对应权利要求的电池本体构造特征。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "high",
+              "summary": "应用最广泛的L600电池尺寸为长度574mm、厚度21.8mm、高度118mm……长薄型方形电芯……",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示L600短刀电池尺寸为574 mm×118 mm×21.8 mm（长×高×厚），虽未直接披露D/V比值，但基于该长方体尺寸可计算体积V≈1.477×10⁶ mm³，厚度D=21.8 mm，则D/V≈1.48×10⁻⁵ mm⁻²，落在0.0000065~0.00002 mm⁻²范围内，可合理推断满足。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "high",
+              "summary": "应用最广泛的L600电池尺寸为长度574mm、厚度21.8mm、高度118mm……",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示L600短刀电池尺寸为574 mm×118 mm×21.8 mm，可计算表面积S≈1.656×10⁵ mm²；另据公开资料，第二代L600短刀电池体积能量密度超过430 Wh/L，基于前述体积V≈1.476 L，可推算能量E≈634 Wh，进而S/E≈261 mm²·Wh⁻¹，明显≤1000 mm²·Wh⁻¹，可合理推断满足。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "high",
+              "summary": "应用最广泛的L600电池尺寸为长度574mm、厚度21.8mm、高度118mm……",
+              "supported_features": [
+                "F4"
+              ]
+            },
+            {
+              "url": "https://www.ab-li.com/a/24365",
+              "title": "5家！蜂巢能源短刀电池配套车企正式揭晓！",
+              "source_type": "其他",
+              "source_reliability": "medium",
+              "summary": "第二代L600短刀片磷酸铁锂电池……体积能量密度超过430wh/L……",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料直接披露L600短刀电池长度为574 mm，落在权利要求400 mm~2500 mm范围内，直接满足该长度特征。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "high",
+              "summary": "应用最广泛的L600电池尺寸为长度574mm、厚度21.8mm、高度118mm……",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示L600短刀电池长度L=574 mm，基于已披露尺寸574 mm×118 mm×21.8 mm可计算表面积S≈1.656×10⁵ mm²，虽未直接披露L/S比值，但计算得L/S≈0.00347 mm⁻¹，落在0.002~0.005 mm⁻¹范围内，可合理推断满足。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "high",
+              "summary": "应用最广泛的L600电池尺寸为长度574mm、厚度21.8mm、高度118mm……",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        }
+      ],
+      "main_evidence_urls": [
+        "http://epaper.bdall.com/wbpaper/pc/attachment/202208/20/f5b6487a-94da-435f-bd2d-7ed064056ecb.pdf",
+        "http://svolt.zhuangbei.cn/introduce",
+        "https://finance.sina.com.cn/tech/digi/2024-10-28/doc-incuakcf9761073.shtml",
+        "https://m.xchuxing.com/article/40101",
+        "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+        "https://www.ab-li.com/a/24365",
+        "https://www.cls.cn/detail/892023",
+        "https://www.svolt.cn/innovation",
+        "https://www.svolt.cn/legal",
+        "https://www.svolt.cn/solution/passenger"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F3",
+          "gap": "未找到D/V比值的直接公开数据，当前依赖电芯长宽厚尺寸进行推算，建议查找官方产品手册或规格书以直接确认"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到S/E比值的直接公开数据，当前依赖电芯尺寸及体积能量密度进行推算，建议查找官方产品手册或规格书以直接确认"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到L/S比值的直接公开数据，当前依赖电芯长宽厚尺寸进行推算，建议查找官方产品手册或规格书以直接确认"
+        }
+      ],
+      "reason_for_top5": "蜂巢能源短刀电池（L600）在F1硬壳形态、F2长方体结构及尺寸关系、F5长度范围上均有高可靠性行业报告及官网直接支撑；F3、F4、F6虽无直接比值公开，但基于高可靠来源披露的确切尺寸（574 mm×118 mm×21.8 mm）及体积能量密度参数，通过几何与物理计算可形成较强推理链，推断落入权利要求范围。整体六维特征匹配度高、证据质量可靠，具备进入Top5的充分理由。"
+    },
+    {
+      "rank": 2,
+      "company": "瑞浦兰钧能源股份有限公司",
+      "product": "问顶电池（Wending Battery）",
+      "aliases": [
+        "问顶系列动力电池",
+        "REPT问顶电池"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 86.67,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "证据E7（港交所公告）直接记载问顶电池为‘方形硬壳电芯（prismatic cell）’，与权利要求1中‘单体电池为硬壳电池’的表述完全对应。",
+          "evidence": [
+            {
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
+              "title": "瑞浦蘭鈞能源股份有限公司公告",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "问顶电池为方形硬壳电芯（prismatic cell），属于动力电池。",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "证据E7明确描述问顶电池的电池本体系‘长方体形、长薄结构’。在动力电池工程语境中，‘长薄结构’即指长度方向显著大于宽度、厚度方向的扁平长方体，隐含L>H>D的尺寸关系，与权利要求1的限定一致。",
+          "evidence": [
+            {
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
+              "title": "瑞浦蘭鈞能源股份有限公司公告",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "电池本体系长方体形、长薄结构，符合长薄方壳电芯特征。",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示问顶电池采用‘薄型化’设计且为‘长薄结构’（E7），虽未直接披露D/V比值，但根据长方体几何关系D/V = 1/(L×H)。结合长薄方壳动力电池的行业典型尺寸（长度L通常≥400 mm，宽度H通常100 mm~200 mm），L×H通常≥40,000 mm²，对应D/V通常≤0.000025 mm⁻²；问顶电池强调‘高体积利用率’与‘薄型化’，其L×H更可能处于该范围的中低段，从而使D/V落入0.0000065~0.00002 mm⁻²区间。",
+          "evidence": [
+            {
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
+              "title": "瑞浦蘭鈞能源股份有限公司公告",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "问顶电池实现薄型化，符合长薄方壳电芯特征，体积利用率高。",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示问顶电池为面向新能源汽车的动力电池，能量密度达185~200 Wh/kg（E7）。虽未直接披露表面积S与能量E的比值，但动力电池单体的能量通常在数百Wh以上，其表面积与能量之比的行业常规水平远低于1000 mm²/Wh。问顶电池作为高体积利用率的大型长薄电芯，散热表面积相对能量的比例不会高于常规方壳电池，可合理推断其S/E≤1000 mm²·Wh⁻¹。",
+          "evidence": [
+            {
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
+              "title": "瑞浦蘭鈞能源股份有限公司公告",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "问顶系列磷酸铁锂电池能量密度提升至185~200 Wh/kg，应用于新能源汽车。",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示问顶电池为‘长薄方壳电芯’（E7）。虽未直接披露长度数值，但在动力电池领域，‘长薄方壳电芯’特指长度显著大于传统方壳电芯（传统长度一般≤250 mm）的品类，行业同类长薄电芯产品的长度普遍在400 mm以上（如比亚迪刀片电池约905 mm、蜂巢短刀电池约574 mm）。瑞浦兰钧问顶电池作为面向新能源汽车的长薄电芯产品，其长度L落入400 mm~2500 mm范围具有高度合理性。",
+          "evidence": [
+            {
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
+              "title": "瑞浦蘭鈞能源股份有限公司公告",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "问顶电池为长薄方壳电芯，电池本体系长方体形、长薄结构。",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示问顶电池为‘长薄方壳’结构且‘薄型化’（E7）。虽未直接披露L/S比值，但对长薄电芯（L≫H>D），表面积S≈2L(H+D)，故L/S≈1/[2(H+D)]。薄型化设计意味着厚度D较小（行业典型20 mm~50 mm），宽度H通常在100 mm~200 mm，因此H+D约120 mm~250 mm，L/S约0.002~0.0042 mm⁻¹，落入0.002~0.005 mm⁻¹范围。",
+          "evidence": [
+            {
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
+              "title": "瑞浦蘭鈞能源股份有限公司公告",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "问顶电池为长薄方壳电芯，实现薄型化，符合长薄方壳电芯特征。",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        }
+      ],
+      "main_evidence_urls": [
+        "https://cn.reptbattero.com/download",
+        "https://cn.reptbattero.com/downloads",
+        "https://cn.reptbattero.com/industrial-commericial-energy-storage",
+        "https://cn.reptbattero.com/ups-energy-storage",
+        "https://ecoteardown.top/wp-content/uploads/2025/02/REPT-150Ah-3.2V-LiFePO4-Prismatic-Battery-Cell-Specification-Datasheet.pdf",
+        "https://libattery.ofweek.com/recommendfriends-30597711.html",
+        "https://lynxpower.co.uk/wp-content/uploads/2024/08/REPT-Cell-314Ah-Product-Specification.pdf",
+        "https://www.basenpower.com/wp-content/uploads/2025/06/CB71173204EB-280P-产品规格书（中英文版）20220617.pdf",
+        "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
+        "https://www.neexgent.com/Uploads/202406/rept_rept_3.2v_205ah_lifepo4_battery.pdf"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F3",
+          "gap": "未找到问顶电池官方产品规格书中关于厚度D与体积V的直接数据，建议获取官方规格书或拆解报告以直接验证D/V比值。"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到问顶电池表面积S与标称能量E的直接公开数据，建议查阅官方产品手册或实测报告以直接计算S/E。"
+        },
+        {
+          "feature_id": "F5",
+          "gap": "未找到问顶电池长度L的精确公开数值，建议获取官方尺寸图或产品规格书以直接确认长度范围。"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到问顶电池长度L与表面积S的精确公开数值，建议获取官方尺寸参数以直接验证L/S比值。"
+        }
+      ],
+      "reason_for_top5": "该候选为瑞浦兰钧核心产品‘问顶电池’，已明确落入硬壳长方体长薄电芯类别（F1、F2明确满足）。虽缺乏官方完整规格书，但基于港交所公告对其‘长薄方壳’‘薄型化’‘高体积利用率’的结构定性，结合行业常识与几何关系，可对F3~F6形成较强推理链支持。问顶电池是行业内公认的对标长薄刀片电池路线的代表性产品，技术路线与涉案专利高度相关，且证据来源为Tier 1官方公告，可靠性高，值得进入Top5并进一步调取官方产品手册或拆解报告核实具体几何参数。"
+    },
+    {
+      "rank": 3,
+      "company": "欣旺达动力科技股份有限公司",
+      "product": "方形闪充电池 / 动力电池",
+      "aliases": [
+        "闪充电池",
+        "欣旺达方形动力电池"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 50.0,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "多篇公开资料明确记载欣旺达动力电池产品为方形铝壳电芯/方壳电芯，属于硬壳电池。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H2_AN202504211660102350_1.pdf",
+              "title": "欣旺达电子股份有限公司2024年年度报告",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "动力电池产品以方形铝壳电池为核心",
+              "supported_features": [
+                "F1"
+              ]
+            },
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202307031591987132_1.pdf",
+              "title": "以消费类电池为基石动力+储能打造第二增长曲线欣旺达300207.SZ",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "电池类型：硬壳方形铝壳电芯（prismatic cell），外包覆铝壳",
+              "supported_features": [
+                "F1"
+              ]
+            },
+            {
+              "url": "https://sunwoda.codady.com/upload/portal/20220711/2b8d6bb835ac5ad9515949f8c04292b8.pdf",
+              "title": "珠海欣旺达新能源有限公司动力电池产业基地(一期)建设项目",
+              "source_type": "官方PDF",
+              "source_reliability": "high",
+              "summary": "产品名称：方壳电芯（方形硬壳电池）",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示欣旺达方形闪充电池采用硬壳方形铝壳电芯，形状明确为长方体形；虽未直接披露长度L、宽度H、厚度D的具体数值及L>H>D的大小关系，但结合动力电池用方形铝壳电芯的行业通用结构——通常为长条形扁平长方体，长度方向为极耳引出方向或长边方向，厚度方向为z向堆叠方向，其典型几何形态满足长度大于宽度大于厚度，可合理推断该电池本体具有L>H>D的尺寸关系。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202307031591987132_1.pdf",
+              "title": "以消费类电池为基石动力+储能打造第二增长曲线欣旺达300207.SZ",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "电池类型：硬壳方形铝壳电芯（prismatic cell），形状为长方体形",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未披露单体电池的厚度D、体积V及其比值D/V，无法验证是否落入0.0000065~0.00002 mm^-2范围。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未披露单体电池的表面积S、能量E及其比值S/E，无法验证是否≤1000 mm^2·Wh^-1。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未披露电池本体的长度L具体数值，无法验证是否在400mm~2500mm范围内。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未披露电池本体的长度L与表面积S及其比值L/S，无法验证是否落入0.002~0.005 mm^-1范围。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "https://finance.sina.com.cn/stock/relnews/cn/2023-04-20/doc-imyqyxpv5095465.shtml",
+        "https://finance.sina.com.cn/stock/relnews/dongmiqa/2023-04-20/doc-imyqzkcr5095906.shtml",
+        "https://pdf.dfcfw.com/pdf/H2_AN202504211660102350_1.pdf",
+        "https://pdf.dfcfw.com/pdf/H3_AP202307031591987132_1.pdf",
+        "https://pdf.dfcfw.com/pdf/H3_AP202504161657257682_1.pdf",
+        "https://sunwoda.codady.com/upload/portal/20220711/2b8d6bb835ac5ad9515949f8c04292b8.pdf",
+        "https://www.sunwoda.com/article/811",
+        "https://zj.scdy.edu.cn/data/mcit_editor/20241104/%E6%AC%A3%E6%97%BA%E8%BE%BE%E5%8A%A8%E5%8A%9B%E7%AE%80%E4%BB%8B.pdf"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F3",
+          "gap": "未找到单体电池厚度D、体积V及比值D/V的公开证据，建议查阅欣旺达官方产品规格书、动力电池专利或第三方拆解报告。"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到单体电池表面积S、能量E及比值S/E的公开证据，建议查阅官方技术白皮书或电芯规格书。"
+        },
+        {
+          "feature_id": "F5",
+          "gap": "未找到电池本体长度L的具体数值，建议查阅官方产品手册或产线环评文件中的设备尺寸与电芯尺寸对应关系。"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到长度L与表面积S比值的公开证据，建议结合F3、F5的缺失数据一并查证官方电芯尺寸参数。"
+        }
+      ],
+      "reason_for_top5": "欣旺达动力是国内动力电池头部企业，其方形闪充电池/动力电池产品在电池类型（硬壳）和外形（长方体形）上与涉案专利权利要求1高度对应（F1明确满足、F2可能满足）。虽然具体的尺寸参数与比值（F3、F4、F5、F6）尚未在公开渠道披露，但欣旺达量产方形铝壳动力电池的技术路线与专利保护的“长薄型硬壳方壳电芯”方案属于同一技术领域，且其闪充电池主打高体积利用率、高能量密度，与专利的技术效果方向一致。考虑到其行业地位和产销量规模，存在其某款量产或在研电芯落入专利权保护范围的可能性，因此值得进入Top5并通过产品规格书、专利文献或拆解报告进一步核实具体几何与能量参数。"
+    }
+  ],
+  "discarded_candidates": [
+    {
+      "company": "比亚迪股份有限公司",
+      "product": "刀片电池/汉EV刀片电池/10C刀片闪充电池",
+      "discard_reason": "专利权人自身产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "亿纬锂能",
+      "product": "LF560K储能电池",
+      "discard_reason": "现有证据显示其为传统大容量储能电芯，无证据表明电芯长度达到400mm以上的长薄特征，与技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "200安刀片磷酸铁锂电芯",
+      "discard_reason": "无证据表明该产品为长度400mm以上的长薄型方壳电芯，疑似传统尺寸方形电芯，与技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "271Ah磷酸铁锂电芯",
+      "discard_reason": "电芯长度仅173.61mm，不满足长薄特征（400mm+），与技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "48Ah NMC方壳电芯/储能产品手册",
+      "discard_reason": "小容量传统方形电芯或系统方案，未体现长薄型方壳电芯特征，与技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "特斯拉",
+      "product": "4680电池",
+      "discard_reason": "圆柱电池，与权利要求的硬壳长方体电芯不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科",
+      "product": "340Ah-IFP81175200A",
+      "discard_reason": "尺寸代码显示为传统方形电芯，无长薄特征，与技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "瑞浦兰钧",
+      "product": "LFP280储能电芯",
+      "discard_reason": "尺寸173×71×200mm为传统方形电芯，长度不足400mm，与技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "信息未明",
+      "product": "未知",
+      "discard_reason": "摘要为空或页面信息不足，无法确认具体竞品公司及产品型号",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科股份有限公司",
+      "product": "Gotion-314Ah LiFePO4 电芯规格书",
+      "discard_reason": "该厂商同类方形电芯（如340Ah）实测长度仅约200mm，现有证据未体现满足400mm以上长电芯特征，与技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科股份有限公司",
+      "product": "IFP42100140A 67Ah 锂离子电池",
+      "discard_reason": "产品型号显示长度仅约140mm，不满足权利要求400mm以上长度特征",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科股份有限公司",
+      "product": "方形铝壳锂电池50GWh产线电芯托盘招标",
+      "discard_reason": "无具体电芯产品型号及尺寸参数，无法确认相关性",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科股份有限公司",
+      "product": "JTM技术研报",
+      "discard_reason": "JTM为模组集成技术方案，非单体电芯产品资料",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科股份有限公司",
+      "product": "IFP81175200A 340Ah 锂离子电池",
+      "discard_reason": "规格书显示尺寸为81.2mm×175.4mm×200.3mm，长度200.3mm不满足400mm以上要求",
+      "evidence_urls": []
+    },
+    {
+      "company": "逸飞激光股份有限公司",
+      "product": "科创板上市招股说明书",
+      "discard_reason": "该公司为锂电设备制造商，不生产电池产品，与侵权检索无关",
+      "evidence_urls": []
+    },
+    {
+      "company": "无",
+      "product": "软包&长薄化方形电池发展行业报告",
+      "discard_reason": "无具体公司及产品型号，仅为行业研究资料",
+      "evidence_urls": []
+    },
+    {
+      "company": "中国科学院宁波材料技术与工程研究所",
+      "product": "动力锂电池工程实验室资料",
+      "discard_reason": "研究机构，无商业化电池产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "鸿海集团（富士康）",
+      "product": "LFP方型电芯产线",
+      "discard_reason": "预计2025年底量产，无当前可购买产品，且预计时间晚于专利申请日",
+      "evidence_urls": []
+    },
+    {
+      "company": "瑞浦兰钧能源股份有限公司",
+      "product": "100Ah 户用储能电芯",
+      "discard_reason": "产品尺寸27×173×207mm，长度207mm不满足400mm以上要求",
+      "evidence_urls": []
+    },
+    {
+      "company": "瑞浦兰钧能源股份有限公司",
+      "product": "392Ah 储能电芯",
+      "discard_reason": "产品尺寸75×182×224.5mm，长度224.5mm不满足400mm以上要求",
+      "evidence_urls": []
+    },
+    {
+      "company": "瑞浦兰钧能源股份有限公司",
+      "product": "314Ah 储能电芯",
+      "discard_reason": "产品尺寸39.7×148.6×101mm，长度148.6mm不满足400mm以上要求",
+      "evidence_urls": []
+    },
+    {
+      "company": "瑞浦兰钧能源股份有限公司",
+      "product": "REPT品牌简介/280Ah电芯等",
+      "discard_reason": "已归并至“问顶电池”候选，常规储能型号无400mm以上长电芯证据",
+      "evidence_urls": []
+    },
+    {
+      "company": "山东圣阳电源股份有限公司",
+      "product": "GFMD-400C",
+      "discard_reason": "铅酸电池产品，与锂离子硬壳电池技术方案不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "威睿电动汽车技术（宁波）有限公司",
+      "product": "电池系统产品手册",
+      "discard_reason": "无具体电芯产品型号，且为电池系统级资料，非单体电芯",
+      "evidence_urls": []
+    },
+    {
+      "company": "武汉中原长江科技发展有限公司",
+      "product": "锂离子规格书页面",
+      "discard_reason": "无具体产品型号及尺寸信息",
+      "evidence_urls": []
+    },
+    {
+      "company": "欣旺达动力科技股份有限公司",
+      "product": "储能系统（512V 280Ah/420Ah等）",
+      "discard_reason": "储能系统级产品，非单体电芯",
+      "evidence_urls": []
+    },
+    {
+      "company": "欣旺达动力科技股份有限公司",
+      "product": "公司官网/年报/港交所文件",
+      "discard_reason": "公司介绍或财务文件，无具体电芯尺寸参数，已归并至方形闪充电池候选",
+      "evidence_urls": []
+    },
+    {
+      "company": "亿纬锂能股份有限公司",
+      "product": "LF105 电芯",
+      "discard_reason": "尺寸130.3×36.7×200.5mm，长度200.5mm不满足400mm以上要求",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "储能手册/展会资讯/白皮书/无摘要PDF等",
+      "discard_reason": "无明确公司及产品信息，或仅为行业资料",
+      "evidence_urls": []
+    }
+  ],
+  "notes": null,
+  "elapsed_seconds": 3883.57,
+  "llm_model": "kimi-k2.6"
+}

@@ -1,0 +1,876 @@
+{
+  "agent_name": "deepseek_agent",
+  "search_perspective": "中文公开资料视角",
+  "patent_publication_no": "CN114512759B",
+  "queries_used": [
+    {
+      "query": "刀片电池 供应商 -比亚迪",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 15
+    },
+    {
+      "query": "长薄电芯 宁德时代 规格 参数",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "超长方壳电芯 中创新航 产品",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "高能量密度 硬壳 方形 电池 国轩高科",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 14
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 datasheet specification product manual parameters pdf",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 filetype:pdf datasheet specification 规格书 产品手册",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 structure housing package connection teardown diagram",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 产品页 结构图 技术资料 white paper",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 launch release mass production announced availability",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 product launch date released supplier catalog",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "https://www.svolt.cn/solution/passenger",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 3
+    },
+    {
+      "query": "https://www.manualslib.com/manual/699665/Teac-Cr-L600.html?page=2",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 3
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 difference limitation not support conflict principle 反证 不支持 差异",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司 短刀电池 L600 review teardown comparison limitation 缺陷 不同 技术路线",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "短刀片电池 蜂巢能源 SVOLT 规格 参数",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "长薄电芯 CTP 方案 宁德时代 CATL 麒麟电池",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 15
+    },
+    {
+      "query": "方形硬壳 长电芯 亿纬锂能 EVE 产品 系列",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "薄型动力电池 高能量密度 欣旺达 电芯 设计",
+      "search_engine": "bocha+tavily",
+      "purpose": "候选竞品发现",
+      "n_results": 8
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) datasheet specification product manual parameters pdf",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) filetype:pdf datasheet specification 规格书 产品手册",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) structure housing package connection teardown diagram",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) 产品页 结构图 技术资料 white paper",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) launch release mass production announced availability",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) product launch date released supplier catalog",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery) 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 3
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 datasheet specification product manual parameters pdf",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 filetype:pdf datasheet specification 规格书 产品手册",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 structure housing package connection teardown diagram",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 产品页 结构图 技术资料 white paper",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 launch release mass production announced availability",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 11
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 product launch date released supplier catalog",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 10
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "蜂巢能源科技股份有限公司（SVOLT） SVOLT 143.5Ah LFP 4C快充短刀电池 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "bocha+exa+brave+tavily",
+      "purpose": "证据检索",
+      "n_results": 12
+    },
+    {
+      "query": "https://www.svolt.cn/solution/passenger",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 3
+    }
+  ],
+  "top5_candidates": [
+    {
+      "rank": 1,
+      "company": "蜂巢能源科技股份有限公司（SVOLT）",
+      "product": "SVOLT 184Ah刀片电池 (LiFePO4 Blade Battery)",
+      "aliases": [
+        "184Ah刀片电池",
+        "Svolt 184Ah Blade Cell"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 100.0,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "产品名称为“SVOLT 184Ah LiFePO4 Blade Battery”，行业通称刀片电池，属硬壳方形电池；公开资料描述为prismatic cell，电池为方形金属壳体，明确为硬壳电池。",
+          "evidence": [
+            {
+              "url": "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
+              "title": "Lithium ion rechargeable CB0MHW3NA-184Ah svolt 3.2v LiFePo4 battery",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "产品页明确描述为“prismatic lifepo4 cell”，表示方形硬壳电芯。",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开尺寸为574mm × 118mm × 21.7mm（长×宽×厚），长度574 > 宽度118 > 厚度21.7，且构造为长方体形，完全满足。",
+          "evidence": [
+            {
+              "url": "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
+              "title": "Lithium ion rechargeable CB0MHW3NA-184Ah svolt 3.2v LiFePo4 battery",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "尺寸标注为“574*118*21.7mm”，明确L=574mm, W=118mm, D=21.7mm。",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "电池尺寸L=574mm, W=118mm, D=21.7mm，体积V=L×W×D，D/V = 1/(L×W) = 1/(574×118) ≈ 0.00001476 mm⁻²，处于0.0000065~0.00002 mm⁻²范围内。",
+          "evidence": [
+            {
+              "url": "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
+              "title": "Lithium ion rechargeable CB0MHW3NA-184Ah svolt 3.2v LiFePo4 battery",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "提供尺寸574*118*21.7mm，据此计算D/V≈1/(574×118)=0.00001476 mm⁻²。",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "表面积S=2×(574×118 + 574×21.7 + 118×21.7) ≈ 165496.8 mm²，能量E≥588 Wh，S/E ≈ 281.4 mm²/Wh ≤ 1000 mm²/Wh，满足。",
+          "evidence": [
+            {
+              "url": "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
+              "title": "Lithium ion rechargeable CB0MHW3NA-184Ah svolt 3.2v LiFePo4 battery",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "参数表给出尺寸574*118*21.7mm，能量≥588Wh（1/3C放电），可计算S/E。",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "长度L=574mm，处于400mm~2500mm范围内。",
+          "evidence": [
+            {
+              "url": "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
+              "title": "Lithium ion rechargeable CB0MHW3NA-184Ah svolt 3.2v LiFePo4 battery",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "尺寸中明确长度574mm。",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "L=574mm，表面积S≈165496.8 mm²，L/S ≈ 574/165496.8 ≈ 0.00347 mm⁻¹，处于0.002~0.005 mm⁻¹范围内。",
+          "evidence": [
+            {
+              "url": "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
+              "title": "Lithium ion rechargeable CB0MHW3NA-184Ah svolt 3.2v LiFePo4 battery",
+              "source_type": "产品手册",
+              "source_reliability": "medium",
+              "summary": "提供尺寸574*118*21.7mm，可计算表面积和L/S。",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        }
+      ],
+      "main_evidence_urls": [
+        "https://batteryfinds.com/lifepo4-nmc-lto-battery-cell-datasheet-listproduct-specification-pdf",
+        "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
+        "https://chinese.alibaba.com/product-detail/New-Arrival-Genuine-Original-A-Svolt-1600391169102.html",
+        "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
+        "https://ecoteardown.top/blog",
+        "https://ecoteardown.top/group-24-lifepo4-batteries-comparison-chart",
+        "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
+        "https://www.alibaba.com/product-detail/Original-A-Svolt-184Ah-LiFePO4-Battery_1600513291914.html",
+        "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
+        "https://www.lifepo4-battery.com/News/svolt-fortress-2-0-mass-production-80kwh.html"
+      ],
+      "remaining_gaps": [],
+      "reason_for_top5": "该产品满足权利要求1全部6项特征，关键尺寸、能量参数均有明确公开证据，且数值通过计算完全落入权利要求限定范围，匹配度极高。"
+    },
+    {
+      "rank": 2,
+      "company": "蜂巢能源科技股份有限公司",
+      "product": "短刀电池 L600",
+      "aliases": [
+        "短刀电池 L600",
+        "SVOLT L600",
+        "蜂巢能源短刀电池"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 88.33,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确描述蜂巢能源短刀电池为长薄型铝壳电芯，铝壳属于硬壳电池。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "短刀电池也是长薄型铝壳电芯，其中应用最广泛的L600电池尺寸为长度574mm、厚度21.8mm、高度118mm。",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "L600电池尺寸为长度574mm、厚度21.8mm、高度118mm，长度574mm>高度118mm>厚度21.8mm，符合长方体形且长度大于宽度、宽度大于厚度的要求。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "L600电池尺寸为长度574mm、厚度21.8mm、高度118mm。",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "由公开尺寸计算：体积V=574×118×21.8≈1,476,558 mm³，厚度D=21.8 mm，D/V≈1.48×10⁻⁵ mm⁻²，该值落在权利要求限定的0.0000065～0.00002 mm⁻²范围内。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "L600电池尺寸为长度574mm、厚度21.8mm、高度118mm。（据此可计算D/V比值）",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提供短刀电池L600的能量参数E，无法计算表面积S与能量E的比值，也无直接或间接证据表明S/E≤1000 mm²/Wh。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "长度L=574 mm，明确落入权利要求限定的400～2500 mm范围内。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "L600电池长度574mm。",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "由公开尺寸计算：表面积S=2×(574×118+574×21.8+118×21.8)≈165,635 mm²，L/S=574/165635≈0.00347 mm⁻¹，该值落在权利要求限定的0.002～0.005 mm⁻¹范围内。",
+          "evidence": [
+            {
+              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+              "title": "软包&长薄化方形电池发展带动叠片设备需求",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "L600电池尺寸为长度574mm、厚度21.8mm、高度118mm。（据此可计算L/S比值）",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        }
+      ],
+      "main_evidence_urls": [
+        "http://glabat.com/Site/cn/Uploads/kindeditor/file/20220512/%E5%91%A8%E8%AE%AF%E7%B2%BE%E9%80%892021%E5%B9%B4%E7%AC%AC47%E6%9C%9F%20%E6%80%BB%E7%AC%AC229%E6%9C%9F.pdf",
+        "https://escali.zendesk.com/hc/en-us/articles/214245063-Product-Manual-L-Series-",
+        "https://pdf.dfcfw.com/pdf/H3_AP202112091533595345_1.pdf",
+        "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+        "https://www.alldatasheet.com/view.jsp?Searchword=L600-&sField=1",
+        "https://www.alldatasheet.net/view_datasheet.jsp?Searchword=L600-&sField=1",
+        "https://www.manualslib.com/contacts.html",
+        "https://www.manualslib.com/manual/699665/Teac-Cr-L600.html",
+        "https://www.manualslib.com/manual/699665/Teac-Cr-L600.html?page=2",
+        "https://www.svolt.cn/investor",
+        "https://www.svolt.cn/solution/passenger",
+        "https://www.svolt.cn/solution/recycling"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F4",
+          "gap": "未找到短刀电池L600的能量参数，无法验证S/E≤1000 mm²/Wh，建议查找官方产品规格书或详细技术参数。"
+        }
+      ],
+      "reason_for_top5": "蜂巢能源短刀电池L600有5个特征（F1、F2、F3、F5、F6）明确满足权利要求1，公开尺寸数据可直接验证多项几何约束，仅能量相关特征F4因缺乏参数暂判证据不足。匹配度极高，证据来源为权威行业报告，可靠性良好，值得进入Top5。"
+    },
+    {
+      "rank": 3,
+      "company": "蜂巢能源科技股份有限公司（SVOLT）",
+      "product": "SVOLT 143.5Ah LFP 4C快充短刀电池",
+      "aliases": [
+        "143.5Ah短刀快充电芯",
+        "Short Blade Fast Charging Cell"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 41.67,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "官网明确描述143.5Ah电芯为'prismatic shape'（方壳），属于硬壳电池；产品名'Short Blade'指示长薄电芯，为长方体且满足L>H>D。",
+          "evidence": [
+            {
+              "url": "https://www.svolt.cn/en/solution/passenger",
+              "title": "143.5Ah-LFP-4C Fast Charging Short Blade Cell",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "描述143.5Ah电芯为'prismatic shape'，表明硬壳方壳，且为短刀电芯，具有长薄特征。",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未找到143.5Ah电芯的厚度D和体积V数据，无法计算D/V比值。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未找到表面积S和能量E数据，无法计算S/E比值。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未找到长度L的具体数值，无法判断是否在400~2500mm范围内。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未找到长度L和表面积S数据，无法计算L/S比值。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "LLM 未返回该特征判断，按证据不足处理。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "https://bbs.16rd.com/thread-646135-1-1.html",
+        "https://www.batemo.com/cn/products/batemo-cell-explorer/svolt-21700-4000mah",
+        "https://www.evlithiumcharger.com/products/energy-storage-system/svolt-cl33-133ah-lifepo4-blade-battery.html",
+        "https://www.mivvyenergy.cz/img/cms/LFP-147Ah-SVOLT.pdf",
+        "https://www.mivvyenergy.cz/img/cms/LFP-90AH-SVOLT.pdf",
+        "https://www.mivvyenergy.cz/img/cms/SVOLT%2021700-4400mAh%20Datasheet.pdf",
+        "https://www.svolt.cn/en/solution/passenger",
+        "https://www.svolt.cn/innovation",
+        "https://www.svolt.cn/legal",
+        "https://www.svolt.cn/solution/passenger"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F2",
+          "gap": "需获取143.5Ah短刀电芯的详细尺寸规格书以计算D/V"
+        },
+        {
+          "feature_id": "F3",
+          "gap": "需获取能量和尺寸数据以计算S/E"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "需获取长度L数值"
+        },
+        {
+          "feature_id": "F5",
+          "gap": "需获取长度和表面积数据以计算L/S"
+        }
+      ],
+      "reason_for_top5": "明确满足硬壳方壳电芯特征（F1），且短刀电芯形态与专利长薄电芯方向一致，但缺乏关键几何参数公开数据，其他特征无法判定，需进一步获取规格书确认。"
+    }
+  ],
+  "discarded_candidates": [
+    {
+      "company": "比亚迪",
+      "product": "刀片电池",
+      "discard_reason": "专利权人自身产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "弗迪电池有限公司",
+      "product": "刀片电池",
+      "discard_reason": "专利权人关联公司（比亚迪子公司）",
+      "evidence_urls": []
+    },
+    {
+      "company": "",
+      "product": "",
+      "discard_reason": "无明确公司及产品（供应商名单，非电芯产品）",
+      "evidence_urls": []
+    },
+    {
+      "company": "Tursan",
+      "product": "",
+      "discard_reason": "无明确产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "587Ah电芯",
+      "discard_reason": "产品量产日期2025-06-10晚于专利申请日2019-06-21",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "5.2Ah高倍率电芯",
+      "discard_reason": "与技术方案不相关（小容量，非长电芯）",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "86Ah磷酸铁锂电芯",
+      "discard_reason": "与技术方案不相关（小容量，尺寸不满足）",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "66.2Ah三元锂电芯",
+      "discard_reason": "与技术方案不相关（小容量）",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "",
+      "discard_reason": "无明确产品（通用电芯介绍）",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "",
+      "discard_reason": "无明确产品（储能产品参数图表）",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "302Ah电芯",
+      "discard_reason": "技术特征不相关（尺寸不足400mm）",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代",
+      "product": "麒麟电池电芯",
+      "discard_reason": "技术特征不相关（长度200mm不满足400mm下限）",
+      "evidence_urls": []
+    },
+    {
+      "company": "中创新航",
+      "product": "One-stop Battery",
+      "discard_reason": "技术特征不相关（长度148mm不满足400mm下限）",
+      "evidence_urls": []
+    },
+    {
+      "company": "中创新航",
+      "product": "至久系列392Ah电芯",
+      "discard_reason": "产品发布日期2024-09-02晚于专利申请日",
+      "evidence_urls": []
+    },
+    {
+      "company": "中创新航",
+      "product": "至久系列625Ah+电芯",
+      "discard_reason": "产品发布日期2024-09-02晚于专利申请日",
+      "evidence_urls": []
+    },
+    {
+      "company": "中创新航",
+      "product": "314Ah电芯",
+      "discard_reason": "产品量产日期2023-09-18晚于专利申请日",
+      "evidence_urls": []
+    },
+    {
+      "company": "中创新航",
+      "product": "500Ah+大容量电芯",
+      "discard_reason": "产品发布晚于专利申请日",
+      "evidence_urls": []
+    },
+    {
+      "company": "瑞浦兰钧",
+      "product": "588Ah储能电芯",
+      "discard_reason": "产品展出日期2026年晚于专利申请日",
+      "evidence_urls": []
+    },
+    {
+      "company": "远景动力",
+      "product": "790Ah电芯",
+      "discard_reason": "产品发布晚于专利申请日",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科",
+      "product": "方壳电池（专利）",
+      "discard_reason": "专利文献，非产品资料",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科",
+      "product": "固态电池",
+      "discard_reason": "无明确产品与技术不相关",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代（CATL）",
+      "product": "麒麟电池",
+      "discard_reason": "产品上市日期明确晚于专利申请日（2019-06-21），2022年6月23日发布。",
+      "evidence_urls": []
+    },
+    {
+      "company": "宁德时代（CATL）",
+      "product": "麒麟电池电芯（39*200*120mm）",
+      "discard_reason": "电芯长度200mm，不满足专利要求的400-2500mm，与技术方案不相关。",
+      "evidence_urls": []
+    },
+    {
+      "company": "惠州亿纬锂能股份有限公司（EVE Energy）",
+      "product": "LF100/LF105等常规方形磷酸铁锂电池",
+      "discard_reason": "电芯长度约160mm，不满足400-2500mm，与专利技术方案不相关。",
+      "evidence_urls": []
+    },
+    {
+      "company": "欣旺达动力科技股份有限公司",
+      "product": "高比能电芯",
+      "discard_reason": "无具体产品型号及尺寸信息，无法判断相关性。",
+      "evidence_urls": []
+    },
+    {
+      "company": "东莞市宏盛新能源有限公司（销售SVOLT产品）",
+      "product": "SVOLT 21700圆柱电池",
+      "discard_reason": "产品为圆柱电池，非硬壳方型电池，与专利单体电池类型不符。",
+      "evidence_urls": []
+    },
+    {
+      "company": "蜂巢能源科技股份有限公司（SVOLT）",
+      "product": "便携式储能电源",
+      "discard_reason": "产品为集成电源系统，非单体电池。",
+      "evidence_urls": []
+    }
+  ],
+  "notes": null,
+  "elapsed_seconds": 1478.5,
+  "llm_model": "deepseek-v4-pro"
+}

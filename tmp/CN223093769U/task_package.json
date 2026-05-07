@@ -1,0 +1,57 @@
+{
+  "patent": {
+    "publication_no": "CN223093769U",
+    "title": "天线电路、天线系统及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "尹清奇"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223093769U/zh",
+    "fetched_at": "2026-05-02T20:56:11+08:00"
+  },
+  "claim_1_text": "1.一种天线电路，其特征在于，所述天线电路包括：\n天线模块，所述天线模块用于输出对应的极化信号；\n滤波放大模块，所述滤波放大模块与所述天线模块连接，所述滤波放大模块包括至少一个滤波放大支路，每个所述滤波放大支路用于对所述极化信号进行滤波后放大。",
+  "claim_1_text_html": "1.一种天线电路，其特征在于，所述天线电路包括：\n天线模块，所述天线模块用于输出对应的极化信号；\n滤波放大模块，所述滤波放大模块与所述天线模块连接，所述滤波放大模块包括至少一个滤波放大支路，每个所述滤波放大支路用于对所述极化信号进行滤波后放大。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种天线电路，其特征在于，所述天线电路包括：",
+      "engineering_terms": [
+        "antenna circuit",
+        "射频天线电路",
+        "RF antenna circuit"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "天线模块，所述天线模块用于输出对应的极化信号；",
+      "engineering_terms": [
+        "天线单元",
+        "antenna module",
+        "polarized signal output",
+        "极化天线"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "滤波放大模块，所述滤波放大模块与所述天线模块连接，所述滤波放大模块包括至少一个滤波放大支路，每个所述滤波放大支路用于对所述极化信号进行滤波后放大。",
+      "engineering_terms": [
+        "滤波放大单元",
+        "filter amplification module",
+        "filter amplifier branch",
+        "RF filter amplifier",
+        "低噪声放大滤波电路"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/fb/95/53/549e018671dd4e/CN223093769U.pdf"
+}

@@ -1,0 +1,64 @@
+{
+  "patent": {
+    "publication_no": "CN222350954U",
+    "title": "压缩机的排气阀组件、压缩机的排气组件、压缩机和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "尹诗华",
+      "高珊玲",
+      "韦家烯",
+      "雷达",
+      "杨敏涛"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222350954U/zh",
+    "fetched_at": "2026-05-02T18:09:15+08:00"
+  },
+  "claim_1_text": "1.一种压缩机的排气阀组件，包括排气阀片(11)，所述排气阀片(11)包括第一阀定位部(111)和连接所述第一阀定位部(111)的第一阀片(112)，所述第一阀定位部(111)用于连接所述压缩机的第一涡盘(2)，所述第一阀片(112)用于封闭和打开第一涡盘(2)的第一排气孔(21)，其特征在于，所述第一阀片(112)相对于所述第一阀定位部(111)向下倾斜第一预定角度α。",
+  "claim_1_text_html": "1.一种压缩机的排气阀组件，包括排气阀片(11)，所述排气阀片(11)包括第一阀定位部(111)和连接所述第一阀定位部(111)的第一阀片(112)，所述第一阀定位部(111)用于连接所述压缩机的第一涡盘(2)，所述第一阀片(112)用于封闭和打开第一涡盘(2)的第一排气孔(21)，其特征在于，所述第一阀片(112)相对于所述第一阀定位部(111)向下倾斜第一预定角度α。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压缩机的排气阀组件，包括排气阀片(11)，",
+      "engineering_terms": [
+        "排气阀组件",
+        "压缩机阀组件",
+        "discharge valve assembly",
+        "排气阀片"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述排气阀片(11)包括第一阀定位部(111)和连接所述第一阀定位部(111)的第一阀片(112)，所述第一阀定位部(111)用于连接所述压缩机的第一涡盘(2)，所述第一阀片(112)用于封闭和打开第一涡盘(2)的第一排气孔(21)，",
+      "engineering_terms": [
+        "阀定位部",
+        "阀片",
+        "涡盘",
+        "排气孔",
+        "valve reed",
+        "scroll plate"
+      ],
+      "is_essential": true,
+      "notes": "排气阀片的内部组成、连接关系及第一阀定位部和第一阀片的功能限定合并为同一原子技术特征。"
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述第一阀片(112)相对于所述第一阀定位部(111)向下倾斜第一预定角度α。",
+      "engineering_terms": [
+        "倾斜阀片",
+        "预倾角",
+        "下倾角",
+        "inclined valve reed",
+        "predetermined angle"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/f7/45/00/cf97d37b85aa91/CN222350954U.pdf"
+}

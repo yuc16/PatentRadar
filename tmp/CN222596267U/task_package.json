@@ -1,0 +1,112 @@
+{
+  "patent": {
+    "publication_no": "CN222596267U",
+    "title": "一种压缩机和车辆的制冷系统",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "邝彦宁",
+      "任光远",
+      "吴业艺",
+      "杨应葵",
+      "曹黎明"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222596267U/zh",
+    "fetched_at": "2026-05-02T20:27:05+08:00"
+  },
+  "claim_1_text": "1.一种压缩机，其特征在于，包括：\n壳体，所述壳体内形成有相互分隔的工作腔和电控腔；\n曲轴，所述曲轴位于所述工作腔内，其第一端延伸至所述电控腔内；\n转子和定子，所述转子和所述定子均位于所述工作腔内，且所述定子固定于所述壳体上，所述转子装配于所述曲轴上，并与所述定子的位置相匹配，以带动所述曲轴转动；\n磁环，所述磁环位于所述电控腔内，并装配于所述曲轴的第一端上，能够随所述曲轴转动；\n霍尔芯片，所述霍尔芯片位于所述电控腔内，并与所述磁环的位置相对应；所述霍尔芯片被配置为能够采集所述磁环转动时的磁场变化，以确定所述转子的位置信息，并将所述位置信息转化为电信号；\n控制电路，所述定子与所述控制电路连接，所述控制电路被配置为能够接收所述电信号，以控制所述定子的输出电流。",
+  "claim_1_text_html": "1.一种压缩机，其特征在于，包括：\n壳体，所述壳体内形成有相互分隔的工作腔和电控腔；\n曲轴，所述曲轴位于所述工作腔内，其第一端延伸至所述电控腔内；\n转子和定子，所述转子和所述定子均位于所述工作腔内，且所述定子固定于所述壳体上，所述转子装配于所述曲轴上，并与所述定子的位置相匹配，以带动所述曲轴转动；\n磁环，所述磁环位于所述电控腔内，并装配于所述曲轴的第一端上，能够随所述曲轴转动；\n霍尔芯片，所述霍尔芯片位于所述电控腔内，并与所述磁环的位置相对应；所述霍尔芯片被配置为能够采集所述磁环转动时的磁场变化，以确定所述转子的位置信息，并将所述位置信息转化为电信号；\n控制电路，所述定子与所述控制电路连接，所述控制电路被配置为能够接收所述电信号，以控制所述定子的输出电流。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压缩机，其特征在于，包括：",
+      "engineering_terms": [
+        "压缩机",
+        "compressor",
+        "车用压缩机"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "壳体，所述壳体内形成有相互分隔的工作腔和电控腔；",
+      "engineering_terms": [
+        "壳体",
+        "机壳",
+        "housing",
+        "工作腔",
+        "电控腔"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "曲轴，所述曲轴位于所述工作腔内，其第一端延伸至所述电控腔内；",
+      "engineering_terms": [
+        "曲轴",
+        "crankshaft",
+        "转轴",
+        "驱动轴"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "转子和定子，所述转子和所述定子均位于所述工作腔内，且所述定子固定于所述壳体上，所述转子装配于所述曲轴上，并与所述定子的位置相匹配，以带动所述曲轴转动；",
+      "engineering_terms": [
+        "转子",
+        "定子",
+        "rotor",
+        "stator",
+        "电机组件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "磁环，所述磁环位于所述电控腔内，并装配于所述曲轴的第一端上，能够随所述曲轴转动；",
+      "engineering_terms": [
+        "磁环",
+        "magnetic ring",
+        "环形磁体",
+        "位置检测磁体"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "霍尔芯片，所述霍尔芯片位于所述电控腔内，并与所述磁环的位置相对应；所述霍尔芯片被配置为能够采集所述磁环转动时的磁场变化，以确定所述转子的位置信息，并将所述位置信息转化为电信号；",
+      "engineering_terms": [
+        "霍尔芯片",
+        "Hall chip",
+        "霍尔传感器",
+        "Hall sensor",
+        "位置传感器"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F7",
+      "feature_text": "控制电路，所述定子与所述控制电路连接，所述控制电路被配置为能够接收所述电信号，以控制所述定子的输出电流。",
+      "engineering_terms": [
+        "控制电路",
+        "control circuit",
+        "控制器",
+        "驱动电路",
+        "电机控制电路"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/b7/8b/19/70c13f02d5f1df/CN222596267U.pdf"
+}

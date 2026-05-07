@@ -1,0 +1,87 @@
+{
+  "patent": {
+    "publication_no": "CN223024078U",
+    "title": "保护电路、电气系统和车辆",
+    "assignees": [
+      "BYD Co Ltd",
+      "BYD Precision Manufacturing Co Ltd"
+    ],
+    "inventors": [
+      "罗随",
+      "徐嘉"
+    ],
+    "source_url": "https://patents.google.com/patent/CN223024078U/zh",
+    "fetched_at": "2026-05-02T20:52:55+08:00"
+  },
+  "claim_1_text": "1.一种保护电路，其特征在于，所述保护电路包括防反接保护模块、短路保护模块和快速关断控制模块，所述防反接保护模块的第一端用于与电源输入端连接，所述防反接保护模块的第二端用于与电源输出端连接，所述防反接保护模块的第三端与所述短路保护模块的第一端连接，所述短路保护模块的第二端用于与所述电源输出端连接，所述短路保护模块的第三端与所述快速关断控制模块的第一端连接，所述快速关断控制模块的第二端用于与所述电源输出端连接。",
+  "claim_1_text_html": "1.一种保护电路，其特征在于，所述保护电路包括防反接保护模块、短路保护模块和快速关断控制模块，所述防反接保护模块的第一端用于与电源输入端连接，所述防反接保护模块的第二端用于与电源输出端连接，所述防反接保护模块的第三端与所述短路保护模块的第一端连接，所述短路保护模块的第二端用于与所述电源输出端连接，所述短路保护模块的第三端与所述快速关断控制模块的第一端连接，所述快速关断控制模块的第二端用于与所述电源输出端连接。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种保护电路，其特征在于，",
+      "engineering_terms": [
+        "保护电路",
+        "protection circuit",
+        "电气保护回路"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述保护电路包括防反接保护模块、短路保护模块和快速关断控制模块，",
+      "engineering_terms": [
+        "防反接保护模块",
+        "短路保护模块",
+        "快速关断控制模块",
+        "reverse polarity protection",
+        "short circuit protection",
+        "rapid shutdown control"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述防反接保护模块的第一端用于与电源输入端连接，所述防反接保护模块的第二端用于与电源输出端连接，所述防反接保护模块的第三端与所述短路保护模块的第一端连接，",
+      "engineering_terms": [
+        "防反接保护",
+        "反接保护",
+        "reverse connection protection",
+        "reverse polarity protection",
+        "输入输出端连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述短路保护模块的第二端用于与所述电源输出端连接，所述短路保护模块的第三端与所述快速关断控制模块的第一端连接，",
+      "engineering_terms": [
+        "短路保护",
+        "过流保护",
+        "short circuit protection",
+        "overcurrent protection",
+        "模块级联连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "所述快速关断控制模块的第二端用于与所述电源输出端连接。",
+      "engineering_terms": [
+        "快速关断控制",
+        "快速断电控制",
+        "rapid shutdown control",
+        "quick turn-off control",
+        "电源输出端连接"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/b5/61/2a/62333b2e5bb0ea/CN223024078U.pdf"
+}

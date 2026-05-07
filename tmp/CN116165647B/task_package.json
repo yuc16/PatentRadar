@@ -1,0 +1,72 @@
+{
+  "patent": {
+    "publication_no": "CN116165647B",
+    "title": "车辆雷达系统及基于其的测距方法、装置、车辆及介质",
+    "assignees": [
+      "BYD Co Ltd",
+      "BYD Auto Co Ltd"
+    ],
+    "inventors": [
+      "殷永超"
+    ],
+    "source_url": "https://patents.google.com/patent/CN116165647B/zh",
+    "fetched_at": "2026-05-02T17:52:48+08:00"
+  },
+  "claim_1_text": "1.一种基于车辆雷达系统的测距方法，其特征在于，所述方法包括：\n确定目标位置的车载雷达的数量；\n在所述目标位置的车载雷达的数量小于预设值时，控制所述目标位置的车载雷达全部进行收发工作，并采用固定窗口阈值的聚类算法确定所述车载雷达与障碍物之间的距离，以及将所述车载雷达与障碍物之间的距离作为车辆与所述障碍物之间的距离；\n在所述目标位置的车载雷达的数量大于等于预设值时，控制所述目标位置的车载雷达中的任意一个进行发送工作、且全部进行接收工作，并采用固定窗口阈值的聚类算法确定所述车载雷达与障碍物之间的距离，以及根据所述车载雷达与障碍物之间的距离采用三角定位算法获得所述车辆与所述障碍物之间的距离。",
+  "claim_1_text_html": "1.一种基于车辆雷达系统的测距方法，其特征在于，所述方法包括：\n确定目标位置的车载雷达的数量；\n在所述目标位置的车载雷达的数量小于预设值时，控制所述目标位置的车载雷达全部进行收发工作，并采用固定窗口阈值的聚类算法确定所述车载雷达与障碍物之间的距离，以及将所述车载雷达与障碍物之间的距离作为车辆与所述障碍物之间的距离；\n在所述目标位置的车载雷达的数量大于等于预设值时，控制所述目标位置的车载雷达中的任意一个进行发送工作、且全部进行接收工作，并采用固定窗口阈值的聚类算法确定所述车载雷达与障碍物之间的距离，以及根据所述车载雷达与障碍物之间的距离采用三角定位算法获得所述车辆与所述障碍物之间的距离。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种基于车辆雷达系统的测距方法，其特征在于，所述方法包括：",
+      "engineering_terms": [
+        "车辆雷达测距方法",
+        "车载雷达测距",
+        "automotive radar ranging method",
+        "vehicle radar system"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "确定目标位置的车载雷达的数量；",
+      "engineering_terms": [
+        "雷达数量确定",
+        "目标位置雷达计数",
+        "radar number determination",
+        "sensor count"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "在所述目标位置的车载雷达的数量小于预设值时，控制所述目标位置的车载雷达全部进行收发工作，并采用固定窗口阈值的聚类算法确定所述车载雷达与障碍物之间的距离，以及将所述车载雷达与障碍物之间的距离作为车辆与所述障碍物之间的距离；",
+      "engineering_terms": [
+        "雷达全收发模式",
+        "固定窗口阈值聚类",
+        "障碍物测距",
+        "full transmit-receive mode",
+        "fixed window threshold clustering"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "在所述目标位置的车载雷达的数量大于等于预设值时，控制所述目标位置的车载雷达中的任意一个进行发送工作、且全部进行接收工作，并采用固定窗口阈值的聚类算法确定所述车载雷达与障碍物之间的距离，以及根据所述车载雷达与障碍物之间的距离采用三角定位算法获得所述车辆与所述障碍物之间的距离。",
+      "engineering_terms": [
+        "单发多收模式",
+        "雷达三角定位",
+        "固定窗口阈值聚类",
+        "single-transmit multiple-receive",
+        "triangulation algorithm"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/75/a8/ab/3783dde1e59070/CN116165647B.pdf"
+}

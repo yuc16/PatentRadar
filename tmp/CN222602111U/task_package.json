@@ -1,0 +1,73 @@
+{
+  "patent": {
+    "publication_no": "CN222602111U",
+    "title": "一种无线充电装置及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "陈晓宏",
+      "李万路",
+      "朱忠仁",
+      "杨超",
+      "陈培坚"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222602111U/zh",
+    "fetched_at": "2026-05-02T20:30:19+08:00"
+  },
+  "claim_1_text": "1.一种无线充电装置，其特征在于，所述装置包括：\n无线充电模块，所述无线充电模块用于为电子设备进行无线充电；\n屏蔽线圈，所述屏蔽线圈环绕所述无线充电模块设置；\n所述无线充电装置还包括电容器，所述电容器与所述屏蔽线圈并联，并联有所述电容器的所述屏蔽线圈的总阻抗呈现感性。",
+  "claim_1_text_html": "1.一种无线充电装置，其特征在于，所述装置包括：\n无线充电模块，所述无线充电模块用于为电子设备进行无线充电；\n屏蔽线圈，所述屏蔽线圈环绕所述无线充电模块设置；\n所述无线充电装置还包括电容器，所述电容器与所述屏蔽线圈并联，并联有所述电容器的所述屏蔽线圈的总阻抗呈现感性。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种无线充电装置，其特征在于，所述装置包括：",
+      "engineering_terms": [
+        "无线充电设备",
+        "wireless charging device",
+        "无线充电器"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "无线充电模块，所述无线充电模块用于为电子设备进行无线充电；",
+      "engineering_terms": [
+        "无线充电单元",
+        "wireless charging module",
+        "充电发射模块",
+        "无线供电模块"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "屏蔽线圈，所述屏蔽线圈环绕所述无线充电模块设置；",
+      "engineering_terms": [
+        "shielding coil",
+        "屏蔽绕组",
+        "环绕线圈",
+        "电磁屏蔽线圈"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "所述无线充电装置还包括电容器，所述电容器与所述屏蔽线圈并联，并联有所述电容器的所述屏蔽线圈的总阻抗呈现感性。",
+      "engineering_terms": [
+        "电容",
+        "capacitor",
+        "并联电容",
+        "LC并联支路",
+        "感性阻抗"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/58/70/3c/d8c579eb6e07f9/CN222602111U.pdf"
+}

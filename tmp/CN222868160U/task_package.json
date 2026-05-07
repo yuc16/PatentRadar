@@ -1,0 +1,49 @@
+{
+  "patent": {
+    "publication_no": "CN222868160U",
+    "title": "连接器插头的限位件、连接器插头、连接器以及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "曹阳",
+      "周亮亮"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222868160U/zh",
+    "fetched_at": "2026-05-02T20:41:38+08:00"
+  },
+  "claim_1_text": "1.一种连接器插头的限位件，其特征在于，用于设置在所述连接器插头的密封圈和端盖之间，包括本体，所述本体包括用于供线缆穿过的限位腔，所述限位腔的至少部分内侧壁用于与所述线缆贴合。",
+  "claim_1_text_html": "1.一种连接器插头的限位件，其特征在于，用于设置在所述连接器插头的密封圈和端盖之间，包括本体，所述本体包括用于供线缆穿过的限位腔，所述限位腔的至少部分内侧壁用于与所述线缆贴合。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种连接器插头的限位件，其特征在于，用于设置在所述连接器插头的密封圈和端盖之间，",
+      "engineering_terms": [
+        "限位件",
+        "止挡件",
+        "定位件",
+        "retainer",
+        "limiting member"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "包括本体，所述本体包括用于供线缆穿过的限位腔，所述限位腔的至少部分内侧壁用于与所述线缆贴合。",
+      "engineering_terms": [
+        "本体",
+        "限位腔",
+        "穿线孔",
+        "线缆通道",
+        "cable passage",
+        "wire retaining cavity"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/98/85/0d/de0c51e17c187e/CN222868160U.pdf"
+}

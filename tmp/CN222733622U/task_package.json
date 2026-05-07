@@ -1,0 +1,70 @@
+{
+  "patent": {
+    "publication_no": "CN222733622U",
+    "title": "压力感应组件、传感器、热管理系统和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "万理平"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222733622U/zh",
+    "fetched_at": "2026-05-02T20:34:48+08:00"
+  },
+  "claim_1_text": "1.一种压力感应组件，用于传感器，其特征在于，包括：\n支撑件(20)，所述支撑件(20)设置有第一插接部(21)，所述第一插接部(21)具有第一插接面（210）；\n连接器(30)，所述连接器(30)设置有第二插接部(31)，所述第二插接部(31)具有第二插接面（310），所述第一插接面（210）与所述第二插接面（310）能够抵接以使所述第二插接部(31)与所述第一插接部(21)插接配合；\n在传感器（1）完成装配后，在插接方向上，所述第一插接面（210）和所述第二插接面（310）间隙配合。",
+  "claim_1_text_html": "1.一种压力感应组件，用于传感器，其特征在于，包括：\n支撑件(20)，所述支撑件(20)设置有第一插接部(21)，所述第一插接部(21)具有第一插接面（210）；\n连接器(30)，所述连接器(30)设置有第二插接部(31)，所述第二插接部(31)具有第二插接面（310），所述第一插接面（210）与所述第二插接面（310）能够抵接以使所述第二插接部(31)与所述第一插接部(21)插接配合；\n在传感器（1）完成装配后，在插接方向上，所述第一插接面（210）和所述第二插接面（310）间隙配合。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种压力感应组件，用于传感器，其特征在于，包括：",
+      "engineering_terms": [
+        "压力传感组件",
+        "pressure sensing assembly",
+        "传感器组件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "支撑件(20)，所述支撑件(20)设置有第一插接部(21)，所述第一插接部(21)具有第一插接面（210）；",
+      "engineering_terms": [
+        "支架",
+        "支撑座",
+        "support member",
+        "第一插接结构",
+        "插接面"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "连接器(30)，所述连接器(30)设置有第二插接部(31)，所述第二插接部(31)具有第二插接面（310），所述第一插接面（210）与所述第二插接面（310）能够抵接以使所述第二插接部(31)与所述第一插接部(21)插接配合；",
+      "engineering_terms": [
+        "connector",
+        "接插件",
+        "连接插头",
+        "第二插接结构",
+        "插接配合"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "在传感器（1）完成装配后，在插接方向上，所述第一插接面（210）和所述第二插接面（310）间隙配合。",
+      "engineering_terms": [
+        "装配间隙",
+        "clearance fit",
+        "间隙配合",
+        "插接方向间隙"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/39/1a/1a/8388af581faf8b/CN222733622U.pdf"
+}

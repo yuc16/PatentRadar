@@ -1,0 +1,52 @@
+{
+  "patent": {
+    "publication_no": "CN222599968U",
+    "title": "半导体激光器光束准直装置",
+    "assignees": [
+      "Yangzhou Byd Semiconductor Co ltd"
+    ],
+    "inventors": [
+      "蔡保弟",
+      "李炳琛",
+      "王伟",
+      "郑春磊",
+      "刘源"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222599968U/zh",
+    "fetched_at": "2026-05-02T20:28:54+08:00"
+  },
+  "claim_1_text": "1.一种半导体激光器光束准直装置，其特征在于，用于对半导体激光器发射的光束进行准直，所述装置包括：\n柱面透镜和复合透镜，所述柱面透镜和所述复合透镜均设置于所述半导体激光器的光束传播方向上。",
+  "claim_1_text_html": "1.一种半导体激光器光束准直装置，其特征在于，用于对半导体激光器发射的光束进行准直，所述装置包括：\n柱面透镜和复合透镜，所述柱面透镜和所述复合透镜均设置于所述半导体激光器的光束传播方向上。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种半导体激光器光束准直装置，其特征在于，用于对半导体激光器发射的光束进行准直，所述装置包括：",
+      "engineering_terms": [
+        "半导体激光器准直装置",
+        "激光准直系统",
+        "光束准直器",
+        "beam collimation device",
+        "semiconductor laser collimator"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "柱面透镜和复合透镜，所述柱面透镜和所述复合透镜均设置于所述半导体激光器的光束传播方向上。",
+      "engineering_terms": [
+        "柱面镜",
+        "复合镜组",
+        "准直透镜组",
+        "cylindrical lens",
+        "compound lens",
+        "optical path lens assembly"
+      ],
+      "is_essential": true,
+      "notes": "柱面透镜和复合透镜的设置位置为共同限定，合并为一条特征。"
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/09/db/89/2b015255237770/CN222599968U.pdf"
+}

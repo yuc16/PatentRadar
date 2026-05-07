@@ -1,0 +1,51 @@
+{
+  "patent": {
+    "publication_no": "CN222356041U",
+    "title": "限位机构、无线充电装置和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "宋江涌",
+      "顾建军",
+      "冯定",
+      "于海苗",
+      "刘帅帅"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222356041U/zh",
+    "fetched_at": "2026-05-02T20:21:16+08:00"
+  },
+  "claim_1_text": "1.一种限位机构，用于连接至无线充电模块，所述无线充电模块用于为电子设备充电，其特征在于，所述限位机构包括限位模块，所述限位模块的一端用于设于所述无线充电模块的一侧，另一端用于可拆卸连接于所述无线充电模块的另一侧，以将所述电子设备抵接限位于所述无线充电模块。",
+  "claim_1_text_html": "1.一种限位机构，用于连接至无线充电模块，所述无线充电模块用于为电子设备充电，其特征在于，所述限位机构包括限位模块，所述限位模块的一端用于设于所述无线充电模块的一侧，另一端用于可拆卸连接于所述无线充电模块的另一侧，以将所述电子设备抵接限位于所述无线充电模块。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种限位机构，用于连接至无线充电模块，所述无线充电模块用于为电子设备充电，其特征在于，",
+      "engineering_terms": [
+        "限位结构",
+        "定位机构",
+        "retaining mechanism",
+        "positioning mechanism"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "所述限位机构包括限位模块，所述限位模块的一端用于设于所述无线充电模块的一侧，另一端用于可拆卸连接于所述无线充电模块的另一侧，以将所述电子设备抵接限位于所述无线充电模块。",
+      "engineering_terms": [
+        "限位件",
+        "定位模块",
+        "可拆卸连接",
+        "抵接限位",
+        "retaining member",
+        "detachable connection"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/af/9e/99/63e853fa963a42/CN222356041U.pdf"
+}

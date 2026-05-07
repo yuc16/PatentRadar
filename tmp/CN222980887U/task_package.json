@@ -1,0 +1,62 @@
+{
+  "patent": {
+    "publication_no": "CN222980887U",
+    "title": "护套结构、连接器、控制器及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "马建贺"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222980887U/zh",
+    "fetched_at": "2026-05-02T20:45:45+08:00"
+  },
+  "claim_1_text": "1.一种护套结构，其特征在于，包括：\n连接件，具有第一密封面，所述连接件在所述第一密封面上形成有内凹的限位槽；\n密封件，环设于所述连接件，所述密封件具有朝向所述连接件的第二密封面，所述第二密封面贴合于所述第一密封面，所述密封件在所述第二密封面上形成有外凸的限位部，所述限位部卡接于所述限位槽内，且所述限位部的外表面贴合于所述限位槽的槽壁面。",
+  "claim_1_text_html": "1.一种护套结构，其特征在于，包括：\n连接件，具有第一密封面，所述连接件在所述第一密封面上形成有内凹的限位槽；\n密封件，环设于所述连接件，所述密封件具有朝向所述连接件的第二密封面，所述第二密封面贴合于所述第一密封面，所述密封件在所述第二密封面上形成有外凸的限位部，所述限位部卡接于所述限位槽内，且所述限位部的外表面贴合于所述限位槽的槽壁面。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种护套结构，其特征在于，包括：",
+      "engineering_terms": [
+        "护套",
+        "护套组件",
+        "保护套结构",
+        "sheath structure",
+        "protective sleeve"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "连接件，具有第一密封面，所述连接件在所述第一密封面上形成有内凹的限位槽；",
+      "engineering_terms": [
+        "连接件",
+        "连接部件",
+        "接头件",
+        "限位槽",
+        "定位槽",
+        "connector component"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "密封件，环设于所述连接件，所述密封件具有朝向所述连接件的第二密封面，所述第二密封面贴合于所述第一密封面，所述密封件在所述第二密封面上形成有外凸的限位部，所述限位部卡接于所述限位槽内，且所述限位部的外表面贴合于所述限位槽的槽壁面。",
+      "engineering_terms": [
+        "密封件",
+        "密封圈",
+        "环形密封件",
+        "限位凸起",
+        "卡接部",
+        "seal member"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/da/b1/39/9f1b99a251186c/CN222980887U.pdf"
+}

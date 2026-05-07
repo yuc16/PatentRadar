@@ -1,0 +1,88 @@
+{
+  "patent": {
+    "publication_no": "CN222987984U",
+    "title": "显示屏组件及车辆",
+    "assignees": [
+      "Shenzhen Byd Automobile Industry Co ltd",
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "李雨璋",
+      "张晓茹",
+      "白胜",
+      "万理平",
+      "杜菊华"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222987984U/zh",
+    "fetched_at": "2026-05-02T20:46:51+08:00"
+  },
+  "claim_1_text": "1.一种显示屏组件，其特征在于，包括：\n底座；\n显示器主体，具有转动轴，所述转动轴转动安装于所述底座；\n传动组件，包括齿轮和与所述齿轮相啮合的齿条，所述齿轮套装于所述转动轴且与所述转动轴同步转动；\n直线驱动组件，安装于所述底座，所述直线驱动组件用以驱动所述齿条沿其长度方向活动。",
+  "claim_1_text_html": "1.一种显示屏组件，其特征在于，包括：\n底座；\n显示器主体，具有转动轴，所述转动轴转动安装于所述底座；\n传动组件，包括齿轮和与所述齿轮相啮合的齿条，所述齿轮套装于所述转动轴且与所述转动轴同步转动；\n直线驱动组件，安装于所述底座，所述直线驱动组件用以驱动所述齿条沿其长度方向活动。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种显示屏组件，其特征在于，包括：",
+      "engineering_terms": [
+        "显示屏总成",
+        "display assembly",
+        "屏幕组件"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "底座；",
+      "engineering_terms": [
+        "基座",
+        "安装座",
+        "支座",
+        "base"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "显示器主体，具有转动轴，所述转动轴转动安装于所述底座；",
+      "engineering_terms": [
+        "显示屏主体",
+        "显示模块",
+        "display body",
+        "旋转轴",
+        "转轴"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "传动组件，包括齿轮和与所述齿轮相啮合的齿条，所述齿轮套装于所述转动轴且与所述转动轴同步转动；",
+      "engineering_terms": [
+        "传动机构",
+        "齿轮齿条机构",
+        "rack and pinion",
+        "gear-rack transmission",
+        "同步转动"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "直线驱动组件，安装于所述底座，所述直线驱动组件用以驱动所述齿条沿其长度方向活动。",
+      "engineering_terms": [
+        "线性驱动机构",
+        "直线执行器",
+        "linear actuator",
+        "linear drive assembly",
+        "齿条驱动机构"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/58/5c/e5/3a0a32f104ff94/CN222987984U.pdf"
+}

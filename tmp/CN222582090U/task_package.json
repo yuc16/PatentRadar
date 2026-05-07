@@ -1,0 +1,62 @@
+{
+  "patent": {
+    "publication_no": "CN222582090U",
+    "title": "出风结构、充电装置及车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "王卓",
+      "杜方周",
+      "于海苗",
+      "刘帅帅",
+      "徐猛"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222582090U/zh",
+    "fetched_at": "2026-05-02T20:25:23+08:00"
+  },
+  "claim_1_text": "1.一种出风结构，其特征在于，包括面板支架(3)，所述面板支架(3)上界定有至少两个沿第一方向间隔设置的充电区域，所述面板支架(3)上位于相邻两个所述充电区域之间的位置设置有出风口(303)，所述出风口(303)配置有用于将风导向两侧所述充电区域的导风结构(2)。",
+  "claim_1_text_html": "1.一种出风结构，其特征在于，包括面板支架(3)，所述面板支架(3)上界定有至少两个沿第一方向间隔设置的充电区域，所述面板支架(3)上位于相邻两个所述充电区域之间的位置设置有出风口(303)，所述出风口(303)配置有用于将风导向两侧所述充电区域的导风结构(2)。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种出风结构，其特征在于，包括",
+      "engineering_terms": [
+        "air outlet structure",
+        "出风组件",
+        "通风结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "面板支架(3)，所述面板支架(3)上界定有至少两个沿第一方向间隔设置的充电区域，",
+      "engineering_terms": [
+        "panel bracket",
+        "面板骨架",
+        "支撑面板",
+        "charging area",
+        "充电区"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "所述面板支架(3)上位于相邻两个所述充电区域之间的位置设置有出风口(303)，所述出风口(303)配置有用于将风导向两侧所述充电区域的导风结构(2)。",
+      "engineering_terms": [
+        "air outlet",
+        "出风口",
+        "air guide structure",
+        "导风件",
+        "风道导流结构"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/60/94/3d/3856655c63edbd/CN222582090U.pdf"
+}

@@ -1,0 +1,97 @@
+{
+  "patent": {
+    "publication_no": "CN222347110U",
+    "title": "方向盘、用于方向盘的检测装置和车辆",
+    "assignees": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "张晓亮",
+      "韩鹏武"
+    ],
+    "source_url": "https://patents.google.com/patent/CN222347110U/zh",
+    "fetched_at": "2026-05-02T18:07:33+08:00"
+  },
+  "claim_1_text": "1.一种方向盘，其特征在于，所述方向盘(100)包括：\n方向盘本体(1)；\n第一感应层(2)，设置于所述方向盘本体(1)的径向外侧，用于感应外部电场的变化，生成检测电容值；\n第二感应层(3)，设置于所述方向盘本体(1)与所述第一感应层(2)之间，用于生成参考电容值；\n第一屏蔽层(4)，设置于所述方向盘本体(1)与所述第二感应层(3)之间，用于屏蔽外部电场对所述第二感应层(3)的作用；以及\n第二屏蔽层(5)，设置于所述第一感应层(2)与所述第二感应层(3)之间，用于屏蔽外部电场对所述第二感应层(3)的作用。",
+  "claim_1_text_html": "1.一种方向盘，其特征在于，所述方向盘(100)包括：\n方向盘本体(1)；\n第一感应层(2)，设置于所述方向盘本体(1)的径向外侧，用于感应外部电场的变化，生成检测电容值；\n第二感应层(3)，设置于所述方向盘本体(1)与所述第一感应层(2)之间，用于生成参考电容值；\n第一屏蔽层(4)，设置于所述方向盘本体(1)与所述第二感应层(3)之间，用于屏蔽外部电场对所述第二感应层(3)的作用；以及\n第二屏蔽层(5)，设置于所述第一感应层(2)与所述第二感应层(3)之间，用于屏蔽外部电场对所述第二感应层(3)的作用。",
+  "claim_1_source": "html",
+  "claim_features": [
+    {
+      "feature_id": "F1",
+      "feature_text": "1.一种方向盘，其特征在于，所述方向盘(100)包括：",
+      "engineering_terms": [
+        "steering wheel",
+        "方向盘总成",
+        "汽车方向盘"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F2",
+      "feature_text": "方向盘本体(1)；",
+      "engineering_terms": [
+        "steering wheel body",
+        "方向盘骨架",
+        "方向盘基体",
+        "wheel rim body"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F3",
+      "feature_text": "第一感应层(2)，设置于所述方向盘本体(1)的径向外侧，用于感应外部电场的变化，生成检测电容值；",
+      "engineering_terms": [
+        "first sensing layer",
+        "电容感应层",
+        "检测电极层",
+        "capacitive sensing layer",
+        "感应电极"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F4",
+      "feature_text": "第二感应层(3)，设置于所述方向盘本体(1)与所述第一感应层(2)之间，用于生成参考电容值；",
+      "engineering_terms": [
+        "second sensing layer",
+        "参考感应层",
+        "参考电极层",
+        "reference capacitive layer",
+        "基准电容电极"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F5",
+      "feature_text": "第一屏蔽层(4)，设置于所述方向盘本体(1)与所述第二感应层(3)之间，用于屏蔽外部电场对所述第二感应层(3)的作用；以及",
+      "engineering_terms": [
+        "first shielding layer",
+        "屏蔽电极层",
+        "电场屏蔽层",
+        "shield layer",
+        "EM shielding layer"
+      ],
+      "is_essential": true,
+      "notes": null
+    },
+    {
+      "feature_id": "F6",
+      "feature_text": "第二屏蔽层(5)，设置于所述第一感应层(2)与所述第二感应层(3)之间，用于屏蔽外部电场对所述第二感应层(3)的作用。",
+      "engineering_terms": [
+        "second shielding layer",
+        "中间屏蔽层",
+        "屏蔽电极层",
+        "electric field shield",
+        "shield layer"
+      ],
+      "is_essential": true,
+      "notes": null
+    }
+  ],
+  "decomposer_model": "codex:gpt-5.5",
+  "pdf_url": "https://patentimages.storage.googleapis.com/6a/7a/14/5ef91b11cbe474/CN222347110U.pdf"
+}
