@@ -191,9 +191,35 @@ uv run patentradar decompose $PUB \
   && uv run patentradar find-competitors-all $PUB \
   && uv run patentradar review $PUB \
   && uv run patentradar report $PUB
-# 最终报告：output/$PUB/final_report.md
-# 运行日志：output/$PUB/runs/<TS>_<cmd>.log（包括 stdout 全镜像）
+# 最终报告：output/$PUB/final_report.md（始终是最新一份）
+# 工作流归档：output/$PUB/runs/<YYYYMMDD_HHMMSS>/  （一次工作流一个目录，4 份 log + final_report.md 都在里面）
+#
+# "工作流"由 tmp/$PUB/.current_run_dir 持久化追踪：
+#   · 默认行为：4 个 CLI 命令依次跑，自动归并到同一目录
+#   · PATENTRADAR_NEW_RUN=1 cmd ...   强制新建一个工作流目录
+#   · rm tmp/$PUB/.current_run_dir   下次跑就自动新建
 ```
+
+**Web 仪表盘**（实时观察四个 Agent 的日志流）：
+
+```bash
+# 任意终端启动一次（独立常驻，不影响 CLI 跑专利）
+uv run patentradar web --port 8765
+# 浏览器打开 http://127.0.0.1:8765
+```
+
+工作方式：
+
+- **自动锁定到最新一次 run**——页面打开后调 `/api/current-run` 找到 `output/` 下**最新的 log 文件**，无需手动选专利。
+- 三状态机：
+  - **NO RUN**：项目里还没跑过任何专利，提示等待 CLI 启动。
+  - **LIVE**：当前 log 文件 mtime < 5 分钟（覆盖单次 LLM 调用最长等待），右上 LIVE 灯，SSE 增量推送，**不出回放按钮**。
+  - **DONE**：log 停止写入，出现 ▶ 回放 + 60×/200×/600× 倍速进度条，**仅回放本次 run**。
+- 4 列分别滚动 GPT-5.5 控制器 / DeepSeek / Kimi / GLM 的日志，按 `[agent]` tag 自动分流，URL 命中行可点击跳转。
+- 右上 📦 Artifacts 抽屉**仅显示本次 run 的产物**——后端按 `since=<run_started_at>` 过滤产物 mtime，旧 run 的遗留产物显示为"✗ 本次 run 未生成"，不会误导。
+- `find-competitors-all` / `review` 启动时会把 `task_package.json` 缓存中的拆解结果（GPT-5.5 给出的 F1~Fn + industry_tag）以 `DECOMPOSE CACHED` 行写进 log，方便追溯历史拆解。
+
+详细实现见 [`web/`](web/) 目录与 [`src/patentradar/web/`](src/patentradar/web/)。
 
 ---
 
@@ -224,13 +250,23 @@ PatentRadar/
 │       ├── agent_outputs.json       # 三 Agent 合并视图
 │       ├── candidate_pool.json      # 三 Agent Top 候选归并快照
 │       ├── review_supplement_cache.json # 最终复核补搜缓存，可续跑
-│       └── final_report.json        # 阶段 4
+│       ├── final_report.json        # 阶段 4
+│       └── .current_run_dir         # 持久化当前工作流的 RUN_DIR 路径（删了下次跑会自动新建）
 │
 ├── output/                          # 最终用户产物（git 忽略）
 │   └── <pub_no>/
-│       ├── final_report.md          # 阶段 5
-│       └── runs/
-│           └── <TS>_<cmd>.log       # 每次 CLI 运行日志（含 stdout 镜像）
+│       ├── final_report.md          # 始终是最新一次 report 的副本（被覆盖）
+│       └── runs/                    # 历次工作流归档
+│           └── <YYYYMMDD_HHMMSS>/   # 一次工作流一个目录（首个命令的开始时间）
+│               ├── decompose.log
+│               ├── find-competitors-all.log
+│               ├── review.log
+│               ├── report.log
+│               └── final_report.md  # 同次工作流跑出的 md 副本，跨工作流互不覆盖
+│
+├── web/                             # Web 仪表盘前端静态站点（暖色风 4 列）
+│   ├── index.html                   # 单页主入口；自动锁定到最新 run，三状态机 NO RUN/LIVE/DONE
+│   └── data/timeline.js             # /api/current-run + SSE 增量 + 产物按 since 过滤
 │
 └── src/patentradar/
     ├── cli.py                       # Typer CLI 入口
@@ -266,6 +302,10 @@ PatentRadar/
     │
     ├── report/
     │   └── markdown.py              # Markdown 报告渲染
+    │
+    ├── web/                         # Web 仪表盘后端（FastAPI + SSE）
+    │   ├── server.py                # /api/patents · /events · /stream · /artifacts
+    │   └── log_parser.py            # runs/*.log → {agent, kind, text, url, t}
     │
     └── prompts/                     # 所有长 prompt 单独维护
         ├── claim_decompose_*.md

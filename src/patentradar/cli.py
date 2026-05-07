@@ -31,6 +31,36 @@ app = typer.Typer(add_completion=False, help="PatentRadar v1 - 专利侵权线�
 console = Console()
 
 
+_RUN_MARKER_NAME = ".current_run_dir"
+
+
+def _get_or_create_run_dir(pub_no: str) -> Path:
+    """返回当前 pub_no 的"工作流目录"。
+
+    - 默认续用 ``tmp/<pub>/.current_run_dir`` 中记录的目录（一组 4 个命令
+      自然归档到同一个 ``runs/<YYYYMMDD_HHMMSS>/`` 下）。
+    - 设置环境变量 ``PATENTRADAR_NEW_RUN=1`` 强制新建。
+    - 若 marker 文件存在但目录已被删，自动新建。
+    """
+    cfg = config
+    marker = cfg.INTERMEDIATE_DIR / pub_no / _RUN_MARKER_NAME
+    force_new = os.getenv("PATENTRADAR_NEW_RUN", "").strip().lower() in {"1", "true", "yes"}
+    if not force_new and marker.exists():
+        try:
+            existing = Path(marker.read_text(encoding="utf-8").strip())
+            if existing.is_dir():
+                return existing
+        except OSError:
+            pass
+    # 新建
+    now_sh = datetime.now(_SH)
+    run_dir = cfg.OUTPUT_DIR / pub_no / "runs" / now_sh.strftime("%Y%m%d_%H%M%S")
+    run_dir.mkdir(parents=True, exist_ok=True)
+    marker.parent.mkdir(parents=True, exist_ok=True)
+    marker.write_text(str(run_dir), encoding="utf-8")
+    return run_dir
+
+
 def _setup_logging(
     verbosity: int = 1,
     *,
@@ -57,11 +87,8 @@ def _setup_logging(
     ]
     log_file: Path | None = None
     if pub_no and cmd:
-        from . import config as _cfg
-        run_dir = _cfg.OUTPUT_DIR / pub_no / "runs"
-        run_dir.mkdir(parents=True, exist_ok=True)
-        ts = datetime.now(_SH).strftime("%Y%m%d_%H%M%S")
-        log_file = run_dir / f"{ts}_{cmd}.log"
+        run_dir = _get_or_create_run_dir(pub_no)
+        log_file = run_dir / f"{cmd}.log"
         fh = logging.FileHandler(log_file, encoding="utf-8")
         fh.setLevel(level)
         fh.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s | %(message)s"))
@@ -118,6 +145,9 @@ def _mirror_console_to_file(log_file: Path) -> None:
     console.print = patched_print  # type: ignore[assignment]
 
 
+_decompose_logger = logging.getLogger("patentradar.decompose")
+
+
 def _decompose_one(
     pub_no: str,
     *,
@@ -126,8 +156,20 @@ def _decompose_one(
     log: bool = True,
 ) -> tuple[TaskPackage, list]:
     """单个专利：抓取 → 按需视觉 → GPT-5.5 拆解。"""
+    import time as _time
+
     reasoning_effort = reasoning_effort or config.DECOMPOSER_REASONING_EFFORT
+    model = (os.getenv("REVIEWER_MODEL") or "gpt-5.5").strip()
+
+    _decompose_logger.info("DECOMPOSE START patent=%s model=%s reasoning=%s", pub_no, model, reasoning_effort)
+    t0 = _time.monotonic()
     fr = fetch_patent(pub_no)
+    _decompose_logger.info(
+        "DECOMPOSE FETCHED title=%r assignees=%s claim_1_chars=%d formula_loss=%s pdf_url=%s",
+        fr.meta.title, fr.meta.assignees, len(fr.claim_1_text or ""),
+        fr.has_formula_loss, bool(fr.pdf_url),
+    )
+
     need_vision = force_vision or fr.has_formula_loss
     if log:
         console.print(
@@ -144,10 +186,15 @@ def _decompose_one(
         images = vision.render_claims_pages(pdf_bytes)
         if not images:
             raise RuntimeError(f"PDF 中未定位到权利要求书页: {pub_no}")
+        _decompose_logger.info("DECOMPOSE VISION pages=%d pdf_bytes=%d", len(images), len(pdf_bytes))
         if log:
             console.print(f"  渲染权要书页: {len(images)} 页")
 
-    model = (os.getenv("REVIEWER_MODEL") or "gpt-5.5").strip()
+    _decompose_logger.info(
+        "DECOMPOSE GPT-5.5 LLM START path=%s",
+        "vision_pdf" if need_vision else "html_text",
+    )
+    t_llm = _time.monotonic()
     claim_1_text, features, industry_tag = decompose(
         pub_no=fr.meta.publication_no,
         title=fr.meta.title,
@@ -156,6 +203,18 @@ def _decompose_one(
         model=model,
         reasoning_effort=reasoning_effort,
     )
+    elapsed_llm = round(_time.monotonic() - t_llm, 2)
+    _decompose_logger.info(
+        "DECOMPOSE GPT-5.5 LLM DONE elapsed=%.2fs n_features=%d industry_tag=%s claim_1_final_chars=%d",
+        elapsed_llm, len(features), industry_tag, len(claim_1_text),
+    )
+    for f in features:
+        _decompose_logger.info(
+            "  %s%s: %s",
+            f.feature_id,
+            "" if f.is_essential else " (non-essential)",
+            f.feature_text[:120] + ("…" if len(f.feature_text) > 120 else ""),
+        )
 
     pkg = TaskPackage(
         patent=fr.meta,
@@ -167,7 +226,32 @@ def _decompose_one(
         decomposer_model=f"codex:{model}",
         pdf_url=fr.pdf_url,
     )
+    _decompose_logger.info("DECOMPOSE DONE total_elapsed=%.2fs", _time.monotonic() - t0)
     return pkg, features
+
+
+def _log_cached_task_package(task: TaskPackage, source_path: Path) -> None:
+    """在 find-competitors-all / review 启动时调用：把缓存中拆解成果写进 log。
+
+    这样即使本次没有触发 GPT-5.5 拆解（因 ``task_package.json`` 已存在），
+    log 文件里也能完整看到上游的权要拆解结果，便于追溯。
+    """
+    _decompose_logger.info(
+        "DECOMPOSE CACHED  source=%s  decomposer_model=%s  industry_tag=%s",
+        source_path.name, task.decomposer_model, task.industry_tag,
+    )
+    _decompose_logger.info(
+        "DECOMPOSE CACHED  patent=%s title=%r assignees=%s claim_1_source=%s n_features=%d",
+        task.patent.publication_no, task.patent.title, task.patent.assignees,
+        task.claim_1_source, len(task.claim_features),
+    )
+    for f in task.claim_features:
+        _decompose_logger.info(
+            "  %s%s: %s",
+            f.feature_id,
+            "" if f.is_essential else " (non-essential)",
+            f.feature_text[:120] + ("…" if len(f.feature_text) > 120 else ""),
+        )
 
 
 @app.command("decompose")
@@ -327,6 +411,7 @@ def find_competitors_all_cmd(
         raise typer.Exit(2)
 
     task = TaskPackage.model_validate_json(task_path.read_text(encoding="utf-8"))
+    _log_cached_task_package(task, task_path)
     agent_names = [a.strip().lower() for a in agents.split(",") if a.strip()]
 
     console.rule(f"[cyan]三 Agent 并行 · patent {pub_no}[/]")
@@ -441,9 +526,14 @@ def report_cmd(
     ),
     verbose: int = typer.Option(1, "--verbose", "-v", count=True),
 ) -> None:
-    """阶段 5：把 final_report.json 渲染为 Markdown → output/<pub_no>/final_report.md。"""
+    """阶段 5：把 final_report.json 渲染为 Markdown。
+
+    写两份：
+    - ``output/<pub>/runs/<YYYYMMDD>/<HHMMSS>_report/final_report.md`` —— 历史副本，与本次 run 的 log 同目录，永不被覆盖
+    - ``output/<pub>/final_report.md`` —— 最新一份的快捷副本，方便引用
+    """
     pub_no = pub_no.strip().upper()
-    _setup_logging(verbose, pub_no=pub_no, cmd="report")
+    log_file = _setup_logging(verbose, pub_no=pub_no, cmd="report")
     inter = intermediate or (config.INTERMEDIATE_DIR / pub_no)
     target = out_dir or (config.OUTPUT_DIR / pub_no)
 
@@ -460,6 +550,7 @@ def report_cmd(
         raise typer.Exit(2)
 
     task = TaskPackage.model_validate_json(required["task_package.json"].read_text(encoding="utf-8"))
+    _log_cached_task_package(task, required["task_package.json"])
     final = FinalReport.model_validate_json(required["final_report.json"].read_text(encoding="utf-8"))
 
     agent_outputs: list[AgentOutput] = []
@@ -470,15 +561,23 @@ def report_cmd(
 
     md = render_markdown(task=task, agent_outputs=agent_outputs, final=final)
     target.mkdir(parents=True, exist_ok=True)
-    out_path = target / "final_report.md"
-    out_path.write_text(md, encoding="utf-8")
+    latest_path = target / "final_report.md"
+    latest_path.write_text(md, encoding="utf-8")
+
+    # 工作流副本：写到本次 RUN_DIR（与 4 份 log 同目录），跨 run 互不覆盖
+    archived_path: Path | None = None
+    if log_file is not None:
+        archived_path = log_file.parent / "final_report.md"
+        archived_path.write_text(md, encoding="utf-8")
 
     console.rule(f"Markdown 报告生成完成 — {pub_no}")
     console.print(f"  Top5: {len(final.top5)}")
     console.print(f"  excluded: {len(final.excluded)}")
     console.print(f"  needs_manual_review: {len(final.needs_manual_review)}")
     console.print(f"  报告字符数: {len(md):,}")
-    console.print(f"\n[green]✓ 已写入:[/] {out_path}")
+    console.print(f"\n[green]✓ 最新副本:[/] {latest_path}")
+    if archived_path is not None:
+        console.print(f"[green]✓ 历史副本:[/] {archived_path}")
 
 
 @app.command("review")
@@ -509,6 +608,7 @@ def review_cmd(
         console.print(f"[red]task_package.json 不存在: {task_path}[/]")
         raise typer.Exit(2)
     task = TaskPackage.model_validate_json(task_path.read_text(encoding="utf-8"))
+    _log_cached_task_package(task, task_path)
 
     # 收集所有 agent_*.json
     agent_outputs: list[AgentOutput] = []
@@ -599,6 +699,7 @@ def find_competitors_cmd(
         raise typer.Exit(2)
 
     task = TaskPackage.model_validate_json(task_path.read_text(encoding="utf-8"))
+    _log_cached_task_package(task, task_path)
     persp = get_perspective(agent)
     console.rule(f"Agent {persp.display_name}  ·  patent {pub_no}")
     console.print(
@@ -662,6 +763,23 @@ def _print_features(pub_no: str, claim_1_text: str, features: list) -> None:
             "✓" if f.is_essential else "",
         )
     console.print(table)
+
+
+@app.command("web")
+def web_cmd(
+    host: str = typer.Option("127.0.0.1", "--host", help="监听地址；要让局域网其它机器访问改 0.0.0.0"),
+    port: int = typer.Option(8765, "--port", help="监听端口"),
+    reload: bool = typer.Option(False, "--reload", help="开发模式：源码改动自动重载"),
+) -> None:
+    """启动 Web 仪表盘——实时展示四个 Agent 的运行日志。
+
+    后端常驻独立进程，CLI 跑 ``find-competitors-all`` / ``review`` 时，
+    Web 会通过 tail ``output/<pub>/runs/*.log`` 自动同步，不需要其他配置。
+    """
+    from .web.server import main as web_main
+    console.print(f"[cyan]→ Web 仪表盘:[/] http://{host}:{port}")
+    console.print(f"[dim]监听 output/ 下所有专利的 runs/*.log[/]")
+    web_main(host=host, port=port, reload=reload)
 
 
 def main() -> None:

@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>PatentRadar · 专利侵权线索挖掘系统</title>
+<meta name="viewport" content="width=1440" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+<style>
+  :root {
+    --bg:        #f5efe6;          /* warm beige */
+    --bg-1:      #faf6ee;
+    --bg-2:      #efe7d8;
+    --bg-3:      #e7dcc8;
+    --line:      #d9cdb6;
+    --line-2:    #c8b994;
+    --ink:       #1f1d18;
+    --ink-2:     #4a443a;
+    --ink-3:     #807766;
+    --rust:      #c15f3c;          /* claude orange */
+    --rust-2:    #a04825;
+    --moss:      #6b7d4a;
+    --gold:      #b78a2e;
+    --plum:      #7d4a6a;
+    --sky:       #4d6b87;
+    /* agent column accents */
+    --ctrl: #7d4a6a;
+    --ds:   #b78a2e;
+    --km:   #4d6b87;
+    --gl:   #6b7d4a;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; height: 100%;
+    background: var(--bg); color: var(--ink);
+    font-family: "Inter", "Noto Sans SC", system-ui, sans-serif;
+    font-size: 13px; line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+  .serif { font-family: "Source Serif 4", "Noto Serif SC", serif; }
+
+  /* ── Header ────────────────────────────────────────────── */
+  header.top {
+    display: flex; align-items: center; gap: 18px;
+    padding: 14px 22px;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-1);
+    height: 60px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark {
+    width: 22px; height: 22px;
+    background: var(--rust);
+    border-radius: 50%;
+    position: relative;
+  }
+  .brand-mark::after {
+    content: ""; position: absolute; inset: 5px;
+    border: 1.5px solid var(--bg-1); border-radius: 50%;
+  }
+  .brand-name { font-weight: 700; letter-spacing: 0.01em; font-size: 15px; white-space: nowrap; }
+  .brand-sub  { color: var(--ink-3); font-size: 11px; margin-top: 1px; white-space: nowrap; }
+
+  .patent-pill {
+    display: flex; align-items: center; gap: 14px;
+    padding: 6px 14px; border: 1px solid var(--line);
+    border-radius: 6px; background: var(--bg-2);
+  }
+  .patent-pill .label { color: var(--ink-3); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.1em; }
+  .patent-pill .id { font-family: "JetBrains Mono", monospace;
+    font-weight: 600; color: var(--ink); }
+  .patent-pill .nm { color: var(--ink-2); }
+
+  .top-actions { margin-left: auto; display: flex; gap: 10px; align-items: center; }
+
+  .btn {
+    background: var(--bg-1); border: 1px solid var(--line-2); color: var(--ink);
+    padding: 6px 14px; border-radius: 6px; font: inherit; font-size: 12px;
+    cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
+    transition: all .15s;
+    white-space: nowrap;
+  }
+  .btn:hover { background: var(--bg-2); border-color: var(--ink-3); }
+  .btn.primary {
+    background: var(--rust); color: #fff8ec; border-color: var(--rust);
+    font-weight: 600;
+  }
+  .btn.primary:hover { background: var(--rust-2); border-color: var(--rust-2); }
+  .btn .badge {
+    background: var(--bg-3); color: var(--ink-2);
+    padding: 0 6px; border-radius: 8px;
+    font-size: 10px; font-weight: 600; font-family: "JetBrains Mono", monospace;
+  }
+  .btn.primary .badge { background: rgba(255,248,236,.25); color: #fff8ec; }
+
+  /* time / progress meta */
+  .meta-readout {
+    display: flex; gap: 16px; align-items: center;
+    font-family: "JetBrains Mono", monospace; font-size: 11px;
+    color: var(--ink-3);
+  }
+  .live-dot {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--moss);
+    box-shadow: 0 0 0 0 rgba(107,125,74,.45);
+    animation: pulse 1.6s infinite ease-out;
+    display: inline-block; vertical-align: middle; margin-right: 5px;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0    rgba(107,125,74,.45); }
+    100% { box-shadow: 0 0 0 9px  rgba(107,125,74,0); }
+  }
+
+  /* ── Player bar ─────────────────────────────────────────── */
+  .player {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 22px; height: 42px;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-1);
+  }
+  .scrubber {
+    flex: 1; position: relative; height: 22px; cursor: pointer; user-select: none;
+  }
+  .scrubber-track { position: absolute; left: 0; right: 0; top: 10px; height: 2px;
+    background: var(--line-2); border-radius: 1px; }
+  .scrubber-fill  { position: absolute; left: 0; top: 10px; height: 2px;
+    background: var(--rust); border-radius: 1px; }
+  .scrubber-knob  { position: absolute; top: 6px; width: 10px; height: 10px;
+    background: var(--rust); border-radius: 50%; transform: translateX(-50%);
+    box-shadow: 0 0 0 4px rgba(193,95,60,.18); }
+  .scrubber-tick {
+    position: absolute; top: 5px; width: 2px; height: 12px;
+    background: var(--ink-2); opacity: .35;
+  }
+  .scrubber-tick:hover { opacity: 1; }
+  .speed-toggle { display: flex; gap: 0; }
+  .speed-toggle .btn {
+    border-radius: 0; padding: 4px 9px; font-size: 11px;
+    border-right: none;
+  }
+  .speed-toggle .btn:first-child { border-radius: 6px 0 0 6px; }
+  .speed-toggle .btn:last-child  { border-radius: 0 6px 6px 0; border-right: 1px solid var(--line-2); }
+  .speed-toggle .btn.active { background: var(--ink); color: var(--bg-1); border-color: var(--ink); }
+
+  /* ── Columns ───────────────────────────────────────────── */
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: calc(100vh - 60px - 42px);
+    gap: 0;
+  }
+  .col {
+    border-right: 1px solid var(--line);
+    display: flex; flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .col:last-child { border-right: none; }
+
+  .col-head {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-1);
+    position: relative;
+  }
+  .col-head::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  }
+  .col[data-k="controller"] .col-head::before { background: var(--ctrl); }
+  .col[data-k="deepseek"]   .col-head::before { background: var(--ds); }
+  .col[data-k="kimi"]       .col-head::before { background: var(--km); }
+  .col[data-k="glm"]        .col-head::before { background: var(--gl); }
+
+  .col-head .row1 { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: nowrap; min-width: 0; }
+  .col-head .row1 > div:first-child { min-width: 0; flex: 1; }
+  .col-head .name { font-weight: 700; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .col-head .role { font-size: 11px; color: var(--ink-3); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .col-head .model {
+    font-family: "JetBrains Mono", monospace; font-size: 9.5px;
+    color: var(--ink-2); padding: 2px 6px; border: 1px solid var(--line-2);
+    background: var(--bg-2); border-radius: 4px; white-space: nowrap; flex-shrink: 0;
+  }
+  .state-pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em;
+    padding: 2px 8px; border-radius: 10px;
+    background: var(--bg-2); border: 1px solid var(--line-2);
+    color: var(--ink-3);
+    margin-top: 8px;
+  }
+  .state-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-3); }
+  .col[data-state="running"] .state-pill { background: rgba(193,95,60,.1); border-color: var(--rust); color: var(--rust-2); }
+  .col[data-state="running"] .state-dot  { background: var(--rust); animation: blink 1s infinite alternate; }
+  .col[data-state="done"]    .state-pill { background: rgba(107,125,74,.12); border-color: var(--moss); color: var(--moss); }
+  .col[data-state="done"]    .state-dot  { background: var(--moss); }
+  @keyframes blink { from { opacity: .35; } to { opacity: 1; } }
+
+  /* phase chips */
+  .phases { display: flex; gap: 3px; margin-top: 10px; flex-wrap: wrap; }
+  .pchip {
+    font-family: "JetBrains Mono", monospace; font-size: 9px;
+    padding: 1px 6px; border: 1px solid var(--line-2);
+    color: var(--ink-3); border-radius: 3px; background: var(--bg-2);
+  }
+  .pchip[data-active="1"] { background: var(--rust); color: #fff8ec; border-color: var(--rust); }
+  .pchip[data-active="2"] { background: var(--moss); color: #fff8ec; border-color: var(--moss); }
+
+  /* ── Log stream ────────────────────────────────────────── */
+  .log {
+    flex: 1; min-height: 0; overflow-y: auto;
+    padding: 8px 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    background:
+      repeating-linear-gradient(
+        180deg,
+        transparent 0,
+        transparent 24px,
+        rgba(0,0,0,0.015) 24px,
+        rgba(0,0,0,0.015) 25px
+      );
+  }
+  .log::-webkit-scrollbar { width: 8px; }
+  .log::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 4px; }
+  .log::-webkit-scrollbar-track { background: transparent; }
+
+  .ev {
+    padding: 3px 14px 4px;
+    border-left: 2px solid transparent;
+    animation: ev-in .35s ease-out;
+    color: var(--ink-2);
+  }
+  @keyframes ev-in {
+    from { opacity: 0; transform: translateY(3px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .ev.fresh { border-left-color: var(--rust); background: rgba(193,95,60,0.05); }
+  .ev .row { white-space: pre-wrap; word-break: break-word; line-height: 1.55; font-size: 11.5px; }
+  .ev .url-row { margin-left: 6px; margin-top: 1px; }
+  .ev .u { color: var(--sky); text-decoration: none; border-bottom: 1px dotted var(--sky); font-size: 11px; word-break: break-all; }
+  .ev .u:hover { color: var(--rust-2); border-bottom-color: var(--rust-2); }
+  .ev[data-kind="hit"]  { color: var(--ink); }
+  .ev[data-kind="hit"]  .row:first-child::before { content: ""; }
+  .ev[data-kind="drop"] .row { color: var(--rust-2); }
+  .ev[data-kind="emit"] .row { color: var(--moss); font-weight: 600; }
+  .ev[data-kind="warn"] .row { color: var(--gold); }
+
+  /* idle placeholder */
+  .idle-note {
+    padding: 24px 18px; color: var(--ink-3);
+    font-size: 11px; line-height: 1.7;
+    font-family: "Inter", "Noto Sans SC", sans-serif;
+  }
+  .idle-note .h {
+    font-weight: 600; color: var(--ink-2); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+
+  /* col footer stats */
+  .col-foot {
+    border-top: 1px solid var(--line);
+    padding: 8px 14px; background: var(--bg-1);
+    display: flex; gap: 14px; font-size: 10px;
+    color: var(--ink-3); font-family: "JetBrains Mono", monospace;
+  }
+  .col-foot b { color: var(--ink); font-weight: 600; }
+
+  /* ── Artifacts drawer ──────────────────────────────────── */
+  .drawer-backdrop {
+    position: fixed; inset: 0; background: rgba(31,29,24,.4);
+    backdrop-filter: blur(2px);
+    opacity: 0; pointer-events: none; transition: opacity .25s;
+    z-index: 100;
+  }
+  .drawer-backdrop.on { opacity: 1; pointer-events: auto; }
+  .drawer {
+    position: fixed; top: 0; right: 0; height: 100vh;
+    width: 820px; max-width: 92vw;
+    background: var(--bg-1); border-left: 1px solid var(--line);
+    box-shadow: -10px 0 40px rgba(31,29,24,.18);
+    transform: translateX(100%); transition: transform .3s ease, width .25s ease, max-width .25s ease;
+    z-index: 101;
+    display: flex; flex-direction: column;
+  }
+  .drawer.on { transform: translateX(0); }
+  .drawer.full { width: 100vw; max-width: 100vw; }
+  .drawer-head {
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 22px; border-bottom: 1px solid var(--line);
+  }
+  .drawer-head h2 { margin: 0; font-size: 16px; font-weight: 700; }
+  .drawer-head .sub { color: var(--ink-3); font-size: 12px; }
+  .drawer-close {
+    background: none; border: none; cursor: pointer;
+    font-size: 22px; color: var(--ink-3); padding: 0 4px; line-height: 1;
+  }
+  .drawer-close:hover { color: var(--ink); }
+
+  .drawer-body { display: grid; grid-template-columns: 240px 1fr; flex: 1; min-height: 0; }
+  .drawer-list { border-right: 1px solid var(--line); overflow-y: auto; padding: 12px 0; }
+  .art-item {
+    padding: 12px 18px; cursor: pointer; border-left: 3px solid transparent;
+    display: flex; gap: 10px; align-items: flex-start;
+    transition: background .15s;
+  }
+  .art-item:hover { background: var(--bg-2); }
+  .art-item.active { background: var(--bg-2); border-left-color: var(--rust); }
+  .art-item.locked { opacity: 0.45; cursor: not-allowed; }
+  .art-item .ico { font-size: 18px; line-height: 1; }
+  .art-item .nm  { font-weight: 600; font-size: 13px; line-height: 1.3; }
+  .art-item .meta { color: var(--ink-3); font-size: 10px;
+    font-family: "JetBrains Mono", monospace; margin-top: 4px; }
+  .art-item .lock { color: var(--ink-3); font-size: 10px; margin-top: 4px;
+    font-style: italic; }
+
+  .drawer-content {
+    overflow-y: auto; padding: 24px 32px;
+    background: var(--bg-1);
+  }
+  .drawer-content .md {
+    font-family: "Source Serif 4", "Noto Serif SC", serif;
+    font-size: 14px; line-height: 1.7; color: var(--ink);
+    max-width: 72ch; margin: 0 auto;
+  }
+  .drawer.full .drawer-body { grid-template-columns: 280px 1fr; }
+  .drawer.full .drawer-content { padding: 32px 48px; }
+  .drawer.full .drawer-content .md { max-width: 920px; }
+  .md h1 { font-size: 22px; margin: 0 0 18px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .md h2 { font-size: 17px; margin: 24px 0 10px; }
+  .md h3 { font-size: 14px; margin: 18px 0 8px; }
+  .md p, .md li { font-size: 14px; }
+  .md code {
+    font-family: "JetBrains Mono", monospace; font-size: 12px;
+    background: var(--bg-2); padding: 1px 5px; border-radius: 3px;
+    border: 1px solid var(--line);
+  }
+  .md pre {
+    background: var(--bg-2); border: 1px solid var(--line); padding: 12px 14px;
+    border-radius: 4px; overflow-x: auto;
+  }
+  .md pre code { background: none; border: none; padding: 0; font-size: 11.5px; }
+  .md table {
+    border-collapse: collapse; width: 100%; margin: 12px 0;
+    font-family: "Inter", "Noto Sans SC", sans-serif; font-size: 12.5px;
+  }
+  .md th, .md td {
+    border: 1px solid var(--line); padding: 7px 10px; text-align: left;
+  }
+  .md th { background: var(--bg-2); font-weight: 600; }
+  .md blockquote {
+    border-left: 3px solid var(--gold); margin: 14px 0; padding: 4px 14px;
+    color: var(--ink-2); background: rgba(183,138,46,.06);
+  }
+  .md a { color: var(--rust-2); text-decoration: underline; text-underline-offset: 2px; }
+
+  .drawer-empty {
+    padding: 40px; text-align: center; color: var(--ink-3);
+    font-family: "Inter", "Noto Sans SC", sans-serif;
+  }
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div>
+        <div class="brand-name">PatentRadar</div>
+        <div class="brand-sub">v1.0 · 专利侵权线索挖掘系统</div>
+      </div>
+    </div>
+    <div class="patent-pill">
+      <div>
+        <div class="label">Current Run</div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span id="patentId" class="id">—</span>
+          <span id="patentMeta" class="nm" style="color:var(--ink-3); font-size:11px;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <div class="meta-readout">
+        <div id="modeIndicator"><span class="live-dot" id="modeDot"></span><span id="modeLabel">IDLE</span></div>
+        <div id="topReadout">00:00 / 00:00</div>
+      </div>
+      <button class="btn primary" id="artBtn">
+        <span>📦</span> Artifacts <span class="badge" id="artCount">0/0</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="player" id="player">
+    <!-- LIVE 模式提示（DONE 模式隐藏） -->
+    <div id="liveHint" style="display:flex; align-items:center; gap:8px; flex:1; color:var(--ink-3); font-size:12px;">
+      <span style="display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--rust); animation:blink 1s infinite alternate;"></span>
+      <span id="liveHintText">等待 CLI 启动 patentradar find-competitors-all …</span>
+    </div>
+    <!-- DONE 模式播放器（LIVE/IDLE 隐藏） -->
+    <div id="replayBar" style="display:none; align-items:center; gap:10px; flex:1;">
+      <button class="btn" id="playBtn">▶ 回放</button>
+      <button class="btn" id="resetBtn">↺ 从头</button>
+      <div class="scrubber" id="scrubber" style="flex:1;">
+        <div class="scrubber-track"></div>
+        <div class="scrubber-fill"  id="scrubFill"></div>
+        <div class="scrubber-knob"  id="scrubKnob"></div>
+      </div>
+      <div class="speed-toggle">
+        <button class="btn" data-speed="60">60×</button>
+        <button class="btn active" data-speed="200">200×</button>
+        <button class="btn" data-speed="600">600×</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="columns" id="columns"></main>
+
+  <!-- Artifacts drawer -->
+  <div class="drawer-backdrop" id="drawerBg"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <span style="font-size:20px;">📦</span>
+      <div>
+        <h2>Artifacts</h2>
+        <div class="sub">主控 GPT-5.5 阶段性产出 · 点击查看完整内容</div>
+      </div>
+      <button class="btn" id="drawerFull" style="margin-left:auto;">⛶ 全屏</button>
+      <button class="drawer-close" id="drawerClose">×</button>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-list" id="artList"></div>
+      <div class="drawer-content" id="artContent">
+        <div class="drawer-empty">从左侧选择一个产物</div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="data/timeline.js"></script>
+  <script>
+  (function () {
+    const ART_ICONS = {
+      task_package: "📋",
+      candidate_pool: "🗂",
+      agent_outputs: "📚",
+      final_report_md: "📄",
+      final_report_json: "🧾",
+    };
+
+    // ── Build agent columns once ──────────────────────────
+    const cols = document.getElementById("columns");
+    AGENTS.forEach(a => {
+      const c = document.createElement("section");
+      c.className = "col"; c.dataset.k = a.key; c.dataset.state = "idle";
+      c.innerHTML = `
+        <div class="col-head">
+          <div class="row1">
+            <div>
+              <div class="name">${a.name}</div>
+              <div class="role">${a.role}</div>
+            </div>
+            <div class="model">${a.model}</div>
+          </div>
+          <div class="state-pill"><span class="state-dot"></span><span class="state-text">idle</span></div>
+        </div>
+        <div class="log" id="log-${a.key}"></div>`;
+      cols.appendChild(c);
+    });
+
+    const artList = document.getElementById("artList");
+    const scrubber = document.getElementById("scrubber");
+    const liveHint = document.getElementById("liveHint");
+    const liveHintText = document.getElementById("liveHintText");
+    const replayBar = document.getElementById("replayBar");
+
+    // ── State ──────────────────────────────────────────────
+    let currentPub = null;
+    let runStartedAt = null;       // 当前 run 的 log ctime（unix）
+    let totalEnd = 1;
+    let now = 0, speed = 200, playing = false, lastReal = null, cursor = 0;
+    let state = "idle";            // idle | live | done | replay
+    let sse = null;
+    let artifacts = [];            // [{id, name, ready, mtime, mime, filename}]
+    const unlockedArtifacts = new Set();
+
+    function fmt(t) {
+      const s = Math.max(0, Math.floor(t));
+      const h = Math.floor(s/3600), m = Math.floor((s%3600)/60), ss = s%60;
+      const p2 = n => String(n).padStart(2,"0");
+      return h>0 ? `${p2(h)}:${p2(m)}:${p2(ss)}` : `${p2(m)}:${p2(ss)}`;
+    }
+    function escape(s) {
+      return String(s).replace(/[&<>"']/g, c =>
+        ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    }
+    function setState(agent, state) {
+      const col = document.querySelector(`.col[data-k="${agent}"]`);
+      if (!col) return;
+      col.dataset.state = state;
+      col.querySelector(".state-text").textContent =
+        state === "running" ? "running" : state === "done" ? "done" : "idle";
+    }
+    function setMode(m) {
+      state = m;
+      const dot = document.getElementById("modeDot");
+      const lab = document.getElementById("modeLabel");
+      lab.textContent = ({idle:"IDLE", replay:"REPLAY", live:"LIVE", done:"DONE"})[m] || m.toUpperCase();
+      dot.style.background =
+        m === "live"   ? "var(--rust)" :
+        m === "replay" ? "var(--gold)" :
+        m === "done"   ? "var(--moss)" : "var(--ink-3)";
+      // LIVE / IDLE 隐藏播放器；DONE / REPLAY 显示
+      const showReplay = (m === "done" || m === "replay");
+      replayBar.style.display = showReplay ? "flex" : "none";
+      liveHint.style.display = showReplay ? "none" : "flex";
+      if (m === "idle") {
+        liveHintText.textContent = "等待 CLI 启动 patentradar find-competitors-all …";
+      } else if (m === "live") {
+        liveHintText.textContent = `LIVE · ${currentPub} 正在跑，新事件实时滚动…`;
+      }
+      // 状态切换时刷新 artifact 文案
+      if (artifacts.length) rebuildArtList();
+    }
+
+    function pushEvent(ev) {
+      const log = document.getElementById(`log-${ev.agent}`);
+      if (!log) return;
+      const div = document.createElement("div");
+      div.className = "ev fresh"; div.dataset.kind = ev.kind;
+      const urlHtml = ev.url
+        ? `<a class="u" href="${escape(ev.url)}" target="_blank" rel="noopener">${escape(ev.url)}</a>`
+        : "";
+      div.innerHTML = `<div class="row">${escape(ev.text)}</div>${urlHtml ? `<div class="row url-row">${urlHtml}</div>` : ""}`;
+      log.appendChild(div);
+      [...log.querySelectorAll(".ev.fresh")].forEach((el, i, arr) => {
+        if (i < arr.length - 2) el.classList.remove("fresh");
+      });
+      log.scrollTop = log.scrollHeight;
+      setState(ev.agent, "running");
+    }
+
+    function clearLogs() {
+      AGENTS.forEach(a => {
+        const log = document.getElementById(`log-${a.key}`);
+        if (log) log.innerHTML = "";
+        setState(a.key, "idle");
+      });
+    }
+
+    function updateScrubber() {
+      const pct = totalEnd > 0 ? Math.min(1, now / totalEnd) : 0;
+      document.getElementById("scrubFill").style.width = (pct*100).toFixed(2)+"%";
+      document.getElementById("scrubKnob").style.left = (pct*100).toFixed(2)+"%";
+      document.getElementById("topReadout").textContent = `${fmt(now)} / ${fmt(totalEnd)}`;
+    }
+
+    function unlockArtifact(art) {
+      if (unlockedArtifacts.has(art.id)) return;
+      unlockedArtifacts.add(art.id);
+      const el = artList.querySelector(`.art-item[data-id="${art.id}"]`);
+      if (!el) return;
+      el.classList.remove("locked");
+      const lock = el.querySelector(".lock");
+      if (lock) lock.innerHTML = `<span style="color:var(--moss);">✓ 可查看</span>`;
+      document.getElementById("artCount").textContent = `${unlockedArtifacts.size}/${artifacts.length || 0}`;
+      el.style.background = "rgba(193,95,60,.12)";
+      setTimeout(() => el.style.background = "", 700);
+    }
+
+    function rebuildArtList() {
+      artList.innerHTML = "";
+      artifacts.forEach(a => {
+        const div = document.createElement("div");
+        div.className = "art-item" + (a.ready ? "" : " locked");
+        div.dataset.id = a.id;
+        const icon = ART_ICONS[a.id] || "📦";
+        let lockText;
+        if (a.ready) {
+          lockText = '<span style="color:var(--moss);">✓ 可查看</span>';
+        } else if (state === "done") {
+          lockText = '<span style="color:var(--ink-3);">✗ 本次 run 未生成</span>';
+        } else if (state === "live") {
+          lockText = "⏳ 等待生成…";
+        } else {
+          lockText = "—";
+        }
+        div.innerHTML = `
+          <div class="ico">${icon}</div>
+          <div style="flex:1; min-width:0;">
+            <div class="nm">${escape(a.name)}</div>
+            <div class="meta mono">${escape(a.filename)}</div>
+            <div class="lock">${lockText}</div>
+          </div>`;
+        div.addEventListener("click", () => {
+          if (div.classList.contains("locked")) return;
+          loadArtifact(a);
+          [...artList.children].forEach(x => x.classList.remove("active"));
+          div.classList.add("active");
+        });
+        artList.appendChild(div);
+      });
+      unlockedArtifacts.clear();
+      artifacts.filter(a => a.ready).forEach(a => unlockedArtifacts.add(a.id));
+      document.getElementById("artCount").textContent = `${unlockedArtifacts.size}/${artifacts.length || 0}`;
+    }
+
+    function rebuildScrubberTicks() {
+      [...scrubber.querySelectorAll(".scrubber-tick")].forEach(t => t.remove());
+      // 没有 events.t 与 artifact mtime 的精确对齐，先不画 artifact tick；
+      // 用每 5 分钟一个浅 tick 给视觉锚点
+      if (totalEnd <= 60) return;
+      const step = totalEnd <= 600 ? 60 : totalEnd <= 3600 ? 300 : 600;
+      for (let t = step; t < totalEnd; t += step) {
+        const tick = document.createElement("div");
+        tick.className = "scrubber-tick";
+        tick.style.left = (t / totalEnd * 100) + "%";
+        tick.style.opacity = "0.18";
+        tick.title = fmt(t);
+        scrubber.appendChild(tick);
+      }
+    }
+
+    // ── Tick loop ─────────────────────────────────────────
+    function tick(realMs) {
+      if (lastReal == null) lastReal = realMs;
+      const dt = (realMs - lastReal) / 1000;
+      lastReal = realMs;
+      if (playing && mode === "replay") {
+        now = Math.min(totalEnd, now + dt * speed);
+        if (now >= totalEnd && cursor >= EVENTS.length) {
+          playing = false;
+          document.getElementById("playBtn").textContent = "▶ 播放";
+          if (sse == null) setMode("done");
+        }
+      }
+      drain();
+      updateScrubber();
+      requestAnimationFrame(tick);
+    }
+    function drain() {
+      while (cursor < EVENTS.length && EVENTS[cursor].t <= now) {
+        pushEvent(EVENTS[cursor++]);
+      }
+      // REPLAY 状态：按 mtime 相对时间解锁 artifacts
+      if (state === "replay" && runStartedAt) {
+        artifacts.forEach(a => {
+          if (a.ready && a.mtime) {
+            const relT = a.mtime - runStartedAt;
+            if (now >= relT) unlockArtifact(a);
+          }
+        });
+      }
+    }
+
+    // ── Current-run lock-in ───────────────────────────────
+    const patentId = document.getElementById("patentId");
+    const meta = document.getElementById("patentMeta");
+
+    let pollTimer = null;
+
+    async function refreshArtifacts() {
+      if (!currentPub) return;
+      try {
+        artifacts = await PatentRadarAPI.listArtifacts(currentPub, runStartedAt);
+        rebuildArtList();
+      } catch (err) { /* ignore */ }
+    }
+
+    async function tickCurrentRun() {
+      let info;
+      try {
+        info = await PatentRadarAPI.getCurrentRun();
+      } catch (err) {
+        meta.textContent = `加载失败: ${err.message}`;
+        return;
+      }
+      if (!info.has_run) {
+        // NO RUN
+        if (state !== "idle") {
+          // run 被清掉了（不太可能），回到 idle
+          if (sse) { sse.close(); sse = null; }
+          clearLogs();
+          EVENTS.length = 0;
+          unlockedArtifacts.clear();
+          artifacts = [];
+          rebuildArtList();
+        }
+        currentPub = null; runStartedAt = null;
+        patentId.textContent = "—";
+        meta.textContent = "尚未发现 log，等待跑专利";
+        setMode("idle");
+        return;
+      }
+      // 切换到新的 run？
+      const isNewRun = (info.pub_no !== currentPub) || (info.started_at !== runStartedAt);
+      if (isNewRun) {
+        await loadRun(info);
+      } else {
+        // 同一个 run，只是 mtime 可能变化
+        if (info.is_active && state === "live") {
+          // 还在 live，由 SSE 自己接事件，这里只刷新 artifacts
+          await refreshArtifacts();
+        } else if (!info.is_active && state === "live") {
+          // 刚结束 → DONE
+          if (sse) { sse.close(); sse = null; }
+          await refreshArtifacts();
+          setMode("done");
+        }
+      }
+    }
+
+    async function loadRun(info) {
+      // 重置全部状态
+      if (sse) { sse.close(); sse = null; }
+      cursor = 0; now = 0; lastReal = null; playing = false;
+      EVENTS.length = 0;
+      clearLogs();
+      currentPub = info.pub_no;
+      runStartedAt = info.started_at;
+      patentId.textContent = info.pub_no;
+      meta.textContent = "加载中…";
+
+      let payload;
+      try {
+        payload = await PatentRadarAPI.loadEvents(info.pub_no);
+      } catch (err) {
+        meta.textContent = `加载失败: ${err.message}`;
+        return;
+      }
+      EVENTS.push(...payload.events);
+      totalEnd = (EVENTS.length ? EVENTS[EVENTS.length - 1].t : 0) + 5;
+
+      await refreshArtifacts();
+      meta.innerHTML = `<span class="mono">${escape(payload.log_path)}</span> · ${EVENTS.length} 行事件`;
+
+      if (info.is_active) {
+        // LIVE：直接把已有事件全部 drain（不走回放节奏），然后 SSE 推增量
+        cursor = 0; now = totalEnd;
+        drain();
+        rebuildScrubberTicks();
+        updateScrubber();
+        setMode("live");
+        sse = PatentRadarAPI.openStream(info.pub_no, payload.byte_offset,
+          (ev) => {
+            EVENTS.push(ev);
+            totalEnd = Math.max(totalEnd, ev.t + 5);
+            pushEvent(ev);
+            cursor = EVENTS.length;
+            now = totalEnd;
+            updateScrubber();
+          },
+          () => {
+            // 后端检测到 log 停止写入，发了 end → 转 DONE
+            sse = null;
+            refreshArtifacts();
+            setMode("done");
+          }
+        );
+      } else {
+        // DONE：把所有历史事件 drain 上去（瞬间），但状态停留在 done 等用户点回放
+        cursor = 0; now = totalEnd;
+        drain();
+        rebuildScrubberTicks();
+        updateScrubber();
+        setMode("done");
+      }
+    }
+
+    // ── Player controls ───────────────────────────────────
+    document.getElementById("playBtn").addEventListener("click", () => {
+      if (state !== "replay" && state !== "done") return;
+      if (state === "done") {
+        // 进入回放：清空日志和已 unlock 的 artifacts，重头按时间轴推进
+        cursor = 0; now = 0; clearLogs();
+        unlockedArtifacts.clear();
+        document.getElementById("artCount").textContent = `0/${artifacts.length}`;
+        [...artList.children].forEach(el => {
+          el.classList.add("locked"); el.classList.remove("active");
+          const lock = el.querySelector(".lock"); if (lock) lock.innerHTML = "⏳ 等待生成…";
+        });
+        setMode("replay");
+      }
+      playing = !playing;
+      document.getElementById("playBtn").textContent = playing ? "⏸ 暂停" : "▶ 回放";
+      lastReal = null;
+    });
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      if (state !== "replay" && state !== "done") return;
+      // 重新回到本次 run 的最末态（看起来跟刚跑完一样）
+      cursor = 0; now = 0; clearLogs();
+      EVENTS.forEach(pushEvent);
+      cursor = EVENTS.length; now = totalEnd;
+      refreshArtifacts();
+      playing = false;
+      document.getElementById("playBtn").textContent = "▶ 回放";
+      setMode("done");
+      updateScrubber();
+    });
+
+    document.querySelectorAll(".speed-toggle .btn").forEach(b => {
+      b.addEventListener("click", () => {
+        document.querySelectorAll(".speed-toggle .btn").forEach(x => x.classList.remove("active"));
+        b.classList.add("active");
+        speed = parseFloat(b.dataset.speed);
+      });
+    });
+
+    // scrubber drag
+    let dragging = false;
+    function seekFromEvent(e) {
+      if (mode === "live") return;
+      const r = scrubber.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width;
+      const target = Math.max(0, Math.min(1, x)) * totalEnd;
+      seek(target);
+    }
+    function seek(target) {
+      if (target < now) {
+        const wasPlaying = playing;
+        clearLogs(); cursor = 0; now = 0;
+        while (cursor < EVENTS.length && EVENTS[cursor].t <= target) {
+          pushEvent(EVENTS[cursor++]);
+        }
+        now = target;
+        updateScrubber();
+        playing = wasPlaying; lastReal = null;
+      } else {
+        now = target; drain(); updateScrubber();
+      }
+    }
+    scrubber.addEventListener("mousedown", e => { dragging = true; seekFromEvent(e); });
+    window.addEventListener("mousemove", e => { if (dragging) seekFromEvent(e); });
+    window.addEventListener("mouseup", () => dragging = false);
+
+    // ── Artifacts drawer ──────────────────────────────────
+    const drawer = document.getElementById("drawer");
+    const drawerBg = document.getElementById("drawerBg");
+    function openDrawer() { drawer.classList.add("on"); drawerBg.classList.add("on"); }
+    function closeDrawer() { drawer.classList.remove("on"); drawerBg.classList.remove("on"); }
+    document.getElementById("artBtn").addEventListener("click", openDrawer);
+    document.getElementById("drawerClose").addEventListener("click", closeDrawer);
+    document.getElementById("drawerFull").addEventListener("click", () => {
+      const isFull = drawer.classList.toggle("full");
+      document.getElementById("drawerFull").innerHTML = isFull ? "↙ 还原" : "⛶ 全屏";
+    });
+    drawerBg.addEventListener("click", closeDrawer);
+    window.addEventListener("keydown", e => { if (e.key === "Escape") closeDrawer(); });
+
+    async function loadArtifact(a) {
+      const c = document.getElementById("artContent");
+      c.innerHTML = `<div class="drawer-empty">加载中…</div>`;
+      try {
+        const r = await fetch(PatentRadarAPI.artifactUrl(currentPub, a.id));
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        const text = await r.text();
+        if (a.mime === "application/json") {
+          let pretty = text;
+          try { pretty = JSON.stringify(JSON.parse(text), null, 2); } catch (_) {}
+          c.innerHTML = `<div class="md"><pre><code>${escape(pretty)}</code></pre></div>`;
+        } else {
+          c.innerHTML = `<div class="md">${marked.parse(text)}</div>`;
+        }
+      } catch (err) {
+        c.innerHTML = `<div class="drawer-empty">加载失败：${escape(err.message)}</div>`;
+      }
+    }
+
+    // ── Init ──────────────────────────────────────────────
+    setMode("idle");
+    updateScrubber();
+    requestAnimationFrame(tick);
+    // 立即检查一次当前 run，并每 5 秒轮询（捕获新启动 / 切换 / 跑完）
+    tickCurrentRun();
+    pollTimer = setInterval(tickCurrentRun, 5000);
+  })();
+  </script>
+</body>
+</html>
