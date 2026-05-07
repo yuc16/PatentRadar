@@ -14,6 +14,7 @@
 {
   "industry_tag": "battery",
   "label": "动力电池 / 储能",
+  "prompt_description": "动力 / 储能电池、电芯、模组、BMS、电池包结构",
   "evidence_profile": {
     "generic_terms": ["电池", "电芯", "battery", "cell"],
     "named_product_hints": ["短刀", "刀片", "short blade"],
@@ -32,8 +33,9 @@
 }
 ```
 
-- `industry_tag`：必须等于文件名（不含 `.json`）
+- `industry_tag`：必须等于文件名（不含 `.json`）。**该字段同时是 GPT-5.5 拆解器允许输出的 `industry_tag` 真源** —— 拆解 prompt 的取值表和代码里的合法集都从这里自动派生，无需手动改代码。
 - `label`：人类可读名称，仅展示用
+- `prompt_description`：在拆解 prompt 的"何时选"那栏会展示给 GPT-5.5 看的描述。**此字段决定 GPT-5.5 怎么把专利映射到本领域**，要写得能把判定规则讲清楚（如"动力 / 储能电池、电芯、模组、BMS、电池包结构"）。空字段会回退到 `label`。
 - `sites[].domain`：用于 Bocha `site:` 操作符；不带 `https://` 前缀，不带路径
 - `sites[].type`：自由文本，用于人工识别和证据阶段筛选。建议使用或包含这些词：`行业媒体`、`研究报告`、`行业协会`、`厂商官网`、`规格资料`、`经销商`、`供应商`、`PDF`、`产品手册`、`论坛 / 规格线索`。
 - `evidence_profile.generic_terms`：该行业里过泛、不能单独证明产品明确性的词。
@@ -48,9 +50,15 @@
 
 ## 调整方法
 
-- 增删条目：直接改 JSON。通用行业媒体放 `general.json`，领域专属规格站、厂商站和行业证据 profile 放对应 `<tag>.json`。
-- 新增领域：新建 `<tag>.json`，再在拆解 prompt（[../../src/patentradar/prompts/claim_decompose_system.md](../../src/patentradar/prompts/claim_decompose_system.md)）中把 tag 列入候选枚举，否则 LLM 不会用
-- 多语言名：`name` 字段可写中英双语（例如 `比亚迪 BYD`）
+- **增删站点条目**：直接改对应 `<tag>.json`。通用行业媒体放 `general.json`，领域专属规格站、厂商站和 `evidence_profile` 放领域文件。
+- **新增领域**：**只需新建 `<tag>.json`**，必须包含 `industry_tag` / `label` / `prompt_description` / `sites` 四个字段。`evidence_profile` 可选。系统启动时会自动：
+    1. 把新 tag 加入 `cn_industry.valid_tags()`（[../../src/patentradar/search/cn_industry.py](../../src/patentradar/search/cn_industry.py)）
+    2. 把 `(industry_tag, prompt_description)` 渲染进拆解 prompt 的取值表
+    3. 把 tag 加入 JSON schema 的 `tag1 | tag2 | ...` 提示串
+    4. 让 GPT-5.5 输出后通过代码白名单校验
+  无需改 [`prompts/claim_decompose_system.md`](../../src/patentradar/prompts/claim_decompose_system.md) 或 [`patent/decomposer.py`](../../src/patentradar/patent/decomposer.py)。
+- **删除领域**：直接删 `<tag>.json`。删除前确认没有正在用 `industry_tag=<tag>` 的 `task_package.json`，否则后续阶段会回退到 `general` 白名单。
+- **多语言名**：`sites[].name` 字段可写中英双语（例如 `"比亚迪 BYD"`）。
 
 ## 默认随附领域
 

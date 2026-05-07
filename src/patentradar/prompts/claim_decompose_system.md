@@ -45,11 +45,7 @@ C. 给出整篇专利的产业领域标签 `industry_tag`，并为每条特征�
 
 | tag | 何时选 |
 |---|---|
-| `battery` | 动力 / 储能电池、电芯、模组、BMS、电池包结构 |
-| `semiconductor` | 芯片、封装、传感器、IC 工艺、半导体器件结构 |
-| `automotive` | 整车、底盘、车身、座舱、智能驾驶、汽车电子（不含电池本身，电池归 battery） |
-| `display` | LCD / OLED / Mini-LED 面板、触控、显示模组、背光 |
-| `general` | 以上都不贴切（如纯软件方法、通用机械、消费电子） |
+<<INDUSTRY_TAG_TABLE>>
 
 【参考颗粒度】独立权利要求一般拆出 4~10 条；机构类专利常见 6~8 条；纯方法专利常见 4~7 条。如果你拆出 >12 条，几乎一定是过度拆分，需要回退合并。
 
@@ -67,7 +63,7 @@ C. 给出整篇专利的产业领域标签 `industry_tag`，并为每条特征�
 ```json
 {
   "claim_1_text": "（含 LaTeX 公式的完整权利要求 1 原文）",
-  "industry_tag": "battery | semiconductor | automotive | display | general",
+  "industry_tag": "<<INDUSTRY_TAG_OR_LIST>>",
   "claim_features": [
     {
       "feature_id": "F1",

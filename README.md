@@ -403,11 +403,11 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 
 通用搜索引擎对中文营销话术的召回有限，因此 DeepSeek Agent 上又叠了三层增强：
 
-1. **行业宣传语扩展（拆解阶段）** — GPT-5.5 在权要拆解时同时给出每条特征的 `marketing_terms`（中文行业宣传语，例：把"电池单体在长度方向上沿厚度方向叠置" 翻成 "刀片电池 / 长方形方壳电芯 / CTP 无模组"），并打一个 `industry_tag ∈ {battery, semiconductor, automotive, display, general}`，固化到 `task_package.json`。DeepSeek 视角 query 生成时优先用宣传语而不是工程术语。
+1. **行业宣传语扩展（拆解阶段）** — GPT-5.5 在权要拆解时同时给出每条特征的 `marketing_terms`（中文行业宣传语，例：把"电池单体在长度方向上沿厚度方向叠置" 翻成 "刀片电池 / 长方形方壳电芯 / CTP 无模组"），并打一个 `industry_tag`，固化到 `task_package.json`。**`industry_tag` 的合法取值由 [`data/cn_industry_sites/*.json`](data/cn_industry_sites/) 自动派生**——新增 / 删除领域只改这个目录，prompt 里的取值表和代码里的白名单都自动跟随。DeepSeek 视角 query 生成时优先用宣传语而不是工程术语。
 2. **行业站点定向召回（候选发现阶段）** — 按 `industry_tag` 加载 [`data/cn_industry_sites/`](data/cn_industry_sites/) 下对应白名单（自动叠加 `general.json` 通用站点），把 LLM 已生成的最聚焦的前 1~2 条 query **包装成 `(query) (site:domain1 OR site:domain2 ...)`** 用 Bocha 单独召回。媒体/协会组与厂商官网组分两条 query，互不干扰。
 3. **巨潮资讯证据补搜（证据收集阶段）** — 候选公司确定后，DeepSeek 自动用 `公司名 + 产品/型号` 查 [`巨潮资讯`](http://www.cninfo.com.cn/)（A 股 / 港股年报、招股书、公告全文）。返回的 PDF URL 直接进证据池，由 Exa Contents / Tavily Extract 兜底链抽正文。年报/招股书是上市企业最权威的产品技术披露源。
 
-**调整白名单 / 行业 profile**：直接编辑 [`data/cn_industry_sites/<tag>.json`](data/cn_industry_sites/)，新增/删除 `sites[].domain` 即可；行业专属证据策略放在同文件的 `evidence_profile`，包括 `generic_terms`、`named_product_hints`、`spec_queries`、`feature_term_map` 等。新增领域只需新建 `<tag>.json` 并在 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 的 industry_tag 枚举里加上同名 tag，否则 LLM 不会用。
+**调整白名单 / 行业 profile**：直接编辑 [`data/cn_industry_sites/<tag>.json`](data/cn_industry_sites/)，新增/删除 `sites[].domain` 即可；行业专属证据策略放在同文件的 `evidence_profile`，包括 `generic_terms`、`named_product_hints`、`spec_queries`、`feature_term_map` 等。**新增领域只需新建一个 `<tag>.json`**（必含 `industry_tag` / `label` / `prompt_description` / `sites`），系统会自动把它注入 GPT-5.5 拆解 prompt 的取值表和代码白名单——无需改 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 或 [`patent/decomposer.py`](src/patentradar/patent/decomposer.py)。详情见 [`data/cn_industry_sites/README.md`](data/cn_industry_sites/README.md)。
 
 `battery.json` 已放入若干电芯规格资料、经销商站点和电池专属 `evidence_profile` 作为试点；候选发现阶段仍只由 DeepSeek 启用行业站点路由（`AgentPerspective.cn_industry_routing=True`），证据阶段的高价值规格站 `site:` 召回和行业专属 query / 翻译映射会对三个 Agent 生效。
 
@@ -433,7 +433,7 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 |---|---|---|
 | 仅支持中文专利 (CN) | Google Patents 中文页 + 中文权要文本 | 扩展 US/EP 需重写权要抽取逻辑 |
 | 仅独立权利要求 1 | 不分析从属权利要求 / 等同特征 | 后续可扩展从属权利要求、等同特征和 FTO 分析 |
-| 海外候选地域过滤靠 prompt + 证据 | candidate_filter 阶段排除无中国销售迹象的海外候选；DeepSeek 已叠加行业站点定向 + 巨潮资讯 | 行业白名单需人工维护；新增领域要同步改拆解 prompt 的 industry_tag 枚举 |
+| 海外候选地域过滤靠 prompt + 证据 | candidate_filter 阶段排除无中国销售迹象的海外候选；DeepSeek 已叠加行业站点定向 + 巨潮资讯 | 行业白名单需人工维护；新增领域只需新建 `<tag>.json` 即可（prompt 取值表和代码白名单自动跟随） |
 | 最终补搜仍有上下文上限 | 复核前默认最多处理 15 个候选、每候选最多 4 个缺口特征；进入 LLM 前仍会分层和压缩 | 后续可把证据 appendix 独立落盘 |
 | 摘要 LLM 与主 Agent 同源 | 当前 compactor 默认用 deepseek，与 deepseek_agent 共账号 | 可换为更便宜的独立模型 |
 

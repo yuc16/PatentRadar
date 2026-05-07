@@ -1,6 +1,7 @@
 {
   "industry_tag": "general",
   "label": "通用国内行业 / 财经媒体",
+  "prompt_description": "以上都不贴切（如纯软件方法、通用机械、消费电子）",
   "sites": [
     {"domain": "cninfo.com.cn", "name": "巨潮资讯", "type": "企业披露"},
     {"domain": "sse.com.cn", "name": "上交所", "type": "企业披露"},

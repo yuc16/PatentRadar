@@ -32,6 +32,7 @@ class IndustryGroup:
     label: str
     sites: tuple[Site, ...]
     evidence_profile: dict[str, Any]
+    prompt_description: str = ""
 
 
 _DATA_DIR = Path(__file__).resolve().parents[3] / "data" / "cn_industry_sites"
@@ -65,8 +66,45 @@ def _load_all() -> dict[str, IndustryGroup]:
             label=str(data.get("label") or tag),
             sites=sites,
             evidence_profile=data.get("evidence_profile") if isinstance(data.get("evidence_profile"), dict) else {},
+            prompt_description=str(data.get("prompt_description") or "").strip(),
         )
     return out
+
+
+def valid_tags() -> set[str]:
+    """所有可用的 ``industry_tag``（**含** ``general``）。
+
+    动态从 ``data/cn_industry_sites/*.json`` 派生，是上游 prompt 模板和
+    下游代码白名单的**唯一真源**——新增领域只需新建 JSON，无需改代码或 prompt。
+    """
+    return set(_load_all().keys())
+
+
+def render_industry_tag_table_for_prompt() -> str:
+    """渲染拆解 prompt 中的"industry_tag 取值"表（markdown）。
+
+    ``general`` 始终放末尾作为兜底；其它按字母序。
+    """
+    groups = _load_all()
+    if not groups:
+        return "| `general` | 默认兜底 |"
+    ordered = sorted(t for t in groups if t != GENERAL_TAG)
+    if GENERAL_TAG in groups:
+        ordered.append(GENERAL_TAG)
+    rows: list[str] = []
+    for tag in ordered:
+        g = groups[tag]
+        desc = g.prompt_description or g.label or tag
+        rows.append(f"| `{tag}` | {desc} |")
+    return "\n".join(rows)
+
+
+def render_industry_tag_or_list() -> str:
+    """渲染 JSON schema 提示中的 `tag1 | tag2 | ...` 字符串。"""
+    tags = sorted(t for t in _load_all() if t != GENERAL_TAG)
+    if GENERAL_TAG in _load_all():
+        tags.append(GENERAL_TAG)
+    return " | ".join(tags) if tags else GENERAL_TAG
 
 
 def known_tags() -> list[str]:

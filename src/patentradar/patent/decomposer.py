@@ -13,6 +13,7 @@ from typing import Any
 from .. import prompts
 from ..llm import codex
 from ..schemas import ClaimFeature
+from ..search import cn_industry
 
 
 def decompose(
@@ -26,10 +27,15 @@ def decompose(
 ) -> tuple[str, list[ClaimFeature], str | None]:
     """返回 (最终版 claim_1_text, 特征列表, industry_tag)。
 
-    industry_tag ∈ {battery, semiconductor, automotive, display, general, None}。
+    ``industry_tag`` 的合法取值由 ``data/cn_industry_sites/*.json`` 自动派生
+    （见 ``cn_industry.valid_tags()``）。新增领域只需新建 JSON，无需改代码或 prompt。
     images 为空 → 纯文本拆解；非空 → 多模态拆解（公式以 LaTeX 还原）。
     """
-    system = prompts.load("claim_decompose_system")
+    system = (
+        prompts.load("claim_decompose_system")
+        .replace("<<INDUSTRY_TAG_TABLE>>", cn_industry.render_industry_tag_table_for_prompt())
+        .replace("<<INDUSTRY_TAG_OR_LIST>>", cn_industry.render_industry_tag_or_list())
+    )
     if images:
         user = prompts.render(
             "claim_decompose_user_with_vision",
@@ -77,9 +83,6 @@ def decompose_with_vision(
     )
 
 
-_VALID_INDUSTRY_TAGS = {"battery", "semiconductor", "automotive", "display", "general"}
-
-
 def _parse_payload(
     payload: dict[str, Any],
 ) -> tuple[str, list[ClaimFeature], str | None]:
@@ -124,7 +127,7 @@ def _parse_payload(
     industry_tag: str | None = None
     if raw_tag:
         candidate = str(raw_tag).strip().lower()
-        if candidate in _VALID_INDUSTRY_TAGS:
+        if candidate in cn_industry.valid_tags():
             industry_tag = candidate
 
     return claim_1_text, features, industry_tag
