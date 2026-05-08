@@ -715,7 +715,7 @@ class SearchAgent:
                     self._search_evidence_query(
                         query=query,
                         feature_ids=(),
-                        purpose="上市日期证据检索",
+                        purpose="证据检索",
                         queries_used=queries_used,
                         seen_queries=seen_evidence_queries,
                         ev_urls=ev_urls,

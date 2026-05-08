@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import re
 import time
@@ -156,9 +157,14 @@ def review_agent_outputs(
     """主入口：直接接收三 Agent 输出，平铺给 GPT-5.5。"""
     t0 = time.monotonic()
     model = (os.getenv("REVIEWER_MODEL") or "gpt-5.5").strip()
+    source_fingerprint = _agent_outputs_fingerprint(agent_outputs)
 
     cache_file = Path(supplement_cache_path) if supplement_cache_path else None
-    cached = _load_supplement_cache(cache_file, task) if cache_file else None
+    cached = (
+        _load_supplement_cache(cache_file, task, source_fingerprint)
+        if cache_file
+        else None
+    )
     if cached is not None:
         agent_outputs, supplement_count = cached
     else:
@@ -168,7 +174,13 @@ def review_agent_outputs(
             search_session=search_session or SearchSession(),
         )
         if cache_file:
-            _write_supplement_cache(cache_file, agent_outputs, task, supplement_count)
+            _write_supplement_cache(
+                cache_file,
+                agent_outputs,
+                task,
+                supplement_count,
+                source_fingerprint,
+            )
     candidates_block, n_candidates = _format_candidates_block(agent_outputs)
 
     system = prompts.load("reviewer_system")
@@ -382,6 +394,7 @@ def review_candidate_pool(_pool, task, *, reasoning_effort: str = "medium"):
 def _load_supplement_cache(
     path: Path | None,
     task: TaskPackage,
+    source_fingerprint: str,
 ) -> tuple[list[AgentOutput], int] | None:
     if path is None or not path.exists():
         return None
@@ -390,6 +403,12 @@ def _load_supplement_cache(
         if raw.get("patent_publication_no") != task.patent.publication_no:
             logger.info(
                 "[reviewer] supplement CACHE SKIP reason=pub_no_mismatch path=%s",
+                path,
+            )
+            return None
+        if raw.get("agent_outputs_fingerprint") != source_fingerprint:
+            logger.info(
+                "[reviewer] supplement CACHE SKIP reason=agent_outputs_changed path=%s",
                 path,
             )
             return None
@@ -419,11 +438,13 @@ def _write_supplement_cache(
     agent_outputs: list[AgentOutput],
     task: TaskPackage,
     supplement_count: int,
+    source_fingerprint: str,
 ) -> None:
     payload = {
         "version": 1,
         "patent_publication_no": task.patent.publication_no,
         "created_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "agent_outputs_fingerprint": source_fingerprint,
         "supplement_count": supplement_count,
         "agent_outputs": [ao.model_dump() for ao in agent_outputs],
     }
@@ -438,6 +459,12 @@ def _write_supplement_cache(
         )
     except Exception as exc:  # noqa: BLE001
         logger.info("[reviewer] supplement CACHE WRITE failed path=%s error=%s", path, exc)
+
+
+def _agent_outputs_fingerprint(agent_outputs: list[AgentOutput]) -> str:
+    payload = [ao.model_dump(mode="json") for ao in agent_outputs]
+    raw = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 
 def _chat_json_with_retries(

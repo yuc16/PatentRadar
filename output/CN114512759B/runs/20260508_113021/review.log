@@ -1,0 +1,145 @@
+日志: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/runs/20260508_113021/review.log
+11:52:37 patentradar.decompose | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5             
+         industry_tag=battery                                                                                           
+2026-05-08 11:52:37,460 patentradar.decompose INFO | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5  industry_tag=battery
+         patentradar.decompose | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车'             
+         assignees=['BYD Co Ltd'] claim_1_source=html n_features=6                                                      
+2026-05-08 11:52:37,461 patentradar.decompose INFO | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车' assignees=['BYD Co Ltd'] claim_1_source=html n_features=6
+         patentradar.decompose |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：           
+2026-05-08 11:52:37,461 patentradar.decompose INFO |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：
+         patentradar.decompose |   F2:                                                                                  
+         电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述
+         电池本体的宽度H大于厚度D，其中，                                                                               
+2026-05-08 11:52:37,462 patentradar.decompose INFO |   F2: 电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，
+         patentradar.decompose |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm   
+         ﹣2 ；                                                                                                         
+2026-05-08 11:52:37,462 patentradar.decompose INFO |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；
+         patentradar.decompose |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；          
+2026-05-08 11:52:37,463 patentradar.decompose INFO |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；
+         patentradar.decompose |   F5: 所述电池本体的长度L为400mm~2500mm；                                              
+2026-05-08 11:52:37,463 patentradar.decompose INFO |   F5: 所述电池本体的长度L为400mm~2500mm；
+         patentradar.decompose |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+2026-05-08 11:52:37,463 patentradar.decompose INFO |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+────────────────────────────────────────────── 复核 · patent CN114512759B ──────────────────────────────────────────────
+已收集 3 份 agent 输出，候选合计 2 个（GPT-5.5 将自行合并去重 + 复核）
+已写入候选池快照: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/candidate_pool.json
+调用 GPT-5.5 复核（reasoning=medium）...
+复核补搜缓存: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json
+         patentradar.reviewer | [reviewer] supplement CACHE HIT                                                         
+         path=/Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json agent_outputs=3  
+         supplement_urls=0                                                                                              
+2026-05-08 11:52:37,530 patentradar.reviewer INFO | [reviewer] supplement CACHE HIT path=/Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json agent_outputs=3 supplement_urls=0
+         patentradar.reviewer | [reviewer] GPT-5.5 review START candidates=8 supplement_urls=0                          
+2026-05-08 11:52:37,532 patentradar.reviewer INFO | [reviewer] GPT-5.5 review START candidates=8 supplement_urls=0
+         patentradar.reviewer | [reviewer] GPT-5.5 review ATTEMPT 1/3 model=gpt-5.5                                     
+2026-05-08 11:52:37,532 patentradar.reviewer INFO | [reviewer] GPT-5.5 review ATTEMPT 1/3 model=gpt-5.5
+11:53:50 patentradar.reviewer | [reviewer] GPT-5.5 review DONE elapsed=73.16s                                           
+2026-05-08 11:53:50,688 patentradar.reviewer INFO | [reviewer] GPT-5.5 review DONE elapsed=73.16s
+─────────────────────────────────────────── GPT-5.5 复核结果（耗时 73.17s） ────────────────────────────────────────────
+┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ rank ┃ 公司                              ┃ 产品                                    ┃  分数 ┃ 风险         ┃
+┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━┩
+│    1 │ 蜂巢能源科技股份有限公司（SVOLT） │ SVOLT L600 / 184Ah LiFePO4短刀/刀片电池 │ 100.0 │ 高度疑似落入 │
+├──────┼───────────────────────────────────┼─────────────────────────────────────────┼───────┼──────────────┤
+│    2 │ 蜂巢能源科技股份有限公司（SVOLT） │ SVOLT 143.5Ah LFP 4C快充短刀电池        │  50.0 │ 局部相似     │
+├──────┼───────────────────────────────────┼─────────────────────────────────────────┼───────┼──────────────┤
+│    3 │ 瑞浦兰钧能源股份有限公司          │ 问顶电池（Wending Battery）             │  50.0 │ 局部相似     │
+├──────┼───────────────────────────────────┼─────────────────────────────────────────┼───────┼──────────────┤
+│    4 │ 欣旺达动力科技股份有限公司        │ 方形闪充电池 / 方形动力电池             │  50.0 │ 局部相似     │
+└──────┴───────────────────────────────────┴─────────────────────────────────────────┴───────┴──────────────┘
+
+excluded=1  needs_review=3
+复核备注: 已将蜂巢能源184Ah刀片电池、L600短刀电池及相关别名合并为同一高相似候选；同时将混列的SVOLT 62Ah 
+L400因F3明确不满足单独排除。其余候选主要缺口集中在单体尺寸和能量参数。
+
+✓ 已写入: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/final_report.json
+日志: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/runs/20260508_113021/review.log
+11:55:34 patentradar.decompose | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5             
+         industry_tag=battery                                                                                           
+2026-05-08 11:55:34,881 patentradar.decompose INFO | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5  industry_tag=battery
+         patentradar.decompose | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车'             
+         assignees=['BYD Co Ltd'] claim_1_source=html n_features=6                                                      
+2026-05-08 11:55:34,882 patentradar.decompose INFO | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车' assignees=['BYD Co Ltd'] claim_1_source=html n_features=6
+         patentradar.decompose |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：           
+2026-05-08 11:55:34,883 patentradar.decompose INFO |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：
+         patentradar.decompose |   F2:                                                                                  
+         电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述
+         电池本体的宽度H大于厚度D，其中，                                                                               
+2026-05-08 11:55:34,883 patentradar.decompose INFO |   F2: 电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，
+         patentradar.decompose |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm   
+         ﹣2 ；                                                                                                         
+2026-05-08 11:55:34,883 patentradar.decompose INFO |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；
+         patentradar.decompose |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；          
+2026-05-08 11:55:34,884 patentradar.decompose INFO |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；
+         patentradar.decompose |   F5: 所述电池本体的长度L为400mm~2500mm；                                              
+2026-05-08 11:55:34,884 patentradar.decompose INFO |   F5: 所述电池本体的长度L为400mm~2500mm；
+         patentradar.decompose |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+2026-05-08 11:55:34,884 patentradar.decompose INFO |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+────────────────────────────────────────────── 复核 · patent CN114512759B ──────────────────────────────────────────────
+已收集 3 份 agent 输出，候选合计 2 个（GPT-5.5 将自行合并去重 + 复核）
+已写入候选池快照: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/candidate_pool.json
+调用 GPT-5.5 复核（reasoning=medium）...
+复核补搜缓存: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json
+         patentradar.reviewer | [reviewer] supplement CACHE SKIP reason=agent_outputs_changed                           
+         path=/Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json                  
+2026-05-08 11:55:34,950 patentradar.reviewer INFO | [reviewer] supplement CACHE SKIP reason=agent_outputs_changed path=/Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json
+         patentradar.reviewer | [reviewer] supplement START candidate=蜂巢能源/短刀电池 target=规格/参数/手册证据       
+         features=F3,F4,F6                                                                                              
+2026-05-08 11:55:34,951 patentradar.reviewer INFO | [reviewer] supplement START candidate=蜂巢能源/短刀电池 target=规格/参数/手册证据 features=F3,F4,F6
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=spec query='蜂巢能源 短刀电池 规格    
+         参数 规格书 产品手册 datasheet PDF'                                                                            
+2026-05-08 11:55:34,952 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=spec query='蜂巢能源 短刀电池 规格 参数 规格书 产品手册 datasheet PDF'
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=spec query='蜂巢能源 短刀电池         
+         datasheet specification product manual parameters pdf'                                                         
+2026-05-08 11:55:34,952 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=spec query='蜂巢能源 短刀电池 datasheet specification product manual parameters pdf'
+         patentradar.reviewer | [reviewer] supplement START candidate=蜂巢能源/短刀电池 target=结构/形态/连接证据       
+         features=F3,F6                                                                                                 
+2026-05-08 11:55:34,953 patentradar.reviewer INFO | [reviewer] supplement START candidate=蜂巢能源/短刀电池 target=结构/形态/连接证据 features=F3,F6
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=structure query='蜂巢能源 短刀电池    
+         结构 外形 连接 壳体 拆解 图示 规格书'                                                                          
+2026-05-08 11:55:34,953 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=structure query='蜂巢能源 短刀电池 结构 外形 连接 壳体 拆解 图示 规格书'
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=structure query='蜂巢能源 短刀电池    
+         structure housing package connection teardown diagram'                                                         
+2026-05-08 11:55:34,953 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=structure query='蜂巢能源 短刀电池 structure housing package connection teardown diagram'
+         patentradar.reviewer | [reviewer] supplement START candidate=Svolt Energy Technology (蜂巢能源)/3.2V 184Ah     
+         Blade LiFePO4 Prismatic Cell target=规格/参数/手册证据 features=F3,F4,F6                                       
+2026-05-08 11:55:34,954 patentradar.reviewer INFO | [reviewer] supplement START candidate=Svolt Energy Technology (蜂巢能源)/3.2V 184Ah Blade LiFePO4 Prismatic Cell target=规格/参数/手册证据 features=F3,F4,F6
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=spec query='Svolt Energy Technology   
+         (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 规格 参数 规格书 产品手册 datasheet PDF'                    
+2026-05-08 11:55:34,955 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=spec query='Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 规格 参数 规格书 产品手册 datasheet PDF'
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=spec query='Svolt Energy Technology   
+         (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell datasheet specification product manual parameters pdf'      
+2026-05-08 11:55:34,955 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=spec query='Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell datasheet specification product manual parameters pdf'
+         patentradar.reviewer | [reviewer] supplement START candidate=Svolt Energy Technology (蜂巢能源)/3.2V 184Ah     
+         Blade LiFePO4 Prismatic Cell target=结构/形态/连接证据 features=F3,F6                                          
+2026-05-08 11:55:34,955 patentradar.reviewer INFO | [reviewer] supplement START candidate=Svolt Energy Technology (蜂巢能源)/3.2V 184Ah Blade LiFePO4 Prismatic Cell target=结构/形态/连接证据 features=F3,F6
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=structure query='Svolt Energy         
+         Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 结构 外形 连接 壳体 拆解 图示 规格书'            
+2026-05-08 11:55:34,956 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=structure query='Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 结构 外形 连接 壳体 拆解 图示 规格书'
+         patentradar.reviewer | [reviewer] supplement SKIP duplicate_query target=structure query='Svolt Energy         
+         Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell structure housing package connection teardown    
+         diagram'                                                                                                       
+2026-05-08 11:55:34,956 patentradar.reviewer INFO | [reviewer] supplement SKIP duplicate_query target=structure query='Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell structure housing package connection teardown diagram'
+         patentradar.reviewer | [reviewer] supplement CACHE WRITE                                                       
+         path=/Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json supplement_urls=0
+2026-05-08 11:55:34,958 patentradar.reviewer INFO | [reviewer] supplement CACHE WRITE path=/Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json supplement_urls=0
+         patentradar.reviewer | [reviewer] GPT-5.5 review START candidates=2 supplement_urls=0                          
+2026-05-08 11:55:34,959 patentradar.reviewer INFO | [reviewer] GPT-5.5 review START candidates=2 supplement_urls=0
+         patentradar.reviewer | [reviewer] GPT-5.5 review ATTEMPT 1/3 model=gpt-5.5                                     
+2026-05-08 11:55:34,959 patentradar.reviewer INFO | [reviewer] GPT-5.5 review ATTEMPT 1/3 model=gpt-5.5
+11:56:11 patentradar.reviewer | [reviewer] GPT-5.5 review DONE elapsed=36.89s                                           
+2026-05-08 11:56:11,850 patentradar.reviewer INFO | [reviewer] GPT-5.5 review DONE elapsed=36.89s
+─────────────────────────────────────────── GPT-5.5 复核结果（耗时 36.91s） ────────────────────────────────────────────
+┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━━━━┓
+┃ rank ┃ 公司                                       ┃ 产品                                       ┃ 分数 ┃ 风险         ┃
+┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━━━━━━┩
+│    1 │ Svolt Energy Technology Co.,               │ 短刀/刀片磷酸铁锂方形电芯（含L400/L600、3… │ 86.7 │ 高度疑似落入 │
+│      │ Ltd.（蜂巢能源科技股份有限公司）           │ 184Ah Blad                                 │      │              │
+└──────┴────────────────────────────────────────────┴────────────────────────────────────────────┴──────┴──────────────┘
+
+excluded=0  needs_review=1
+复核备注: 
+已将deepseek_agent#1与glm_agent#1按同一公司及短刀/刀片方形电芯产品族合并。未发现专利权人BYD或其关联主体；上市/发布日期晚
+于专利申请日，未因日期排除。
+
+✓ 已写入: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/final_report.json

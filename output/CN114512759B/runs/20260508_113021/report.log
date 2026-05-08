@@ -1,0 +1,58 @@
+11:53:55 patentradar.decompose | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5             
+         industry_tag=battery                                                                                           
+2026-05-08 11:53:55,843 patentradar.decompose INFO | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5  industry_tag=battery
+         patentradar.decompose | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车'             
+         assignees=['BYD Co Ltd'] claim_1_source=html n_features=6                                                      
+2026-05-08 11:53:55,845 patentradar.decompose INFO | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车' assignees=['BYD Co Ltd'] claim_1_source=html n_features=6
+         patentradar.decompose |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：           
+2026-05-08 11:53:55,845 patentradar.decompose INFO |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：
+         patentradar.decompose |   F2:                                                                                  
+         电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述
+         电池本体的宽度H大于厚度D，其中，                                                                               
+2026-05-08 11:53:55,846 patentradar.decompose INFO |   F2: 电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，
+         patentradar.decompose |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm   
+         ﹣2 ；                                                                                                         
+2026-05-08 11:53:55,846 patentradar.decompose INFO |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；
+         patentradar.decompose |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；          
+2026-05-08 11:53:55,847 patentradar.decompose INFO |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；
+         patentradar.decompose |   F5: 所述电池本体的长度L为400mm~2500mm；                                              
+2026-05-08 11:53:55,847 patentradar.decompose INFO |   F5: 所述电池本体的长度L为400mm~2500mm；
+         patentradar.decompose |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+2026-05-08 11:53:55,847 patentradar.decompose INFO |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+───────────────────────────────────────── Markdown 报告生成完成 — CN114512759B ─────────────────────────────────────────
+  Top5: 4
+  excluded: 1
+  needs_manual_review: 3
+  报告字符数: 10,514
+
+✓ 最新副本: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/final_report.md
+✓ 历史副本: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/runs/20260508_113021/final_report.md
+11:56:16 patentradar.decompose | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5             
+         industry_tag=battery                                                                                           
+2026-05-08 11:56:16,955 patentradar.decompose INFO | DECOMPOSE CACHED  source=task_package.json  decomposer_model=codex:gpt-5.5  industry_tag=battery
+         patentradar.decompose | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车'             
+         assignees=['BYD Co Ltd'] claim_1_source=html n_features=6                                                      
+2026-05-08 11:56:16,956 patentradar.decompose INFO | DECOMPOSE CACHED  patent=CN114512759B title='单体电池、动力电池包及电动车' assignees=['BYD Co Ltd'] claim_1_source=html n_features=6
+         patentradar.decompose |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：           
+2026-05-08 11:56:16,957 patentradar.decompose INFO |   F1: 1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：
+         patentradar.decompose |   F2:                                                                                  
+         电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述
+         电池本体的宽度H大于厚度D，其中，                                                                               
+2026-05-08 11:56:16,957 patentradar.decompose INFO |   F2: 电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，
+         patentradar.decompose |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm   
+         ﹣2 ；                                                                                                         
+2026-05-08 11:56:16,958 patentradar.decompose INFO |   F3: 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；
+         patentradar.decompose |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；          
+2026-05-08 11:56:16,958 patentradar.decompose INFO |   F4: 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；
+         patentradar.decompose |   F5: 所述电池本体的长度L为400mm~2500mm；                                              
+2026-05-08 11:56:16,959 patentradar.decompose INFO |   F5: 所述电池本体的长度L为400mm~2500mm；
+         patentradar.decompose |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+2026-05-08 11:56:16,959 patentradar.decompose INFO |   F6: 所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。
+───────────────────────────────────────── Markdown 报告生成完成 — CN114512759B ─────────────────────────────────────────
+  Top5: 1
+  excluded: 0
+  needs_manual_review: 1
+  报告字符数: 5,845
+
+✓ 最新副本: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/final_report.md
+✓ 历史副本: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/runs/20260508_113021/final_report.md

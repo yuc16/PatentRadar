@@ -4,1012 +4,138 @@
   "patent_publication_no": "CN114512759B",
   "queries_used": [
     {
-      "query": "\"prismatic long cell\" OR \"blade battery\" slim hard case -BYD",
+      "query": "\"long prismatic cell\" length 400mm 2500mm surface area energy ratio",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
-      "n_results": 10
+      "n_results": 8
     },
     {
-      "query": "ultra-long prismatic battery cell length 400mm to 2500mm L>H>D",
+      "query": "\"blade battery\" rigid case prismatic cell",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
-      "n_results": 16
+      "n_results": 15
     },
     {
-      "query": "slim rectangular hard case battery volumetric utilization surface area energy ratio",
+      "query": "ultra-thin rectangular power cell high volumetric utilization",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
-      "n_results": 16
+      "n_results": 15
     },
     {
-      "query": "CATL OR CALB OR EVE OR Gotion \"long prismatic cell\" OR \"blade cell\" LFP",
+      "query": "LFP flat prismatic cell high surface area cooling EV battery",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
-      "n_results": 16
+      "n_results": 15
     },
     {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "tavily+brave+exa",
       "purpose": "证据检索",
-      "n_results": 10
+      "n_results": 8
     },
     {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell datasheet specification product manual parameters pdf",
+      "search_engine": "tavily+brave+exa",
       "purpose": "证据检索",
-      "n_results": 11
+      "n_results": 8
     },
     {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "tavily+exa+brave",
       "purpose": "证据检索",
       "n_results": 7
     },
     {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "Svolt (蜂巢能源) 184Ah LiFePO4 Blade Battery 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "https://batteryfinds.com/download",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "CATL (宁德时代) Prismatic LFP Cells 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "EVE (亿纬锂能) Prismatic LFP Cell 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Gotion (国轩高科) LiFePO4 Prismatic Cells 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "https://batteryfinds.com/download",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "\"CALB\" OR \"Gotion\" OR \"SVOLT\" prismatic LFP cell aluminum case length over 400mm -BYD",
-      "search_engine": "exa+brave",
-      "purpose": "候选竞品发现",
-      "n_results": 16
-    },
-    {
-      "query": "欣旺达 OR 瑞浦兰钧 长条形铝壳电池 京东 OR 淘宝 OR 中国代理",
-      "search_engine": "exa+brave",
-      "purpose": "候选竞品发现",
-      "n_results": 12
-    },
-    {
-      "query": "Panasonic OR \"SK On\" prismatic hard shell battery cell China distributor EV market",
-      "search_engine": "exa+brave",
-      "purpose": "候选竞品发现",
-      "n_results": 16
-    },
-    {
-      "query": "elongated steel case battery OR \"slim prismatic cell\" surface area energy density ratio -BYD",
-      "search_engine": "exa+brave",
-      "purpose": "候选竞品发现",
-      "n_results": 16
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SVOLT (蜂巢能源) L400-62Ah / 184Ah Blade Battery Cell 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell structure housing package connection teardown diagram",
+      "search_engine": "tavily+exa+brave",
       "purpose": "证据检索",
       "n_results": 7
     },
     {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+tavily+brave_news",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "CALB (中创新航) L173F125 / L148F120A / L160F100 Prismatic Cells 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "REPT (瑞浦兰钧) 320Ah / 340Ah Prismatic Cells 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell launch release mass production announced availability",
+      "search_engine": "bocha+tavily+brave_news",
       "purpose": "证据检索",
       "n_results": 7
     },
     {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "Ganfeng (赣锋锂业) 100Ah Prismatic LFP Cell 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "https://batteryfinds.com/download",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
-      "n_results": 10
+      "n_results": 8
     },
     {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "tavily+brave+exa",
       "purpose": "证据检索",
       "n_results": 6
     },
     {
-      "query": "BAK (比克电池) 100Ah LFP Prismatic Cell 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) datasheet specification product manual parameters pdf",
+      "search_engine": "tavily+brave+exa",
+      "purpose": "证据检索",
+      "n_results": 6
+    },
+    {
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "tavily+exa+brave",
       "purpose": "证据检索",
       "n_results": 8
     },
     {
-      "query": "https://www.lithiumstoragebattery.com/product-lifepo4-cells-100ah.html",
-      "search_engine": "tavily_crawl",
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) structure housing package connection teardown diagram",
+      "search_engine": "tavily+exa+brave",
       "purpose": "证据检索",
-      "n_results": 3
+      "n_results": 7
     },
     {
-      "query": "https://www.alibaba.com/product-detail/In-Stock-BAK-100Ah-3-2V_1600881275940.html",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+tavily+brave_news",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) launch release mass production announced availability",
+      "search_engine": "bocha+tavily+brave_news",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "Panasonic (松下) Prismatic EV Batteries (Dalian Plant) 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "https://energy.panasonic.cn/cn/business/downloads/psds",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "https://energy.panasonic.com/cn/business/products/pack-module",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells 规格 参数 规格书 产品手册 datasheet PDF",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells datasheet specification product manual parameters pdf",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells filetype:pdf datasheet specification 规格书 产品手册",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 11
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells structure housing package connection teardown diagram",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 10
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells 产品页 结构图 技术资料 white paper",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells launch release mass production announced availability",
-      "search_engine": "bocha+exa+brave+tavily",
+      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
       "n_results": 9
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells product launch date released supplier catalog",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 9
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "SK On (SK Innovation) Prismatic Battery Cells 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
-      "search_engine": "bocha+exa+brave+tavily",
-      "purpose": "证据检索",
-      "n_results": 12
-    },
-    {
-      "query": "https://batteryfinds.com/download",
-      "search_engine": "tavily_crawl",
-      "purpose": "证据检索",
-      "n_results": 3
     }
   ],
   "top5_candidates": [
     {
       "rank": 1,
-      "company": "Svolt (蜂巢能源)",
-      "product": "184Ah LiFePO4 Blade Battery",
+      "company": "Svolt Energy Technology (蜂巢能源)",
+      "product": "3.2V 184Ah Blade LiFePO4 Prismatic Cell",
       "aliases": [
-        "Svolt 184Ah",
-        "蜂巢能源 184Ah 刀片电池"
+        "蜂巢刀片电池",
+        "184Ah LFP cell"
       ],
       "product_launch_date": null,
       "product_launch_date_evidence_url": null,
-      "score": 100.0,
-      "hard_rule_check": {
-        "is_patent_owner_product": false,
-        "has_clear_company": true,
-        "has_clear_product": true,
-        "has_public_evidence": true,
-        "has_any_clearly_unmatched_feature": false,
-        "patent_application_date": "2019-06-21",
-        "product_launch_date": null,
-        "product_launch_after_application": null,
-        "notes": null
-      },
-      "feature_match_table": [
-        {
-          "feature_id": "F1",
-          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开证据 E7 明确将该产品命名为 '3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells'。Prismatic battery cells（方形电池）在行业术语中即对应硬壳电池，直接满足该特征。",
-          "evidence": [
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Product title and description explicitly identify it as a 'LiFePO4 Prismatic battery cells' (Blade Battery), which corresponds to a hard-shell battery.",
-              "supported_features": [
-                "F1"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F2",
-          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开证据 E7 提供了产品的详细尺寸参数 '21.7*118.3*574.6 mm'。结合刀片电池的行业常识，该尺寸排列为厚度(D)×宽度(H)×长度(L)，即 D=21.7mm, H=118.3mm, L=574.6mm。计算可知 L (574.6) > H (118.3) > D (21.7)，完全满足长方体形且长度大于宽度、宽度大于厚度的特征。",
-          "evidence": [
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension listed as 21.7*118.3*574.6 mm. Interpreting as Thickness*Width*Length, L>H>D is satisfied.",
-              "supported_features": [
-                "F2"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F3",
-          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "基于 E7 提供的尺寸 D=21.7mm, H=118.3mm, L=574.6mm，计算电池本体体积 V = L×H×D = 574.6 × 118.3 × 21.7 = 1,474,382.66 mm³。计算厚度与体积之比 D/V = 21.7 / 1,474,382.66 ≈ 0.0000147 mm⁻²。该值落在权利要求限定的 0.0000065 mm⁻² ~ 0.00002 mm⁻² 范围内，明确满足该特征。",
-          "evidence": [
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 21.7*118.3*574.6 mm. Calculated D/V ratio is 0.0000147 mm^-2, within the claimed range.",
-              "supported_features": [
-                "F3"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F4",
-          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "基于 E7 尺寸计算表面积 S = 2*(L*H + L*D + H*D) = 2*(574.6*118.3 + 574.6*21.7 + 118.3*21.7) = 166,200.02 mm²。E7 给出能量 E ≥ 588 Wh。计算表面积能量比 S/E = 166200.02 / 588 ≈ 282.65 mm²·Wh⁻¹。该值远小于权利要求限定的 S/E ≤ 1000 mm²·Wh⁻¹，明确满足该特征。",
-          "evidence": [
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 21.7*118.3*574.6 mm; Energy: ≥588Wh. Calculated S/E ratio is ~282.65 mm^2*Wh^-1, which is <= 1000.",
-              "supported_features": [
-                "F4"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F5",
-          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开证据 E7 明确给出电池长度尺寸为 574.6 mm。该数值落在权利要求限定的长度 L 为 400mm~2500mm 范围内，明确满足该特征。",
-          "evidence": [
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension lists length as 574.6 mm, which falls within 400mm~2500mm.",
-              "supported_features": [
-                "F5"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F6",
-          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "基于 E7 尺寸参数，长度 L = 574.6 mm，前述计算表面积 S = 166,200.02 mm²。计算长度与表面积之比 L/S = 574.6 / 166200.02 ≈ 0.00345 mm⁻¹。该值落在权利要求限定的 0.002mm⁻¹ ～ 0.005mm⁻¹ 范围内，明确满足该特征。",
-          "evidence": [
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 21.7*118.3*574.6 mm. Calculated L/S ratio is ~0.00345 mm^-1, within the claimed range of 0.002 ~ 0.005.",
-              "supported_features": [
-                "F6"
-              ]
-            }
-          ]
-        }
-      ],
-      "main_evidence_urls": [
-        "https://batteryfinds.com/about-batteryfinds",
-        "https://batteryfinds.com/blog",
-        "https://batteryfinds.com/download",
-        "https://batteryfinds.com/lifepo4-nmc-lto-battery-cell-datasheet-listproduct-specification-pdf",
-        "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
-        "https://cnevpost.com/2026/04/16/svolt-begins-mass-production-80-kwh-phev-battery",
-        "https://diysolarforum.com/resources/svolt-cell-datasheets-lineup.347",
-        "https://www.alibaba.com/product-detail/LifePo4-battery-18650-1500mAh_122947350.html",
-        "https://www.lifepo4-battery.com/News/svolt-fortress-2-0-mass-production-80kwh.html",
-        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html"
-      ],
-      "remaining_gaps": [],
-      "reason_for_top5": "该候选竞品（Svolt 184Ah 刀片电池）的公开规格参数（尺寸 21.7*118.3*574.6 mm，能量 588Wh）与专利权利要求1中的各项数学约束条件（D/V, S/E, L, L/S）具有极高的匹配度。通过简单的工程计算验证，所有6项技术特征（F1-F6）均被明确满足，证明该产品在结构和尺寸比例上与BYD刀片电池专利的核心设计理念高度重合，是极具侵权比对价值的Top5竞品。"
-    },
-    {
-      "rank": 2,
-      "company": "SVOLT (蜂巢能源)",
-      "product": "L400-62Ah / 184Ah Blade Battery Cell",
-      "aliases": [
-        "蜂巢能源刀片电池",
-        "SVOLT L400",
-        "SVOLT 184Ah"
-      ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 96.67,
+      "score": 86.67,
       "hard_rule_check": {
         "is_patent_owner_product": false,
         "has_clear_company": true,
@@ -1027,24 +153,14 @@
           "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
           "judgement": "可能满足",
           "score": 0.8,
-          "reasoning": "公开资料显示SVOLT 184Ah和62Ah产品均被称为'Blade Battery Cell'（刀片电池）；虽未直接描述'硬壳'，但结合行业常识，刀片电池属于方壳硬壳电池，可合理推断其为硬壳电池。",
+          "reasoning": "公开资料显示该产品为'3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells'；虽未直接描述'硬壳'，但结合行业常识，Prismatic电池通常采用铝壳或钢壳等硬壳结构，可合理推断为硬壳电池。",
           "evidence": [
             {
-              "url": "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
-              "title": "Svolt 184ah Lifepo4 Blade Battery - Reliable Energy Storage",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Product Name: 184Ah LiFePO4 Blade Battery; Keywords: blade battery",
-              "supported_features": [
-                "F1"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-62ah-lfp-blade-battery.html",
-              "title": "Svolt Battery 3.2V 62ah LFP Blade Battery",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Svolt Battery 3.2V 62ah LFP Blade Battery",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "自媒体",
+              "source_reliability": "low",
+              "summary": "产品名称明确为'Blade Battery LiFePO4 Prismatic battery cells'",
               "supported_features": [
                 "F1"
               ]
@@ -1056,24 +172,14 @@
           "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
           "judgement": "明确满足",
           "score": 1.0,
-          "reasoning": "公开资料显示184Ah尺寸为574*21*118mm，62Ah尺寸为415*14.9*88mm。按照刀片电池长宽厚定义，长度L、宽度H、厚度D均满足L>H>D的关系，且构造为长方体形。",
+          "reasoning": "公开资料显示尺寸为21.7*118.3*574.6 mm，即厚度D=21.7mm、宽度H=118.3mm、长度L=574.6mm，满足长度L>宽度H>厚度D，且构造为长方体形。",
           "evidence": [
             {
-              "url": "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
-              "title": "Svolt 184ah Lifepo4 Blade Battery - Reliable Energy Storage",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 574*21*118mm",
-              "supported_features": [
-                "F2"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-62ah-lfp-blade-battery.html",
-              "title": "Svolt Battery 3.2V 62ah LFP Blade Battery",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Cell dimension: 415*14.9*88mm",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "自媒体",
+              "source_reliability": "low",
+              "summary": "Dimension: 21.7*118.3*574.6 mm",
               "supported_features": [
                 "F2"
               ]
@@ -1083,16 +189,16 @@
         {
           "feature_id": "F3",
           "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开资料显示184Ah尺寸为574*21*118mm，计算体积V=1426332mm³，厚度D=21mm，D/V=0.0000147mm⁻²，落入0.0000065~0.00002mm⁻²范围；62Ah尺寸415*14.9*88mm，D/V=0.0000274mm⁻²，超出范围。因184Ah型号明确落入该比例范围，判定为明确满足。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示尺寸为21.7*118.3*574.6 mm，计算体积V=574.6*118.3*21.7=1475061 mm³，厚度D=21.7mm，计算D/V=21.7/1475061=0.00001475 mm⁻²，落在专利范围0.0000065~0.00002 mm⁻²内。",
           "evidence": [
             {
-              "url": "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
-              "title": "Svolt 184ah Lifepo4 Blade Battery - Reliable Energy Storage",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 574*21*118mm; Nominal Capacity: 184Ah",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "自媒体",
+              "source_reliability": "low",
+              "summary": "Dimension: 21.7*118.3*574.6 mm，用于计算D/V比值",
               "supported_features": [
                 "F3"
               ]
@@ -1102,26 +208,16 @@
         {
           "feature_id": "F4",
           "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开资料显示184Ah尺寸574*21*118mm，计算表面积S=164928mm²，能量E=588.8Wh，S/E=279.7mm²·Wh⁻¹；62Ah尺寸415*14.9*88mm，表面积S=88029.4mm²，能量E=198.4Wh，S/E=443.7mm²·Wh⁻¹。两者均满足S/E≤1000mm²·Wh⁻¹。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示尺寸为21.7*118.3*574.6 mm，计算表面积S=2*(574.6*118.3+574.6*21.7+118.3*21.7)=166022 mm²，能量E≥588 Wh，计算S/E=166022/588=282.4 mm²·Wh⁻¹，满足≤1000 mm²·Wh⁻¹。",
           "evidence": [
             {
-              "url": "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
-              "title": "Svolt 184ah Lifepo4 Blade Battery - Reliable Energy Storage",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 574*21*118mm; Nominal Capacity: 184Ah; Nominal Voltage: 3.2V",
-              "supported_features": [
-                "F4"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-62ah-lfp-blade-battery.html",
-              "title": "Svolt Battery 3.2V 62ah LFP Blade Battery",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Cell dimension: 415*14.9*88mm; Nominal Capacity: 62Ah; Nominal Voltage: 3.2V",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "自媒体",
+              "source_reliability": "low",
+              "summary": "Dimension: 21.7*118.3*574.6 mm, Energy ≥588Wh，用于计算S/E比值",
               "supported_features": [
                 "F4"
               ]
@@ -1133,24 +229,14 @@
           "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
           "judgement": "明确满足",
           "score": 1.0,
-          "reasoning": "公开资料显示184Ah长度L=574mm，62Ah长度L=415mm，均在400mm~2500mm范围内。",
+          "reasoning": "公开资料显示长度为574.6 mm，落在专利范围400mm~2500mm内。",
           "evidence": [
             {
-              "url": "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
-              "title": "Svolt 184ah Lifepo4 Blade Battery - Reliable Energy Storage",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 574*21*118mm (Length=574mm)",
-              "supported_features": [
-                "F5"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-62ah-lfp-blade-battery.html",
-              "title": "Svolt Battery 3.2V 62ah LFP Blade Battery",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Cell dimension: 415*14.9*88mm (Length=415mm)",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "自媒体",
+              "source_reliability": "low",
+              "summary": "Dimension: 21.7*118.3*574.6 mm，长度L=574.6mm",
               "supported_features": [
                 "F5"
               ]
@@ -1160,26 +246,16 @@
         {
           "feature_id": "F6",
           "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开资料显示184Ah L/S=574/164928=0.00348mm⁻¹，62Ah L/S=415/88029.4=0.0047mm⁻¹，均在0.002mm⁻¹~0.005mm⁻¹范围内。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示长度L=574.6 mm，表面积S=166022 mm²，计算L/S=574.6/166022=0.00345 mm⁻¹，落在专利范围0.002~0.005 mm⁻¹内。",
           "evidence": [
             {
-              "url": "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
-              "title": "Svolt 184ah Lifepo4 Blade Battery - Reliable Energy Storage",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Dimension: 574*21*118mm",
-              "supported_features": [
-                "F6"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-62ah-lfp-blade-battery.html",
-              "title": "Svolt Battery 3.2V 62ah LFP Blade Battery",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "Cell dimension: 415*14.9*88mm",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "自媒体",
+              "source_reliability": "low",
+              "summary": "Dimension: 21.7*118.3*574.6 mm，用于计算L/S比值",
               "supported_features": [
                 "F6"
               ]
@@ -1188,257 +264,145 @@
         }
       ],
       "main_evidence_urls": [
-        "https://batteryfinds.com/download",
         "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
-        "https://cnevpost.com/2025/07/23/svolt-trial-production-semi-solid-state-batteries-q4",
+        "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
         "https://diysolarforum.com/resources/svolt-cell-datasheets-lineup.347",
-        "https://ecoteardown.top/group-24-lifepo4-batteries-comparison-chart",
-        "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
-        "https://ecoteardown.top/privacy-policy",
-        "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html",
-        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
-        "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-62ah-lfp-blade-battery.html"
+        "https://globy.com/b2bmarket/listing/products/svolt-32v-184ah-rechargeable-power-lifepo4-blade-battery-cells-389d44",
+        "https://nogibattery.com/products/hot-sale-svolt-blade-cells-32v-184ah-lifepo4-prismatic-blade-battery-for-electric-vehicle",
+        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
+        "https://www.uli-power.com/svolt-184ah-lifepo4-blade-battery-ultrathin-ultra-thin-battery-3-2v-solar-energy-storage-battery-cell-prismatic-lithium-ion-batteries-product"
       ],
       "remaining_gaps": [
         {
           "feature_id": "F3",
-          "gap": "62Ah型号的厚度体积比(D/V=0.0000274mm⁻²)超出权利要求上限(0.00002mm⁻²)，但184Ah型号完全落入，建议进一步确认侵权比对的具体目标型号"
+          "gap": "未找到直接公开的D/V比值数据，需通过尺寸参数计算推断"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到直接公开的S/E比值数据，需通过尺寸和能量参数计算推断"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到直接公开的L/S比值数据，需通过尺寸参数计算推断"
         }
       ],
-      "reason_for_top5": "184Ah型号的所有6个技术特征均通过尺寸和容量参数计算明确落入权利要求1的范围，证据来源于供应商规格书，质量高，计算匹配度极高，具有极高的侵权风险，值得进入Top5。"
+      "reason_for_top5": "该候选竞品在F2、F5明确满足，F1、F3、F4、F6可能满足，且尺寸和能量参数与专利范围匹配，证据质量中等（第三方销售网站提供详细规格），值得进入Top5。"
     }
   ],
   "discarded_candidates": [
     {
-      "company": "BYD",
-      "product": "Blade prismatic battery cell",
-      "discard_reason": "专利权人自身",
+      "company": "BYD Co Ltd",
+      "product": "Blade Battery",
+      "discard_reason": "专利权人自身产品",
       "evidence_urls": []
     },
     {
       "company": "未知",
-      "product": "400mm Prismatic LFP Cell",
-      "discard_reason": "公司不明",
-      "evidence_urls": []
-    },
-    {
-      "company": "Panasonic",
-      "product": "Prismatic type Lithium ion Batteries (High Capacity type)",
-      "discard_reason": "未发现该产品进入中国大陆市场的证据，无法构成 CN 专利侵权",
-      "evidence_urls": []
-    },
-    {
-      "company": "CALB (中航锂电)",
-      "product": "L148F120A 120Ah Prismatic LFP Battery Cell",
-      "discard_reason": "型号暗示长度148mm，不符合专利长度400-2500mm的要求",
-      "evidence_urls": []
-    },
-    {
-      "company": "PatSnap",
-      "product": "Cylindrical vs Prismatic Battery Energy Density",
+      "product": "PRISMATIC BATTERY CELL HAVING BATTERY CASE",
       "discard_reason": "专利文献站，非产品资料",
       "evidence_urls": []
     },
     {
       "company": "未知",
-      "product": "Cell teardown and characterization of an automotive prismatic LFP battery",
-      "discard_reason": "非真实可购买产品（学术论文）",
+      "product": "Monolithically-stacked thin-film solid-state batteries",
+      "discard_reason": "学术文献/非真实可购买产品",
       "evidence_urls": []
     },
     {
-      "company": "Longsingtech",
-      "product": "Prismatic NMC Cells Rechargeable 3.7V 62Ah",
-      "discard_reason": "无尺寸证据，且容量小不符合长薄刀片特征",
+      "company": "PowerCo (Volkswagen)",
+      "product": "Unified Cell",
+      "discard_reason": "纯海外厂商无任何中国大陆市场迹象，无法构成 CN 专利侵权",
       "evidence_urls": []
     },
     {
-      "company": "NGE Tech",
-      "product": "PRISMATIC NMC CELL",
-      "discard_reason": "无具体产品型号和尺寸证据",
+      "company": "FCO Power",
+      "product": "Solid Oxide Fuel Cell Stack",
+      "discard_reason": "技术方案不相关（燃料电池而非单体锂电池）",
       "evidence_urls": []
     },
     {
-      "company": "CATL (宁德时代)",
-      "product": "Prismatic LFP Cells",
-      "discard_reason": "存在明确不满足的必要技术特征",
-      "evidence_urls": [
-        "https://batteryfinds.com/lifepo4-nmc-lto-battery-cell-datasheet-listproduct-specification-pdf",
-        "https://batteryfinds.com/wp-content/uploads/2021/06/CATL-280Ah-LiFePO4-LFP-Battery-Cell-Product-Specification.pdf",
-        "https://batteryfinds.com/wp-content/uploads/2023/09/CATL-48Ah-3.7V-NMC-Prismatic-Cell-SpecificationDatasheet.pdf",
-        "https://diysolarforum.com/resources/catl-battery-datasheets.331",
-        "https://ecoteardown.top/about-eco-teardown",
-        "https://ecoteardown.top/contact",
-        "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
-        "https://sunraybattery.com/product/catl-160ah-3-22v-prismatic-lithium-lfp-ev-motive-battery-cell",
-        "https://www.basenpower.com/wp-content/uploads/2025/06/CATL-48Ah-3.7V-NMC-Prismatic-Cell-SpecificationDatasheet.pdf",
-        "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf"
-      ]
+      "company": "DXAT",
+      "product": "Prismatic cell (Length 140mm)",
+      "discard_reason": "产品长度140mm，明确不满足专利F5长度400-2500mm约束",
+      "evidence_urls": []
     },
     {
-      "company": "EVE (亿纬锂能)",
-      "product": "Prismatic LFP Cell",
-      "discard_reason": "存在明确不满足的必要技术特征",
-      "evidence_urls": [
-        "https://www.dnkpower.com/wp-content/uploads/2025/03/EVE-LF162-A22-Prismatic-Battery-Datasheet.pdf",
-        "https://www.evemall.eu/industry-news/meeting-the-growing-demand-for-lfp-batteries-eve-prismatic-solutions",
-        "https://www.gobelpower.com/download/EVE-306AH-MB30-LiFePO4-Battery-Cell-Specification.pdf",
-        "https://www.gobelpower.com/download/EVE-314Ah-CB31-LiFePO4-Cell-Datasheet.pdf",
-        "https://www.gobelpower.com/download/EVE-LF105-LiFePO4-Battery-Cell-Product-Specification-20191202.pdf",
-        "https://www.gobelpower.com/download/EVE-LF50K-LiFePO4-Battery-Cell-Product-Specification-20191202.pdf",
-        "https://www.gobelpower.com/download/EVE-MB56-628Ah-LiFePO4-Cell-Specification-Datasheet.pdf",
-        "https://www1.hkexnews.hk/app/sehk/2026/108035/documents/sehk26010203275.pdf"
-      ]
+      "company": "Welsonpower",
+      "product": "50Ah Prismatic LFP3914895",
+      "discard_reason": "产品尺寸高度/长度仅95mm，明确不满足专利F5长度400-2500mm约束",
+      "evidence_urls": []
     },
     {
-      "company": "Gotion (国轩高科)",
+      "company": "未知",
+      "product": "Prismatic Cell Aluminum Case and Lid",
+      "discard_reason": "电池壳体零部件，非完整单体电池产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "Prismatic Cell Case",
+      "discard_reason": "电池壳体零部件，非完整单体电池产品",
+      "evidence_urls": []
+    },
+    {
+      "company": "Swaytronic",
+      "product": "Prismatic cells",
+      "discard_reason": "纯海外经销商/厂商，未发现中国大陆市场迹象",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "Ultra Thin Li Ion Battery",
+      "discard_reason": "无明确公司名及具体产品型号，疑似泛指或定制微小电池，不满足长度约束",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "Licerion batteries",
+      "discard_reason": "纯海外厂商，未发现中国大陆市场迹象",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
       "product": "LiFePO4 Prismatic Cells",
-      "discard_reason": "存在明确不满足的必要技术特征",
-      "evidence_urls": [
-        "http://gbsbattery.en.made-in-china.com/product/kjrQUKBDbacW/China-LiFePO4-Prismatic-Cell-40ah.html",
-        "https://batteryfinds.com/discount-coupon-code",
-        "https://batteryfinds.com/download",
-        "https://batteryfinds.com/lifepo4-battery-cells-101",
-        "https://batteryfinds.com/lifepo4-nmc-lto-battery-cell-datasheet-listproduct-specification-pdf",
-        "https://batteryfinds.com/product/gotion-340ah-lifepo4-prismatic-battery-cells-4pcs",
-        "https://ecoteardown.top/about-eco-teardown",
-        "https://ecoteardown.top/contact",
-        "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
-        "https://www.gobelpower.com/download/files/Gotion-314Ah-LiFePO4-Cell-Specification.pdf",
-        "https://www.teklib.com/library/gotion-ifp27175200a-100ah-battery-datasheet",
-        "https://www.teklib.com/library/gotion-ifp29148112-54ah-battery-datasheet"
-      ]
-    },
-    {
-      "company": "未知",
-      "product": "Prismatic Battery 100Ah 102Ah 104Ah LFP Batteries Cell",
-      "discard_reason": "无明确公司名，仅为电商网页rsbatterypack，无法确认真实制造商",
-      "evidence_urls": []
-    },
-    {
-      "company": "欣旺达",
-      "product": "消费类电池/手机电池",
-      "discard_reason": "搜索结果均为手机电池、启动电源等消费类产品，无明确的长薄方壳动力电芯产品型号证据",
+      "discard_reason": "无明确公司名的经销商页面",
       "evidence_urls": []
     },
     {
       "company": "未知",
-      "product": "Cylindrical Vs Prismatic / Prismatic vs Cylindrical",
-      "discard_reason": "比较类文章，无具体公司及产品型号",
+      "product": "LFP Prismatic Cells",
+      "discard_reason": "无明确公司名的经销商页面",
       "evidence_urls": []
     },
     {
-      "company": "未知",
-      "product": "Prismatic Cell Aluminum Battery Case vs. Steel Case",
-      "discard_reason": "壳体技术讨论文章，无具体公司及产品型号",
+      "company": "Matelion",
+      "product": "280Ah LFP prismatic cell",
+      "discard_reason": "公司不明，无中国市场迹象",
       "evidence_urls": []
     },
     {
-      "company": "未知",
-      "product": "Cylindrical vs Prismatic Battery Energy Density",
-      "discard_reason": "专利文献站，非产品资料",
+      "company": "Next Generation Energy Tech. Co., Ltd",
+      "product": "PRISMATIC LFP CELL",
+      "discard_reason": "公司不明，无中国市场迹象",
       "evidence_urls": []
     },
     {
-      "company": "未知",
-      "product": "Prismatic Cell Turnkey Solution",
-      "discard_reason": "生产线解决方案，非具体可购买的电芯产品",
+      "company": "Hithium (海辰储能)",
+      "product": "Prismatic LFP Cell (储能专用方壳电芯)",
+      "discard_reason": "无任何公开证据 URL",
       "evidence_urls": []
     },
     {
-      "company": "CALB (中创新航)",
-      "product": "L173F125 / L148F120A / L160F100 Prismatic Cells",
-      "discard_reason": "存在明确不满足的必要技术特征",
+      "company": "EVE Energy (亿纬锂能)",
+      "product": "Prismatic LFP Cell",
+      "discard_reason": "产品名称过泛，缺少可定位的型号、系列名或专有商品名",
       "evidence_urls": [
-        "https://calb-battery.us/products.html",
-        "https://diysolarforum.com/resources/calb-datasheets.330",
-        "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
-        "https://lythpower.com/category/lyth_products/lyth_battery_cells/calb-cells/calb_lfp_cells",
-        "https://lythpower.com/products/battery-cells/calb-cells",
-        "https://mechabattery.com/products/battery-cells/calb-cells",
-        "https://www.langkawipower.com/Products/CALB-Battery/CALB-L160F100-100Ah.html",
-        "https://www.lifepo4-battery.com/Products/CALB-Battery/CALB-L160F100-100Ah.html"
-      ]
-    },
-    {
-      "company": "REPT (瑞浦兰钧)",
-      "product": "320Ah / 340Ah Prismatic Cells",
-      "discard_reason": "特征匹配阶段失败: 'list' object has no attribute 'get'",
-      "evidence_urls": []
-    },
-    {
-      "company": "Ganfeng (赣锋锂业)",
-      "product": "100Ah Prismatic LFP Cell",
-      "discard_reason": "存在明确不满足的必要技术特征",
-      "evidence_urls": [
-        "http://batterotech.com/product-details?product_id=13",
-        "http://www.china-nengyuan.com/product/176333.html",
-        "https://batteryfinds.com/contact",
-        "https://batteryfinds.com/download",
-        "https://batteryfinds.com/lifepo4-battery-cells-101",
-        "https://batteryfinds.com/product/ganfeng-100ah-lifepo4-battery-cells",
-        "https://langkawipower.com/Products/LiFePO4-Battery-Cell/ganfeng-100ah-lifepo4-battery.html",
-        "https://robu.in/product/ganfeng-3-2v-100ah-lifepo4-lithium-prismatic-battery-cell",
-        "https://www.accio.com/plp/ganfeng-100ah-cell-datasheet",
-        "https://www.alibaba.com/product-detail/_1600069012530.html"
-      ]
-    },
-    {
-      "company": "BAK (比克电池)",
-      "product": "100Ah LFP Prismatic Cell",
-      "discard_reason": "存在明确不满足的必要技术特征",
-      "evidence_urls": [
-        "https://batteryfinds.com/lifepo4-nmc-lto-battery-cell-datasheet-listproduct-specification-pdf",
-        "https://imrbatteries.com/products/pack-of-4-eve-lf100-100ah-3-2v-lifepo4-prismatic-battery-grade-a",
-        "https://quartzcomponents.com/products/3-2v-100ah-prismatic-cell-high-star-prismatic-cell",
-        "https://www.alibaba.com/product-detail/BAK-100Ah-3-2V-Prismatic-Lifepo4_1601031340103.html",
-        "https://www.alibaba.com/product-detail/Grade-A-BAK-100AH-Lifepo4-Lithium_1600572648667.html",
-        "https://www.alibaba.com/product-detail/In-Stock-BAK-100Ah-3-2V_1600881275940.html",
-        "https://www.alibaba.com/showroom/200ah-lifepo4.html",
-        "https://www.alibaba.com/showroom/headway-lifepo4.html",
-        "https://www.lithiumstoragebattery.com/product-lifepo4-cells-100ah.html",
-        "https://www.lithiumstoragebattery.com/product-long-cycle-life-lfp100ah-lifepo4-100ah-battery.html",
-        "https://www.lithiumstoragebattery.com/support.html",
-        "https://www.xihobattery.com/products/bak-100ah-32v-lifepo4-prismatic-rechargeable-lithium-ion-battery"
-      ]
-    },
-    {
-      "company": "Panasonic (松下)",
-      "product": "Prismatic EV Batteries (Dalian Plant)",
-      "discard_reason": "存在明确不满足的必要技术特征",
-      "evidence_urls": [
-        "https://actec.dk/media/documents/A337A624823A.pdf",
-        "https://energy.panasonic.cn/cn/business",
-        "https://energy.panasonic.cn/cn/business/downloads",
-        "https://energy.panasonic.cn/cn/business/downloads/psds",
-        "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
-        "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-standard",
-        "https://energy.panasonic.com/cn/business",
-        "https://energy.panasonic.com/cn/business/products",
-        "https://energy.panasonic.com/cn/business/products/lithium-ion/prismatic-high-cap",
-        "https://energy.panasonic.com/cn/business/products/pack-module",
-        "https://energy.panasonic.com/eu/business/products/lithium-ion/prismatic-standard",
-        "https://www.alldatasheetde.com/datasheet-pdf/pdf/598658/PANASONICBATTERY/NC.html"
-      ]
-    },
-    {
-      "company": "SK On (SK Innovation)",
-      "product": "Prismatic Battery Cells",
-      "discard_reason": "存在明确不满足的必要技术特征",
-      "evidence_urls": [
-        "https://batteryfinds.com/about-batteryfinds",
-        "https://batteryfinds.com/blog",
-        "https://batteryfinds.com/download",
-        "https://batteryfinds.com/lifepo4-nmc-lto-battery-cell-datasheet-listproduct-specification-pdf",
-        "https://ecoteardown.top/wp-content/uploads/2023/12/Ganfeng-206Ah-3.2V-LiFePO4-Prismatic-Battery-Cell-Specification-Datasheet.pdf",
-        "https://www.basenpower.com/wp-content/uploads/2025/06/CATL-48Ah-3.7V-NMC-Prismatic-Cell-SpecificationDatasheet.pdf",
-        "https://www.dhgate.com/product/high-quality-prismatic-lipo-brand-new-3-7v/717146445.html",
-        "https://www.dhgate.com/product/sk-innovation-sk60-14-100-300mm-3c-nmc-li/727721083.html",
-        "https://www.dhgate.com/product/sk-innovation-sk75-12-125-365mm-high-capacity/727748144.html",
-        "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf"
+        "https://www.evebattery.com/en/prismatic-lfp-cell"
       ]
     }
   ],
   "notes": null,
-  "elapsed_seconds": 4369.8,
+  "elapsed_seconds": 501.83,
   "llm_model": "glm-5.1"
 }

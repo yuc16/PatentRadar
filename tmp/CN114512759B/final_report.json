@@ -112,75 +112,54 @@
     {
       "rank": 1,
       "candidate_id": "M001",
-      "company": "蜂巢能源科技股份有限公司（SVOLT）",
-      "product": "SVOLT L600 / 184Ah LiFePO4 Blade Battery",
+      "company": "Svolt Energy Technology Co., Ltd.（蜂巢能源科技股份有限公司）",
+      "product": "短刀/刀片磷酸铁锂方形电芯（含L400/L600、3.2V 184Ah Blade LiFePO4 Prismatic Cell）",
       "aliases": [
-        "SVOLT 184Ah刀片电池",
-        "LiFePO4 Blade Battery",
-        "184Ah刀片电池",
-        "Svolt 184Ah Blade Cell",
-        "184Ah LiFePO4 Blade Battery",
-        "蜂巢能源 184Ah 刀片电池",
-        "短刀电池 L600",
-        "SVOLT L600",
-        "蜂巢能源短刀电池",
-        "短刀电池（L600/L300系列）",
-        "短刀片电池",
-        "L600",
-        "L300",
+        "蜂巢能源",
+        "Svolt Energy Technology",
+        "蜂行短刀电池",
+        "短刀电池",
         "短刀电芯",
-        "蜂巢能源刀片电池",
-        "SVOLT 184Ah"
+        "L500",
+        "L600",
+        "62Ah",
+        "90Ah",
+        "L6-EDN",
+        "3.2V 184Ah Blade LiFePO4 Prismatic Cell",
+        "蜂巢刀片电池",
+        "184Ah LFP cell",
+        "Blade Battery LiFePO4 Prismatic battery cells"
       ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 100.0,
+      "product_launch_date": "2023-05-26",
+      "product_launch_date_evidence_url": "https://chuneng.ofweek.com/recommendfriends-30597968.html",
+      "score": 86.7,
       "risk_level": "高度疑似落入",
       "final_feature_table": [
         {
           "feature_id": "F1",
           "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "多个来源将该产品描述为 prismatic cell、Blade Battery、长薄型铝壳电芯或方形硬壳电池。方形铝壳/方壳电芯属于硬壳单体电池，满足硬壳电池及单体电池限定。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "蜂巢官网公开其短刀系列铁锂电池，第三方页面将184Ah产品称为Blade Battery LiFePO4 Prismatic battery cells。Prismatic方形动力电芯在行业中通常对应铝壳/钢壳等硬壳结构，但现有证据未直接出现“硬壳”“铝壳”等表述，因此不能判为明确满足，最终判定为可能满足。",
           "evidence": [
             {
-              "url": "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
-              "title": "Lithium ion rechargeable CB0MHW3NA-184Ah svolt 3.2v LiFePo4 battery",
-              "source_type": "产品手册",
-              "source_reliability": "medium",
-              "summary": "产品页明确描述为“prismatic lifepo4 cell”，表示方形硬壳电芯。",
+              "url": "https://www.svolt.cn/solution/passenger",
+              "title": "乘用车解决方案 - 蜂巢能源",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "蜂巢能源官网提及全域“短刀”及短刀系列铁锂电池。",
               "supported_features": [
                 "F1"
               ]
             },
             {
-              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
-              "title": "软包&长薄化方形电池发展带动叠片设备需求",
-              "source_type": "行业报告",
-              "source_reliability": "high",
-              "summary": "短刀电池为长薄型铝壳电芯，L600电池尺寸为长度574mm、厚度21.8mm、高度118mm。",
-              "supported_features": [
-                "F1",
-                "F2",
-                "F3",
-                "F5",
-                "F6"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
               "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "产品标题及描述明确为 LiFePO4 Prismatic battery cells / Blade Battery，并披露尺寸和能量参数。",
+              "source_reliability": "low",
+              "summary": "页面名称显示产品为Blade Battery LiFePO4 Prismatic battery cells，可支持其为方形刀片/短刀类电芯，但来源可靠性较低。",
               "supported_features": [
-                "F1",
-                "F2",
-                "F3",
-                "F4",
-                "F5",
-                "F6"
+                "F1"
               ]
             }
           ]
@@ -190,24 +169,24 @@
           "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
           "judgement": "明确满足",
           "score": 1.0,
-          "reasoning": "公开尺寸为约574mm×118mm×21.7/21.8mm，或574.6mm×118.3mm×21.7mm。按刀片/短刀电芯通常定义，长度L约574mm，宽度/高度H约118mm，厚度D约21.7mm，满足长方体形且L>H>D。",
+          "reasoning": "第三方规格页给出尺寸21.7×118.3×574.6 mm，并称为Prismatic battery cells。按长边作为L=574.6mm、宽H=118.3mm、厚D=21.7mm，满足L>H>D，且方形/棱柱电芯可对应长方体形电池本体。蜂巢官网另提及L600短刀电芯，亦与长条方形电芯形态一致。",
           "evidence": [
             {
-              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
-              "title": "软包&长薄化方形电池发展带动叠片设备需求",
-              "source_type": "行业报告",
-              "source_reliability": "high",
-              "summary": "披露L600电池尺寸为长度574mm、厚度21.8mm、高度118mm。",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "其他",
+              "source_reliability": "low",
+              "summary": "披露184Ah Blade LiFePO4 Prismatic cell尺寸为21.7×118.3×574.6 mm。",
               "supported_features": [
                 "F2"
               ]
             },
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
+              "url": "https://www.svolt.cn/solution/commercial",
+              "title": "商业应用-蜂巢能源官方网站",
+              "source_type": "官网",
               "source_reliability": "high",
-              "summary": "披露184Ah刀片电池尺寸约21.7×118.3×574.6mm。",
+              "summary": "蜂巢官网提及L600短刀电芯，实现轻/重卡兼容应用。",
               "supported_features": [
                 "F2"
               ]
@@ -217,26 +196,16 @@
         {
           "feature_id": "F3",
           "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "以L=574mm、H=118mm、D=21.8mm计算，V=L×H×D，D/V=1/(L×H)=1/(574×118)≈0.00001476mm^-2；以574.6mm×118.3mm×21.7mm计算亦约为0.0000147mm^-2，均落入0.0000065~0.00002mm^-2。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "依据第三方规格页尺寸21.7×118.3×574.6 mm计算，若D=21.7mm、H=118.3mm、L=574.6mm，则体积V≈574.6×118.3×21.7=1,475,061 mm³，D/V≈21.7/1,475,061=0.0000147 mm^-2，落入0.0000065~0.00002 mm^-2。由于关键尺寸来自低可靠性第三方销售页，最终判为可能满足。",
           "evidence": [
             {
-              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
-              "title": "软包&长薄化方形电池发展带动叠片设备需求",
-              "source_type": "行业报告",
-              "source_reliability": "high",
-              "summary": "披露L600电池尺寸为长度574mm、厚度21.8mm、高度118mm，可计算D/V。",
-              "supported_features": [
-                "F3"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
               "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "披露184Ah刀片电池尺寸，可计算D/V。",
+              "source_reliability": "low",
+              "summary": "披露电芯尺寸21.7×118.3×574.6 mm，可据此计算D/V。",
               "supported_features": [
                 "F3"
               ]
@@ -246,26 +215,16 @@
         {
           "feature_id": "F4",
           "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "以184Ah、3.2V电芯能量约588Wh计，结合574.6mm×118.3mm×21.7mm尺寸计算表面积S约166200mm²，S/E约282.7mm²/Wh，明显小于1000mm²/Wh。另有L600体积能量密度超过430Wh/L的资料，按约1.476L体积推算能量约634Wh，亦可得S/E远低于限定值。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "依据第三方规格页尺寸21.7×118.3×574.6 mm，表面积S=2×(574.6×118.3+574.6×21.7+118.3×21.7)≈166,022 mm²。184Ah、3.2V对应能量E≈588.8Wh，则S/E≈282.0 mm²/Wh，低于1000 mm²/Wh。因尺寸和容量信息均来自低可靠性第三方页面，最终判为可能满足。",
           "evidence": [
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
               "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "披露184Ah刀片电池容量、标称电压及尺寸，可计算S/E。",
-              "supported_features": [
-                "F4"
-              ]
-            },
-            {
-              "url": "https://www.ab-li.com/a/24365",
-              "title": "5家！蜂巢能源短刀电池配套车企正式揭晓！",
-              "source_type": "其他",
-              "source_reliability": "medium",
-              "summary": "提及第二代L600短刀片磷酸铁锂电池体积能量密度超过430Wh/L。",
+              "source_reliability": "low",
+              "summary": "披露3.2V、184Ah及尺寸21.7×118.3×574.6 mm，可据此计算S/E。",
               "supported_features": [
                 "F4"
               ]
@@ -277,448 +236,88 @@
           "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
           "judgement": "明确满足",
           "score": 1.0,
-          "reasoning": "公开长度为574mm或574.6mm，明确落入权利要求限定的400mm~2500mm。",
+          "reasoning": "行业报告提及蜂巢推出L400和L600两种规格短刀快充电芯，长度400mm和600mm均落入400mm~2500mm范围。第三方184Ah规格页披露长度574.6mm，也落入该范围。",
           "evidence": [
             {
-              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
-              "title": "软包&长薄化方形电池发展带动叠片设备需求",
-              "source_type": "行业报告",
-              "source_reliability": "high",
-              "summary": "披露L600电池长度574mm。",
-              "supported_features": [
-                "F5"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "披露184Ah刀片电池长度约574.6mm。",
-              "supported_features": [
-                "F5"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F6",
-          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "按574mm×118mm×21.8mm计算，表面积S≈165635mm²，L/S≈574/165635≈0.00347mm^-1；按574.6mm×118.3mm×21.7mm计算亦约0.00346mm^-1，均落入0.002~0.005mm^-1。",
-          "evidence": [
-            {
-              "url": "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
-              "title": "软包&长薄化方形电池发展带动叠片设备需求",
-              "source_type": "行业报告",
-              "source_reliability": "high",
-              "summary": "披露L600电池尺寸，可计算L/S。",
-              "supported_features": [
-                "F6"
-              ]
-            },
-            {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "披露184Ah刀片电池尺寸，可计算L/S。",
-              "supported_features": [
-                "F6"
-              ]
-            }
-          ]
-        }
-      ],
-      "main_evidence_urls": [
-        "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
-        "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
-        "https://www.ab-li.com/a/24365",
-        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html"
-      ],
-      "reason_for_top5": "合并后候选同时具备硬壳方形/铝壳属性、明确尺寸、容量或能量参数，六项必要技术特征均可由公开参数直接或经简单几何计算验证落入。",
-      "remaining_gaps": []
-    },
-    {
-      "rank": 2,
-      "candidate_id": "M002",
-      "company": "蜂巢能源科技股份有限公司（SVOLT）",
-      "product": "143.5Ah LFP 4C Fast Charging Short Blade Cell",
-      "aliases": [
-        "SVOLT 143.5Ah LFP 4C快充短刀电池",
-        "143.5Ah短刀快充电芯",
-        "Short Blade Fast Charging Cell"
-      ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 50.0,
-      "risk_level": "局部相似",
-      "final_feature_table": [
-        {
-          "feature_id": "F1",
-          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "官网资料将该143.5Ah电芯描述为prismatic shape，且为短刀电芯。prismatic动力电池通常为方壳硬壳单体电池，满足F1。",
-          "evidence": [
-            {
-              "url": "https://www.svolt.cn/en/solution/passenger",
-              "title": "143.5Ah-LFP-4C Fast Charging Short Blade Cell",
-              "source_type": "官网",
-              "source_reliability": "high",
-              "summary": "描述143.5Ah电芯为prismatic shape，表明方壳，且为短刀电芯。",
-              "supported_features": [
-                "F1"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F2",
-          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "该产品名称含Short Blade且官网称prismatic shape，可推知其大概率为长薄型方壳/长方体结构；但未披露L、H、D具体数值，因此只能推断可能满足L>H>D，不能最终明确。",
-          "evidence": [
-            {
-              "url": "https://www.svolt.cn/en/solution/passenger",
-              "title": "143.5Ah-LFP-4C Fast Charging Short Blade Cell",
-              "source_type": "官网",
-              "source_reliability": "high",
-              "summary": "官网称该电芯为Short Blade Cell及prismatic shape。",
-              "supported_features": [
-                "F2"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F3",
-          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未见该143.5Ah型号的长度、宽度、厚度或体积公开参数，无法计算D/V是否落入0.0000065~0.00002mm^-2。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F4",
-          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "输入证据未披露该型号单体能量E及完整外形尺寸，无法计算S/E是否≤1000mm²/Wh。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F5",
-          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未找到该143.5Ah电芯长度L的明确公开数值，不能判断是否位于400mm~2500mm。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F6",
-          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "缺少长度L以及表面积S所需的尺寸数据，无法计算L/S。",
-          "evidence": []
-        }
-      ],
-      "main_evidence_urls": [
-        "https://www.svolt.cn/en/solution/passenger"
-      ],
-      "reason_for_top5": "该型号与涉案技术同属蜂巢短刀方壳电芯路线，F1明确、F2有一定结构推断基础，但关键尺寸与能量参数缺口较大。",
-      "remaining_gaps": [
-        {
-          "feature_id": "F3",
-          "gap": "缺少该143.5Ah型号的完整L/H/D尺寸或规格书。"
-        },
-        {
-          "feature_id": "F4",
-          "gap": "缺少单体能量E及可用于计算表面积的尺寸。"
-        },
-        {
-          "feature_id": "F5",
-          "gap": "缺少长度L明确数值。"
-        },
-        {
-          "feature_id": "F6",
-          "gap": "缺少长度和表面积计算所需尺寸。"
-        }
-      ]
-    },
-    {
-      "rank": 3,
-      "candidate_id": "M003",
-      "company": "瑞浦兰钧能源股份有限公司",
-      "product": "问顶电池（Wending Battery）",
-      "aliases": [
-        "问顶系列动力电池",
-        "REPT问顶电池"
-      ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 50.0,
-      "risk_level": "局部相似",
-      "final_feature_table": [
-        {
-          "feature_id": "F1",
-          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "港交所公告类资料记载问顶电池为方形硬壳电芯/prismatic cell，属于硬壳单体电池。",
-          "evidence": [
-            {
-              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
-              "title": "瑞浦蘭鈞能源股份有限公司公告",
-              "source_type": "官方PDF",
-              "source_reliability": "high",
-              "summary": "问顶电池为方形硬壳电芯（prismatic cell），属于动力电池。",
-              "supported_features": [
-                "F1"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F2",
-          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "Agent推理称该资料描述问顶电池具有长薄方壳或薄型化特征；若该描述准确，则可合理推断其为长方体且大概率满足L>H>D。但输入证据摘要仅明确prismatic cell，未给出具体尺寸关系，因此只能判为可能满足。",
-          "evidence": [
-            {
-              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf",
-              "title": "瑞浦蘭鈞能源股份有限公司公告",
-              "source_type": "官方PDF",
-              "source_reliability": "high",
-              "summary": "资料指向问顶电池为方形硬壳电芯；Agent称其还涉及长薄结构描述，但摘要未列出尺寸。",
-              "supported_features": [
-                "F2"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F3",
-          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未披露问顶电池的L、H、D具体数值。仅凭长薄、薄型化或高体积利用率等定性描述，无法可靠判断D/V是否落入权利要求数值范围。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F4",
-          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "资料未提供单体尺寸和单体能量E。能量密度或产品平台性能不能直接替代S/E计算，不能证明S/E≤1000mm²/Wh。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F5",
-          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未见问顶电池单体长度L的公开数值。行业同类产品长度推测不足以证明其必然处于400mm~2500mm。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F6",
-          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "缺少L以及完整表面积S的计算依据，无法验证L/S是否为0.002~0.005mm^-1。",
-          "evidence": []
-        }
-      ],
-      "main_evidence_urls": [
-        "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0326/2025032602386.pdf"
-      ],
-      "reason_for_top5": "该产品明确属于方形硬壳动力电芯，并可能采用长薄结构，但缺少权利要求核心数值参数，当前只能作为局部相似线索。",
-      "remaining_gaps": [
-        {
-          "feature_id": "F3",
-          "gap": "缺少问顶电池单体L/H/D尺寸。"
-        },
-        {
-          "feature_id": "F4",
-          "gap": "缺少单体能量E和表面积计算所需尺寸。"
-        },
-        {
-          "feature_id": "F5",
-          "gap": "缺少长度L明确数值。"
-        },
-        {
-          "feature_id": "F6",
-          "gap": "缺少L/S计算依据。"
-        }
-      ]
-    },
-    {
-      "rank": 4,
-      "candidate_id": "M004",
-      "company": "欣旺达动力科技股份有限公司",
-      "product": "方形闪充电池 / 动力电池",
-      "aliases": [
-        "闪充电池",
-        "欣旺达方形动力电池",
-        "方形铝壳电池",
-        "方壳电芯"
-      ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 41.7,
-      "risk_level": "弱相关",
-      "final_feature_table": [
-        {
-          "feature_id": "F1",
-          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "多份公开资料记载欣旺达动力电池产品为方形铝壳电池、硬壳方形铝壳电芯或方壳电芯，能够明确对应硬壳电池。",
-          "evidence": [
-            {
-              "url": "https://pdf.dfcfw.com/pdf/H2_AN202504211660102350_1.pdf",
-              "title": "欣旺达电子股份有限公司2024年年度报告",
-              "source_type": "官方PDF",
-              "source_reliability": "high",
-              "summary": "动力电池产品以方形铝壳电池为核心。",
-              "supported_features": [
-                "F1"
-              ]
-            },
-            {
-              "url": "https://pdf.dfcfw.com/pdf/H3_AP202307031591987132_1.pdf",
-              "title": "以消费类电池为基石动力+储能打造第二增长曲线欣旺达300207.SZ",
+              "url": "https://file.iyanbao.com/pdf/9d287-d1a0eb6b-b26a-43ac-9042-06d9bbcbbba3.pdf",
+              "title": "蜂巢全面短刀快充升级，广汽因湃电池引领车企自产电池趋势",
               "source_type": "行业报告",
               "source_reliability": "medium",
-              "summary": "电池类型为硬壳方形铝壳电芯（prismatic cell），外包覆铝壳。",
+              "summary": "报告称蜂巢能源推出L400和L600两种规格的LFP短刀快充电芯。",
               "supported_features": [
-                "F1"
+                "F5"
               ]
             },
             {
-              "url": "https://sunwoda.codady.com/upload/portal/20220711/2b8d6bb835ac5ad9515949f8c04292b8.pdf",
-              "title": "珠海欣旺达新能源有限公司动力电池产业基地(一期)建设项目",
-              "source_type": "官方PDF",
-              "source_reliability": "high",
-              "summary": "产品名称为方壳电芯（方形硬壳电池）。",
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "其他",
+              "source_reliability": "low",
+              "summary": "披露184Ah Blade LiFePO4 Prismatic cell长度为574.6mm。",
               "supported_features": [
-                "F1"
+                "F5"
               ]
             }
           ]
         },
         {
-          "feature_id": "F2",
-          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "虽然方形铝壳/方壳电芯通常为长方体，但输入证据未披露具体产品型号、尺寸或L>H>D关系；不能仅凭方形硬壳电芯概念确认其满足权利要求的长度、宽度、厚度关系。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F3",
-          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "缺少厚度D、体积V或完整尺寸，无法计算D/V。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F4",
-          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未披露单体表面积S、能量E或可替代计算的完整尺寸与容量数据，无法判断S/E。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F5",
-          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未披露单体电池长度L，无法判断是否在400mm~2500mm。",
-          "evidence": []
-        },
-        {
           "feature_id": "F6",
           "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "缺少长度L和表面积S，无法计算L/S。",
-          "evidence": []
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "依据第三方规格页尺寸计算，L=574.6mm，S≈166,022 mm²，则L/S≈0.00346 mm^-1，处于0.002~0.005 mm^-1范围内。由于计算依赖低可靠性第三方规格页，最终判为可能满足。",
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
+              "source_type": "其他",
+              "source_reliability": "low",
+              "summary": "披露尺寸21.7×118.3×574.6 mm，可据此计算L/S。",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
         }
       ],
       "main_evidence_urls": [
-        "https://pdf.dfcfw.com/pdf/H2_AN202504211660102350_1.pdf",
-        "https://pdf.dfcfw.com/pdf/H3_AP202307031591987132_1.pdf",
-        "https://sunwoda.codady.com/upload/portal/20220711/2b8d6bb835ac5ad9515949f8c04292b8.pdf"
+        "https://file.iyanbao.com/pdf/9d287-d1a0eb6b-b26a-43ac-9042-06d9bbcbbba3.pdf",
+        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
+        "https://www.svolt.cn/solution/commercial",
+        "https://www.svolt.cn/solution/passenger"
       ],
-      "reason_for_top5": "仅能确认其为方形硬壳/铝壳动力电芯，尚无涉案数值特征的直接证据，故风险较低但可作为后续规格书检索线索。",
+      "reason_for_top5": "蜂巢能源短刀/刀片类方形磷酸铁锂电芯与权利要求的长条硬壳单体电池高度对应；长度特征有官网/行业报告支持，184Ah第三方规格页给出的尺寸和容量经计算可覆盖D/V、S/E、L/S等比例特征。主要缺口是硬壳材质及详细尺寸来自非官方来源。",
       "remaining_gaps": [
         {
-          "feature_id": "F2",
-          "gap": "缺少具体型号及L/H/D尺寸关系。"
+          "feature_id": "F1",
+          "gap": "尚缺少蜂巢官方规格书或认证文件直接确认该系列为硬壳/铝壳/钢壳电芯。"
         },
         {
           "feature_id": "F3",
-          "gap": "缺少D/V计算依据。"
+          "gap": "D/V计算依赖第三方销售页尺寸，需官方图纸、规格书或拆解报告验证。"
         },
         {
           "feature_id": "F4",
-          "gap": "缺少S/E计算依据。"
-        },
-        {
-          "feature_id": "F5",
-          "gap": "缺少长度L。"
+          "gap": "S/E计算依赖第三方销售页尺寸和容量，需官方标称能量及尺寸文件确认。"
         },
         {
           "feature_id": "F6",
-          "gap": "缺少L/S计算依据。"
+          "gap": "L/S计算依赖第三方销售页尺寸，需官方尺寸数据确认。"
         }
       ]
     }
   ],
-  "excluded": [
-    {
-      "candidate_id": "M005",
-      "company": "蜂巢能源科技股份有限公司（SVOLT）",
-      "product": "L400-62Ah LFP Blade Battery Cell",
-      "discard_reason": "glm_agent#2将62Ah型号与184Ah型号混列。按其自身披露的62Ah尺寸415mm×88mm×14.9mm计算，D/V=1/(415×88)≈0.0000274mm^-2，高于权利要求F3上限0.00002mm^-2；F3为必要技术特征，判定为明确不满足，故排除该62Ah型号。184Ah/L600部分已并入M001。",
-      "evidence_urls": [
-        "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-62ah-lfp-blade-battery.html",
-        "https://www.alibaba.com/product-detail/Svolt-184Ah-LiFePO4-Blade-Batterie-Cell_1600513291914.html"
-      ]
-    }
-  ],
+  "excluded": [],
   "needs_manual_review": [
     {
-      "candidate_id": "M002",
-      "company": "蜂巢能源科技股份有限公司（SVOLT）",
-      "product": "143.5Ah LFP 4C Fast Charging Short Blade Cell",
-      "gap": "官网仅确认prismatic/short blade属性，缺少完整外形尺寸、单体能量和规格书，无法验证F3-F6。",
-      "suggested_search_direction": "检索该143.5Ah 4C快充短刀电芯的产品规格书、客户认证资料、展会参数页、招股书或车型配套公告中的尺寸、容量、能量数据。"
-    },
-    {
-      "candidate_id": "M003",
-      "company": "瑞浦兰钧能源股份有限公司",
-      "product": "问顶电池（Wending Battery）",
-      "gap": "现有证据主要为方形硬壳及长薄结构定性，缺少单体L/H/D和能量E，数值特征无法核算。",
-      "suggested_search_direction": "检索问顶电池具体型号规格书、车企配套电芯参数、上市路演材料、环评文件、招股书技术章节中的尺寸和能量参数。"
-    },
-    {
-      "candidate_id": "M004",
-      "company": "欣旺达动力科技股份有限公司",
-      "product": "方形闪充电池 / 动力电池",
-      "gap": "仅确认方形铝壳技术路线，缺少具体单体产品型号及尺寸、容量参数。",
-      "suggested_search_direction": "围绕欣旺达闪充电池、动力方壳电芯、超充电芯等关键词检索具体型号规格书、环评项目产品方案、客户车型公告和供应商手册。"
+      "candidate_id": "M001",
+      "company": "Svolt Energy Technology Co., Ltd.（蜂巢能源科技股份有限公司）",
+      "product": "短刀/刀片磷酸铁锂方形电芯（含L400/L600、3.2V 184Ah Blade LiFePO4 Prismatic Cell）",
+      "gap": "最终得分较高，但F3、F4、F6的核心尺寸/能量计算主要依赖低可靠性第三方销售页面，且F1硬壳结构缺少官方直接表述。",
+      "suggested_search_direction": "检索蜂巢能源L600/L500/L6-EDN/184Ah短刀电芯官方规格书、客户认证资料、工信部公告配套电芯参数、拆解报告、招股书或车企电池包技术文件，重点确认外形尺寸、壳体材质、标称能量和量产时间。"
     }
   ],
   "reviewer_model": "codex:gpt-5.5",
-  "elapsed_seconds": 74.73,
-  "notes": "已将蜂巢能源184Ah刀片电池、L600短刀电池及不同Agent提交的SVOLT/FPC式命名统一合并；对仅有定性描述而无尺寸和能量参数的候选，未采纳过度行业推断。"
+  "elapsed_seconds": 36.91,
+  "notes": "已将deepseek_agent#1与glm_agent#1按同一公司及短刀/刀片方形电芯产品族合并。未发现专利权人BYD或其关联主体；上市/发布日期晚于专利申请日，未因日期排除。"
 }
