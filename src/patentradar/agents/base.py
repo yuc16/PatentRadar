@@ -353,7 +353,13 @@ class SearchAgent:
             temperature=0.3 if existing else 0.2,
             timeout=AGENT_LLM_TIMEOUT,
         )
-        queries = [str(q).strip() for q in data.get("queries", []) if str(q).strip()]
+        if isinstance(data, list):
+            raw_queries = data
+        elif isinstance(data, dict):
+            raw_queries = data.get("queries", [])
+        else:
+            raw_queries = []
+        queries = [str(q).strip() for q in raw_queries if str(q).strip()]
         logger.info(
             "%s   query generation LLM DONE count=%d elapsed=%.2fs",
             self.tag, len(queries), time.monotonic() - t0,
@@ -481,7 +487,7 @@ class SearchAgent:
             product,
             aliases,
             industry_tag=task.industry_tag,
-        ) < 2:
+        ) < 1:
             return "产品名称过泛，缺少可定位的型号、系列名或专有商品名"
         product_launch_date = normalize_date_string(cand.get("product_launch_date"))
         if is_after_application(product_launch_date, task.patent.application_date) is False:
@@ -606,6 +612,10 @@ class SearchAgent:
             temperature=0.1,
             timeout=AGENT_LLM_TIMEOUT,
         )
+        if isinstance(data, list):
+            data = {"candidates": [d for d in data if isinstance(d, dict)], "discarded_candidates": []}
+        elif not isinstance(data, dict):
+            data = {"candidates": [], "discarded_candidates": []}
         logger.info(
             "%s   candidate_filter LLM DONE candidates=%d discarded=%d elapsed=%.2fs",
             self.tag,
@@ -1153,7 +1163,7 @@ class SearchAgent:
         skipped_read = [url for url in ev_urls if url not in read_candidates]
         for url in skipped_read[:10]:
             logger.info(
-                "%s     read SKIP reason=low_value_source tier=%s url=%s",
+                "%s     read SKIP reason=unreadable_or_patent tier=%s url=%s",
                 self.tag,
                 evidence_strategy.tier_label(
                     url,
@@ -1277,11 +1287,17 @@ class SearchAgent:
             fixed_overhead_chars=fixed_overhead_chars,
             summary_context=summary_context,
         )
-        if pack_info.summarized_count or pack_info.truncated_count or pack_info.dropped_count:
+        if (
+            pack_info.excerpted_count
+            or pack_info.summarized_count
+            or pack_info.truncated_count
+            or pack_info.dropped_count
+        ):
             logger.info(
-                "%s     compactor: 总 %d/%d tokens · 摘要 %d · 截断 %d · 丢弃 %d",
+                "%s     compactor: 总 %d/%d tokens · 摘录 %d · 摘要 %d · 截断 %d · 丢弃 %d",
                 self.tag, pack_info.total_tokens, pack_info.budget_tokens,
-                pack_info.summarized_count, pack_info.truncated_count, pack_info.dropped_count,
+                pack_info.excerpted_count, pack_info.summarized_count,
+                pack_info.truncated_count, pack_info.dropped_count,
             )
 
         # S7 LLM 特征匹配
@@ -1331,6 +1347,11 @@ class SearchAgent:
             "%s     feature_match LLM DONE pass=%s candidate=%s/%s elapsed=%.2fs",
             self.tag, pass_label, company, product, time.monotonic() - t0,
         )
+
+        if isinstance(data, list):
+            data = {"feature_match_table": [d for d in data if isinstance(d, dict)]}
+        elif not isinstance(data, dict):
+            data = {"feature_match_table": []}
 
         feature_matches: list[FeatureMatch] = []
         feature_text_by_id = {f.feature_id: f.feature_text for f in task.claim_features}

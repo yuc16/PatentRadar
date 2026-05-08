@@ -34,6 +34,17 @@ console = Console()
 _RUN_MARKER_NAME = ".current_run_dir"
 
 
+class _LoggerNameFilter(logging.Filter):
+    def __init__(self, logger_name: str, *, include: bool) -> None:
+        super().__init__()
+        self.logger_name = logger_name
+        self.include = include
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        matched = record.name == self.logger_name or record.name.startswith(f"{self.logger_name}.")
+        return matched if self.include else not matched
+
+
 def _get_or_create_run_dir(pub_no: str) -> Path:
     """返回当前 pub_no 的"工作流目录"。
 
@@ -77,7 +88,7 @@ def _setup_logging(
     level = {0: logging.WARNING, 1: logging.INFO}.get(verbosity, logging.DEBUG)
     handlers: list[logging.Handler] = [
         RichHandler(
-            console=console,
+            console=Console(),
             rich_tracebacks=True,
             show_path=False,
             show_level=False,
@@ -92,7 +103,15 @@ def _setup_logging(
         fh = logging.FileHandler(log_file, encoding="utf-8")
         fh.setLevel(level)
         fh.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s | %(message)s"))
+        if cmd != "decompose":
+            fh.addFilter(_LoggerNameFilter("patentradar.decompose", include=False))
         handlers.append(fh)
+        if cmd != "decompose":
+            decompose_fh = logging.FileHandler(run_dir / "decompose.log", encoding="utf-8")
+            decompose_fh.setLevel(level)
+            decompose_fh.setFormatter(logging.Formatter("%(asctime)s %(name)s %(levelname)s | %(message)s"))
+            decompose_fh.addFilter(_LoggerNameFilter("patentradar.decompose", include=True))
+            handlers.append(decompose_fh)
 
     logging.basicConfig(
         level=level,

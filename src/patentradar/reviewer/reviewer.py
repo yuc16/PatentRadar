@@ -743,7 +743,7 @@ def _evidence_from_hit(
             logger.info("review supplement read failed %s: %s", hit.url[:80], exc)
     else:
         logger.info(
-            "review supplement read skipped low_value_source tier=%s url=%s",
+            "review supplement read skipped unreadable_or_patent tier=%s url=%s",
             evidence_strategy.tier_label(hit.url, title, industry_tag=industry_tag),
             hit.url[:120],
         )

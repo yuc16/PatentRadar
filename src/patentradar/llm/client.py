@@ -45,7 +45,7 @@ def chat_json(
     user: str,
     temperature: float = 0.1,
     timeout: int | None = None,
-) -> dict[str, Any]:
+) -> Any:
     """调用 LLM 并强制解析 JSON 返回。
 
     优先尝试 response_format=json_object；若上游不支持则回退到
@@ -73,10 +73,30 @@ def chat_json(
         )
         raw = resp.choices[0].message.content or ""
 
-    return _parse_json_loose(raw)
+    try:
+        return _parse_json_loose(raw)
+    except json.JSONDecodeError:
+        retry_messages = [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+            {
+                "role": "user",
+                "content": (
+                    "你的上一轮输出不是合法 JSON，无法被程序解析。请只输出一个合法 JSON 对象，"
+                    "不要包含 Markdown、解释文字或代码块。"
+                ),
+            },
+        ]
+        resp = client.chat.completions.create(
+            model=ep.model,
+            messages=retry_messages,
+            temperature=0,
+        )
+        raw = resp.choices[0].message.content or ""
+        return _parse_json_loose(raw)
 
 
-def _parse_json_loose(text: str) -> dict[str, Any]:
+def _parse_json_loose(text: str) -> Any:
     text = text.strip()
     if text.startswith("```"):
         # 去除 ```json ... ``` 包裹

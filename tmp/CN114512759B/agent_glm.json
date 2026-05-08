@@ -4,138 +4,590 @@
   "patent_publication_no": "CN114512759B",
   "queries_used": [
     {
-      "query": "\"long prismatic cell\" length 400mm 2500mm surface area energy ratio",
+      "query": "\"prismatic hard case battery cell\" length over 400mm \"surface area to energy ratio\" electric vehicle",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
       "n_results": 8
     },
     {
-      "query": "\"blade battery\" rigid case prismatic cell",
+      "query": "\"elongated prismatic cell\" OR \"blade battery\" thickness to volume ratio high energy density",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
-      "n_results": 15
+      "n_results": 13
     },
     {
-      "query": "ultra-thin rectangular power cell high volumetric utilization",
+      "query": "\"long prismatic lithium battery\" EV application NOT BYD",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
-      "n_results": 15
+      "n_results": 8
     },
     {
-      "query": "LFP flat prismatic cell high surface area cooling EV battery",
+      "query": "长条形方壳动力电池 超长电芯设计 高体积能量密度 -比亚迪",
       "search_engine": "exa+brave",
       "purpose": "候选竞品发现",
-      "n_results": 15
+      "n_results": 16
     },
     {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 规格 参数 规格书 产品手册 datasheet PDF",
+      "query": "薄型方形硬壳电芯 长度大于400mm 表面积散热与能量比",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "蜂巢能源 短刀电池 / L600系列 规格 参数 规格书 产品手册 datasheet PDF",
       "search_engine": "tavily+brave+exa",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell datasheet specification product manual parameters pdf",
-      "search_engine": "tavily+brave+exa",
-      "purpose": "证据检索",
-      "n_results": 8
-    },
-    {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "tavily+exa+brave",
-      "purpose": "证据检索",
-      "n_results": 7
-    },
-    {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell structure housing package connection teardown diagram",
-      "search_engine": "tavily+exa+brave",
-      "purpose": "证据检索",
-      "n_results": 7
-    },
-    {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+tavily+brave_news",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell launch release mass production announced availability",
-      "search_engine": "bocha+tavily+brave_news",
+      "query": "蜂巢能源 短刀电池 / L600系列 datasheet specification product manual parameters pdf",
+      "search_engine": "tavily+brave+exa",
       "purpose": "证据检索",
-      "n_results": 7
+      "n_results": 9
     },
     {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "query": "蜂巢能源 短刀电池 / L600系列 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "tavily+exa+brave",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "蜂巢能源 短刀电池 / L600系列 structure housing package connection teardown diagram",
+      "search_engine": "tavily+exa+brave",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "蜂巢能源 短刀电池 / L600系列 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+tavily+brave_news",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "蜂巢能源 短刀电池 / L600系列 launch release mass production announced availability",
+      "search_engine": "bocha+tavily+brave_news",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "蜂巢能源 短刀电池 / L600系列 datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
       "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "Svolt Energy Technology (蜂巢能源) 3.2V 184Ah Blade LiFePO4 Prismatic Cell 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "query": "蜂巢能源 短刀电池 / L600系列 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "https://www.svolt.cn/solution/passenger",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 2
+    },
+    {
+      "query": "瑞浦兰钧 问顶系列方形电芯 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "tavily+brave+exa",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧 问顶系列方形电芯 datasheet specification product manual parameters pdf",
+      "search_engine": "tavily+brave+exa",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧 问顶系列方形电芯 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "tavily+exa+brave",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧 问顶系列方形电芯 structure housing package connection teardown diagram",
+      "search_engine": "tavily+exa+brave",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧 问顶系列方形电芯 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+tavily+brave_news",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "瑞浦兰钧 问顶系列方形电芯 launch release mass production announced availability",
+      "search_engine": "bocha+tavily+brave_news",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "瑞浦兰钧 问顶系列方形电芯 datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
       "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
       "n_results": 8
     },
     {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 规格 参数 规格书 产品手册 datasheet PDF",
+      "query": "瑞浦兰钧 问顶系列方形电芯 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "https://cn.reptbattero.com/downloads",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 2
+    },
+    {
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell 规格 参数 规格书 产品手册 datasheet PDF",
       "search_engine": "tavily+brave+exa",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell datasheet specification product manual parameters pdf",
+      "search_engine": "tavily+brave+exa",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell 结构 外形 连接 壳体 拆解 图示 规格书",
+      "search_engine": "tavily+exa+brave",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell structure housing package connection teardown diagram",
+      "search_engine": "tavily+exa+brave",
       "purpose": "证据检索",
       "n_results": 6
     },
     {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) datasheet specification product manual parameters pdf",
-      "search_engine": "tavily+brave+exa",
-      "purpose": "证据检索",
-      "n_results": 6
-    },
-    {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 结构 外形 连接 壳体 拆解 图示 规格书",
-      "search_engine": "tavily+exa+brave",
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell 上市 发布时间 发布 量产 首发",
+      "search_engine": "bocha+tavily+brave_news",
       "purpose": "证据检索",
       "n_results": 8
     },
     {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) structure housing package connection teardown diagram",
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell launch release mass production announced availability",
+      "search_engine": "bocha+tavily+brave_news",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
+      "purpose": "证据检索",
+      "n_results": 6
+    },
+    {
+      "query": "宁德时代 (CATL) Prismatic LFP EV Battery Cell 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "search_engine": "tavily+brave+bocha",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 2
+    },
+    {
+      "query": "\"Prime Planet\" OR \"Panasonic\" prismatic EV battery 中国 销售 代理 长条形方壳",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "\"REPT\" OR \"瑞浦兰钧\" long prismatic cell OR 刀片电池 中国大陆 电动车 供应 NOT BYD",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "\"科达利\" OR \"Kedali\" prismatic battery case length over 400mm 中国市场 硬壳",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 15
+    },
+    {
+      "query": "\"Geely\" OR \"威睿\" elongated prismatic hard case battery 中国 销售 电动车",
+      "search_engine": "exa+brave",
+      "purpose": "候选竞品发现",
+      "n_results": 16
+    },
+    {
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） 规格 参数 规格书 产品手册 datasheet PDF",
+      "search_engine": "tavily+brave+exa",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） datasheet specification product manual parameters pdf",
+      "search_engine": "tavily+brave+exa",
+      "purpose": "证据检索",
+      "n_results": 9
+    },
+    {
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） 结构 外形 连接 壳体 拆解 图示 规格书",
       "search_engine": "tavily+exa+brave",
       "purpose": "证据检索",
-      "n_results": 7
+      "n_results": 9
     },
     {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 上市 发布时间 发布 量产 首发",
-      "search_engine": "bocha+tavily+brave_news",
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） structure housing package connection teardown diagram",
+      "search_engine": "tavily+exa+brave",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) launch release mass production announced availability",
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） 上市 发布时间 发布 量产 首发",
       "search_engine": "bocha+tavily+brave_news",
       "purpose": "证据检索",
-      "n_results": 9
+      "n_results": 8
     },
     {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） launch release mass production announced availability",
+      "search_engine": "bocha+tavily+brave_news",
+      "purpose": "证据检索",
+      "n_results": 8
+    },
+    {
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） datasheet specification 规格书 参数 产品手册 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
       "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
       "n_results": 9
     },
     {
-      "query": "Hithium (海辰储能) Prismatic LFP Cell (储能专用方壳电芯) 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
+      "query": "Panasonic Holdings Corporation 方形锂离子电池（高容量型） 经销商 供应商 代理商 PDF 规格 资料 (site:batteryfinds.com OR site:evlithium.com OR site:gobelpower.com OR site:nkon.nl OR site:queenbattery.com.cn OR site:byd.com OR site:calb-tech.com OR site:catl.com)",
       "search_engine": "tavily+brave+bocha",
       "purpose": "证据检索",
       "n_results": 9
+    },
+    {
+      "query": "https://www.sekorm.com/doc/2929562.html",
+      "search_engine": "tavily_crawl",
+      "purpose": "证据检索",
+      "n_results": 2
     }
   ],
   "top5_candidates": [
     {
       "rank": 1,
-      "company": "Svolt Energy Technology (蜂巢能源)",
-      "product": "3.2V 184Ah Blade LiFePO4 Prismatic Cell",
+      "company": "蜂巢能源",
+      "product": "短刀电池 / L600系列",
       "aliases": [
-        "蜂巢刀片电池",
-        "184Ah LFP cell"
+        "蜂巢短刀电芯",
+        "L600电芯"
       ],
       "product_launch_date": null,
       "product_launch_date_evidence_url": null,
-      "score": 86.67,
+      "score": 61.67,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确指出蜂巢能源短刀电池为方形电池，在动力电池领域，方形电池即对应硬壳电池（prismatic hard case cell）。",
+          "evidence": [
+            {
+              "url": "http://epaper.bdall.com/wbpaper/pc/attachment/202208/20/f5b6487a-94da-435f-bd2d-7ed064056ecb.pdf",
+              "title": "怎样的“蜂巢” - 全保定网",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "蜂巢能源在全球率先将高速叠片工艺引入方形电池",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示蜂巢L600短刀电池为“长薄型的电芯”、“短刀片电池”；虽未直接描述长度L>宽度H>厚度D，但结合“短刀/刀片”电池的行业常识及形态描述，可合理推断其长度远大于厚度，且宽度大于厚度，符合长方体形且L>H>D的特征。",
+          "evidence": [
+            {
+              "url": "https://m.xchuxing.com/article/40101",
+              "title": "蜂巢能源 L600 短刀片电池量产了？电芯薄片是今后行业趋势",
+              "source_type": "其他",
+              "source_reliability": "medium",
+              "summary": "没人规定这种长薄型的电芯，一定要 1m 以上...L600 的实际长度是 574mm",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提供厚度D与体积V的具体数值，无法计算或验证D/V是否在0.0000065 mm^-2 ~0.00002mm^-2范围内。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料虽提及单体能量密度（如≥185Wh/kg），但未提供表面积S与总能量E的具体数值，无法计算或验证S/E是否≤1000mm^2·Wh^-1。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确指出L600短刀电池的实际长度为574mm，落在权利要求限定的400mm~2500mm范围内。",
+          "evidence": [
+            {
+              "url": "https://m.xchuxing.com/article/40101",
+              "title": "蜂巢能源 L600 短刀片电池量产了？电芯薄片是今后行业趋势",
+              "source_type": "其他",
+              "source_reliability": "medium",
+              "summary": "L600 的实际长度是 574mm",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提供表面积S的具体数值，无法计算或验证L/S是否在0.002mm^-1 ～0.005mm^-1范围内。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "http://epaper.bdall.com/wbpaper/pc/attachment/202208/20/f5b6487a-94da-435f-bd2d-7ed064056ecb.pdf",
+        "http://m.juda.cn/news/251778.html",
+        "http://www.dldcw.cn/M/News/128542.html",
+        "https://file.iyanbao.com/pdf/9d287-d1a0eb6b-b26a-43ac-9042-06d9bbcbbba3.pdf",
+        "https://ftchinese.com/story/001109638",
+        "https://m.xchuxing.com/article/40101",
+        "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+        "https://pdf.dfcfw.com/pdf/H3_AP202304261585862290_1.pdf?1682521269000.pdf=",
+        "https://www.svolt.cn/solution/passenger",
+        "https://www.svolt.cn/solution/recycling",
+        "https://zhuanlan.zhihu.com/p/484682347",
+        "https://zhuanlan.zhihu.com/p/672083297"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F3",
+          "gap": "未找到厚度和体积的具体数值，建议查官方产品规格书或拆解报告"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到表面积和总能量的具体数值，建议查官方产品规格书"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到表面积的具体数值，建议查官方产品规格书"
+        }
+      ],
+      "reason_for_top5": "该候选竞品在F1（硬壳电池）和F5（长度范围）上明确满足，在F2（长方体形且L>H>D）上可能满足，且作为'短刀电池'与专利的'刀片电池'形态高度相似，值得进一步深入调查其具体尺寸和能量参数以验证F3、F4、F6。"
+    },
+    {
+      "rank": 2,
+      "company": "宁德时代 (CATL)",
+      "product": "Prismatic LFP EV Battery Cell",
+      "aliases": [
+        "CATL方形电芯",
+        "麒麟电池电芯"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 50.0,
+      "hard_rule_check": {
+        "is_patent_owner_product": false,
+        "has_clear_company": true,
+        "has_clear_product": true,
+        "has_public_evidence": true,
+        "has_any_clearly_unmatched_feature": false,
+        "patent_application_date": "2019-06-21",
+        "product_launch_date": null,
+        "product_launch_after_application": null,
+        "notes": null
+      },
+      "feature_match_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "公开资料明确指出CATL的电池产品为Prismatic Battery Cell（方形硬壳电池），直接对应权利要求中的硬壳电池特征。",
+          "evidence": [
+            {
+              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
+              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "规格书标题及内容明确指出该产品为“Prismatic lithium ncm cell”（方形硬壳锂电池）。",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示CATL采用Prismatic（方形硬壳）结构；虽未直接描述L>H>D的具体尺寸关系，但结合方形动力电池的行业标准结构形态，可合理推断其电池本体构造为长方体形且长度大于宽度大于厚度。",
+          "evidence": [
+            {
+              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
+              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "规格书定义产品为Prismatic Cell，此类电池在行业中通常构造为长方体形且具有L>H>D的尺寸特征。",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未提供电芯的具体厚度D和体积V数值，无法计算并验证D/V的比值是否落入0.0000065~0.00002 mm^-2范围内。",
+          "evidence": [
+            {
+              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
+              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "规格书提供了体积能量密度（490 Wh/L）和放电能量（172.8 Wh），可推算体积，但未提供厚度D数据，无法验证D/V参数。",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提供电芯的具体长宽厚尺寸，无法计算表面积S，从而无法验证S/E是否≤1000 mm^2·Wh^-1。",
+          "evidence": [
+            {
+              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
+              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "规格书提供了能量E（172.8 Wh），但缺少尺寸数据以计算表面积S，无法验证S/E参数。",
+              "supported_features": [
+                "F4"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提供电芯的具体长度尺寸，无法验证长度L是否在400mm~2500mm范围内。且列出的常规储能/动力电芯型号通常长度小于400mm。",
+          "evidence": [
+            {
+              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
+              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "规格书提及“电芯尺寸请参考本规格书第10条”，但文本中未包含具体尺寸数值，无法验证长度L。",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料未提供电芯的具体长度L和表面积S数据，无法计算并验证L/S是否在0.002mm^-1~0.005mm^-1范围内。",
+          "evidence": [
+            {
+              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
+              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "规格书缺少长宽厚尺寸数据，无法计算L/S比例。",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        }
+      ],
+      "main_evidence_urls": [
+        "https://batteryfinds.com/lifepo4-nmc-lto-battery-cell-datasheet-listproduct-specification-pdf",
+        "https://diysolarforum.com/resources/catl-battery-datasheets.331",
+        "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
+        "https://ecoteardown.top/sodium-ion-na-ion-cell-datasheets-specifications",
+        "https://sunraybattery.com/product/catl-160ah-3-22v-prismatic-lithium-lfp-ev-motive-battery-cell",
+        "https://www.basenpower.com/wp-content/uploads/2025/06/CATL-48Ah-3.7V-NMC-Prismatic-Cell-SpecificationDatasheet.pdf",
+        "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf"
+      ],
+      "remaining_gaps": [
+        {
+          "feature_id": "F3",
+          "gap": "未找到电芯厚度D的具体数值，无法计算厚度体积比D/V，建议查找CATL长电芯/刀片电芯的官方拆解报告或完整尺寸图纸"
+        },
+        {
+          "feature_id": "F4",
+          "gap": "未找到电芯表面积S的具体数值，无法计算表面积能量比S/E，建议查找包含长宽厚尺寸的官方规格书"
+        },
+        {
+          "feature_id": "F5",
+          "gap": "未找到电芯长度L的具体数值，无法验证是否在400mm~2500mm范围内，建议重点查找CATL麒麟电池或超长LFP电芯的尺寸参数"
+        },
+        {
+          "feature_id": "F6",
+          "gap": "未找到电芯长度L和表面积S的具体数值，无法计算长度表面积比L/S，建议查找详细的结构尺寸图纸"
+        }
+      ],
+      "reason_for_top5": "候选竞品明确满足F1（硬壳电池），可能满足F2（长方体形），作为行业头部企业其方形电芯结构与专利基础特征高度相关，但受限于公开Datasheet未披露详细尺寸比例，高级参数特征（F3-F6）暂为证据不足，值得进一步深入调查其长电芯（如麒麟电池3.0版本）的具体尺寸。"
+    },
+    {
+      "rank": 3,
+      "company": "Panasonic Holdings Corporation",
+      "product": "方形锂离子电池（高容量型）",
+      "aliases": [
+        "Panasonic Prismatic Battery",
+        "松下方形锂电池"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 46.67,
       "hard_rule_check": {
         "is_patent_owner_product": false,
         "has_clear_company": true,
@@ -153,14 +605,14 @@
           "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
           "judgement": "可能满足",
           "score": 0.8,
-          "reasoning": "公开资料显示该产品为'3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells'；虽未直接描述'硬壳'，但结合行业常识，Prismatic电池通常采用铝壳或钢壳等硬壳结构，可合理推断为硬壳电池。",
+          "reasoning": "公开资料显示松下官方将'方形锂离子电池'与'聚合物锂离子电池'列为独立产品线；虽未直接描述'硬壳'，但结合行业常识，方形电池通常采用金属硬壳封装（与软包聚合物电池区分），可合理推断该方形电池为硬壳电池。",
           "evidence": [
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "产品名称明确为'Blade Battery LiFePO4 Prismatic battery cells'",
+              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
+              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "产品分类中明确列出'方形锂离子电池'与'聚合物锂离子电池'为不同品类，推断方形电池为硬壳结构。",
               "supported_features": [
                 "F1"
               ]
@@ -170,16 +622,16 @@
         {
           "feature_id": "F2",
           "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开资料显示尺寸为21.7*118.3*574.6 mm，即厚度D=21.7mm、宽度H=118.3mm、长度L=574.6mm，满足长度L>宽度H>厚度D，且构造为长方体形。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开资料显示该产品为'方形锂离子电池'；虽未直接描述尺寸关系L>H>D，但结合行业常识，方形动力电池通常构造为长方体形且长度大于宽度及厚度，可合理推断其满足长方体形及基本尺寸关系。",
           "evidence": [
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "Dimension: 21.7*118.3*574.6 mm",
+              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
+              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "产品名称明确为'方形锂离子电池'，通常对应长方体形外观。",
               "supported_features": [
                 "F2"
               ]
@@ -189,16 +641,16 @@
         {
           "feature_id": "F3",
           "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "公开资料显示尺寸为21.7*118.3*574.6 mm，计算体积V=574.6*118.3*21.7=1475061 mm³，厚度D=21.7mm，计算D/V=21.7/1475061=0.00001475 mm⁻²，落在专利范围0.0000065~0.00002 mm⁻²内。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未提供该方形电池的具体厚度和体积参数，无法计算并验证D/V的比值是否落在0.0000065 mm^-2 ~0.00002mm^-2范围内。",
           "evidence": [
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "Dimension: 21.7*118.3*574.6 mm，用于计算D/V比值",
+              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
+              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "页面仅包含导航结构，未包含具体的尺寸和体积参数。",
               "supported_features": [
                 "F3"
               ]
@@ -208,16 +660,16 @@
         {
           "feature_id": "F4",
           "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "公开资料显示尺寸为21.7*118.3*574.6 mm，计算表面积S=2*(574.6*118.3+574.6*21.7+118.3*21.7)=166022 mm²，能量E≥588 Wh，计算S/E=166022/588=282.4 mm²·Wh⁻¹，满足≤1000 mm²·Wh⁻¹。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未提供该方形电池的具体表面积和能量参数，无法计算并验证S/E是否≤1000mm 2 ·Wh ﹣1。",
           "evidence": [
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "Dimension: 21.7*118.3*574.6 mm, Energy ≥588Wh，用于计算S/E比值",
+              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
+              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "页面仅包含导航结构，未包含具体的能量和尺寸参数。",
               "supported_features": [
                 "F4"
               ]
@@ -227,16 +679,16 @@
         {
           "feature_id": "F5",
           "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开资料显示长度为574.6 mm，落在专利范围400mm~2500mm内。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未提供该方形电池的长度参数，无法验证长度L是否在400mm~2500mm范围内。虽然E1提及'针形锂离子电池'可能暗示长条形，但缺乏具体尺寸数据支撑。",
           "evidence": [
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "Dimension: 21.7*118.3*574.6 mm，长度L=574.6mm",
+              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
+              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "页面未包含具体的长度参数。",
               "supported_features": [
                 "F5"
               ]
@@ -246,16 +698,16 @@
         {
           "feature_id": "F6",
           "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "公开资料显示长度L=574.6 mm，表面积S=166022 mm²，计算L/S=574.6/166022=0.00345 mm⁻¹，落在专利范围0.002~0.005 mm⁻¹内。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "公开资料中未提供该方形电池的长度和表面积参数，无法计算并验证L/S是否在0.002mm ﹣1 ～0.005mm ﹣1范围内。",
           "evidence": [
             {
-              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
-              "title": "3.2V 184Ah Blade Battery LiFePO4 Prismatic battery cells - LiFePO4 Battery",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "Dimension: 21.7*118.3*574.6 mm，用于计算L/S比值",
+              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
+              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "页面未包含具体的长度和表面积参数。",
               "supported_features": [
                 "F6"
               ]
@@ -264,145 +716,161 @@
         }
       ],
       "main_evidence_urls": [
-        "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
-        "https://coremax-tech.com/product/lithium-ion-rechargeable-cb0mhw3na-184ah-svolt-3-2v-lifepo4-battery",
-        "https://diysolarforum.com/resources/svolt-cell-datasheets-lineup.347",
-        "https://globy.com/b2bmarket/listing/products/svolt-32v-184ah-rechargeable-power-lifepo4-blade-battery-cells-389d44",
-        "https://nogibattery.com/products/hot-sale-svolt-blade-cells-32v-184ah-lifepo4-prismatic-blade-battery-for-electric-vehicle",
-        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/505.html",
-        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/blade-battery-184ah.html",
-        "https://www.uli-power.com/svolt-184ah-lifepo4-blade-battery-ultrathin-ultra-thin-battery-3-2v-solar-energy-storage-battery-cell-prismatic-lithium-ion-batteries-product"
+        "https://energy.panasonic.cn/cn/business/products/lithium-ion/cylindrical-high-rate",
+        "https://energy.panasonic.cn/cn/business/products/lithium-ion/cylindrical-standard",
+        "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
+        "https://www.alldatasheet.com/datasheet-pdf/pdf/597043/PANASONICBATTERY/NCR18650B.html",
+        "https://www.dnkpower.com/wp-content/uploads/2022/10/CGR18650CG-Panasonic-Datasheet.pdf",
+        "https://www.sekorm.com/doc/2929562.html",
+        "https://www.sekorm.com/doc/529224181.html"
       ],
       "remaining_gaps": [
         {
           "feature_id": "F3",
-          "gap": "未找到直接公开的D/V比值数据，需通过尺寸参数计算推断"
+          "gap": "未找到方形电池的具体厚度和体积参数，建议查找松下方形电池规格书或产品手册"
         },
         {
           "feature_id": "F4",
-          "gap": "未找到直接公开的S/E比值数据，需通过尺寸和能量参数计算推断"
+          "gap": "未找到方形电池的具体表面积和能量参数，建议查找官方规格书中的容量和尺寸数据"
+        },
+        {
+          "feature_id": "F5",
+          "gap": "未找到方形电池的长度参数，无法确认是否为400mm以上的长电芯，建议查找具体型号尺寸图"
         },
         {
           "feature_id": "F6",
-          "gap": "未找到直接公开的L/S比值数据，需通过尺寸参数计算推断"
+          "gap": "未找到方形电池的长度和表面积参数，建议查找官方尺寸图以计算L/S比例"
         }
       ],
-      "reason_for_top5": "该候选竞品在F2、F5明确满足，F1、F3、F4、F6可能满足，且尺寸和能量参数与专利范围匹配，证据质量中等（第三方销售网站提供详细规格），值得进入Top5。"
+      "reason_for_top5": "候选竞品为松下官方明确推出的'方形锂离子电池'，在基本形态（F1硬壳、F2长方体）上与权利要求可能满足，具备进一步调查的价值；但当前公开证据缺乏具体的尺寸与能量参数，无法验证核心的比率约束特征（F3-F6），需补充规格书数据以确认是否为类似刀片电池的长薄结构。"
     }
   ],
   "discarded_candidates": [
     {
-      "company": "BYD Co Ltd",
-      "product": "Blade Battery",
-      "discard_reason": "专利权人自身产品",
+      "company": "BYD Co Ltd / 弗迪电池",
+      "product": "刀片电池",
+      "discard_reason": "专利权人自身及其关联子公司",
+      "evidence_urls": []
+    },
+    {
+      "company": "Panasonic",
+      "product": "PHEV2 Prismatic Cell",
+      "discard_reason": "未发现该产品进入中国大陆市场的证据，无法构成 CN 专利侵权；且长度148mm不符合F5(400-2500mm)",
+      "evidence_urls": []
+    },
+    {
+      "company": "Tesla",
+      "product": "4680 Cylindrical Cell",
+      "discard_reason": "与技术方案不相关（圆柱电池，非硬壳长方体F1）",
+      "evidence_urls": []
+    },
+    {
+      "company": "Long Sing Energy",
+      "product": "Prismatic NMC/LFP Cells",
+      "discard_reason": "与技术方案不相关（常规方形电池，长度未达400mm F5）",
+      "evidence_urls": []
+    },
+    {
+      "company": "EVE (亿纬锂能)",
+      "product": "LF560K Prismatic Cell",
+      "discard_reason": "与技术方案不相关（搜索结果中产品尺寸如LF560K长度约204mm，未达400mm F5）",
+      "evidence_urls": []
+    },
+    {
+      "company": "安芯新能",
+      "product": "314Ah方壳电芯",
+      "discard_reason": "与技术方案不相关（314Ah电芯长度约205mm，未达400mm F5）",
+      "evidence_urls": []
+    },
+    {
+      "company": "河南锂鲨",
+      "product": "方形铝壳电池",
+      "discard_reason": "与技术方案不相关（电芯长度约146mm，未达400mm F5）",
+      "evidence_urls": []
+    },
+    {
+      "company": "安驰",
+      "product": "IFP48173115-100Ah",
+      "discard_reason": "与技术方案不相关（电芯长度约173mm，未达400mm F5）",
+      "evidence_urls": []
+    },
+    {
+      "company": "国轩高科",
+      "product": "IFP81175200-340Ah",
+      "discard_reason": "与技术方案不相关（电芯长度约200mm，未达400mm F5）",
+      "evidence_urls": []
+    },
+    {
+      "company": "江苏智泰",
+      "product": "方形铝壳电芯",
+      "discard_reason": "与技术方案不相关（电芯长度约204mm，未达400mm F5）",
       "evidence_urls": []
     },
     {
       "company": "未知",
-      "product": "PRISMATIC BATTERY CELL HAVING BATTERY CASE",
-      "discard_reason": "专利文献站，非产品资料",
+      "product": "184Ah Blade Battery",
+      "discard_reason": "无明确公司（搜索结果[18][20]未提供制造商名称）",
       "evidence_urls": []
     },
     {
       "company": "未知",
-      "product": "Monolithically-stacked thin-film solid-state batteries",
-      "discard_reason": "学术文献/非真实可购买产品",
-      "evidence_urls": []
-    },
-    {
-      "company": "PowerCo (Volkswagen)",
-      "product": "Unified Cell",
-      "discard_reason": "纯海外厂商无任何中国大陆市场迹象，无法构成 CN 专利侵权",
-      "evidence_urls": []
-    },
-    {
-      "company": "FCO Power",
-      "product": "Solid Oxide Fuel Cell Stack",
-      "discard_reason": "技术方案不相关（燃料电池而非单体锂电池）",
-      "evidence_urls": []
-    },
-    {
-      "company": "DXAT",
-      "product": "Prismatic cell (Length 140mm)",
-      "discard_reason": "产品长度140mm，明确不满足专利F5长度400-2500mm约束",
-      "evidence_urls": []
-    },
-    {
-      "company": "Welsonpower",
-      "product": "50Ah Prismatic LFP3914895",
-      "discard_reason": "产品尺寸高度/长度仅95mm，明确不满足专利F5长度400-2500mm约束",
+      "product": "单体电池、动力电池包",
+      "discard_reason": "专利文献站，非产品资料（搜索结果[34]为专利PDF）",
       "evidence_urls": []
     },
     {
       "company": "未知",
-      "product": "Prismatic Cell Aluminum Case and Lid",
-      "discard_reason": "电池壳体零部件，非完整单体电池产品",
+      "product": "Cylindrical vs Prismatic Battery Energy Density",
+      "discard_reason": "专利文献站，非产品资料（搜索结果[5]为PatSnap博客）",
       "evidence_urls": []
     },
     {
       "company": "未知",
-      "product": "Prismatic Cell Case",
-      "discard_reason": "电池壳体零部件，非完整单体电池产品",
+      "product": "无",
+      "discard_reason": "无明确产品/无明确公司（搜索结果[1-4,6-7,9-11,13-16,37-44]为行业文章/百科/无具体产品型号）",
       "evidence_urls": []
     },
     {
-      "company": "Swaytronic",
-      "product": "Prismatic cells",
-      "discard_reason": "纯海外经销商/厂商，未发现中国大陆市场迹象",
-      "evidence_urls": []
-    },
-    {
-      "company": "未知",
-      "product": "Ultra Thin Li Ion Battery",
-      "discard_reason": "无明确公司名及具体产品型号，疑似泛指或定制微小电池，不满足长度约束",
-      "evidence_urls": []
-    },
-    {
-      "company": "未知",
-      "product": "Licerion batteries",
-      "discard_reason": "纯海外厂商，未发现中国大陆市场迹象",
-      "evidence_urls": []
-    },
-    {
-      "company": "未知",
-      "product": "LiFePO4 Prismatic Cells",
-      "discard_reason": "无明确公司名的经销商页面",
-      "evidence_urls": []
-    },
-    {
-      "company": "未知",
-      "product": "LFP Prismatic Cells",
-      "discard_reason": "无明确公司名的经销商页面",
-      "evidence_urls": []
-    },
-    {
-      "company": "Matelion",
-      "product": "280Ah LFP prismatic cell",
-      "discard_reason": "公司不明，无中国市场迹象",
-      "evidence_urls": []
-    },
-    {
-      "company": "Next Generation Energy Tech. Co., Ltd",
-      "product": "PRISMATIC LFP CELL",
-      "discard_reason": "公司不明，无中国市场迹象",
-      "evidence_urls": []
-    },
-    {
-      "company": "Hithium (海辰储能)",
-      "product": "Prismatic LFP Cell (储能专用方壳电芯)",
-      "discard_reason": "无任何公开证据 URL",
-      "evidence_urls": []
-    },
-    {
-      "company": "EVE Energy (亿纬锂能)",
-      "product": "Prismatic LFP Cell",
-      "discard_reason": "产品名称过泛，缺少可定位的型号、系列名或专有商品名",
+      "company": "瑞浦兰钧",
+      "product": "问顶系列方形电芯",
+      "discard_reason": "存在明确不满足的必要技术特征",
       "evidence_urls": [
-        "https://www.evebattery.com/en/prismatic-lfp-cell"
+        "http://pdf.dfcfw.com/pdf/H2_AN202501071641844159_1.pdf",
+        "http://www.cnit-research.com/content/202309/48925.html",
+        "https://cn.reptbattero.com/battery-cell",
+        "https://cn.reptbattero.com/battery-pack",
+        "https://cn.reptbattero.com/downloads",
+        "https://ecoteardown.top/wp-content/uploads/2025/02/REPT-314Ah-3.2V-LiFePO4-Prismatic-Battery-Cell-Specification-Datasheet.pdf",
+        "https://www.ne21.com/news/show-193881.html",
+        "https://www.neexgent.com/Uploads/202406/rept_rept_3.2v_205ah_lifepo4_battery.pdf"
       ]
+    },
+    {
+      "company": "深圳市科达利实业股份有限公司",
+      "product": "动力锂电池精密结构件 / 方壳",
+      "discard_reason": "科达利是电池结构件（外壳、盖板）供应商，而非单体电池（包含电池本体）的生产商。权利要求1保护的是包含电池本体的单体电池，结构件厂商不构成直接侵权",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "Geely GEOMETRY C 2022 Electric SUV",
+      "discard_reason": "产品为整车，非单体电池",
+      "evidence_urls": []
+    },
+    {
+      "company": "Greatech Energy",
+      "product": "Panasonic Prismatic Cells",
+      "discard_reason": "贸易/代理网站，非电池原厂制造商",
+      "evidence_urls": []
+    },
+    {
+      "company": "未知",
+      "product": "PANASONIC PRISMATIC MODULE (Gen 4)",
+      "discard_reason": "二手翻修的NiMH电池模块，非新量产的Li-ion硬壳单体电池",
+      "evidence_urls": []
     }
   ],
   "notes": null,
-  "elapsed_seconds": 501.83,
+  "elapsed_seconds": 1947.85,
   "llm_model": "glm-5.1"
 }

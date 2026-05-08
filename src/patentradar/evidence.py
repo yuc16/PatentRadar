@@ -55,6 +55,72 @@ _LOW_VALUE_DOMAINS = (
     "aliexpress.",
 )
 
+_PATENT_OR_DOC_DOMAINS = (
+    "patents.google.com",
+    "patentscope.wipo.int",
+    "xjishu.com",
+    "zhuanlichaxun.net",
+    "soopat.com",
+)
+
+_SOCIAL_MEDIA_DOMAINS = (
+    "facebook.com",
+    "reddit.com",
+    "youtube.com",
+    "linkedin.com",
+)
+
+_LONG_FORM_PDF_DOMAINS = (
+    "static.cninfo.com.cn",
+    "cninfo.com.cn",
+    "static.sse.com.cn",
+    "sse.com.cn",
+    "notice.10jqka.com.cn",
+    "pdf.dfcfw.com",
+    "file.iyanbao.com",
+    "stockn.xueqiu.com",
+    "hkexnews.hk",
+    "invest.calb-tech.com",
+    "en.invest.calb-tech.com",
+    "cnipa.gov.cn",
+    "paper.people.com.cn",
+    "esg-disclosure.com",
+)
+
+_LONG_FORM_PDF_HINTS = (
+    "annual report",
+    "prospectus",
+    "research report",
+    "official catalogue",
+    "announcement",
+    "disclosure/announcement",
+    "global offering",
+    "证券研究报告",
+    "行业研究",
+    "公司深度",
+    "公告",
+    "上市文件",
+    "年度报告",
+    "年报",
+    "招股",
+    "招股章程",
+    "募集说明书",
+    "全球發售",
+    "全球发售",
+    "聆訊",
+    "聆讯",
+    "股份有限公司",
+    "co., ltd.",
+    "可持续发展报告",
+    "專利獎",
+    "专利奖",
+    "获奖项目",
+    "參展商名錄",
+    "参展商名录",
+    "环境、社会及管治",
+    "esg",
+)
+
 _NEWS_DOMAINS = (
     "news.",
     "36kr.com",
@@ -194,18 +260,18 @@ def source_type_from_url_title(
     low = f"{url} {title}".lower()
     title_cn = title or ""
     domain = domain_of(url)
-    if any(x in domain for x in _LOW_VALUE_DOMAINS):
-        return "二手转载"
+    if any(x in domain for x in _PATENT_OR_DOC_DOMAINS):
+        return "专利文献"
+    if "cninfo.com.cn" in low or "static.cninfo.com.cn" in low:
+        if "招股" in title_cn:
+            return "招股书"
+        return "年报"
     if ".pdf" in low:
         if any(x in low for x in ("datasheet", "data-sheet", "数据手册", "规格书", "specification")):
             return "产品手册"
         if any(x in low for x in ("whitepaper", "white-paper", "白皮书")):
             return "白皮书"
         return "官方PDF"
-    if "cninfo.com.cn" in low or "static.cninfo.com.cn" in low:
-        if "招股" in title_cn:
-            return "招股书"
-        return "年报"
     if any(x in low for x in ("standard", "标准", "iso.", "iec.", "gb/t")):
         return "标准"
     if any(x in low for x in ("cert", "认证", "approval")):
@@ -214,6 +280,8 @@ def source_type_from_url_title(
         return "产品手册"
     if _looks_product_spec_page(url, title, industry_tag=industry_tag):
         return "产品手册"
+    if any(x in domain for x in _LOW_VALUE_DOMAINS):
+        return "二手转载"
     if any(x in low for x in ("whitepaper", "白皮书")):
         return "白皮书"
     if any(x in low for x in ("report", "研究报告", "行业报告")):
@@ -244,14 +312,16 @@ def reliability_from_url_title(
 
 
 def tier_rank(url: str, title: str = "", *, industry_tag: str | None = None) -> int:
-    if any(x in domain_of(url) for x in _LOW_VALUE_DOMAINS):
+    if any(x in domain_of(url) for x in _PATENT_OR_DOC_DOMAINS):
         return 0
     st = source_type_from_url_title(url, title, industry_tag=industry_tag)
+    if st == "专利文献":
+        return 0
     if st in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
         return 3
     if st in {"权威媒体", "行业报告", "研究报告", "展会报道"}:
         return 2
-    if st in {"普通新闻", "其他"}:
+    if st in {"普通新闻", "其他", "自媒体", "论坛", "二手转载"}:
         return 1
     return 0
 
@@ -368,15 +438,14 @@ def is_relevant_hit(
     """Keep evidence leads that mention the target company/product strongly enough."""
     if not company and not product:
         return True
-    if product and not _has_product_signal(
+    has_product_signal = not product or _has_product_signal(
         url,
         title,
         snippet,
         product,
         aliases,
         industry_tag=industry_tag,
-    ):
-        return False
+    )
     score = relevance_score(
         url,
         title,
@@ -387,8 +456,32 @@ def is_relevant_hit(
         industry_tag=industry_tag,
     )
     domain = domain_of(url)
+    source_type = source_type_from_url_title(url, title, industry_tag=industry_tag)
+    public_spec_like = source_type == "产品手册" or _is_industry_spec_seed_domain(
+        url,
+        industry_tag=industry_tag,
+    )
+    has_company_signal = _has_company_signal(
+        url,
+        title,
+        snippet,
+        company,
+        industry_tag=industry_tag,
+    )
+    if source_type == "专利文献":
+        return False
+    if public_spec_like and has_product_signal:
+        return True
+    if public_spec_like and not has_company_signal:
+        return False
+    if has_company_signal and source_type in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
+        return True
+    if has_product_signal:
+        return score >= 2
+    if source_type in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
+        return score >= 2
     if product_specificity_score(product, aliases, industry_tag=industry_tag) < 2:
-        return score >= 6
+        return score >= 4
     if any(d in domain for d in _LOW_VALUE_DOMAINS):
         return score >= 5
     return score >= 3
@@ -397,20 +490,28 @@ def is_relevant_hit(
 def should_read_url(url: str, title: str = "", *, industry_tag: str | None = None) -> bool:
     """Whether a URL is worth paid/full-text extraction."""
     domain = domain_of(url)
-    if not url or any(d in domain for d in _LOW_VALUE_DOMAINS):
+    if not url:
         return False
-    if any(d in domain for d in _COMMERCE_DOMAINS):
+    if any(d in domain for d in _PATENT_OR_DOC_DOMAINS):
         return False
-    if any(d in domain for d in ("facebook.com", "reddit.com", "youtube.com", "linkedin.com")):
+    if any(d in domain for d in _SOCIAL_MEDIA_DOMAINS):
+        return False
+    if is_long_form_pdf(url, title, industry_tag=industry_tag):
         return False
     st = source_type_from_url_title(url, title, industry_tag=industry_tag)
-    if st in {"自媒体", "论坛", "二手转载"}:
+    return st != "专利文献"
+
+
+def is_long_form_pdf(url: str, title: str = "", *, industry_tag: str | None = None) -> bool:
+    low = f"{url} {title}".lower()
+    if ".pdf" not in low:
         return False
-    if st in {"官网", "官方PDF", "产品手册", "白皮书", "标准", "认证资料", "年报", "招股书"}:
+    if source_type_from_url_title(url, title, industry_tag=industry_tag) == "产品手册":
+        return False
+    domain = domain_of(url)
+    if any(d in domain for d in _LONG_FORM_PDF_DOMAINS):
         return True
-    if st in {"行业报告", "研究报告", "权威媒体", "展会报道"}:
-        return True
-    return ".pdf" in (url or "").lower() and tier_rank(url, title, industry_tag=industry_tag) >= 2
+    return any(hint in low for hint in _LONG_FORM_PDF_HINTS)
 
 
 def is_crawl_worthy(url: str, title: str = "", *, industry_tag: str | None = None) -> bool:
@@ -902,7 +1003,31 @@ def _has_product_signal(
             term for term in _search_terms(str(alias), industry_tag=industry_tag)
             if any(ch.isdigit() for ch in term) or len(term) >= 4
         )
-    return any(term in haystack for term in strong_terms)
+    if any(term in haystack for term in strong_terms):
+        return True
+
+    candidate_text = _SPACE_RE.sub(" ", f"{product} {' '.join(str(a) for a in aliases)}".lower())
+    named_hints = _industry_strings(industry_tag, "named_product_hints")
+    candidate_has_named_hint = any(hint in candidate_text for hint in named_hints)
+    page_has_named_hint = any(hint in haystack for hint in named_hints)
+    return candidate_has_named_hint and page_has_named_hint
+
+
+def _is_industry_spec_seed_domain(url: str, *, industry_tag: str | None = None) -> bool:
+    domain = domain_of(url)
+    if not domain:
+        return False
+    for site in cn_industry.load_sites(industry_tag):
+        site_domain = (site.domain or "").lower().lstrip("www.")
+        if not site_domain:
+            continue
+        if domain == site_domain or domain.endswith(f".{site_domain}") or site_domain.endswith(f".{domain}"):
+            site_type = (site.type or "").lower()
+            return any(
+                hint in site_type
+                for hint in ("规格", "经销商", "供应商", "pdf", "产品手册", "datasheet", "spec")
+            )
+    return False
 
 
 def _company_variants(text: str) -> list[str]:
@@ -929,3 +1054,38 @@ def _company_variants(text: str) -> list[str]:
     if len(stripped) >= 4:
         variants.add(stripped[:4].lower())
     return [v for v in variants if v and v not in _GENERIC_TERMS]
+
+
+def _has_company_signal(
+    url: str,
+    title: str,
+    snippet: str,
+    company: str,
+    *,
+    industry_tag: str | None = None,
+) -> bool:
+    haystack = _SPACE_RE.sub(" ", f"{url} {title} {snippet}".lower())
+    for term in _company_variants(company):
+        if term and term in haystack:
+            return True
+    for term in _industry_company_aliases(company, industry_tag=industry_tag):
+        if term and term in haystack:
+            return True
+    return False
+
+
+def _industry_company_aliases(company: str, *, industry_tag: str | None = None) -> list[str]:
+    raw = _industry_profile(industry_tag).get("company_aliases") or {}
+    if not isinstance(raw, dict):
+        return []
+    normalized = re.sub(r"\s+", "", company or "").lower()
+    if not normalized:
+        return []
+    out: list[str] = []
+    for key, values in raw.items():
+        key_norm = re.sub(r"\s+", "", str(key or "")).lower()
+        if not key_norm or key_norm not in normalized:
+            continue
+        if isinstance(values, list):
+            out.extend(str(v).strip().lower() for v in values if str(v).strip())
+    return out

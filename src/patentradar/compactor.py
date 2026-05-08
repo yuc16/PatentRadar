@@ -24,6 +24,16 @@ from .search.base import ExtractedPage
 logger = logging.getLogger("patentradar.compactor")
 
 _CN_RE = re.compile(r"[一-鿿]")
+_FULL_TEXT_CHAR_LIMIT = 12_000
+_EXCERPT_CHAR_LIMIT = 8_000
+_EVIDENCE_KEYWORDS = (
+    "型号", "产品", "规格", "规格书", "参数", "尺寸", "长度", "宽度", "厚度", "高度",
+    "表面积", "体积", "容量", "电压", "电流", "能量密度", "质量", "重量", "壳体",
+    "极柱", "极耳", "结构", "连接", "mm", "cm", "ah", "wh", "kwh",
+    "model", "product", "specification", "datasheet", "parameter", "dimension",
+    "length", "width", "thickness", "height", "capacity", "voltage", "current",
+    "energy density", "weight", "mass", "terminal", "tab", "structure",
+)
 
 
 def count_tokens(text: str) -> int:
@@ -76,6 +86,7 @@ class PackInfo:
     total_tokens: int
     budget_tokens: int
     fixed_overhead_tokens: int
+    excerpted_count: int = 0
     summarized_count: int = 0
     truncated_count: int = 0
     dropped_count: int = 0
@@ -106,9 +117,28 @@ def pack_evidence(
         ExtractedPage(url=p.url, title=p.title, text=p.text or "", source=p.source, raw=p.raw)
         for p in pages
     ]
+    excerpted_count = 0
+    for i, p in enumerate(out_pages):
+        if len(p.text) <= _FULL_TEXT_CHAR_LIMIT:
+            continue
+        excerpt = _focused_excerpt(p.text, context=summary_context)
+        if excerpt != p.text:
+            out_pages[i] = ExtractedPage(
+                url=p.url,
+                title=p.title,
+                text=excerpt,
+                source=f"{p.source}+excerpt",
+                raw=p.raw,
+            )
+            excerpted_count += 1
     page_tokens = [count_tokens(p.text) for p in out_pages]
     total = sum(page_tokens)
-    info = PackInfo(total_tokens=total, budget_tokens=evidence_budget, fixed_overhead_tokens=fixed_tokens)
+    info = PackInfo(
+        total_tokens=total,
+        budget_tokens=evidence_budget,
+        fixed_overhead_tokens=fixed_tokens,
+        excerpted_count=excerpted_count,
+    )
 
     if total <= evidence_budget:
         return out_pages, info
@@ -158,3 +188,40 @@ def pack_evidence(
         info.total_tokens = total
 
     return out_pages, info
+
+
+def _focused_excerpt(text: str, *, context: str = "") -> str:
+    """Keep dense technical evidence from long extracted pages before LLM matching."""
+    if len(text) <= _FULL_TEXT_CHAR_LIMIT:
+        return text
+    keywords = set(_EVIDENCE_KEYWORDS)
+    for term in re.findall(r"[A-Za-z0-9][A-Za-z0-9+_.-]{1,}|[\u4e00-\u9fff]{2,}", context.lower()):
+        if len(term) >= 2:
+            keywords.add(term)
+
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    chosen: list[str] = []
+    seen: set[int] = set()
+    for idx, line in enumerate(lines):
+        low = line.lower()
+        has_keyword = any(k in low for k in keywords)
+        has_parameter = bool(re.search(r"\b\d+(?:\.\d+)?\s?(?:mm|cm|ah|wh|kwh|v|a|kg|g)\b", low))
+        if not has_keyword and not has_parameter:
+            continue
+        for j in range(max(0, idx - 1), min(len(lines), idx + 2)):
+            if j not in seen:
+                chosen.append(lines[j])
+                seen.add(j)
+        if sum(len(x) for x in chosen) >= _EXCERPT_CHAR_LIMIT:
+            break
+
+    if not chosen:
+        return text[: _EXCERPT_CHAR_LIMIT // 2] + "\n...[长文中段已省略]...\n" + text[-_EXCERPT_CHAR_LIMIT // 2 :]
+
+    body = "\n".join(chosen)
+    if len(body) > _EXCERPT_CHAR_LIMIT:
+        body = body[:_EXCERPT_CHAR_LIMIT]
+    return (
+        "[长文已按权利要求和技术参数聚焦摘录；原文过长，未全文送入 Agent]\n"
+        + body
+    )

@@ -352,6 +352,7 @@ S6  对每个候选执行目标化证据补搜：
     - 按目标选择搜索源：Tavily 默认参与，规格类偏 Tavily + Brave + Exa，上市日期偏 Bocha + Tavily + Brave News，缺口 / 反证再扩到全搜索池
     - URL 去除跟踪参数、规范化去重，并过滤明显不含当前公司 / 产品 / 别名的结果
     - 正文读取：Tavily Extract → Exa Contents 兜底
+    - 长篇低密度 PDF（研报、年报、招股书、公告、ESG 等）只保留 URL 线索，不全文送入 Agent；产品规格书 / datasheet / 产品手册 PDF 仍可读取
     - 首轮特征判断后，只对“证据不足 / remaining gap / 缺 URL”的证据目标补搜
     - 首轮分数和命中特征都过低时跳过扩展补搜，避免低质量候选继续消耗搜索额度
     - 行业种子站可派生少量 site: query，用于召回规格页、经销商规格和 PDF 索引
@@ -375,13 +376,15 @@ S10 输出 Top5 JSON
 - **缺口补搜**：Agent 首轮判断后，只对仍为“证据不足”、有 remaining gap、或判断缺少 URL 的目标继续补搜。首轮信号过低的候选会止损，避免把明显弱相关候选扩成几十页证据。
 - **行业种子站与行业 profile**：`data/cn_industry_sites/<tag>.json` 可放行业媒体、厂商官网、规格资料站和经销商站点，也可在 `evidence_profile` 中放该行业专属商品名、英文特征映射、规格页路径提示和补搜 query 模板。通用 `evidence.py` 不写入电池、半导体、汽车等专用词，避免污染其他领域搜索。
 - **候选相关性过滤**：搜索命中的 URL 会去除 `utm_*` / `srsltid` 等跟踪参数后去重；正文读取前必须在 URL / title / snippet 中匹配当前公司、产品型号或别名。
+- **公开证据准入**：只要是公开可访问 URL，且内容与当前公司 / 产品 / 型号相关，就可以作为证据来源；经销商、供应商、规格聚合站、电商参数页不会因为“非官网”而被排除。来源 Tier 只影响排序和可信度提示，不作为一刀切过滤标准。
 - **搜索源选择**：证据阶段不再所有 query 都打满 Bocha / Exa / Brave / Tavily，而是按目标选择。规格 / datasheet 目标偏 Tavily + Brave + Exa；结构 / 算法 / 产品文档偏 Tavily + Exa + Brave；上市日期偏 Bocha + Tavily + Brave News，且只在候选缺上市日期或缺日期证据 URL 时触发；缺口或反证补搜才扩到全搜索池。任一搜索源失败或额度不足时，`pool.search` 会记录失败并继续使用其他搜索源返回结果。
 - **Tavily 多 key 轮换**：`TAVILY_API_KEYS` 可配置多个 key；遇到额度、权限或限流错误时自动换下一个 key。`TAVILY_API_KEY` 仍可单独使用。
 - **Exa snippet 策略**：Exa 搜索阶段默认请求 highlights 作为 snippet，优先使用高亮短文本；只有显式需要全文时才请求 text，正文读取仍由 Exa Contents 兜底。
 - **正文抽取顺序**：Tavily Extract 优先，读不到正文时 Exa Contents 兜底。
-- **正文预算**：单候选默认最多读取前 5 个高价值 URL、最多保留 9 页证据；产品型号足够明确时提升到 6 个 URL / 10 页，高分候选的缺口补搜最多 8 个 URL / 12 页；进入 LLM 前再由 compactor 摘要 / 截断长文。
+- **长篇 PDF 过滤**：研报、年报、招股书、交易所公告、ESG 报告、行业深度等长篇低密度 PDF 会保留为 URL 线索，但不做付费全文抽取，也不会全文送入 Agent；标题或 URL 被识别为产品规格书、datasheet、产品手册的 PDF 例外，会正常读取。
+- **正文预算**：单候选默认最多读取前 5 个高价值 URL、最多保留 9 页证据；产品型号足够明确时提升到 6 个 URL / 10 页，高分候选的缺口补搜最多 8 个 URL / 12 页；进入 LLM 前，长正文先按权利要求和技术参数做聚焦摘录，仍超预算时再由 compactor 摘要 / 截断。
 - **运行级缓存**：`find-competitors-all` 的三个 Agent 和后续 `review` 复用同一个 `SearchSession` 缓存目录，搜索结果、正文抽取结果和 crawl 结果分别落到 `tmp/<pub_no>/search_cache.json`、`page_cache.json`、`crawl_cache.json`，避免并行 Agent 和复核阶段重复请求同一 query / URL。
-- **来源分层**：官方网页、官方 PDF、产品手册、白皮书、年报、招股书、标准、认证资料为 Tier 1；行业报告 / 权威媒体 / 展会资料为 Tier 2；普通新闻 / 代理商 / 电商等为 Tier 3；自媒体 / 论坛 / 二手转载为低可靠线索。
+- **来源分层**：官方网页、官方 PDF、产品手册、白皮书、标准、认证资料、经销商规格页、供应商参数页和规格聚合站优先进入证据阅读；行业报告 / 权威媒体 / 展会资料其次；普通新闻 / 代理商 / 电商 / 自媒体 / 论坛可作为公开线索。分层用于排序和提示，不表示第三方资料无效。
 - **Crawl 目标筛选**：Tavily Crawl 只深挖官网产品页、下载页、支持页、文档中心、SDK/开发者资料页，不爬新闻站、论坛、自媒体、电商或专利站。
 - **证据-特征提示**：进入 LLM 的证据块会标注 `线索特征: F3, F5` 和来源 Tier，减少证据错配。
 - **复核补搜去重**：Reviewer 会读取 Agent 已执行的 query，跳过重复 query，只对仍有缺口的证据目标补搜，并复用同一套 URL 规范化与候选相关性过滤。
@@ -395,7 +398,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 ```
 
 - 整体 ≤ 预算 → 全量保留；
-- 超出 → 对**单篇 token 数高的**长文调便宜 LLM (`COMPACTOR_LLM=agent3`) 做关键事实摘要（200~400 字，按"产品 / 公司 / 参数 / 结构 / 算法"5 维聚焦）；
+- 超出 → 长正文先按候选产品、权利要求特征和技术参数做确定性摘录；仍超出时，对**单篇 token 数高的**长文调便宜 LLM (`COMPACTOR_LLM=agent3`) 做关键事实摘要（200~400 字，按"产品 / 公司 / 参数 / 结构 / 算法"5 维聚焦）；
 - 仍超出 → 按 token 从大到小腰斩（保留首尾），最后才丢弃。
 
 实现：[`src/patentradar/compactor.py`](src/patentradar/compactor.py)。
@@ -446,7 +449,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 
 1. **行业宣传语扩展（拆解阶段）** — GPT-5.5 在权要拆解时同时给出每条特征的 `marketing_terms`（中文行业宣传语，例：把"电池单体在长度方向上沿厚度方向叠置" 翻成 "刀片电池 / 长方形方壳电芯 / CTP 无模组"），并打一个 `industry_tag`，固化到 `task_package.json`。**`industry_tag` 的合法取值由 [`data/cn_industry_sites/*.json`](data/cn_industry_sites/) 自动派生**——新增 / 删除领域只改这个目录，prompt 里的取值表和代码里的白名单都自动跟随。DeepSeek 视角 query 生成时优先用宣传语而不是工程术语。
 2. **行业站点定向召回（候选发现阶段）** — 按 `industry_tag` 加载 [`data/cn_industry_sites/`](data/cn_industry_sites/) 下对应白名单（自动叠加 `general.json` 通用站点），把 LLM 已生成的最聚焦的前 1~2 条 query **包装成 `(query) (site:domain1 OR site:domain2 ...)`** 用 Bocha 单独召回。媒体/协会组与厂商官网组分两条 query，互不干扰。
-3. **巨潮资讯证据补搜（证据收集阶段）** — 候选公司确定后，DeepSeek 自动用 `公司名 + 产品/型号` 查 [`巨潮资讯`](http://www.cninfo.com.cn/)（A 股 / 港股年报、招股书、公告全文）。返回的 PDF URL 直接进证据池，由 Exa Contents / Tavily Extract 兜底链抽正文。年报/招股书是上市企业最权威的产品技术披露源。
+3. **巨潮资讯证据补搜（证据收集阶段）** — 候选公司确定后，DeepSeek 自动用 `公司名 + 产品/型号` 查 [`巨潮资讯`](http://www.cninfo.com.cn/)（A 股 / 港股年报、招股书、公告全文）。返回的 PDF URL 可作为公开线索进入证据池；但年报、招股书、公告等长篇低密度 PDF 默认不全文读取，避免把低密度材料塞进 Agent 上下文。
 
 **调整白名单 / 行业 profile**：直接编辑 [`data/cn_industry_sites/<tag>.json`](data/cn_industry_sites/)，新增/删除 `sites[].domain` 即可；行业专属证据策略放在同文件的 `evidence_profile`，包括 `generic_terms`、`named_product_hints`、`spec_queries`、`feature_term_map` 等。**新增领域只需新建一个 `<tag>.json`**（必含 `industry_tag` / `label` / `prompt_description` / `sites`），系统会自动把它注入 GPT-5.5 拆解 prompt 的取值表和代码白名单——无需改 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 或 [`patent/decomposer.py`](src/patentradar/patent/decomposer.py)。详情见 [`data/cn_industry_sites/README.md`](data/cn_industry_sites/README.md)。
 
