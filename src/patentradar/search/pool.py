@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 # cninfo 是中文专项引擎，默认不进通用召回（普通 query 在年报里噪声大）；
 # 但 DeepSeek Agent 在已知候选公司名时会显式调用它做证据补搜。
-ALL_SEARCH_ENGINES = ("bocha", "exa", "brave", "tavily", "cninfo")
+ALL_SEARCH_ENGINES = ("bocha", "exa", "brave", "brave_news", "tavily", "cninfo")
 DEFAULT_SEARCH_ENGINES = ("bocha", "exa", "brave", "tavily")
 
 # 默认 URL 黑名单：这些站点的搜索结果几乎都是其他人的专利文献 / 论文，不是真实竞品产品资料。
@@ -63,6 +63,7 @@ def search(
         "bocha": lambda: bocha.search(query, num=num_per_engine),
         "exa": lambda: exa.search(query, num=num_per_engine),
         "brave": lambda: brave.search(query, num=num_per_engine),
+        "brave_news": lambda: brave.news_search(query, num=num_per_engine),
         "tavily": lambda: tavily.search(query, num=num_per_engine),
         "cninfo": lambda: cninfo.search(query, num=num_per_engine),
     }

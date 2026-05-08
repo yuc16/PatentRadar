@@ -52,7 +52,7 @@ REVIEW_SUPPLEMENT_ENGINES = pool.DEFAULT_SEARCH_ENGINES
 
 def _review_engines_for_target(target: evidence_strategy.EvidenceTarget) -> tuple[str, ...]:
     if target.target_id == "market_date":
-        return ("bocha", "tavily")
+        return ("bocha", "tavily", "brave_news")
     if target.target_id == "spec":
         return ("tavily", "brave", "exa")
     if target.target_id in {"structure", "algorithm", "product_docs"}:

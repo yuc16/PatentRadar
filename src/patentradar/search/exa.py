@@ -22,6 +22,8 @@ def search(
     type_: str = "neural",  # neural | keyword | auto
     use_autoprompt: bool = True,
     include_text: bool = False,
+    include_highlights: bool = True,
+    highlights_chars: int = 800,
 ) -> list[SearchHit]:
     key = SEARCH_KEYS.get("exa")
     if not key:
@@ -33,8 +35,16 @@ def search(
         "useAutoprompt": use_autoprompt,
         "numResults": max(1, min(num, 25)),
     }
+    contents: dict = {}
+    if include_highlights:
+        contents["highlights"] = {
+            "query": query,
+            "maxCharacters": max(200, min(highlights_chars, 2000)),
+        }
     if include_text:
-        body["contents"] = {"text": True}
+        contents["text"] = {"maxCharacters": max(300, min(highlights_chars, 2000))}
+    if contents:
+        body["contents"] = contents
     headers = {"x-api-key": key, "Content-Type": "application/json"}
     try:
         r = httpx.post(SEARCH_URL, headers=headers, json=body, timeout=DEFAULT_TIMEOUT)
@@ -46,9 +56,18 @@ def search(
     hits: list[SearchHit] = []
     for item in data.get("results", []) or []:
         snippet = ""
+        highlights = item.get("highlights")
+        if isinstance(highlights, list):
+            snippet = "\n".join(str(h).strip() for h in highlights if str(h).strip())
+        elif isinstance(highlights, str):
+            snippet = highlights.strip()
         text = item.get("text")
-        if text:
+        if not snippet and text:
             snippet = text[:300]
+        if not snippet:
+            summary = item.get("summary")
+            if isinstance(summary, str):
+                snippet = summary[:500]
         hits.append(
             SearchHit(
                 url=item.get("url", ""),

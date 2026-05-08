@@ -41,6 +41,7 @@ EVIDENCE_URL_POOL_LIMIT = 24
 EVIDENCE_HITS_PER_QUERY = 3
 EVIDENCE_TARGET_LIMIT = 2
 EVIDENCE_QUERIES_PER_TARGET = 2
+MARKET_DATE_QUERIES_PER_CANDIDATE = 2
 GAP_EVIDENCE_TARGET_LIMIT = 2
 GAP_EVIDENCE_QUERIES_PER_TARGET = 2
 GAP_FEATURE_SUPPLEMENT_LIMIT = 5
@@ -483,9 +484,9 @@ class SearchAgent:
         ) < 2:
             return "产品名称过泛，缺少可定位的型号、系列名或专有商品名"
         product_launch_date = normalize_date_string(cand.get("product_launch_date"))
-        if is_after_application(product_launch_date, task.patent.application_date) is True:
+        if is_after_application(product_launch_date, task.patent.application_date) is False:
             return (
-                "竞品上市/发布/量产日期晚于专利申请日"
+                "竞品上市/发布/量产日期不晚于专利申请日"
                 f"（竞品: {product_launch_date or '未知'}；申请日: "
                 f"{task.patent.application_date or '未知'}）"
             )
@@ -698,6 +699,39 @@ class SearchAgent:
                     engines=self._engines_for_evidence_target(target, phase="initial"),
                     url_pool_limit=EVIDENCE_URL_POOL_LIMIT,
                 )
+        if not (product_launch_date and product_launch_date_evidence_url):
+            market_date_target = next(
+                (target for target in evidence_targets if target.target_id == "market_date"),
+                None,
+            )
+            if market_date_target:
+                logger.info(
+                    "%s     market date evidence target=%s queries=%d",
+                    self.tag,
+                    market_date_target.label,
+                    min(len(market_date_target.queries), MARKET_DATE_QUERIES_PER_CANDIDATE),
+                )
+                for query in market_date_target.queries[:MARKET_DATE_QUERIES_PER_CANDIDATE]:
+                    self._search_evidence_query(
+                        query=query,
+                        feature_ids=(),
+                        purpose="上市日期证据检索",
+                        queries_used=queries_used,
+                        seen_queries=seen_evidence_queries,
+                        ev_urls=ev_urls,
+                        ev_titles=ev_titles,
+                        ev_summaries=ev_summaries,
+                        ev_feature_hints=ev_feature_hints,
+                        company=company,
+                        product=product,
+                        aliases=aliases,
+                        industry_tag=task.industry_tag,
+                        engines=self._engines_for_evidence_target(
+                            market_date_target,
+                            phase="initial",
+                        ),
+                        url_pool_limit=EVIDENCE_URL_POOL_LIMIT,
+                    )
         self._search_industry_evidence_sites(
             task=task,
             company=company,
@@ -956,7 +990,7 @@ class SearchAgent:
         if phase == "gap" and target.target_id in {"counter", "feature"}:
             return pool.DEFAULT_SEARCH_ENGINES
         if target.target_id == "market_date":
-            return ("bocha", "tavily")
+            return ("bocha", "tavily", "brave_news")
         if target.target_id == "spec":
             return ("tavily", "brave", "exa")
         if target.target_id in {"structure", "algorithm", "product_docs"}:

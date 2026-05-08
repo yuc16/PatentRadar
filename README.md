@@ -132,8 +132,8 @@ SEARCH_AGENT_3_CONTEXT_WINDOW=128000
 
 # ---------- 4 个搜索 API ----------
 BOCHA_API_KEY=...    # 中文 Web / 新闻 / 企业（也用于"行业站点定向"召回）
-EXA_API_KEY=...      # 语义搜索 + Contents 抽取
-BRAVE_API_KEY=...    # 广域 Web
+EXA_API_KEY=...      # 语义搜索 highlights + Contents 抽取
+BRAVE_API_KEY=...    # 广域 Web + News（上市日期证据）
 TAVILY_API_KEY=...   # search + extract + crawl
 TAVILY_API_KEYS=...  # 可选，多 key 建议用英文逗号分隔；运行时自动轮换
 
@@ -349,7 +349,7 @@ S5  保留重点候选（默认 8 个）
 S6  对每个候选执行目标化证据补搜：
     - 按证据目标分组生成中英双语 query，而不是机械逐特征搜索
     - 规格书 / 产品页 / PDF 可同时支撑尺寸、参数、结构等多个相关特征
-    - 按目标选择搜索源：Tavily 默认参与，规格类偏 Tavily + Brave + Exa，上市日期偏 Bocha + Tavily，缺口 / 反证再扩到全搜索池
+    - 按目标选择搜索源：Tavily 默认参与，规格类偏 Tavily + Brave + Exa，上市日期偏 Bocha + Tavily + Brave News，缺口 / 反证再扩到全搜索池
     - URL 去除跟踪参数、规范化去重，并过滤明显不含当前公司 / 产品 / 别名的结果
     - 正文读取：Tavily Extract → Exa Contents 兜底
     - 首轮特征判断后，只对“证据不足 / remaining gap / 缺 URL”的证据目标补搜
@@ -375,8 +375,9 @@ S10 输出 Top5 JSON
 - **缺口补搜**：Agent 首轮判断后，只对仍为“证据不足”、有 remaining gap、或判断缺少 URL 的目标继续补搜。首轮信号过低的候选会止损，避免把明显弱相关候选扩成几十页证据。
 - **行业种子站与行业 profile**：`data/cn_industry_sites/<tag>.json` 可放行业媒体、厂商官网、规格资料站和经销商站点，也可在 `evidence_profile` 中放该行业专属商品名、英文特征映射、规格页路径提示和补搜 query 模板。通用 `evidence.py` 不写入电池、半导体、汽车等专用词，避免污染其他领域搜索。
 - **候选相关性过滤**：搜索命中的 URL 会去除 `utm_*` / `srsltid` 等跟踪参数后去重；正文读取前必须在 URL / title / snippet 中匹配当前公司、产品型号或别名。
-- **搜索源选择**：证据阶段不再所有 query 都打满 Bocha / Exa / Brave / Tavily，而是按目标选择。规格 / datasheet 目标偏 Tavily + Brave + Exa；结构 / 算法 / 产品文档偏 Tavily + Exa + Brave；上市日期偏 Bocha + Tavily；缺口或反证补搜才扩到全搜索池。任一搜索源失败或额度不足时，`pool.search` 会记录失败并继续使用其他搜索源返回结果。
+- **搜索源选择**：证据阶段不再所有 query 都打满 Bocha / Exa / Brave / Tavily，而是按目标选择。规格 / datasheet 目标偏 Tavily + Brave + Exa；结构 / 算法 / 产品文档偏 Tavily + Exa + Brave；上市日期偏 Bocha + Tavily + Brave News，且只在候选缺上市日期或缺日期证据 URL 时触发；缺口或反证补搜才扩到全搜索池。任一搜索源失败或额度不足时，`pool.search` 会记录失败并继续使用其他搜索源返回结果。
 - **Tavily 多 key 轮换**：`TAVILY_API_KEYS` 可配置多个 key；遇到额度、权限或限流错误时自动换下一个 key。`TAVILY_API_KEY` 仍可单独使用。
+- **Exa snippet 策略**：Exa 搜索阶段默认请求 highlights 作为 snippet，优先使用高亮短文本；只有显式需要全文时才请求 text，正文读取仍由 Exa Contents 兜底。
 - **正文抽取顺序**：Tavily Extract 优先，读不到正文时 Exa Contents 兜底。
 - **正文预算**：单候选默认最多读取前 5 个高价值 URL、最多保留 9 页证据；产品型号足够明确时提升到 6 个 URL / 10 页，高分候选的缺口补搜最多 8 个 URL / 12 页；进入 LLM 前再由 compactor 摘要 / 截断长文。
 - **运行级缓存**：`find-competitors-all` 的三个 Agent 和后续 `review` 复用同一个 `SearchSession` 缓存目录，搜索结果、正文抽取结果和 crawl 结果分别落到 `tmp/<pub_no>/search_cache.json`、`page_cache.json`、`crawl_cache.json`，避免并行 Agent 和复核阶段重复请求同一 query / URL。
@@ -411,7 +412,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 "汇顶科技 / Goodix"          ⇨  汇顶科技
 ```
 
-复核还做：证据真实性校验、四档判断重判、风险等级。模型返回后，代码会再次补齐 F1/F2/F3... 全量特征表，按完整权利要求 1 重算分数，自动排除无明确公司 / 产品 / 公开证据 URL、存在"明确不满足"必要特征，或已知产品上市/发布/量产日期晚于专利申请日的候选；无法确定上市日期时不会因日期原因排除。
+复核还做：证据真实性校验、四档判断重判、风险等级。模型返回后，代码会再次补齐 F1/F2/F3... 全量特征表，按完整权利要求 1 重算分数，自动排除无明确公司 / 产品 / 公开证据 URL、存在"明确不满足"必要特征，或已知产品上市/发布/量产日期不晚于专利申请日的候选；无法确定上市日期时不会因日期原因排除。
 
 ### 8.7 四档判断 + 风险等级
 
@@ -489,5 +490,5 @@ output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
 ## 11. 致谢
 
 - 模型：GPT-5.5（OpenAI Codex）、deepseek-v4-pro、kimi-k2.6、glm-5.1（aihubmix 中转）。
-- 搜索：Bocha、Exa、Brave、Tavily。
+- 搜索：Bocha、Exa、Brave Web / News、Tavily。
 - 数据源：Google Patents 公开数据。
