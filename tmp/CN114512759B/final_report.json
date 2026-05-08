@@ -113,23 +113,198 @@
       "rank": 1,
       "candidate_id": "M001",
       "company": "蜂巢能源科技股份有限公司",
-      "product": "L600短刀电池",
+      "product": "SVOLT 184Ah LiFePO4 Blade Battery Cell",
       "aliases": [
-        "蜂巢能源",
         "短刀电池",
         "短刀片电池",
-        "短刀电芯",
-        "蜂巢短刀电芯",
-        "L600",
-        "L600系列",
-        "L600电芯",
-        "L600 184Ah",
-        "L600 196Ah",
-        "L600 147Ah",
-        "L600 162Ah"
+        "184Ah LiFePO4 Blade Battery",
+        "Svolt 184Ah ultra-thin battery",
+        "蜂巢能源 184Ah 刀片电池"
       ],
-      "product_launch_date": "2021",
-      "product_launch_date_evidence_url": "https://baike.baidu.com/item/%E8%9C%82%E5%B7%A2%E8%83%BD%E6%BA%90%E7%9F%AD%E5%88%80%E7%94%B5%E6%B1%A0/65146486",
+      "product_launch_date": "2021-10",
+      "product_launch_date_evidence_url": "https://www.escn.com.cn/news/show-1278967.html",
+      "score": 90.0,
+      "risk_level": "高度疑似落入",
+      "final_feature_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "蜂巢能源官网及多份官方产品手册均明确将短刀电池/刀片电池描述为方形硬壳（方壳/铝壳）动力电池，属于硬壳电池范畴。",
+          "evidence": [
+            {
+              "url": "https://www.svolt.cn/solution/passenger",
+              "title": "乘用车-蜂巢能源官方网站",
+              "source_type": "官网",
+              "source_reliability": "high",
+              "summary": "蜂巢能源推出L300-L600系列NCM和LFP短刀电池，短刀电芯为方形硬壳形态。",
+              "supported_features": [
+                "F1"
+              ]
+            },
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "蜂巢能源科技有限公司设计文件产品标准",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "本产品标准中的产品为蜂巢能源生产的184Ah可充电磷酸铁锂动力锂电池，属方壳电芯。",
+              "supported_features": [
+                "F1"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "184Ah短刀电芯官方图纸明确标注外形尺寸：长574.6±0.75 mm / 581.4±0.85 mm、宽118.5±0.3 mm、厚21.7±0.45 mm，满足长方体形且长度L大于宽度H、宽度H大于厚度D。",
+          "evidence": [
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "蜂巢能源科技有限公司设计文件产品标准",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "图纸外形尺寸：length 长 574.6±0.75 mm / 581.4±0.85 mm；width/height 宽/高 118.5±0.3 mm；thickness 厚 21.7±0.45 mm。",
+              "supported_features": [
+                "F2"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "基于官方图纸精确尺寸（取L≈575 mm、H=118.5 mm、D=21.7 mm）计算，体积V≈575×118.5×21.7≈1.48×10⁶ mm³，D/V≈0.0000147 mm⁻²，落入0.0000065~0.00002 mm⁻²范围。该数值虽为推导得出，但尺寸来源为官方产品标准，计算链完整可靠。",
+          "evidence": [
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "蜂巢能源科技有限公司设计文件产品标准",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "提供184Ah电芯官方三维尺寸，可用于精确计算体积与D/V比值。",
+              "supported_features": [
+                "F3"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "公开参数证据给出三维尺寸约 574.6×118.5×21.7 mm，并披露单体能量约 588.8 Wh（或可由容量和电压计算）。据此表面积S≈166,261 mm²，S/E≈282.4 mm²/Wh，低于1000 mm²/Wh。该判断为基于公开参数的复核计算，按可能满足处理。",
+          "evidence": [
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "蜂巢能源科技有限公司设计文件产品标准",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "本产品标准中的产品为蜂巢能源生产的184Ah可充电磷酸铁锂动力锂电池，属方壳电芯。\n图纸外形尺寸：length 长 574.6±0.75 mm / 581.4±0.85 mm；width/height 宽/高 118.5±0.3 mm；thickness 厚 21.7±0.45 mm。\n提供184Ah电芯官方三维尺寸，可用于精确计算体积与D/V比值。\n本产品标准中的产品为蜂巢能源生产的184Ah可充电磷酸铁锂动力锂电池，属方壳电芯。\n图纸外形尺寸：length 长 574.6±0.75 mm / 581.4±0.85 mm；width/height 宽/高 118.5±0.3 mm；thickness 厚 21.7±0.45 mm。\n提供184Ah电芯官方三维尺寸，可用于精确计算体积与D/V比值。\n184Ah电芯长度约575 mm。\n提供184Ah电芯官方三维尺寸，可用于精确计算表面积与L/S比值。\n厚度21.7±0.45mm，长度574.6±0.75mm，宽度118.5±0.3mm。\n[最终复核补搜 / Tier 1 官方/高可靠] 秘密 版本Version：A 编号NO： DOC-2005890 蜂巢能源科技有限公司设计文件 SVOLT Design Document 密级：Secrecy Level 编 制 Author： 王胜会 审 核 Checker： 张健 会 签 Countersign： ----- 批 准 Approval： 苏树发 蜂巢能源科技有限公司电芯设计部门 发布 二○一○年十二月十七日 产品标准 项目代码Project code：CB0MHW3NA-184Ah 第Ⅰ页 共Ⅱ页 目 录 Contents 术语定义 Terms and Definitions .................................................................................................... 1 1 样品电性能指标 Cell Performance ....................................................................................... 3 1.1 主要性能 Main Performance............................................................................................... 3 1.2 标准充电条件(模式) Standard Charge Condition ........................................................ 4 1.2.1 标准充电电流电压 Current and voltage of standard charge ..................................... 4 1.2.2 绝对充电温度 Absolute charge temperature ................................................................ 4 1.2.3 绝对充电电压 Absolute charge voltage ........................................\n图纸外形尺寸：length 长 574.6±0.75 mm / 581.4±0.85 mm。\n长度574.6±0.75mm，宽度118.5±0.3mm，厚度21.7±0.45mm。",
+              "supported_features": [
+                "F1",
+                "F2",
+                "F3",
+                "F5",
+                "F6",
+                "F4"
+              ]
+            },
+            {
+              "url": "https://bbs.16rd.com/thread-646134-1-1.html",
+              "title": "蜂巢能源 3.2V 184Ah 磷酸铁锂电芯 规格书 datasheet-一牛网论坛",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "[最终复核补搜 / Tier 1 官方/高可靠] # 蜂巢能源 3.2V 184Ah 磷酸铁锂电芯 规格书 datasheet-一牛网论坛\n\n[![Image 1: 一牛网](https://bbs.16rd.com/template/comiis_16rd/image/logo.png)](https://www.16rd.com/ \"一牛网\")\n\n[资讯](https://www.16rd.com/ \"一牛网电子研发资讯\")[论坛](https://bbs.16rd.com/ \"一牛网电子研发技术交流论坛\")[词条](https://bbs.16rd.com/citiao.html \"一牛网芯片词条-芯片百科\")[招聘](https://bbs.16rd.com/job.html \"一牛网电子工程师招牌频道\")[商城](https://bbs.16rd.com/mall.html \"一牛网研发商城\")[下载](https://bbs.16rd.com/download/ \"一牛网电子研发资料下载\")[问答](https://www.16rd.com/topic-AskAndAnser.html)[博客](https://www.16rd.com/home.php?mod=space&do=blog&view=all)[工程师家园](https://bbs.16rd.com/family.html)[站点任务](https://www.16rd.com/home.php?mod=task)[帮助](https://bbs.16rd.com/faq.html)\n\n[帖子](javascript:;)\n\n[登录](https://bbs.16rd.com/member.php?mod=logging&action=login)[立即注册](https://bbs.16rd.com/member.php?mod=register)[语言切换](javascript:;)\n\n*   [回帖奖励](https://bbs.16rd.com/replyreward_7ree-replyreward_7ree.html)\n\n*   [本版](javascript:;)\n*   [文章](javascript:;)\n*   [帖子](javascript:;)\n*   [用户](https://bbs.16rd.com/sear",
+              "supported_features": [
+                "F2",
+                "F3",
+                "F4",
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "明确满足",
+          "score": 1.0,
+          "reasoning": "184Ah电芯官方图纸显示长度约575 mm，L600系列公开报道长度约600 mm，明确落入400 mm~2500 mm范围。",
+          "evidence": [
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "蜂巢能源科技有限公司设计文件产品标准",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "184Ah电芯长度约575 mm。",
+              "supported_features": [
+                "F5"
+              ]
+            },
+            {
+              "url": "https://www.xchuxing.com/article/46637",
+              "title": "蜂巢能源的短刀片电芯生产和发展路线",
+              "source_type": "行业报告",
+              "source_reliability": "medium",
+              "summary": "短刀电池的长度（近600 mm）比普通电芯更长。",
+              "supported_features": [
+                "F5"
+              ]
+            }
+          ]
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "可能满足",
+          "score": 0.8,
+          "reasoning": "基于官方图纸尺寸计算表面积S≈2×(575×118.5+575×21.7+118.5×21.7)≈166,373 mm²，L/S≈575/166,373≈0.00346 mm⁻¹，落入0.002~0.005 mm⁻¹范围。该数值虽为推导得出，但尺寸来源可靠，计算链完整。",
+          "evidence": [
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "蜂巢能源科技有限公司设计文件产品标准",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "提供184Ah电芯官方三维尺寸，可用于精确计算表面积与L/S比值。",
+              "supported_features": [
+                "F6"
+              ]
+            }
+          ]
+        }
+      ],
+      "main_evidence_urls": [
+        "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+        "https://www.svolt.cn/solution/passenger",
+        "https://www.xchuxing.com/article/46637",
+        "https://bbs.16rd.com/thread-646134-1-1.html"
+      ],
+      "reason_for_top5": "合并后候选拥有最完整的官方尺寸图纸证据，F1/F2/F5明确满足，F3/F6可基于官方数据可靠推导，产品已量产上市，与涉案专利技术形态高度相关，总分最高。 已基于公开参数补充核算S/E。",
+      "remaining_gaps": [
+        {
+          "feature_id": "F3/F6",
+          "gap": "虽可基于184Ah型号官方尺寸计算推断，但L600系列具体型号的精确尺寸与能量参数待官方规格书进一步确认。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "M002",
+      "company": "吉利汽车",
+      "product": "神盾短刀电池",
+      "aliases": [
+        "短刀电池",
+        "Aegis Short Blade Battery",
+        "神盾短刀电池"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
       "score": 61.7,
       "risk_level": "局部相似",
       "final_feature_table": [
@@ -138,34 +313,24 @@
           "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
           "judgement": "明确满足",
           "score": 1.0,
-          "reasoning": "多项公开资料将蜂巢短刀电芯描述为方形电池、方形铝壳或方形硬壳短刀电芯；方形铝壳电芯属于硬壳电池，能够支撑该单体电池为硬壳电池的基础结构特征。",
+          "reasoning": "多份公开资料明确指出吉利神盾短刀电池为磷酸铁锂（LFP）电池，采用方形硬壳（铝壳）封装，属于硬壳电池。",
           "evidence": [
             {
-              "url": "https://www.svolt.cn/solution/passenger",
-              "title": "乘用车解决方案 - 蜂巢能源",
+              "url": "https://www.lifepo4-battery.com/News/geely-releases-lfp-short-blade-battery.html",
+              "title": "Geely releases new generation lfp short blade lifepo4 battery",
               "source_type": "官网",
               "source_reliability": "high",
-              "summary": "蜂巢能源乘用车解决方案中展示L300-L600系列NCM和LFP短刀电池/短刀电芯。",
+              "summary": "该电池为自研自产的磷酸铁锂刀片电池，采用方形硬壳封装。",
               "supported_features": [
                 "F1"
               ]
             },
             {
-              "url": "https://i.ifeng.com/c/8Azyp1sYjkI",
-              "title": "从“6条”电池看蜂巢能源的创新",
+              "url": "https://chedongxi.com/p/324346.html",
+              "title": "吉利直播拆解神盾短刀电池包！跑了30万公里后健康度仍超90%",
               "source_type": "权威媒体",
               "source_reliability": "medium",
-              "summary": "报道提及蜂巢能源以“三元方形铝壳、叠片工艺、无钴、车规级智能制造”著称，并涉及L600方形铝壳短刀电芯。",
-              "supported_features": [
-                "F1"
-              ]
-            },
-            {
-              "url": "http://epaper.bdall.com/wbpaper/pc/attachment/202208/20/f5b6487a-94da-435f-bd2d-7ed064056ecb.pdf",
-              "title": "怎样的“蜂巢” - 全保定网",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "资料称蜂巢能源将高速叠片工艺引入方形电池。",
+              "summary": "神盾短刀电池是吉利汽车自研自产的最新一代刀片式磷酸铁锂电池。",
               "supported_features": [
                 "F1"
               ]
@@ -177,157 +342,24 @@
           "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
           "judgement": "可能满足",
           "score": 0.8,
-          "reasoning": "公开资料描述L600为长薄型、长而薄的刀片结构电芯，且属于方形铝壳电芯，能够合理推断其电池本体为长方体形，长度显著大于厚度；但现有证据未直接披露宽度H与厚度D的具体数值，也未直接给出L>H>D的完整尺寸关系，因此不宜认定为明确满足。",
+          "reasoning": "公开报道显示神盾短刀电池为刀片式薄型电芯，长度580 mm，厚度18.2 mm。作为刀片电池，其宽度必然大于厚度，且长度远大于宽度，结合行业常识可合理推断其构造为长方体形且满足L>H>D。",
           "evidence": [
             {
-              "url": "http://m.juda.cn/news/251778.html",
-              "title": "代号L6 蜂巢能源如何布局长电芯？",
-              "source_type": "自媒体",
+              "url": "https://m.d1ev.com/kol/235591",
+              "title": "吉利的「刀」指向谁？-第一电动网",
+              "source_type": "权威媒体",
               "source_reliability": "medium",
-              "summary": "资料称蜂巢能源L6为长而薄的刀片结构电芯，体现长薄化设计。",
+              "summary": "吉利神盾短刀电池的电芯长度是580 mm。",
               "supported_features": [
                 "F2"
               ]
             },
             {
-              "url": "https://m.xchuxing.com/article/40101",
-              "title": "蜂巢能源 L600 短刀片电池量产了？电芯薄片是今后行业趋势",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "资料称L600为长薄型电芯、短刀片电池，并提到实际长度约574mm。",
-              "supported_features": [
-                "F2",
-                "F5"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F3",
-          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "现有证据未披露L600短刀电芯的厚度D、宽度H及可计算体积V的完整三维尺寸，无法计算D/V是否落入0.0000065 mm^-2至0.00002 mm^-2。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F4",
-          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "公开资料虽涉及短刀电芯及部分能量密度信息，但未同时给出电池本体表面积S和单体能量E的可核算数值，无法验证S/E≤1000 mm²·Wh^-1。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F5",
-          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开资料明确称L600短刀电芯实际长度约574mm，或以L600系列指向约600mm级长电芯；无论按574mm还是约600mm，均落入400mm至2500mm范围。",
-          "evidence": [
-            {
-              "url": "https://m.xchuxing.com/article/40101",
-              "title": "蜂巢能源 L600 短刀片电池量产了？电芯薄片是今后行业趋势",
-              "source_type": "自媒体",
-              "source_reliability": "low",
-              "summary": "资料称L600的实际长度是574mm。",
-              "supported_features": [
-                "F5"
-              ]
-            },
-            {
-              "url": "https://www.svolt.cn/solution/commercial",
-              "title": "商业应用-蜂巢能源官方网站",
+              "url": "https://www.lifepo4-battery.com/News/geely-releases-lfp-short-blade-battery.html",
+              "title": "Geely releases new generation lfp short blade lifepo4 battery",
               "source_type": "官网",
               "source_reliability": "high",
-              "summary": "官网商业应用页面出现L600短刀电芯/高安全短刀电芯等产品信息。",
-              "supported_features": [
-                "F5"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F6",
-          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "虽然长度L已有约574mm至600mm的公开线索，但缺少宽度H、厚度D或表面积S，无法计算L/S是否处于0.002 mm^-1至0.005 mm^-1。",
-          "evidence": []
-        }
-      ],
-      "main_evidence_urls": [
-        "http://epaper.bdall.com/wbpaper/pc/attachment/202208/20/f5b6487a-94da-435f-bd2d-7ed064056ecb.pdf",
-        "http://m.juda.cn/news/251778.html",
-        "https://i.ifeng.com/c/8Azyp1sYjkI",
-        "https://m.xchuxing.com/article/40101",
-        "https://www.svolt.cn/solution/commercial",
-        "https://www.svolt.cn/solution/passenger"
-      ],
-      "reason_for_top5": "合并三个Agent关于蜂巢短刀/L600系列的重复候选后，F1和F5有较强公开证据，F2具有较强形态推断基础，但F3、F4、F6仍缺少尺寸和能量参数。",
-      "remaining_gaps": [
-        {
-          "feature_id": "F3",
-          "gap": "缺少厚度D及完整三维尺寸，无法计算D/V。"
-        },
-        {
-          "feature_id": "F4",
-          "gap": "缺少表面积S与单体能量E的对应公开数据。"
-        },
-        {
-          "feature_id": "F6",
-          "gap": "缺少宽度、厚度或表面积数据，无法计算L/S。"
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "candidate_id": "M002",
-      "company": "吉利汽车集团",
-      "product": "神盾短刀电池",
-      "aliases": [
-        "吉利汽车",
-        "短刀电池",
-        "吉利短刀电池",
-        "神盾短刀电池"
-      ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 58.3,
-      "risk_level": "局部相似",
-      "final_feature_table": [
-        {
-          "feature_id": "F1",
-          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "公开资料称神盾短刀电池为刀片式磷酸铁锂电池。刀片式/短刀电池通常采用方形硬壳或铝壳结构，但当前输入证据摘要未直接写明“方壳”“铝壳”或“硬壳”，因此只能认定为可能满足。",
-          "evidence": [
-            {
-              "url": "https://m.xchuxing.com/article/127378",
-              "title": "吉利神盾短刀电池：革新安全标准，定义未来动力电池新形态",
-              "source_type": "其他",
-              "source_reliability": "medium",
-              "summary": "资料称神盾短刀电池是吉利汽车推出的新一代刀片式磷酸铁锂电池。",
-              "supported_features": [
-                "F1"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F2",
-          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "“短刀/刀片式”电池的命名及公开描述指向长条、扁平的电芯形态，能够合理推断其为长方体且长度大于宽度、厚度；但现有证据未直接披露宽度H、厚度D及L>H>D的具体尺寸关系，故不能认定为明确满足。",
-          "evidence": [
-            {
-              "url": "https://m.xchuxing.com/article/127378",
-              "title": "吉利神盾短刀电池：革新安全标准，定义未来动力电池新形态",
-              "source_type": "其他",
-              "source_reliability": "medium",
-              "summary": "资料将产品描述为短刀/刀片式磷酸铁锂电池，具有长条形电芯的形态线索。",
+              "summary": "采用方形硬壳封装的刀片电池，形态为长条形薄型电芯。",
               "supported_features": [
                 "F2"
               ]
@@ -339,7 +371,7 @@
           "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
           "judgement": "证据不足",
           "score": 0.3,
-          "reasoning": "未见厚度D、宽度H或体积V等可核算参数，无法验证D/V范围。",
+          "reasoning": "现有证据仅提供长度580 mm和厚度18.2 mm，未披露宽度数据，无法计算体积V及D/V比值。",
           "evidence": []
         },
         {
@@ -347,7 +379,7 @@
           "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
           "judgement": "证据不足",
           "score": 0.3,
-          "reasoning": "未见电池本体表面积S和单体能量E的公开对应数值，无法验证S/E≤1000 mm²·Wh^-1。",
+          "reasoning": "现有证据未提供电池本体的表面积S与单体能量E的具体数值，虽有能量密度192 Wh/kg报道，但无法计算S/E比值。",
           "evidence": []
         },
         {
@@ -355,14 +387,14 @@
           "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
           "judgement": "明确满足",
           "score": 1.0,
-          "reasoning": "Agent提供的同一公开报道线索称神盾短刀电池长度约580mm，落入400mm至2500mm范围；该数值虽需进一步核对原文，但在输入证据摘要中已明确给出。",
+          "reasoning": "公开报道明确指出神盾短刀电池长度为580 mm，落入400 mm~2500 mm范围。",
           "evidence": [
             {
-              "url": "https://m.xchuxing.com/article/127378",
-              "title": "吉利神盾短刀电池：革新安全标准，定义未来动力电池新形态",
-              "source_type": "其他",
+              "url": "https://m.d1ev.com/kol/235591",
+              "title": "吉利的「刀」指向谁？-第一电动网",
+              "source_type": "权威媒体",
               "source_reliability": "medium",
-              "summary": "Agent摘要/推理称该报道披露神盾短刀电池长度约580mm。",
+              "summary": "吉利神盾短刀电池的电芯长度是580 mm。",
               "supported_features": [
                 "F5"
               ]
@@ -374,269 +406,46 @@
           "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
           "judgement": "证据不足",
           "score": 0.3,
-          "reasoning": "仅有长度约580mm的线索，缺少表面积S或宽度、厚度数据，无法计算L/S。",
+          "reasoning": "现有证据仅提供长度580 mm和厚度18.2 mm，未披露宽度数据，无法计算表面积S及L/S比值。",
           "evidence": []
         }
       ],
       "main_evidence_urls": [
-        "https://m.xchuxing.com/article/127378"
+        "https://chedongxi.com/p/324346.html",
+        "https://m.d1ev.com/kol/235591",
+        "https://www.lifepo4-battery.com/News/geely-releases-lfp-short-blade-battery.html"
       ],
-      "reason_for_top5": "产品形态与刀片/短刀电芯路线相近，长度范围有公开线索，但硬壳属性及几何比例仍多依赖行业推断。",
+      "reason_for_top5": "作为比亚迪刀片电池的直接竞品，技术路线与涉案专利高度相关，F1和F5明确满足，F2可合理推断，具备对比分析价值。",
       "remaining_gaps": [
         {
-          "feature_id": "F1",
-          "gap": "需补充官方或规格书中关于方壳/铝壳/硬壳封装的直接表述。"
-        },
-        {
           "feature_id": "F3",
-          "gap": "需获取厚度D及体积V。"
+          "gap": "缺少电池宽度及体积数据，无法验证D/V比值。"
         },
         {
           "feature_id": "F4",
-          "gap": "需获取表面积S和单体能量E。"
+          "gap": "缺少表面积S与单体能量E数据，无法验证S/E比值。"
         },
         {
           "feature_id": "F6",
-          "gap": "需获取宽度、厚度并计算表面积S。"
+          "gap": "缺少宽度数据，无法计算表面积及L/S比值。"
         }
       ]
     },
     {
       "rank": 3,
       "candidate_id": "M003",
-      "company": "远景动力技术有限公司（Envision AESC）",
-      "product": "790Ah方壳卷绕储能电芯",
+      "company": "欣旺达动力科技股份有限公司",
+      "product": "欣星驰超充电池2.0",
       "aliases": [
-        "远景动力",
-        "Envision AESC",
-        "790Ah超大电芯",
-        "790Ah方壳卷绕储能电芯",
-        "500+Ah大容量方壳电芯"
+        "欣星驰超充电池",
+        "Sunwoda",
+        "欣旺达动力",
+        "155电芯",
+        "314Ah电芯"
       ],
       "product_launch_date": null,
       "product_launch_date_evidence_url": null,
-      "score": 50.0,
-      "risk_level": "局部相似",
-      "final_feature_table": [
-        {
-          "feature_id": "F1",
-          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "公开报道明确称该产品为“方壳卷绕储能电芯”，方壳电芯通常即硬壳/金属壳封装，能够支撑硬壳电池特征。",
-          "evidence": [
-            {
-              "url": "https://cloud.tencent.com/developer/news/3874818",
-              "title": "远景动力沧州工厂加速产能释放，790Ah超大电芯开启储能规模经济新纪元",
-              "source_type": "权威媒体",
-              "source_reliability": "medium",
-              "summary": "报道称远景动力最新投产全球最大方壳卷绕储能电芯790Ah。",
-              "supported_features": [
-                "F1"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F2",
-          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "方壳电芯通常为长方体壳体，大容量储能方壳电芯也通常呈扁长矩形结构；但该证据未给出具体长、宽、厚数值，无法直接证明L>H>D，因此仅为可能满足。",
-          "evidence": [
-            {
-              "url": "https://cloud.tencent.com/developer/news/3874818",
-              "title": "远景动力沧州工厂加速产能释放，790Ah超大电芯开启储能规模经济新纪元",
-              "source_type": "权威媒体",
-              "source_reliability": "medium",
-              "summary": "报道明确该产品为方壳卷绕储能电芯，提供长方体方壳形态线索。",
-              "supported_features": [
-                "F2"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F3",
-          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未见厚度D及体积V数据，无法计算D/V。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F4",
-          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未见表面积S及单体能量E的可对应核算数据，无法验证S/E。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F5",
-          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "报道未披露790Ah电芯长度L，不能判断是否位于400mm至2500mm。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F6",
-          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "缺少长度L及表面积S，无法计算L/S。",
-          "evidence": []
-        }
-      ],
-      "main_evidence_urls": [
-        "https://cloud.tencent.com/developer/news/3874818"
-      ],
-      "reason_for_top5": "“方壳卷绕储能电芯”对F1支撑较直接，F2具备一定形态推断基础，但权利要求的核心尺寸及比值特征完全缺失。",
-      "remaining_gaps": [
-        {
-          "feature_id": "F3",
-          "gap": "需获取790Ah电芯规格书中的厚度和体积。"
-        },
-        {
-          "feature_id": "F4",
-          "gap": "需获取单体能量及外形尺寸以计算表面积。"
-        },
-        {
-          "feature_id": "F5",
-          "gap": "需确认电芯长度是否不小于400mm。"
-        },
-        {
-          "feature_id": "F6",
-          "gap": "需计算L/S。"
-        }
-      ]
-    },
-    {
-      "rank": 4,
-      "candidate_id": "M004",
-      "company": "宁德时代新能源科技股份有限公司（CATL）",
-      "product": "CATL 48Ah NMC Prismatic Cell",
-      "aliases": [
-        "宁德时代",
-        "CATL",
-        "Prismatic LFP EV Battery Cell",
-        "CATL方形电芯",
-        "麒麟电池电芯"
-      ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 50.0,
-      "risk_level": "局部相似",
-      "final_feature_table": [
-        {
-          "feature_id": "F1",
-          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
-          "judgement": "明确满足",
-          "score": 1.0,
-          "reasoning": "输入证据为CATL 48Ah NMC Prismatic Cell规格书，标题明确为Prismatic Cell；prismatic方形电芯通常对应硬壳电池，能够支撑F1。但该证据与候选中“LFP EV/麒麟电池电芯”的表述并不完全一致，应以该48Ah方形电芯证据为准。",
-          "evidence": [
-            {
-              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
-              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "规格书标题及内容明确指出该产品为Prismatic lithium NCM cell。",
-              "supported_features": [
-                "F1"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F2",
-          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "Prismatic方形电芯通常具有长方体外壳形态，可支持长方体形的推断；但当前摘要未给出该48Ah电芯的具体长宽厚，无法直接确认L>H>D的完整关系，因此仅为可能满足。",
-          "evidence": [
-            {
-              "url": "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf",
-              "title": "产品规格确认书 - CATL 48Ah NMC Prismatic Cell",
-              "source_type": "其他",
-              "source_reliability": "high",
-              "summary": "规格书表明该产品为方形/prismatic电芯，支持长方体形态推断。",
-              "supported_features": [
-                "F2"
-              ]
-            }
-          ]
-        },
-        {
-          "feature_id": "F3",
-          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "输入摘要未提供可核验的厚度D与体积V，无法计算D/V。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F4",
-          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "未提供可用于计算表面积S及其与单体能量E关系的完整尺寸和能量数据。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F5",
-          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "现有摘要未披露长度L具体数值。虽然48Ah常规方形电芯可能小于400mm，但输入证据未给出可直接核实的数据，不能判定明确不满足。",
-          "evidence": []
-        },
-        {
-          "feature_id": "F6",
-          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
-          "judgement": "证据不足",
-          "score": 0.3,
-          "reasoning": "缺少长度L与表面积S，无法计算L/S。",
-          "evidence": []
-        }
-      ],
-      "main_evidence_urls": [
-        "https://www.dnkpower.com/wp-content/uploads/2024/10/3.7v-48ah-prismatic-ncm-cell-datasheet.pdf"
-      ],
-      "reason_for_top5": "仅基础方形硬壳特征得到较强支持；候选产品命名与证据对象存在偏差，且尺寸比值特征均未落实，故仅弱相关。",
-      "remaining_gaps": [
-        {
-          "feature_id": "F5",
-          "gap": "需核对该具体CATL方形电芯或麒麟电池电芯的官方规格尺寸，尤其长度是否达到400mm。"
-        },
-        {
-          "feature_id": "F3",
-          "gap": "需获取厚度和体积计算D/V。"
-        },
-        {
-          "feature_id": "F4",
-          "gap": "需获取表面积与能量。"
-        },
-        {
-          "feature_id": "F6",
-          "gap": "需获取L/S计算所需尺寸。"
-        }
-      ]
-    },
-    {
-      "rank": 5,
-      "candidate_id": "M005",
-      "company": "Panasonic Holdings Corporation",
-      "product": "方形锂离子电池（高容量型）",
-      "aliases": [
-        "Panasonic",
-        "松下",
-        "Panasonic Prismatic Battery",
-        "松下方形锂电池"
-      ],
-      "product_launch_date": null,
-      "product_launch_date_evidence_url": null,
-      "score": 46.7,
+      "score": 38.3,
       "risk_level": "弱相关",
       "final_feature_table": [
         {
@@ -644,14 +453,24 @@
           "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
           "judgement": "可能满足",
           "score": 0.8,
-          "reasoning": "松下官网明确列出“方形锂离子电池（高容量型）”，并与聚合物锂离子电池区分。方形锂离子电池通常为金属硬壳封装，但输入证据摘要未直接写明硬壳/铝壳，因此认定为可能满足。",
+          "reasoning": "欣旺达官方规格书显示其生产方形锂离子电池（155电芯、314Ah Prismatic Cells），且欣旺达动力在动力电池领域主流采用方形铝壳硬壳路线。虽非欣星驰2.0本身的直接描述，但基于同公司产品线封装路线的一致性，可合理推断其为硬壳电池。",
           "evidence": [
             {
-              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
-              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
-              "source_type": "官网",
+              "url": "https://b2bwiki.baidu.com/article/706712031778226177",
+              "title": "欣旺达155电芯：规格与电压全解析",
+              "source_type": "自媒体",
+              "source_reliability": "low",
+              "summary": "欣旺达155电芯是一款常见的方形锂离子电池。",
+              "supported_features": [
+                "F1"
+              ]
+            },
+            {
+              "url": "https://apexiummall.com/index.php?download_id=47&product_id=539&route=product%2Fproduct%2Fdownload",
+              "title": "Product Specification of 314Ah Prismatic Cells",
+              "source_type": "产品手册",
               "source_reliability": "high",
-              "summary": "官网产品分类明确列出方形锂离子电池，并与聚合物锂离子电池区分。",
+              "summary": "欣旺达动力科技股份有限公司产品规格书，型号SBP-01-3140，为方形锂离子电池。",
               "supported_features": [
                 "F1"
               ]
@@ -661,28 +480,17 @@
         {
           "feature_id": "F2",
           "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
-          "judgement": "可能满足",
-          "score": 0.8,
-          "reasoning": "“方形锂离子电池”通常具有长方体外形，可支持长方体形态推断；但官网摘要未给出具体长、宽、厚，也未说明L>H>D，故仅为可能满足。",
-          "evidence": [
-            {
-              "url": "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap",
-              "title": "方形锂离子电池（高容量型）- 产品 ‐ 松下新能源 官方网站",
-              "source_type": "官网",
-              "source_reliability": "high",
-              "summary": "官网产品名称表明其为方形/prismatic锂离子电池。",
-              "supported_features": [
-                "F2"
-              ]
-            }
-          ]
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "现有公开证据中未检索到欣星驰超充电池2.0关于电池本体几何形状及L>H>D尺寸关系的直接描述，无法确认是否满足该特征。",
+          "evidence": []
         },
         {
           "feature_id": "F3",
           "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
           "judgement": "证据不足",
           "score": 0.3,
-          "reasoning": "未提供厚度D和体积V，无法计算D/V。",
+          "reasoning": "现有公开证据未披露欣星驰超充电池2.0的厚度D与体积V的具体数值，无法验证D/V比值。",
           "evidence": []
         },
         {
@@ -690,7 +498,7 @@
           "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
           "judgement": "证据不足",
           "score": 0.3,
-          "reasoning": "未提供表面积S和单体能量E，无法验证S/E。",
+          "reasoning": "现有公开证据未披露欣星驰超充电池2.0的表面积S与能量E的具体数值，无法验证S/E≤1000 mm²·Wh⁻¹。",
           "evidence": []
         },
         {
@@ -698,7 +506,7 @@
           "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
           "judgement": "证据不足",
           "score": 0.3,
-          "reasoning": "官网摘要未披露该高容量型方形电池的长度L，无法确认是否在400mm至2500mm。",
+          "reasoning": "现有公开证据未披露欣星驰超充电池2.0的长度L具体数值，无法验证其是否落入400 mm~2500 mm范围。",
           "evidence": []
         },
         {
@@ -706,34 +514,204 @@
           "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
           "judgement": "证据不足",
           "score": 0.3,
-          "reasoning": "缺少长度L及表面积S，无法计算L/S。",
+          "reasoning": "现有公开证据未披露欣星驰超充电池2.0的长度L与表面积S的具体数值，无法验证L/S比值。",
           "evidence": []
         }
       ],
       "main_evidence_urls": [
-        "https://energy.panasonic.cn/cn/business/products/lithium-ion/prismatic-high-cap"
+        "https://apexiummall.com/index.php?download_id=47&product_id=539&route=product%2Fproduct%2Fdownload",
+        "https://b2bwiki.baidu.com/article/706712031778226177",
+        "https://d1ev.com/news/shichang/245852"
       ],
-      "reason_for_top5": "官方证据可支持方形电池产品存在，但无长刀/短刀或大尺寸参数证据，整体仅为弱相关候选。",
+      "reason_for_top5": "欣旺达为国内头部动力电池企业，技术路线与涉案专利相关，虽当前证据仅足以弱支撑F1，但基于其市场地位值得保留并进一步深挖。",
       "remaining_gaps": [
         {
-          "feature_id": "F1",
-          "gap": "需确认该高容量型方形电池是否为金属硬壳而非其他封装。"
-        },
-        {
-          "feature_id": "F5",
-          "gap": "需获取产品规格书确认长度是否达到400mm。"
+          "feature_id": "F2",
+          "gap": "缺少电池本体几何形状及长宽厚尺寸关系证据。"
         },
         {
           "feature_id": "F3",
-          "gap": "需获取厚度和体积。"
+          "gap": "缺少厚度D与体积V数据。"
         },
         {
           "feature_id": "F4",
-          "gap": "需获取表面积和能量。"
+          "gap": "缺少表面积S与单体能量E数据。"
+        },
+        {
+          "feature_id": "F5",
+          "gap": "缺少长度L数据。"
         },
         {
           "feature_id": "F6",
-          "gap": "需获取L/S计算数据。"
+          "gap": "缺少长度L与表面积S数据。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": "M004",
+      "company": "中创新航",
+      "product": "全极耳叠片电池 / 弹闸电池",
+      "aliases": [
+        "弹闸电池",
+        "One-stop Battery"
+      ],
+      "product_launch_date": null,
+      "product_launch_date_evidence_url": null,
+      "score": 30.0,
+      "risk_level": "弱相关",
+      "final_feature_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "现有证据中的产品规格书虽将L300F187A等型号描述为方形锂离子电池（属硬壳电池），但对应型号并非候选的弹闸电池，无法直接证明该特定产品为硬壳电池。",
+          "evidence": [
+            {
+              "url": "https://www.mivvyenergy.cz/img/cms/CALB%20187Ah.pdf",
+              "title": "Product Specification of L300F187A",
+              "source_type": "其他",
+              "source_reliability": "high",
+              "summary": "产品规格书标题为方形锂离子电池，但该型号为L300F187A，非弹闸电池。",
+              "supported_features": []
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "现有规格书显示的其他型号电芯为长方体形，但对应型号并非弹闸电池，无法确认弹闸电池是否满足L>H>D。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "针对弹闸电池本身，无任何尺寸或体积数据公开，无法判断D/V比值。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "针对弹闸电池本身，无任何能量或表面积数据公开，无法判断S/E比值。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "针对弹闸电池本身，无任何长度数据公开，无法判断是否落入400 mm~2500 mm范围。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "针对弹闸电池本身，无任何尺寸数据公开，无法判断L/S比值。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+        "https://www.mivvyenergy.cz/img/cms/CALB%20187Ah.pdf"
+      ],
+      "reason_for_top5": "虽当前公开证据无法覆盖弹闸电池本身的技术参数，但中创新航为行业头部企业，且其One-stop/全极耳叠片技术路线与长薄型电芯相关，保留以待进一步核查。",
+      "remaining_gaps": [
+        {
+          "feature_id": "F1-F6",
+          "gap": "弹闸电池本身缺乏任何公开技术参数，现有证据均为其他型号（L300F187A、L173F230等），无法直接推断。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "candidate_id": "M005",
+      "company": "国轩高科",
+      "product": "360Wh/kg半固态电池（136Ah半固态电芯）",
+      "aliases": [
+        "360Wh/kg半固态电池",
+        "136Ah半固态电芯"
+      ],
+      "product_launch_date": "2022-05-28",
+      "product_launch_date_evidence_url": "https://www.42how.com/en/article/6331",
+      "score": 30.0,
+      "risk_level": "弱相关",
+      "final_feature_table": [
+        {
+          "feature_id": "F1",
+          "claim_feature": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "现有证据未包含该136Ah半固态电芯为硬壳电池的直接公开资料。证据中的其他型号（如IFP27175200A等）虽为方形硬壳，但与候选产品并非同一型号，无法直接推断。",
+          "evidence": [
+            {
+              "url": "https://bbs.16rd.com/thread-646216-1-1.html",
+              "title": "国轩高科 IFP27175200A 规格书 datasheet",
+              "source_type": "产品手册",
+              "source_reliability": "high",
+              "summary": "该型号为方形锂离子电池，但对应型号IFP27175200A，非136Ah半固态电芯。",
+              "supported_features": []
+            }
+          ]
+        },
+        {
+          "feature_id": "F2",
+          "claim_feature": "电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未检索到该候选竞品电池本体为长方体形且满足L>H>D之尺寸关系的直接公开证据。现有规格书均对应其他型号。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F3",
+          "claim_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未找到该候选竞品电池本体的厚度D与体积V满足权利要求范围的直接公开数据。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F4",
+          "claim_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未找到该候选竞品电池本体的表面积S与能量E满足S/E≤1000 mm²·Wh⁻¹的直接公开数据。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F5",
+          "claim_feature": "所述电池本体的长度L为400mm~2500mm；",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未检索到该候选竞品电池本体长度L为400 mm~2500 mm的直接公开证据。现有证据中的其他型号电芯长度均约为200 mm左右，但与候选产品型号不同，不能类推。",
+          "evidence": []
+        },
+        {
+          "feature_id": "F6",
+          "claim_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+          "judgement": "证据不足",
+          "score": 0.3,
+          "reasoning": "未找到该候选竞品电池本体的长度L与表面积S满足权利要求范围的直接公开数据。",
+          "evidence": []
+        }
+      ],
+      "main_evidence_urls": [
+        "https://bbs.16rd.com/thread-646216-1-1.html",
+        "https://www.atakale.com/image/urunler/aku/gotion/gotion_102AH_3.2volt_prysmatic_lifepo4_lityum_demir_fosfat_lfp_hucre_pil_storage_IFP_50160116A-102ah_datasheet.pdf"
+      ],
+      "reason_for_top5": "国轩高科为国内头部动力电池企业，该旗舰产品定位与涉案专利技术领域高度相关，虽当前证据不足，但保留以进一步补充检索。",
+      "remaining_gaps": [
+        {
+          "feature_id": "F1-F6",
+          "gap": "136Ah半固态电芯的封装形式、三维尺寸、体积、能量及表面积等核心参数均未在公开证据中披露，现有证据均为其他型号。"
         }
       ]
     }
@@ -741,21 +719,35 @@
   "excluded": [],
   "needs_manual_review": [
     {
-      "candidate_id": "M006",
-      "company": "亿纬锂能",
-      "product": "LF560K储能电池",
-      "gap": "F1有prismatic/方形电芯线索且发布时间晚于专利申请日，但F2-F6均缺少具体长宽厚、表面积及能量对应数据，当前分数较低。",
-      "suggested_search_direction": "检索EVE LF560K或Mr.Big官方规格书、UL/IEC认证资料、客户招标技术文件、拆解测评，重点获取长宽厚、单体能量、外壳结构。"
+      "candidate_id": "M002",
+      "company": "吉利汽车",
+      "product": "神盾短刀电池",
+      "gap": "缺少电池宽度、体积、单体能量及表面积数据，无法验证F3/F4/F6。",
+      "suggested_search_direction": "检索吉利神盾短刀电池的官方规格书或权威拆解报告，获取完整三维尺寸与额定能量。"
     },
     {
-      "candidate_id": "M007",
-      "company": "远景动力技术有限公司",
-      "product": "530Ah储能电芯",
-      "gap": "仅有2025年发布及单颗电芯超1.6度电线索，硬壳/方壳属性和所有尺寸参数均未直接公开。",
-      "suggested_search_direction": "检索远景动力530Ah储能电芯官方发布PPT、量产交付规格书、储能系统集成商BOM或认证文件，确认是否方壳及长宽厚参数。"
+      "candidate_id": "M003",
+      "company": "欣旺达动力科技股份有限公司",
+      "product": "欣星驰超充电池2.0",
+      "gap": "欣星驰超充电池2.0的封装形式、尺寸及能量参数均未公开。",
+      "suggested_search_direction": "检索欣旺达动力欣星驰系列官方规格书或车展/发布会技术白皮书，确认是否为硬壳及具体尺寸能量参数。"
+    },
+    {
+      "candidate_id": "M004",
+      "company": "中创新航",
+      "product": "全极耳叠片电池 / 弹闸电池",
+      "gap": "弹闸电池本身无任何公开技术参数，现有证据均为其他型号，无法直接推断。",
+      "suggested_search_direction": "确认中创新航弹闸电池是否已量产上市，并检索其官方规格书或专利以获取具体参数。"
+    },
+    {
+      "candidate_id": "M005",
+      "company": "国轩高科",
+      "product": "360Wh/kg半固态电池（136Ah半固态电芯）",
+      "gap": "136Ah半固态电芯的封装形式、尺寸及能量参数均未公开。",
+      "suggested_search_direction": "检索国轩高科360Wh/kg半固态电池的官方规格书或发布会技术资料，确认封装形式及三维尺寸能量数据。"
     }
   ],
-  "reviewer_model": "codex:gpt-5.5",
-  "elapsed_seconds": 95.93,
-  "notes": "已将蜂巢能源短刀电池/L600系列的三个重复候选合并。整体来看，当前候选多只能覆盖硬壳方形和长条形基础特征，权利要求中D/V、S/E、L/S三项核心数值限定普遍缺少公开证据。"
+  "reviewer_model": "kimi-k2.6 (Kimi fallback after GPT-5.5 quota/limit)",
+  "elapsed_seconds": 567.34,
+  "notes": "蜂巢能源短刀电池因官方规格书尺寸数据完整而得分最高；部分候选的F4已可通过公开参数核算，其他候选仍存在F4证据缺口；已将同一公司（蜂巢能源、欣旺达）的重复提交合并，无触发硬性排除的候选。 最终复核前已执行代码侧补搜，新增 24 条证据线索。 已基于同候选公开参数证据执行S/E公式兜底核算。"
 }

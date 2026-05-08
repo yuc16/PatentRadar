@@ -1,6 +1,7 @@
 """统一的 OpenAI 兼容客户端封装。"""
 from __future__ import annotations
 
+import base64
 import json
 from typing import Any
 
@@ -79,6 +80,64 @@ def chat_json(
         retry_messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
+            {
+                "role": "user",
+                "content": (
+                    "你的上一轮输出不是合法 JSON，无法被程序解析。请只输出一个合法 JSON 对象，"
+                    "不要包含 Markdown、解释文字或代码块。"
+                ),
+            },
+        ]
+        resp = client.chat.completions.create(
+            model=ep.model,
+            messages=retry_messages,
+            temperature=0,
+        )
+        raw = resp.choices[0].message.content or ""
+        return _parse_json_loose(raw)
+
+
+def chat_json_multimodal(
+    ep: LLMEndpoint,
+    *,
+    system: str,
+    user: str,
+    images: list[bytes] | None = None,
+    temperature: float = 0.1,
+    timeout: int | None = None,
+) -> Any:
+    """调用支持 OpenAI-compatible vision payload 的 LLM 并解析 JSON。"""
+    client = make_client(ep, timeout=timeout)
+    content: list[dict[str, Any]] = [{"type": "text", "text": user}]
+    for img in images or []:
+        data_url = "data:image/png;base64," + base64.b64encode(img).decode("ascii")
+        content.append({"type": "image_url", "image_url": {"url": data_url}})
+    messages = [
+        {"role": "system", "content": system},
+        {"role": "user", "content": content},
+    ]
+    raw: str = ""
+    try:
+        resp = client.chat.completions.create(
+            model=ep.model,
+            messages=messages,
+            temperature=temperature,
+            response_format={"type": "json_object"},
+        )
+        raw = resp.choices[0].message.content or ""
+    except Exception:
+        resp = client.chat.completions.create(
+            model=ep.model,
+            messages=messages,
+            temperature=temperature,
+        )
+        raw = resp.choices[0].message.content or ""
+
+    try:
+        return _parse_json_loose(raw)
+    except json.JSONDecodeError:
+        retry_messages = [
+            *messages,
             {
                 "role": "user",
                 "content": (

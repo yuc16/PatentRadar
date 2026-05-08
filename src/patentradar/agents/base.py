@@ -7,7 +7,7 @@ import time
 from dataclasses import dataclass
 from typing import Any
 
-from .. import compactor, evidence as evidence_strategy, prompts, scoring
+from .. import compactor, evidence as evidence_strategy, evidence_specs, prompts, scoring
 from ..config import AGENT_LLM_TIMEOUT
 from ..dates import is_after_application, normalize_date_string
 from ..llm.client import chat_json
@@ -211,13 +211,17 @@ class SearchAgent:
                 try:
                     cand = self._evaluate_candidate(task, c, queries_used)
                 except Exception as exc:  # noqa: BLE001
-                    logger.warning("%s   evaluate %s 失败: %s", self.tag, label, exc)
-                    discarded.append(DiscardedCandidate(
-                        company=c.get("company", ""),
-                        product=c.get("product", ""),
-                        discard_reason=f"特征匹配阶段失败: {exc}",
-                    ))
-                    continue
+                    logger.warning(
+                        "%s   evaluate %s 失败: %s；保留为待核查候选，不因工具错误丢弃",
+                        self.tag,
+                        label,
+                        exc,
+                    )
+                    cand = self._fallback_candidate_after_evaluate_error(
+                        task,
+                        c,
+                        error=exc,
+                    )
                 ok, reason = scoring.passes_hard_rules(cand.hard_rule_check)
                 if not ok:
                     logger.info("%s   %s 未过硬规则: %s", self.tag, label, reason)
@@ -538,10 +542,19 @@ class SearchAgent:
             return
         feature_ids = tuple(f.feature_id for f in task.claim_features if f.feature_id)
         base = f"{company} {product}".strip()
-        queries = [
+        alias_terms = sorted([
+            str(alias).strip()
+            for alias in aliases
+            if str(alias).strip() and (any(ch.isdigit() for ch in str(alias)) or len(str(alias)) >= 4)
+        ], key=lambda s: (0 if "ah" in s.lower() else 1, len(s)))[:3]
+        queries = []
+        for alias in alias_terms:
+            queries.append(f"{company} {alias} dimensions size datasheet specification {site_filter}")
+            queries.append(f"{company} {alias} 尺寸 长度 宽度 厚度 规格书 {site_filter}")
+        queries.extend([
             f"{base} datasheet specification 规格书 参数 产品手册 {site_filter}",
             f"{base} 经销商 供应商 代理商 PDF 规格 资料 {site_filter}",
-        ]
+        ])
         logger.info(
             "%s     evidence site seeds tag=%s sites=%d",
             self.tag,
@@ -626,6 +639,96 @@ class SearchAgent:
         return data
 
     # ----------- S6-S7 ------------
+    def _fallback_candidate_after_evaluate_error(
+        self,
+        task: TaskPackage,
+        cand: dict[str, Any],
+        *,
+        error: Exception,
+    ) -> Candidate:
+        """候选评估工具异常时保留候选，后续仍只按硬规则过滤。"""
+        company = str(cand.get("company") or "").strip()
+        product = str(cand.get("product") or "").strip()
+        aliases = [str(a) for a in (cand.get("aliases") or [])]
+        product_launch_date = normalize_date_string(cand.get("product_launch_date"))
+        product_launch_date_evidence_url = str(
+            cand.get("product_launch_date_evidence_url") or ""
+        ).strip() or None
+
+        evidence_items: list[Evidence] = []
+        seen_urls: set[str] = set()
+        for raw in cand.get("initial_evidence") or []:
+            if not isinstance(raw, dict):
+                continue
+            url = evidence_strategy.canonicalize_url(str(raw.get("url") or ""))
+            if not url or url in seen_urls:
+                continue
+            seen_urls.add(url)
+            title = str(raw.get("title") or "").strip()
+            snippet = str(raw.get("snippet") or raw.get("summary") or "").strip()
+            evidence_items.append(Evidence(
+                url=url,
+                title=title,
+                source_type=evidence_strategy.source_type_from_url_title(
+                    url,
+                    title,
+                    industry_tag=task.industry_tag,
+                ),
+                source_reliability=evidence_strategy.reliability_from_url_title(
+                    url,
+                    title,
+                    industry_tag=task.industry_tag,
+                ),
+                summary=snippet,
+                supported_features=[],
+            ))
+
+        reason = (
+            "候选评估阶段遇到工具/URL解析错误，未完成逐项证据比对；"
+            f"已保留为待核查线索，不因内部错误排除。错误: {error}"
+        )
+        feature_matches = [
+            FeatureMatch(
+                feature_id=f.feature_id,
+                claim_feature=f.feature_text,
+                judgement="证据不足",
+                score=scoring.JUDGEMENT_SCORE["证据不足"],
+                reasoning=reason,
+                evidence=evidence_items if i == 0 else [],
+            )
+            for i, f in enumerate(task.claim_features)
+        ]
+        evidence_urls = [ev.url for ev in evidence_items]
+        hard = scoring.evaluate_hard_rules(
+            company=company,
+            product=product,
+            assignees=task.patent.assignees,
+            evidence_urls=evidence_urls,
+            feature_matches=feature_matches,
+            patent_application_date=task.patent.application_date,
+            product_launch_date=product_launch_date,
+        )
+        return Candidate(
+            rank=0,
+            company=company,
+            product=product,
+            aliases=aliases,
+            product_launch_date=product_launch_date,
+            product_launch_date_evidence_url=product_launch_date_evidence_url,
+            score=scoring.candidate_total_score(
+                feature_matches,
+                feature_ids=[f.feature_id for f in task.claim_features],
+            ),
+            hard_rule_check=hard,
+            feature_match_table=feature_matches,
+            main_evidence_urls=evidence_urls,
+            remaining_gaps=[
+                {"feature_id": f.feature_id, "gap": "工具错误导致未完成证据比对，需继续核查。"}
+                for f in task.claim_features
+            ],
+            reason_for_top5="候选评估遇到工具错误，按证据不足保留为待核查线索。",
+        )
+
     def _evaluate_candidate(
         self,
         task: TaskPackage,
@@ -674,6 +777,7 @@ class SearchAgent:
             company,
             product,
             task.claim_features,
+            aliases=aliases,
             industry_tag=task.industry_tag,
         )
         logger.info(
@@ -800,9 +904,13 @@ class SearchAgent:
         pages_by_url: dict[str, ExtractedPage] = {}
         crawled_targets: set[str] = set()
         pages = self._read_candidate_pages(
+            company=company,
+            product=product,
+            aliases=aliases,
             ev_urls=ev_urls,
             ev_titles=ev_titles,
             ev_summaries=ev_summaries,
+            ev_feature_hints=ev_feature_hints,
             pages_by_url=pages_by_url,
             crawled_targets=crawled_targets,
             queries_used=queries_used,
@@ -857,6 +965,7 @@ class SearchAgent:
                 company,
                 product,
                 gap_features,
+                aliases=aliases,
                 industry_tag=task.industry_tag,
                 include_counter=True,
             )
@@ -929,9 +1038,13 @@ class SearchAgent:
                 industry_tag=task.industry_tag,
             )
             pages = self._read_candidate_pages(
+                company=company,
+                product=product,
+                aliases=aliases,
                 ev_urls=ev_urls,
                 ev_titles=ev_titles,
                 ev_summaries=ev_summaries,
+                ev_feature_hints=ev_feature_hints,
                 pages_by_url=pages_by_url,
                 crawled_targets=crawled_targets,
                 queries_used=queries_used,
@@ -1142,9 +1255,13 @@ class SearchAgent:
     def _read_candidate_pages(
         self,
         *,
+        company: str,
+        product: str,
+        aliases: list[str],
         ev_urls: list[str],
         ev_titles: dict[str, str],
         ev_summaries: dict[str, str],
+        ev_feature_hints: dict[str, set[str]],
         pages_by_url: dict[str, ExtractedPage],
         crawled_targets: set[str],
         queries_used: list[QueryRecord],
@@ -1177,6 +1294,14 @@ class SearchAgent:
                 continue
             try:
                 p = self.search_session.read_url(url, log_context=self.tag)
+                p = self.search_session.augment_spec_page(
+                    p,
+                    company=company,
+                    product=product,
+                    aliases=aliases,
+                    industry_tag=industry_tag,
+                    log_context=self.tag,
+                )
                 pages_by_url[url] = p
                 logger.info(
                     "%s     read %s → %s, %d chars",
@@ -1190,6 +1315,58 @@ class SearchAgent:
                     text=ev_summaries.get(url, ""),
                     source="snippet_fallback",
                 )
+
+        discovered_links: list[tuple[str, str, str]] = []
+        for source_url in list(read_candidates[:budget.read_url_limit]):
+            page = pages_by_url.get(source_url)
+            if not page:
+                continue
+            links = evidence_specs.discover_spec_links(
+                page,
+                company=company,
+                product=product,
+                aliases=aliases,
+                industry_tag=industry_tag,
+            )
+            for link_url, link_title in links:
+                if link_url in pages_by_url:
+                    continue
+                discovered_links.append((link_url, link_title, source_url))
+        for link_url, link_title, source_url in discovered_links:
+            if link_url not in ev_urls:
+                if len(ev_urls) >= budget.url_pool_limit:
+                    continue
+                ev_urls.append(link_url)
+            ev_titles.setdefault(link_url, link_title)
+            ev_summaries.setdefault(link_url, f"从规格索引页追踪发现：{source_url}")
+            for feature_id in ("F2", "F3", "F4", "F5", "F6"):
+                ev_feature_hints.setdefault(link_url, set()).add(feature_id)
+            logger.info(
+                "%s     spec link FOLLOW title=%r url=%s from=%s",
+                self.tag, link_title[:120], link_url, source_url,
+            )
+
+        follow_read_limit = max(0, budget.page_limit - len(pages_by_url))
+        for url, _, _ in discovered_links[:follow_read_limit]:
+            if url in pages_by_url:
+                continue
+            try:
+                p = self.search_session.read_url(url, log_context=self.tag)
+                p = self.search_session.augment_spec_page(
+                    p,
+                    company=company,
+                    product=product,
+                    aliases=aliases,
+                    industry_tag=industry_tag,
+                    log_context=self.tag,
+                )
+                pages_by_url[url] = p
+                logger.info(
+                    "%s     read FOLLOW %s → %s, %d chars",
+                    self.tag, url[:60], p.source, len(p.text),
+                )
+            except Exception as exc:  # noqa: BLE001
+                logger.info("%s     read FOLLOW %s 失败: %s", self.tag, url[:60], exc)
 
         # Tavily Crawl 只深挖官网 / 产品页 / 文档中心，避免把新闻站或论坛页当成站点入口。
         crawl_targets = [

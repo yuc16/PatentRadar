@@ -233,8 +233,7 @@ PatentRadar/
 │
 ├── data/                            # 用户输入
 │   ├── 候选专利清单.xlsx
-│   └── cn_industry_sites/           # 中国行业媒体白名单（按领域分组，可手动调整）
-│       ├── README.md
+│   └── cn_industry_sites/           # 中国行业媒体白名单（按领域分组，可手动调整；详见 §8.9）
 │       ├── general.json             # 通用国内财经 / 行业 / 政府站点（始终附加）
 │       ├── battery.json             # 动力电池 / 储能
 │       ├── semiconductor.json       # 半导体 / IC 封装 / 传感器
@@ -451,9 +450,76 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 2. **行业站点定向召回（候选发现阶段）** — 按 `industry_tag` 加载 [`data/cn_industry_sites/`](data/cn_industry_sites/) 下对应白名单（自动叠加 `general.json` 通用站点），把 LLM 已生成的最聚焦的前 1~2 条 query **包装成 `(query) (site:domain1 OR site:domain2 ...)`** 用 Bocha 单独召回。媒体/协会组与厂商官网组分两条 query，互不干扰。
 3. **巨潮资讯证据补搜（证据收集阶段）** — 候选公司确定后，DeepSeek 自动用 `公司名 + 产品/型号` 查 [`巨潮资讯`](http://www.cninfo.com.cn/)（A 股 / 港股年报、招股书、公告全文）。返回的 PDF URL 可作为公开线索进入证据池；但年报、招股书、公告等长篇低密度 PDF 默认不全文读取，避免把低密度材料塞进 Agent 上下文。
 
-**调整白名单 / 行业 profile**：直接编辑 [`data/cn_industry_sites/<tag>.json`](data/cn_industry_sites/)，新增/删除 `sites[].domain` 即可；行业专属证据策略放在同文件的 `evidence_profile`，包括 `generic_terms`、`named_product_hints`、`spec_queries`、`feature_term_map` 等。**新增领域只需新建一个 `<tag>.json`**（必含 `industry_tag` / `label` / `prompt_description` / `sites`），系统会自动把它注入 GPT-5.5 拆解 prompt 的取值表和代码白名单——无需改 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 或 [`patent/decomposer.py`](src/patentradar/patent/decomposer.py)。详情见 [`data/cn_industry_sites/README.md`](data/cn_industry_sites/README.md)。
-
 `battery.json` 已放入若干电芯规格资料、经销商站点和电池专属 `evidence_profile` 作为试点；候选发现阶段仍只由 DeepSeek 启用行业站点路由（`AgentPerspective.cn_industry_routing=True`），证据阶段的高价值规格站 `site:` 召回和行业专属 query / 翻译映射会对三个 Agent 生效。
+
+#### 行业站点种子库结构
+
+每个 JSON 文件代表一个产业领域，`industry_tag` 字段必须与文件名一致（不含扩展名）。该字段同时是 GPT-5.5 拆解器允许输出的 `industry_tag` 真源——拆解 prompt 的取值表和代码里的合法集都从这里自动派生，无需手动改代码。
+
+```json
+{
+  "industry_tag": "battery",
+  "label": "动力电池 / 储能",
+  "prompt_description": "动力 / 储能电池、电芯、模组、BMS、电池包结构",
+  "evidence_profile": {
+    "generic_terms": ["电池", "电芯", "battery", "cell"],
+    "named_product_hints": ["短刀", "刀片", "short blade"],
+    "spec_queries": ["{base} 电芯 规格书 容量 电压 尺寸 datasheet"],
+    "product_spec_page_hints": ["battery-cell", "lifepo4-battery"],
+    "product_spec_context_terms": ["battery", "cell", "电池", "电芯"],
+    "numeric_model_context_terms": ["battery", "cell", "电池", "电芯"],
+    "structure_feature_hints": ["极柱", "极耳", "方壳", "刀片"],
+    "feature_term_map": [
+      {"needles": ["电芯"], "terms": ["battery cell"]}
+    ]
+  },
+  "sites": [
+    {"domain": "d1ev.com", "name": "第一电动网", "type": "行业媒体"}
+  ]
+}
+```
+
+字段说明：
+
+- `industry_tag`：必须等于文件名（不含 `.json`）
+- `label`：人类可读名称，仅展示用
+- `prompt_description`：在拆解 prompt 的“何时选”那栏会展示给 GPT-5.5 看的描述。**此字段决定 GPT-5.5 怎么把专利映射到本领域**，要写得能把判定规则讲清楚。空字段会回退到 `label`
+- `sites[].domain`：用于 Bocha `site:` 操作符；不带 `https://` 前缀，不带路径
+- `sites[].type`：自由文本，用于人工识别和证据阶段筛选。建议使用或包含：`行业媒体`、`研究报告`、`行业协会`、`厂商官网`、`规格资料`、`经销商`、`供应商`、`PDF`、`产品手册`、`论坛 / 规格线索`
+- `evidence_profile.generic_terms`：该行业里过泛、不能单独证明产品明确性的词
+- `evidence_profile.named_product_hints`：该行业常见商品名 / 系列名提示，用于候选准入
+- `evidence_profile.spec_queries`：该行业规格证据补搜模板，支持 `{base}` 占位符（公司 + 产品）
+- `evidence_profile.product_spec_page_hints` / `product_spec_context_terms`：该行业规格页 URL / 标题识别提示
+- `evidence_profile.numeric_model_context_terms`：该行业用于判断纯数字型号是否具体的上下文词
+- `evidence_profile.structure_feature_hints`：该行业用于判断“结构 / 形态 / 连接证据目标”的专属结构词
+- `evidence_profile.feature_term_map`：该行业中文特征到英文 query 词的映射，`needles` 命中特征文本后追加 `terms`
+
+证据阶段会优先使用 `规格资料 / 经销商 / 供应商 / PDF` 这类站点，其次使用 `厂商官网`；论坛类站点默认不作为证据阶段 `site:` 定向入口，只作为人工线索或候选发现补充。为了控制 API 消耗，每个候选只会派生少量行业站点 query，命中后仍要经过公司 / 产品 / 别名相关性过滤。
+
+长篇低密度 PDF（研报、年报、招股书、交易所公告、ESG 报告等）可以作为公开 URL 线索保留，但代码默认不会全文抽取或送入 Agent；标题或 URL 被识别为产品规格书、datasheet、产品手册的 PDF 仍会正常读取。对电池这类尺寸参数很关键的场景，经销商规格页和规格书聚合站通常比官网新闻更有价值，应优先维护在领域文件里。
+
+#### 调整方法
+
+- **增删站点条目**：直接改对应 [`<tag>.json`](data/cn_industry_sites/)。通用行业媒体放 `general.json`，领域专属规格站、厂商站和 `evidence_profile` 放领域文件
+- **新增领域**：**只需新建 `<tag>.json`**，必须包含 `industry_tag` / `label` / `prompt_description` / `sites` 四个字段。`evidence_profile` 可选。系统启动时会自动：
+    1. 把新 tag 加入 `cn_industry.valid_tags()`（[`src/patentradar/search/cn_industry.py`](src/patentradar/search/cn_industry.py)）
+    2. 把 `(industry_tag, prompt_description)` 渲染进拆解 prompt 的取值表
+    3. 把 tag 加入 JSON schema 的 `tag1 | tag2 | ...` 提示串
+    4. 让 GPT-5.5 输出后通过代码白名单校验
+
+  无需改 [`prompts/claim_decompose_system.md`](src/patentradar/prompts/claim_decompose_system.md) 或 [`patent/decomposer.py`](src/patentradar/patent/decomposer.py)
+- **删除领域**：直接删 `<tag>.json`。删除前确认没有正在用 `industry_tag=<tag>` 的 `task_package.json`，否则后续阶段会回退到 `general` 白名单
+- **多语言名**：`sites[].name` 字段可写中英双语（例如 `"比亚迪 BYD"`）
+
+默认随附领域：
+
+| tag | 覆盖 |
+|---|---|
+| `battery` | 动力 / 储能电池产业链 |
+| `semiconductor` | 半导体器件、IC 封装、传感器 |
+| `automotive` | 整车 / 汽车电子 / 智能驾驶 |
+| `display` | 面板 / 显示模组 |
+| `general` | 通用国内行业媒体（任何专利都会附加） |
 
 ### 8.10 日志与可追溯性
 

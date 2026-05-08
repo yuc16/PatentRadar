@@ -31,6 +31,7 @@ class SearchSession:
         self._search_cache = self._load_json("search_cache.json")
         self._page_cache = self._load_json("page_cache.json")
         self._crawl_cache = self._load_json("crawl_cache.json")
+        self._spec_cache = self._load_json("spec_page_cache.json")
 
     def search(
         self,
@@ -74,6 +75,42 @@ class SearchSession:
             page = pool.read_url(url, log_context=log_context)
             self._store(self._page_cache, key, asdict(page), "page_cache.json")
             return page
+        finally:
+            self._unmark(key)
+
+    def augment_spec_page(
+        self,
+        page: ExtractedPage,
+        *,
+        company: str,
+        product: str,
+        aliases: list[str] | tuple[str, ...],
+        industry_tag: str | None = None,
+        log_context: str = "",
+    ) -> ExtractedPage:
+        key = self._cache_key({
+            "kind": "spec_augment",
+            "url": page.url,
+            "company": company,
+            "product": product,
+            "aliases": list(aliases),
+            "industry_tag": industry_tag or "",
+        })
+        cached = self._get_or_mark(self._spec_cache, key, log_context, "spec")
+        if cached is not None:
+            return ExtractedPage(**cached)
+        try:
+            from .. import evidence_specs
+
+            out = evidence_specs.augment_spec_page(
+                page,
+                company=company,
+                product=product,
+                aliases=aliases,
+                industry_tag=industry_tag,
+            )
+            self._store(self._spec_cache, key, asdict(out), "spec_page_cache.json")
+            return out
         finally:
             self._unmark(key)
 

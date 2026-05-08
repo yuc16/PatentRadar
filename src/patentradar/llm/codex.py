@@ -129,9 +129,19 @@ def chat_json(
     reasoning_effort: str = "medium",
     verbosity: str = "medium",
     timeout: int | None = None,
+    attempts: int | None = None,
+    retry_delay_seconds: float | None = None,
 ) -> dict[str, Any]:
-    attempts = _env_int("CODEX_JSON_RETRY_ATTEMPTS", 3, minimum=1)
-    delay = _env_float("CODEX_JSON_RETRY_DELAY_SECONDS", 30.0, minimum=0.0)
+    attempts = (
+        max(1, attempts)
+        if attempts is not None
+        else _env_int("CODEX_JSON_RETRY_ATTEMPTS", 3, minimum=1)
+    )
+    delay = (
+        max(0.0, retry_delay_seconds)
+        if retry_delay_seconds is not None
+        else _env_float("CODEX_JSON_RETRY_DELAY_SECONDS", 30.0, minimum=0.0)
+    )
     last_exc: Exception | None = None
     for attempt in range(1, attempts + 1):
         try:

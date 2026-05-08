@@ -11,7 +11,7 @@ from __future__ import annotations
 from typing import Any
 
 from .. import prompts
-from ..llm import codex
+from ..llm import controller
 from ..schemas import ClaimFeature
 from ..search import cn_industry
 
@@ -52,13 +52,14 @@ def decompose(
             claim_1_html=claim_1_html,
         )
 
-    payload = codex.chat_json(
+    payload = controller.chat_json(
         system=system,
         user_text=user,
         images=images or None,
         model=model,
         reasoning_effort=reasoning_effort,
         verbosity="medium",
+        fallback_label="decomposer",
     )
     return _parse_payload(payload)
 

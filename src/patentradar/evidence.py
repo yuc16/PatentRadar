@@ -224,12 +224,19 @@ def normalize_query(query: str) -> str:
 
 
 def domain_of(url: str) -> str:
-    return urlparse(url or "").netloc.lower().lstrip("www.")
+    try:
+        return urlparse(url or "").netloc.lower().lstrip("www.")
+    except ValueError:
+        return ""
 
 
 def canonicalize_url(url: str) -> str:
     """Normalize URLs for evidence de-duplication without losing semantic query args."""
-    parsed = urlparse((url or "").strip())
+    raw_url = (url or "").strip()
+    try:
+        parsed = urlparse(raw_url)
+    except ValueError:
+        return raw_url
     if not parsed.netloc:
         return (url or "").strip()
     query_items = []
@@ -470,6 +477,8 @@ def is_relevant_hit(
     )
     if source_type == "专利文献":
         return False
+    if public_spec_like and _looks_spec_index_page(url, title, snippet):
+        return True
     if public_spec_like and has_product_signal:
         return True
     if public_spec_like and not has_company_signal:
@@ -500,6 +509,10 @@ def should_read_url(url: str, title: str = "", *, industry_tag: str | None = Non
         return False
     st = source_type_from_url_title(url, title, industry_tag=industry_tag)
     return st != "专利文献"
+
+
+def is_spec_index_page(url: str, title: str = "", snippet: str = "") -> bool:
+    return _looks_spec_index_page(url, title, snippet)
 
 
 def is_long_form_pdf(url: str, title: str = "", *, industry_tag: str | None = None) -> bool:
@@ -549,6 +562,7 @@ def build_evidence_targets(
     product: str,
     features: list[ClaimFeature],
     *,
+    aliases: list[str] | tuple[str, ...] = (),
     industry_tag: str | None = None,
     include_counter: bool = False,
 ) -> list[EvidenceTarget]:
@@ -584,13 +598,24 @@ def build_evidence_targets(
     spec_ids = _feature_ids_by_predicate(features, _is_spec_or_parameter_feature)
     industry_spec_queries = _industry_query_templates(industry_tag, "spec_queries", base=base)
     if spec_ids or industry_spec_queries:
-        spec_queries = [
+        spec_queries = []
+        for alias_base in _alias_query_bases(company, product, aliases, industry_tag=industry_tag):
+            spec_queries.extend([
+                f"{alias_base} energy capacity voltage dimension datasheet specification",
+                f"{alias_base} 能量 容量 电压 尺寸 规格书 参数",
+                f"{alias_base} dimensions size length width thickness datasheet specification",
+                f"{alias_base} 规格书 尺寸 长度 宽度 厚度 电芯",
+                f"{alias_base} Dimension mm battery cell product specification",
+            ])
+        spec_queries.extend([
+            f"{base} energy capacity voltage dimension datasheet specification",
+            f"{base} 能量 容量 电压 尺寸 规格书 参数",
             f"{base} 规格 参数 规格书 产品手册 datasheet PDF",
             f"{base} datasheet specification product manual parameters pdf",
             f"{base} filetype:pdf datasheet specification 规格书 产品手册",
             f"{base} 经销商 代理商 供应商 规格 参数 产品手册",
             f"{base} distributor supplier dealer product specification datasheet",
-        ]
+        ])
         spec_queries.extend(industry_spec_queries)
         add_target("spec", "规格/参数/手册证据", spec_ids or list(feature_ids), spec_queries)
     else:
@@ -611,6 +636,10 @@ def build_evidence_targets(
             f"{base} structure housing package connection teardown diagram",
             f"{base} 产品页 结构图 技术资料 white paper",
             f"{base} technical document structure diagram product page",
+            *[
+                f"{alias_base} blade prismatic cell dimension drawing structure"
+                for alias_base in _alias_query_bases(company, product, aliases, industry_tag=industry_tag)[:3]
+            ],
         ])
 
     algorithm_ids = _feature_ids_by_predicate(features, _is_algorithm_feature)
@@ -833,6 +862,40 @@ def _dedupe_queries(queries: list[str]) -> list[str]:
     return out
 
 
+def _alias_query_bases(
+    company: str,
+    product: str,
+    aliases: list[str] | tuple[str, ...],
+    *,
+    industry_tag: str | None = None,
+) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    company_terms = [company, *_industry_company_aliases(company, industry_tag=industry_tag)]
+    candidate_aliases = []
+    for alias in aliases:
+        text = str(alias or "").strip()
+        if not text:
+            continue
+        low = text.lower()
+        if any(ch.isdigit() for ch in text) or any(h in low for h in _industry_strings(industry_tag, "named_product_hints")):
+            candidate_aliases.append(text)
+    if not candidate_aliases and product:
+        candidate_aliases.append(product)
+    candidate_aliases = sorted(
+        dict.fromkeys(candidate_aliases),
+        key=lambda s: (0 if re.search(r"(?i)\b\d{2,4}\s?ah\b", s) else 1, len(s)),
+    )
+    for alias in candidate_aliases[:5]:
+        for comp in company_terms[:3]:
+            base = f"{comp} {alias}".strip()
+            key = normalize_query(base)
+            if base and key not in seen:
+                out.append(base)
+                seen.add(key)
+    return out[:8]
+
+
 def _looks_official_product_page(url: str) -> bool:
     return _looks_crawlable_path(url) and tier_rank_by_domain(url) >= 1
 
@@ -876,8 +939,30 @@ def _looks_product_spec_page(
     return False
 
 
+def _looks_spec_index_page(url: str, title: str = "", snippet: str = "") -> bool:
+    low = f"{url} {title} {snippet}".lower()
+    return any(
+        hint in low
+        for hint in (
+            "datasheet list",
+            "download",
+            "downloads",
+            "specification pdf",
+            "product specification pdf",
+            "battery-cell-datasheet-list",
+            "download/",
+            "规格书列表",
+            "资料下载",
+            "下载",
+        )
+    )
+
+
 def _looks_crawlable_path(url: str) -> bool:
-    parsed = urlparse(url or "")
+    try:
+        parsed = urlparse(url or "")
+    except ValueError:
+        return False
     haystack = f"{parsed.path} {parsed.query}".lower()
     return any(hint in haystack for hint in _CRAWL_PATH_HINTS)
 

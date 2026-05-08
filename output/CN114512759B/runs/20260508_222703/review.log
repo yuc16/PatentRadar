@@ -1,0 +1,33 @@
+日志: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/runs/20260508_222703/review.log
+task_package.json 不存在: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/task_package.json
+日志: /Users/wangyc/Desktop/projects/PatentRadar/output/CN114512759B/runs/20260508_222703/review.log
+────────────────────────────────────────────── 复核 · patent CN114512759B ──────────────────────────────────────────────
+已收集 3 份 agent 输出，候选合计 9 个（GPT-5.5 将自行合并去重 + 复核）
+已写入候选池快照: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/candidate_pool.json
+调用 GPT-5.5 复核（reasoning=medium）...
+复核补搜缓存: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json
+2026-05-08 22:27:44,514 patentradar.reviewer INFO | [reviewer] supplement CACHE HIT path=/Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/review_supplement_cache.json agent_outputs=3 supplement_urls=0
+2026-05-08 22:27:44,516 patentradar.reviewer INFO | [reviewer] GPT-5.5 review START candidates=9 supplement_urls=0
+2026-05-08 22:27:44,516 patentradar.reviewer INFO | [reviewer] GPT-5.5 review START_WITH_FALLBACK model=gpt-5.5 attempts=3
+2026-05-08 22:29:33,392 patentradar.reviewer INFO | [reviewer] GPT-5.5 review DONE elapsed=108.88s
+─────────────────────────────────────────── GPT-5.5 复核结果（耗时 108.89s） ───────────────────────────────────────────
+┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━┓
+┃ rank ┃ 公司                           ┃ 产品                         ┃ 分数 ┃ 风险     ┃
+┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━━┩
+│    1 │ 蜂巢能源科技股份有限公司       │ L600短刀片电池               │ 65.0 │ 局部相似 │
+├──────┼────────────────────────────────┼──────────────────────────────┼──────┼──────────┤
+│    2 │ 吉利汽车集团                   │ 神盾短刀电池                 │ 61.7 │ 局部相似 │
+├──────┼────────────────────────────────┼──────────────────────────────┼──────┼──────────┤
+│    3 │ 远景动力技术有限公司           │ 790Ah方壳卷绕储能电芯        │ 50.0 │ 局部相似 │
+├──────┼────────────────────────────────┼──────────────────────────────┼──────┼──────────┤
+│    4 │ 宁德时代新能源科技股份有限公司 │ CATL 48Ah NMC Prismatic Cell │ 50.0 │ 局部相似 │
+├──────┼────────────────────────────────┼──────────────────────────────┼──────┼──────────┤
+│    5 │ Panasonic Holdings Corporation │ 方形锂离子电池（高容量型）   │ 46.7 │ 弱相关   │
+└──────┴────────────────────────────────┴──────────────────────────────┴──────┴──────────┘
+
+excluded=0  needs_review=7
+复核备注: 
+已将蜂巢能源相关三个Agent候选合并为L600短刀片电池；远景动力790Ah与530Ah为不同产品，未合并。当前所有Top5均未发现硬性排除
+事项，但除蜂巢和吉利外，多数候选仍停留在方形硬壳基础形态线索层面。
+
+✓ 已写入: /Users/wangyc/Desktop/projects/PatentRadar/tmp/CN114512759B/final_report.json
