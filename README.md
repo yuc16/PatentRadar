@@ -181,7 +181,7 @@ uv run patentradar find-competitors $PUB --agent deepseek
 - `-v` / `-vv`：日志级别（INFO / DEBUG）
 - `--force`：强制重跑（默认 `agent_*.json` / `final_report.json` 已存在则跳过）
 - `--reasoning low|medium|high`：覆盖 `.env` 的推理强度
-- `--out PATH`：自定义输出目录
+- `--out PATH`：自定义输出目录。`decompose` / `find-competitors-all` / `find-competitors` / `review` 默认写 `tmp/<pub_no>`；`report --out` 默认写 `output/<pub_no>`，其中 `report --intermediate` 可指定读取哪个中间产物目录。
 
 **一条龙**（专利号 → 报告）：
 
@@ -305,7 +305,7 @@ PatentRadar/
     │
     ├── web/                         # Web 仪表盘后端（FastAPI + SSE）
     │   ├── server.py                # /api/patents · /events · /stream · /artifacts
-    │   └── log_parser.py            # runs/*.log → {agent, kind, text, url, t}
+    │   └── log_parser.py            # runs/<RUN_DIR>/*.log → {agent, kind, text, url, t}
     │
     └── prompts/                     # 所有长 prompt 单独维护
         ├── claim_decompose_*.md
@@ -457,7 +457,7 @@ budget = ctx_window * COMPACTOR_BUDGET_RATIO - COMPACTOR_OUTPUT_RESERVE - prompt
 每次 CLI 运行的**完整日志**（含 logger.info 的 S1~S10 阶段输出 + console.print 镜像）自动写到：
 
 ```
-output/<pub_no>/runs/<YYYYmmdd_HHMMSS>_<cmd>.log
+output/<pub_no>/runs/<YYYYMMDD_HHMMSS>/<cmd>.log
 ```
 
 包含：每条 query 的命中数 + 来源、每个候选的特征判断结果、compactor 压缩统计、复核备注。
