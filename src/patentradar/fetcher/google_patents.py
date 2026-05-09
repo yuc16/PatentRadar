@@ -25,6 +25,16 @@ _HEADERS = {
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5",
 }
 _SHANGHAI_TZ = ZoneInfo("Asia/Shanghai")
+
+
+"""
+优先从 Google Patents 页面里直接抓中文原文：
+
+<dd itemprop="assigneeOriginal"> 
+当 assigneeOriginal 为空时（部分专利），fallback 到 DC.contributor 拿到的英文名 → 这时才需要 alias 表
+Codex 的实现已经是这个顺序（_main_dd_texts(soup, "assigneeOriginal") or _dc_contributors(...)），所以实际上对绝大多数中国专利不会用到 alias 表
+"""
+
 _CN_ASSIGNEE_ALIASES = {
     "BYD Co Ltd": "比亚迪股份有限公司",
     "BYD Auto Co Ltd": "比亚迪汽车工业有限公司",
@@ -53,7 +63,9 @@ def normalize_publication_no(publication_no: str) -> str:
     return normalized
 
 
-def fetch_patent(publication_no: str, *, retries: int = 3, timeout: float = 60.0) -> PatentFetchResult:
+def fetch_patent(
+    publication_no: str, *, retries: int = 3, timeout: float = 60.0
+) -> PatentFetchResult:
     publication_no = normalize_publication_no(publication_no)
     url = f"{GOOGLE_PATENTS_BASE}/{publication_no}/zh"
     html = _fetch_text(url=url, retries=retries, timeout=timeout)
@@ -67,9 +79,11 @@ def fetch_patent(publication_no: str, *, retries: int = 3, timeout: float = 60.0
         publication_no=publication_no,
         title=_meta(soup, "DC.title") or "",
         applicants=_prefer_cn_aliases(
-            _main_dd_texts(soup, "assigneeOriginal") or _dc_contributors(soup, "assignee")
+            _main_dd_texts(soup, "assigneeOriginal")
+            or _dc_contributors(soup, "assignee")
         ),
-        inventors=_main_dd_texts(soup, "inventor") or _dc_contributors(soup, "inventor"),
+        inventors=_main_dd_texts(soup, "inventor")
+        or _dc_contributors(soup, "inventor"),
         application_date=_date_text(soup, "filingDate"),
         google_patents_url=url,
         pdf_url=pdf_match.group(0) if pdf_match else "",
@@ -112,7 +126,9 @@ def _extract_claims(soup: BeautifulSoup) -> tuple[list[Claim], bool]:
         or section.find("div", class_="claims")
         or section
     )
-    claim_tags = claims_root.find_all("div", id=re.compile(r"^(?:[a-z]{2}-)?cl0*\d+$", re.I))
+    claim_tags = claims_root.find_all(
+        "div", id=re.compile(r"^(?:[a-z]{2}-)?cl0*\d+$", re.I)
+    )
     claims: list[Claim] = []
     has_placeholders = False
     seen: set[tuple[int, str]] = set()
@@ -122,7 +138,9 @@ def _extract_claims(soup: BeautifulSoup) -> tuple[list[Claim], bool]:
         claim_no = _claim_number(tag)
         if claim_no is None:
             continue
-        has_placeholders = has_placeholders or bool(tag.find(class_="patent-image-not-available"))
+        has_placeholders = has_placeholders or bool(
+            tag.find(class_="patent-image-not-available")
+        )
         claim_text = _claim_text(tag)
         if not claim_text:
             continue
@@ -197,7 +215,12 @@ def _date_text(soup: BeautifulSoup, itemprop: str) -> str:
     tag = soup.find(attrs={"itemprop": itemprop})
     if not tag:
         return ""
-    raw = tag.get("datetime") or tag.get("content") or tag.get("title") or tag.get_text(" ", strip=True)
+    raw = (
+        tag.get("datetime")
+        or tag.get("content")
+        or tag.get("title")
+        or tag.get_text(" ", strip=True)
+    )
     return _normalize_date(str(raw) if raw else "")
 
 
