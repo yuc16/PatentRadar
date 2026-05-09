@@ -1,0 +1,71 @@
+{
+  "patent": {
+    "publication_no": "CN119199864B",
+    "title": "车辆传感器及车辆",
+    "applicants": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "孙佳旭",
+      "苟小诺",
+      "谭飞"
+    ],
+    "application_date": "2024-10-24",
+    "google_patents_url": "https://patents.google.com/patent/CN119199864B/zh",
+    "pdf_url": "https://patentimages.storage.googleapis.com/67/78/9d/4d61dd174a5ad2/CN119199864B.pdf",
+    "fetched_at": "2026-05-09T22:06:02+08:00"
+  },
+  "has_claim_image_placeholders": false,
+  "claims": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆传感器，其特征在于：\n所述车辆传感器包括：\nUWB模块，用于实现UWB信号的处理；\n毫米波模块，用于实现毫米波信号的处理；\n其中，所述UWB模块与所述毫米波模块构成电性连接以使所述UWB模块与所述毫米波模块共用电源、存储器、有线通讯端口、无线通讯模块中的一种或几种；\n所述车辆传感器还包括：\n存储模块，包括FLASH存储器和EEPROM存储器；\n其中，所述毫米波模块与所述FLASH存储器和所述EEPROM存储器构成直接的数据交互；所述UWB模块通过所述毫米波模块与所述FLASH存储器和所述EEPROM存储器构成间接的数据交互；\n其中，所述FLASH存储器用于存储应用程序，所述EEPROM存储器用于存储故障信息；\n其中，所述UWB模块和所述毫米波模块通过SPI总线进行数据交互并由所述毫米波模块将所述UWB模块的信息传动至车辆的CAN总线。",
+      "features": []
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆传感器，其特征在于：\n所述UWB模块配置为一个UWB芯片。",
+      "features": []
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求2所述的车辆传感器，其特征在于：\n所述毫米波模块配置为一个毫米波芯片。",
+      "features": []
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求3所述的车辆传感器，其特征在于：\n所述UWB芯片与所述毫米波芯片构成数据交互。",
+      "features": []
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求1至4任意一项所述的车辆传感器，其特征在于：\n所述车辆传感器还包括：\n电源管理模块，包含一个PMIC芯片；\n其中，所述PMIC芯片直接与所述毫米波模块构成电性连接。",
+      "features": []
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求5所述的车辆传感器，其特征在于：\n所述车辆传感器还包括：\n直流转换模块，包含一个DC-DC芯片；\n其中，所述DC-DC芯片分别电性连接至所述PMIC芯片和所述UWB模块。",
+      "features": []
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1至4任意一项所述的车辆传感器，其特征在于：\n所述车辆传感器还包括：\n晶振模块，包括一个晶振单元；\n其中，所述晶振单元直接电性连接至所述毫米波模块。",
+      "features": []
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求1至4任意一项所述的车辆传感器，其特征在于：\n所述车辆传感器还包括：\n总线模块，用于连接到外部总线；\n其中，所述总线模块直接与所述毫米波模块构成直接的数据交互。",
+      "features": []
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求1至4任意一项所述的车辆传感器，其特征在于：\n所述UWB模块与所述毫米波模块集成至一个电路板；和/或，\n所述UWB模块与所述毫米波模块封装在一个外壳中；和/或，\n所述UWB模块与所述毫米波模块共用通过传感器接口。",
+      "features": []
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种车辆，其特征在于：包括权利要求1至9中任意一项所述的车辆传感器。",
+      "features": []
+    }
+  ]
+}

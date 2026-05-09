@@ -1,0 +1,1 @@
+"""Patent and document fetching."""

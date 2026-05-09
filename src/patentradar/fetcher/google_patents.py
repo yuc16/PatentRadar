@@ -1,0 +1,174 @@
+"""Google Patents fetching and HTML claim extraction."""
+
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+import httpx
+from bs4 import BeautifulSoup, Tag
+
+from patentradar.core.constants import GOOGLE_PATENTS_BASE
+from patentradar.core.exceptions import PatentFetchError
+from patentradar.schemas import Claim, PatentInfo
+
+_PUB_NO_RE = re.compile(r"^[A-Z]{2}\d{6,}[A-Z]?\d?$")
+_PDF_RE = re.compile(r"https://patentimages\.storage\.googleapis\.com/[^\"']+\.pdf")
+_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5",
+}
+_SHANGHAI_TZ = ZoneInfo("Asia/Shanghai")
+
+
+@dataclass(frozen=True)
+class PatentFetchResult:
+    patent: PatentInfo
+    claims: list[Claim]
+    raw_html: str
+    has_claim_image_placeholders: bool
+
+
+def normalize_publication_no(publication_no: str) -> str:
+    normalized = publication_no.strip().upper().replace(" ", "")
+    if not _PUB_NO_RE.match(normalized):
+        raise PatentFetchError(f"Invalid patent publication number: {publication_no!r}")
+    return normalized
+
+
+def fetch_patent(publication_no: str, *, retries: int = 3, timeout: float = 60.0) -> PatentFetchResult:
+    publication_no = normalize_publication_no(publication_no)
+    url = f"{GOOGLE_PATENTS_BASE}/{publication_no}/zh"
+    html = _fetch_text(url=url, retries=retries, timeout=timeout)
+    soup = BeautifulSoup(html, "lxml")
+    claims, has_placeholders = _extract_claims(soup)
+    if not claims:
+        raise PatentFetchError(f"No claims extracted from {url}")
+
+    pdf_match = _PDF_RE.search(html)
+    patent = PatentInfo(
+        publication_no=publication_no,
+        title=_meta(soup, "DC.title") or "",
+        applicants=_dc_contributors(soup, "assignee"),
+        inventors=_dc_contributors(soup, "inventor"),
+        application_date=_date_text(soup, "filingDate"),
+        google_patents_url=url,
+        pdf_url=pdf_match.group(0) if pdf_match else "",
+        fetched_at=datetime.now(_SHANGHAI_TZ).isoformat(timespec="seconds"),
+    )
+    return PatentFetchResult(
+        patent=patent,
+        claims=claims,
+        raw_html=html,
+        has_claim_image_placeholders=has_placeholders,
+    )
+
+
+def _fetch_text(*, url: str, retries: int, timeout: float) -> str:
+    last_exc: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            with httpx.Client(
+                timeout=timeout,
+                follow_redirects=True,
+                headers=_HEADERS,
+            ) as client:
+                response = client.get(url)
+                if response.status_code != 200:
+                    raise PatentFetchError(f"HTTP {response.status_code}: {url}")
+                return response.text
+        except (httpx.TransportError, httpx.TimeoutException) as exc:
+            last_exc = exc
+            if attempt == retries:
+                break
+    raise PatentFetchError(f"Failed to fetch {url}: {last_exc}") from last_exc
+
+
+def _extract_claims(soup: BeautifulSoup) -> tuple[list[Claim], bool]:
+    section = soup.find("section", {"itemprop": "claims"})
+    if not section:
+        return [], False
+    claim_tags = section.find_all("div", id=re.compile(r"^(?:[a-z]{2}-)?cl0*\d+$", re.I))
+    claims: list[Claim] = []
+    has_placeholders = False
+    for tag in claim_tags:
+        if not isinstance(tag, Tag):
+            continue
+        claim_no = _claim_number(tag)
+        if claim_no is None:
+            continue
+        has_placeholders = has_placeholders or bool(tag.find(class_="patent-image-not-available"))
+        claim_text = _claim_text(tag)
+        if not claim_text:
+            continue
+        claims.append(
+            Claim(
+                claim_no=claim_no,
+                claim_text=claim_text,
+                features=[],
+            )
+        )
+    claims.sort(key=lambda item: item.claim_no)
+    return claims, has_placeholders
+
+
+def _claim_number(tag: Tag) -> int | None:
+    raw = tag.get("num") or tag.get("id", "")
+    match = re.search(r"(\d+)$", str(raw))
+    if not match:
+        return None
+    return int(match.group(1))
+
+
+def _claim_text(tag: Tag) -> str:
+    parts: list[str] = []
+    for item in tag.find_all("div", class_="claim-text"):
+        text = item.get_text(" ", strip=True)
+        text = re.sub(r"\s+", " ", text).strip()
+        if text:
+            parts.append(text)
+    return "\n".join(parts).strip()
+
+
+def _meta(soup: BeautifulSoup, name: str) -> str | None:
+    tag = soup.find("meta", {"name": name})
+    if tag and tag.get("content"):
+        return str(tag["content"]).strip() or None
+    return None
+
+
+def _dc_contributors(soup: BeautifulSoup, scheme: str) -> list[str]:
+    values: list[str] = []
+    for tag in soup.find_all("meta", {"name": "DC.contributor", "scheme": scheme}):
+        text = str(tag.get("content") or "").strip()
+        if text and text not in values:
+            values.append(text)
+    return values
+
+
+def _date_text(soup: BeautifulSoup, itemprop: str) -> str:
+    tag = soup.find(attrs={"itemprop": itemprop})
+    if not tag:
+        return ""
+    raw = tag.get("datetime") or tag.get("content") or tag.get("title") or tag.get_text(" ", strip=True)
+    return _normalize_date(str(raw) if raw else "")
+
+
+def _normalize_date(raw: str) -> str:
+    raw = raw.strip()
+    if not raw:
+        return ""
+    match = re.search(r"(\d{4})[-/.年](\d{1,2})[-/.月](\d{1,2})", raw)
+    if match:
+        y, m, d = match.groups()
+        return f"{int(y):04d}-{int(m):02d}-{int(d):02d}"
+    match = re.search(r"(\d{4})(\d{2})(\d{2})", raw)
+    if match:
+        y, m, d = match.groups()
+        return f"{y}-{m}-{d}"
+    return raw
