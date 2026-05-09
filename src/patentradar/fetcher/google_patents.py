@@ -15,6 +15,7 @@ from patentradar.core.exceptions import PatentFetchError
 from patentradar.schemas import Claim, PatentInfo
 
 _PUB_NO_RE = re.compile(r"^[A-Z]{2}\d{6,}[A-Z]?\d?$")
+_PUB_NO_IN_TEXT_RE = re.compile(r"([A-Z]{2})[-\s]*(\d{6,})[-\s]*([A-Z]?\d?)", re.I)
 _PDF_RE = re.compile(r"https://patentimages\.storage\.googleapis\.com/[^\"']+\.pdf")
 _HEADERS = {
     "User-Agent": (
@@ -24,6 +25,11 @@ _HEADERS = {
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5",
 }
 _SHANGHAI_TZ = ZoneInfo("Asia/Shanghai")
+_CN_ASSIGNEE_ALIASES = {
+    "BYD Co Ltd": "比亚迪股份有限公司",
+    "BYD Auto Co Ltd": "比亚迪汽车工业有限公司",
+    "BYD Semiconductor Co Ltd": "比亚迪半导体股份有限公司",
+}
 
 
 @dataclass(frozen=True)
@@ -35,7 +41,13 @@ class PatentFetchResult:
 
 
 def normalize_publication_no(publication_no: str) -> str:
-    normalized = publication_no.strip().upper().replace(" ", "")
+    raw = publication_no.strip().upper()
+    url_match = re.search(r"/PATENT/([^/?#]+)", raw)
+    if url_match:
+        raw = url_match.group(1)
+    match = _PUB_NO_IN_TEXT_RE.search(raw)
+    normalized = "".join(match.groups()) if match else raw
+    normalized = normalized.replace(" ", "").replace("-", "")
     if not _PUB_NO_RE.match(normalized):
         raise PatentFetchError(f"Invalid patent publication number: {publication_no!r}")
     return normalized
@@ -54,8 +66,10 @@ def fetch_patent(publication_no: str, *, retries: int = 3, timeout: float = 60.0
     patent = PatentInfo(
         publication_no=publication_no,
         title=_meta(soup, "DC.title") or "",
-        applicants=_dc_contributors(soup, "assignee"),
-        inventors=_dc_contributors(soup, "inventor"),
+        applicants=_prefer_cn_aliases(
+            _main_dd_texts(soup, "assigneeOriginal") or _dc_contributors(soup, "assignee")
+        ),
+        inventors=_main_dd_texts(soup, "inventor") or _dc_contributors(soup, "inventor"),
         application_date=_date_text(soup, "filingDate"),
         google_patents_url=url,
         pdf_url=pdf_match.group(0) if pdf_match else "",
@@ -93,9 +107,15 @@ def _extract_claims(soup: BeautifulSoup) -> tuple[list[Claim], bool]:
     section = soup.find("section", {"itemprop": "claims"})
     if not section:
         return [], False
-    claim_tags = section.find_all("div", id=re.compile(r"^(?:[a-z]{2}-)?cl0*\d+$", re.I))
+    claims_root = (
+        section.find("div", class_="claims", attrs={"lang": "ZH"})
+        or section.find("div", class_="claims")
+        or section
+    )
+    claim_tags = claims_root.find_all("div", id=re.compile(r"^(?:[a-z]{2}-)?cl0*\d+$", re.I))
     claims: list[Claim] = []
     has_placeholders = False
+    seen: set[tuple[int, str]] = set()
     for tag in claim_tags:
         if not isinstance(tag, Tag):
             continue
@@ -106,6 +126,10 @@ def _extract_claims(soup: BeautifulSoup) -> tuple[list[Claim], bool]:
         claim_text = _claim_text(tag)
         if not claim_text:
             continue
+        dedupe_key = (claim_no, claim_text[:30])
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
         claims.append(
             Claim(
                 claim_no=claim_no,
@@ -149,6 +173,24 @@ def _dc_contributors(soup: BeautifulSoup, scheme: str) -> list[str]:
         if text and text not in values:
             values.append(text)
     return values
+
+
+def _main_dd_texts(soup: BeautifulSoup, itemprop: str) -> list[str]:
+    values: list[str] = []
+    for tag in soup.find_all("dd", {"itemprop": itemprop}):
+        text = tag.get_text(" ", strip=True)
+        if text and text not in values:
+            values.append(text)
+    return values
+
+
+def _prefer_cn_aliases(values: list[str]) -> list[str]:
+    result: list[str] = []
+    for value in values:
+        normalized = re.sub(r"[.,]", "", value).strip()
+        alias = _CN_ASSIGNEE_ALIASES.get(normalized) or _CN_ASSIGNEE_ALIASES.get(value)
+        result.append(alias or value)
+    return result
 
 
 def _date_text(soup: BeautifulSoup, itemprop: str) -> str:

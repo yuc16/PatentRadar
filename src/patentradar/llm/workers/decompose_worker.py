@@ -94,6 +94,7 @@ def _task_package_from_payload(
     claim_1 = next((claim for claim in payload.get("claims", []) if claim.get("claim_no") == 1), None)
     if not claim_1:
         raise LLMOutputError("Invalid decompose JSON: claims must include claim_no=1")
+    _normalize_feature_ids(payload)
     payload["claim_1_text"] = claim_1.get("claim_text", "")
     payload["claim_1_features"] = claim_1.get("features", [])
 
@@ -102,18 +103,31 @@ def _task_package_from_payload(
     except ValidationError as exc:
         raise LLMOutputError(f"Invalid decompose JSON: {exc}\nPayload: {payload}") from exc
 
-    _validate_against_html(task_package=task_package, html_claims=html_claims)
+    _validate_against_html(task_package=task_package, html_claims=html_claims, source=source)
     return task_package
 
 
-def _validate_against_html(*, task_package: TaskPackage, html_claims: list[Claim]) -> None:
-    if len(task_package.claims) != len(html_claims):
+def _normalize_feature_ids(payload: dict[str, Any]) -> None:
+    for claim in payload.get("claims", []):
+        claim_no = claim.get("claim_no")
+        for index, feature in enumerate(claim.get("features", []), start=1):
+            feature["feature_id"] = f"C{claim_no}-F{index}"
+
+
+def _validate_against_html(*, task_package: TaskPackage, html_claims: list[Claim], source: str) -> None:
+    if source == "pdf_vision" and len(task_package.claims) < len(html_claims):
         raise LLMOutputError(
-            f"Claim count mismatch: LLM={len(task_package.claims)} HTML={len(html_claims)}"
+            f"PDF vision claim count too low: LLM={len(task_package.claims)} HTML={len(html_claims)}"
+        )
+    if source != "pdf_vision" and len(task_package.claims) != len(html_claims):
+        raise LLMOutputError(
+            f"HTML claim count mismatch: LLM={len(task_package.claims)} HTML={len(html_claims)}"
         )
     expected_numbers = [claim.claim_no for claim in html_claims]
     actual_numbers = [claim.claim_no for claim in task_package.claims]
-    if actual_numbers != expected_numbers:
+    if source == "pdf_vision" and actual_numbers[: len(expected_numbers)] != expected_numbers:
+        raise LLMOutputError(f"PDF vision claim numbers mismatch: LLM={actual_numbers} HTML={expected_numbers}")
+    if source != "pdf_vision" and actual_numbers != expected_numbers:
         raise LLMOutputError(f"Claim numbers mismatch: LLM={actual_numbers} HTML={expected_numbers}")
     if task_package.technology_tag not in TECHNOLOGY_TAGS:
         raise LLMOutputError(f"Invalid technology_tag: {task_package.technology_tag}")
@@ -126,7 +140,7 @@ def _task_package_response_format() -> dict[str, Any]:
         "type": "object",
         "additionalProperties": False,
         "properties": {
-            "feature_id": {"type": "string"},
+            "feature_id": {"type": "string", "pattern": "^C\\d+-F\\d+$"},
             "feature_text": {"type": "string"},
         },
         "required": ["feature_id", "feature_text"],

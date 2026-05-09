@@ -6,6 +6,7 @@ from pathlib import Path
 
 import typer
 
+from patentradar.fetcher.google_patents import normalize_publication_no
 from patentradar.modules.decompose import run_decompose
 
 app = typer.Typer(no_args_is_help=True)
@@ -26,7 +27,7 @@ def decompose_command(
         help="Directory where task_package.json will be written.",
     ),
 ) -> None:
-    target = output_dir / publication_no.upper()
+    target = output_dir / normalize_publication_no(publication_no)
     task_package = run_decompose(publication_no, output_dir=target)
     typer.echo(f"Wrote {target / 'task_package.json'}")
     typer.echo(f"Claims: {len(task_package.claims)}")
