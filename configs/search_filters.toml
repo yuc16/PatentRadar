@@ -1,0 +1,62 @@
+# 模块二搜索结果后过滤的「静态黑名单」。
+#
+# 这些规则与「输入专利的申请人是谁」无关，对任何任务都生效。
+# 申请人自家产品/品牌的过滤是「动态黑名单」，由 step1 LLM 根据 task_package.applicants
+# 推导后随 QueryPlan.applicant_self_signals 一并输出，不在本文件配置。
+#
+# 规则一：domains 命中即丢弃（host 子域包含也算）。
+# 规则二：path_substrings 命中即丢弃（url path 包含某子串）。
+# 规则三：title_substrings 命中即丢弃（page title 包含某子串）。
+# 规则四：url_regex 命中即丢弃（整个 URL 命中某正则）。
+
+[domains]
+# 专利文献站 —— 模块二是找产品而非专利
+patent_databases = [
+    "patents.google.com",
+    "espacenet.com",
+    "worldwide.espacenet.com",
+    "pat.cnipa.gov.cn",
+    "cnipr.com",
+    "soopat.com",
+    "patentguru.com",
+    "patentscope.wipo.int",
+    "freepatentsonline.com",
+    "patentexplorer.com",
+    "x-mol.com",
+]
+
+# 文档分享站 —— 通常是用户上传的杂质 PDF/PPT，权威性低且常含专利
+doc_repositories = [
+    "wenku.baidu.com",
+    "docin.com",
+    "doc88.com",
+    "renrendoc.com",
+    "max.book118.com",
+    "zhuanli.tech",
+    "scribd.com",
+    "slideshare.net",
+]
+
+[path_substrings]
+patent_paths = [
+    "/patent/CN1",
+    "/patent/CN2",
+    "/patent/US",
+    "/patent/EP",
+    "/patent/JP",
+    "/patent/KR",
+    "/patent/WO",
+]
+
+[title_substrings]
+# 标题里出现这些字眼大概率是专利文献而非产品
+patent_titles_zh = ["专利", "专利申请", "授权公告"]
+patent_titles_en = ["patent application", "patent grant"]
+
+[url_regex]
+# 寄生 / SEO 黑产网址（含中文方括号、明显畸形参数）
+malformed_url = [
+    "\\[shuju\\d+",
+    "\\.c0m",
+    "&xhf=",
+]

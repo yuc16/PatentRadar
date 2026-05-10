@@ -1,0 +1,193 @@
+{
+  "publication_no": "CN114512759B",
+  "batch_id": "single-P02",
+  "results": [
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "蜂巢能源（SVOLT）",
+        "product_name": "L600短刀片磷酸铁锂电芯",
+        "product_version": "第二代 196Ah / 3.2V / 627.2Wh",
+        "market": "中国乘用车动力电池；短刀电池量产/装车路线",
+        "reason_for_deep_dive": "输入中给出完整长宽厚和能量：21.5×574×118mm、627.2Wh。按摘要尺寸，L=574mm且L>H>D，D/V、S/E、L/S均具备进入权1比例核算的价值。",
+        "source_result_ids": [
+          "tavily-Q10-03",
+          "brave-Q13-01",
+          "brave-Q13-05",
+          "tavily-Q13-03",
+          "tavily-Q13-04",
+          "tavily-Q11-05"
+        ],
+        "source_urls": [
+          "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+          "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+          "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+          "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+          "https://winston-battery.en.made-in-china.com/product/BFxtUXevCzRi/China-Svolt-L600-3-2V-196ah-Blade-LiFePO4-Cell-High-Energy-Rechargeable-Solar-Battery.html",
+          "https://www.ithome.com/0/587/804.htm"
+        ],
+        "initial_evidence_summary": "摘要显示SVOLT L600第二代短刀片电芯容量196Ah、电压3.2V、能量627.2Wh、尺寸21.5×574×118mm，质量3380±50g，能量密度185Wh/kg、体积能量密度430Wh/L，并称2022年量产。"
+      },
+      "launch_date": "2022年Q3预计量产；2023-05-04已有196Ah第二代短刀叠片电芯下线/交付报道",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "2021年11月19日报道：第二代产品已经完成开发，预计将在2022年第三季度实现量产。蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah，能量密度超过185wh/kg，体积能量密度超过430wh/L。"
+        },
+        {
+          "url": "https://www.ithome.com/0/690/530.htm",
+          "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付，全面通过“过充、撞击、震动”等国标安全测试 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "搜索结果摘要显示：2023年5月4日，蜂巢能源宣布第二代短刀叠片电池196Ah电芯在南京基地顺利下线，南京基地进入量产爬坡阶段；首款LCTP电池包现阶段已按期批量交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未发现该第二代196Ah L600产品在专利申请日2019-06-21之前上市。公开证据显示其于2021年11月已完成开发、预计2022年Q3量产，并在2023年已有下线/交付报道。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "公开资料明确称其为SVOLT L600 196Ah短刀/刀片LiFePO4电芯，并给出扁平外形；另有公开资料称蜂巢短刀电池设计包括壳体和盖板。该等证据支持其为带壳体的方形/刀片类电芯，但未在输入证据中直接写明“硬壳电池”或“铝壳”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://winston-battery.en.made-in-china.com/product/BFxtUXevCzRi/China-Svolt-L600-3-2V-196ah-Blade-LiFePO4-Cell-High-Energy-Rechargeable-Solar-Battery.html",
+              "title": "Svolt L600 3.2V 196ah Blade LiFePO4 Cell High Energy Rechargeable Solar Battery",
+              "source_name": "Made-in-China",
+              "snippet": "Basic Info显示该产品为“Svolt L600 3.2V 196Ah Blade LiFePO4 Cell”，Shape为“Flat Battery”，Dimension为21.5 x 574 x 118mm。"
+            },
+            {
+              "url": "https://www.sohu.com/a/530189966_100209427",
+              "title": "“短刀”电池只有蜂巢能源能造？_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车",
+              "snippet": "搜索结果摘要称蜂巢能源短刀电池包括壳体和盖板，壳体表面积最小的相对两侧面均设置为开口；盖板分正极盖板和负极盖板，分别设置于壳体的两个开口。"
+            }
+          ],
+          "reasoning": "“壳体+盖板”的短刀电池结构、扁平刀片电芯形态可合理推断其不同于软包袋式封装，可能属于硬壳/方形壳体电芯。但因当前输入证据未直接把P02的196Ah L600称为“硬壳”或“铝壳”，故评为可能满足。"
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "P02为短刀/刀片扁平电芯，公开尺寸为21.5 × 574 × 118 mm。按最大尺寸为长度L=574mm，中间尺寸为宽度H=118mm，最小尺寸为厚度D=21.5mm，则L>H>D。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "Evlithium",
+              "snippet": "Details：The SVOLT L600 with 196 Ah has ... a size of 21.5 x 574 x 118 mm. Its voltage is 3.2 V, the capacity is 627.2 Wh."
+            },
+            {
+              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+              "title": "Svolt Battery L600 3.2V 196Ah LFP Blade Battery",
+              "source_name": "LiFePO4 Battery Shop",
+              "snippet": "Product Details显示Nominal Capacity ≥196Ah、Nominal Voltage 3.2V、Dimension: 21.5 x 574 x 118mm；页面称其为Svolt Battery L600 3.2V 196Ah LFP Blade Battery。"
+            }
+          ],
+          "reasoning": "刀片/短刀电芯具有扁平长条外形，且公开尺寸给出三维尺寸。取L=574mm、H=118mm、D=21.5mm，满足574>118>21.5。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "按公开尺寸L=574mm、H=118mm、D=21.5mm，体积V=574×118×21.5=1,456,238mm³；D/V=21.5/1,456,238≈0.00001476mm⁻²。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "Evlithium",
+              "snippet": "The SVOLT L600 with 196 Ah has ... a size of 21.5 x 574 x 118 mm. Its voltage is 3.2 V, the capacity is 627.2 Wh."
+            }
+          ],
+          "reasoning": "由公开尺寸计算得到D/V≈1.476×10^-5mm^-2，落入权利要求范围6.5×10^-6至2.0×10^-5mm^-2。"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "按长方体表面积S=2(LH+LD+HD)=2×(574×118+574×21.5+118×21.5)=165,220mm²。公开能量E=627.2Wh，则S/E≈263.4mm²/Wh。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell - LiFePO4 Battery",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Specifications显示Energy ≥625Wh，Dimension 21.5 x 574 x 118mm；Details称The SVOLT L600 with 196 Ah ... size of 21.5 x 574 x 118 mm，voltage 3.2 V，capacity is 627.2 Wh。"
+            },
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "Evlithium",
+              "snippet": "Details：Its voltage is 3.2 V, the capacity is 627.2 Wh；size of 21.5 x 574 x 118 mm。"
+            }
+          ],
+          "reasoning": "以公开尺寸计算表面积并以公开能量627.2Wh计算，S/E≈263.4mm²/Wh，显著小于1000mm²/Wh；即便采用规格表中Energy ≥625Wh，S/E也约为264.4mm²/Wh，仍满足。"
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "P02公开尺寸的最大边为574mm；另有新闻按产品系列称长度600mm。二者均落在400mm~2500mm范围内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "Evlithium",
+              "snippet": "The SVOLT L600 with 196 Ah has ... a size of 21.5 x 574 x 118 mm."
+            },
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+              "source_name": "IT之家",
+              "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah，能量密度超过185wh/kg，体积能量密度超过430wh/L。"
+            }
+          ],
+          "reasoning": "按实际公开尺寸最大边574mm作为电池本体长度，满足400~2500mm；按新闻所称L600长度600mm也同样满足。"
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "按公开尺寸L=574mm、H=118mm、D=21.5mm，S=165,220mm²；L/S=574/165,220≈0.00347mm⁻¹。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell - LiFePO4 Battery",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Product Details/Specifications显示Dimension: 21.5 x 574 x 118mm，Nominal Capacity 196Ah，Nominal Voltage 3.2V。"
+            }
+          ],
+          "reasoning": "由公开三维尺寸计算长方体表面积S=165,220mm²，L/S≈0.00347mm^-1，落入0.002~0.005mm^-1范围。"
+        }
+      ],
+      "total_score": 5.8,
+      "searched_queries": [
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 规格书 参数",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 说明书 PDF",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 官方 参数",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 拆解 结构",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 上市 日期 发布",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 中国 市场",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 所述单体电池为硬壳电池",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 第二代 196Ah / 3.2V / 627.2Wh 所述单体电池为硬壳电池 证据",
+        "蜂巢能源（SVOLT） L600短刀片磷酸铁锂电芯 所述单体电池为硬壳电池"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    }
+  ]
+}

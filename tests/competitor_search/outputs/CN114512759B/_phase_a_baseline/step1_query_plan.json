@@ -1,0 +1,776 @@
+{
+  "publication_no": "CN114512759B",
+  "claim_1_summary": "权利要求1限定一种用于动力电池/电动车的硬壳长方体单体电池：长度大于宽度、宽度大于厚度，长度为400mm~2500mm，并通过长宽厚尺寸、表面积和能量之间的比例关系限定为长条形/长薄型大尺寸硬壳电芯。",
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "动力电池 方形硬壳 长条电芯 长度 400mm 2500mm 规格 型号 尺寸 -比亚迪 -弗迪 -BYD -专利",
+      "intent": "claim_feature",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "硬壳 长方体 电池本体 长度 宽度 厚度 方形铝壳电芯 Wh 规格书 -比亚迪 -弗迪 -专利",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "长薄型 方形铝壳 动力电芯 长宽厚 能量 Wh datasheet 中国 -BYD -比亚迪 -patent",
+      "intent": "specification",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "方形铝壳电芯 长宽厚 容量 Ah 标称电压 能量 Wh 规格书 600mm -比亚迪 -弗迪",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "方形电芯 长度 500mm 600mm 900mm 厚度 能量 Wh 硬壳 型号 -比亚迪 -弗迪",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "长条形 大尺寸 方形硬壳电芯 电动车 搭载 型号 尺寸 长宽厚 非比亚迪",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "非比亚迪 刀片电池 竞品 短刀电池 长刀电池 电芯型号 长宽厚 参数",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "短刀电池 电芯 规格 尺寸 方形硬壳 长度 量产 车型 -比亚迪 -弗迪",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "long prismatic cell China EV dimensions energy datasheet hard case -BYD -patent",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "blade cell short blade prismatic cell dimensions energy China EV -BYD",
+      "intent": "market_name",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q11",
+      "query": "蜂巢能源 短刀电池 L600 电芯 规格 尺寸 型号 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q12",
+      "query": "蜂巢能源 短刀电芯 L500 L400 参数 长宽厚 Wh 方形硬壳",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q13",
+      "query": "SVOLT short blade cell L600 L500 dimensions datasheet prismatic China",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q14",
+      "query": "蜂巢能源 龙鳞甲 短刀 电芯 参数 规格 尺寸 方形硬壳",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q15",
+      "query": "蜂巢能源 短刀电池 量产 搭载 车型 电芯 型号 尺寸",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q16",
+      "query": "宁德时代 神行电池 电芯 尺寸 方形铝壳 型号 长宽厚 -比亚迪",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q17",
+      "query": "宁德时代 麒麟电池 电芯 规格 长宽厚 方形硬壳 能量 Wh -比亚迪",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q18",
+      "query": "CATL Shenxing battery prismatic cell dimensions energy datasheet -BYD",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q19",
+      "query": "CATL Qilin battery cell dimensions prismatic hard case energy -BYD",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q20",
+      "query": "中创新航 OS 电池 电芯 长度 尺寸 方形铝壳 参数 型号",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q21",
+      "query": "中创新航 One-Stop Bettery 长电芯 规格 尺寸 型号 长宽厚 Wh",
+      "intent": "industry_company",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q22",
+      "query": "CALB OS prismatic cell dimensions length width thickness energy China EV",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q23",
+      "query": "中创新航 OS电池 量产 车型 电芯 型号 尺寸 方形硬壳",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q24",
+      "query": "亿纬锂能 LF560K 方形铝壳电芯 尺寸 长宽厚 Wh 规格书",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q25",
+      "query": "亿纬锂能 LF560K LF628K LF306K 电芯规格书 尺寸 能量 方形硬壳",
+      "intent": "industry_company",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q26",
+      "query": "EVE LF560K prismatic cell datasheet dimensions energy hard case",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q27",
+      "query": "亿纬锂能 大圆柱以外 方形电芯 动力电池 长宽厚 型号 规格 -比亚迪",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q28",
+      "query": "国轩高科 启晨电池 电芯 尺寸 方形铝壳 型号 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q29",
+      "query": "国轩高科 L600 磷酸铁锂 方形电芯 长宽厚 Wh 规格",
+      "intent": "industry_company",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q30",
+      "query": "Gotion Astroinno battery prismatic cell dimensions model China EV",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q31",
+      "query": "瑞浦兰钧 问顶电池 电芯 规格 尺寸 方形铝壳 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q32",
+      "query": "瑞浦兰钧 587Ah 电芯 长宽厚 能量 方形硬壳 规格书",
+      "intent": "industry_company",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q33",
+      "query": "REPT Wending prismatic cell 320Ah 345Ah 587Ah dimensions datasheet",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q34",
+      "query": "欣旺达 闪充电池 SFC480 电芯 尺寸 方形铝壳 型号 长宽厚",
+      "intent": "industry_company",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q35",
+      "query": "Sunwoda SFC480 fast charging battery prismatic cell dimensions energy",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q36",
+      "query": "欣旺达 动力方形电芯 4C 超充 长宽厚 规格 型号 -比亚迪",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q37",
+      "query": "吉利 神盾短刀电池 电芯 尺寸 长宽厚 型号 方形硬壳",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q38",
+      "query": "耀宁新能源 短刀电芯 规格 尺寸 方形硬壳 长度 Wh",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q39",
+      "query": "极氪 金砖电池 电芯 规格 尺寸 方形硬壳 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q40",
+      "query": "威睿电动 金砖电池 电芯 长宽厚 Wh 方形铝壳 型号",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q41",
+      "query": "上汽 魔方电池 躺式电芯 规格 尺寸 方形硬壳 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q42",
+      "query": "广汽 弹匣电池 电芯 尺寸 长宽厚 方形铝壳 型号",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q43",
+      "query": "蜂巢能源 中创新航 宁德时代 国轩高科 瑞浦兰钧 长电芯 方形硬壳 尺寸 型号 -比亚迪",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q44",
+      "query": "新能源汽车 方形长电芯 拆解 尺寸 长宽厚 电芯型号 宁德时代 蜂巢 中创新航 -比亚迪",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q45",
+      "query": "动力电池包 拆解 长条形 方形硬壳电芯 尺寸 型号 供应商 非比亚迪",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    }
+  ]
+}

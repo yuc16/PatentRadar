@@ -1,10 +1,10 @@
 {
   "input_file": "tests/decompose/inputs/full_patent_pool.json",
   "started_at": "2026-05-10T00:51:39+0800",
-  "finished_at": "2026-05-10T05:14:44+0800",
-  "publication_count": 238,
-  "completed_count": 238,
-  "success_count": 238,
+  "finished_at": "2026-05-10T05:02:52+0800",
+  "publication_count": 239,
+  "completed_count": 239,
+  "success_count": 239,
   "failure_count": 0,
   "rows": [
     {
@@ -16,7 +16,7 @@
       "feature_count": 17,
       "technology_tag": "其他",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 72.88,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -29,7 +29,7 @@
       "feature_count": 44,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 57.48,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -42,7 +42,7 @@
       "feature_count": 29,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 62.85,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -55,7 +55,7 @@
       "feature_count": 24,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 102.76,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -68,7 +68,7 @@
       "feature_count": 31,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 58.41,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -81,7 +81,7 @@
       "feature_count": 16,
       "technology_tag": "其他",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 43.03,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -94,7 +94,7 @@
       "feature_count": 63,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 99.55,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -107,7 +107,7 @@
       "feature_count": 22,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 96.73,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -120,7 +120,7 @@
       "feature_count": 20,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.0,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -133,7 +133,20 @@
       "feature_count": 34,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 82.31,
+      "elapsed_s": 60.0,
+      "error_type": "",
+      "error": ""
+    },
+    {
+      "publication_no": "CN114512759B",
+      "ok": true,
+      "skipped": false,
+      "claims_source": "html",
+      "claim_count": 11,
+      "feature_count": 19,
+      "technology_tag": "动力电池",
+      "applicants": "比亚迪股份有限公司",
+      "elapsed_s": 88.22,
       "error_type": "",
       "error": ""
     },
@@ -146,7 +159,7 @@
       "feature_count": 38,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 98.58,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -159,7 +172,7 @@
       "feature_count": 22,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 105.61,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -172,7 +185,7 @@
       "feature_count": 53,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 102.25,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -185,7 +198,7 @@
       "feature_count": 31,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 62.92,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -198,7 +211,7 @@
       "feature_count": 35,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 51.36,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -211,7 +224,7 @@
       "feature_count": 21,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 48.89,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -221,10 +234,10 @@
       "skipped": false,
       "claims_source": "pdf_vision",
       "claim_count": 7,
-      "feature_count": 25,
+      "feature_count": 22,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 137.46,
+      "elapsed_s": 220.8,
       "error_type": "",
       "error": ""
     },
@@ -237,7 +250,7 @@
       "feature_count": 55,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 111.22,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -250,7 +263,7 @@
       "feature_count": 29,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 96.01,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -263,7 +276,7 @@
       "feature_count": 23,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 83.2,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -276,7 +289,7 @@
       "feature_count": 31,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 76.47,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -289,7 +302,7 @@
       "feature_count": 23,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 51.78,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -302,7 +315,7 @@
       "feature_count": 18,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 62.17,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -315,7 +328,7 @@
       "feature_count": 20,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.21,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -328,7 +341,7 @@
       "feature_count": 20,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 53.86,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -341,7 +354,7 @@
       "feature_count": 25,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 80.07,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -354,7 +367,7 @@
       "feature_count": 33,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 101.49,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -367,7 +380,7 @@
       "feature_count": 40,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 91.58,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -380,7 +393,7 @@
       "feature_count": 35,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 95.48,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -393,7 +406,7 @@
       "feature_count": 75,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 132.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -406,7 +419,7 @@
       "feature_count": 38,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 109.22,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -419,7 +432,7 @@
       "feature_count": 28,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 83.86,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -432,7 +445,7 @@
       "feature_count": 19,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 68.66,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -445,7 +458,7 @@
       "feature_count": 28,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 96.53,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -458,7 +471,7 @@
       "feature_count": 28,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 101.04,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -471,7 +484,7 @@
       "feature_count": 46,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 92.67,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -484,7 +497,7 @@
       "feature_count": 27,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 74.24,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -497,7 +510,7 @@
       "feature_count": 37,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 69.18,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -507,10 +520,10 @@
       "skipped": false,
       "claims_source": "html",
       "claim_count": 25,
-      "feature_count": 57,
+      "feature_count": 53,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 115.03,
+      "elapsed_s": 86.08,
       "error_type": "",
       "error": ""
     },
@@ -523,7 +536,7 @@
       "feature_count": 21,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 98.88,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -536,7 +549,7 @@
       "feature_count": 43,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 95.61,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -549,7 +562,7 @@
       "feature_count": 36,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 108.38,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -562,7 +575,7 @@
       "feature_count": 25,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 59.49,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -575,7 +588,7 @@
       "feature_count": 39,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 78.76,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -588,7 +601,7 @@
       "feature_count": 59,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 77.94,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -601,7 +614,7 @@
       "feature_count": 48,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 54.18,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -614,7 +627,7 @@
       "feature_count": 60,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 68.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -627,7 +640,7 @@
       "feature_count": 31,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 56.67,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -640,7 +653,7 @@
       "feature_count": 22,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 50.84,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -653,7 +666,7 @@
       "feature_count": 27,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 66.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -666,7 +679,7 @@
       "feature_count": 47,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 92.72,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -679,7 +692,7 @@
       "feature_count": 47,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 90.64,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -692,7 +705,7 @@
       "feature_count": 23,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 78.13,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -705,7 +718,7 @@
       "feature_count": 27,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 87.39,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -718,7 +731,7 @@
       "feature_count": 55,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 72.94,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -731,7 +744,7 @@
       "feature_count": 25,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 48.91,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -741,10 +754,10 @@
       "skipped": false,
       "claims_source": "html",
       "claim_count": 11,
-      "feature_count": 19,
+      "feature_count": 14,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 38.24,
+      "elapsed_s": 66.04,
       "error_type": "",
       "error": ""
     },
@@ -757,7 +770,7 @@
       "feature_count": 25,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 56.14,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -770,7 +783,7 @@
       "feature_count": 34,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 66.26,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -783,7 +796,7 @@
       "feature_count": 23,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 56.8,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -796,7 +809,7 @@
       "feature_count": 24,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 30.36,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -809,7 +822,7 @@
       "feature_count": 40,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 61.93,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -822,7 +835,7 @@
       "feature_count": 41,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 68.95,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -835,7 +848,7 @@
       "feature_count": 40,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 95.47,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -848,7 +861,7 @@
       "feature_count": 34,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 78.45,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -861,7 +874,7 @@
       "feature_count": 20,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 93.73,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -874,7 +887,7 @@
       "feature_count": 23,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 43.5,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -887,7 +900,7 @@
       "feature_count": 26,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.57,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -900,7 +913,7 @@
       "feature_count": 38,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 64.64,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -913,7 +926,7 @@
       "feature_count": 33,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 29.98,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -926,7 +939,7 @@
       "feature_count": 21,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 48.85,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -939,7 +952,7 @@
       "feature_count": 30,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 58.12,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -952,7 +965,7 @@
       "feature_count": 17,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 51.26,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -965,7 +978,7 @@
       "feature_count": 24,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 53.97,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -978,7 +991,7 @@
       "feature_count": 25,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 53.62,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -991,7 +1004,7 @@
       "feature_count": 19,
       "technology_tag": "制造工艺与装备",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 47.1,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1004,7 +1017,7 @@
       "feature_count": 25,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 43.63,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1017,7 +1030,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 51.08,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1030,7 +1043,7 @@
       "feature_count": 30,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 40.94,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1043,7 +1056,7 @@
       "feature_count": 40,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 49.12,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1056,7 +1069,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 58.48,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1069,7 +1082,7 @@
       "feature_count": 44,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 72.99,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1082,7 +1095,7 @@
       "feature_count": 41,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 70.99,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1095,7 +1108,7 @@
       "feature_count": 39,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 53.84,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1108,7 +1121,7 @@
       "feature_count": 22,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 44.77,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1121,7 +1134,7 @@
       "feature_count": 33,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 61.61,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1134,7 +1147,7 @@
       "feature_count": 20,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 42.21,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1147,7 +1160,7 @@
       "feature_count": 27,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.3,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1160,7 +1173,7 @@
       "feature_count": 25,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 57.49,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1173,7 +1186,7 @@
       "feature_count": 43,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 72.41,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1186,7 +1199,7 @@
       "feature_count": 20,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 48.27,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1199,7 +1212,7 @@
       "feature_count": 32,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 63.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1212,7 +1225,7 @@
       "feature_count": 18,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 74.4,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1225,7 +1238,7 @@
       "feature_count": 31,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 42.58,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1235,10 +1248,10 @@
       "skipped": false,
       "claims_source": "html",
       "claim_count": 26,
-      "feature_count": 37,
+      "feature_count": 29,
       "technology_tag": "电驱系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 68.35,
+      "elapsed_s": 71.78,
       "error_type": "",
       "error": ""
     },
@@ -1251,7 +1264,7 @@
       "feature_count": 28,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 60.25,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1264,7 +1277,7 @@
       "feature_count": 21,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 50.37,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1277,7 +1290,7 @@
       "feature_count": 22,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 39.99,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1290,7 +1303,7 @@
       "feature_count": 15,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 90.76,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1303,7 +1316,7 @@
       "feature_count": 29,
       "technology_tag": "其他",
       "applicants": "Yangzhou Byd Semiconductor Co ltd",
-      "elapsed_s": 41.61,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1316,7 +1329,7 @@
       "feature_count": 24,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 43.01,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1329,7 +1342,7 @@
       "feature_count": 18,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 36.28,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1342,7 +1355,7 @@
       "feature_count": 21,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 60.52,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1355,7 +1368,7 @@
       "feature_count": 35,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 65.1,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1368,7 +1381,7 @@
       "feature_count": 19,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 39.58,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1381,7 +1394,7 @@
       "feature_count": 19,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 36.37,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1394,7 +1407,7 @@
       "feature_count": 17,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 50.27,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1407,7 +1420,7 @@
       "feature_count": 17,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 39.7,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1420,7 +1433,7 @@
       "feature_count": 37,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 61.41,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1433,7 +1446,7 @@
       "feature_count": 26,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 69.51,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1446,7 +1459,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 60.08,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1459,7 +1472,7 @@
       "feature_count": 23,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 58.11,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1472,7 +1485,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 54.41,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1485,7 +1498,7 @@
       "feature_count": 25,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 41.16,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1498,7 +1511,7 @@
       "feature_count": 28,
       "technology_tag": "动力电池",
       "applicants": "比亚迪股份有限公司; Changzhou BYD Auto Co Ltd",
-      "elapsed_s": 54.23,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1511,7 +1524,7 @@
       "feature_count": 18,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 32.96,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1524,7 +1537,7 @@
       "feature_count": 28,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 63.65,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1537,7 +1550,7 @@
       "feature_count": 59,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 78.09,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1550,7 +1563,7 @@
       "feature_count": 31,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 69.15,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1563,7 +1576,7 @@
       "feature_count": 29,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 60.29,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1576,7 +1589,7 @@
       "feature_count": 26,
       "technology_tag": "智能驾驶",
       "applicants": "比亚迪半导体股份有限公司; Guangdong BYD Energy Saving Technology Co Ltd",
-      "elapsed_s": 57.61,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1589,7 +1602,7 @@
       "feature_count": 22,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 36.64,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1602,7 +1615,7 @@
       "feature_count": 36,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 41.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1615,7 +1628,7 @@
       "feature_count": 33,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 40.58,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1628,7 +1641,7 @@
       "feature_count": 28,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司; Shaoguan BYD Industrial Co Ltd",
-      "elapsed_s": 37.41,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1641,7 +1654,7 @@
       "feature_count": 25,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 55.82,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1654,7 +1667,7 @@
       "feature_count": 26,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.57,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1667,7 +1680,7 @@
       "feature_count": 25,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.91,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1680,7 +1693,7 @@
       "feature_count": 60,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 67.4,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1693,7 +1706,7 @@
       "feature_count": 20,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 41.94,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1706,7 +1719,7 @@
       "feature_count": 12,
       "technology_tag": "其他",
       "applicants": "Yangzhou Byd Semiconductor Co ltd",
-      "elapsed_s": 27.43,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1719,7 +1732,7 @@
       "feature_count": 29,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 57.61,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1732,7 +1745,7 @@
       "feature_count": 50,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 65.92,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1745,7 +1758,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 51.79,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1758,7 +1771,7 @@
       "feature_count": 34,
       "technology_tag": "其他",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 44.28,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1771,7 +1784,7 @@
       "feature_count": 32,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 49.93,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1784,7 +1797,7 @@
       "feature_count": 19,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 40.47,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1797,7 +1810,7 @@
       "feature_count": 26,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 72.69,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1810,7 +1823,7 @@
       "feature_count": 39,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 56.29,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1823,7 +1836,7 @@
       "feature_count": 25,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 47.01,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1836,7 +1849,7 @@
       "feature_count": 19,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 38.39,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1849,7 +1862,7 @@
       "feature_count": 29,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 55.29,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1862,7 +1875,7 @@
       "feature_count": 12,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 50.89,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1875,7 +1888,7 @@
       "feature_count": 45,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 67.37,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1888,7 +1901,7 @@
       "feature_count": 29,
       "technology_tag": "电驱系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 69.97,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1901,7 +1914,7 @@
       "feature_count": 32,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 55.63,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1914,7 +1927,7 @@
       "feature_count": 48,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 49.31,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1927,7 +1940,7 @@
       "feature_count": 28,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 47.35,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1940,7 +1953,7 @@
       "feature_count": 30,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 48.91,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1953,7 +1966,7 @@
       "feature_count": 30,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 43.18,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1966,7 +1979,7 @@
       "feature_count": 34,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 56.42,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1979,7 +1992,7 @@
       "feature_count": 28,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 38.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -1992,7 +2005,7 @@
       "feature_count": 32,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 51.97,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2005,7 +2018,7 @@
       "feature_count": 21,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 53.7,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2018,7 +2031,7 @@
       "feature_count": 24,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 59.39,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2031,7 +2044,7 @@
       "feature_count": 42,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 58.2,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2044,7 +2057,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 42.77,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2057,7 +2070,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 57.11,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2070,7 +2083,7 @@
       "feature_count": 20,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 36.69,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2083,7 +2096,7 @@
       "feature_count": 19,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 30.7,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2096,7 +2109,7 @@
       "feature_count": 53,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 60.51,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2109,7 +2122,7 @@
       "feature_count": 39,
       "technology_tag": "电驱系统",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 64.32,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2122,7 +2135,7 @@
       "feature_count": 23,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 62.81,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2135,7 +2148,7 @@
       "feature_count": 42,
       "technology_tag": "其他",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 57.02,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2148,7 +2161,7 @@
       "feature_count": 33,
       "technology_tag": "其他",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 62.56,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2161,7 +2174,7 @@
       "feature_count": 31,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 75.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2174,7 +2187,7 @@
       "feature_count": 45,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 109.43,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2187,7 +2200,7 @@
       "feature_count": 34,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司; Hefei BYD Auto Co Ltd",
-      "elapsed_s": 68.0,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2200,7 +2213,7 @@
       "feature_count": 30,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 59.57,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2213,7 +2226,7 @@
       "feature_count": 33,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 68.29,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2226,7 +2239,7 @@
       "feature_count": 39,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 69.67,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2239,7 +2252,7 @@
       "feature_count": 46,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 82.47,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2252,7 +2265,7 @@
       "feature_count": 29,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 69.77,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2265,7 +2278,7 @@
       "feature_count": 37,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 104.53,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2278,7 +2291,7 @@
       "feature_count": 49,
       "technology_tag": "电驱系统",
       "applicants": "比亚迪半导体股份有限公司",
-      "elapsed_s": 97.26,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2291,7 +2304,7 @@
       "feature_count": 50,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 58.71,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2304,7 +2317,7 @@
       "feature_count": 28,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 59.84,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2317,7 +2330,7 @@
       "feature_count": 39,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 63.1,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2330,7 +2343,7 @@
       "feature_count": 33,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 77.0,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2343,7 +2356,7 @@
       "feature_count": 25,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 64.49,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2356,7 +2369,7 @@
       "feature_count": 36,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 82.85,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2369,7 +2382,7 @@
       "feature_count": 31,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 75.78,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2382,7 +2395,7 @@
       "feature_count": 33,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 71.18,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2395,7 +2408,7 @@
       "feature_count": 26,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 44.97,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2408,7 +2421,7 @@
       "feature_count": 23,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 52.73,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2421,7 +2434,7 @@
       "feature_count": 25,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 56.14,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2434,7 +2447,7 @@
       "feature_count": 33,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 67.31,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2447,7 +2460,7 @@
       "feature_count": 32,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 61.65,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2460,7 +2473,7 @@
       "feature_count": 30,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 76.58,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2473,7 +2486,7 @@
       "feature_count": 26,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司; Huizhou BYD Electronic Co Ltd",
-      "elapsed_s": 56.86,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2486,7 +2499,7 @@
       "feature_count": 29,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司; Huizhou BYD Electronic Co Ltd",
-      "elapsed_s": 85.12,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2499,7 +2512,7 @@
       "feature_count": 21,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 46.27,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2512,7 +2525,7 @@
       "feature_count": 27,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 43.0,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2525,7 +2538,7 @@
       "feature_count": 18,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司; Changsha BYD Automobile Co Ltd",
-      "elapsed_s": 48.68,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2538,7 +2551,7 @@
       "feature_count": 18,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 55.89,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2551,7 +2564,7 @@
       "feature_count": 21,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司; BYD Precision Manufacturing Co Ltd",
-      "elapsed_s": 47.08,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2564,7 +2577,7 @@
       "feature_count": 19,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.98,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2577,7 +2590,7 @@
       "feature_count": 20,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 40.78,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2590,7 +2603,7 @@
       "feature_count": 28,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 61.6,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2603,7 +2616,7 @@
       "feature_count": 33,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 52.4,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2616,7 +2629,7 @@
       "feature_count": 35,
       "technology_tag": "智能座舱与车联网",
       "applicants": "Jinan Byd Automobile Co ltd; 比亚迪股份有限公司",
-      "elapsed_s": 89.09,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2629,7 +2642,7 @@
       "feature_count": 27,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 69.68,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2642,7 +2655,7 @@
       "feature_count": 21,
       "technology_tag": "其他",
       "applicants": "Ningbo BYD Semiconductor Co Ltd",
-      "elapsed_s": 84.62,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2655,7 +2668,7 @@
       "feature_count": 34,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 86.26,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2668,7 +2681,7 @@
       "feature_count": 35,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 83.79,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2681,7 +2694,7 @@
       "feature_count": 31,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 52.85,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2694,7 +2707,7 @@
       "feature_count": 20,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 45.14,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2707,7 +2720,7 @@
       "feature_count": 22,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 38.49,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2720,7 +2733,7 @@
       "feature_count": 24,
       "technology_tag": "电驱系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 57.27,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2733,7 +2746,7 @@
       "feature_count": 36,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 59.63,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2746,7 +2759,7 @@
       "feature_count": 34,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 78.4,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2759,7 +2772,7 @@
       "feature_count": 33,
       "technology_tag": "智能座舱与车联网",
       "applicants": "Shenzhen Byd Automobile Industry Co ltd; 比亚迪股份有限公司",
-      "elapsed_s": 100.86,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2772,7 +2785,7 @@
       "feature_count": 23,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司; BYD Precision Manufacturing Co Ltd",
-      "elapsed_s": 42.9,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2785,7 +2798,7 @@
       "feature_count": 27,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 72.76,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2798,7 +2811,7 @@
       "feature_count": 31,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 44.07,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2811,7 +2824,7 @@
       "feature_count": 22,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 43.84,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2824,7 +2837,7 @@
       "feature_count": 29,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 75.76,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2837,7 +2850,7 @@
       "feature_count": 31,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 79.61,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2850,7 +2863,7 @@
       "feature_count": 38,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 74.08,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2863,7 +2876,7 @@
       "feature_count": 22,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 92.92,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2876,7 +2889,7 @@
       "feature_count": 27,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 28.36,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2889,7 +2902,7 @@
       "feature_count": 23,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 85.51,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2902,7 +2915,7 @@
       "feature_count": 33,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 54.44,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2915,7 +2928,7 @@
       "feature_count": 38,
       "technology_tag": "其他",
       "applicants": "BYD Precision Manufacturing Co Ltd",
-      "elapsed_s": 78.97,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2928,7 +2941,7 @@
       "feature_count": 23,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 56.47,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2941,7 +2954,7 @@
       "feature_count": 24,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 89.02,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2954,7 +2967,7 @@
       "feature_count": 36,
       "technology_tag": "充配电系统",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 70.42,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2967,7 +2980,7 @@
       "feature_count": 28,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 70.59,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2980,7 +2993,7 @@
       "feature_count": 34,
       "technology_tag": "其他",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 64.77,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -2993,7 +3006,7 @@
       "feature_count": 26,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 87.57,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -3006,7 +3019,7 @@
       "feature_count": 56,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 82.5,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -3019,7 +3032,7 @@
       "feature_count": 40,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 70.58,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -3032,7 +3045,7 @@
       "feature_count": 13,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 51.17,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -3045,7 +3058,7 @@
       "feature_count": 28,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司; Shanwei BYD Industrial Co Ltd",
-      "elapsed_s": 57.83,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -3055,10 +3068,10 @@
       "skipped": false,
       "claims_source": "html",
       "claim_count": 16,
-      "feature_count": 55,
+      "feature_count": 29,
       "technology_tag": "动力电池",
       "applicants": "比亚迪股份有限公司; 比亚迪汽车工业有限公司",
-      "elapsed_s": 110.77,
+      "elapsed_s": 82.69,
       "error_type": "",
       "error": ""
     },
@@ -3071,7 +3084,7 @@
       "feature_count": 26,
       "technology_tag": "整车与车身底盘",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 60.37,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -3084,7 +3097,7 @@
       "feature_count": 24,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 83.96,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     },
@@ -3097,7 +3110,7 @@
       "feature_count": 30,
       "technology_tag": "智能座舱与车联网",
       "applicants": "比亚迪股份有限公司",
-      "elapsed_s": 60.79,
+      "elapsed_s": 60.0,
       "error_type": "",
       "error": ""
     }

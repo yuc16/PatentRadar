@@ -1,0 +1,374 @@
+{
+  "publication_no": "CN114512759B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "吉利汽车 / 耀宁新能源",
+      "product_name": "神盾短刀电池",
+      "product_version": "一代磷酸铁锂短刀，电芯长度约580mm",
+      "market": "中国乘用车动力电池；吉利银河E5等车型相关",
+      "reason_for_deep_dive": "已明确为“刀片式/短刀”电池，电芯长度约580mm，落入权1的400mm~2500mm长度区间；与长方体长薄型硬壳电芯、CTB/高体积利用率路线高度相关。",
+      "source_result_ids": [
+        "brave-Q07-03",
+        "brave-Q07-04",
+        "brave-Q08-02",
+        "tavily-Q07-03",
+        "tavily-Q08-05"
+      ],
+      "source_urls": [
+        "https://auto.ifeng.com/c/8alixtSoB80",
+        "https://libattery.ofweek.com/2024-07/ART-36000-8440-30639168.html",
+        "http://www.xinhuanet.com/auto/20240701/d78509d73c8847dfbb48d589d0e7c317/c.html",
+        "https://www.sohu.com/a/789076704_115542",
+        "https://www.xchuxing.com/article/130166"
+      ],
+      "initial_evidence_summary": "搜索摘要显示神盾短刀电池长度580mm，相比长刀缩短约40%，能量密度可达192Wh/kg，平均充电倍率2.45C，10%-80%SOC约17分钟；规划/报道称吉利银河E5率先搭载。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L600短刀片磷酸铁锂电芯",
+      "product_version": "第二代 196Ah / 3.2V / 627.2Wh",
+      "market": "中国乘用车动力电池；短刀电池量产/装车路线",
+      "reason_for_deep_dive": "输入中给出完整长宽厚和能量：21.5×574×118mm、627.2Wh。按摘要尺寸，L=574mm且L>H>D，D/V、S/E、L/S均具备进入权1比例核算的价值。",
+      "source_result_ids": [
+        "tavily-Q10-03",
+        "brave-Q13-01",
+        "brave-Q13-05",
+        "tavily-Q13-03",
+        "tavily-Q13-04",
+        "tavily-Q11-05"
+      ],
+      "source_urls": [
+        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+        "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+        "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+        "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+        "https://winston-battery.en.made-in-china.com/product/BFxtUXevCzRi/China-Svolt-L600-3-2V-196ah-Blade-LiFePO4-Cell-High-Energy-Rechargeable-Solar-Battery.html",
+        "https://www.ithome.com/0/587/804.htm"
+      ],
+      "initial_evidence_summary": "摘要显示SVOLT L600第二代短刀片电芯容量196Ah、电压3.2V、能量627.2Wh、尺寸21.5×574×118mm，质量3380±50g，能量密度185Wh/kg、体积能量密度430Wh/L，并称2022年量产。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L600短刀片磷酸铁锂电芯",
+      "product_version": "184Ah / 3.2V，尺寸约574×21×118mm",
+      "market": "中国乘用车/储能电芯供应链",
+      "reason_for_deep_dive": "同为L600短刀长薄铝壳路线，摘要给出574mm长度和21mm厚度，结构与权1的长方体、长宽厚关系高度贴合。",
+      "source_result_ids": [
+        "brave-Q10-01",
+        "brave-Q10-04",
+        "brave-Q11-04"
+      ],
+      "source_urls": [
+        "https://www.uli-power.com/svolt-184ah-lifepo4-blade-battery-ultrathin-ultra-thin-battery-3-2v-solar-energy-storage-battery-cell-prismatic-lithium-ion-batteries-product",
+        "https://lythbattery.com/a-svolt-184ah-lifepo4-battery-blade-battery-for-electric-vehicles-energy-storage-solar",
+        "https://m.mysteel.com/22/0321/09/91A7E147E92800F6_abc.html"
+      ],
+      "initial_evidence_summary": "摘要显示“Svolt 184Ah LiFePO4 Blade Battery”尺寸574×21×118mm；另有行业报道称蜂巢L6尺寸为574mm×21.8mm×118mm。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "LFP Blade LiFePO4 Battery Cell",
+      "product_version": "135.5Ah / 3.2V，尺寸580×120×15.5mm",
+      "market": "中国动力/储能电芯供应链",
+      "reason_for_deep_dive": "摘要给出580mm长度、15.5mm厚度，典型长薄型刀片/方形电芯；长度、长宽厚关系及能量参数可用于进一步核算权1比例特征。",
+      "source_result_ids": [
+        "tavily-Q13-05"
+      ],
+      "source_urls": [
+        "https://www.evlithium.com/LiFePO4-Battery/svolt-135-5ah-lfp-blade-battery-cell.html"
+      ],
+      "initial_evidence_summary": "摘要显示该SVOLT 135.5Ah电芯为LFP blade cell，尺寸L(580.0±0.65)×W(120.0±0.35)×T(15.5±0.4)mm，并给出重量2350±35g、放电功率等参数。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L600第二代短刀电芯",
+      "product_version": "162Ah，2.2C快充版本",
+      "market": "中国动力电池；成都基地量产交付，服务储能客户及吉利等车型",
+      "reason_for_deep_dive": "为L600短刀+飞叠路线，摘要称适合CTB设计并已量产交付；L600系列与权1的400mm以上长条硬壳电芯特征高度相关。",
+      "source_result_ids": [
+        "tavily-Q11-04",
+        "tavily-Q08-03"
+      ],
+      "source_urls": [
+        "https://svolt.cn/news/160",
+        "https://www.svolt.cn/innovation/innovations/cell"
+      ],
+      "initial_evidence_summary": "蜂巢官网摘要显示成都基地交付L600 162Ah第二代短刀电芯，兼顾2.2C快充和高能量密度，适合系统CTB设计；官网还称短刀电池已在乘用车、商用车和储能市场量产装车。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L600蜂速快充铁锂短刀电芯",
+      "product_version": "133Ah / 3C快充 / 400V平台",
+      "market": "中国BEV乘用车动力电池；A0/A级车型方向",
+      "reason_for_deep_dive": "具体L600短刀快充版本，摘要给出容量、倍率和量产时间；L600尺寸族与权1长条方形硬壳电芯方向贴近。",
+      "source_result_ids": [
+        "tavily-Q15-03",
+        "tavily-Q11-03",
+        "brave-Q11-05"
+      ],
+      "source_urls": [
+        "https://caijing.chinadaily.com.cn/a/202312/18/WS657fe608a310c2083e4135f1.html",
+        "https://tech.sina.cn/mobile/xp/2023-12-13/detail-imzxvrpa2534901.d.html?oid=%E4%BF%84%E7%BD%97%E6%96%AF%E6%95%B0%E6%8D%AE[shuju11.c0m]%E6%88%BF%E4%B8%BB%E6%95%B0%E6%8D%AE.xhf&vt=4",
+        "https://chedongxi.com/p/310425.html"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源L600蜂速快充铁锂短刀采用133Ah容量设计、3C快充、满足600+公里续航，预计2024年Q3量产；同批还有L400/L600规格LFP短刀快充电芯。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L400蜂速快充铁锂短刀电芯",
+      "product_version": "105Ah / 4C快充 / 准800V或800V平台",
+      "market": "中国BEV乘用车动力电池；A级/B+级800V车型方向",
+      "reason_for_deep_dive": "具体L400短刀版本，L400尺寸族位于权1长度下限附近；摘要给出容量、倍率、平台和量产规划，适合深挖实际长宽厚。",
+      "source_result_ids": [
+        "tavily-Q15-03",
+        "tavily-Q11-03",
+        "brave-Q11-05"
+      ],
+      "source_urls": [
+        "https://caijing.chinadaily.com.cn/a/202312/18/WS657fe608a310c2083e4135f1.html",
+        "https://tech.sina.cn/mobile/xp/2023-12-13/detail-imzxvrpa2534901.d.html?oid=%E4%BF%84%E7%BD%97%E6%96%AF%E6%95%B0%E6%8D%AE[shuju11.c0m]%E6%88%BF%E4%B8%BB%E6%95%B0%E6%8D%AE.xhf&vt=4",
+        "https://chedongxi.com/p/310425.html"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源L400蜂速快充铁锂短刀采用105Ah容量设计、4C快充，支持A级/B+级主流续航，预计2024年Q4量产。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L400磷酸铁锂短刀电芯",
+      "product_version": "62Ah，PHEV量产版本",
+      "market": "中国PHEV动力电池；盐城工厂量产",
+      "reason_for_deep_dive": "L400短刀容量版本，面向插混动力场景且已有量产线索；需要深挖其实际长度是否达到/接近400mm以及壳体尺寸比例。",
+      "source_result_ids": [
+        "brave-Q15-05",
+        "tavily-Q11-03",
+        "exa-Q13-05"
+      ],
+      "source_urls": [
+        "https://chejiahao.autohome.com.cn/info/12995522",
+        "https://tech.sina.cn/mobile/xp/2023-12-13/detail-imzxvrpa2534901.d.html?oid=%E4%BF%84%E7%BD%97%E6%96%AF%E6%95%B0%E6%8D%AE[shuju11.c0m]%E6%88%BF%E4%B8%BB%E6%95%B0%E6%8D%AE.xhf&vt=4",
+        "https://dlcpo.com/svolt-l400-62ah-lifepo4-blade-battery-cell-170wh-kg"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源第一支L400磷铁锂短刀电芯于2023年5月量产，盐城工厂L400短刀产线两个月后满产，日产1万支62Ah电芯；另有产品页称SVOLT L400-62Ah为14.9mm超薄短刀结构。"
+    },
+    {
+      "candidate_id": "P09",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "第二代混动专用短刀电芯",
+      "product_version": "90Ah，2.2C快充版本",
+      "market": "中国PHEV动力电池",
+      "reason_for_deep_dive": "具体容量的混动短刀电芯，摘要明确升级为2.2C快充；属于短刀方形电芯路线，可能覆盖权1的长条薄型硬壳结构。",
+      "source_result_ids": [
+        "tavily-Q11-03",
+        "tavily-Q08-03"
+      ],
+      "source_urls": [
+        "https://tech.sina.cn/mobile/xp/2023-12-13/detail-imzxvrpa2534901.d.html?oid=%E4%BF%84%E7%BD%97%E6%96%AF%E6%95%B0%E6%8D%AE[shuju11.c0m]%E6%88%BF%E4%B8%BB%E6%95%B0%E6%8D%AE.xhf&vt=4",
+        "https://www.svolt.cn/innovation/innovations/cell"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源PHEV市场的62Ah、90Ah、117Ah全系第二代混动电芯升级为2.2C快充；官网称短刀电池覆盖PHEV领域并主推L400系列。"
+    },
+    {
+      "candidate_id": "P10",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "第二代混动专用短刀电芯",
+      "product_version": "117Ah，2.2C快充版本",
+      "market": "中国PHEV动力电池",
+      "reason_for_deep_dive": "具体容量的PHEV短刀电芯版本；与长薄型方形电芯及高集成电池包路线相关，值得验证长宽厚、能量和表面积指标。",
+      "source_result_ids": [
+        "tavily-Q11-03",
+        "tavily-Q08-03"
+      ],
+      "source_urls": [
+        "https://tech.sina.cn/mobile/xp/2023-12-13/detail-imzxvrpa2534901.d.html?oid=%E4%BF%84%E7%BD%97%E6%96%AF%E6%95%B0%E6%8D%AE[shuju11.c0m]%E6%88%BF%E4%B8%BB%E6%95%B0%E6%8D%AE.xhf&vt=4",
+        "https://www.svolt.cn/innovation/innovations/cell"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源PHEV 117Ah第二代混动短刀电芯升级为2.2C快充，属于其全域短刀产品体系。"
+    },
+    {
+      "candidate_id": "P11",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "5C磷酸铁锂短刀电芯",
+      "product_version": "纯电市场5C快充版本，2024年发布",
+      "market": "中国BEV动力电池；纯电快充车型",
+      "reason_for_deep_dive": "明确为短刀电芯且面向纯电市场；摘要称10%-80%充电缩短至10分钟，属于高倍率长薄方形电芯的重点竞品。",
+      "source_result_ids": [
+        "tavily-Q14-01",
+        "tavily-Q14-02",
+        "tavily-Q14-05"
+      ],
+      "source_urls": [
+        "https://chd.in-en.com/html/chd-2445809.shtml",
+        "https://www.gwm.com.cn/news/3403394.html",
+        "https://auto.jgvogel.cn/c1455596.shtml"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源在2024年全球合作伙伴峰会上发布行业领先的5C磷酸铁锂短刀电芯，10%-80%充电时间缩短至10分钟，并列入短刀产品体系。"
+    },
+    {
+      "candidate_id": "P12",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "6C三元超充电芯",
+      "product_version": "纯电市场6C超充版本",
+      "market": "中国BEV动力电池；高续航/超充车型",
+      "reason_for_deep_dive": "与5C LFP短刀同时发布，摘要称满足超高续航与超充体验；需深挖其是否采用短刀长薄硬壳尺寸及是否落入权1比例。",
+      "source_result_ids": [
+        "tavily-Q14-01",
+        "tavily-Q14-02",
+        "tavily-Q14-05"
+      ],
+      "source_urls": [
+        "https://chd.in-en.com/html/chd-2445809.shtml",
+        "https://www.gwm.com.cn/news/3403394.html",
+        "https://auto.jgvogel.cn/c1455596.shtml"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源针对纯电市场发布6C三元超充电芯，充电5分钟续航可高达500-600公里，并被列入其2.2C至6C短刀快充产品覆盖范围。"
+    },
+    {
+      "candidate_id": "P13",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "800V混动三元龙鳞甲电池 / 4C混动短刀电芯",
+      "product_version": "PHEV 800V 4C三元短刀版本，计划2025年7月量产",
+      "market": "中国PHEV动力电池",
+      "reason_for_deep_dive": "具体的三元短刀混动版本，采用龙鳞甲热电分离和短刀电芯设计；摘要显示其为行业首款4C混动短刀电芯，适合深挖单体尺寸。",
+      "source_result_ids": [
+        "tavily-Q14-01",
+        "tavily-Q14-02",
+        "bocha-Q14-03",
+        "brave-Q14-02",
+        "brave-Q14-03"
+      ],
+      "source_urls": [
+        "https://chd.in-en.com/html/chd-2445809.shtml",
+        "https://www.gwm.com.cn/news/3403394.html",
+        "https://news.bjx.com.cn/topics/longlinjiadianchi",
+        "https://news.qq.com/rain/a/20221216A049D100",
+        "http://lw.news.cn/2022-12/20/c_1310685094.htm"
+      ],
+      "initial_evidence_summary": "摘要显示“800V混动三元龙鳞甲”为行业首款热电分离三元短刀电池，支持4C快充并沿袭龙鳞甲短刀电芯底出防爆阀/热电分离设计，计划2025年量产。"
+    },
+    {
+      "candidate_id": "P14",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L500叠片短刀储能专用电芯",
+      "product_version": "325Ah，电力储能专用版本",
+      "market": "中国储能电芯；SNEC/储能展发布，电力储能系统",
+      "reason_for_deep_dive": "虽主打储能，但为L500短刀+叠片大电芯，长度型号与权1的400mm以上长薄单体电池相关；适合查证壳体尺寸与比例。",
+      "source_result_ids": [
+        "brave-Q08-01",
+        "bocha-Q11-03",
+        "bocha-Q12-04",
+        "bocha-Q12-05"
+      ],
+      "source_urls": [
+        "https://www.aibanges.com/a/10602",
+        "https://chuneng.ofweek.com/recommendfriends-30597968.html",
+        "https://www.toutiao.com/article/7220301480845591044",
+        "https://www.tmtpost.com/nictation/6543576.html?rss=souhu"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢能源推出叠片短刀L500型325Ah储能专用大电芯，并称该款电芯基于短刀结构打造、计划/已量产用于储能场景。"
+    },
+    {
+      "candidate_id": "P15",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L500储能专用短刀+飞叠电芯",
+      "product_version": "350Ah，单颗能量1120Wh升级版",
+      "market": "中国储能电芯；液冷储能系统",
+      "reason_for_deep_dive": "L500短刀升级版本，摘要给出单颗能量1120Wh、尺寸相对325Ah不变；可重点核查S/E、D/V、L/S等权1比例。",
+      "source_result_ids": [
+        "bocha-Q12-01",
+        "bocha-Q12-03",
+        "tavily-Q12-04",
+        "brave-Q12-04",
+        "brave-Q12-05"
+      ],
+      "source_urls": [
+        "http://zh.ai-ep.com/tech/202404/t20240411_34030.shtml",
+        "https://www.eefocus.com/article/1711814.html",
+        "https://cn.solarbe.com/news/20240411/88116.html",
+        "https://m.bjx.com.cn/mnews/20240411/1371163.shtml",
+        "https://www.itdcw.com/news/focus/0411140b32024.html"
+      ],
+      "initial_evidence_summary": "摘要显示L500-350Ah储能电芯基于2023年325Ah电芯，尺寸不变、体系升级，单颗电芯能量1120Wh，循环寿命超过11000次，短刀工艺带来散热效率高和低温升。"
+    },
+    {
+      "candidate_id": "P16",
+      "company": "蜂巢能源（SVOLT）",
+      "product_name": "L500储能专用短刀+飞叠电芯",
+      "product_version": "730Ah，加厚大容量版本",
+      "market": "中国储能电芯；20尺液冷储能系统",
+      "reason_for_deep_dive": "L500短刀大容量厚化版本，摘要显示容量加倍且体积能量密度420Wh/L；适合深挖厚度变化后是否仍满足权1D/V和L/S范围。",
+      "source_result_ids": [
+        "bocha-Q12-01",
+        "tavily-Q12-04"
+      ],
+      "source_urls": [
+        "http://zh.ai-ep.com/tech/202404/t20240411_34030.shtml",
+        "https://cn.solarbe.com/news/20240411/88116.html"
+      ],
+      "initial_evidence_summary": "摘要显示L500-730Ah储能电芯在L500-350Ah基础上尺寸加厚、容量加倍，能量密度达到420Wh/L，循环寿命超过11000次。"
+    },
+    {
+      "candidate_id": "P17",
+      "company": "中创新航（CALB，原中航锂电）",
+      "product_name": "One-Stop Bettery",
+      "product_version": "磷酸铁锂版本，电芯能量密度约200Wh/kg",
+      "market": "中国乘用车动力电池；TWh时代高集成产品",
+      "reason_for_deep_dive": "摘要称设计类似刀片电池、尺寸灵活、可拓展并适配所有车型；为非比亚迪长电芯/高集成路线，需深挖具体单体长度和硬壳结构。",
+      "source_result_ids": [
+        "bocha-Q21-01",
+        "bocha-Q21-02",
+        "brave-Q21-01",
+        "brave-Q21-05"
+      ],
+      "source_urls": [
+        "https://www.evlook.com/news-40742.html",
+        "https://www.d1ev.com/news/qiye/156834",
+        "https://www.sohu.com/a/535438071_585679",
+        "https://www.auto-sight.com/a/xinche/2022/0401/3685.html"
+      ],
+      "initial_evidence_summary": "摘要显示中航锂电/中创新航One-Stop Bettery设计类似比亚迪刀片电池，尺寸灵活、可拓展；采用0.2mm超薄壳壁等技术，磷酸铁锂电芯能量密度可达200Wh/kg，续航可达700km。"
+    },
+    {
+      "candidate_id": "P18",
+      "company": "中创新航（CALB，原中航锂电）",
+      "product_name": "One-Stop Bettery",
+      "product_version": "三元材料版本，电芯能量密度约300Wh/kg",
+      "market": "中国乘用车动力电池；长续航车型方案",
+      "reason_for_deep_dive": "与权1关注的单体电池尺寸/能量/表面积关系相关；摘要显示其为高集成、类似刀片的可拓展电池产品，三元版本能量更高，值得核查单体尺寸。",
+      "source_result_ids": [
+        "bocha-Q21-01",
+        "bocha-Q21-02",
+        "brave-Q21-01",
+        "brave-Q21-05"
+      ],
+      "source_urls": [
+        "https://www.evlook.com/news-40742.html",
+        "https://www.d1ev.com/news/qiye/156834",
+        "https://www.sohu.com/a/535438071_585679",
+        "https://www.auto-sight.com/a/xinche/2022/0401/3685.html"
+      ],
+      "initial_evidence_summary": "摘要显示One-Stop Bettery三元材料电芯能量密度可达300Wh/kg、续航能力可达1000km；产品结构强调高度集成、极简化和超薄壳壁。"
+    },
+    {
+      "candidate_id": "P19",
+      "company": "捷威动力（JEVE）",
+      "product_name": "积木电池",
+      "product_version": "长电芯平台，电芯长度300mm-750mm、厚度7mm-18mm",
+      "market": "中国乘用车动力电池技术路线",
+      "reason_for_deep_dive": "摘要明确给出电芯长度范围覆盖400mm~750mm、厚度7mm~18mm，与权1的长薄单体尺寸区间存在交集；需深挖是否为硬壳长方体电芯及具体型号。",
+      "source_result_ids": [
+        "brave-Q21-03"
+      ],
+      "source_urls": [
+        "https://auto-time.36kr.com/p/1584947596659204"
+      ],
+      "initial_evidence_summary": "摘要显示捷威研发的积木电池电芯长度为300mm-750mm、厚度7mm-18mm，可使体积利用率提升8%-12%、成本下降10%-15%。"
+    }
+  ]
+}
