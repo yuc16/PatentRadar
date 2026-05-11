@@ -31,6 +31,7 @@ def judge_candidate_batch(
     fetched_pages_by_candidate: dict[str, list[dict[str, str]]],
     fetched_images_by_candidate: dict[str, list[dict]] | None = None,
     batch_id: str,
+    is_gap_round: bool = False,
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> EvidenceBatchResult:
@@ -41,6 +42,7 @@ def judge_candidate_batch(
         search_results_by_candidate=search_results_by_candidate,
         fetched_pages_by_candidate=fetched_pages_by_candidate,
         fetched_images_by_candidate=fetched_images_by_candidate,
+        is_gap_round=is_gap_round,
     )
     image_bytes_list = _flatten_images(candidates, fetched_images_by_candidate)
     payload = codex.chat_json(
@@ -74,6 +76,7 @@ def _build_user_text(
     search_results_by_candidate: dict[str, list[SearchResult]],
     fetched_pages_by_candidate: dict[str, list[dict[str, str]]],
     fetched_images_by_candidate: dict[str, list[dict]] | None = None,
+    is_gap_round: bool = False,
 ) -> str:
     fetched_images_by_candidate = fetched_images_by_candidate or {}
     image_cursor = 0
@@ -126,6 +129,10 @@ def _build_user_text(
             }
         )
     payload = {
+        # Round flag: round 1 expects suggested_followup_queries to be filled
+        # for gap features; round 2 (gap evidence already added) expects them
+        # to be empty arrays.
+        "is_gap_round": is_gap_round,
         "patent": {
             "publication_no": task_package.patent.publication_no,
             "title": task_package.patent.title,
@@ -238,6 +245,7 @@ def _evidence_batch_response_format() -> dict[str, Any]:
             "score": {"type": "number"},
             "evidence": {"type": "array", "items": evidence_schema},
             "reasoning": {"type": "string"},
+            "suggested_followup_queries": {"type": "array", "items": {"type": "string"}},
         },
         "required": [
             "feature_id",
@@ -247,6 +255,7 @@ def _evidence_batch_response_format() -> dict[str, Any]:
             "score",
             "evidence",
             "reasoning",
+            "suggested_followup_queries",
         ],
     }
     candidate_schema = {

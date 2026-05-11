@@ -2,6 +2,11 @@
 
 from .claims import Claim, ClaimFeature
 from .candidate import Candidate, CandidateShortlist
+from .claim_chart import (
+    ClaimChartEntry,
+    FullClaimChartCandidate,
+    FullClaimChartReport,
+)
 from .evidence import (
     CandidateEvidence,
     EvidenceBatchResult,
@@ -17,6 +22,9 @@ from .task_package import DecomposeSource, TaskPackage
 __all__ = [
     "ApplicantSelfSignals",
     "Candidate",
+    "ClaimChartEntry",
+    "FullClaimChartCandidate",
+    "FullClaimChartReport",
     "CandidateEvidence",
     "CandidateShortlist",
     "Claim",

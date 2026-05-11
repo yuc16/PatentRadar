@@ -28,13 +28,20 @@ class EvidenceSource(BaseModel):
 
 
 class FeatureComparison(BaseModel):
-    feature_id: str = Field(..., pattern=r"^C1-F\d+$")
+    # Module two only ever emits C1-F* (claim 1). Module three extends to all
+    # claims, so the pattern is relaxed to any C{n}-F{m}. Strict per-module
+    # bounds are still enforced by the json-schema passed to the LLM API.
+    feature_id: str = Field(..., pattern=r"^C\d+-F\d+$")
     patent_feature: str
     competitor_feature: str = ""
     status: FeatureMatchStatus
     score: float = Field(ge=0, le=1)
     evidence: list[EvidenceSource] = Field(default_factory=list)
     reasoning: str
+    # Filled by module three's round-1 LLM: queries the model wants the code
+    # side to run before round 2 finalizes the comparison. Default empty so
+    # module two's existing output stays schema-compatible.
+    suggested_followup_queries: list[str] = Field(default_factory=list, max_length=5)
 
     @model_validator(mode="after")
     def validate_score(self) -> "FeatureComparison":

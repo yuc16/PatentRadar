@@ -1,0 +1,645 @@
+{
+  "candidate": {
+    "candidate_id": "P01",
+    "company": "蜂巢能源科技股份有限公司",
+    "company_en": "SVOLT Energy Technology Co., Ltd.",
+    "product_name": "L600短刀片磷酸铁锂电芯",
+    "product_name_en": "L600 short blade LFP cell",
+    "product_version": "第二代196Ah；3.2V；21.5×574×118mm；627.2Wh",
+    "market": "中国乘用车BEV，A级车约550km方案，南京基地量产爬坡/批量交付线索",
+    "reason_for_deep_dive": "与权1高度相关：硬壳/方形短刀电芯，长度574mm落入400–2500mm；按摘要尺寸和能量可初算D/V≈1.48e-5mm^-2、S/E≈263mm^2/Wh、L/S≈0.00347mm^-1，均接近或落入权1关键区间。",
+    "source_result_ids": [
+      "bocha-Q11-02",
+      "tavily-Q11-01",
+      "exa-Q12-02",
+      "tavily-Q12-02",
+      "tavily-Q12-05"
+    ],
+    "source_urls": [
+      "https://m.sohu.com/a/672655583_114760",
+      "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+      "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+      "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+      "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025"
+    ],
+    "initial_evidence_summary": "摘要显示：第二代短刀叠片电池196Ah电芯在南京基地下线；长度600mm/实际短刀尺寸21.5×574×118mm；标称电压3.2V、容量196Ah、能量627.2Wh；能量密度>185Wh/kg、体积能量密度>430Wh/L；1.6C快充，30min充至80%以上。"
+  },
+  "launch_date": "2022年Q3预计量产；2023年5月南京基地第二代196Ah电芯下线并批量交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.ithome.com/0/587/804.htm",
+      "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+      "source_name": "IT之家",
+      "snippet": "2021年11月19日消息：第二代产品已经完成开发，预计将在2022年第三季度实现量产；二代L600规格与上一代相同，长度600mm，单体容量提升至196Ah。"
+    },
+    {
+      "url": "https://m.sohu.com/a/672655583_114760",
+      "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线，总体性能高于标准要求",
+      "source_name": "搜狐网转载IT之家",
+      "snippet": "2023年5月4日消息：蜂巢能源宣布，第二代短刀叠片电池196Ah电芯在南京基地顺利下线，标志着南京基地进入量产爬坡阶段；首款LCTP电池包已按期批量交付。"
+    },
+    {
+      "url": "https://www.ithome.com/0/690/530.htm",
+      "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付",
+      "source_name": "IT之家",
+      "snippet": "第二代短刀叠片电池196Ah电芯在南京基地顺利下线；南京基地自产第一款短刀电池的首款LCTP电池包现阶段已按期批量交付。"
+    }
+  ],
+  "disqualified": true,
+  "disqualification_reason": "按模块三规则，任一权利要求任一特征明确不满足即失格。现有尺寸与能量证据可计算：L/E=574/627.2≈0.915mm/Wh，低于权利要求3要求的1.65~2.45mm/Wh；L/H=574/118≈4.864，低于权利要求9要求的7~20。因此候选整体标记为失格，total_score置0。上市日期本身未失格：公开量产/下线交付时间晚于2019-06-21。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，\n所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；\n所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；\n所述电池本体的长度L为400mm~2500mm；\n所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "证据明确显示该产品为SVOLT L600 196Ah LFP/短刀/Blade电芯，并给出固定三维尺寸，但现有证据未直接写明“硬壳”“铝壳”“金属壳”或等同壳体结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Product name: Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell; Dimension: 21.5 x 574 x 118mm."
+            },
+            {
+              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+              "title": "Svolt Battery L600 3.2V 196Ah LFP Blade Battery",
+              "source_name": "LiFePO4 Battery Shop",
+              "snippet": "Product description mentions a blade-like structure and specifications, but does not state hard shell/aluminum shell/metal casing."
+            },
+            {
+              "url": "https://www.svolt.cn/innovation/innovations/cell",
+              "title": "电芯创新-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官方网站",
+              "snippet": "短刀电池是由蜂巢能源开创的全新电池品类；短刀电芯可以兼容从A0到D级主流电动车型开发平台。"
+            }
+          ],
+          "reasoning": "沿用模块二判断。证据池只证明其为短刀/Blade电芯及固定尺寸，未出现硬壳、铝壳或壳体材料字样；不能仅凭“短刀电芯通常为方形硬壳”作明确认定。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 196Ah 短刀 电芯 硬壳 铝壳 规格书",
+            "SVOLT L600 196Ah short blade cell aluminum casing datasheet",
+            "蜂巢能源 第二代 L600 196Ah 短刀 电芯 壳体 材料",
+            "SVOLT L600 blade cell prismatic hard case aluminum shell"
+          ]
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "Electrive明确称L600 Short Blade cell厚21.5mm、宽118mm、长574mm；多家规格页给出Dimension 21.5×574×118mm。按L=574mm、H=118mm、D=21.5mm，满足L>H>D。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is 21.5 millimetres thick, 118 millimetres wide and 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... with a size of 21.5 x 574 x 118 mm."
+            },
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Dimension: 21.5 x 574 x 118 mm; Details: size of 21.5 x 574 x 118 mm."
+            },
+            {
+              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+              "title": "Svolt Battery L600 3.2V 196Ah LFP Blade Battery",
+              "source_name": "LiFePO4 Battery Shop",
+              "snippet": "Dimension: 21.5 x 574 x 118mm."
+            }
+          ],
+          "reasoning": "沿用模块二判断。electrive直接给出厚、宽、长；另有独立规格页重复同尺寸。取L=574、H=118、D=21.5，数值关系574>118>21.5。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "L=574mm，H=118mm，D=21.5mm；V=L×H×D=574×118×21.5=1,456,238mm³；D/V=21.5/1,456,238≈1.476×10^-5mm^-2，落入6.5×10^-6~2.0×10^-5mm^-2。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is 21.5 millimetres thick, 118 millimetres wide and 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... size of 21.5 x 574 x 118 mm."
+            },
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Dimension 21.5 x 574 x 118mm."
+            }
+          ],
+          "reasoning": "沿用模块二判断。至少两个独立host给出相同三维尺寸。按长方体体积计算V=1,456,238mm³，D/V≈1.476e-5，位于权利要求区间内。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "L=574mm，H=118mm，D=21.5mm，E=627.2Wh；S=2(LH+LD+HD)=2×(574×118+574×21.5+118×21.5)=165,220mm²；S/E=165,220/627.2≈263.4mm²/Wh，≤1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "The cell voltage is 3.2 volts, the energy content 627.2 Wh, the capacity 196 Ah... 21.5 millimetres thick, 118 millimetres wide and 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... size of 21.5 x 574 x 118 mm. Its voltage is 3.2 V, the capacity is 627.2 Wh."
+            },
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Energy ≥625Wh ... Dimension 21.5 x 574 x 118mm; voltage 3.2V, capacity 627.2Wh."
+            }
+          ],
+          "reasoning": "沿用模块二判断。独立来源给出尺寸与能量。按六面体表面积S=165,220mm²，取E=627.2Wh，S/E≈263.4，显著低于1000。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L600电芯长度L=574mm；部分中文报道概括为长度约600mm。574mm处于400mm~2500mm范围内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is ... 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... size of 21.5 x 574 x 118 mm."
+            },
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+              "source_name": "IT之家",
+              "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah。"
+            }
+          ],
+          "reasoning": "沿用模块二判断。electrive/BatteriesNews明确给出长574mm；IT之家亦称长度600mm级。无论取574或约600，均落入400~2500mm。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=574mm，H=118mm，D=21.5mm；S=2(574×118+574×21.5+118×21.5)=165,220mm²；L/S=574/165,220≈0.00347mm^-1，落入0.002~0.005mm^-1。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is 21.5 millimetres thick, 118 millimetres wide and 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... size of 21.5 x 574 x 118 mm."
+            },
+            {
+              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+              "title": "Svolt Battery L600 3.2V 196Ah LFP Blade Battery",
+              "source_name": "LiFePO4 Battery Shop",
+              "snippet": "Dimension: 21.5 x 574 x 118mm."
+            }
+          ],
+          "reasoning": "沿用模块二判断。多个独立host给出尺寸。用同一长方体表面积S=165,220mm²，L/S=574/165,220≈0.00347，处于权利要求范围。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 88.33
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述单体电池，其特征在于，所述电池本体的长度L与所述电池本体的能量E满足：L/E=0.8 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1 。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的能量E满足：L/E=0.8 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1",
+          "competitor_feature": "L=574mm，E=627.2Wh；L/E=574/627.2≈0.915mm/Wh，落入0.8~2.45mm/Wh。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "The cell voltage is 3.2 volts, the energy content 627.2 Wh, the capacity 196 Ah... 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... size of 21.5 x 574 x 118 mm. Its voltage is 3.2 V, the capacity is 627.2 Wh."
+            }
+          ],
+          "reasoning": "同一组公开规格给出长度和能量。现场计算L/E≈0.915mm/Wh，高于0.8且低于2.45，满足权利要求2。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求2所述单体电池，其特征在于，所述电池本体的长度L与所述电池本体的能量E满足：L/E=1.65 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1 。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的能量E满足：L/E=1.65 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1",
+          "competitor_feature": "L=574mm，E=627.2Wh；L/E=574/627.2≈0.915mm/Wh，低于1.65mm/Wh，不落入1.65~2.45mm/Wh。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "The cell voltage is 3.2 volts, the energy content 627.2 Wh, the capacity 196 Ah... 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... size of 21.5 x 574 x 118 mm. Its voltage is 3.2 V, the capacity is 627.2 Wh."
+            }
+          ],
+          "reasoning": "公开规格直接给出计算所需的L与E。计算值约0.915mm/Wh，与权利要求3下限1.65mm/Wh存在直接矛盾，因此明确不满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1~3中任一项所述单体电池，其特征在于，所述电池本体的长度L为400mm~1500mm。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述电池本体的长度L为400mm~1500mm",
+          "competitor_feature": "L600电芯公开长度L=574mm，中文报道亦概括为长度600mm级；574mm落入400~1500mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is ... 574 millimetres long."
+            },
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+              "source_name": "IT之家",
+              "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah。"
+            }
+          ],
+          "reasoning": "权利要求4比权利要求1的长度范围更窄至1500mm，但L600的574mm仍处于该范围。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求1~3中任一项的所述单体电池，其特征在于，所述电池本体的长度方向和厚度方向沿水平方向延伸，所述电池本体的宽度方向沿竖直方向延伸。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述电池本体的长度方向和厚度方向沿水平方向延伸，所述电池本体的宽度方向沿竖直方向延伸",
+          "competitor_feature": "现有证据仅证明L600电芯尺寸及已形成LCTP电池包交付线索，未直接公开该电芯在电池包或车辆中的安装姿态；无法确认其长度方向、厚度方向是否水平，宽度方向是否竖直。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/690/530.htm",
+              "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付",
+              "source_name": "IT之家",
+              "snippet": "南京基地自产第一款短刀电池的首款LCTP电池包现阶段已按期批量交付。"
+            },
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is 21.5 millimetres thick, 118 millimetres wide and 574 millimetres long."
+            }
+          ],
+          "reasoning": "权利要求5要求的是装配/使用状态下三方向与水平、竖直方向的对应关系。现有公开文本没有包内布局图或装配方向描述，因此证据不足。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 196Ah 短刀 电芯 LCTP 电池包 布局 横置 安装方向",
+            "SVOLT L600 short blade LCTP pack layout cell orientation horizontal vertical"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1~3中任一项所述的单体电池，其特征在于，还包括：\n第一极耳，所述第一极耳设于所述电池本体的长度方向上的一端；\n第二极耳，所述第二极耳设于所述电池本体的长度方向上的另一端。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "第一极耳，所述第一极耳设于所述电池本体的长度方向上的一端",
+          "competitor_feature": "现有证据未公开L600 196Ah电芯的极耳/端子结构及其相对长度方向的位置，不能确认第一极耳设在长度方向一端。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Product name: Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell; Dimension: 21.5 x 574 x 118mm."
+            },
+            {
+              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+              "title": "Svolt Battery L600 3.2V 196Ah LFP Blade Battery",
+              "source_name": "LiFePO4 Battery Shop",
+              "snippet": "Dimension: 21.5 x 574 x 118mm."
+            }
+          ],
+          "reasoning": "产品规格页有尺寸，但当前文本未说明正负极耳/端子在长边两端或同端。需要规格书、结构图、实物照片或拆解资料。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 196Ah 短刀 电芯 极耳 两端 结构图",
+            "SVOLT L600 196Ah short blade cell terminal tabs both ends photo"
+          ]
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "第二极耳，所述第二极耳设于所述电池本体的长度方向上的另一端",
+          "competitor_feature": "现有证据未公开L600 196Ah电芯是否具有第二极耳/负极端子位于长度方向另一端；无法确认两端分别出极。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Product name: Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell; Dimension: 21.5 x 574 x 118mm."
+            },
+            {
+              "url": "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+              "title": "Svolt Battery L600 3.2V 196Ah LFP Blade Battery",
+              "source_name": "LiFePO4 Battery Shop",
+              "snippet": "Dimension: 21.5 x 574 x 118mm."
+            }
+          ],
+          "reasoning": "与C6-F1相同，现有证据只支持尺寸和产品型号，不支持第二极耳位于长度方向另一端这一结构特征。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 短刀 196Ah 正负极 分布 长度方向 两端",
+            "SVOLT short blade L600 cell positive negative terminals opposite ends"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1~3中任一项所述的单体电池，其特征在于，所述单体电池为铝壳方形电池且所述单体电池还包括防爆阀，所述防爆阀设于所述电池本体的长度方向上的至少一端。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述单体电池为铝壳方形电池",
+          "competitor_feature": "L600被公开为Short Blade/短刀电芯，具有21.5×574×118mm的长方体尺寸，支持其为方形/刀片类形态；但现有证据未直接写明铝壳。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is 21.5 millimetres thick, 118 millimetres wide and 574 millimetres long."
+            },
+            {
+              "url": "https://www.svolt.cn/innovation/innovations/cell",
+              "title": "电芯创新-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官方网站",
+              "snippet": "短刀电池是由蜂巢能源开创的全新电池品类；短刀电芯可以兼容从A0到D级主流电动车型开发平台。"
+            }
+          ],
+          "reasoning": "尺寸和“短刀”名称可以辅助理解其形态，但“铝壳”属于材料/壳体结构限定，当前证据没有直接披露。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 196Ah 短刀 电芯 铝壳 方形电池 规格书",
+            "SVOLT L600 196Ah blade cell aluminum shell prismatic cell"
+          ]
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "所述单体电池还包括防爆阀，所述防爆阀设于所述电池本体的长度方向上的至少一端",
+          "competitor_feature": "现有证据未公开L600 196Ah电芯是否设置防爆阀，也未公开防爆阀位于长度方向端部。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Product name: Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell; Dimension: 21.5 x 574 x 118mm."
+            },
+            {
+              "url": "https://www.svolt.cn/innovation/innovations/cell",
+              "title": "电芯创新-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官方网站",
+              "snippet": "短刀电池是由蜂巢能源开创的全新电池品类。"
+            }
+          ],
+          "reasoning": "防爆阀位置需要结构图、实物端部照片或安全设计说明。当前证据没有“防爆阀/vent/explosion-proof valve”信息。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 196Ah 短刀 电芯 防爆阀 端部",
+            "SVOLT L600 short blade cell safety vent explosion proof valve end"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7中所述的单体电池，其特征在于，所述电池本体的长度方向上的两端分别设有防爆阀。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述电池本体的长度方向上的两端分别设有防爆阀",
+          "competitor_feature": "现有证据未公开L600 196Ah电芯防爆阀数量或两端均设防爆阀的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4 Battery",
+              "snippet": "Product name: Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell; Dimension: 21.5 x 574 x 118mm."
+            }
+          ],
+          "reasoning": "权利要求8比权利要求7进一步要求长度方向两端分别设置防爆阀。当前证据既未证明单端防爆阀，也未证明双端防爆阀。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 短刀 电芯 两端 防爆阀 结构图",
+            "SVOLT L600 196Ah cell dual safety vent both ends"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求1~3中任一项所述的单体电池，其特征在于，所述电池本体的长度L与宽度H满足：L/H=7~20。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "所述电池本体的长度L与宽度H满足：L/H=7~20",
+          "competitor_feature": "按已采用的权1尺寸定义，L=574mm，H=118mm；L/H=574/118≈4.864，低于7，不落入7~20。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+              "title": "SVOLT presents new LFP battery cell",
+              "source_name": "electrive.com",
+              "snippet": "A Short Blade cell is 21.5 millimetres thick, 118 millimetres wide and 574 millimetres long."
+            },
+            {
+              "url": "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+              "title": "SVOLT Unveils New Short-Blade Batteries and Announces Production Capacities of 600 Gwh by 2025",
+              "source_name": "Batteries News",
+              "snippet": "The SVOLT L600 with 196 Ah ... with a size of 21.5 x 574 x 118 mm."
+            }
+          ],
+          "reasoning": "electrive明确区分厚21.5mm、宽118mm、长574mm。依权利要求1的L/H/D定义计算，L/H≈4.864，与权利要求9的7~20直接矛盾。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种动力电池包，其特征在于，包括：\n包体；\n多个根据权利要求1~9中任一项所述的单体电池，所述多个单体电池设于所述包体内。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "一种动力电池包，包括：\n包体",
+          "competitor_feature": "公开报道称南京基地自产第一款短刀电池的首款LCTP电池包已按期批量交付，说明存在L600/短刀路线的动力电池包产品；但当前证据未直接展示电池包包体/壳体结构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/690/530.htm",
+              "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付",
+              "source_name": "IT之家",
+              "snippet": "南京基地自产第一款短刀电池的首款LCTP电池包现阶段已按期批量交付。"
+            },
+            {
+              "url": "https://m.sohu.com/a/672655583_114760",
+              "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线，总体性能高于标准要求",
+              "source_name": "搜狐网转载IT之家",
+              "snippet": "首款LCTP电池包已按期批量交付。"
+            }
+          ],
+          "reasoning": "“电池包”通常包括外壳/包体及内部电芯，LCTP电池包批量交付强烈支持该类结构存在；但没有直接拆解图或包体规格，故评为可能满足。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 196Ah LCTP 电池包 包体 结构"
+          ]
+        },
+        {
+          "feature_id": "C10-F2",
+          "patent_feature": "多个单体电池，所述多个单体电池设于所述包体内",
+          "competitor_feature": "报道显示基于南京基地自产短刀电池的首款LCTP电池包已批量交付。LCTP即cell-to-pack，按行业含义为多个电芯直接集成入电池包；但现有证据未给出具体电芯数量或包内布置图。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/690/530.htm",
+              "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付",
+              "source_name": "IT之家",
+              "snippet": "南京基地自产第一款短刀电池的首款LCTP电池包现阶段已按期批量交付。"
+            },
+            {
+              "url": "https://m.sohu.com/a/672655583_114760",
+              "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线，总体性能高于标准要求",
+              "source_name": "搜狐网转载IT之家",
+              "snippet": "第二代短刀叠片电池196Ah电芯在南京基地顺利下线，标志着南京基地进入量产爬坡阶段；首款LCTP电池包已按期批量交付。"
+            }
+          ],
+          "reasoning": "从“196Ah电芯下线”与“首款LCTP电池包批量交付”可严谨推断该包内使用多个短刀电芯，但公开片段尚未直接列明“多个L600 196Ah电芯设于包体内”，故评为可能满足。",
+          "suggested_followup_queries": [
+            "蜂巢 第二代 196Ah 短刀 LCTP 电池包 电芯 数量 布局"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.一种电动车，其特征在于，所述电动车包括权利要求10所述的动力电池包。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "一种电动车，包括：动力电池包",
+          "competitor_feature": "蜂巢官方称短刀电芯可兼容A0到D级主流电动车型开发平台，新闻报道显示首款LCTP电池包已批量交付；但现有证据未直接列明具体搭载L600 196Ah LCTP电池包的电动车车型。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.svolt.cn/innovation/innovations/cell",
+              "title": "电芯创新-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官方网站",
+              "snippet": "短刀电芯可以兼容从A0到D级主流电动车型开发平台。"
+            },
+            {
+              "url": "https://www.ithome.com/0/690/530.htm",
+              "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付",
+              "source_name": "IT之家",
+              "snippet": "南京基地自产第一款短刀电池的首款LCTP电池包现阶段已按期批量交付。"
+            }
+          ],
+          "reasoning": "官方平台兼容性和电池包交付线索支持其面向电动车应用，但缺少具体整车搭载公开证据，不能明确满足。",
+          "suggested_followup_queries": [
+            "蜂巢 L600 196Ah 短刀 LCTP 电池包 搭载 车型",
+            "SVOLT L600 short blade 196Ah LCTP battery pack vehicle model"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    }
+  ],
+  "claim_1_score": 0.0,
+  "total_score": 0.0,
+  "searched_queries": [
+    "蜂巢 第二代 L600 196Ah 短刀 电芯 21.5 574 118",
+    "SVOLT L600 196Ah short blade 21.5 574 118 627.2Wh",
+    "蜂巢 第二代 196Ah 短刀 量产 下线",
+    "SVOLT L600 short blade batteries production capacities 600 GWh"
+  ],
+  "searched_providers": [
+    "bocha",
+    "tavily",
+    "exa"
+  ]
+}
