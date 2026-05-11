@@ -29,6 +29,15 @@
 
 这符合"重点在权 1，非权 1 仅作完整性补充"的核心原则。
 
+### 跨模块 query 去重（防重复）
+
+两个模块用同一套 `suggested_followup_queries` 机制，可能对同一缺口提出字面相同的 query 浪费 API 调用。**双层去重**：
+
+1. **Prompt 层（LLM 主动避免）**：模块三 round 1 user_text 里包含 `module_two_evidence.queries_already_tried_in_module_two`（来自模块二的 `CandidateEvidence.searched_queries`）。Prompt 明确告诉 LLM：「模块二已经跑过这些 query 但没拿到新证据，**不要重复**，换思路（换语言 / 换关键词组合 / 换具体型号 / 换证据形式如规格书 vs 评测 vs 拆解视频）。」
+2. **代码层兜底**：[`_collect_suggested_queries`](pipeline.py) 收集 LLM round 1 输出后，与 `module_two_evidence.searched_queries` 做 case-insensitive + trim 后字符串对比，命中即跳过，并打 INFO 日志记录跳过数。
+
+**额外**：URL 级别已经有去重（`pool_url_set`），所以即便上面两层都失效，模块三也不会重复 fetch 同一 URL。
+
 ## 工作流（每候选 2 轮 LLM 调用，TOP5 并行）
 
 ```

@@ -138,7 +138,11 @@ def _process_one_candidate(
     )
     _write_json(output_dir / f"{candidate_id}_round1.json", round1.model_dump())
 
-    suggested_queries = _collect_suggested_queries(round1, hard_cap=GAP_QUERY_HARD_CAP)
+    suggested_queries = _collect_suggested_queries(
+        round1,
+        hard_cap=GAP_QUERY_HARD_CAP,
+        already_tried=list(module_two_evidence.searched_queries),
+    )
     new_search_results: list[SearchResult] = []
     if suggested_queries:
         logger.info("module3 candidate=%s round1 -> %d gap queries", candidate_id, len(suggested_queries))
@@ -219,20 +223,50 @@ def _evidence_pool_from_module_two(module_two_evidence: CandidateEvidence) -> li
     return pages
 
 
-def _collect_suggested_queries(round1: FullClaimChartCandidate, *, hard_cap: int) -> list[str]:
-    """Collect LLM-suggested queries across all features, dedupe, respect cap."""
+def _collect_suggested_queries(
+    round1: FullClaimChartCandidate,
+    *,
+    hard_cap: int,
+    already_tried: list[str] | None = None,
+) -> list[str]:
+    """Collect LLM-suggested queries across all features, dedupe + drop any
+    already covered by module two's earlier searched_queries (case-insensitive
+    + trimmed), respect cap."""
     seen: set[str] = set()
+    # Module-two history dedup: if module 2 already ran a literally-identical
+    # query, skip it — running it again wastes a search-API call (results are
+    # already in the evidence_pool URL set anyway).
+    already_norm: set[str] = {
+        q.strip().lower() for q in (already_tried or []) if q and q.strip()
+    }
     collected: list[str] = []
+    skipped_dup_with_module_two = 0
     for entry in round1.claim_charts:
         for cmp in entry.comparisons:
             for q in cmp.suggested_followup_queries:
                 q = q.strip()
-                if not q or q in seen:
+                if not q:
                     continue
-                seen.add(q)
+                key = q.lower()
+                if key in seen:
+                    continue
+                if key in already_norm:
+                    skipped_dup_with_module_two += 1
+                    continue
+                seen.add(key)
                 collected.append(q)
                 if len(collected) >= hard_cap:
+                    if skipped_dup_with_module_two:
+                        logger.info(
+                            "module3 query dedup: %d module-two duplicates skipped",
+                            skipped_dup_with_module_two,
+                        )
                     return collected
+    if skipped_dup_with_module_two:
+        logger.info(
+            "module3 query dedup: %d module-two duplicates skipped",
+            skipped_dup_with_module_two,
+        )
     return collected
 
 

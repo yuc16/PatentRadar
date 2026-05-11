@@ -171,7 +171,7 @@ patentradar competitor-search \
 
 | 项 | 严重度 | 说明 |
 |---|---|---|
-| ~~Gap 搜索用机械模板~~ | ✅ 已修 | round 1 LLM 输出 `suggested_followup_queries`，代码端按 LLM 建议跑 gap；机械模板降级为 fallback。模块二聚焦权 1，模块三在更全视角下再补一次（递进式）。 |
+| ~~Gap 搜索用机械模板~~ | ✅ 已修 | round 1 LLM 输出 `suggested_followup_queries`，代码端按 LLM 建议跑 gap；机械模板降级为 fallback。模块二聚焦权 1，模块三在更全视角下再补一次（递进式）。模块二 round 2 的 `CandidateEvidence.searched_queries` 字段会记录实际跑过的 query 历史，**模块三 round 1 会读到这份历史并主动避免字面重复**（防止两个模块对同一缺口跑相同 query 浪费 API 配额）。 |
 | 无搜索/fetch 缓存 | 🟡 中 | 同一专利反复跑 step4 会重复 API 调用 |
 | Tavily key 池静态读 `.env` | 🟢 低 | 想加更多 key 需重启进程 |
 | 单候选 step4 ~8 分钟 | 🟢 低 | ChatGPT 配额是主要瓶颈，已通过 truncate + key 池缓解 |

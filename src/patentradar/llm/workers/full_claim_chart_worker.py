@@ -116,6 +116,9 @@ def _build_user_text(
             "launch_date_evidence": [e.model_dump() for e in module_two_evidence.launch_date_evidence],
             "disqualified": module_two_evidence.disqualified,
             "disqualification_reason": module_two_evidence.disqualification_reason,
+            # Queries module two already tried — module three should NOT repeat
+            # these literally; pick different phrasing / angle / language.
+            "queries_already_tried_in_module_two": list(module_two_evidence.searched_queries),
             "comparisons_for_claim_1": [c.model_dump() for c in module_two_evidence.comparisons],
             "evidence_pool": [
                 {

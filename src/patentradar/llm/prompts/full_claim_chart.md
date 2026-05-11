@@ -14,6 +14,7 @@
   - `comparisons_for_claim_1`：模块二对权 1 的判断（含 status/score/evidence/reasoning）—— 你可以**直接复用，也可以基于新证据修正**
   - `evidence_pool`：模块二已 fetch 的 URL/text/image 清单
   - `images_manifest`：图片清单（通过 input_image 通道单独送达，每条带 `global_index`）
+  - `queries_already_tried_in_module_two`：模块二已经跑过的 query 列表（含 initial 和 gap 轮）。**你 round 1 提议 `suggested_followup_queries` 时不要重复这些 query**：模块二已经跑过但没拿到新证据，说明该角度走不通。换思路（换语言 / 换关键词组合 / 换具体型号或参数 / 换载体语义 / 换证据形式如规格书 vs 评测 vs 拆解视频）。
 - `is_finalization_round`：
   - `false`：本次输出**要给 `suggested_followup_queries`**（你认为代码端该跑什么 query 补缺口）
   - `true`：代码端已经按你的建议跑过补搜并把新证据加进 `evidence_pool` 了，**本次要给出最终对比**，**`suggested_followup_queries` 应为空**
@@ -148,4 +149,11 @@
 // 模块二已判 C1-F2 明确满足且有 4 个 URL 证据
 // 模块三 round 1 还写 "证据不足" + 重新建议 query
 // 正确：除非新证据冲突，否则沿用模块二的判断 + 同样的 evidence URLs
+
+// ❌ 反例 4：重复模块二跑过的 query
+// queries_already_tried_in_module_two 含: "SVOLT L600 196Ah hard case aluminum shell"
+// 模块三建议: ["SVOLT L600 196Ah hard case aluminum shell"]
+// 正确：换角度，比如换中文「蜂巢 L600 短刀 电芯 顶盖 焊接 工艺」
+// 或换证据形式「SVOLT L600 196Ah 电芯 拆解 视频 评测」
+// 或换具体术语「SVOLT L600 196Ah prismatic cell casing thickness datasheet」
 ```
