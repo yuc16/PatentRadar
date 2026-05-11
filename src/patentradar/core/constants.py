@@ -17,6 +17,26 @@ DEFAULT_CONTEXT_LENGTH = int(os.getenv("PATENTRADAR_CONTEXT_LENGTH", "258000"))
 DEFAULT_REASONING_EFFORT = os.getenv("PATENTRADAR_REASONING_EFFORT", "high")
 GOOGLE_PATENTS_BASE = "https://patents.google.com/patent"
 
+# Country code → (display name, working language for prompts/search).
+# Used by PatentInfo to auto-derive country from publication_no prefix.
+PATENT_COUNTRY_CODES: dict[str, tuple[str, str]] = {
+    "CN": ("中国", "zh"),
+    "US": ("美国", "en"),
+    "EP": ("欧洲专利局", "en"),
+    "JP": ("日本", "ja"),
+    "KR": ("韩国", "ko"),
+    "DE": ("德国", "de"),
+    "GB": ("英国", "en"),
+    "FR": ("法国", "fr"),
+    "WO": ("PCT 国际申请", "en"),
+    "CA": ("加拿大", "en"),
+    "AU": ("澳大利亚", "en"),
+    "IN": ("印度", "en"),
+    "RU": ("俄罗斯", "ru"),
+    "TW": ("中国台湾", "zh"),
+    "HK": ("中国香港", "zh"),
+}
+
 
 @dataclass(frozen=True)
 class TechnologyTag:

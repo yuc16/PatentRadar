@@ -21,14 +21,11 @@ browser instead.
 
 from __future__ import annotations
 
-import re
 import urllib.parse
 
 from patentradar.schemas import SimilarPatentSearchHint, TaskPackage
 
 INFRINGEMENT_RISK_THRESHOLD = 80.0
-
-_COUNTRY_CODE = re.compile(r"^([A-Z]{2})")
 
 
 def build_similar_patent_hint(
@@ -36,7 +33,7 @@ def build_similar_patent_hint(
     task_package: TaskPackage,
     triggered_by_score: float,
 ) -> SimilarPatentSearchHint:
-    country = _country_code(task_package.patent.publication_no)
+    country = task_package.patent.country_code
     applicant = task_package.patent.applicants[0] if task_package.patent.applicants else ""
     title = task_package.patent.title or ""
     return SimilarPatentSearchHint(
@@ -48,11 +45,6 @@ def build_similar_patent_hint(
         title=title,
         google_patents_search_url=_build_url(country=country, applicant=applicant, title=title),
     )
-
-
-def _country_code(pub_no: str) -> str:
-    match = _COUNTRY_CODE.match((pub_no or "").upper())
-    return match.group(1) if match else ""
 
 
 def _build_url(*, country: str, applicant: str, title: str) -> str:
