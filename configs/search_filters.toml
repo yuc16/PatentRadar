@@ -13,6 +13,10 @@
 # 专利文献站 —— 模块二是找产品而非专利
 patent_databases = [
     "patents.google.com",
+    "patentimages.storage.googleapis.com",
+    "patents.justia.com",
+    "patsnap.com",
+    "eureka.patsnap.com",
     "espacenet.com",
     "worldwide.espacenet.com",
     "pat.cnipa.gov.cn",
@@ -22,6 +26,7 @@ patent_databases = [
     "patentscope.wipo.int",
     "freepatentsonline.com",
     "patentexplorer.com",
+    "patents.com",
     "x-mol.com",
 ]
 

@@ -1,0 +1,336 @@
+{
+  "publication_no": "CN110395195B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "深圳市兆威机电股份有限公司",
+      "company_en": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd.",
+      "product_name": "中控屏旋转执行器",
+      "product_name_en": "central display rotary actuator",
+      "product_version": "直流无刷电机+一级蜗轮蜗杆+平行传动，驱动中控屏0–90°横竖旋转，止挡缓冲结构",
+      "market": "中国乘用车智能座舱前装旋转中控屏执行机构",
+      "reason_for_deep_dive": "直接对应权1的“动力源+驱动机构驱动显示终端在横屏和竖屏之间切换”，公开摘要明确有电机、蜗轮蜗杆、平行传动和0–90°横竖旋转。",
+      "source_result_ids": [
+        "brave-Q02-04"
+      ],
+      "source_urls": [
+        "https://www.zwgear.com/special/carping.html"
+      ],
+      "initial_evidence_summary": "兆威官方页面摘要称中控屏旋转执行器采用直流无刷电机、一级蜗轮蜗杆传动和平行传动，带动中控屏幕0–90°横竖旋转，止挡位置有缓冲结构以提升平稳性。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "深圳市兆威机电股份有限公司",
+      "company_en": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd.",
+      "product_name": "汽车滑动屏驱动系统",
+      "product_name_en": "automotive sliding display drive system",
+      "product_version": "高性能电机+传动机构+丝杆水平滑动，独特固定结构抑制上下晃动",
+      "market": "中国乘用车智能座舱滑移屏驱动系统",
+      "reason_for_deep_dive": "对应权1中的“滑动机构、第一/第二滑动部相对滑动”方向；虽摘要未说明横竖旋转，但其电机驱动屏幕在丝杆上水平滑动，适合深挖是否与旋转机构联动。",
+      "source_result_ids": [
+        "brave-Q02-04"
+      ],
+      "source_urls": [
+        "https://www.zwgear.com/special/carping.html"
+      ],
+      "initial_evidence_summary": "兆威官方页面摘要称汽车滑动屏驱动系统通过高性能电机配合传动机构实现较大速比，驱动屏幕在丝杆上水平滑动，并通过独特固定结构解决屏幕平移时上下方向晃动问题。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "深圳市兆威机电股份有限公司",
+      "company_en": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd.",
+      "product_name": "汽车车载吸顶屏翻转驱动系统",
+      "product_name_en": "automotive roof display flip drive system",
+      "product_version": "直流电机+蜗轮蜗杆，行星齿轮箱输出轴带动屏幕组件旋转，20000次寿命、角度偏差±0.5°",
+      "market": "中国及全球汽车后排/吸顶娱乐屏电动翻转机构",
+      "reason_for_deep_dive": "与权1的动力源、旋转机构驱动显示终端转动高度相关；虽然应用为吸顶屏而非中控屏，摘要公开了电机、齿轮箱输出轴、屏幕组件旋转和寿命/角度精度参数。",
+      "source_result_ids": [
+        "brave-Q01-03"
+      ],
+      "source_urls": [
+        "https://www.smartautoclub.com/p/84704"
+      ],
+      "initial_evidence_summary": "摘要称兆威车载吸顶屏翻转驱动系统采用“直流电机+蜗轮蜗杆”传动，寿命周期20000次、角度偏差±0.5°；执行器隐藏于转轴内，通过电机驱动行星齿轮箱输出轴带动屏幕组件旋转。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "高合汽车",
+      "company_en": "HiPhi / Human Horizons",
+      "product_name": "HiPhi Bot多轴位移中控屏",
+      "product_name_en": "HiPhi Bot multi-axis movable center display",
+      "product_version": "HiPhi Z量产版，4自由度/8向可调，前后移动，横竖屏切换2秒，前后移动1秒到位",
+      "market": "中国高端新能源乘用车智能座舱量产车型",
+      "reason_for_deep_dive": "非常贴近权1的核心组合：显示终端既可移动又可横竖屏切换，公开摘要提到前后移动、横竖屏切换、多轴/多自由度，值得深挖其滑动机构与旋转机构是否联动、是否偏心转动。",
+      "source_result_ids": [
+        "brave-Q06-05",
+        "brave-Q11-03",
+        "brave-Q16-03"
+      ],
+      "source_urls": [
+        "https://chejiahao.autohome.com.cn/info/12347297",
+        "https://www.xchuxing.com/article/53461",
+        "http://www.szaeia.com/index.php?m=content&c=index&a=show&catid=1243&id=34236"
+      ],
+      "initial_evidence_summary": "多个摘要称HiPhi Z中控屏可前后移动、横竖屏切换、左右角度偏移；车家号摘要称其为HiPhi Bot多轴位移车载数字机器人，具备4自由度/8向可调、全行程无级调节；汽车电子网摘要称前后移动1秒到位、横竖屏切换2秒完成。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "深蓝汽车",
+      "company_en": "Deepal",
+      "product_name": "向日葵屏",
+      "product_name_en": "sunflower center display",
+      "product_version": "深蓝SL03，14.6英寸中控向日葵屏，左右最大旋转15°，可识别主副驾自动旋转",
+      "market": "中国新能源轿车智能座舱量产车型",
+      "reason_for_deep_dive": "对应权1的动力驱动显示终端转动，公开摘要给出14.6英寸、左右15°、自动旋转等身份信号；虽非横竖屏90°切换，但其电动转向机构与显示终端连接关系值得深挖。",
+      "source_result_ids": [
+        "brave-Q18-01",
+        "brave-Q18-02",
+        "brave-Q18-03",
+        "bocha-Q18-01",
+        "tavily-Q18-01"
+      ],
+      "source_urls": [
+        "https://auto.ifeng.com/c/8H69eDjTV8f",
+        "https://www.42how.com/en/v2post/14117",
+        "https://www.xchuxing.com/article/48938",
+        "https://drive.xcar.com.cn/202205/news_2066193_3.html",
+        "https://www.42how.com/v2post/14117"
+      ],
+      "initial_evidence_summary": "摘要称深蓝SL03配备14.6英寸超大中控向日葵屏，左右最大旋转15°；42号车库摘要称屏幕支持左右调节，可识别主副驾是否有人并自动旋转；爱卡摘要称坐进主驾驶位时中控屏会自动向主驾驶位旋转。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "上汽荣威",
+      "company_en": "SAIC Roewe",
+      "product_name": "滑动中控屏",
+      "product_name_en": "sliding center display",
+      "product_version": "第三代/新RX5，12.3英寸液晶仪表+27英寸液晶中控联屏，向副驾滑动300mm",
+      "market": "中国紧凑型SUV智能座舱量产车型",
+      "reason_for_deep_dive": "直接覆盖权1的“滑动机构使显示终端移动”维度；公开摘要给出屏幕滑移轨、300mm滑动距离及线束寿命/安全气囊路线考量，可深挖是否还存在旋转或联动机构。",
+      "source_result_ids": [
+        "tavily-Q16-01",
+        "brave-Q16-01",
+        "brave-Q16-05",
+        "bocha-Q16-01",
+        "bocha-Q16-02",
+        "bocha-Q16-03",
+        "bocha-Q16-04"
+      ],
+      "source_urls": [
+        "https://www.42how.com/en/article/6447",
+        "https://www.42how.com/article/7069",
+        "https://www.smartautoclub.com/p/86726",
+        "https://news.yiche.com/hao/wenzhang/67195829",
+        "https://www.sohu.com/a/685680406_121269531",
+        "https://hao.yiche.com/wenzhang/75615407",
+        "https://news.yiche.com/hao/wenzhang/82450116"
+      ],
+      "initial_evidence_summary": "摘要称第3代/新RX5中控屏可以左右移动，27英寸联屏可在主副驾驶之间来回滑动，可向副驾驶移动300mm；工程师考虑线束寿命和安全气囊引爆路线。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "特斯拉",
+      "company_en": "Tesla",
+      "product_name": "可左右调节17英寸中央触摸屏",
+      "product_name_en": "17-inch adjustable central touchscreen",
+      "product_version": "Model S 2025中国官网版，17英寸，2200×1300，左右调节倾斜角度",
+      "market": "中国销售的进口/国产渠道高端电动车智能座舱",
+      "reason_for_deep_dive": "对应权1的“显示终端为触摸屏幕、驱动机构使屏幕转动”方向；公开官方页面给出17英寸触摸屏及可左右调节倾斜角度，需深挖是否为电动执行机构及其转轴/传动结构。",
+      "source_result_ids": [
+        "bocha-Q15-02",
+        "bocha-Q15-01",
+        "bocha-Q15-03",
+        "tavily-Q15-02",
+        "tavily-Q15-03"
+      ],
+      "source_urls": [
+        "https://www.tesla.cn/models?eqid=bac5bb650008977f00000006648f1ceb&wd=",
+        "https://aikahao.xcar.com.cn/item/956623.html",
+        "https://www.pcauto.com.cn/nation/2646/26467351.html",
+        "https://auto.sina.cn/zz/xc/2021-09-14/detail-iktzscyx4176288.d.html",
+        "https://www.bitauto.com/ask/100334534355"
+      ],
+      "initial_evidence_summary": "特斯拉中国Model S页面摘要称17英寸触摸屏可左右调节倾斜角度，分辨率2200×1300；其他摘要称Model S中央触控屏可向左右两侧旋转/倾斜，以便左右侧乘员观看和操作。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "奇点汽车",
+      "company_en": "Singulato Motors",
+      "product_name": "横竖切换中控大屏",
+      "product_name_en": "landscape-portrait rotatable center display",
+      "product_version": "奇点iS6，带防夹旋转机构，驻车横屏影院模式/驾驶竖屏模式",
+      "market": "中国造车新势力智能座舱车型/样车与上市传播车型",
+      "reason_for_deep_dive": "公开摘要明确“中控大屏横竖切换自如”并提到旋转机构防夹、驾驶模式自动竖屏、停车横屏影院模式，直接命中权1的横屏/竖屏切换及安全执行机构方向。",
+      "source_result_ids": [
+        "bocha-Q11-05",
+        "tavily-Q13-02"
+      ],
+      "source_urls": [
+        "https://hao.yiche.com/wenzhang/774394",
+        "https://m.36kr.com/p/1722501660673"
+      ],
+      "initial_evidence_summary": "易车摘要称该车型为奇点汽车iS6，中控大屏可横竖切换，旋转机构设置防夹功能，挂挡进入驾驶模式后自动旋转至竖屏，停车后横屏进入影院模式；36氪摘要亦提到奇点iS6屏幕连接方式。"
+    },
+    {
+      "candidate_id": "P09",
+      "company": "极氪",
+      "company_en": "ZEEKR",
+      "product_name": "左右移动中控屏",
+      "product_name_en": "sliding center display",
+      "product_version": "极氪X，中控屏可左右移动，4/5座可选",
+      "market": "中国纯电SUV智能座舱量产车型",
+      "reason_for_deep_dive": "覆盖权1中的滑动机构/显示终端移动特征；虽然摘要未给出横竖屏旋转，但公开识别为电动滑移屏趋势车型，值得深挖其滑轨、驱动源及限位结构。",
+      "source_result_ids": [
+        "brave-Q20-01",
+        "brave-Q16-05"
+      ],
+      "source_urls": [
+        "https://chejiahao.autohome.com.cn/info/14804997",
+        "https://www.smartautoclub.com/p/86726"
+      ],
+      "initial_evidence_summary": "汽车之家车家号标题称“极氪X，中控屏可左右移动，4/5座可选”；智能汽车资源网摘要将极氪X列入中控电动滑移屏新趋势车型。"
+    },
+    {
+      "candidate_id": "P10",
+      "company": "极氪",
+      "company_en": "ZEEKR",
+      "product_name": "中控旋转屏幕",
+      "product_name_en": "rotatable center display",
+      "product_version": "极氪001，15.05英寸2.5K柔性OLED中控屏",
+      "market": "中国高端纯电轿跑/猎装车智能座舱量产车型",
+      "reason_for_deep_dive": "摘要以“中控旋转屏幕”描述，并给出15.05英寸、2.5K、柔性OLED等规格；需进一步核实其“旋转”是机械调节还是显示/屏幕形态，但身份信号明确。",
+      "source_result_ids": [
+        "brave-Q20-03"
+      ],
+      "source_urls": [
+        "https://m.pcauto.com.cn/baike/630657/1228209"
+      ],
+      "initial_evidence_summary": "太平洋汽车百科摘要称极氪001中控旋转屏幕尺寸15.05英寸、分辨率2.5K，采用柔性OLED材质，显示效果清晰流畅。"
+    },
+    {
+      "candidate_id": "P11",
+      "company": "延锋",
+      "company_en": "Yanfeng",
+      "product_name": "XiM25随动天幕长滑动屏机构",
+      "product_name_en": "XiM25 movable roof long-slide display mechanism",
+      "product_version": "1520mm超长滑动距离，适配超宽/多尺寸显示屏，屏幕前后58.5°旋转",
+      "market": "中国汽车零部件供应商未来智能座舱展示/前装技术储备",
+      "reason_for_deep_dive": "高度对应权1的“滑动机构+旋转机构+显示终端移动/转动”组合；公开摘要同时给出长滑轨、显示屏、1520mm滑动、58.5°旋转，是结构件深挖优先级很高的候选。",
+      "source_result_ids": [
+        "brave-Q24-01",
+        "brave-Q24-02",
+        "brave-Q24-03",
+        "brave-Q24-04"
+      ],
+      "source_urls": [
+        "https://www.automobileandparts.com/622.html",
+        "https://news.qq.com/rain/a/20241206A030XV00",
+        "https://www.autohome.com.cn/tech/202411/1302391.html?from=m&platform-key=pc",
+        "https://epaper.shautonews.com/content/2024-12/08/023084.html"
+      ],
+      "initial_evidence_summary": "摘要称延锋XiM25智能座舱的随动天幕长滑动机构可适配车顶曲线，1520mm超长滑动距离覆盖整个车顶，搭配超宽等多种尺寸显示屏，并实现屏幕前后58.5°旋转。"
+    },
+    {
+      "candidate_id": "P12",
+      "company": "三星显示",
+      "company_en": "Samsung Display",
+      "product_name": "Flex Note Extendable车载OLED屏",
+      "product_name_en": "Flex Note Extendable automotive OLED display",
+      "product_version": "2024北京车展展示，折叠+滑动技术，尺寸可灵活调整",
+      "market": "中国车展展示的车载OLED显示技术/前装供应链",
+      "reason_for_deep_dive": "覆盖权1的显示终端移动/滑动形态，虽未披露横竖旋转和执行器细节，但“折叠和滑动技术、尺寸可调”可能包含滑动导轨与驱动机构，适合作为车载可动屏技术候选。",
+      "source_result_ids": [
+        "brave-Q12-03"
+      ],
+      "source_urls": [
+        "https://www.smartautoclub.com/p/86144"
+      ],
+      "initial_evidence_summary": "智能汽车资源网摘要称2024北京车展三星显示展示车载OLED技术，其中“Flex Note Extendable”采用折叠和滑动技术，尺寸可灵活调整。"
+    },
+    {
+      "candidate_id": "P13",
+      "company": "ViewTech",
+      "company_en": "ViewTech",
+      "product_name": "15.6英寸翻倒Android车顶显示器",
+      "product_name_en": "15.6-inch flip-down Android roof monitor",
+      "product_version": "VT-R1569A，15.6英寸16:9 LCD，Android 6.0，DC12–24V，1366×768，翻转朝下",
+      "market": "中国广东供应的公交/客车/房车/卡车车载吸顶显示器",
+      "reason_for_deep_dive": "作为带翻转显示终端的车载产品，涉及显示屏与翻转/旋转支架连接；公开型号和电源、电压、尺寸等规格明确，可深挖是否有电机执行机构。",
+      "source_result_ids": [
+        "bocha-Q06-04"
+      ],
+      "source_urls": [
+        "https://www.alibaba.com/product-detail/_1600122042033.html"
+      ],
+      "initial_evidence_summary": "Alibaba摘要列出ViewTech VT-R1569A，产品名为15.6英寸翻倒Android巴士/汽车电动车顶安装监视器，类型为翻转朝下，DC12–24V，15.6英寸16:9屏，分辨率1366×768，Android 6.0。"
+    },
+    {
+      "candidate_id": "P14",
+      "company": "守卫龙",
+      "company_en": "Shouweilong",
+      "product_name": "10.1寸360度旋转屏中控安卓GPS导航仪",
+      "product_name_en": "10.1-inch 360-degree rotating Android car GPS head unit",
+      "product_version": "10.1寸360°旋转屏，CarPlay/蓝牙，单锭摇头机",
+      "market": "中国汽车后装中控屏/车载导航市场",
+      "reason_for_deep_dive": "直接公开“360度旋转屏中控汽车安卓GPS导航仪”，具备车载中控触摸屏旋转调节特征；后装产品可能公开支架、转轴和驱动/手动机构细节。",
+      "source_result_ids": [
+        "bocha-Q12-04"
+      ],
+      "source_urls": [
+        "https://www.1688.com/market/-C6FBB3B5D6D0BFD8C6C1.html"
+      ],
+      "initial_evidence_summary": "1688摘要列出“10.1寸360度旋转屏中控汽车安卓GPS导航仪 carplay蓝牙单锭摇头机”，品牌为守卫龙，价格和月销信息显示在中国市场销售。"
+    },
+    {
+      "candidate_id": "P15",
+      "company": "Iskra Mehanizmi",
+      "company_en": "Iskra Mehanizmi",
+      "product_name": "精密高速旋转执行器",
+      "product_name_en": "precision high-speed rotary actuator",
+      "product_version": "步进式，9–48V，12V下0.75Nm/300rpm，Full-step 0.36°，定位精度±0.35°，霍尔闭环",
+      "market": "DirectIndustry中国平台销售的汽车/工业/自动化旋转执行器",
+      "reason_for_deep_dive": "权1核心是显示屏执行机构的动力源和旋转机构；该候选虽非屏幕专用，但公开了车用旋转执行器关键参数（电压、扭矩、转速、定位精度、霍尔传感器），适合用于对比屏幕旋转执行器的动力/控制规格。",
+      "source_result_ids": [
+        "bocha-Q07-01"
+      ],
+      "source_urls": [
+        "https://www.directindustry-china.cn/prod/iskra-mehanizmi/product-36944-2331267.html"
+      ],
+      "initial_evidence_summary": "DirectIndustry中国摘要称该精密高速旋转执行器典型应用为汽车、工业、自动化；两相混合步进电机，电压9–48V，12V/1.3A下扭矩0.75Nm、转速300rpm，Full-step分辨率0.36°，定位精度±0.35°，带霍尔传感器闭环操作。"
+    },
+    {
+      "candidate_id": "P16",
+      "company": "Harmonic Drive LLC",
+      "company_en": "Harmonic Drive LLC",
+      "product_name": "RSF-5B微型旋转执行器",
+      "product_name_en": "RSF-5B miniature rotary actuator",
+      "product_version": "24VDC/CANopen，0.5/0.9/1.4Nm扭矩，集成伺服驱动器与14位输出编码器",
+      "market": "DirectIndustry中国平台销售的紧凑型高精度旋转执行器",
+      "reason_for_deep_dive": "对应权1的旋转机构输出端和精确驱动需求；虽非车载屏专用，但其24V、CANopen、集成伺服驱动和编码器参数可作为车载显示屏旋转执行机构的可比技术信号。",
+      "source_result_ids": [
+        "bocha-Q07-04"
+      ],
+      "source_urls": [
+        "https://www.directindustry-china.cn/prod/harmonic-drive-llc/product-4567321-2559783.html"
+      ],
+      "initial_evidence_summary": "DirectIndustry中国摘要称RSF-5B为电动24V紧凑型大扭矩旋转执行器，扭矩0.5/0.9/1.4Nm，采用零齿隙Harmonic Drive齿轮，集成伺服驱动器、CANopen通信和单圈14位输出感应编码器。"
+    },
+    {
+      "candidate_id": "P17",
+      "company": "罗伯特·博世",
+      "company_en": "Robert Bosch GmbH",
+      "product_name": "VMC 0132801156旋转执行器",
+      "product_name_en": "VMC 0132801156 rotary actuator",
+      "product_version": "电动12V坚固型旋转执行器",
+      "market": "DirectIndustry中国平台销售的汽车/工业旋转执行器",
+      "reason_for_deep_dive": "权1要求动力源和旋转机构驱动显示终端偏心转动；该候选是明确型号的12V电动旋转执行器，适合作为车载低压执行器深挖对象，需进一步检索其输出端、转角和安装界面。",
+      "source_result_ids": [
+        "brave-Q07-04"
+      ],
+      "source_urls": [
+        "https://www.directindustry-china.cn/prod/robert-bosch-gmbh/product-98211-2369418.html"
+      ],
+      "initial_evidence_summary": "DirectIndustry中国结果标题/摘要列出Robert Bosch GmbH旋转执行器，规格型号VMC 0132801156，类型为电动、12V、坚固型旋转执行器。"
+    }
+  ]
+}
