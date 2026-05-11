@@ -8,7 +8,12 @@ from typing import Any
 
 from pydantic import ValidationError
 
-from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT, TECHNOLOGY_TAGS
+from patentradar.core.constants import (
+    DEFAULT_MODEL,
+    DEFAULT_REASONING_EFFORT,
+    TECHNOLOGY_TAGS,
+    render_technology_tags_markdown,
+)
 from patentradar.core.exceptions import LLMOutputError
 from patentradar.llm import codex
 from patentradar.schemas import Claim, PatentInfo, TaskPackage
@@ -47,9 +52,12 @@ def decompose_claims(
 
 
 def _load_prompt() -> str:
-    return resources.files("patentradar.llm.prompts").joinpath("decompose.md").read_text(
+    raw = resources.files("patentradar.llm.prompts").joinpath("decompose.md").read_text(
         encoding="utf-8"
     )
+    # Substitute the technology tags placeholder so the prompt always reflects
+    # configs/technology_tags.toml without needing manual edits in two places.
+    return raw.replace("{{TECHNOLOGY_TAGS_DESCRIPTIONS}}", render_technology_tags_markdown())
 
 
 def _build_user_text(*, patent: PatentInfo, html_claims: list[Claim], source: str) -> str:

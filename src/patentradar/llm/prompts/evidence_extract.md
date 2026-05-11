@@ -21,7 +21,7 @@
 
 | status | 比例（score 字段） | 触发条件 |
 |---|---|---|
-| **明确满足** | **1.0** | 公开 URL 直接给出可验证的字面或数值证据，且**不止 1 个独立 URL**（即至少 2 个不同的 host） |
+| **明确满足** | **1.0** | 公开 URL 直接给出可验证的字面或数值证据，**至少 1 个独立 host**（同 host 多 URL 也允许，但每条 URL 都得能独立支撑） |
 | **可能满足** | **0.8** | 没有直接命中字面/数值的证据，但可由其他公开证据**严谨推理**得出（推理链必须写在 `reasoning` 里） |
 | **证据不足** | **0.3** | 在已给的证据池里找不到任何相关线索（既不能证实也不能证伪） |
 | **明确不满足** | **0.0** | 公开 URL 直接给出与权 1 特征**矛盾**的字面或数值（如尺寸明显超出范围）。整个候选触发 `disqualified=true` |
@@ -53,8 +53,8 @@
 ## 证据 URL 复用规则
 
 - 同一 URL 跨多个特征复用 **OK**（一份规格书天然覆盖多条尺寸/能量约束）
-- 但「明确满足」status 要求 **≥ 2 个独立 host** 的 URL（host 不同视为独立）
-- 同 URL 不同 page 也算 1 个 host
+- 「明确满足」status 要求 **≥ 1 个独立 host** 的 URL（同 host 多 URL 也行；同 URL 不同 page 视为同 1 host）
+- 不要刻意堆砌同 host 不同 URL 凑数，每条 URL 都得有独立证据价值
 - 不要刻意堆砌不相关 URL 凑数
 
 ## launch_date 与失格
@@ -88,10 +88,12 @@
  "reasoning": "搜到的产品页表明该型号符合权 1 比例约束。"}
 // 正确：必须给出 S/E 的具体计算和数值
 
-// ❌ 反例 2：堆砌同 host URL 凑"明确满足"
+// ❌ 反例 2：堆砌同 host 同 URL 凑数（虽然「明确满足」允许同 host，但每条 URL 仍需独立有价值）
 {"feature_id": "C1-F2", "status": "明确满足",
- "evidence": [{"url":"https://lifepo4-battery.com/p1"},{"url":"https://lifepo4-battery.com/p2"},{"url":"https://lifepo4-battery.com/p3"}]}
-// 正确：3 个 URL 都是 lifepo4-battery.com 同一 host，不算"≥2 独立 host"
+ "evidence": [{"url":"https://lifepo4-battery.com/spec","snippet":"L=574"},
+              {"url":"https://lifepo4-battery.com/spec","snippet":"L=574"},
+              {"url":"https://lifepo4-battery.com/spec","snippet":"L=574"}]}
+// 正确：3 条都指向同 URL 且重复同一条信息，应去重为 1 条；如果是同 host 不同 page 给出不同字段（尺寸 + 能量），可以保留
 
 // ❌ 反例 3：用"可能满足"包装"懒得查"
 {"feature_id": "C1-F1", "status": "可能满足", "score": 0.8,
@@ -135,7 +137,7 @@
         {"url": "https://www.evlithium.com/.../196ah-short-blade-lifepo4-cell.html", "title": "...", "source_name": "evlithium", "snippet": "Dimensions 21.5×574×118mm, Energy ≥625Wh"},
         {"url": "https://www.lifepo4-battery.com/.../196ah-short-blade-lifepo4-cell.html", "title": "...", "source_name": "lifepo4-battery", "snippet": "Energy 627.2Wh, dimensions per spec table"}
       ],
-      "reasoning": "两个独立 host 给出三维尺寸和能量；按长方体公式现场计算 S/E≈263.4，落在 ≤1000 范围内。"
+      "reasoning": "至少 1 个独立 host 给出三维尺寸和能量；按长方体公式现场计算 S/E≈263.4，落在 ≤1000 范围内。"
     }
   ],
   "total_score": 96.67,
@@ -149,5 +151,5 @@
 1. 先把 `claim_1_text` 通读一遍建立整体语境，再逐条对照 `claim_1_features`
 2. 每个候选先查 `launch_date`，明确早于专利申请日就走失格通道（不浪费后续工作）
 3. 对每条特征：先看证据池里有没有直接字面/数值匹配 → 算几何参数 → 比较权 1 范围
-4. 同 URL 不同特征复用，但记得「明确满足」需要 ≥ 2 独立 host
+4. 同 URL 跨多个特征复用 OK；「明确满足」最低门槛是 ≥ 1 独立 host 的扎实证据（不强制多 host，但 evidence 不能堆砌重复）
 5. 写 `reasoning` 时把 URL/数值都引用进去，便于人工复核
