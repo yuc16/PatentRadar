@@ -14,6 +14,11 @@ from patentradar.modules.full_claim_chart import (
     load_top_report,
     run_full_claim_chart,
 )
+from patentradar.modules.report import (
+    load_full_claim_chart as load_report_full_claim_chart,
+    load_task_package as load_report_task_package,
+    run_report,
+)
 
 app = typer.Typer(no_args_is_help=True)
 
@@ -82,6 +87,27 @@ def full_claim_chart_command(
     )
     typer.echo(f"Wrote {output_dir / 'top5_full_claim_chart.json'}")
     typer.echo(f"Completed candidates: {len(report.top_competitors)} (excluded {len(report.excluded_candidates)})")
+
+
+@app.command("report")
+def report_command(
+    task_package: Path = typer.Argument(..., help="Path to module-one task_package.json."),
+    full_claim_chart: Path = typer.Argument(..., help="Path to module-three top5_full_claim_chart.json."),
+    output_dir: Path = typer.Option(
+        Path("data/output"),
+        "--output-dir",
+        "-o",
+        help="Directory where report.md and similar_patents.json will be written.",
+    ),
+) -> None:
+    tp = load_report_task_package(task_package)
+    fcr = load_report_full_claim_chart(full_claim_chart)
+    report_path = run_report(
+        task_package=tp,
+        full_claim_chart_report=fcr,
+        output_dir=output_dir,
+    )
+    typer.echo(f"Wrote {report_path}")
 
 
 def main() -> None:

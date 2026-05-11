@@ -16,6 +16,7 @@ from .evidence import (
 )
 from .patent import PatentInfo
 from .query_plan import ApplicantSelfSignals, QueryPlan, SearchProviderName, SearchQuery
+from .report import SimilarPatentSearchHint
 from .search_result import SearchResult, SearchResultsArtifact
 from .task_package import DecomposeSource, TaskPackage
 
@@ -39,6 +40,7 @@ __all__ = [
     "SearchQuery",
     "SearchResult",
     "SearchResultsArtifact",
+    "SimilarPatentSearchHint",
     "TaskPackage",
     "TopCompetitorReport",
 ]
