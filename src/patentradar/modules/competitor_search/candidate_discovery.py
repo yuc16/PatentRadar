@@ -11,6 +11,7 @@ def discover_candidates(
     publication_no: str,
     query_plan: QueryPlan,
     router: SearchRouter | None = None,
+    country_code: str = "",
 ) -> SearchResultsArtifact:
-    search_router = router or SearchRouter()
+    search_router = router or SearchRouter(country_code=country_code)
     return search_router.search_query_plan(publication_no=publication_no, query_plan=query_plan)

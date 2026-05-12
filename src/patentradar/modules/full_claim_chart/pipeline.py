@@ -63,7 +63,7 @@ def run_full_claim_chart(
 
     competitors_to_process = top_report.top_competitors
     completed_candidates: list[FullClaimChartCandidate] = []
-    router = SearchRouter()
+    router = SearchRouter(country_code=task_package.patent.country_code)
 
     started = time.perf_counter()
     worker_count = max(1, min(max_workers, len(competitors_to_process)))

@@ -14,6 +14,8 @@
 
 ---
 
+> **LLM backend 全局可切换**：报告渲染走 `get_llm_provider().chat_text()`。默认 ChatGPT OAuth (Codex)，设置 `PATENTRADAR_LLM_BACKEND=openai` + `PATENTRADAR_OPENAI_BASE_URL` + `PATENTRADAR_OPENAI_API_KEY` 即可切到 OpenAI 兼容服务。报告生成不需要 vision，无需关心 `PATENTRADAR_OPENAI_VISION`。
+
 ## 流程
 
 ```

@@ -10,36 +10,40 @@ from zoneinfo import ZoneInfo
 import httpx
 from bs4 import BeautifulSoup, Tag
 
-from patentradar.core.constants import GOOGLE_PATENTS_BASE
+from patentradar.core.constants import GOOGLE_PATENTS_BASE, PATENT_COUNTRY_CODES
 from patentradar.core.exceptions import PatentFetchError
 from patentradar.schemas import Claim, PatentInfo
 
 _PUB_NO_RE = re.compile(r"^[A-Z]{2}\d{6,}[A-Z]?\d?$")
 _PUB_NO_IN_TEXT_RE = re.compile(r"([A-Z]{2})[-\s]*(\d{6,})[-\s]*([A-Z]?\d?)", re.I)
 _PDF_RE = re.compile(r"https://patentimages\.storage\.googleapis\.com/[^\"']+\.pdf")
-_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.5",
+_USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+)
+# Google Patents URL suffix per专利国家工作语言。其余语言走 /en（Google 默认）。
+_URL_LANG_SUFFIX = {"zh": "zh", "ja": "ja", "ko": "ko", "de": "de", "fr": "fr", "ru": "ru"}
+# Accept-Language header — primary语言 + en fallback。
+_ACCEPT_LANG_PRIMARY = {
+    "zh": "zh-CN,zh;q=0.9",
+    "ja": "ja-JP,ja;q=0.9",
+    "ko": "ko-KR,ko;q=0.9",
+    "de": "de-DE,de;q=0.9",
+    "fr": "fr-FR,fr;q=0.9",
+    "ru": "ru-RU,ru;q=0.9",
 }
 _SHANGHAI_TZ = ZoneInfo("Asia/Shanghai")
 
 
-"""
-优先从 Google Patents 页面里直接抓中文原文：
+def _patent_language(publication_no: str) -> str:
+    prefix = publication_no[:2].upper()
+    return PATENT_COUNTRY_CODES.get(prefix, ("", "en"))[1]
 
-<dd itemprop="assigneeOriginal"> 
-当 assigneeOriginal 为空时（部分专利），fallback 到 DC.contributor 拿到的英文名 → 这时才需要 alias 表
-Codex 的实现已经是这个顺序（_main_dd_texts(soup, "assigneeOriginal") or _dc_contributors(...)），所以实际上对绝大多数中国专利不会用到 alias 表
-"""
 
-_CN_ASSIGNEE_ALIASES = {
-    "BYD Co Ltd": "比亚迪股份有限公司",
-    "BYD Auto Co Ltd": "比亚迪汽车工业有限公司",
-    "BYD Semiconductor Co Ltd": "比亚迪半导体股份有限公司",
-}
+def _build_headers(language: str) -> dict[str, str]:
+    primary = _ACCEPT_LANG_PRIMARY.get(language)
+    accept_lang = f"{primary},en;q=0.5" if primary else "en;q=1.0"
+    return {"User-Agent": _USER_AGENT, "Accept-Language": accept_lang}
 
 
 @dataclass(frozen=True)
@@ -67,8 +71,12 @@ def fetch_patent(
     publication_no: str, *, retries: int = 3, timeout: float = 60.0
 ) -> PatentFetchResult:
     publication_no = normalize_publication_no(publication_no)
-    url = f"{GOOGLE_PATENTS_BASE}/{publication_no}/zh"
-    html = _fetch_text(url=url, retries=retries, timeout=timeout)
+    language = _patent_language(publication_no)
+    suffix = _URL_LANG_SUFFIX.get(language, "en")
+    url = f"{GOOGLE_PATENTS_BASE}/{publication_no}/{suffix}"
+    html = _fetch_text(
+        url=url, retries=retries, timeout=timeout, headers=_build_headers(language)
+    )
     soup = BeautifulSoup(html, "lxml")
     claims, has_placeholders = _extract_claims(soup)
     if not claims:
@@ -78,7 +86,7 @@ def fetch_patent(
     patent = PatentInfo(
         publication_no=publication_no,
         title=_meta(soup, "DC.title") or "",
-        applicants=_prefer_cn_aliases(
+        applicants=(
             _main_dd_texts(soup, "assigneeOriginal")
             or _dc_contributors(soup, "assignee")
         ),
@@ -97,14 +105,16 @@ def fetch_patent(
     )
 
 
-def _fetch_text(*, url: str, retries: int, timeout: float) -> str:
+def _fetch_text(
+    *, url: str, retries: int, timeout: float, headers: dict[str, str]
+) -> str:
     last_exc: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
             with httpx.Client(
                 timeout=timeout,
                 follow_redirects=True,
-                headers=_HEADERS,
+                headers=headers,
             ) as client:
                 response = client.get(url)
                 if response.status_code != 200:
@@ -200,15 +210,6 @@ def _main_dd_texts(soup: BeautifulSoup, itemprop: str) -> list[str]:
         if text and text not in values:
             values.append(text)
     return values
-
-
-def _prefer_cn_aliases(values: list[str]) -> list[str]:
-    result: list[str] = []
-    for value in values:
-        normalized = re.sub(r"[.,]", "", value).strip()
-        alias = _CN_ASSIGNEE_ALIASES.get(normalized) or _CN_ASSIGNEE_ALIASES.get(value)
-        result.append(alias or value)
-    return result
 
 
 def _date_text(soup: BeautifulSoup, itemprop: str) -> str:

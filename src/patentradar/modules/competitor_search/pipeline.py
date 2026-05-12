@@ -105,6 +105,7 @@ def run_step2_search_results(
     search_results = discover_candidates(
         publication_no=task_package.patent.publication_no,
         query_plan=query_plan,
+        country_code=task_package.patent.country_code,
     )
     _write_json(output_dir / "step2_search_results.json", search_results.model_dump())
     logger.info(

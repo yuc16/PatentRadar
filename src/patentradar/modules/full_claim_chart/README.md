@@ -38,6 +38,8 @@
 
 **额外**：URL 级别已经有去重（`pool_url_set`），所以即便上面两层都失效，模块三也不会重复 fetch 同一 URL。
 
+> **LLM backend 全局可切换**：所有 LLM 调用走 `get_llm_provider()`。默认 ChatGPT OAuth (Codex)，设置 `PATENTRADAR_LLM_BACKEND=openai` + `PATENTRADAR_OPENAI_BASE_URL` + `PATENTRADAR_OPENAI_API_KEY` 即可切到 OpenAI 兼容服务；evidence_pool 图片在 provider 不支持 vision 时自动丢弃并打 warning。
+
 ## 工作流（每候选 2 轮 LLM 调用，TOP5 并行）
 
 ```

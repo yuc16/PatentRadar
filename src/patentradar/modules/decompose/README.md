@@ -41,6 +41,10 @@
 
 ## 2. 怎么实现的
 
+> **LLM backend 全局可切换**：默认走 ChatGPT OAuth（Codex Responses）；设置 `PATENTRADAR_LLM_BACKEND=openai` 后所有 worker 自动走任意 OpenAI 兼容 `/chat/completions`（aihubmix / DeepSeek / 自建网关 ...）。详细 env 见仓库根 [`.env.example`](../../../../.env.example) 和 [`src/patentradar/llm/provider.py`](../../llm/provider.py)。
+>
+> ⚠️ 仅 Codex 默认支持 vision。如果用 OpenAI 兼容侧且没有把 `PATENTRADAR_OPENAI_VISION` 设为 true（或所选模型不支持图像输入），含图片/公式占位的专利会自动跳过 PDF Vision 还原步骤，并在 stderr 打出一条人类可读的提示——`task_package.claims_source` 保持 `html`，原占位符直通到下游。
+
 ### 2.1 流程
 
 ```
@@ -124,8 +128,8 @@ src/patentradar/
 | # | 优化点 | 文件 |
 |---|---|---|
 | 1 | 公开号规范化支持 `CN-105335144-B`、`CN 114512759 B`、Google Patents URL | [`google_patents.py`](../../fetcher/google_patents.py) `normalize_publication_no` |
-| 2 | 申请人/发明人优先取 `<dd itemprop="assigneeOriginal">` 中文原文，fallback 英文 + 3 个 BYD 别名映射 | [`google_patents.py`](../../fetcher/google_patents.py) `_main_dd_texts` + `_prefer_cn_aliases` |
-| 3 | HTML claim 提取：优先 `<div class="claims" lang="ZH">` + `(claim_no, claim_text[:30])` 去重 | [`google_patents.py`](../../fetcher/google_patents.py) `_extract_claims` |
+| 2 | 申请人/发明人优先取 `<dd itemprop="assigneeOriginal">` 原文（多语言通用），fallback `DC.contributor` | [`google_patents.py`](../../fetcher/google_patents.py) `_main_dd_texts` |
+| 3 | HTML claim 提取：优先 `<div class="claims" lang="ZH">`，fallback 任意 `claims` div + `(claim_no, claim_text[:30])` 去重 | [`google_patents.py`](../../fetcher/google_patents.py) `_extract_claims` |
 | 4 | PDF Vision 校验放宽为 `LLM ≥ HTML`、前缀编号一致 | [`decompose_worker.py`](../../llm/workers/decompose_worker.py) `_validate_against_html` |
 | 5 | `feature_id` **三层防御**：JSON Schema `pattern` + Pydantic `Field(pattern=...)` + worker 兜底 `_normalize_feature_ids` | [`decompose_worker.py`](../../llm/workers/decompose_worker.py) + [`schemas/claims.py`](../../schemas/claims.py) |
 | 6 | PDF Vision 触发 / 完成日志（含 `elapsed_ms` / `tag` / `source`） | [`pipeline.py`](pipeline.py) |
@@ -229,17 +233,12 @@ prompt 改完后重跑 6 篇验证（5 原审样本 + 新增 CN114512759B），�
 - **影响**：少数边角专利无法处理。
 - **建议**：增加一个 fallback —— 在 prompt 里告知 LLM "HTML 含占位但 PDF 不可得，按 HTML 原样拆解并标注异常条目"，而非整体失败。
 
-### 🟡 5.5 申请人 alias 字典只有 3 个 BYD 实体
-- **现状**：[`google_patents.py:_CN_ASSIGNEE_ALIASES`](../../fetcher/google_patents.py) 硬编码。
-- **缓解**：因为 `assigneeOriginal` 直接取中文已经覆盖绝大多数情况，alias 表实际很少触发。
-- **建议**：等模块二在非 BYD 专利上遇到中文化失败时再补；不阻塞当前任务。
-
-### 🟡 5.6 测试覆盖收敛
+### 🟡 5.5 测试覆盖收敛
 - **现状**：删除了 `test_decompose.py` / `test_claims_fetch_pool.py`，只保留 [`run_full_pool_decompose.py`](../../../../tests/decompose/run_full_pool_decompose.py) 的全量 E2E。
 - **影响**：单元级回归（normalize_publication_no、HTML claim 抽取、申请人映射）不再有快速测试，全量 E2E 耗时长且烧 LLM 配额。
 - **建议**：之后在 [`tests/decompose/`](../../../../tests/decompose/) 加一个 `test_unit.py`，把不依赖 LLM 的 fetcher / schema / normalize 单测补回来，给 CI 用。
 
-### 🟡 5.7 错别字修正规则尚未在大样本上深度抽查
+### 🟡 5.6 错别字修正规则尚未在大样本上深度抽查
 - **现状**：本次 239 篇全量跑里已加入「错别字保守修正」豁免规则（rule 1），但没有系统地比对 LLM 修正了哪些字。
 - **建议**：写一个 diff 工具，把 `claim_text`（拆解后）与从 Google Patents 重新抓取的原始 HTML 文本做字符级 diff，列出所有差异，人工抽查是否都属于"明显错别字"范围。
 

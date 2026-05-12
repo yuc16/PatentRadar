@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import logging
+import sys
 import time
 from pathlib import Path
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.fetcher.google_patents import fetch_patent
 from patentradar.fetcher.pdf import download_pdf, render_claim_pages
+from patentradar.llm import get_llm_provider
 from patentradar.llm.workers.decompose_worker import decompose_claims
 from patentradar.schemas import TaskPackage
 
@@ -27,15 +29,28 @@ def run_decompose(
     images: list[bytes] | None = None
     source = "html"
     if fetched.has_claim_image_placeholders:
-        logger.info(
-            "decompose PDF vision triggered publication_no=%s claim_count=%d pdf_url=%s",
-            fetched.patent.publication_no,
-            len(fetched.claims),
-            bool(fetched.patent.pdf_url),
-        )
-        pdf_bytes = download_pdf(fetched.patent.pdf_url)
-        images = render_claim_pages(pdf_bytes)
-        source = "pdf_vision"
+        provider = get_llm_provider()
+        if not provider.supports_vision:
+            message = (
+                f"[decompose] HTML 中检测到图片/公式占位，但当前 LLM provider "
+                f"`{provider.name}` 未开启 vision 支持，已跳过 PDF Vision 还原步骤；"
+                f"输出的 claim_text 将保留 HTML 原文（含占位符），下游模块可能"
+                f"在含公式/图示的条款上找不到证据。如需启用 PDF Vision，请把 "
+                f"PATENTRADAR_LLM_BACKEND 切回 codex，或在 OpenAI 兼容侧选支持 "
+                f"vision 的模型并设置 PATENTRADAR_OPENAI_VISION=true。"
+            )
+            logger.warning(message)
+            sys.stderr.write(message + "\n")
+        else:
+            logger.info(
+                "decompose PDF vision triggered publication_no=%s claim_count=%d pdf_url=%s",
+                fetched.patent.publication_no,
+                len(fetched.claims),
+                bool(fetched.patent.pdf_url),
+            )
+            pdf_bytes = download_pdf(fetched.patent.pdf_url)
+            images = render_claim_pages(pdf_bytes)
+            source = "pdf_vision"
 
     task_package = decompose_claims(
         patent=fetched.patent,

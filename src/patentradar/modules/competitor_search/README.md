@@ -8,6 +8,8 @@
 
 ---
 
+> **LLM backend 全局可切换**：所有 LLM 调用走 `get_llm_provider()`。默认 ChatGPT OAuth (Codex)，设置 `PATENTRADAR_LLM_BACKEND=openai` + `PATENTRADAR_OPENAI_BASE_URL` + `PATENTRADAR_OPENAI_API_KEY` 即可切到任意 OpenAI 兼容服务。模块二证据 round 1 的图片输入会在 provider 不支持 vision 时自动丢弃并打 warning。
+
 ## 五步流水线产物
 
 ### Step 1 — `step1_query_plan.json`

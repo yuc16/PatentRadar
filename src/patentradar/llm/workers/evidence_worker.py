@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from importlib import resources
 from typing import Any
 
@@ -10,7 +11,7 @@ from pydantic import ValidationError
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import codex
+from patentradar.llm import get_llm_provider
 from patentradar.schemas import (
     Candidate,
     CandidateEvidence,
@@ -21,6 +22,8 @@ from patentradar.schemas import (
     TaskPackage,
 )
 from patentradar.search.relevance import rank_pages_by_relevance, rank_search_results
+
+logger = logging.getLogger(__name__)
 
 
 def judge_candidate_batch(
@@ -45,10 +48,19 @@ def judge_candidate_batch(
         is_gap_round=is_gap_round,
     )
     image_bytes_list = _flatten_images(candidates, fetched_images_by_candidate)
-    payload = codex.chat_json(
+    provider = get_llm_provider()
+    images_arg = image_bytes_list or None
+    if images_arg and not provider.supports_vision:
+        logger.warning(
+            "evidence_worker: dropping %d image(s) because provider %s does not "
+            "support vision input; LLM will judge from text-only evidence.",
+            len(images_arg), provider.name,
+        )
+        images_arg = None
+    payload = provider.chat_json(
         system=_load_prompt("evidence_extract.md"),
         user_text=user_text,
-        images=image_bytes_list or None,
+        images=images_arg,
         model=model,
         reasoning_effort=reasoning_effort,
         verbosity="medium",

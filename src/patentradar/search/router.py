@@ -30,12 +30,17 @@ logger = logging.getLogger(__name__)
 class SearchRouter:
     """Runs each query against one or more available search providers."""
 
-    def __init__(self, providers: Iterable[SearchProvider] | None = None) -> None:
+    def __init__(
+        self,
+        providers: Iterable[SearchProvider] | None = None,
+        *,
+        country_code: str = "",
+    ) -> None:
         provider_list = list(providers) if providers is not None else [
             TavilyProvider(),
             BochaProvider(),
             ExaProvider(),
-            BraveProvider(),
+            BraveProvider(country_code=country_code),
         ]
         self.providers = {provider.name: provider for provider in provider_list}
 

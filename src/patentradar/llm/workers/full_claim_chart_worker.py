@@ -11,14 +11,17 @@ push context near the GPT-5.5 limit. Single-candidate also keeps debugging simpl
 from __future__ import annotations
 
 import json
+import logging
 from importlib import resources
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 from pydantic import ValidationError
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import codex
+from patentradar.llm import get_llm_provider
 from patentradar.schemas import (
     Candidate,
     CandidateEvidence,
@@ -44,7 +47,16 @@ def evaluate_candidate(
 ) -> FullClaimChartCandidate:
     """Run one LLM round (initial or finalization)."""
     image_bytes_list = [img["png"] for img in evidence_pool_images if isinstance(img.get("png"), (bytes, bytearray))]
-    payload = codex.chat_json(
+    provider = get_llm_provider()
+    images_arg = image_bytes_list or None
+    if images_arg and not provider.supports_vision:
+        logger.warning(
+            "full_claim_chart_worker: dropping %d image(s) — provider %s lacks vision; "
+            "judging from text-only evidence.",
+            len(images_arg), provider.name,
+        )
+        images_arg = None
+    payload = provider.chat_json(
         system=_load_prompt(),
         user_text=_build_user_text(
             task_package=task_package,
@@ -55,7 +67,7 @@ def evaluate_candidate(
             new_search_results=new_search_results or [],
             is_finalization_round=is_finalization_round,
         ),
-        images=image_bytes_list or None,
+        images=images_arg,
         model=model,
         reasoning_effort=reasoning_effort,
         verbosity="medium",

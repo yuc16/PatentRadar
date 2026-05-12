@@ -1,7 +1,7 @@
 """GPT-5.5 worker that generates the final markdown report.
 
 Unlike module 1/2/3 workers which use strict json_schema, this one returns
-free-form markdown text. We use codex.chat() (not chat_json) directly.
+free-form markdown text via provider.chat_text().
 """
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ import json
 from importlib import resources
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
-from patentradar.llm import codex
+from patentradar.llm import get_llm_provider
 from patentradar.schemas import (
     FullClaimChartReport,
     SimilarPatentSearchHint,
@@ -31,7 +31,7 @@ def generate_report_markdown(
         full_claim_chart_report=full_claim_chart_report,
         similar_patents_hint=similar_patents_hint,
     )
-    markdown = codex.chat(
+    markdown = get_llm_provider().chat_text(
         system=_load_prompt(),
         user_text=user_text,
         model=model,

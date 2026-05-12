@@ -8,9 +8,13 @@ from typing import Any
 
 from pydantic import ValidationError
 
-from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
+from patentradar.core.constants import (
+    DEFAULT_MODEL,
+    DEFAULT_REASONING_EFFORT,
+    PATENT_COUNTRY_CODES,
+)
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import codex
+from patentradar.llm import get_llm_provider
 from patentradar.schemas import CandidateShortlist, SearchResultsArtifact, TaskPackage
 
 
@@ -21,7 +25,7 @@ def filter_candidates(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> CandidateShortlist:
-    payload = codex.chat_json(
+    payload = get_llm_provider().chat_json(
         system=_load_prompt("candidate_extract.md"),
         user_text=_build_user_text(task_package=task_package, search_results=search_results),
         model=model,
@@ -68,12 +72,21 @@ def _build_user_text(*, task_package: TaskPackage, search_results: SearchResults
         }
         for result in search_results.results[:250]
     ]
+    display_name, working_lang = PATENT_COUNTRY_CODES.get(
+        task_package.patent.country_code,
+        (task_package.patent.country_code or "Unknown", "en"),
+    )
     payload = {
         "patent": {
             "publication_no": task_package.patent.publication_no,
             "title": task_package.patent.title,
             "applicants": task_package.patent.applicants,
             "application_date": task_package.patent.application_date,
+        },
+        "patent_country": {
+            "code": task_package.patent.country_code,
+            "display_name": display_name,
+            "working_language": working_lang,
         },
         "technology_tag": task_package.technology_tag,
         "claim_1_text": task_package.claim_1_text,

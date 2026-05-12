@@ -8,9 +8,13 @@ from typing import Any
 
 from pydantic import ValidationError
 
-from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
+from patentradar.core.constants import (
+    DEFAULT_MODEL,
+    DEFAULT_REASONING_EFFORT,
+    PATENT_COUNTRY_CODES,
+)
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import codex
+from patentradar.llm import get_llm_provider
 from patentradar.schemas import QueryPlan, TaskPackage
 
 
@@ -20,7 +24,7 @@ def generate_query_plan(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> QueryPlan:
-    payload = codex.chat_json(
+    payload = get_llm_provider().chat_json(
         system=_load_prompt("query_generation.md"),
         user_text=_build_user_text(task_package),
         model=model,
@@ -47,8 +51,16 @@ def _build_user_text(task_package: TaskPackage) -> str:
         {"feature_id": feature.feature_id, "feature_text": feature.feature_text}
         for feature in task_package.claim_1_features
     ]
+    display_name, working_lang = PATENT_COUNTRY_CODES.get(
+        patent.country_code, (patent.country_code or "Unknown", "en")
+    )
     payload = {
         "publication_no": patent.publication_no,
+        "patent_country": {
+            "code": patent.country_code,
+            "display_name": display_name,
+            "working_language": working_lang,
+        },
         "title": patent.title,
         "applicants": patent.applicants,
         "application_date": patent.application_date,
@@ -101,10 +113,9 @@ def _query_plan_response_format() -> dict[str, Any]:
         "additionalProperties": False,
         "properties": {
             "domains": {"type": "array", "items": {"type": "string"}},
-            "aliases_zh": {"type": "array", "items": {"type": "string"}},
-            "aliases_en": {"type": "array", "items": {"type": "string"}},
+            "aliases": {"type": "array", "items": {"type": "string"}},
         },
-        "required": ["domains", "aliases_zh", "aliases_en"],
+        "required": ["domains", "aliases"],
     }
     schema = {
         "type": "object",

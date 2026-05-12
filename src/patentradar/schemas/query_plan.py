@@ -36,11 +36,14 @@ class SearchQuery(BaseModel):
 class ApplicantSelfSignals(BaseModel):
     """LLM-derived hints for filtering out the patent applicant's own
     products/sites from search results. Generated per task in step 1 because
-    the applicant changes with every input patent."""
+    the applicant changes with every input patent. `aliases` may contain
+    mixed-language entries — for a CN patent the LLM emits mostly Chinese plus
+    common English brand abbreviations; for a US patent it emits mostly
+    English plus localized variants. The post-filter does case-insensitive
+    substring match, so the field is language-agnostic."""
 
     domains: list[str] = Field(default_factory=list, description="self-owned domains, lowercase")
-    aliases_zh: list[str] = Field(default_factory=list)
-    aliases_en: list[str] = Field(default_factory=list)
+    aliases: list[str] = Field(default_factory=list)
 
 
 class QueryPlan(BaseModel):

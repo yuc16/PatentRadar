@@ -3,6 +3,11 @@
 This follows the existing project approach: read ``~/.codex/auth.json`` and call
 the ChatGPT backend Codex Responses SSE endpoint. It supports text and image
 inputs for module-one PDF claim reconstruction.
+
+`CodexProvider` is the LLMProvider-conformant wrapper used by the global
+factory in `provider.py`. The module-level `chat` and `chat_json` functions are
+kept as the backend implementation; callers should go through
+`get_llm_provider()` rather than importing them directly.
 """
 
 from __future__ import annotations
@@ -216,6 +221,57 @@ def _is_retryable_error(exc: Exception) -> bool:
             "配额",
         )
     )
+
+
+class CodexProvider:
+    """LLMProvider impl backed by the ChatGPT Codex Responses SSE endpoint."""
+
+    name = "codex"
+    supports_vision = True
+
+    def chat_json(
+        self,
+        *,
+        system: str,
+        user_text: str,
+        images: list[bytes] | None = None,
+        model: str | None = None,
+        reasoning_effort: str = DEFAULT_REASONING_EFFORT,
+        verbosity: str = "medium",
+        response_format: dict[str, Any] | None = None,
+        timeout: int | None = None,
+        attempts: int = 3,
+    ) -> dict[str, Any]:
+        return chat_json(
+            system=system,
+            user_text=user_text,
+            images=images,
+            model=model,
+            reasoning_effort=reasoning_effort,
+            verbosity=verbosity,
+            response_format=response_format,
+            timeout=timeout,
+            attempts=attempts,
+        )
+
+    def chat_text(
+        self,
+        *,
+        system: str,
+        user_text: str,
+        model: str | None = None,
+        reasoning_effort: str = DEFAULT_REASONING_EFFORT,
+        verbosity: str = "medium",
+        timeout: int | None = None,
+    ) -> str:
+        return chat(
+            system=system,
+            user_text=user_text,
+            model=model,
+            reasoning_effort=reasoning_effort,
+            verbosity=verbosity,
+            timeout=timeout,
+        )
 
 
 def _friendly_error(code: int, raw: str) -> str:

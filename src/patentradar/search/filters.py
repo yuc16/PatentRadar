@@ -68,10 +68,7 @@ def filter_search_results(
     dynamic_domains = {d.strip().lower() for d in (self_signals.domains if self_signals else [])}
     dynamic_aliases = [
         a.strip().lower()
-        for a in (
-            (self_signals.aliases_zh if self_signals else [])
-            + (self_signals.aliases_en if self_signals else [])
-        )
+        for a in (self_signals.aliases if self_signals else [])
         if a.strip()
     ]
     kept: list[SearchResult] = []

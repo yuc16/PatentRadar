@@ -55,7 +55,7 @@ def map_evidence_for_batch(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> EvidenceBatchResult:
-    search_router = router or SearchRouter()
+    search_router = router or SearchRouter(country_code=task_package.patent.country_code)
     initial_contexts = [
         build_initial_evidence_context(
             publication_no=task_package.patent.publication_no,

@@ -15,7 +15,7 @@ from patentradar.core.constants import (
     render_technology_tags_markdown,
 )
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import codex
+from patentradar.llm import get_llm_provider
 from patentradar.schemas import Claim, PatentInfo, TaskPackage
 
 
@@ -30,7 +30,7 @@ def decompose_claims(
 ) -> TaskPackage:
     prompt = _load_prompt()
     user_text = _build_user_text(patent=patent, html_claims=html_claims, source=source)
-    payload = codex.chat_json(
+    payload = get_llm_provider().chat_json(
         system=prompt,
         user_text=user_text,
         images=images or None,
