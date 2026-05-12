@@ -9,10 +9,18 @@ backend 由当前 .env 决定（PATENTRADAR_LLM_BACKEND=codex|openai）。
 
 from __future__ import annotations
 
+import logging
 import sys
 from pathlib import Path
 
 import typer
+
+# 让 pipeline 里的 logger.info 直接打到 stdout，监视器能看到 per-candidate 完成事件
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s | %(message)s",
+    datefmt="%H:%M:%S",
+)
 
 from patentradar.modules.competitor_search.pipeline import (
     load_task_package,
@@ -33,8 +41,8 @@ app = typer.Typer(no_args_is_help=True, add_completion=False)
 def main(
     publication_no: str = typer.Argument(..., help="例如 CN114512759B"),
     out_dir: Path = typer.Option(..., "--out-dir", help="所有产物写入此目录"),
-    max_workers_step4: int = typer.Option(3, "--workers-step4"),
-    max_workers_module3: int = typer.Option(2, "--workers-module3"),
+    max_workers_step4: int = typer.Option(1, "--workers-step4", help="模块二 step4 候选级并发；默认 1（串行）以最稳"),
+    max_workers_module3: int = typer.Option(2, "--workers-module3", help="模块三候选级并发；2 提速 ~50%，每个 per-candidate prompt 不大不会触 ChatGPT 过载"),
 ) -> None:
     task_package_path = (
         ROOT / "tests" / "decompose" / "outputs" / publication_no / "task_package.json"

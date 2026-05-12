@@ -1,0 +1,268 @@
+{
+  "publication_no": "CN114512759B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy Technology",
+      "product_name": "L600短刀片磷酸铁锂电芯",
+      "product_name_en": "L600 short blade LFP cell",
+      "product_version": "第二代 3.2V 196Ah；21.5×574×118mm；627.2Wh",
+      "market": "中国乘用车动力电池；A级车型短刀电池方案",
+      "reason_for_deep_dive": "该候选已公开长条方形/刀片电芯尺寸和能量，能直接核对权1的长方体硬壳单体、长度400–2500mm、D/V、S/E、L/S等关键参数。按摘要尺寸和能量粗算：L=574mm、H=118mm、D=21.5mm，D/V约1.48e-5mm^-2，S/E约263mm²/Wh，L/S约0.00347mm^-1，均落入或满足权1相应阈值，值得优先深挖硬壳结构和正式规格书。",
+      "source_result_ids": [
+        "brave-Q11-01",
+        "brave-Q11-02",
+        "brave-Q11-03",
+        "brave-Q11-04",
+        "brave-Q11-05",
+        "brave-Q15-03",
+        "exa-Q15-01",
+        "exa-Q15-03"
+      ],
+      "source_urls": [
+        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+        "https://svolt-energy.com/lfp-cell-196ah",
+        "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+        "https://m.xnyauto.com/news/51020.html",
+        "https://www.ithome.com/0/587/804.htm",
+        "https://www.aquaenergyexpo.com/product/10178/Energy_Storage/196Ah_Blade_cell",
+        "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+        "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery"
+      ],
+      "initial_evidence_summary": "搜索摘要显示：SVOLT L600 196Ah，3.2V，尺寸21.5×574×118mm，能量627.2Wh，重量约3380±50g，质量能量密度185Wh/kg，体积能量密度430Wh/L；蜂巢能源二代L600短刀片磷酸铁锂电池计划上市并面向A级车型应用。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy Technology",
+      "product_name": "L6短刀电芯",
+      "product_name_en": "L6 short blade cell",
+      "product_version": "L6；574×21.8×118mm常用尺寸",
+      "market": "中国乘用车短刀动力电池；蜂巢短刀量产/交付体系",
+      "reason_for_deep_dive": "该候选公开了具体L6尺寸，长度574mm落入权1的400–2500mm；长宽厚关系表现为长条薄型电芯，D/V和L/S可由尺寸初步核算，接近P01并落入权1区间。需进一步查证容量/能量E、硬壳铝壳结构以及是否为独立单体规格。",
+      "source_result_ids": [
+        "brave-Q17-03",
+        "brave-Q42-01",
+        "brave-Q42-03",
+        "brave-Q48-05"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/484682347",
+        "https://www.cls.cn/detail/1758006",
+        "https://m.bjx.com.cn/mnews/20241028/1407248.shtml",
+        "https://libattery.ofweek.com/2022-03/ART-36001-8460-30551757.html"
+      ],
+      "initial_evidence_summary": "摘要称蜂巢短刀电芯长度从340mm到574mm，应用最广泛的L6尺寸为574mm×21.8mm×118mm；另有短刀电池出货/交付数据，显示2023–2024年在中国及出口市场有大量交付。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy Technology",
+      "product_name": "L400磷酸铁锂短刀电芯",
+      "product_name_en": "L400 LFP short blade cell",
+      "product_version": "L400；62Ah；飞叠产线量产版",
+      "market": "中国PHEV/乘用车动力电池；短刀产线量产产品",
+      "reason_for_deep_dive": "该候选为明确型号+容量的短刀单体电芯，型号L400与权1长度下限400mm高度相关；摘要显示已满产，具有实际市场活跃性。需进一步获取长宽厚、单体能量和表面积，核查C1-F3至C1-F6。",
+      "source_result_ids": [
+        "brave-Q20-03",
+        "brave-Q42-01",
+        "brave-Q48-05"
+      ],
+      "source_urls": [
+        "https://chejiahao.autohome.com.cn/info/12995522",
+        "https://www.cls.cn/detail/1758006",
+        "https://libattery.ofweek.com/2022-03/ART-36001-8460-30551757.html"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢第一条“飞叠”L400短刀产线达到满产状态，日生产1万支62Ah的L400磷酸铁锂短刀电芯；蜂巢短刀电池在2023–2024年有大量出货。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy Technology",
+      "product_name": "L600短刀快充铁锂电芯",
+      "product_name_en": "L600 short blade fast-charging LFP cell",
+      "product_version": "2024快充版；3C–4C场景；能量密度约188Wh/kg；Q3 2024量产计划",
+      "market": "中国BEV乘用车快充动力电池",
+      "reason_for_deep_dive": "该候选与P01同属L600长条短刀路线，但为2024快充版本，公开了快充倍率、能量密度和量产计划。L600型号与权1长度区间直接相关，需深挖其具体长宽厚、能量E、硬壳/方壳结构，核查是否同样落入D/V、S/E、L/S限定。",
+      "source_result_ids": [
+        "brave-Q17-01",
+        "brave-Q43-01",
+        "brave-Q43-05",
+        "brave-Q15-04"
+      ],
+      "source_urls": [
+        "https://www.svolt.cn/innovation/innovations/cell",
+        "https://www.svolt.cn/en/news/142",
+        "https://www.sustainable-bus.com/components/svolt-blade-battery-launch-lfp",
+        "https://www.svolt.cn/en/solution/passenger"
+      ],
+      "initial_evidence_summary": "蜂巢官网摘要称2024年发布第二代短刀快充铁锂电池，飞叠热复合技术，能量密度188Wh/kg，兼顾2.2C快充且峰值3C以上；英文新闻摘要称L600 Short Blade fast charge cells面向3C–4C场景，计划2024年Q3量产。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy Technology",
+      "product_name": "短刀5C磷酸铁锂电芯",
+      "product_name_en": "5C short blade LFP cell",
+      "product_version": "2024量产版；5C快充；105Ah/130Ah容量段信号",
+      "market": "中国乘用车超快充动力电池",
+      "reason_for_deep_dive": "该候选是蜂巢短刀体系的高倍率量产版本，摘要出现具体容量段和量产时间。虽然摘要未列完整尺寸，但短刀长条方形形态与权1的长方体硬壳、长宽厚比例及长度范围高度相关，需检索规格书验证L/H/D/E。",
+      "source_result_ids": [
+        "brave-Q43-02",
+        "brave-Q43-05",
+        "brave-Q43-01"
+      ],
+      "source_urls": [
+        "https://batterytechassociation.org/svolt-revolutionizes-fast-charging-new-short-blade-batteries-enable-range-in-minutes",
+        "https://www.sustainable-bus.com/components/svolt-blade-battery-launch-lfp",
+        "https://www.svolt.cn/en/news/142"
+      ],
+      "initial_evidence_summary": "摘要称蜂巢“Short Blade”5C LFP电池计划2024年12月量产，可10%–80%十分钟充电；另一摘要提到105Ah、130Ah等容量并可升级至3C–4C场景。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy Technology",
+      "product_name": "L500-350Ah飞叠短刀储能电芯",
+      "product_name_en": "L500-350Ah stacked short blade ESS cell",
+      "product_version": "L500-350Ah；单颗能量1120Wh；循环寿命>11000次",
+      "market": "中国储能电芯/液冷储能系统",
+      "reason_for_deep_dive": "该候选为明确型号+容量的短刀单体电芯，L500型号与权1长度400–2500mm具有直接核查价值；单颗能量1120Wh可用于后续计算S/E。摘要称尺寸相对325Ah版本不变，需进一步找到长宽厚以验证D/V和L/S。",
+      "source_result_ids": [
+        "brave-Q19-02",
+        "brave-Q19-05",
+        "brave-Q20-04"
+      ],
+      "source_urls": [
+        "https://www.itdcw.com/news/focus/0411140b32024.html",
+        "https://www.eefocus.com/article/1711814.html",
+        "https://chedongxi.com/p/310425.html"
+      ],
+      "initial_evidence_summary": "摘要显示蜂巢在ESIE2024发布L500-350Ah飞叠短刀储能电芯，基于2023年325Ah爆款电芯，尺寸不变、体系升级，单颗电芯能量1120Wh，循环寿命超过11000次。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy Technology",
+      "product_name": "L500-730Ah飞叠短刀储能电芯",
+      "product_name_en": "L500-730Ah stacked short blade ESS cell",
+      "product_version": "L500-730Ah；加厚版；体积能量密度420Wh/L；循环寿命>11000次",
+      "market": "中国大容量储能电芯/液冷储能系统",
+      "reason_for_deep_dive": "该候选为L500短刀路线的加厚大容量版本，摘要明确为单体电芯且给出容量、体积能量密度和加厚特征；厚度D变化正是权1D/V参数敏感项，值得核查实际D/V、S/E和L/S。",
+      "source_result_ids": [
+        "brave-Q19-02",
+        "brave-Q19-03",
+        "brave-Q19-04",
+        "brave-Q19-05"
+      ],
+      "source_urls": [
+        "https://www.itdcw.com/news/focus/0411140b32024.html",
+        "https://www.inengyuan.com/chuneng/13029.html",
+        "https://news.qq.com/rain/a/20240411A07RBE00",
+        "https://www.eefocus.com/article/1711814.html"
+      ],
+      "initial_evidence_summary": "摘要显示L500-730Ah储能电芯在L500-350Ah基础上尺寸加厚、容量加倍，体积能量密度达到420Wh/L，循环寿命超过11000次，并用于6.9MWh短刀液冷储能系统。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "国轩高科",
+      "company_en": "Gotion High-Tech",
+      "product_name": "L600磷酸锰铁锂电池",
+      "product_name_en": "L600 LMFP battery cell",
+      "product_version": "L600 LMFP；240Wh/kg；525Wh/L",
+      "market": "中国乘用车/动力电池新体系产品",
+      "reason_for_deep_dive": "该候选公开为L600型号，并给出高质量/体积能量密度；L600信号与权1长度400–2500mm高度相关，525Wh/L有助于推算体积能量表现。需进一步确认其是否为方形硬壳单体、实际L/H/D以及S/E、L/S。",
+      "source_result_ids": [
+        "brave-Q27-01",
+        "brave-Q05-02"
+      ],
+      "source_urls": [
+        "http://li-b.cn/post/46810.html",
+        "https://www.gotion.com.cn/product/material/7.html"
+      ],
+      "initial_evidence_summary": "摘要称国轩高科在第12届科技大会发布L600型号LMFP电池，能量密度240Wh/kg、525Wh/L；并与现有LFP 190Wh/kg作对比。国轩为中国动力电池厂商，搜索结果另显示其LFP产品线。"
+    },
+    {
+      "candidate_id": "P09",
+      "company": "宁德时代",
+      "company_en": "Contemporary Amperex Technology Co., Limited (CATL)",
+      "product_name": "麒麟电池方形电芯",
+      "product_name_en": "Qilin prismatic cell",
+      "product_version": "极氪001/009 140kWh三元版；216颗方形电芯；高镍硅碳体系",
+      "market": "中国高端纯电乘用车；极氪001/009量产交付车型",
+      "reason_for_deep_dive": "摘要明确麒麟140kWh包使用216颗方形电芯，并在中国车型量产交付。虽然当前摘要未列单体长宽厚，但其高能量方形电芯可能涉及权1的长方体硬壳、S/E和长度比例参数，需深挖拆解/规格数据确认是否存在长条化尺寸。",
+      "source_result_ids": [
+        "brave-Q21-01",
+        "brave-Q22-01",
+        "exa-Q22-03",
+        "exa-Q22-04",
+        "brave-Q44-02",
+        "brave-Q49-01",
+        "brave-Q49-05"
+      ],
+      "source_urls": [
+        "http://www.li-b.cn/post/46948.html",
+        "https://www.batterydesign.net/zeekr-140kwh-catl-qilin",
+        "https://www.batterydesign.net/catl-qilin-ctp-3-0",
+        "https://www.catl.com/en/news/958.html",
+        "https://www.thepaper.cn/newsDetail_forward_22384071",
+        "https://www.eet-china.com/mp/a223760.html",
+        "https://www.thepaper.cn/newsDetail_forward_23764250"
+      ],
+      "initial_evidence_summary": "摘要显示麒麟电池已量产并交付极氪001/009；Zeekr 140kWh CATL Qilin包排列为36×6行方形电芯、共216颗；报道还称其采用高镍正极和硅碳负极，单体电芯能量密度高达285Wh/kg，系统能量密度约205Wh/kg或192.5Wh/kg级别。"
+    },
+    {
+      "candidate_id": "P10",
+      "company": "宁德时代",
+      "company_en": "Contemporary Amperex Technology Co., Limited (CATL)",
+      "product_name": "神行PLUS磷酸铁锂方形电芯",
+      "product_name_en": "Shenxing PLUS LFP prismatic cell",
+      "product_version": "2024神行PLUS；4C超充；一体式方形壳体；205Wh/kg级",
+      "market": "中国乘用车快充/长续航LFP动力电池",
+      "reason_for_deep_dive": "摘要明确神行PLUS采用方形电芯壳体，且为LFP 4C超充产品；方形一体式壳体与权1硬壳长方体特征相关，205Wh/kg能量密度有助于后续核查S/E。需进一步查找单体尺寸和容量，判断长度是否进入400–2500mm及比例范围。",
+      "source_result_ids": [
+        "exa-Q24-01",
+        "brave-Q24-02",
+        "brave-Q24-04",
+        "brave-Q24-05",
+        "brave-Q24-01"
+      ],
+      "source_urls": [
+        "https://www.catl.com/en/news/6091.html",
+        "https://www.catl.com/en/news/6239.html",
+        "https://www.electrive.com/2024/04/25/catl-presents-an-lfp-battery-enabling-a-1000-kilometre-range",
+        "https://www.autoevolution.com/news/catl-unveiled-the-shenxing-plus-world-s-first-lfp-cell-with-4c-ultra-fast-charging-tech-232955.html",
+        "https://www.motor1.com/news/718186/catl-battery-lfp-shenxing-plus"
+      ],
+      "initial_evidence_summary": "摘要显示宁德时代2024年在北京车展发布神行PLUS，LFP电池实现1000km以上续航和4C超充；第三方报道称新方形Shenxing Plus电芯壳体由单件制成，优化活性材料安装空间，能量密度达到205Wh/kg。"
+    },
+    {
+      "candidate_id": "P11",
+      "company": "欣旺达",
+      "company_en": "Sunwoda Electronic Co., Ltd.",
+      "product_name": "欣星驰超充2.0磷酸铁锂方形电芯",
+      "product_name_en": "Xingchi Supercharge 2.0 LFP prismatic cell",
+      "product_version": "15C超充；264颗方形电芯/98.8kWh/844.8V样包对应版本",
+      "market": "中国乘用车超快充动力电池",
+      "reason_for_deep_dive": "摘要明确样包由264颗方形电芯组成，且具备15C峰值快充；单体作为方形电芯需要进一步查证硬壳结构和长宽厚。98.8kWh、844.8V和方形电芯数量为后续反推单体电压/能量并核查S/E提供线索。",
+      "source_result_ids": [
+        "exa-Q35-01",
+        "exa-Q35-02",
+        "exa-Q35-03",
+        "exa-Q35-04",
+        "brave-Q34-03",
+        "brave-Q34-04"
+      ],
+      "source_urls": [
+        "https://news.metal.com/pt/newscontent/103865955-Sunwoda-Unveils-Xingchi-Supercharge-20-with-Ultra-Fast-Charging-Performance",
+        "https://battery-tech.net/battery-markets-news/sunwoda-unveils-15c-lfp-battery-for-9-minute-ev-recharge",
+        "https://www.electrive.com/2026/04/20/sunwoda-develops-extremely-fast-charging-lfp-batteries",
+        "https://carnewschina.com/2026/04/18/9-minute-full-recharge-sunwoda-unveils-15c-lfp-pack-with-1800-a-as-sodium-battery-strategy-unfolds",
+        "https://libattery.ofweek.com/2024-04/ART-36001-8120-30633338.html",
+        "https://www.cs.com.cn/ssgs/gsxw/202404/t20240426_6405348.html"
+      ],
+      "initial_evidence_summary": "摘要显示欣旺达Xingchi Supercharge Battery 2.0为LFP超快充方案，峰值15C；展示样包由264颗方形电芯构成，98.8kWh、844.8V、最高1800A，可5%–75%约5.5分钟充电；另有欣旺达闪充电池3.0摘要称LFP欣星驰电芯体积能量密度达450Wh/L。"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ dependencies = [
     "fastapi>=0.136.1",
     "httpx>=0.28.1",
     "lxml>=6.1.0",
+    "markdown>=3.10.2",
     "openai>=2.33.0",
     "openpyxl>=3.1.5",
     "pydantic>=2.13.3",
@@ -17,6 +18,7 @@ dependencies = [
     "rich>=15.0.0",
     "typer>=0.25.1",
     "uvicorn>=0.46.0",
+    "weasyprint>=68.1",
 ]
 
 [project.scripts]

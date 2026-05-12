@@ -135,7 +135,7 @@ def _candidate_shortlist_response_format() -> dict[str, Any]:
         "additionalProperties": False,
         "properties": {
             "publication_no": {"type": "string"},
-            "candidates": {"type": "array", "minItems": 15, "maxItems": 30, "items": candidate_schema},
+            "candidates": {"type": "array", "minItems": 8, "maxItems": 12, "items": candidate_schema},
         },
         "required": ["publication_no", "candidates"],
     }

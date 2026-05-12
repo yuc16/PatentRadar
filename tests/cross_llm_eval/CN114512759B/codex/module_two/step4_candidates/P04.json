@@ -1,0 +1,232 @@
+{
+  "candidate": {
+    "candidate_id": "P04",
+    "company": "蜂巢能源",
+    "company_en": "SVOLT Energy Technology",
+    "product_name": "L600短刀快充铁锂电芯",
+    "product_name_en": "L600 short blade fast-charging LFP cell",
+    "product_version": "2024快充版；3C–4C场景；能量密度约188Wh/kg；Q3 2024量产计划",
+    "market": "中国BEV乘用车快充动力电池",
+    "reason_for_deep_dive": "该候选与P01同属L600长条短刀路线，但为2024快充版本，公开了快充倍率、能量密度和量产计划。L600型号与权1长度区间直接相关，需深挖其具体长宽厚、能量E、硬壳/方壳结构，核查是否同样落入D/V、S/E、L/S限定。",
+    "source_result_ids": [
+      "brave-Q17-01",
+      "brave-Q43-01",
+      "brave-Q43-05",
+      "brave-Q15-04"
+    ],
+    "source_urls": [
+      "https://www.svolt.cn/innovation/innovations/cell",
+      "https://www.svolt.cn/en/news/142",
+      "https://www.sustainable-bus.com/components/svolt-blade-battery-launch-lfp",
+      "https://www.svolt.cn/en/solution/passenger"
+    ],
+    "initial_evidence_summary": "蜂巢官网摘要称2024年发布第二代短刀快充铁锂电池，飞叠热复合技术，能量密度188Wh/kg，兼顾2.2C快充且峰值3C以上；英文新闻摘要称L600 Short Blade fast charge cells面向3C–4C场景，计划2024年Q3量产。"
+  },
+  "launch_date": "2023年12月发布；2024年6月已量产，2024年7月大批量交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.ithome.com/0/738/877.htm",
+      "title": "蜂巢能源宣布全球首推全系短刀快充电池，覆盖 2.2C 到 5C 场景",
+      "source_name": "IT之家",
+      "snippet": "2023年12月13日报道：在BEV领域推出L400和L600两种规格的LFP短刀快充电芯；基于L600的短刀快充电芯将覆盖3-4C场景，预计2024年Q3量产。"
+    },
+    {
+      "url": "https://auto.cyol.com/gb/articles/2024-06/17/content_gGjPJ8Imoy.html",
+      "title": "引领磷酸铁锂能量密度新高度，蜂巢能源第二代短刀快充铁锂量产",
+      "source_name": "中青在线/东方网",
+      "snippet": "2024年6月17日报道：蜂巢能源第二代短刀电芯依托“飞叠+快充”，能量密度达到188Wh/Kg，兼顾2.2C快充，已正式量产并大批量交付给客户。"
+    },
+    {
+      "url": "https://www.svolt.cn/innovation/innovations/cell",
+      "title": "电芯创新-蜂巢能源官方网站",
+      "source_name": "蜂巢能源官网",
+      "snippet": "2024年发布第二代短刀快充铁锂电池；2024年7月第二代短刀快充铁锂电芯已经在上饶、盐城两个基地完成了对客户的大批量交付。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "不失格：公开发布、量产及大批量交付时间均晚于本专利申请日2019-06-21；现有证据未出现与权利要求1任一特征直接矛盾的数值或文字。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述单体电池为硬壳电池",
+      "competitor_feature": "公开证据显示其为LFP短刀电芯、叠片式长薄电芯，并提到排气通道、针刺安全等设计；但未直接写明“硬壳电池”“方壳电池”“铝壳/钢壳”或壳体材料。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "短刀电池技术基于叠片式的长薄电芯；第二代短刀快充铁锂电池采用飞叠热复合技术，能量密度188Wh/Kg。"
+        },
+        {
+          "url": "http://www.newpower.cn/cn/new/new-72-623.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "NewPower",
+          "snippet": "文章称方形电池长薄化成为趋势，并讨论蜂巢能源L600短刀片电芯，但未给出硬壳/壳体材料。"
+        }
+      ],
+      "reasoning": "证据只证明“短刀、长薄、叠片”路线；按要求不能仅凭短刀电池一般结构推定硬壳。缺少硬壳/方壳/铝壳的直接公开表述。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+      "competitor_feature": "官网称短刀电池“基于叠片式的长薄电芯”；第三方文章称L600为“方形电池长薄化”路线并给出实际长度约574mm。可推断为长薄方形/近长方体电芯，但未公开P04快充版的宽度H、厚度D及H>D数值。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "代表性技术：短刀电池技术基于叠片式的长薄电芯。产品系列含5C+800V L600 LFP短刀电池。"
+        },
+        {
+          "url": "http://www.newpower.cn/cn/new/new-72-623.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "NewPower",
+          "snippet": "文章称蜂巢能源L600实际长度574mm，并将其置于“方形电池长薄化”趋势下讨论。"
+        },
+        {
+          "url": "https://www.ithome.com/0/738/877.htm",
+          "title": "蜂巢能源宣布全球首推全系短刀快充电池，覆盖 2.2C 到 5C 场景",
+          "source_name": "IT之家",
+          "snippet": "在BEV领域，蜂巢能源推出L400和L600两种规格的LFP短刀快充电芯，容量105Ah、130Ah和133Ah。"
+        }
+      ],
+      "reasoning": "“方形电池长薄化/叠片式长薄电芯”可较严谨推断其为长薄方形电芯，满足L大于其他尺寸的方向性；但缺H、D实测值，H>D只能推断，不能明确满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+      "competitor_feature": "现有证据仅能确认P04属于L600规格，公开长度约600mm级/旧L600实际长度574mm；未公开P04快充版宽度H、厚度D。无法计算V=L×H×D，也无法计算D/V并与6.5e-6～2e-5 mm⁻²比较。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/738/877.htm",
+          "title": "蜂巢能源宣布全球首推全系短刀快充电池，覆盖 2.2C 到 5C 场景",
+          "source_name": "IT之家",
+          "snippet": "L600短刀快充电芯覆盖3-4C场景，预计2024年Q3量产；公开容量为130Ah和133Ah。"
+        },
+        {
+          "url": "http://www.newpower.cn/cn/new/new-72-623.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "NewPower",
+          "snippet": "提到L600实际长度574mm，但未给出P04快充版的宽度、厚度。"
+        },
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "产品系列提到5C+800V L600 LFP短刀电池，但未列出长宽厚。"
+        }
+      ],
+      "reasoning": "该特征必须用D和V现场计算。证据池没有P04快充版D、H，只有长度/容量类信息，不能计算V和D/V。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+      "competitor_feature": "公开资料给出L600快充电芯容量130Ah、133Ah，以及第二代短刀快充铁锂能量密度188Wh/kg；但未给出P04额定电压、单体能量E和H/D尺寸，无法计算S=2(LH+LD+HD)，也无法计算S/E。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/738/877.htm",
+          "title": "蜂巢能源宣布全球首推全系短刀快充电池，覆盖 2.2C 到 5C 场景",
+          "source_name": "IT之家",
+          "snippet": "L400和L600两种规格的LFP短刀快充电芯，容量分别为105Ah、130Ah和133Ah。"
+        },
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "第二代短刀快充铁锂电池能量密度188Wh/Kg，兼顾2.2C快充性能，峰值3C以上。"
+        },
+        {
+          "url": "https://chedongxi.com/p/310425.html",
+          "title": "蜂巢能源短刀电池全系升级快充，全新产品涵盖乘商储能市场",
+          "source_name": "车东西",
+          "snippet": "L400和L600两种规格的LFP短刀快充电芯，容量105Ah、130Ah和133Ah，可实现最高4C。"
+        }
+      ],
+      "reasoning": "S/E需S和E。现有证据只给容量Ah或质量能量密度Wh/kg，缺额定电压/单体Wh及宽厚尺寸，不能现场计算S/E。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+      "competitor_feature": "P04被公开称为L600规格LFP短刀快充电芯；公开报道将L600对应为600mm级短刀，旧L600实际长度为574mm。无论按L≈600mm还是L≈574mm，均落入400mm～2500mm。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/738/877.htm",
+          "title": "蜂巢能源宣布全球首推全系短刀快充电池，覆盖 2.2C 到 5C 场景",
+          "source_name": "IT之家",
+          "snippet": "在BEV领域，蜂巢能源推出L400和L600两种规格的LFP短刀快充电芯；基于L600的短刀快充电芯覆盖3-4C场景。"
+        },
+        {
+          "url": "https://www.sohu.com/a/502205275_114760",
+          "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片电池明年上市",
+          "source_name": "搜狐/IT之家转载",
+          "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah。"
+        },
+        {
+          "url": "http://www.newpower.cn/cn/new/new-72-623.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "NewPower",
+          "snippet": "根据文章看到的数据，L600的实际长度是574mm，比600小一点点。"
+        }
+      ],
+      "reasoning": "P04明确为L600规格；公开资料直接给出L600长度600mm或实际574mm，两种取值均在400～2500mm区间内。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+      "competitor_feature": "可确认L600长度约574～600mm；但P04快充版未公开宽度H、厚度D，无法计算S=2(LH+LD+HD)。因此无法得到L/S数值并判断是否处于0.002～0.005mm⁻¹。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/738/877.htm",
+          "title": "蜂巢能源宣布全球首推全系短刀快充电池，覆盖 2.2C 到 5C 场景",
+          "source_name": "IT之家",
+          "snippet": "L600规格LFP短刀快充电芯，覆盖3-4C场景。"
+        },
+        {
+          "url": "http://www.newpower.cn/cn/new/new-72-623.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "NewPower",
+          "snippet": "L600实际长度574mm；文章未给出快充版宽度、厚度。"
+        },
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "产品系列包含L600 LFP短刀电池；官网未列出长宽厚完整尺寸。"
+        }
+      ],
+      "reasoning": "L/S必须先由L、H、D算S。当前仅有L600长度线索，缺H和D，不能计算S及L/S。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 50.0,
+  "searched_queries": [
+    "蜂巢能源 L600短刀快充铁锂电芯 2024快充版；3C–4C场景；能量密度约188Wh/kg；Q3 2024量产计划 规格书 参数",
+    "蜂巢能源 L600短刀快充铁锂电芯 2024快充版；3C–4C场景；能量密度约188Wh/kg；Q3 2024量产计划 说明书 PDF",
+    "蜂巢能源 L600短刀快充铁锂电芯 2024快充版；3C–4C场景；能量密度约188Wh/kg；Q3 2024量产计划 官方 参数",
+    "蜂巢能源 L600短刀快充铁锂电芯 2024快充版；3C–4C场景；能量密度约188Wh/kg；Q3 2024量产计划 拆解 结构",
+    "蜂巢能源 L600短刀快充铁锂电芯 2024快充版；3C–4C场景；能量密度约188Wh/kg；Q3 2024量产计划 上市 日期 发布"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

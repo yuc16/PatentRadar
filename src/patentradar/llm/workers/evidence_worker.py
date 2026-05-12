@@ -232,6 +232,16 @@ def _normalize_batch(
             comparison.patent_feature = feature_text
             comparisons.append(comparison)
         item.comparisons = comparisons
+        # 按侵权法「全覆盖」原则：权 1 任一特征明确不满足 → 不可能侵权 →
+        # 直接 disqualify，跳过 gap round 节省 LLM/搜索预算。LLM 已经标了
+        # disqualified=true 的不重写（保留其原因），未标的我们补上。
+        if not item.disqualified:
+            unsatisfied = [c.feature_id for c in comparisons if c.status == "明确不满足"]
+            if unsatisfied:
+                item.disqualified = True
+                item.disqualification_reason = (
+                    f"权 1 特征 {', '.join(unsatisfied)} 明确不满足，按全覆盖原则无侵权可能"
+                )
         item = CandidateEvidence.model_validate(item.model_dump())
         normalized.append(item)
     result.results = normalized

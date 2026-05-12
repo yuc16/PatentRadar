@@ -17,7 +17,11 @@ from .result_normalizer import canonical_url, compact_snippet
 
 logger = logging.getLogger(__name__)
 
-_QUOTA_KEYWORDS = ("quota", "rate limit", "usage limit", "exceeded", "429", "403", "401")
+_QUOTA_KEYWORDS = (
+    "quota", "rate limit", "usage limit", "exceeded", "429", "403", "401", "432",
+)
+# Tavily 用 432（非标 HTTP）表示当前 key 已超月度额度；429 是常规限流；401/403 是无效/失效 key。
+_QUOTA_STATUSES = (401, 403, 429, 432)
 
 
 def _load_tavily_key_pool() -> list[str]:
@@ -81,7 +85,7 @@ class TavilyProvider(SearchProvider):
             try:
                 with httpx.Client(timeout=self.timeout) as client:
                     response = client.post(self.endpoint, headers=headers, json=body)
-                if response.status_code in (401, 403, 429):
+                if response.status_code in _QUOTA_STATUSES:
                     logger.warning(
                         "Tavily key %d/%d quota/auth issue (status=%d), rotating",
                         self._index + 1, len(self._keys), response.status_code,

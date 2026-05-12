@@ -1,0 +1,178 @@
+{
+  "candidate": {
+    "candidate_id": "P03",
+    "company": "蜂巢能源",
+    "company_en": "SVOLT Energy Technology",
+    "product_name": "L400磷酸铁锂短刀电芯",
+    "product_name_en": "L400 LFP short blade cell",
+    "product_version": "L400；62Ah；飞叠产线量产版",
+    "market": "中国PHEV/乘用车动力电池；短刀产线量产产品",
+    "reason_for_deep_dive": "该候选为明确型号+容量的短刀单体电芯，型号L400与权1长度下限400mm高度相关；摘要显示已满产，具有实际市场活跃性。需进一步获取长宽厚、单体能量和表面积，核查C1-F3至C1-F6。",
+    "source_result_ids": [
+      "brave-Q20-03",
+      "brave-Q42-01",
+      "brave-Q48-05"
+    ],
+    "source_urls": [
+      "https://chejiahao.autohome.com.cn/info/12995522",
+      "https://www.cls.cn/detail/1758006",
+      "https://libattery.ofweek.com/2022-03/ART-36001-8460-30551757.html"
+    ],
+    "initial_evidence_summary": "摘要显示蜂巢第一条“飞叠”L400短刀产线达到满产状态，日生产1万支62Ah的L400磷酸铁锂短刀电芯；蜂巢短刀电池在2023–2024年有大量出货。"
+  },
+  "launch_date": "2023年4月28日量产下线",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.itdcw.com/news/focus/042Q3495R023.html",
+      "title": "蜂巢能源短刀飞叠电芯盐城基地下线 将搭载吉利、长城多款车型_电池网",
+      "source_name": "电池网",
+      "snippet": "4月28日，蜂巢能源首款短刀飞叠电芯L400在盐城基地成功量产下线。据了解，该款电芯容量为62Ah，采用蜂巢能源先进的飞叠技术，将搭载吉利、长城等车企的多款车型。"
+    },
+    {
+      "url": "http://www.cbea.com/hydt/202307/039276.html",
+      "title": "创纪录！蜂巢能源盐城基地飞叠短刀L400电芯2个月累计生产超50万支-行业动态-电池中国网",
+      "source_name": "电池中国网",
+      "snippet": "从5月份第1支电芯下线到目前单线稳定日产超过10000支，累计生产50万支。"
+    }
+  ],
+  "disqualified": true,
+  "disqualification_reason": "量产时间晚于专利申请日2019-06-21，本身不因上市时间失格；但公开尺寸14.6mm×409mm×88mm计算得到D/V=2.78e-5 mm^-2，高于权利要求上限2.0e-5 mm^-2，C1-F3明确不满足，故候选失格。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述单体电池为硬壳电池",
+      "competitor_feature": "现有证据仅显示L400为“短刀电芯”“叠片/飞叠”磷酸铁锂电芯，未直接出现“硬壳/方壳/铝壳/prismatic hard case”等产品级壳体描述。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.svolt.cn/solution/passenger",
+          "title": "乘用车-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官方网站",
+          "snippet": "PHEV方案产品包括“62Ah&90Ah-LFP短刀电芯”；蜂巢能源推出“飞叠+短刀”混动平台专属设计。"
+        },
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官方网站",
+          "snippet": "短刀电池技术：基于叠片式的长薄电芯；PHEV领域主推L400系列产品。"
+        }
+      ],
+      "reasoning": "“短刀/叠片/长薄电芯”与硬壳存在行业关联，但证据池没有直接指向L400单体为硬壳、方壳或铝壳，不能用一般经验替代产品级证据。",
+      "suggested_followup_queries": [
+        "蜂巢 L400 62Ah 短刀电芯 方壳 铝壳 硬壳",
+        "SVOLT L400 62Ah short blade prismatic aluminum hard case"
+      ]
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+      "competitor_feature": "公开尺寸为14.6mm×409mm×88mm；按最大边为长度L=409mm、次边为宽度H=88mm、最小边为厚度D=14.6mm，则L>H>D。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/12995522",
+          "title": "蜂巢能源的PHEV电池爆品攻势_车家号_发现车生活_汽车之家",
+          "source_name": "汽车之家车家号",
+          "snippet": "蜂巢能源的L400磷酸铁锂短刀电池，一种典型的尺寸为14.6mm*409mm*88mm，容量为62Ah。"
+        }
+      ],
+      "reasoning": "汽车之家车家号给出L400电芯三维尺寸。以409、88、14.6mm分别作为长、宽、厚，三者严格递减，且“短刀电芯”对应长薄方形单体形态。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+      "competitor_feature": "L=409mm，H=88mm，D=14.6mm；V=L×H×D=409×88×14.6=525,483.2mm³；D/V=14.6/525,483.2≈0.00002778mm⁻²，即2.78e-5mm⁻²，高于2.0e-5上限。",
+      "status": "明确不满足",
+      "score": 0.0,
+      "evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/12995522",
+          "title": "蜂巢能源的PHEV电池爆品攻势_车家号_发现车生活_汽车之家",
+          "source_name": "汽车之家车家号",
+          "snippet": "蜂巢能源的L400磷酸铁锂短刀电池，一种典型的尺寸为14.6mm*409mm*88mm，容量为62Ah。"
+        }
+      ],
+      "reasoning": "D/V对长方体等于1/(L×H)。采用公开尺寸计算为1/(409×88)=2.78e-5mm⁻²，明确超出权利要求0.65e-5至2.0e-5范围。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+      "competitor_feature": "L=409,H=88,D=14.6mm；S=2(LH+LD+HD)=2×(409×88+409×14.6+88×14.6)=86,496.4mm²。公开容量62Ah；若按磷酸铁锂单体常用标称电压3.2V估算，E≈62×3.2=198.4Wh，S/E≈86,496.4/198.4≈436mm²/Wh，低于1000。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/12995522",
+          "title": "蜂巢能源的PHEV电池爆品攻势_车家号_发现车生活_汽车之家",
+          "source_name": "汽车之家车家号",
+          "snippet": "L400磷酸铁锂短刀电池，典型尺寸为14.6mm*409mm*88mm，容量为62Ah。"
+        },
+        {
+          "url": "https://www.itdcw.com/news/focus/042Q3495R023.html",
+          "title": "蜂巢能源短刀飞叠电芯盐城基地下线 将搭载吉利、长城多款车型_电池网",
+          "source_name": "电池网",
+          "snippet": "该款电芯容量为62Ah，采用蜂巢能源先进的飞叠技术。"
+        }
+      ],
+      "reasoning": "已有尺寸和容量，但证据池未直接给L400标称电压或Wh能量；按LFP单体3.2V估算S/E≈436，严低于1000，因此为可能满足。",
+      "suggested_followup_queries": [
+        "蜂巢 L400 62Ah 短刀电芯 额定电压 能量 Wh",
+        "SVOLT L400 62Ah cell nominal voltage energy datasheet"
+      ]
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+      "competitor_feature": "公开典型尺寸14.6mm×409mm×88mm；按最大边取长度L=409mm，落入400mm~2500mm范围。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/12995522",
+          "title": "蜂巢能源的PHEV电池爆品攻势_车家号_发现车生活_汽车之家",
+          "source_name": "汽车之家车家号",
+          "snippet": "蜂巢能源的L400磷酸铁锂短刀电池，一种典型的尺寸为14.6mm*409mm*88mm，容量为62Ah。"
+        }
+      ],
+      "reasoning": "公开尺寸中最大边为409mm，符合短刀L400命名并位于权利要求400至2500mm长度区间内。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+      "competitor_feature": "L=409mm，H=88mm，D=14.6mm；S=2(LH+LD+HD)=2×(409×88+409×14.6+88×14.6)=86,496.4mm²；L/S=409/86,496.4≈0.00473mm⁻¹，处于0.002~0.005mm⁻¹范围。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/12995522",
+          "title": "蜂巢能源的PHEV电池爆品攻势_车家号_发现车生活_汽车之家",
+          "source_name": "汽车之家车家号",
+          "snippet": "蜂巢能源的L400磷酸铁锂短刀电池，一种典型的尺寸为14.6mm*409mm*88mm，容量为62Ah。"
+        }
+      ],
+      "reasoning": "同一公开尺寸可直接计算表面积S=86,496.4mm²；409/S≈0.00473mm⁻¹，落入要求范围。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 0.0,
+  "searched_queries": [
+    "蜂巢能源 L400磷酸铁锂短刀电芯 规格书 参数",
+    "蜂巢能源 L400磷酸铁锂短刀电芯 拆解 结构",
+    "蜂巢能源 L400磷酸铁锂短刀电芯 说明书 PDF",
+    "蜂巢能源 L400磷酸铁锂短刀电芯 官方 参数",
+    "蜂巢能源 L400磷酸铁锂短刀电芯 上市 日期 发布",
+    "蜂巢能源 L400磷酸铁锂短刀电芯 中国 市场",
+    "蜂巢能源官网 乘用车 L400 62Ah"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

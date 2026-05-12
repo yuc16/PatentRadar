@@ -80,12 +80,16 @@ def run_step1_generate_queries(
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> QueryPlan:
     start = time.perf_counter()
+    cached = output_dir / "step1_query_plan.json"
+    if cached.exists():
+        logger.info("module2 step1 loaded_from_cache %s", cached)
+        return QueryPlan.model_validate(json.loads(cached.read_text(encoding="utf-8")))
     query_plan = build_query_plan(
         task_package,
         model=model,
         reasoning_effort=reasoning_effort,
     )
-    _write_json(output_dir / "step1_query_plan.json", query_plan.model_dump())
+    _write_json(cached, query_plan.model_dump())
     logger.info(
         "module2 step1 publication=%s query_count=%d elapsed_ms=%d",
         task_package.patent.publication_no,
@@ -102,12 +106,16 @@ def run_step2_search_results(
     output_dir: Path,
 ) -> SearchResultsArtifact:
     start = time.perf_counter()
+    cached = output_dir / "step2_search_results.json"
+    if cached.exists():
+        logger.info("module2 step2 loaded_from_cache %s", cached)
+        return SearchResultsArtifact.model_validate(json.loads(cached.read_text(encoding="utf-8")))
     search_results = discover_candidates(
         publication_no=task_package.patent.publication_no,
         query_plan=query_plan,
         country_code=task_package.patent.country_code,
     )
-    _write_json(output_dir / "step2_search_results.json", search_results.model_dump())
+    _write_json(cached, search_results.model_dump())
     logger.info(
         "module2 step2 publication=%s result_count=%d elapsed_ms=%d",
         task_package.patent.publication_no,
@@ -126,13 +134,17 @@ def run_step3_filter_candidates(
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> CandidateShortlist:
     start = time.perf_counter()
+    cached = output_dir / "step3_candidate_shortlist.json"
+    if cached.exists():
+        logger.info("module2 step3 loaded_from_cache %s", cached)
+        return CandidateShortlist.model_validate(json.loads(cached.read_text(encoding="utf-8")))
     shortlist = shortlist_candidates(
         task_package=task_package,
         search_results=search_results,
         model=model,
         reasoning_effort=reasoning_effort,
     )
-    _write_json(output_dir / "step3_candidate_shortlist.json", shortlist.model_dump())
+    _write_json(cached, shortlist.model_dump())
     logger.info(
         "module2 step3 publication=%s candidate_count=%d elapsed_ms=%d",
         task_package.patent.publication_no,
@@ -150,39 +162,86 @@ def run_step4_map_evidence(
     query_plan: QueryPlan | None = None,
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
-    max_workers: int = 3,
+    max_workers: int = 1,
 ) -> list[CandidateEvidence]:
+    """Per-candidate evidence judging. 一次 LLM 调用只处理 1 个候选；落盘后再
+    跑下一个。比旧的 5-候选 batch 模式 prompt 砍到 1/5，断流/server_error 概率
+    骤降；早期淘汰（权 1 任一特征明确不满足）会在 evidence_worker._normalize_batch
+    里把 disqualified 写 true，下游 evidence_mapper 自动跳过 gap round。"""
     start = time.perf_counter()
     self_signals = query_plan.applicant_self_signals if query_plan else None
-    batches = [
-        shortlist.candidates[index : index + 5]
-        for index in range(0, len(shortlist.candidates), 5)
-    ]
-    batch_dir = output_dir / "step4_evidence_batches"
-    batch_dir.mkdir(parents=True, exist_ok=True)
-    batch_results: list[EvidenceBatchResult] = []
-    worker_count = max(1, min(max_workers, len(batches)))
-    with ThreadPoolExecutor(max_workers=worker_count) as executor:
-        futures = {
-            executor.submit(
-                map_evidence_for_batch,
-                task_package=task_package,
-                candidates=batch,
-                batch_id=f"B{batch_index:02d}",
-                self_signals=self_signals,
-                model=model,
-                reasoning_effort=reasoning_effort,
-            ): batch_index
-            for batch_index, batch in enumerate(batches, start=1)
-        }
-        for future in as_completed(futures):
-            batch_index = futures[future]
-            result = future.result()
-            batch_results.append(result)
-            _write_json(batch_dir / f"batch_{batch_index:02d}.json", result.model_dump())
+    cand_dir = output_dir / "step4_candidates"
+    cand_dir.mkdir(parents=True, exist_ok=True)
+    evidence_results: list[CandidateEvidence] = []
 
-    batch_results.sort(key=lambda item: item.batch_id)
-    evidence_results = [item for batch in batch_results for item in batch.results]
+    def _process(candidate):
+        batch = map_evidence_for_batch(
+            task_package=task_package,
+            candidates=[candidate],
+            batch_id=f"cand_{candidate.candidate_id}",
+            self_signals=self_signals,
+            model=model,
+            reasoning_effort=reasoning_effort,
+        )
+        return candidate, batch
+
+    def _load_or_run(candidate) -> CandidateEvidence | None:
+        # 断点续传：cand file 已存在直接 load
+        path = cand_dir / f"{candidate.candidate_id}.json"
+        if path.exists():
+            try:
+                cached = CandidateEvidence.model_validate(json.loads(path.read_text(encoding="utf-8")))
+                logger.info(
+                    "module2 step4 candidate=%s loaded_from_cache score=%.2f disqualified=%s",
+                    candidate.candidate_id, cached.total_score, cached.disqualified,
+                )
+                return cached
+            except Exception as exc:  # noqa: BLE001
+                logger.warning("module2 step4 cache invalid for %s, re-running: %s", candidate.candidate_id, exc)
+        # 单候选错误隔离：LLM/网络炸了不拖死整 pipeline，写一条 disqualified 占位
+        try:
+            _, result = _process(candidate)
+        except Exception as exc:  # noqa: BLE001
+            logger.error("module2 step4 candidate=%s FAILED, marking disqualified: %s", candidate.candidate_id, exc)
+            fallback = CandidateEvidence(
+                candidate=candidate,
+                launch_date="",
+                launch_date_evidence=[],
+                disqualified=True,
+                disqualification_reason=f"LLM/网络异常：{exc}",
+                comparisons=[],
+                total_score=0.0,
+                searched_providers=[],
+                searched_queries=[],
+            )
+            _write_json(path, fallback.model_dump())
+            return fallback
+        if not result.results:
+            return None
+        ev = result.results[0]
+        _write_json(path, ev.model_dump())
+        logger.info(
+            "module2 step4 candidate=%s disqualified=%s score=%.2f",
+            candidate.candidate_id, ev.disqualified, ev.total_score,
+        )
+        return ev
+
+    worker_count = max(1, min(max_workers, len(shortlist.candidates)))
+    if worker_count == 1:
+        for candidate in shortlist.candidates:
+            ev = _load_or_run(candidate)
+            if ev is not None:
+                evidence_results.append(ev)
+    else:
+        with ThreadPoolExecutor(max_workers=worker_count) as executor:
+            futures = {executor.submit(_load_or_run, c): c for c in shortlist.candidates}
+            for future in as_completed(futures):
+                ev = future.result()
+                if ev is not None:
+                    evidence_results.append(ev)
+        order = {c.candidate_id: idx for idx, c in enumerate(shortlist.candidates)}
+        evidence_results.sort(key=lambda e: order.get(e.candidate.candidate_id, 999))
+
     _write_json(
         output_dir / "step4_candidate_evidence.json",
         {
@@ -190,10 +249,13 @@ def run_step4_map_evidence(
             "results": [item.model_dump() for item in evidence_results],
         },
     )
+    qualified = sum(1 for e in evidence_results if not e.disqualified)
     logger.info(
-        "module2 step4 publication=%s evaluated_count=%d elapsed_ms=%d",
+        "module2 step4 publication=%s evaluated=%d qualified=%d disqualified=%d elapsed_ms=%d",
         task_package.patent.publication_no,
         len(evidence_results),
+        qualified,
+        len(evidence_results) - qualified,
         _elapsed_ms(start),
     )
     return evidence_results

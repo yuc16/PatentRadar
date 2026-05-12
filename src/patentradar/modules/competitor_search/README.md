@@ -27,10 +27,10 @@ GPT-5.5 围绕权 1 生成 **30-50 个检索 query**，附带：
 - **静态层** [`configs/search_filters.toml`](../../../../configs/search_filters.toml)：专利文献站（patents.google.com / patsnap / espacenet 等）+ 文档分享站 + 寄生 URL 正则
 - **动态层** [`ApplicantSelfSignals`](../../schemas/query_plan.py)：申请人自家域名 + 中英 alias 命中标题即丢
 
-Tavily 配 10 个 key 池，429/401/403 自动轮换。Exa 用原生 `excludeDomains` 而非负向操作符（neural embedding 不支持 `-keyword`）。
+Tavily 配 10 个 key 池，429/401/403/432 自动轮换。Exa 用原生 `excludeDomains` 而非负向操作符（neural embedding 不支持 `-keyword`）。
 
 ### Step 3 — `step3_candidate_shortlist.json`
-GPT-5.5 读 step2 搜索摘要（已过滤），输出 **15-30 个具体产品/版本**：
+GPT-5.5 读 step2 搜索摘要（已过滤），输出 **8-12 个具体产品/版本**：
 - `company` + `company_en` + `product_name` + `product_name_en` + `product_version`
 - `source_result_ids` / `source_urls` / `initial_evidence_summary`
 - 候选 ID 程序化强制为 `P01..PNN` 连续序列
@@ -93,7 +93,7 @@ GPT-5.5 读 step2 搜索摘要（已过滤），输出 **15-30 个具体产品/�
 PATENTRADAR_MODEL=gpt-5.5
 PATENTRADAR_CONTEXT_LENGTH=258000
 PATENTRADAR_REASONING_EFFORT=high
-CODEX_STREAM_TIMEOUT=900
+
 
 TAVILY_API_KEY=tvly-dev-key1
 tvly-dev-key2,        # 可堆叠多 key（裸行），自动轮换
