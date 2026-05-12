@@ -32,6 +32,13 @@ from patentradar.llm.codex import _is_retryable_error, _parse_json
 
 logger = logging.getLogger(__name__)
 
+# aihubmix / 中转服务在 DeepSeek 长上下文请求里频繁出现 "Server disconnected
+# without sending a response"（httpx.RemoteProtocolError）。这类断流跟 429
+# 配额无关，是底层连接抖动，重试通常一次就能成功。我们对 OpenAI 兼容侧
+# 单独抬高重试上限，并把断流场景的退避时间压短。
+_MIN_OPENAI_ATTEMPTS = 6
+_OPENAI_RETRY_BASE_SECONDS = 4.0
+
 
 class OpenAIVisionUnsupportedError(RuntimeError):
     pass
@@ -87,8 +94,9 @@ class OpenAICompatibleProvider:
         if wrapped_rf is not None:
             request_body["response_format"] = wrapped_rf
 
+        effective_attempts = max(attempts, _MIN_OPENAI_ATTEMPTS)
         last_exc: Exception | None = None
-        for attempt in range(1, max(1, attempts) + 1):
+        for attempt in range(1, effective_attempts + 1):
             try:
                 text = self._call(request_body, timeout=timeout or self.default_timeout)
                 return _parse_json(text)
@@ -103,12 +111,12 @@ class OpenAICompatibleProvider:
                 continue
             except Exception as exc:  # noqa: BLE001
                 last_exc = exc
-                if attempt >= attempts or not _is_retryable_error(exc):
+                if attempt >= effective_attempts or not _is_retryable_error(exc):
                     raise
-                sleep_seconds = 20.0 * attempt
+                sleep_seconds = _OPENAI_RETRY_BASE_SECONDS * attempt
                 logger.warning(
                     "OpenAI provider retry %d/%d after error: %s",
-                    attempt, attempts, exc,
+                    attempt, effective_attempts, exc,
                 )
                 if sleep_seconds > 0:
                     time.sleep(sleep_seconds)
@@ -134,14 +142,14 @@ class OpenAICompatibleProvider:
             "stream": False,
         }
         last_exc: Exception | None = None
-        for attempt in range(1, 4):
+        for attempt in range(1, _MIN_OPENAI_ATTEMPTS + 1):
             try:
                 return self._call(body, timeout=timeout or self.default_timeout)
             except Exception as exc:  # noqa: BLE001
                 last_exc = exc
-                if attempt >= 3 or not _is_retryable_error(exc):
+                if attempt >= _MIN_OPENAI_ATTEMPTS or not _is_retryable_error(exc):
                     raise
-                time.sleep(20.0 * attempt)
+                time.sleep(_OPENAI_RETRY_BASE_SECONDS * attempt)
         raise RuntimeError(str(last_exc) if last_exc else "OpenAI provider text call failed")
 
     def _call(self, body: dict[str, Any], *, timeout: int) -> str:

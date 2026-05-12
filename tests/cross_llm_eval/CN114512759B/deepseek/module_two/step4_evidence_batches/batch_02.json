@@ -1,0 +1,703 @@
+{
+  "publication_no": "CN114512759B",
+  "batch_id": "B02",
+  "results": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "欣旺达",
+        "company_en": "Sunwoda",
+        "product_name": "闪充电池",
+        "product_name_en": "Flash Charge Battery",
+        "product_version": "方形铝壳（4C，SOC 10-80% 10分钟，2022-2023量产）",
+        "market": "中国新能源汽车、储能",
+        "reason_for_deep_dive": "欣旺达闪充电池具备方形铝壳长电芯特征，动力电池产品聚焦方形铝壳。314Ah/684Ah等大容量电芯可能对应较长的外形尺寸（可能≥400mm），可以评估其L/S、D/V等参数。非比亚迪独立厂商，优先深挖。",
+        "source_result_ids": [
+          "brave-Q13-04",
+          "brave-Q13-05",
+          "exa-Q14-04",
+          "exa-Q14-05",
+          "brave-Q47-01",
+          "brave-Q47-02",
+          "brave-Q47-03",
+          "brave-Q47-04",
+          "brave-Q47-05",
+          "brave-Q48-01",
+          "brave-Q48-03"
+        ],
+        "source_urls": [
+          "https://news.qq.com/rain/a/20230711A03L6800",
+          "https://chuneng.ofweek.com/news/2025-04/ART-180220-8500-30661476.html",
+          "https://www.alibaba.com/product-detail/SEVB-Sunwoda-3-2V-314Ah-LFP_1601486436105.html",
+          "https://www.docanpower.com/eu-stock-pre-sale-grade-a-sunwoda-sevb-lf314-314ah-330ah-340ah-prismatic-lifepo4-cells-3-2v-welded-m6-studs",
+          "https://zj.scdy.edu.cn/data/mcit_editor/20241104/%E6%AC%A3%E6%97%BA%E8%BE%BE%E5%8A%A8%E5%8A%9B%E7%AE%80%E4%BB%8B.pdf",
+          "https://www.sunwodaenergy.cn/static/upload/file/20220624/1656037579272186.pdf",
+          "https://libattery.ofweek.com/2025-05/ART-36001-8120-30663153.html",
+          "https://static.cninfo.com.cn/finalpage/2025-04-22/1223194853.PDF",
+          "https://www.ab-li.com/a/3353",
+          "https://baike.baidu.com/en/item/Sunwoda%20Electronic%20Co.,Ltd./932292",
+          "https://www.sunwodaess.com/company-news/sunwoda-mass-production-684ah-cell.html"
+        ],
+        "initial_evidence_summary": "欣旺达闪充电池包括方形铝壳和圆柱，方形铝壳是多年传承结构。314Ah储能电芯延续71173尺寸（长173.7mm*宽71.7mm*高207.2mm）；另推出600+Ah短刀电芯和方形铝壳并行路线。684Ah电芯采用堆叠技术，能量密度>440Wh/L。量产能力已确认。"
+      },
+      "launch_date": "2023年4月量产发布",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/687/396.htm",
+          "title": "欣旺达发布“闪充电池”，10分钟充电至80%",
+          "source_name": "IT之家",
+          "snippet": "2023年4月18日...“闪充电池”新品量产发布会"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "方形铝壳电池。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://news.qq.com/rain/a/20230711A03L6800",
+              "title": "欣旺达：欣旺达动力闪充电池解决方案",
+              "source_name": "腾讯新闻",
+              "snippet": "一种是方形铝壳，这是几年来一直传承的电池结构形式"
+            }
+          ],
+          "reasoning": "腾讯新闻报道明确指出欣旺达闪充电池采用方形铝壳，铝壳属于硬壳范畴，直接满足特征要求。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "未在现有证据中找到闪充电池具体的单体电芯长度L、宽度H、厚度D参数。无法判断L>W>D。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "现有证据仅提及欣旺达闪充电池采用方形铝壳，未提供任何单体电芯的详细尺寸（L, H, D）数据，无法验证长方体形及尺寸关系。314Ah等储能电芯尺寸为71173（并非闪充电池的规格），不可套用。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "未在现有证据中找到闪充电池具体的单体电芯长度L、宽度H、厚度D参数。无法计算D/V。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "现有证据未提供闪充电池单体电芯的尺寸（L, H, D）和体积（V）数据，无法进行D/V计算与比较。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "未在现有证据中找到闪充电池具体的单体电芯尺寸（L, H, D）和能量E（Wh）数据。无法计算S/E。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "现有证据未提供闪充电池单体电芯的尺寸（L, H, D）和能量（E）数据，无法进行S/E计算与比较。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "未在现有证据中找到闪充电池具体的单体电芯长度L参数。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "现有证据未提供闪充电池单体电芯的长度L数据，无法判断其是否在400-2500mm范围内。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "未在现有证据中找到闪充电池具体的单体电芯长度L和表面积S数据。无法计算L/S。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "现有证据未提供闪充电池单体电芯的尺寸（L, H, D）数据，无法计算L/S并进行比较。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "欣旺达 闪充电池 方形铝壳 规格书 参数",
+        "欣旺达 闪充电池 尺寸 长宽厚 规格",
+        "Sunwoda Flash Charge Battery 方形铝壳 datasheet specifications",
+        "欣旺达 闪充电池 上市 日期 发布"
+      ],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "亿纬锂能",
+        "company_en": "EVE Energy",
+        "product_name": "LF560K大铁锂电池",
+        "product_name_en": "LF560K Large Prismatic Cell",
+        "product_version": "LF560K 560Ah / MB56 628Ah",
+        "market": "中国储能、新能源车",
+        "reason_for_deep_dive": "亿纬锂能LF560K/MB56属于方形铝壳超大容量长电芯，长度约352mm（接近权1下限400mm，可能后续有更长版本）或更长产品，且有完整的尺寸及能量数据，可用于计算D/V、L/S、S/E等。非比亚迪，竞品关系明确。",
+        "source_result_ids": [
+          "brave-Q15-01",
+          "brave-Q15-02",
+          "brave-Q15-03",
+          "brave-Q15-04",
+          "brave-Q15-05",
+          "exa-Q16-01",
+          "exa-Q16-02",
+          "exa-Q16-04"
+        ],
+        "source_urls": [
+          "https://www.evebattery.com/news-694",
+          "https://libattery.ofweek.com/2022-10/ART-36001-8220-30576965.html",
+          "https://lvsenengyuan.com.cn/cn/37338.html",
+          "https://www.escn.com.cn/news/show-1487336.html",
+          "https://www.thepaper.cn/newsDetail_forward_20396662",
+          "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+          "https://www.evemall.com/en/power-battery/prismatic-lfp-cell/lf560k",
+          "https://diysolarforum.com/threads/new-eve-cell-at-re-2023-lf-560k-628ah-cell.69209"
+        ],
+        "initial_evidence_summary": "LF560K电芯容量560Ah，单只1.792kWh，循环>12000次。采用叠技术，方形铝壳叠片。MB56/LF560K尺寸推测为352.3*71.7*207.2mm（长>400mm）。另有MB31（314Ah，尺寸173.7*71.7*207.2mm）。规格表公开，能量密度已知。"
+      },
+      "launch_date": "2022年10月发布，预计2024年Q2交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_20396662",
+          "title": "循环寿命超1.2万次，亿纬锂能发布560Ah超大容量锂离子储能电池",
+          "source_name": "澎湃新闻",
+          "snippet": "10月20日晚间，惠州亿纬锂能股份有限公司发布了全新一代储能电池LF560K"
+        },
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_20396662",
+          "title": "循环寿命超1.2万次，亿纬锂能发布560Ah超大容量锂离子储能电池_能见度_澎湃新闻-The Paper",
+          "source_name": "澎湃新闻",
+          "snippet": "预计在2024年第二季度开启全球交付"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "特征C1-F5和C1-F6明确不满足：长度L=352.2mm，低于400mm下限；L/S=0.00156mm⁻¹，低于0.002mm⁻¹下限。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "MB56为方形铝壳磷酸铁锂电池，属于硬壳电池",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evemall.com/prismatic-lfp-cell/square-lithium-iron-phosphate-battery/mb56",
+              "title": "MB56-方形磷酸铁锂电池-亿纬锂能",
+              "source_name": "亿纬锂能商城",
+              "snippet": "MB56 方形磷酸铁锂电池，铝壳壳体"
+            }
+          ],
+          "reasoning": "产品页面明确标注为方形铝壳磷酸铁锂电池，满足硬壳电池定义。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "L=352.2mm，H=206.7mm，D=71.7mm，满足L>H>D",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evemall.com/prismatic-lfp-cell/square-lithium-iron-phosphate-battery/mb56",
+              "title": "MB56-方形磷酸铁锂电池-亿纬锂能",
+              "source_name": "亿纬锂能商城",
+              "snippet": "尺寸 206.7*352.2*71.7（高*宽*厚mm）"
+            }
+          ],
+          "reasoning": "从尺寸标注可确定L=352.2mm(宽)，H=206.7mm(高)，D=71.7mm(厚)，满足长方体且L>H>D。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=71.7mm，V=206.7*352.2*71.7 ≈5.2186e6 mm³，D/V=71.7/5.2186e6≈1.374e⁻⁵ mm⁻²，在范围内",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evemall.com/prismatic-lfp-cell/square-lithium-iron-phosphate-battery/mb56",
+              "title": "MB56-方形磷酸铁锂电池-亿纬锂能",
+              "source_name": "亿纬锂能商城",
+              "snippet": "尺寸 206.7*352.2*71.7mm"
+            }
+          ],
+          "reasoning": "计算体积V≈5.2186e6 mm³，D/V=1.374e⁻⁵，落在[6.5e-6, 2e-5]范围内。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "S=2(352.2*206.7+352.2*71.7+206.7*71.7)≈225697mm²，E=2009Wh，S/E≈112.3，远小于1000",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evemall.com/prismatic-lfp-cell/square-lithium-iron-phosphate-battery/mb56",
+              "title": "MB56-方形磷酸铁锂电池-亿纬锂能",
+              "source_name": "亿纬锂能商城",
+              "snippet": "尺寸 206.7*352.2*71.7mm，能量高达2.009KWh"
+            }
+          ],
+          "reasoning": "按公式计算S≈225697mm²，E=2009Wh，S/E≈112.3，满足小于1000。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=352.2mm，不满足400mm下限",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.evemall.com/prismatic-lfp-cell/square-lithium-iron-phosphate-battery/mb56",
+              "title": "MB56-方形磷酸铁锂电池-亿纬锂能",
+              "source_name": "亿纬锂能商城",
+              "snippet": "尺寸 206.7*352.2*71.7mm"
+            }
+          ],
+          "reasoning": "长度352.2mm低于权利要求下限400mm，明确不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L/S=352.2/225697≈0.00156mm⁻¹，低于下限0.002",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.evemall.com/prismatic-lfp-cell/square-lithium-iron-phosphate-battery/mb56",
+              "title": "MB56-方形磷酸铁锂电池-亿纬锂能",
+              "source_name": "亿纬锂能商城",
+              "snippet": "尺寸 206.7*352.2*71.7mm"
+            }
+          ],
+          "reasoning": "L/S计算值0.00156mm⁻¹，不在要求区间内。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "亿纬锂能 LF560K 尺寸 规格书",
+        "EVE MB56 628Ah datasheet"
+      ],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P08",
+        "company": "LG新能源",
+        "company_en": "LG Energy Solution",
+        "product_name": "长电芯",
+        "product_name_en": "Long Cell (Prismatic)",
+        "product_version": "方向型长电芯（NCx化学体系，开发中/量产，具体容量待确认）",
+        "market": "中国新能源汽车市场（南京工厂）",
+        "reason_for_deep_dive": "LG新能源明确有长电芯产品线且在中国市场供货。正在开发中的方形硬壳电池可能落入权1长度范围。作为全球第二大动力电池企业，值得确认其产品参数是否与权1特征匹配。非比亚迪系，有效竞品。",
+        "source_result_ids": [
+          "brave-Q19-01",
+          "brave-Q19-03",
+          "brave-Q19-04"
+        ],
+        "source_urls": [
+          "https://www.marklines.com/cn/top500/lg_chem",
+          "https://cn.technode.com/post/2024-08-08/lg-energy-solution-news",
+          "https://auto-time.36kr.com/p/1593564523448839"
+        ],
+        "initial_evidence_summary": "LG新能源产品序列包含长电芯（Long Cell），在中国南京设有三家工厂供应特斯拉等客户。2024年成立专门小组开发方形电池，应对市场需求。提供全系列电芯/模组/电池包。传统以软包为主，但正在发力方形硬壳电池。"
+      },
+      "launch_date": "未明确（2022年已取消方形电池开发）",
+      "launch_date_evidence": [],
+      "disqualified": true,
+      "disqualification_reason": "LG新能源主力产品为软包电池（非硬壳），已明确取消方形电池开发，不满足C1-F1硬壳电池特征。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "LG新能源长期专注软包和圆柱电池，2022年已取消方形电池开发。虽有2024年成立专门小组开发方形电池的报道，但市售产品以软包和圆柱为主，不能确认为硬壳电池。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://tech.tom.com/202209/1333471200.html",
+              "title": "LG新能源，“拒绝”方形电池",
+              "source_name": "TOM科技",
+              "snippet": "LG新能源将停止方形电池的开发，把重点放在现有的软包、圆柱电池之上"
+            },
+            {
+              "url": "https://cn.technode.com/post/2024-08-08/lg-energy-solution-news",
+              "title": "LG Energy Solution 成立新电池开发工作组",
+              "source_name": "动点科技",
+              "snippet": "LG Energy Solution 已成立了一个专门的小组来开发方形电池...迄今为止，LGES 专注于袋式电池和圆柱形电池"
+            }
+          ],
+          "reasoning": "LG新能源主力产品为软包电池（非硬壳）。2022年公开报道已取消方形电池开发。2024年虽有成立专门小组开发方形电池的报道，但并未确认已有硬壳电池产品量产，目前无法将候选产品确认为硬壳电池。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "模型输出缺少该技术特征的判断，按证据不足处理。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "模型输出缺少该技术特征的判断，按证据不足处理。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "模型输出缺少该技术特征的判断，按证据不足处理。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "模型输出缺少该技术特征的判断，按证据不足处理。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "模型输出缺少该技术特征的判断，按证据不足处理。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "LG新能源 长电芯 方形铝壳 硬壳",
+        "LG新能源 长电芯 规格书 参数",
+        "LG Energy Solution Long Cell datasheet specifications"
+      ],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P09",
+        "company": "三星SDI",
+        "company_en": "Samsung SDI",
+        "product_name": "方形动力电池",
+        "product_name_en": "Prismatic EV Cell (SDI)",
+        "product_version": "94Ah NCM（截至2015）; ESS SBB系列",
+        "market": "中国新能源汽车、储能市场",
+        "reason_for_deep_dive": "三星SDI是方形铝壳电池技术先驱，94Ah电芯尺寸规格书存在，84.4mm*？*？若长度或宽度延伸，可评估D/V等参数。其在中国有业务且非比亚迪，是权1特征验证的重要样本。",
+        "source_result_ids": [
+          "brave-Q21-01",
+          "brave-Q21-04",
+          "exa-Q22-01",
+          "exa-Q22-03",
+          "exa-Q22-05"
+        ],
+        "source_urls": [
+          "https://www.samsungsdi.com.cn",
+          "https://news.21dianyuan.com/detail/28983.html",
+          "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+          "https://samsungsdi.hu/hu/automotive-battery/products/prismatic-lithium-ion-battery-cell.html",
+          "https://news.samsungsdi.com/global/articleView?seq=207"
+        ],
+        "initial_evidence_summary": "三星SDI长期生产方形铝壳电池，用于电动汽车和储能（SBB 1.7/2.0）。在中国市场有销售。方形铝壳以铝合金、不锈钢为壳体，极片卷绕或叠片，安全性和性能高。公开有94Ah等具体电芯规格书，尺寸可查。"
+      },
+      "launch_date": "2015年（规格书发布），2016-2017年搭载于宝马i3",
+      "launch_date_evidence": [
+        {
+          "url": "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+          "title": "30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+          "source_name": "Samsung SDI",
+          "snippet": "31th Dec. 2015 Introduction of Samsung SDI's 94Ah cells"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "产品发布时间（2015年）早于专利申请日（2019-06-21），且特征C1-F3（D/V值超出上限）和C1-F5（长度173mm<400mm）明确不满足。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "94Ah电池为方形铝壳，属于硬壳",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+              "title": "三星SDI 94Ah电池规格书",
+              "source_name": "Samsung SDI",
+              "snippet": "Can: Aluminum (壳体：铝壳)"
+            }
+          ],
+          "reasoning": "规格书明确电池壳体为铝壳，符合硬壳电池定义。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "L=173mm，H=125mm，D=45mm，满足L>H>D",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+              "title": "三星SDI 94Ah电池规格书",
+              "source_name": "Samsung SDI",
+              "snippet": "Cell Length (Y) 173mm, Cell Height (Z) 125mm, Cell Thickness (X) 45mm"
+            }
+          ],
+          "reasoning": "规格书给出长、高、厚尺寸，按定义L=173mm, H=125mm, D=45mm，满足长方体且尺寸递减。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=45mm，V=173*125*45=973125mm³，D/V=4.62e-5，超出上限",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+              "title": "三星SDI 94Ah电池规格书",
+              "source_name": "Samsung SDI",
+              "snippet": "尺寸173*125*45mm"
+            }
+          ],
+          "reasoning": "计算D/V=45/973125≈4.62e-5 mm⁻²，明显高于上限2e-5，明确不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "S≈70070mm²，E≈347.8Wh，S/E≈201.5，满足",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+              "title": "三星SDI 94Ah电池规格书",
+              "source_name": "Samsung SDI",
+              "snippet": "94Ah, 3.7V, 尺寸173*125*45"
+            }
+          ],
+          "reasoning": "能量E=94Ah*3.7V=347.8Wh，表面积S=2(173*125+173*45+125*45)=70070mm²，S/E≈201.5，远小于1000。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=173mm，远低于400mm",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+              "title": "三星SDI 94Ah电池规格书",
+              "source_name": "Samsung SDI",
+              "snippet": "Cell Length 173mm"
+            }
+          ],
+          "reasoning": "长度173mm不在权利要求保护范围内。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L/S=173/70070≈0.00247，在范围内",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+              "title": "三星SDI 94Ah电池规格书",
+              "source_name": "Samsung SDI",
+              "snippet": "尺寸173*125*45"
+            }
+          ],
+          "reasoning": "L=173mm，S=70070mm²，L/S≈0.00247，落在要求区间内。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "三星SDI 94Ah 规格书 尺寸",
+        "Samsung SDI prismatic 94Ah datasheet"
+      ],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P10",
+        "company": "比克电池",
+        "company_en": "BAK Battery",
+        "product_name": "BAKCBBK100方形电芯",
+        "product_name_en": "BAKCBBK100 Prismatic Cell",
+        "product_version": "100Ah/150Ah LFP 铝壳",
+        "market": "中国新能源汽车、储能",
+        "reason_for_deep_dive": "比克提供完整的方形铝壳电芯规格书，长度220mm虽未达400mm，但可考察其厚度、宽度、能量比值关系，为较短规格竞品提供对照。比克非比亚迪，且明确有方形系列。",
+        "source_result_ids": [
+          "brave-Q31-01",
+          "exa-Q32-01",
+          "exa-Q32-04",
+          "exa-Q32-02"
+        ],
+        "source_urls": [
+          "https://www.dianchi.cn/brand/BAK.html",
+          "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+          "https://www.benhoobattery.com/products/energy-storage-batteries/off-grid-solar-storage-batteries/lifepo4-prismatic-cell"
+        ],
+        "initial_evidence_summary": "产品包括方形电芯，有型号BAKCBBK100（40220112-100Ah），尺寸(220.3±0.3)*(40.5±0.5)*(117.2±0.4)mm，体积能量密度325Wh/L，重量能量密度154Wh/kg。另有150Ah款（220.3*60.5*117.5mm）。明确为铝壳方形硬壳。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": true,
+      "disqualification_reason": "特征C1-F3（D/V=3.86e-5超出上限）和C1-F5（长度220.5mm<400mm）明确不满足",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "BAKCBBK100为铝壳方形电池，属于硬壳",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+              "title": "比克100Ah电芯规格书",
+              "source_name": "比克电池",
+              "snippet": "Can: Aluminum 铝壳"
+            }
+          ],
+          "reasoning": "规格书明确壳体为铝壳，满足硬壳特征。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "L≈220.5mm，H≈117.5mm，D≈40.5mm，满足L>H>D",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+              "title": "比克100Ah电芯规格书",
+              "source_name": "比克电池",
+              "snippet": "W1 220.5±0.5, H1 117.5±0.5, T1 40.5±0.5"
+            }
+          ],
+          "reasoning": "尺寸W1对应长度L，H1对应宽度，T1对应厚度D，符合L>H>D。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=40.5mm，V=220.5*117.5*40.5≈1.049e6mm³，D/V≈3.86e-5，超出上限",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+              "title": "比克100Ah电芯规格书",
+              "source_name": "比克电池",
+              "snippet": "尺寸 220.5*117.5*40.5mm"
+            }
+          ],
+          "reasoning": "V≈220.5*117.5*40.5=1,049,304mm³，D/V=40.5/1,049,304≈3.86e-5，远高于2e-5上限。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "S≈79196mm²，E=320Wh，S/E≈247.5，满足",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+              "title": "比克100Ah电芯规格书",
+              "source_name": "比克电池",
+              "snippet": "能量320Wh，尺寸220.5*117.5*40.5"
+            }
+          ],
+          "reasoning": "S=2(220.5*117.5+220.5*40.5+117.5*40.5)=79195.5mm²，E=320Wh，S/E≈247.5，小于1000。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=220.5mm，小于400mm",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+              "title": "比克100Ah电芯规格书",
+              "source_name": "比克电池",
+              "snippet": "W1 220.5±0.5mm"
+            }
+          ],
+          "reasoning": "长度220.5mm不在400-2500mm范围内。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L/S=220.5/79195.5≈0.00278，在范围内",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+              "title": "比克100Ah电芯规格书",
+              "source_name": "比克电池",
+              "snippet": "尺寸220.5*117.5*40.5"
+            }
+          ],
+          "reasoning": "L=220.5mm，S=79195.5mm²，L/S≈0.00278，落入要求区间。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "比克 BAKCBBK100 规格书 尺寸",
+        "BAK 100Ah prismatic cell datasheet"
+      ],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    }
+  ]
+}

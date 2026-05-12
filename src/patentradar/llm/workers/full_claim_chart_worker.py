@@ -76,10 +76,26 @@ def evaluate_candidate(
         attempts=3,
     )
     payload = _backfill_from_inputs(payload, task_package, candidate, module_two_evidence)
+    _drop_empty_url_evidence(payload)
     try:
         return FullClaimChartCandidate.model_validate(payload)
     except ValidationError as exc:
         raise LLMOutputError(f"Invalid full claim chart JSON: {exc}\nPayload: {payload}") from exc
+
+
+def _drop_empty_url_evidence(payload: dict[str, Any]) -> None:
+    """同 evidence_worker._drop_empty_url_evidence：DeepSeek 偶尔会塞 url='' 的
+    evidence，绕过这道防御 Pydantic 校验会让整轮失败。模块三 payload 形态嵌套更深，
+    所有可能放 EvidenceSource 的字段都得 sanitize。"""
+    def _scrub(items: list | None) -> list:
+        if not items:
+            return []
+        return [i for i in items if isinstance(i.get("url"), str) and i["url"].strip()]
+
+    for entry in payload.get("claim_chart") or []:
+        for comparison in entry.get("comparisons") or []:
+            comparison["evidence"] = _scrub(comparison.get("evidence"))
+    payload["launch_date_evidence"] = _scrub(payload.get("launch_date_evidence"))
 
 
 def _load_prompt() -> str:

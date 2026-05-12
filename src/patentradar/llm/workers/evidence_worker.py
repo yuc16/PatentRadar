@@ -70,11 +70,27 @@ def judge_candidate_batch(
     )
     payload["publication_no"] = task_package.patent.publication_no
     payload["batch_id"] = batch_id
+    _drop_empty_url_evidence(payload)
     try:
         result = EvidenceBatchResult.model_validate(payload)
     except ValidationError as exc:
         raise LLMOutputError(f"Invalid evidence batch JSON: {exc}\nPayload: {payload}") from exc
     return _normalize_batch(result, task_package=task_package, candidates=candidates)
+
+
+def _drop_empty_url_evidence(payload: dict[str, Any]) -> None:
+    """LLM 偶尔给某条 feature 配上 url='' 的 evidence 凑数；Pydantic 的
+    `url must be absolute` 会让整个 batch 抛 ValidationError，拖垮 step4。
+    这里就地剔除所有 url 为空字符串/None/空白的 evidence 项（含 launch_date_evidence）。"""
+    def _scrub(items: list | None) -> list:
+        if not items:
+            return []
+        return [i for i in items if isinstance(i.get("url"), str) and i["url"].strip()]
+
+    for result in payload.get("results") or []:
+        for comparison in result.get("comparisons") or []:
+            comparison["evidence"] = _scrub(comparison.get("evidence"))
+        result["launch_date_evidence"] = _scrub(result.get("launch_date_evidence"))
 
 
 def _load_prompt(name: str) -> str:

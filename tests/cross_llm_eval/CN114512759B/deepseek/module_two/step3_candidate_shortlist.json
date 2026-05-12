@@ -1,0 +1,628 @@
+{
+  "publication_no": "CN114512759B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT",
+      "product_name": "L600短刀电池",
+      "product_name_en": "L600 Short Blade Cell",
+      "product_version": "196Ah LFP (第二代)",
+      "market": "中国乘用车及储能市场",
+      "reason_for_deep_dive": "最接近比亚迪刀片电池的竞品，尺寸落入权1长度范围（574mm）且为长薄长方体硬壳电芯。有公开尺寸规格，可以计算L/S、D/V、S/E等参数。非比亚迪申请人，建议重点深挖。",
+      "source_result_ids": [
+        "brave-Q05-01",
+        "brave-Q05-02",
+        "brave-Q05-04",
+        "brave-Q05-05",
+        "exa-Q06-01",
+        "exa-Q06-02",
+        "exa-Q06-03",
+        "exa-Q06-04",
+        "exa-Q06-05",
+        "brave-Q06-01",
+        "brave-Q06-05",
+        "brave-Q42-02",
+        "brave-Q42-03",
+        "brave-Q42-04"
+      ],
+      "source_urls": [
+        "https://www.svolt.cn/innovation/innovations/cell",
+        "https://zhuanlan.zhihu.com/p/484682347",
+        "https://www.svolt.cn/solution/passenger",
+        "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+        "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+        "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+        "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+        "https://www.prnewswire.com/news-releases/svolt-unveils-its-sv-600-strategy-and-short-blade-category-products-at-2nd-annual-svolt-battery-day-301442081.html",
+        "https://winston-battery.en.made-in-china.com/product/BFxtUXevCzRi/China-Svolt-L600-3-2V-196ah-Blade-LiFePO4-Cell-High-Energy-Rechargeable-Solar-Battery.html",
+        "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+        "https://www.aquaenergyexpo.com/product/10178/Energy_Storage/196Ah_Blade_cell",
+        "https://www.marklines.com/en/news/261691",
+        "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+        "https://www.svolt.cn/en/news/142"
+      ],
+      "initial_evidence_summary": "已知尺寸21.5 x 574 x 118mm，容量≥196Ah，额定容量627.2Wh，体积能量密度430 Wh/L，重量3380±50g。L600长度574mm（<600mm，略短于比亚迪），但接近权1下限400mm。厚度21.5mm（>13.5mm）。长方体结构、硬壳铝壳电芯明确。预计2022年Q3量产。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "国轩高科",
+      "company_en": "Gotion",
+      "product_name": "L600启晨电芯",
+      "product_name_en": "L600 Qichen Cell",
+      "product_version": "LFMP 240Wh/kg (预计2024量产)",
+      "market": "中国新能源汽车、重卡、储能",
+      "reason_for_deep_dive": "国轩高科同样是长电芯技术路线，L600命名表明长度≤600mm（属权1范围400-2500mm），高能量密度匹配权1散热要求，且非比亚迪关联企业。启晨电芯有公开体积能量密度参数，可推算S/E。",
+      "source_result_ids": [
+        "brave-Q07-01",
+        "brave-Q07-02",
+        "brave-Q07-03",
+        "brave-Q07-04",
+        "brave-Q07-05",
+        "exa-Q08-01",
+        "exa-Q08-02",
+        "exa-Q08-03",
+        "exa-Q08-04",
+        "brave-Q08-01",
+        "brave-Q08-02",
+        "brave-Q08-05"
+      ],
+      "source_urls": [
+        "https://www.gotion.com.cn/product/material/7.html",
+        "https://chejiahao.autohome.com.cn/info/12594708",
+        "https://www.stcn.com/article/detail/870736.html",
+        "https://www.rfnets.com/blog/lion-brand-value",
+        "https://b2bwiki.baidu.com/article/710916456193802241",
+        "https://www.aboutenergy.io/cell-library/gotion-ifp2175200",
+        "https://www.teklib.com/library/gotion-ifp27175200a-100ah-battery-datasheet",
+        "https://www.gobelpower.com/download/files/Gotion-314Ah-LiFePO4-Cell-Specification.pdf",
+        "https://en.gotion.com.cn",
+        "https://www.gotion.com/products-2",
+        "https://lightning-energy.cn/product/3-2v-30ah-lifepo4-prismatic-battery-gotion-cells"
+      ],
+      "initial_evidence_summary": "推出LFMP体系L600启晨电芯，单体体积能量密度525Wh/L，质量能量密度240Wh/kg。国轩高科已有230Wh/kg磷酸铁锂电芯量产能力。另有型号IFP27175200A-100Ah、IFP72175207-314Ah等长方形硬壳电芯，长度推测约260mm-700mm。重卡配套302Ah大容量方形电芯。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "国轩高科",
+      "company_en": "Gotion",
+      "product_name": "IFP72175207-314Ah电芯",
+      "product_name_en": "IFP72175207-314Ah Cell",
+      "product_version": "314Ah LFP",
+      "market": "中国重卡/储能市场",
+      "reason_for_deep_dive": "国轩高科有完整规格书（可获取精确尺寸、能量），可验证长度是否在400-2500mm区内及D/V、L/S、S/E等参数。作为非比亚迪的独立第三方电芯，深挖价值高。",
+      "source_result_ids": [
+        "brave-Q07-05",
+        "exa-Q08-03",
+        "brave-Q08-03",
+        "brave-Q08-04",
+        "exa-Q08-04"
+      ],
+      "source_urls": [
+        "https://b2bwiki.baidu.com/article/710916456193802241",
+        "https://www.gobelpower.com/download/files/Gotion-314Ah-LiFePO4-Cell-Specification.pdf",
+        "https://ecoteardown.top/lifepo4-cell-datasheets-specifications",
+        "https://batteryfinds.com/download",
+        "https://www.gobelpower.com/wholesale/lifepo4+prismatic+cell+datasheet"
+      ],
+      "initial_evidence_summary": "型号IFP72175207-314Ah，方形铝壳磷酸铁锂电池，规格书PDF可获取详细尺寸、重量、能量。推测厚度约72mm，宽175mm，长约207mm（长度可能超出400mm）。支持大容量储能和重卡应用。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "中创新航",
+      "company_en": "CALB",
+      "product_name": "One-Stop短刀电池",
+      "product_name_en": "One-Stop Short Blade Cell",
+      "product_version": "OS LFP 153Wh/kg系统 (2023量产)",
+      "market": "中国新能源汽车",
+      "reason_for_deep_dive": "中创新航（原名中航锂电）明确采用长薄长方体电芯，厚度较薄（推测mm级），长度可能接近权1范围。One-Stop设计追求超薄壳体，可能倾向于长宽比大的结构。非比亚迪，属核心竞品。",
+      "source_result_ids": [
+        "brave-Q09-01",
+        "brave-Q09-02",
+        "brave-Q09-03",
+        "brave-Q09-04",
+        "exa-Q10-01",
+        "brave-Q10-01",
+        "brave-Q41-05"
+      ],
+      "source_urls": [
+        "https://www.sohu.com/a/535438071_585679",
+        "http://www.ah.chinanews.com.cn/news/2022/0401/300428.shtml",
+        "https://www.cs.com.cn/ssgs/gsxw/202304/t20230424_6339930.html",
+        "https://www.desn.com.cn/news/show-1370486.html",
+        "https://calb-battery.us/calb-l173f125.html",
+        "https://www.evlithium.com/Blog/evolution-prismatic-battery-cell-dimensions-guide.html",
+        "https://baike.baidu.com/item/%E4%B8%AD%E5%88%9B%E6%96%B0%E8%88%AA%E7%A7%91%E6%8A%80%E9%9B%86%E5%9B%A2%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/62686928"
+      ],
+      "initial_evidence_summary": "One-Stop技术采用0.22mm超薄壳体、多维壳体成型、无盖板技术等，空间利用率提升5%、结构重量降低40%。2023年4月OS磷酸铁锂电池量产下线，采用长方体短刀片形态，系统能量密度为153 Wh/kg。另有L173F125等方形铝壳电芯，尺寸174.4*36.5*175.3mm。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "瑞浦兰钧",
+      "company_en": "REPT Battero",
+      "product_name": "问顶电池",
+      "product_name_en": "Wending Cell",
+      "product_version": "200Ah/320Ah/345Ah/564Ah LFP",
+      "market": "中国新能源汽车、储能",
+      "reason_for_deep_dive": "问顶系列采用方形铝壳/硬壳，大容量电芯（200Ah以上）极大概率长度在400-2500mm范围内。其200Ah电芯体积能量密度高达650 Wh/L，为散热表面积与能量的比较提供良好样本。非比亚迪，值得深挖。",
+      "source_result_ids": [
+        "brave-Q11-01",
+        "brave-Q11-02",
+        "brave-Q11-03",
+        "brave-Q11-04",
+        "brave-Q11-05",
+        "exa-Q12-02",
+        "exa-Q12-04",
+        "exa-Q12-05",
+        "brave-Q43-01",
+        "brave-Q43-04"
+      ],
+      "source_urls": [
+        "https://m.bjx.com.cn/mnews/20240430/1374589.shtml",
+        "https://www.ne21.com/news/show-193881.html",
+        "https://libattery.ofweek.com/2023-04/ART-36001-8110-30594474.html",
+        "https://cn.solarbe.com/news/20230426/72921.html",
+        "https://cn.reptbattero.com/blogs/high-energy-top-end-battery-with-unlimited-battery-life-ruipu-lanjun-top-battery-is-launched-in-mass",
+        "https://www.reptbattero.com/news/rept-battero-wending-564ah-energy-storage-cell-and-powtrix-energy-storage-system-officially-launched-at-re2024",
+        "https://www.reptbattero.com/en/products",
+        "https://www.prnewswire.com/news-releases/rept-battero-showcases-pioneering-wending-batteries-at-ibse-2024-transforming-the-landscape-of-energy-storage-302090006.html",
+        "https://cn.reptbattero.com/battery-cell",
+        "https://stcn.com/article/detail/3044419.html"
+      ],
+      "initial_evidence_summary": "问顶技术缩短顶部空间至8mm，优化极耳弯折方式使其长度缩短2/3。问顶200Ah电芯体积能量密度650 Wh/L；另有大容量问顶320Ah、345Ah、564Ah储能电芯。瑞浦兰钧提供储能/商用车/乘用车电芯，问顶系列兼容磷酸铁锂和三元，极耳短程化设计使内阻降低16%。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "欣旺达",
+      "company_en": "Sunwoda",
+      "product_name": "闪充电池",
+      "product_name_en": "Flash Charge Battery",
+      "product_version": "方形铝壳（4C，SOC 10-80% 10分钟，2022-2023量产）",
+      "market": "中国新能源汽车、储能",
+      "reason_for_deep_dive": "欣旺达闪充电池具备方形铝壳长电芯特征，动力电池产品聚焦方形铝壳。314Ah/684Ah等大容量电芯可能对应较长的外形尺寸（可能≥400mm），可以评估其L/S、D/V等参数。非比亚迪独立厂商，优先深挖。",
+      "source_result_ids": [
+        "brave-Q13-04",
+        "brave-Q13-05",
+        "exa-Q14-04",
+        "exa-Q14-05",
+        "brave-Q47-01",
+        "brave-Q47-02",
+        "brave-Q47-03",
+        "brave-Q47-04",
+        "brave-Q47-05",
+        "brave-Q48-01",
+        "brave-Q48-03"
+      ],
+      "source_urls": [
+        "https://news.qq.com/rain/a/20230711A03L6800",
+        "https://chuneng.ofweek.com/news/2025-04/ART-180220-8500-30661476.html",
+        "https://www.alibaba.com/product-detail/SEVB-Sunwoda-3-2V-314Ah-LFP_1601486436105.html",
+        "https://www.docanpower.com/eu-stock-pre-sale-grade-a-sunwoda-sevb-lf314-314ah-330ah-340ah-prismatic-lifepo4-cells-3-2v-welded-m6-studs",
+        "https://zj.scdy.edu.cn/data/mcit_editor/20241104/%E6%AC%A3%E6%97%BA%E8%BE%BE%E5%8A%A8%E5%8A%9B%E7%AE%80%E4%BB%8B.pdf",
+        "https://www.sunwodaenergy.cn/static/upload/file/20220624/1656037579272186.pdf",
+        "https://libattery.ofweek.com/2025-05/ART-36001-8120-30663153.html",
+        "https://static.cninfo.com.cn/finalpage/2025-04-22/1223194853.PDF",
+        "https://www.ab-li.com/a/3353",
+        "https://baike.baidu.com/en/item/Sunwoda%20Electronic%20Co.,Ltd./932292",
+        "https://www.sunwodaess.com/company-news/sunwoda-mass-production-684ah-cell.html"
+      ],
+      "initial_evidence_summary": "欣旺达闪充电池包括方形铝壳和圆柱，方形铝壳是多年传承结构。314Ah储能电芯延续71173尺寸（长173.7mm*宽71.7mm*高207.2mm）；另推出600+Ah短刀电芯和方形铝壳并行路线。684Ah电芯采用堆叠技术，能量密度>440Wh/L。量产能力已确认。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "亿纬锂能",
+      "company_en": "EVE Energy",
+      "product_name": "LF560K大铁锂电池",
+      "product_name_en": "LF560K Large Prismatic Cell",
+      "product_version": "LF560K 560Ah / MB56 628Ah",
+      "market": "中国储能、新能源车",
+      "reason_for_deep_dive": "亿纬锂能LF560K/MB56属于方形铝壳超大容量长电芯，长度约352mm（接近权1下限400mm，可能后续有更长版本）或更长产品，且有完整的尺寸及能量数据，可用于计算D/V、L/S、S/E等。非比亚迪，竞品关系明确。",
+      "source_result_ids": [
+        "brave-Q15-01",
+        "brave-Q15-02",
+        "brave-Q15-03",
+        "brave-Q15-04",
+        "brave-Q15-05",
+        "exa-Q16-01",
+        "exa-Q16-02",
+        "exa-Q16-04"
+      ],
+      "source_urls": [
+        "https://www.evebattery.com/news-694",
+        "https://libattery.ofweek.com/2022-10/ART-36001-8220-30576965.html",
+        "https://lvsenengyuan.com.cn/cn/37338.html",
+        "https://www.escn.com.cn/news/show-1487336.html",
+        "https://www.thepaper.cn/newsDetail_forward_20396662",
+        "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+        "https://www.evemall.com/en/power-battery/prismatic-lfp-cell/lf560k",
+        "https://diysolarforum.com/threads/new-eve-cell-at-re-2023-lf-560k-628ah-cell.69209"
+      ],
+      "initial_evidence_summary": "LF560K电芯容量560Ah，单只1.792kWh，循环>12000次。采用叠技术，方形铝壳叠片。MB56/LF560K尺寸推测为352.3*71.7*207.2mm（长>400mm）。另有MB31（314Ah，尺寸173.7*71.7*207.2mm）。规格表公开，能量密度已知。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "LG新能源",
+      "company_en": "LG Energy Solution",
+      "product_name": "长电芯",
+      "product_name_en": "Long Cell (Prismatic)",
+      "product_version": "方向型长电芯（NCx化学体系，开发中/量产，具体容量待确认）",
+      "market": "中国新能源汽车市场（南京工厂）",
+      "reason_for_deep_dive": "LG新能源明确有长电芯产品线且在中国市场供货。正在开发中的方形硬壳电池可能落入权1长度范围。作为全球第二大动力电池企业，值得确认其产品参数是否与权1特征匹配。非比亚迪系，有效竞品。",
+      "source_result_ids": [
+        "brave-Q19-01",
+        "brave-Q19-03",
+        "brave-Q19-04"
+      ],
+      "source_urls": [
+        "https://www.marklines.com/cn/top500/lg_chem",
+        "https://cn.technode.com/post/2024-08-08/lg-energy-solution-news",
+        "https://auto-time.36kr.com/p/1593564523448839"
+      ],
+      "initial_evidence_summary": "LG新能源产品序列包含长电芯（Long Cell），在中国南京设有三家工厂供应特斯拉等客户。2024年成立专门小组开发方形电池，应对市场需求。提供全系列电芯/模组/电池包。传统以软包为主，但正在发力方形硬壳电池。"
+    },
+    {
+      "candidate_id": "P09",
+      "company": "三星SDI",
+      "company_en": "Samsung SDI",
+      "product_name": "方形动力电池",
+      "product_name_en": "Prismatic EV Cell (SDI)",
+      "product_version": "94Ah NCM（截至2015）; ESS SBB系列",
+      "market": "中国新能源汽车、储能市场",
+      "reason_for_deep_dive": "三星SDI是方形铝壳电池技术先驱，94Ah电芯尺寸规格书存在，84.4mm*？*？若长度或宽度延伸，可评估D/V等参数。其在中国有业务且非比亚迪，是权1特征验证的重要样本。",
+      "source_result_ids": [
+        "brave-Q21-01",
+        "brave-Q21-04",
+        "exa-Q22-01",
+        "exa-Q22-03",
+        "exa-Q22-05"
+      ],
+      "source_urls": [
+        "https://www.samsungsdi.com.cn",
+        "https://news.21dianyuan.com/detail/28983.html",
+        "https://files.gwl.eu/inc/_doc/attach/StoItem/7213/30118_Introduction%20of%20SDI%20EV%2094Ah%20cell_V9-2.pdf",
+        "https://samsungsdi.hu/hu/automotive-battery/products/prismatic-lithium-ion-battery-cell.html",
+        "https://news.samsungsdi.com/global/articleView?seq=207"
+      ],
+      "initial_evidence_summary": "三星SDI长期生产方形铝壳电池，用于电动汽车和储能（SBB 1.7/2.0）。在中国市场有销售。方形铝壳以铝合金、不锈钢为壳体，极片卷绕或叠片，安全性和性能高。公开有94Ah等具体电芯规格书，尺寸可查。"
+    },
+    {
+      "candidate_id": "P10",
+      "company": "比克电池",
+      "company_en": "BAK Battery",
+      "product_name": "BAKCBBK100方形电芯",
+      "product_name_en": "BAKCBBK100 Prismatic Cell",
+      "product_version": "100Ah/150Ah LFP 铝壳",
+      "market": "中国新能源汽车、储能",
+      "reason_for_deep_dive": "比克提供完整的方形铝壳电芯规格书，长度220mm虽未达400mm，但可考察其厚度、宽度、能量比值关系，为较短规格竞品提供对照。比克非比亚迪，且明确有方形系列。",
+      "source_result_ids": [
+        "brave-Q31-01",
+        "exa-Q32-01",
+        "exa-Q32-04",
+        "exa-Q32-02"
+      ],
+      "source_urls": [
+        "https://www.dianchi.cn/brand/BAK.html",
+        "https://www.bakpower.com/uploads/cpxl_table2/LITHIUM-ION%20RECHARGEABLE%20BATTERY-BAKCBBK100.pdf",
+        "https://www.benhoobattery.com/products/energy-storage-batteries/off-grid-solar-storage-batteries/lifepo4-prismatic-cell"
+      ],
+      "initial_evidence_summary": "产品包括方形电芯，有型号BAKCBBK100（40220112-100Ah），尺寸(220.3±0.3)*(40.5±0.5)*(117.2±0.4)mm，体积能量密度325Wh/L，重量能量密度154Wh/kg。另有150Ah款（220.3*60.5*117.5mm）。明确为铝壳方形硬壳。"
+    },
+    {
+      "candidate_id": "P11",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT",
+      "product_name": "L500短刀电池",
+      "product_name_en": "L500 Short Blade Cell",
+      "product_version": "L500 (具体容量和厚度未公开，预估120-150Ah级别)",
+      "market": "中国新能源汽车市场",
+      "reason_for_deep_dive": "蜂巢能源L500系列长度可能约500mm，恰好符合权1的长度范围（400-2500mm）。其宽度与厚度比例规定（2%-10%*长度）可能使得厚度远小于宽度，满足L>H>D几何特征。可对比比亚迪刀片电池参数。",
+      "source_result_ids": [
+        "brave-Q05-02",
+        "brave-Q05-04",
+        "brave-Q05-05",
+        "exa-Q06-01",
+        "exa-Q06-02"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/484682347",
+        "https://www.svolt.cn/solution/passenger",
+        "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+        "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+        "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html"
+      ],
+      "initial_evidence_summary": "L300/L400/L500系列短刀电池，长度300-600mm，高度10%-30%*长度，宽度2%-10%*长度。均为长薄型铝壳电芯，硬壳长方体。已全域短刀化，覆盖乘用车。推出5C LFP超充短刀。"
+    },
+    {
+      "candidate_id": "P12",
+      "company": "中创新航",
+      "company_en": "CALB",
+      "product_name": "L173F125方形电芯",
+      "product_name_en": "L173F125 Prismatic Cell",
+      "product_version": "125Ah/100Ah LFP 铝壳",
+      "market": "中国新能源汽车、储能",
+      "reason_for_deep_dive": "中创新航L173F125虽长度174mm（<400mm），但其长厚比极高（~174:36.5），可视为短尺寸超薄竞品，有助于验证厚度D与体积V比值范围在更小尺寸下的极限。非比亚迪申请人。",
+      "source_result_ids": [
+        "exa-Q10-01",
+        "exa-Q10-03",
+        "brave-Q10-02",
+        "brave-Q10-03",
+        "brave-Q10-05"
+      ],
+      "source_urls": [
+        "https://calb-battery.us/calb-l173f125.html",
+        "https://www.evlithium.com/CALB_Battery/971.html",
+        "https://www.lifepo4-battery.com/Products/CALB-Battery/CALB-L173F230-230Ah.html",
+        "https://www.evlithium.com/CALB_Battery/calb-l173f125a-125ah-lifepo4-cell.html",
+        "https://www.rainbowgermany.cn/productshow-8.html"
+      ],
+      "initial_evidence_summary": "L173F125电芯：3.2V 125Ah，尺寸174.4*36.5*175.3mm，重量2.45±0.01kg；L160F100：100Ah，推测尺寸相似。铝壳方形硬壳电芯，高能量密度，循环>3500次。"
+    },
+    {
+      "candidate_id": "P13",
+      "company": "瑞浦兰钧",
+      "company_en": "REPT Battero",
+      "product_name": "320Ah问顶储能电芯",
+      "product_name_en": "320Ah Wending Storage Cell",
+      "product_version": "320Ah/314Ah LFP 铝壳",
+      "market": "中国储能、电动车",
+      "reason_for_deep_dive": "问顶系列大容量储能电芯（320Ah）尽管长度可能仅207mm，但其长薄设计可类比权1的几何参数比例。瑞浦兰钧极耳短程化设计使其内阻低（16%↓），有利于散热，可能隐含S/E或L/S比值优化。非比亚迪，深入有价值。",
+      "source_result_ids": [
+        "exa-Q12-04",
+        "brave-Q44-01",
+        "brave-Q44-05",
+        "brave-Q43-02"
+      ],
+      "source_urls": [
+        "https://www.reptbattero.com/en/products",
+        "https://www.evlithium.com/LiFePO4-Battery/rept-320ah-lifepo4-cell.html",
+        "https://lynxpower.co.uk/product/3-2v-280ah-8000-cycles-lifepo4-cell-lifepo4-automotive-grade-a-cells",
+        "https://libattery.ofweek.com/2023-09/ART-36001-8110-30611624.html"
+      ],
+      "initial_evidence_summary": "REPT 3.2V 320Ah/314Ah方形铝壳电芯，用于储能和EV，高能量密度，循环大于8000次。尺寸可能沿用71173或相似尺寸，长度207mm左右。另有54Ah长类型电芯，具体尺寸未知。"
+    },
+    {
+      "candidate_id": "P14",
+      "company": "亿纬锂能",
+      "company_en": "EVE Energy",
+      "product_name": "MB31储能电芯",
+      "product_name_en": "MB31 Prismatic Cell",
+      "product_version": "314Ah LFP",
+      "market": "中国储能、电动车",
+      "reason_for_deep_dive": "亿纬锂能MB31虽然是短尺寸（173.7mm），但其与LF560K形成系列对照，可衡量同公司从短到长的D/V、L/S演变规律，评估是否落入权1范围。非比亚迪。",
+      "source_result_ids": [
+        "exa-Q16-01",
+        "exa-Q16-04"
+      ],
+      "source_urls": [
+        "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+        "https://diysolarforum.com/threads/new-eve-cell-at-re-2023-lf-560k-628ah-cell.69209"
+      ],
+      "initial_evidence_summary": "MB31电芯 314Ah LFP, 尺寸173.7*71.7*207.2mm, 循环8000次。能量密度较高，方形铝壳。通过VDA规范可能推出长电芯。该类电芯尺寸标准化，有利于计算D/V、L/S。"
+    },
+    {
+      "candidate_id": "P15",
+      "company": "欣旺达",
+      "company_en": "Sunwoda",
+      "product_name": "314Ah储能电芯",
+      "product_name_en": "314Ah LFP Storage Cell",
+      "product_version": "314Ah 短刀方形铝壳",
+      "market": "中国储能市场",
+      "reason_for_deep_dive": "欣旺达314Ah电芯明确为短刀形态，长度可能接近500-600mm（从600+Ah路线推断），较符合权1长度下限。可探寻其L/S、S/E比值，尤其关注散热表面积优化。非比亚迪。",
+      "source_result_ids": [
+        "brave-Q13-02",
+        "brave-Q13-05",
+        "exa-Q14-04",
+        "exa-Q14-05"
+      ],
+      "source_urls": [
+        "https://www.aibanges.com/a/10602",
+        "https://chuneng.ofweek.com/news/2025-04/ART-180220-8500-30661476.html",
+        "https://www.alibaba.com/product-detail/SEVB-Sunwoda-3-2V-314Ah-LFP_1601486436105.html",
+        "https://www.docanpower.com/eu-stock-pre-sale-grade-a-sunwoda-sevb-lf314-314ah-330ah-340ah-prismatic-lifepo4-cells-3-2v-welded-m6-studs"
+      ],
+      "initial_evidence_summary": "314Ah储能电芯尺寸沿用280Ah“71173”（173*171*？），循环12000次，能量密度高。欣旺达同时开发600+Ah短刀电芯，产品线覆盖常规方形铝壳和长超薄短刀两种技术路线。"
+    },
+    {
+      "candidate_id": "P16",
+      "company": "卫蓝新能源",
+      "company_en": "WeLion New Energy",
+      "product_name": "SHE350-106Ah固态电池",
+      "product_name_en": "SHE350-106Ah Semi-Solid Battery",
+      "product_version": "106Ah/111Ah 半固态",
+      "market": "中国新能源汽车",
+      "reason_for_deep_dive": "半固态/固态电池作为长电芯新型竞品，能量密度超过360Wh/kg，有望匹配权1高散热要求（S/E≦1000）。蔚来150kWh电池包若采用长电芯，很可能长度≥400mm。非比亚迪，前沿竞品。",
+      "source_result_ids": [
+        "brave-Q45-04",
+        "exa-Q46-01",
+        "exa-Q46-05"
+      ],
+      "source_urls": [
+        "https://rfnets.com/blog/lion-brand-value?tmpl=component&print=1&layout=default",
+        "https://statesolid.com/products/solid-state-battery-prismatic-3-85v-40ah",
+        "https://www.lvwo-energy.com/lithium-battery-cell/prismatic-lithium-battery-cell"
+      ],
+      "initial_evidence_summary": "卫蓝新能源SHE350-106Ah/111Ah固态电池为半固态，搭载于蔚来150kWh电池包。为高能量密度、高安全动力电池，具体形态未公开，但极有可能为方形硬壳长电芯，以满足大容量需求。"
+    },
+    {
+      "candidate_id": "P17",
+      "company": "宁德时代",
+      "company_en": "CATL",
+      "product_name": "3.7V 65Ah方形电池",
+      "product_name_en": "3.7V 65Ah Prismatic Cell",
+      "product_version": "65Ah NCM 铝壳",
+      "market": "中国新能源汽车",
+      "reason_for_deep_dive": "CATL作为全球最大方形铝壳电池制造商，其大容量电芯的长度范围可能延伸到400mm以上，具有典型性。但需注意CATL非比亚迪，但要排除关联关系。后续需确认其长电芯产品具体参数。",
+      "source_result_ids": [
+        "brave-Q17-01",
+        "brave-Q17-02",
+        "brave-Q18-01",
+        "brave-Q18-05"
+      ],
+      "source_urls": [
+        "https://www.langkawipower.com/Products/Lithium-NMC-Battery/%E5%AE%81%E5%BE%B7%E6%97%B6%E4%BB%A3-NCM-50Ah-%E7%94%B5%E6%B1%A0.html",
+        "https://www.langkawipower.com/Products/Lithium-NMC-Battery/3.7v-65Ah-%E7%94%B5%E6%B1%A0.html",
+        "https://www.batterydesign.net/battery-cell/cell-benchmarking/catl",
+        "https://evehiclepolicy.com/catl-details-next-gen-cell-to-pack-battery-tech-with-disruptive-water-cooling-design"
+      ],
+      "initial_evidence_summary": "提供50Ah/65Ah方形三元铝壳电池，可用于轻客、电摩等。虽公开长度可能未超400mm，但CATL有CTP技术积累及大模组长电芯概念，可能衍生更长电芯产品（如ID系列用1900mm概念）。正开发4680圆柱。"
+    },
+    {
+      "candidate_id": "P18",
+      "company": "松下能源",
+      "company_en": "Panasonic Energy",
+      "product_name": "方形高容量锂电池",
+      "product_name_en": "Prismatic High Capacity Li-ion Cell",
+      "product_version": "NCA/NCM 系（容量待定，典型40-60Ah）",
+      "market": "中国市场（大连/苏州供应）",
+      "reason_for_deep_dive": "松下作为全球领先硬壳方形电池供应商，其长电芯设计极可能满足权1长方体硬壳要求，长度范围值得查证。非比亚迪申请人，有效拓展竞品范围。",
+      "source_result_ids": [
+        "exa-Q36-04",
+        "brave-Q20-01"
+      ],
+      "source_urls": [
+        "https://energy.panasonic.com/eu/business/products/lithium-ion/prismatic-high-cap",
+        "https://www.kedglobal.com/batteries/newsView/ked202408300010"
+      ],
+      "initial_evidence_summary": "松下供应棱柱形（方形）高容量锂离子电池，强调超薄设计、长操作时间。其方形壳为铝合金或不锈钢硬壳。在中国合资企业有供应记录。具体产品型号未在本次搜索中详细公开尺寸。"
+    },
+    {
+      "candidate_id": "P19",
+      "company": "宁德时代",
+      "company_en": "CATL",
+      "product_name": "CTP长棱柱电芯",
+      "product_name_en": "CTP Long Prismatic Cell",
+      "product_version": "CATL下一代CTP电芯（长度1900mm概念，未量产）",
+      "market": "中国电动汽车",
+      "reason_for_deep_dive": "CATL正探索1900mm超长电芯用于CTP，明确处于权1长度范围（400-2500mm）。若能量密度和尺寸公开，可完美匹配D/V、L/S等参数，是验证专利特征的最佳非比亚迪候选之一。",
+      "source_result_ids": [
+        "brave-Q18-01",
+        "brave-Q18-05",
+        "brave-Q17-05",
+        "brave-Q17-03"
+      ],
+      "source_urls": [
+        "https://www.batterydesign.net/battery-cell/cell-benchmarking/catl",
+        "https://evehiclepolicy.com/catl-details-next-gen-cell-to-pack-battery-tech-with-disruptive-water-cooling-design",
+        "https://baike.baidu.com/item/%E5%AE%81%E5%BE%B7%E6%97%B6%E4%BB%A3%E6%96%B0%E8%83%BD%E6%BA%90%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/19308544",
+        "https://www.directindustry-china.cn/zhizaoshang-gongye/ju-xing-dian-chi-231199.html"
+      ],
+      "initial_evidence_summary": "CATL展示了CTP设计中使用长棱柱形电芯的模块化灵活冷却板。下一代CTP有望采用超长电芯（可能1900mm概念），提高体积利用率。其280Ah LFP电芯尺寸长约205mm（已知），长电芯可能更长。"
+    },
+    {
+      "candidate_id": "P20",
+      "company": "海辰储能",
+      "company_en": "HiTHIUM",
+      "product_name": "320Ah储能电芯",
+      "product_name_en": "320Ah Prismatic Storage Cell",
+      "product_version": "320Ah 71173 风冷优化",
+      "market": "中国储能市场",
+      "reason_for_deep_dive": "尽管目前长度约173mm（＜400mm），但其散热面积显著提升的设计理念与权1 S/E≤1000mm²/Wh相符，可作为短尺寸控制样本。后续可能延伸更长规格（如600+Ah）。非比亚迪关联。",
+      "source_result_ids": [
+        "brave-Q43-03"
+      ],
+      "source_urls": [
+        "https://cn.solarbe.com/news/20230506/73688.html"
+      ],
+      "initial_evidence_summary": "海辰储能320Ah电芯沿用71173尺寸（长173mm左右），散热面积提升106%，无需液冷，只用强制风冷。方形铝壳长寿命电芯。"
+    },
+    {
+      "candidate_id": "P21",
+      "company": "LG新能源",
+      "company_en": "LG Energy Solution",
+      "product_name": "新一代方形长电芯",
+      "product_name_en": "Next-Gen Prismatic Long Cell",
+      "product_version": "开发中，具体容量/尺寸未知",
+      "market": "中国新能源车、国际市场",
+      "reason_for_deep_dive": "LG新能源转向方形，预计长度会纳入400-2500mm范畴以匹配模组无模组设计。未来量产产品可能直接落入专利权保护范围，值得前瞻深挖。非比亚迪。",
+      "source_result_ids": [
+        "brave-Q19-01",
+        "brave-Q19-03"
+      ],
+      "source_urls": [
+        "https://www.marklines.com/cn/top500/lg_chem",
+        "https://cn.technode.com/post/2024-08-08/lg-energy-solution-news"
+      ],
+      "initial_evidence_summary": "LG传统软包为主，但2024年成立方形电池工作组，正在开发高安全铝壳方形电池。考虑到其在中国南京有工厂，可能推出面向中国市场的长电芯产品。LG长电芯（Long Cell）概念已出现在产品序列。"
+    },
+    {
+      "candidate_id": "P22",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT",
+      "product_name": "L600 5C超充短刀电池",
+      "product_name_en": "L600 5C Fast Charge Short Blade Cell",
+      "product_version": "L600 5C LFP (预计2024Q3量产)",
+      "market": "中国新能源汽车超快充市场",
+      "reason_for_deep_dive": "超快充版本基于196Ah平台，长度约574mm，厚度约21.5mm，可精确计算L/S、D/V等比值。是验证权1 S/E散热优化（高功率下要求更严苛散热）的理想案例。非比亚迪。",
+      "source_result_ids": [
+        "brave-Q05-01",
+        "exa-Q06-02",
+        "brave-Q42-04"
+      ],
+      "source_urls": [
+        "https://www.svolt.cn/innovation/innovations/cell",
+        "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html",
+        "https://www.svolt.cn/en/news/142"
+      ],
+      "initial_evidence_summary": "推出5C+800V L600 LFP短刀超充电池、6C三元超充电池，均为长薄铝壳电芯，L600长度≤600mm。这些电池均基于第二代短刀设计，高体积能量密度和快充能力。"
+    },
+    {
+      "candidate_id": "P23",
+      "company": "欣旺达",
+      "company_en": "Sunwoda",
+      "product_name": "684Ah超大容量储能电芯",
+      "product_name_en": "684Ah Ultra-large Storage Cell",
+      "product_version": "684Ah LFP 闪堆叠",
+      "market": "中国储能市场",
+      "reason_for_deep_dive": "684Ah对应极可能蛇形长度>600mm（满足权1长度范围），高能量密度要求良好的散热表面积比值S/E≤1000 mm²/Wh。深度挖掘其规格有助于确认大容量情形下的D/V与L/S关系。非比亚迪。",
+      "source_result_ids": [
+        "brave-Q48-01",
+        "brave-Q48-03",
+        "brave-Q13-05"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/en/item/Sunwoda%20Electronic%20Co.,Ltd./932292",
+        "https://www.sunwodaess.com/company-news/sunwoda-mass-production-684ah-cell.html",
+        "https://chuneng.ofweek.com/news/2025-04/ART-180220-8500-30661476.html"
+      ],
+      "initial_evidence_summary": "欣旺达684Ah大容量储能专用电芯，2025年累计出货超200万颗，采用闪堆叠技术，能量密度＞440Wh/L。属于超大容量方形铝壳电芯，体积较大，很有可能长度>400mm。"
+    },
+    {
+      "candidate_id": "P24",
+      "company": "国轩高科",
+      "company_en": "Gotion",
+      "product_name": "IFP27175200A方形电芯",
+      "product_name_en": "IFP27175200A Prismatic Cell",
+      "product_version": "100Ah LFP",
+      "market": "中国储能、电动汽车",
+      "reason_for_deep_dive": "尺寸27*175*200mm表明长度200mm（接近400mm门槛），厚度27mm较薄，满足硬壳长方体要求且D<V关系可量化。规格书公开数据可精确计算L/S和D/V。非比亚迪。",
+      "source_result_ids": [
+        "exa-Q08-02",
+        "brave-Q08-05"
+      ],
+      "source_urls": [
+        "https://www.teklib.com/library/gotion-ifp27175200a-100ah-battery-datasheet",
+        "https://lightning-energy.cn/product/3-2v-30ah-lifepo4-prismatic-battery-gotion-cells"
+      ],
+      "initial_evidence_summary": "型号IFP27175200A-100Ah方形磷酸铁锂电芯，规格书PDF显示尺寸 27*175*200mm（厚度-宽度-长度），重量约2080±100g，循环寿命长。为厚-宽-长扁平矩形。"
+    },
+    {
+      "candidate_id": "P25",
+      "company": "三星SDI",
+      "company_en": "Samsung SDI",
+      "product_name": "SBB 2.0 LFP储能电池",
+      "product_name_en": "SBB 2.0 LFP Storage Cell",
+      "product_version": "SBB 2.0 LFP (具体容量未公开)",
+      "market": "中国储能及国际储能市场",
+      "reason_for_deep_dive": "三星SDI的SBB系列基于方形技术，新一代LFP高容量产品长度极可能≥400mm，落入权1范围。作为非比亚迪国际巨头，其规格可作为对照。后续需查证具体尺寸。",
+      "source_result_ids": [
+        "brave-Q21-01",
+        "exa-Q22-05"
+      ],
+      "source_urls": [
+        "https://www.samsungsdi.com.cn",
+        "https://news.samsungsdi.com/global/articleView?seq=207"
+      ],
+      "initial_evidence_summary": "三星SDI公布高容量SBB 1.7 / LFP SBB 2.0 储能产品线，基于方形电池技术优势，面向AI数据中心UPS等，强调方形技术能力和当地生产能力。尺寸可能较大以匹配高容量。"
+    }
+  ]
+}

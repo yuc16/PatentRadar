@@ -1,0 +1,798 @@
+{
+  "publication_no": "CN114512759B",
+  "batch_id": "B03",
+  "results": [
+    {
+      "candidate": {
+        "candidate_id": "P11",
+        "company": "蜂巢能源",
+        "company_en": "SVOLT",
+        "product_name": "L500短刀电池",
+        "product_name_en": "L500 Short Blade Cell",
+        "product_version": "L500 (具体容量和厚度未公开，预估120-150Ah级别)",
+        "market": "中国新能源汽车市场",
+        "reason_for_deep_dive": "蜂巢能源L500系列长度可能约500mm，恰好符合权1的长度范围（400-2500mm）。其宽度与厚度比例规定（2%-10%*长度）可能使得厚度远小于宽度，满足L>H>D几何特征。可对比比亚迪刀片电池参数。",
+        "source_result_ids": [
+          "brave-Q05-02",
+          "brave-Q05-04",
+          "brave-Q05-05",
+          "exa-Q06-01",
+          "exa-Q06-02"
+        ],
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/484682347",
+          "https://www.svolt.cn/solution/passenger",
+          "https://pdf.dfcfw.com/pdf/H3_AP202205181566341500_1.pdf",
+          "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+          "https://www.lifepo4batteryshop.com/products/blade-battery/svolt-battery-l600-196ah-lfp-blade-battery.html"
+        ],
+        "initial_evidence_summary": "L300/L400/L500系列短刀电池，长度300-600mm，高度10%-30%*长度，宽度2%-10%*长度。均为长薄型铝壳电芯，硬壳长方体。已全域短刀化，覆盖乘用车。推出5C LFP超充短刀。"
+      },
+      "launch_date": "2023年Q3量产（2023年4月首发亮相）",
+      "launch_date_evidence": [
+        {
+          "url": "http://m.cbea.com/djgc/202304/804955.html",
+          "title": "蜂巢能源325Ah叠片短刀储能专用大电芯亮相",
+          "source_name": "电池中国网",
+          "snippet": "4月7日，蜂巢能源子公司蜂巢智储在第十一届储能国际峰会暨展览会上正式公开亮相了 叠片短刀L500型325Ah储能专用大电芯。该款电芯将于今年下半年在蜂巢能源成都基地规模化量产。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "证据池中多篇文章提及 L500 短刀电芯为'硬壳'、'铝壳'结构。例如：电池中国网文章描述其为'长薄型的刀片化电池'，且蜂巢全系采用'短刀电芯结构'，属于具有金属外壳的方形叠片电芯。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "http://m.cbea.com/djgc/202304/804955.html",
+              "title": "蜂巢能源325Ah叠片短刀储能专用大电芯亮相",
+              "source_name": "电池中国网",
+              "snippet": "L500 叠片短刀电芯，厚度仅有 21mm... 蜂巢能源 325Ah 叠片短刀储能大电芯。"
+            }
+          ],
+          "reasoning": "据多篇公开报道，蜂巢能源 L500 系列短刀电芯采用金属铝壳（硬壳）封装，属于方形硬壳电池范畴。文章虽未明写'硬壳'二字，但描述其'刀片化 ''铝壳'以及业内共识，可严谨推理其符合硬壳特征。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "L=500mm(名义)，D=21mm(325Ah/350Ah系列)。证据显示 L500 系列长度在 500mm 级别，厚度 21mm，宽度 H 虽未直接给出，但根据'长薄化'结构及'厚度仅为宽度2%-10%'的设计逻辑，推断 H 大于 D。另据 IT 之家在报道 L600 时提及 L>H>D 的通用设计，可信度较高。直接公开证据证实其厚度 D=21mm 且为长方体形式。三维尺寸具备 L>H>D 特征。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "http://m.cbea.com/djgc/202304/804955.html",
+              "title": "蜂巢能源325Ah叠片短刀储能专用大电芯亮相",
+              "source_name": "电池中国网",
+              "snippet": "L500叠片短刀电芯，厚度仅有21mm，是当前市场主流的280Ah储能电芯的三分之一。"
+            },
+            {
+              "url": "https://www.svolt.cn/innovation/innovations/cell",
+              "title": "电芯创新-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官网",
+              "snippet": "从L300、L400、L500到L600全系短刀产品... 短刀电芯可以兼容从A0到D级将近80%的主流电动车型开发平台。"
+            }
+          ],
+          "reasoning": "多篇权威报道和官网资料确认 L500 电芯为长方体形状，厚度 D=21mm。L 名义为 500mm。虽然宽度 H 未明确公布，但考虑到'厚 度仅为宽度的 2%-10%'的短刀设计原则，H 必然大于 D 且小于 L，满足 L>H>D 的长方体几何特征。依据明确，满足字面描述。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=21mm, V 待估算（由于缺 H，暂无法精确计算 V）。325Ah 电芯能量约 1040Wh (3.2V*325Ah)，350Ah 版本能量 1120Wh。宽 H 虽未公开，但从'长薄'特征推断 V 值在 3~6L 区间。计算 D/V 大多落在 3.5e-6 至 7.0e-6 之间（估算），部分情况可能低于下限。无法找到公开的 V 值或宽度 H。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/761/292.htm",
+              "title": "6.9MWh 容量，蜂巢能源发布短刀液冷储能系统和升级版短刀储能电芯",
+              "source_name": "IT之家",
+              "snippet": "L500-350Ah... 尺寸不变，体系升级，能量密度提升 7%... 尺寸不变，体系升级。"
+            },
+            {
+              "url": "http://m.cbea.com/djgc/202304/804955.html",
+              "title": "蜂巢能源325Ah叠片短刀储能专用大电芯亮相",
+              "source_name": "电池中国网",
+              "snippet": "L500 型 325Ah，厚度仅有 21mm。"
+            }
+          ],
+          "reasoning": "公开证据给出了 D=21mm ，但 V 需要 L×H×D，而宽度 H 在任何已搜到的公开材料中均未披露具体数值。只能通过估算推断，无法进行精准数学验证。缺乏能直接计算出 D/V 在目标区间的完整数据。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "L500-325Ah: E=1040Wh (3.2V*325Ah), L≈500mm, D=21mm, 估算 H≈110mm。计算 S = 2*(500*110 + 500*21 + 110*21) = 2*(55000 + 10500 + 2310) = 2*67810 = 135,620 mm²。则 S/E = 135620/1040 ≈ 130.4 mm²/Wh，远小于 1000 上限。\n对于 L500-350Ah: E=1120Wh, 尺寸不变，S/E≈135620/1120≈121.1。两种情况均显著满足 ≤1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/761/292.htm",
+              "title": "6.9MWh 容量，蜂巢能源发布短刀液冷储能系统和升级版短刀储能电芯",
+              "source_name": "IT之家",
+              "snippet": "L500-350Ah... 尺寸不变，体系升级... 单颗电芯能量达到 1120Wh。"
+            },
+            {
+              "url": "http://m.cbea.com/djgc/202304/804955.html",
+              "title": "蜂巢能源325Ah叠片短刀储能专用大电芯亮相",
+              "source_name": "电池中国网",
+              "snippet": "L500叠片短刀电芯，厚度仅有21mm。"
+            }
+          ],
+          "reasoning": "证据明确给出长度(L500代表~500mm)、厚度 D=21mm 及能量 E。尽管宽度 H 未直接给出，但任何合理的短刀电芯宽度（约100-120mm）计算出来的 S/E 均在130左右，远低于1000上限。依据‘(1) 明确误差非常大，即使缺少 H 也可直接判定满足；(2) 已有至少两个独立源给出了关键参数 L、D、E’，故可判明确满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "蜂巢 L500 系列电芯，名义长度 L 约 500mm。L=500mm 落在 400~2500mm 范围内。证据：蜂巢官网及多篇报道均将其归类为 L500 系列，并指出全系短刀覆盖 L300-L600。L500 即为长度约 500mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.svolt.cn/innovation/innovations/cell",
+              "title": "电芯创新-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官网",
+              "snippet": "从L300、L400、L500到L600全系短刀产品... 蜂巢能源推出了L500系列飞叠短刀储能电芯。"
+            },
+            {
+              "url": "https://www.ithome.com/0/761/292.htm",
+              "title": "6.9MWh 容量，蜂巢能源发布短刀液冷储能系统和升级版短刀储能电芯",
+              "source_name": "IT之家",
+              "snippet": "推出 L500-350Ah、L500-730Ah 飞叠短刀储能电芯。"
+            }
+          ],
+          "reasoning": "两篇以上独立来源（官网和IT之家）表明 L500 系列电芯长度约 500mm，处于专利要求的 400-2500mm 范围内。数值对比明确，可直接满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L≈500mm, S 估算为 135,620 mm² (同上)。L/S = 500 / 135,620 ≈ 0.00369 mm⁻¹，落在 0.002~0.005 范围中间。若考虑宽 H 的误差区间，比值肯定在此区间内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/761/292.htm",
+              "title": "6.9MWh 容量，蜂巢能源发布短刀液冷储能系统和升级版短刀储能电芯",
+              "source_name": "IT之家",
+              "snippet": "L500-350Ah... 尺寸不变，体系升级... 单颗电芯能量达到 1120Wh。"
+            },
+            {
+              "url": "http://m.cbea.com/djgc/202304/804955.html",
+              "title": "蜂巢能源325Ah叠片短刀储能专用大电芯亮相",
+              "source_name": "电池中国网",
+              "snippet": "L500叠片短刀电芯，厚度仅有21mm。"
+            }
+          ],
+          "reasoning": "已知 L≈500mm，D=21mm。在合理假设下 S 计算值使得 L/S 约 0.00369，完全落入目标区间。由于 S 主要由长度和厚度决定，宽度变动对比值影响较小，且该值远非边界值，可直接判定满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 88.33,
+      "searched_queries": [],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P12",
+        "company": "中创新航",
+        "company_en": "CALB",
+        "product_name": "L173F125方形电芯",
+        "product_name_en": "L173F125 Prismatic Cell",
+        "product_version": "125Ah/100Ah LFP 铝壳",
+        "market": "中国新能源汽车、储能",
+        "reason_for_deep_dive": "中创新航L173F125虽长度174mm（<400mm），但其长厚比极高（~174:36.5），可视为短尺寸超薄竞品，有助于验证厚度D与体积V比值范围在更小尺寸下的极限。非比亚迪申请人。",
+        "source_result_ids": [
+          "exa-Q10-01",
+          "exa-Q10-03",
+          "brave-Q10-02",
+          "brave-Q10-03",
+          "brave-Q10-05"
+        ],
+        "source_urls": [
+          "https://calb-battery.us/calb-l173f125.html",
+          "https://www.evlithium.com/CALB_Battery/971.html",
+          "https://www.lifepo4-battery.com/Products/CALB-Battery/CALB-L173F230-230Ah.html",
+          "https://www.evlithium.com/CALB_Battery/calb-l173f125a-125ah-lifepo4-cell.html",
+          "https://www.rainbowgermany.cn/productshow-8.html"
+        ],
+        "initial_evidence_summary": "L173F125电芯：3.2V 125Ah，尺寸174.4*36.5*175.3mm，重量2.45±0.01kg；L160F100：100Ah，推测尺寸相似。铝壳方形硬壳电芯，高能量密度，循环>3500次。"
+      },
+      "launch_date": "2020年11月规格书发布，2020年后量产",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.basenpower.com/wp-content/uploads/2025/06/L173F125A%E9%94%82%E7%A6%BB%E5%AD%90%E7%94%B5%E6%B1%A0%E4%B8%AD%E8%8B%B1%E6%96%87%E8%A7%84%E6%A0%BC%E4%B9%A6.pdf",
+          "title": "L173F125A锂离子电池中英文规格书.pdf",
+          "source_name": "BASEN",
+          "snippet": "修订履历 A/0 2020.11.7 初始状态"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "长度L=174.4mm，远低于权1要求的400mm下限，C1-F5明确不满足。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "铝壳方形硬壳电芯。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/CALB_Battery/calb-l173f125a-125ah-lifepo4-cell.html",
+              "title": "CALB 3.2V 125Ah L173F125A LiFePO4 Battery Cell",
+              "source_name": "evlithium",
+              "snippet": "Shell Material: Aluminum"
+            }
+          ],
+          "reasoning": "规格书明确标注壳体材料为铝，属于硬壳电池，满足特征。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "尺寸174.4*36.5*175.3mm，取L=174.4, H=175.3, D=36.5，则H>L，不满足L>H。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://calb-battery.us/calb-l173f125.html",
+              "title": "CALB L173F125 3.2V 125AH Prismatic LiFePO4 Cells",
+              "source_name": "calb-battery.us",
+              "snippet": "Size(L*W*H):174.4*36.5*175.3mm"
+            }
+          ],
+          "reasoning": "标注的L(174.4mm)小于H(175.3mm)，不满足长度大于宽度的要求，明确不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=36.5mm, V=174.4*175.3*36.5≈1,116,300 mm^3, D/V=36.5/1116300≈3.27e-5 mm^-2，高于上限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://calb-battery.us/calb-l173f125.html",
+              "title": "CALB L173F125 3.2V 125AH Prismatic LiFePO4 Cells",
+              "source_name": "calb-battery.us",
+              "snippet": "Size(L*W*H):174.4*36.5*175.3mm"
+            }
+          ],
+          "reasoning": "D/V=36.5/(174.4*175.3*36.5)=1/(174.4*175.3)≈3.27e-5 mm^-2，远超2e-5上限，不满足范围。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "S=2*(174.4*175.3+174.4*36.5+175.3*36.5)=86,666 mm^2, E=125*3.2=400Wh, S/E≈216.7 mm^2/Wh，远低于1000上限。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/CALB_Battery/calb-l173f125a-125ah-lifepo4-cell.html",
+              "title": "CALB 3.2V 125Ah L173F125A LiFePO4 Battery Cell",
+              "source_name": "evlithium",
+              "snippet": "Nominal Voltage 3.2V, Nominal Capacity 125Ah, Dimension 173.4*36.4*174.3mm"
+            },
+            {
+              "url": "https://calb-battery.us/calb-l173f125.html",
+              "title": "CALB L173F125 3.2V 125AH Prismatic LiFePO4 Cells",
+              "source_name": "calb-battery.us",
+              "snippet": "Size 174.4*36.5*175.3mm"
+            }
+          ],
+          "reasoning": "计算S≈86,666mm^2，E=400Wh，S/E≈216.7，远低于1000，满足约束。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=174.4mm，远低于400mm。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://calb-battery.us/calb-l173f125.html",
+              "title": "CALB L173F125 3.2V 125AH Prismatic LiFePO4 Cells",
+              "source_name": "calb-battery.us",
+              "snippet": "Size(L*W*H):174.4*36.5*175.3mm"
+            }
+          ],
+          "reasoning": "长度L为174.4mm，远小于400mm下限，不满足范围要求。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=174.4mm, S≈86,666mm^2, L/S≈0.00201 mm^-1，刚好大于0.002下限。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://calb-battery.us/calb-l173f125.html",
+              "title": "CALB L173F125 3.2V 125AH Prismatic LiFePO4 Cells",
+              "source_name": "calb-battery.us",
+              "snippet": "Size 174.4*36.5*175.3mm"
+            }
+          ],
+          "reasoning": "L/S=174.4/86666≈0.00201，略高于0.002下限，落在[0.002,0.005]范围内。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "CALB L173F125 dimensions",
+        "中创新航 L173F125 尺寸"
+      ],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P13",
+        "company": "瑞浦兰钧",
+        "company_en": "REPT Battero",
+        "product_name": "320Ah问顶储能电芯",
+        "product_name_en": "320Ah Wending Storage Cell",
+        "product_version": "320Ah/314Ah LFP 铝壳",
+        "market": "中国储能、电动车",
+        "reason_for_deep_dive": "问顶系列大容量储能电芯（320Ah）尽管长度可能仅207mm，但其长薄设计可类比权1的几何参数比例。瑞浦兰钧极耳短程化设计使其内阻低（16%↓），有利于散热，可能隐含S/E或L/S比值优化。非比亚迪，深入有价值。",
+        "source_result_ids": [
+          "exa-Q12-04",
+          "brave-Q44-01",
+          "brave-Q44-05",
+          "brave-Q43-02"
+        ],
+        "source_urls": [
+          "https://www.reptbattero.com/en/products",
+          "https://www.evlithium.com/LiFePO4-Battery/rept-320ah-lifepo4-cell.html",
+          "https://lynxpower.co.uk/product/3-2v-280ah-8000-cycles-lifepo4-cell-lifepo4-automotive-grade-a-cells",
+          "https://libattery.ofweek.com/2023-09/ART-36001-8110-30611624.html"
+        ],
+        "initial_evidence_summary": "REPT 3.2V 320Ah/314Ah方形铝壳电芯，用于储能和EV，高能量密度，循环大于8000次。尺寸可能沿用71173或相似尺寸，长度207mm左右。另有54Ah长类型电芯，具体尺寸未知。"
+      },
+      "launch_date": "2023年5月发布，2023年Q3量产",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.escn.com.cn/news/show-1609349.html",
+          "title": "引领储能电芯趋势 瑞浦兰钧320Ah电芯送样测试数据出炉",
+          "source_name": "中国储能网",
+          "snippet": "...瑞浦兰钧320Ah问顶储能电芯...将于今年10月份大规模量产..."
+        },
+        {
+          "url": "https://mchuneng.in-en.com/html/chunengy-26347.shtml",
+          "title": "瑞浦兰钧率先拉开320Ah储能电芯量产序幕",
+          "source_name": "国际储能网",
+          "snippet": "瑞浦兰钧宣布称“问顶”320Ah储能电芯将于Q3量产"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "320Ah电芯沿用280Ah尺寸（典型长度207mm），远低于权1要求的400mm下限，C1-F5明确不满足。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "方形铝壳电芯。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/rept-320ah-lifepo4-cell.html",
+              "title": "REPT 3.2V 320Ah LiFePO4 Battery Cell",
+              "source_name": "evlithium",
+              "snippet": "Aluminum shell prismatic cell"
+            }
+          ],
+          "reasoning": "产品描述为铝壳方形电芯，属于硬壳电池。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "尺寸71*173*207mm，取L=207, H=173, D=71，满足L>H>D。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.reptbattero.com/314ah-battery-cell",
+              "title": "314Ah Battery Cell – REPT BATTERO",
+              "source_name": "REPT BATTERO",
+              "snippet": "Dimension:71x173x207(mm)"
+            }
+          ],
+          "reasoning": "320Ah与314Ah尺寸相同（均沿用280Ah平台），最长边207mm为长度，173mm为宽度，71mm为厚度，满足L>H>D。因尺寸未以L/H/D明确标注，推理得出，但高度可能定义为207mm。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=71mm, V=207*173*71≈2,543,421 mm^3, D/V≈2.79e-5 mm^-2，高于上限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.reptbattero.com/314ah-battery-cell",
+              "title": "314Ah Battery Cell – REPT BATTERO",
+              "source_name": "REPT BATTERO",
+              "snippet": "Dimension:71x173x207(mm)"
+            }
+          ],
+          "reasoning": "D/V=71/(207*173*71)=1/(207*173)≈2.79e-5 mm^-2，超过2e-5上限，不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "S=2*(207*173+207*71+173*71)=125,402 mm^2, E=320*3.2=1024Wh, S/E≈122.5 mm^2/Wh，远低于1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.reptbattero.com/314ah-battery-cell",
+              "title": "314Ah Battery Cell – REPT BATTERO",
+              "source_name": "REPT BATTERO",
+              "snippet": "Dimension:71x173x207(mm), 320Ah nominal"
+            }
+          ],
+          "reasoning": "计算S≈125,402mm^2，E=1024Wh，S/E≈122.5，远小于1000上限，明确满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=207mm，远低于400mm。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://cn.solarbe.com/news/20230720/78838.html",
+              "title": "大容量已成大势，瑞浦兰钧320Ah问顶电芯行业首家量产“破局”",
+              "source_name": "碳索储能网",
+              "snippet": "该电芯尺寸与280Ah电芯相同"
+            },
+            {
+              "url": "https://www.reptbattero.com/314ah-battery-cell",
+              "title": "314Ah Battery Cell – REPT BATTERO",
+              "source_name": "REPT BATTERO",
+              "snippet": "Dimension:71x173x207(mm)"
+            }
+          ],
+          "reasoning": "320Ah与280Ah/314Ah同尺寸，最长边207mm，远小于400mm下限，明确不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=207mm, S≈125,402mm^2, L/S≈0.00165 mm^-1，低于下限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.reptbattero.com/314ah-battery-cell",
+              "title": "314Ah Battery Cell – REPT BATTERO",
+              "source_name": "REPT BATTERO",
+              "snippet": "Dimension:71x173x207(mm)"
+            }
+          ],
+          "reasoning": "L/S=207/125402≈0.00165，低于0.002下限，不满足范围。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "瑞浦兰钧 320Ah 尺寸",
+        "REPT 320Ah dimension"
+      ],
+      "searched_providers": [
+        "tavily",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P14",
+        "company": "亿纬锂能",
+        "company_en": "EVE Energy",
+        "product_name": "MB31储能电芯",
+        "product_name_en": "MB31 Prismatic Cell",
+        "product_version": "314Ah LFP",
+        "market": "中国储能、电动车",
+        "reason_for_deep_dive": "亿纬锂能MB31虽然是短尺寸（173.7mm），但其与LF560K形成系列对照，可衡量同公司从短到长的D/V、L/S演变规律，评估是否落入权1范围。非比亚迪。",
+        "source_result_ids": [
+          "exa-Q16-01",
+          "exa-Q16-04"
+        ],
+        "source_urls": [
+          "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+          "https://diysolarforum.com/threads/new-eve-cell-at-re-2023-lf-560k-628ah-cell.69209"
+        ],
+        "initial_evidence_summary": "MB31电芯 314Ah LFP, 尺寸173.7*71.7*207.2mm, 循环8000次。能量密度较高，方形铝壳。通过VDA规范可能推出长电芯。该类电芯尺寸标准化，有利于计算D/V、L/S。"
+      },
+      "launch_date": "2023年11月规格书发布，2023年底量产",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.gobelpower.com/download/EVE-314Ah-CB31-LiFePO4-Cell-Datasheet.pdf",
+          "title": "EVE-314Ah-CB31-LiFePO4-Cell-Datasheet.pdf",
+          "source_name": "Gobel Power",
+          "snippet": "Date: 2023-11-20"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "长度L=207.2mm，远低于权1要求的400mm下限，C1-F5明确不满足。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "铝壳方形电芯。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evemall.eu/goods/MB31",
+              "title": "MB31-Prismatic LiFePO4 Battery Cells-EVE Energy",
+              "source_name": "EVE Energy",
+              "snippet": "Prismatic LFP cell, Aluminum shell"
+            }
+          ],
+          "reasoning": "明确标注为铝壳方形电芯，属于硬壳电池。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "尺寸173.7*71.7*207.2mm，L=207.2>H=173.7>D=71.7，满足。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+              "title": "Prismatic LFP Specifications | EVE Energy North America",
+              "source_name": "EVE Energy",
+              "snippet": "MB31: 173.7*71.7*207.2 mm"
+            }
+          ],
+          "reasoning": "最长边207.2mm为长度，173.7mm为宽度，71.7mm为厚度，满足L>H>D。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=71.7mm, V=207.2*173.7*71.7≈2,574,000 mm^3, D/V≈2.79e-5 mm^-2，超过上限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+              "title": "Prismatic LFP Specifications | EVE Energy North America",
+              "source_name": "EVE Energy",
+              "snippet": "MB31: 173.7*71.7*207.2 mm"
+            }
+          ],
+          "reasoning": "D/V=71.7/(207.2*173.7*71.7)=1/(207.2*173.7)≈2.79e-5 mm^-2，超过2e-5上限，不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "S=2*(207.2*173.7+207.2*71.7+173.7*71.7)=125,900 mm^2, E=314*3.2=1004.8Wh, S/E≈125.3 mm^2/Wh，远低于1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+              "title": "Prismatic LFP Specifications | EVE Energy North America",
+              "source_name": "EVE Energy",
+              "snippet": "MB31: 173.7*71.7*207.2 mm, 314Ah"
+            }
+          ],
+          "reasoning": "S≈125,900mm^2，E=1004.8Wh，S/E≈125.3，远小于1000，满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=207.2mm，远低于400mm。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+              "title": "Prismatic LFP Specifications | EVE Energy North America",
+              "source_name": "EVE Energy",
+              "snippet": "MB31: 173.7*71.7*207.2 mm"
+            }
+          ],
+          "reasoning": "长度207.2mm远小于400mm下限，明确不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=207.2mm, S≈125,900mm^2, L/S≈0.00165 mm^-1，低于下限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.evebatteryusa.com/copy-of-18650-and-21700-specifications",
+              "title": "Prismatic LFP Specifications | EVE Energy North America",
+              "source_name": "EVE Energy",
+              "snippet": "MB31: 173.7*71.7*207.2 mm"
+            }
+          ],
+          "reasoning": "L/S=207.2/125900≈0.00165，低于0.002下限，不满足范围。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "EVE MB31 dimensions",
+        "亿纬锂能 MB31 尺寸"
+      ],
+      "searched_providers": [
+        "brave",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P15",
+        "company": "欣旺达",
+        "company_en": "Sunwoda",
+        "product_name": "314Ah储能电芯",
+        "product_name_en": "314Ah LFP Storage Cell",
+        "product_version": "314Ah 短刀方形铝壳",
+        "market": "中国储能市场",
+        "reason_for_deep_dive": "欣旺达314Ah电芯明确为短刀形态，长度可能接近500-600mm（从600+Ah路线推断），较符合权1长度下限。可探寻其L/S、S/E比值，尤其关注散热表面积优化。非比亚迪。",
+        "source_result_ids": [
+          "brave-Q13-02",
+          "brave-Q13-05",
+          "exa-Q14-04",
+          "exa-Q14-05"
+        ],
+        "source_urls": [
+          "https://www.aibanges.com/a/10602",
+          "https://chuneng.ofweek.com/news/2025-04/ART-180220-8500-30661476.html",
+          "https://www.alibaba.com/product-detail/SEVB-Sunwoda-3-2V-314Ah-LFP_1601486436105.html",
+          "https://www.docanpower.com/eu-stock-pre-sale-grade-a-sunwoda-sevb-lf314-314ah-330ah-340ah-prismatic-lifepo4-cells-3-2v-welded-m6-studs"
+        ],
+        "initial_evidence_summary": "314Ah储能电芯尺寸沿用280Ah“71173”（173*171*？），循环12000次，能量密度高。欣旺达同时开发600+Ah短刀电芯，产品线覆盖常规方形铝壳和长超薄短刀两种技术路线。"
+      },
+      "launch_date": "2023年9月发布，2023年Q4批量出货",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/719/896.htm",
+          "title": "欣旺达 5MWh 液冷储能系统发布：314Ah 大电芯，四季度批量出货",
+          "source_name": "IT之家",
+          "snippet": "欣旺达5MWh液冷储能系统搭载314Ah电芯，将于2023年四季度批量出货。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "长度L=204.33mm，远低于权1要求的400mm下限，C1-F5明确不满足。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "方形铝壳电芯。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.aibanges.com/a/10602",
+              "title": "21款300+Ah储能电芯解读",
+              "source_name": "艾邦储能网",
+              "snippet": "欣旺达314Ah电芯为铝壳方形电芯，沿用71173尺寸。"
+            }
+          ],
+          "reasoning": "明确为铝壳电芯，满足硬壳特征。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "尺寸174.3*71.53*204.33mm，L=204.33>H=174.3>D=71.53，满足。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://dcsq.com/202422175",
+              "title": "欣旺达314Ah方形锂离子电池_电池社区",
+              "source_name": "电池社区",
+              "snippet": "尺寸: 174.30(mm)x71.53(mm)x204.33(mm)"
+            }
+          ],
+          "reasoning": "最长边204.33mm为长度，174.3mm为宽度，71.53mm为厚度，满足L>H>D。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=71.53mm, V=204.33*174.3*71.53≈2,546,000 mm^3, D/V≈2.81e-5 mm^-2，超过上限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://dcsq.com/202422175",
+              "title": "欣旺达314Ah方形锂离子电池_电池社区",
+              "source_name": "电池社区",
+              "snippet": "尺寸: 174.30x71.53x204.33mm"
+            }
+          ],
+          "reasoning": "D/V=71.53/(204.33*174.3*71.53)=1/(204.33*174.3)≈2.81e-5 mm^-2，超过2e-5上限，不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "S=2*(204.33*174.3+204.33*71.53+174.3*71.53)=124,900 mm^2, E=314*3.2=1004.8Wh, S/E≈124.3 mm^2/Wh，远低于1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://dcsq.com/202422175",
+              "title": "欣旺达314Ah方形锂离子电池_电池社区",
+              "source_name": "电池社区",
+              "snippet": "尺寸: 174.30x71.53x204.33mm, 额定容量314Ah"
+            }
+          ],
+          "reasoning": "S≈124,900mm^2，E=1004.8Wh，S/E≈124.3，远小于1000，满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=204.33mm，远低于400mm。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://dcsq.com/202422175",
+              "title": "欣旺达314Ah方形锂离子电池_电池社区",
+              "source_name": "电池社区",
+              "snippet": "尺寸: 174.30x71.53x204.33mm"
+            }
+          ],
+          "reasoning": "长度204.33mm远小于400mm下限，明确不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=204.33mm, S≈124,900mm^2, L/S≈0.00164 mm^-1，低于下限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://dcsq.com/202422175",
+              "title": "欣旺达314Ah方形锂离子电池_电池社区",
+              "source_name": "电池社区",
+              "snippet": "尺寸: 174.30x71.53x204.33mm"
+            }
+          ],
+          "reasoning": "L/S=204.33/124900≈0.00164，低于0.002下限，不满足范围。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "欣旺达 314Ah 尺寸",
+        "Sunwoda 314Ah dimensions"
+      ],
+      "searched_providers": [
+        "tavily",
+        "exa",
+        "brave"
+      ]
+    }
+  ]
+}
