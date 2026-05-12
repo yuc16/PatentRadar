@@ -1,0 +1,32 @@
+{
+  "publication_no": "CN114512759B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "蜂巢能源",
+      "company_en": "SVOLT Energy",
+      "product_name": "短刀电池",
+      "product_name_en": "Short Blade Battery",
+      "product_version": "L600 196Ah (第二代)",
+      "market": "中国纯电动乘用车动力电池",
+      "reason_for_deep_dive": "候选产品长度574mm完全符合权1长度400~2500mm要求，且为硬壳方形电池。已知能量(627.2Wh)和能量密度(185Wh/kg)等信息，有可能通过进一步查找规格书推算出厚度D、体积V、表面积S，从而验证D/V、S/E、L/S等全部比例关系，是对标权1特征最完整的候选之一。",
+      "source_result_ids": [
+        "bocha-Q03-01",
+        "bocha-Q03-02",
+        "bocha-Q03-03",
+        "exa-Q05-01",
+        "exa-Q05-04",
+        "exa-Q23-01"
+      ],
+      "source_urls": [
+        "http://newpower.com.cn/cn/new/new-72-623.html",
+        "http://www.newpower.cn/cn/new/new-72-623.html",
+        "https://www.eefocus.com/article/507293.html",
+        "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+        "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+        "https://news.metal.com/newscontent/101673037/LFP-Battery-with-Energy-Density-above-185-whkg-Will-Have-Mass-Production"
+      ],
+      "initial_evidence_summary": "L600实际长度574mm，落入权1 400~2500mm范围。为硬壳（铝壳）方形电池。公开信息包含L600 196Ah二代电芯能量密度185Wh/kg、能量627.2Wh，可用于反向推算S/E比值是否符合权1中≤1000mm²/Wh的要求。"
+    }
+  ]
+}

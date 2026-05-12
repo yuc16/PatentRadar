@@ -1,0 +1,725 @@
+{
+  "publication_no": "CN114512759B",
+  "claim_1_summary": "一种硬壳单体电池，长方体形，长度L>宽度H>厚度D，长度400~2500mm，厚度/体积D/V=0.0000065~0.00002 mm⁻²，表面积/能量S/E≤1000 mm²·Wh⁻¹，长度/表面积L/S=0.002~0.005 mm⁻¹。",
+  "applicant_self_signals": {
+    "domains": [
+      "byd.com",
+      "byd-it.com",
+      "fdb.com.cn",
+      "fdoi.com"
+    ],
+    "aliases": [
+      "比亚迪",
+      "比亚迪股份有限公司",
+      "比亚迪汽车",
+      "弗迪",
+      "BYD",
+      "Build Your Dreams",
+      "FinDreams",
+      "Fudi",
+      "BYD Company Limited"
+    ]
+  },
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "刀片电池 长度 400mm 2500mm 硬壳 方形 单体",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "超薄电芯 厚度 长宽比 长宽厚 尺寸 规格书",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "蜂巢能源 L600 196Ah 短刀片 电芯 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "蜂巢能源 短刀 电池 规格书 PDF",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "SVOLT L600 blade cell datasheet dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "中创新航 One-Stop 电池 长电芯 厚度 薄",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "CALB L750 长电芯 尺寸 能量密度 表面积",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "国轩高科 长电芯 600mm 硬壳 方形",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "瑞浦兰钧 问顶电池 超长电芯 厚度 长度",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "远景动力 长刀片 电芯 400-2500mm 规格",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q11",
+      "query": "欣旺达 长薄 电芯 尺寸 能量 密度 表面积",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q12",
+      "query": "亿纬锂能 方形 长电芯 长度 600mm 规格书",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q13",
+      "query": "孚能科技 超薄 硬壳 电芯 尺寸 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q14",
+      "query": "长薄电芯 能量密度 表面积 能量 比值 1000mm2/Wh",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q15",
+      "query": "单体电池 硬壳 长方体 D/V 0.0000065 0.00002",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q16",
+      "query": "刀片电池 第三方 拆解 评测 尺寸 长宽",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q17",
+      "query": "蜂巢能源 L600 拆解 评测 厚度 长度",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q18",
+      "query": "中创新航 One-Stop 电池 装车 量产 日期 2024",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q19",
+      "query": "国轩高科 L600 电芯 装车 量产 时间",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q20",
+      "query": "长刀片 电芯 参数表 L/S 长度 表面积 比值",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q21",
+      "query": "long prismatic cell hard case length 400mm 2500mm",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q22",
+      "query": "blade battery ultra-thin cell dimensions thickness width length",
+      "intent": "market_name",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q23",
+      "query": "SVOLT L600 short blade cell energy density S/E ratio",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q24",
+      "query": "CALB One-Stop battery L750 datasheet dimensions PDF",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q25",
+      "query": "Gotion High-Tech long cell 600mm prismatic dimensions",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q26",
+      "query": "REPT long cell ultra-thin prismatic hard shell",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q27",
+      "query": "Envision AESC long blade cell specifications",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q28",
+      "query": "Sunwoda long thin prismatic cell datasheet",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q29",
+      "query": "EVE Energy large prismatic cell length 600mm dimensions",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q30",
+      "query": "Farasis Energy ultra-thin prismatic cell energy density",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q31",
+      "query": "长薄电芯 L/S 比例 0.002 0.005",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q32",
+      "query": "薄电芯 厚度 13.5mm 长度 960mm 规格",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q33",
+      "query": "磷酸铁锂 刀片 电芯 尺寸 长宽高 规格书",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q34",
+      "query": "硬壳 方形 超长 电芯 装车 大众 蔚来 小鹏",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q35",
+      "query": "长电芯 厚度 能量 密度 高 体积 利用率",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q36",
+      "query": "blade cell thickness 10mm length 1m prismatic",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q37",
+      "query": "long thin prismatic cell D/V ratio 0.0000065 to 0.00002",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q38",
+      "query": "cell length to surface area ratio L/S 0.002 to 0.005",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q39",
+      "query": "ultra-long battery cell 600mm 900mm pouch or prismatic hard case",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q40",
+      "query": "prismatic cell with length > width > thickness long cell",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q41",
+      "query": "蜂巢能源 L600 短刀 电池 表面积 能量 比",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q42",
+      "query": "CATL long prismatic cell dimensions LFP 600mm",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q43",
+      "query": "LG Energy Solution long cell prismatic 600mm",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q44",
+      "query": "Samsung SDI prismatic cell long length thickness",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q45",
+      "query": "Panasonic prismatic long cell hard case dimensions",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q46",
+      "query": "SVOLT L600 teardown review dimensions thickness",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q47",
+      "query": "CALB One-Stop teardown measurement length 750mm",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q48",
+      "query": "刀片电池 竞品 对比 蜂巢 国轩 尺寸 图",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q49",
+      "query": "长薄电芯 量产 时间 2024 2025 蜂巢 中创新航",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q50",
+      "query": "短刀片 电池 规格书 长度 600mm 厚度 18mm",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    }
+  ]
+}
