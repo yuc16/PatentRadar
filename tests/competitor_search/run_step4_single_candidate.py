@@ -48,6 +48,8 @@ def main() -> None:
         raise SystemExit(f"candidate {args.candidate_id} not found in shortlist")
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    visual_log_dir = args.output_dir / "visual_log"
+    visual_log_dir.mkdir(parents=True, exist_ok=True)
     print(
         f"running step4 for {target.candidate_id} | "
         f"{target.company} / {target.product_name} / {target.product_version}"
@@ -58,6 +60,7 @@ def main() -> None:
         task_package=task_package,
         candidates=[target],
         batch_id=f"single-{target.candidate_id}",
+        visual_log_dir=visual_log_dir,
     )
     elapsed = time.perf_counter() - started
 

@@ -11,6 +11,8 @@ import pymupdf
 
 from patentradar.core.exceptions import PatentFetchError
 
+from .image_utils import normalize_png
+
 logger = logging.getLogger(__name__)
 
 _HEADERS = {
@@ -128,7 +130,10 @@ def extract_pdf_evidence(
                 text_segments.append(f"[page {page_num + 1}]\n{stripped_text}")
             else:
                 pixmap = page.get_pixmap(dpi=dpi)
-                image_pngs.append(pixmap.tobytes("png"))
+                # 统一压到 1024 长边（dpi=120 的 A4 长边 ≈ 1400px，归一化省 token）
+                normalized = normalize_png(pixmap.tobytes("png"))
+                if normalized:
+                    image_pngs.append(normalized)
         return PdfExtraction(
             text_segments=text_segments,
             image_pngs=image_pngs,

@@ -13,12 +13,12 @@ from __future__ import annotations
 import logging
 import re
 from dataclasses import dataclass, field
-from io import BytesIO
 from urllib.parse import urljoin, urlparse
 
 import httpx
 from bs4 import BeautifulSoup
 
+from .image_utils import normalize_png
 from .pdf import extract_pdf_evidence
 
 logger = logging.getLogger(__name__)
@@ -40,6 +40,20 @@ _HTML_IMG_PATH_SKIPS = (
     "/avatar", "wp-content/themes/", "captcha", "tracking",
     "/sprite", ".svg",  # SVG 走另一条路径处理（多数 SVG 是装饰）
 )
+# alt/title 文本黑名单：命中即丢（噪声装饰图/营销组件）
+_HTML_IMG_ALT_BLACKLIST = (
+    "logo", "icon", "banner", "微信", "扫码", "二维码", "qrcode",
+    "广告", "推广", "下载app", "客服", "header", "footer",
+    "share", "login", "登录", "登陆", "注册", "captcha",
+)
+# 抓图最低 score 阈值：必须命中至少一个"真信号"
+# (figure/picture 容器 +3、alt 关键词 +2、URL 路径 +2)，
+# 单凭 "DOM 前半 +1" 或 "显式尺寸 +1" 不够 — 那是噪声常态。
+_HTML_IMG_MIN_SCORE = 2
+# PDF 关键页图固定 score：规格书/技术手册是高信号源，跟 HTML 里 score=4-5
+# 的优质产品图同档；让 PDF 图和 HTML 图能在 worker 端按 score 全局排序时
+# 互相竞争位次。
+_PDF_IMAGE_SCORE = 5
 
 
 @dataclass(frozen=True)
@@ -59,11 +73,14 @@ class FetchedImage:
     - src_url: 图片所在容器页面 URL（HTML 时 = page URL；PDF 时 = PDF URL）
       用作下游 evidence[].url 引用，让人工核查能直接打开页面看图
     - alt: HTML <img alt> 文本；PDF 用 'PDF page N'
+    - score: 启发式得分（HTML 见 _extract_html_images，PDF 固定 _PDF_IMAGE_SCORE）
+      worker 端按 score 全局降序排，cap 切割时保留高分图。
     """
 
     png: bytes
     src_url: str
     alt: str = ""
+    score: int = 0
 
 
 @dataclass
@@ -159,7 +176,7 @@ def _extract_pdf(*, url: str, pdf_bytes: bytes, keywords: list[str], max_chars: 
     # PDF 所有 image 都归属于该 PDF 的 url；alt 用 page number 标识便于 LLM 引用
     images: list[FetchedImage] = []
     for idx, png in enumerate(extraction.image_pngs, start=1):
-        images.append(FetchedImage(png=png, src_url=url, alt=f"PDF page {idx}"))
+        images.append(FetchedImage(png=png, src_url=url, alt=f"PDF page {idx}", score=_PDF_IMAGE_SCORE))
     return FetchedEvidence(
         url=url,
         title=title,
@@ -226,6 +243,8 @@ def _extract_html_images(
         # alt/title 关键词命中
         alt = (img.get("alt") or "").strip()
         title_attr = (img.get("title") or "").strip()
+        if _is_noisy_alt(alt) or _is_noisy_alt(title_attr):
+            continue
         meta_text = f"{alt} {title_attr}".lower()
         if keyword_set and any(k in meta_text for k in keyword_set):
             score += 2
@@ -248,16 +267,34 @@ def _extract_html_images(
     ranked = sorted(seen.items(), key=lambda kv: (-kv[1][0], kv[0]))
     images: list[FetchedImage] = []
     for url_, (score, alt) in ranked[: _HTML_IMG_TOP_K * 3]:  # 多抓几个备选，下载失败的跳过
-        # 评分 < 1 的认为信息量不够，跳过
-        if score < 1:
+        # score 阈值：见 _HTML_IMG_MIN_SCORE 注释
+        if score < _HTML_IMG_MIN_SCORE:
             continue
         png = _download_as_png(url_)
         if png is None:
             continue
-        images.append(FetchedImage(png=png, src_url=page_url, alt=alt))
+        images.append(FetchedImage(png=png, src_url=page_url, alt=alt, score=score))
         if len(images) >= _HTML_IMG_TOP_K:
             break
     return images
+
+
+def _is_noisy_alt(text: str) -> bool:
+    """alt/title 是否属于噪声：纯数字 / 过短 / 文件名结尾 / 黑名单关键词。
+
+    空字符串不算噪声（产品图常常 alt 为空，让 score 自己判）。
+    """
+    if not text:
+        return False
+    lowered = text.strip().lower()
+    if lowered.isdigit():
+        return True
+    if len(lowered) < 3:
+        return True
+    # alt 直接拿文件名：title.gif / banner.jpg / img_001.png
+    if lowered.endswith((".gif", ".jpg", ".jpeg", ".png", ".bmp", ".webp", ".svg")):
+        return True
+    return any(kw in lowered for kw in _HTML_IMG_ALT_BLACKLIST)
 
 
 def _parse_dimension(value) -> int | None:
@@ -268,7 +305,7 @@ def _parse_dimension(value) -> int | None:
 
 
 def _download_as_png(url: str, *, timeout: float = 15.0) -> bytes | None:
-    """下载图片字节，若不是 PNG 则用 Pillow 转码。下载失败返回 None。
+    """下载图片字节，统一归一化为 PNG（长边 ≤ 1024，转 RGB）。下载失败返回 None。
 
     大图（超过 _HTML_IMG_MAX_BYTES）直接跳过，避免一张 banner 把 LLM 上下文塞爆。
     """
@@ -286,19 +323,7 @@ def _download_as_png(url: str, *, timeout: float = 15.0) -> bytes | None:
     if len(data) > _HTML_IMG_MAX_BYTES:
         logger.info("Image too large (%d bytes) url=%s, skipping", len(data), url)
         return None
-    if "image/png" in content_type:
-        return data
-    # 非 PNG → 用 Pillow 转 PNG（vision API 一般 PNG/JPEG 都吃，但统一 PNG 简化下游）
-    try:
-        from PIL import Image  # noqa: WPS433 - lazy import to avoid hard dep at module load
-
-        with Image.open(BytesIO(data)) as im:
-            buf = BytesIO()
-            im.convert("RGB").save(buf, format="PNG")
-            return buf.getvalue()
-    except Exception as exc:  # noqa: BLE001 - Pillow raises many things
-        logger.info("Image convert to PNG failed url=%s error=%s", url, exc)
-        return None
+    return normalize_png(data)
 
 
 def _extract_relevant_text(text: str, keywords: list[str], *, max_chars: int) -> str:

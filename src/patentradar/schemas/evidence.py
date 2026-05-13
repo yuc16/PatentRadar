@@ -42,11 +42,6 @@ class FeatureComparison(BaseModel):
     # side to run before round 2 finalizes the comparison. Default empty so
     # module two's existing output stays schema-compatible.
     suggested_followup_queries: list[str] = Field(default_factory=list, max_length=5)
-    # Round-1 LLM 主动指挥取图：当某条特征证据藏在图里（产品规格示意/拆解照/
-    # 装配关系图等），LLM 列出"想看图"的 URL（来自 fetched_pages 文本里提到的
-    # 图片直链或可能含关键图的页面 URL），代码端在 round 2 前抓取这些 URL 的
-    # 图片喂给 vision LLM。默认空数组以兼容旧 cache。
-    suggested_visual_urls: list[str] = Field(default_factory=list, max_length=5)
 
     @model_validator(mode="after")
     def validate_score(self) -> "FeatureComparison":

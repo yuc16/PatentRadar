@@ -12,10 +12,13 @@ Two LLM rounds per batch:
 
 from __future__ import annotations
 
+import json
 import logging
 from collections.abc import Iterable
+from pathlib import Path
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
+from patentradar.fetcher.image_utils import png_hash
 from patentradar.fetcher.web_fetcher import fetch_evidence
 from patentradar.llm.workers.evidence_worker import judge_candidate_batch
 from patentradar.schemas import (
@@ -43,8 +46,6 @@ logger = logging.getLogger(__name__)
 # LLM can suggest up to ~15 across 7 features (3 per gap feature), but we
 # cap at 5 to keep the search-API budget bounded.
 PER_CANDIDATE_GAP_QUERY_CAP = 5
-# Tier-3 LLM-driven 取图：单候选最多抓 6 个 URL 的图，避免 vision payload 失控
-PER_CANDIDATE_VISUAL_URL_CAP = 6
 
 
 def map_evidence_for_batch(
@@ -56,6 +57,7 @@ def map_evidence_for_batch(
     self_signals: ApplicantSelfSignals | None = None,
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
+    visual_log_dir: Path | None = None,
 ) -> EvidenceBatchResult:
     search_router = router or SearchRouter(country_code=task_package.patent.country_code)
     initial_contexts = [
@@ -120,22 +122,9 @@ def map_evidence_for_batch(
                 router=search_router,
                 self_signals=self_signals,
             )
-        # Tier-3：LLM 在 round 1 通过 `suggested_visual_urls` 主动指挥取图，
-        # 这里把指挥到的 URL 抓成图片字节流加进 gap context，round 2 LLM 看得到
-        visual_urls = _collect_llm_suggested_visual_urls(item, cap=PER_CANDIDATE_VISUAL_URL_CAP)
-        if visual_urls:
-            visual_images = _fetch_visual_images(
-                visual_urls,
-                candidate=candidate,
-                claim_features=task_package.claim_1_features,
-            )
-            if visual_images:
-                logger.info(
-                    "module2 visual %s candidate=%s LLM-driven images=%d (from %d URLs)",
-                    batch_id, candidate.candidate_id, len(visual_images), len(visual_urls),
-                )
-                gap_context.fetched_images.extend(visual_images)
-        gap_contexts.append(merge_contexts(initial_context, gap_context))
+        # gap 排在前：gap search 抓的图是 LLM round 1 自己提出要补的特征的证据，
+        # 价值最高；worker 端有 cap 切割时，gap 图能优先入选。
+        gap_contexts.append(merge_contexts(gap_context, initial_context))
 
     if gap_contexts:
         gap_result = _judge(
@@ -149,10 +138,52 @@ def map_evidence_for_batch(
         for item in gap_result.results:
             final_by_id[item.candidate.candidate_id] = item
 
+    if visual_log_dir is not None:
+        # gap_context 含 initial+gap 合并图；优先用它，否则用 initial_context
+        ctx_by_id = {ctx.candidate.candidate_id: ctx for ctx in initial_contexts}
+        for ctx in gap_contexts:
+            ctx_by_id[ctx.candidate.candidate_id] = ctx
+        for cid, ctx in ctx_by_id.items():
+            _dump_visual_log(visual_log_dir, cid, ctx.fetched_images)
+
     return EvidenceBatchResult(
         publication_no=task_package.patent.publication_no,
         batch_id=batch_id,
         results=[final_by_id[candidate.candidate_id] for candidate in candidates if candidate.candidate_id in final_by_id],
+    )
+
+
+def _dump_visual_log(
+    visual_log_dir: Path,
+    candidate_id: str,
+    fetched_images: list[dict],
+) -> None:
+    """记录该候选送进 vision LLM 的图集合：manifest.json + 各图 PNG，
+    用于后续审计 vision 决策（哪张图驱动了结论翻转）。"""
+    if not fetched_images:
+        return
+    cand_dir = visual_log_dir / candidate_id
+    cand_dir.mkdir(parents=True, exist_ok=True)
+    manifest: list[dict] = []
+    for idx, img in enumerate(fetched_images):
+        png = img.get("png")
+        if not isinstance(png, (bytes, bytearray)):
+            continue
+        png_bytes = bytes(png)
+        h = png_hash(png_bytes)
+        filename = f"img_{idx:02d}_{h}.png"
+        (cand_dir / filename).write_bytes(png_bytes)
+        manifest.append({
+            "index": idx,
+            "filename": filename,
+            "src_url": img.get("url", ""),
+            "alt_or_title": img.get("title", ""),
+            "size_bytes": len(png_bytes),
+            "sha256_prefix": h,
+        })
+    (cand_dir / "manifest.json").write_text(
+        json.dumps({"candidate_id": candidate_id, "images": manifest}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
     )
 
 
@@ -165,6 +196,14 @@ def _judge(
     model: str,
     reasoning_effort: str,
 ) -> EvidenceBatchResult:
+    # Round 1 (initial) text-only：跟模块三对齐，省一半 vision token。LLM 没看
+    # 图时列的 gap query 可能漏掉"图里有但文字没说"的特征，但 round 2 看到合并
+    # 后的图（含 gap 新抓的）能纠正。
+    fetched_images_by_candidate = (
+        {ctx.candidate.candidate_id: ctx.fetched_images for ctx in contexts}
+        if is_gap_round
+        else {}
+    )
     return judge_candidate_batch(
         task_package=task_package,
         candidates=[context.candidate for context in contexts],
@@ -174,9 +213,7 @@ def _judge(
         fetched_pages_by_candidate={
             context.candidate.candidate_id: context.fetched_pages for context in contexts
         },
-        fetched_images_by_candidate={
-            context.candidate.candidate_id: context.fetched_images for context in contexts
-        },
+        fetched_images_by_candidate=fetched_images_by_candidate,
         batch_id=batch_id,
         is_gap_round=is_gap_round,
         model=model,
@@ -198,63 +235,6 @@ def _collect_llm_suggested_queries(item: CandidateEvidence, *, cap: int) -> list
             if len(out) >= cap:
                 return out
     return out
-
-
-def _collect_llm_suggested_visual_urls(item: CandidateEvidence, *, cap: int) -> list[str]:
-    """Collect dedupe'd LLM-suggested visual URLs from a CandidateEvidence's round-1 output."""
-    seen: set[str] = set()
-    out: list[str] = []
-    for comparison in item.comparisons:
-        for url in comparison.suggested_visual_urls:
-            url = url.strip()
-            if not url or url in seen:
-                continue
-            if not url.startswith(("http://", "https://")):
-                continue
-            seen.add(url)
-            out.append(url)
-            if len(out) >= cap:
-                return out
-    return out
-
-
-def _fetch_visual_images(
-    urls: list[str],
-    *,
-    candidate: Candidate,
-    claim_features: list[ClaimFeature],
-) -> list[dict]:
-    """对 LLM 主动指挥的 URL 列表取图：HTML 走嵌入图扫描，PDF 走关键页渲染，
-    直接图片 URL 直接下载。返回 evidence_mapper 用的 [{url,title,png}] dict 列表。"""
-    keywords: list[str] = [
-        candidate.company,
-        candidate.company_en,
-        candidate.product_name,
-        candidate.product_name_en,
-        candidate.product_version,
-        *[feature.feature_text[:24] for feature in claim_features],
-    ]
-    keywords = [k for k in keywords if k and k.strip()]
-    images: list[dict] = []
-    seen_url_set: set[str] = set()
-    for url in urls:
-        if url in seen_url_set:
-            continue
-        seen_url_set.add(url)
-        try:
-            evidence = fetch_evidence(url, keywords=keywords, max_chars=6000)
-        except Exception as exc:  # noqa: BLE001 - 取图允许个别失败
-            logger.info("Visual URL fetch failed url=%s error=%s", url, exc)
-            continue
-        if evidence is None:
-            continue
-        for img in evidence.images:
-            images.append({
-                "url": img.src_url,
-                "title": img.alt or evidence.title or "",
-                "png": img.png,
-            })
-    return images
 
 
 def _gap_context_from_queries(
@@ -326,6 +306,7 @@ def _fetch_pages_for_results(
                     "url": img.src_url,
                     "title": img.alt or evidence.title or result.title,
                     "png": img.png,
+                    "score": img.score,
                 }
             )
         if len(pages) >= max_pages:

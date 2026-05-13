@@ -28,6 +28,7 @@ from pathlib import Path
 from typing import Any
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
+from patentradar.fetcher.image_utils import png_hash
 from patentradar.fetcher.web_fetcher import fetch_evidence
 from patentradar.llm.workers.full_claim_chart_worker import evaluate_candidate
 from patentradar.schemas import (
@@ -44,7 +45,6 @@ from patentradar.search import SearchRouter
 logger = logging.getLogger(__name__)
 
 GAP_QUERY_HARD_CAP = 30  # per candidate total budget
-VISUAL_URL_HARD_CAP = 8  # 模块三 LLM 主动取图的 URL 上限
 
 
 def run_full_claim_chart(
@@ -61,6 +61,8 @@ def run_full_claim_chart(
     output_dir.mkdir(parents=True, exist_ok=True)
     per_candidate_dir = output_dir / "candidates"
     per_candidate_dir.mkdir(parents=True, exist_ok=True)
+    visual_log_dir = output_dir / "visual_log"
+    visual_log_dir.mkdir(parents=True, exist_ok=True)
 
     competitors_to_process = top_report.top_competitors
     completed_candidates: list[FullClaimChartCandidate] = []
@@ -79,6 +81,7 @@ def run_full_claim_chart(
                 model=model,
                 reasoning_effort=reasoning_effort,
                 output_dir=per_candidate_dir,
+                visual_log_dir=visual_log_dir,
             ): evidence
             for evidence in competitors_to_process
         }
@@ -115,6 +118,7 @@ def _process_one_candidate(
     model: str,
     reasoning_effort: str,
     output_dir: Path,
+    visual_log_dir: Path | None = None,
 ) -> FullClaimChartCandidate:
     candidate_id = module_two_evidence.candidate.candidate_id
     started = time.perf_counter()
@@ -138,6 +142,15 @@ def _process_one_candidate(
         reasoning_effort=reasoning_effort,
     )
     _write_json(output_dir / f"{candidate_id}_round1.json", round1.model_dump())
+
+    # 失格短路：round 1 已判 disqualified（权 1 任一特征明确不满足或 launch_date
+    # 早于专利申请日）→ 跳过 round 2，节省一次 vision LLM 调用。
+    if round1.disqualified:
+        logger.info(
+            "module3 candidate=%s round1 disqualified=%s, skipping round 2",
+            candidate_id, round1.disqualification_reason,
+        )
+        return round1
 
     suggested_queries = _collect_suggested_queries(
         round1,
@@ -164,20 +177,6 @@ def _process_one_candidate(
         pool_images.extend(new_images)
         pool_url_set.update(page["url"] for page in new_pages)
 
-    # Tier-3：LLM 主动取图（独立于 followup_queries）。即使没 gap query，只要
-    # round 1 列了 suggested_visual_urls 也要抓——证据可能就藏在图里
-    visual_urls = _collect_visual_urls(round1, cap=VISUAL_URL_HARD_CAP)
-    if visual_urls:
-        new_visual_images = _fetch_visual_images_for_module3(
-            visual_urls, keywords=_keywords_from_round1(round1)
-        )
-        if new_visual_images:
-            logger.info(
-                "module3 candidate=%s round1 -> %d visual images (from %d URLs)",
-                candidate_id, len(new_visual_images), len(visual_urls),
-            )
-            pool_images.extend(new_visual_images)
-
     # Round 2: finalize
     round2 = evaluate_candidate(
         task_package=task_package,
@@ -191,6 +190,9 @@ def _process_one_candidate(
         reasoning_effort=reasoning_effort,
     )
     _write_json(output_dir / f"{candidate_id}_round2.json", round2.model_dump())
+
+    if visual_log_dir is not None:
+        _dump_visual_log(visual_log_dir, candidate_id, pool_images)
 
     logger.info(
         "module3 candidate=%s done total_score=%.2f claim_1_score=%.2f elapsed_ms=%d",
@@ -332,6 +334,7 @@ def _fetch_new_evidence(
                     "url": img.src_url,
                     "title": img.alt or evidence.title or result.title,
                     "png": img.png,
+                    "score": img.score,
                 }
             )
         if len(pages) >= max_pages:
@@ -339,51 +342,37 @@ def _fetch_new_evidence(
     return pages, images
 
 
-def _collect_visual_urls(round1: FullClaimChartCandidate, *, cap: int) -> list[str]:
-    """模块三 round 1 LLM 主动指挥取图：跨所有 claims 收集 suggested_visual_urls"""
-    seen: set[str] = set()
-    out: list[str] = []
-    for entry in round1.claim_charts:
-        for cmp in entry.comparisons:
-            for url in cmp.suggested_visual_urls:
-                url = url.strip()
-                if not url or url in seen:
-                    continue
-                if not url.startswith(("http://", "https://")):
-                    continue
-                seen.add(url)
-                out.append(url)
-                if len(out) >= cap:
-                    return out
-    return out
-
-
-def _fetch_visual_images_for_module3(
-    urls: list[str],
-    *,
-    keywords: list[str],
-) -> list[dict]:
-    """对 LLM 主动指挥的 URL 抓图。"""
-    images: list[dict] = []
-    seen: set[str] = set()
-    for url in urls:
-        if url in seen:
+def _dump_visual_log(
+    visual_log_dir: Path,
+    candidate_id: str,
+    fetched_images: list[dict],
+) -> None:
+    """同 module 2：记录该候选 round 2 看到的最终图集合，便于审计 vision 判定。"""
+    if not fetched_images:
+        return
+    cand_dir = visual_log_dir / candidate_id
+    cand_dir.mkdir(parents=True, exist_ok=True)
+    manifest: list[dict] = []
+    for idx, img in enumerate(fetched_images):
+        png = img.get("png")
+        if not isinstance(png, (bytes, bytearray)):
             continue
-        seen.add(url)
-        try:
-            evidence = fetch_evidence(url, keywords=keywords, max_chars=6000)
-        except Exception as exc:  # noqa: BLE001
-            logger.info("Module3 visual URL fetch failed url=%s error=%s", url, exc)
-            continue
-        if evidence is None:
-            continue
-        for img in evidence.images:
-            images.append({
-                "url": img.src_url,
-                "title": img.alt or evidence.title or "",
-                "png": img.png,
-            })
-    return images
+        png_bytes = bytes(png)
+        h = png_hash(png_bytes)
+        filename = f"img_{idx:02d}_{h}.png"
+        (cand_dir / filename).write_bytes(png_bytes)
+        manifest.append({
+            "index": idx,
+            "filename": filename,
+            "src_url": img.get("url", ""),
+            "alt_or_title": img.get("title", ""),
+            "size_bytes": len(png_bytes),
+            "sha256_prefix": h,
+        })
+    (cand_dir / "manifest.json").write_text(
+        json.dumps({"candidate_id": candidate_id, "images": manifest}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def load_task_package(path: Path) -> TaskPackage:

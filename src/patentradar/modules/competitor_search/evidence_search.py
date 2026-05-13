@@ -161,6 +161,7 @@ def _fetch_url_list(
                 "url": img.src_url,
                 "title": img.alt or evidence.title or "",
                 "png": img.png,
+                "score": img.score,
             })
         if len(pages) >= max_pages:
             break
@@ -199,6 +200,7 @@ def fetch_relevant_pages(
                     "url": img.src_url,
                     "title": img.alt or evidence.title or result.title,
                     "png": img.png,
+                    "score": img.score,
                 }
             )
         if len(pages) >= max_pages:

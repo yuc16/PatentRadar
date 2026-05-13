@@ -11,6 +11,7 @@ from pydantic import ValidationError
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.core.exceptions import LLMOutputError
+from patentradar.fetcher.image_utils import png_hash
 from patentradar.llm import get_llm_provider
 from patentradar.schemas import (
     Candidate,
@@ -25,6 +26,11 @@ from patentradar.search.relevance import rank_pages_by_relevance, rank_search_re
 
 logger = logging.getLogger(__name__)
 
+# 单候选 vision 图片上限：模块二 round 1+2 看同一批，超过则按 fetched_images
+# 顺序切割。evidence_mapper 已经把 gap search 抓的图排在 list 前面，所以
+# cap 切掉的主要是 initial/seed 池里 score 较低的图。
+_VISION_IMAGES_PER_CANDIDATE = 10
+
 
 def judge_candidate_batch(
     *,
@@ -38,7 +44,7 @@ def judge_candidate_batch(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> EvidenceBatchResult:
-    fetched_images_by_candidate = fetched_images_by_candidate or {}
+    fetched_images_by_candidate = _dedupe_images_per_candidate(fetched_images_by_candidate or {})
     user_text = _build_user_text(
         task_package=task_package,
         candidates=candidates,
@@ -123,7 +129,7 @@ def _build_user_text(
         # to which candidate (the image bytes themselves are passed alongside
         # via codex.chat_json(images=...) in batch order).
         image_manifest = []
-        for img in images[:6]:
+        for img in images[:_VISION_IMAGES_PER_CANDIDATE]:
             image_manifest.append({
                 "global_index": image_cursor,
                 "url": img.get("url", ""),
@@ -180,16 +186,43 @@ def _build_user_text(
     return json.dumps(payload, ensure_ascii=False, indent=2)
 
 
+def _dedupe_images_per_candidate(
+    by_candidate: dict[str, list[dict]],
+) -> dict[str, list[dict]]:
+    """按 PNG 内容哈希在单个候选内去重 + 按启发式 score 全局降序排序。
+
+    排序保证 worker 端 [:N] 切割时优先保留高分图（含 PDF 关键页 + HTML 高
+    score 命中），而不是按 fetch 批次顺序。
+    """
+    out: dict[str, list[dict]] = {}
+    for cid, imgs in by_candidate.items():
+        seen: set[str] = set()
+        deduped: list[dict] = []
+        for img in imgs:
+            png = img.get("png")
+            if not isinstance(png, (bytes, bytearray)):
+                continue
+            h = png_hash(bytes(png))
+            if h in seen:
+                continue
+            seen.add(h)
+            deduped.append(img)
+        # 稳定排序：相同 score 保留原（fetch 批次）顺序——即 gap 图仍在前
+        deduped.sort(key=lambda x: x.get("score", 0), reverse=True)
+        out[cid] = deduped
+    return out
+
+
 def _flatten_images(
     candidates: list[Candidate],
     fetched_images_by_candidate: dict[str, list[dict]],
 ) -> list[bytes]:
     """Flatten per-candidate images into a single ordered list matching the
-    `global_index` placed in user_text manifests. Caps each candidate at 6
-    images to keep batch context manageable."""
+    `global_index` placed in user_text manifests. Capped per-candidate to
+    keep batch context manageable (see _VISION_IMAGES_PER_CANDIDATE)."""
     out: list[bytes] = []
     for candidate in candidates:
-        for img in fetched_images_by_candidate.get(candidate.candidate_id, [])[:6]:
+        for img in fetched_images_by_candidate.get(candidate.candidate_id, [])[:_VISION_IMAGES_PER_CANDIDATE]:
             png = img.get("png")
             if isinstance(png, (bytes, bytearray)):
                 out.append(bytes(png))
@@ -284,7 +317,6 @@ def _evidence_batch_response_format() -> dict[str, Any]:
             "evidence": {"type": "array", "items": evidence_schema},
             "reasoning": {"type": "string"},
             "suggested_followup_queries": {"type": "array", "items": {"type": "string"}},
-            "suggested_visual_urls": {"type": "array", "items": {"type": "string"}},
         },
         "required": [
             "feature_id",
@@ -295,7 +327,6 @@ def _evidence_batch_response_format() -> dict[str, Any]:
             "evidence",
             "reasoning",
             "suggested_followup_queries",
-            "suggested_visual_urls",
         ],
     }
     candidate_schema = {

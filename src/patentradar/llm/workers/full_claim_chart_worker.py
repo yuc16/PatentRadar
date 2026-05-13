@@ -17,10 +17,15 @@ from typing import Any
 
 logger = logging.getLogger(__name__)
 
+# 单候选 vision 图片上限：模块三 round 2 才看图（看 gap search 抓回的新图）。
+# 跟模块二 cap 对齐，控制 vision token 在可预测范围。
+_VISION_IMAGES_PER_CANDIDATE = 10
+
 from pydantic import ValidationError
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.core.exceptions import LLMOutputError
+from patentradar.fetcher.image_utils import png_hash
 from patentradar.llm import get_llm_provider
 from patentradar.schemas import (
     Candidate,
@@ -46,6 +51,7 @@ def evaluate_candidate(
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> FullClaimChartCandidate:
     """Run one LLM round (initial or finalization)."""
+    evidence_pool_images = _dedupe_images(evidence_pool_images)[:_VISION_IMAGES_PER_CANDIDATE]
     image_bytes_list = [img["png"] for img in evidence_pool_images if isinstance(img.get("png"), (bytes, bytearray))]
     provider = get_llm_provider()
     images_arg = image_bytes_list or None
@@ -81,6 +87,27 @@ def evaluate_candidate(
         return FullClaimChartCandidate.model_validate(payload)
     except ValidationError as exc:
         raise LLMOutputError(f"Invalid full claim chart JSON: {exc}\nPayload: {payload}") from exc
+
+
+def _dedupe_images(images: list[dict]) -> list[dict]:
+    """按 PNG 内容哈希去重 + 按启发式 score 全局降序排序。
+
+    保证后续 [:N] 切割时高 score 图（PDF 关键页 / HTML 强信号）优先入选。
+    稳定排序：相同 score 保留 fetch 顺序。
+    """
+    seen: set[str] = set()
+    out: list[dict] = []
+    for img in images:
+        png = img.get("png")
+        if not isinstance(png, (bytes, bytearray)):
+            continue
+        h = png_hash(bytes(png))
+        if h in seen:
+            continue
+        seen.add(h)
+        out.append(img)
+    out.sort(key=lambda x: x.get("score", 0), reverse=True)
+    return out
 
 
 def _drop_empty_url_evidence(payload: dict[str, Any]) -> None:
@@ -230,7 +257,6 @@ def _full_claim_chart_response_format() -> dict[str, Any]:
             "evidence": {"type": "array", "items": evidence_schema},
             "reasoning": {"type": "string"},
             "suggested_followup_queries": {"type": "array", "items": {"type": "string"}},
-            "suggested_visual_urls": {"type": "array", "items": {"type": "string"}},
         },
         "required": [
             "feature_id",
@@ -241,7 +267,6 @@ def _full_claim_chart_response_format() -> dict[str, Any]:
             "evidence",
             "reasoning",
             "suggested_followup_queries",
-            "suggested_visual_urls",
         ],
     }
     claim_entry_schema = {
