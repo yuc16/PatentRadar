@@ -7,7 +7,7 @@
 ## 硬性规则
 
 - **细到具体产品/版本**：不能停留在公司层面，必须给出具体型号 + 具体规格（如「蜂巢能源 L600 196Ah 短刀片」而非「蜂巢能源短刀电池」）。
-- **同公司可多个候选**，但每个候选必须是不同的 `(company, product_name, product_version)` 三元组。
+- **同公司可多个候选**，但每个候选必须是不同的 `(company, product_name)` 二元组（`product_version` 是自然语言产品介绍，不参与互斥判断）。
 - **活跃于 `patent_country.display_name` 市场**：本土厂商或对该市场有正式供货/销售/进口记录的境外厂商都算。
 - **不能是申请人或申请人明显同名/子品牌的产品**（参见 `applicant_self_signals` 提示，已在 step1 阶段标注）。
 - **只基于输入搜索结果和权 1 特征判断**，不要补充未经搜索结果支持的信息。
@@ -22,7 +22,7 @@
 | `company_en` | **英文公司名/品牌**（必填，用于英文搜索 query；如果主要语言就是英文，重复一份即可）|
 | `product_name` | 产品名，主要语言同 `company`（写本专利国家市场的常用名）|
 | `product_name_en` | **英文产品名**（必填，便于英文检索；如「刀片电池」→「blade cell」、「麒麟」→「Qilin pack」、「神行」→「Shenxing battery」）|
-| `product_version` | 具体版本/型号区分（容量/电压/平台等区分项）|
+| `product_version` | **产品介绍**（1-2 句自然语言，说明该产品的关键技术参数/规格/工艺等，让人工评审快速理解；与 `product_name` 联合不构成去重 key）|
 | `market` | 市场或应用场景的简短描述 |
 | `reason_for_deep_dive` | 为什么值得深挖（务必绑定权 1 关键参数）|
 | `source_result_ids` | 这个候选依据的搜索结果 id 列表（来自输入 search_results.result_id）|
@@ -43,5 +43,5 @@
 ❌ 蜂巢能源短刀电池                          # 没具体型号
 ❌ company="比亚迪", product_name="刀片电池"  # 比亚迪是申请人，应该被排除
 ❌ company_en=""                              # 必填，会影响 step4 英文搜索
-❌ 同一 (company, product_name, product_version) 重复出现 # 必须互斥
+❌ 同一 (company, product_name) 重复出现 # 必须互斥
 ```

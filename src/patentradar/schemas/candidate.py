@@ -38,17 +38,15 @@ class CandidateShortlist(BaseModel):
     def validate_candidate_count(self) -> "CandidateShortlist":
         if not self.candidates:
             raise ValueError("candidates must not be empty")
-        # Dedupe key includes product_version so the same product line at
-        # different specs (e.g. L500 325Ah / 350Ah / 730Ah) is preserved as
-        # distinct candidates per spec requirement「竞品要细到具体版本」.
+        # 去重 key 用 (company, product_name)：product_version 现在是自然语言
+        # 产品介绍，做去重 key 几乎失效（同产品两次跑文字略不同就被认为是两个候选）。
         product_keys = {
             (
                 candidate.company.strip().lower(),
                 candidate.product_name.strip().lower(),
-                candidate.product_version.strip().lower(),
             )
             for candidate in self.candidates
         }
         if len(product_keys) != len(self.candidates):
-            raise ValueError("candidates must be mutually exclusive on (company, product_name, product_version)")
+            raise ValueError("candidates must be mutually exclusive on (company, product_name)")
         return self

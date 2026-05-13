@@ -42,6 +42,11 @@ class FeatureComparison(BaseModel):
     # side to run before round 2 finalizes the comparison. Default empty so
     # module two's existing output stays schema-compatible.
     suggested_followup_queries: list[str] = Field(default_factory=list, max_length=5)
+    # 模块三 round 2 终判时，对权 1 中 status ∈ {可能满足, 证据不足} 的特征
+    # 必填：写清"还缺什么 + 去哪找 + 下一步搜索建议（具体 query 字串）"。
+    # 模块四 report 直接复用这个字段写"证据缺口与下一步搜索建议"段落，避免
+    # 让 LLM 在生成报告时再临场造 query。默认空字符串。
+    evidence_gap_brief: str = ""
 
     @model_validator(mode="after")
     def validate_score(self) -> "FeatureComparison":
