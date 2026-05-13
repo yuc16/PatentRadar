@@ -1,0 +1,171 @@
+{
+  "candidate": {
+    "candidate_id": "P05",
+    "company": "别克（通用汽车）",
+    "company_en": "Buick / General Motors",
+    "product_name": "免手动电动尾门（带标志投影）",
+    "product_name_en": "Hands-Free Power Liftgate with logo projection",
+    "product_version": "标志投影+可编程开启高度版本",
+    "market": "通用汽车别克品牌SUV/MPV电动尾门配置；需核查中国在售车型配置表",
+    "reason_for_deep_dive": "该配置的核心交互是地面发光Logo指示踢脚位置，用户在保险杠下方踢脚触发电动尾门，直接命中C1-F6的投影图像/脚部检测方向和C1-F5的自动开启控制；中国市场别克车型是否采用同版本需在下游用中文配置表和用户手册确认。",
+    "source_result_ids": [
+      "exa-Q12-02"
+    ],
+    "source_urls": [
+      "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+    ],
+    "initial_evidence_summary": "别克支持页摘要显示：Available Hands-Free Power Liftgate with logo projection and programmable height，可通过保险杠下方踢脚动作开启/关闭尾门；部分车辆会在地面出现发光Logo投影，提示用户踢脚位置。"
+  },
+  "launch_date": "未明确（现有证据仅证明功能存在，未给出首次发布/在华上市时间）",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+      "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+      "source_name": "Buick Support",
+      "snippet": "Available Hands-Free Power Liftgate with logo projection and programmable height, if equipped, lets you open and close your liftgate with a simple kicking motion below the bumper. 页面未载明该功能首次发布或上市日期。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未找到该“带标志投影免手动电动尾门”首次发布/量产/在华上市日期；现有证据未显示早于专利申请日2014-07-31，且未发现明确不满足的技术特征。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+      "competitor_feature": "官方支持页描述该系统包含：key fob（钥匙）、logo projection/传感器（用于指示并检测踢脚）、power liftgate（电动举升门）；诊断功能表还列出无钥匙进入控制模块、举升门控制模块。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+          "source_name": "Buick Support",
+          "snippet": "Approach the liftgate with your key fob... Kick straight over the logo (or at the sensor for older vehicles)... The liftgate will open..."
+        },
+        {
+          "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+          "title": "中国别克功能表 V16.80",
+          "source_name": "Xtooltech",
+          "snippet": "2024 别克(Buick) 昂科旗(Enclave) 无钥匙进入控制模块... 举升门控制模块；2024 别克(Buick) 昂科拉(Encore) 无钥匙进入控制模块... 举升门控制模块。"
+        }
+      ],
+      "reasoning": "Buick官方页直接给出钥匙、投影/传感器和电动举升门工作单元；Xtool别克功能表列出无钥匙进入控制模块与举升门控制模块，足以对应三类模块。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+      "competitor_feature": "系统在检测到key fob靠近、脚踢传感器被正确触发后控制举升门开启；公开证据未直接给出线束/电连接图，但诊断表显示无钥匙进入控制模块、举升门控制模块均可读码/数据流/动作测试。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+          "source_name": "Buick Support",
+          "snippet": "Approach the liftgate with your key fob... Kick straight over the logo... The liftgate will open after giving you time to safely step away."
+        },
+        {
+          "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+          "title": "中国别克功能表 V16.80",
+          "source_name": "Xtooltech",
+          "snippet": "无钥匙进入控制模块 √ √ √ √ √... 举升门控制模块 √ √ √ √ √ SP0132,SP0177。"
+        }
+      ],
+      "reasoning": "官方流程表明钥匙接近信息和踢脚传感信息被用于举升门控制；诊断表显示相关控制模块存在并可通信。未见电路图，故电连接为一阶工程推断。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+      "competitor_feature": "后部/举升门区域检测：logo projection在车辆后方6英尺内点亮；用户需在保险杠下方踢脚并使脚距保险杠5英寸内，否则传感器不激活。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+          "source_name": "Buick Support",
+          "snippet": "The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle. Kick straight over the logo... making sure to come within 5 inches of the bumper..."
+        }
+      ],
+      "reasoning": "官方页给出后方6英尺、钥匙3英尺、脚距保险杠5英寸等距离阈值，并要求在举升门/保险杠下方动作，直接证明后部采集用户接近/脚部距离信息。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+      "competitor_feature": "用户需携带key fob接近liftgate；系统要求key fob在车辆3英尺内，并在车尾6英尺内点亮投影。未公开写明“后备箱探测天线”，但存在后部钥匙接近检测。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+          "source_name": "Buick Support",
+          "snippet": "Approach the liftgate with your key fob... The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle... Make sure that your key fob is within 3 feet of your vehicle."
+        },
+        {
+          "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+          "title": "中国别克功能表 V16.80",
+          "source_name": "Xtooltech",
+          "snippet": "2024 别克(Buick) 昂科旗(Enclave) 无钥匙进入控制模块... 读取数据流、动作测试均支持。"
+        }
+      ],
+      "reasoning": "key fob为钥匙侧感应/通信单元；系统能限定其位于车尾/车身近距离，通常需车尾接收天线或接收器。因证据未逐字披露“后备箱探测天线”，定为可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+      "competitor_feature": "Power Liftgate在接收正确踢脚/传感器触发后自动打开或关闭；若横扫脚或踩logo则“不激活传感器”。Xtool表列出“举升门控制模块”。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+          "source_name": "Buick Support",
+          "snippet": "Kick straight over the logo... The liftgate will open after giving you time to safely step away. The rear lights will flash and a chime will sound..."
+        },
+        {
+          "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+          "title": "中国别克功能表 V16.80",
+          "source_name": "Xtooltech",
+          "snippet": "2024 别克(Buick) 昂科旗(Enclave) 举升门控制模块 √ √ √ √ √ SP0132,SP0177。"
+        }
+      ],
+      "reasoning": "官方页明确正确踢脚会触发传感器并使举升门开启/关闭，错误动作不触发；诊断表直接列出举升门控制模块，支持控制单元和执行启动单元。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+      "competitor_feature": "官方页称地面出现illuminated logo projection指示踢脚位置；用户需“kick straight over the logo”或对准旧车sensor，脚距保险杠5英寸内，且应朝车辆下方踢。可推断后保险杠/尾门下方有向地投影与脚踢检测区域，但未直接公开“测量脚到投影图像的距离”。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+          "source_name": "Buick Support",
+          "snippet": "On some vehicles, an illuminated logo projection will appear on the ground to show you where to kick... Kick straight over the logo (or at the sensor for older vehicles), making sure to come within 5 inches of the bumper..."
+        }
+      ],
+      "reasoning": "投影到地面、踢过logo、脚距保险杠5英寸内和传感器触发均为官方直接证据；传感器与投影区域对齐可推断，但未披露其测量脚到投影图像距离，故非明确满足。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 90.0,
+  "searched_queries": [
+    "别克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 规格书 参数",
+    "别克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 说明书 PDF",
+    "别克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 官方 参数",
+    "Buick Hands-Free Power Liftgate logo projection key fob sensor"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

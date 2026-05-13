@@ -1,0 +1,742 @@
+{
+  "candidate": {
+    "candidate_id": "P04",
+    "company": "雪佛兰（通用汽车）",
+    "company_en": "Chevrolet / General Motors",
+    "product_name": "免手动电动尾门（带标志投影）",
+    "product_name_en": "Hands-Free Power Liftgate with logo projection",
+    "product_version": "标志投影+可编程开启高度版本；接近车尾约6英尺自动点亮投影标识",
+    "market": "通用汽车品牌SUV/跨界车电动尾门配置；需核查中国在售车型配置表",
+    "reason_for_deep_dive": "摘要明确有地面Logo投影用于指示踢脚位置，并通过保险杠下方踢脚动作开启/关闭尾门，对应C1-F6的投影图像和脚部检测，以及C1-F5的尾门控制；还需下游核查中国市场具体车型、智能钥匙认证和尾门下方传感器/投影器布置。",
+    "source_result_ids": [
+      "tavily-Q12-01",
+      "brave-Q14-05"
+    ],
+    "source_urls": [
+      "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+      "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+    ],
+    "initial_evidence_summary": "雪佛兰支持页摘要显示：Hands-Free Power Liftgate with logo projection and programmable height 可通过保险杠下方简单踢脚动作开启/关闭；部分车辆地面会出现发光Logo投影提示踢脚位置；Logo投影在用户进入车尾约6英尺范围内自动点亮。"
+  },
+  "launch_date": "未明确（证据仅显示现行雪佛兰支持页及2025款车型说明书中存在该功能，未能确定首次上市/发布年月）",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+      "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+      "source_name": "Chevrolet",
+      "snippet": "Available Hands-Free Power Liftgate with logo projection and programmable height, if equipped, lets you open and close your liftgate with a simple kicking motion below the bumper."
+    },
+    {
+      "url": "https://www.durantguild.com/images/storefront/brandsite/maintenance_manual/25_CHEV_Tahoe_03.pdf",
+      "title": "2025 Chevrolet Tahoe owner manual excerpt",
+      "source_name": "Chevrolet/Durant Guild PDF mirror",
+      "snippet": "感应操作：如果配备该功能，携带遥控钥匙从接近区外进入身份验证区可打开尾门；身份验证区1米，接近区3米，均位于车辆后部附近。"
+    }
+  ],
+  "disqualified": true,
+  "disqualification_reason": "权利要求1的C1-F6明确不满足：新增GM/NHTSA公开证据显示，GM该功能的脚部检测由后保险杠饰板内“两根天线”触发，脚和小腿需接近后饰板约6.5英寸/16.5cm；同时GMC Canada页面明确称logo投影只帮助找到踢脚位置，不影响免手动尾门控制。这与权1要求“距离检测单元测量脚部到投影图像距离，且投影单元和距离检测单元均设置在后备箱下方并指向地面方向”的结构/检测原理直接相矛盾。未因上市日期失格。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；\n所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；\n所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；\n所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；\n后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；\n所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "GM/Chevrolet系统公开包含RKE/key fob、地面logo投影和后保险杠踢脚检测天线/传感区域，以及Hands Free Rear Closure Module/电动举升门控制部件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "The RKE Fob must be within the detection area... There are two antennas located in the rear bumper fascia that must be triggered... Projected Logo... a vehicle logo will be projected... when an RKE transmitter is detected."
+            },
+            {
+              "url": "https://www.gmpartswarehouse.com/oem-parts/gm-hands-free-rear-closure-module-23460553",
+              "title": "23460553 - Hands Free Rear Closure Module 2015-2020 GM",
+              "source_name": "GM Parts Warehouse",
+              "snippet": "Hands Free Rear Closure Module - GM (23460553)... Other Names: Control Module. Description: Liftgate motor control... Electrical components, hands free."
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Available Hands-Free Power Liftgate with logo projection and programmable height... open and close your liftgate with a simple kicking motion below the bumper... Approach the liftgate with your key fob."
+            }
+          ],
+          "reasoning": "NHTSA/GM公告直接披露钥匙RKE、后保险杠踢脚检测天线和投影logo；GM配件页披露Hands Free Rear Closure控制模块/举升门电机控制。按模块功能对应，竞品具有信息采集、智能钥匙和后备箱控制三类模块。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "K171 Hands-Free Liftgate Sensor Control Module会向BCM发出开启尾门请求；RKE检测、踢脚天线触发和电动尾门控制之间存在电子信号链路。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://gmauthority.com/blog/2024/05/chevy-tahoe-and-suburban-hands-free-liftgate-may-be-draining-battery",
+              "title": "Chevy Tahoe, Suburban Hands-Free Liftgate May Drain Battery",
+              "source_name": "GM Authority",
+              "snippet": "Faulty requests may stem from the K171 Hands-Free Liftgate Sensor Control Module, which directs the BCM to attempt to open the liftgate."
+            },
+            {
+              "url": "https://www.gmpartswarehouse.com/oem-parts/gm-hands-free-rear-closure-module-23460553",
+              "title": "23460553 - Hands Free Rear Closure Module 2015-2020 GM",
+              "source_name": "GM Parts Warehouse",
+              "snippet": "Hands Free Rear Closure Module... Control Module... Liftgate motor control... This part requires programming and/or special setup procedures."
+            },
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "The RKE Fob must be within the detection area... two antennas located in the rear bumper fascia... must be triggered for the system to detect a kick."
+            }
+          ],
+          "reasoning": "公开证据说明后保险杠踢脚传感模块向BCM请求开启尾门，且RKE与踢脚天线是控制条件；这直接支持信息采集模块、智能钥匙相关检测与后备箱控制模块之间存在电/电子连接。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "脚部检测天线位于rear bumper fascia；踢脚时脚/小腿需进入后饰板约6.5英寸/16.5cm范围；官方用户页也要求踢脚距保险杠5英寸/12.7cm内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "There are two antennas located in the rear bumper fascia... During the kick, your foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia."
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Kick straight over the logo... making sure to come within 5 inches of the bumper... The liftgate will open."
+            },
+            {
+              "url": "https://www.gmc.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | GMC",
+              "source_name": "GMC",
+              "snippet": "Make sure that your kick comes within 5 inches of the bumper of your vehicle. Make sure that your key fob is within 3 feet of your vehicle."
+            }
+          ],
+          "reasoning": "后保险杠/车尾区域的天线检测脚/小腿是否进入16.5cm或12.7cm的近距离范围，可对应“设置在后备箱并获取用户与后备箱距离信息”。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "系统要求携带RKE transmitter/key fob接近车尾；NHTSA给出1m/3ft hands-free operation detection zone和2m/6ft projected logo detection zone；2025 Tahoe手册片段称车尾附近有1m身份验证区、3m接近区。未直接公开“后备箱探测天线”的硬件位置。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "The RKE Fob must be within the detection area, which is 3 ft (1 m) of the rear bumper... 1 m Hands-Free Operation Detection Zone; 2 m Projected Logo Detection Zone."
+            },
+            {
+              "url": "https://www.durantguild.com/images/storefront/brandsite/maintenance_manual/25_CHEV_Tahoe_03.pdf",
+              "title": "2025 Chevrolet Tahoe owner manual excerpt",
+              "source_name": "Chevrolet/Durant Guild PDF mirror",
+              "snippet": "携带遥控钥匙从接近区外进入身份验证区可打开尾门。这两个区域均位于车辆后部附近。身份验证区（1米），接近区（3米）。"
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Approach the liftgate with your key fob... Make sure that your key fob is within 3 feet of your vehicle."
+            }
+          ],
+          "reasoning": "钥匙中的RKE transmitter/key fob以及车尾检测区有直接公开；但证据未直接点名“设置在后备箱的钥匙探测天线”，只能由无钥匙检测区和车尾认证功能推定。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "踢脚传感条件满足后，BCM/控制模块尝试开启电动举升门；官方页披露踢脚后尾门开启/关闭，并有尾灯闪烁、蜂鸣提示和可编程开启高度。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Kick straight over the logo... The liftgate will open after giving you time to safely step away... You can also use a kicking motion to close the liftgate."
+            },
+            {
+              "url": "https://gmauthority.com/blog/2024/05/chevy-tahoe-and-suburban-hands-free-liftgate-may-be-draining-battery",
+              "title": "Chevy Tahoe, Suburban Hands-Free Liftgate May Drain Battery",
+              "source_name": "GM Authority",
+              "snippet": "K171 Hands-Free Liftgate Sensor Control Module... directs the BCM to attempt to open the liftgate."
+            },
+            {
+              "url": "https://www.gmpartswarehouse.com/oem-parts/gm-hands-free-rear-closure-module-23460553",
+              "title": "23460553 - Hands Free Rear Closure Module 2015-2020 GM",
+              "source_name": "GM Parts Warehouse",
+              "snippet": "Hands Free Rear Closure Module... Description: Liftgate motor control."
+            }
+          ],
+          "reasoning": "官方操作页直接披露传感输入触发尾门开/关；GM Authority和配件页进一步披露传感控制模块、BCM和举升门电机控制，对应控制单元判断并启动尾门执行机构。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "GM系统确有地面logo投影，但脚部检测公开为后保险杠饰板内两根天线：脚/小腿需进入后饰板约6.5英寸/16.5cm，官方还称logo投影只用于找到踢脚位置、不影响免手动控制；这不是测量“脚部到投影图像距离”的向地距离检测单元。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "There are two antennas located in the rear bumper fascia that must be triggered for the system to detect a kick. During the kick, your foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia... The projected logo shows where the kicking motion is to take place."
+            },
+            {
+              "url": "https://www.gmccanada.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | GMC Canada",
+              "source_name": "GMC Canada",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn't affect the hands-free control of the liftgate."
+            },
+            {
+              "url": "https://www.gmc.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | GMC",
+              "source_name": "GMC",
+              "snippet": "Sweeping the foot side to side or stepping on the logo projection will not activate the sensor... Kick directly toward the underside of your vehicle... within 5 inches of the bumper."
+            }
+          ],
+          "reasoning": "权1要求投影单元和距离检测单元共同形成“测量脚部到投影图像距离”的向地检测方案。GM公告和官方页反而明确：控制由后保险杠饰板内两根天线检测脚/小腿接近后饰板触发，投影logo仅是定位提示且不参与控制；踩在logo上也不会激活。因此该关键结构/检测原理与权1限定直接不符。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+          "competitor_feature": "公开资料仅称illuminated logo projection / projected logo / logo lamp；未公开其为激光投影仪。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "On some vehicles, an illuminated logo projection will appear on the ground to show you where to kick."
+            },
+            {
+              "url": "https://www.tahoeyukonforum.com/threads/replace-liftgate-projected-logo.148169",
+              "title": "Replace liftgate projected logo? | Chevy Tahoe Forum",
+              "source_name": "Tahoe Yukon Forum",
+              "snippet": "The projected logo (projected on the ground; where you make the kicking motion to open the liftgate hands-free) from the rear of my 2023 Tahoe has gotten distorted... For GMC logo it is 13540010."
+            }
+          ],
+          "reasoning": "证据能证明存在投影图像/投影灯，但没有公开说明采用激光投影仪；不能把普通logo投影灯直接等同为激光投影仪。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C2-F2",
+          "patent_feature": "所述距离检测单元为直线距离传感器",
+          "competitor_feature": "公开服务公告称脚部检测由后保险杠饰板内两根天线触发，检测条件为脚/小腿接近后饰板16.5cm内；未采用公开的直线距离传感器，且投影logo不参与控制。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "There are two antennas located in the rear bumper fascia that must be triggered for the system to detect a kick... foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia."
+            },
+            {
+              "url": "https://www.gmccanada.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | GMC Canada",
+              "source_name": "GMC Canada",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn't affect the hands-free control of the liftgate."
+            }
+          ],
+          "reasoning": "直线距离传感器应测量到投影/地面的线性距离；GM公开的检测件是保险杠内天线，控制对象是脚/小腿接近后饰板，而非线性测距。故该从属限定明确不满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+          "competitor_feature": "GM系统中K171 Hands-Free Liftgate Sensor Control Module可向BCM发出开启尾门请求；RKE钥匙需在检测区内，踢脚天线触发后尾门开启。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://gmauthority.com/blog/2024/05/chevy-tahoe-and-suburban-hands-free-liftgate-may-be-draining-battery",
+              "title": "Chevy Tahoe, Suburban Hands-Free Liftgate May Drain Battery",
+              "source_name": "GM Authority",
+              "snippet": "K171 Hands-Free Liftgate Sensor Control Module... directs the BCM to attempt to open the liftgate."
+            },
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "The RKE Fob must be within the detection area... two antennas... must be triggered for the system to detect a kick."
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Approach the liftgate with your key fob... Kick straight over the logo... The liftgate will open."
+            }
+          ],
+          "reasoning": "证据直接揭示BCM/传感控制模块接收钥匙存在和踢脚传感信息，并控制尾门开启；对应电控单元接收判断并控制后备箱开启。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+          "competitor_feature": "该配置为Power Liftgate；GM配件页将Hands Free Rear Closure Module描述为Liftgate motor control，尾门可由踢脚动作电动开启/关闭。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.gmpartswarehouse.com/oem-parts/gm-hands-free-rear-closure-module-23460553",
+              "title": "23460553 - Hands Free Rear Closure Module 2015-2020 GM",
+              "source_name": "GM Parts Warehouse",
+              "snippet": "Hands Free Rear Closure Module... Description: Liftgate motor control. Tahoe, Yukon, Escalade. Suburban, Yukon XL."
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Available Hands-Free Power Liftgate... lets you open and close your liftgate with a simple kicking motion below the bumper."
+            }
+          ],
+          "reasoning": "“Power Liftgate”和“Liftgate motor control”直接说明尾门由电机/电动执行机构开启关闭，安装对象即车辆后部举升门。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：\n步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；\n步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；\n步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+          "competitor_feature": "GM资料公开RKE transmitter/key fob进入车尾检测区会触发系统行为：投影logo在RKE进入约2m/6ft时点亮；2025 Tahoe手册称遥控钥匙从3m接近区外进入1m身份验证区可打开尾门。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "A vehicle logo will be projected for one minute onto the ground near the rear bumper when an RKE transmitter is detected within approximately 2 m (6 ft)... 1 m Hands-Free Operation Detection Zone; 2 m Projected Logo Detection Zone."
+            },
+            {
+              "url": "https://www.durantguild.com/images/storefront/brandsite/maintenance_manual/25_CHEV_Tahoe_03.pdf",
+              "title": "2025 Chevrolet Tahoe owner manual excerpt",
+              "source_name": "Chevrolet/Durant Guild PDF mirror",
+              "snippet": "携带遥控钥匙从接近区外进入身份验证区可打开尾门。这两个区域均位于车辆后部附近。身份验证区（1米），接近区（3米）。"
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/autosense-liftgate",
+              "title": "How to Operate the Autosense Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Approach the liftgate with your key fob. You must approach from farther than 10 feet (approximately 3 meters). When you’re within 3 feet (approximately 1 meter) of the liftgate..."
+            }
+          ],
+          "reasoning": "公开证据给出从车尾约3m/10ft外进入约1m/3ft身份验证区或约2m/6ft投影触发区的“由远及近”状态变化，并据此触发系统响应，满足该方法步骤的核心。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C5-F2",
+          "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+          "competitor_feature": "后保险杠饰板内两根天线用于检测踢脚；脚/小腿需进入后饰板16.5cm内，官方用户页要求踢脚进入保险杠12.7cm/5英寸内，传感结果用于开启尾门。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "There are two antennas located in the rear bumper fascia that must be triggered... foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia."
+            },
+            {
+              "url": "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Chevrolet Canada",
+              "source_name": "Chevrolet Canada",
+              "snippet": "Kick straight over the logo... making sure to come within 12.7 centimetres of the bumper... The liftgate will open after giving you time to safely step away."
+            }
+          ],
+          "reasoning": "天线检测脚/小腿与后保险杠的近距离状态并触发尾门控制，可对应“采集人脚与后备箱距离状态并反馈控制模块”。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C5-F3",
+          "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+          "competitor_feature": "系统要求key fob在3ft/1m检测区内，同时踢脚天线被触发；满足后尾门开启，K171传感控制模块可指示BCM尝试开启尾门。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Approach the liftgate with your key fob... Make sure that your key fob is within 3 feet of your vehicle... Kick straight over the logo... The liftgate will open."
+            },
+            {
+              "url": "https://gmauthority.com/blog/2024/05/chevy-tahoe-and-suburban-hands-free-liftgate-may-be-draining-battery",
+              "title": "Chevy Tahoe, Suburban Hands-Free Liftgate May Drain Battery",
+              "source_name": "GM Authority",
+              "snippet": "K171 Hands-Free Liftgate Sensor Control Module... directs the BCM to attempt to open the liftgate."
+            },
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "The RKE Fob must be within the detection area... two antennas... must be triggered for the system to detect a kick."
+            }
+          ],
+          "reasoning": "钥匙有效性和踢脚传感是共同开启条件，控制模块/BCM根据这些输入控制尾门开启，直接对应S3。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，\n当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元",
+          "competitor_feature": "GM系统检测RKE transmitter/key fob是否进入车尾检测区；资料给出RKE进入2m投影区、1m/3ft免手动操作区或从3m进入1m身份验证区。但未直接披露“探测天线”及其向电控单元反馈的线路/报文。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "when an RKE transmitter is detected within approximately 2 m (6 ft)... The RKE Fob must be within the detection area, which is 3 ft (1 m) of the rear bumper."
+            },
+            {
+              "url": "https://www.durantguild.com/images/storefront/brandsite/maintenance_manual/25_CHEV_Tahoe_03.pdf",
+              "title": "2025 Chevrolet Tahoe owner manual excerpt",
+              "source_name": "Chevrolet/Durant Guild PDF mirror",
+              "snippet": "携带遥控钥匙从接近区外进入身份验证区可打开尾门... 身份验证区（1米），接近区（3米）。"
+            }
+          ],
+          "reasoning": "RKE进入车尾检测区的由远及近探测与该步骤高度对应；但公开文本未给出钥匙探测天线的具体硬件名称、位置和向电控单元反馈的信号，因此保守认定为可能满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+          "competitor_feature": "GM公开逻辑包括：RKE transmitter必须先离开范围至少20秒，重新在约2m内被检测到时logo定时器复位；AutoSense也要求离车10ft/3m超过20秒后再接近。公开资料没有完整流程图说明“不存在则返回S1、存在则进入脚部检测S2”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "The projected logo will only be available for this RKE transmitter after it has been out of range for at least 20 seconds. If an RKE transmitter is again detected within approximately 2 m (6 ft) of the liftgate... the one-minute timer will be reset."
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/autosense-liftgate",
+              "title": "How to Operate the Autosense Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "After closing your liftgate... Remain at least 10 feet (approximately 3 meters) away from the vehicle for more than 20 seconds. Then, approach the rear of the vehicle with your key fob."
+            }
+          ],
+          "reasoning": "20秒离开范围后再接近、进入检测区才触发后续动作，体现重复检测/由远至近判断；但未直接公开与专利S1/S2完全相同的分支流程，故为可能满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+          "competitor_feature": "GM系统在RKE transmitter进入约2m/6ft车尾范围时投影logo点亮，表明有控制信号开启投影单元；但公开资料未说明信号为“脉冲信号”，也未证明投影单元是“激光投影仪”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "A vehicle logo will be projected for one minute onto the ground near the rear bumper when an RKE transmitter is detected within approximately 2 m (6 ft)."
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Approach the liftgate with your key fob. The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle."
+            }
+          ],
+          "reasoning": "“钥匙接近后投影自动点亮”与该步骤的功能相同；但脉冲信号和激光投影仪的具体限定没有直接公开，因此不能判为明确满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)",
+          "competitor_feature": "GM有地面logo投影，但脚部检测由后保险杠饰板内两根天线触发，官方称logo投影只帮助定位、不影响控制；未使用公开的直线距离传感器实时测量到投影影像的D值序列。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "There are two antennas located in the rear bumper fascia that must be triggered for the system to detect a kick... The projected logo shows where the kicking motion is to take place."
+            },
+            {
+              "url": "https://www.gmccanada.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | GMC Canada",
+              "source_name": "GMC Canada",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn't affect the hands-free control of the liftgate."
+            }
+          ],
+          "reasoning": "专利步骤要求以投影影像为测距目标实时获得D1...Dn；GM公开控制架构明确与投影影像无关，而由保险杠内天线检测踢脚，故该步骤核心不满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C8-F2",
+          "patent_feature": "设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+          "competitor_feature": "GM公开的是RKE检测区、logo一分种定时器、脚/小腿触发天线；没有基于投射实际距离D序列选最大值Di并设C=Di的算法。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "1 m Hands-Free Operation Detection Zone; 2 m Projected Logo Detection Zone... foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia."
+            },
+            {
+              "url": "https://www.gmccanada.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | GMC Canada",
+              "source_name": "GMC Canada",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn't affect the hands-free control of the liftgate."
+            }
+          ],
+          "reasoning": "由于GM控制并非基于投影影像测距D，且公开阈值是车尾检测区和后饰板16.5cm触发条件，因此不存在专利所述C=最大Di的投射距离基准算法。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+          "competitor_feature": "GM公开的判断不是C-D≤1cm：踢脚需脚/小腿进入后饰板16.5cm内，且“stepping on the logo projection will not activate the sensor”；投影logo不影响控制。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia for both antennas to be triggered and detect the kick."
+            },
+            {
+              "url": "https://www.gmc.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | GMC",
+              "source_name": "GMC",
+              "snippet": "Sweeping the foot side to side or stepping on the logo projection will not activate the sensor."
+            },
+            {
+              "url": "https://www.gmccanada.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | GMC Canada",
+              "source_name": "GMC Canada",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn't affect the hands-free control of the liftgate."
+            }
+          ],
+          "reasoning": "专利以C-D≤1cm判断脚未放在地面影像上；GM明确不以投影影像为控制对象，且公开判断条件是天线被脚/小腿接近后饰板触发，阈值为16.5cm，故不满足1cm差值判断。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+          "competitor_feature": "GM公开的投影logo在RKE进入约2m范围时投射一分钟；RKE再次被检测或有免手动操作时一分钟定时器复位。未公开基于C-D≤1cm并持续t1秒来熄灭投影。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "A vehicle logo will be projected for one minute... If an RKE transmitter is again detected within approximately 2 m (6 ft) of the liftgate, or another hands-free operation has been detected, the one-minute timer will be reset."
+            },
+            {
+              "url": "https://www.gmccanada.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | GMC Canada",
+              "source_name": "GMC Canada",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn't affect the hands-free control of the liftgate."
+            }
+          ],
+          "reasoning": "GM的投影熄灭/持续逻辑公开为一分钟定时器和RKE/操作复位，不是直线距离C-D≤1cm持续t1秒；且投影不参与控制，故该从属方法不满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：\n当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；\n当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上",
+          "competitor_feature": "GM系统不判断脚是否“落在地面影像上”；官方反而说明踩在logo投影上不会激活传感器，正确操作是向车辆下方踢并使脚/小腿靠近后饰板16.5cm或保险杠12.7cm内。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.gmc.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | GMC",
+              "source_name": "GMC",
+              "snippet": "Sweeping the foot side to side or stepping on the logo projection will not activate the sensor. Kick directly toward the underside of your vehicle... within 5 inches of the bumper."
+            },
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia for both antennas to be triggered and detect the kick."
+            },
+            {
+              "url": "https://www.gmccanada.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | GMC Canada",
+              "source_name": "GMC Canada",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn't affect the hands-free control of the liftgate."
+            }
+          ],
+          "reasoning": "专利以C-D在1cm至8cm之间判断脚落在地面影像上；GM公开明确否定“踩在logo投影上”会触发，且检测基于后饰板天线和12.7/16.5cm接近条件，故不满足该判断。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C11-F2",
+          "patent_feature": "当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+          "competitor_feature": "GM公开的重新尝试/复位条件与C-D≥8cm无关，例如RKE需离开范围至少20秒、再次进入2m时投影定时器复位；未使用8cm差值阈值返回S1。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "The projected logo will only be available for this RKE transmitter after it has been out of range for at least 20 seconds... If an RKE transmitter is again detected within approximately 2 m... the one-minute timer will be reset."
+            },
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/autosense-liftgate",
+              "title": "How to Operate the Autosense Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "If you stay in that area for 4 chimes, the liftgate will open unless canceled... Stepping more than 3 feet away... Reactivating... Remain at least 10 feet away... for more than 20 seconds."
+            }
+          ],
+          "reasoning": "公开复位/重试逻辑是钥匙离开/进入检测区和20秒等待，不是C-D≥8cm测距差值，因此该特定方法步骤不满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 12,
+      "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C12-F1",
+          "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测",
+          "competitor_feature": "GM系统有提示音/尾灯提示尾门正在开启，但触发逻辑是key fob在范围内且完成1秒以内的in-and-out踢脚动作；不存在公开的“脚落在地面影像上”、C-D在1至8cm持续t2秒后开启，否则返回S1的流程。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Your kick should be an in-and-out motion that takes only a second... The liftgate will open after giving you time to safely step away. The rear lights will flash and a chime will sound to alert you that the liftgate is opening."
+            },
+            {
+              "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10160086-9999.pdf",
+              "title": "Service Bulletin 17-NA-153: Operating Tips for Hands Free Liftgate",
+              "source_name": "NHTSA / General Motors",
+              "snippet": "Speed of kick should be 1 second or less... foot and shin must come within 6.5 inches (16.5 cm) of the rear fascia for both antennas to be triggered."
+            },
+            {
+              "url": "https://www.gmc.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | GMC",
+              "source_name": "GMC",
+              "snippet": "Sweeping the foot side to side or stepping on the logo projection will not activate the sensor... After a 2-second delay, the rear lights will flash and a chime will sound to alert you that the liftgate is closing."
+            }
+          ],
+          "reasoning": "虽然GM存在chime提示，但其提示发生在尾门开启/关闭告警中，触发动作要求1秒内踢脚并由保险杠天线检测；专利要求的脚落在影像上、C-D为1-8cm并持续t2秒的判定链条与GM公开操作相矛盾。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    }
+  ],
+  "claim_1_score": 0.0,
+  "total_score": 0.0,
+  "searched_queries": [
+    "雪佛兰（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本；接近车尾约6英尺自动点亮投影标识 规格书 参数",
+    "雪佛兰（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本；接近车尾约6英尺自动点亮投影标识 说明书 PDF",
+    "Chevrolet Hands-Free Power Liftgate logo projection key fob sensor",
+    "Chevrolet hands-free power liftgate logo projection system components service manual",
+    "GM hands free liftgate with logo projection module diagram key fob liftgate control",
+    "雪佛兰 感应式电动尾门 logo 投影 系统组成 控制模块 钥匙",
+    "GM hands free liftgate logo projection wiring diagram control module sensor antenna"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

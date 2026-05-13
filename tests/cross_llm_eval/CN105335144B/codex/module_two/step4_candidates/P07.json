@@ -1,0 +1,208 @@
+{
+  "candidate": {
+    "candidate_id": "P07",
+    "company": "高合汽车",
+    "company_en": "HiPhi / Human Horizons",
+    "product_name": "高合HiPhi X尾门投影模块",
+    "product_name_en": "HiPhi X tailgate projection module",
+    "product_version": "HiPhi X电动尾门感应成像电脑/尾门投影模块",
+    "market": "中国高合HiPhi X车型维修件/后装件市场",
+    "reason_for_deep_dive": "搜索结果标题明确指向“HiPhi X尾门投影模块”和“电动尾门感应成像电脑”，与C1-F6的后备箱投影单元及C1-F5的电动尾门控制存在交叉；现有摘要信息较少，但因其为中国市场具体车型的尾门投影相关模块，值得下游核查是否用于脚部投影感应开启。",
+    "source_result_ids": [
+      "brave-Q19-04"
+    ],
+    "source_urls": [
+      "https://www.taobao.com/list/item/663361611581.htm"
+    ],
+    "initial_evidence_summary": "淘宝搜索结果标题显示“高合hiphi X尾门投影模块 高合hiphi X电动尾门感应成像电脑”。摘要未给出传感器类型和智能钥匙联动细节，需要进一步检索商品详情、维修手册或拆解证据。"
+  },
+  "launch_date": "2020年9月24日正式上市；2021年5月8日开启批量交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://auto.sina.cn/newcar/x/2020-09-24/detail-iivhvpwy8394059.d.html",
+      "title": "可进化的超跑SUV 高合HiPhi X正式上市 售68.00-80.00万元",
+      "source_name": "新浪汽车",
+      "snippet": "2020年9月24日，高合汽车旗下纯电动SUV，高合HiPhi X在北京完成正式上市。"
+    },
+    {
+      "url": "https://m.yiche.com/zhaiyao/detail-5973-335-60769faca56ef040b25f0a20.html",
+      "title": "高合HiPhi X性能-尾门-雷达",
+      "source_name": "易车",
+      "snippet": "相信在今年5月8日高合HiPhi X开启批量交付后，未来的出行变革也将全面开启。"
+    },
+    {
+      "url": "https://chejiahao.autohome.com.cn/info/6814671",
+      "title": "提供六种不同场景开门模式 高合HiPhi X将于9月24日上市",
+      "source_name": "汽车之家车家号",
+      "snippet": "高合HiPhi X将于9月24日正式上市，并在今年年底实现小批量试生产，2021年上半年正式交付。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：公开上市/交付时间均晚于本专利申请日2014-07-31；现有证据也未显示任一技术特征明确不满足。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+      "competitor_feature": "HiPhi X公开资料分别显示：后尾门可通过脚踩地面投影图标感应开启；车辆支持智能钥匙免接触进入/靠近唤醒；全车门/后尾门由电子锁、控制器和独立电机控制。可对应信息采集、智能钥匙、后备箱控制三类功能模块，但未见同一公开资料给出完整系统框图。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.jndp.com/info/181948",
+          "title": "高合HiPhi X将搭载全电动NT展翼门系统",
+          "source_name": "汽车导航",
+          "snippet": "后尾门支持感应式打开和关闭。驾驶员只需用脚轻轻踩在投影在地面上的图标即可实现打开和关闭。"
+        },
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/6814671",
+          "title": "提供六种不同场景开门模式 高合HiPhi X将于9月24日上市",
+          "source_name": "汽车之家车家号",
+          "snippet": "车主可通过智能钥匙、智能手机ID、人脸识别等三种方式，实现无钥匙、无接触进出座舱。"
+        }
+      ],
+      "reasoning": "证据能拼合出投影/感应尾门、智能钥匙和电控尾门三类功能；但公开资料没有直接列出“信息采集模块、智能钥匙模块、后备箱控制模块”的系统组成。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+      "competitor_feature": "公开资料显示HiPhi X用电子信号替代机械执行，全车门电子锁由独立车门模块和多个控制器控制；后尾门由独立电机控制并响应地面投影脚踩感应。可推断感应/投影相关部件与尾门电控执行机构存在信号连接，但未公开确认智能钥匙模块与后备箱控制模块的具体电连接或电路。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.jndp.com/info/181948",
+          "title": "高合HiPhi X将搭载全电动NT展翼门系统",
+          "source_name": "汽车导航",
+          "snippet": "10个电子自吸门锁均由HOA超体电子架构下的独立车门模块通过包括车辆控制器在内的十多个控制器进行控制。利用电子信号取代传统的机械执行器。"
+        },
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/6814671",
+          "title": "提供六种不同场景开门模式 高合HiPhi X将于9月24日上市",
+          "source_name": "汽车之家车家号",
+          "snippet": "全车门支持通过FOTA软件迭代，可以优化车门开启角度、速度以及个性化情景模式。"
+        }
+      ],
+      "reasoning": "电子门锁、控制器、独立电机和感应开尾门说明存在电控信号链；但缺少维修电路图确认两个模块均“电连接”到后备箱控制模块。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+      "competitor_feature": "HiPhi X在用户走到车后时，可通过脚踩投射在地面的图标触发后尾门自动开闭；这表明车辆尾部/后尾门区域存在获取脚部位置或接近状态的感应信息。公开资料未直接写明该信息为“用户与后备箱的距离信息”，也未给出传感器安装点。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.jndp.com/info/181948",
+          "title": "高合HiPhi X将搭载全电动NT展翼门系统",
+          "source_name": "汽车导航",
+          "snippet": "当你走到车后，只需要用脚轻轻踩在投射于地面的图标上，即可实现后尾门的自动开启。"
+        },
+        {
+          "url": "https://m.yiche.com/zhaiyao/detail-5973-335-60769faca56ef040b25f0a20.html",
+          "title": "高合HiPhi X性能-尾门-雷达",
+          "source_name": "易车",
+          "snippet": "当你走到车后，只需要用脚轻轻踩在投射于地面的图标上，即可实现后尾门的自动开启。"
+        }
+      ],
+      "reasoning": "后方地面图标+脚部触发足以推断尾部采集脚部接近/位置；但“距离信息”和模块安装在后备箱处未被公开资料直接字面确认。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+      "competitor_feature": "公开资料仅确认HiPhi X支持智能钥匙免接触进入、智能钥匙或智能手机靠近时车辆自动唤醒。未找到证据显示车辆钥匙内具体“钥匙感应单元”，也未找到设置在后备箱处、用于探测钥匙的天线。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/6814671",
+          "title": "提供六种不同场景开门模式 高合HiPhi X将于9月24日上市",
+          "source_name": "汽车之家车家号",
+          "snippet": "车主可通过智能钥匙、智能手机ID、人脸识别等三种方式，实现无钥匙、无接触进出座舱。"
+        },
+        {
+          "url": "https://www.jndp.com/info/181948",
+          "title": "高合HiPhi X将搭载全电动NT展翼门系统",
+          "source_name": "汽车导航",
+          "snippet": "当驾驶员使用智能钥匙或智能手机靠近时，车辆将自动唤醒。"
+        },
+        {
+          "url": "https://auto.news18a.com/news/storys_147411.html",
+          "title": "比Model X还炫酷 高合HiPhi X车门配置曝光",
+          "source_name": "网通社汽车",
+          "snippet": "通过智能钥匙、智能手机ID、人脸识别三种方式免接触进入，还能够通过APP远程解锁。"
+        }
+      ],
+      "reasoning": "智能钥匙功能属产品级证据，但关键限定是“后备箱探测天线探测钥匙感应单元”；现有网页未披露天线位置或钥匙内部单元。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+      "competitor_feature": "HiPhi X后尾门由独立电机控制，可自动打开和关闭；当用户在车后用脚踩投射于地面的图标时，即可触发后尾门开启/关闭。该公开功能对应尾门执行单元和控制判断逻辑。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.jndp.com/info/181948",
+          "title": "高合HiPhi X将搭载全电动NT展翼门系统",
+          "source_name": "汽车导航",
+          "snippet": "除了六门电动驱动外，HiPhi X的后尾门和充电活门由独立电机控制，还可以实现自动打开和关闭。后尾门支持感应式打开和关闭。驾驶员只需用脚轻轻踩在投影在地面上的图标即可实现打开和关闭。"
+        },
+        {
+          "url": "https://m.yiche.com/zhaiyao/detail-5973-335-60769faca56ef040b25f0a20.html",
+          "title": "高合HiPhi X性能-尾门-雷达",
+          "source_name": "易车",
+          "snippet": "当你走到车后，只需要用脚轻轻踩在投射于地面的图标上，即可实现后尾门的自动开启。"
+        }
+      ],
+      "reasoning": "独立电机直接对应尾门启动/执行；脚踩地面投影图标后自动开闭，直接表明控制逻辑基于感应信息决定是否驱动后尾门。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+      "competitor_feature": "公开资料确认HiPhi X后尾门场景中存在投射到地面的图标，用户用脚踩该图标即可感应开启/关闭尾门；淘宝搜索摘要还指向“尾门投影模块/电动尾门感应成像电脑”。但未直接公开“测量脚部到投影图像距离”的距离检测单元，也未直接说明投影单元和检测单元均位于后备箱下方且朝向地面。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.jndp.com/info/181948",
+          "title": "高合HiPhi X将搭载全电动NT展翼门系统",
+          "source_name": "汽车导航",
+          "snippet": "后尾门支持感应式打开和关闭。驾驶员只需用脚轻轻踩在投影在地面上的图标即可实现打开和关闭。"
+        },
+        {
+          "url": "https://m.yiche.com/zhaiyao/detail-5973-335-60769faca56ef040b25f0a20.html",
+          "title": "高合HiPhi X性能-尾门-雷达",
+          "source_name": "易车",
+          "snippet": "当你走到车后，只需要用脚轻轻踩在投射于地面的图标上，即可实现后尾门的自动开启。"
+        },
+        {
+          "url": "https://www.taobao.com/list/item/663361611581.htm",
+          "title": "高合hiphi X尾门投影模块 高合hiphi X电动尾门感应成像电脑",
+          "source_name": "淘宝搜索结果摘要",
+          "snippet": "搜索结果标题显示“高合hiphi X尾门投影模块 高合hiphi X电动尾门感应成像电脑”。"
+        }
+      ],
+      "reasoning": "地面投影图标和脚部感应开启是直接证据；距离检测方式、脚到图像距离测量及模块朝下安装位置仍只能由功能严谨推断，未被公开字面证明。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 75.0,
+  "searched_queries": [
+    "高合HiPhi X 尾门投影模块 智能钥匙 电动尾门 控制模块",
+    "高合HiPhi X 2022 维修手册 尾门投影模块 电路图 智能钥匙 天线 BCM",
+    "高合HiPhi X 尾门投影模块 感应成像电脑 安装位置 后保险杠 下方 地面",
+    "高合汽车 高合HiPhi X尾门投影模块 上市 日期 发布",
+    "HiPhi / Human Horizons HiPhi X tailgate projection module datasheet specifications"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

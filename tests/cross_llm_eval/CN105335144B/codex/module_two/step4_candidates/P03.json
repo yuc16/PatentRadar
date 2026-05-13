@@ -1,0 +1,225 @@
+{
+  "candidate": {
+    "candidate_id": "P03",
+    "company": "佛山市安驾科技有限公司",
+    "company_en": "Foshan Anjia Technology Co., Ltd.",
+    "product_name": "汽车尾门AR光感脚踢传感器",
+    "product_name_en": "AR light-sensing kick sensor for automotive tailgate",
+    "product_version": "KS32；汽车后备箱投影灯感应开关加装款",
+    "market": "中国汽车电动尾门后装/改装配件市场",
+    "reason_for_deep_dive": "该1688商品明确同时具备“AR光感脚踢传感器”和“后备箱投影灯感应开关”，形态上接近C1-F6的投影图像+脚部检测；若其控制器与电动尾门/智能钥匙联动，则可能进一步覆盖C1-F1至C1-F5，适合下游围绕KS32规格书、安装说明、控制逻辑深挖。",
+    "source_result_ids": [
+      "bocha-Q05-01",
+      "brave-Q04-02"
+    ],
+    "source_urls": [
+      "https://detail.1688.com/offer/821120630933.html",
+      "https://blog.csdn.net/weixin_53077062/article/details/140233400"
+    ],
+    "initial_evidence_summary": "1688摘要显示供应商为佛山市安驾科技有限公司，品牌安驾科技，货号KS32，商品为“适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装”。另有技术摘要称安驾光感脚踢方案通过智能电动尾门模块与原车BCM、KESSY协议协同工作，利用微波/毫米波感应携带智能钥匙的用户，并通过光学投影显示。"
+  },
+  "launch_date": "未明确；已见2024年8月1688在售/页面记录",
+  "launch_date_evidence": [
+    {
+      "url": "https://detail.1688.com/offer/821120630933.html",
+      "title": "适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装-阿里巴巴",
+      "source_name": "1688/阿里巴巴（Bocha搜索摘要）",
+      "snippet": "佛山市安驾科技有限公司；加工定制 是；品牌 安驾科技；货号 KS32；价格 ¥999.99；搜索结果 published_date 为 2024-08-09。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未发现KS32或该安驾产品早于专利申请日2014-07-31公开销售/发布的证据；目前仅见2024年在售记录，保留候选。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+      "competitor_feature": "KS32页面显示其为“汽车尾门AR光感脚踢传感器/后备箱投影灯感应开关”；技术摘要称安驾方案有光学投影、微波/毫米波感应，并与智能电动尾门模块及原车BCM、KESSY协议协同。可对应信息采集、智能钥匙、后备箱控制三类模块，但未见KS32完整系统框图。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://detail.1688.com/offer/821120630933.html",
+          "title": "适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装-阿里巴巴",
+          "source_name": "1688/阿里巴巴（Bocha搜索摘要）",
+          "snippet": "供应商佛山市安驾科技有限公司，品牌安驾科技，货号KS32，商品为“适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装”。"
+        },
+        {
+          "url": "https://blog.csdn.net/weixin_53077062/article/details/140233400",
+          "title": "安驾光感脚踢方案技术摘要",
+          "source_name": "CSDN（初始证据摘要）",
+          "snippet": "安驾光感脚踢方案通过智能电动尾门模块与原车BCM、KESSY协议协同工作，利用微波/毫米波感应携带智能钥匙的用户，并通过光学投影显示。"
+        },
+        {
+          "url": "https://www.sohu.com/a/785936895_121630056",
+          "title": "汽车尾门脚踢传感器市场现状及未来发展趋势报告2024年_搜狐汽车",
+          "source_name": "搜狐汽车",
+          "snippet": "携带与汽车产品匹配的钥匙走到后备箱处，用脚踢扫杠下传感器位置，即可开启后备箱；脚踢传感器感应脚踢动作，通过ECU向尾门电动撑杆和尾门自吸锁发出指令。"
+        }
+      ],
+      "reasoning": "1688确认KS32为尾门AR脚踢/投影开关；CSDN摘要把安驾方案与电动尾门模块、BCM/KESSY和感应/投影相连。缺少官方框图，故为可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+      "competitor_feature": "安驾技术摘要称感应/投影方案与智能电动尾门模块、原车BCM、KESSY协议协同；同类脚踢传感器方案公开有脚踢开关信号硬线输出、LIN总线输出。可推断采集模块及钥匙系统信号进入尾门控制链路，但未见KS32专属线束/接口图。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://blog.csdn.net/weixin_53077062/article/details/140233400",
+          "title": "安驾光感脚踢方案技术摘要",
+          "source_name": "CSDN（初始证据摘要）",
+          "snippet": "安驾光感脚踢方案通过智能电动尾门模块与原车BCM、KESSY协议协同工作。"
+        },
+        {
+          "url": "http://www.52solution.com/facs/7814",
+          "title": "脚踢传感器 - 电子方案详情_我爱方案网",
+          "source_name": "我爱方案网",
+          "snippet": "产品功能包括脚踢动作检测功能、脚踢开关信号硬线输出、脚踢开关信号LIN总线输出、系统诊断功能。"
+        },
+        {
+          "url": "https://www.sohu.com/a/785936895_121630056",
+          "title": "汽车尾门脚踢传感器市场现状及未来发展趋势报告2024年_搜狐汽车",
+          "source_name": "搜狐汽车",
+          "snippet": "脚踢传感器感应脚踢动作，通过ECU向尾门电动撑杆和尾门自吸锁发出指令，执行尾门的自动开关动作。"
+        }
+      ],
+      "reasoning": "“协同工作”及硬线/LIN/ECU控制资料支持存在电信号连接的常规实现；但KS32未公开接线图或端口定义，不能明确满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+      "competitor_feature": "KS32商品名直接指向“汽车尾门/后备箱”脚踢传感器；安驾摘要称微波/毫米波感应携带钥匙用户；同类尾箱脚踢开关网页说明微波模块位于汽车尾部，检测人体脚部动作，检测距离约30cm。KS32自身未直接公开“距离信息”参数。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://detail.1688.com/offer/821120630933.html",
+          "title": "适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装-阿里巴巴",
+          "source_name": "1688/阿里巴巴（Bocha搜索摘要）",
+          "snippet": "商品为“适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装”，货号KS32。"
+        },
+        {
+          "url": "https://blog.csdn.net/weixin_53077062/article/details/140233400",
+          "title": "安驾光感脚踢方案技术摘要",
+          "source_name": "CSDN（初始证据摘要）",
+          "snippet": "利用微波/毫米波感应携带智能钥匙的用户，并通过光学投影显示。"
+        },
+        {
+          "url": "http://www.lshzn.cn/product/27.html",
+          "title": "汽车尾箱脚踢开关ATF102K-广东省蓝水花智能电子有限公司",
+          "source_name": "蓝水花智能电子",
+          "snippet": "通过位于汽车尾部的一个微波感应模块来探测人体脚部的动作；检测距离约30 cm。"
+        }
+      ],
+      "reasoning": "产品定位在尾门/后备箱；微波/毫米波感应通常可获得目标接近/距离，且同类产品公开30cm检测距离。KS32专属距离参数缺失，故为可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+      "competitor_feature": "安驾摘要称方案与原车KESSY协议协同并感应携带智能钥匙的用户；行业资料称需携带与车辆匹配的钥匙到后备箱处才能开启。可对应车辆钥匙感应单元和后部钥匙探测链路，但未见KS32/安驾公开探测天线位置或钥匙模块结构。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://blog.csdn.net/weixin_53077062/article/details/140233400",
+          "title": "安驾光感脚踢方案技术摘要",
+          "source_name": "CSDN（初始证据摘要）",
+          "snippet": "安驾光感脚踢方案通过智能电动尾门模块与原车BCM、KESSY协议协同工作，利用微波/毫米波感应携带智能钥匙的用户。"
+        },
+        {
+          "url": "https://www.sohu.com/a/785936895_121630056",
+          "title": "汽车尾门脚踢传感器市场现状及未来发展趋势报告2024年_搜狐汽车",
+          "source_name": "搜狐汽车",
+          "snippet": "只要携带与汽车产品匹配的钥匙走到后备箱处，用脚前后方向踢扫杠下传感器位置，即可开启后备箱。"
+        },
+        {
+          "url": "https://m.ikanchai.com/pcarticle/437409",
+          "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+          "source_name": "砍柴网",
+          "snippet": "当车主带着车钥匙到达车尾部时车辆会自动感知，并通过MLA光学投影技术在地面投射出logo图案。"
+        }
+      ],
+      "reasoning": "KESSY/匹配钥匙资料支持与原车智能钥匙识别联动；但证据未直接给出KS32含钥匙感应单元或后备箱探测天线，故只能可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+      "competitor_feature": "安驾摘要称其与智能电动尾门模块、BCM/KESSY协同；同类脚踢传感器网页说明探测脚部动作后输出电平信号，从而控制后备箱开启/关闭；行业资料称ECU向电动撑杆和自吸锁发指令。可对应控制单元判断并驱动启动部件，但KS32控制器内部组成未公开。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://blog.csdn.net/weixin_53077062/article/details/140233400",
+          "title": "安驾光感脚踢方案技术摘要",
+          "source_name": "CSDN（初始证据摘要）",
+          "snippet": "安驾光感脚踢方案通过智能电动尾门模块与原车BCM、KESSY协议协同工作。"
+        },
+        {
+          "url": "http://www.lshzn.cn/product/27.html",
+          "title": "汽车尾箱脚踢开关ATF102K-广东省蓝水花智能电子有限公司",
+          "source_name": "蓝水花智能电子",
+          "snippet": "根据探测结果输出相应的电平信号，从而实现控制汽车后备箱开启或关闭的功能。"
+        },
+        {
+          "url": "https://www.sohu.com/a/785936895_121630056",
+          "title": "汽车尾门脚踢传感器市场现状及未来发展趋势报告2024年_搜狐汽车",
+          "source_name": "搜狐汽车",
+          "snippet": "脚踢传感器感应脚踢动作，通过ECU向尾门电动撑杆和尾门自吸锁发出指令，执行尾门的自动开关动作。"
+        }
+      ],
+      "reasoning": "感应结果输出到尾门模块/ECU并驱动撑杆、锁具开启的链路公开充分；但KS32未公开“启动单元/控制单元”划分，故为可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+      "competitor_feature": "KS32商品名含“AR光感脚踢传感器”和“后备箱投影灯感应开关”；安驾摘要称有光学投影和微波/毫米波感应。公开AR智能投影尾门技术显示：在车尾地面投射logo，脚踩投影时由TOF模组检测并发指令，投影距车尾390-400mm。KS32未直接公开TOF/测距方式及两单元均位于后备箱下方朝地。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://detail.1688.com/offer/821120630933.html",
+          "title": "适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装-阿里巴巴",
+          "source_name": "1688/阿里巴巴（Bocha搜索摘要）",
+          "snippet": "货号KS32，商品名为“汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装”。"
+        },
+        {
+          "url": "https://blog.csdn.net/weixin_53077062/article/details/140233400",
+          "title": "安驾光感脚踢方案技术摘要",
+          "source_name": "CSDN（初始证据摘要）",
+          "snippet": "利用微波/毫米波感应携带智能钥匙的用户，并通过光学投影显示。"
+        },
+        {
+          "url": "https://www.citysz.net/qiche/2021/0317/202121383.html",
+          "title": "“一脚踢”中看不中用 这项黑科技颠覆你对智能尾门的认知_深圳都市网",
+          "source_name": "深圳都市网",
+          "snippet": "通过MLA光学投影技术在车尾处地面上投射一个图案，当用户脚踩在上面时，经TOF模组准确检测并发出指令。"
+        },
+        {
+          "url": "https://m.ikanchai.com/pcarticle/437409",
+          "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+          "source_name": "砍柴网",
+          "snippet": "通过MLA光学投影技术在地面投射出logo图案，车主只需轻轻一踩，经TOF模组准确检测并发出指令；logo图案投射距离车尾390-400mm。"
+        }
+      ],
+      "reasoning": "KS32直接声称投影灯+脚踢/光感；同类AR投影尾门用地面投影和TOF检测脚踩。KS32缺测距单元、安装朝向细节，故非明确满足。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 80.0,
+  "searched_queries": [
+    "佛山市安驾科技有限公司 汽车尾门AR光感脚踢传感器 KS32；汽车后备箱投影灯感应开关加装款 规格书 参数",
+    "佛山市安驾科技有限公司 汽车尾门AR光感脚踢传感器 KS32；汽车后备箱投影灯感应开关加装款 说明书 PDF"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

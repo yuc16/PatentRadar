@@ -1,0 +1,661 @@
+{
+  "candidate": {
+    "candidate_id": "P06",
+    "company": "凯迪拉克（通用汽车）",
+    "company_en": "Cadillac / General Motors",
+    "product_name": "免手动电动尾门（带标志投影）",
+    "product_name_en": "Hands-Free Power Liftgate with logo projection",
+    "product_version": "标志投影+可编程开启高度版本",
+    "market": "通用汽车凯迪拉克品牌SUV/跨界车电动尾门配置；需核查中国在售车型配置表",
+    "reason_for_deep_dive": "公开摘要显示其以Logo投影提示脚踢区域并由保险杠下方脚部动作控制电动尾门，具备权利要求1最关键的C1-F6“投影单元+脚部检测”线索；下游应进一步锁定中国销售车型、车尾投影器/传感器位置和智能钥匙天线认证逻辑。",
+    "source_result_ids": [
+      "exa-Q12-05"
+    ],
+    "source_urls": [
+      "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+    ],
+    "initial_evidence_summary": "凯迪拉克支持页摘要显示：Hands-Free Power Liftgate with logo projection and programmable height lets you open and close your liftgate with a simple kicking motion below the bumper；部分车辆地面会出现发光Logo投影以显示踢脚位置。"
+  },
+  "launch_date": "未明确（公开证据至少显示2018款凯雷德已有脚踢电尾门；带Logo投影的XT6公开说明见2025年4月）",
+  "launch_date_evidence": [
+    {
+      "url": "http://d.okeycar.com/waiguan/14041.html",
+      "title": "美规2018款 凯迪拉克凯雷德电尾门-平行进口车配置",
+      "source_name": "进口车市",
+      "snippet": "美规2018款 凯迪拉克凯雷德电尾门……电尾门属于美规2018款 凯迪拉克凯雷德标配内的配置……只需将脚放在保险杠中央下方，即可打开和关闭举升门。"
+    },
+    {
+      "url": "https://www.bitauto.com/ask/100319653468",
+      "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+      "source_name": "BitAuto",
+      "snippet": "Apr 19, 2025……部分凯迪拉克XT6车型还配备了“一脚踢”功能，即车尾“一脚踢”位置灯光……在地面照射出一个凯迪拉克车标形状的投影。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未发现该带Logo投影免手动电动尾门早于专利申请日2014-07-31上市的证据；现有明确车型年份/公开说明均不早于2018或未标明首次上市时间。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；\n所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；\n所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；\n所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；\n后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；\n所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "凯迪拉克免手动电动尾门包含：用于采集脚踢动作/位置的保险杠下方传感与Logo投影功能；key fob智能钥匙；以及Power Liftgate/举升门控制模块用于开启、关闭举升门。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Available Hands-Free Power Liftgate with logo projection……lets you open and close your liftgate with a simple kicking motion below the bumper. Approach the liftgate with your key fob."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……无钥匙进入控制模块……举升门控制模块；2025 凯迪拉克 XT5……尾门模块。"
+            }
+          ],
+          "reasoning": "Cadillac官方页同时披露key fob、Logo投影/脚踢传感和电动举升门；Xtool功能表列有无钥匙进入控制模块、举升门控制模块，可对应信息采集模块、智能钥匙模块、后备箱控制模块三类组成。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "官方操作逻辑为携带key fob接近后，Logo投影自动点亮；脚踢传感后举升门开启。Xtool列出无钥匙进入控制模块与举升门控制模块，但现有证据未直接公开线束、总线或模块间电连接拓扑。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Approach the liftgate with your key fob. The logo projection will automatically turn on as you get within 6 feet……Kick straight over the logo……The liftgate will open."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……无钥匙进入控制模块……举升门控制模块……读取数据流、动作测试。"
+            }
+          ],
+          "reasoning": "功能上钥匙识别和脚踢传感共同决定举升门动作，且车辆诊断表列相关控制模块；但证据未直接给出信息采集模块、智能钥匙模块与举升门控制模块的电气连接/通信拓扑，故仅能严谨推定为可能满足。",
+          "suggested_followup_queries": [
+            "Cadillac hands free liftgate wiring diagram keyless entry control module liftgate control module foot sensor",
+            "凯迪拉克 XT6 一脚踢 电尾门 线路图 无钥匙进入模块 举升门控制模块",
+            "GM hands free liftgate logo projection service manual control module schematic"
+          ]
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "脚踢传感区域位于车尾保险杠下方/车辆下侧；官方要求脚部踢向车辆下侧并在保险杠5英寸内，钥匙需在车辆3英尺内，Logo在车尾6英尺内点亮。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "a simple kicking motion below the bumper……come within 5 inches of the bumper……Make sure that your key fob is within 3 feet of your vehicle."
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100319653468",
+              "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "车尾“一脚踢”位置灯光……位于后保险杠下方……只需脚踢到地面影射出的车标，即可完成尾门的感应式开关。"
+            }
+          ],
+          "reasoning": "Cadillac页给出传感/触发距离阈值和后保险杠下方位置；BitAuto亦说明XT6脚踢位置灯位于后保险杠下方，可获取用户脚部相对车尾距离/位置。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "用户需携带key fob接近举升门；钥匙在车尾6英尺范围触发Logo投影，在3英尺内允许免手动尾门操作。现有证据未直接公开设置在后备箱区域的探测天线实体或零件位置。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Approach the liftgate with your key fob. The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle……Make sure that your key fob is within 3 feet of your vehicle."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……无钥匙进入控制模块……读取数据流……动作测试。"
+            }
+          ],
+          "reasoning": "后方局部距离内识别key fob，说明钥匙内有被识别单元且车辆后部存在检测/接收硬件；但网页未字面披露“后备箱探测天线”，故为可能满足。",
+          "suggested_followup_queries": [
+            "Cadillac XT6 rear compartment keyless entry antenna hands free liftgate",
+            "GM passive entry liftgate rear antenna key fob hands free power liftgate service manual",
+            "凯迪拉克 XT6 后备箱 无钥匙 天线 位置 一脚踢"
+          ]
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "电动举升门在检测到符合要求的脚踢动作后开启/关闭；系统会闪灯、鸣响，并可设置开启高度。Xtool列举升门控制模块/尾门模块支持数据流与动作测试。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Kick straight over the logo……The liftgate will open……You can also use a kicking motion to close the liftgate……After a 2-second delay, the rear lights will flash and a chime will sound."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……举升门控制模块……读取数据流、动作测试；2025 凯迪拉克 XT5……尾门模块。"
+            }
+          ],
+          "reasoning": "官方页直接说明脚踢传感触发电动举升门开闭；诊断表确认存在举升门/尾门控制模块，电动开闭必然包含执行启动部件。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "Logo projection在地面投射标志指示脚踢位置；用户需kick straight over the logo/向车辆下侧踢，脚部须到保险杠5英寸内；BitAuto称投影灯位于后保险杠下方并在地面投射车标。现有证据未直接说明传感器测量“脚部到投影图像”的距离。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "an illuminated logo projection will appear on the ground to show you where to kick……Kick straight over the logo……come within 5 inches of the bumper……Kick directly toward the underside of your vehicle."
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100319653468",
+              "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "车尾“一脚踢”位置灯光……位于后保险杠下方，可以在地面照射出一个凯迪拉克车标形状的投影。只需脚踢到地面影射出的车标，即可完成尾门的感应式开关。"
+            }
+          ],
+          "reasoning": "证据明确有向地面投射Logo的单元和后保险杠下方脚踢传感区，并有5英寸距离阈值；但未字面披露“测量脚部到投影图像距离”的距离检测单元，故为可能满足。",
+          "suggested_followup_queries": [
+            "Cadillac logo projection hands free liftgate foot sensor distance measurement",
+            "GM hands free liftgate logo projection kick sensor bumper sensor projector module teardown",
+            "凯迪拉克 标志投影 一脚踢 传感器 投影灯 保险杠 下方 拆解"
+          ]
+        }
+      ],
+      "claim_score": 90.0
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+          "competitor_feature": "现有证据仅显示凯迪拉克有illuminated logo projection/车标形状投影，BitAuto称“位置灯光”位于后保险杠下方；未公开该投影单元是否为激光投影仪，可能也可能是LED/投影灯组件。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "an illuminated logo projection will appear on the ground to show you where to kick."
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100319653468",
+              "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "车尾“一脚踢”位置灯光……位于后保险杠下方，可以在地面照射出一个凯迪拉克车标形状的投影。"
+            }
+          ],
+          "reasoning": "“投射Logo/位置灯光”能够证明存在投影功能，但不能证明光源或投影器类型是“激光投影仪”。无直接规格、维修手册或零件资料支持。",
+          "suggested_followup_queries": [
+            "Cadillac hands-free liftgate logo projection laser projector GM service manual",
+            "凯迪拉克 一脚踢 logo投影 激光投影仪 投影灯 供应商"
+          ]
+        },
+        {
+          "feature_id": "C2-F2",
+          "patent_feature": "所述距离检测单元为直线距离传感器",
+          "competitor_feature": "官方说明脚踢应在保险杠下方进行并接近保险杠5英寸内，但没有披露传感器类型；无法确认其为直线距离传感器、ToF、超声、红外、雷达或电容式脚踢传感器。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Kick straight over the logo……come within 5 inches of the bumper……Kick directly toward the underside of your vehicle."
+            }
+          ],
+          "reasoning": "5英寸阈值说明存在某种脚部位置/动作检测，但不能直接推导出“直线距离传感器”这一具体硬件类型。",
+          "suggested_followup_queries": [
+            "Cadillac hands-free liftgate logo projection straight line distance sensor foot sensor",
+            "GM hands free liftgate foot sensor time-of-flight distance sensor logo projection"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+          "competitor_feature": "Xtool列出凯迪拉克XT6存在无钥匙进入控制模块、举升门控制模块，可读取数据流/动作测试；官方说明携带key fob接近后Logo投影点亮，脚踢后liftgate opens。未直接公开一个ECU同时接收脚踢传感与钥匙信息的控制框图。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Approach the liftgate with your key fob……Kick straight over the logo……The liftgate will open."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……无钥匙进入控制模块……举升门控制模块……读取数据流、动作测试。"
+            }
+          ],
+          "reasoning": "电动尾门按钥匙接近和脚踢动作共同触发开启，结合诊断资料中的举升门控制模块，可合理推定存在电控单元处理相关输入并控制尾门；但缺少直接的系统架构/维修手册证明。",
+          "suggested_followup_queries": [
+            "Cadillac XT6 hands free liftgate control module key fob kick sensor inputs service manual"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+          "competitor_feature": "官方称该配置为Power Liftgate，可通过脚踢打开和关闭举升门；这通常需要电动执行器/电机驱动尾门，但现有证据未明确公开电机或执行器安装在后备箱的具体位置。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "lets you open and close your liftgate with a simple kicking motion below the bumper……The liftgate will open."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……举升门控制模块……动作测试。"
+            }
+          ],
+          "reasoning": "“Power Liftgate”直接指向电动尾门，开启/关闭需要执行器；但从属限定要求“开启电机安装在车辆后备箱”，目前证据没有维修图或零件位置，故为可能满足。",
+          "suggested_followup_queries": [
+            "Cadillac XT6 power liftgate motor actuator location service manual",
+            "凯迪拉克 XT6 电动举升门 电机 执行器 安装位置 维修手册"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：\n步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；\n步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；\n步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+          "competitor_feature": "官方说明用户携带key fob接近举升门，进入车尾6英尺范围Logo投影会自动点亮；使用时key fob需在车辆3英尺内。该行为体现了从远至近的钥匙接近检测，但未公开“位置变化信息反馈到后备箱控制模块”的内部信号。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Approach the liftgate with your key fob. The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle……Make sure that your key fob is within 3 feet of your vehicle."
+            }
+          ],
+          "reasoning": "6英尺自动点亮、3英尺内可操作均说明系统检测key fob接近车辆尾部；但内部反馈信号路径未公开，故为可能满足。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate key fob approach detection logo projection within 6 feet technical"
+          ]
+        },
+        {
+          "feature_id": "C5-F2",
+          "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+          "competitor_feature": "官方说明脚需在Logo上方直踢并接近保险杠5英寸内，BitAuto说明脚踢到地面车标投影即可完成尾门感应开关；这表明系统采集脚部相对车尾/投影区域的位置状态，但未公开反馈到后备箱控制模块的内部信号。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Kick straight over the logo……come within 5 inches of the bumper……Kick directly toward the underside of your vehicle."
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100319653468",
+              "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "只需脚踢到地面影射出的车标，即可完成尾门的感应式开关。"
+            }
+          ],
+          "reasoning": "5英寸阈值和“脚踢到地面投影车标”能够支持采集脚与后备箱/投影区域距离状态；但缺少模块间信号描述。",
+          "suggested_followup_queries": [
+            "Cadillac logo projection kick sensor detects foot distance within 5 inches technical description"
+          ]
+        },
+        {
+          "feature_id": "C5-F3",
+          "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+          "competitor_feature": "官方逻辑为：携带key fob接近，Logo投影自动出现；按要求在Logo上方脚踢后，liftgate will open。Xtool列有举升门控制模块。未直接公开控制模块分析判断流程。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Approach the liftgate with your key fob……Kick straight over the logo……The liftgate will open."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……举升门控制模块……读取数据流、动作测试。"
+            }
+          ],
+          "reasoning": "尾门开启需要同时满足钥匙接近和脚踢动作，且存在举升门控制模块，可推定控制模块进行判断并控制开启；但内部控制方法未字面披露。",
+          "suggested_followup_queries": [
+            "GM hands free power liftgate control logic key fob kick sensor liftgate opens"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，\n当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元",
+          "competitor_feature": "官方说明key fob接近车辆尾部6英尺内Logo投影自动点亮、3英尺内可操作，Xtool列无钥匙进入控制模块和举升门控制模块；未公开后备箱探测天线、钥匙感应单元以及向电控单元反馈的具体路径。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Approach the liftgate with your key fob. The logo projection will automatically turn on as you get within 6 feet……Make sure that your key fob is within 3 feet of your vehicle."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGCADILLAC/PS_ZGCADILLAC_V17_10_CN.pdf",
+              "title": "中国凯迪拉克功能表 V17.10",
+              "source_name": "Xtooltech",
+              "snippet": "2025 凯迪拉克 XT6……无钥匙进入控制模块……举升门控制模块。"
+            }
+          ],
+          "reasoning": "被动钥匙接近检测通常需要车载天线/接收器与钥匙交互；官方的车尾距离触发逻辑支持该推断，但尚未看到后尾门天线和反馈路径的直接资料。",
+          "suggested_followup_queries": [
+            "Cadillac rear liftgate passive entry antenna detects key fob approach service manual"
+          ]
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+          "competitor_feature": "官方说明只有携带key fob接近并进入车尾范围时Logo投影自动点亮，并且脚踢开启要求key fob在3英尺内；若钥匙不在范围内则不会进入后续脚踢开启状态。未公开“返回重新检测/进入S2”的软件流程图。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Approach the liftgate with your key fob. The logo projection will automatically turn on as you get within 6 feet……Make sure that your key fob is within 3 feet of your vehicle."
+            }
+          ],
+          "reasoning": "自动点亮与钥匙距离条件反映系统在持续监测钥匙接近状态；但没有公开软件循环或状态机，故为可能满足。",
+          "suggested_followup_queries": [
+            "GM passive entry liftgate logo projection approach detection no key no activation logic"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+          "competitor_feature": "官方说明携带key fob接近车尾6英尺内时Logo projection会自动点亮；但未公开该投影单元为激光投影仪，也未公开电控单元发送“脉冲信号”开启投影仪。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle."
+            }
+          ],
+          "reasoning": "证据仅覆盖“接近后投影自动点亮”这一外部行为；激光投影仪类型和脉冲控制信号均属于内部硬件/控制细节，现有证据不足。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate logo projector activation signal pulse control module"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)",
+          "competitor_feature": "证据显示凯迪拉克Logo投影会出现在地面，用户在Logo上方脚踢；但没有公开激光投影仪、直线距离传感器、实时检测投射实际距离D、D1至Dn序列或向电控单元反馈D值。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "an illuminated logo projection will appear on the ground to show you where to kick……Kick straight over the logo."
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100319653468",
+              "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "可以在地面照射出一个凯迪拉克车标形状的投影。只需脚踢到地面影射出的车标，即可完成尾门的感应式开关。"
+            }
+          ],
+          "reasoning": "已有资料仅证明地面投影和脚踢目标区域；专利中的D值实时测距流程属于更细的软件/传感器算法，未见公开证据。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate logo projection distance D sensor algorithm foot over logo"
+          ]
+        },
+        {
+          "feature_id": "C8-F2",
+          "patent_feature": "设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+          "competitor_feature": "现有公开资料没有披露凯迪拉克系统设定投射距离基准值C，也没有披露以检测距离最大值Di作为C的校准算法。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "an illuminated logo projection will appear on the ground to show you where to kick."
+            }
+          ],
+          "reasoning": "Logo投影存在不等于存在C＝Di的距离基准值设定；当前证据完全缺少该算法细节。",
+          "suggested_followup_queries": [
+            "Cadillac hands free liftgate logo projection calibration baseline maximum distance sensor"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+          "competitor_feature": "凯迪拉克官方仅说明脚需在Logo上方直踢并接近保险杠5英寸内；未公开C、D距离变量，也未公开≤1cm阈值用于判断脚未放在影像上。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Kick straight over the logo……come within 5 inches of the bumper."
+            }
+          ],
+          "reasoning": "5英寸操作提示不能推导出1cm算法阈值；现有资料没有直线距离传感器和C/D差值判断。",
+          "suggested_followup_queries": [
+            "Cadillac logo projection foot sensor algorithm 1 cm no foot detected"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+          "competitor_feature": "官方说明Logo projection会在接近时自动点亮；但未公开C与D差值≤1cm、持续t1秒、或基于该状态熄灭投影影像的控制逻辑。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle."
+            }
+          ],
+          "reasoning": "自动点亮不能证明按C/D差值和t1计时熄灭；激光投影仪类型亦未被证明。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate logo projection turns off after no foot detected t1 seconds"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：\n当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；\n当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上",
+          "competitor_feature": "现有证据表明用户需在地面Logo投影上方进行脚踢动作，但没有公开直线距离传感器、C/D差值，也没有公开>1cm且<8cm作为脚落在影像上的判断阈值。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Kick straight over the logo……Kick directly toward the underside of your vehicle."
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100319653468",
+              "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "只需脚踢到地面影射出的车标，即可完成尾门的感应式开关。"
+            }
+          ],
+          "reasoning": "“脚踢到/越过Logo投影”仅支持操作区域；不能证明1至8cm的距离差阈值算法。",
+          "suggested_followup_queries": [
+            "hands-free liftgate logo projection foot detected 1 cm 8 cm distance threshold"
+          ]
+        },
+        {
+          "feature_id": "C11-F2",
+          "patent_feature": "当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+          "competitor_feature": "凯迪拉克公开说明未披露C与D差值≥8cm时返回钥匙检测S1的流程；仅有脚踢动作不当可能无法触发尾门的操作提示。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Do not sweep your foot from side to side or step on the logo projection……Kick directly toward the underside of your vehicle."
+            }
+          ],
+          "reasoning": "操作提示说明某些动作无效，但未给出8cm阈值或返回S1重新检测的状态机。",
+          "suggested_followup_queries": [
+            "Cadillac hands-free liftgate logo projection distance threshold 8 cm restart detection"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 12,
+      "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C12-F1",
+          "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测",
+          "competitor_feature": "官方说明在Logo上方正确脚踢后，举升门会开启；并提到2秒延迟后尾灯闪烁且chime响起。该证据仅部分对应“提示音/延迟/开启”，未公开人脚落在影像上的C/D阈值、持续t2秒判断或失败后返回S1。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Cadillac",
+              "source_name": "Cadillac官方支持",
+              "snippet": "Kick straight over the logo……The liftgate will open……After a 2-second delay, the rear lights will flash and a chime will sound."
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100319653468",
+              "title": "凯迪拉克xt6尾门感应如何用 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "只需脚踢到地面影射出的车标，即可完成尾门的感应式开关。"
+            }
+          ],
+          "reasoning": "2秒延迟与chime是有价值的部分线索，但专利从属特征还要求1至8cm持续时间判断及返回S1逻辑；现有公开资料不足以确认。",
+          "suggested_followup_queries": [
+            "Cadillac hands free liftgate chime 2 second delay foot over logo control algorithm"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 90.0,
+  "total_score": 90.0,
+  "searched_queries": [
+    "凯迪拉克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 规格书 参数",
+    "凯迪拉克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 说明书 PDF"
+  ],
+  "searched_providers": [
+    "exa"
+  ]
+}

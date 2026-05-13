@@ -1,0 +1,846 @@
+{
+  "publication_no": "CN105335144B",
+  "claim_1_summary": "权利要求1涉及一种车辆后备箱自动开启控制系统：后备箱处的信息采集模块获取用户与后备箱距离，智能钥匙模块通过钥匙感应单元和后备箱探测天线进行识别，后备箱控制模块据此判断并启动后备箱；信息采集模块进一步包括设置在后备箱下方、朝向地面的投影单元，以及测量脚部到投影图像距离的距离检测单元。",
+  "applicant_self_signals": {
+    "domains": [
+      "byd.com",
+      "bydglobal.com",
+      "bydauto.com.cn",
+      "bydautomotive.com",
+      "bydelectronics.com",
+      "byd-it.com",
+      "bydenergy.com",
+      "fdb.com.cn",
+      "fdoi.com"
+    ],
+    "aliases": [
+      "比亚迪",
+      "比亚迪股份有限公司",
+      "比亚迪汽车",
+      "比亚迪集团",
+      "比亚迪股份",
+      "BYD",
+      "BYD Co Ltd",
+      "BYD Company",
+      "BYD Auto",
+      "Build Your Dreams",
+      "弗迪",
+      "弗迪电池",
+      "弗迪动力",
+      "弗迪科技",
+      "弗迪视觉",
+      "弗迪精工",
+      "FinDreams",
+      "Fudi",
+      "FinDreams Battery",
+      "FinDreams Powertrain",
+      "腾势",
+      "腾势汽车",
+      "Denza",
+      "仰望",
+      "仰望汽车",
+      "Yangwang",
+      "方程豹",
+      "Fangchengbao",
+      "Formula Leopard",
+      "DiLink",
+      "迪链",
+      "DiPilot",
+      "云辇",
+      "易四方"
+    ]
+  },
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "地面投影 脚部距离检测 自动后备箱",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "后备箱下方 投影单元 距离检测 脚踢开启",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "智能钥匙 探测天线 后备箱 自动开启",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "投影图像 脚踢感应 电动尾门 控制",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "车尾地面投影 感应后备箱 脚部识别",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "脚踢传感器 智能钥匙 电动尾门 开启",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "迎宾投影灯 脚踢感应 电动尾门",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "虚拟踏板 感应尾门 智能钥匙",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "免手动 感应尾门 踢脚 车型",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "脚踢式感应尾门 车标投影 车型",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q11",
+      "query": "projected image foot distance sensor automatic trunk",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q12",
+      "query": "under bumper projector foot sensor liftgate",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q13",
+      "query": "smart key antenna hands-free trunk sensor",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F4",
+        "C1-F5"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q14",
+      "query": "hands-free liftgate logo projection kick sensor",
+      "intent": "market_name",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q15",
+      "query": "virtual pedal power tailgate smart key",
+      "intent": "market_name",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q16",
+      "query": "脚踢感应尾门 传感器 规格书 PDF",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q17",
+      "query": "电动尾门 脚踢传感器 参数表",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q18",
+      "query": "智能尾门 控制器 脚踢感应 规格书",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q19",
+      "query": "电动尾门 感应模块 迎宾投影 规格",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q20",
+      "query": "hands-free tailgate kick sensor datasheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q21",
+      "query": "capacitive kick sensor power liftgate datasheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q22",
+      "query": "power tailgate foot sensor spec sheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q23",
+      "query": "Huf Hands Free Access tailgate sensor datasheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q24",
+      "query": "Brose Smart Comfort Access liftgate sensor",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q25",
+      "query": "Continental hands-free trunk access foot sensor",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q26",
+      "query": "Valeo smart access tailgate foot sensor",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q27",
+      "query": "科世达 脚踢感应 尾门 传感器",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q28",
+      "query": "海拉 感应后备箱 脚踢传感器",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q29",
+      "query": "霍富 Hands Free Access 感应尾门 中国",
+      "intent": "industry_company",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q30",
+      "query": "博泽 智能舒适进入 电动尾门 中国",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q31",
+      "query": "上汽大众 途昂 Easy Open 感应后备箱",
+      "intent": "industry_company",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q32",
+      "query": "大众 途观L 脚踢感应尾门 配置",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q33",
+      "query": "福特 锐界 脚踢式 电动尾门",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q34",
+      "query": "林肯 冒险家 感应式 电动尾门",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q35",
+      "query": "别克 昂科威S 脚踢感应尾门",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q36",
+      "query": "吉利 星越L 感应电动尾门 配置",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q37",
+      "query": "领克09 感应式电动尾门 用户手册",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q38",
+      "query": "哈弗H6 脚踢感应尾门 配置表",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q39",
+      "query": "奇瑞 瑞虎8 脚踢感应尾门 配置",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q40",
+      "query": "广汽传祺 GS8 脚踢感应尾门",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q41",
+      "query": "长安 CS75 PLUS 脚踢感应尾门",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q42",
+      "query": "蔚来 ES6 感应尾门 脚踢",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q43",
+      "query": "理想 L9 感应尾门 脚踢 配置",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q44",
+      "query": "小鹏 G9 感应电动尾门 用户手册",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q45",
+      "query": "问界 M7 感应尾门 脚踢",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q46",
+      "query": "脚踢感应尾门 拆解 传感器",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q47",
+      "query": "电动尾门 踢脚传感器 拆解",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q48",
+      "query": "hands-free liftgate kick sensor teardown",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q49",
+      "query": "感应式电动尾门 首发 量产 车型",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q50",
+      "query": "foot activated liftgate launch China vehicle",
+      "intent": "launch_date",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    }
+  ]
+}

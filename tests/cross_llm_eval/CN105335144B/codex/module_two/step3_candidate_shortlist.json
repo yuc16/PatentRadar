@@ -1,0 +1,157 @@
+{
+  "publication_no": "CN105335144B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "北醒（北京）光子科技有限公司",
+      "company_en": "Benewake (Beijing) Co., Ltd.",
+      "product_name": "AR光影感应后尾门",
+      "product_name_en": "AR light-sensing rear tailgate",
+      "product_version": "光感（激光）脚踢方案；单点激光雷达+AR投影/可见光指示模块，模块体积35×21.25×13.5 mm³",
+      "market": "中国汽车电动尾门/后备箱免接触开启前装或方案市场",
+      "reason_for_deep_dive": "高度贴合权利要求1的C1-F3/C1-F5/C1-F6：方案明确安装于后备箱，AR投影在地面形成光标/标识，单点激光雷达通过距离等特征值变化判断用户是否踩踏光标，并与整车系统配合实现尾门开关；下游需继续核查其是否包含或调用智能钥匙探测天线/钥匙认证模块以覆盖C1-F4。",
+      "source_result_ids": [
+        "tavily-Q04-01",
+        "brave-Q04-01",
+        "tavily-Q04-03"
+      ],
+      "source_urls": [
+        "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+        "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+        "https://zhuanlan.zhihu.com/p/11492037060"
+      ],
+      "initial_evidence_summary": "官方/转载摘要显示：单点激光雷达搭载AR投影/可见光指示模块，集成智能感应设备，可安装于后备箱；激光雷达光斑与AR投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标，与整车系统配合实现AR投影、踩踏检测及尾门开关功能。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "一数科技",
+      "company_en": "ASU Tech / ASU",
+      "product_name": "ASU AR智能投影尾门开关",
+      "product_name_en": "ASU AR smart projection tailgate switch",
+      "product_version": "MLA光学投影+TOF模组版本；地面Logo投射距离约390–400 mm，识别率宣称高于99%",
+      "market": "中国汽车智能尾门前装配套/智能尾门开关系统市场",
+      "reason_for_deep_dive": "该产品直接围绕“车尾地面投影+脚部踩踏/距离检测+尾门自动开启”设计，重点对应C1-F6的投影单元和脚部到投影图像检测，以及C1-F5的尾门控制触发；摘要还提到车主携带车钥匙到达车尾时车辆自动感知，值得核查其智能钥匙模块和后部天线配置以覆盖C1-F4。",
+      "source_result_ids": [
+        "brave-Q04-03",
+        "brave-Q04-04",
+        "brave-Q04-05",
+        "brave-Q10-03",
+        "tavily-Q10-04"
+      ],
+      "source_urls": [
+        "https://chejiahao.autohome.com.cn/info/8381324",
+        "http://m.ikanchai.com/pcarticle/437409",
+        "https://www.xchuxing.com/article/31514",
+        "https://www.xchuxing.com/article/41896",
+        "https://m.ikanchai.com/pcarticle/437409"
+      ],
+      "initial_evidence_summary": "摘要显示一数科技推出“ASU AR智能投影尾门开关”，当车主带钥匙到达车尾部时车辆自动感知，并通过MLA光学投影技术在地面投射Logo图案；用户轻踩后，经TOF模组检测并发出指令，尾门在安全距离下自动打开；投射距离约390–400 mm，识别率宣称高于99%，并称已在一汽奔腾、东风风神产品上搭载。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "佛山市安驾科技有限公司",
+      "company_en": "Foshan Anjia Technology Co., Ltd.",
+      "product_name": "汽车尾门AR光感脚踢传感器",
+      "product_name_en": "AR light-sensing kick sensor for automotive tailgate",
+      "product_version": "KS32；汽车后备箱投影灯感应开关加装款",
+      "market": "中国汽车电动尾门后装/改装配件市场",
+      "reason_for_deep_dive": "该1688商品明确同时具备“AR光感脚踢传感器”和“后备箱投影灯感应开关”，形态上接近C1-F6的投影图像+脚部检测；若其控制器与电动尾门/智能钥匙联动，则可能进一步覆盖C1-F1至C1-F5，适合下游围绕KS32规格书、安装说明、控制逻辑深挖。",
+      "source_result_ids": [
+        "bocha-Q05-01",
+        "brave-Q04-02"
+      ],
+      "source_urls": [
+        "https://detail.1688.com/offer/821120630933.html",
+        "https://blog.csdn.net/weixin_53077062/article/details/140233400"
+      ],
+      "initial_evidence_summary": "1688摘要显示供应商为佛山市安驾科技有限公司，品牌安驾科技，货号KS32，商品为“适用于汽车尾门AR光感脚踢传感器汽车后备箱投影灯感应开关加装”。另有技术摘要称安驾光感脚踢方案通过智能电动尾门模块与原车BCM、KESSY协议协同工作，利用微波/毫米波感应携带智能钥匙的用户，并通过光学投影显示。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "雪佛兰（通用汽车）",
+      "company_en": "Chevrolet / General Motors",
+      "product_name": "免手动电动尾门（带标志投影）",
+      "product_name_en": "Hands-Free Power Liftgate with logo projection",
+      "product_version": "标志投影+可编程开启高度版本；接近车尾约6英尺自动点亮投影标识",
+      "market": "通用汽车品牌SUV/跨界车电动尾门配置；需核查中国在售车型配置表",
+      "reason_for_deep_dive": "摘要明确有地面Logo投影用于指示踢脚位置，并通过保险杠下方踢脚动作开启/关闭尾门，对应C1-F6的投影图像和脚部检测，以及C1-F5的尾门控制；还需下游核查中国市场具体车型、智能钥匙认证和尾门下方传感器/投影器布置。",
+      "source_result_ids": [
+        "tavily-Q12-01",
+        "brave-Q14-05"
+      ],
+      "source_urls": [
+        "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+        "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+      ],
+      "initial_evidence_summary": "雪佛兰支持页摘要显示：Hands-Free Power Liftgate with logo projection and programmable height 可通过保险杠下方简单踢脚动作开启/关闭；部分车辆地面会出现发光Logo投影提示踢脚位置；Logo投影在用户进入车尾约6英尺范围内自动点亮。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "别克（通用汽车）",
+      "company_en": "Buick / General Motors",
+      "product_name": "免手动电动尾门（带标志投影）",
+      "product_name_en": "Hands-Free Power Liftgate with logo projection",
+      "product_version": "标志投影+可编程开启高度版本",
+      "market": "通用汽车别克品牌SUV/MPV电动尾门配置；需核查中国在售车型配置表",
+      "reason_for_deep_dive": "该配置的核心交互是地面发光Logo指示踢脚位置，用户在保险杠下方踢脚触发电动尾门，直接命中C1-F6的投影图像/脚部检测方向和C1-F5的自动开启控制；中国市场别克车型是否采用同版本需在下游用中文配置表和用户手册确认。",
+      "source_result_ids": [
+        "exa-Q12-02"
+      ],
+      "source_urls": [
+        "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+      ],
+      "initial_evidence_summary": "别克支持页摘要显示：Available Hands-Free Power Liftgate with logo projection and programmable height，可通过保险杠下方踢脚动作开启/关闭尾门；部分车辆会在地面出现发光Logo投影，提示用户踢脚位置。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "凯迪拉克（通用汽车）",
+      "company_en": "Cadillac / General Motors",
+      "product_name": "免手动电动尾门（带标志投影）",
+      "product_name_en": "Hands-Free Power Liftgate with logo projection",
+      "product_version": "标志投影+可编程开启高度版本",
+      "market": "通用汽车凯迪拉克品牌SUV/跨界车电动尾门配置；需核查中国在售车型配置表",
+      "reason_for_deep_dive": "公开摘要显示其以Logo投影提示脚踢区域并由保险杠下方脚部动作控制电动尾门，具备权利要求1最关键的C1-F6“投影单元+脚部检测”线索；下游应进一步锁定中国销售车型、车尾投影器/传感器位置和智能钥匙天线认证逻辑。",
+      "source_result_ids": [
+        "exa-Q12-05"
+      ],
+      "source_urls": [
+        "https://www.cadillac.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+      ],
+      "initial_evidence_summary": "凯迪拉克支持页摘要显示：Hands-Free Power Liftgate with logo projection and programmable height lets you open and close your liftgate with a simple kicking motion below the bumper；部分车辆地面会出现发光Logo投影以显示踢脚位置。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "高合汽车",
+      "company_en": "HiPhi / Human Horizons",
+      "product_name": "高合HiPhi X尾门投影模块",
+      "product_name_en": "HiPhi X tailgate projection module",
+      "product_version": "HiPhi X电动尾门感应成像电脑/尾门投影模块",
+      "market": "中国高合HiPhi X车型维修件/后装件市场",
+      "reason_for_deep_dive": "搜索结果标题明确指向“HiPhi X尾门投影模块”和“电动尾门感应成像电脑”，与C1-F6的后备箱投影单元及C1-F5的电动尾门控制存在交叉；现有摘要信息较少，但因其为中国市场具体车型的尾门投影相关模块，值得下游核查是否用于脚部投影感应开启。",
+      "source_result_ids": [
+        "brave-Q19-04"
+      ],
+      "source_urls": [
+        "https://www.taobao.com/list/item/663361611581.htm"
+      ],
+      "initial_evidence_summary": "淘宝搜索结果标题显示“高合hiphi X尾门投影模块 高合hiphi X电动尾门感应成像电脑”。摘要未给出传感器类型和智能钥匙联动细节，需要进一步检索商品详情、维修手册或拆解证据。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "小鹏汽车",
+      "company_en": "XPeng Motors",
+      "product_name": "小鹏G9脚踢式感应电动尾门",
+      "product_name_en": "XPeng G9 kick-sensing power tailgate",
+      "product_version": "G9 650性能版Pro/650性能版Max/650上市纪念版；2024款G9无此配置",
+      "market": "中国新能源汽车原厂电动尾门配置市场",
+      "reason_for_deep_dive": "该候选已具体到车型版本，摘要证明其需随身携带钥匙并在尾部感应区域脚踢控制电动尾门，覆盖C1-F4智能钥匙前提和C1-F5尾门控制；但摘要未显示地面投影图像，需下游重点核查是否存在投影/照地标识或距离检测单元，若无则应剔除。",
+      "source_result_ids": [
+        "brave-Q08-02"
+      ],
+      "source_urls": [
+        "https://bbs.xiaopeng.com/article/1468717"
+      ],
+      "initial_evidence_summary": "小鹏社区摘要显示：G9 650性能版Pro、650性能版Max、650上市纪念版配备脚踢式感应开关，2024款G9无此配置；操作时需随身携带钥匙，并按感应区域进行脚踢式操作；还提到智能钥匙防误锁逻辑。"
+    }
+  ]
+}

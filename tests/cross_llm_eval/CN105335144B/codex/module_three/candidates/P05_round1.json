@@ -1,0 +1,598 @@
+{
+  "candidate": {
+    "candidate_id": "P05",
+    "company": "别克（通用汽车）",
+    "company_en": "Buick / General Motors",
+    "product_name": "免手动电动尾门（带标志投影）",
+    "product_name_en": "Hands-Free Power Liftgate with logo projection",
+    "product_version": "标志投影+可编程开启高度版本",
+    "market": "通用汽车别克品牌SUV/MPV电动尾门配置；需核查中国在售车型配置表",
+    "reason_for_deep_dive": "该配置的核心交互是地面发光Logo指示踢脚位置，用户在保险杠下方踢脚触发电动尾门，直接命中C1-F6的投影图像/脚部检测方向和C1-F5的自动开启控制；中国市场别克车型是否采用同版本需在下游用中文配置表和用户手册确认。",
+    "source_result_ids": [
+      "exa-Q12-02"
+    ],
+    "source_urls": [
+      "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+    ],
+    "initial_evidence_summary": "别克支持页摘要显示：Available Hands-Free Power Liftgate with logo projection and programmable height，可通过保险杠下方踢脚动作开启/关闭尾门；部分车辆会在地面出现发光Logo投影，提示用户踢脚位置。"
+  },
+  "launch_date": "未明确（现有证据仅证明功能存在，未给出首次发布/在华上市时间）",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+      "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+      "source_name": "Buick Support",
+      "snippet": "Available Hands-Free Power Liftgate with logo projection and programmable height, if equipped, lets you open and close your liftgate with a simple kicking motion below the bumper. 页面未载明该功能首次发布或上市日期。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未找到该“带标志投影免手动电动尾门”首次发布/量产/在华上市日期；现有证据未显示早于专利申请日2014-07-31，且未发现权利要求1的明确不满足技术特征。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；\n所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；\n所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；\n所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；\n后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；\n所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "官方支持页描述该系统包含：key fob（钥匙）、logo projection/传感器（用于指示并检测踢脚）、power liftgate（电动举升门）；诊断功能表还列出无钥匙进入控制模块、举升门控制模块。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... Kick straight over the logo (or at the sensor for older vehicles)... The liftgate will open..."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "2024 别克(Buick) 昂科旗(Enclave) 无钥匙进入控制模块... 举升门控制模块；2024 别克(Buick) 昂科拉(Encore) 无钥匙进入控制模块... 举升门控制模块。"
+            }
+          ],
+          "reasoning": "Buick官方页直接给出钥匙、投影/传感器和电动举升门工作单元；Xtool别克功能表列出无钥匙进入控制模块与举升门控制模块，足以对应信息采集模块、智能钥匙模块和后备箱控制模块。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "系统在检测到key fob靠近、脚踢传感器被正确触发后控制举升门开启；公开证据未直接给出线束/电连接图，但诊断表显示无钥匙进入控制模块、举升门控制模块均可读码/数据流/动作测试。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... Kick straight over the logo... The liftgate will open after giving you time to safely step away."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "无钥匙进入控制模块 √ √ √ √ √... 举升门控制模块 √ √ √ √ √ SP0132,SP0177。"
+            }
+          ],
+          "reasoning": "官方流程表明钥匙接近信息和踢脚传感信息被用于举升门控制；诊断表显示相关控制模块存在并可通信。未见电路图或线束图，故“电连接”为工程推断，评为可能满足。",
+          "suggested_followup_queries": [
+            "GM Buick hands free liftgate wiring diagram liftgate control module keyless entry module kick sensor",
+            "Buick hands free liftgate sensor circuit diagram keyless entry control module liftgate module",
+            "别克 感应电动尾门 脚踢传感器 无钥匙进入模块 举升门控制模块 电路图"
+          ]
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "后部/举升门区域检测：logo projection在车辆后方6英尺内点亮；用户需在保险杠下方踢脚并使脚距保险杠5英寸内，否则传感器不激活。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle. Kick straight over the logo... making sure to come within 5 inches of the bumper..."
+            }
+          ],
+          "reasoning": "官方页给出后方6英尺、钥匙3英尺、脚距保险杠5英寸等距离阈值，并要求在举升门/保险杠下方动作，直接证明后部采集用户接近/脚部距离信息。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "用户需携带key fob接近liftgate；系统要求key fob在车辆3英尺内，并在车尾6英尺内点亮投影。未公开写明“后备箱探测天线”，但存在后部钥匙接近检测。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle... Make sure that your key fob is within 3 feet of your vehicle."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "2024 别克(Buick) 昂科旗(Enclave) 无钥匙进入控制模块... 读取数据流、动作测试均支持。"
+            }
+          ],
+          "reasoning": "key fob为钥匙侧感应/通信单元；系统能限定其位于车尾/车身近距离，通常需车尾接收天线或接收器。因证据未逐字披露“后备箱探测天线”，定为可能满足。",
+          "suggested_followup_queries": [
+            "GM passive entry rear compartment antenna liftgate key fob 3 feet hands free liftgate",
+            "Buick liftgate hands free keyless entry rear antenna location service manual",
+            "别克 尾门 后保险杠 低频天线 智能钥匙 感应尾门"
+          ]
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "Power Liftgate在接收正确踢脚/传感器触发后自动打开或关闭；若横扫脚或踩logo则“不激活传感器”。Xtool表列出“举升门控制模块”。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Kick straight over the logo... The liftgate will open after giving you time to safely step away. The rear lights will flash and a chime will sound..."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "2024 别克(Buick) 昂科旗(Enclave) 举升门控制模块 √ √ √ √ √ SP0132,SP0177。"
+            }
+          ],
+          "reasoning": "官方页明确正确踢脚会触发传感器并使举升门开启/关闭，错误动作不触发；诊断表直接列出举升门控制模块，支持控制单元和执行启动单元。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "官方页称地面出现illuminated logo projection指示踢脚位置；用户需“kick straight over the logo”或对准旧车sensor，脚距保险杠5英寸内，且应朝车辆下方踢。可推断后保险杠/尾门下方有向地投影与脚踢检测区域，但未直接公开“测量脚到投影图像的距离”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "On some vehicles, an illuminated logo projection will appear on the ground to show you where to kick... Kick straight over the logo (or at the sensor for older vehicles), making sure to come within 5 inches of the bumper..."
+            }
+          ],
+          "reasoning": "投影到地面、踢过logo、脚距保险杠5英寸内和传感器触发均为官方直接证据；传感器与投影区域对齐可推断，但未披露其测量脚到投影图像距离，故非明确满足。",
+          "suggested_followup_queries": [
+            "Buick logo projection hands free liftgate kick sensor distance foot bumper service manual",
+            "GM illuminated logo projection liftgate kick sensor foot distance sensor teardown",
+            "别克 感应尾门 LOGO投影 脚踢传感器 距离传感器 拆解"
+          ]
+        }
+      ],
+      "claim_score": 90.0
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+          "competitor_feature": "公开证据仅称“illuminated logo projection will appear on the ground”，即地面发光Logo投影；未说明投影单元为激光投影仪，也未给出投影器件类型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "On some vehicles, an illuminated logo projection will appear on the ground to show you where to kick."
+            }
+          ],
+          "reasoning": "“logo projection”能证明存在投影影像，但不能证明采用激光投影仪；汽车迎宾灯/投影灯也可能为LED投影或其他光学模块，现有证据不足。",
+          "suggested_followup_queries": [
+            "GM Buick illuminated logo projection hands free liftgate laser projector part"
+          ]
+        },
+        {
+          "feature_id": "C2-F2",
+          "patent_feature": "所述距离检测单元为直线距离传感器",
+          "competitor_feature": "公开证据显示有脚踢传感器/检测区域，并要求脚距保险杠5英寸内；未说明该传感器为直线距离传感器，也未说明其测量直线距离。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Kick straight over the logo (or at the sensor for older vehicles), making sure to come within 5 inches of the bumper."
+            }
+          ],
+          "reasoning": "脚踢传感器可能是电容、雷达、超声或红外方案；当前证据只披露操作距离要求，不足以证明其为“直线距离传感器”。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate kick sensor linear distance sensor service manual"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+          "competitor_feature": "Xtool别克功能表列出“举升门控制模块”和“无钥匙进入控制模块”；Buick官方页描述车辆在key fob接近且用户正确踢过logo/sensor后，liftgate自动开启。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... Kick straight over the logo... The liftgate will open after giving you time to safely step away."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "2024 别克(Buick) 昂科旗(Enclave) 无钥匙进入控制模块... 举升门控制模块。"
+            }
+          ],
+          "reasoning": "公开证据足以支持存在举升门电子控制模块并由钥匙/脚踢条件触发开启；但未取得服务手册级别的控制逻辑图，未直接写明同一电控单元接收并判断两类信息，故评为可能满足。",
+          "suggested_followup_queries": [
+            "GM Buick hands free liftgate control module receives key fob kick sensor signal opens liftgate service manual"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+          "competitor_feature": "产品名称及官方页均为“Power Liftgate”，正确踢脚后liftgate自动打开/关闭；现有证据未直接列出开启电机或电动撑杆位置。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Available Hands-Free Power Liftgate... lets you open and close your liftgate with a simple kicking motion below the bumper... The liftgate will open..."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "举升门控制模块 √ √ √ √ √。"
+            }
+          ],
+          "reasoning": "电动举升门通常由电机/电动撑杆执行开启，官方“Power Liftgate”与自动开闭功能支持该推断；但当前证据没有部件图或维修手册直接标注开启电机，因此不是明确满足。",
+          "suggested_followup_queries": [
+            "Buick power liftgate actuator motor location liftgate service manual"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：\n步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；\n步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；\n步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+          "competitor_feature": "Buick官方页要求用户携带key fob接近liftgate；logo projection会在用户进入车辆后方6英尺内自动点亮，并要求key fob在车辆3英尺内。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle... Make sure that your key fob is within 3 feet of your vehicle."
+            }
+          ],
+          "reasoning": "“approach with key fob”和6英尺/3英尺阈值支持系统检测钥匙由远至近的接近状态；但现有证据未直接说明钥匙模块向后备箱控制模块反馈位置变化信息，故为可能满足。",
+          "suggested_followup_queries": [
+            "Buick hands free liftgate key fob approach detection logo projection turns on 6 feet algorithm"
+          ]
+        },
+        {
+          "feature_id": "C5-F2",
+          "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+          "competitor_feature": "用户需在后保险杠下方踢脚，踢过地面logo/sensor，并使脚进入保险杠5英寸范围；正确动作触发liftgate打开。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Kick straight over the logo (or at the sensor for older vehicles), making sure to come within 5 inches of the bumper... The liftgate will open..."
+            }
+          ],
+          "reasoning": "官方5英寸条件表明系统采集脚与后保险杠/尾门区域的距离状态；由于正确踢脚后尾门开启，可推断该状态被控制模块使用。但未直接披露传感器反馈信号路径，故为可能满足。",
+          "suggested_followup_queries": [
+            "Buick hands free liftgate kick sensor foot distance within 5 inches feedback liftgate module"
+          ]
+        },
+        {
+          "feature_id": "C5-F3",
+          "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+          "competitor_feature": "在key fob接近且踢脚动作符合要求时，rear lights闪烁、chime响起，liftgate在用户安全退开后打开。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... Kick straight over the logo... The rear lights will flash and a chime will sound. The liftgate will open after giving you time to safely step away."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "举升门控制模块；无钥匙进入控制模块。"
+            }
+          ],
+          "reasoning": "公开流程同时依赖key fob和脚踢传感条件并最终控制尾门开启，逻辑上对应控制模块分析判断；但缺少控制软件/诊断数据流说明，故评为可能满足。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate module analyzes key fob and kick sensor signals opens liftgate"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，\n当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元",
+          "competitor_feature": "官方页要求携带key fob接近liftgate，进入车辆后方6英尺内投影自动点亮，key fob需在车辆3英尺内；未直接标注后部探测天线或反馈到ECU的信号。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle... Make sure that your key fob is within 3 feet of your vehicle."
+            },
+            {
+              "url": "https://www.xtooltech.com/official/pack_pdf/PS_ZGBUICK/PS_ZGBUICK_V16_80_CN.pdf",
+              "title": "中国别克功能表 V16.80",
+              "source_name": "Xtooltech",
+              "snippet": "无钥匙进入控制模块... 举升门控制模块。"
+            }
+          ],
+          "reasoning": "钥匙接近检测必然涉及车端接收/探测装置和控制模块交互；现有公开内容支持接近检测，但未直接说明“探测天线”和“位置变化信息反馈至电控单元”的细节。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate rear antenna detects key fob approach from outside rear compartment"
+          ]
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+          "competitor_feature": "公开流程显示只有在携带key fob接近后才出现投影/允许脚踢触发；未公开没有钥匙接近时控制流程是否“返回重新检测”，也未给出状态机。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Approach the liftgate with your key fob... Kick straight over the logo... Make sure that your key fob is within 3 feet of your vehicle."
+            }
+          ],
+          "reasoning": "该功能的用户流程暗示钥匙接近是进入脚踢检测/开启流程的前置条件，未满足时系统保持等待检测；但“返回重新检测/进入S2”的软件分支未被公开文本直接披露，故为可能满足。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate no key fob return detection approach key fob kick enable logic"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+          "competitor_feature": "Buick官方页说明用户携带key fob接近车辆后方6英尺内时，地面logo projection会自动点亮；未说明由电控单元发送脉冲信号，也未说明该投影为激光投影仪。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle."
+            }
+          ],
+          "reasoning": "自动点亮投影支持“接近后开启投影”的外部效果，但“脉冲信号”和“激光投影仪”均属内部实现细节，现有证据不能证明。",
+          "suggested_followup_queries": [
+            "GM hands free liftgate logo projection activated by key fob approach pulse signal"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)",
+          "competitor_feature": "公开证据显示地面有logo projection，用户需踢过该logo/sensor并靠近保险杠5英寸；未披露激光投影仪、直线距离传感器、实时D值序列或D值反馈到电控单元。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "On some vehicles, an illuminated logo projection will appear on the ground... Kick straight over the logo... making sure to come within 5 inches of the bumper."
+            }
+          ],
+          "reasoning": "外部使用说明只覆盖“投影+脚踢”的用户操作；本特征要求具体传感量D、实时采样序列D1...Dn和反馈路径，现有证据完全未公开。",
+          "suggested_followup_queries": [
+            "GM logo projection hands free liftgate distance sensor D value foot on projected logo"
+          ]
+        },
+        {
+          "feature_id": "C8-F2",
+          "patent_feature": "设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+          "competitor_feature": "现有公开资料没有任何关于投射距离基准值C、投射实际距离最大值Di或C＝Di标定算法的说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "该特征是具体控制算法/标定公式。Buick官方支持页和诊断功能表均未披露距离基准值C或最大采样值Di，因此证据不足。",
+          "suggested_followup_queries": [
+            "Buick GM hands free liftgate logo projection baseline distance maximum Di C equals Di"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+          "competitor_feature": "Buick公开资料仅给出用户需踢过logo/sensor并使脚进入保险杠5英寸内；未披露C、D差值，也未披露≤1cm判断为脚未放在影像上的阈值。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Kick straight over the logo... making sure to come within 5 inches of the bumper."
+            }
+          ],
+          "reasoning": "5英寸是用户操作提示，不等同于C-D≤1cm阈值；无公开证据显示该具体厘米级算法。",
+          "suggested_followup_queries": [
+            "Buick GM hands free liftgate logo projection foot detection threshold 1 cm no foot"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+          "competitor_feature": "公开证据未披露C-D≤1cm、预设t1秒、无脚状态持续后熄灭投影，亦未证明投影器为激光投影仪。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle."
+            }
+          ],
+          "reasoning": "现有证据只说明投影会在接近时自动点亮，没有公开投影熄灭条件、持续时间t1或C/D差值算法。",
+          "suggested_followup_queries": [
+            "Buick GM hands free liftgate logo projection turn off after timeout no foot detected"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：\n当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；\n当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上",
+          "competitor_feature": "公开资料显示脚需踢过logo投影并靠近保险杠5英寸内；未披露直线距离传感器检测C-D差值，也未披露1cm至8cm为脚落在影像上的判断区间。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "Kick straight over the logo... making sure to come within 5 inches of the bumper."
+            }
+          ],
+          "reasoning": "5英寸约12.7cm，是用户脚接近保险杠的外部操作距离；它不能证明内部采用C-D大于1cm且小于8cm的阈值。",
+          "suggested_followup_queries": [
+            "Buick GM hands free liftgate foot on projected logo distance difference 1cm 8cm"
+          ]
+        },
+        {
+          "feature_id": "C11-F2",
+          "patent_feature": "当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+          "competitor_feature": "公开证据未披露C-D≥8cm时返回钥匙检测步骤S1的状态机或错误处理逻辑。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "该特征涉及控制软件的异常/无效检测分支，现有用户支持页和诊断功能表没有披露8cm阈值或返回S1。",
+          "suggested_followup_queries": [
+            "Buick GM hands free liftgate invalid kick distance greater 8cm restart detection"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 12,
+      "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C12-F1",
+          "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测",
+          "competitor_feature": "Buick官方页说明正确踢脚后rear lights会闪烁且chime会响，liftgate会在给用户安全退开时间后打开；未披露蜂鸣器提示发生在“脚落在影像上”的判断点，也未披露C-D为1cm至8cm、持续t2秒或否则返回S1。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.buick.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Buick",
+              "source_name": "Buick Support",
+              "snippet": "The rear lights will flash and a chime will sound. The liftgate will open after giving you time to safely step away."
+            }
+          ],
+          "reasoning": "官方页直接支持存在声响提示和延时后打开的外部表现，但本特征要求特定C/D阈值、t2持续时间判断和失败返回S1，均未公开，故整体证据不足。",
+          "suggested_followup_queries": [
+            "Buick GM hands free liftgate chime when foot detected on logo projection t2 seconds open liftgate"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 90.0,
+  "total_score": 90.0,
+  "searched_queries": [
+    "别克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 规格书 参数",
+    "别克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 说明书 PDF",
+    "别克（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本 官方 参数",
+    "Buick Hands-Free Power Liftgate logo projection key fob sensor"
+  ],
+  "searched_providers": [
+    "exa"
+  ]
+}

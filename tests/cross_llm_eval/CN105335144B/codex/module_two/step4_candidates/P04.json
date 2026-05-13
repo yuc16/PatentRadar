@@ -1,0 +1,190 @@
+{
+  "candidate": {
+    "candidate_id": "P04",
+    "company": "雪佛兰（通用汽车）",
+    "company_en": "Chevrolet / General Motors",
+    "product_name": "免手动电动尾门（带标志投影）",
+    "product_name_en": "Hands-Free Power Liftgate with logo projection",
+    "product_version": "标志投影+可编程开启高度版本；接近车尾约6英尺自动点亮投影标识",
+    "market": "通用汽车品牌SUV/跨界车电动尾门配置；需核查中国在售车型配置表",
+    "reason_for_deep_dive": "摘要明确有地面Logo投影用于指示踢脚位置，并通过保险杠下方踢脚动作开启/关闭尾门，对应C1-F6的投影图像和脚部检测，以及C1-F5的尾门控制；还需下游核查中国市场具体车型、智能钥匙认证和尾门下方传感器/投影器布置。",
+    "source_result_ids": [
+      "tavily-Q12-01",
+      "brave-Q14-05"
+    ],
+    "source_urls": [
+      "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+      "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+    ],
+    "initial_evidence_summary": "雪佛兰支持页摘要显示：Hands-Free Power Liftgate with logo projection and programmable height 可通过保险杠下方简单踢脚动作开启/关闭；部分车辆地面会出现发光Logo投影提示踢脚位置；Logo投影在用户进入车尾约6英尺范围内自动点亮。"
+  },
+  "launch_date": "未明确（证据仅显示现行雪佛兰支持页及2025款车型说明书中存在该功能，未能确定首次上市/发布年月）",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+      "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+      "source_name": "Chevrolet",
+      "snippet": "Available Hands-Free Power Liftgate with logo projection and programmable height, if equipped, lets you open and close your liftgate with a simple kicking motion below the bumper."
+    },
+    {
+      "url": "https://www.durantguild.com/images/storefront/brandsite/maintenance_manual/25_CHEV_Tahoe_03.pdf",
+      "title": "2025 Chevrolet Tahoe owner manual excerpt",
+      "source_name": "Chevrolet/Durant Guild PDF mirror",
+      "snippet": "感应操作：如果配备该功能，携带遥控钥匙从接近区外进入身份验证区可打开尾门；身份验证区1米，接近区3米，均位于车辆后部附近。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未发现该具体“带标志投影的免手动电动尾门”首次上市时间早于专利申请日2014-07-31；现有证据不触发上市日期失格。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+      "competitor_feature": "雪佛兰页面披露该系统包含 key fob、地面logo投影/踢脚sensor，以及可开启/关闭并可编程高度的 power liftgate；对应智能钥匙、信息采集和尾门控制功能部件。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+          "source_name": "Chevrolet",
+          "snippet": "Available Hands-Free Power Liftgate with logo projection and programmable height... open and close your liftgate with a simple kicking motion below the bumper... Approach the liftgate with your key fob."
+        },
+        {
+          "url": "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Chevrolet Canada",
+          "source_name": "Chevrolet Canada",
+          "snippet": "Related Parts, Products, Services or Technology: Key fob... logo projection... kick straight over the logo, or at the sensor for older vehicles."
+        }
+      ],
+      "reasoning": "公开页直接列出钥匙、投影/传感器和电动尾门功能，但未给出模块框图或部件名称；按功能对应可严谨推定包含三类模块。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+      "competitor_feature": "系统表现为：携带key fob接近车尾会点亮logo投影，踢脚sensor触发尾门开/关；这些信号需传至电动尾门控制逻辑，但公开页未直接给出线束/ECU连接图。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+          "source_name": "Chevrolet",
+          "snippet": "Approach the liftgate with your key fob. The logo projection will automatically turn on as you get within 6 feet... Kick straight over the logo... The liftgate will open."
+        },
+        {
+          "url": "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Chevrolet Canada",
+          "source_name": "Chevrolet Canada",
+          "snippet": "Make sure that your key fob is within 0.9 metres of your vehicle... Kick directly toward the underside of your vehicle... the liftgate is opening."
+        }
+      ],
+      "reasoning": "传感器/钥匙认证导致投影和尾门动作，说明与控制逻辑存在信号连接；但证据未直接披露“电连接”线路，故仅可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+      "competitor_feature": "页面要求在车尾/举升门处携带钥匙接近，进入距车尾约6 ft/1.8 m范围时logo自动点亮；踢脚需朝车辆下方且距保险杠5 in/12.7 cm内，表明车尾区域传感系统获取用户/脚部接近距离。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+          "source_name": "Chevrolet",
+          "snippet": "The logo projection will automatically turn on as you get within 6 feet of the rear of your vehicle. Kick straight over the logo... within 5 inches of the bumper."
+        },
+        {
+          "url": "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Chevrolet Canada",
+          "source_name": "Chevrolet Canada",
+          "snippet": "The logo projection will automatically turn on as you get within 1.8 metres of the rear of your vehicle... within 12.7 centimetres of the bumper."
+        }
+      ],
+      "reasoning": "证据给出车尾6英尺和保险杠5英寸阈值，说明有车尾接近/踢脚检测；但未明确该距离信息由“信息采集模块”而非钥匙系统单独采集。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+      "competitor_feature": "雪佛兰系统要求用户携带key fob接近举升门；key fob需在车尾附近0.9 m/3 ft内，2025款手册片段称车尾附近有1 m身份验证区和3 m接近区，可识别遥控钥匙。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+          "source_name": "Chevrolet",
+          "snippet": "Approach the liftgate with your key fob... Make sure that your key fob is within 3 feet of your vehicle."
+        },
+        {
+          "url": "https://www.durantguild.com/images/storefront/brandsite/maintenance_manual/25_CHEV_Tahoe_03.pdf",
+          "title": "2025 Chevrolet Tahoe owner manual excerpt",
+          "source_name": "Chevrolet/Durant Guild PDF mirror",
+          "snippet": "携带遥控钥匙从接近区外进入身份验证区可打开尾门。这两个区域均位于车辆后部附近。身份验证区（1米），接近区（3米）。"
+        }
+      ],
+      "reasoning": "key fob和车尾身份验证区直接支持智能钥匙探测；但未直接写明“后备箱探测天线”的硬件位置，按无钥匙认证原理推定。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+      "competitor_feature": "用户在logo/sensor处完成踢脚动作后，系统延时提示并自动开启/关闭liftgate；还支持可编程开启高度，说明存在电动尾门执行机构和控制判断逻辑。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+          "source_name": "Chevrolet",
+          "snippet": "Kick straight over the logo... Your kick should be an in-and-out motion... The liftgate will open... You can also use a kicking motion to close the liftgate."
+        },
+        {
+          "url": "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Chevrolet Canada",
+          "source_name": "Chevrolet Canada",
+          "snippet": "The liftgate will open after giving you time to safely step away. The rear lights will flash and a chime will sound to alert you that the liftgate is opening."
+        }
+      ],
+      "reasoning": "官方页直接披露踢脚传感输入触发尾门开/关，并有提示和高度编程；这可验证控制判断与电动执行机构配合开启尾门。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+      "competitor_feature": "系统有illuminated logo projection投射到地面指示踢脚位置；用户需“kick straight over the logo/at the sensor”，脚部朝车辆下方并距保险杠5 in/12.7 cm内；传感器位于保险杠下方区域。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+          "source_name": "Chevrolet",
+          "snippet": "On some vehicles, an illuminated logo projection will appear on the ground to show you where to kick... Kick straight over the logo (or at the sensor for older vehicles), making sure to come within 5 inches of the bumper."
+        },
+        {
+          "url": "https://www.chevrolet.ca/en/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+          "title": "Hands-Free Power Liftgate | Chevrolet Canada",
+          "source_name": "Chevrolet Canada",
+          "snippet": "Kick straight over the logo... Sweeping the foot side to side or stepping on the logo projection will not activate the sensor... Kick directly toward the underside of your vehicle."
+        }
+      ],
+      "reasoning": "投影到地面和保险杠下方踢脚传感有直接证据；但页面未明示传感器“测量脚到投影图像距离”，只可由踢过logo触发作推定。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 83.33,
+  "searched_queries": [
+    "雪佛兰（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本；接近车尾约6英尺自动点亮投影标识 规格书 参数",
+    "雪佛兰（通用汽车） 免手动电动尾门（带标志投影） 标志投影+可编程开启高度版本；接近车尾约6英尺自动点亮投影标识 说明书 PDF",
+    "Chevrolet Hands-Free Power Liftgate logo projection key fob sensor"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

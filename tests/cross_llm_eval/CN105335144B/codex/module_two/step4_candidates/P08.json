@@ -1,0 +1,202 @@
+{
+  "candidate": {
+    "candidate_id": "P08",
+    "company": "小鹏汽车",
+    "company_en": "XPeng Motors",
+    "product_name": "小鹏G9脚踢式感应电动尾门",
+    "product_name_en": "XPeng G9 kick-sensing power tailgate",
+    "product_version": "G9 650性能版Pro/650性能版Max/650上市纪念版；2024款G9无此配置",
+    "market": "中国新能源汽车原厂电动尾门配置市场",
+    "reason_for_deep_dive": "该候选已具体到车型版本，摘要证明其需随身携带钥匙并在尾部感应区域脚踢控制电动尾门，覆盖C1-F4智能钥匙前提和C1-F5尾门控制；但摘要未显示地面投影图像，需下游重点核查是否存在投影/照地标识或距离检测单元，若无则应剔除。",
+    "source_result_ids": [
+      "brave-Q08-02"
+    ],
+    "source_urls": [
+      "https://bbs.xiaopeng.com/article/1468717"
+    ],
+    "initial_evidence_summary": "小鹏社区摘要显示：G9 650性能版Pro、650性能版Max、650上市纪念版配备脚踢式感应开关，2024款G9无此配置；操作时需随身携带钥匙，并按感应区域进行脚踢式操作；还提到智能钥匙防误锁逻辑。"
+  },
+  "launch_date": "2022年9月21日上市，2022年10月底开始交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.xiaopeng.com/news/company_news/4487.html",
+      "title": "售价30.99-46.99万，超快充全智能SUV小鹏G9正式上市-小鹏汽车官网",
+      "source_name": "小鹏汽车官网",
+      "snippet": "9月21日，小鹏汽车举办线上发布会，并宣布定位“超快充全智能SUV”的小鹏G9正式上市……新车售价30.99-46.99万元，并将于2022年10月底开始正式交付。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开上市/交付时间为2022年9月/10月，晚于专利申请日2014-07-31；现有证据未出现与任一特征直接矛盾的公开内容。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+      "competitor_feature": "G9 650性能版Pro/Max/上市纪念版有“脚踢式感应”尾门；G9电动尾门支持钥匙、APP、大屏、语音等方式；配置表列有电动尾门、感应尾门、智能遥控钥匙。对应脚踢感应信息采集、智能钥匙及电动尾门控制功能。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://bbs.xiaopeng.com/article/1468717",
+          "title": "G9电动尾门开关和脚踢感应操作",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "G9电动尾门支持使用钥匙、APP、大屏、语音等多种方式。脚踢式感应开关适用车型：G9 650性能版Pro、650性能版Max、650上市纪念版有此项配置。"
+        },
+        {
+          "url": "https://www.xiaopeng.com/g9/configuration.html",
+          "title": "小鹏G9参数配置、小鹏G9内饰、多少钱",
+          "source_name": "小鹏汽车官网",
+          "snippet": "配置表列出“电动尾门”“感应尾门（脚踢式）”“智能遥控钥匙（1把）”等配置项。"
+        }
+      ],
+      "reasoning": "社区和官方配置直接显示同一车型具有脚踢感应尾门、智能遥控钥匙和电动尾门控制入口，足以对应三个系统组成部分。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+      "competitor_feature": "未获得G9感应尾门线束/电路图；但公开操作说明要求携带钥匙，脚踢感应有效后车辆自动开启后备箱，说明脚踢传感信息和钥匙授权信息进入尾门控制逻辑。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://bbs.xiaopeng.com/thread/3359623",
+          "title": "G9支持感应式后备箱",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "携带遥控钥匙站在后保险杠左侧感应区域进行脚踢动作，车辆有效感应后会自动开启后备箱。"
+        },
+        {
+          "url": "https://bbs.xiaopeng.com/article/1468717",
+          "title": "G9电动尾门开关和脚踢感应操作",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "操作脚踢式感应时，需随身携带钥匙；G9电动尾门支持使用钥匙、APP、大屏、语音等多种方式。"
+        },
+        {
+          "url": "https://m.asemanshop.com/www/cars/7571.html",
+          "title": "G9（2024款）小鹏汽车原厂_汽车维修及诊断手册_电气线路图",
+          "source_name": "畅易/维修资料页面",
+          "snippet": "页面显示存在G9原厂汽车维修及诊断手册、电气线路图资料，但摘要未披露感应尾门具体线路内容。"
+        }
+      ],
+      "reasoning": "功能上必须由钥匙授权和脚踢传感共同触发尾门执行；但未见公开电路图直接证明电连接结构，故仅作可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+      "competitor_feature": "公开说明称脚踢有效感应区域位于后保险杠左侧，脚尖需踢入后保险杠内至少10cm并迅速收回，车辆有效感应后自动开启；可推知传感器位于车辆尾部/后备箱附近并检测脚部接近或动作距离。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://bbs.xiaopeng.com/thread/3359623",
+          "title": "G9支持感应式后备箱",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "脚踢有效感应区域位于后保险杠左侧，将脚向上抬起靠近后保险杠并且脚尖踢入后保险杠内至少10厘米，然后迅速收回，这样可以打开后备箱。"
+        },
+        {
+          "url": "https://bbs.xiaopeng.com/article/1468717",
+          "title": "G9电动尾门开关和脚踢感应操作",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "操作脚踢式感应时，需随身携带钥匙。【感应区域】参考下图。"
+        }
+      ],
+      "reasoning": "后保险杠左侧感应区与后备箱相邻，且“至少10厘米”说明系统检测脚部接近/进入感应范围；未直接写明测量用户与后备箱距离。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+      "competitor_feature": "G9配智能遥控钥匙；脚踢感应操作需随身携带钥匙；社区还提到智能钥匙在车内锁车后的防误锁逻辑。可推知车辆具有钥匙感应/探测机制，但未公开后备箱探测天线的位置和结构。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://bbs.xiaopeng.com/article/1468717",
+          "title": "G9电动尾门开关和脚踢感应操作",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "操作脚踢式感应时，需【随身携带钥匙】；如果【智能钥匙】放在车内并锁车后……会触发“防误锁”功能。"
+        },
+        {
+          "url": "https://bbs.xiaopeng.com/thread/1439609",
+          "title": "G9智能钥匙（物理钥匙）",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "G9钥匙可操作解锁车门、锁闭车门、开关充电口、开关尾门等。"
+        },
+        {
+          "url": "https://www.xiaopeng.com/g9/configuration.html",
+          "title": "小鹏G9参数配置、小鹏G9内饰、多少钱",
+          "source_name": "小鹏汽车官网",
+          "snippet": "便捷功能项列出“智能遥控钥匙（1把）”。"
+        }
+      ],
+      "reasoning": "随身钥匙是脚踢尾门前提，说明尾部开启前会校验钥匙；但没有公开资料直接披露钥匙内感应单元及后备箱探测天线。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+      "competitor_feature": "用户携带遥控钥匙站在后保险杠左侧感应区脚踢，车辆有效感应后会自动开启后备箱；G9电动尾门支持脚踢感应开关。该公开功能直接体现传感信息判断后启动电动尾门开启。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://bbs.xiaopeng.com/thread/3359623",
+          "title": "G9支持感应式后备箱",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "携带遥控钥匙站在后保险杠左侧感应区域进行脚踢动作，车辆有效感应后会自动开启后备箱。"
+        },
+        {
+          "url": "https://bbs.xiaopeng.com/article/1468717",
+          "title": "G9电动尾门开关和脚踢感应操作",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "G9电动尾门支持使用钥匙、APP、大屏、语音等多种方式；G9 650性能版Pro、650性能版Max、650上市纪念版有脚踢式感应开关。"
+        }
+      ],
+      "reasoning": "“有效感应后自动开启”直接表明控制逻辑根据脚踢感应结果触发电动尾门执行开启，覆盖该功能性控制特征。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+      "competitor_feature": "现有证据仅显示G9为后保险杠左侧脚踢感应区，脚尖进入后保险杠内至少10cm后开启；官方配置另列“迎宾照地灯”，但未说明脚踢尾门有投射图像、投影目标或测量脚部到投影图像距离的检测单元。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://bbs.xiaopeng.com/thread/3359623",
+          "title": "G9支持感应式后备箱",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "脚踢有效感应区域位于后保险杠左侧，将脚向上抬起靠近后保险杠并且脚尖踢入后保险杠内至少10厘米，然后迅速收回。"
+        },
+        {
+          "url": "https://bbs.xiaopeng.com/article/1468717",
+          "title": "G9电动尾门开关和脚踢感应操作",
+          "source_name": "小鹏汽车在线社区",
+          "snippet": "操作脚踢式感应时，需随身携带钥匙。【感应区域】参考下图。未见投影图像或距投影图像检测描述。"
+        },
+        {
+          "url": "https://www.xiaopeng.com/g9/configuration.html",
+          "title": "小鹏G9参数配置、小鹏G9内饰、多少钱",
+          "source_name": "小鹏汽车官网",
+          "snippet": "配置表出现“迎宾照地灯”“电动尾门”“感应尾门（脚踢式）”等项目，但未将照地灯描述为尾门下方投影图像或脚踢距离检测基准。"
+        }
+      ],
+      "reasoning": "脚踢感应和照地灯不能直接等同于投影图像+测距单元；缺少投影图案、安装方向及测量脚到投影图像距离的公开证据。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 78.33,
+  "searched_queries": [
+    "小鹏汽车 小鹏G9脚踢式感应电动尾门 G9 650性能版Pro/650性能版Max/650上市纪念版 规格书 参数",
+    "小鹏汽车 小鹏G9脚踢式感应电动尾门 说明书 PDF",
+    "小鹏G9 维修手册 感应尾门 脚踢传感器 线路 后备箱控制模块",
+    "小鹏G9 智能钥匙 后备箱 天线 PEPS 尾门 脚踢",
+    "小鹏G9 2022 脚踢感应尾门 传感器 位置 距离 检测"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

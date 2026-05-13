@@ -1,0 +1,206 @@
+{
+  "candidate": {
+    "candidate_id": "P01",
+    "company": "北醒（北京）光子科技有限公司",
+    "company_en": "Benewake (Beijing) Co., Ltd.",
+    "product_name": "AR光影感应后尾门",
+    "product_name_en": "AR light-sensing rear tailgate",
+    "product_version": "光感（激光）脚踢方案；单点激光雷达+AR投影/可见光指示模块，模块体积35×21.25×13.5 mm³",
+    "market": "中国汽车电动尾门/后备箱免接触开启前装或方案市场",
+    "reason_for_deep_dive": "高度贴合权利要求1的C1-F3/C1-F5/C1-F6：方案明确安装于后备箱，AR投影在地面形成光标/标识，单点激光雷达通过距离等特征值变化判断用户是否踩踏光标，并与整车系统配合实现尾门开关；下游需继续核查其是否包含或调用智能钥匙探测天线/钥匙认证模块以覆盖C1-F4。",
+    "source_result_ids": [
+      "tavily-Q04-01",
+      "brave-Q04-01",
+      "tavily-Q04-03"
+    ],
+    "source_urls": [
+      "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+      "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+      "https://zhuanlan.zhihu.com/p/11492037060"
+    ],
+    "initial_evidence_summary": "官方/转载摘要显示：单点激光雷达搭载AR投影/可见光指示模块，集成智能感应设备，可安装于后备箱；激光雷达光斑与AR投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标，与整车系统配合实现AR投影、踩踏检测及尾门开关功能。"
+  },
+  "launch_date": "未明确（官方AR方案页未给出首次发布/上市日期；可确认北醒公司2015年6月成立，相关后备箱激光雷达量产项目2020年9月3日公开，AR光影感应后尾门方案至少在2024年行业报告中出现）",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.benewake.com/About/index.aspx",
+      "title": "关于北醒|公司介绍|主营业务-北醒激光雷达",
+      "source_name": "北醒 Benewake",
+      "snippet": "发展历程显示：2015.06 北醒（北京）光子科技有限公司成立；后续列出2017、2018、2019、2020等产品上市/量产节点。"
+    },
+    {
+      "url": "https://laser.ofweek.com/2020-09/ART-240015-8120-30456783.html",
+      "title": "国内首个智能感知启动后备箱实现量产 北醒激光雷达助力汽车黑科技",
+      "source_name": "OFweek激光网",
+      "snippet": "2020年9月3日中国北京——北醒正式发布其激光雷达测距模组已用于乘用车量产项目，实现首个从无线遥控后备箱到智能感知启动后备箱的创新。"
+    },
+    {
+      "url": "http://www.pday.com.cn/Htmls/Report/202412/24547664.html",
+      "title": "2024年中国智能车门及电动尾门市场研究报告",
+      "source_name": "水清木华研究中心",
+      "snippet": "报告提到北醒光子光感（激光）脚踢方案由单点激光雷达、AR投影、主控制板构成，并展示北醒光子AR光影感应后尾门应用案例。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未找到AR光影感应后尾门的明确首次上市/量产日；现有公开线索均不早于专利申请日2014-07-31，且北醒公司本身公开成立时间为2015年6月，故不因上市日期失格。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+      "competitor_feature": "公开资料披露该方案“主要包含三大模块：单点激光雷达、AR投影、主控制板”。其中单点激光雷达/AR投影可对应信息采集，主控制板可对应后备箱控制，但未披露智能钥匙模块。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+          "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+          "source_name": "北醒 Benewake",
+          "snippet": "技术原理：整个系统主要包含三大模块：单点激光雷达、AR投影、主控制板。"
+        },
+        {
+          "url": "http://www.pday.com.cn/Htmls/Report/202412/24547664.html",
+          "title": "2024年中国智能车门及电动尾门市场研究报告",
+          "source_name": "水清木华研究中心",
+          "snippet": "北醒光子光感（激光）脚踢方案由单点激光雷达、AR投影、主控制板构成。"
+        }
+      ],
+      "reasoning": "证据能对应信息采集与控制板，但官方/行业资料均未披露智能钥匙模块；“主要包含三大模块”也不能排除车辆侧另有PEPS，故无法确认完整满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+      "competitor_feature": "官方披露单点激光雷达进行距离检测，并把距离检测数据发送给主控制板；但未披露智能钥匙模块，更未披露智能钥匙模块与主控制板/后备箱控制模块的电连接。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+          "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+          "source_name": "北醒 Benewake",
+          "snippet": "单点激光雷达：系统通过单点激光雷达来检测用户开启/关闭尾门的动作，单点激光雷达通过用户所执行的动作进行距离检测，并把整个过程的距离检测数据发送给主控制板。"
+        },
+        {
+          "url": "http://www.pday.com.cn/Htmls/Report/202412/24547664.html",
+          "title": "2024年中国智能车门及电动尾门市场研究报告",
+          "source_name": "水清木华研究中心",
+          "snippet": "北醒光子光感（激光）脚踢方案由单点激光雷达、AR投影、主控制板构成；与整车系统配合，实现AR投影、踩踏检测及尾门开关功能。"
+        }
+      ],
+      "reasoning": "激光雷达到主控制板的数据连接有直接证据，但智能钥匙模块及其到控制模块的电连接未见公开披露，不能仅凭整车配合推定。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+      "competitor_feature": "单点激光雷达/AR投影智能感应设备“可安装于后备箱”；激光雷达通过距离等特征值变化判断用户是否踩踏光标，检测用户开启/关闭尾门动作，并将距离检测数据发送给主控制板。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+          "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+          "source_name": "北醒 Benewake",
+          "snippet": "单点激光雷达搭载AR投影/可见光指示模块，集成智能感应设备，可安装于后备箱；激光雷达通过距离等特征值变化判断用户是否踩踏光标。"
+        },
+        {
+          "url": "https://www.lit-auto.com/xingyexinwen586/133.html",
+          "title": "智能车门研究：2024市场规模近500亿，车门开启技术五花八门",
+          "source_name": "领科汇智",
+          "snippet": "北醒光子方案使用单点激光雷达搭载AR投影/可见光指示模块，集成智能感应设备，可安装于后备箱；激光雷达通过距离等特征值变化判断用户是否踩踏光标。"
+        }
+      ],
+      "reasoning": "北醒官方页面直接说明感应设备安装于后备箱，且激光雷达进行距离检测、据距离变化判断用户脚踏动作，覆盖“设置在后备箱并获取距离信息”。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+      "competitor_feature": "现有公开证据未披露AR光影感应后尾门包含车辆钥匙中的钥匙感应单元，也未披露后备箱处设置可探测钥匙的天线/PEPS低频天线。Gap检索“智能钥匙/PEPS/探测天线”未补到直接证据。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+          "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+          "source_name": "北醒 Benewake",
+          "snippet": "页面披露单点激光雷达、AR投影、主控制板及与整车系统配合实现尾门开关，未出现智能钥匙、PEPS、钥匙感应单元或后备箱探测天线描述。"
+        },
+        {
+          "url": "https://www.benewake.com/ApplicationCases/info_itemid_646.html",
+          "title": "北醒-车载激光雷达-智能驾驶-自动驾驶",
+          "source_name": "北醒 Benewake",
+          "snippet": "Gap检索结果主要涉及TF-Luna检测自动门附近人员并触发声光电等设施、闸口/自动门开启，未提供智能钥匙或后备箱钥匙探测天线信息。"
+        }
+      ],
+      "reasoning": "该特征要求钥匙侧感应单元与后备箱探测天线。证据池仅有激光雷达/投影/主控板，不足以证明具备钥匙认证硬件。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+      "competitor_feature": "官方披露系统含主控制板；单点激光雷达检测用户动作并将距离检测数据发送给主控制板；激光雷达通过距离等特征值变化判断用户是否踩踏光标，并与整车系统配合实现尾门开关。电动尾门开启/关闭意味着车辆侧存在执行机构，但公开资料未单独命名“后备箱启动单元”。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+          "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+          "source_name": "北醒 Benewake",
+          "snippet": "激光雷达通过距离等特征值变化判断用户是否踩踏光标，与整车系统配合，实现AR投影、踩踏检测及尾门开关功能。技术原理称系统包含单点激光雷达、AR投影、主控制板。"
+        },
+        {
+          "url": "https://cloud.tencent.com.cn/developer/news/686844",
+          "title": "北醒激光雷达助力国产乘用车智能感知黑科技",
+          "source_name": "腾讯云开发者社区/证券日报",
+          "snippet": "激光雷达通过系统发出的光信号进行探测，内置芯片计算出距离值，只要距离值在设定范围内，即可判定车主是否在后备箱开启位置。"
+        }
+      ],
+      "reasoning": "主控制板接收距离数据并据距离/踩踏判断实现尾门开关有直接证据；但“启动单元”只可由电动尾门动作推得，未被公开资料单独披露，故为可能满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+      "competitor_feature": "方案包含AR投影/可见光指示模块与单点激光雷达；在距离尾门一定距离的地面投射图案/标识，雷达光斑与AR投影光标重叠，用户轻踩投影图案触发；激光雷达通过距离等特征值变化判断踩踏。安装在后备箱并向地面投射/检测可推得朝向地面，但“后备箱下方”未被文字直接说明。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://benewake.com/ApplicationCases/info_itemid_1103.html",
+          "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+          "source_name": "北醒 Benewake",
+          "snippet": "单点激光雷达搭载AR投影/可见光指示模块；通过光学投影技术，在距离尾门一定距离的地面上投射出相应图案或标识；雷达光斑和投影完美重合，用户只需轻踩投影图案。"
+        },
+        {
+          "url": "http://www.pday.com.cn/Htmls/Report/202412/24547664.html",
+          "title": "2024年中国智能车门及电动尾门市场研究报告",
+          "source_name": "水清木华研究中心",
+          "snippet": "激光雷达光斑与AR投影光标/可见指示光光标重叠，激光雷达通过距离等特征值变化判断用户是否踩踏光标。"
+        },
+        {
+          "url": "https://benewake.com/uploadfiles/2024/04/20240426101333787.pdf",
+          "title": "TF-Luna 激光雷达模组 产品规格书",
+          "source_name": "北醒 Benewake",
+          "snippet": "TF-Luna是一款基于ToF原理的单点测距雷达；测量范围0.2m~8m，距离分辨率1cm；尺寸35mm*21.25mm*13.5mm。"
+        }
+      ],
+      "reasoning": "投影单元与距离检测单元、地面投影、脚踏检测均有直接证据；但安装“后备箱下方”仅由后备箱安装和地面投射/光斑重合推得，缺少明确文字或安装图证据。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 58.33,
+  "searched_queries": [
+    "北醒（北京）光子科技有限公司 AR光影感应后尾门 光感（激光）脚踢方案 规格书 参数",
+    "北醒（北京）光子科技有限公司 AR光影感应后尾门 光感（激光）脚踢方案 说明书 PDF",
+    "北醒 AR光影感应后尾门 智能钥匙 PEPS 探测天线",
+    "北醒 光感激光脚踢 主控制板 整车系统 CAN PEPS 接线",
+    "北醒（北京）光子科技有限公司 AR光影感应后尾门 中国 市场"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

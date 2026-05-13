@@ -1,0 +1,683 @@
+{
+  "candidate": {
+    "candidate_id": "P02",
+    "company": "一数科技",
+    "company_en": "ASU Tech / ASU",
+    "product_name": "ASU AR智能投影尾门开关",
+    "product_name_en": "ASU AR smart projection tailgate switch",
+    "product_version": "MLA光学投影+TOF模组版本；地面Logo投射距离约390–400 mm，识别率宣称高于99%",
+    "market": "中国汽车智能尾门前装配套/智能尾门开关系统市场",
+    "reason_for_deep_dive": "该产品直接围绕“车尾地面投影+脚部踩踏/距离检测+尾门自动开启”设计，重点对应C1-F6的投影单元和脚部到投影图像检测，以及C1-F5的尾门控制触发；摘要还提到车主携带车钥匙到达车尾时车辆自动感知，值得核查其智能钥匙模块和后部天线配置以覆盖C1-F4。",
+    "source_result_ids": [
+      "brave-Q04-03",
+      "brave-Q04-04",
+      "brave-Q04-05",
+      "brave-Q10-03",
+      "tavily-Q10-04"
+    ],
+    "source_urls": [
+      "https://chejiahao.autohome.com.cn/info/8381324",
+      "http://m.ikanchai.com/pcarticle/437409",
+      "https://www.xchuxing.com/article/31514",
+      "https://www.xchuxing.com/article/41896",
+      "https://m.ikanchai.com/pcarticle/437409"
+    ],
+    "initial_evidence_summary": "摘要显示一数科技推出“ASU AR智能投影尾门开关”，当车主带钥匙到达车尾部时车辆自动感知，并通过MLA光学投影技术在地面投射Logo图案；用户轻踩后，经TOF模组检测并发出指令，尾门在安全距离下自动打开；投射距离约390–400 mm，识别率宣称高于99%，并称已在一汽奔腾、东风风神产品上搭载。"
+  },
+  "launch_date": "2019年正式推出；2020年北京车展搭载体验；2021年已成功装车/量产化经验",
+  "launch_date_evidence": [
+    {
+      "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+      "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+      "source_name": "新浪科技/TechWeb",
+      "snippet": "2019年，根据用户和场景调查，一数科技发明并正式推出了“ASU AR智能投影尾门开关”……目前已经成功装车，有了成熟的产品化和量产经验；在2020年北京车展上，许多人体验过搭载产品。"
+    },
+    {
+      "url": "https://chejiahao.autohome.com.cn/info/8381324",
+      "title": "识别率99%的智能尾门与“一脚踢”到底有何不同_汽车之家",
+      "source_name": "汽车之家车家号",
+      "snippet": "2019年……正式推出“ASU AR智能投影尾门开关”，目前已经成功装车，有了成熟的产品化和量产经验，进入2.0时代可订制化阶段。"
+    },
+    {
+      "url": "http://m.ikanchai.com/pcarticle/437409",
+      "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+      "source_name": "砍柴网",
+      "snippet": "如今一数科技AR智能尾门……已经率先在一汽奔腾、东风风神的产品上实现搭载。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未发现该产品早于专利申请日2014-07-31公开上市；现有公开资料显示其2019年正式推出并在2020年后装车/展示，晚于申请日。也未发现权利要求1任一特征存在公开直接矛盾证据。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；\n所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；\n所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；\n所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；\n后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；\n所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "ASU AR智能投影尾门开关公开描述为：车主带车钥匙到车尾时车辆自动感知；系统通过MLA光学投影在地面投图案，并由TOF模组检测脚踩动作；TOF检测后发出指令使尾门自动打开，官网还列出CAN/LIN/高低电平控制接口。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主带着车钥匙到达车尾部时车辆会自动感知，并通过MLA光学投影技术在地面投射出相应图案，车主只需轻轻一踩，经TOF模组准确检测并发出指令，尾门就会……自动打开。"
+            },
+            {
+              "url": "http://a-su.com.cn/3-1.html",
+              "title": "一数科技汽车智能光电产品-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR尾门开关……AR 投影检测反应灵敏，≥99%准确……丰富的可定制控制接口 CAN LIN 可控高低电平。"
+            }
+          ],
+          "reasoning": "公开页面直接披露钥匙感知、MLA投影+TOF检测以及尾门控制/控制接口，分别对应智能钥匙、信息采集和后备箱控制三类模块。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "信息采集侧TOF模组“检测并发出指令”使尾门自动打开；官网称AR尾门开关具有CAN、LIN、可控高低电平接口。车钥匙到车尾后车辆自动感知并触发投影/检测流程，说明钥匙感知信号进入车辆尾门控制链路，但未见公开线束/电路图逐项标明连接。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主带着车钥匙到达车尾部时车辆会自动感知……经TOF模组准确检测并发出指令，尾门就会……自动打开。"
+            },
+            {
+              "url": "http://a-su.com.cn/3-1.html",
+              "title": "一数科技汽车智能光电产品-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR尾门开关……丰富的可定制控制接口 CAN LIN 可控高低电平。"
+            }
+          ],
+          "reasoning": "CAN/LIN/高低电平是电气控制接口；TOF“发出指令”后尾门开启可严谨推知信息采集模块接入尾门控制。但钥匙模块到尾门控制的具体电连接未直接公开。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "产品安装/作用区域为车尾/尾门：车主到达车尾后系统感知，在距尾门一定距离的地面投图案；技术参数公开投影高度1m、投影与车尾距离0.6–0.7m，另有报道称Logo图案投射距离车尾390–400mm；TOF模组用于精确定位/检测脚踩动作。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主带着车钥匙到达车尾部时车辆会自动感知……投影高度：1m；投影与车尾距离：0.6~0.7m；经TOF模组准确检测并发出指令。"
+            },
+            {
+              "url": "https://m.ikanchai.com/pcarticle/437409",
+              "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+              "source_name": "砍柴网",
+              "snippet": "一数科技AR智能尾门的logo图案投射距离车尾390-400mm……车主只需轻轻一踩，经TOF模组准确检测并发出指令。"
+            },
+            {
+              "url": "http://www.a-su.com.cn/3-3.html",
+              "title": "一数科技光学器件与模组-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "ASU ToF T1/T2/T3激光ToF模组……适用于消费电子、汽车电子的定位传感……工作距离长，精确定位。"
+            }
+          ],
+          "reasoning": "车尾/尾门区域参数给出相对尾门距离；TOF公开为汽车定位传感并用于脚踩检测，能获取用户脚部相对车尾投影区的位置/距离信息。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "公开资料称车主携带车钥匙或蓝牙钥匙到达车尾部安全距离时，车辆会自动感知，然后触发地面投影/检测流程。该事实支持钥匙端存在可被车辆探测的钥匙信号单元；车尾区域感知通常需车辆侧探测器/天线参与，但未直接公开“设置在后备箱的探测天线”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主带着车钥匙到达车尾部时车辆会自动感知，并通过MLA光学投影技术在地面投射出相应图案。"
+            },
+            {
+              "url": "https://xinwen.bjd.com.cn/content/s5f74463fe4b03c6143a9f971.html",
+              "title": "AR智能尾门、智能AR-Hud 这些新技术值得一看",
+              "source_name": "北京日报客户端",
+              "snippet": "车主带蓝牙钥匙到达车尾部安全距离时，车辆会自动感知到，然后释放一束激光在地面投射出品牌Logo。"
+            },
+            {
+              "url": "https://t.cj.sina.com.cn/articles/view/1224807694/4901150e00100z3g9",
+              "title": "一数科技首创AR尾门 汽车智能不再耍花腔",
+              "source_name": "新浪财经头条",
+              "snippet": "当用户携带钥匙靠近车尾时，系统会自动感知，并通过MLA光学投影技术在距离尾门一定距离的地面上投射出相应图案。"
+            }
+          ],
+          "reasoning": "“蓝牙钥匙/车钥匙到车尾即被感知”直接证明钥匙与车辆侧探测配合；但公开证据未字面披露后备箱探测天线位置，因此只能认定可能满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "ASU系统在车主踩踏地面投影后，由TOF模组准确检测并发出指令，尾门在保障安全距离情况下自动打开；官网显示AR尾门开关具有CAN、LIN、可控高低电平接口，可与整车尾门执行/控制系统交互。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主只需轻轻一踩，经TOF模组准确检测并发出指令，尾门就会在保障用户安全距离的情况下自动打开。"
+            },
+            {
+              "url": "http://a-su.com.cn/3-1.html",
+              "title": "一数科技汽车智能光电产品-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR尾门开关……保证车尾门开启时人员的安全距离……丰富的可定制控制接口 CAN LIN 可控高低电平。"
+            },
+            {
+              "url": "https://m.ikanchai.com/pcarticle/437409",
+              "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+              "source_name": "砍柴网",
+              "snippet": "车主只需轻轻一踩，经TOF模组准确检测并发出指令，尾门就会在保障用户安全距离的情况下自动打开。"
+            }
+          ],
+          "reasoning": "TOF检测脚踩信息后“发出指令”并使尾门自动打开，且官网给出CAN/LIN等控制接口，直接支撑根据检测信息判断并启动尾门开启。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "ASU产品采用MLA光学投影在车尾地面投射Logo/图案，用户轻踩图案；TOF模组准确检测脚踩动作并发出指令。参数：投影logo尺寸10cm×10cm，投影高度1m，投影与车尾距离0.6–0.7m；另有报道称地面Logo距离车尾390–400mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "通过MLA光学投影技术在地面投射出相应图案，车主只需轻轻一踩，经TOF模组准确检测并发出指令……投影logo尺寸：10cmX10cm；投影高度：1m；投影与车尾距离：0.6~0.7m。"
+            },
+            {
+              "url": "https://m.ikanchai.com/pcarticle/437409",
+              "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+              "source_name": "砍柴网",
+              "snippet": "通过MLA光学投影技术在地面投射出logo图案，车主只需轻轻一踩，经TOF模组准确检测并发出指令……logo图案投射距离车尾390-400mm。"
+            },
+            {
+              "url": "https://t.cj.sina.com.cn/articles/view/1224807694/4901150e00100z3g9",
+              "title": "一数科技首创AR尾门 汽车智能不再耍花腔",
+              "source_name": "新浪财经头条",
+              "snippet": "通过MLA光学投影技术在距离尾门一定距离的地面上投射出相应图案……用户只需轻踩图案，TOF模组就会准确检测并发出指令。"
+            },
+            {
+              "url": "http://www.a-su.com.cn/3-3.html",
+              "title": "一数科技光学器件与模组-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "ASU ToF T1/T2/T3激光ToF模组……适用于……汽车电子的定位传感……工作距离长，精确定位。"
+            }
+          ],
+          "reasoning": "MLA为投射图像单元；TOF为距离/定位检测单元。证据明确为车尾向地面投图案并检测脚踩图案，投影高度/车尾距离参数进一步支持下向地面布置。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 93.33
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+          "competitor_feature": "ASU AR尾门开关采用MLA光学投影在地面投射Logo/图案；北京日报报道其在车主带蓝牙钥匙到达车尾安全距离时“释放一束激光在地面投射出品牌Logo”。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://xinwen.bjd.com.cn/content/s5f74463fe4b03c6143a9f971.html",
+              "title": "AR智能尾门、智能AR-Hud 这些新技术值得一看",
+              "source_name": "北京日报客户端",
+              "snippet": "车主带蓝牙钥匙到达车尾部安全距离时，车辆会自动感知到，然后释放一束激光在地面投射出品牌Logo。"
+            },
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "通过MLA光学投影技术在地面投射出相应图案……投影logo尺寸：10cmX10cm；投影亮度：200lm；投影高度：1m。"
+            }
+          ],
+          "reasoning": "“释放一束激光在地面投射品牌Logo”直接对应可投射影像的激光投影单元；技术参数也披露其投影图案和亮度/高度。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C2-F2",
+          "patent_feature": "所述距离检测单元为直线距离传感器",
+          "competitor_feature": "ASU公开使用TOF模组准确检测脚踩动作；一数科技官网的ASU ToF T1/T2/T3激光ToF模组适用于汽车电子定位传感，具有“工作距离长，精确定位”的特征。TOF通常通过光飞行时间测量传感器到目标的直线/视线距离，但公开材料未直接称其为“直线距离传感器”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主只需轻轻一踩，经TOF模组准确检测并发出指令，尾门就会在保障用户安全距离的情况下自动打开。"
+            },
+            {
+              "url": "http://www.a-su.com.cn/3-3.html",
+              "title": "一数科技光学器件与模组-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "ASU ToF T1/T2/T3激光ToF模组……适用于消费电子、汽车电子的定位传感……工作距离长，精确定位。"
+            }
+          ],
+          "reasoning": "TOF激光模组的基本测量机理是测距/定位，且产品场景为检测用户脚踩地面投影。由于资料没有字面披露“直线距离传感器”或具体测距输出，因此保守评为可能满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 90.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+          "competitor_feature": "ASU系统公开的工作链路为：携带钥匙靠近车尾后系统自动感知，随后投影；用户轻踩投影后TOF模组准确检测并发出指令，尾门自动打开。官网还披露CAN、LIN、可控高低电平接口。公开资料能推知存在电控/控制接口接收钥匙感知和TOF检测信息并控制尾门，但未直接公开具体ECU名称、控制器框图或判断逻辑。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "http://a-su.com.cn/3-1.html",
+              "title": "一数科技汽车智能光电产品-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR尾门开关……AR 投影检测反应灵敏，≥99%准确……丰富的可定制控制接口 CAN LIN 可控高低电平。"
+            },
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主带着车钥匙到达车尾部时车辆会自动感知……经TOF模组准确检测并发出指令，尾门就会……自动打开。"
+            },
+            {
+              "url": "http://a-su.com.cn/html/news20210401.html",
+              "title": "一数科技原创AR智能尾门开关获中国汽车供应链大奖 - ASU",
+              "source_name": "一数科技官网",
+              "snippet": "当用户携带钥匙靠近车尾时，系统会自动感知，并通过光学投影技术在距离尾门一定距离的地面上投射出相应图案……TOF 模组就会准确检测并发出指令，尾门将在保障用户安全距离的情况下自动打开。"
+            }
+          ],
+          "reasoning": "CAN/LIN/高低电平接口及“检测并发出指令”说明系统具有电控判断与执行接口；但没有公开资料直接指认后备箱控制模块中的ECU及其接收两路信息的内部逻辑，因此为可能满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+          "competitor_feature": "公开报道将该产品应用于“电动尾门/智能尾门”开启，踩踏投影后尾门自动打开。电动尾门通常由电机/撑杆等执行器开启，但ASU公开资料主要披露AR尾门开关及其控制接口，未直接披露其自身或配套后备箱控制模块包括安装在后备箱的开启电机。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.sohu.com/a/459444421_170520",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车/TechWeb",
+              "snippet": "一数科技推出的“ASUAR智能投影尾门开关”，将电动尾门的开启变得简单有趣……车主只需轻轻一踩，经TOF模组准确检测并发出指令，尾门就会在保障用户安全距离的情况下自动打开。"
+            },
+            {
+              "url": "http://a-su.com.cn/3-1.html",
+              "title": "一数科技汽车智能光电产品-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR尾门开关……保证车尾门开启时人员的安全距离……丰富的可定制控制接口 CAN LIN 可控高低电平。"
+            }
+          ],
+          "reasoning": "“电动尾门自动打开”强烈指向车辆后备箱存在电机/电动执行机构；但证据未直接说明ASU系统的后备箱控制模块包括开启电机及其安装位置，故不能评为明确满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：\n步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；\n步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；\n步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+          "competitor_feature": "ASU公开流程为用户携带车钥匙/蓝牙钥匙靠近车尾时，系统会自动感知并开始投影。该流程体现了从非车尾区域到车尾附近的靠近状态触发，但公开材料未直接说明“从远至近的位置变化信息”被反馈至后备箱控制模块。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://t.cj.sina.com.cn/articles/view/1224807694/4901150e00100z3g9",
+              "title": "一数科技首创AR尾门 汽车智能不再耍花腔",
+              "source_name": "新浪财经头条",
+              "snippet": "当用户携带钥匙靠近车尾时，系统会自动感知，并通过MLA光学投影技术在距离尾门一定距离的地面上投射出相应图案。"
+            },
+            {
+              "url": "https://xinwen.bjd.com.cn/content/s5f74463fe4b03c6143a9f971.html",
+              "title": "AR智能尾门、智能AR-Hud 这些新技术值得一看",
+              "source_name": "北京日报客户端",
+              "snippet": "车主带蓝牙钥匙到达车尾部安全距离时，车辆会自动感知到，然后释放一束激光在地面投射出品牌Logo。"
+            }
+          ],
+          "reasoning": "“携带钥匙靠近车尾/到达安全距离被感知”与从远至近的钥匙状态变化高度一致；但反馈路径和位置变化信息格式未公开。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C5-F2",
+          "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+          "competitor_feature": "ASU在车尾地面投射图案，用户轻踩图案后TOF模组准确检测并发出指令；技术参数给出投影与车尾距离0.6–0.7m，另有Logo距离车尾390–400mm。公开证据表明其采集脚踩投影区域状态并反馈/发出指令，但未直接披露“人脚与后备箱的距离状态信息”这一数据字段。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "投影高度：1m；投影与车尾距离：0.6~0.7m……车主只需轻轻一踩，经TOF模组准确检测并发出指令。"
+            },
+            {
+              "url": "https://m.ikanchai.com/pcarticle/437409",
+              "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+              "source_name": "砍柴网",
+              "snippet": "一数科技AR智能尾门的logo图案投射距离车尾390-400mm……车主只需轻轻一踩，经TOF模组准确检测并发出指令。"
+            }
+          ],
+          "reasoning": "固定投影区与车尾之间的距离参数，加上TOF检测脚踩动作，可推知采集的是脚部相对投影/车尾区域的状态并用于控制；但没有公开到“人脚与后备箱距离状态信息”的直接描述。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C5-F3",
+          "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+          "competitor_feature": "ASU公开工作顺序为：车主带钥匙到达车尾车辆自动感知；系统投射图案；车主轻踩后TOF模组准确检测并发出指令；尾门在保障安全距离情况下自动打开。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "http://a-su.com.cn/html/news20210401.html",
+              "title": "一数科技原创AR智能尾门开关获中国汽车供应链大奖 - ASU",
+              "source_name": "一数科技官网",
+              "snippet": "当用户携带钥匙靠近车尾时，系统会自动感知，并通过光学投影技术在距离尾门一定距离的地面上投射出相应图案……TOF 模组就会准确检测并发出指令，尾门将在保障用户安全距离的情况下自动打开。"
+            },
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主带着车钥匙到达车尾部时车辆会自动感知……车主只需轻轻一踩，经TOF模组准确检测并发出指令，尾门就会……自动打开。"
+            }
+          ],
+          "reasoning": "公开流程明确要求钥匙感知和TOF脚踩检测共同形成开启链路，并由系统发出指令控制尾门开启，满足该高层方法步骤。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 86.67
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，\n当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元",
+          "competitor_feature": "ASU公开称车主带车钥匙/蓝牙钥匙到达车尾部安全距离时车辆自动感知，随后投影。该证据支持车辆侧对钥匙靠近车尾状态进行检测并触发控制流程，但未直接披露“探测天线”、钥匙感应单元、从远至近状态变化信息及反馈到电控单元的具体实现。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://xinwen.bjd.com.cn/content/s5f74463fe4b03c6143a9f971.html",
+              "title": "AR智能尾门、智能AR-Hud 这些新技术值得一看",
+              "source_name": "北京日报客户端",
+              "snippet": "车主带蓝牙钥匙到达车尾部安全距离时，车辆会自动感知到，然后释放一束激光在地面投射出品牌Logo。"
+            },
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主带着车钥匙到达车尾部时车辆会自动感知，并通过MLA光学投影技术在地面投射出相应图案。"
+            }
+          ],
+          "reasoning": "蓝牙钥匙/车钥匙到车尾被车辆感知，通常需要车辆侧天线或接收器；但由于公开资料没有逐项披露天线位置和ECU反馈路径，只能认定可能满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；\n当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+          "competitor_feature": "ASU公开材料只披露当用户携带钥匙靠近车尾时系统自动感知并进入投影/脚踩检测流程；未披露钥匙不存在从远至近变化时的返回重新检测逻辑，也未披露ECU分支判断流程。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "http://a-su.com.cn/html/news20210401.html",
+              "title": "一数科技原创AR智能尾门开关获中国汽车供应链大奖 - ASU",
+              "source_name": "一数科技官网",
+              "snippet": "当用户携带钥匙靠近车尾时，系统会自动感知，并通过光学投影技术在距离尾门一定距离的地面上投射出相应图案。"
+            }
+          ],
+          "reasoning": "证据仅说明满足钥匙靠近条件后的下一步动作；没有公开“未检测到则返回重新检测/检测到则进入S2”的完整循环控制逻辑。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 55.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+          "competitor_feature": "ASU公开材料披露用户携带钥匙靠近车尾后系统自动感知，并在地面投射Logo/图案；但没有公开电控单元发送“脉冲信号”开启激光投影仪的内部电信号形式。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://xinwen.bjd.com.cn/content/s5f74463fe4b03c6143a9f971.html",
+              "title": "AR智能尾门、智能AR-Hud 这些新技术值得一看",
+              "source_name": "北京日报客户端",
+              "snippet": "车主带蓝牙钥匙到达车尾部安全距离时，车辆会自动感知到，然后释放一束激光在地面投射出品牌Logo。"
+            },
+            {
+              "url": "http://a-su.com.cn/3-1.html",
+              "title": "一数科技汽车智能光电产品-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR尾门开关……丰富的可定制控制接口 CAN LIN 可控高低电平。"
+            }
+          ],
+          "reasoning": "钥匙靠近后开启投影这一外部流程有证据；但“脉冲信号”是更窄的内部控制方式，公开资料未披露，不能严谨推定。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)",
+          "competitor_feature": "ASU公开采用激光/MLA光学投影在地面投射Logo，TOF模组准确检测脚踩动作并发出指令，响应速度<0.5s。TOF模组通常进行距离/定位检测，因此可能实时采集测距值并反馈控制单元；但公开资料未直接披露D、D1…Dn这类投射实际距离序列及其反馈方式。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.sohu.com/a/459444421_170520",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车/TechWeb",
+              "snippet": "通过MLA光学投影技术在地面投射出相应图案……经TOF模组准确检测并发出指令……响应速度：＜0.5s。"
+            },
+            {
+              "url": "http://www.a-su.com.cn/3-3.html",
+              "title": "一数科技光学器件与模组-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "ASU ToF T1/T2/T3激光ToF模组……适用于消费电子、汽车电子的定位传感……工作距离长，精确定位。"
+            }
+          ],
+          "reasoning": "投影到地面和TOF检测明确公开；TOF定位传感器可合理推知存在测距/定位数据。但该从属权利要求的连续D值采集和反馈到ECU未被直接披露，因此仅为可能满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C8-F2",
+          "patent_feature": "设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+          "competitor_feature": "未见ASU公开资料披露其算法将投射实际距离最大值Di设为基准值C，或任何关于C、D、最大值基准的阈值/标定算法。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "投影logo尺寸：10cmX10cm；投影高度：1m；投影与车尾距离：0.6~0.7m；响应速度：＜0.5s。"
+            }
+          ],
+          "reasoning": "公开参数仅是投影尺寸、高度、车尾距离和响应速度，未披露基准值C的计算规则或最大距离Di赋值逻辑。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 55.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+          "competitor_feature": "ASU公开资料披露TOF模组准确检测脚踩图案并发出指令，但未披露C与D差值阈值≤1cm，也未披露该条件下判断“人脚没有放置到地面影像上”的算法。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "http://a-su.com.cn/html/news20210401.html",
+              "title": "一数科技原创AR智能尾门开关获中国汽车供应链大奖 - ASU",
+              "source_name": "一数科技官网",
+              "snippet": "用户只需轻踩图案， TOF 模组就会准确检测并发出指令，尾门将在保障用户安全距离的情况下自动打开。"
+            }
+          ],
+          "reasoning": "脚踩检测有公开证据，但具体1cm阈值和无脚判断逻辑没有公开。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+          "competitor_feature": "ASU公开资料未披露C与D差值≤1cm、持续时间t1或因未踩踏/无脚状态持续而熄灭投影影像的控制策略。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.sohu.com/a/459444421_170520",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车/TechWeb",
+              "snippet": "投影logo尺寸：10cmX10cm（可定制）；投影亮度：200lm；投影高度：1m；投影与车尾距离：0.6~0.7m；响应速度：＜0.5s。"
+            }
+          ],
+          "reasoning": "公开资料虽有投影参数和响应速度，但没有披露投影熄灭条件、t1计时或1cm阈值。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：\n当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；\n当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上",
+          "competitor_feature": "ASU公开资料披露用户轻踩图案后TOF模组准确检测并发出指令，但未披露以C与D差值>1cm且<8cm作为判断脚落在影像上的阈值。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.ikanchai.com/pcarticle/437409",
+              "title": "“一脚踢”真不好用？别慌，识别率99%的智能尾门来了！",
+              "source_name": "砍柴网",
+              "snippet": "通过MLA光学投影技术在地面投射出logo图案，车主只需轻轻一踩，经TOF模组准确检测并发出指令。"
+            }
+          ],
+          "reasoning": "存在脚踩检测，但1cm到8cm的数值区间阈值未公开。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C11-F2",
+          "patent_feature": "当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+          "competitor_feature": "ASU公开资料未披露C与D差值≥8cm时返回钥匙检测步骤S1进行重新检测的分支流程。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "http://a-su.com.cn/html/news20210401.html",
+              "title": "一数科技原创AR智能尾门开关获中国汽车供应链大奖 - ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR 智能投影尾门开关……用户只需轻踩图案， TOF 模组就会准确检测并发出指令，尾门将在保障用户安全距离的情况下自动打开。"
+            }
+          ],
+          "reasoning": "公开资料没有8cm阈值，也没有失败/异常检测后返回S1的循环控制算法。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 12,
+      "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测。",
+      "comparisons": [
+        {
+          "feature_id": "C12-F1",
+          "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，\n如果是，所述电控单元控制开启后备箱；\n否则，返回S1进行重新检测",
+          "competitor_feature": "ASU公开资料披露轻踩投影后TOF模组检测并发出指令，尾门自动打开；未披露蜂鸣器提示，也未披露>1cm且<8cm状态持续t2秒后开启、否则返回S1的完整控制逻辑。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://tech.sina.cn/2021-04-07/detail-ikmxzfmk5483873.d.html",
+              "title": "一数科技推出ASU AR智能投影尾门开关 识别率99%、省去“一脚踢没反应”的尴尬_手机新浪网",
+              "source_name": "新浪科技/TechWeb",
+              "snippet": "车主只需轻轻一踩，经TOF模组准确检测并发出指令，尾门就会在保障用户安全距离的情况下自动打开。"
+            },
+            {
+              "url": "http://a-su.com.cn/3-1.html",
+              "title": "一数科技汽车智能光电产品-ASU",
+              "source_name": "一数科技官网",
+              "snippet": "AR 投影检测反应灵敏，≥99%准确……保证车尾门开启时人员的安全距离。"
+            }
+          ],
+          "reasoning": "尾门开启的最终动作有证据，但蜂鸣器、t2持续时间、1-8cm阈值和失败返回S1均没有公开披露。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 93.33,
+  "total_score": 93.33,
+  "searched_queries": [
+    "一数科技 ASU AR智能投影尾门开关 MLA光学投影 TOF模组 规格 参数",
+    "ASU AR智能投影尾门开关 安装位置 后保险杠 后备箱下方 TOF",
+    "ASU AR尾门开关 MLA TOF模组 脚踩图案 距离检测 安装结构",
+    "ASU AR智能投影尾门开关 系统框图 信息采集 智能钥匙 尾门控制",
+    "一数科技 AR尾门开关 CAN LIN 接线 车钥匙 尾门控制器",
+    "ASU AR智能投影尾门开关 线束 接口 CAN LIN 尾门控制器 接线图",
+    "一数科技 AR尾门开关 安装手册 CAN LIN 高低电平 尾门ECU",
+    "ASU AR smart projection tailgate switch wiring diagram CAN LIN tailgate ECU"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}
