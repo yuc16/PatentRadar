@@ -1,0 +1,542 @@
+{
+  "candidate": {
+    "candidate_id": "P07",
+    "company": "蔚来汽车",
+    "company_en": "NIO",
+    "product_name": "全新蔚来ES8后排吸顶屏",
+    "product_name_en": "All-new NIO ES8 rear ceiling display",
+    "product_version": "2026款；Mini LED吸顶屏/多媒体屏幕数量2个",
+    "market": "中国高端纯电SUV后排娱乐座舱",
+    "reason_for_deep_dive": "摘要显示该车型后排吸顶屏具有运动系统、防夹手和低噪声设计，涉及车内显示装置的运动机构；需进一步核查运动机构是否包含导轨滑动、是否存在横竖屏切换，以及运动范围是否面向中控台—后排路径。",
+    "source_result_ids": [
+      "brave-Q25-03",
+      "brave-Q25-04",
+      "tavily-Q25-02"
+    ],
+    "source_urls": [
+      "https://www.smartautoclub.com/p/106040",
+      "https://www.nio.cn/vehicle/configuration/es8",
+      "https://car.autohome.com.cn/config/series/4427.html"
+    ],
+    "initial_evidence_summary": "智能汽车资源网摘要称全新ES8车内屏幕包括车规级OLED中控、Mini LED数字天际线、Mini LED吸顶屏，吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音；汽车之家配置摘要显示其多媒体屏幕数量为2个、液晶屏幕类型为Mini LED。"
+  },
+  "launch_date": "2025年8月21日预售/技术发布；2025年9月20日正式上市，2025年9月21日开启交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+      "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+      "source_name": "快科技",
+      "snippet": "2025-08-21 20:56:33；在今晚举办的全新蔚来ES8技术发布会上，李斌介绍了这款车首发搭载的“天空屏”，也就是大家更熟悉的后排娱乐屏。"
+    },
+    {
+      "url": "https://www.donews.com/news/detail/7/6132624.html",
+      "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+      "source_name": "DoNews汽车",
+      "snippet": "2025蔚来日（NIO Day 2025）9月20日在杭州举行，蔚来宣布全场景科技旗舰SUV——全新ES8正式上市；全新ES8将于9月21日起正式开启交付。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开证据显示全新ES8及其21.4英寸mini-LED天空屏/后排娱乐屏发布、上市和交付均晚于专利申请日2018-03-30；现有证据未出现可直接判定权利要求1任一特征明确不满足的相反技术参数。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆，其特征在于，包括：\n车体，所述车体包括中控台和后排座椅；\n导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；\n显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "全新ES8为大型纯电SUV，公开资料显示车内有15.6英寸AMOLED中控横屏、中控台/前排座舱，以及六座或七座空间布局、二排/三排座椅，故车体包括中控台和后排座椅。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.donews.com/news/detail/7/6132624.html",
+              "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+              "source_name": "DoNews汽车",
+              "snippet": "全新ES8拥有5,280mm超长车身和3,130mm轴距；全新ES8以多维线条构建环抱式座舱布局；前后双杜比视界大屏幕，15.6英寸AMOLED中控横屏；拥有六座和七座两种空间布局。"
+            },
+            {
+              "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "车内配备了Skyline天际线屏幕、悬浮式中控屏以及最新升级的NOMI系统；车内采用大六座布局，前排座椅可180°水平放倒，与二排座椅联动。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "全新蔚来 ES8 的车身尺寸为 5280/2010/1800mm，轴距为 3130mm；座舱以环拥感为主题，含前排内饰、二排配置、三排配置等内容。"
+            }
+          ],
+          "reasoning": "多家公开资料直接描述全新ES8为整车SUV并具有前排中控区域、15.6英寸中控屏及六座/七座后排座椅布局，覆盖“车体包括中控台和后排座椅”。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "现有证据确认全新ES8有二排上方21.4英寸mini-LED天空屏/吸顶娱乐屏，以及该吸顶屏具备运动系统、防夹手、高性能电机、锁舌机构等；新补充证据还显示后排屏幕支持无极角度调节。但没有公开资料直接披露存在“导轨”，也没有披露导轨安装在车体并从中控台延伸至后排座椅。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "全新ES8车内屏幕包括车规级OLED中控、Mini LED数字天际线、Mini LED吸顶屏；吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节，任何角度都能适配。"
+            },
+            {
+              "url": "https://www.nio.cn/vehicle/configuration/es8",
+              "title": "蔚来全新ES8参数配置表_价格单-NIO蔚来官网",
+              "source_name": "NIO蔚来官网",
+              "snippet": "配置表列出48英寸Skyline数字天际线、15.6英寸AMOLED中控大屏、21.4英寸mini-LED天空屏、8英寸AMOLED后排控制屏等。"
+            }
+          ],
+          "reasoning": "“运动系统/电机/无极角度调节”可说明后排吸顶屏可能具有翻折或角度调节机构，但并不能等同于沿车体设置的导轨，更不能证明导轨从中控台延伸至后排座椅。没有公开证据给出导轨路径或安装位置。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "全新ES8公开配置21.4英寸mini-LED天空屏/二排上方吸顶娱乐屏，属于安装在车体内的显示装置；但公开资料仅显示其位于二排上方、可供后排观影、支持多屏联动/控制，未公开其与导轨配合，也未公开其可在中控台和后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+              "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+              "source_name": "快科技",
+              "snippet": "全新蔚来ES8首发搭载“天空屏”，也就是后排娱乐屏；这块屏尺寸为21.4英寸，采用mini-LED材质。"
+            },
+            {
+              "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "车内采用大六座布局；二排上方首次加入吸顶娱乐屏，搭配中控手箱处的二排显示屏幕，解锁影院级的二排观影体验。"
+            },
+            {
+              "url": "https://news.qq.com/rain/a/20250821A08MZ500",
+              "title": "车载电视继续卷!全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏_腾讯新闻",
+              "source_name": "腾讯新闻/快科技",
+              "snippet": "该屏幕集成独立安卓系统与语音控制功能，可与前排屏幕实现多屏联动，后排乘客能通过语音指令或中控手箱处的二排显示屏幕对其进行操作。"
+            }
+          ],
+          "reasoning": "公开证据能证明存在后排显示装置并安装于车辆内，但“吸顶屏”“后排娱乐屏”“无极角度调节”均未披露导轨滑动配合或中控台—后排座椅之间的滑动行程，因此该组合特征证据不足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "公开证据显示全新ES8前排中控屏由竖屏升级为横幅样式，后排为21.4英寸mini-LED天空屏/吸顶娱乐屏，且后排屏支持角度调节；但未找到后排吸顶屏可在横屏和竖屏之间切换的公开描述，也未找到与导轨配合时切换至竖屏状态的公开描述。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.donews.com/news/detail/7/6132624.html",
+              "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+              "source_name": "DoNews汽车",
+              "snippet": "前后双杜比视界大屏幕，带来专业级观影享受。15.6英寸AMOLED中控横屏呈现细腻画质。同级唯一的车规级21.4英寸mini-LED天空屏。"
+            },
+            {
+              "url": "https://tech.hexun.com/2025-08-21/221023510.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅全上车-科技频道-和讯网",
+              "source_name": "和讯网",
+              "snippet": "方向盘采用三辐式设计，车机中控屏由竖行屏幕升级为横幅样式；车内采用大六座布局，二排上方首次加入吸顶娱乐屏。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节，任何角度都能适配。"
+            }
+          ],
+          "reasoning": "“中控屏由竖屏升级为横幅样式”指前排中控屏形态；后排21.4英寸天空屏的公开信息集中于显示规格、吸顶位置、观影体验和角度调节，不能证明其可横竖屏切换，更不能证明导轨配合时切换至竖屏。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 47.5
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+          "competitor_feature": "公开资料显示全新ES8二排上方有吸顶娱乐屏，中控手箱处配备二排显示屏幕/后排控制屏，二排座椅有扶手及控制按键；但未公开任何导轨，更未公开导轨从中控台延伸至后排座椅中央扶手处。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "二排上方首次加入吸顶娱乐屏，搭配中控手箱处的二排显示屏幕，解锁影院级的二排观影体验。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156620",
+              "title": "新出行图文详解 86期：全方位解析蔚来全新 ES8 内饰官图_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "二排座椅方面，可以看到其座椅扶手顶端有按键；下方左右两个座椅都有配备储物格，右后座椅多出了三个按键。"
+            },
+            {
+              "url": "https://www.nio.cn/vehicle/configuration/es8",
+              "title": "蔚来全新ES8参数配置表_价格单-NIO蔚来官网",
+              "source_name": "NIO蔚来官网",
+              "snippet": "配置表列出21.4英寸mini-LED天空屏、8英寸AMOLED后排控制屏等。"
+            }
+          ],
+          "reasoning": "证据可定位后排娱乐屏、后排控制屏及二排座椅扶手结构，但没有出现导轨及其延伸终点。该从属限定无法由现有证据确认。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+          "competitor_feature": "智能汽车资源网摘要提到全新ES8吸顶屏采用“锁舌机构”和缓冲垫设计以控制运行噪音，说明显示屏运动系统可能存在锁止/锁舌部件；但未公开该锁止机构设置在中控台或后排座椅，也未公开其用于对可滑动显示装置在中控台/后排座椅处定位。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节。"
+            }
+          ],
+          "reasoning": "“锁舌机构”是相关线索，但公开文本没有披露锁舌位于中控台或后排座椅，也没有说明其定位的是沿导轨滑动的显示装置；因此不足以对应本权利要求的结构位置和功能限定。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+          "competitor_feature": "公开资料显示全新ES8具有中控区域/副仪表台，中控区域前方有双50W无线充电、杯架，副仪表台采用桥鞍式设计并位于前排中控与后排之间；但未公开导轨，也未公开导轨与副仪表台内饰相配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "全新蔚来 ES8 在门板以及中控区域加入了云影真木设计；中控区域前方是双 50W 手机无线充电，中央盖板位置是杯架。"
+            },
+            {
+              "url": "https://article.pchome.net/info/5632.html",
+              "title": "蔚来公布全新ES8内饰：配备大尺寸悬浮式中控屏与天际线屏",
+              "source_name": "PChome",
+              "snippet": "副仪表台采用桥鞍式设计，木纹饰板搭配双手机无线充电面板、储物格与触控按键，下方还提供额外储物空间。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/21662341",
+              "title": "全新蔚来ES8内饰官图公布：配备Skyline天际线屏幕、悬浮式中控屏_车家号_汽车之家",
+              "source_name": "汽车之家/车家号",
+              "snippet": "车内采用大六座布局，二排上方首次加入吸顶娱乐屏；中控手箱处还配备了二排显示屏幕，可对车辆进行全车交互。"
+            }
+          ],
+          "reasoning": "现有资料能证明副仪表台/中控手箱等内饰存在并处于前后排之间，但本特征还要求“导轨与副仪表台内饰相配合”。因导轨本身及其与副仪表台的配合关系均未公开，故证据不足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+          "competitor_feature": "公开资料未披露全新ES8在副仪表台左侧和右侧设置两条导轨；现有信息仅涉及副仪表台、双无线充电、杯架、后排控制屏和二排吸顶屏。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://article.pchome.net/info/5632.html",
+              "title": "蔚来公布全新ES8内饰：配备大尺寸悬浮式中控屏与天际线屏",
+              "source_name": "PChome",
+              "snippet": "副仪表台采用桥鞍式设计，木纹饰板搭配双手机无线充电面板、储物格与触控按键，下方还提供额外储物空间。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "中控区域前方是双 50W 手机无线充电，中央盖板位置是杯架；此外，ES8搭载ET9同款触摸板。"
+            }
+          ],
+          "reasoning": "证据未出现“双导轨”“副仪表台左右侧轨道”等结构信息，不能确认该从属特征。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述显示装置与所述车体有线连接",
+          "competitor_feature": "全新ES8的21.4英寸mini-LED天空屏是原厂车载集成显示装置，公开配置表列为整车智能座舱配置，并与前排屏幕、后排控制屏、语音控制、多屏联动共同工作。虽然资料未直接写明“有线连接”，但车规级吸顶屏通常需要车体供电和车机/音视频信号接入，基于其固定车载集成属性，可合理推断其至少存在与车体电源/数据系统的有线连接。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.nio.cn/vehicle/configuration/es8",
+              "title": "蔚来全新ES8参数配置表_价格单-NIO蔚来官网",
+              "source_name": "NIO蔚来官网",
+              "snippet": "配置表列出21.4英寸mini-LED天空屏、8英寸AMOLED后排控制屏、车载互联、NIO Link全景互联等智能座舱配置。"
+            },
+            {
+              "url": "https://news.qq.com/rain/a/20250821A08MZ500",
+              "title": "车载电视继续卷!全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏_腾讯新闻",
+              "source_name": "腾讯新闻/快科技",
+              "snippet": "该屏幕集成独立安卓系统与语音控制功能，可与前排屏幕实现多屏联动，后排乘客能通过语音指令或中控手箱处的二排显示屏幕对其进行操作。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "全新ES8配备SKYLine天际线屏、中控屏、吸顶屏以及NOMI 3.0，吸顶屏采用运动系统方案、高性能电机等。"
+            }
+          ],
+          "reasoning": "公开资料未直接说明线束，但21.4英寸车规级mini-LED吸顶屏作为原厂整车配置，具备独立系统、语音控制、多屏联动及运动电机，通常必须接入车辆电源和控制网络；该推理支持“可能满足”，但因未见线束/接口公开图或文字，不能判定为明确满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+          "competitor_feature": "公开资料没有披露全新ES8后排吸顶屏具有随显示装置滑动而伸缩的线体，也没有披露用于收纳该线体的卷线器。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节。"
+            }
+          ],
+          "reasoning": "现有证据仅提示吸顶屏有运动/角度调节机构；卷线器通常用于线缆随滑动或抽拉收放，但没有任何公开文本或图片描述ES8存在卷线器或线缆收纳结构。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 55.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：\n显示主体，所述显示主体具有收纳槽；\n滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述显示装置包括：\n显示主体，所述显示主体具有收纳槽",
+          "competitor_feature": "全新ES8公开具有21.4英寸mini-LED天空屏/吸顶娱乐屏，可视为显示主体；但公开资料未披露该显示主体上具有用于收纳滑行支脚的收纳槽。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+              "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+              "source_name": "快科技",
+              "snippet": "全新蔚来ES8首发搭载“天空屏”，也就是后排娱乐屏；这块屏尺寸为21.4英寸，采用mini-LED材质。"
+            },
+            {
+              "url": "https://www.nio.cn/vehicle/configuration/es8",
+              "title": "蔚来全新ES8参数配置表_价格单-NIO蔚来官网",
+              "source_name": "NIO蔚来官网",
+              "snippet": "配置表列出21.4英寸mini-LED天空屏。"
+            }
+          ],
+          "reasoning": "显示主体本身可由后排天空屏确认，但“收纳槽”属于内部机械结构，现有公开资料未披露。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "公开资料显示全新ES8后排屏幕有运动系统、高性能电机、锁舌机构，并支持无极角度调节；但未公开显示主体上有可转动的滑行支脚，未公开滑行支脚收起/展开状态，也未公开其伸出后与导轨相配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节。"
+            }
+          ],
+          "reasoning": "运动系统和角度调节更像吸顶屏翻折/俯仰机构的线索，不能推出存在滑行支脚、收纳槽、展开后与导轨配合等具体结构。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+          "competitor_feature": "公开资料提到全新ES8吸顶屏采用高性能电机和先进运动系统，说明可能存在驱动装置；但未公开该驱动装置设置在显示主体内，更未公开其与滑行支脚传动连接，且滑行支脚本身未被公开。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节。"
+            }
+          ],
+          "reasoning": "“高性能电机”可作为驱动装置线索，但本从属权利要求要求其与滑行支脚传动连接。由于滑行支脚及传动连接关系均无公开证据，不能确认该特征。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体；\n滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体",
+          "competitor_feature": "公开资料未披露全新ES8后排天空屏具有滑行支脚或支撑腿，也未披露任何支撑腿可转动安装于显示主体。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "后排屏幕支持无极角度调节的搜索摘要说明存在角度调节能力，但未披露支撑腿结构。"
+            }
+          ],
+          "reasoning": "现有证据最多说明后排屏存在运动/角度调节机构，未披露其由支撑腿构成或支撑腿安装方式。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C9-F2",
+          "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "公开资料未披露全新ES8后排天空屏具有可转动安装在支撑腿上的滑行脚，也未披露滑行脚伸出显示主体并与导轨配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节。"
+            }
+          ],
+          "reasoning": "无公开证据显示“滑行脚”或“与导轨配合”的结构；运动系统并不能细化到该两级转动支脚结构。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+          "competitor_feature": "现有公开资料未披露全新ES8存在导轨、滑行脚，也未披露齿条-齿轮啮合机构；仅披露吸顶屏运动系统、高性能电机、锁舌机构等较概括信息。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "全新蔚来ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/156846",
+              "title": "新出行图文详解 89期：静态体验蔚来全新 ES8_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "搜索结果摘要显示：蔚来 ES8 的后排屏幕支持无极角度调节。"
+            }
+          ],
+          "reasoning": "“齿条/齿轮”是具体传动副结构；现有证据没有拆解图、专利图或官方说明支持。不能由“电机/运动系统”直接推导为齿条齿轮。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 47.5,
+  "total_score": 47.5,
+  "searched_queries": [
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 中国 市场",
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 规格书 参数",
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 官方 参数",
+    "全新蔚来ES8 吸顶屏 防夹手 运动系统 电机 锁舌机构 拆解",
+    "全新蔚来ES8 吸顶屏 横竖屏 旋转 竖屏",
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 上市 日期 发布",
+    "全新蔚来ES8 天空屏 运动系统 导轨 轨道 中控台 后排",
+    "全新ES8 21.4英寸天空屏 滑轨 运动机构 位置",
+    "NIO ES8 sky screen rail track sliding mechanism rear entertainment display",
+    "蔚来 ES8 吸顶屏 运动系统 专利 滑轨 结构"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

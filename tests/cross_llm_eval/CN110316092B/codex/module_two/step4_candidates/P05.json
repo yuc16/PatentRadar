@@ -1,0 +1,163 @@
+{
+  "candidate": {
+    "candidate_id": "P05",
+    "company": "魏牌",
+    "company_en": "Wey",
+    "product_name": "全新高山后排超清吸顶屏",
+    "product_name_en": "Wey Gaoshan rear ultra-clear ceiling display",
+    "product_version": "17.3英寸；2K分辨率/HDR10+；电动滑轨固定",
+    "market": "中国高端MPV后排娱乐座舱",
+    "reason_for_deep_dive": "摘要公开其后舱显示屏通过电动滑轨固定，属于车内显示装置与滑轨配合的后排娱乐屏方案；需核查电动滑轨是否具有前后滑移路径、是否可从中控区域向后排移动，以及是否具备横竖屏切换。",
+    "source_result_ids": [
+      "brave-Q14-03"
+    ],
+    "source_urls": [
+      "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp"
+    ],
+    "initial_evidence_summary": "摘要称全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm，配合2K分辨率与HDR10+技术。"
+  },
+  "launch_date": "2025年5月13日全新高山8/9正式上市；高山7为2025年10月15日正式上市",
+  "launch_date_evidence": [
+    {
+      "url": "https://news.qq.com/rain/a/20250517A07CMF00",
+      "title": "魏牌全新高山正式上市，开启家庭MPV豪华出行新时代_腾讯新闻",
+      "source_name": "腾讯新闻",
+      "snippet": "5月13日，以“开启MPV家庭新时代”为主题的魏牌全新高山上市发布会在保定圆满举行。此次发布会正式推出了全新高山8/9两款车型。"
+    },
+    {
+      "url": "https://auto.ifeng.com/c/8nTnuNjU2QH",
+      "title": "魏牌高山7正式上市，售价28.58万元_凤凰网",
+      "source_name": "凤凰网汽车",
+      "snippet": "10月15日，魏牌高山7正式上市，官方指导价为28.58万元。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：公开上市/发布记录均晚于专利申请日2018-03-30；现有证据也未直接给出与权利要求特征矛盾的参数。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "车体，所述车体包括中控台和后排座椅",
+      "competitor_feature": "魏牌全新高山为中大型MPV车辆；公开资料显示车内有中控屏/中控台，并采用2+2+3或6/7座布局，包含二排、三排等后排座椅。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.wey.com/gaoshan.html",
+          "title": "魏牌全新高山 开启MPV家庭新时代 - 魏牌官网",
+          "source_name": "魏牌官网",
+          "snippet": "魏牌全新高山；高山7/高山8/高山9；车长、车宽、车高、轴距等整车参数；舒享空间，一家人的移动大客厅。"
+        },
+        {
+          "url": "https://cj.sina.com.cn/articles/view/1596062412/5f21facc0270120i1",
+          "title": "开创豪华MPV新领域 试驾2024款魏牌高山__财经头条",
+          "source_name": "财经头条",
+          "snippet": "在内部，魏牌高山采用了大量皮质材料包裹；此外，该车中控台造型平直，搭配双色内饰。"
+        },
+        {
+          "url": "http://auto.cnfol.com/xincheshangshi/20231012/30427769.shtml",
+          "title": "魏牌高山将于10月18日正式上市 定位家族旗舰MPV_中金在线",
+          "source_name": "中金在线",
+          "snippet": "作为一款中大型MPV，新车长宽高为5045*1960*1900mm，轴距3085mm，内部为2+2+3的7座布局；后排采用二三排共轨设计。"
+        }
+      ],
+      "reasoning": "官网和媒体资料证明其为MPV车辆；财经头条明确提到“中控台”，中金在线明确披露7座布局及后排二三排设计，足以对应车体含中控台和后排座椅。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+      "competitor_feature": "现有资料仅称后排吸顶屏“通过电动滑轨固定于车顶”，另有资料披露二三排座椅共轨；未公开显示该显示屏导轨从中控台延伸至后排座椅。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+          "title": "全新高山后排超清吸顶屏相关报道",
+          "source_name": "新浪财经头条",
+          "snippet": "摘要显示：全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm，配合2K分辨率与HDR10+技术。"
+        },
+        {
+          "url": "https://www.zhev.com.cn/news/show-1657892958-3.html",
+          "title": "魏牌高山共创版10月18日亮相_电车之家",
+          "source_name": "电车之家",
+          "snippet": "后排采用二三排共轨设计，长达1845mm的超长滑轨使第二排腿部最大空间可达1166mm。"
+        }
+      ],
+      "reasoning": "“电动滑轨固定于车顶”只能证明存在与吸顶屏相关的车顶滑轨线索；二三排共轨是座椅滑轨。均未说明显示屏导轨起自中控台并延伸至后排。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+      "competitor_feature": "公开资料显示车内安装17.3英寸后排娱乐/吸顶屏，并有“电动滑轨固定于车顶”的说法；但未披露显示屏可沿导轨在中控台与后排座椅之间滑动。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+          "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+          "source_name": "搜狐汽车",
+          "snippet": "超级影院则提供沉浸式娱乐体验，搭载双15.6英寸超高清联屏和17.3英寸后排娱乐屏幕，同时支持多角度调节。"
+        },
+        {
+          "url": "https://chejiahao.m.autohome.com.cn/info/23324025",
+          "title": "全新魏牌高山7上市，外观大气，激光雷达+英伟达芯片，配电动四驱_汽车之家",
+          "source_name": "汽车之家车家号",
+          "snippet": "全新魏牌高山7带有二三排遮阳帘、17.3英寸3K后排娱乐屏，办公小桌板等。"
+        },
+        {
+          "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+          "title": "全新高山后排超清吸顶屏相关报道",
+          "source_name": "新浪财经头条",
+          "snippet": "摘要显示：屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+        }
+      ],
+      "reasoning": "证据能支持其有车内后排显示屏及车顶电动滑轨线索，但“固定”“多角度调节”不等于沿长导轨滑动，更未证明行程覆盖中控台至后排座椅。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+      "competitor_feature": "公开资料仅披露17.3英寸后排娱乐屏/吸顶屏、2K或3K分辨率、HDR10+、多角度调节；未找到横屏/竖屏旋转切换，也未找到与导轨配合时切换为竖屏的说明。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+          "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+          "source_name": "搜狐汽车",
+          "snippet": "搭载双15.6英寸超高清联屏和17.3英寸后排娱乐屏幕，同时支持多角度调节，满足不同乘员的影音需求。"
+        },
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/21838129",
+          "title": "魏牌高山7实车亮相！17.3吋屏+智能冰箱，5.7秒破百，你喜欢吗？_汽车之家",
+          "source_name": "汽车之家车家号",
+          "snippet": "17.3英寸的3K后排娱乐屏、智能冷暖冰箱、双折叠小桌板、带有电动遮阳帘的全景天幕等配置。"
+        },
+        {
+          "url": "https://m.yiche.com/zhai/2067012",
+          "title": "魏牌蓝山以及17.3寸后排娱乐屏_易车",
+          "source_name": "易车",
+          "snippet": "配备15.6英寸中控双联屏，以及17.3寸后排娱乐屏；副驾及后排用户可以通过Air Touch隔空触摸功能进行控制。"
+        }
+      ],
+      "reasoning": "现有证据只涉及屏幕尺寸、分辨率、后排娱乐、角度调节或交互控制；没有屏幕横竖屏旋转机构或与导轨配合自动/手动切换至竖屏的公开说明。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 47.5,
+  "searched_queries": [
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 规格书 参数",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 说明书 PDF",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 官方 参数",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 拆解 结构",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 上市 日期 发布",
+    "魏牌 全新高山后排超清吸顶屏 中国 市场"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "candidate": {
+    "candidate_id": "P05",
+    "company": "魏牌",
+    "company_en": "Wey",
+    "product_name": "全新高山后排超清吸顶屏",
+    "product_name_en": "Wey Gaoshan rear ultra-clear ceiling display",
+    "product_version": "17.3英寸；2K分辨率/HDR10+；电动滑轨固定",
+    "market": "中国高端MPV后排娱乐座舱",
+    "reason_for_deep_dive": "摘要公开其后舱显示屏通过电动滑轨固定，属于车内显示装置与滑轨配合的后排娱乐屏方案；需核查电动滑轨是否具有前后滑移路径、是否可从中控区域向后排移动，以及是否具备横竖屏切换。",
+    "source_result_ids": [
+      "brave-Q14-03"
+    ],
+    "source_urls": [
+      "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp"
+    ],
+    "initial_evidence_summary": "摘要称全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm，配合2K分辨率与HDR10+技术。"
+  },
+  "launch_date": "2025年5月13日全新高山8/9正式上市；高山7为2025年10月15日正式上市",
+  "launch_date_evidence": [
+    {
+      "url": "https://news.qq.com/rain/a/20250517A07CMF00",
+      "title": "魏牌全新高山正式上市，开启家庭MPV豪华出行新时代_腾讯新闻",
+      "source_name": "腾讯新闻",
+      "snippet": "5月13日，以“开启MPV家庭新时代”为主题的魏牌全新高山上市发布会在保定圆满举行。此次发布会正式推出了全新高山8/9两款车型。"
+    },
+    {
+      "url": "https://auto.ifeng.com/c/8nTnuNjU2QH",
+      "title": "魏牌高山7正式上市，售价28.58万元_凤凰网",
+      "source_name": "凤凰网汽车",
+      "snippet": "10月15日，魏牌高山7正式上市，官方指导价为28.58万元。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：公开上市/发布记录均晚于专利申请日2018-03-30；现有证据未直接证明权利要求1任一特征明确不满足。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆，其特征在于，包括：\n车体，所述车体包括中控台和后排座椅；\n导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；\n显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "魏牌全新高山为中大型MPV车辆；公开资料显示其具有中控台/中控屏，并采用6座或2+2+3的7座布局，包含二排、三排等后排座椅。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.wey.com/gaoshan.html",
+              "title": "魏牌全新高山 开启MPV家庭新时代 - 魏牌官网",
+              "source_name": "魏牌官网",
+              "snippet": "魏牌全新高山；高山7/高山8/高山9；车长、车宽、车高、轴距等整车参数；舒享空间，一家人的移动大客厅。"
+            },
+            {
+              "url": "https://cj.sina.com.cn/articles/view/1596062412/5f21facc0270120i1",
+              "title": "开创豪华MPV新领域 试驾2024款魏牌高山__财经头条",
+              "source_name": "财经头条",
+              "snippet": "在内部，魏牌高山采用了大量皮质材料包裹；此外，该车中控台造型平直，搭配双色内饰。"
+            },
+            {
+              "url": "http://auto.cnfol.com/xincheshangshi/20231012/30427769.shtml",
+              "title": "魏牌高山将于10月18日正式上市 定位家族旗舰MPV_中金在线",
+              "source_name": "中金在线",
+              "snippet": "作为一款中大型MPV，新车长宽高为5045*1960*1900mm，轴距3085mm，内部为2+2+3的7座布局；后排采用二三排共轨设计。"
+            }
+          ],
+          "reasoning": "官网和媒体资料证明全新高山属于MPV车辆；财经头条明确提到“中控台”，中金在线明确披露7座布局及后排二三排设计，足以对应“车体包括中控台和后排座椅”。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "公开资料仅显示后排17.3英寸吸顶/娱乐屏“通过电动滑轨固定于车顶”，另有大量资料披露二三排座椅共轨；没有公开证据表明显示屏用导轨从中控台延伸至后排座椅。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "摘要显示：全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm，配合2K分辨率与HDR10+技术。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003100608902",
+              "title": "豪华MPV二排娱乐系统对决：后排屏幕如何重塑移动客厅体验 | BitAuto",
+              "source_name": "BitAuto/易车",
+              "snippet": "全新高山以“17.3英寸超清吸顶屏”成为“尺寸王者”，其屏幕通过电动滑轨固定于车顶，展开后距二排座椅仅30cm，配合2K分辨率与HDR。"
+            },
+            {
+              "url": "https://www.zhev.com.cn/news/show-1657892958-3.html",
+              "title": "魏牌高山共创版10月18日亮相_电车之家",
+              "source_name": "电车之家",
+              "snippet": "后排采用二三排共轨设计，长达1845mm的超长滑轨使第二排腿部最大空间可达1166mm。"
+            }
+          ],
+          "reasoning": "“电动滑轨固定于车顶”只能证明存在与吸顶屏相关的车顶滑轨线索；二三排共轨证据指向座椅滑轨而非显示屏导轨。现有证据未披露导轨起点在中控台、终点到后排座椅，也未披露其跨越前后舱的布置路径。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "全新高山公开搭载17.3英寸后排娱乐屏/吸顶屏，并有“通过电动滑轨固定于车顶”的资料；但未公开显示该屏可沿导轨在中控台与后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+              "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+              "source_name": "搜狐汽车",
+              "snippet": "超级影院则提供沉浸式娱乐体验，搭载双15.6英寸超高清联屏和17.3英寸后排娱乐屏幕，同时支持多角度调节。"
+            },
+            {
+              "url": "https://chejiahao.m.autohome.com.cn/info/23324025",
+              "title": "全新魏牌高山7上市，外观大气，激光雷达+英伟达芯片，配电动四驱_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "全新魏牌高山7带有二三排遮阳帘、17.3英寸3K后排娱乐屏，办公小桌板等。"
+            },
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "摘要显示：屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            }
+          ],
+          "reasoning": "证据能支持车内安装后排显示屏以及存在车顶电动滑轨线索；但“固定于车顶”“多角度调节”不能等同于显示屏沿长导轨在中控台与后排座椅之间滑动，公开材料也未给出该滑动行程。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "公开资料仅披露17.3英寸后排娱乐屏/吸顶屏、2K或3K分辨率、HDR10+、五屏交互、5个角度自由调节或多角度调节；未找到横屏/竖屏旋转切换，也未找到与导轨配合时切换为竖屏的说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+              "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+              "source_name": "搜狐汽车",
+              "snippet": "搭载双15.6英寸超高清联屏和17.3英寸后排娱乐屏幕，同时支持多角度调节，满足不同乘员的影音需求。"
+            },
+            {
+              "url": "https://www.eet-china.com/mp/a405259.html",
+              "title": "魏牌全新高山：新家庭时代，如何觅知音？-电子工程专辑",
+              "source_name": "电子工程专辑",
+              "snippet": "后排娱乐屏采用17.3英寸3K超高清屏幕，就能够支持5个角度的自由调节，让后排乘客无论何种坐姿，都能找到最舒适的观影视角。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/21838129",
+              "title": "魏牌高山7实车亮相！17.3吋屏+智能冰箱，5.7秒破百，你喜欢吗？_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "17.3英寸的3K后排娱乐屏、智能冷暖冰箱、双折叠小桌板、带有电动遮阳帘的全景天幕等配置。"
+            }
+          ],
+          "reasoning": "多角度或5角度调节说明屏幕俯仰/观看角度可调的可能性较高，但不能证明显示屏可在横屏与竖屏之间切换，更不能证明其与导轨配合时自动或手动切换至竖屏。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 47.5
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+          "competitor_feature": "现有资料仅显示后排屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm；未披露该屏幕导轨从中控台延伸至后排座椅中央扶手处。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003100608902",
+              "title": "豪华MPV二排娱乐系统对决：后排屏幕如何重塑移动客厅体验 | BitAuto",
+              "source_name": "BitAuto/易车",
+              "snippet": "其屏幕通过电动滑轨固定于车顶，展开后距二排座椅仅30cm。"
+            }
+          ],
+          "reasoning": "权利要求2进一步限定导轨终点为后排座椅中央扶手处。已有公开资料的定位是车顶吸顶屏和车顶电动滑轨，未披露轨道与后排中央扶手的结构关系或终点位置。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+          "competitor_feature": "公开资料显示后排娱乐屏支持多角度/5角度自由调节，但未披露中控台或后排座椅上设置用于定位显示装置的锁止机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+              "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+              "source_name": "搜狐汽车",
+              "snippet": "17.3英寸后排娱乐屏幕，同时支持多角度调节。"
+            },
+            {
+              "url": "https://www.eet-china.com/mp/a405259.html",
+              "title": "魏牌全新高山：新家庭时代，如何觅知音？-电子工程专辑",
+              "source_name": "电子工程专辑",
+              "snippet": "后排娱乐屏采用17.3英寸3K超高清屏幕，就能够支持5个角度的自由调节。"
+            }
+          ],
+          "reasoning": "角度调节通常需要某种保持机构，但权利要求限定锁止机构设置在中控台和/或后排座椅中，用于定位显示装置。现有证据没有公开该锁止机构的存在、结构或安装位置。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+          "competitor_feature": "全新高山车内公开有副仪表台/中控台下方区域、无线充电面板和储物等配置；但后排屏相关资料显示其电动滑轨固定于车顶，未公开导轨与副仪表台内饰相配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://chejiahao.m.autohome.com.cn/pingan/chejiahao/detailinfo/19539561",
+              "title": "全新魏牌高山实拍，三尺寸可选+全系标配高阶智驾_车家号_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "车辆副仪表台搭配木质纹理饰板，提供50瓦手机无线充电面板、储物格、杯托等。"
+            },
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            }
+          ],
+          "reasoning": "证据可支持车辆具有副仪表台/中央通道内饰，但缺少“显示屏导轨与副仪表台内饰相配合”的公开说明。相反，现有屏幕滑轨线索主要指向车顶安装位置。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+          "competitor_feature": "公开资料未披露后排吸顶屏具有两个分别位于副仪表台左右两侧的导轨；现有屏幕相关资料仅称电动滑轨固定于车顶。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003100608902",
+              "title": "豪华MPV二排娱乐系统对决：后排屏幕如何重塑移动客厅体验 | BitAuto",
+              "source_name": "BitAuto/易车",
+              "snippet": "全新高山以“17.3英寸超清吸顶屏”成为“尺寸王者”，其屏幕通过电动滑轨固定于车顶。"
+            }
+          ],
+          "reasoning": "权利要求5要求两个导轨并限定其分别位于副仪表台左右侧。公开证据既未披露导轨数量为两个，也未披露左右布置在副仪表台侧部。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述显示装置与所述车体有线连接",
+          "competitor_feature": "全新高山后排17.3英寸屏为车辆内置车载娱乐屏，参与“五屏交互”，支持语音、手势、触控等车机交互；作为固定安装在车顶/车内的车载显示装置，公开证据可合理推断其至少通过车辆线束供电/通信，但未直接写明“有线连接”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.wey.com/gaoshan.html",
+              "title": "魏牌全新高山 开启MPV家庭新时代 - 魏牌官网",
+              "source_name": "魏牌官网",
+              "snippet": "超清五屏交互，每个屏都沉浸。超强五屏交互，搭配语音、手势、触控等交互方式，打破空间界限。"
+            },
+            {
+              "url": "https://xinwen.bjd.com.cn/content/s680f036ee4b0380e186b7410.html",
+              "title": "多项“全系标配”显诚意 魏牌全新高山预售开启",
+              "source_name": "北京日报客户端",
+              "snippet": "前排中控屏与副驾屏均为双15.6英寸2.5K屏；后排采用了17.3英寸的3K超高清屏。"
+            },
+            {
+              "url": "https://www.eet-china.com/mp/a405259.html",
+              "title": "魏牌全新高山：新家庭时代，如何觅知音？-电子工程专辑",
+              "source_name": "电子工程专辑",
+              "snippet": "后排娱乐屏采用17.3英寸3K超高清屏幕，就能够支持5个角度的自由调节。"
+            }
+          ],
+          "reasoning": "公开资料将该屏描述为车载后排娱乐屏且参与整车五屏交互，固定安装在车体内。基于车载固定显示屏的供电和车机交互需求，可严谨推断其与车辆电源/通信系统存在有线连接；但证据未直接披露线束或接口，因此仅评为可能满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+          "competitor_feature": "未找到全新高山后排吸顶屏具有用于收纳显示装置线体的卷线器、卷线盘或随动线束收纳机构的公开说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            },
+            {
+              "url": "https://www.eet-china.com/mp/a405259.html",
+              "title": "魏牌全新高山：新家庭时代，如何觅知音？-电子工程专辑",
+              "source_name": "电子工程专辑",
+              "snippet": "后排娱乐屏采用17.3英寸3K超高清屏幕，就能够支持5个角度的自由调节。"
+            }
+          ],
+          "reasoning": "即使推断车载屏存在有线连接，现有公开资料也没有披露其线体随滑动/翻转而收纳的卷线器结构，不能对应权利要求中的“卷线器”。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 55.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：\n显示主体，所述显示主体具有收纳槽；\n滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述显示装置包括：\n显示主体，所述显示主体具有收纳槽",
+          "competitor_feature": "公开资料能证明存在17.3英寸后排娱乐屏/吸顶屏这一显示主体；但未公开显示主体上具有收纳滑行支脚的收纳槽。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+              "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+              "source_name": "搜狐汽车",
+              "snippet": "搭载双15.6英寸超高清联屏和17.3英寸后排娱乐屏幕，同时支持多角度调节。"
+            },
+            {
+              "url": "https://www.eet-china.com/mp/a405259.html",
+              "title": "魏牌全新高山：新家庭时代，如何觅知音？-电子工程专辑",
+              "source_name": "电子工程专辑",
+              "snippet": "后排娱乐屏采用17.3英寸3K超高清屏幕，就能够支持5个角度的自由调节。"
+            }
+          ],
+          "reasoning": "“显示主体”本身可由后排娱乐屏对应，但权利要求特征还要求该显示主体具有收纳槽。现有报道均停留在尺寸、分辨率、调节角度和安装方式层面，未披露收纳槽结构。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "公开资料未披露后排吸顶屏具有可转动的滑行支脚、支脚收起/展开位置，或支脚伸出显示主体后与导轨配合。仅有“屏幕通过电动滑轨固定于车顶”和角度调节信息。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003100608902",
+              "title": "豪华MPV二排娱乐系统对决：后排屏幕如何重塑移动客厅体验 | BitAuto",
+              "source_name": "BitAuto/易车",
+              "snippet": "其屏幕通过电动滑轨固定于车顶，展开后距二排座椅仅30cm。"
+            }
+          ],
+          "reasoning": "车顶电动滑轨或屏幕展开状态不能直接证明存在“滑行支脚”这一具体构件，更不能证明其可转动、可收纳于收纳槽以及展开后与导轨配合。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+          "competitor_feature": "公开资料称后排屏通过“电动滑轨”固定于车顶，显示屏支持多角度或5角度调节；但未披露驱动装置设置在显示主体内，也未披露其与滑行支脚传动连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            },
+            {
+              "url": "https://www.eet-china.com/mp/a405259.html",
+              "title": "魏牌全新高山：新家庭时代，如何觅知音？-电子工程专辑",
+              "source_name": "电子工程专辑",
+              "snippet": "后排娱乐屏采用17.3英寸3K超高清屏幕，就能够支持5个角度的自由调节。"
+            }
+          ],
+          "reasoning": "“电动滑轨”暗示可能存在电机或驱动部件，但权利要求8限定驱动装置的位置在显示主体且传动对象为滑行支脚。由于滑行支脚本身未被公开，驱动装置与支脚传动连接也无证据支持。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体；\n滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体",
+          "competitor_feature": "未找到全新高山后排吸顶屏具有滑行支脚或支撑腿，亦未找到支撑腿可转动安装于显示主体的公开说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            },
+            {
+              "url": "https://www.eet-china.com/mp/a405259.html",
+              "title": "魏牌全新高山：新家庭时代，如何觅知音？-电子工程专辑",
+              "source_name": "电子工程专辑",
+              "snippet": "后排娱乐屏采用17.3英寸3K超高清屏幕，就能够支持5个角度的自由调节。"
+            }
+          ],
+          "reasoning": "公开材料没有给出显示屏滑动/展开机构的内部构件图或拆解信息，因此无法确认是否存在可转动支撑腿。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C9-F2",
+          "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "未找到全新高山后排吸顶屏具有可转动安装于支撑腿的滑行脚，或滑行脚伸出显示主体并与导轨配合的公开资料。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003100608902",
+              "title": "豪华MPV二排娱乐系统对决：后排屏幕如何重塑移动客厅体验 | BitAuto",
+              "source_name": "BitAuto/易车",
+              "snippet": "其屏幕通过电动滑轨固定于车顶，展开后距二排座椅仅30cm。"
+            }
+          ],
+          "reasoning": "现有证据仅说明车顶电动滑轨和屏幕展开距离，未披露“滑行脚—支撑腿—导轨”的分级铰接结构。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+          "competitor_feature": "未找到全新高山后排吸顶屏的电动滑轨为齿条、滑行脚为齿轮或采用齿轮齿条啮合机构的公开说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003100608902",
+              "title": "豪华MPV二排娱乐系统对决：后排屏幕如何重塑移动客厅体验 | BitAuto",
+              "source_name": "BitAuto/易车",
+              "snippet": "全新高山以“17.3英寸超清吸顶屏”成为“尺寸王者”，其屏幕通过电动滑轨固定于车顶。"
+            }
+          ],
+          "reasoning": "权利要求10限定具体传动副为齿条和齿轮。公开资料只使用“电动滑轨”概括性表述，没有齿条、齿轮、啮合或滑行脚结构证据。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 47.5,
+  "total_score": 47.5,
+  "searched_queries": [
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 规格书 参数",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 说明书 PDF",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 官方 参数",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 拆解 结构",
+    "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 上市 日期 发布",
+    "魏牌 全新高山后排超清吸顶屏 中国 市场",
+    "魏牌 高山9 后排吸顶屏 电动滑轨 行程 中控台 二排",
+    "全新高山 17.3英寸 后排娱乐屏 车顶电动滑轨 前后移动 视频",
+    "魏牌高山 车顶吸顶屏 滑轨 从前排到后排 实拍",
+    "Wey Gaoshan rear ceiling screen electric rail travel front rear video"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

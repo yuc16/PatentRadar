@@ -1,0 +1,1323 @@
+{
+  "publication_no": "CN110316092B",
+  "results": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "华人运通高合汽车",
+        "company_en": "Human Horizons HiPhi",
+        "product_name": "高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏",
+        "product_name_en": "HiPhi Z HiPhi Bot multi-axis central display",
+        "product_version": "2023款量产版；15.05英寸AMOLED 2K中控屏，4自由度8向可调",
+        "market": "中国豪华纯电轿车智能座舱",
+        "reason_for_deep_dive": "输入摘要显示其显示装置可前后移动并可横竖屏切换，直接覆盖权1的“显示装置可滑动/可移动”和“横屏、竖屏状态切换”两个关键参数；需进一步核查其前后移动机构是否包含导轨、移动范围是否可能从中控台延伸至后排座椅方向。",
+        "source_result_ids": [
+          "brave-Q23-01",
+          "brave-Q23-04",
+          "brave-Q23-05",
+          "tavily-Q23-02",
+          "tavily-Q23-04"
+        ],
+        "source_urls": [
+          "https://www.xchuxing.com/article/72423",
+          "https://news.qq.com/rain/a/20230828A03VG900",
+          "https://www.xchuxing.com/article/90272",
+          "https://www.hiphi.cn/hiphiz.html",
+          "http://m.diandong.com/news/161956.html"
+        ],
+        "initial_evidence_summary": "高合HiPhi Z的HiPhi Bot为多轴位移车载数字机器人；官方摘要称4自由度8向可调、高速运动机械臂，可前后移动、横竖屏切换、无级调节、任意悬停。第三方评测称中控屏为15.05英寸AMOLED 2K屏，机械臂支持前后、左右、俯仰、旋转4自由度；另有评测称可支撑中控屏20mm/s高速运动、2秒完成横竖切换。"
+      },
+      "launch_date": "2022年12月首批量产车下线，2023年1月启动批量交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.news18a.com/6479",
+          "title": "高合HiPhi Z",
+          "source_name": "网通社/auto.news18a.com",
+          "snippet": "高合第二款旗舰车型HiPhi Z首批量产车正式下线，并于当日启程发运全国。2023年1月，HiPhi Z将启动批量交付。2022-12-21"
+        },
+        {
+          "url": "http://m.diandong.com/news/161956.html",
+          "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+          "source_name": "电动邦",
+          "snippet": "去年11月，高合汽车第二款量产车型HiPhi Z正式亮相。发布会中官方强调，新车的造型和设计已经定型，并非概念车。发布于：2022-06-24"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "上市/量产时间晚于专利申请日2018-03-30，本身不因日期失格；但公开资料将HiPhi Bot描述为中控屏背后的多轴机械臂/丝杠电推杆结构，仅在中控屏处前后、左右、俯仰、旋转调节，未采用从中控台延伸至后排座椅的导轨，也不能沿该导轨在中控台与后排座椅之间滑动，故至少C1-F2/C1-F3明确不满足。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "HiPhi Z为中大型车，官方配置表列明4座/5座座位布置；官方页面描述“中控屏”、前排/后排座椅，汽车之家亦列出2023款四座、五座车型。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "前后排双调性座椅……HiPhi Bot多轴位移机车载数字机器人……参数配置表……座位布置4座/5座。"
+            },
+            {
+              "url": "https://car.autohome.com.cn/price/series-6472.html",
+              "title": "【高合HiPhi Z】华人运通_高合HiPhi Z价格_高合HiPhi Z报价_图片_汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "高合HiPhi Z……级别：中大型车……2023款 城市版 五座、城市版 四座、五座版、四座版。"
+            }
+          ],
+          "reasoning": "官方页面直接给出整车及4/5座布置，并多处出现中控屏、前后排座椅；汽车之家车型页也列明中大型车及四座/五座版本。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "HiPhi Bot的承载/位移机构为位于中控屏后方的多轴机械臂，配合伺服电机、丝杠电推杆、旋转机构实现前后、左右、俯仰、旋转调节；公开资料未显示车体上存在从中控台延伸至后排座椅的导轨，且机械臂位于中控屏后方而非贯穿前后排。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "位于中控屏后方的三轴机械臂……HiPhi Bot支持前后、左右、俯仰、旋转共4自由度以及8向可调，配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。"
+            },
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。"
+            },
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "新车搭载了全球首款多轴位移的车载数字机器人HiPhi Bot，这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。"
+            }
+          ],
+          "reasoning": "多源均将结构限定为中控屏背后的机械臂/丝杠推杆，而非安装在车体并延伸至后排的导轨；该结构位置和形式与本特征相矛盾。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "15.05英寸AMOLED中控屏安装在中控台区域，与HiPhi Bot机械臂组合；其“前后移动”属于机械臂4自由度/8向调节中的小范围运动，而非与车体导轨配合并在中控台与后排座椅之间滑动。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "HiPhi Z 的中控屏尺寸为15.05英寸……高合首创的机械臂组合成了一个 HiPhi Bot……支持前后、左右、俯仰、旋转共4自由度以及8向可调。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/90272",
+              "title": "智能座舱 GAMP｜高合 HiPhi Z 的表现究竟如何？",
+              "source_name": "新出行",
+              "snippet": "HiPhi Bot机械臂……拥有4自由度（左右旋转、俯仰旋转、前后移动、横竖旋转）的能力，可支撑中控屏实现20mm/s的高速运动、2秒完成横竖切换。"
+            },
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。"
+            }
+          ],
+          "reasoning": "证据证明其为中控屏加机械臂，虽可前后移动，但运动机构是机械臂而非导轨，且无从中控台滑至后排座椅的公开事实。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "HiPhi Bot中控屏可横竖屏切换，第三方测试称2秒完成横竖切换；但切换由机械臂/旋转机构实现，并非“与导轨配合时”切换至竖屏状态。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/90272",
+              "title": "智能座舱 GAMP｜高合 HiPhi Z 的表现究竟如何？",
+              "source_name": "新出行",
+              "snippet": "HiPhi Bot机械臂……拥有4自由度（左右旋转、俯仰旋转、前后移动、横竖旋转）的能力，可支撑中控屏实现20mm/s的高速运动、2秒完成横竖切换。"
+            },
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。"
+            }
+          ],
+          "reasoning": "横竖屏切换本身有直接证据；但同一证据明确其依靠机械臂/旋转机构实现，且F2导轨不存在，故不满足导轨配合时切换竖屏的限定。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 2023款量产版 规格书 参数",
+        "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 说明书 PDF",
+        "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 官方 参数",
+        "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 拆解 结构"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "延锋国际",
+        "company_en": "Yanfeng International",
+        "product_name": "XiM25智能座舱长滑轨屏幕",
+        "product_name_en": "XiM25 smart cabin long-rail display",
+        "product_version": "1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转",
+        "market": "中国智能座舱概念/前瞻展示与主机厂方案市场",
+        "reason_for_deep_dive": "输入摘要明确出现“长滑轨”“1520mm超长滑动距离”“覆盖整个车顶”“兼顾前后排乘客需求”，与权1的“导轨从前排区域延伸至后排座椅、显示装置在前后排之间滑动”高度相关；还公开了屏幕旋转角度，需进一步核查是否存在横屏/竖屏切换及是否已进入量产供货。",
+        "source_result_ids": [
+          "tavily-Q03-01"
+        ],
+        "source_urls": [
+          "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi"
+        ],
+        "initial_evidence_summary": "摘要称XiM25智能座舱将长滑轨技术应用于天幕，可根据车型车顶造型曲线适配，1520mm超长滑动距离可覆盖整个车顶，搭配超宽显示屏等多种尺寸显示屏，并实现屏幕前后58.5°旋转，使顶棚屏兼顾前后排乘客需求。"
+      },
+      "launch_date": "2024年10月左右公开发布/展示；公开资料显示为XiM25展车/下一代可量产座舱方案，非已量产交付车型",
+      "launch_date_evidence": [
+        {
+          "url": "https://hao.yiche.com/wenzhang/95404299",
+          "title": "延锋XiM25:融合科技与设计美学的智能座舱,为新生代打造舒适出行_易车",
+          "source_name": "易车",
+          "snippet": "2024-10-21报道称，全球汽车零部件供应商延锋在上海发布了面向新消费群体的智能座舱XiM25，搭载多项创新技术。"
+        },
+        {
+          "url": "https://www.autohome.com.cn/article?id=N130L8DZKkU%3D",
+          "title": "【图】未来智能座舱长什么样 延锋发布XiM25展车_汽车之家",
+          "source_name": "汽车之家",
+          "snippet": "2024-11-29文章标题及正文称“延锋发布XiM25展车”，并介绍XiM25上的随动天幕长滑动机构等技术。"
+        },
+        {
+          "url": "https://m.evchanye.com/article/18769",
+          "title": "瞄准下一代智能座舱，延锋又出大招了",
+          "source_name": "盖世汽车/EV产业",
+          "snippet": "2024-12-04文章称“从延锋近期发布的XiM25展车上”，并称XiM25是集中展示下一代座舱技术的展车。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "可核实的XiM25公开发布/展示时间为2024年，晚于本专利申请日2018-03-30；现有证据中虽未证明F4的横竖屏切换，但未出现直接矛盾证据，故不失格。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "XiM25被公开称为智能座舱/展车，资料描述其“车内”具有中央触控屏、中央扶手操控面板以及后排座椅可展开形成接近2m大床；但证据未直接使用“中控台”字样。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章描述XiM25“车内的超宽大屏、零重力座椅、后排可变‘大床房’”，并写到“中央触控屏十分神奇”“来到后排，后排座椅可以一键变成一个‘大床房’”。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/article?id=N130L8DZKkU%3D",
+              "title": "未来智能座舱长什么样 延锋发布XiM25展车_汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "文章称XiM25为展车/智能座舱，并描述“后排座椅完全展开后可变成长度接近2 m的超大尺寸床”，以及后排座椅中央触控面板等座舱部件。"
+            }
+          ],
+          "reasoning": "公开资料直接证明XiM25是车内智能座舱并具有后排座椅、中央触控/操控部件；“中控台”未被逐字公开，只能由中央触控屏/中央扶手控制区与座舱布局作较短推断。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "XiM25公开的对应结构为“随动天幕长滑动机构/长滑轨”，安装于天幕/车顶，滑动距离最大1520mm，可覆盖整个车顶并兼顾前后排乘客；未直接说明导轨从“中控台”起延伸至后排座椅。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网称“随动天幕长滑动机构，可根据各类车型的车顶造型曲线完美适配，1520 mm的超长滑动距离能覆盖整个车顶，搭配包括超宽显示屏在内的多种尺寸显示屏，并实现屏幕前后58.5°旋转”。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称XiM25将长滑轨技术应用于天幕，1520mm超长滑动距离能覆盖整个车顶，搭配多种尺寸显示屏，并让顶棚屏兼顾前后排乘客需求。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/article?id=N130L8DZKkU%3D",
+              "title": "未来智能座舱长什么样 延锋发布XiM25展车_汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "文章称“延锋的随动天幕长滑动机构，可根据各类车型的车顶造型曲线完美适配，1520 mm的超长滑动距离能覆盖整个车顶”。"
+            }
+          ],
+          "reasoning": "证据直接证明长滑轨/滑动机构装在车顶并覆盖前后排活动范围；但其公开表述是“车顶/天幕”而非“从中控台延伸至后排座椅”，因此只能推断可能覆盖权利要求对应区间。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "XiM25的显示屏与随动天幕长滑轨机构配合，1520mm滑动距离覆盖车顶；资料明确称屏幕可在天幕上来回滑动、自由在前后排滑动，并可来到后排/滑至床上方。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称“吸引眼球的是可以在天幕上来回滑动的屏幕”，长滑轨用于屏幕，“1520mm的超长滑动距离能覆盖整个车顶，让屏幕自由在前后排滑动”。"
+            },
+            {
+              "url": "https://www.shobserver.cn/sgh/detail?id=1473757",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_上观新闻",
+              "source_name": "上观新闻/上海汽车报",
+              "snippet": "文章称延锋将长滑轨技术用于屏幕，1520mm滑动距离覆盖整个车顶，让屏幕自由在前后排滑动；当屏幕来到后排，可联动后排座椅场景。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称长滑轨屏幕应用于天幕，1520mm超长滑动距离覆盖整个车顶，使顶棚屏兼顾前后排乘客需求，并具有左右分区功能。"
+            }
+          ],
+          "reasoning": "多个独立公开来源直接描述屏幕与长滑轨/天幕滑动机构配合，并在前后排之间滑动；虽未逐字称“中控台”，但显示装置前后滑动功能本身有直接证据。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "现有公开信息仅显示XiM25屏幕可“前后58.5°旋转”或位置/角度可调；未发现其显示装置可在横屏状态与竖屏状态之间切换，也未发现与导轨配合时自动/必然切换至竖屏状态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网描述随动天幕长滑动机构可搭配多种尺寸显示屏，并实现屏幕前后58.5°旋转，但未说明横屏/竖屏切换。"
+            },
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称屏幕可自由在前后排滑动，还能调节屏幕角度，实现前后58.5°旋转；未提及横竖屏状态切换或导轨配合时切竖屏。"
+            },
+            {
+              "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+              "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”_网易订阅",
+              "source_name": "网易订阅/NE时代",
+              "snippet": "文章称顶棚天幕长滑轨机构位置和角度可调，并能和天幕结合实现收纳或遮阳效果；未披露横屏/竖屏切换机制。"
+            }
+          ],
+          "reasoning": "“前后58.5°旋转”属于屏幕角度/俯仰调节证据，不等同于横屏与竖屏之间切换；也没有证据显示与导轨配合时切换至竖屏，故最终仍证据不足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 72.5,
+      "searched_queries": [
+        "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 规格书 参数",
+        "延锋国际 XiM25智能座舱长滑轨屏幕 中国 市场",
+        "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 车体，所述车体包括中控台和后排座椅",
+        "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+        "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 官方 参数"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "延锋国际",
+        "company_en": "Yanfeng International",
+        "product_name": "XiM21智能座舱电动滑动屏",
+        "product_name_en": "XiM21 smart cabin electric sliding display",
+        "product_version": "双12.3英寸曲面显示屏座舱方案；前排电动滑动屏",
+        "market": "中国智能座舱概念/主机厂方案市场",
+        "reason_for_deep_dive": "输入摘要显示该方案在座舱内设置显示屏并采用“电动滑动屏”，可作为核查导轨配合、显示装置滑动安装结构的候选；需进一步核查滑动轨迹是否朝后排延伸，以及是否有横竖屏切换状态。",
+        "source_result_ids": [
+          "tavily-Q14-05"
+        ],
+        "source_urls": [
+          "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode"
+        ],
+        "initial_evidence_summary": "延锋官网摘要称XiM21智能座舱内安装5个显示屏，多屏交互是亮点；驾驶员侧双12.3英寸曲面显示屏作为座舱操控中心，电动滑动屏让前排乘客也能灵活设置车内模式及信息娱乐系统。"
+      },
+      "launch_date": "2020年6月17日发布，2020年6月中国首发",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+          "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+          "source_name": "延锋官网",
+          "snippet": "上海 17.06.2020 今天，全球领先的汽车零部件供应商——延锋发布了自主设计研发的XiM21智能座舱……XiM21于2020年6月在中国首发。"
+        },
+        {
+          "url": "https://www.prnasia.com/lightnews/lightnews-1-102-26659.shtml",
+          "title": "延锋发布XiM21智能座舱 | 美通社-美通社PR-Newswire",
+          "source_name": "美通社",
+          "snippet": "2020-06-17 16:48……延锋发布了自主设计研发的XiM21智能座舱……XiM21于2020年6月在中国首发。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "公开发布日期为2020年6月17日，晚于本专利申请日2018-03-30；本轮未发现可直接判定“明确不满足”的相反证据。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "XiM21被公开称为“概念车/智能座舱”；公开资料提到“副仪表板”、多排座椅、第一排和第三排座椅，并称前排乘客可关注后排儿童、控制后方座椅屏幕内容，显示其车体/座舱包含中控相关部件和后排座椅区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "满载高科技的XiM21富有“未来感”……XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21概念车……仪表板上的额外10.1英寸滑动显示屏使前座乘客……还可以让前排乘客时刻关注后排的孩子，控制他们观看的内容。零压座椅……第一排和第三排座椅可自动调节。"
+            }
+          ],
+          "reasoning": "延锋官网直接将XiM21称为概念车，并公开副仪表板、多排座椅、第一排/第三排座椅及后排儿童场景；足以对应车辆座舱含中控台/副仪表板和后排座椅。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "XiM21公开采用“双速电机驱动的长滑轨”，该长滑轨“由多排座椅和副仪表板共享使用”；副仪表板对应中控台/中央通道部件，多排座椅至少覆盖前后排座椅区域，因此长滑轨跨中控台与后排座椅区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "柔性空间方案：XiM21的座舱设计能适应并满足用户的不同使用需求……XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用，可迅速调整它们的位置以实现最大的灵活性。"
+            },
+            {
+              "url": "https://hj.pcauto.com.cn/article/403155.html",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地_太平洋号",
+              "source_name": "太平洋汽车",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用，可迅速调整它们的位置以实现最大的灵活性。"
+            }
+          ],
+          "reasoning": "官方及媒体转载均给出“长滑轨”且由“多排座椅和副仪表板共享”。该公开文本直接说明轨道布置在座舱内并覆盖副仪表板至多排座椅区域。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "已公开的显示装置为仪表板/曲面屏下方的10.1英寸电动滑动屏，供前座乘客操作信息娱乐、导航及查看后排儿童；另有长滑轨供多排座椅和副仪表板共享。但现有证据未说明该10.1英寸显示屏与该长滑轨配合，也未说明其可在中控台和后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。还可以让前排乘客时刻关注后排的孩子，控制他们观看的内容。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "曲面屏下方还有一块10.1英寸电动滑动屏，便于副驾驶辅助信息娱乐系统及导航操控……该滑动屏还可以观看后方儿童状态，并操控后方座椅屏幕播放内容。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用，可迅速调整它们的位置以实现最大的灵活性。"
+            }
+          ],
+          "reasoning": "证据分别证明存在10.1英寸滑动屏和座椅/副仪表板长滑轨，但二者未被公开为同一配合机构；滑动屏公开位置是仪表板/曲面屏下方，未证明可滑至后排。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "现有公开资料仅说明XiM21有双12.3英寸曲面显示屏及10.1英寸电动/滑动显示屏，用于前排乘客信息娱乐、导航和查看后排儿童；未公开该显示屏可在横屏与竖屏状态间切换，也未公开与导轨配合时自动/切换为竖屏状态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "对于驾驶员而言，双12.3英寸曲面显示屏可作为车内环境的中央控制单元，而仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "对于驾驶员而言，双12.3英寸曲面显示屏可作为整个座舱的操控中心，电动滑动屏让前排乘客也能灵活设置车内各种模式及信息娱乐系统。"
+            }
+          ],
+          "reasoning": "公开页面只描述显示屏尺寸、位置和滑动/交互用途，没有横竖屏切换、旋转机构或“与导轨配合时为竖屏”的字面证据，不能证实该特征。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "延锋国际 XiM21智能座舱电动滑动屏 双12.3英寸曲面显示屏座舱方案；前排电动滑动屏 规格书 参数",
+        "延锋国际 XiM21智能座舱电动滑动屏 中国 市场",
+        "延锋国际 XiM21智能座舱电动滑动屏 双12.3英寸曲面显示屏座舱方案；前排电动滑动屏 导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+        "XiM21 10.1英寸 电动滑动屏 滑轨 行程 后排",
+        "延锋国际 XiM21智能座舱电动滑动屏 双12.3英寸曲面显示屏座舱方案；前排电动滑动屏 官方 参数",
+        "延锋国际 XiM21智能座舱电动滑动屏 双12.3英寸曲面显示屏座舱方案；前排电动滑动屏 上市 日期 发布"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "延锋国际",
+        "company_en": "Yanfeng International",
+        "product_name": "10.1英寸电动滑动屏",
+        "product_name_en": "10.1-inch electric sliding display",
+        "product_version": "10.1英寸；用于观看后方儿童状态并操控后方座椅屏幕",
+        "market": "中国车载电动滑动屏/智能座舱供应链市场",
+        "reason_for_deep_dive": "该候选明确为车载“电动滑动屏”，并与后排儿童状态、后方座椅屏幕控制相关，涉及权1的车内显示装置滑动以及前后排交互场景；需进一步核查其导轨安装位置、是否可在中控台与后排座椅之间滑动，以及横竖屏切换机制。",
+        "source_result_ids": [
+          "tavily-Q05-01"
+        ],
+        "source_urls": [
+          "https://www.smartautoclub.com/p/86504"
+        ],
+        "initial_evidence_summary": "摘要称延锋电动滑动中控屏方案包括“10.1英寸电动滑动屏”，用途为观看后方儿童状态，并操控后方座椅屏幕播放内容；同一摘要还说明车载电动滑动屏采用电动驱动、可沿轨道滑动，通过显示和触控操作实现屏幕位置和角度灵活调整。"
+      },
+      "launch_date": "2020年6月17日发布/首发（XiM21智能座舱中披露该10.1英寸滑动显示屏）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+          "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+          "source_name": "延锋官网",
+          "snippet": "上海 17.06.2020 今天，全球领先的汽车零部件供应商——延锋发布了自主设计研发的XiM21智能座舱……对于驾驶员而言，双12.3英寸曲面显示屏可作为整个座舱的操控中心，电动滑动屏让前排乘客也能灵活设置车内各种模式及信息娱乐系统。"
+        },
+        {
+          "url": "http://auto.cnfol.com/cheshidongtai/20200628/28238375.shtml",
+          "title": "延锋发布XiM21智能座舱，相关技术可在五年内落地",
+          "source_name": "中金在线/盖世汽车",
+          "snippet": "6月22日，延锋国际发布自主设计研发的XiM21智能座舱……另曲面屏下方还有一块电动滑动屏，便于副驾驶辅助信息娱乐系统及导航操控。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "公开证据显示XiM21智能座舱及其中电动滑动屏于2020年6月发布，晚于本专利申请日2018-03-30；现有证据亦未出现直接矛盾特征，故不因上市时间或明确不满足而失格。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "XiM21/XiM21s为智能座舱/概念车，资料明示存在副仪表板（通常对应中控台/中央通道控制台）以及前后排座椅/多排座椅；10.1英寸滑动显示屏为该座舱显示集成方案的一部分。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用……XiM21于2020年6月在中国首发。"
+            },
+            {
+              "url": "https://m.sohu.com/a/481593207_180520/?pvid=000115_3w_a",
+              "title": "延锋国际：延锋XiM21s智能座舱 | 2021金辑奖",
+              "source_name": "搜狐/盖世汽车",
+              "snippet": "长滑轨可供副仪表板，前后排座椅及脚踏共用……XiM21s更关注乘员深层次情感需求及乘坐体验。"
+            }
+          ],
+          "reasoning": "延锋官方和盖世材料均将XiM21/XiM21s描述为座舱/概念车，并明示副仪表板与前后排/多排座椅；可直接对应车体内含中控台和后排座椅。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "XiM21/XiM21s公开有长滑轨：XiM21为“双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用”；XiM21s为“长滑轨可供副仪表板，前后排座椅及脚踏共用，滑轨长度加长至2940mm”。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用，可迅速调整它们的位置以实现最大的灵活性。"
+            },
+            {
+              "url": "https://m.sohu.com/a/481593207_180520/?pvid=000115_3w_a",
+              "title": "延锋国际：延锋XiM21s智能座舱 | 2021金辑奖",
+              "source_name": "搜狐/盖世汽车",
+              "snippet": "长滑轨：业界最长行程滑轨可供副仪表板，前后排座椅及脚踏共用，滑轨长度加长至2940mm。"
+            }
+          ],
+          "reasoning": "“副仪表板”可对应车内中控台区域；公开资料直接说明长滑轨由副仪表板与前后排/多排座椅共用，足以证明导轨从中控台区域延伸至后排座椅区域。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "证据能证明10.1英寸滑动显示屏安装于仪表板/曲面屏下方并可滑动；但未证明该显示屏与上述长滑轨配合，也未证明其可在中控台与后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。还可以让前排乘客时刻关注后排的孩子，控制他们观看的内容。"
+            },
+            {
+              "url": "http://auto.cnfol.com/cheshidongtai/20200628/28238375.shtml",
+              "title": "延锋发布XiM21智能座舱，相关技术可在五年内落地",
+              "source_name": "中金在线/盖世汽车",
+              "snippet": "另曲面屏下方还有一块电动滑动屏，便于副驾驶辅助信息娱乐系统及导航操控……该滑动屏还可以观看后方儿童状态，并操控后方座椅屏幕播放内容。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用。"
+            }
+          ],
+          "reasoning": "现有材料仅证明10.1英寸屏位于仪表板/曲面屏下方并用于前排交互；长滑轨证据对应座椅和副仪表板，未把该显示屏与长滑轨及前后排滑移联系起来。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "未发现延锋10.1英寸电动滑动屏支持横屏/竖屏切换的公开证据；也未发现其与导轨配合时自动或必然切换至竖屏状态的证据。现有“位置和角度灵活调整”描述不足以等同于横竖屏切换。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。"
+            }
+          ],
+          "reasoning": "相关页面只描述滑动、位置/角度调整和交互用途，没有出现横屏、竖屏、旋转切换或与导轨配合时竖屏等关键限定，无法证实该特征。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "延锋国际 10.1英寸电动滑动屏 10.1英寸；用于观看后方儿童状态并操控后方座椅屏幕 规格书 参数",
+        "延锋 XiM21 10.1英寸滑动显示屏 中控台 后排座椅",
+        "延锋 XiM21 10.1英寸 电动滑动屏 导轨 轨道 后排",
+        "XiM21 10.1-inch sliding display movement range dashboard rear passengers",
+        "延锋国际 10.1英寸电动滑动屏 中国 市场"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "魏牌",
+        "company_en": "Wey",
+        "product_name": "全新高山后排超清吸顶屏",
+        "product_name_en": "Wey Gaoshan rear ultra-clear ceiling display",
+        "product_version": "17.3英寸；2K分辨率/HDR10+；电动滑轨固定",
+        "market": "中国高端MPV后排娱乐座舱",
+        "reason_for_deep_dive": "摘要公开其后舱显示屏通过电动滑轨固定，属于车内显示装置与滑轨配合的后排娱乐屏方案；需核查电动滑轨是否具有前后滑移路径、是否可从中控区域向后排移动，以及是否具备横竖屏切换。",
+        "source_result_ids": [
+          "brave-Q14-03"
+        ],
+        "source_urls": [
+          "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp"
+        ],
+        "initial_evidence_summary": "摘要称全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm，配合2K分辨率与HDR10+技术。"
+      },
+      "launch_date": "2025年5月13日全新高山8/9正式上市；高山7为2025年10月15日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://news.qq.com/rain/a/20250517A07CMF00",
+          "title": "魏牌全新高山正式上市，开启家庭MPV豪华出行新时代_腾讯新闻",
+          "source_name": "腾讯新闻",
+          "snippet": "5月13日，以“开启MPV家庭新时代”为主题的魏牌全新高山上市发布会在保定圆满举行。此次发布会正式推出了全新高山8/9两款车型。"
+        },
+        {
+          "url": "https://auto.ifeng.com/c/8nTnuNjU2QH",
+          "title": "魏牌高山7正式上市，售价28.58万元_凤凰网",
+          "source_name": "凤凰网汽车",
+          "snippet": "10月15日，魏牌高山7正式上市，官方指导价为28.58万元。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未失格：公开上市/发布记录均晚于专利申请日2018-03-30；现有证据也未直接给出与权利要求特征矛盾的参数。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "魏牌全新高山为中大型MPV车辆；公开资料显示车内有中控屏/中控台，并采用2+2+3或6/7座布局，包含二排、三排等后排座椅。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.wey.com/gaoshan.html",
+              "title": "魏牌全新高山 开启MPV家庭新时代 - 魏牌官网",
+              "source_name": "魏牌官网",
+              "snippet": "魏牌全新高山；高山7/高山8/高山9；车长、车宽、车高、轴距等整车参数；舒享空间，一家人的移动大客厅。"
+            },
+            {
+              "url": "https://cj.sina.com.cn/articles/view/1596062412/5f21facc0270120i1",
+              "title": "开创豪华MPV新领域 试驾2024款魏牌高山__财经头条",
+              "source_name": "财经头条",
+              "snippet": "在内部，魏牌高山采用了大量皮质材料包裹；此外，该车中控台造型平直，搭配双色内饰。"
+            },
+            {
+              "url": "http://auto.cnfol.com/xincheshangshi/20231012/30427769.shtml",
+              "title": "魏牌高山将于10月18日正式上市 定位家族旗舰MPV_中金在线",
+              "source_name": "中金在线",
+              "snippet": "作为一款中大型MPV，新车长宽高为5045*1960*1900mm，轴距3085mm，内部为2+2+3的7座布局；后排采用二三排共轨设计。"
+            }
+          ],
+          "reasoning": "官网和媒体资料证明其为MPV车辆；财经头条明确提到“中控台”，中金在线明确披露7座布局及后排二三排设计，足以对应车体含中控台和后排座椅。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "现有资料仅称后排吸顶屏“通过电动滑轨固定于车顶”，另有资料披露二三排座椅共轨；未公开显示该显示屏导轨从中控台延伸至后排座椅。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "摘要显示：全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm，配合2K分辨率与HDR10+技术。"
+            },
+            {
+              "url": "https://www.zhev.com.cn/news/show-1657892958-3.html",
+              "title": "魏牌高山共创版10月18日亮相_电车之家",
+              "source_name": "电车之家",
+              "snippet": "后排采用二三排共轨设计，长达1845mm的超长滑轨使第二排腿部最大空间可达1166mm。"
+            }
+          ],
+          "reasoning": "“电动滑轨固定于车顶”只能证明存在与吸顶屏相关的车顶滑轨线索；二三排共轨是座椅滑轨。均未说明显示屏导轨起自中控台并延伸至后排。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "公开资料显示车内安装17.3英寸后排娱乐/吸顶屏，并有“电动滑轨固定于车顶”的说法；但未披露显示屏可沿导轨在中控台与后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+              "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+              "source_name": "搜狐汽车",
+              "snippet": "超级影院则提供沉浸式娱乐体验，搭载双15.6英寸超高清联屏和17.3英寸后排娱乐屏幕，同时支持多角度调节。"
+            },
+            {
+              "url": "https://chejiahao.m.autohome.com.cn/info/23324025",
+              "title": "全新魏牌高山7上市，外观大气，激光雷达+英伟达芯片，配电动四驱_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "全新魏牌高山7带有二三排遮阳帘、17.3英寸3K后排娱乐屏，办公小桌板等。"
+            },
+            {
+              "url": "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp",
+              "title": "全新高山后排超清吸顶屏相关报道",
+              "source_name": "新浪财经头条",
+              "snippet": "摘要显示：屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm。"
+            }
+          ],
+          "reasoning": "证据能支持其有车内后排显示屏及车顶电动滑轨线索，但“固定”“多角度调节”不等于沿长导轨滑动，更未证明行程覆盖中控台至后排座椅。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "公开资料仅披露17.3英寸后排娱乐屏/吸顶屏、2K或3K分辨率、HDR10+、多角度调节；未找到横屏/竖屏旋转切换，也未找到与导轨配合时切换为竖屏的说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_7106/a/908209097_121617459",
+              "title": "魏牌全新高山：引领家庭出行新时代的标杆之选",
+              "source_name": "搜狐汽车",
+              "snippet": "搭载双15.6英寸超高清联屏和17.3英寸后排娱乐屏幕，同时支持多角度调节，满足不同乘员的影音需求。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/21838129",
+              "title": "魏牌高山7实车亮相！17.3吋屏+智能冰箱，5.7秒破百，你喜欢吗？_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "17.3英寸的3K后排娱乐屏、智能冷暖冰箱、双折叠小桌板、带有电动遮阳帘的全景天幕等配置。"
+            },
+            {
+              "url": "https://m.yiche.com/zhai/2067012",
+              "title": "魏牌蓝山以及17.3寸后排娱乐屏_易车",
+              "source_name": "易车",
+              "snippet": "配备15.6英寸中控双联屏，以及17.3寸后排娱乐屏；副驾及后排用户可以通过Air Touch隔空触摸功能进行控制。"
+            }
+          ],
+          "reasoning": "现有证据只涉及屏幕尺寸、分辨率、后排娱乐、角度调节或交互控制；没有屏幕横竖屏旋转机构或与导轨配合自动/手动切换至竖屏的公开说明。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 47.5,
+      "searched_queries": [
+        "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 规格书 参数",
+        "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 说明书 PDF",
+        "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 官方 参数",
+        "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 拆解 结构",
+        "魏牌 全新高山后排超清吸顶屏 17.3英寸；2K分辨率/HDR10+；电动滑轨固定 上市 日期 发布",
+        "魏牌 全新高山后排超清吸顶屏 中国 市场"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "小鹏汽车",
+        "company_en": "XPeng Motors",
+        "product_name": "小鹏X9后排娱乐屏",
+        "product_name_en": "XPeng X9 rear entertainment screen",
+        "product_version": "2026款；后排娱乐屏/前后排屏幕交互配置",
+        "market": "中国纯电MPV后排娱乐与多屏交互座舱",
+        "reason_for_deep_dive": "输入摘要显示该车型具有后排娱乐屏、屏幕角度控制和前后排屏幕交互，属于前后排共享显示/娱乐的量产车辆；需进一步核查后排屏是否通过导轨滑动、是否可在中控台与后排座椅之间移动及横竖屏状态。",
+        "source_result_ids": [
+          "brave-Q20-03",
+          "tavily-Q20-04"
+        ],
+        "source_urls": [
+          "https://bbs.xiaopeng.com/article/2308119",
+          "https://www.xiaopeng.com/x9_2026/configuration.html"
+        ],
+        "initial_evidence_summary": "小鹏社区摘要提到X9后排娱乐屏可通过语音、按键、遥控打开并设置屏幕角度；2026款小鹏X9参数配置摘要列出“前后排屏幕交互”“车载娱乐遥控器”等智能座舱功能。"
+      },
+      "launch_date": "小鹏X9车系2024年1月1日上市；2026款/增程版本公开资料显示后续于2025年11月或2026年3月上市/发布",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.evlook.com/xiaopengx9",
+          "title": "【小鹏X9】小鹏汽车_小鹏X9报价_小鹏X9图片_参数_EV视界",
+          "source_name": "EV视界",
+          "snippet": "小鹏X9：车型级别中大型MPV；上市时间：2024年01月01日；车型亮点包括21.4英寸娱乐屏。"
+        },
+        {
+          "url": "https://wap.zol.com.cn/2149/2148301/param.html",
+          "title": "【小鹏X9 2026款 增程 1602 Max参数】小鹏 X9 2026款汽车参数_ZOL中关村在线",
+          "source_name": "ZOL中关村在线",
+          "snippet": "小鹏X9 2026款 增程版 1602 Max，上市时间2025.11，车身结构5门7座MPV。"
+        },
+        {
+          "url": "https://www.pcauto.com.cn/news/5115/51152171.html",
+          "title": "2026款小鹏X9纯电版将于3月2日上市 标配后轮转向_太平洋汽车",
+          "source_name": "太平洋汽车",
+          "snippet": "小鹏汽车董事长何小鹏通过社交媒体正式宣布，2026款小鹏X9纯电版将于3月2日正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "公开上市/发布记录均晚于专利申请日2018-03-30；现有公开证据也未出现足以直接证明某一技术特征明确不满足的否定性字面描述。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "小鹏X9为中大型MPV、5门7座，采用2+2+3七座布局；内饰资料显示有17.3英寸中控屏/中控台，二排及三排座椅等后排座椅。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlook.com/xiaopengx9/peizhi",
+              "title": "【小鹏X9配置表】小鹏汽车_小鹏X9参数_价格单_EV视界",
+              "source_name": "EV视界",
+              "snippet": "小鹏X9：中大型MPV；车身结构5门7座MPV；座位数7；长宽高5293*1988*1785mm。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/13574457",
+              "title": "小鹏X9最新内饰信息曝光！配备后排娱乐大屏+双模制冷/热冰箱_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "新车除了在中控台配备悬浮式中控大屏幕以后，第二排座椅上方还有一块大尺寸后排娱乐屏；小鹏X9第二排将配备两张独立座椅。"
+            },
+            {
+              "url": "https://www.xiaopeng.com/x9_2026.html",
+              "title": "2026款小鹏X9 全球续航最长大七座 | 小鹏汽车官网",
+              "source_name": "小鹏汽车官网",
+              "snippet": "页面描述二排空间、二排座椅、三排电动三折叠、七座豪华大平层，并列出21.4英寸莱茵认证超清娱乐屏。"
+            }
+          ],
+          "reasoning": "EV视界确认X9是5门7座MPV；汽车之家内饰文直接提到中控台及第二排座椅，小鹏官网列出二排、三排座椅配置，足以证明车体含中控台和后排座椅。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "现有证据仅显示后排/二排娱乐屏、二排吊顶/折叠显示屏和角度调节；未发现安装于车体、且从中控台延伸到后排座椅的导轨结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度，配对遥控器，连接蓝牙耳机等操作。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/13574457",
+              "title": "小鹏X9最新内饰信息曝光！配备后排娱乐大屏+双模制冷/热冰箱_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "第二排座椅上方还有一块大尺寸后排娱乐屏；透过后排娱乐屏可以看到小鹏X9的中控台。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/article/2273517",
+              "title": "小鹏X9二排折叠显示屏幕：科技与实用的完美结合 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "二排折叠显示屏幕支持多种娱乐功能，如视频播放、音乐播放，游戏，手机投屏等。"
+            }
+          ],
+          "reasoning": "这些页面只证明有后排娱乐屏及折叠/角度调节形态，未出现“导轨”“滑轨”“从中控台延伸至后排”等字面或结构图证据，不能确认该导轨特征。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "X9有21.4英寸后排/二排娱乐屏，公开资料显示其可打开、折叠、调节角度；但未证明该显示装置与导轨配合，也未证明能在中控台与后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xiaopeng.com/x9_2026.html",
+              "title": "2026款小鹏X9 全球续航最长大七座 | 小鹏汽车官网",
+              "source_name": "小鹏汽车官网",
+              "snippet": "全家人的品质舒享大家电：10.8L冷热一体智能电动冰箱，21.4英寸莱茵认证超清娱乐屏。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度，配对遥控器，连接蓝牙耳机等操作。"
+            },
+            {
+              "url": "https://news.qq.com/rain/a/20250409A09YD700",
+              "title": "图灵智驾标配，小鹏X9在智能MPV市场试图突围_腾讯新闻",
+              "source_name": "腾讯新闻",
+              "snippet": "一排新增电吸门，同级最大21.4英寸护眼生态屏支持0~75°无极悬停，配三层防夹。"
+            }
+          ],
+          "reasoning": "官网和媒体均确认21.4英寸后排屏及0~75°悬停/角度调节，但没有沿车内前后方向滑动、与导轨配合或移动至中控台的直接证据。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "现有证据显示后排娱乐屏可折叠、打开并调节角度/0~75°无极悬停；未发现横屏/竖屏旋转切换，也未发现其与导轨配合时自动或被动切换至竖屏状态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度，配对遥控器，连接蓝牙耳机等操作。"
+            },
+            {
+              "url": "https://news.qq.com/rain/a/20250409A09YD700",
+              "title": "图灵智驾标配，小鹏X9在智能MPV市场试图突围_腾讯新闻",
+              "source_name": "腾讯新闻",
+              "snippet": "同级最大21.4英寸护眼生态屏支持0~75°无极悬停，配三层防夹。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2696263",
+              "title": "X9这些细节太可了！ | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "21.4英寸娱乐屏0~75°无极调节，支持触屏调节；21.4寸超大触屏电视配合二排零重力座椅。"
+            }
+          ],
+          "reasoning": "证据覆盖的是开闭、角度调节和悬停，不等同于横竖屏切换；也没有导轨配合状态下切至竖屏的说明，故不能确认该组合动作。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 47.5,
+      "searched_queries": [
+        "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 规格书 参数",
+        "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 说明书 PDF",
+        "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 拆解 结构",
+        "小鹏X9 二排娱乐屏 滑轨 可移动 前后滑动",
+        "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 上市 日期 发布"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "蔚来汽车",
+        "company_en": "NIO",
+        "product_name": "全新蔚来ES8后排吸顶屏",
+        "product_name_en": "All-new NIO ES8 rear ceiling display",
+        "product_version": "2026款；Mini LED吸顶屏/多媒体屏幕数量2个",
+        "market": "中国高端纯电SUV后排娱乐座舱",
+        "reason_for_deep_dive": "摘要显示该车型后排吸顶屏具有运动系统、防夹手和低噪声设计，涉及车内显示装置的运动机构；需进一步核查运动机构是否包含导轨滑动、是否存在横竖屏切换，以及运动范围是否面向中控台—后排路径。",
+        "source_result_ids": [
+          "brave-Q25-03",
+          "brave-Q25-04",
+          "tavily-Q25-02"
+        ],
+        "source_urls": [
+          "https://www.smartautoclub.com/p/106040",
+          "https://www.nio.cn/vehicle/configuration/es8",
+          "https://car.autohome.com.cn/config/series/4427.html"
+        ],
+        "initial_evidence_summary": "智能汽车资源网摘要称全新ES8车内屏幕包括车规级OLED中控、Mini LED数字天际线、Mini LED吸顶屏，吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音；汽车之家配置摘要显示其多媒体屏幕数量为2个、液晶屏幕类型为Mini LED。"
+      },
+      "launch_date": "2025年8月21日预售/技术发布；2025年9月20日正式上市，2025年9月21日开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+          "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+          "source_name": "快科技",
+          "snippet": "2025-08-21 20:56:33；在今晚举办的全新蔚来ES8技术发布会上，李斌介绍了这款车首发搭载的“天空屏”，也就是大家更熟悉的后排娱乐屏。"
+        },
+        {
+          "url": "https://www.donews.com/news/detail/7/6132624.html",
+          "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+          "source_name": "DoNews汽车",
+          "snippet": "2025蔚来日（NIO Day 2025）9月20日在杭州举行，蔚来宣布全场景科技旗舰SUV——全新ES8正式上市；全新ES8将于9月21日起正式开启交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "公开证据显示全新ES8及其21.4英寸mini-LED天空屏/后排娱乐屏发布、上市和交付均晚于专利申请日2018-03-30；现有证据未出现可直接判定明确不满足的相反技术参数。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "全新ES8为大型纯电SUV，提供六座/七座布局；座舱含中控台、中控横屏、二排/第三排座椅，故车体包括中控台和后排座椅。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.donews.com/news/detail/7/6132624.html",
+              "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+              "source_name": "DoNews汽车",
+              "snippet": "全新ES8拥有5,280mm超长车身和3,130mm轴距；全新ES8以多维线条构建环抱式座舱布局；前后双杜比视界大屏幕，15.6英寸AMOLED中控横屏；拥有六座和七座两种空间布局。"
+            },
+            {
+              "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "车内配备了Skyline天际线屏幕、悬浮式中控屏以及最新升级的NOMI系统；车内采用大六座布局，前排座椅可180°水平放倒，与二排座椅联动。"
+            }
+          ],
+          "reasoning": "DoNews和新浪均说明该产品是全新ES8整车座舱，含中控横屏/中控台相关结构及六座/七座、二排座椅，直接覆盖车体含中控台和后排座椅。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "现有证据仅显示全新ES8具有二排上方吸顶娱乐屏/21.4英寸mini-LED天空屏，以及吸顶屏存在运动系统、防夹手、电机、锁舌机构等信息；未找到“导轨”或“从中控台延伸至后排座椅”的公开描述。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/106040",
+              "title": "蔚来全新ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+              "source_name": "智能汽车资源网",
+              "snippet": "搜索摘要显示全新ES8车内屏幕包括车规级OLED中控、Mini LED数字天际线、Mini LED吸顶屏；吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+            },
+            {
+              "url": "https://www.donews.com/news/detail/7/6132624.html",
+              "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+              "source_name": "DoNews汽车",
+              "snippet": "同级唯一的车规级21.4英寸mini-LED天空屏，拥有高清分辨率和1,000,000:1的超高对比度，结合行业首创的“天空中置”扬声器。"
+            },
+            {
+              "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "车内采用大六座布局；二排上方首次加入吸顶娱乐屏，搭配中控手箱处的二排显示屏幕，解锁影院级的二排观影体验。"
+            }
+          ],
+          "reasoning": "“运动系统/电机”只能说明吸顶屏可能有开合或运动机构，未直接公开导轨，更未公开导轨从中控台延伸至后排座椅，不能严谨推导该特征。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "全新ES8公开配置21.4英寸mini-LED天空屏/二排上方吸顶娱乐屏，属于安装于车体的车内显示装置；但未公开该屏与导轨配合，也未公开其可在中控台和后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+              "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+              "source_name": "快科技",
+              "snippet": "在今晚举办的全新蔚来ES8技术发布会上，李斌介绍了这款车首发搭载的“天空屏”，也就是大家更熟悉的后排娱乐屏。这块屏尺寸为21.4英寸，采用mini-LED材质。"
+            },
+            {
+              "url": "https://www.donews.com/news/detail/7/6132624.html",
+              "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+              "source_name": "DoNews汽车",
+              "snippet": "同级唯一的车规级21.4英寸mini-LED天空屏，拥有高清分辨率和1,000,000:1的超高对比度。"
+            },
+            {
+              "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "二排上方首次加入吸顶娱乐屏，搭配中控手箱处的二排显示屏幕，解锁影院级的二排观影体验。"
+            }
+          ],
+          "reasoning": "证据可确认后排显示装置存在并位于二排上方；但“吸顶/天空屏”及运动系统信息并不等同于沿中控台至后排的导轨滑动，缺少滑动路径证据。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "公开证据显示全新ES8前排中控屏为15.6英寸AMOLED中控横屏，后排为21.4英寸mini-LED天空屏/吸顶屏；未找到后排吸顶屏可在横屏和竖屏之间切换，或与导轨配合时切换至竖屏的公开描述。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.donews.com/news/detail/7/6132624.html",
+              "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+              "source_name": "DoNews汽车",
+              "snippet": "前后双杜比视界大屏幕，带来专业级观影享受。15.6英寸AMOLED中控横屏呈现细腻画质。同级唯一的车规级21.4英寸mini-LED天空屏。"
+            },
+            {
+              "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+              "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+              "source_name": "快科技",
+              "snippet": "这块屏尺寸为21.4英寸，采用mini-LED材质；分辨率达3K，PPI 201，最高亮度1000尼特，支持杜比视界、HDR-Vivid等。"
+            },
+            {
+              "url": "https://tech.hexun.com/2025-08-21/221023510.html",
+              "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅全上车-科技频道-和讯网",
+              "source_name": "和讯网",
+              "snippet": "方向盘采用三辐式设计，车机中控屏由竖行屏幕升级为横幅样式；车内采用大六座布局，二排上方首次加入吸顶娱乐屏。"
+            }
+          ],
+          "reasoning": "检索到“横幅样式”仅指前排中控屏由竖屏改为横屏；21.4英寸吸顶屏只公开尺寸和显示性能，未公开旋转/横竖屏切换或导轨联动竖屏状态。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 47.5,
+      "searched_queries": [
+        "蔚来汽车 全新蔚来ES8后排吸顶屏 中国 市场",
+        "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 规格书 参数",
+        "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 官方 参数",
+        "全新蔚来ES8 吸顶屏 防夹手 运动系统 电机 锁舌机构 拆解",
+        "全新蔚来ES8 吸顶屏 横竖屏 旋转 竖屏",
+        "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 上市 日期 发布"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P08",
+        "company": "蔚来汽车",
+        "company_en": "NIO",
+        "product_name": "蔚来ET9后排行政娱乐屏",
+        "product_name_en": "NIO ET9 rear executive entertainment display",
+        "product_version": "14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏",
+        "market": "中国行政级纯电轿车后排智能座舱",
+        "reason_for_deep_dive": "摘要公开其后排显示系统可跨屏流转和互控，且后排乘客可通过8英寸OLED控制屏控制座椅、温度、音乐等，属于中控/后排屏幕协同场景；需进一步核查后排14.5英寸屏或控制屏是否具有导轨滑动和横竖屏切换。",
+        "source_result_ids": [
+          "brave-Q26-01"
+        ],
+        "source_urls": [
+          "https://www.nio.cn/et9"
+        ],
+        "initial_evidence_summary": "蔚来ET9官网摘要显示后排配备14.5英寸3K OLED屏，支持杜比视界，具备跨屏流转和互控体验；同时配备8英寸OLED多功能控制屏，后排乘客可控制音乐、座椅、温度等功能。"
+      },
+      "launch_date": "2023年12月23日发布/亮相；2024年12月21日正式上市；2025年3月开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/741/174.htm",
+          "title": "蔚来行政旗舰轿车 ET9 亮相：首创“行政桥”，集成智能冰箱 / 飞航头等舱座椅",
+          "source_name": "IT之家",
+          "snippet": "2023年12月23日 NIO Day 期间，蔚来行政旗舰轿车 ET9 正式亮相；内饰首创“行政桥”原生四座布局，贯穿前后排。"
+        },
+        {
+          "url": "https://www.ithome.com/0/819/287.htm",
+          "title": "蔚来行政旗舰轿车 ET9 上市，78.8 万元起",
+          "source_name": "IT之家",
+          "snippet": "2024年12月21日消息，蔚来 ET9 今晚正式上市，78.8万元起售；新车将于明年3月开启交付。"
+        },
+        {
+          "url": "https://baike.baidu.com/item/蔚来ET9/63859973",
+          "title": "蔚来ET9_百度百科",
+          "source_name": "百度百科",
+          "snippet": "蔚来ET9是蔚来汽车于2023年12月23日在NIO Day发布的行政旗舰轿车；2024年12月21日正式上市；2025年3月29日开启交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未失格：公开资料显示ET9发布、上市及交付时间均晚于本专利申请日2018-03-30；本轮未找到足以构成“明确不满足”的直接矛盾证据。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "蔚来ET9为四座车辆，公开资料显示其内饰包含“15.6英寸横置悬浮式AMOLED中控屏”“中控台前段1.4米贯穿式天际线屏”，并采用后排两张独立座椅布局。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/2225996",
+              "title": "蔚来ET9中控台前段配备了1.4米贯穿式天际线屏_易车",
+              "source_name": "易车",
+              "snippet": "新车搭载15.6英寸横置悬浮式AMOLED中控屏，中控台前段配备了1.4米贯穿式天际线屏；采用原生四座布局设计，后排座椅为两张独立座椅。"
+            },
+            {
+              "url": "https://auto.sina.cn/review/2024-12-23/detail-ineankci2396849.d.html?vt=4",
+              "title": "技术豪华新旗舰 静态体验蔚来ET9-手机新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "座舱最大亮点是中控屏改成横置布局，中控台上多了一条长达1.4米的“天际线屏”；蔚来ET9采用原生四座布局，后排座椅拥有24项自研专利技术。"
+            },
+            {
+              "url": "https://www.evlook.com/weilaiet9/peizhi",
+              "title": "【蔚来ET9配置表】蔚来_蔚来ET9参数_价格单_EV视界",
+              "source_name": "EV视界",
+              "snippet": "蔚来ET9 2025款基本参数显示车身结构为4门4座三厢车，座位数4。"
+            }
+          ],
+          "reasoning": "易车和新浪均直接披露ET9中控台/中控屏及后排座椅，EV视界配置表进一步确认其为4门4座车辆，故车体含中控台和后排座椅可验证。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "现有证据仅显示ET9有“行政桥”从前至后贯穿车舱/贯穿前后排，长度约1.95米并集成桌板、冰箱等；未见公开资料称其为导轨/滑轨，或用于显示装置从中控台滑至后排座椅。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://youmenr.com/news/3977.html",
+              "title": "蔚来ET9 / 打造智能电动行政旗舰新基准 - 油门到底",
+              "source_name": "油门到底",
+              "snippet": "“行政桥”从前至后贯穿车舱，长度有1.95米，上面集成了20项创新子系统；行政桌案位于后排“行政桥”内部，行政桥下方集成智能冰箱。"
+            },
+            {
+              "url": "https://www.ithome.com/0/741/174.htm",
+              "title": "蔚来行政旗舰轿车 ET9 亮相：首创“行政桥”",
+              "source_name": "IT之家",
+              "snippet": "该车首创“行政桥”原生四座布局，贯穿前后排，号称集成20项子系统；后排区域设立360°无级调节行政桌案。"
+            },
+            {
+              "url": "https://www.yiche.com/zhai/2307472",
+              "title": "蔚来ET9后排“行政岛”集成冰箱、操作屏、保险箱等功能_易车",
+              "source_name": "易车",
+              "snippet": "ET9后排“行政岛”集成冰箱、操作屏、保险箱等功能，强调原生四座架构与后排功能集成。"
+            }
+          ],
+          "reasoning": "“行政桥”虽为前后贯穿结构，但证据均描述其为功能集成平台/中岛，并未直接披露导轨或滑轨；无法严谨推定存在权利要求所述导轨。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "ET9公开的显示装置包括前排座椅椅背后的两块14.5英寸OLED后排行政屏、后排8英寸多功能控制屏；证据显示屏幕可角度调节或控制屏可电动收折，但未披露其与导轨配合，也未披露可在中控台和后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.nio.cn/et9",
+              "title": "蔚来ET9_智能电动行政旗舰轿车-NIO蔚来官网",
+              "source_name": "蔚来官网",
+              "snippet": "14.5英寸3K OLED，支持杜比视界，具备跨屏流转和互控体验；8英寸OLED多功能控制屏，让后排乘客控制音乐、座椅、温度等功能。"
+            },
+            {
+              "url": "https://www.ithome.com/0/741/174.htm",
+              "title": "蔚来行政旗舰轿车 ET9 亮相：首创“行政桥”",
+              "source_name": "IT之家",
+              "snippet": "在前排主副驾后方，各提供了14.5英寸OLED互联行政屏，屏幕倾角支持随动调节。"
+            },
+            {
+              "url": "https://auto.sina.cn/review/2024-12-23/detail-ineankci2396849.d.html?vt=4",
+              "title": "技术豪华新旗舰 静态体验蔚来ET9-手机新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "前排座椅的椅背后方配备全景互联屏，各自配备两块14.5英寸OLED高清显示屏；后排控制区内设置了一块能电动收折的高清显示屏。"
+            }
+          ],
+          "reasoning": "公开资料能确认后排屏和控制屏存在及安装位置/调节方式，但没有“导轨配合”或“在中控台与后排之间滑动”的直接证据，不能判定满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "证据显示ET9中控屏为横置布局，后排14.5英寸OLED互联行政屏角度可调/倾角随动，后排控制屏可电动收折；未见公开资料披露后排屏或控制屏可在横屏与竖屏之间切换，更未披露与导轨配合时切换至竖屏。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.pcauto.com.cn/ask/1136429.html",
+              "title": "蔚来 ET9 的内饰设计有哪些亮点？ - 太平洋汽车问答",
+              "source_name": "太平洋汽车",
+              "snippet": "有15.6英寸悬浮式AMOLED中控屏，1.4米长贯穿式天际线屏；主副驾后面各14.5英寸OLED互联行政屏，角度能调；后排有8英寸多功能控制屏。"
+            },
+            {
+              "url": "https://auto.sina.cn/review/2024-12-23/detail-ineankci2396849.d.html?vt=4",
+              "title": "技术豪华新旗舰 静态体验蔚来ET9-手机新浪汽车",
+              "source_name": "新浪汽车",
+              "snippet": "中控屏改成横置布局；前排座椅椅背后方配备两块14.5英寸OLED高清显示屏；后排控制区内设置一块能电动收折的高清显示屏。"
+            },
+            {
+              "url": "https://youmenr.com/news/3977.html",
+              "title": "蔚来ET9 / 打造智能电动行政旗舰新基准 - 油门到底",
+              "source_name": "油门到底",
+              "snippet": "后排提供14.5英寸OLED高清显示屏，屏幕角度可随座椅位置调节。"
+            }
+          ],
+          "reasoning": "“角度可调”“电动收折”只说明俯仰/收纳机构，不能等同于横竖屏旋转切换；证据也缺少与导轨配合后自动/机械切换竖屏的描述。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "total_score": 47.5,
+      "searched_queries": [
+        "蔚来汽车 蔚来ET9后排行政娱乐屏 14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏 规格书 参数",
+        "蔚来汽车 蔚来ET9后排行政娱乐屏 14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏 拆解 结构",
+        "蔚来汽车 蔚来ET9后排行政娱乐屏 14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏 上市 日期 发布",
+        "蔚来 ET9 行政桥 导轨 滑轨 中控台 后排",
+        "蔚来 ET9 后排行政屏 滑动 导轨 拆解"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    }
+  ]
+}

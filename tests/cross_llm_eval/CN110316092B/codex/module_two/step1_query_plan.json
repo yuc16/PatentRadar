@@ -1,0 +1,824 @@
+{
+  "publication_no": "CN110316092B",
+  "claim_1_summary": "权利要求1涉及一种车辆智能座舱显示方案：车体具有中控台和后排座椅；车内设置从中控台延伸至后排座椅的导轨；显示装置与导轨配合，可在中控台与后排座椅之间滑动，并可在横屏和竖屏状态之间切换，且与导轨配合时切换为竖屏状态。",
+  "applicant_self_signals": {
+    "domains": [
+      "byd.com",
+      "byd.com.cn",
+      "bydauto.com.cn",
+      "bydglobal.com",
+      "bydautomotive.com",
+      "bydautomotive.com.au",
+      "bydeurope.com",
+      "byd-electronic.com",
+      "bydsemicon.com",
+      "bydenergy.com",
+      "byd-forklift.com",
+      "bydtrucks.com",
+      "denza.com",
+      "denza.com.cn",
+      "yangwangauto.com",
+      "fangchengbao.com",
+      "fdb.com.cn",
+      "fdoi.com",
+      "byd-it.com"
+    ],
+    "aliases": [
+      "比亚迪",
+      "比亚迪股份有限公司",
+      "比亚迪汽车",
+      "比亚迪汽车工业有限公司",
+      "深圳比亚迪",
+      "比亚迪集团",
+      "比亚迪电子",
+      "比亚迪精密制造",
+      "BYD",
+      "BYD Co Ltd",
+      "BYD Co. Ltd.",
+      "BYD Company",
+      "BYD Company Limited",
+      "BYD Auto",
+      "BYD Group",
+      "Build Your Dreams",
+      "DiLink",
+      "DiPilot",
+      "迪链",
+      "云辇",
+      "易四方",
+      "弗迪",
+      "弗迪电池",
+      "弗迪科技",
+      "弗迪动力",
+      "弗迪视觉",
+      "Fudi",
+      "FinDreams",
+      "腾势",
+      "腾势汽车",
+      "Denza",
+      "仰望",
+      "仰望汽车",
+      "Yangwang",
+      "方程豹",
+      "方程豹汽车",
+      "Fangchengbao",
+      "Fang Cheng Bao",
+      "王朝网",
+      "海洋网",
+      "Dynasty Series",
+      "Ocean Series"
+    ]
+  },
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "汽车 中控屏 导轨 滑动 后排",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "车载显示屏 中控台 后排座椅 滑轨",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "智能座舱 滑移中控屏 前后排 量产",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "车载屏幕 横竖屏旋转 滑轨 中控",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "后排娱乐屏 导轨 中控台 滑动",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "中控大屏 可移动 后排座椅 车型",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "车内导轨 屏幕 前排后排 智能座舱",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "移动显示屏 横屏竖屏 切换 车载",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "滑移屏 智能座舱 量产车 中国",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "滑动中控屏 新能源汽车 车型",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q11",
+      "query": "可移动中控大屏 车内 前后排",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q12",
+      "query": "前后排共享屏 智能座舱 车型",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q13",
+      "query": "旋转中控屏 横竖屏 新能源车",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q14",
+      "query": "后舱娱乐屏 电动滑轨 中国",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q15",
+      "query": "滑动中控屏 用户手册 PDF",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q16",
+      "query": "车载显示屏 滑轨 规格书 智能座舱",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q17",
+      "query": "中控屏 导轨总成 供应商 规格书",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q18",
+      "query": "智能座舱 显示屏滑轨 总成 参数",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q19",
+      "query": "车载滑移屏 配置表 PDF",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q20",
+      "query": "后排娱乐屏 电动滑轨 参数表",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q21",
+      "query": "滑动中控屏 量产 时间 车型",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q22",
+      "query": "可移动中控大屏 上市 时间 中国",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q23",
+      "query": "高合 HiPhi Z 机器人屏 横竖屏 评测",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q24",
+      "query": "高合 HiPhi X 中控屏 可移动 后排",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q25",
+      "query": "蔚来 ES8 后排娱乐屏 配置表 PDF",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q26",
+      "query": "蔚来 ET9 后排屏 智能座舱 上市",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q27",
+      "query": "理想 MEGA 后舱娱乐屏 导轨 评测",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q28",
+      "query": "小鹏 X9 后排娱乐屏 滑轨 配置表",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q29",
+      "query": "极氪 009 后排娱乐屏 智能座舱 拆解",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q30",
+      "query": "问界 M9 后排屏 投影巨幕 评测",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q31",
+      "query": "阿维塔 12 中控屏 旋转 横竖屏",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q32",
+      "query": "红旗 E-HS9 后排屏 智能座舱 配置",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q33",
+      "query": "智己 LS7 中控屏 升降 滑动 评测",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q34",
+      "query": "岚图 梦想家 后排娱乐屏 配置表",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q35",
+      "query": "沃尔沃 EM90 后舱屏 配置表",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q36",
+      "query": "奔驰 EQS Hyperscreen 后排屏 中国",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q37",
+      "query": "宝马 i7 Theatre Screen 中国 配置",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q38",
+      "query": "奥迪 A8L 后排娱乐屏 配置表",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q39",
+      "query": "德赛西威 车载滑移屏 智能座舱 方案",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q40",
+      "query": "华阳集团 车载显示屏 电动滑轨 方案",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q41",
+      "query": "automotive sliding center display rail rear seat",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q42",
+      "query": "movable central touchscreen console rear seat China",
+      "intent": "market_name",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q43",
+      "query": "rail mounted car display portrait landscape mode",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q44",
+      "query": "sliding infotainment screen smart cockpit China",
+      "intent": "market_name",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "query_id": "Q45",
+      "query": "movable center screen vehicle datasheet PDF",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q46",
+      "query": "automotive display rail assembly supplier China",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q47",
+      "query": "HiPhi Z robotic arm center screen portrait landscape review",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q48",
+      "query": "NIO rear entertainment screen user manual PDF",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q49",
+      "query": "XPeng X9 rear cabin screen spec sheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q50",
+      "query": "movable center touchscreen production launch China",
+      "intent": "launch_date",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    }
+  ]
+}

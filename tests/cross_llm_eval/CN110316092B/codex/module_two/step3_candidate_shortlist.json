@@ -1,0 +1,155 @@
+{
+  "publication_no": "CN110316092B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "华人运通高合汽车",
+      "company_en": "Human Horizons HiPhi",
+      "product_name": "高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏",
+      "product_name_en": "HiPhi Z HiPhi Bot multi-axis central display",
+      "product_version": "2023款量产版；15.05英寸AMOLED 2K中控屏，4自由度8向可调",
+      "market": "中国豪华纯电轿车智能座舱",
+      "reason_for_deep_dive": "输入摘要显示其显示装置可前后移动并可横竖屏切换，直接覆盖权1的“显示装置可滑动/可移动”和“横屏、竖屏状态切换”两个关键参数；需进一步核查其前后移动机构是否包含导轨、移动范围是否可能从中控台延伸至后排座椅方向。",
+      "source_result_ids": [
+        "brave-Q23-01",
+        "brave-Q23-04",
+        "brave-Q23-05",
+        "tavily-Q23-02",
+        "tavily-Q23-04"
+      ],
+      "source_urls": [
+        "https://www.xchuxing.com/article/72423",
+        "https://news.qq.com/rain/a/20230828A03VG900",
+        "https://www.xchuxing.com/article/90272",
+        "https://www.hiphi.cn/hiphiz.html",
+        "http://m.diandong.com/news/161956.html"
+      ],
+      "initial_evidence_summary": "高合HiPhi Z的HiPhi Bot为多轴位移车载数字机器人；官方摘要称4自由度8向可调、高速运动机械臂，可前后移动、横竖屏切换、无级调节、任意悬停。第三方评测称中控屏为15.05英寸AMOLED 2K屏，机械臂支持前后、左右、俯仰、旋转4自由度；另有评测称可支撑中控屏20mm/s高速运动、2秒完成横竖切换。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "延锋国际",
+      "company_en": "Yanfeng International",
+      "product_name": "XiM25智能座舱长滑轨屏幕",
+      "product_name_en": "XiM25 smart cabin long-rail display",
+      "product_version": "1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转",
+      "market": "中国智能座舱概念/前瞻展示与主机厂方案市场",
+      "reason_for_deep_dive": "输入摘要明确出现“长滑轨”“1520mm超长滑动距离”“覆盖整个车顶”“兼顾前后排乘客需求”，与权1的“导轨从前排区域延伸至后排座椅、显示装置在前后排之间滑动”高度相关；还公开了屏幕旋转角度，需进一步核查是否存在横屏/竖屏切换及是否已进入量产供货。",
+      "source_result_ids": [
+        "tavily-Q03-01"
+      ],
+      "source_urls": [
+        "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi"
+      ],
+      "initial_evidence_summary": "摘要称XiM25智能座舱将长滑轨技术应用于天幕，可根据车型车顶造型曲线适配，1520mm超长滑动距离可覆盖整个车顶，搭配超宽显示屏等多种尺寸显示屏，并实现屏幕前后58.5°旋转，使顶棚屏兼顾前后排乘客需求。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "延锋国际",
+      "company_en": "Yanfeng International",
+      "product_name": "XiM21智能座舱电动滑动屏",
+      "product_name_en": "XiM21 smart cabin electric sliding display",
+      "product_version": "双12.3英寸曲面显示屏座舱方案；前排电动滑动屏",
+      "market": "中国智能座舱概念/主机厂方案市场",
+      "reason_for_deep_dive": "输入摘要显示该方案在座舱内设置显示屏并采用“电动滑动屏”，可作为核查导轨配合、显示装置滑动安装结构的候选；需进一步核查滑动轨迹是否朝后排延伸，以及是否有横竖屏切换状态。",
+      "source_result_ids": [
+        "tavily-Q14-05"
+      ],
+      "source_urls": [
+        "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode"
+      ],
+      "initial_evidence_summary": "延锋官网摘要称XiM21智能座舱内安装5个显示屏，多屏交互是亮点；驾驶员侧双12.3英寸曲面显示屏作为座舱操控中心，电动滑动屏让前排乘客也能灵活设置车内模式及信息娱乐系统。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "延锋国际",
+      "company_en": "Yanfeng International",
+      "product_name": "10.1英寸电动滑动屏",
+      "product_name_en": "10.1-inch electric sliding display",
+      "product_version": "10.1英寸；用于观看后方儿童状态并操控后方座椅屏幕",
+      "market": "中国车载电动滑动屏/智能座舱供应链市场",
+      "reason_for_deep_dive": "该候选明确为车载“电动滑动屏”，并与后排儿童状态、后方座椅屏幕控制相关，涉及权1的车内显示装置滑动以及前后排交互场景；需进一步核查其导轨安装位置、是否可在中控台与后排座椅之间滑动，以及横竖屏切换机制。",
+      "source_result_ids": [
+        "tavily-Q05-01"
+      ],
+      "source_urls": [
+        "https://www.smartautoclub.com/p/86504"
+      ],
+      "initial_evidence_summary": "摘要称延锋电动滑动中控屏方案包括“10.1英寸电动滑动屏”，用途为观看后方儿童状态，并操控后方座椅屏幕播放内容；同一摘要还说明车载电动滑动屏采用电动驱动、可沿轨道滑动，通过显示和触控操作实现屏幕位置和角度灵活调整。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "魏牌",
+      "company_en": "Wey",
+      "product_name": "全新高山后排超清吸顶屏",
+      "product_name_en": "Wey Gaoshan rear ultra-clear ceiling display",
+      "product_version": "17.3英寸；2K分辨率/HDR10+；电动滑轨固定",
+      "market": "中国高端MPV后排娱乐座舱",
+      "reason_for_deep_dive": "摘要公开其后舱显示屏通过电动滑轨固定，属于车内显示装置与滑轨配合的后排娱乐屏方案；需核查电动滑轨是否具有前后滑移路径、是否可从中控区域向后排移动，以及是否具备横竖屏切换。",
+      "source_result_ids": [
+        "brave-Q14-03"
+      ],
+      "source_urls": [
+        "https://cj.sina.com.cn/articles/view/7880068201/1d5b04c6901901vmny?froms=ggmp"
+      ],
+      "initial_evidence_summary": "摘要称全新高山采用17.3英寸超清吸顶屏，屏幕通过电动滑轨固定于车顶，展开后距二排座椅约30cm，配合2K分辨率与HDR10+技术。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "小鹏汽车",
+      "company_en": "XPeng Motors",
+      "product_name": "小鹏X9后排娱乐屏",
+      "product_name_en": "XPeng X9 rear entertainment screen",
+      "product_version": "2026款；后排娱乐屏/前后排屏幕交互配置",
+      "market": "中国纯电MPV后排娱乐与多屏交互座舱",
+      "reason_for_deep_dive": "输入摘要显示该车型具有后排娱乐屏、屏幕角度控制和前后排屏幕交互，属于前后排共享显示/娱乐的量产车辆；需进一步核查后排屏是否通过导轨滑动、是否可在中控台与后排座椅之间移动及横竖屏状态。",
+      "source_result_ids": [
+        "brave-Q20-03",
+        "tavily-Q20-04"
+      ],
+      "source_urls": [
+        "https://bbs.xiaopeng.com/article/2308119",
+        "https://www.xiaopeng.com/x9_2026/configuration.html"
+      ],
+      "initial_evidence_summary": "小鹏社区摘要提到X9后排娱乐屏可通过语音、按键、遥控打开并设置屏幕角度；2026款小鹏X9参数配置摘要列出“前后排屏幕交互”“车载娱乐遥控器”等智能座舱功能。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "蔚来汽车",
+      "company_en": "NIO",
+      "product_name": "全新蔚来ES8后排吸顶屏",
+      "product_name_en": "All-new NIO ES8 rear ceiling display",
+      "product_version": "2026款；Mini LED吸顶屏/多媒体屏幕数量2个",
+      "market": "中国高端纯电SUV后排娱乐座舱",
+      "reason_for_deep_dive": "摘要显示该车型后排吸顶屏具有运动系统、防夹手和低噪声设计，涉及车内显示装置的运动机构；需进一步核查运动机构是否包含导轨滑动、是否存在横竖屏切换，以及运动范围是否面向中控台—后排路径。",
+      "source_result_ids": [
+        "brave-Q25-03",
+        "brave-Q25-04",
+        "tavily-Q25-02"
+      ],
+      "source_urls": [
+        "https://www.smartautoclub.com/p/106040",
+        "https://www.nio.cn/vehicle/configuration/es8",
+        "https://car.autohome.com.cn/config/series/4427.html"
+      ],
+      "initial_evidence_summary": "智能汽车资源网摘要称全新ES8车内屏幕包括车规级OLED中控、Mini LED数字天际线、Mini LED吸顶屏，吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音；汽车之家配置摘要显示其多媒体屏幕数量为2个、液晶屏幕类型为Mini LED。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "蔚来汽车",
+      "company_en": "NIO",
+      "product_name": "蔚来ET9后排行政娱乐屏",
+      "product_name_en": "NIO ET9 rear executive entertainment display",
+      "product_version": "14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏",
+      "market": "中国行政级纯电轿车后排智能座舱",
+      "reason_for_deep_dive": "摘要公开其后排显示系统可跨屏流转和互控，且后排乘客可通过8英寸OLED控制屏控制座椅、温度、音乐等，属于中控/后排屏幕协同场景；需进一步核查后排14.5英寸屏或控制屏是否具有导轨滑动和横竖屏切换。",
+      "source_result_ids": [
+        "brave-Q26-01"
+      ],
+      "source_urls": [
+        "https://www.nio.cn/et9"
+      ],
+      "initial_evidence_summary": "蔚来ET9官网摘要显示后排配备14.5英寸3K OLED屏，支持杜比视界，具备跨屏流转和互控体验；同时配备8英寸OLED多功能控制屏，后排乘客可控制音乐、座椅、温度等功能。"
+    }
+  ]
+}

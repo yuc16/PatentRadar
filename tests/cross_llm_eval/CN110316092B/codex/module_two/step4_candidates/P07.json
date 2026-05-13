@@ -1,0 +1,167 @@
+{
+  "candidate": {
+    "candidate_id": "P07",
+    "company": "蔚来汽车",
+    "company_en": "NIO",
+    "product_name": "全新蔚来ES8后排吸顶屏",
+    "product_name_en": "All-new NIO ES8 rear ceiling display",
+    "product_version": "2026款；Mini LED吸顶屏/多媒体屏幕数量2个",
+    "market": "中国高端纯电SUV后排娱乐座舱",
+    "reason_for_deep_dive": "摘要显示该车型后排吸顶屏具有运动系统、防夹手和低噪声设计，涉及车内显示装置的运动机构；需进一步核查运动机构是否包含导轨滑动、是否存在横竖屏切换，以及运动范围是否面向中控台—后排路径。",
+    "source_result_ids": [
+      "brave-Q25-03",
+      "brave-Q25-04",
+      "tavily-Q25-02"
+    ],
+    "source_urls": [
+      "https://www.smartautoclub.com/p/106040",
+      "https://www.nio.cn/vehicle/configuration/es8",
+      "https://car.autohome.com.cn/config/series/4427.html"
+    ],
+    "initial_evidence_summary": "智能汽车资源网摘要称全新ES8车内屏幕包括车规级OLED中控、Mini LED数字天际线、Mini LED吸顶屏，吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音；汽车之家配置摘要显示其多媒体屏幕数量为2个、液晶屏幕类型为Mini LED。"
+  },
+  "launch_date": "2025年8月21日预售/技术发布；2025年9月20日正式上市，2025年9月21日开启交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+      "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+      "source_name": "快科技",
+      "snippet": "2025-08-21 20:56:33；在今晚举办的全新蔚来ES8技术发布会上，李斌介绍了这款车首发搭载的“天空屏”，也就是大家更熟悉的后排娱乐屏。"
+    },
+    {
+      "url": "https://www.donews.com/news/detail/7/6132624.html",
+      "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+      "source_name": "DoNews汽车",
+      "snippet": "2025蔚来日（NIO Day 2025）9月20日在杭州举行，蔚来宣布全场景科技旗舰SUV——全新ES8正式上市；全新ES8将于9月21日起正式开启交付。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开证据显示全新ES8及其21.4英寸mini-LED天空屏/后排娱乐屏发布、上市和交付均晚于专利申请日2018-03-30；现有证据未出现可直接判定明确不满足的相反技术参数。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "车体，所述车体包括中控台和后排座椅",
+      "competitor_feature": "全新ES8为大型纯电SUV，提供六座/七座布局；座舱含中控台、中控横屏、二排/第三排座椅，故车体包括中控台和后排座椅。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.donews.com/news/detail/7/6132624.html",
+          "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+          "source_name": "DoNews汽车",
+          "snippet": "全新ES8拥有5,280mm超长车身和3,130mm轴距；全新ES8以多维线条构建环抱式座舱布局；前后双杜比视界大屏幕，15.6英寸AMOLED中控横屏；拥有六座和七座两种空间布局。"
+        },
+        {
+          "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+          "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+          "source_name": "新浪汽车",
+          "snippet": "车内配备了Skyline天际线屏幕、悬浮式中控屏以及最新升级的NOMI系统；车内采用大六座布局，前排座椅可180°水平放倒，与二排座椅联动。"
+        }
+      ],
+      "reasoning": "DoNews和新浪均说明该产品是全新ES8整车座舱，含中控横屏/中控台相关结构及六座/七座、二排座椅，直接覆盖车体含中控台和后排座椅。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+      "competitor_feature": "现有证据仅显示全新ES8具有二排上方吸顶娱乐屏/21.4英寸mini-LED天空屏，以及吸顶屏存在运动系统、防夹手、电机、锁舌机构等信息；未找到“导轨”或“从中控台延伸至后排座椅”的公开描述。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.smartautoclub.com/p/106040",
+          "title": "蔚来全新ES8车内屏幕技术详解：车规级OLED中控/Mini LED数字天际线/Mini LED吸顶屏/ NOMI 3.0 - 智能汽车资源网",
+          "source_name": "智能汽车资源网",
+          "snippet": "搜索摘要显示全新ES8车内屏幕包括车规级OLED中控、Mini LED数字天际线、Mini LED吸顶屏；吸顶屏具备防夹手，采用先进运动系统方案、高性能电机、锁舌机构和缓冲垫设计以控制运行噪音。"
+        },
+        {
+          "url": "https://www.donews.com/news/detail/7/6132624.html",
+          "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+          "source_name": "DoNews汽车",
+          "snippet": "同级唯一的车规级21.4英寸mini-LED天空屏，拥有高清分辨率和1,000,000:1的超高对比度，结合行业首创的“天空中置”扬声器。"
+        },
+        {
+          "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+          "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+          "source_name": "新浪汽车",
+          "snippet": "车内采用大六座布局；二排上方首次加入吸顶娱乐屏，搭配中控手箱处的二排显示屏幕，解锁影院级的二排观影体验。"
+        }
+      ],
+      "reasoning": "“运动系统/电机”只能说明吸顶屏可能有开合或运动机构，未直接公开导轨，更未公开导轨从中控台延伸至后排座椅，不能严谨推导该特征。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+      "competitor_feature": "全新ES8公开配置21.4英寸mini-LED天空屏/二排上方吸顶娱乐屏，属于安装于车体的车内显示装置；但未公开该屏与导轨配合，也未公开其可在中控台和后排座椅之间滑动。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+          "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+          "source_name": "快科技",
+          "snippet": "在今晚举办的全新蔚来ES8技术发布会上，李斌介绍了这款车首发搭载的“天空屏”，也就是大家更熟悉的后排娱乐屏。这块屏尺寸为21.4英寸，采用mini-LED材质。"
+        },
+        {
+          "url": "https://www.donews.com/news/detail/7/6132624.html",
+          "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+          "source_name": "DoNews汽车",
+          "snippet": "同级唯一的车规级21.4英寸mini-LED天空屏，拥有高清分辨率和1,000,000:1的超高对比度。"
+        },
+        {
+          "url": "https://k.sina.com.cn/article_7857141524_1d45277140190255ma.html",
+          "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅上车-新浪汽车",
+          "source_name": "新浪汽车",
+          "snippet": "二排上方首次加入吸顶娱乐屏，搭配中控手箱处的二排显示屏幕，解锁影院级的二排观影体验。"
+        }
+      ],
+      "reasoning": "证据可确认后排显示装置存在并位于二排上方；但“吸顶/天空屏”及运动系统信息并不等同于沿中控台至后排的导轨滑动，缺少滑动路径证据。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+      "competitor_feature": "公开证据显示全新ES8前排中控屏为15.6英寸AMOLED中控横屏，后排为21.4英寸mini-LED天空屏/吸顶屏；未找到后排吸顶屏可在横屏和竖屏之间切换，或与导轨配合时切换至竖屏的公开描述。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.donews.com/news/detail/7/6132624.html",
+          "title": "蔚来全新ES8正式上市，起售价40.68万元- DoNews汽车",
+          "source_name": "DoNews汽车",
+          "snippet": "前后双杜比视界大屏幕，带来专业级观影享受。15.6英寸AMOLED中控横屏呈现细腻画质。同级唯一的车规级21.4英寸mini-LED天空屏。"
+        },
+        {
+          "url": "https://news.mydrivers.com/1/1069/1069687.htm",
+          "title": "车载电视继续卷！全新蔚来ES8配同级唯一车规级mini-LED后排娱乐屏--快科技--科技改变未来",
+          "source_name": "快科技",
+          "snippet": "这块屏尺寸为21.4英寸，采用mini-LED材质；分辨率达3K，PPI 201，最高亮度1000尼特，支持杜比视界、HDR-Vivid等。"
+        },
+        {
+          "url": "https://tech.hexun.com/2025-08-21/221023510.html",
+          "title": "全新蔚来ES8更多内饰官图公布:吸顶屏、大冰箱、零重力座椅全上车-科技频道-和讯网",
+          "source_name": "和讯网",
+          "snippet": "方向盘采用三辐式设计，车机中控屏由竖行屏幕升级为横幅样式；车内采用大六座布局，二排上方首次加入吸顶娱乐屏。"
+        }
+      ],
+      "reasoning": "检索到“横幅样式”仅指前排中控屏由竖屏改为横屏；21.4英寸吸顶屏只公开尺寸和显示性能，未公开旋转/横竖屏切换或导轨联动竖屏状态。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 47.5,
+  "searched_queries": [
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 中国 市场",
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 规格书 参数",
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 官方 参数",
+    "全新蔚来ES8 吸顶屏 防夹手 运动系统 电机 锁舌机构 拆解",
+    "全新蔚来ES8 吸顶屏 横竖屏 旋转 竖屏",
+    "蔚来汽车 全新蔚来ES8后排吸顶屏 2026款；Mini LED吸顶屏/多媒体屏幕数量2个 上市 日期 发布"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

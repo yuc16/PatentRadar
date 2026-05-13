@@ -1,0 +1,174 @@
+{
+  "candidate": {
+    "candidate_id": "P08",
+    "company": "蔚来汽车",
+    "company_en": "NIO",
+    "product_name": "蔚来ET9后排行政娱乐屏",
+    "product_name_en": "NIO ET9 rear executive entertainment display",
+    "product_version": "14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏",
+    "market": "中国行政级纯电轿车后排智能座舱",
+    "reason_for_deep_dive": "摘要公开其后排显示系统可跨屏流转和互控，且后排乘客可通过8英寸OLED控制屏控制座椅、温度、音乐等，属于中控/后排屏幕协同场景；需进一步核查后排14.5英寸屏或控制屏是否具有导轨滑动和横竖屏切换。",
+    "source_result_ids": [
+      "brave-Q26-01"
+    ],
+    "source_urls": [
+      "https://www.nio.cn/et9"
+    ],
+    "initial_evidence_summary": "蔚来ET9官网摘要显示后排配备14.5英寸3K OLED屏，支持杜比视界，具备跨屏流转和互控体验；同时配备8英寸OLED多功能控制屏，后排乘客可控制音乐、座椅、温度等功能。"
+  },
+  "launch_date": "2023年12月23日发布/亮相；2024年12月21日正式上市；2025年3月开启交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.ithome.com/0/741/174.htm",
+      "title": "蔚来行政旗舰轿车 ET9 亮相：首创“行政桥”，集成智能冰箱 / 飞航头等舱座椅",
+      "source_name": "IT之家",
+      "snippet": "2023年12月23日 NIO Day 期间，蔚来行政旗舰轿车 ET9 正式亮相；内饰首创“行政桥”原生四座布局，贯穿前后排。"
+    },
+    {
+      "url": "https://www.ithome.com/0/819/287.htm",
+      "title": "蔚来行政旗舰轿车 ET9 上市，78.8 万元起",
+      "source_name": "IT之家",
+      "snippet": "2024年12月21日消息，蔚来 ET9 今晚正式上市，78.8万元起售；新车将于明年3月开启交付。"
+    },
+    {
+      "url": "https://baike.baidu.com/item/蔚来ET9/63859973",
+      "title": "蔚来ET9_百度百科",
+      "source_name": "百度百科",
+      "snippet": "蔚来ET9是蔚来汽车于2023年12月23日在NIO Day发布的行政旗舰轿车；2024年12月21日正式上市；2025年3月29日开启交付。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：公开资料显示ET9发布、上市及交付时间均晚于本专利申请日2018-03-30；本轮未找到足以构成“明确不满足”的直接矛盾证据。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "车体，所述车体包括中控台和后排座椅",
+      "competitor_feature": "蔚来ET9为四座车辆，公开资料显示其内饰包含“15.6英寸横置悬浮式AMOLED中控屏”“中控台前段1.4米贯穿式天际线屏”，并采用后排两张独立座椅布局。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.yiche.com/zhai/2225996",
+          "title": "蔚来ET9中控台前段配备了1.4米贯穿式天际线屏_易车",
+          "source_name": "易车",
+          "snippet": "新车搭载15.6英寸横置悬浮式AMOLED中控屏，中控台前段配备了1.4米贯穿式天际线屏；采用原生四座布局设计，后排座椅为两张独立座椅。"
+        },
+        {
+          "url": "https://auto.sina.cn/review/2024-12-23/detail-ineankci2396849.d.html?vt=4",
+          "title": "技术豪华新旗舰 静态体验蔚来ET9-手机新浪汽车",
+          "source_name": "新浪汽车",
+          "snippet": "座舱最大亮点是中控屏改成横置布局，中控台上多了一条长达1.4米的“天际线屏”；蔚来ET9采用原生四座布局，后排座椅拥有24项自研专利技术。"
+        },
+        {
+          "url": "https://www.evlook.com/weilaiet9/peizhi",
+          "title": "【蔚来ET9配置表】蔚来_蔚来ET9参数_价格单_EV视界",
+          "source_name": "EV视界",
+          "snippet": "蔚来ET9 2025款基本参数显示车身结构为4门4座三厢车，座位数4。"
+        }
+      ],
+      "reasoning": "易车和新浪均直接披露ET9中控台/中控屏及后排座椅，EV视界配置表进一步确认其为4门4座车辆，故车体含中控台和后排座椅可验证。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+      "competitor_feature": "现有证据仅显示ET9有“行政桥”从前至后贯穿车舱/贯穿前后排，长度约1.95米并集成桌板、冰箱等；未见公开资料称其为导轨/滑轨，或用于显示装置从中控台滑至后排座椅。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://youmenr.com/news/3977.html",
+          "title": "蔚来ET9 / 打造智能电动行政旗舰新基准 - 油门到底",
+          "source_name": "油门到底",
+          "snippet": "“行政桥”从前至后贯穿车舱，长度有1.95米，上面集成了20项创新子系统；行政桌案位于后排“行政桥”内部，行政桥下方集成智能冰箱。"
+        },
+        {
+          "url": "https://www.ithome.com/0/741/174.htm",
+          "title": "蔚来行政旗舰轿车 ET9 亮相：首创“行政桥”",
+          "source_name": "IT之家",
+          "snippet": "该车首创“行政桥”原生四座布局，贯穿前后排，号称集成20项子系统；后排区域设立360°无级调节行政桌案。"
+        },
+        {
+          "url": "https://www.yiche.com/zhai/2307472",
+          "title": "蔚来ET9后排“行政岛”集成冰箱、操作屏、保险箱等功能_易车",
+          "source_name": "易车",
+          "snippet": "ET9后排“行政岛”集成冰箱、操作屏、保险箱等功能，强调原生四座架构与后排功能集成。"
+        }
+      ],
+      "reasoning": "“行政桥”虽为前后贯穿结构，但证据均描述其为功能集成平台/中岛，并未直接披露导轨或滑轨；无法严谨推定存在权利要求所述导轨。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+      "competitor_feature": "ET9公开的显示装置包括前排座椅椅背后的两块14.5英寸OLED后排行政屏、后排8英寸多功能控制屏；证据显示屏幕可角度调节或控制屏可电动收折，但未披露其与导轨配合，也未披露可在中控台和后排座椅之间滑动。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.nio.cn/et9",
+          "title": "蔚来ET9_智能电动行政旗舰轿车-NIO蔚来官网",
+          "source_name": "蔚来官网",
+          "snippet": "14.5英寸3K OLED，支持杜比视界，具备跨屏流转和互控体验；8英寸OLED多功能控制屏，让后排乘客控制音乐、座椅、温度等功能。"
+        },
+        {
+          "url": "https://www.ithome.com/0/741/174.htm",
+          "title": "蔚来行政旗舰轿车 ET9 亮相：首创“行政桥”",
+          "source_name": "IT之家",
+          "snippet": "在前排主副驾后方，各提供了14.5英寸OLED互联行政屏，屏幕倾角支持随动调节。"
+        },
+        {
+          "url": "https://auto.sina.cn/review/2024-12-23/detail-ineankci2396849.d.html?vt=4",
+          "title": "技术豪华新旗舰 静态体验蔚来ET9-手机新浪汽车",
+          "source_name": "新浪汽车",
+          "snippet": "前排座椅的椅背后方配备全景互联屏，各自配备两块14.5英寸OLED高清显示屏；后排控制区内设置了一块能电动收折的高清显示屏。"
+        }
+      ],
+      "reasoning": "公开资料能确认后排屏和控制屏存在及安装位置/调节方式，但没有“导轨配合”或“在中控台与后排之间滑动”的直接证据，不能判定满足。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+      "competitor_feature": "证据显示ET9中控屏为横置布局，后排14.5英寸OLED互联行政屏角度可调/倾角随动，后排控制屏可电动收折；未见公开资料披露后排屏或控制屏可在横屏与竖屏之间切换，更未披露与导轨配合时切换至竖屏。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.pcauto.com.cn/ask/1136429.html",
+          "title": "蔚来 ET9 的内饰设计有哪些亮点？ - 太平洋汽车问答",
+          "source_name": "太平洋汽车",
+          "snippet": "有15.6英寸悬浮式AMOLED中控屏，1.4米长贯穿式天际线屏；主副驾后面各14.5英寸OLED互联行政屏，角度能调；后排有8英寸多功能控制屏。"
+        },
+        {
+          "url": "https://auto.sina.cn/review/2024-12-23/detail-ineankci2396849.d.html?vt=4",
+          "title": "技术豪华新旗舰 静态体验蔚来ET9-手机新浪汽车",
+          "source_name": "新浪汽车",
+          "snippet": "中控屏改成横置布局；前排座椅椅背后方配备两块14.5英寸OLED高清显示屏；后排控制区内设置一块能电动收折的高清显示屏。"
+        },
+        {
+          "url": "https://youmenr.com/news/3977.html",
+          "title": "蔚来ET9 / 打造智能电动行政旗舰新基准 - 油门到底",
+          "source_name": "油门到底",
+          "snippet": "后排提供14.5英寸OLED高清显示屏，屏幕角度可随座椅位置调节。"
+        }
+      ],
+      "reasoning": "“角度可调”“电动收折”只说明俯仰/收纳机构，不能等同于横竖屏旋转切换；证据也缺少与导轨配合后自动/机械切换竖屏的描述。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 47.5,
+  "searched_queries": [
+    "蔚来汽车 蔚来ET9后排行政娱乐屏 14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏 规格书 参数",
+    "蔚来汽车 蔚来ET9后排行政娱乐屏 14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏 拆解 结构",
+    "蔚来汽车 蔚来ET9后排行政娱乐屏 14.5英寸3K OLED后排屏 + 8英寸OLED多功能控制屏 上市 日期 发布",
+    "蔚来 ET9 行政桥 导轨 滑轨 中控台 后排",
+    "蔚来 ET9 后排行政屏 滑动 导轨 拆解"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

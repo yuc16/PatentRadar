@@ -1,0 +1,498 @@
+{
+  "candidate": {
+    "candidate_id": "P04",
+    "company": "延锋国际",
+    "company_en": "Yanfeng International",
+    "product_name": "10.1英寸电动滑动屏",
+    "product_name_en": "10.1-inch electric sliding display",
+    "product_version": "10.1英寸；用于观看后方儿童状态并操控后方座椅屏幕",
+    "market": "中国车载电动滑动屏/智能座舱供应链市场",
+    "reason_for_deep_dive": "该候选明确为车载“电动滑动屏”，并与后排儿童状态、后方座椅屏幕控制相关，涉及权1的车内显示装置滑动以及前后排交互场景；需进一步核查其导轨安装位置、是否可在中控台与后排座椅之间滑动，以及横竖屏切换机制。",
+    "source_result_ids": [
+      "tavily-Q05-01"
+    ],
+    "source_urls": [
+      "https://www.smartautoclub.com/p/86504"
+    ],
+    "initial_evidence_summary": "摘要称延锋电动滑动中控屏方案包括“10.1英寸电动滑动屏”，用途为观看后方儿童状态，并操控后方座椅屏幕播放内容；同一摘要还说明车载电动滑动屏采用电动驱动、可沿轨道滑动，通过显示和触控操作实现屏幕位置和角度灵活调整。"
+  },
+  "launch_date": "2020年6月17日发布/首发（XiM21智能座舱中披露该10.1英寸滑动显示屏）",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+      "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+      "source_name": "延锋官网",
+      "snippet": "上海 17.06.2020 今天，全球领先的汽车零部件供应商——延锋发布了自主设计研发的XiM21智能座舱……对于驾驶员而言，双12.3英寸曲面显示屏可作为整个座舱的操控中心，电动滑动屏让前排乘客也能灵活设置车内各种模式及信息娱乐系统。"
+    },
+    {
+      "url": "http://auto.cnfol.com/cheshidongtai/20200628/28238375.shtml",
+      "title": "延锋发布XiM21智能座舱，相关技术可在五年内落地",
+      "source_name": "中金在线/盖世汽车",
+      "snippet": "6月22日，延锋国际发布自主设计研发的XiM21智能座舱……另曲面屏下方还有一块电动滑动屏，便于副驾驶辅助信息娱乐系统及导航操控。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开证据显示XiM21智能座舱及其中电动滑动屏于2020年6月发布，晚于本专利申请日2018-03-30；现有证据未证明权1任一特征明确不满足，故不因上市时间或权1明确不满足而失格。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆，其特征在于，包括：\n车体，所述车体包括中控台和后排座椅；\n导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；\n显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "XiM21/XiM21s为智能座舱/概念车，资料明示存在副仪表板以及前后排座椅/多排座椅；10.1英寸滑动显示屏为该座舱显示集成方案的一部分。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用……XiM21于2020年6月在中国首发。"
+            },
+            {
+              "url": "https://m.sohu.com/a/481593207_180520/?pvid=000115_3w_a",
+              "title": "延锋国际：延锋XiM21s智能座舱 | 2021金辑奖",
+              "source_name": "搜狐/盖世汽车",
+              "snippet": "长滑轨可供副仪表板，前后排座椅及脚踏共用……XiM21s更关注乘员深层次情感需求及乘坐体验。"
+            }
+          ],
+          "reasoning": "延锋官方和盖世/搜狐材料均将XiM21/XiM21s描述为座舱/概念车，并明示副仪表板与前后排或多排座椅；可直接对应车体内含中控台/副仪表台区域和后排座椅。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "XiM21/XiM21s公开有车内长滑轨：XiM21为“双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用”；XiM21s为“长滑轨可供副仪表板，前后排座椅及脚踏共用”，且滑轨长度加长至2940mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用，可迅速调整它们的位置以实现最大的灵活性。"
+            },
+            {
+              "url": "https://m.sohu.com/a/481593207_180520/?pvid=000115_3w_a",
+              "title": "延锋国际：延锋XiM21s智能座舱 | 2021金辑奖",
+              "source_name": "搜狐/盖世汽车",
+              "snippet": "长滑轨：业界最长行程滑轨可供副仪表板，前后排座椅及脚踏共用，滑轨长度加长至2940mm。"
+            }
+          ],
+          "reasoning": "“副仪表板”可对应车内中控台/副仪表台区域；公开资料直接说明长滑轨由副仪表板与前后排/多排座椅共用，足以证明导轨安装于车体且从中控台区域延伸至后排座椅区域。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "现有证据能证明XiM21存在仪表板上的额外10.1英寸滑动显示屏/曲面屏下方电动滑动屏，并能证明座舱另有长滑轨；但未证明该10.1英寸显示屏与上述长滑轨配合，也未证明其可在中控台和后排座椅之间滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。还可以让前排乘客时刻关注后排的孩子，控制他们观看的内容。"
+            },
+            {
+              "url": "http://auto.cnfol.com/cheshidongtai/20200628/28238375.shtml",
+              "title": "延锋发布XiM21智能座舱，相关技术可在五年内落地",
+              "source_name": "中金在线/盖世汽车",
+              "snippet": "另曲面屏下方还有一块电动滑动屏，便于副驾驶辅助信息娱乐系统及导航操控……该滑动屏还可以观看后方儿童状态，并操控后方座椅屏幕播放内容。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用。"
+            }
+          ],
+          "reasoning": "目前材料将“10.1英寸滑动显示屏”描述为位于仪表板/曲面屏下方、供前座乘客交互；长滑轨证据主要对应座椅和副仪表板共享。二者未被同一证据明确连接为“显示屏与长滑轨配合并在中控台和后排座椅之间滑动”。",
+          "suggested_followup_queries": [
+            "延锋 XiM21 10.1英寸 电动滑动屏 滑轨 行程 仪表板 后排 演示视频",
+            "Yanfeng XiM21 10.1-inch sliding display rail travel rear seat demo video",
+            "延锋 XiM21 智能座舱 10.1英寸屏 移动到 后排 座椅",
+            "XiM21 sliding display track between dashboard and rear seats mechanism"
+          ]
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "未发现延锋10.1英寸电动滑动屏支持横屏/竖屏切换的公开证据；也未发现其与导轨配合时自动或必然切换至竖屏状态的证据。现有“位置和角度灵活调整”描述不足以等同于横竖屏切换。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。"
+            }
+          ],
+          "reasoning": "相关页面只描述滑动、位置/角度调整和交互用途，没有出现横屏、竖屏、旋转切换或与导轨配合时竖屏等关键限定，无法证实该特征。",
+          "suggested_followup_queries": [
+            "延锋 XiM21 10.1英寸滑动屏 横屏 竖屏 旋转 切换",
+            "Yanfeng XiM21 sliding display portrait landscape rotation screen",
+            "延锋 10.1英寸 电动滑动屏 横竖屏 切换 演示",
+            "XiM21 movable display vertical portrait mode rail engaged"
+          ]
+        }
+      ],
+      "claim_score": 65.0
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+          "competitor_feature": "XiM21/XiM21s证据证明长滑轨由副仪表板与前后排/多排座椅共用，但现有公开文本未具体说明导轨延伸终点为“后排座椅的中央扶手处”。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用，可迅速调整它们的位置以实现最大的灵活性。"
+            },
+            {
+              "url": "https://m.sohu.com/a/481593207_180520/?pvid=000115_3w_a",
+              "title": "延锋国际：延锋XiM21s智能座舱 | 2021金辑奖",
+              "source_name": "搜狐/盖世汽车",
+              "snippet": "长滑轨可供副仪表板，前后排座椅及脚踏共用，滑轨长度加长至2940mm。"
+            }
+          ],
+          "reasoning": "“前后排座椅共用”支持滑轨到后排区域，但没有中央扶手位置、扶手结构或导轨终端位置的直接描述，不能确认从中控台延伸至后排中央扶手处。",
+          "suggested_followup_queries": [
+            "XiM21 长滑轨 后排 中央扶手 副仪表板 终点",
+            "Yanfeng XiM21 long rail rear center armrest console endpoint"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+          "competitor_feature": "现有证据仅说明10.1英寸电动滑动屏可沿轨道滑动、位置和角度灵活调整；未披露中控台或后排座椅处设置用于定位该显示装置的锁止机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            }
+          ],
+          "reasoning": "可滑动并不必然公开锁止机构；现有材料没有“锁止、定位、卡扣、锁止销、限位锁”等结构信息，不能证实该从属限定。",
+          "suggested_followup_queries": [
+            "XiM21 滑动显示屏 锁止机构 定位 卡扣 中控台 后排",
+            "Yanfeng sliding display locking mechanism positioning latch XiM21"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+          "competitor_feature": "XiM21/XiM21s资料明确存在副仪表板，且长滑轨由副仪表板与多排/前后排座椅共享；可合理推断副仪表板位于前后排之间并与长滑轨相邻或配合，但“导轨与副仪表台内饰相配合”的具体内饰配合结构未直接披露。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用，可迅速调整它们的位置以实现最大的灵活性。"
+            },
+            {
+              "url": "https://m.sohu.com/a/481593207_180520/?pvid=000115_3w_a",
+              "title": "延锋国际：延锋XiM21s智能座舱 | 2021金辑奖",
+              "source_name": "搜狐/盖世汽车",
+              "snippet": "长滑轨可供副仪表板，前后排座椅及脚踏共用，滑轨长度加长至2940mm。"
+            }
+          ],
+          "reasoning": "“副仪表板”在汽车语境下通常为前排中央通道/副仪表台区域，位于中控台和后排座椅之间；长滑轨可供副仪表板与前后排座椅共用，说明导轨至少与副仪表台区域发生功能配合。但缺少导轨与副仪表台内饰件具体嵌合/遮盖/配合的公开结构图或文本，因此为可能满足。",
+          "suggested_followup_queries": [
+            "XiM21 副仪表板 长滑轨 内饰 配合 轨道 盖板",
+            "Yanfeng XiM21 console long rail interior trim integration"
+          ]
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+          "competitor_feature": "现有证据仅称XiM21/XiM21s采用“长滑轨”，未说明导轨数量为两个，也未说明两个导轨分别位于副仪表台左侧和右侧。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.sohu.com/a/481593207_180520/?pvid=000115_3w_a",
+              "title": "延锋国际：延锋XiM21s智能座舱 | 2021金辑奖",
+              "source_name": "搜狐/盖世汽车",
+              "snippet": "长滑轨：业界最长行程滑轨可供副仪表板，前后排座椅及脚踏共用，滑轨长度加长至2940mm。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用。"
+            }
+          ],
+          "reasoning": "“长滑轨”可以指单条或成组滑轨，现有公开文本未披露左右两条布置，也没有图片证据可确认其位于副仪表台左右两侧。",
+          "suggested_followup_queries": [
+            "XiM21 长滑轨 两条 左右 副仪表板 2940mm",
+            "Yanfeng XiM21 dual long rails left right center console"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述显示装置与所述车体有线连接",
+          "competitor_feature": "XiM21的10.1英寸滑动显示屏为车内电动滑动屏，用于与车辆设置、信息娱乐系统交互并控制后方座椅屏幕内容；由其车载显示/触控/供电和信息娱乐控制功能可推断其很可能通过车体线束供电和通信，但现有公开文本未直接出现“有线连接/线束”描述。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。还可以让前排乘客时刻关注后排的孩子，控制他们观看的内容。"
+            },
+            {
+              "url": "http://auto.cnfol.com/cheshidongtai/20200628/28238375.shtml",
+              "title": "延锋发布XiM21智能座舱，相关技术可在五年内落地",
+              "source_name": "中金在线/盖世汽车",
+              "snippet": "另曲面屏下方还有一块电动滑动屏，便于副驾驶辅助信息娱乐系统及导航操控……该滑动屏还可以观看后方儿童状态，并操控后方座椅屏幕播放内容。"
+            }
+          ],
+          "reasoning": "车载触控显示屏要实现车辆设置、信息娱乐和后排屏幕控制，通常需要电源和数据连接；公开证据证明其为车体内安装的电动滑动显示屏，故有线连接具有较强推断基础。但没有直接线束、接口或电缆描述，因此仅为可能满足。",
+          "suggested_followup_queries": [
+            "XiM21 10.1英寸滑动显示屏 线束 供电 数据接口",
+            "Yanfeng XiM21 10.1 inch sliding display wiring harness power data"
+          ]
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+          "competitor_feature": "现有证据未披露10.1英寸滑动显示屏的线体收纳结构，也未披露卷线器/绕线器/电缆拖链等用于收纳线体的部件。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            }
+          ],
+          "reasoning": "滑动屏存在电驱动并不直接证明其使用卷线器；可能采用柔性线束、拖链、滑触、无线/集成方案等多种方式，现有材料没有卷线器关键词或结构图。",
+          "suggested_followup_queries": [
+            "XiM21 滑动显示屏 卷线器 线缆 收纳",
+            "Yanfeng electric sliding display cable reel wire retractor"
+          ]
+        }
+      ],
+      "claim_score": 55.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：\n显示主体，所述显示主体具有收纳槽；\n滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述显示装置包括：\n显示主体，所述显示主体具有收纳槽",
+          "competitor_feature": "公开资料确认存在10.1英寸滑动显示屏/显示主体，但未披露显示主体具有用于容纳滑行支脚的收纳槽。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。"
+            }
+          ],
+          "reasoning": "“显示屏”可对应显示主体，但收纳槽属于背部/底部机械结构细节；现有公开资料未提供拆解图、背面结构或收纳槽描述。",
+          "suggested_followup_queries": [
+            "XiM21 10.1英寸滑动屏 背面 收纳槽 支脚",
+            "Yanfeng XiM21 sliding display back housing recess support foot"
+          ]
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "现有证据未披露10.1英寸滑动屏具有可转动的滑行支脚，也未披露支脚可在收起/展开位置切换或展开后与导轨配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            }
+          ],
+          "reasoning": "“沿轨道滑动”仅说明存在某种轨道配合，不能确定其通过可转动滑行支脚实现，更不能确定收起/展开位置和收纳槽配合。",
+          "suggested_followup_queries": [
+            "XiM21 sliding display foldable support foot rail mechanism",
+            "延锋 10.1英寸滑动屏 可折叠 支脚 导轨 机构"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+          "competitor_feature": "公开证据称该类车载电动滑动屏采用电动驱动、可沿轨道滑动；但未披露驱动装置设于显示主体，也未披露其与滑行支脚传动连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            }
+          ],
+          "reasoning": "“电动驱动”支持存在驱动源的一般可能性，但权利要求限定驱动装置在显示主体内且与滑行支脚传动连接；由于滑行支脚本身未被公开，驱动装置的具体布置和传动关系也无证据支持。",
+          "suggested_followup_queries": [
+            "XiM21 electric sliding display motor drive support foot mechanism",
+            "延锋 电动滑动屏 电机 驱动装置 显示主体 支脚"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体；\n滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体",
+          "competitor_feature": "现有公开材料未披露显示屏具有滑行支脚，更未披露滑行支脚包括可转动安装于显示主体的支撑腿。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim21",
+              "title": "XiM21 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "仪表板上的额外10.1英寸滑动显示屏使前座乘客能够舒适地与车辆的设置和信息娱乐系统进行互动。"
+            }
+          ],
+          "reasoning": "该特征属于显示装置内部/背部机械支撑结构，现有产品介绍仅披露滑动显示屏功能，没有支撑腿或转轴结构信息。",
+          "suggested_followup_queries": [
+            "XiM21 滑动屏 支撑腿 可转动 机构",
+            "Yanfeng XiM21 sliding screen rotating support leg mechanism"
+          ]
+        },
+        {
+          "feature_id": "C9-F2",
+          "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "现有证据未披露滑行脚、滑行脚与支撑腿的可转动连接，或滑行脚伸出显示主体后与导轨配合的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            }
+          ],
+          "reasoning": "沿轨道滑动不能直接证明存在“滑行脚”这一具体构件，也不能证明其与支撑腿可转动连接；需拆解、结构专利或演示图才能判断。",
+          "suggested_followup_queries": [
+            "XiM21 滑动屏 滑行脚 支撑腿 导轨 配合",
+            "Yanfeng sliding display sliding foot support leg rail engagement"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+          "competitor_feature": "现有证据没有披露10.1英寸电动滑动屏或XiM21长滑轨采用齿条-齿轮传动；也未披露滑行脚为齿轮。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/86504",
+              "title": "延锋电动滑动中控屏案例分析",
+              "source_name": "智能汽车资源网",
+              "snippet": "车载电动滑动屏，是一种采用电动驱动、可沿轨道进行上下、左右滑动的中控大屏……实现屏幕的位置和角度的灵活调整。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/yanfengfabuxim21zhinengzuocangqianzhanjishukezaiwunianneiluode",
+              "title": "延锋发布XiM21智能座舱：前瞻技术可在五年内落地 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "XiM21采用双速电机驱动的长滑轨，由多排座椅和副仪表板共享使用。"
+            }
+          ],
+          "reasoning": "“电动驱动”或“长滑轨”可以通过齿条齿轮、同步带、丝杆、滑块等多种方式实现；现有证据没有指向齿条和齿轮这一特定结构。",
+          "suggested_followup_queries": [
+            "XiM21 滑动屏 齿条 齿轮 传动 导轨",
+            "Yanfeng XiM21 sliding display rack and pinion rail gear"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 65.0,
+  "total_score": 65.0,
+  "searched_queries": [
+    "延锋国际 10.1英寸电动滑动屏 10.1英寸；用于观看后方儿童状态并操控后方座椅屏幕 规格书 参数",
+    "延锋 XiM21 10.1英寸滑动显示屏 中控台 后排座椅",
+    "延锋 XiM21 10.1英寸 电动滑动屏 导轨 轨道 后排",
+    "XiM21 10.1-inch sliding display movement range dashboard rear passengers",
+    "延锋国际 10.1英寸电动滑动屏 中国 市场"
+  ],
+  "searched_providers": [
+    "tavily"
+  ]
+}

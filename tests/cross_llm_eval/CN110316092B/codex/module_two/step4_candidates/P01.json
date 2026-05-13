@@ -1,0 +1,169 @@
+{
+  "candidate": {
+    "candidate_id": "P01",
+    "company": "华人运通高合汽车",
+    "company_en": "Human Horizons HiPhi",
+    "product_name": "高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏",
+    "product_name_en": "HiPhi Z HiPhi Bot multi-axis central display",
+    "product_version": "2023款量产版；15.05英寸AMOLED 2K中控屏，4自由度8向可调",
+    "market": "中国豪华纯电轿车智能座舱",
+    "reason_for_deep_dive": "输入摘要显示其显示装置可前后移动并可横竖屏切换，直接覆盖权1的“显示装置可滑动/可移动”和“横屏、竖屏状态切换”两个关键参数；需进一步核查其前后移动机构是否包含导轨、移动范围是否可能从中控台延伸至后排座椅方向。",
+    "source_result_ids": [
+      "brave-Q23-01",
+      "brave-Q23-04",
+      "brave-Q23-05",
+      "tavily-Q23-02",
+      "tavily-Q23-04"
+    ],
+    "source_urls": [
+      "https://www.xchuxing.com/article/72423",
+      "https://news.qq.com/rain/a/20230828A03VG900",
+      "https://www.xchuxing.com/article/90272",
+      "https://www.hiphi.cn/hiphiz.html",
+      "http://m.diandong.com/news/161956.html"
+    ],
+    "initial_evidence_summary": "高合HiPhi Z的HiPhi Bot为多轴位移车载数字机器人；官方摘要称4自由度8向可调、高速运动机械臂，可前后移动、横竖屏切换、无级调节、任意悬停。第三方评测称中控屏为15.05英寸AMOLED 2K屏，机械臂支持前后、左右、俯仰、旋转4自由度；另有评测称可支撑中控屏20mm/s高速运动、2秒完成横竖切换。"
+  },
+  "launch_date": "2022年12月首批量产车下线，2023年1月启动批量交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://auto.news18a.com/6479",
+      "title": "高合HiPhi Z",
+      "source_name": "网通社/auto.news18a.com",
+      "snippet": "高合第二款旗舰车型HiPhi Z首批量产车正式下线，并于当日启程发运全国。2023年1月，HiPhi Z将启动批量交付。2022-12-21"
+    },
+    {
+      "url": "http://m.diandong.com/news/161956.html",
+      "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+      "source_name": "电动邦",
+      "snippet": "去年11月，高合汽车第二款量产车型HiPhi Z正式亮相。发布会中官方强调，新车的造型和设计已经定型，并非概念车。发布于：2022-06-24"
+    }
+  ],
+  "disqualified": true,
+  "disqualification_reason": "上市/量产时间晚于专利申请日2018-03-30，本身不因日期失格；但公开资料将HiPhi Bot描述为中控屏背后的多轴机械臂/丝杠电推杆结构，仅在中控屏处前后、左右、俯仰、旋转调节，未采用从中控台延伸至后排座椅的导轨，也不能沿该导轨在中控台与后排座椅之间滑动，故至少C1-F2/C1-F3明确不满足。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "车体，所述车体包括中控台和后排座椅",
+      "competitor_feature": "HiPhi Z为中大型车，官方配置表列明4座/5座座位布置；官方页面描述“中控屏”、前排/后排座椅，汽车之家亦列出2023款四座、五座车型。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.hiphi.cn/hiphiz.html",
+          "title": "高合HiPhi Z 高合汽车官网_华人运通",
+          "source_name": "高合官网",
+          "snippet": "前后排双调性座椅……HiPhi Bot多轴位移机车载数字机器人……参数配置表……座位布置4座/5座。"
+        },
+        {
+          "url": "https://car.autohome.com.cn/price/series-6472.html",
+          "title": "【高合HiPhi Z】华人运通_高合HiPhi Z价格_高合HiPhi Z报价_图片_汽车之家",
+          "source_name": "汽车之家",
+          "snippet": "高合HiPhi Z……级别：中大型车……2023款 城市版 五座、城市版 四座、五座版、四座版。"
+        }
+      ],
+      "reasoning": "官方页面直接给出整车及4/5座布置，并多处出现中控屏、前后排座椅；汽车之家车型页也列明中大型车及四座/五座版本。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+      "competitor_feature": "HiPhi Bot的承载/位移机构为位于中控屏后方的多轴机械臂，配合伺服电机、丝杠电推杆、旋转机构实现前后、左右、俯仰、旋转调节；公开资料未显示车体上存在从中控台延伸至后排座椅的导轨，且机械臂位于中控屏后方而非贯穿前后排。",
+      "status": "明确不满足",
+      "score": 0.0,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/72423",
+          "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+          "source_name": "新出行",
+          "snippet": "位于中控屏后方的三轴机械臂……HiPhi Bot支持前后、左右、俯仰、旋转共4自由度以及8向可调，配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。"
+        },
+        {
+          "url": "https://www.hiphi.cn/hiphiz.html",
+          "title": "高合HiPhi Z 高合汽车官网_华人运通",
+          "source_name": "高合官网",
+          "snippet": "HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。"
+        },
+        {
+          "url": "http://m.diandong.com/news/161956.html",
+          "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+          "source_name": "电动邦",
+          "snippet": "新车搭载了全球首款多轴位移的车载数字机器人HiPhi Bot，这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。"
+        }
+      ],
+      "reasoning": "多源均将结构限定为中控屏背后的机械臂/丝杠推杆，而非安装在车体并延伸至后排的导轨；该结构位置和形式与本特征相矛盾。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+      "competitor_feature": "15.05英寸AMOLED中控屏安装在中控台区域，与HiPhi Bot机械臂组合；其“前后移动”属于机械臂4自由度/8向调节中的小范围运动，而非与车体导轨配合并在中控台与后排座椅之间滑动。",
+      "status": "明确不满足",
+      "score": 0.0,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/72423",
+          "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+          "source_name": "新出行",
+          "snippet": "HiPhi Z 的中控屏尺寸为15.05英寸……高合首创的机械臂组合成了一个 HiPhi Bot……支持前后、左右、俯仰、旋转共4自由度以及8向可调。"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/90272",
+          "title": "智能座舱 GAMP｜高合 HiPhi Z 的表现究竟如何？",
+          "source_name": "新出行",
+          "snippet": "HiPhi Bot机械臂……拥有4自由度（左右旋转、俯仰旋转、前后移动、横竖旋转）的能力，可支撑中控屏实现20mm/s的高速运动、2秒完成横竖切换。"
+        },
+        {
+          "url": "https://www.hiphi.cn/hiphiz.html",
+          "title": "高合HiPhi Z 高合汽车官网_华人运通",
+          "source_name": "高合官网",
+          "snippet": "HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。"
+        }
+      ],
+      "reasoning": "证据证明其为中控屏加机械臂，虽可前后移动，但运动机构是机械臂而非导轨，且无从中控台滑至后排座椅的公开事实。",
+      "suggested_followup_queries": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+      "competitor_feature": "HiPhi Bot中控屏可横竖屏切换，第三方测试称2秒完成横竖切换；但切换由机械臂/旋转机构实现，并非“与导轨配合时”切换至竖屏状态。",
+      "status": "明确不满足",
+      "score": 0.0,
+      "evidence": [
+        {
+          "url": "https://www.hiphi.cn/hiphiz.html",
+          "title": "高合HiPhi Z 高合汽车官网_华人运通",
+          "source_name": "高合官网",
+          "snippet": "HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/90272",
+          "title": "智能座舱 GAMP｜高合 HiPhi Z 的表现究竟如何？",
+          "source_name": "新出行",
+          "snippet": "HiPhi Bot机械臂……拥有4自由度（左右旋转、俯仰旋转、前后移动、横竖旋转）的能力，可支撑中控屏实现20mm/s的高速运动、2秒完成横竖切换。"
+        },
+        {
+          "url": "http://m.diandong.com/news/161956.html",
+          "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+          "source_name": "电动邦",
+          "snippet": "这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。"
+        }
+      ],
+      "reasoning": "横竖屏切换本身有直接证据；但同一证据明确其依靠机械臂/旋转机构实现，且F2导轨不存在，故不满足导轨配合时切换竖屏的限定。",
+      "suggested_followup_queries": []
+    }
+  ],
+  "total_score": 0.0,
+  "searched_queries": [
+    "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 2023款量产版 规格书 参数",
+    "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 说明书 PDF",
+    "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 官方 参数",
+    "华人运通高合汽车 高合 HiPhi Z 车载数字机器人 HiPhi Bot 中控屏 拆解 结构"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

@@ -1,0 +1,617 @@
+{
+  "candidate": {
+    "candidate_id": "P06",
+    "company": "小鹏汽车",
+    "company_en": "XPeng Motors",
+    "product_name": "小鹏X9后排娱乐屏",
+    "product_name_en": "XPeng X9 rear entertainment screen",
+    "product_version": "2026款；后排娱乐屏/前后排屏幕交互配置",
+    "market": "中国纯电MPV后排娱乐与多屏交互座舱",
+    "reason_for_deep_dive": "输入摘要显示该车型具有后排娱乐屏、屏幕角度控制和前后排屏幕交互，属于前后排共享显示/娱乐的量产车辆；需进一步核查后排屏是否通过导轨滑动、是否可在中控台与后排座椅之间移动及横竖屏状态。",
+    "source_result_ids": [
+      "brave-Q20-03",
+      "tavily-Q20-04"
+    ],
+    "source_urls": [
+      "https://bbs.xiaopeng.com/article/2308119",
+      "https://www.xiaopeng.com/x9_2026/configuration.html"
+    ],
+    "initial_evidence_summary": "小鹏社区摘要提到X9后排娱乐屏可通过语音、按键、遥控打开并设置屏幕角度；2026款小鹏X9参数配置摘要列出“前后排屏幕交互”“车载娱乐遥控器”等智能座舱功能。"
+  },
+  "launch_date": "小鹏X9车系2024年1月1日上市；2026款/增程版本公开资料显示后续于2025年11月或2026年3月上市/发布",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.evlook.com/xiaopengx9",
+      "title": "【小鹏X9】小鹏汽车_小鹏X9报价_小鹏X9图片_参数_EV视界",
+      "source_name": "EV视界",
+      "snippet": "小鹏X9：车型级别中大型MPV；上市时间：2024年01月01日；车型亮点包括21.4英寸娱乐屏。"
+    },
+    {
+      "url": "https://wap.zol.com.cn/2149/2148301/param.html",
+      "title": "【小鹏X9 2026款 增程 1602 Max参数】小鹏 X9 2026款汽车参数_ZOL中关村在线",
+      "source_name": "ZOL中关村在线",
+      "snippet": "小鹏X9 2026款 增程版 1602 Max，上市时间2025.11，车身结构5门7座MPV。"
+    },
+    {
+      "url": "https://www.pcauto.com.cn/news/5115/51152171.html",
+      "title": "2026款小鹏X9纯电版将于3月2日上市 标配后轮转向_太平洋汽车",
+      "source_name": "太平洋汽车",
+      "snippet": "小鹏汽车董事长何小鹏通过社交媒体正式宣布，2026款小鹏X9纯电版将于3月2日正式上市。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开上市/发布记录均晚于专利申请日2018-03-30；最终证据显示小鹏X9具有车体、中控台、后排座椅和后排娱乐屏，但未取得足以直接证明权利要求1中“从中控台延伸至后排座椅的显示装置导轨、显示装置沿该导轨滑动、横竖屏切换并在导轨配合时切至竖屏”的公开证据；也未取得明确否定性技术资料，故不作整体失格。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆，其特征在于，包括：\n车体，所述车体包括中控台和后排座椅；\n导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；\n显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "小鹏X9为中大型MPV、5门7座车型，采用2+2+3七座布局；公开内饰资料显示其具有中控台/中控屏、第二排独立座椅和第三排座椅。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlook.com/xiaopengx9/peizhi",
+              "title": "【小鹏X9配置表】小鹏汽车_小鹏X9参数_价格单_EV视界",
+              "source_name": "EV视界",
+              "snippet": "小鹏X9：中大型MPV；车身结构5门7座MPV；座位数7；长宽高5293*1988*1785mm。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/13574457",
+              "title": "小鹏X9最新内饰信息曝光！配备后排娱乐大屏+双模制冷/热冰箱_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "新车除了在中控台配备悬浮式中控大屏幕以后，第二排座椅上方还有一块大尺寸后排娱乐屏；小鹏X9第二排将配备两张独立座椅。"
+            },
+            {
+              "url": "https://www.xiaopeng.com/x9_2026.html",
+              "title": "2026款小鹏X9 全球续航最长大七座 | 小鹏汽车官网",
+              "source_name": "小鹏汽车官网",
+              "snippet": "页面描述二排空间、二排座椅、三排电动三折叠、七座豪华大平层，并列出21.4英寸莱茵认证超清娱乐屏。"
+            }
+          ],
+          "reasoning": "EV视界确认X9为5门7座MPV；汽车之家和小鹏官网均披露其中控台/中控屏以及二排、三排座椅配置，故“车体包括中控台和后排座椅”有直接公开证据支持。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "最终证据显示X9存在外侧侧滑门导轨、第二排座椅1100mm电动滑轨等非显示装置导轨；后排娱乐屏被描述为第二排棚顶/车顶前方的21.4英寸娱乐屏，支持0-75°角度调节。未发现安装于车体且从中控台延伸至后排座椅、用于显示装置滑动的导轨。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.sohu.com/a/739825005_121124477",
+              "title": "小鹏X9二排娱乐屏达到21.4英寸_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车",
+              "snippet": "小鹏X9在第二排配备了独立座椅、小桌板、大尺寸娱乐屏；后排中央屏幕达到21.4英寸，支持最大75度的无级角度调节。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方还配备了21.4英寸的后排娱乐液晶屏，支持遥控操作，可实现0-75度电动角度调节。"
+            },
+            {
+              "url": "https://www.xpeng.com/news/018bdc8198b88a69338c2c9e8a51098c",
+              "title": "XPENG Official Website news for XPeng X9",
+              "source_name": "XPENG官方英文网站",
+              "snippet": "公开资料提到180mm-wide central aisle以及1100mm-long electric slide rails for moving the second-row seats，指向第二排座椅滑轨而非显示屏导轨。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/13573053",
+              "title": "小鹏X9内饰曝光，后排硕大娱乐屏，偏置方向盘车标你受得了吗？_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "文章提到小鹏X9的侧滑门导轨明显，但该导轨为车门导轨；内饰配置仅提到冰箱、彩电和后排独立座椅等。"
+            }
+          ],
+          "reasoning": "补搜后找到的“导轨/滑轨”证据主要对应车门或第二排座椅，不能对应权利要求中的显示装置导轨；关于后排屏的证据均集中在第二排车顶/棚顶和角度调节，未披露从中控台延伸至后排座椅的显示屏导轨。因此不能确认该特征。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "X9明确配备21.4英寸后排/二排娱乐屏，安装位置公开描述为第二排车顶前方或第二排棚顶；该屏可打开、折叠/翻折并0-75°电动角度调节，但未证明其与导轨配合，也未证明其能在中控台和后排座椅之间前后滑动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xiaopeng.com/x9_2026.html",
+              "title": "2026款小鹏X9 全球续航最长大七座 | 小鹏汽车官网",
+              "source_name": "小鹏汽车官网",
+              "snippet": "页面列出21.4英寸莱茵认证超清娱乐屏。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度，配对遥控器，连接蓝牙耳机等操作。"
+            },
+            {
+              "url": "https://news.qq.com/rain/a/20250409A09YD700",
+              "title": "图灵智驾标配，小鹏X9在智能MPV市场试图突围_腾讯新闻",
+              "source_name": "腾讯新闻",
+              "snippet": "同级最大21.4英寸护眼生态屏支持0~75°无极悬停，配三层防夹。"
+            },
+            {
+              "url": "https://www.bitauto.com/news/100195142838.html",
+              "title": "Visiting the XPeng X9 Store: How Does the Product Perform? | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "公开英文资料描述车内有17.3-inch central control screen和21.4-inch entertainment screen on the roof of the second row。"
+            }
+          ],
+          "reasoning": "公开资料足以证明X9有车载后排显示装置，但仅披露打开、角度调节、无极悬停和第二排车顶安装；没有沿车内前后方向滑动、与从中控台到后排座椅导轨配合的直接证据。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "现有资料显示X9后排娱乐屏支持0-70°或0-75°电动角度调节、无极悬停、触屏/语音/遥控控制；未发现横屏/竖屏旋转切换功能，也未发现显示装置在与导轨配合时切换至竖屏状态的说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度，配对遥控器，连接蓝牙耳机等操作。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/14940871",
+              "title": "小鹏X9实拍，2+2+3布局空间灵活，配冷暖箱+后排娱乐屏，可玩性高_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "第二排配备21.4英寸后排屏幕，支持0-70度左右无极电动调节。"
+            },
+            {
+              "url": "https://news.qq.com/rain/a/20250409A09YD700",
+              "title": "图灵智驾标配，小鹏X9在智能MPV市场试图突围_腾讯新闻",
+              "source_name": "腾讯新闻",
+              "snippet": "同级最大21.4英寸护眼生态屏支持0~75°无极悬停，配三层防夹。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2266495",
+              "title": "今日份打卡——“明日星舰”X9 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "21.4寸超大、超清娱乐屏，可支持0-75°无级电动调节，能找到合适观看角度。"
+            }
+          ],
+          "reasoning": "“0-75°角度调节/无极悬停”属于俯仰或翻折角度调节，并不等同于横屏与竖屏之间的旋转切换；同时权利要求还要求与导轨配合时切至竖屏，现有证据没有导轨配合状态，更无竖屏切换公开。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 47.5
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+          "competitor_feature": "X9公开资料显示二排座椅具有扶手、中央通道版本、第二排座椅滑轨等结构；但未发现用于显示装置的导轨从中控台延伸至后排座椅中央扶手处。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xpeng.com/news/018bdc8198b88a69338c2c9e8a51098c",
+              "title": "XPENG Official Website news for XPeng X9",
+              "source_name": "XPENG官方英文网站",
+              "snippet": "资料提到180mm-wide central aisle以及1100mm-long electric slide rails for moving the second-row seats。"
+            },
+            {
+              "url": "https://youchuang.autohome.com.cn/info/14325064",
+              "title": "小鹏X9二排带过道版本到店，功能不弱，有小惊喜！",
+              "source_name": "汽车之家优创",
+              "snippet": "二排座椅之间留出了进出第三排的过道，18厘米宽；文章讨论二排座椅、扶手、小桌板等。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方配备21.4英寸后排娱乐液晶屏，支持0-75度电动角度调节。"
+            }
+          ],
+          "reasoning": "证据可以证明二排存在中央通道/扶手及座椅滑轨，但这些不是“显示装置导轨”。没有证据把任何导轨定位为从中控台延伸到后排中央扶手处并服务于后排屏滑动。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+          "competitor_feature": "X9后排娱乐屏公开支持0-75°电动角度调节和无极悬停，可说明屏幕角度能保持；但未公开中控台或后排座椅设置用于对显示装置沿导轨位置进行定位的锁止机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://news.qq.com/rain/a/20250409A09YD700",
+              "title": "图灵智驾标配，小鹏X9在智能MPV市场试图突围_腾讯新闻",
+              "source_name": "腾讯新闻",
+              "snippet": "21.4英寸护眼生态屏支持0~75°无极悬停，配三层防夹。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2696263",
+              "title": "X9这些细节太可了！ | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "21.4英寸娱乐屏0~75°无极调节，支持触屏调节。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度。"
+            }
+          ],
+          "reasoning": "无极悬停可反映屏幕翻折角度的保持能力，但权利要求限定的是中控台或后排座椅处用于定位显示装置的锁止机构，尤其与权1导轨滑动场景相关；现有资料未披露该类锁止机构。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+          "competitor_feature": "X9公开内饰资料显示前排中控区域、二排座椅、二排中央通道/冰箱/小桌板等座舱结构；但未公开从中控台到后排的显示屏导轨，也未公开该导轨与副仪表台内饰相配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/14940871",
+              "title": "小鹏X9实拍，2+2+3布局空间灵活，配冷暖箱+后排娱乐屏，可玩性高_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "内饰方面，中控台采用对称式设计，中间搭载大尺寸液晶屏；第二排配备独立座椅和21.4英寸后排屏幕，下方还配备冷暖箱。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排前方配有折叠小桌板，下方还配备10.8L冰箱；第二排车顶前方配备21.4英寸后排娱乐液晶屏。"
+            },
+            {
+              "url": "https://www.sohu.com/a/739825005_121124477",
+              "title": "小鹏X9二排娱乐屏达到21.4英寸_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车",
+              "snippet": "小鹏X9在第二排配备了独立座椅、小桌板、大尺寸娱乐屏，同时搭载冷热双用车载冰箱。"
+            }
+          ],
+          "reasoning": "这些资料可证明X9中控台与后排之间有座舱内饰/二排功能部件，但缺少“显示装置导轨”以及“导轨与副仪表台内饰相配合”的结构公开，不能确认该从属特征。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+          "competitor_feature": "公开资料中出现的导轨主要为侧滑门导轨或座椅滑轨；未发现两个用于后排娱乐屏/显示装置滑动的导轨分别位于副仪表台左、右侧。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/13573053",
+              "title": "小鹏X9内饰曝光，后排硕大娱乐屏，偏置方向盘车标你受得了吗？_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "文章提到小鹏X9的侧滑门导轨确实有点明显，该语境为车身侧滑门导轨。"
+            },
+            {
+              "url": "https://www.xpeng.com/news/018bdc8198b88a69338c2c9e8a51098c",
+              "title": "XPENG Official Website news for XPeng X9",
+              "source_name": "XPENG官方英文网站",
+              "snippet": "资料提到1100mm-long electric slide rails for moving the second-row seats，即第二排座椅滑轨。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方配备21.4英寸后排娱乐液晶屏，支持0-75度电动角度调节。"
+            }
+          ],
+          "reasoning": "虽然X9车辆上客观存在车门/座椅相关滑轨，但没有证据表明存在两个显示装置导轨，也没有其分别位于副仪表台左、右侧的布置证据。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述显示装置与所述车体有线连接",
+          "competitor_feature": "X9的21.4英寸后排娱乐屏是车载内置/集成显示装置，支持电动角度调节、语音/遥控/触屏控制、车机系统功能和多屏交互。由其固定集成于车辆、需供电并受车机控制可较严谨推断其至少通过车辆线束与车体电连接，但未见公开资料直接写明“有线连接”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.xiaopeng.com/x9_2026.html",
+              "title": "2026款小鹏X9 全球续航最长大七座 | 小鹏汽车官网",
+              "source_name": "小鹏汽车官网",
+              "snippet": "页面列出21.4英寸莱茵认证超清娱乐屏。"
+            },
+            {
+              "url": "https://www.xpeng.com/model/x9",
+              "title": "XPENG X9 | Ultra Intelligent Seven Seater MPV",
+              "source_name": "XPENG官方英文网站",
+              "snippet": "官方英文页面列出21.4\" Entertainment Screen以及17.3 inch Central Control Screen等智能座舱配置。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度，配对遥控器，连接蓝牙耳机等操作。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/gl/1665.html",
+              "title": "小鹏X9智能座舱体验 多屏交互超流畅 - 太平洋汽车",
+              "source_name": "太平洋汽车",
+              "snippet": "全系标配三屏组合，后排中央控制系统和21.4英寸后排液晶屏，后排屏可通过触控或语音控制，与中控/仪表实现导航接力、音乐同步等功能。"
+            }
+          ],
+          "reasoning": "车载内置娱乐屏具备电动翻折/角度调节和车机联动，通常需要车辆供电和控制信号连接；结合官方及社区公开资料，可推断存在与车体的电连接。但公开文本未直接披露线束、接口或“有线连接”，故评价为可能满足而非明确满足。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+          "competitor_feature": "未发现X9后排娱乐屏具有用于收纳显示装置线体的卷线器。现有证据显示其为第二排车顶/棚顶后排屏，支持角度调节；未披露线体随屏幕沿导轨移动，也未披露卷线器。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方配备21.4英寸后排娱乐液晶屏，支持0-75度电动角度调节。"
+            },
+            {
+              "url": "https://www.sohu.com/a/739825005_121124477",
+              "title": "小鹏X9二排娱乐屏达到21.4英寸_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车",
+              "snippet": "后排中央屏幕达到21.4英寸，支持最大75度的无级角度调节，并可搭配遥控器使用。"
+            }
+          ],
+          "reasoning": "卷线器通常对应显示装置移动时线体伸缩收纳。X9证据仅披露车顶后排屏的打开和角度调节，不披露线体外露、伸缩或卷收结构，故证据不足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 55.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：\n显示主体，所述显示主体具有收纳槽；\n滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述显示装置包括：\n显示主体，所述显示主体具有收纳槽",
+          "competitor_feature": "X9后排娱乐屏可打开/翻折并收纳于第二排车顶区域的形态可以从“打开后排娱乐屏”“第二排车顶前方配备”推知，但未公开显示主体自身具有用于收纳滑行支脚的收纳槽。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方还配备了21.4英寸的后排娱乐液晶屏。"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=Kb5LmmFu7SY",
+              "title": "Xpeng X9 Review | This Car Has The Most Insane Back Seat!",
+              "source_name": "YouTube",
+              "snippet": "评测摘要描述后排有flip down monitor，即翻折式后排显示屏。"
+            }
+          ],
+          "reasoning": "翻折式/车顶式后排屏可能具有收纳空间，但权利要求限定的是显示主体具有收纳槽，且该收纳槽服务于滑行支脚收起；公开资料没有显示主体内部槽、凹部或支脚收纳结构。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "未发现X9后排娱乐屏具有可在收起/展开位置之间转动的滑行支脚，更未发现滑行支脚伸出显示主体并与导轨配合。公开结构仅为车顶/棚顶后排屏的电动角度调节。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://news.qq.com/rain/a/20250409A09YD700",
+              "title": "图灵智驾标配，小鹏X9在智能MPV市场试图突围_腾讯新闻",
+              "source_name": "腾讯新闻",
+              "snippet": "21.4英寸护眼生态屏支持0~75°无极悬停，配三层防夹。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2696263",
+              "title": "X9这些细节太可了！ | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "21.4英寸娱乐屏0~75°无极调节，支持触屏调节。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方配备21.4英寸后排娱乐液晶屏，支持0-75度电动角度调节。"
+            }
+          ],
+          "reasoning": "角度调节机构并不能等同于“滑行支脚”；没有公开证据显示支脚、支脚收纳槽、支脚展开后与导轨配合等结构，故证据不足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+          "competitor_feature": "X9后排屏支持电动角度调节，因此可能存在用于翻折/俯仰的电机或驱动机构；但未公开滑行支脚，更未公开驱动装置设于显示主体并与滑行支脚传动连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方配备21.4英寸后排娱乐液晶屏，支持0-75度电动角度调节。"
+            },
+            {
+              "url": "https://www.sohu.com/a/739825005_121124477",
+              "title": "小鹏X9二排娱乐屏达到21.4英寸_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车",
+              "snippet": "后排中央屏幕支持最大75度的无级角度调节，并可搭配遥控器使用。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "可通过语音、按键、遥控打开后排娱乐屏，设置屏幕角度。"
+            }
+          ],
+          "reasoning": "电动角度调节可说明存在屏幕翻折驱动，但权利要求8的驱动对象是滑行支脚。由于滑行支脚本身无公开证据，驱动装置与滑行支脚的传动连接也无法确认。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体；\n滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体",
+          "competitor_feature": "未发现X9后排娱乐屏具有滑行支脚或支撑腿，也未发现支撑腿可转动安装于显示主体的公开结构。公开资料仅披露后排屏位于第二排车顶前方并支持电动角度调节。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方配备21.4英寸后排娱乐液晶屏，支持0-75度电动角度调节。"
+            },
+            {
+              "url": "https://news.qq.com/rain/a/20250409A09YD700",
+              "title": "图灵智驾标配，小鹏X9在智能MPV市场试图突围_腾讯新闻",
+              "source_name": "腾讯新闻",
+              "snippet": "21.4英寸护眼生态屏支持0~75°无极悬停，配三层防夹。"
+            }
+          ],
+          "reasoning": "现有公开资料没有展示或文字说明显示屏背部/主体上的可转动支撑腿；不能从屏幕俯仰角度调节推导出权利要求所述支撑腿结构。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C9-F2",
+          "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "未发现X9后排娱乐屏具有可转动安装于支撑腿的滑行脚，亦未发现滑行脚伸出显示主体并与显示装置导轨配合。公开证据仅涉及后排屏翻折/角度调节。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://bbs.xiaopeng.com/article/2308119",
+              "title": "X9功能 | 后排娱乐屏 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "使用语音、按键、遥控打开后排娱乐屏，设置屏幕角度。"
+            },
+            {
+              "url": "https://www.sohu.com/a/739825005_121124477",
+              "title": "小鹏X9二排娱乐屏达到21.4英寸_搜狐汽车_搜狐网",
+              "source_name": "搜狐汽车",
+              "snippet": "后排中央屏幕达到21.4英寸，支持最大75度的无级角度调节，并可搭配遥控器使用。"
+            },
+            {
+              "url": "https://www.bitauto.com/news/100195142838.html",
+              "title": "Visiting the XPeng X9 Store: How Does the Product Perform? | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "资料描述21.4-inch entertainment screen on the roof of the second row。"
+            }
+          ],
+          "reasoning": "滑行脚是与导轨相配合的行走构件；现有证据没有显示装置导轨、支撑腿或滑行脚，故无法确认该特征。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+          "competitor_feature": "未发现X9后排娱乐屏存在齿条式显示装置导轨或齿轮式滑行脚。公开资料中出现的滑轨/导轨为座椅滑轨或侧滑门导轨，未与后排娱乐屏的齿轮齿条传动相关联。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xpeng.com/news/018bdc8198b88a69338c2c9e8a51098c",
+              "title": "XPENG Official Website news for XPeng X9",
+              "source_name": "XPENG官方英文网站",
+              "snippet": "资料提到1100mm-long electric slide rails for moving the second-row seats，即第二排座椅滑轨。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/13573053",
+              "title": "小鹏X9内饰曝光，后排硕大娱乐屏，偏置方向盘车标你受得了吗？_汽车之家",
+              "source_name": "汽车之家车家号",
+              "snippet": "文章提到侧滑门导轨明显，语境为车门导轨而非显示屏导轨。"
+            },
+            {
+              "url": "https://bbs.xiaopeng.com/thread/2305199",
+              "title": "沉浸式小鹏X9💕深度试驾详尽解刨📝 | 小鹏汽车 在线社区",
+              "source_name": "小鹏汽车在线社区",
+              "snippet": "第二排车顶前方配备21.4英寸后排娱乐液晶屏，支持0-75度电动角度调节。"
+            }
+          ],
+          "reasoning": "齿条/齿轮结构是非常具体的传动构型。现有公开资料没有披露后排娱乐屏沿导轨移动，更没有齿条导轨和齿轮滑行脚，故证据不足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 47.5,
+  "total_score": 47.5,
+  "searched_queries": [
+    "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 规格书 参数",
+    "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 说明书 PDF",
+    "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 拆解 结构",
+    "小鹏X9 二排娱乐屏 滑轨 可移动 前后滑动",
+    "小鹏汽车 小鹏X9后排娱乐屏 2026款；后排娱乐屏/前后排屏幕交互配置 上市 日期 发布",
+    "小鹏X9 21.4英寸后排娱乐屏 车顶轨道 从前排中控到二排 拆解",
+    "XPeng X9 21.4 rear entertainment screen ceiling rail track slides from dashboard to second row",
+    "小鹏X9 车内中央通道 导轨 后排娱乐屏 前后移动 实拍",
+    "小鹏X9 用户手册 后排娱乐屏 导轨 滑动 车顶轨道"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

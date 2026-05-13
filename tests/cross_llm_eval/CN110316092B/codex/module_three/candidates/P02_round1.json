@@ -1,0 +1,553 @@
+{
+  "candidate": {
+    "candidate_id": "P02",
+    "company": "延锋国际",
+    "company_en": "Yanfeng International",
+    "product_name": "XiM25智能座舱长滑轨屏幕",
+    "product_name_en": "XiM25 smart cabin long-rail display",
+    "product_version": "1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转",
+    "market": "中国智能座舱概念/前瞻展示与主机厂方案市场",
+    "reason_for_deep_dive": "输入摘要明确出现“长滑轨”“1520mm超长滑动距离”“覆盖整个车顶”“兼顾前后排乘客需求”，与权1的“导轨从前排区域延伸至后排座椅、显示装置在前后排之间滑动”高度相关；还公开了屏幕旋转角度，需进一步核查是否存在横屏/竖屏切换及是否已进入量产供货。",
+    "source_result_ids": [
+      "tavily-Q03-01"
+    ],
+    "source_urls": [
+      "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi"
+    ],
+    "initial_evidence_summary": "摘要称XiM25智能座舱将长滑轨技术应用于天幕，可根据车型车顶造型曲线适配，1520mm超长滑动距离可覆盖整个车顶，搭配超宽显示屏等多种尺寸显示屏，并实现屏幕前后58.5°旋转，使顶棚屏兼顾前后排乘客需求。"
+  },
+  "launch_date": "2024年10月左右公开发布/展示；公开资料显示为XiM25展车/下一代可量产座舱方案，非已量产交付车型",
+  "launch_date_evidence": [
+    {
+      "url": "https://hao.yiche.com/wenzhang/95404299",
+      "title": "延锋XiM25:融合科技与设计美学的智能座舱,为新生代打造舒适出行_易车",
+      "source_name": "易车",
+      "snippet": "2024-10-21报道称，全球汽车零部件供应商延锋在上海发布了面向新消费群体的智能座舱XiM25，搭载多项创新技术。"
+    },
+    {
+      "url": "https://www.autohome.com.cn/article?id=N130L8DZKkU%3D",
+      "title": "【图】未来智能座舱长什么样 延锋发布XiM25展车_汽车之家",
+      "source_name": "汽车之家",
+      "snippet": "2024-11-29文章标题及正文称“延锋发布XiM25展车”，并介绍XiM25上的随动天幕长滑动机构等技术。"
+    },
+    {
+      "url": "https://m.evchanye.com/article/18769",
+      "title": "瞄准下一代智能座舱，延锋又出大招了",
+      "source_name": "盖世汽车/EV产业",
+      "snippet": "2024-12-04文章称“从延锋近期发布的XiM25展车上”，并称XiM25是集中展示下一代座舱技术的展车。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "复用模块二判断：可核实的XiM25公开发布/展示时间为2024年，晚于本专利申请日2018-03-30；权1未发现直接矛盾证据。部分从属权利要求因公开资料显示其长滑轨位于天幕/车顶而与副仪表台/中央扶手等下位限定不符，但从属权利要求不满足不触发候选整体失格。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种车辆，其特征在于，包括：\n车体，所述车体包括中控台和后排座椅；\n导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；\n显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "车体，所述车体包括中控台和后排座椅",
+          "competitor_feature": "XiM25被公开称为智能座舱/展车，资料描述其“车内”具有中央触控屏、中央扶手操控面板以及后排座椅可展开形成接近2m大床；但现有证据未直接逐字确认“中控台”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章描述XiM25“车内的超宽大屏、零重力座椅、后排可变‘大床房’”，并写到“中央触控屏十分神奇”“来到后排，后排座椅可以一键变成一个‘大床房’”。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/article?id=N130L8DZKkU%3D",
+              "title": "未来智能座舱长什么样 延锋发布XiM25展车_汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "文章称XiM25为展车/智能座舱，并描述“后排座椅完全展开后可变成长度接近2 m的超大尺寸床”，以及后排座椅中央触控面板等座舱部件。"
+            }
+          ],
+          "reasoning": "公开资料直接证明XiM25是车内智能座舱并具有后排座椅、中央触控/操控部件；“中控台”未被逐字公开，只能由中央触控屏/中央扶手控制区与座舱布局作推断。",
+          "suggested_followup_queries": [
+            "延锋 XiM25 智能座舱 中控台 后排座椅 实拍 内饰",
+            "XiM25 cockpit dashboard rear seats interior photos Yanfeng",
+            "延锋 XiM25 展车 内饰 中控屏 仪表台 后排座椅"
+          ]
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+          "competitor_feature": "XiM25公开的对应结构为“随动天幕长滑动机构/长滑轨”，安装于天幕/车顶，滑动距离最大1520mm，可覆盖整个车顶并兼顾前后排乘客；未直接说明导轨从“中控台”起延伸至后排座椅。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网称“随动天幕长滑动机构，可根据各类车型的车顶造型曲线完美适配，1520 mm的超长滑动距离能覆盖整个车顶，搭配包括超宽显示屏在内的多种尺寸显示屏，并实现屏幕前后58.5°旋转”。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称XiM25将长滑轨技术应用于天幕，1520mm超长滑动距离能覆盖整个车顶，搭配多种尺寸显示屏，并让顶棚屏兼顾前后排乘客需求。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/article?id=N130L8DZKkU%3D",
+              "title": "未来智能座舱长什么样 延锋发布XiM25展车_汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "文章称“延锋的随动天幕长滑动机构，可根据各类车型的车顶造型曲线完美适配，1520 mm的超长滑动距离能覆盖整个车顶”。"
+            }
+          ],
+          "reasoning": "证据直接证明长滑轨/滑动机构装在车顶并覆盖前后排活动范围；但其公开表述是“车顶/天幕”而非“从中控台延伸至后排座椅”，因此只能推断可能覆盖权利要求对应前后区间。",
+          "suggested_followup_queries": [
+            "XiM25 天幕长滑轨 起点 终点 前排 后排 结构图",
+            "延锋 XiM25 随动天幕长滑动机构 轨道 布置 图 前后排",
+            "Yanfeng XiM25 roof rail display track layout front rear seats"
+          ]
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+          "competitor_feature": "XiM25的显示屏与随动天幕长滑轨机构配合，1520mm滑动距离覆盖车顶；资料明确称屏幕可在天幕上来回滑动、自由在前后排滑动，并可来到后排/滑至床上方。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称“吸引眼球的是可以在天幕上来回滑动的屏幕”，长滑轨用于屏幕，“1520mm的超长滑动距离能覆盖整个车顶，让屏幕自由在前后排滑动”。"
+            },
+            {
+              "url": "https://www.shobserver.cn/sgh/detail?id=1473757",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_上观新闻",
+              "source_name": "上观新闻/上海汽车报",
+              "snippet": "文章称延锋将长滑轨技术用于屏幕，1520mm滑动距离覆盖整个车顶，让屏幕自由在前后排滑动；当屏幕来到后排，可联动后排座椅场景。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称长滑轨屏幕应用于天幕，1520mm超长滑动距离覆盖整个车顶，使顶棚屏兼顾前后排乘客需求，并具有左右分区功能。"
+            }
+          ],
+          "reasoning": "多个独立公开来源直接描述屏幕与长滑轨/天幕滑动机构配合，并在前后排之间滑动；虽未逐字称“中控台”，但显示装置前后滑动功能本身有直接证据。",
+          "suggested_followup_queries": []
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+          "competitor_feature": "现有公开信息仅显示XiM25屏幕可“前后58.5°旋转”或位置/角度可调；未发现其显示装置可在横屏状态与竖屏状态之间切换，也未发现与导轨配合时自动/必然切换至竖屏状态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网描述随动天幕长滑动机构可搭配多种尺寸显示屏，并实现屏幕前后58.5°旋转，但未说明横屏/竖屏切换。"
+            },
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称屏幕可自由在前后排滑动，还能调节屏幕角度，实现前后58.5°旋转；未提及横竖屏状态切换或导轨配合时切竖屏。"
+            },
+            {
+              "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+              "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”_网易订阅",
+              "source_name": "网易订阅/NE时代",
+              "snippet": "文章称顶棚天幕长滑轨机构位置和角度可调，并能和天幕结合实现收纳或遮阳效果；未披露横屏/竖屏切换机制。"
+            }
+          ],
+          "reasoning": "“前后58.5°旋转”属于屏幕角度/俯仰调节证据，不等同于横屏与竖屏之间切换；也没有证据显示与导轨配合时切换至竖屏，故证据不足。",
+          "suggested_followup_queries": [
+            "延锋 XiM25 天幕屏 横竖屏 切换 竖屏",
+            "XiM25 roof display portrait landscape mode rotation",
+            "Yanfeng XiM25 long rail screen vertical portrait orientation",
+            "延锋 XiM25 随动天幕 屏幕 58.5° 旋转 横屏 竖屏",
+            "延锋 XiM25 天幕屏 演示 视频 横屏 竖屏"
+          ]
+        }
+      ],
+      "claim_score": 72.5
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+          "competitor_feature": "XiM25公开的长滑动机构位于天幕/车顶，1520mm滑动距离覆盖整个车顶；现有资料未显示该导轨从中控台延伸至后排座椅中央扶手处，反而直接指向车顶/天幕布置。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网称“随动天幕长滑动机构，可根据各类车型的车顶造型曲线完美适配，1520 mm的超长滑动距离能覆盖整个车顶”。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称XiM25将长滑轨技术应用于天幕，1520mm超长滑动距离能覆盖整个车顶，并让顶棚屏兼顾前后排乘客需求。"
+            }
+          ],
+          "reasoning": "权利要求2进一步限定导轨到达“后排座椅的中央扶手处”。已有公开证据明确将XiM25长滑轨描述为“天幕/车顶”机构，位置与后排中央扶手处不同，因此该从属限定明确不满足；该不满足不影响权1总分。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+          "competitor_feature": "现有资料仅描述XiM25屏幕可在天幕长滑轨上前后滑动和调节角度，未披露中控台或后排座椅处具有用于定位该显示装置的锁止机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称长滑轨用于屏幕，1520mm的超长滑动距离能覆盖整个车顶，让屏幕自由在前后排滑动，并可调节屏幕角度。"
+            },
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网描述随动天幕长滑动机构和屏幕前后58.5°旋转，但未披露锁止/定位机构。"
+            }
+          ],
+          "reasoning": "“可滑动/角度可调”不必然公开锁止机构，更未公开锁止机构设在中控台或后排座椅。现有证据无法判断。",
+          "suggested_followup_queries": [
+            "XiM25 天幕长滑轨 屏幕 定位 锁止 机构",
+            "Yanfeng XiM25 sliding screen locking positioning mechanism"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+          "competitor_feature": "XiM25资料可见其为车内智能座舱并具有中央/后排控制部件，但其长滑轨被公开为“随动天幕长滑动机构”，应用于天幕/车顶并覆盖整个车顶，而非与副仪表台内饰配合。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网称“随动天幕长滑动机构，可根据各类车型的车顶造型曲线完美适配，1520 mm的超长滑动距离能覆盖整个车顶”。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称XiM25将长滑轨技术应用于天幕，1520mm超长滑动距离能覆盖整个车顶。"
+            },
+            {
+              "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+              "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”_网易订阅",
+              "source_name": "网易订阅/NE时代",
+              "snippet": "文章称顶棚天幕长滑轨机构位置和角度可调，并能和天幕结合实现收纳或遮阳效果。"
+            }
+          ],
+          "reasoning": "该从属权利要求要求导轨与副仪表台内饰配合；XiM25公开方案的导轨/滑动机构直接定位为顶棚天幕/车顶机构，与副仪表台内饰配合这一位置关系相矛盾。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+          "competitor_feature": "XiM25公开的是位于天幕/车顶的随动天幕长滑动机构；现有证据未显示两个导轨分别位于副仪表台左右两侧，公开位置与该限定不一致。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网称随动天幕长滑动机构根据车顶造型曲线适配，1520mm滑动距离覆盖整个车顶。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称XiM25将长滑轨技术应用于天幕，1520mm超长滑动距离能覆盖整个车顶。"
+            }
+          ],
+          "reasoning": "权利要求5在权利要求4基础上进一步限定导轨数量和位于副仪表台左右侧。XiM25公开方案的滑轨位置为天幕/车顶，不是副仪表台左右侧；因此该从属限定明确不满足。",
+          "suggested_followup_queries": []
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述显示装置与所述车体有线连接",
+          "competitor_feature": "XiM25公开了车顶长滑轨显示屏，但现有资料未披露该显示屏与车体之间的供电/信号连接方式，无法确认是否为有线连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网公开随动天幕长滑动机构可搭配包括超宽显示屏在内的多种尺寸显示屏，但未说明显示屏线束或连接方式。"
+            },
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章描述屏幕可在天幕上来回滑动并调节角度，但未披露供电/信号连接结构。"
+            }
+          ],
+          "reasoning": "车载显示屏通常需要供电，但公开资料没有直接说明“与车体有线连接”，也可能存在滑触供电、隐藏线束等多种方式，故证据不足。",
+          "suggested_followup_queries": [
+            "XiM25 天幕屏 线束 供电 滑轨 供电方式"
+          ]
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+          "competitor_feature": "现有XiM25公开资料未披露用于收纳显示装置线体的卷线器、线缆收纳盘或类似结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网仅公开随动天幕长滑动机构、1520mm滑动距离和屏幕前后58.5°旋转，未提及卷线器。"
+            },
+            {
+              "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+              "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”_网易订阅",
+              "source_name": "网易订阅/NE时代",
+              "snippet": "文章称顶棚天幕长滑轨机构位置和角度可调，并能和天幕结合实现收纳或遮阳效果；未披露卷线器或线体收纳。"
+            }
+          ],
+          "reasoning": "“收纳或遮阳效果”指屏幕/天幕场景，并不等同于用于收纳线体的卷线器；当前证据没有线体卷收机构细节。",
+          "suggested_followup_queries": [
+            "XiM25 天幕长滑轨 屏幕 卷线器 线缆 收纳",
+            "Yanfeng XiM25 roof screen cable reel wire harness"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：\n显示主体，所述显示主体具有收纳槽；\n滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述显示装置包括：\n显示主体，所述显示主体具有收纳槽",
+          "competitor_feature": "XiM25公开了可搭配超宽显示屏等显示屏的天幕长滑动机构，但现有资料没有披露显示主体背部/内部具有用于收纳滑行支脚的收纳槽。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网称该机构可搭配包括超宽显示屏在内的多种尺寸显示屏，并实现屏幕前后58.5°旋转；未披露显示主体收纳槽。"
+            },
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称屏幕可在天幕上来回滑动，但未描述显示主体内部结构或收纳槽。"
+            }
+          ],
+          "reasoning": "公开资料能证明存在显示屏/显示主体，但不能证明“具有收纳槽”这一结构限定。",
+          "suggested_followup_queries": [
+            "XiM25 天幕屏 滑轨 显示屏 背部 收纳槽 结构"
+          ]
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "XiM25公开了屏幕沿车顶长滑轨滑动和角度调节，但未披露显示主体上设有可转动收起/展开的滑行支脚，也未披露支脚展开后与导轨配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网公开随动天幕长滑动机构、1520mm滑动距离和屏幕前后58.5°旋转；未披露滑行支脚。"
+            },
+            {
+              "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+              "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”_网易订阅",
+              "source_name": "网易订阅/NE时代",
+              "snippet": "文章称顶棚天幕长滑轨机构位置和角度可调，并能和天幕结合实现收纳或遮阳效果；未披露可转动滑行支脚。"
+            }
+          ],
+          "reasoning": "“滑动机构”和“屏幕角度可调”不能推出显示主体上具有可收起/展开的滑行支脚。缺少结构图、拆解或供应商技术说明。",
+          "suggested_followup_queries": [
+            "XiM25 天幕屏 滑行支脚 展开 收起 结构",
+            "Yanfeng XiM25 sliding display deployable foot track mechanism"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述显示装置还包括：\n驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+          "competitor_feature": "XiM25公开屏幕可在长滑轨上滑动并进行角度调节，但未披露驱动装置设于显示主体内，亦未披露其与滑行支脚传动连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网描述随动天幕长滑动机构的适配、1520mm滑动距离和58.5°旋转，未说明驱动电机位置或传动连接。"
+            },
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称屏幕可自由在前后排滑动、调节角度，但未披露驱动装置和滑行支脚传动关系。"
+            }
+          ],
+          "reasoning": "公开资料偏功能展示，缺少驱动电机/传动链布置证据，无法对应该结构性限定。",
+          "suggested_followup_queries": [
+            "XiM25 天幕长滑轨 屏幕 驱动电机 滑行支脚"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体；\n滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "所述滑行支脚包括：\n支撑腿，所述支撑腿可转动地安装于所述显示主体",
+          "competitor_feature": "现有XiM25资料未披露滑行支脚，更未披露支撑腿可转动地安装于显示主体。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网公开随动天幕长滑动机构及屏幕旋转功能，但未披露支撑腿结构。"
+            },
+            {
+              "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+              "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”_网易订阅",
+              "source_name": "网易订阅/NE时代",
+              "snippet": "文章称顶棚天幕长滑轨机构位置和角度可调，并能和天幕结合实现收纳或遮阳效果；未披露支撑腿。"
+            }
+          ],
+          "reasoning": "该特征依赖滑行支脚的具体两级转动结构，现有资料没有拆解/结构图支持。",
+          "suggested_followup_queries": [
+            "XiM25 天幕屏 支撑腿 滑行脚 转动 结构"
+          ]
+        },
+        {
+          "feature_id": "C9-F2",
+          "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+          "competitor_feature": "XiM25公开屏幕沿天幕长滑轨运动，但未披露可转动安装于支撑腿的滑行脚，也未披露滑行脚伸出显示主体并与导轨配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网公开长滑动机构与显示屏配合，但未披露滑行脚/支撑腿结构。"
+            },
+            {
+              "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+              "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱_凤凰网",
+              "source_name": "凤凰网/上海汽车报",
+              "snippet": "文章称长滑轨用于屏幕，让屏幕自由在前后排滑动；未描述滑行脚结构。"
+            }
+          ],
+          "reasoning": "屏幕能够滑动不等于公开了“滑行脚可转动安装在支撑腿上”这一具体机械结构。",
+          "suggested_followup_queries": [
+            "Yanfeng XiM25 roof display support leg sliding foot teardown"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+          "competitor_feature": "XiM25公开的是天幕长滑轨/长滑动机构，但未披露导轨为齿条，也未披露与其配合的滑行脚为齿轮。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yanfeng.com/cn/xim25",
+              "title": "XiM25 | 延锋官网",
+              "source_name": "延锋官网",
+              "snippet": "延锋官网公开随动天幕长滑动机构、1520mm滑动距离和屏幕前后58.5°旋转；未披露齿条齿轮结构。"
+            },
+            {
+              "url": "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi",
+              "title": "当年轻人讨论公平时，他们想要什么样的智能座舱？_汽车公社",
+              "source_name": "汽车公社",
+              "snippet": "文章称XiM25将长滑轨技术应用于天幕，但未说明滑轨传动副为齿条齿轮。"
+            }
+          ],
+          "reasoning": "“长滑轨/滑动机构”是功能性或部件级描述，不能推导其传动副必然为齿条齿轮；需要结构图、专利、拆解或供应商技术资料。",
+          "suggested_followup_queries": [
+            "XiM25 天幕长滑轨 齿条 齿轮 驱动 结构"
+          ]
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 72.5,
+  "total_score": 72.5,
+  "searched_queries": [
+    "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 规格书 参数",
+    "延锋国际 XiM25智能座舱长滑轨屏幕 中国 市场",
+    "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 车体，所述车体包括中控台和后排座椅",
+    "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+    "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转 官方 参数"
+  ],
+  "searched_providers": [
+    "tavily"
+  ]
+}
