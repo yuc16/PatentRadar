@@ -41,7 +41,8 @@
           "score": 1.0,                       // 自动按 status 推导
           "evidence": [{"url":"","title":"","source_name":"","snippet":""}],
           "reasoning": "...",
-          "suggested_followup_queries": ["...", "..."]  // round 1 才填，round 2 留空
+          "suggested_followup_queries": ["...", "..."],  // round 1 才填，round 2 留空
+          "suggested_visual_urls": ["...", "..."]  // round 1 才填；代码端会抓这些 URL 的图喂回来
         }
       ],
       "claim_score": 100.0
@@ -95,6 +96,17 @@
 单候选**总 query 数硬上限 30 条**。如果超过，自己合并相近 query。
 
 **Round 2（is_finalization_round=true）**：所有 `suggested_followup_queries` 必须为空数组。你已经看完所有该看的证据，给最终判断。
+
+## suggested_visual_urls 写法（Round 1 主动取图）
+
+跟 `suggested_followup_queries` 互补：当某条特征证据可能藏在**图里**（产品规格示意、拆解照、结构图）而 `evidence_pool` 的文本片段没捕获到时，把那个 URL 列到 `suggested_visual_urls`。代码端会在 round 2 之前抓那些 URL 的图片喂给你。
+
+- **单 feature 最多 3 个 URL，单候选总数硬上限 8 个**
+- URL 必须来自 `evidence_pool` 或 `new_search_results` 里出现过的 url，不要捏造
+- 适用场景：产品详情页（尺寸标注图）、teardown 文章（内部结构图）、技术规格 PDF（如果文本片段不完整）
+- Round 2 时必须空数组 `[]`
+
+**图片证据引用**：当 round 2 看完图后引用图证据，evidence[].url 用图片所在页面的 url（即 `images_manifest[i].url`），不要硬造直链；snippet 用 "图示证据：xxx" 前缀。
 
 ## 证据复用关键技巧
 

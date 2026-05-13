@@ -230,6 +230,7 @@ def _full_claim_chart_response_format() -> dict[str, Any]:
             "evidence": {"type": "array", "items": evidence_schema},
             "reasoning": {"type": "string"},
             "suggested_followup_queries": {"type": "array", "items": {"type": "string"}},
+            "suggested_visual_urls": {"type": "array", "items": {"type": "string"}},
         },
         "required": [
             "feature_id",
@@ -240,6 +241,7 @@ def _full_claim_chart_response_format() -> dict[str, Any]:
             "evidence",
             "reasoning",
             "suggested_followup_queries",
+            "suggested_visual_urls",
         ],
     }
     claim_entry_schema = {

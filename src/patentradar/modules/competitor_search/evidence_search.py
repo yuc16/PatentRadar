@@ -156,8 +156,12 @@ def _fetch_url_list(
             continue
         if evidence.text:
             pages.append({"url": evidence.url, "title": evidence.title or "", "text": evidence.text[:6000]})
-        for image_bytes in evidence.images:
-            images.append({"url": evidence.url, "title": evidence.title or "", "png": image_bytes})
+        for img in evidence.images:
+            images.append({
+                "url": img.src_url,
+                "title": img.alt or evidence.title or "",
+                "png": img.png,
+            })
         if len(pages) >= max_pages:
             break
     return pages, images
@@ -189,12 +193,12 @@ def fetch_relevant_pages(
                     "text": evidence.text[:6000],
                 }
             )
-        for image_bytes in evidence.images:
+        for img in evidence.images:
             images.append(
                 {
-                    "url": evidence.url,
-                    "title": evidence.title or result.title,
-                    "png": image_bytes,
+                    "url": img.src_url,
+                    "title": img.alt or evidence.title or result.title,
+                    "png": img.png,
                 }
             )
         if len(pages) >= max_pages:

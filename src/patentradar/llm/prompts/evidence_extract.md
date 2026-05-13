@@ -75,9 +75,22 @@
 ## 多模态图片使用
 
 - `fetched_page_images` 数组里每条记录有 `global_index` + `url` + `title`，对应**第 N 张** input_image
-- 图片优先用于读规格书表格、PDF 中的尺寸/容量数值、产品手册插图
-- 图片里读到的关键证据要在 `evidence` 字段标注 URL（用图片所在 PDF 的原 URL）
-- 不要把 LLM 自己 OCR 出的内容**当**字面证据 —— 必须能在原图找到对应位置
+- 图片来源有两类：(a) **PDF 关键页 PNG**（规格书/技术手册扫描页），(b) **HTML 嵌入的产品图/规格示意/拆解照**（自动从产品详情页、评测/拆解文章里抓取）
+- 图片优先用于：读规格书表格里的数值（D、L、H、W、容量、能量）、看部件位置/朝向/连接关系示意、看拆解图判断硬壳/方形/圆柱形态、看渲染图判断尺寸级别
+- **图片证据要在 `evidence` 字段标注 URL**：用 `fetched_page_images[i].url`（即图片所在页面 URL），不要硬编造图片直链。`snippet` 字段里加 "图示证据：xxx" 前缀帮人工核查
+- 不要把 LLM 自己 OCR 出的内容**当**字面证据——必须能在原图找到对应位置
+
+## suggested_visual_urls 写作要求（Round 1 主动取图）
+
+如果你在 round 1 看完文字证据后判断**某条特征的证据可能藏在某 URL 的图里**（比如某产品页有清晰的尺寸标注图、某拆解文章有内部结构图，但 fetched_pages 里只截到周边文字没拿到图），把那个 URL 列到该 FeatureComparison 的 `suggested_visual_urls`，代码端会在 round 2 之前抓图喂给你。
+
+- **单 feature 最多列 3 个 URL，单候选总数硬上限 5 个**
+- URL 必须来自现有证据池（`fetched_pages` 的 url 或 `search_results` 的 url），不要凭空捏造
+- 哪些场景适合：
+  - "短刀电池长宽厚示意图" 类的产品详情页
+  - 拆解/teardown 文章页
+  - 规格书 PDF 的产品页（如果 fetched_pages 里只给到文本片段）
+- Round 2 时该字段必须是空数组 `[]`
 
 ## reasoning 字段写作要求
 

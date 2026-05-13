@@ -44,6 +44,7 @@ from patentradar.search import SearchRouter
 logger = logging.getLogger(__name__)
 
 GAP_QUERY_HARD_CAP = 30  # per candidate total budget
+VISUAL_URL_HARD_CAP = 8  # 模块三 LLM 主动取图的 URL 上限
 
 
 def run_full_claim_chart(
@@ -162,6 +163,20 @@ def _process_one_candidate(
         pool_pages.extend(new_pages)
         pool_images.extend(new_images)
         pool_url_set.update(page["url"] for page in new_pages)
+
+    # Tier-3：LLM 主动取图（独立于 followup_queries）。即使没 gap query，只要
+    # round 1 列了 suggested_visual_urls 也要抓——证据可能就藏在图里
+    visual_urls = _collect_visual_urls(round1, cap=VISUAL_URL_HARD_CAP)
+    if visual_urls:
+        new_visual_images = _fetch_visual_images_for_module3(
+            visual_urls, keywords=_keywords_from_round1(round1)
+        )
+        if new_visual_images:
+            logger.info(
+                "module3 candidate=%s round1 -> %d visual images (from %d URLs)",
+                candidate_id, len(new_visual_images), len(visual_urls),
+            )
+            pool_images.extend(new_visual_images)
 
     # Round 2: finalize
     round2 = evaluate_candidate(
@@ -311,13 +326,64 @@ def _fetch_new_evidence(
                     "text": evidence.text[:6000],
                 }
             )
-        for image_bytes in evidence.images:
+        for img in evidence.images:
             images.append(
-                {"url": evidence.url, "title": evidence.title or result.title, "png": image_bytes}
+                {
+                    "url": img.src_url,
+                    "title": img.alt or evidence.title or result.title,
+                    "png": img.png,
+                }
             )
         if len(pages) >= max_pages:
             break
     return pages, images
+
+
+def _collect_visual_urls(round1: FullClaimChartCandidate, *, cap: int) -> list[str]:
+    """模块三 round 1 LLM 主动指挥取图：跨所有 claims 收集 suggested_visual_urls"""
+    seen: set[str] = set()
+    out: list[str] = []
+    for entry in round1.claim_charts:
+        for cmp in entry.comparisons:
+            for url in cmp.suggested_visual_urls:
+                url = url.strip()
+                if not url or url in seen:
+                    continue
+                if not url.startswith(("http://", "https://")):
+                    continue
+                seen.add(url)
+                out.append(url)
+                if len(out) >= cap:
+                    return out
+    return out
+
+
+def _fetch_visual_images_for_module3(
+    urls: list[str],
+    *,
+    keywords: list[str],
+) -> list[dict]:
+    """对 LLM 主动指挥的 URL 抓图。"""
+    images: list[dict] = []
+    seen: set[str] = set()
+    for url in urls:
+        if url in seen:
+            continue
+        seen.add(url)
+        try:
+            evidence = fetch_evidence(url, keywords=keywords, max_chars=6000)
+        except Exception as exc:  # noqa: BLE001
+            logger.info("Module3 visual URL fetch failed url=%s error=%s", url, exc)
+            continue
+        if evidence is None:
+            continue
+        for img in evidence.images:
+            images.append({
+                "url": img.src_url,
+                "title": img.alt or evidence.title or "",
+                "png": img.png,
+            })
+    return images
 
 
 def load_task_package(path: Path) -> TaskPackage:

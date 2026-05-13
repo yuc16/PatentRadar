@@ -1,0 +1,178 @@
+{
+  "candidate": {
+    "candidate_id": "P02",
+    "company": "延锋国际",
+    "company_en": "Yanfeng International",
+    "product_name": "XiM25智能座舱长滑轨屏幕",
+    "product_name_en": "XiM25 smart cabin long-rail display",
+    "product_version": "1520mm超长滑动距离；天幕长滑轨显示屏，屏幕前后58.5°旋转",
+    "market": "中国智能座舱概念/前瞻展示与主机厂方案市场",
+    "reason_for_deep_dive": "输入摘要明确出现“长滑轨”“1520mm超长滑动距离”“覆盖整个车顶”“兼顾前后排乘客需求”，与权1的“导轨从前排区域延伸至后排座椅、显示装置在前后排之间滑动”高度相关；还公开了屏幕旋转角度，需进一步核查是否存在横屏/竖屏切换及是否已进入量产供货。",
+    "source_result_ids": [
+      "tavily-Q03-01"
+    ],
+    "source_urls": [
+      "https://www.iautodaily.com/news/dangnianqingrentaolungongpingshitamenxiangyaoshenmeyangdezhi"
+    ],
+    "initial_evidence_summary": "摘要称XiM25智能座舱将长滑轨技术应用于天幕，可根据车型车顶造型曲线适配，1520mm超长滑动距离可覆盖整个车顶，搭配超宽显示屏等多种尺寸显示屏，并实现屏幕前后58.5°旋转，使顶棚屏兼顾前后排乘客需求。"
+  },
+  "launch_date": "2024年10月21日在上海正式发布；公开资料显示为展车/下一代可量产方案，未见已量产交付日期",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.yanfeng.com/cn/yanfengfabuxim25zhinengzuocangyichuangxinjishuchudongzshidai",
+      "title": "延锋发布XiM25智能座舱，以创新技术触动Z世代 | 延锋官网",
+      "source_name": "延锋官网",
+      "snippet": "上海 21.10.2024 全球汽车零部件供应商——延锋，在上海正式发布面向新消费群体的智能座舱XiM25，搭载数十项创新技术。"
+    },
+    {
+      "url": "https://www.autohome.com.cn/tech/202411/1302391.html?pvareaid=2028130",
+      "title": "未来智能座舱长什么样 延锋发布XiM25展车",
+      "source_name": "汽车之家",
+      "snippet": "2024-11-29文章称XiM25为延锋发布的展车，并介绍“XiM25展车的展示刚开始，明年我们计划去欧洲”。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开发布时间为2024年10月21日，晚于专利申请日2018-03-30；未见该方案在申请日前公开或量产。无特征被直接证据证明为明确不满足。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "车体，所述车体包括中控台和后排座椅",
+      "competitor_feature": "XiM25为延锋发布的智能座舱展车/座舱方案；公开图文显示有前排驾驶区、中控/中央触控区域及后排座椅，后排座椅还能完全展开为近2m床。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.yanfeng.com/cn/yanfengfabuxim25zhinengzuocangyichuangxinjishuchudongzshidai",
+          "title": "延锋发布XiM25智能座舱，以创新技术触动Z世代 | 延锋官网",
+          "source_name": "延锋官网",
+          "snippet": "延锋称XiM25搭载SafeUnit座椅集成安全技术；“后排座椅完全展开后可变成长度接近2 m的超大尺寸床”；并提到“位于前后排座椅中央的触控面板”。"
+        },
+        {
+          "url": "https://news.m.yiche.com/hao/wenzhang/96510990",
+          "title": "延锋下一代智能座舱概念车——「XiM25」",
+          "source_name": "易车",
+          "snippet": "图示证据：页面图片显示XiM25展车外车体、车顶结构、前排驾驶/中控区域以及后排座椅。"
+        },
+        {
+          "url": "https://www.autohome.com.cn/tech/202411/1302391.html?pvareaid=2028130",
+          "title": "未来智能座舱长什么样 延锋发布XiM25展车",
+          "source_name": "汽车之家",
+          "snippet": "文章称XiM25为“展车”，介绍其前排自适应零重力座椅、后排座椅以及前后排座椅中央触控面板。"
+        }
+      ],
+      "reasoning": "官方和汽车之家均将XiM25描述为展车/座舱，文本明确有前排、后排座椅和中央触控区域；易车图片可见车体及中控区域，足以对应车体含中控台和后排座椅。",
+      "suggested_followup_queries": [],
+      "suggested_visual_urls": []
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+      "competitor_feature": "公开资料称XiM25采用“随动天幕长滑动机构/顶棚天幕长滑轨机构”，滑轨距离最大1520mm，可覆盖整个车顶，服务前后排顶棚屏幕位置调整；但证据表述为顶棚/天幕滑轨，并未直接写明其从中控台延伸至后排座椅。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.yanfeng.com/cn/yanfengfabuxim25zhinengzuocangyichuangxinjishuchudongzshidai",
+          "title": "延锋发布XiM25智能座舱，以创新技术触动Z世代 | 延锋官网",
+          "source_name": "延锋官网",
+          "snippet": "“延锋的随动天幕长滑动机构，可根据各类车型的车顶造型曲线完美适配，1520 mm的超长滑动距离能覆盖整个车顶。”"
+        },
+        {
+          "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+          "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”",
+          "source_name": "网易/NE时代",
+          "snippet": "“另外是顶棚的天幕长滑轨机构……滑轨距离长度最大可达1520 mm，可以覆盖整个车顶。不仅位置和角度可调。”"
+        },
+        {
+          "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+          "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱",
+          "source_name": "凤凰网/上海汽车报",
+          "snippet": "“这次延锋将长滑轨技术用于屏幕，1520mm的超长滑动距离能覆盖整个车顶，让屏幕自由在前后排滑动。”"
+        }
+      ],
+      "reasoning": "证据直接证明车体顶棚/天幕有长滑轨并覆盖整个车顶。因其用于屏幕在前后排间移动，可严谨推知其沿车长方向跨越前后排；但未直接表述“从中控台延伸至后排座椅”。",
+      "suggested_followup_queries": [],
+      "suggested_visual_urls": []
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动",
+      "competitor_feature": "XiM25的顶棚屏/天幕屏与随动天幕长滑动机构配合，1520mm滑动距离覆盖车顶，可在前后排自由滑动；文本还描述屏幕来到后排、收回至床上方等场景。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.yanfeng.com/cn/yanfengfabuxim25zhinengzuocangyichuangxinjishuchudongzshidai",
+          "title": "延锋发布XiM25智能座舱，以创新技术触动Z世代 | 延锋官网",
+          "source_name": "延锋官网",
+          "snippet": "“随动天幕长滑动机构……1520 mm的超长滑动距离能覆盖整个车顶，搭配包括超宽显示屏在内的多种尺寸显示屏……让顶棚屏兼顾前后排乘客需求成为可能。”"
+        },
+        {
+          "url": "https://auto.ifeng.com/c/8f5Z01kvW2t",
+          "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱",
+          "source_name": "凤凰网/上海汽车报",
+          "snippet": "“吸引眼球的是可以在天幕上来回滑动的屏幕……让屏幕自由在前后排滑动……当它来到后排……就能跷着腿和朋友一起打游戏。”"
+        },
+        {
+          "url": "https://m.jfdaily.com/sgh/detail?id=1473757",
+          "title": "剧透下一代车型技术爆点，实拍延锋XiM25智能座舱",
+          "source_name": "上观新闻/上海汽车报",
+          "snippet": "“长滑轨上的屏幕收回滑动至‘床’的上方，点亮屏幕，就变成了一个吸顶灯。”"
+        },
+        {
+          "url": "https://news.m.yiche.com/hao/wenzhang/96510990",
+          "title": "延锋下一代智能座舱概念车——「XiM25」",
+          "source_name": "易车",
+          "snippet": "图示证据：页面图片显示顶棚下方的横向显示屏悬挂在车顶区域，位于前排与后排座椅之间的观看位置。"
+        }
+      ],
+      "reasoning": "官方和多家媒体直接写明显示屏与天幕长滑动机构配合、可在前后排自由滑动；虽其轨道位于顶棚，但显示装置沿车内前后方向服务前排和后排的功能被直接证实。",
+      "suggested_followup_queries": [],
+      "suggested_visual_urls": []
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+      "competitor_feature": "XiM25公开资料仅证明屏幕可调节位置和角度、实现“前后58.5°旋转”；公开图片中的天幕屏呈横向宽屏形态。未见资料证明该显示装置可在横屏/竖屏之间切换，亦未见其与导轨配合时切换至竖屏。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.yanfeng.com/cn/yanfengfabuxim25zhinengzuocangyichuangxinjishuchudongzshidai",
+          "title": "延锋发布XiM25智能座舱，以创新技术触动Z世代 | 延锋官网",
+          "source_name": "延锋官网",
+          "snippet": "“随动天幕长滑动机构……搭配包括超宽显示屏在内的多种尺寸显示屏，并实现屏幕前后58.5°旋转。”未提及横屏/竖屏切换。"
+        },
+        {
+          "url": "https://www.163.com/dy/article/JIVKEEFD0518R7KI.html",
+          "title": "延锋XiM25智能座舱 | 从“一车一配到一人一舱”",
+          "source_name": "网易/NE时代",
+          "snippet": "“不仅位置和角度可调，并且还能和天幕结合，实现高效收纳或者遮阳的效果。”未描述屏幕横竖屏切换。"
+        },
+        {
+          "url": "https://news.m.yiche.com/hao/wenzhang/96510990",
+          "title": "延锋下一代智能座舱概念车——「XiM25」",
+          "source_name": "易车",
+          "snippet": "图示证据：页面图片中的天幕大屏为横向宽屏悬挂/倾斜状态，未显示竖屏状态或绕屏幕法线旋转切换结构。"
+        }
+      ],
+      "reasoning": "现有证据只给出前后58.5°俯仰旋转和位置/角度调节，且图片均显示横向宽屏；这些不足以证明横屏/竖屏状态切换或导轨配合时切至竖屏。",
+      "suggested_followup_queries": [],
+      "suggested_visual_urls": []
+    }
+  ],
+  "total_score": 77.5,
+  "searched_queries": [
+    "延锋国际 XiM25智能座舱长滑轨屏幕 1520mm超长滑动距离 屏幕前后58.5°旋转 规格书 参数",
+    "延锋 XiM25 随动天幕长滑动机构 导轨 从中控台 到后排 结构",
+    "延锋国际 XiM25智能座舱 上市 日期 发布",
+    "延锋国际 XiM25智能座舱 说明书 PDF",
+    "延锋 XiM25 横屏 竖屏 切换 天幕屏"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

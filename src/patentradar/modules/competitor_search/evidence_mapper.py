@@ -43,6 +43,8 @@ logger = logging.getLogger(__name__)
 # LLM can suggest up to ~15 across 7 features (3 per gap feature), but we
 # cap at 5 to keep the search-API budget bounded.
 PER_CANDIDATE_GAP_QUERY_CAP = 5
+# Tier-3 LLM-driven 取图：单候选最多抓 6 个 URL 的图，避免 vision payload 失控
+PER_CANDIDATE_VISUAL_URL_CAP = 6
 
 
 def map_evidence_for_batch(
@@ -118,6 +120,21 @@ def map_evidence_for_batch(
                 router=search_router,
                 self_signals=self_signals,
             )
+        # Tier-3：LLM 在 round 1 通过 `suggested_visual_urls` 主动指挥取图，
+        # 这里把指挥到的 URL 抓成图片字节流加进 gap context，round 2 LLM 看得到
+        visual_urls = _collect_llm_suggested_visual_urls(item, cap=PER_CANDIDATE_VISUAL_URL_CAP)
+        if visual_urls:
+            visual_images = _fetch_visual_images(
+                visual_urls,
+                candidate=candidate,
+                claim_features=task_package.claim_1_features,
+            )
+            if visual_images:
+                logger.info(
+                    "module2 visual %s candidate=%s LLM-driven images=%d (from %d URLs)",
+                    batch_id, candidate.candidate_id, len(visual_images), len(visual_urls),
+                )
+                gap_context.fetched_images.extend(visual_images)
         gap_contexts.append(merge_contexts(initial_context, gap_context))
 
     if gap_contexts:
@@ -183,6 +200,63 @@ def _collect_llm_suggested_queries(item: CandidateEvidence, *, cap: int) -> list
     return out
 
 
+def _collect_llm_suggested_visual_urls(item: CandidateEvidence, *, cap: int) -> list[str]:
+    """Collect dedupe'd LLM-suggested visual URLs from a CandidateEvidence's round-1 output."""
+    seen: set[str] = set()
+    out: list[str] = []
+    for comparison in item.comparisons:
+        for url in comparison.suggested_visual_urls:
+            url = url.strip()
+            if not url or url in seen:
+                continue
+            if not url.startswith(("http://", "https://")):
+                continue
+            seen.add(url)
+            out.append(url)
+            if len(out) >= cap:
+                return out
+    return out
+
+
+def _fetch_visual_images(
+    urls: list[str],
+    *,
+    candidate: Candidate,
+    claim_features: list[ClaimFeature],
+) -> list[dict]:
+    """对 LLM 主动指挥的 URL 列表取图：HTML 走嵌入图扫描，PDF 走关键页渲染，
+    直接图片 URL 直接下载。返回 evidence_mapper 用的 [{url,title,png}] dict 列表。"""
+    keywords: list[str] = [
+        candidate.company,
+        candidate.company_en,
+        candidate.product_name,
+        candidate.product_name_en,
+        candidate.product_version,
+        *[feature.feature_text[:24] for feature in claim_features],
+    ]
+    keywords = [k for k in keywords if k and k.strip()]
+    images: list[dict] = []
+    seen_url_set: set[str] = set()
+    for url in urls:
+        if url in seen_url_set:
+            continue
+        seen_url_set.add(url)
+        try:
+            evidence = fetch_evidence(url, keywords=keywords, max_chars=6000)
+        except Exception as exc:  # noqa: BLE001 - 取图允许个别失败
+            logger.info("Visual URL fetch failed url=%s error=%s", url, exc)
+            continue
+        if evidence is None:
+            continue
+        for img in evidence.images:
+            images.append({
+                "url": img.src_url,
+                "title": img.alt or evidence.title or "",
+                "png": img.png,
+            })
+    return images
+
+
 def _gap_context_from_queries(
     *,
     publication_no: str,
@@ -246,9 +320,13 @@ def _fetch_pages_for_results(
                     "text": evidence.text[:6000],
                 }
             )
-        for image_bytes in evidence.images:
+        for img in evidence.images:
             images.append(
-                {"url": evidence.url, "title": evidence.title or result.title, "png": image_bytes}
+                {
+                    "url": img.src_url,
+                    "title": img.alt or evidence.title or result.title,
+                    "png": img.png,
+                }
             )
         if len(pages) >= max_pages:
             break
