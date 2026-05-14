@@ -25,8 +25,11 @@ from pydantic import ValidationError
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.fetcher.image_utils import png_hash
+from pathlib import Path
+
+from patentradar.fetcher.image_utils import dump_visual_log, png_hash
 from patentradar.llm import get_llm_provider
+from patentradar.llm.payload_compress import compress_payload_if_needed
 from patentradar.schemas import (
     Candidate,
     CandidateEvidence,
@@ -49,9 +52,18 @@ def evaluate_candidate(
     is_finalization_round: bool,
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
+    visual_log_sent_dir: Path | None = None,
+    visual_log_candidate_id: str | None = None,
 ) -> FullClaimChartCandidate:
     """Run one LLM round (initial or finalization)."""
     evidence_pool_images = _dedupe_images(evidence_pool_images)[:_VISION_IMAGES_PER_CANDIDATE]
+    # dedup + cap 后即 LLM 实际看到的图：仅 round 2 (finalization) 落盘 sent 子集
+    if (
+        is_finalization_round
+        and visual_log_sent_dir is not None
+        and visual_log_candidate_id is not None
+    ):
+        dump_visual_log(visual_log_sent_dir, visual_log_candidate_id, evidence_pool_images)
     image_bytes_list = [img["png"] for img in evidence_pool_images if isinstance(img.get("png"), (bytes, bytearray))]
     provider = get_llm_provider()
     images_arg = image_bytes_list or None
@@ -199,6 +211,11 @@ def _build_user_text(
             for r in new_search_results[:40]
         ],
     }
+    # 超阈值时自动压缩 evidence_pool.text 长度 / new_search_results.snippet / 数量
+    compress_payload_if_needed(
+        payload,
+        context_label=f"full_claim_chart_worker finalization={is_finalization_round}",
+    )
     return json.dumps(payload, ensure_ascii=False, indent=2)
 
 

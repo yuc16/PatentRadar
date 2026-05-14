@@ -11,8 +11,11 @@ from pydantic import ValidationError
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.fetcher.image_utils import png_hash
+from pathlib import Path
+
+from patentradar.fetcher.image_utils import dump_visual_log, png_hash
 from patentradar.llm import get_llm_provider
+from patentradar.llm.payload_compress import compress_payload_if_needed
 from patentradar.schemas import (
     Candidate,
     CandidateEvidence,
@@ -43,8 +46,14 @@ def judge_candidate_batch(
     is_gap_round: bool = False,
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
+    visual_log_sent_dir: Path | None = None,
 ) -> EvidenceBatchResult:
     fetched_images_by_candidate = _dedupe_images_per_candidate(fetched_images_by_candidate or {})
+    # dedup + score 排序 + [:cap] 后即 LLM 实际送入图集合：落盘到 sent_dir
+    if visual_log_sent_dir is not None and is_gap_round:
+        # 仅 round 2 (is_gap_round=True) 才真发图给 LLM；round 1 text-only 不 dump
+        for cid, imgs in fetched_images_by_candidate.items():
+            dump_visual_log(visual_log_sent_dir, cid, imgs[:_VISION_IMAGES_PER_CANDIDATE])
     user_text = _build_user_text(
         task_package=task_package,
         candidates=candidates,
@@ -183,6 +192,11 @@ def _build_user_text(
         ],
         "candidates": candidate_payloads,
     }
+    # 超阈值时自动压缩低优先级字段（fetched_pages.text 长度、search snippet 等）
+    compress_payload_if_needed(
+        payload,
+        context_label=f"evidence_worker is_gap_round={is_gap_round}",
+    )
     return json.dumps(payload, ensure_ascii=False, indent=2)
 
 

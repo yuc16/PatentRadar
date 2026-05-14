@@ -172,8 +172,11 @@ def run_step4_map_evidence(
     self_signals = query_plan.applicant_self_signals if query_plan else None
     cand_dir = output_dir / "step4_candidates"
     cand_dir.mkdir(parents=True, exist_ok=True)
-    visual_log_dir = output_dir / "step4_visual_log"
-    visual_log_dir.mkdir(parents=True, exist_ok=True)
+    # 双份落盘：fetched 是 fetcher 抓回的全集；sent 是 worker dedup+cap 后真正送 LLM 的子集
+    visual_log_fetched_dir = output_dir / "step4_visual_log_fetched"
+    visual_log_sent_dir = output_dir / "step4_visual_log_sent"
+    visual_log_fetched_dir.mkdir(parents=True, exist_ok=True)
+    visual_log_sent_dir.mkdir(parents=True, exist_ok=True)
     evidence_results: list[CandidateEvidence] = []
 
     def _process(candidate):
@@ -184,7 +187,8 @@ def run_step4_map_evidence(
             self_signals=self_signals,
             model=model,
             reasoning_effort=reasoning_effort,
-            visual_log_dir=visual_log_dir,
+            visual_log_dir=visual_log_fetched_dir,
+            visual_log_sent_dir=visual_log_sent_dir,
         )
         return candidate, batch
 

@@ -18,7 +18,7 @@ from collections.abc import Iterable
 from pathlib import Path
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
-from patentradar.fetcher.image_utils import png_hash
+from patentradar.fetcher.image_utils import dump_visual_log
 from patentradar.fetcher.web_fetcher import fetch_evidence
 from patentradar.llm.workers.evidence_worker import judge_candidate_batch
 from patentradar.schemas import (
@@ -58,6 +58,7 @@ def map_evidence_for_batch(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
     visual_log_dir: Path | None = None,
+    visual_log_sent_dir: Path | None = None,
 ) -> EvidenceBatchResult:
     search_router = router or SearchRouter(country_code=task_package.patent.country_code)
     initial_contexts = [
@@ -139,51 +140,17 @@ def map_evidence_for_batch(
             final_by_id[item.candidate.candidate_id] = item
 
     if visual_log_dir is not None:
-        # gap_context 含 initial+gap 合并图；优先用它，否则用 initial_context
+        # fetched 全集 dump：fetcher 抓回的全部图（含 worker cap 之外的）
         ctx_by_id = {ctx.candidate.candidate_id: ctx for ctx in initial_contexts}
         for ctx in gap_contexts:
             ctx_by_id[ctx.candidate.candidate_id] = ctx
         for cid, ctx in ctx_by_id.items():
-            _dump_visual_log(visual_log_dir, cid, ctx.fetched_images)
+            dump_visual_log(visual_log_dir, cid, ctx.fetched_images)
 
     return EvidenceBatchResult(
         publication_no=task_package.patent.publication_no,
         batch_id=batch_id,
         results=[final_by_id[candidate.candidate_id] for candidate in candidates if candidate.candidate_id in final_by_id],
-    )
-
-
-def _dump_visual_log(
-    visual_log_dir: Path,
-    candidate_id: str,
-    fetched_images: list[dict],
-) -> None:
-    """记录该候选送进 vision LLM 的图集合：manifest.json + 各图 PNG，
-    用于后续审计 vision 决策（哪张图驱动了结论翻转）。"""
-    if not fetched_images:
-        return
-    cand_dir = visual_log_dir / candidate_id
-    cand_dir.mkdir(parents=True, exist_ok=True)
-    manifest: list[dict] = []
-    for idx, img in enumerate(fetched_images):
-        png = img.get("png")
-        if not isinstance(png, (bytes, bytearray)):
-            continue
-        png_bytes = bytes(png)
-        h = png_hash(png_bytes)
-        filename = f"img_{idx:02d}_{h}.png"
-        (cand_dir / filename).write_bytes(png_bytes)
-        manifest.append({
-            "index": idx,
-            "filename": filename,
-            "src_url": img.get("url", ""),
-            "alt_or_title": img.get("title", ""),
-            "size_bytes": len(png_bytes),
-            "sha256_prefix": h,
-        })
-    (cand_dir / "manifest.json").write_text(
-        json.dumps({"candidate_id": candidate_id, "images": manifest}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
     )
 
 
@@ -195,6 +162,7 @@ def _judge(
     is_gap_round: bool,
     model: str,
     reasoning_effort: str,
+    visual_log_sent_dir: Path | None = None,
 ) -> EvidenceBatchResult:
     # Round 1 (initial) text-only：跟模块三对齐，省一半 vision token。LLM 没看
     # 图时列的 gap query 可能漏掉"图里有但文字没说"的特征，但 round 2 看到合并
@@ -218,6 +186,7 @@ def _judge(
         is_gap_round=is_gap_round,
         model=model,
         reasoning_effort=reasoning_effort,
+        visual_log_sent_dir=visual_log_sent_dir,
     )
 
 

@@ -8,8 +8,10 @@ token 成本可预测（一张 1024 长边的 PNG ≈ 1500-2500 vision tokens，
 from __future__ import annotations
 
 import hashlib
+import json
 import logging
 from io import BytesIO
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
@@ -47,3 +49,42 @@ def normalize_png(raw: bytes, *, max_edge: int = DEFAULT_MAX_EDGE) -> bytes | No
 def png_hash(png: bytes) -> str:
     """图片去重用的内容指纹：sha256 前 16 hex 字符就足以区分图集里的图。"""
     return hashlib.sha256(png).hexdigest()[:16]
+
+
+def dump_visual_log(
+    visual_log_dir: Path,
+    candidate_id: str,
+    fetched_images: list[dict],
+) -> None:
+    """把候选的图集合落盘为 manifest.json + 各图 PNG，供事后审计。
+
+    调用方约定两类目录：
+    - `visual_log_fetched/<cid>/`：fetcher 抓回来的全集（pipeline 端 dump）
+    - `visual_log_sent/<cid>/`：worker dedup + cap 后实际送 LLM 的子集
+    """
+    if not fetched_images:
+        return
+    cand_dir = visual_log_dir / candidate_id
+    cand_dir.mkdir(parents=True, exist_ok=True)
+    manifest: list[dict] = []
+    for idx, img in enumerate(fetched_images):
+        png = img.get("png")
+        if not isinstance(png, (bytes, bytearray)):
+            continue
+        png_bytes = bytes(png)
+        h = png_hash(png_bytes)
+        filename = f"img_{idx:02d}_{h}.png"
+        (cand_dir / filename).write_bytes(png_bytes)
+        manifest.append({
+            "index": idx,
+            "filename": filename,
+            "src_url": img.get("url", ""),
+            "alt_or_title": img.get("title", ""),
+            "size_bytes": len(png_bytes),
+            "sha256_prefix": h,
+            "score": img.get("score", 0),
+        })
+    (cand_dir / "manifest.json").write_text(
+        json.dumps({"candidate_id": candidate_id, "images": manifest}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )

@@ -28,6 +28,19 @@ CODEX_URL = "https://chatgpt.com/backend-api/codex/responses"
 AUTH_PATH = Path.home() / ".codex" / "auth.json"
 logger = logging.getLogger(__name__)
 
+# Prompt-size 监控阈值（按"中文/混合 ≈ 2.0 char/token + 留余量给 output+reasoning"换算）：
+# Codex 后端 context window = 258K tokens（input + output + reasoning 共享）。
+# 留 58K tokens 给 output + reasoning（medium effort 通常 10-30K tokens + JSON 输出 5-10K）。
+# 实际 input 上限 = 258K - 58K = 200K tokens ≈ 400K 字符（中英混合）。
+# warn: 给出预警，提示调用方应该自查/压缩
+# critical: 接近上限，立即 raise，让 caller 端 catch 后压缩重试或降级
+PROMPT_SIZE_WARN_CHARS = 300_000     # ≈ 150K tokens
+PROMPT_SIZE_CRITICAL_CHARS = 400_000  # ≈ 200K tokens
+
+
+class PromptTooLargeError(RuntimeError):
+    """Prompt 超出 codex 后端 context window 安全余量；caller 端应压缩 user_text 后重试。"""
+
 
 class CodexAuthError(RuntimeError):
     pass
@@ -46,6 +59,8 @@ def chat(
 ) -> str:
     model = model or DEFAULT_MODEL
     timeout = timeout or int(os.getenv("CODEX_STREAM_TIMEOUT", "900"))
+
+    _check_prompt_size(system=system, user_text=user_text, model=model)
 
     user_content: list[dict[str, Any]] = [{"type": "input_text", "text": user_text}]
     for image in images or []:
@@ -199,6 +214,28 @@ def _parse_json(text: str) -> dict[str, Any]:
         if start >= 0 and end > start:
             return json.loads(text[start : end + 1])
         raise
+
+
+def _check_prompt_size(*, system: str, user_text: str, model: str) -> None:
+    """监控 prompt 字符数，warn 临近上限、超阈值直接 raise PromptTooLargeError。
+
+    raise 让 caller (worker) 在 except 里压缩 user_text 重试，而不是把
+    超大请求发出去等 codex 后端返回 token-limit 错误（贵且慢）。
+    """
+    total_chars = len(system) + len(user_text)
+    if total_chars >= PROMPT_SIZE_CRITICAL_CHARS:
+        raise PromptTooLargeError(
+            f"Prompt size {total_chars:,} chars >= critical threshold "
+            f"{PROMPT_SIZE_CRITICAL_CHARS:,}; caller must compress user_text"
+        )
+    if total_chars >= PROMPT_SIZE_WARN_CHARS:
+        logger.warning(
+            "codex prompt size approaching limit: %s chars (warn=%s critical=%s) model=%s",
+            f"{total_chars:,}", f"{PROMPT_SIZE_WARN_CHARS:,}",
+            f"{PROMPT_SIZE_CRITICAL_CHARS:,}", model,
+        )
+    else:
+        logger.info("codex prompt size=%s chars model=%s", f"{total_chars:,}", model)
 
 
 def _is_retryable_error(exc: Exception) -> bool:

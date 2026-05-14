@@ -22,7 +22,6 @@
 | 申请人 | （`patent.applicants` 用顿号连接） |
 | 发明人 | （`patent.inventors` 用顿号连接） |
 | 申请日 | `patent.application_date` |
-| 技术领域 | `patent.technology_tag` |
 | Google Patents | `patent.google_patents_url`（用 markdown 链接） |
 | 官方 PDF | `patent.pdf_url`（用 markdown 链接） |
 
@@ -30,15 +29,12 @@
 
 **这是全文总结**，用自然语言段落（不分小标题）覆盖：
 
-1. **疑似竞品概览**（1 句）：本次共筛选到 N 个疑似竞品（top + excluded 合计），其中 K 个进入 TOP-N 深度对比。
-2. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version` / `total_score`，是否触发 ≥ 80 风险阈值，上市时间 vs 专利申请日的对比。
-3. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 每条 feature 是「明确满足 / 可能满足 / 证据不足 / 明确不满足」，重点列出证据缺口的 feature_id 和缺口原因。
-4. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（每条缺口 feature 一条 bullet）：**直接复用** `top_competitors_summary[0].claim_1_features[*].evidence_gap_brief` 字段（已经写好"还缺 / 可去 / 下一步建议"三行结构），每条 bullet 形如：
+1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version` / `total_score`，上市时间 vs 专利申请日的对比。
+2. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 每条 feature 是「明确满足 / 可能满足 / 证据不足 / 明确不满足」，重点列出证据缺口的 feature_id 和缺口原因。
+3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（每条缺口 feature 一条 bullet）：**直接复用** `top_competitors_summary[0].claim_1_features[*].evidence_gap_brief` 字段（已经写好"还缺 / 可去 / 下一步建议"三行结构），每条 bullet 形如：
 
    > 「**C1-FX（XX 特征）**：<evidence_gap_brief 内容，可适度精简换行>」
 
-   evidence_gap_brief 为空的 feature 跳过。**绝对不要自己造 query 字串**。
-5. **失格候选简述**（若 `excluded_candidates_summary` 非空，1-2 句）：哪些候选失格，主要失格原因。
 
 ## 严格要求
 

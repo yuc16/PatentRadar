@@ -29,7 +29,6 @@
 | 申请人 | （`patent.applicants` 用顿号连接） |
 | 发明人 | （`patent.inventors` 用顿号连接） |
 | 申请日 | `patent.application_date` |
-| 技术领域 | `patent.technology_tag` |
 | Google Patents | `patent.google_patents_url`（用 markdown 链接） |
 | 官方 PDF | `patent.pdf_url`（用 markdown 链接） |
 
@@ -37,16 +36,13 @@
 
 **这一章节是全文总结**，用自然语言段落（不分小标题）覆盖以下要点：
 
-1. **疑似竞品概览**（1 句）：本次共搜索/筛选到 N 个疑似竞品（来自 `top_competitors` + `excluded_candidates` 的合计），其中 K 个进入 TOP-N 深度对比。
-2. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version`（产品介绍）/ `total_score`，是否触发 ≥ 80 侵权风险阈值，上市时间 vs 专利申请日的对比。
-3. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 的每条 feature 是「明确满足/可能满足/证据不足/明确不满足」，重点列出证据缺口（status ∈ {证据不足, 可能满足}）的 feature_id 和缺口原因。
-4. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（按缺口 feature 各列 1 条 bullet）：**优先复用** `top_competitors[0].claim_charts[claim_no==1].comparisons[*].evidence_gap_brief` 字段（模块三 round 2 已经给每条权 1 缺口 feature 写好"还缺/可去/下一步建议"三行）。
+1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version`（产品介绍）/ `total_score`，上市时间 vs 专利申请日的对比。
+2. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 的每条 feature 是「明确满足/可能满足/证据不足/明确不满足」，重点列出证据缺口（status ∈ {证据不足, 可能满足}）的 feature_id 和缺口原因。
+3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（按缺口 feature 各列 1 条 bullet）：**优先复用** `top_competitors[0].claim_charts[claim_no==1].comparisons[*].evidence_gap_brief` 字段（模块三 round 2 已经给每条权 1 缺口 feature 写好"还缺/可去/下一步建议"三行）。
    
    每条 bullet 形如：
    > 「**C1-FX（XX 特征）**：<evidence_gap_brief 内容，可适度精简换行>」
    
-5. **失格候选简述**（若 `excluded_candidates` 非空，1-2 句）：哪些候选被失格、主要失格原因是「上市日期早于申请日」还是「权 1 某特征明确不满足」。
-
 写作风格：信息密度高，专业克制，不写「本报告」「综上所述」自指总结。
 
 ### 3. TOP-N 竞品对比
@@ -68,9 +64,8 @@
 | 公司（中/英）| company / company_en |
 | 产品（中/英）| product_name / product_name_en |
 | 产品介绍 | product_version |
-| 市场 | market |
 | 上市日期 | launch_date |
-| 总分（百分制）| total_score |
+| 侵权评分| total_score |
 
 **逐权利要求对比**：
 
@@ -102,7 +97,7 @@
 
 ### 4. 相似专利人工核查（仅当 infringement_risk_triggered=true）
 
-写 1 段说明：本专利已发现 ≥ 80 分竞品，存在被侵权风险。基于公司专利池的布局，本专利的同族延续案/分案极可能面临同样侵权风险，建议人工通过下方 Google Patents 高级检索链接核查，（链接已按 `similar_patents_hint.country_code` / `applicant` / `title` 预先过滤），你也可以自行在大为专利中检索同名专利。
+写 1 段说明：本专利已发现 侵权分数 ≥ 80 分竞品，存在被侵权风险。基于公司专利池的布局，本专利的同族延续案/分案极可能面临同样侵权风险，建议人工通过下方 Google Patents 高级检索链接核查，（链接已按 `similar_patents_hint.country_code` / `applicant` / `title` 预先过滤），您也可以自行在大为专利中检索同名专利。
 
 接着输出一段表格 + 一条 markdown 链接：
 

@@ -21,9 +21,8 @@
 | 公司（中/英）| company / company_en |
 | 产品（中/英）| product_name / product_name_en |
 | 产品介绍 | product_version |
-| 市场 | market |
 | 上市日期 | launch_date |
-| 总分(百分制) | total_score |
+| 侵权评分 | total_score |
 
 **逐权利要求对比**：
 
@@ -44,8 +43,6 @@
 
 > **C1-FX（XX 特征）**：<evidence_gap_brief 内容，原样或最多换行精简>
 
-`evidence_gap_brief` 为空时退回到 `suggested_followup_queries`（若也为空标"需人工补查"）。
-绝对不要自己造 query。
 ```
 
 ## 表格细则

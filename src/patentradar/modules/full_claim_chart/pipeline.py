@@ -28,7 +28,7 @@ from pathlib import Path
 from typing import Any
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
-from patentradar.fetcher.image_utils import png_hash
+from patentradar.fetcher.image_utils import dump_visual_log
 from patentradar.fetcher.web_fetcher import fetch_evidence
 from patentradar.llm.workers.full_claim_chart_worker import evaluate_candidate
 from patentradar.schemas import (
@@ -61,8 +61,11 @@ def run_full_claim_chart(
     output_dir.mkdir(parents=True, exist_ok=True)
     per_candidate_dir = output_dir / "candidates"
     per_candidate_dir.mkdir(parents=True, exist_ok=True)
-    visual_log_dir = output_dir / "visual_log"
-    visual_log_dir.mkdir(parents=True, exist_ok=True)
+    # 双份落盘：fetched 是 fetcher 抓回的全集；sent 是 worker dedup+cap 后真正送 LLM 的子集
+    visual_log_fetched_dir = output_dir / "visual_log_fetched"
+    visual_log_sent_dir = output_dir / "visual_log_sent"
+    visual_log_fetched_dir.mkdir(parents=True, exist_ok=True)
+    visual_log_sent_dir.mkdir(parents=True, exist_ok=True)
 
     competitors_to_process = top_report.top_competitors
     completed_candidates: list[FullClaimChartCandidate] = []
@@ -81,7 +84,8 @@ def run_full_claim_chart(
                 model=model,
                 reasoning_effort=reasoning_effort,
                 output_dir=per_candidate_dir,
-                visual_log_dir=visual_log_dir,
+                visual_log_dir=visual_log_fetched_dir,
+                visual_log_sent_dir=visual_log_sent_dir,
             ): evidence
             for evidence in competitors_to_process
         }
@@ -119,6 +123,7 @@ def _process_one_candidate(
     reasoning_effort: str,
     output_dir: Path,
     visual_log_dir: Path | None = None,
+    visual_log_sent_dir: Path | None = None,
 ) -> FullClaimChartCandidate:
     candidate_id = module_two_evidence.candidate.candidate_id
     started = time.perf_counter()
@@ -188,11 +193,13 @@ def _process_one_candidate(
         is_finalization_round=True,
         model=model,
         reasoning_effort=reasoning_effort,
+        visual_log_sent_dir=visual_log_sent_dir,
+        visual_log_candidate_id=candidate_id,
     )
     _write_json(output_dir / f"{candidate_id}_round2.json", round2.model_dump())
 
     if visual_log_dir is not None:
-        _dump_visual_log(visual_log_dir, candidate_id, pool_images)
+        dump_visual_log(visual_log_dir, candidate_id, pool_images)
 
     logger.info(
         "module3 candidate=%s done total_score=%.2f claim_1_score=%.2f elapsed_ms=%d",
@@ -340,39 +347,6 @@ def _fetch_new_evidence(
         if len(pages) >= max_pages:
             break
     return pages, images
-
-
-def _dump_visual_log(
-    visual_log_dir: Path,
-    candidate_id: str,
-    fetched_images: list[dict],
-) -> None:
-    """同 module 2：记录该候选 round 2 看到的最终图集合，便于审计 vision 判定。"""
-    if not fetched_images:
-        return
-    cand_dir = visual_log_dir / candidate_id
-    cand_dir.mkdir(parents=True, exist_ok=True)
-    manifest: list[dict] = []
-    for idx, img in enumerate(fetched_images):
-        png = img.get("png")
-        if not isinstance(png, (bytes, bytearray)):
-            continue
-        png_bytes = bytes(png)
-        h = png_hash(png_bytes)
-        filename = f"img_{idx:02d}_{h}.png"
-        (cand_dir / filename).write_bytes(png_bytes)
-        manifest.append({
-            "index": idx,
-            "filename": filename,
-            "src_url": img.get("url", ""),
-            "alt_or_title": img.get("title", ""),
-            "size_bytes": len(png_bytes),
-            "sha256_prefix": h,
-        })
-    (cand_dir / "manifest.json").write_text(
-        json.dumps({"candidate_id": candidate_id, "images": manifest}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
 
 
 def load_task_package(path: Path) -> TaskPackage:
