@@ -43,7 +43,7 @@ class FeatureComparison(BaseModel):
     # module two's existing output stays schema-compatible.
     suggested_followup_queries: list[str] = Field(default_factory=list, max_length=5)
     # 模块三 round 2 终判时，对权 1 中 status ∈ {可能满足, 证据不足} 的特征
-    # 必填：写清"还缺什么 + 去哪找 + 下一步搜索建议（具体 query 字串）"。
+    # 必填：两行结构 "还缺：... / 下一步建议：去 XX 网站搜 XX"。
     # 模块四 report 直接复用这个字段写"证据缺口与下一步搜索建议"段落，避免
     # 让 LLM 在生成报告时再临场造 query。默认空字符串。
     evidence_gap_brief: str = ""

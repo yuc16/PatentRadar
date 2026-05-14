@@ -38,7 +38,7 @@
 
 1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version`（产品介绍）/ `total_score`，上市时间 vs 专利申请日的对比。
 2. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 的每条 feature 是「明确满足/可能满足/证据不足/明确不满足」，重点列出证据缺口（status ∈ {证据不足, 可能满足}）的 feature_id 和缺口原因。
-3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（按缺口 feature 各列 1 条 bullet）：**优先复用** `top_competitors[0].claim_charts[claim_no==1].comparisons[*].evidence_gap_brief` 字段（模块三 round 2 已经给每条权 1 缺口 feature 写好"还缺/可去/下一步建议"三行）。
+3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（按缺口 feature 各列 1 条 bullet）：**优先复用** `top_competitors[0].claim_charts[claim_no==1].comparisons[*].evidence_gap_brief` 字段（模块三 round 2 已经给每条权 1 缺口 feature 写好"还缺 / 下一步建议"两行）。
    
    每条 bullet 形如：
    > 「**C1-FX（XX 特征）**：<evidence_gap_brief 内容，可适度精简换行>」

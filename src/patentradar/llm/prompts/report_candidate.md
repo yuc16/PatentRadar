@@ -39,7 +39,7 @@
 ##### 该候选的证据缺口（如有；只针对权 1）
 
 只枚举**权 1**中 status ∈ {证据不足, 可能满足} 的 feature。**直接复用**
-`evidence_gap_brief` 字段（模块三 round 2 已写好"还缺/可去/下一步建议"三行），每条 feature 形如：
+`evidence_gap_brief` 字段（模块三 round 2 已写好"还缺 / 下一步建议"两行），每条 feature 形如：
 
 > **C1-FX（XX 特征）**：<evidence_gap_brief 内容，原样或最多换行精简>
 
