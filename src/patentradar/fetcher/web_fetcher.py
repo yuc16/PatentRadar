@@ -24,8 +24,10 @@ from .pdf import extract_pdf_evidence
 logger = logging.getLogger(__name__)
 
 _USER_AGENT = "patent-radar (python)"
-# HTML 图片抽取上限：每 page 最多 1 张图，避免文章页 3 张同 alt 配图把噪声拉满
-_HTML_IMG_TOP_K = 1
+# HTML 图片抽取上限：每 page 最多 3 张图。
+# 配合 alt 去重（同 alt 只保留 score 最高的）—— 文章页 3 张同 alt 配图自然收敛
+# 为 1 张；产品页 5+ 张不同 alt 的图（主图/尺寸图/拆解图/应用图）能保留前 3。
+_HTML_IMG_TOP_K = 3
 _HTML_IMG_MAX_BYTES = 2 * 1024 * 1024  # 2MB 单图上限，超大图（横幅 banner）直接跳过
 _HTML_IMG_MIN_DIM = 200  # 最短边 < 200px 视为 icon / 小图，跳过
 # URL 路径出现这些片段时加 +2 分：泛产品/规格/拆解类
