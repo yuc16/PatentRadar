@@ -1,0 +1,658 @@
+{
+  "candidate": {
+    "candidate_id": "P03",
+    "company": "深蓝汽车",
+    "company_en": "Deepal Automobile",
+    "product_name": "深蓝S7 15.6英寸向日葵屏",
+    "product_name_en": "Deepal S7 15.6-inch sunflower screen",
+    "product_version": "S7搭载15.6英寸向日葵屏，采用无极档位悬浮屏技术，能够随场景自动执行偏转运动，左右旋转幅度达15°。支持手动、语音指令“向左转/向右转”及智能模式交互。",
+    "market": "中国新能源SUV智能座舱量产车型",
+    "reason_for_deep_dive": "该产品公开了车载中控显示终端在车辆宽度方向的左右偏转角度和电动/智能控制方式，命中C1-F2。后续应聚焦屏幕背部执行机构，验证其安装支架与旋转件之间是否采用多个凸起/槽的一一配合及同步转动结构。",
+    "source_result_ids": [
+      "brave-Q10-05",
+      "tavily-Q10-02",
+      "brave-Q10-03"
+    ],
+    "source_urls": [
+      "https://aikahao.xcar.com.cn/item/1677501.html",
+      "https://www.sohu.com/a/683912195_121124485",
+      "https://hj.pcauto.com.cn/article/2197997"
+    ],
+    "initial_evidence_summary": "摘要显示：深蓝S7中控屏为15.6英寸向日葵屏，左右旋转幅度15°，采用无极档位悬浮屏技术；可随场景自动偏转，并支持手动、语音、智能模式；太平洋号摘要还称可在中控屏上操作旋转到最右/最左。"
+  },
+  "launch_date": "2023年6月25日正式上市，计划2023年6月30日开启交付；此前2023年5月20日开启预订",
+  "launch_date_evidence": [
+    {
+      "url": "https://chejiahao.m.autohome.com.cn/info/12807518?isfrom=pc",
+      "title": "搭载零重力座椅，15.6英寸向日葵大屏，14.99万起售，深蓝S7上市",
+      "source_name": "汽车之家车家号",
+      "snippet": "6月25日，深蓝S7迎来了正式上市……新车计划将于6月30正式开启交付。"
+    },
+    {
+      "url": "http://www.news.cn/auto/20230522/4d3500465c394534acab1ce747907a21/c.html",
+      "title": "深蓝S7 16.99万起开启先享预订",
+      "source_name": "新华网",
+      "snippet": "5月20日，深蓝汽车旗下首款中型SUV——深蓝S7正式开启先享预订，官方先享预订价格16.99-23.99万元。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开上市、交付时间均晚于专利申请日2019-03-28；现有公开证据未出现与权利要求1任一技术特征直接矛盾的结构或参数。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种显示终端的执行机构",
+          "competitor_feature": "深蓝S7/Deepal S07的15.6英寸向日葵中控屏支持电动/自动/电机化左右旋转，公开用户手册和媒体评测均说明存在“屏幕旋转调节”“motorised multimedia display”等功能；由此可严谨推知屏幕后方存在用于执行显示终端旋转动作的执行机构，但公开资料未直接展示该机构本体。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+              "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+              "source_name": "太平洋号",
+              "snippet": "标题和正文称深蓝S7配备15.6英寸中控大屏，支持“电动旋转”，可像向日葵一样旋转。"
+            },
+            {
+              "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+              "title": "DEEPALS07UserManual_En.pdf",
+              "source_name": "Changan Europe",
+              "snippet": "User Manual片段列出Screen rotation adjustment，可在Settings-Cabin-Screen Rotation中校准中央控制显示屏旋转角度和位置。"
+            },
+            {
+              "url": "https://www.autocar.co.uk/car-review/changan/deepal-s07",
+              "title": "Tested: 2026 Changan Deepal S07 - Full review, price & features",
+              "source_name": "Autocar",
+              "snippet": "评测称S07的“sunflower” screen属于motorised multimedia display，可向左或向右pivot by 15deg。"
+            }
+          ],
+          "reasoning": "电动/电机化旋转屏通常必须有执行旋转动作的机构，且公开用户手册确认有屏幕旋转调节与校准功能；但未见公开拆解、维修图或零件图直接显示执行机构实物，因此保守判为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：执行机构实物/零件图；现有证据仅证明屏幕可电动旋转。\n可去：原厂维修手册，屏幕总成拆车件照片，拆解视频\n下一步建议：查畅易/精通汽修或拆车件商家，找中控屏总成背面图。"
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+          "competitor_feature": "深蓝S7的15.6英寸向日葵中控屏位于车辆中控区域，公开资料称其左右旋转幅度达15°；用户手册/用车说明显示可通过中控屏滑条、左/中/右快捷键、语音控制等方式使中控显示屏向主驾侧或副驾侧旋转，即沿车辆宽度方向左右转动。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+              "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+              "source_name": "爱卡汽车",
+              "snippet": "新车中控屏选用了15.6英寸向日葵屏，能够随场景自动执行偏转运动，左右旋转幅度达15°，并提供“向左转”“向右转”语音交互。"
+            },
+            {
+              "url": "https://hao.yiche.com/wenzhang/83551311",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "易车",
+              "snippet": "手动调节可使中控显示屏向主驾侧或副驾侧旋转；快捷开关可点击左、中、右；语音控制可控制中控显示屏执行旋转功能。"
+            },
+            {
+              "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+              "title": "DEEPALS07UserManual_En.pdf",
+              "source_name": "Changan Europe",
+              "snippet": "用户手册Screen rotation adjustment章节说明可在Settings-Cabin-Screen Rotation中调整中央控制显示屏旋转角度和位置。"
+            }
+          ],
+          "reasoning": "“主驾侧/副驾侧”“左/中/右”“向左转/向右转”均对应车辆横向宽度方向；多个公开来源直接披露深蓝S7中控屏可左右约15°旋转，故明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+          "competitor_feature": "现有公开证据仅证明深蓝S7向日葵屏可电动/自动左右旋转，并有屏幕旋转调节、居中和校准功能；未公开屏幕背部执行机构是否包含安装支架、旋转盘，以及二者之间是否有配合槽/配合凸起嵌入并带动同步转动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hao.yiche.com/wenzhang/83551311",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "易车",
+              "snippet": "页面说明中控屏幕旋转的手动、快捷和语音控制方式，但未披露安装支架、旋转盘、凸起/槽结构。"
+            },
+            {
+              "url": "https://www.qxbsk.com/10394.html",
+              "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+              "source_name": "汽修帮手资料库",
+              "snippet": "检索到深蓝S7/S07维修手册和电路图条目，但页面提示需开通会员阅读，公开片段未显示中控屏执行机构结构。"
+            },
+            {
+              "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+              "title": "2023年长安深蓝S7维修手册电路图",
+              "source_name": "精通维修下载",
+              "snippet": "页面称资料为2023年长安深蓝S7维修手册电路图，需到精通汽修在线平台查阅，公开页未提供屏幕总成结构图。"
+            }
+          ],
+          "reasoning": "该特征要求具体机械连接结构，远超“屏幕能旋转”的功能披露。补搜得到的维修手册线索为付费/目录级，未能公开确认支架、旋转盘和凸槽嵌合关系。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：支架、旋转盘及凸槽嵌合图；现有资料只到功能层面。\n可去：原厂维修手册，屏幕总成爆炸图，事故拆车件实拍\n下一步建议：向畅易/精通汽修查询“中控显示屏总成拆装”。"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+          "competitor_feature": "未发现深蓝S7向日葵屏执行机构的公开拆解图、零件图或维修图；现有资料没有披露配合凸起、配合槽的数量，也没有多个凸起与多个槽一一对应配合的文字或图示证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/12705702",
+              "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+              "source_name": "汽车之家车家号",
+              "snippet": "页面披露向日葵屏左右旋转15°及三种交互方式，但未披露旋转机构内配合凸起/配合槽数量或一一对应关系。"
+            },
+            {
+              "url": "https://www.changaneurope.com/Portals/3/adam/ContentBlocks/Q4ca1QoqKUOMsMnHB0-j4A/Path/CHANGAN%20DEEPAL%20S07%20DISMANTLING%20MANUAL.pdf",
+              "title": "CHANGAN DEEPAL S07 Dismantling Manual",
+              "source_name": "Changan Europe",
+              "snippet": "公开片段主要涉及Sunshade、Dashboard Assembly等拆解项目，未在可见片段中披露向日葵中控屏旋转执行机构的凸起/槽数量。"
+            }
+          ],
+          "reasoning": "多个凸起/槽及一一对应关系必须依赖内部结构图或拆解实拍。现有配置宣传、用户手册和拆解手册片段均未进入该结构细节，无法推断。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：凸起/槽数量和一一对应关系；功能报道不能推导数量。\n可去：屏幕旋转机构拆解视频，维修手册爆炸图，供应商图纸\n下一步建议：检索或购买中控屏旋转机构拆解/零件号资料。"
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+          "competitor_feature": "公开资料未披露深蓝S7向日葵屏背部是否存在多个配合凸起，也未披露这些凸起相对于显示屏长边/长度方向的排列、间距或安装位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/82421",
+              "title": "智能化没有明显短板 深蓝公布 S7 更多配置细节",
+              "source_name": "新出行",
+              "snippet": "图示证据：车内照片可见中控显示屏安装在仪表台上，但图片未显示屏幕后部执行机构、凸起或沿显示终端长度方向的排列。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/97026",
+              "title": "1000公里使用感受，深蓝S7向日葵屏使用技巧",
+              "source_name": "新出行",
+              "snippet": "文章称官方宣称向日葵屏可左右最大旋转15°，但用车体验图片主要为屏幕正面UI，未显示背部连接凸起及其排列方向。"
+            }
+          ],
+          "reasoning": "即使能确认屏幕左右旋转，也不能得出“多个凸起沿显示终端长度方向间隔设置”。现有图文均为屏幕正面或功能界面，没有背部结构证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：凸起沿屏幕长度方向的排列图；现有照片仅为正面UI。\n可去：中控屏总成背面照片，拆车件商家图库，维修拆装图\n下一步建议：联系老陈拆车件等商家索要S7中控屏总成背面图。"
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+          "competitor_feature": "深蓝S7公开资料显示中控屏可作为整体左右偏转，并有电动旋转、居中和校准控制；但未披露内部是否为旋转盘带动多个配合凸起使安装支架同步转动，也未披露多个凸起之间不存在相对运动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "http://auto.cyol.com/gb/articles/2023-06/10/content_VYZeNVfeX9.html",
+              "title": "发力“第三生活空间”，深蓝S7创造智能座舱新体验",
+              "source_name": "中青在线",
+              "snippet": "15.6英寸向日葵屏采用无极档位悬浮屏技术，能够随场景自动执行偏转运动，左右旋转幅度达15°；未说明旋转盘、多个凸起或相对运动状态。"
+            },
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/12707272",
+              "title": "旋转中控/全息抬显/副驾屏/领航智驾，深蓝S7更多配置信息曝光",
+              "source_name": "汽车之家车家号",
+              "snippet": "15.6英寸向日葵屏可随场景自行偏转最大达15°；智能模式下屏幕自动转向开门方向，未公开内部同步传动结构。"
+            },
+            {
+              "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+              "title": "DEEPALS07UserManual_En.pdf",
+              "source_name": "Changan Europe",
+              "snippet": "用户手册仅公开屏幕旋转调节、居中和校准操作，未公开旋转盘带动多个凸起同步转动的机械关系。"
+            }
+          ],
+          "reasoning": "整体屏幕偏转可由多种机构实现，不能反推必须采用“旋转盘+多个凸起同步转动且凸起间无相对运动”。缺少运动副结构或拆解证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：旋转盘带动多个凸起同步运动的机构/运动学证据。\n可去：机构拆解视频，维修手册动态图/拆装步骤，供应商专利\n下一步建议：围绕“中控屏旋转机构总成”查拆解和供应商资料。"
+        }
+      ],
+      "claim_score": 50.0
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+          "competitor_feature": "未发现深蓝S7向日葵屏执行机构的公开结构图；无法确认是否存在旋转盘和安装支架，更无法确认配合槽位于旋转盘、配合凸起位于安装支架这一特定布置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hao.yiche.com/wenzhang/83551311",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "易车",
+              "snippet": "公开内容仅说明中控显示屏向主驾侧或副驾侧旋转、居中和校准，未披露旋转盘/安装支架及凸槽位置。"
+            },
+            {
+              "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+              "title": "2023年长安深蓝S7维修手册电路图",
+              "source_name": "精通维修下载",
+              "snippet": "维修手册电路图页面为查阅入口，公开片段未提供中控屏旋转机构的配合槽/配合凸起位置。"
+            }
+          ],
+          "reasoning": "该从属特征限定凸槽分别位于哪个构件上；现有证据不显示内部构件，故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+          "competitor_feature": "深蓝S7中控屏为电动/电机化旋转屏，可推知存在某种驱动单元；但公开证据未证明该驱动单元与“旋转盘”配合，也未证明其驱动旋转盘转动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+              "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+              "source_name": "太平洋号",
+              "snippet": "文章称深蓝S7向日葵屏支持电动旋转，但未披露驱动单元与旋转盘的配合结构。"
+            },
+            {
+              "url": "https://www.autocar.co.uk/car-review/changan/deepal-s07",
+              "title": "Tested: 2026 Changan Deepal S07 - Full review, price & features",
+              "source_name": "Autocar",
+              "snippet": "评测称该sunflower screen属于motorised multimedia display，可左右pivot by 15deg；未公开驱动单元与旋转盘。"
+            }
+          ],
+          "reasoning": "“电动旋转”支持存在驱动源的推断，但本特征还要求其与旋转盘配合。旋转盘本身尚无公开证据，故不能判可能满足整体特征。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+          "competitor_feature": "现有证据未披露深蓝S7向日葵屏驱动单元的内部组成；不能确认是否有动力源、减速单元，也不能确认动力源—减速单元—旋转盘的连接关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+              "title": "DEEPALS07UserManual_En.pdf",
+              "source_name": "Changan Europe",
+              "snippet": "用户手册片段公开屏幕旋转设置与校准，但不包含驱动单元、动力源、减速单元或传动连接结构。"
+            },
+            {
+              "url": "https://www.qxbsk.com/10394.html",
+              "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+              "source_name": "汽修帮手资料库",
+              "snippet": "维修手册/电路图条目存在，但公开页面未提供中控屏旋转驱动单元结构。"
+            }
+          ],
+          "reasoning": "该特征为传动链结构限定；功能性旋转资料无法证明是否设置减速机构及其输出端连接旋转盘。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+          "competitor_feature": "未发现深蓝S7向日葵屏旋转机构的齿轮箱、蜗杆、蜗轮或传动机构公开图文；无法确认其减速单元是否为蜗杆齿轮传动机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+              "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+              "source_name": "太平洋号",
+              "snippet": "公开内容说明屏幕电动旋转和使用场景，但不披露减速单元或蜗杆齿轮传动机构。"
+            },
+            {
+              "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+              "title": "2023年长安深蓝S7维修手册电路图",
+              "source_name": "精通维修下载",
+              "snippet": "公开入口未显示中控屏旋转电机、减速箱或蜗杆齿轮结构。"
+            }
+          ],
+          "reasoning": "蜗杆齿轮传动需要拆解、零件图或维修手册明确显示。现有证据无传动机构细节。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+          "competitor_feature": "深蓝S7公开界面有中控屏幕旋转、左/中/右位置、旋转屏居中和校准功能，说明系统可控制或校准旋转角度；但未公开旋转盘上的第一定位结构、驱动单元壳体上的第二定位结构及二者机械配合限位。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hao.yiche.com/wenzhang/83551311",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "易车",
+              "snippet": "页面说明可通过滑条、左/中/右快捷键、旋转屏居中、旋转屏校准来调节中控显示屏旋转角度。"
+            },
+            {
+              "url": "https://m.dongchedi.com/article/7252876305597891127",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "懂车帝",
+              "snippet": "页面称快捷开关可将中控显示屏一键调节至左极限位置、居中位置、右极限位置；未披露机械限位结构。"
+            }
+          ],
+          "reasoning": "左/右极限位置可以由软件、传感器、机械限位或电机控制实现。公开证据不显示权利要求所述两个定位结构及其配合，故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+          "competitor_feature": "未发现深蓝S7向日葵屏执行机构的公开截面图或拆解图；无法确认是否存在旋转盘安装轴，更无法确认该安装轴是否穿过驱动单元。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.changaneurope.com/Portals/3/adam/ContentBlocks/Q4ca1QoqKUOMsMnHB0-j4A/Path/CHANGAN%20DEEPAL%20S07%20DISMANTLING%20MANUAL.pdf",
+              "title": "CHANGAN DEEPAL S07 Dismantling Manual",
+              "source_name": "Changan Europe",
+              "snippet": "公开片段主要为车辆拆解回收项目和Dashboard Assembly等内容，未见中控屏旋转盘安装轴结构。"
+            },
+            {
+              "url": "https://www.qxbsk.com/10394.html",
+              "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+              "source_name": "汽修帮手资料库",
+              "snippet": "维修手册/电路图条目存在但公开片段未披露中控屏旋转执行机构的安装轴。"
+            }
+          ],
+          "reasoning": "安装轴及其穿过驱动单元属于内部轴系结构，公开功能和UI资料无法证明。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+          "competitor_feature": "未发现深蓝S7向日葵屏旋转机构中存在弹性件/弹簧、安装轴轴向限位件或弹性件抵压驱动单元壳体的公开证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+              "title": "2023年长安深蓝S7维修手册电路图",
+              "source_name": "精通维修下载",
+              "snippet": "维修手册入口未公开中控屏执行机构的轴向限位件、弹性件或壳体抵压关系。"
+            },
+            {
+              "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+              "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+              "source_name": "太平洋号",
+              "snippet": "文章说明屏幕可电动旋转及使用方式，但未披露弹性件或轴向预紧结构。"
+            }
+          ],
+          "reasoning": "该特征要求非常具体的弹性件套设和两端抵压关系，必须有拆解或结构图；现有公开证据完全未覆盖。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述安装轴为中空结构",
+          "competitor_feature": "未发现深蓝S7向日葵屏执行机构安装轴的公开证据；无法确认是否存在安装轴，更无法确认该安装轴是否为中空结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.changaneurope.com/Portals/3/adam/ContentBlocks/Q4ca1QoqKUOMsMnHB0-j4A/Path/CHANGAN%20DEEPAL%20S07%20DISMANTLING%20MANUAL.pdf",
+              "title": "CHANGAN DEEPAL S07 Dismantling Manual",
+              "source_name": "Changan Europe",
+              "snippet": "公开片段未披露中控屏旋转机构安装轴，更未披露安装轴是否中空。"
+            },
+            {
+              "url": "https://www.qxbsk.com/10394.html",
+              "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+              "source_name": "汽修帮手资料库",
+              "snippet": "维修手册条目为付费/权限内容，公开片段未显示中控屏安装轴截面结构。"
+            }
+          ],
+          "reasoning": "安装轴中空属于截面/内部结构特征，现有证据无可比对内容。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "一种车载显示终端",
+          "competitor_feature": "深蓝S7/S07配备车内15.6英寸中控显示屏/向日葵屏，属于安装在车辆座舱内的车载显示终端。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+              "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+              "source_name": "爱卡汽车",
+              "snippet": "新车中控屏选用了15.6英寸向日葵屏。"
+            },
+            {
+              "url": "https://www.deepal.com.au/media/hi3fcekx/deepal_s07_specifications_sheet.pdf",
+              "title": "EQUIPMENT & TECHNICAL SPECIFICATIONS Version 1:0 DEEPAL S07",
+              "source_name": "Deepal Australia",
+              "snippet": "规格表检索片段显示DEEPAL S07 features & technical specifications，包含车载座舱配置。"
+            }
+          ],
+          "reasoning": "公开资料直接说明该车型中控区域配备15.6英寸显示屏，明确属于车载显示终端。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C9-F2",
+          "patent_feature": "包括：显示终端；执行机构",
+          "competitor_feature": "深蓝S7明确包括15.6英寸中控显示屏；其屏幕为电动/电机化左右旋转，故可推知包含某种驱动显示屏旋转的执行机构，但执行机构具体结构未公开。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+              "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+              "source_name": "太平洋号",
+              "snippet": "深蓝S7配备15.6英寸中控大屏，主打功能是可以像向日葵一样旋转，并支持电动旋转。"
+            },
+            {
+              "url": "https://www.autocar.co.uk/car-review/changan/deepal-s07",
+              "title": "Tested: 2026 Changan Deepal S07 - Full review, price & features",
+              "source_name": "Autocar",
+              "snippet": "评测称S07的sunflower screen为motorised multimedia display，可向左右各15°偏转。"
+            }
+          ],
+          "reasoning": "显示终端有直接证据；执行机构由电动/电机化旋转功能可合理推知，但未公开机构本体，因此判可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C9-F3",
+          "patent_feature": "所述显示终端安装于所述执行机构",
+          "competitor_feature": "深蓝S7中控屏能以整屏形式左右偏转，说明显示屏至少安装在某种承载/驱动结构上；但公开资料未显示屏幕与执行机构的安装界面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://hao.yiche.com/wenzhang/83551311",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "易车",
+              "snippet": "手动调节可使中控显示屏向主驾侧或副驾侧旋转，并可通过旋转屏居中、校准功能调整。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/82421",
+              "title": "智能化没有明显短板 深蓝公布 S7 更多配置细节",
+              "source_name": "新出行",
+              "snippet": "图示证据：车内照片可见中控显示屏安装在仪表台中部，未显示背部安装界面。"
+            }
+          ],
+          "reasoning": "整屏可控旋转要求屏幕与某个支承/执行结构连接；但没有结构图直接显示安装关系，故保守判可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C9-F4",
+          "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+          "competitor_feature": "深蓝S7中控显示屏可向主驾侧或副驾侧旋转，可通过左/中/右快捷键、语音和智能模式控制，左右旋转幅度约15°。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hao.yiche.com/wenzhang/83551311",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "易车",
+              "snippet": "可在中控显示屏上左右滑动“中控屏幕旋转”进度条，使中控显示屏向主驾侧或副驾侧旋转；快捷开关为左、中、右。"
+            },
+            {
+              "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+              "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+              "source_name": "爱卡汽车",
+              "snippet": "15.6英寸向日葵屏能够随场景自动执行偏转运动，左右旋转幅度达15°，并提供“向左转”“向右转”语音指令。"
+            }
+          ],
+          "reasoning": "公开资料直接披露车载显示屏可被控制向左/向右旋转，且为电动/自动动作，满足该功能性特征。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 90.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "一种车辆",
+          "competitor_feature": "深蓝S7/Deepal S07为深蓝汽车生产销售的中型SUV车辆。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://chejiahao.m.autohome.com.cn/info/12807518?isfrom=pc",
+              "title": "搭载零重力座椅，15.6英寸向日葵大屏，14.99万起售，深蓝S7上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "6月25日，深蓝S7正式上市，定位新能源SUV车型。"
+            },
+            {
+              "url": "http://www.news.cn/auto/20230522/4d3500465c394534acab1ce747907a21/c.html",
+              "title": "深蓝S7 16.99万起开启先享预订",
+              "source_name": "新华网",
+              "snippet": "深蓝汽车旗下首款中型SUV——深蓝S7正式开启先享预订。"
+            }
+          ],
+          "reasoning": "深蓝S7是公开上市销售的中型SUV，车辆属性明确。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F2",
+          "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+          "competitor_feature": "深蓝S7车辆包括15.6英寸向日葵中控显示屏，该车载显示终端可电动/自动左右旋转；因此至少可能包括对应执行机构和车载显示终端。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+              "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+              "source_name": "爱卡汽车",
+              "snippet": "新车中控屏选用了15.6英寸向日葵屏，能够自动执行偏转运动，左右旋转幅度达15°。"
+            },
+            {
+              "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+              "title": "DEEPALS07UserManual_En.pdf",
+              "source_name": "Changan Europe",
+              "snippet": "用户手册列出Screen rotation adjustment，说明车辆中控显示屏具备旋转设置、居中和校准功能。"
+            }
+          ],
+          "reasoning": "车载显示终端的存在明确；其作为权利要求9所述完整车载显示终端仍受内部执行机构证据限制，故整体判可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F3",
+          "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+          "competitor_feature": "深蓝S7中控屏安装在车辆中控台/仪表台区域并可左右旋转，可推知其旋转承载机构固定在车体或仪表板结构上，显示屏安装在该机构上；但公开资料未展示具体车体安装点或执行机构安装结构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/82421",
+              "title": "智能化没有明显短板 深蓝公布 S7 更多配置细节",
+              "source_name": "新出行",
+              "snippet": "图示证据：车内照片可见中控显示屏安装在仪表台区域，但未显示背部执行机构与车体固定点。"
+            },
+            {
+              "url": "https://hao.yiche.com/wenzhang/83551311",
+              "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+              "source_name": "易车",
+              "snippet": "页面和图示显示中控屏可在车内设置界面调节旋转方向并居中/校准，未展示安装支架与车体连接结构。"
+            }
+          ],
+          "reasoning": "车辆中可旋转中控屏通常必须固定于仪表板/车体结构并承载显示屏，但现有证据缺少安装点实物或图纸，故保守判可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 86.67
+    }
+  ],
+  "claim_1_score": 50.0,
+  "total_score": 50.0,
+  "searched_queries": [
+    "深蓝汽车 深蓝S7 15.6英寸向日葵屏 规格书 参数",
+    "深蓝S7 向日葵屏 执行机构 电机 结构",
+    "深蓝S7 向日葵屏 拆解 旋转机构 安装支架 旋转盘",
+    "深蓝S7 中控屏 旋转机构 凸起 槽 配合 拆解",
+    "深蓝S7 向日葵屏 供应商 旋转屏 模组 结构 图纸",
+    "深蓝S7 向日葵屏 屏幕总成 旋转执行器 维修手册",
+    "Deepal S7 sunflower screen actuator teardown rotating display",
+    "长安深蓝S7 中控屏 旋转电机 总成 零件号"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

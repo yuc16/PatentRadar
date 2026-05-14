@@ -1,0 +1,218 @@
+{
+  "candidate": {
+    "candidate_id": "P06",
+    "company": "特斯拉",
+    "company_en": "Tesla",
+    "product_name": "Model S / Model X 17英寸可自动左右偏转中控屏",
+    "product_name_en": "Tesla Model S / Model X 17-inch auto-swiveling center display",
+    "product_version": "特斯拉Model S/X新款座舱配备大尺寸水平中控显示屏，中文报道称其可自动旋转/左右角度旋转，17英寸大屏可通过转动向司机或车内乘客倾斜。",
+    "market": "中国进口高端电动车智能座舱市场",
+    "reason_for_deep_dive": "该屏幕不是横竖屏切换，而是向驾驶员或乘客方向左右偏转，和C1-F2的宽度方向左/右转动更接近。需重点深挖屏幕背部执行机构是否通过旋转盘与安装支架的凸起/槽配合来实现同步转动和定位。",
+    "source_result_ids": [
+      "brave-Q06-04",
+      "brave-Q08-04"
+    ],
+    "source_urls": [
+      "https://www.sohu.com/a/543916492_222118",
+      "https://zhuanlan.zhihu.com/p/509534289"
+    ],
+    "initial_evidence_summary": "摘要显示：特斯拉Model S/X功能升级，中控大屏可自动旋转；报道称其17英寸大屏幕可以通过转动方式向司机或车内乘客倾斜，并指出特斯拉为左右角度旋转，区别于横屏/竖屏旋转。"
+  },
+  "launch_date": "2022年4月最后一周生产，2022年5月4日公开报道已配备电动旋转功能",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.ithome.com/0/616/514.htm",
+      "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+      "source_name": "IT之家",
+      "snippet": "2022/5/4报道：特斯拉对 Model S 和 Model X 车型进行了更新，为中控屏幕配备了新的电动旋转功能；车主提到该车是在4月的最后一周生产的。"
+    },
+    {
+      "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+      "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+      "source_name": "cnBeta",
+      "snippet": "2022年05月04日报道：近日对 Model S|X 车型的升级中，特斯拉为中控屏提供了电动旋转功能；Li 提到该车是在4月最后一周生产的。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：公开记录显示涉案可自动左右偏转中控屏的实际装车/生产约为2022年4月最后一周，晚于专利申请日2019-03-28；未发现明确不满足的公开结构证据。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种显示终端的执行机构",
+      "competitor_feature": "Model S/X的17英寸中央显示屏被公开报道配备“新的电动旋转功能”/“电动旋转机构”，属于用于驱动显示终端运动的执行机构。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/616/514.htm",
+          "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "特斯拉对 Model S 和 Model X 车型进行了更新，为中控屏幕配备了新的电动旋转功能。"
+        },
+        {
+          "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+          "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+          "source_name": "cnBeta",
+          "snippet": "近日对 Model S|X 车型的升级中，特斯拉为中控屏提供了电动旋转功能。"
+        },
+        {
+          "url": "https://icarcompanys.com/%e5%a4%96%e9%9b%bb%e5%a0%b1%e5%b0%8e/%e7%89%b9%e6%96%af%e6%8b%89%e6%96%b0%e6%ac%be%e3%80%8amodel-s-model-x%e3%80%8b%e8%b2%bc%e5%bf%83%e9%9a%b1%e8%97%8f%e5%8a%9f%e8%83%bd%e6%9b%9d%e5%85%89-%e3%80%8atesla%e3%80%8b%e6%96%b0%e6%ac%be",
+          "title": "特斯拉新款Model S / Model X貼心隱藏功能曝光",
+          "source_name": "汽車資訊",
+          "snippet": "最新出廠的Model S與Model X已經悄悄為中控螢幕裝上電動旋轉機構。"
+        }
+      ],
+      "reasoning": "多家独立媒体直接称Model S/X中控屏配备电动旋转功能/机构，可驱动显示屏运动，足以对应显示终端执行机构。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+      "competitor_feature": "公开报道称该中央显示屏可朝主驾驶位或副驾驶位方向旋转/水平倾斜，可在向左倾斜、置中、向右倾斜模式中切换；这对应车辆宽度方向上的左右偏转。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/616/514.htm",
+          "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "旋转功能并不是像比亚迪那种水平或垂直旋转，而是向主驾或副驾水平倾斜。"
+        },
+        {
+          "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+          "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+          "source_name": "cnBeta",
+          "snippet": "电动旋转功能可以让中控大屏朝着主驾驶位和副驾驶位方向旋转；屏幕更多地面向驾驶员或完全面向前排乘客。"
+        },
+        {
+          "url": "https://tslcyh.cn/4060.html",
+          "title": "新款特斯拉Model S/X中控屏“左右调节”功能回归 - 数字指南",
+          "source_name": "数字指南",
+          "snippet": "可透过中控屏幕的UI界面调整屏幕显示角度；可在向左倾斜、置中、向右倾斜等三种模式中任意切换。"
+        },
+        {
+          "url": "https://aikahao.xcar.com.cn/item/957181.html",
+          "title": "特斯拉Model S最新消息，可旋转中控大屏，优化使用体验",
+          "source_name": "爱卡汽车",
+          "snippet": "图示证据：车外/侧向照片显示新款Model S中控屏相对仪表台存在左右偏转姿态；正文称17英寸中央触控屏能向左右两侧旋转。"
+        }
+      ],
+      "reasoning": "证据直接描述向主/副驾水平倾斜、左右模式切换；主副驾方向即车辆横向宽度方向，故该功能满足左右转动。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+      "competitor_feature": "公开证据仅能确认Model S/X存在中控屏电动旋转功能及某种机械结构；未披露安装支架、旋转盘、配合槽/配合凸起及其伸入配合关系。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=-LJPgHXJnTE",
+          "title": "特斯拉Model S Plaid拆解分析！Tesla Model S Plaid Teardown Explained",
+          "source_name": "YouTube / Tavily摘要",
+          "snippet": "搜索摘要称：Sandy Munro团队拆解发现新款Model S屏幕倾斜调节功能的机械结构存在，但未给出旋转盘、槽、凸起的具体构造。"
+        },
+        {
+          "url": "https://aikahao.xcar.com.cn/item/957181.html",
+          "title": "特斯拉Model S最新消息，可旋转中控大屏，优化使用体验",
+          "source_name": "爱卡汽车",
+          "snippet": "图示证据：侧向照片可看到屏幕与仪表台之间存在支撑/连接部位，但无法辨认是否为旋转盘与安装支架的槽凸配合。"
+        }
+      ],
+      "reasoning": "“电动旋转”只能证明有驱动/支撑机构；权利要求要求的旋转盘、安装支架及槽凸嵌合结构未被文字或清晰拆解图公开。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+      "competitor_feature": "公开资料没有披露Model S/X屏幕旋转机构中存在多个配合凸起、多个配合槽，亦无一一对应配合的结构图或零件说明。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/616/514.htm",
+          "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "仅披露中控屏幕配备新的电动旋转功能、向主驾或副驾水平倾斜，未披露内部槽/凸起数量。"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-LJPgHXJnTE",
+          "title": "特斯拉Model S Plaid拆解分析！Tesla Model S Plaid Teardown Explained",
+          "source_name": "YouTube / Tavily摘要",
+          "snippet": "搜索摘要仅称屏幕倾斜调节功能的机械结构存在，没有说明多个凸起与多个槽的一一对应配合。"
+        }
+      ],
+      "reasoning": "已检索到的报道停留在功能层面；缺少零件图、维修手册或拆解细节，不能确认多个槽凸及一一对应关系。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+      "competitor_feature": "未见公开证据说明Model S/X旋转屏机构的凸起数量、位置或是否沿17英寸显示屏长度方向间隔布置。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://aikahao.xcar.com.cn/item/957181.html",
+          "title": "特斯拉Model S最新消息，可旋转中控大屏，优化使用体验",
+          "source_name": "爱卡汽车",
+          "snippet": "正文称17英寸中央触控屏能向左右两侧旋转；图片只能显示整屏倾斜外观，无法显示内部凸起布置。"
+        },
+        {
+          "url": "https://www.sohu.com/a/543916492_222118",
+          "title": "特斯拉 Model S / X 功能升级，中控大屏可自动旋转！",
+          "source_name": "搜狐汽车",
+          "snippet": "报道称17英寸大屏幕可通过转动方式向司机或车内乘客倾斜，旋转方式为左右角度旋转；未披露内部凸起位置。"
+        }
+      ],
+      "reasoning": "外观与功能报道不能观察内部槽凸的空间排布；没有拆解图显示沿显示屏长度方向的间隔设置。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+      "competitor_feature": "证据可确认屏幕整体左右电动偏转，但未公开旋转盘带动多个凸起、安装支架同步转动，以及多个凸起之间无相对运动的传动细节。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+          "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+          "source_name": "cnBeta",
+          "snippet": "报道称电动旋转功能使屏幕更多地面向驾驶员或完全面向前排乘客，但未披露旋转盘与多个凸起的同步传动。"
+        },
+        {
+          "url": "https://www.ithome.com/0/616/514.htm",
+          "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "仅说明Model S/X中央显示屏增加旋转功能、向主驾或副驾水平倾斜；未说明内部多个凸起之间是否不发生相对运动。"
+        }
+      ],
+      "reasoning": "整体屏幕可偏转不等同于特定旋转盘—多凸起同步传动；缺少机构运动副细节，无法判断“多个凸起不相对运动”。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 53.33,
+  "searched_queries": [
+    "Tesla refreshed Model S center screen swivel mechanism teardown mounting bracket rotating plate",
+    "特斯拉 Model S X 中控屏 电动旋转机构 拆解 支架 旋转盘",
+    "Tesla Model S X screen swivel motor assembly parts diagram slots pins grooves",
+    "特斯拉 Model S X 中控屏 旋转支架 零件图 凸起 槽",
+    "特斯拉 Model S / Model X 17英寸可自动左右偏转中控屏 规格书 参数",
+    "特斯拉 Model S / Model X 17英寸可自动左右偏转中控屏 拆解 结构",
+    "特斯拉 Model S / Model X 17英寸可自动左右偏转中控屏 上市 日期 发布"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

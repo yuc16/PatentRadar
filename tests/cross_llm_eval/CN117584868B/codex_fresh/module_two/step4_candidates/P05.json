@@ -1,0 +1,226 @@
+{
+  "candidate": {
+    "candidate_id": "P05",
+    "company": "极氪汽车",
+    "company_en": "ZEEKR",
+    "product_name": "焕新极氪001 16英寸3.5K Mini LED向日葵中控屏",
+    "product_name_en": "refreshed ZEEKR 001 16-inch 3.5K Mini LED sunflower center display",
+    "product_version": "焕新极氪001采用16英寸3.5K Mini LED向日葵中控屏，公开摘要称支持30°旋转。既有2025款/高配YOU版还公开过15.05英寸2.5K OLED向日葵屏，可向主驾或副驾一侧转动。",
+    "market": "中国高端纯电猎装车/轿车智能座舱量产车型",
+    "reason_for_deep_dive": "该车型公开了更大尺寸中控屏的左右旋转能力，直接落入权利要求关注的“车辆宽度方向左/右转动”场景。其高配/焕新版均强调向日葵旋转屏，适合查找维修手册、拆解视频或供应商资料以确认安装支架、旋转盘和多凸起/多槽同步配合。",
+    "source_result_ids": [
+      "tavily-Q21-01",
+      "tavily-Q21-02",
+      "bocha-Q21-01",
+      "brave-Q21-05"
+    ],
+    "source_urls": [
+      "https://www.xchuxing.com/article/160450",
+      "https://auto.news18a.com/news/storys_199894.html",
+      "https://www.pcauto.com.cn/wd/4050042.html",
+      "https://m.pcauto.com.cn/baike/786285"
+    ],
+    "initial_evidence_summary": "摘要显示：焕新极氪001中控屏为16英寸3.5K Mini LED，采用“向日葵”屏形式并支持30°旋转；另有摘要称2025款极氪001可选装向日葵旋转屏，向主驾侧偏转11°、副驾侧偏转17°，并支持1°为单位无级调节。"
+  },
+  "launch_date": "2025年10月11日正式上市（焕新/新一代极氪001）；2025款15.05英寸向日葵屏版本公开上市时间为2024年8月14日前后，均晚于2019-03-28",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.xchuxing.com/article/160450",
+      "title": "新出行图文详解 119期：动态试驾焕新版极氪 001_评测_新出行",
+      "source_name": "新出行",
+      "snippet": "“目前新车已经在10月11号正式上市，限时售价25.98-31.98万元，共推出4个车型版本。”"
+    },
+    {
+      "url": "https://m.diandong.com/news/166856.html",
+      "title": "限时25.98万元起，全能猎装标杆再升级，焕新极氪001上市 - 电动邦",
+      "source_name": "电动邦",
+      "snippet": "页面标题为“焕新极氪001上市”，摘要显示“发布于：2025-10-11”。"
+    },
+    {
+      "url": "https://share-m.kakamobi.com/m.toutiao.kakamobi.com/detail/?id=3200049",
+      "title": "座舱和智驾全面升级，2025款极氪001/极氪007",
+      "source_name": "懂车之道",
+      "snippet": "“2025款极氪001和2025款极氪007正式发布上市”，并称2025款极氪001可选装向日葵旋转屏。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：公开上市/发布日期均晚于专利申请日2019-03-28；现有公开证据亦未发现与任一技术特征直接矛盾的结构或数值。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种显示终端的执行机构",
+      "competitor_feature": "焕新/全新极氪001公开搭载“向日葵”中控屏；用户可通过四指左右滑动或车辆设置使中控显示屏摆动/转动。公开资料直接证明存在可转动显示终端，但未公开该执行机构本体名称、零件组成或供应商结构。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.xkb.com.cn/articleDetail/298929",
+          "title": "试驾全新极氪001 | 改款堪比换代，这车真的很香__新快网",
+          "source_name": "新快报",
+          "snippet": "“15.05英寸中控屏……具有‘向日葵’功能，用四指左右滑动，屏幕可以向驾驶员、正后以及副驾进行摆动，反应速度以及旋转速度都可以。”"
+        },
+        {
+          "url": "https://www.pcauto.com.cn/wd/4050042.html",
+          "title": "极氪001有旋转屏吗-太平洋汽车",
+          "source_name": "太平洋汽车",
+          "snippet": "“全新极氪001的高配YOU版配备了向日葵旋转屏……要实现屏幕旋转可通过车辆设置菜单操作。”"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/160450",
+          "title": "新出行图文详解 119期：动态试驾焕新版极氪 001_评测_新出行",
+          "source_name": "新出行",
+          "snippet": "焕新极氪001内饰升级摘要称中控屏换成16英寸3.5K Mini LED中控屏，并采用“向日葵”屏形式，支持30°旋转。"
+        }
+      ],
+      "reasoning": "多源公开资料证明该车中控显示屏可由手势/设置触发转动；要实现该运动通常需要显示终端执行/驱动机构。但证据未直接披露“执行机构”本体，故为严谨推定。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+      "competitor_feature": "2025款极氪001向日葵旋转屏可向主驾驶侧偏转11°、向副驾驶侧偏转17°，并支持1°为单位无级调节；试驾文章称可向驾驶员、正后及副驾摆动。主驾/副驾方向对应车辆宽度方向左右转动。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://m.pcauto.com.cn/baike/786285",
+          "title": "极氪001向日葵旋转",
+          "source_name": "太平洋汽车百科",
+          "snippet": "“向日葵旋转屏可灵活向驾驶侧偏转最大11°……向副驾侧最大偏转17°……还支持以1°为单位的无级调节。”"
+        },
+        {
+          "url": "https://www.pcauto.com.cn/wd/4050042.html",
+          "title": "极氪001有旋转屏吗-太平洋汽车",
+          "source_name": "太平洋汽车",
+          "snippet": "“2025款极氪001也可以选装向日葵旋转屏，能向主驾驶侧偏转11°……也能向副驾驶侧偏转17°。”"
+        },
+        {
+          "url": "https://www.xkb.com.cn/articleDetail/298929",
+          "title": "试驾全新极氪001 | 改款堪比换代，这车真的很香__新快网",
+          "source_name": "新快报",
+          "snippet": "“用四指左右滑动，屏幕可以向驾驶员、正后以及副驾进行摆动。”"
+        },
+        {
+          "url": "https://auto.news18a.com/news/storys_199894.html",
+          "title": "内饰首曝！焕新极氪001解密“猎装豪华”新定义 - 网通社汽车",
+          "source_name": "网通社",
+          "snippet": "“16英寸3.5K超清向日葵中控屏支持30°旋转。”"
+        }
+      ],
+      "reasoning": "主驾侧与副驾侧分别位于车辆宽度方向两侧；公开角度11°/17°及30°旋转、四指左右滑动摆动均直接对应朝左/右转动。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+      "competitor_feature": "公开证据仅显示极氪001存在向日葵旋转屏及其左右摆动功能；未披露屏幕后方执行机构是否包括安装支架、旋转盘，也未披露旋转盘/安装支架之间是否存在配合槽与配合凸起伸入配合并同步带动。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.xkb.com.cn/articleDetail/298929",
+          "title": "试驾全新极氪001 | 改款堪比换代，这车真的很香__新快网",
+          "source_name": "新快报",
+          "snippet": "仅披露中控屏具有“向日葵”功能、可向驾驶员/正后/副驾摆动，未披露内部安装支架、旋转盘、槽/凸起结构。"
+        },
+        {
+          "url": "https://www.pcauto.com.cn/wd/4050042.html",
+          "title": "极氪001有旋转屏吗-太平洋汽车",
+          "source_name": "太平洋汽车",
+          "snippet": "仅说明高配YOU版配备向日葵旋转屏以及可通过车辆设置菜单操作，未公开旋转机构的零件配合。"
+        }
+      ],
+      "reasoning": "功能性旋转不能唯一推出采用旋转盘+槽/凸起连接；可能存在齿轮、铰链、蜗杆、连杆等多种方案。现有证据缺少内部结构披露。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+      "competitor_feature": "未找到极氪001向日葵屏旋转机构的拆解图、维修手册页面或供应商结构图；公开资料没有说明存在多个配合凸起、多个配合槽，也没有一一对应配合的描述。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.pcauto.com.cn/wd/4050042.html",
+          "title": "极氪001有旋转屏吗-太平洋汽车",
+          "source_name": "太平洋汽车",
+          "snippet": "文章仅描述旋转屏功能与偏转方向；未涉及多凸起/多槽或一一对应配合。"
+        },
+        {
+          "url": "https://m.pcauto.com.cn/baike/786285",
+          "title": "极氪001向日葵旋转",
+          "source_name": "太平洋汽车百科",
+          "snippet": "页面说明“向驾驶侧偏转最大11°、副驾侧最大17°、1°无级调节”，但未披露内部槽/凸起数量。"
+        }
+      ],
+      "reasoning": "该特征是具体机械连接数量关系。现有公开内容停留在用户可见功能层面，不能证明或排除多个凸起/槽一一配合。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+      "competitor_feature": "未发现极氪001中控屏旋转执行机构沿显示终端长度方向布置多个凸起的结构图或文字说明；现有证据也未公开屏幕长度方向上的凸起间距、位置或排布。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/160450",
+          "title": "新出行图文详解 119期：动态试驾焕新版极氪 001_评测_新出行",
+          "source_name": "新出行",
+          "snippet": "文章及图片主要介绍焕新极氪001上市、动力底盘及座舱配置，摘要提到16英寸3.5K Mini LED向日葵屏支持30°旋转；未披露旋转机构凸起排布。"
+        },
+        {
+          "url": "https://www.xkb.com.cn/articleDetail/298929",
+          "title": "试驾全新极氪001 | 改款堪比换代，这车真的很香__新快网",
+          "source_name": "新快报",
+          "snippet": "仅提及四指左右滑动时屏幕向驾驶员、正后及副驾摆动；未公开显示屏长度方向上的配合凸起。"
+        }
+      ],
+      "reasoning": "长度方向间隔设置属于内部几何布置。公开试驾/百科资料没有拆机或维修图，无法从外部旋转效果严谨推出该排布。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+      "competitor_feature": "公开资料证明屏幕可平稳向左右摆动/旋转，但未披露是否由旋转盘带动多个凸起同步转动，也未披露多个凸起之间固定连接、不发生相对运动的结构关系。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.xkb.com.cn/articleDetail/298929",
+          "title": "试驾全新极氪001 | 改款堪比换代，这车真的很香__新快网",
+          "source_name": "新快报",
+          "snippet": "“屏幕可以向驾驶员、正后以及副驾进行摆动，反应速度以及旋转速度都可以。”未披露旋转盘、多凸起同步关系。"
+        },
+        {
+          "url": "https://m.pcauto.com.cn/baike/790433/1547161",
+          "title": "极氪001有旋转屏吗-太平洋汽车百科",
+          "source_name": "太平洋汽车百科",
+          "snippet": "说明15.05英寸2.5K OLED中控大屏可实现向日葵旋转屏，手势使大屏向驾驶员或副驾一侧转动；未公开内部同步传动结构。"
+        }
+      ],
+      "reasoning": "屏幕整体转动只说明最终显示终端姿态变化；不能证明采用“旋转盘+多个凸起”且凸起间无相对运动这一特定传动方式。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 50.0,
+  "searched_queries": [
+    "极氪001 旋转屏 支架 多个卡扣 槽 凸起 维修手册",
+    "极氪001 向日葵屏 旋转机构 同步转动 多凸起",
+    "焕新极氪001 向日葵旋转屏 电动机构 执行器 电机",
+    "焕新极氪001 向日葵旋转屏 拆解 支架 旋转盘 配合槽 凸起",
+    "极氪汽车 焕新极氪001 16英寸3.5K Mini LED向日葵中控屏 上市 日期 发布"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

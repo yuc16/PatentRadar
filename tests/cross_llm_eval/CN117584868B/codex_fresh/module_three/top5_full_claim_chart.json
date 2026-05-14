@@ -1,0 +1,4103 @@
+{
+  "publication_no": "CN117584868B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "兆威",
+        "company_en": "ZHAOWEI",
+        "product_name": "汽车偏摆&旋转屏驱动系统（12V DC）",
+        "product_name_en": "automotive yaw and rotating display drive system (12 V DC)",
+        "product_version": "面向汽车偏摆屏与旋转屏的微型驱动系统，页面参数给出12V DC（9~16V）、负载电流500mA/600mA、额定转速5s转动90°/3s转动30°。支持手动-15°~+15°摆动屏幕，50cm启动噪音＜45dB(A)、运动噪音＜40dB(A)。",
+        "market": "中国智能座舱前装/供应链，偏向主驾或副驾、横竖屏切换场景",
+        "reason_for_deep_dive": "这是直接面向车载偏摆/旋转显示屏的执行机构产品，已覆盖权利要求1的“显示终端执行机构”和“在车辆宽度方向上驱动显示终端朝左/右转动”核心方向。值得进一步查证其输出端与屏幕安装支架之间是否采用旋转盘、多个配合凸起/配合槽同步传动且凸起间无相对运动。",
+        "source_result_ids": [
+          "exa-Q17-05"
+        ],
+        "source_urls": [
+          "https://www.zwautomo.com/dzqj/63.html"
+        ],
+        "initial_evidence_summary": "搜索摘要显示：兆威汽车偏摆&旋转屏驱动系统通过电机加蜗杆斜齿和平行传动组合，带动屏幕主轴运动；满足偏向主驾或副驾、横竖屏切换需求；给出12V、500/600mA、5s/90°、3s/30°、手动±15°、噪音＜45/40dB(A)等参数。"
+      },
+      "launch_date": "未明确；公开产品页至少在2022年3月发布，证券资料称2022年新推出汽车中控旋转屏等产品/方案",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+          "title": "车载中控屏偏摆驱动系统-汽车中控屏驱动齿轮箱模组-深圳市兆威机电股份有限公司",
+          "source_name": "兆威机电官网",
+          "snippet": "页面正文显示“车载中控屏偏摆驱动系统 2022-03-04 11:28”，并说明采用直流电机+平行传动+蜗轮蜗杆，带动安装屏幕的主轴，解决汽车中控屏幕左右各20°的旋转需求。"
+        },
+        {
+          "url": "http://notice.10jqka.com.cn/api/pdf/2e22292dbe6adae5.pdf",
+          "title": "深圳市兆威机电股份有限公司公告/年报资料",
+          "source_name": "同花顺公告PDF",
+          "snippet": "搜索摘要显示：2022年，公司新推出汽车中控旋转屏、汽车吸顶屏、汽车智能尾翼等产品和解决方案。"
+        },
+        {
+          "url": "https://www.zwgear.com/uncategorized/qcpbxzp.html",
+          "title": "汽车偏摆&旋转屏驱动系统-深圳市兆威机电股份有限公司",
+          "source_name": "兆威机电官网",
+          "snippet": "页面正文显示“汽车偏摆&旋转屏驱动系统 2023-02-02 02:32”，介绍兆威机电推出汽车偏摆&旋转屏解决方案。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未发现早于专利申请日2019-03-28的该具体产品公开上市/发布证据；现有可核查产品页和公告资料均晚于申请日。亦未发现与权利要求1各特征直接矛盾的公开证据；从属权利要求或产品/车辆类权利要求的不足不触发本候选整体失格。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种显示终端的执行机构",
+              "competitor_feature": "产品名称和说明为“汽车偏摆&旋转屏驱动系统”“车载中控屏偏摆驱动齿轮箱”“Central Control Screen Oscillating&Rotary Actuator”，用于驱动车载中控屏/旋转屏运动，属于显示终端的执行/驱动机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwautomo.com/dzqj/63.html",
+                  "title": "汽车偏摆&旋转屏驱动系统",
+                  "source_name": "兆威/苏州兆威驱动官网",
+                  "snippet": "页面列明产品为“汽车偏摆&旋转屏驱动系统”，产品说明称通过电机加蜗杆斜齿和平行传动组合，带动屏幕主轴运动。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品名称为“车载中控屏偏摆驱动齿轮箱”，说明为“车载中控屏偏转驱动系统”。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面标题为“Central Control Screen Oscillating&Rotary Actuator”，介绍兆威中控屏偏摆&旋转驱动系统集成偏摆执行器和旋转执行器。"
+                }
+              ],
+              "reasoning": "多个兆威官网页面直接将其称为汽车偏摆/旋转屏驱动系统、中控屏偏摆执行器或驱动齿轮箱，功能对象是车载显示屏，故为显示终端执行机构。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "公开资料称该系统带动屏幕主轴，使屏幕面向主驾或者副驾，解决中控屏幕左右各15°或左右各20°旋转需求；页面参数还显示手动-15°~+15°摆动屏幕。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明：最终带动安装屏幕的主轴，使屏幕面向主驾或者副驾；解决汽车中控屏幕左右各20°的旋转需求。"
+                },
+                {
+                  "url": "https://www.zwgear.com/special/carping.html",
+                  "title": "智能汽车屏幕解决方案",
+                  "source_name": "兆威机电官网",
+                  "snippet": "兆威中控屏偏摆执行器通过直流电机+平行传动+蜗轮蜗杆传动……最终带动安装屏幕的主轴实现汽车中控屏幕左右各15°的旋转，使屏幕面向主驾或者副驾。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "介绍偏摆执行器可驱动安装中控屏的主轴，实现中控屏左右15°旋转，并可自动调整屏幕朝向。"
+                }
+              ],
+              "reasoning": "“主驾/副驾”位于车辆宽度方向两侧，官网明确写明屏幕左右各15°/20°旋转及±15°摆动，因此可直接对应朝左/右转动。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+              "competitor_feature": "证据可证明该产品存在用于屏幕安装/连接的主轴、屏幕组件连接关系、齿轮箱和驱动机构；但仍未公开确认存在权利要求意义上的“旋转盘”，也未确认旋转盘与安装支架之间采用“配合槽+配合凸起伸入”的同步传动配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明称采用“直流电机+平行传动+蜗轮蜗杆”传动以提升减速增力，最终带动安装屏幕的主轴。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "搜索摘要称该驱动系统与屏幕组件连接，执行器沿其轴封装，系统驱动轴使屏幕组件旋转。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱",
+                  "source_name": "兆威机电官网",
+                  "snippet": "图示证据：局部剖视/爆炸图可见齿轮、主轴、安装件等，但未公开说明旋转盘与安装支架之间的凸起-槽配合。"
+                }
+              ],
+              "reasoning": "新增英文资料进一步证明“驱动轴/主轴带动屏幕组件”，但仍停留在传动总成层面；权利要求要求的旋转盘、安装支架、配合槽、配合凸起及其嵌入关系属于输出端内部连接细节，公开资料未直接披露，也不能由“主轴”必然推出。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：旋转盘/支架间凸起伸入配合槽的结构图；现有仅证主轴驱屏。\n可去：兆威产品BOM/爆炸图，客户定制规格书，样机拆解视频\n下一步建议：向兆威索取该执行器输出端与屏幕支架连接剖面图。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+              "competitor_feature": "现有公开资料未披露该产品在旋转盘与安装支架之间设置多个配合凸起和多个配合槽，也未披露一一对应配合关系。图片中虽有多个螺钉孔、齿轮齿和安装孔，但不能等同于权利要求所述多个凸起/槽嵌合传动结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱",
+                  "source_name": "兆威机电官网",
+                  "snippet": "图示证据：爆炸图和局部结构图显示齿轮箱、齿轮、主轴和壳体等零件，但未标注或说明多个配合凸起/配合槽。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "文字仅说明直流电机+平行传动+蜗轮蜗杆，最终带动安装屏幕的主轴，未披露凸起和槽数量或一一配合关系。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面说明偏摆执行器采用DC motor、parallel transmission和worm gears驱动安装中控屏的主轴，但未披露多个凸起/槽。"
+                }
+              ],
+              "reasoning": "多个凸起/槽及其一一对应属于输出盘与支架之间的内部机械接口；目前公开证据只描述电机、蜗轮蜗杆、平行传动和主轴，没有数量、位置或配合关系证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：多个凸起和多个槽的一一对应数量位置；现有图未标注嵌合结构。\n可去：官方3D模型/装配图，产品专利族，第三方拆解评测\n下一步建议：查找“中控屏偏摆执行器 爆炸图 多凸台 多卡槽”。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+              "competitor_feature": "未找到任何公开资料说明该产品存在多个配合凸起，更未说明这些凸起沿显示终端长度方向间隔设置。现有图片只能看到屏幕背板、齿轮箱、主轴和安装孔，无法确认凸起的方向布置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/uncategorized/qcpbxzp.html",
+                  "title": "汽车偏摆&旋转屏驱动系统-深圳市兆威机电股份有限公司",
+                  "source_name": "兆威机电官网",
+                  "snippet": "图示证据：屏幕背部安装板和偏摆机构外观图未显示可判定为配合凸起且沿屏幕长度方向间隔的结构。"
+                },
+                {
+                  "url": "https://www.zwgear.com/special/carping.html",
+                  "title": "智能汽车屏幕解决方案",
+                  "source_name": "兆威机电官网",
+                  "snippet": "页面说明中控偏摆屏左右旋转、两度自由中控屏融合横竖旋转和偏摆，但未披露连接凸起的长度方向布置。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面仅说明驱动系统连接屏幕组件并驱动轴旋转，未给出屏幕长度方向上的凸起间隔布置。"
+                }
+              ],
+              "reasoning": "该特征依赖先确认多个配合凸起；公开资料没有凸起结构，更无相对于显示屏长度方向的间隔布置信息。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：凸起沿显示屏长度方向间隔的方向基准；现有资料无凸起本体。\n可去：输出端装配图，车机屏背部支架照片，拆解视频逐帧图\n下一步建议：找该模组与屏幕背板连接面的高清拆解或安装指导图。"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+              "competitor_feature": "资料可证明驱动系统带动安装屏幕的主轴/屏幕组件旋转，但没有证据表明是“旋转盘带动多个配合凸起”实现同步转动，也没有披露多个配合凸起彼此之间不发生相对运动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明：采用直流电机+平行传动+蜗轮蜗杆传动，最终带动安装屏幕的主轴，使屏幕面向主驾或者副驾。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面说明偏摆执行器驱动安装中控屏的主轴，实现中控屏左右15°旋转。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱模组",
+                  "source_name": "兆威机电官网",
+                  "snippet": "图示证据：局部结构图能看到齿轮传动和主轴组件，但未显示多个凸起随旋转盘整体转动且相互无相对运动的结构关系。"
+                }
+              ],
+              "reasoning": "“主轴带动屏幕”只能证明总体旋转输出；权利要求所限定的多个凸起随旋转盘共同转动且相互无相对运动没有公开结构证据支持。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：多个凸起随旋转盘整体转动且互不相对运动；现有只证主轴旋转。\n可去：运动仿真/剖视动画，输出盘零件图，拆解视频\n下一步建议：重点找输出盘与支架连接件的运动示意或剖面动画。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+              "competitor_feature": "现有资料未确认该产品存在旋转盘/安装支架之间的配合槽和配合凸起，更未确认“槽在旋转盘、凸起在安装支架”这一具体分布。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱",
+                  "source_name": "兆威机电官网",
+                  "snippet": "图示证据：爆炸图和局部结构图显示齿轮箱、齿轮、主轴和壳体等零件，但未标注旋转盘上的配合槽或支架上的配合凸起。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "文字仅说明直流电机+平行传动+蜗轮蜗杆带动安装屏幕的主轴，未披露槽/凸起分布。"
+                }
+              ],
+              "reasoning": "权利要求2限定了槽和凸起分别位于哪一部件上；公开证据没有该连接接口的零件图或标注，因此不能确认。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+              "competitor_feature": "产品公开为电机、平行传动、蜗轮蜗杆/蜗杆斜齿组合的驱动系统，驱动安装中控屏的主轴/屏幕组件旋转；可推断其包括驱动单元并输出旋转运动，但公开资料仍未把输出件明确标注为权利要求的“旋转盘”。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面称偏摆执行器采用DC motors、parallel transmission和worm gears降速增扭，驱动安装中控屏的主轴实现左右旋转。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明称采用“直流电机+平行传动+蜗轮蜗杆”传动以提升减速增力，最终带动安装屏幕的主轴。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "搜索摘要称该驱动系统与屏幕组件连接，系统驱动轴使屏幕组件旋转。"
+                }
+              ],
+              "reasoning": "“驱动单元”由直流电机和传动机构直接证明；其输出带动主轴/屏幕组件旋转。缺口在于公开资料未确认该输出件就是权利要求1中的旋转盘，故按严谨推理给“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+              "competitor_feature": "公开资料说明动力源为直流电机/直流无刷电机，减速传动为平行传动+蜗轮蜗杆/蜗杆斜齿，作用为降速增扭并带动屏幕主轴；但“减速单元输出端与旋转盘相连”的旋转盘连接未被直接标注。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "说明采用“直流电机+平行传动+蜗轮蜗杆”传动以提升减速增力，最终带动安装屏幕的主轴。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "偏摆执行器采用DC motors、parallel transmission和worm gears，用于降低RPM并增加扭矩。"
+                },
+                {
+                  "url": "https://www.zwgear.com/special/chezp",
+                  "title": "车载屏驱动系统-车载屏执行器齿轮箱-深圳市兆威机电股份有限公司",
+                  "source_name": "兆威机电官网",
+                  "snippet": "中控屏&偏摆驱动系统通过直流无刷电机+一级蜗轮蜗杆传动+平行传动，带动屏幕0-90°横竖旋转以及左右各15°偏摆旋转。"
+                }
+              ],
+              "reasoning": "动力源和减速单元均有直接公开；电机输出经蜗轮蜗杆和平行传动后输出旋转运动也符合该特征。由于权利要求进一步要求减速单元输出端连接“旋转盘”，而公开资料只写“主轴/屏幕组件”，故保守评为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+              "competitor_feature": "兆威公开资料多处明确称该中控屏偏摆/旋转屏驱动系统采用“蜗轮蜗杆”“蜗杆斜齿”与平行传动组合进行减速增力，属于蜗杆齿轮类传动机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明称采用“直流电机+平行传动+蜗轮蜗杆”传动以提升减速增力。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "偏摆执行器采用DC motors、parallel transmission和worm gears降速增扭。"
+                },
+                {
+                  "url": "https://www.zwautomo.com/dzqj/63.html",
+                  "title": "汽车偏摆&旋转屏驱动系统",
+                  "source_name": "兆威/苏州兆威驱动官网",
+                  "snippet": "产品说明称通过电机加蜗杆斜齿和平行传动组合，带动屏幕主轴运动。"
+                }
+              ],
+              "reasoning": "“蜗轮蜗杆”“worm gears”“蜗杆斜齿”均为蜗杆齿轮传动的公开直接证据，故明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+              "competitor_feature": "公开资料能证明产品有转角范围或角度控制，例如左右15°/20°、运行角度20°±1°；但没有公开旋转盘上的第一定位结构、驱动单元壳体上的第二定位结构及二者配合限位的具体结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "搜索摘要列明产品运行角度20°±1°，并称偏转角度可控。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/automobile-drive/automotive-tilting-display-motor",
+                  "title": "Automotive Tilting Display Motor - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面摘要显示tilting display drive system采用worm gear motor with parallel transmission，可实现每侧15°倾转，参数包括Angle of Rotation 20°±1°。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/special/automotive-display-solutions",
+                  "title": "Automotive Multi-Display Drive Solution Manufacturers - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面摘要对车载显示驱动方案提到single head worm gear self-locking structure and mechanical limit，但未对应到本产品的旋转盘/壳体定位结构。"
+                }
+              ],
+              "reasoning": "角度受控不等于公开了“旋转盘第一定位结构+壳体第二定位结构”这一具体限位方案；现有资料没有对应零件名称、位置和配合关系。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+              "competitor_feature": "公开资料反复提到驱动系统带动安装屏幕的主轴/shaft，并有“执行器沿其轴封装、驱动轴使屏幕组件旋转”的描述；这与存在穿过壳体/驱动单元的安装轴相符，但未直接说明该轴属于旋转盘且穿过驱动单元。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "搜索摘要称驱动系统与屏幕组件连接，执行器沿其轴封装，系统驱动轴使屏幕组件旋转。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明称最终带动安装屏幕的主轴，使屏幕面向主驾或者副驾。"
+                }
+              ],
+              "reasoning": "“主轴/shaft”是直接证据，且用于带动屏幕旋转；但“旋转盘还包括该安装轴”以及“该轴穿过驱动单元”未被结构图或文字直接确认，故为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+              "competitor_feature": "未发现该产品公开资料披露套设在安装轴上的弹性件，也未披露弹性件两端分别抵压轴向限位件和驱动单元壳体。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱模组",
+                  "source_name": "兆威机电官网",
+                  "snippet": "图示证据：局部结构图展示齿轮、主轴、壳体等，但未标注弹性件、弹簧或轴向限位件。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "文字仅说明电机、平行传动、蜗轮蜗杆和主轴，未披露弹性件套设于安装轴的结构。"
+                }
+              ],
+              "reasoning": "该特征是轴向预紧/限位的内部细节；现有网页和摘要没有弹簧、弹性垫圈或类似部件证据，不能推定满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述安装轴为中空结构",
+              "competitor_feature": "公开资料仅称存在安装屏幕的主轴/shaft，未披露该轴是否为中空结构，也未提供可判断中空轴的截面图或剖视尺寸。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面摘要只说明驱动系统沿轴封装并驱动轴旋转屏幕组件，未说明轴为空心。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱模组",
+                  "source_name": "兆威机电官网",
+                  "snippet": "图示证据：局部剖视/爆炸图未给出可确认主轴中空的截面或标注。"
+                }
+              ],
+              "reasoning": "中空轴需要截面或零件说明证明；现有公开资料不足以判断。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "一种车载显示终端",
+              "competitor_feature": "本候选公开销售/介绍对象为“汽车偏摆&旋转屏驱动系统”“Central Control Screen Oscillating&Rotary Actuator”等驱动系统或执行器组件，而非包含显示屏本体的完整车载显示终端。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/product/qcpbxzqdxt.html",
+                  "title": "汽车偏摆&旋转屏驱动系统应用-深圳市兆威机电股份有限公司",
+                  "source_name": "兆威机电官网",
+                  "snippet": "页面标题和产品名称均为“汽车偏摆&旋转屏驱动系统”，参数为电压、负载电流、额定转速、手动换向和噪音等驱动系统参数。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面标题为中控屏偏摆&旋转执行器，介绍的是oscillating actuator和rotary actuator。"
+                }
+              ],
+              "reasoning": "权利要求9的客体是“车载显示终端”，需包含显示终端本体；该候选明确是驱动系统/执行器组件，公开资料未显示其作为完整显示终端销售或提供。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "包括：显示终端；执行机构",
+              "competitor_feature": "候选产品明确包括执行机构/驱动系统；但未公开包括显示屏本体。官方描述通常是驱动系统连接或驱动屏幕组件，而非自身包含显示终端。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwautomo.com/dzqj/63.html",
+                  "title": "汽车偏摆&旋转屏驱动系统",
+                  "source_name": "兆威/苏州兆威驱动官网",
+                  "snippet": "产品说明称该驱动系统带动屏幕主轴运动，满足偏向主驾或副驾及横竖屏切换需求。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "摘要称驱动系统连接屏幕组件并驱动轴旋转屏幕组件，表述为驱动系统与屏幕组件连接。"
+                }
+              ],
+              "reasoning": "“连接/驱动屏幕组件”说明其是显示屏的运动机构，而非同时包含显示终端和执行机构的整机。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F3",
+              "patent_feature": "所述显示终端安装于所述执行机构",
+              "competitor_feature": "公开资料称驱动系统带动“安装屏幕的主轴”，英文资料称驱动系统连接屏幕组件并驱动其旋转，能够证明在使用状态下显示屏/屏幕组件安装或连接于执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明称最终带动安装屏幕的主轴，使屏幕面向主驾或者副驾。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "摘要称该驱动系统与屏幕组件连接，系统驱动轴使屏幕组件旋转。"
+                }
+              ],
+              "reasoning": "屏幕安装在主轴或屏幕组件与驱动系统连接，直接对应显示终端安装于执行机构的使用关系。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F4",
+              "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "执行机构可带动安装中控屏的主轴实现左右15°或左右20°旋转，使屏幕朝向主驾或副驾。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/special/carping.html",
+                  "title": "智能汽车屏幕解决方案",
+                  "source_name": "兆威机电官网",
+                  "snippet": "中控屏偏摆执行器带动安装屏幕的主轴实现汽车中控屏幕左右各15°的旋转，使屏幕面向主驾或者副驾。"
+                },
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "解决汽车中控屏幕左右各20°的旋转需求，使屏幕面向主驾或者副驾。"
+                }
+              ],
+              "reasoning": "主驾/副驾对应车辆宽度方向左右两侧，官网直接披露左右旋转。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 0.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "本候选是兆威的车载屏幕驱动系统/执行器组件，不是整车产品；现有资料未指向某一包含该执行机构的具体车辆整车。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/product/qcpbxzqdxt.html",
+                  "title": "汽车偏摆&旋转屏驱动系统应用-深圳市兆威机电股份有限公司",
+                  "source_name": "兆威机电官网",
+                  "snippet": "页面产品名称为“汽车偏摆&旋转屏驱动系统”，介绍电压、负载电流、额定转速、噪音等驱动系统参数。"
+                },
+                {
+                  "url": "https://basic.10jqka.com.cn/003021/company.html",
+                  "title": "兆威机电公司资料",
+                  "source_name": "同花顺公司资料",
+                  "snippet": "公司产品名称包括中控屏偏摆执行器、中控屏旋转执行器等，主营微型传动系统、微型驱动系统的研发、生产和销售。"
+                }
+              ],
+              "reasoning": "权利要求10的客体为车辆；该候选公开类别是执行器/驱动系统供应链产品，并非整车，因此该客体特征不满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F2",
+              "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+              "competitor_feature": "候选本身是面向车载中控屏偏摆/旋转的执行机构或驱动系统；若仅看“包括执行机构”这一组成元素，其公开资料可证明存在执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.zwgearbox.com/consumer-electronics/central-control-screen-oscillating-rotation-actuator",
+                  "title": "Central Control Screen Oscillating&Rotary Actuator - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "页面标题为中控屏偏摆&旋转执行器，并称系统集成偏摆执行器和旋转执行器。"
+                },
+                {
+                  "url": "https://www.zwgear.com/special/carping.html",
+                  "title": "智能汽车屏幕解决方案",
+                  "source_name": "兆威机电官网",
+                  "snippet": "页面列出中控屏偏摆执行器、中控屏旋转执行器等方案。"
+                }
+              ],
+              "reasoning": "虽然候选不是车辆，但其确实是执行机构/执行器；该组成元素本身有直接证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F3",
+              "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+              "competitor_feature": "公开资料可证明显示屏/屏幕组件安装或连接于执行机构并被其驱动；但未公开某一整车中该执行机构安装于车体的具体安装位置和连接结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+                  "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+                  "source_name": "兆威机电官网",
+                  "snippet": "产品说明称最终带动安装屏幕的主轴，使屏幕面向主驾或者副驾。"
+                },
+                {
+                  "url": "https://www.zwgearbox.com/automotive/empowering-intelligent-cockpits-drive-system-for-automotive-screens",
+                  "title": "Empowering Intelligent Cockpits: drive system for automotive screens - ZHAOWEI",
+                  "source_name": "ZHAOWEI英文官网",
+                  "snippet": "摘要称驱动系统连接屏幕组件并驱动轴旋转屏幕组件。"
+                }
+              ],
+              "reasoning": "现有证据支持“屏幕安装/连接于执行机构”，但没有整车装配图或维修手册证明执行机构安装于车体；且候选本身不是车辆。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 0.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "兆威 汽车偏摆 旋转屏 驱动系统 拆解 旋转盘 配合槽 凸起",
+        "兆威 中控屏偏摆驱动齿轮箱 结构图 多个凸起 配合槽",
+        "兆威 汽车偏摆&旋转屏驱动系统（12V DC） 规格书 参数",
+        "兆威 汽车偏摆&旋转屏驱动系统（12V DC） 说明书 PDF",
+        "兆威 汽车偏摆&旋转屏驱动系统（12V DC） 中国 市场",
+        "ZHAOWEI automotive yaw rotating display actuator teardown output shaft bracket slot lug",
+        "兆威 中控偏摆屏 执行器 输出盘 屏幕支架 卡槽 凸台 图片",
+        "ZWGear 汽车偏摆旋转屏驱动系统 输出转盘 安装支架 结构图",
+        "兆威 中控屏偏摆执行器 爆炸图 输出盘 多凸台 多卡槽"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "极氪汽车",
+        "company_en": "ZEEKR",
+        "product_name": "极氪007 15.05英寸2.5K OLED向日葵中控屏",
+        "product_name_en": "ZEEKR 007 15.05-inch 2.5K OLED sunflower center display",
+        "product_version": "极氪007配备15.05英寸2.5K OLED向日葵中控屏，公开信息称其具备左右转动/摆动功能，可朝主驾驶侧或副驾驶侧倾斜。另有摘要显示该屏由ADAYO华阳配套，并可通过四指滑动或方向盘后实体按键改变偏转角度。",
+        "market": "中国纯电轿车智能座舱量产车型，前装配套华阳屏幕方案",
+        "reason_for_deep_dive": "公开信息明确了车载显示屏左右转动以服务主驾/副驾，和C1-F2高度相关；同时屏幕为悬浮式中控屏，通常存在背部安装支架及驱动/限位结构。值得查证其可偏转屏幕内部是否有旋转盘带动多个凸起、多个槽同步联动的结构。",
+        "source_result_ids": [
+          "bocha-Q22-02",
+          "bocha-Q22-04",
+          "brave-Q10-04",
+          "tavily-Q22-01"
+        ],
+        "source_urls": [
+          "https://www.pcauto.com.cn/wd/3979197.html",
+          "https://hao.yiche.com/wenzhang/86943804",
+          "https://www.smartautoclub.com/p/63744",
+          "https://www.sina.cn/news/detail/4987502448347837.html"
+        ],
+        "initial_evidence_summary": "摘要显示：极氪007的15.05英寸2.5K OLED向日葵中控屏具有左右转动功能；内饰官图报道称其将极氪X的左右滑动机制调整为左右摆动，可朝主驾驶侧或副驾驶侧倾斜；智能汽车资源网称该屏由ADAYO华阳配套，15.05英寸、2.5K OLED、可偏转式；新浪摘要称四指滑动可转换屏幕偏转角度，方向盘背后还有实体偏转按键。"
+      },
+      "launch_date": "2023年11月17日首次公开亮相并开启预售；2023年12月27日上市发布；2024年1月1日首批交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.foryouge.com/news/195.html",
+          "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+          "source_name": "ADAYO华阳官方",
+          "snippet": "11月17日，极氪智能科技旗下首款纯电豪华轿车极氪007首次全球公开亮相，并开启预售；极氪007搭载由华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏。"
+        },
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/14063987",
+          "title": "极氪007内饰官图发布，搭2.5K超清中控屏、14处氛围灯等",
+          "source_name": "汽车之家车家号",
+          "snippet": "2023年12月12日发布内饰官图；新车将在12月27日召开上市发布会，首款车型于2024年1月1日交付。"
+        },
+        {
+          "url": "https://www.donews.com/news/detail/7/3853865.html",
+          "title": "极氪007中控屏可偏转!配001 FR同款液晶仪表",
+          "source_name": "DoNews汽车",
+          "snippet": "12月12日极氪官方发布内饰图和配置信息，新车将于12月27日上市，2024年1月1日开启交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未失格：公开亮相、上市和交付时间均晚于专利申请日2019-03-28；最终证据池中未发现直接披露与权利要求1相矛盾的结构。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种显示终端的执行机构",
+              "competitor_feature": "极氪007搭载华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏；公开资料称其“在运动机构的加持下”可主动偏转，属于用于驱动车载显示终端运动的执行/运动机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "极氪007搭载由华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏；在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/63744",
+                  "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度，屏幕既可以从中间位置偏转到主驾位置，也可以偏转到副驾位置。"
+                },
+                {
+                  "url": "https://www.marklines.com/cn/news/298632",
+                  "title": "华阳集团为极氪007提供可偏转式中控屏",
+                  "source_name": "MarkLines全球汽车产业平台",
+                  "snippet": "华阳集团宣布，极氪007搭载公司配套的可偏转式15.05英寸2.5K OLED向日葵中控屏；在运动机构的加持下，屏幕可主动偏转。"
+                }
+              ],
+              "reasoning": "ADAYO官方、智能汽车资源网和MarkLines均直接披露该屏由运动机构实现主动偏转，足以对应“显示终端的执行机构”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "中控屏可从中间位置偏转到主驾位置或副驾位置；其他资料称其由左右滑动改为左右摆动、支持左右旋转，方向对应车辆宽度方向的左/右偏转。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "屏幕可主动偏转至最佳视觉和操作角度，既可以从中间位置偏转到主驾位置，也可以偏转到副驾位置。"
+                },
+                {
+                  "url": "https://hao.yiche.com/wenzhang/86943804",
+                  "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+                  "source_name": "易车",
+                  "snippet": "将极氪X上面的左右滑动机制调整为左右摆动……可以朝主驾驶侧或者副驾驶侧倾斜。"
+                },
+                {
+                  "url": "https://m.pcauto.com.cn/x/4681/46810088.html",
+                  "title": "极氪007怎么操作屏幕",
+                  "source_name": "太平洋汽车",
+                  "snippet": "它配备的是15.05英寸的2.5K OLED向日葵中控屏，支持左右旋转，方便驾驶员操作。"
+                },
+                {
+                  "url": "https://www.pcauto.com.cn/wd/4021063.html",
+                  "title": "极氪007屏幕如何转动",
+                  "source_name": "太平洋汽车",
+                  "snippet": "极氪007的屏幕可以通过四指滑动来转动；如果屏幕旋转卡死，可能是系统或者硬件的问题。"
+                }
+              ],
+              "reasoning": "主驾与副驾位于车辆宽度方向两侧；公开资料直接写明从中间偏转至主驾/副驾、左右摆动或左右旋转，因此该功能被直接披露。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+              "competitor_feature": "公开证据仅说明极氪007中控屏为悬浮式、可偏转式，并由运动机构/屏幕调整系统驱动；未公开该运动机构是否包括安装支架、旋转盘，以及旋转盘/安装支架之间是否采用配合槽与配合凸起伸入配合的结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "仅披露“在运动机构的加持下，屏幕可主动偏转”，未披露运动机构内部的旋转盘、安装支架、槽/凸起配合结构。"
+                },
+                {
+                  "url": "https://hao.yiche.com/wenzhang/86943804",
+                  "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+                  "source_name": "易车",
+                  "snippet": "仅披露15英寸2.5K悬浮式中控屏、左右摆动、朝主驾或副驾侧倾斜；未披露背部机构拆解或传动连接结构。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/109238",
+                  "title": "007的内饰细节之向日葵中控屏",
+                  "source_name": "新出行",
+                  "snippet": "文章提到屏幕调整系统可完成屏幕方向调整，但未给出机械结构细节；文中亦称尚未查到详细资料。"
+                }
+              ],
+              "reasoning": "“存在运动机构”不能等同于权利要求限定的“安装支架+旋转盘+槽/凸起嵌合”组合。最终补搜未获得极氪007中控屏总成拆解、维修手册或供应商工程图，故仍为证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：执行机构拆解/工程图，确认安装支架、旋转盘及槽凸嵌合。\n可去：极氪007维修手册，中控显示屏总成拆车件照片，华阳技术资料\n下一步建议：找“中控显示屏总成/偏转机构”背面结构或拆装页。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+              "competitor_feature": "证据池未披露极氪007向日葵屏运动机构中存在“多个”配合凸起和“多个”配合槽，也未披露这些凸起与槽的一一对应配合关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "披露可偏转式15.05英寸2.5K OLED向日葵中控屏和运动机构，但未披露槽/凸起数量。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/63744",
+                  "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "披露运动机构使屏幕从中间偏转到主驾或副驾位置；未披露多个凸起、多个槽或一一对应配合。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/84804",
+                  "title": "助力打造动感车生活 | 一文了解ADAYO华阳运动机构系统解决方案",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "通用介绍ADAYO华阳运动机构产品线开发量产旋转屏、升降喇叭等运动机构应用，但未披露极氪007具体槽/凸起结构。"
+                }
+              ],
+              "reasoning": "“多个凸起/多个槽一一对应”是隐藏机械连接细节；即使供应商通用资料证明华阳有运动机构能力，也没有揭示极氪007产品中该结构及数量。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：槽/凸起数量和一一对应关系；现有资料只证明屏幕可偏转。\n可去：屏幕总成拆解视频，维修手册爆炸图，供应商结构专利/白皮书\n下一步建议：检索拆车件实拍和华阳偏摆屏机构结构图。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+              "competitor_feature": "公开资料未显示或描述运动机构中配合凸起的存在、数量及其沿显示屏长度方向的间隔布置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hao.yiche.com/wenzhang/86943804",
+                  "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+                  "source_name": "易车",
+                  "snippet": "披露该屏为15英寸2.5K悬浮式中控屏，并可左右摆动；没有背面机构或凸起布置描述。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/109238",
+                  "title": "007的内饰细节之向日葵中控屏",
+                  "source_name": "新出行",
+                  "snippet": "可见中控位置悬浮式屏幕；正文讨论三向转动和屏幕调整系统，但未展示或说明屏幕背部执行机构内的配合凸起布置。"
+                },
+                {
+                  "url": "https://www.autohome.com.cn/ask/13682106.html",
+                  "title": "极氪007的屏幕怎么转",
+                  "source_name": "汽车之家",
+                  "snippet": "仅说明15.05英寸2.5K OLED向日葵中控屏支持左右旋转，未披露内部凸起沿屏幕长度方向布置。"
+                }
+              ],
+              "reasoning": "现有照片和文章均为外观或功能层面，无法观察内部凸起，更无法确定其沿显示终端长度方向间隔设置。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：多个配合凸起的空间布置方向；公开图未显示背部内部机构。\n可去：中控屏背面拆车图，维修手册拆装步骤，实车拆解视频\n下一步建议：找屏幕背板/转轴区域高清照片，确认凸起沿横向排布。"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+              "competitor_feature": "证据仅披露屏幕可主动偏转、左右旋转或由屏幕调整系统转向；未披露由旋转盘带动多个配合凸起使安装支架同步转动，也未披露多个凸起之间是否保持相对静止。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度；未披露旋转盘带动多个凸起同步转动。"
+                },
+                {
+                  "url": "https://www.sina.cn/news/detail/4987502448347837.html",
+                  "title": "极氪007的这个“向日葵屏”设计不错",
+                  "source_name": "新浪新闻",
+                  "snippet": "披露四指滑动可转换屏幕偏转角度、方向盘背后有实体偏转按键；未披露内部同步转动机构。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/84704",
+                  "title": "车载智能运动显示屏传动机构技术解析及9家供应商盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "通用介绍中控屏驱动模组可支持左右倾、上下俯仰、单轴30°大角度运动，但未指向极氪007具体结构，也未披露槽/凸起同步运动。"
+                }
+              ],
+              "reasoning": "功能性偏转不等同于权利要求限定的旋转盘—多凸起—安装支架同步传动结构；没有产品级拆解或工程图证明多个凸起不相对运动。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：旋转盘带动多个凸起同步转动、凸起间无相对运动的证据。\n可去：运动机构拆解动画，供应商工程图，维修手册或售后培训资料\n下一步建议：找偏转机构传动链视频/图纸，观察凸起是否同盘刚性转动。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+              "competitor_feature": "公开证据未披露极氪007偏转屏内部是否存在旋转盘、安装支架、配合槽和配合凸起，更未披露槽设置在旋转盘上、凸起设置在安装支架上的具体相对位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "仅说明存在运动机构，未说明旋转盘、安装支架、槽/凸起位置。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/84804",
+                  "title": "助力打造动感车生活 | 一文了解ADAYO华阳运动机构系统解决方案",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "通用介绍华阳运动机构可实现升降、滑动、旋转等运动，未披露极氪007向日葵屏内部槽/凸起分布。"
+                }
+              ],
+              "reasoning": "该从属特征限定了槽和凸起分别位于哪个部件上，属于内部结构定位信息；现有资料没有拆解图或工程图支持。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+              "competitor_feature": "极氪007屏幕可通过四指滑动、实体按键或声源定位/屏幕调整系统主动转向；这强烈表明其含有电动驱动单元。但公开证据未直接披露该驱动单元与“旋转盘”配合并驱动旋转盘。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度。"
+                },
+                {
+                  "url": "https://www.sina.cn/news/detail/4987502448347837.html",
+                  "title": "极氪007的这个“向日葵屏”设计不错",
+                  "source_name": "新浪新闻",
+                  "snippet": "4指滑动就能转换屏幕的偏转角度；方向盘背后还有实体的屏幕偏转按键。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/109238",
+                  "title": "007的内饰细节之向日葵中控屏",
+                  "source_name": "新出行",
+                  "snippet": "屏幕调整系统能够在短时间内完成屏幕方向的调整；中控屏幕能根据声音来源进行转向。"
+                }
+              ],
+              "reasoning": "主动偏转、按键/手势控制和自动转向通常需要电机或执行驱动单元，因此“驱动单元”可严谨推断；但“驱动单元与旋转盘配合”依赖未公开的旋转盘结构，故仅为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+              "competitor_feature": "华阳运动机构系统通用资料称其通过动力源选择，结合齿轮、丝杆、连杆等方式实现升降、滑动、旋转；极氪007屏幕由华阳配套并可主动偏转。由此可推断可能存在动力源和传动/减速机构，但未直接披露极氪007中动力源—减速单元—旋转盘的连接链。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/84804",
+                  "title": "助力打造动感车生活 | 一文了解ADAYO华阳运动机构系统解决方案",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "华阳运动机构通过合适的动力源选择，齿轮、丝杆、连杆等多种方式组合，覆盖10gf~50kgf宽负载域，可实现升降、滑动、旋转等运动机构。"
+                },
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "极氪007搭载由华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏；在运动机构的加持下，屏幕可主动偏转。"
+                },
+                {
+                  "url": "https://pdf.dfcfw.com/pdf/H3_AP202411031640686699_1.pdf",
+                  "title": "华阳集团（002906.SZ）证券研究报告",
+                  "source_name": "东方财富PDF/国信证券",
+                  "snippet": "华阳运动机构系统解决方案多款应用产品已实现量产，如小鹏X9悬浮屏机构、岚图Free升降三联屏机构、极氪001偏摆屏机构等；同页提到极氪007搭载华阳可偏转式向日葵中控屏。"
+                }
+              ],
+              "reasoning": "车载屏电动偏转机构通常需要电机类动力源和齿轮/丝杆等减速传动；华阳通用资料支持其采用此类技术路线。但证据并非极氪007机构的直接拆解，且未确认减速单元输出端与旋转盘相连，故仅为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+              "competitor_feature": "证据池没有披露极氪007向日葵屏减速单元的具体形式；华阳通用资料仅提到齿轮、丝杆、连杆等多种方式组合，未指明极氪007使用蜗杆齿轮传动机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/84804",
+                  "title": "助力打造动感车生活 | 一文了解ADAYO华阳运动机构系统解决方案",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "通用描述动力源选择及齿轮、丝杆、连杆等方式组合，但没有说明极氪007偏转屏采用蜗杆齿轮。"
+                },
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "披露屏幕由运动机构主动偏转，未披露减速单元类型。"
+                }
+              ],
+              "reasoning": "蜗杆齿轮是特定传动机构，不能由“可主动偏转”或“齿轮等多种方式”直接推出；没有产品级结构证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+              "competitor_feature": "公开资料说明屏幕可在中间、主驾、副驾方向间偏转/左右旋转，但没有披露旋转盘上的第一定位结构、驱动单元壳体上的第二定位结构及二者配合限位的方式。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/63744",
+                  "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "披露屏幕可从中间位置偏转到主驾或副驾位置，未披露内部机械限位结构。"
+                },
+                {
+                  "url": "https://www.pcauto.com.cn/wd/4021063.html",
+                  "title": "极氪007屏幕如何转动",
+                  "source_name": "太平洋汽车",
+                  "snippet": "披露四指滑动转动及旋转卡死处理建议，未披露限位结构或旋转盘壳体配合。"
+                }
+              ],
+              "reasoning": "屏幕有可控偏转角度并不必然证明采用权利要求限定的两级定位结构限位；现有资料没有结构拆解或限位件图示。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+              "competitor_feature": "证据池未披露极氪007偏转屏是否有旋转盘，更未披露旋转盘包括穿过驱动单元的安装轴。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "披露运动机构和主动偏转功能，未披露安装轴。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/84704",
+                  "title": "车载智能运动显示屏传动机构技术解析及9家供应商盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "通用介绍中控屏驱动模组运动形式，但未指向极氪007具体转轴/安装轴结构。"
+                }
+              ],
+              "reasoning": "安装轴属于内部承载/转动结构，不能由外部偏转功能直接确认；没有拆解证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+              "competitor_feature": "公开资料未披露极氪007偏转机构含有套设在安装轴上的弹性件，也未披露弹性件两端分别抵压轴向限位件和驱动单元壳体。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/84804",
+                  "title": "助力打造动感车生活 | 一文了解ADAYO华阳运动机构系统解决方案",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "通用介绍华阳运动机构可自锁、堵转、防夹、超静音等技术，但未披露极氪007弹性件/弹簧预压结构。"
+                },
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "未披露弹性件、安装轴限位件或壳体抵压关系。"
+                }
+              ],
+              "reasoning": "弹性件预压布置为具体机械结构；现有证据不含剖视图、拆解照片或维修手册，无法确认。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述安装轴为中空结构",
+              "competitor_feature": "证据池未披露极氪007偏转屏机构的安装轴存在与否，也未披露其是否为中空结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "仅披露可偏转屏及运动机构，未披露安装轴结构。"
+                },
+                {
+                  "url": "https://hao.yiche.com/wenzhang/86943804",
+                  "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+                  "source_name": "易车",
+                  "snippet": "外观及内饰官图资料仅说明悬浮式中控屏左右摆动，未显示轴类零件内部形状。"
+                }
+              ],
+              "reasoning": "“中空安装轴”是内部剖面特征；公开外观和功能性报道无法证明。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "一种车载显示终端",
+              "competitor_feature": "极氪007配备15.05英寸2.5K OLED向日葵中控屏，属于车载显示终端。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "极氪007搭载由华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/c/8VS8eCRuZG7",
+                  "title": "极氪007中控屏可偏转！配001 FR同款液晶仪表",
+                  "source_name": "凤凰网",
+                  "snippet": "极氪007内饰配备15.05英寸2.5K OLED向日葵屏、AR-HUD抬头显示系统等。"
+                }
+              ],
+              "reasoning": "中控屏为安装在车辆座舱内的人机交互显示终端，公开资料直接披露。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "包括：显示终端；执行机构",
+              "competitor_feature": "极氪007包括15.05英寸2.5K OLED向日葵中控屏这一显示终端；屏幕在运动机构加持下可主动偏转，表明其包括用于驱动屏幕运动的执行/运动机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/63744",
+                  "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "15.05英寸2.5K OLED向日葵中控大屏；在运动机构的加持下，屏幕可主动偏转。"
+                },
+                {
+                  "url": "https://www.marklines.com/cn/news/298632",
+                  "title": "华阳集团为极氪007提供可偏转式中控屏",
+                  "source_name": "MarkLines全球汽车产业平台",
+                  "snippet": "极氪007搭载华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏；在运动机构加持下可主动偏转。"
+                }
+              ],
+              "reasoning": "同一产品资料同时披露显示屏本体和运动机构，因此对应“显示终端+执行机构”的组合。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F3",
+              "patent_feature": "所述显示终端安装于所述执行机构",
+              "competitor_feature": "公开资料称屏幕“在运动机构的加持下”可主动偏转，且该屏为悬浮式中控屏；可严谨推断屏幕安装/支承于该运动机构上，但未见拆解图直接显示安装界面。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度。"
+                },
+                {
+                  "url": "https://hao.yiche.com/wenzhang/86943804",
+                  "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+                  "source_name": "易车",
+                  "snippet": "配有一块15英寸的2.5K悬浮式中控屏，左右滑动机制调整为左右摆动。"
+                }
+              ],
+              "reasoning": "运动机构若能带动整块中控屏左右摆动，屏幕通常必然与机构机械连接/安装；但证据未直接展示安装支架或连接点，故为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F4",
+              "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "运动机构使屏幕可从中间位置偏转到主驾或副驾位置；太平洋汽车等资料称其支持左右旋转/四指滑动向左、向右或居中放置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/63744",
+                  "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "屏幕既可以从中间位置偏转到主驾位置，也可以偏转到副驾位置。"
+                },
+                {
+                  "url": "https://m.pcauto.com.cn/baike/793528",
+                  "title": "极氪007显示屏效果怎么样",
+                  "source_name": "太平洋汽车百科",
+                  "snippet": "通过四指左右滑动能让屏幕向左、向右或者居中放置；驾驶时向左倾斜方便驾驶员查看，副驾驶想要使用时可以转向。"
+                },
+                {
+                  "url": "https://m.pcauto.com.cn/baike/630241/1227377",
+                  "title": "极氪007车机屏幕功能如何",
+                  "source_name": "太平洋汽车百科",
+                  "snippet": "车机屏幕支持左右旋转，能更好地照顾到驾驶员和副驾乘客。"
+                }
+              ],
+              "reasoning": "资料直接披露屏幕向主驾/副驾、左/右转动，满足该车载显示终端的功能性限定。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 95.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "极氪007为极氪智能科技旗下纯电豪华轿车/纯电动中型轿车，属于车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "11月17日，极氪智能科技旗下首款纯电豪华轿车极氪007首次全球公开亮相，并开启预售。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/c/8VS8eCRuZG7",
+                  "title": "极氪007中控屏可偏转！配001 FR同款液晶仪表",
+                  "source_name": "凤凰网",
+                  "snippet": "极氪007基于SEA浩瀚架构打造，定位纯电动中型轿车。"
+                }
+              ],
+              "reasoning": "公开资料直接将极氪007描述为纯电轿车/车辆。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F2",
+              "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+              "competitor_feature": "极氪007车辆内包括15.05英寸2.5K OLED向日葵中控屏这一车载显示终端，并包括使其主动偏转的运动/执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.foryouge.com/news/195.html",
+                  "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+                  "source_name": "ADAYO华阳官方",
+                  "snippet": "极氪007搭载由华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏；在运动机构的加持下，屏幕可主动偏转。"
+                },
+                {
+                  "url": "https://auto.hangzhou.com.cn/news/content/content_8680662.html",
+                  "title": "驾驶者之车！极氪007从性能到价格“一卷到底”",
+                  "source_name": "杭州网",
+                  "snippet": "内饰方面，极氪007全系标配13.02英寸全液晶仪表盘+15.05英寸向日葵中控屏。"
+                }
+              ],
+              "reasoning": "车辆配置清单和供应商资料直接披露极氪007搭载车载中控显示终端及其运动机构。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F3",
+              "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+              "competitor_feature": "极氪007中控屏位于车辆内饰中，为车辆前装配置；屏幕在运动机构加持下主动偏转。由此可推断执行机构安装在车体/中控台区域，显示终端安装在该执行机构上，但公开资料未直接展示车体固定点和屏幕安装界面。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://hao.yiche.com/wenzhang/86943804",
+                  "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+                  "source_name": "易车",
+                  "snippet": "极氪007内饰配有一块15英寸2.5K悬浮式中控屏，左右滑动机制调整为左右摆动，可朝主驾驶侧或者副驾驶侧倾斜。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/63744",
+                  "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度。"
+                }
+              ],
+              "reasoning": "作为量产车前装内饰件，屏幕及运动机构必然固定在车辆中控台/车体结构上；但缺少维修手册或拆解图直接证明安装点，故为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 93.33
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "ADAYO 华阳 极氪007 可偏转式中控屏 运动机构 结构",
+        "极氪007 向日葵中控屏 运动机构 拆解 旋转盘 安装支架",
+        "极氪007 向日葵屏 执行机构 配合凸起 配合槽",
+        "极氪007 中控屏 转向机构 内部结构 槽 凸起",
+        "极氪汽车 极氪007 15.05英寸2.5K OLED向日葵中控屏 拆解 结构",
+        "极氪汽车 极氪007 15.05英寸2.5K OLED向日葵中控屏 上市 日期 发布",
+        "极氪007 向日葵屏 中控显示屏总成 拆车件 背面 旋转机构",
+        "极氪007 中控显示屏总成 拆装 维修手册 可偏转屏",
+        "ADAYO 华阳 可偏转式 15.05 OLED 向日葵屏 传动机构 专利 旋转盘",
+        "华阳 车载显示屏 转动机构 多个凸起 多个配合槽 专利"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "特斯拉",
+        "company_en": "Tesla",
+        "product_name": "Model S / Model X 17英寸可自动左右偏转中控屏",
+        "product_name_en": "Tesla Model S / Model X 17-inch auto-swiveling center display",
+        "product_version": "特斯拉Model S/X新款座舱配备大尺寸水平中控显示屏，中文报道称其可自动旋转/左右角度旋转，17英寸大屏可通过转动向司机或车内乘客倾斜。",
+        "market": "中国进口高端电动车智能座舱市场",
+        "reason_for_deep_dive": "该屏幕不是横竖屏切换，而是向驾驶员或乘客方向左右偏转，和C1-F2的宽度方向左/右转动更接近。需重点深挖屏幕背部执行机构是否通过旋转盘与安装支架的凸起/槽配合来实现同步转动和定位。",
+        "source_result_ids": [
+          "brave-Q06-04",
+          "brave-Q08-04"
+        ],
+        "source_urls": [
+          "https://www.sohu.com/a/543916492_222118",
+          "https://zhuanlan.zhihu.com/p/509534289"
+        ],
+        "initial_evidence_summary": "摘要显示：特斯拉Model S/X功能升级，中控大屏可自动旋转；报道称其17英寸大屏幕可以通过转动方式向司机或车内乘客倾斜，并指出特斯拉为左右角度旋转，区别于横屏/竖屏旋转。"
+      },
+      "launch_date": "2022年4月最后一周生产，2022年5月4日公开报道已配备电动旋转功能",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/616/514.htm",
+          "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "2022/5/4报道：特斯拉对 Model S 和 Model X 车型进行了更新，为中控屏幕配备了新的电动旋转功能；车主提到该车是在4月的最后一周生产的。"
+        },
+        {
+          "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+          "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+          "source_name": "cnBeta",
+          "snippet": "2022年05月04日报道：近日对 Model S|X 车型的升级中，特斯拉为中控屏提供了电动旋转功能；Li 提到该车是在4月最后一周生产的。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未失格：公开记录显示涉案可自动左右偏转中控屏的实际装车/生产约为2022年4月最后一周，晚于专利申请日2019-03-28；未发现权利要求1任一特征被公开证据明确排除。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种显示终端的执行机构",
+              "competitor_feature": "Tesla Model S/X的17英寸中央显示屏被公开报道配备“新的电动旋转功能”/“电动旋转机构”；Tesla官方页面亦称17英寸触摸屏具有left-right tilt，属于用于驱动显示终端运动的执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/616/514.htm",
+                  "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+                  "source_name": "IT之家",
+                  "snippet": "特斯拉对 Model S 和 Model X 车型进行了更新，为中控屏幕配备了新的电动旋转功能。"
+                },
+                {
+                  "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+                  "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+                  "source_name": "cnBeta",
+                  "snippet": "近日对 Model S|X 车型的升级中，特斯拉为中控屏提供了电动旋转功能。"
+                },
+                {
+                  "url": "https://www.tesla.com/en_sg/models",
+                  "title": "Model S",
+                  "source_name": "Tesla",
+                  "snippet": "官方页面称：A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution。"
+                },
+                {
+                  "url": "https://icarcompanys.com/%e5%a4%96%e9%9b%bb%e5%a0%b1%e5%b0%8e/%e7%89%b9%e6%96%af%e6%8b%89%e6%96%b0%e6%ac%be%e3%80%8amodel-s-model-x%e3%80%8b%e8%b2%bc%e5%bf%83%e9%9a%b1%e8%97%8f%e5%8a%9f%e8%83%bd%e6%9b%9d%e5%85%89-%e3%80%8atesla%e3%80%8b%e6%96%b0%e6%ac%be",
+                  "title": "特斯拉新款Model S / Model X貼心隱藏功能曝光",
+                  "source_name": "汽車資訊",
+                  "snippet": "最新出廠的Model S與Model X已經悄悄為中控螢幕裝上電動旋轉機構。"
+                }
+              ],
+              "reasoning": "多家独立媒体和Tesla官方资料均直接确认Model S/X的17英寸中控屏具有电动/左右倾斜机构，足以对应“显示终端的执行机构”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "该17英寸中央触摸屏可朝主驾驶位或副驾驶位方向旋转/倾斜；用户可在Controls > Display界面选择left、right或center，屏幕电动移动到对应方向。这对应车辆宽度方向上的左右偏转。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/616/514.htm",
+                  "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+                  "source_name": "IT之家",
+                  "snippet": "旋转功能并不是像比亚迪那种水平或垂直旋转，而是向主驾或副驾水平倾斜。"
+                },
+                {
+                  "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+                  "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+                  "source_name": "cnBeta",
+                  "snippet": "电动旋转功能可以让中控大屏朝着主驾驶位和副驾驶位方向旋转；屏幕更多地面向驾驶员或完全面向前排乘客。"
+                },
+                {
+                  "url": "https://teslanorth.com/2022/05/04/hands-on-teslas-swivel-display-in-model-s-plaid-no-retrofits-for-now-4k-video",
+                  "title": "Hands-On: Tesla’s Swivel Display in Model S Plaid; No Retrofits for Now [4K VIDEO]",
+                  "source_name": "TeslaNorth",
+                  "snippet": "The tilt display can be accessed by going to Controls > Display; tap left, right or center, and the display will move in the direction you choose."
+                },
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "Electric motors adjust the Model S screen's position based on input from the driver; cannot tilt up or down as with some aftermarket attachments."
+                },
+                {
+                  "url": "https://tslcyh.cn/4060.html",
+                  "title": "新款特斯拉Model S/X中控屏“左右调节”功能回归 - 数字指南",
+                  "source_name": "数字指南",
+                  "snippet": "可透过中控屏幕的UI界面调整屏幕显示角度；可在向左倾斜、置中、向右倾斜等三种模式中任意切换。"
+                }
+              ],
+              "reasoning": "证据直接描述向主/副驾、left/right/center方向电动调节；主副驾方向即车辆横向宽度方向，故满足左右转动用途。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+              "competitor_feature": "公开证据仅确认Model S/X存在用于左右倾斜17英寸显示屏的硬件、电机/伺服机构及安装在仪表台上的屏幕组件；未公开安装支架、旋转盘、配合槽/配合凸起及其伸入配合关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.teslarati.com/tesla-model-s-plaid-tilting-display-teardown-confirmed-video",
+                  "title": "Tesla Model S Plaid tilting display mechanism analyzed and confirmed in teardown",
+                  "source_name": "Teslarati",
+                  "snippet": "Munro Live拆解分析称Model S Plaid中心显示屏配有显然用于向驾驶员或乘客倾斜的硬件，但摘要未披露旋转盘、槽、凸起的具体构造。"
+                },
+                {
+                  "url": "https://www.notateslaapp.com/software-updates/upcoming-features/id/761/software-update-adds-ability-to-tilt-the-display-in-new-model-s",
+                  "title": "Software update adds ability to tilt the display in new Model S",
+                  "source_name": "Not a Tesla App",
+                  "snippet": "报道称Tesla测试的软件更新会激活使大中控屏倾斜的servos；并非所有车辆都配备移动显示屏的motor。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/957181.html",
+                  "title": "特斯拉Model S最新消息，可旋转中控大屏，优化使用体验",
+                  "source_name": "爱卡汽车",
+                  "snippet": "图示证据：侧向照片可看到屏幕与仪表台之间存在支撑/连接部位，但无法辨认是否为旋转盘与安装支架的槽凸配合。"
+                }
+              ],
+              "reasoning": "“硬件/伺服机构/电动倾斜”只能证明存在驱动和支撑结构；权利要求要求的旋转盘、安装支架及槽凸嵌合未被公开文字、爆炸图或清晰拆解图证实。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：清晰拆解/零件图确认安装支架、旋转盘及槽凸嵌合关系。\n可去：Tesla EPC/维修手册，Munro拆解视频，二手总成高清照片\n下一步建议：查Tesla Service手册或eBay屏幕倾斜总成背面照片。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+              "competitor_feature": "公开资料没有披露Model S/X屏幕旋转/倾斜机构中存在多个配合凸起、多个配合槽，亦无一一对应配合的结构图或零件说明。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/616/514.htm",
+                  "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+                  "source_name": "IT之家",
+                  "snippet": "仅披露中控屏幕配备新的电动旋转功能、向主驾或副驾水平倾斜，未披露内部槽/凸起数量。"
+                },
+                {
+                  "url": "https://www.teslarati.com/tesla-model-s-plaid-tilting-display-teardown-confirmed-video",
+                  "title": "Tesla Model S Plaid tilting display mechanism analyzed and confirmed in teardown",
+                  "source_name": "Teslarati",
+                  "snippet": "搜索摘要称Munro Live确认存在用于倾斜显示屏的硬件，但未说明多个凸起与多个槽的一一对应配合。"
+                },
+                {
+                  "url": "https://teslamotorsclub.com/tmc/threads/s-x-palladium-motorized-screen-tilt-kit.257231",
+                  "title": "S/X Palladium Motorized Screen Tilt Kit",
+                  "source_name": "Tesla Motors Club",
+                  "snippet": "搜索摘要显示论坛贴含若干附件图片，但当前摘要未给出可核验的多个槽/凸起及一一对应关系。"
+                }
+              ],
+              "reasoning": "现有公开证据主要停留在功能、外观和可倾斜硬件层面；没有足以数清槽/凸起数量并确认一一对应配合的结构证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：公开图文未显示槽/凸起数量及一一对应配合。\n可去：屏幕倾斜电机总成拆解，维修手册爆炸图，eBay拆车件照片\n下一步建议：用部件号1585694-00-C、1607360-00-G查高清零件图。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+              "competitor_feature": "未见公开证据说明Model S/X旋转屏机构的凸起数量、位置或是否沿17英寸显示屏的长度方向间隔布置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/957181.html",
+                  "title": "特斯拉Model S最新消息，可旋转中控大屏，优化使用体验",
+                  "source_name": "爱卡汽车",
+                  "snippet": "正文称17英寸中央触控屏能向左右两侧旋转；图片只能显示整屏倾斜外观，无法显示内部凸起布置。"
+                },
+                {
+                  "url": "https://www.sohu.com/a/543916492_222118",
+                  "title": "特斯拉 Model S / X 功能升级，中控大屏可自动旋转！",
+                  "source_name": "搜狐汽车",
+                  "snippet": "报道称17英寸大屏幕可通过转动方式向司机或车内乘客倾斜，旋转方式为左右角度旋转；未披露内部凸起位置。"
+                },
+                {
+                  "url": "https://www.tesla.com/en_sg/models",
+                  "title": "Model S",
+                  "source_name": "Tesla",
+                  "snippet": "官方页面仅称17英寸触摸屏具有left-right tilt，并未披露内部配合凸起沿屏幕长度方向的布置。"
+                }
+              ],
+              "reasoning": "外观与功能报道不能观察内部槽凸的空间排布；没有拆解图或零件图显示多个凸起沿显示屏长度方向间隔设置。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：无法看到多个凸起是否沿17英寸屏幕长度方向间隔。\n可去：背部支架实拍，倾斜机构拆解视频，Tesla EPC零件图\n下一步建议：查Model S/X Palladium swivel kit安装教程的支架背面图。"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+              "competitor_feature": "证据可确认屏幕整体左右电动偏转，并由电机/伺服执行；但未公开旋转盘带动多个凸起、安装支架同步转动，以及多个凸起之间无相对运动的传动细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+                  "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+                  "source_name": "cnBeta",
+                  "snippet": "报道称电动旋转功能使屏幕更多地面向驾驶员或完全面向前排乘客，但未披露旋转盘与多个凸起的同步传动。"
+                },
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "报道称electric motors adjust the Model S screen's position；未说明多个凸起之间是否不发生相对运动。"
+                },
+                {
+                  "url": "https://teslanorth.com/2022/05/04/hands-on-teslas-swivel-display-in-model-s-plaid-no-retrofits-for-now-4k-video",
+                  "title": "Hands-On: Tesla’s Swivel Display in Model S Plaid; No Retrofits for Now [4K VIDEO]",
+                  "source_name": "TeslaNorth",
+                  "snippet": "报道称通过Controls > Display选择left/right/center后屏幕移动到所选方向；未披露内部多凸起同步运动副。"
+                }
+              ],
+              "reasoning": "整体屏幕可电动偏转不等同于特定“旋转盘—多凸起—安装支架”同步传动；缺少机构运动副细节，无法判断多个凸起之间无相对运动。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：未公开旋转盘带动多凸起同步且凸起间无相对运动。\n可去：机构运动视频，维修手册步骤，拆车件联动机构照片\n下一步建议：查Munro Live相关视频或TMC改装贴中的机构动作图。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+              "competitor_feature": "公开证据未披露Model S/X倾斜屏机构中旋转盘与安装支架的具体槽/凸位置关系，不能确认槽在旋转盘上、凸起在安装支架上。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.teslarati.com/tesla-model-s-plaid-tilting-display-teardown-confirmed-video",
+                  "title": "Tesla Model S Plaid tilting display mechanism analyzed and confirmed in teardown",
+                  "source_name": "Teslarati",
+                  "snippet": "确认显示屏具备用于倾斜的硬件，但摘要没有披露旋转盘、安装支架及槽/凸位置。"
+                },
+                {
+                  "url": "https://teslamotorsclub.com/tmc/threads/s-x-palladium-motorized-screen-tilt-kit.257231",
+                  "title": "S/X Palladium Motorized Screen Tilt Kit",
+                  "source_name": "Tesla Motors Club",
+                  "snippet": "论坛摘要显示存在电动屏幕倾斜套件讨论及附件，但当前公开摘要未能确认槽在旋转盘、凸起在支架。"
+                }
+              ],
+              "reasoning": "从属权利要求2限定槽/凸分别所在部件；现有证据未公开内部配合件的对应位置，因此不足以判断。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+              "competitor_feature": "公开证据明确显示Model S/X屏幕由electric motors/servos实现左右倾斜；但未披露该驱动单元是否与“旋转盘”配合并驱动旋转盘转动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "As seen in the Tesla clip, electric motors adjust the Model S screen's position based on input from the driver."
+                },
+                {
+                  "url": "https://www.notateslaapp.com/software-updates/upcoming-features/id/761/software-update-adds-ability-to-tilt-the-display-in-new-model-s",
+                  "title": "Software update adds ability to tilt the display in new Model S",
+                  "source_name": "Not a Tesla App",
+                  "snippet": "报道称软件更新会激活倾斜显示屏的servos；并非所有车辆都配备移动显示屏的motor。"
+                },
+                {
+                  "url": "https://teslamotorsclub.com/tmc/threads/help-needed-swivel-screen-parts-replacement.332160",
+                  "title": "Help Needed: Swivel Screen Parts Replacement",
+                  "source_name": "Tesla Motors Club",
+                  "snippet": "用户称订购了MS 2022改装swivel screen所需部件1585694-00-C和1607360-00-G，但摘要未说明驱动单元与旋转盘的配合方式。"
+                }
+              ],
+              "reasoning": "电机/伺服驱动单元本身有较强证据；但本特征还要求与旋转盘配合并驱动旋转盘，旋转盘及其连接关系未公开，故整体仍证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+              "competitor_feature": "公开证据可推知存在电机/伺服作为动力源，但未公开Model S/X倾斜屏驱动单元是否包括减速单元，以及动力源、减速单元、旋转盘之间的输入/输出连接关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "报道称electric motors adjust the Model S screen's position，但未披露减速单元。"
+                },
+                {
+                  "url": "https://www.notateslaapp.com/software-updates/upcoming-features/id/761/software-update-adds-ability-to-tilt-the-display-in-new-model-s",
+                  "title": "Software update adds ability to tilt the display in new Model S",
+                  "source_name": "Not a Tesla App",
+                  "snippet": "提到servos/motor用于倾斜显示屏；未公开减速机构及与旋转盘连接。"
+                }
+              ],
+              "reasoning": "小型电动倾斜机构通常可能含减速传动，但现有公开证据未给出齿轮箱、减速器或输出端连接旋转盘的结构信息，不能确认本从属限定。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+              "competitor_feature": "未发现公开证据披露Model S/X倾斜屏的减速单元类型，更未披露其为蜗杆齿轮传动机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "仅称由electric motors调整屏幕位置，未披露蜗杆齿轮。"
+                },
+                {
+                  "url": "https://www.teslarati.com/tesla-model-s-plaid-tilting-display-teardown-confirmed-video",
+                  "title": "Tesla Model S Plaid tilting display mechanism analyzed and confirmed in teardown",
+                  "source_name": "Teslarati",
+                  "snippet": "仅称存在用于倾斜显示屏的硬件，未公开传动齿轮类型。"
+                }
+              ],
+              "reasoning": "蜗杆齿轮是具体减速传动形式；现有资料没有拆开电机/传动盒或展示齿轮类型，因此不足以判断。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+              "competitor_feature": "公开资料显示Model S/X屏幕可在左、中、右方向调节，且Edmunds称不能像部分后市场件那样上下倾斜；但未披露旋转盘和驱动单元壳体上分别设置定位结构来限定转动角度。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://teslanorth.com/2022/05/04/hands-on-teslas-swivel-display-in-model-s-plaid-no-retrofits-for-now-4k-video",
+                  "title": "Hands-On: Tesla’s Swivel Display in Model S Plaid; No Retrofits for Now [4K VIDEO]",
+                  "source_name": "TeslaNorth",
+                  "snippet": "可在Controls > Display中选择left、right或center，屏幕向选择方向移动。"
+                },
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "报道称屏幕由电机调节，且看起来不能上下倾斜；未公开机械定位结构。"
+                }
+              ],
+              "reasoning": "左/中/右控制或软件限位不能直接证明存在“旋转盘第一定位结构+驱动单元壳体第二定位结构”的机械配合限位；缺少内部结构证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+              "competitor_feature": "公开证据未披露Model S/X倾斜屏旋转盘是否具有穿过驱动单元的安装轴；现有报道仅说明屏幕有倾斜硬件、电机或伺服。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.teslarati.com/tesla-model-s-plaid-tilting-display-teardown-confirmed-video",
+                  "title": "Tesla Model S Plaid tilting display mechanism analyzed and confirmed in teardown",
+                  "source_name": "Teslarati",
+                  "snippet": "拆解摘要确认存在用于倾斜的硬件，但未显示安装轴穿过驱动单元。"
+                },
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "披露电机调整屏幕位置，但未公开轴结构。"
+                }
+              ],
+              "reasoning": "安装轴穿过驱动单元是内部轴系结构；现有公开资料没有相关剖视图、爆炸图或维修步骤，不能确认。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+              "competitor_feature": "未发现公开证据披露Model S/X倾斜屏执行机构具有套设在安装轴上的弹性件，或该弹性件分别抵压轴向限位件和驱动单元壳体。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://teslamotorsclub.com/tmc/threads/s-x-palladium-motorized-screen-tilt-kit.257231",
+                  "title": "S/X Palladium Motorized Screen Tilt Kit",
+                  "source_name": "Tesla Motors Club",
+                  "snippet": "论坛摘要显示有电动屏幕倾斜套件附件，但当前摘要未披露弹性件、轴向限位件或壳体抵压关系。"
+                },
+                {
+                  "url": "https://www.teslarati.com/tesla-model-s-plaid-tilting-display-teardown-confirmed-video",
+                  "title": "Tesla Model S Plaid tilting display mechanism analyzed and confirmed in teardown",
+                  "source_name": "Teslarati",
+                  "snippet": "仅确认倾斜硬件存在，未公开弹簧/弹性件布置。"
+                }
+              ],
+              "reasoning": "弹性件及其抵压关系属于非常具体的内部结构，无法由外观或功能性左右倾斜推断；现有证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述安装轴为中空结构",
+              "competitor_feature": "未发现公开证据披露Model S/X倾斜屏执行机构中存在安装轴，更未披露该安装轴为中空结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.teslarati.com/tesla-model-s-plaid-tilting-display-teardown-confirmed-video",
+                  "title": "Tesla Model S Plaid tilting display mechanism analyzed and confirmed in teardown",
+                  "source_name": "Teslarati",
+                  "snippet": "确认倾斜硬件存在，但未公开安装轴及其中空/实心结构。"
+                },
+                {
+                  "url": "https://teslamotorsclub.com/tmc/threads/help-needed-swivel-screen-parts-replacement.332160",
+                  "title": "Help Needed: Swivel Screen Parts Replacement",
+                  "source_name": "Tesla Motors Club",
+                  "snippet": "用户提到swivel screen改装部件号，但摘要没有安装轴内部结构信息。"
+                }
+              ],
+              "reasoning": "中空安装轴需剖视图、零件图或实物拆解照片确认；现有资料未披露，故证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "一种车载显示终端",
+              "competitor_feature": "Tesla Model S/X搭载17英寸车载中央触摸屏，官方页面称其为17” touchscreen，位于车辆座舱内。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/en_sg/models",
+                  "title": "Model S",
+                  "source_name": "Tesla",
+                  "snippet": "A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution, true colors and exceptional responsiveness。"
+                },
+                {
+                  "url": "https://www.tesla.com/en_HK/models/design",
+                  "title": "Model S",
+                  "source_name": "Tesla",
+                  "snippet": "Interior of the Future：A 17” touchscreen with left-right tilt offers 2200 x 1300 resolution。"
+                }
+              ],
+              "reasoning": "官方资料明确为车内17英寸触摸屏，属于车载显示终端。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "包括：显示终端；执行机构",
+              "competitor_feature": "Model S/X包括17英寸显示终端，并配备使其左右倾斜的电动旋转/倾斜机构；但权利要求1内部槽凸等结构仍如C1-F3至C1-F6所述未证实。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/616/514.htm",
+                  "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+                  "source_name": "IT之家",
+                  "snippet": "Model S和Model X中控屏幕配备新的电动旋转功能。"
+                },
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "Electric motors adjust the Model S screen's position based on input from the driver."
+                }
+              ],
+              "reasoning": "本特征按拆分文本要求显示终端和执行机构两类部件；公开证据直接显示屏幕和电动调节机构存在。内部具体结构不在本拆分特征中重复计分。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F3",
+              "patent_feature": "所述显示终端安装于所述执行机构",
+              "competitor_feature": "17英寸中控屏通过仪表台中央的支撑/倾斜机构安装，电机可调节该屏幕位置，说明显示终端安装在执行机构上或由其支承。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/957181.html",
+                  "title": "特斯拉Model S最新消息，可旋转中控大屏，优化使用体验",
+                  "source_name": "爱卡汽车",
+                  "snippet": "图示证据：车外/侧向照片显示新款Model S中控屏相对仪表台存在左右偏转姿态，并有支撑连接部位。"
+                },
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "电机根据驾驶员输入调节Model S屏幕位置，表明显示屏由该调节机构承载并移动。"
+                }
+              ],
+              "reasoning": "若电机/机构能改变屏幕朝向，屏幕必须机械安装在该机构或其支承件上；外观图也显示屏幕与仪表台之间的连接支撑。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F4",
+              "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "用户可在中控UI中选择left、right或center；电机驱动17英寸触摸屏朝驾驶员或副驾驶方向左右倾斜。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://teslanorth.com/2022/05/04/hands-on-teslas-swivel-display-in-model-s-plaid-no-retrofits-for-now-4k-video",
+                  "title": "Hands-On: Tesla’s Swivel Display in Model S Plaid; No Retrofits for Now [4K VIDEO]",
+                  "source_name": "TeslaNorth",
+                  "snippet": "从Controls > Display选择left、right或center后，display会向选择的方向移动。"
+                },
+                {
+                  "url": "https://www.cnbeta.com.tw/articles/tech/1265253.htm",
+                  "title": "特斯拉为Model S|X车型中控屏提供电动旋转功能 - cnBeta.COM",
+                  "source_name": "cnBeta",
+                  "snippet": "电动旋转功能可以让中控大屏朝着主驾驶位和副驾驶位方向旋转。"
+                }
+              ],
+              "reasoning": "公开资料直接描述执行机构/电机驱动屏幕向左、向右或居中移动，满足左右转动功能。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "Tesla Model S和Model X均为特斯拉量产车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/en_sg/models",
+                  "title": "Model S",
+                  "source_name": "Tesla",
+                  "snippet": "Tesla官方Model S车型页面展示车辆及其内饰配置。"
+                },
+                {
+                  "url": "https://www.ithome.com/0/616/514.htm",
+                  "title": "特斯拉 Model S / X 车型升级，中央大屏幕可朝主 / 副驾旋转 - IT之家",
+                  "source_name": "IT之家",
+                  "snippet": "报道称特斯拉对Model S和Model X车型进行更新。"
+                }
+              ],
+              "reasoning": "Model S/X是明确的量产乘用车，满足“一种车辆”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F2",
+              "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+              "competitor_feature": "Model S/X车辆包括17英寸车载中央触摸屏和用于其left-right tilt的电动执行机构/电机调节机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/en_sg/models",
+                  "title": "Model S",
+                  "source_name": "Tesla",
+                  "snippet": "官方页面称17英寸触摸屏具备left-right tilt。"
+                },
+                {
+                  "url": "https://www.edmunds.com/car-news/new-swivel-screen-for-tesla-model-s-and-model-x.html",
+                  "title": "Tesla Swivel Screen Debuts in Model S, Model X",
+                  "source_name": "Edmunds",
+                  "snippet": "Electric motors adjust the Model S screen's position based on input from the driver."
+                }
+              ],
+              "reasoning": "车辆配置中存在车载显示终端，且公开资料确认其左右倾斜由电机/机构执行，满足本特征的部件组合要求。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F3",
+              "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+              "competitor_feature": "17英寸屏幕安装于Model S/X仪表台中央的车体/内饰结构上，并由连接支撑/执行机构承载；电机调节屏幕朝向说明显示终端安装于执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/957181.html",
+                  "title": "特斯拉Model S最新消息，可旋转中控大屏，优化使用体验",
+                  "source_name": "爱卡汽车",
+                  "snippet": "图示证据：中控屏在车辆仪表台中央，显示屏相对仪表台存在左右偏转姿态，并由背部连接部位支撑。"
+                },
+                {
+                  "url": "https://teslanorth.com/2022/05/04/hands-on-teslas-swivel-display-in-model-s-plaid-no-retrofits-for-now-4k-video",
+                  "title": "Hands-On: Tesla’s Swivel Display in Model S Plaid; No Retrofits for Now [4K VIDEO]",
+                  "source_name": "TeslaNorth",
+                  "snippet": "在车辆Controls > Display中可控制屏幕left/right/center移动，体现执行机构在车内安装并承载显示屏。"
+                }
+              ],
+              "reasoning": "从车辆内饰照片和控制功能可确认屏幕及其调节机构安装于车辆仪表台区域，显示终端由执行机构承载；但内部槽凸结构仍未由该特征单独证明。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "Tesla refreshed Model S center screen swivel mechanism teardown mounting bracket rotating plate",
+        "特斯拉 Model S X 中控屏 电动旋转机构 拆解 支架 旋转盘",
+        "Tesla Model S X screen swivel motor assembly parts diagram slots pins grooves",
+        "特斯拉 Model S X 中控屏 旋转支架 零件图 凸起 槽",
+        "特斯拉 Model S / Model X 17英寸可自动左右偏转中控屏 规格书 参数",
+        "特斯拉 Model S / Model X 17英寸可自动左右偏转中控屏 拆解 结构",
+        "特斯拉 Model S / Model X 17英寸可自动左右偏转中控屏 上市 日期 发布",
+        "Tesla Model S Plaid center display swivel actuator mounting bracket gear plate photos",
+        "Model S Plaid 17 inch screen tilt motor assembly part number bracket",
+        "特斯拉 Model S Plaid 中控屏 倾斜 电机 总成 支架 零件 照片"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "高合汽车（华人运通）",
+        "company_en": "HiPhi / Human Horizons",
+        "product_name": "高合HiPhi Z HiPhi Bot 15.05英寸OLED多轴位移中控屏",
+        "product_name_en": "HiPhi Z HiPhi Bot 15.05-inch OLED multi-axis movable center display",
+        "product_version": "HiPhi Z的15.05英寸OLED中控屏由4自由度/8向可调、高速运动机械臂连接，可前后移动、横竖屏切换，并能前后左右高频摆动。摘要称前后移动1秒到位、横竖屏切换2秒完成、前后左右高频摆动3次/秒。",
+        "market": "中国高端新能源智能座舱量产车型",
+        "reason_for_deep_dive": "该产品的显示终端通过机械臂执行机构实现多轴位移和左右方向摆动，覆盖C1-F1/C1-F2的显示终端执行机构和左/右转动场景。虽然其机构可能不同于简单旋转盘结构，但公开的高速多轴机械连接非常值得拆解核查C1-F3至C1-F6的支架、旋转盘及多点同步传动特征。",
+        "source_result_ids": [
+          "tavily-Q11-01"
+        ],
+        "source_urls": [
+          "https://h5.ifeng.com/c/vivoArticle/v002Ws7--rAXh0a3DSgt8jZbJ2w72HZwucFwOzRTCgAAg8vs__?isNews=1&showComments=0"
+        ],
+        "initial_evidence_summary": "摘要显示：高合HiPhi Z中控屏为15.05英寸OLED，由4自由度8向可调、高速运动机械臂连接；可前后移动、横竖屏切换、前后左右高频摆动；前后移动1秒到位，横竖屏切换2秒完成，前后左右高频摆动3次/秒。"
+      },
+      "launch_date": "2022年7月正式亮相/量产定型车公开报道",
+      "launch_date_evidence": [
+        {
+          "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+          "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+          "source_name": "动点科技",
+          "snippet": "文章日期为2022/07/08，称高合HiPhi Z为“此前发布的量产定型车”，并详细介绍HiPhi Bot多轴位移车载数字机器人。"
+        },
+        {
+          "url": "https://www.autobit.xyz/news/2371.html",
+          "title": "高合 HiPhi Z：打造面向未来的车，我最有发言权",
+          "source_name": "汽车之心",
+          "snippet": "文章日期为2022-07-12，称高合HiPhi Z搭载车载数字机器人HiPhi Bot，采用车规级4自由度、8向调节机械臂。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未失格：现有公开证据显示HiPhi Z/HiPhi Bot在2022年公开亮相或量产定型，晚于专利申请日2019-03-28；未发现权利要求1任一特征被公开证据直接证明为明确不满足。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种显示终端的执行机构",
+              "competitor_feature": "HiPhi Z中控显示终端为15.05英寸OLED/AMOLED屏，屏幕后由HiPhi Bot多轴位移车载数字机器人/高速机械臂驱动；该机械臂属于用于显示终端运动的执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hiphi.cn/hiphiz.html",
+                  "title": "高合HiPhi Z 高合汽车官网_华人运通",
+                  "source_name": "高合官网",
+                  "snippet": "“HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。”"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“HiPhi Z 的中控屏尺寸为 15.05 英寸……高合首创的机械臂组合成了一个 HiPhi Bot……配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”"
+                }
+              ],
+              "reasoning": "官网和新出行评测均直接说明15.05英寸中控屏背后由HiPhi Bot机械臂/多轴位移系统支撑并驱动，属于“显示终端的执行机构”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "HiPhi Bot支持前后、左右、俯仰、旋转4自由度/8向可调；公开资料称可“前后左右高频摆动”，并可将中控屏转到合适角度和位置。左右摆动/左右角度切换对应车内横向，即车辆宽度方向的左/右调节。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://m.hiphi.com/intelligence.html",
+                  "title": "高合HiPhi Z类人灵智-华人运通高合HiPhi Z",
+                  "source_name": "高合官网移动页",
+                  "snippet": "“4自由度8向可调、高速运动的机械臂……可前后移动，横竖屏切换，前后左右高频摆动。”英文页亦称“oscillates backward, forwards, left, and right in high frequency”。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“HiPhi Bot 支持前后、左右、俯仰、旋转共4自由度以及8向可调……可以支持多方向的调节。”"
+                },
+                {
+                  "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+                  "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+                  "source_name": "动点科技",
+                  "snippet": "“HiPhi Bot能听音识位，通过多轴位移机械臂，将中控屏幕转到合适的角度和位置……前后左右高频摆动，3次/秒。”"
+                }
+              ],
+              "reasoning": "多家公开资料直接写明中控屏机械臂可左右调节/左右摆动，并可把屏幕转到相应角度；车内左右方向即车辆宽度方向。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+              "competitor_feature": "公开资料能证明HiPhi Bot为屏幕后机械臂，配有独立伺服电机、丝杠电推杆、旋转机构，可支撑并调节中控屏；补搜资料还称屏幕背后一根机械臂可90°旋转、多维度动作。但未公开显示屏安装支架、旋转盘，以及旋转盘/支架之间的配合槽与配合凸起伸入配合结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”文中出现“HiPhi Bot 背部机械结构”图片说明，但未公开槽/凸起连接细节。"
+                },
+                {
+                  "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+                  "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+                  "source_name": "太平洋汽车",
+                  "snippet": "“可90度旋转的中控显示屏，背后通过机械臂进行控制，从而可以实现多维度的动作。”未披露旋转盘、配合槽或配合凸起。"
+                },
+                {
+                  "url": "http://m.diandong.com/news/161956.html",
+                  "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+                  "source_name": "电动邦",
+                  "snippet": "“这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。”"
+                }
+              ],
+              "reasoning": "现有证据足以证明存在屏幕后执行机构、旋转机构和机械臂，但均停留在整机功能/外观层面；未见支架与旋转盘之间采用槽-凸起插接并同步转动的公开结构图或文字，因此不能确认该具体内部传动配合。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：屏后支架/旋转盘及槽-凸结构图，现证据仅到机械臂/旋转机构。\n可去：HiPhi Z维修手册/零件目录，拆解视频，HiPhi Bot供应商资料\n下一步建议：去17vin、精通汽修或汽修帮手找中控屏/机械臂总成爆炸图"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+              "competitor_feature": "现有公开资料未披露HiPhi Bot内部存在多个配合凸起、多个配合槽，也未披露二者一一对应配合；仅能证明其为多轴机械臂/旋转机构。新出行补搜结果中出现“三轴机械臂共同故障可能性低，单根失效剩下两根仍能正常工作”的表述，但这是机械臂数量/冗余层面的描述，不等同于多个槽-凸起一一对应配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "公开信息只说明“独立的伺服电机、丝杠电推杆、旋转机构”，未说明多个凸起/槽。"
+                },
+                {
+                  "url": "https://m.hiphi.com/intelligence.html",
+                  "title": "高合HiPhi Z类人灵智-华人运通高合HiPhi Z",
+                  "source_name": "高合官网移动页",
+                  "snippet": "仅说明“Robot Arm With Multi-axis Movement”“4自由度8向可调、高速运动的机械臂”，无内部槽-凸起数量及配合关系。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/54348",
+                  "title": "从概念到现实的数字 GT 实拍解析高合 HiPhi Z 量产版_评测_新出行",
+                  "source_name": "新出行",
+                  "snippet": "文章提到HiPhi Bot能够通过多轴位移机械臂调节中控屏角度和位置，并称“三轴机械臂共同故障的可能性非常低”，但未公开多个配合槽/凸起。"
+                }
+              ],
+              "reasoning": "多轴机械臂或多根机械臂不必然采用“多个凸起+多个槽一一对应”的旋转盘连接方式。公开资料未披露这些内部配合件的数量、形状和对应关系，无法证实也无法排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：多个凸起/槽的数量及一一对应关系，公开图未拆到内部。\n可去：维修手册零件图，拆车件照片，官方结构专利\n下一步建议：检索17vin或jt269.com中“HiPhi Bot/中控机械臂总成”"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+              "competitor_feature": "未发现公开资料说明HiPhi Bot中存在“多个配合凸起”，更没有说明这些凸起沿15.05英寸显示屏的长度方向间隔布置。公开图片仅显示中控屏位于座舱中央和背后机械臂/支撑区域，不能识别内部凸起及其沿屏幕长边的排布。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hiphi.cn/hiphiz.html",
+                  "title": "高合HiPhi Z 高合汽车官网_华人运通",
+                  "source_name": "高合官网",
+                  "snippet": "官网仅说明中控屏由HiPhi Bot机械臂实现前后移动、横竖屏切换、无级调节、任意悬停，未披露凸起排列方向。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/53461",
+                  "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+                  "source_name": "新出行",
+                  "snippet": "页面GIF/图示显示中控屏支持横竖向旋转、左右角度偏移；未标注内部配合凸起或其沿屏幕长度方向的布置。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "图示证据：页面展示中控屏正面及机械屏使用场景；文字未标注内部配合凸起或其沿屏幕长度方向的布置。"
+                }
+              ],
+              "reasoning": "该特征依赖内部凸起数量和空间排布。现有证据只到整机运动功能和座舱外观层面，没有拆解图、爆炸图或结构图支撑“沿显示终端长度方向间隔设置”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：凸起沿显示屏长度方向间隔布置；尚未证明存在凸起更无方向。\n可去：屏幕后支架爆炸图，拆解视频，供应商装配图\n下一步建议：优先找中控屏背部支架近照或机械臂连接座拆解图"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+              "competitor_feature": "公开资料未披露旋转盘驱动多个凸起转动，也未披露多个凸起作为整体同步、彼此无相对运动；仅披露机械臂通过伺服电机、丝杠电推杆、旋转机构实现多方向调节、任意悬停、90°旋转和前后左右高频摆动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”未披露旋转盘-多凸起同步传动。"
+                },
+                {
+                  "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+                  "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+                  "source_name": "动点科技",
+                  "snippet": "“HiPhi Bot拥有车规级、4自由度/8向可调、全行程无极调节、高速运动的机械臂……横竖屏切换，2秒完成；前后左右高频摆动，3次/秒。”"
+                },
+                {
+                  "url": "http://m.diandong.com/news/161956.html",
+                  "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+                  "source_name": "电动邦",
+                  "snippet": "“中控屏在转动过程中，其中的导航地图竟然可以保持相对稳定……软件系统与机械臂等硬件达成了非常完美的协调性。”"
+                }
+              ],
+              "reasoning": "功能性运动、地图稳定和机械臂协调只能证明整机控制精度较高，不能反推出旋转盘带多个凸起同步转动，也不能证明多个凸起之间无相对运动；缺少拆解、结构图或文字说明。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：旋转盘带多凸起同步且无相对运动，功能证据不能证明传动链。\n可去：执行机构结构图，维修手册，拆解视频\n下一步建议：在维修资料站或拆车件平台找HiPhi Bot传动机构内部照片"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+              "competitor_feature": "公开资料没有披露HiPhi Bot的旋转盘、安装支架以及二者之间槽/凸起的具体归属位置；无法确认是旋转盘设槽、安装支架设凸起，还是其他连接方式。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "仅说明HiPhi Bot配合独立伺服电机、丝杠电推杆、旋转机构支持多方向调节。"
+                },
+                {
+                  "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+                  "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+                  "source_name": "太平洋汽车",
+                  "snippet": "“背后通过机械臂进行控制，从而可以实现多维度的动作。”未披露槽/凸起设置在何部件上。"
+                }
+              ],
+              "reasoning": "该从属特征要求明确的部件归属关系。现有资料没有拆到旋转盘和安装支架的连接界面，不能证明旋转盘设槽、支架设凸起。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+              "competitor_feature": "HiPhi Bot公开资料明确提到独立伺服电机、丝杠电推杆、旋转机构，能够驱动屏幕进行4自由度/8向调节及90°旋转；这些公开部件可对应“驱动单元”。但公开资料未直接披露该驱动单元与一个“旋转盘”配合并驱动旋转盘转动。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”"
+                },
+                {
+                  "url": "http://m.diandong.com/news/161956.html",
+                  "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+                  "source_name": "电动邦",
+                  "snippet": "“这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。”"
+                }
+              ],
+              "reasoning": "伺服电机、丝杠电推杆和旋转机构足以严谨推断HiPhi Bot存在用于驱动屏幕运动的驱动单元；但因旋转盘未公开，只能将“与旋转盘配合”部分评价为推定，故为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+              "competitor_feature": "公开资料披露HiPhi Bot使用独立伺服电机、丝杠电推杆和旋转机构；伺服电机可对应动力源，丝杠电推杆/旋转机构通常包含传动或减速功能以实现无级调节、任意悬停和高精度动作。但没有公开电机输出端—减速单元—旋转盘的具体连接链。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”"
+                },
+                {
+                  "url": "https://www.hiphi.cn/hiphiz.html",
+                  "title": "高合HiPhi Z 高合汽车官网_华人运通",
+                  "source_name": "高合官网",
+                  "snippet": "“4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。”"
+                }
+              ],
+              "reasoning": "独立伺服电机直接支撑“动力源”；丝杠电推杆和旋转机构为了高精度、任意悬停通常需要传动/减速链，因此可推定存在减速或传动单元。但公开资料未给出减速单元结构和与旋转盘的输出连接，不能评为明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+              "competitor_feature": "公开资料仅提到HiPhi Bot具有伺服电机、丝杠电推杆、旋转机构；未披露减速单元类型，更未说明其为蜗杆齿轮传动机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“独立的伺服电机、丝杠电推杆、旋转机构”支持调节；未说明蜗杆齿轮传动。"
+                },
+                {
+                  "url": "http://m.diandong.com/news/161956.html",
+                  "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+                  "source_name": "电动邦",
+                  "snippet": "仅说明机械臂支持90°旋转和多维度转动，未披露蜗杆齿轮。"
+                }
+              ],
+              "reasoning": "蜗杆齿轮是具体减速机构形式。现有证据没有蜗杆、蜗轮、齿轮传动等文字或图示，不能从“伺服电机/旋转机构”直接推出。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+              "competitor_feature": "HiPhi Bot公开资料显示中控屏支持90°旋转、横竖屏切换、左右角度偏移和任意悬停；这些功能表明系统存在角度控制/限位能力。但未公开旋转盘上的第一定位结构、驱动单元壳体上的第二定位结构及二者机械配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/53461",
+                  "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+                  "source_name": "新出行",
+                  "snippet": "“中控屏是支持横竖向的选装的，并且还支持左右角度偏移。”"
+                },
+                {
+                  "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+                  "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+                  "source_name": "太平洋汽车",
+                  "snippet": "“可90度旋转的中控显示屏，背后通过机械臂进行控制。”"
+                }
+              ],
+              "reasoning": "角度可控并不必然由旋转盘/壳体上的两个定位结构机械配合实现，也可能由电机控制、编码器、软件限位或其他结构实现。无公开结构细节，证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+              "competitor_feature": "公开资料未披露HiPhi Bot的旋转盘，也未披露穿过驱动单元的安装轴。可见资料仅显示/描述屏幕后机械臂、伺服电机、丝杠电推杆和旋转机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "文字说明伺服电机、丝杠电推杆、旋转机构；没有安装轴穿过驱动单元的披露。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/54348",
+                  "title": "从概念到现实的数字 GT 实拍解析高合 HiPhi Z 量产版_评测_新出行",
+                  "source_name": "新出行",
+                  "snippet": "公开资料主要描述HiPhi Bot多轴位移机械臂调节屏幕角度和位置，未给出安装轴结构。"
+                }
+              ],
+              "reasoning": "该特征是内部轴系结构。现有公开内容没有爆炸图或截面图，不能证明存在穿过驱动单元的安装轴。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+              "competitor_feature": "公开资料未披露HiPhi Bot执行机构内的弹性件、弹性件套设于安装轴、轴向限位件或弹性件两端分别抵压安装轴限位件和驱动单元壳体的结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hiphi.cn/hiphiz.html",
+                  "title": "高合HiPhi Z 高合汽车官网_华人运通",
+                  "source_name": "高合官网",
+                  "snippet": "官网说明HiPhi Bot可无级调节、任意悬停，但没有公开弹性件/弹簧及安装轴限位结构。"
+                },
+                {
+                  "url": "http://m.diandong.com/news/161956.html",
+                  "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+                  "source_name": "电动邦",
+                  "snippet": "仅披露中控屏背后机械臂支持90°旋转、多维度转动，未披露弹性件。"
+                }
+              ],
+              "reasoning": "任意悬停或机械臂运动不能反推一定存在套设在安装轴上的弹性件；该从属特征缺少直接公开或图示支持。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述安装轴为中空结构",
+              "competitor_feature": "公开资料未披露HiPhi Bot是否存在安装轴，也未披露该安装轴是否为中空结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "公开资料仅说明机械臂、伺服电机、丝杠电推杆、旋转机构，未说明安装轴或中空轴。"
+                },
+                {
+                  "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+                  "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+                  "source_name": "太平洋汽车",
+                  "snippet": "公开中控屏背后通过机械臂控制实现多维度动作，但无轴系截面或中空结构说明。"
+                }
+              ],
+              "reasoning": "中空轴属于内部细节。没有安装轴存在性的证据，更无法确认其为空心/中空。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "一种车载显示终端",
+              "competitor_feature": "HiPhi Z座舱中部搭载15.05英寸AMOLED/OLED中控触摸屏，属于车载显示终端。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“HiPhi Z 的中控屏尺寸为 15.05 英寸，并且是一块 AMOLED 2K 屏。”"
+                },
+                {
+                  "url": "https://www.autohome.com.cn/ask/7079045.html",
+                  "title": "高合HiPhi Z车机多媒体评测-汽车之家",
+                  "source_name": "汽车之家",
+                  "snippet": "“HiPhi Z配备了15.05英寸的AMOLED屏幕，分辨率达到2K级别。”"
+                }
+              ],
+              "reasoning": "公开资料直接说明HiPhi Z配备15.05英寸中控显示屏/触摸屏，安装在车辆座舱中，满足车载显示终端。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "包括：显示终端；执行机构",
+              "competitor_feature": "HiPhi Z车载显示终端包括15.05英寸AMOLED中控屏和HiPhi Bot多轴位移机械臂执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hiphi.cn/hiphiz.html",
+                  "title": "高合HiPhi Z 高合汽车官网_华人运通",
+                  "source_name": "高合官网",
+                  "snippet": "“HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂。”"
+                },
+                {
+                  "url": "https://www.autohome.com.cn/ask/7079045.html",
+                  "title": "高合HiPhi Z车机多媒体评测-汽车之家",
+                  "source_name": "汽车之家",
+                  "snippet": "“屏幕与高合首创的机械臂组合成为具有生命感的智能数字机器人——HiPhi Bot，支持多向可调。”"
+                }
+              ],
+              "reasoning": "显示屏与机械臂组合构成车载显示终端组件；机械臂承担驱动显示屏运动的执行机构功能。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F3",
+              "patent_feature": "所述显示终端安装于所述执行机构",
+              "competitor_feature": "HiPhi Z大尺寸中控屏背后由机械臂/HiPhi Bot连接和控制；公开图片显示屏体位于机械臂/中控支撑结构前方，说明显示终端安装在该执行机构上。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "http://m.diandong.com/news/161956.html",
+                  "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+                  "source_name": "电动邦",
+                  "snippet": "“这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。”"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/53461",
+                  "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+                  "source_name": "新出行",
+                  "snippet": "图示证据：座舱图片/GIF显示中控屏安装在中控台上方的机械运动机构上，并可横竖向旋转、左右角度偏移。"
+                }
+              ],
+              "reasoning": "“屏幕背后是一根机械臂”以及图示中的屏幕-机械臂组合可直接证明显示终端安装于机械臂执行机构。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F4",
+              "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "HiPhi Bot支持左右角度偏移、前后左右高频摆动和4自由度/8向可调，能够驱动中控屏向驾驶员或副驾方向转动/偏转。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/53461",
+                  "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+                  "source_name": "新出行",
+                  "snippet": "“中控屏是支持横竖向的选装的，并且还支持左右角度偏移。”"
+                },
+                {
+                  "url": "https://m.hiphi.com/intelligence.html",
+                  "title": "高合HiPhi Z类人灵智-华人运通高合HiPhi Z",
+                  "source_name": "高合官网移动页",
+                  "snippet": "“4自由度8向可调、高速运动的机械臂……前后左右高频摆动。”"
+                }
+              ],
+              "reasoning": "左右角度偏移和前后左右高频摆动是对车载中控屏左右方向转动/调节的直接公开。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "高合HiPhi Z是华人运通/高合汽车推出的量产纯电豪华GT/中大型轿跑车型，属于车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+                  "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+                  "source_name": "动点科技",
+                  "snippet": "文章介绍高合HiPhi Z量产定型车及其配置。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/54348",
+                  "title": "从概念到现实的数字 GT 实拍解析高合 HiPhi Z 量产版_评测_新出行",
+                  "source_name": "新出行",
+                  "snippet": "“高合 HiPhi Z 量产版……定位于科技轿跑 GT。”"
+                }
+              ],
+              "reasoning": "多家汽车媒体和官方页面均将HiPhi Z作为车辆/量产车介绍，满足车辆特征。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F2",
+              "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+              "competitor_feature": "HiPhi Z车辆包括HiPhi Bot多轴位移车载数字机器人以及15.05英寸AMOLED中控显示终端，屏幕和机械臂构成车载显示终端组件。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hiphi.cn/hiphiz.html",
+                  "title": "高合HiPhi Z 高合汽车官网_华人运通",
+                  "source_name": "高合官网",
+                  "snippet": "“HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂。”"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/72423",
+                  "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+                  "source_name": "新出行",
+                  "snippet": "“HiPhi Z 的中控屏尺寸为 15.05 英寸……高合首创的机械臂组合成了一个 HiPhi Bot。”"
+                }
+              ],
+              "reasoning": "车辆内配置的15.05英寸中控屏和HiPhi Bot机械臂直接对应车载显示终端/执行机构。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F3",
+              "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+              "competitor_feature": "HiPhi Bot被公开称为“车载数字机器人”，位于HiPhi Z中控台区域；大尺寸中控屏背后是一根机械臂，图示中显示屏安装在座舱中控台上方的机械机构上，因此执行机构安装于车辆座舱/车体，显示终端安装于该执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "http://m.diandong.com/news/161956.html",
+                  "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+                  "source_name": "电动邦",
+                  "snippet": "“新车搭载了全球首款多轴位移的车载数字机器人HiPhi Bot，这块大尺寸中控屏背后是一根机械臂。”"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/53461",
+                  "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+                  "source_name": "新出行",
+                  "snippet": "图示证据：HiPhi Z座舱中控屏位于车辆中控区域，支持横竖向旋转和左右角度偏移。"
+                },
+                {
+                  "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+                  "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+                  "source_name": "太平洋汽车",
+                  "snippet": "“可90度旋转的中控显示屏，背后通过机械臂进行控制，从而可以实现多维度的动作。”"
+                }
+              ],
+              "reasoning": "“车载数字机器人”说明机械臂执行机构为车辆内装部件；“屏幕背后是一根机械臂”及座舱图示直接支持显示终端安装在执行机构上。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "高合 HiPhi Z HiPhi Bot 机械臂 拆解 旋转机构 安装支架",
+        "HiPhi Z HiPhi Bot mechanical arm teardown rotating mechanism bracket",
+        "高合 HiPhi Z HiPhi Bot 中控屏 背部机械结构 拆解 图 旋转盘 配合槽 凸起",
+        "HiPhi Z HiPhi Bot service manual center display actuator exploded view",
+        "高合 HiPhi Z 中控屏 机械臂 总成 零件图 安装支架 旋转盘",
+        "Human Horizons HiPhi Bot display robot arm patent groove protrusion turntable"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P08",
+        "company": "赛力斯汽车 / 问界",
+        "company_en": "SERES / AITO",
+        "product_name": "问界M6可左右偏转/前后伸缩悬浮式中控屏",
+        "product_name_en": "AITO M6 swiveling and telescoping floating center display",
+        "product_version": "关于问界M6内饰的中文报道称其中控大屏可左右旋转/左右偏转，并可前后伸缩，形成带方向感和空间属性的悬浮式中控屏。报道还将其与智能座舱感知、语音和主副驾场景服务结合描述。",
+        "market": "中国新能源SUV智能座舱，2026年预订/上市前车型信息",
+        "reason_for_deep_dive": "该产品公开了车载中控屏可在主驾/副驾方向左右偏转，并带前后伸缩机构，直接触及C1-F2的左/右转动。若进入量产，应进一步查找官方维修资料、供应商资料或拆解，确认其安装支架和旋转驱动部是否存在权利要求的旋转盘、多凸起/多槽一一配合及同步转动结构。",
+        "source_result_ids": [
+          "tavily-Q11-04",
+          "tavily-Q22-04"
+        ],
+        "source_urls": [
+          "https://www.bitauto.com/article/1003108327393",
+          "https://www.bitauto.com/article/1003108405099"
+        ],
+        "initial_evidence_summary": "摘要显示：问界M6内饰中有一块可左右旋转的中控大屏；另有报道称其中控台中间配备可左右偏转、前后伸缩的悬浮式中控屏，搭配嵌入式液晶仪表屏和HUD。"
+      },
+      "launch_date": "2026年4月22日上市/发布；2026年3月23日开启预订",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/942/289.htm",
+          "title": "鸿蒙智行问界 M6 新锐智慧 SUV 上市：标配全球量产最高 896 线激光雷达，25.98 万元起 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "搜索结果标题显示“鸿蒙智行问界 M6 新锐智慧 SUV 上市……25.98 万元起”；结果对应2026年4月发布/上市信息。"
+        },
+        {
+          "url": "https://m.12365auto.com/xcdg/20260323/565338.shtml",
+          "title": "会转头的中控屏 问界M6内饰官图发布 - 车质网",
+          "source_name": "车质网",
+          "snippet": "2026-03-23报道称：问界M6将于3月23日开启预订，首批展车同日起陆续到店；前排搭载可转动的四维随动中控屏。"
+        },
+        {
+          "url": "https://www.163.com/dy/article/KR5ASML70511CPVM.html",
+          "title": "会转头的中控屏来了！问界M6内饰公布：支持30°旋转+50mm伸缩",
+          "source_name": "网易订阅/快科技",
+          "snippet": "2026年4月22日消息，在鸿蒙智行发布会上，问界M6全系标配随动中控屏，支持左右30°旋转、前后50mm伸缩。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "公开上市/发布与预订时间均为2026年，晚于本专利申请日2019-03-28；且未发现权利要求1任一特征存在公开直接矛盾的结构证据。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种显示终端的执行机构",
+              "competitor_feature": "问界M6配备可电控调节的车载中控显示终端：官方页面称“沉浸高清中控屏，支持30°旋转、50毫米伸缩”；使用说明书称可通过语音、控制中心、方向盘按键、中控屏设置调节中控屏朝向和位置。公开资料仍未直接命名或展示“执行机构”本体。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "“新锐驾舱 随动中控屏……沉浸高清中控屏，支持30°旋转、50毫米伸缩，落座主驾即相迎，亦可轻松转向副驾。”"
+                },
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "“屏幕旋转调节……可根据需求调整中控屏幕的朝向和位置”；可用语音、控制中心、方向盘按键和设置项调节。"
+                },
+                {
+                  "url": "https://www.ithome.com/0/931/439.htm",
+                  "title": "鸿蒙智行问界 M6 内饰官图发布：前排配“会转头”随动屏、后排有吸顶娱乐屏，明启预订",
+                  "source_name": "IT之家",
+                  "snippet": "报道称官方图片显示“问界M6前排配备可转动的中控随动屏”。"
+                }
+              ],
+              "reasoning": "官方和用户手册直接公开显示终端可电控旋转/伸缩；实现该受控运动通常必然存在某种执行机构。但现有公开材料仅到功能层面，未给出该机构的零部件结构，故为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：执行机构本体、固定位置及与屏幕连接的直接结构证据。\n可去：官方维修手册，4S维修系统，拆解视频\n下一步建议：查AITO/HIMA售后资料或B站/懂车帝拆解的中控屏总成。"
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "中控屏可在主驾/副驾方向左右转动：官方页面称支持30°旋转、可转向副驾；说明书称“向左或向右拨动，屏幕向左或向右转动”；媒体称支持左右30°旋转并可按主副驾场景调整。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "“沉浸高清中控屏，支持30°旋转、50毫米伸缩，落座主驾即相迎，亦可轻松转向副驾。”"
+                },
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "“向左或向右拨动：屏幕向左或向右转动”；菜单含“朝向主驾”“朝向副驾”。"
+                },
+                {
+                  "url": "https://m.163.com/dy/article/KR5ASML70511CPVM.html",
+                  "title": "会转头的中控屏来了！问界M6内饰公布：支持30°旋转+50mm伸缩",
+                  "source_name": "网易/快科技",
+                  "snippet": "图示证据：页面官图标注“30°可旋转角度、50mm可伸缩距离”；正文称“支持左右30°旋转，还能实现前后50mm伸缩调节”。"
+                },
+                {
+                  "url": "https://news.mydrivers.com/1/1117/1117710.htm",
+                  "title": "会转头的中控屏来了！问界M6内饰公布：支持30°旋转+50mm伸缩--快科技",
+                  "source_name": "快科技",
+                  "snippet": "“这块屏幕不仅支持左右30°旋转，还能实现前后50mm的伸缩调节，可根据主副驾的不同使用场景，动态调整位置与角度”。"
+                }
+              ],
+              "reasoning": "主驾/副驾位于车辆宽度方向两侧；官方和手册均直接写明屏幕可左/右转动并朝向主驾或副驾，30°角度亦被图文公开，满足该功能限定。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+              "competitor_feature": "公开证据仅披露随动中控屏支持30°旋转、50mm伸缩及多种控制方式；未披露屏幕后方是否有安装支架、旋转盘，也未披露旋转盘/安装支架之间存在配合槽与配合凸起伸入配合的传动结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "仅公开“随动中控屏”“支持30°旋转、50毫米伸缩”，未给出屏幕执行机构拆解或支架/旋转盘结构。"
+                },
+                {
+                  "url": "https://www.bitauto.com/article/1003108405099",
+                  "title": "向日葵屏+副驾灵感橱窗，问界M6内饰大爆料，可玩性拉满！",
+                  "source_name": "BitAuto",
+                  "snippet": "“中间配备可左右偏转、前后伸缩的悬浮式中控屏”；文章未披露内部传动、旋转盘、配合槽或配合凸起。"
+                },
+                {
+                  "url": "https://m.12365auto.com/xcdg/20260323/565338.shtml",
+                  "title": "会转头的中控屏 问界M6内饰官图发布 - 车质网",
+                  "source_name": "车质网",
+                  "snippet": "称前排搭载“可转动的四维随动中控屏”，但未公开安装支架、旋转盘或槽/凸结构。"
+                }
+              ],
+              "reasoning": "“可旋转/伸缩”只能证明外部运动功能，不能证明权利要求限定的安装支架+旋转盘+槽/凸起传动结构。补搜未取得维修图、爆炸图或拆解证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：安装支架、旋转盘、配合槽/凸起的拆解或爆炸图证据。\n可去：维修手册，零件目录，屏幕总成拆解视频\n下一步建议：查问界M6中控屏总成爆炸图及售后拆装工艺。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+              "competitor_feature": "未找到问界M6随动中控屏执行机构内部存在多个配合凸起、多个配合槽以及一一对应配合的公开证据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "手册说明“屏幕旋转调节”的操作方式，但未公开机构内部的凸起/槽数量和对应关系。"
+                },
+                {
+                  "url": "https://www.12365auto.com/news/20260423/567186.shtml",
+                  "title": "问界M6中控屏支持30°旋转+50mm伸缩",
+                  "source_name": "车质网",
+                  "snippet": "报道称“全系标配随动中控屏，支持左右30°旋转、前后50mm伸缩调节”，但无内部配合件数量。"
+                }
+              ],
+              "reasoning": "该特征要求内部零件数量和一一配合关系；现有证据均停留在屏幕运动功能层面，不能确认多个凸起/槽。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：凸起和槽的数量、一一对应关系的内部结构照片。\n可去：拆解视频，供应商样件图，维修手册剖视图\n下一步建议：重点找中控屏旋转机构近景、爆炸图或供应商宣传图。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+              "competitor_feature": "未公开问界M6中控屏执行机构的配合凸起，也未公开其是否沿显示终端长度方向间隔布置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://m.163.com/dy/article/KR5ASML70511CPVM.html",
+                  "title": "会转头的中控屏来了！问界M6内饰公布：支持30°旋转+50mm伸缩",
+                  "source_name": "网易/快科技",
+                  "snippet": "图示证据：官图显示中控屏外观及“30°/50mm”运动参数，但未显示屏幕后方内部凸起排列。"
+                },
+                {
+                  "url": "https://www.bitauto.com/article/1003108327393",
+                  "title": "深度解读问界M6旋转屏，科技党狂喜！华为玩出新花样",
+                  "source_name": "BitAuto",
+                  "snippet": "文章称“可左右旋转的中控大屏”“可旋转的物理结构”，但未披露配合凸起的方向、数量或间距。"
+                },
+                {
+                  "url": "https://www.ithome.com/0/931/439.htm",
+                  "title": "鸿蒙智行问界 M6 内饰官图发布",
+                  "source_name": "IT之家",
+                  "snippet": "图示证据：内饰官图仅展示中控屏外观及其在仪表台上的位置，不能识别隐藏配合凸起的排列方向。"
+                }
+              ],
+              "reasoning": "外观图和功能介绍无法识别隐藏配合凸起，更无法判断其是否沿屏幕长度方向间隔设置。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：多个配合凸起的排列方向，尤其是否沿屏幕长度方向间隔。\n可去：屏幕背面照片，拆装教程，零件爆炸图\n下一步建议：找更换中控屏或拆仪表台视频中的屏幕后背结构。"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+              "competitor_feature": "公开证据未披露旋转盘、多个配合凸起、安装支架的同步传动关系，也未披露多个配合凸起之间是否保持无相对运动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "官方仅说明“随动中控屏”“支持30°旋转、50毫米伸缩”，未说明旋转盘如何带动支架或多个凸起同步转动。"
+                },
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "手册公开“屏幕向左或向右转动”“屏幕前伸或后移”的用户操作结果；未公开内部同步转动构件。"
+                }
+              ],
+              "reasoning": "即使能确认屏幕整体转动，也不能推出权利要求限定的旋转盘带动多个凸起且凸起间无相对运动这一具体结构。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：旋转盘带动多凸起、凸起间无相对运动的传动过程证据。\n可去：机构拆解动画，维修剖视图，供应商技术资料\n下一步建议：找四维随动屏执行器供应商或量产机构演示资料。"
+            }
+          ],
+          "claim_score": 50.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+              "competitor_feature": "现有公开资料未披露问界M6随动中控屏内部旋转盘和安装支架的具体构造，亦未披露配合槽位于旋转盘、配合凸起位于安装支架。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "官方仅公开“随动中控屏”“支持30°旋转、50毫米伸缩”，无旋转盘/安装支架上槽和凸起的位置关系。"
+                },
+                {
+                  "url": "https://www.bitauto.com/article/1003108405099",
+                  "title": "向日葵屏+副驾灵感橱窗，问界M6内饰大爆料，可玩性拉满！",
+                  "source_name": "BitAuto",
+                  "snippet": "仅称中控屏可左右偏转、前后伸缩，未公开旋转盘和安装支架的配合结构。"
+                }
+              ],
+              "reasoning": "该从属特征限定槽/凸起分别位于哪一零件；外观和功能证据无法确定该内部布置。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+              "competitor_feature": "问界M6中控屏可通过语音、控制中心、方向盘按键和中控屏设置自动调节朝向/位置；由此可较严谨推断其内部存在电动驱动单元。但公开资料未直接证明该驱动单元与“旋转盘”配合。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "“屏幕旋转调节……可根据需求调整中控屏幕的朝向和位置”；可用语音、控制中心、方向盘按键和设置项调节。"
+                },
+                {
+                  "url": "https://k.sina.com.cn/article_7879996919_m1d5af35f703301x47k.html",
+                  "title": "问界M6搭载可旋转中控屏，导航更便捷",
+                  "source_name": "新浪新闻",
+                  "snippet": "“小艺小艺，把中控屏朝向主驾”体现其可通过语音命令自动改变中控屏朝向。"
+                },
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "“支持30°旋转、50毫米伸缩，落座主驾即相迎，亦可轻松转向副驾。”"
+                }
+              ],
+              "reasoning": "屏幕可响应电子/语音命令自行转动，通常需要电机或等效驱动单元；但“驱动单元与旋转盘配合”的具体结构未公开，因此只能判为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+              "competitor_feature": "问界M6随动中控屏自动旋转可推断存在动力源的可能性，但公开资料未披露动力源、减速单元，以及动力源输出端—减速单元—旋转盘的连接关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "公开屏幕旋转调节操作，但未说明电机、减速器或输出端连接。"
+                },
+                {
+                  "url": "https://news.mydrivers.com/1/1117/1117710.htm",
+                  "title": "会转头的中控屏来了！问界M6内饰公布：支持30°旋转+50mm伸缩",
+                  "source_name": "快科技",
+                  "snippet": "报道称中控屏支持左右30°旋转和前后50mm伸缩，但无动力源或减速单元结构。"
+                }
+              ],
+              "reasoning": "该特征是具体驱动链条结构；现有公开材料仅证明电控运动功能，不能证明是否采用减速单元及其与旋转盘的连接。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+              "competitor_feature": "未找到问界M6随动中控屏执行机构采用蜗杆齿轮传动机构的公开证据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.12365auto.com/news/20260423/567186.shtml",
+                  "title": "问界M6中控屏支持30°旋转+50mm伸缩",
+                  "source_name": "车质网",
+                  "snippet": "仅披露“支持左右30°旋转、前后50mm伸缩调节”，未披露蜗杆、齿轮或减速机构。"
+                },
+                {
+                  "url": "https://www.bitauto.com/article/1003108327393",
+                  "title": "深度解读问界M6旋转屏，科技党狂喜！华为玩出新花样",
+                  "source_name": "BitAuto",
+                  "snippet": "文章称“可旋转的物理结构”，但未公开蜗杆齿轮传动。"
+                }
+              ],
+              "reasoning": "蜗杆齿轮是特定传动形式；现有资料没有拆解图、零件图或技术说明支持该限定。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+              "competitor_feature": "公开资料证明问界M6中控屏有30°旋转范围，但未披露该角度限制由旋转盘上的第一定位结构与驱动单元壳体上的第二定位结构配合实现；也可能是软件限位或其他结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "“沉浸高清中控屏，支持30°旋转、50毫米伸缩”，但未说明限位结构。"
+                },
+                {
+                  "url": "https://m.163.com/dy/article/KR5ASML70511CPVM.html",
+                  "title": "会转头的中控屏来了！问界M6内饰公布：支持30°旋转+50mm伸缩",
+                  "source_name": "网易/快科技",
+                  "snippet": "图示证据：官图标注“30°可旋转角度”，未展示机械定位结构。"
+                }
+              ],
+              "reasoning": "30°范围可证明存在某种角度控制，但不能证明权利要求要求的两个机械定位结构分别位于旋转盘和驱动单元壳体并相互配合。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+              "competitor_feature": "未找到问界M6随动中控屏的旋转盘是否包括穿过驱动单元的安装轴的公开证据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m6",
+                  "title": "问界 M6 - 鸿蒙智行官网",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "官方页面公开“随动中控屏”及30°旋转/50毫米伸缩，未公开安装轴或其与驱动单元的穿设关系。"
+                },
+                {
+                  "url": "https://www.ithome.com/0/931/439.htm",
+                  "title": "鸿蒙智行问界 M6 内饰官图发布",
+                  "source_name": "IT之家",
+                  "snippet": "图示证据：内饰官图显示可转动中控随动屏外观，未显示内部安装轴。"
+                }
+              ],
+              "reasoning": "该特征为隐藏内部轴系结构；外观图和功能说明均不能确认。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+              "competitor_feature": "未找到问界M6随动中控屏执行机构包含套设于安装轴的弹性件，以及弹性件两端分别抵压轴向限位件和驱动单元壳体的公开证据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "公开随动中控屏功能，但无弹簧/弹性件、轴向限位件或壳体抵压关系。"
+                },
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "手册为用户操作说明，未披露内部弹性件和轴向预压结构。"
+                }
+              ],
+              "reasoning": "弹性件及其抵压位置属于细部内部结构；现有公开证据未覆盖。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述安装轴为中空结构",
+              "competitor_feature": "未找到问界M6随动中控屏内部安装轴的公开证据，更未披露该安装轴是否为中空结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m6",
+                  "title": "问界 M6 - 鸿蒙智行官网",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "仅披露中控屏支持30°旋转和50毫米伸缩，未披露安装轴结构。"
+                },
+                {
+                  "url": "https://www.bitauto.com/article/1003108405099",
+                  "title": "向日葵屏+副驾灵感橱窗，问界M6内饰大爆料，可玩性拉满！",
+                  "source_name": "BitAuto",
+                  "snippet": "披露可左右偏转、前后伸缩的悬浮式中控屏，未说明安装轴是否中空。"
+                }
+              ],
+              "reasoning": "中空安装轴是内部剖面结构；现有外部功能与官图资料无法证明。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "一种车载显示终端",
+              "competitor_feature": "问界M6前排配备车载中控显示终端/随动中控屏，属于车载显示终端。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m6",
+                  "title": "问界 M6 - 鸿蒙智行官网",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "“新锐驾舱 随动中控屏……沉浸高清中控屏，支持30°旋转、50毫米伸缩”。"
+                },
+                {
+                  "url": "https://www.ithome.com/0/931/439.htm",
+                  "title": "鸿蒙智行问界 M6 内饰官图发布",
+                  "source_name": "IT之家",
+                  "snippet": "报道称“问界M6前排配备可转动的中控随动屏”。"
+                }
+              ],
+              "reasoning": "官方页面和媒体官图均直接披露车内中控显示屏。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "包括：显示终端；执行机构",
+              "competitor_feature": "显示终端明确存在；中控屏可自动旋转/伸缩，说明其大概率还包括驱动该屏运动的执行机构，但内部机构未被直接公开。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/model/m6",
+                  "title": "问界 M6 - 赛力斯华为联合设计",
+                  "source_name": "AITO官方",
+                  "snippet": "“沉浸高清中控屏，支持30°旋转、50毫米伸缩，落座主驾即相迎，亦可轻松转向副驾。”"
+                },
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "可通过语音、控制中心、方向盘按键和中控屏设置项调节中控屏朝向和位置。"
+                }
+              ],
+              "reasoning": "显示终端直接公开；电控旋转/伸缩功能合理推断存在执行机构，但未证明该执行机构具备权1的所有内部结构，故为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F3",
+              "patent_feature": "所述显示终端安装于所述执行机构",
+              "competitor_feature": "官图显示中控屏固定在车辆中控台区域且可相对座舱改变朝向/位置；可推断显示屏安装在驱动其运动的机构上，但安装界面未公开。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/931/439.htm",
+                  "title": "鸿蒙智行问界 M6 内饰官图发布",
+                  "source_name": "IT之家",
+                  "snippet": "图示证据：内饰官图显示中控显示屏安装在中控台区域，作为可转动随动屏使用。"
+                },
+                {
+                  "url": "https://hima.auto/wenjie/m6",
+                  "title": "问界 M6 - 鸿蒙智行官网",
+                  "source_name": "鸿蒙智行官网图片",
+                  "snippet": "图示证据：中控屏以悬浮屏形式布置于仪表台中央，并公开支持30°旋转和50毫米伸缩。"
+                }
+              ],
+              "reasoning": "可运动的车载显示屏通常需安装在其执行机构上；但公开资料未展示屏幕背部连接支架或执行机构安装界面。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F4",
+              "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "问界M6中控屏可左右30°旋转，说明其执行机构驱动显示终端朝左/朝右转动。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/260430/%E9%97%AE%E7%95%8CM6%E5%A2%9E%E7%A8%8B%E7%89%88%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+                  "title": "问界M6 增程版使用说明书",
+                  "source_name": "鸿蒙智行官网PDF",
+                  "snippet": "“向左或向右拨动：屏幕向左或向右转动”；菜单含“朝向主驾”“朝向副驾”。"
+                },
+                {
+                  "url": "https://news.mydrivers.com/1/1117/1117710.htm",
+                  "title": "会转头的中控屏来了！问界M6内饰公布：支持30°旋转+50mm伸缩",
+                  "source_name": "快科技",
+                  "snippet": "“这块屏幕不仅支持左右30°旋转，还能实现前后50mm的伸缩调节”。"
+                }
+              ],
+              "reasoning": "用户手册直接公开向左/向右转动；媒体和官方进一步确认左右30°旋转。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "问界M6是赛力斯/AITO推出的中大型新能源SUV车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/942/289.htm",
+                  "title": "鸿蒙智行问界 M6 新锐智慧 SUV 上市",
+                  "source_name": "IT之家",
+                  "snippet": "标题显示“鸿蒙智行问界 M6 新锐智慧 SUV 上市……25.98 万元起”。"
+                },
+                {
+                  "url": "https://hima.auto/wenjie/m6",
+                  "title": "问界 M6 - 鸿蒙智行官网",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "官方页面称问界M6为“新锐智慧SUV”，并列出车长、车宽、车高、轴距等车辆参数。"
+                }
+              ],
+              "reasoning": "公开资料直接表明问界M6为量产/上市车辆。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F2",
+              "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+              "competitor_feature": "问界M6明确包括车载中控显示终端；该终端可电控旋转/伸缩，可能包括执行机构，但权1内部结构未直接公开。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m6",
+                  "title": "问界 M6 - 鸿蒙智行官网",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "“新锐驾舱 随动中控屏……沉浸高清中控屏，支持30°旋转、50毫米伸缩”。"
+                },
+                {
+                  "url": "https://m.12365auto.com/xcdg/20260323/565338.shtml",
+                  "title": "会转头的中控屏 问界M6内饰官图发布 - 车质网",
+                  "source_name": "车质网",
+                  "snippet": "“前排搭载核心亮点配置——可转动的四维随动中控屏，兼顾主副驾使用需求。”"
+                }
+              ],
+              "reasoning": "车辆包含车载显示终端是直接公开的；若按权9所述车载显示终端需包含权1执行机构，则执行机构内部结构仍属推断，故整体判为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F3",
+              "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+              "competitor_feature": "官图显示中控屏安装在问界M6车内中控台/仪表台区域并可旋转/伸缩；可推断其运动执行机构安装于车辆车体/仪表台结构，显示终端安装于该机构，但内部固定点未公开。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m6",
+                  "title": "问界 M6 - 鸿蒙智行官网",
+                  "source_name": "鸿蒙智行官网图片",
+                  "snippet": "图示证据：中控屏布置于车内仪表台中央，公开支持30°旋转和50毫米伸缩。"
+                },
+                {
+                  "url": "https://www.ithome.com/0/931/439.htm",
+                  "title": "鸿蒙智行问界 M6 内饰官图发布",
+                  "source_name": "IT之家",
+                  "snippet": "图示证据：官方内饰图显示前排中控随动屏位于车辆中控台区域。"
+                },
+                {
+                  "url": "https://chejiahao.autohome.com.cn/info/25051157",
+                  "title": "颜色高级配可旋转中控屏，问界M6内饰官图曝光，是年轻人喜欢的么",
+                  "source_name": "汽车之家车家号",
+                  "snippet": "“中控台中间配备了可左右旋转”的中控屏，并显示其处于车内中控台位置。"
+                }
+              ],
+              "reasoning": "中控屏作为车内部件安装在车体/仪表台上且能运动；但执行机构的具体车体安装点及显示屏与执行机构的安装界面未公开，故为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 86.67
+        }
+      ],
+      "claim_1_score": 50.0,
+      "total_score": 50.0,
+      "searched_queries": [
+        "问界M6 随动中控屏 执行机构 电机 结构",
+        "问界M6 随动中控屏 拆解 旋转盘 安装支架",
+        "问界M6 随动中控屏 支持30°旋转 50mm伸缩",
+        "问界M6 增程版 使用说明书 屏幕旋转调节",
+        "问界M6 四维随动中控屏 维修手册 中控屏总成 执行器",
+        "AITO M6 movable center display actuator service manual",
+        "问界M6 随动中控屏 总成 零件号 供应商",
+        "问界M6 中控屏总成 爆炸图 旋转支架 旋转盘"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "深蓝汽车",
+        "company_en": "Deepal Automobile",
+        "product_name": "深蓝S7 15.6英寸向日葵屏",
+        "product_name_en": "Deepal S7 15.6-inch sunflower screen",
+        "product_version": "S7搭载15.6英寸向日葵屏，采用无极档位悬浮屏技术，能够随场景自动执行偏转运动，左右旋转幅度达15°。支持手动、语音指令“向左转/向右转”及智能模式交互。",
+        "market": "中国新能源SUV智能座舱量产车型",
+        "reason_for_deep_dive": "该产品公开了车载中控显示终端在车辆宽度方向的左右偏转角度和电动/智能控制方式，命中C1-F2。后续应聚焦屏幕背部执行机构，验证其安装支架与旋转件之间是否采用多个凸起/槽的一一配合及同步转动结构。",
+        "source_result_ids": [
+          "brave-Q10-05",
+          "tavily-Q10-02",
+          "brave-Q10-03"
+        ],
+        "source_urls": [
+          "https://aikahao.xcar.com.cn/item/1677501.html",
+          "https://www.sohu.com/a/683912195_121124485",
+          "https://hj.pcauto.com.cn/article/2197997"
+        ],
+        "initial_evidence_summary": "摘要显示：深蓝S7中控屏为15.6英寸向日葵屏，左右旋转幅度15°，采用无极档位悬浮屏技术；可随场景自动偏转，并支持手动、语音、智能模式；太平洋号摘要还称可在中控屏上操作旋转到最右/最左。"
+      },
+      "launch_date": "2023年6月25日正式上市，计划2023年6月30日开启交付；此前2023年5月20日开启预订",
+      "launch_date_evidence": [
+        {
+          "url": "https://chejiahao.m.autohome.com.cn/info/12807518?isfrom=pc",
+          "title": "搭载零重力座椅，15.6英寸向日葵大屏，14.99万起售，深蓝S7上市",
+          "source_name": "汽车之家车家号",
+          "snippet": "6月25日，深蓝S7迎来了正式上市……新车计划将于6月30正式开启交付。"
+        },
+        {
+          "url": "http://www.news.cn/auto/20230522/4d3500465c394534acab1ce747907a21/c.html",
+          "title": "深蓝S7 16.99万起开启先享预订",
+          "source_name": "新华网",
+          "snippet": "5月20日，深蓝汽车旗下首款中型SUV——深蓝S7正式开启先享预订，官方先享预订价格16.99-23.99万元。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "公开上市、交付时间均晚于专利申请日2019-03-28；现有公开证据未出现与权利要求1任一技术特征直接矛盾的结构或参数。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种显示终端的执行机构",
+              "competitor_feature": "深蓝S7/Deepal S07的15.6英寸向日葵中控屏支持电动/自动/电机化左右旋转，公开用户手册和媒体评测均说明存在“屏幕旋转调节”“motorised multimedia display”等功能；由此可严谨推知屏幕后方存在用于执行显示终端旋转动作的执行机构，但公开资料未直接展示该机构本体。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+                  "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+                  "source_name": "太平洋号",
+                  "snippet": "标题和正文称深蓝S7配备15.6英寸中控大屏，支持“电动旋转”，可像向日葵一样旋转。"
+                },
+                {
+                  "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+                  "title": "DEEPALS07UserManual_En.pdf",
+                  "source_name": "Changan Europe",
+                  "snippet": "User Manual片段列出Screen rotation adjustment，可在Settings-Cabin-Screen Rotation中校准中央控制显示屏旋转角度和位置。"
+                },
+                {
+                  "url": "https://www.autocar.co.uk/car-review/changan/deepal-s07",
+                  "title": "Tested: 2026 Changan Deepal S07 - Full review, price & features",
+                  "source_name": "Autocar",
+                  "snippet": "评测称S07的“sunflower” screen属于motorised multimedia display，可向左或向右pivot by 15deg。"
+                }
+              ],
+              "reasoning": "电动/电机化旋转屏通常必须有执行旋转动作的机构，且公开用户手册确认有屏幕旋转调节与校准功能；但未见公开拆解、维修图或零件图直接显示执行机构实物，因此保守判为可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：执行机构实物/零件图；现有证据仅证明屏幕可电动旋转。\n可去：原厂维修手册，屏幕总成拆车件照片，拆解视频\n下一步建议：查畅易/精通汽修或拆车件商家，找中控屏总成背面图。"
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "深蓝S7的15.6英寸向日葵中控屏位于车辆中控区域，公开资料称其左右旋转幅度达15°；用户手册/用车说明显示可通过中控屏滑条、左/中/右快捷键、语音控制等方式使中控显示屏向主驾侧或副驾侧旋转，即沿车辆宽度方向左右转动。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+                  "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+                  "source_name": "爱卡汽车",
+                  "snippet": "新车中控屏选用了15.6英寸向日葵屏，能够随场景自动执行偏转运动，左右旋转幅度达15°，并提供“向左转”“向右转”语音交互。"
+                },
+                {
+                  "url": "https://hao.yiche.com/wenzhang/83551311",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "易车",
+                  "snippet": "手动调节可使中控显示屏向主驾侧或副驾侧旋转；快捷开关可点击左、中、右；语音控制可控制中控显示屏执行旋转功能。"
+                },
+                {
+                  "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+                  "title": "DEEPALS07UserManual_En.pdf",
+                  "source_name": "Changan Europe",
+                  "snippet": "用户手册Screen rotation adjustment章节说明可在Settings-Cabin-Screen Rotation中调整中央控制显示屏旋转角度和位置。"
+                }
+              ],
+              "reasoning": "“主驾侧/副驾侧”“左/中/右”“向左转/向右转”均对应车辆横向宽度方向；多个公开来源直接披露深蓝S7中控屏可左右约15°旋转，故明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+              "competitor_feature": "现有公开证据仅证明深蓝S7向日葵屏可电动/自动左右旋转，并有屏幕旋转调节、居中和校准功能；未公开屏幕背部执行机构是否包含安装支架、旋转盘，以及二者之间是否有配合槽/配合凸起嵌入并带动同步转动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hao.yiche.com/wenzhang/83551311",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "易车",
+                  "snippet": "页面说明中控屏幕旋转的手动、快捷和语音控制方式，但未披露安装支架、旋转盘、凸起/槽结构。"
+                },
+                {
+                  "url": "https://www.qxbsk.com/10394.html",
+                  "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+                  "source_name": "汽修帮手资料库",
+                  "snippet": "检索到深蓝S7/S07维修手册和电路图条目，但页面提示需开通会员阅读，公开片段未显示中控屏执行机构结构。"
+                },
+                {
+                  "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+                  "title": "2023年长安深蓝S7维修手册电路图",
+                  "source_name": "精通维修下载",
+                  "snippet": "页面称资料为2023年长安深蓝S7维修手册电路图，需到精通汽修在线平台查阅，公开页未提供屏幕总成结构图。"
+                }
+              ],
+              "reasoning": "该特征要求具体机械连接结构，远超“屏幕能旋转”的功能披露。补搜得到的维修手册线索为付费/目录级，未能公开确认支架、旋转盘和凸槽嵌合关系。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：支架、旋转盘及凸槽嵌合图；现有资料只到功能层面。\n可去：原厂维修手册，屏幕总成爆炸图，事故拆车件实拍\n下一步建议：向畅易/精通汽修查询“中控显示屏总成拆装”。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+              "competitor_feature": "未发现深蓝S7向日葵屏执行机构的公开拆解图、零件图或维修图；现有资料没有披露配合凸起、配合槽的数量，也没有多个凸起与多个槽一一对应配合的文字或图示证据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://chejiahao.autohome.com.cn/info/12705702",
+                  "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+                  "source_name": "汽车之家车家号",
+                  "snippet": "页面披露向日葵屏左右旋转15°及三种交互方式，但未披露旋转机构内配合凸起/配合槽数量或一一对应关系。"
+                },
+                {
+                  "url": "https://www.changaneurope.com/Portals/3/adam/ContentBlocks/Q4ca1QoqKUOMsMnHB0-j4A/Path/CHANGAN%20DEEPAL%20S07%20DISMANTLING%20MANUAL.pdf",
+                  "title": "CHANGAN DEEPAL S07 Dismantling Manual",
+                  "source_name": "Changan Europe",
+                  "snippet": "公开片段主要涉及Sunshade、Dashboard Assembly等拆解项目，未在可见片段中披露向日葵中控屏旋转执行机构的凸起/槽数量。"
+                }
+              ],
+              "reasoning": "多个凸起/槽及一一对应关系必须依赖内部结构图或拆解实拍。现有配置宣传、用户手册和拆解手册片段均未进入该结构细节，无法推断。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：凸起/槽数量和一一对应关系；功能报道不能推导数量。\n可去：屏幕旋转机构拆解视频，维修手册爆炸图，供应商图纸\n下一步建议：检索或购买中控屏旋转机构拆解/零件号资料。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+              "competitor_feature": "公开资料未披露深蓝S7向日葵屏背部是否存在多个配合凸起，也未披露这些凸起相对于显示屏长边/长度方向的排列、间距或安装位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/82421",
+                  "title": "智能化没有明显短板 深蓝公布 S7 更多配置细节",
+                  "source_name": "新出行",
+                  "snippet": "图示证据：车内照片可见中控显示屏安装在仪表台上，但图片未显示屏幕后部执行机构、凸起或沿显示终端长度方向的排列。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/97026",
+                  "title": "1000公里使用感受，深蓝S7向日葵屏使用技巧",
+                  "source_name": "新出行",
+                  "snippet": "文章称官方宣称向日葵屏可左右最大旋转15°，但用车体验图片主要为屏幕正面UI，未显示背部连接凸起及其排列方向。"
+                }
+              ],
+              "reasoning": "即使能确认屏幕左右旋转，也不能得出“多个凸起沿显示终端长度方向间隔设置”。现有图文均为屏幕正面或功能界面，没有背部结构证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：凸起沿屏幕长度方向的排列图；现有照片仅为正面UI。\n可去：中控屏总成背面照片，拆车件商家图库，维修拆装图\n下一步建议：联系老陈拆车件等商家索要S7中控屏总成背面图。"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+              "competitor_feature": "深蓝S7公开资料显示中控屏可作为整体左右偏转，并有电动旋转、居中和校准控制；但未披露内部是否为旋转盘带动多个配合凸起使安装支架同步转动，也未披露多个凸起之间不存在相对运动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "http://auto.cyol.com/gb/articles/2023-06/10/content_VYZeNVfeX9.html",
+                  "title": "发力“第三生活空间”，深蓝S7创造智能座舱新体验",
+                  "source_name": "中青在线",
+                  "snippet": "15.6英寸向日葵屏采用无极档位悬浮屏技术，能够随场景自动执行偏转运动，左右旋转幅度达15°；未说明旋转盘、多个凸起或相对运动状态。"
+                },
+                {
+                  "url": "https://chejiahao.autohome.com.cn/info/12707272",
+                  "title": "旋转中控/全息抬显/副驾屏/领航智驾，深蓝S7更多配置信息曝光",
+                  "source_name": "汽车之家车家号",
+                  "snippet": "15.6英寸向日葵屏可随场景自行偏转最大达15°；智能模式下屏幕自动转向开门方向，未公开内部同步传动结构。"
+                },
+                {
+                  "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+                  "title": "DEEPALS07UserManual_En.pdf",
+                  "source_name": "Changan Europe",
+                  "snippet": "用户手册仅公开屏幕旋转调节、居中和校准操作，未公开旋转盘带动多个凸起同步转动的机械关系。"
+                }
+              ],
+              "reasoning": "整体屏幕偏转可由多种机构实现，不能反推必须采用“旋转盘+多个凸起同步转动且凸起间无相对运动”。缺少运动副结构或拆解证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：旋转盘带动多个凸起同步运动的机构/运动学证据。\n可去：机构拆解视频，维修手册动态图/拆装步骤，供应商专利\n下一步建议：围绕“中控屏旋转机构总成”查拆解和供应商资料。"
+            }
+          ],
+          "claim_score": 50.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+              "competitor_feature": "未发现深蓝S7向日葵屏执行机构的公开结构图；无法确认是否存在旋转盘和安装支架，更无法确认配合槽位于旋转盘、配合凸起位于安装支架这一特定布置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hao.yiche.com/wenzhang/83551311",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "易车",
+                  "snippet": "公开内容仅说明中控显示屏向主驾侧或副驾侧旋转、居中和校准，未披露旋转盘/安装支架及凸槽位置。"
+                },
+                {
+                  "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+                  "title": "2023年长安深蓝S7维修手册电路图",
+                  "source_name": "精通维修下载",
+                  "snippet": "维修手册电路图页面为查阅入口，公开片段未提供中控屏旋转机构的配合槽/配合凸起位置。"
+                }
+              ],
+              "reasoning": "该从属特征限定凸槽分别位于哪个构件上；现有证据不显示内部构件，故证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+              "competitor_feature": "深蓝S7中控屏为电动/电机化旋转屏，可推知存在某种驱动单元；但公开证据未证明该驱动单元与“旋转盘”配合，也未证明其驱动旋转盘转动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+                  "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+                  "source_name": "太平洋号",
+                  "snippet": "文章称深蓝S7向日葵屏支持电动旋转，但未披露驱动单元与旋转盘的配合结构。"
+                },
+                {
+                  "url": "https://www.autocar.co.uk/car-review/changan/deepal-s07",
+                  "title": "Tested: 2026 Changan Deepal S07 - Full review, price & features",
+                  "source_name": "Autocar",
+                  "snippet": "评测称该sunflower screen属于motorised multimedia display，可左右pivot by 15deg；未公开驱动单元与旋转盘。"
+                }
+              ],
+              "reasoning": "“电动旋转”支持存在驱动源的推断，但本特征还要求其与旋转盘配合。旋转盘本身尚无公开证据，故不能判可能满足整体特征。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+              "competitor_feature": "现有证据未披露深蓝S7向日葵屏驱动单元的内部组成；不能确认是否有动力源、减速单元，也不能确认动力源—减速单元—旋转盘的连接关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+                  "title": "DEEPALS07UserManual_En.pdf",
+                  "source_name": "Changan Europe",
+                  "snippet": "用户手册片段公开屏幕旋转设置与校准，但不包含驱动单元、动力源、减速单元或传动连接结构。"
+                },
+                {
+                  "url": "https://www.qxbsk.com/10394.html",
+                  "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+                  "source_name": "汽修帮手资料库",
+                  "snippet": "维修手册/电路图条目存在，但公开页面未提供中控屏旋转驱动单元结构。"
+                }
+              ],
+              "reasoning": "该特征为传动链结构限定；功能性旋转资料无法证明是否设置减速机构及其输出端连接旋转盘。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+              "competitor_feature": "未发现深蓝S7向日葵屏旋转机构的齿轮箱、蜗杆、蜗轮或传动机构公开图文；无法确认其减速单元是否为蜗杆齿轮传动机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+                  "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+                  "source_name": "太平洋号",
+                  "snippet": "公开内容说明屏幕电动旋转和使用场景，但不披露减速单元或蜗杆齿轮传动机构。"
+                },
+                {
+                  "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+                  "title": "2023年长安深蓝S7维修手册电路图",
+                  "source_name": "精通维修下载",
+                  "snippet": "公开入口未显示中控屏旋转电机、减速箱或蜗杆齿轮结构。"
+                }
+              ],
+              "reasoning": "蜗杆齿轮传动需要拆解、零件图或维修手册明确显示。现有证据无传动机构细节。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+              "competitor_feature": "深蓝S7公开界面有中控屏幕旋转、左/中/右位置、旋转屏居中和校准功能，说明系统可控制或校准旋转角度；但未公开旋转盘上的第一定位结构、驱动单元壳体上的第二定位结构及二者机械配合限位。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hao.yiche.com/wenzhang/83551311",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "易车",
+                  "snippet": "页面说明可通过滑条、左/中/右快捷键、旋转屏居中、旋转屏校准来调节中控显示屏旋转角度。"
+                },
+                {
+                  "url": "https://m.dongchedi.com/article/7252876305597891127",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "懂车帝",
+                  "snippet": "页面称快捷开关可将中控显示屏一键调节至左极限位置、居中位置、右极限位置；未披露机械限位结构。"
+                }
+              ],
+              "reasoning": "左/右极限位置可以由软件、传感器、机械限位或电机控制实现。公开证据不显示权利要求所述两个定位结构及其配合，故证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+              "competitor_feature": "未发现深蓝S7向日葵屏执行机构的公开截面图或拆解图；无法确认是否存在旋转盘安装轴，更无法确认该安装轴是否穿过驱动单元。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.changaneurope.com/Portals/3/adam/ContentBlocks/Q4ca1QoqKUOMsMnHB0-j4A/Path/CHANGAN%20DEEPAL%20S07%20DISMANTLING%20MANUAL.pdf",
+                  "title": "CHANGAN DEEPAL S07 Dismantling Manual",
+                  "source_name": "Changan Europe",
+                  "snippet": "公开片段主要为车辆拆解回收项目和Dashboard Assembly等内容，未见中控屏旋转盘安装轴结构。"
+                },
+                {
+                  "url": "https://www.qxbsk.com/10394.html",
+                  "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+                  "source_name": "汽修帮手资料库",
+                  "snippet": "维修手册/电路图条目存在但公开片段未披露中控屏旋转执行机构的安装轴。"
+                }
+              ],
+              "reasoning": "安装轴及其穿过驱动单元属于内部轴系结构，公开功能和UI资料无法证明。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+              "competitor_feature": "未发现深蓝S7向日葵屏旋转机构中存在弹性件/弹簧、安装轴轴向限位件或弹性件抵压驱动单元壳体的公开证据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "http://www.gzweix.com/soft/sort03/sort0147/down-82616.html",
+                  "title": "2023年长安深蓝S7维修手册电路图",
+                  "source_name": "精通维修下载",
+                  "snippet": "维修手册入口未公开中控屏执行机构的轴向限位件、弹性件或壳体抵压关系。"
+                },
+                {
+                  "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+                  "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+                  "source_name": "太平洋号",
+                  "snippet": "文章说明屏幕可电动旋转及使用方式，但未披露弹性件或轴向预紧结构。"
+                }
+              ],
+              "reasoning": "该特征要求非常具体的弹性件套设和两端抵压关系，必须有拆解或结构图；现有公开证据完全未覆盖。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述安装轴为中空结构",
+              "competitor_feature": "未发现深蓝S7向日葵屏执行机构安装轴的公开证据；无法确认是否存在安装轴，更无法确认该安装轴是否为中空结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.changaneurope.com/Portals/3/adam/ContentBlocks/Q4ca1QoqKUOMsMnHB0-j4A/Path/CHANGAN%20DEEPAL%20S07%20DISMANTLING%20MANUAL.pdf",
+                  "title": "CHANGAN DEEPAL S07 Dismantling Manual",
+                  "source_name": "Changan Europe",
+                  "snippet": "公开片段未披露中控屏旋转机构安装轴，更未披露安装轴是否中空。"
+                },
+                {
+                  "url": "https://www.qxbsk.com/10394.html",
+                  "title": "2024年深蓝S7 S07维修手册和电路图_汽车维修资料库",
+                  "source_name": "汽修帮手资料库",
+                  "snippet": "维修手册条目为付费/权限内容，公开片段未显示中控屏安装轴截面结构。"
+                }
+              ],
+              "reasoning": "安装轴中空属于截面/内部结构特征，现有证据无可比对内容。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "一种车载显示终端",
+              "competitor_feature": "深蓝S7/S07配备车内15.6英寸中控显示屏/向日葵屏，属于安装在车辆座舱内的车载显示终端。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+                  "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+                  "source_name": "爱卡汽车",
+                  "snippet": "新车中控屏选用了15.6英寸向日葵屏。"
+                },
+                {
+                  "url": "https://www.deepal.com.au/media/hi3fcekx/deepal_s07_specifications_sheet.pdf",
+                  "title": "EQUIPMENT & TECHNICAL SPECIFICATIONS Version 1:0 DEEPAL S07",
+                  "source_name": "Deepal Australia",
+                  "snippet": "规格表检索片段显示DEEPAL S07 features & technical specifications，包含车载座舱配置。"
+                }
+              ],
+              "reasoning": "公开资料直接说明该车型中控区域配备15.6英寸显示屏，明确属于车载显示终端。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "包括：显示终端；执行机构",
+              "competitor_feature": "深蓝S7明确包括15.6英寸中控显示屏；其屏幕为电动/电机化左右旋转，故可推知包含某种驱动显示屏旋转的执行机构，但执行机构具体结构未公开。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://m.pcauto.com.cn/hj/article/2197997.html",
+                  "title": "深蓝S7的向日葵屏体验，15.6英寸中控大屏，还支持“电动旋转”",
+                  "source_name": "太平洋号",
+                  "snippet": "深蓝S7配备15.6英寸中控大屏，主打功能是可以像向日葵一样旋转，并支持电动旋转。"
+                },
+                {
+                  "url": "https://www.autocar.co.uk/car-review/changan/deepal-s07",
+                  "title": "Tested: 2026 Changan Deepal S07 - Full review, price & features",
+                  "source_name": "Autocar",
+                  "snippet": "评测称S07的sunflower screen为motorised multimedia display，可向左右各15°偏转。"
+                }
+              ],
+              "reasoning": "显示终端有直接证据；执行机构由电动/电机化旋转功能可合理推知，但未公开机构本体，因此判可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F3",
+              "patent_feature": "所述显示终端安装于所述执行机构",
+              "competitor_feature": "深蓝S7中控屏能以整屏形式左右偏转，说明显示屏至少安装在某种承载/驱动结构上；但公开资料未显示屏幕与执行机构的安装界面。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://hao.yiche.com/wenzhang/83551311",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "易车",
+                  "snippet": "手动调节可使中控显示屏向主驾侧或副驾侧旋转，并可通过旋转屏居中、校准功能调整。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/82421",
+                  "title": "智能化没有明显短板 深蓝公布 S7 更多配置细节",
+                  "source_name": "新出行",
+                  "snippet": "图示证据：车内照片可见中控显示屏安装在仪表台中部，未显示背部安装界面。"
+                }
+              ],
+              "reasoning": "整屏可控旋转要求屏幕与某个支承/执行结构连接；但没有结构图直接显示安装关系，故保守判可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F4",
+              "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+              "competitor_feature": "深蓝S7中控显示屏可向主驾侧或副驾侧旋转，可通过左/中/右快捷键、语音和智能模式控制，左右旋转幅度约15°。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://hao.yiche.com/wenzhang/83551311",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "易车",
+                  "snippet": "可在中控显示屏上左右滑动“中控屏幕旋转”进度条，使中控显示屏向主驾侧或副驾侧旋转；快捷开关为左、中、右。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+                  "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+                  "source_name": "爱卡汽车",
+                  "snippet": "15.6英寸向日葵屏能够随场景自动执行偏转运动，左右旋转幅度达15°，并提供“向左转”“向右转”语音指令。"
+                }
+              ],
+              "reasoning": "公开资料直接披露车载显示屏可被控制向左/向右旋转，且为电动/自动动作，满足该功能性特征。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "深蓝S7/Deepal S07为深蓝汽车生产销售的中型SUV车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://chejiahao.m.autohome.com.cn/info/12807518?isfrom=pc",
+                  "title": "搭载零重力座椅，15.6英寸向日葵大屏，14.99万起售，深蓝S7上市",
+                  "source_name": "汽车之家车家号",
+                  "snippet": "6月25日，深蓝S7正式上市，定位新能源SUV车型。"
+                },
+                {
+                  "url": "http://www.news.cn/auto/20230522/4d3500465c394534acab1ce747907a21/c.html",
+                  "title": "深蓝S7 16.99万起开启先享预订",
+                  "source_name": "新华网",
+                  "snippet": "深蓝汽车旗下首款中型SUV——深蓝S7正式开启先享预订。"
+                }
+              ],
+              "reasoning": "深蓝S7是公开上市销售的中型SUV，车辆属性明确。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F2",
+              "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+              "competitor_feature": "深蓝S7车辆包括15.6英寸向日葵中控显示屏，该车载显示终端可电动/自动左右旋转；因此至少可能包括对应执行机构和车载显示终端。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/1677501.html",
+                  "title": "配备悬浮式向日葵屏，深蓝S7智能座舱设计亮点公布",
+                  "source_name": "爱卡汽车",
+                  "snippet": "新车中控屏选用了15.6英寸向日葵屏，能够自动执行偏转运动，左右旋转幅度达15°。"
+                },
+                {
+                  "url": "https://www.changaneurope.com/Images/Pdf/DEEPALS07UserManual_En.pdf",
+                  "title": "DEEPALS07UserManual_En.pdf",
+                  "source_name": "Changan Europe",
+                  "snippet": "用户手册列出Screen rotation adjustment，说明车辆中控显示屏具备旋转设置、居中和校准功能。"
+                }
+              ],
+              "reasoning": "车载显示终端的存在明确；其作为权利要求9所述完整车载显示终端仍受内部执行机构证据限制，故整体判可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C10-F3",
+              "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+              "competitor_feature": "深蓝S7中控屏安装在车辆中控台/仪表台区域并可左右旋转，可推知其旋转承载机构固定在车体或仪表板结构上，显示屏安装在该机构上；但公开资料未展示具体车体安装点或执行机构安装结构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.xchuxing.com/article/82421",
+                  "title": "智能化没有明显短板 深蓝公布 S7 更多配置细节",
+                  "source_name": "新出行",
+                  "snippet": "图示证据：车内照片可见中控显示屏安装在仪表台区域，但未显示背部执行机构与车体固定点。"
+                },
+                {
+                  "url": "https://hao.yiche.com/wenzhang/83551311",
+                  "title": "深蓝s7--中控显示屏——屏幕旋转调节",
+                  "source_name": "易车",
+                  "snippet": "页面和图示显示中控屏可在车内设置界面调节旋转方向并居中/校准，未展示安装支架与车体连接结构。"
+                }
+              ],
+              "reasoning": "车辆中可旋转中控屏通常必须固定于仪表板/车体结构并承载显示屏，但现有证据缺少安装点实物或图纸，故保守判可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 86.67
+        }
+      ],
+      "claim_1_score": 50.0,
+      "total_score": 50.0,
+      "searched_queries": [
+        "深蓝汽车 深蓝S7 15.6英寸向日葵屏 规格书 参数",
+        "深蓝S7 向日葵屏 执行机构 电机 结构",
+        "深蓝S7 向日葵屏 拆解 旋转机构 安装支架 旋转盘",
+        "深蓝S7 中控屏 旋转机构 凸起 槽 配合 拆解",
+        "深蓝S7 向日葵屏 供应商 旋转屏 模组 结构 图纸",
+        "深蓝S7 向日葵屏 屏幕总成 旋转执行器 维修手册",
+        "Deepal S7 sunflower screen actuator teardown rotating display",
+        "长安深蓝S7 中控屏 旋转电机 总成 零件号"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

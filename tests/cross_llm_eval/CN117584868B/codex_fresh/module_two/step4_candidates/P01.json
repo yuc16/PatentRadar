@@ -1,0 +1,232 @@
+{
+  "candidate": {
+    "candidate_id": "P01",
+    "company": "兆威",
+    "company_en": "ZHAOWEI",
+    "product_name": "汽车偏摆&旋转屏驱动系统（12V DC）",
+    "product_name_en": "automotive yaw and rotating display drive system (12 V DC)",
+    "product_version": "面向汽车偏摆屏与旋转屏的微型驱动系统，页面参数给出12V DC（9~16V）、负载电流500mA/600mA、额定转速5s转动90°/3s转动30°。支持手动-15°~+15°摆动屏幕，50cm启动噪音＜45dB(A)、运动噪音＜40dB(A)。",
+    "market": "中国智能座舱前装/供应链，偏向主驾或副驾、横竖屏切换场景",
+    "reason_for_deep_dive": "这是直接面向车载偏摆/旋转显示屏的执行机构产品，已覆盖权利要求1的“显示终端执行机构”和“在车辆宽度方向上驱动显示终端朝左/右转动”核心方向。值得进一步查证其输出端与屏幕安装支架之间是否采用旋转盘、多个配合凸起/配合槽同步传动且凸起间无相对运动。",
+    "source_result_ids": [
+      "exa-Q17-05"
+    ],
+    "source_urls": [
+      "https://www.zwautomo.com/dzqj/63.html"
+    ],
+    "initial_evidence_summary": "搜索摘要显示：兆威汽车偏摆&旋转屏驱动系统通过电机加蜗杆斜齿和平行传动组合，带动屏幕主轴运动；满足偏向主驾或副驾、横竖屏切换需求；给出12V、500/600mA、5s/90°、3s/30°、手动±15°、噪音＜45/40dB(A)等参数。"
+  },
+  "launch_date": "未明确；公开产品页至少在2022年3月发布，证券资料称2022年新推出汽车中控旋转屏等产品/方案",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+      "title": "车载中控屏偏摆驱动系统-汽车中控屏驱动齿轮箱模组-深圳市兆威机电股份有限公司",
+      "source_name": "兆威机电官网",
+      "snippet": "页面正文显示“车载中控屏偏摆驱动系统 2022-03-04 11:28”，并说明采用直流电机+平行传动+蜗轮蜗杆，带动安装屏幕的主轴，解决汽车中控屏幕左右各20°的旋转需求。"
+    },
+    {
+      "url": "http://notice.10jqka.com.cn/api/pdf/2e22292dbe6adae5.pdf",
+      "title": "深圳市兆威机电股份有限公司公告/年报资料",
+      "source_name": "同花顺公告PDF",
+      "snippet": "搜索摘要显示：2022年，公司新推出汽车中控旋转屏、汽车吸顶屏、汽车智能尾翼等产品和解决方案。"
+    },
+    {
+      "url": "https://www.zwgear.com/uncategorized/qcpbxzp.html",
+      "title": "汽车偏摆&旋转屏驱动系统-深圳市兆威机电股份有限公司",
+      "source_name": "兆威机电官网",
+      "snippet": "页面正文显示“汽车偏摆&旋转屏驱动系统 2023-02-02 02:32”，介绍兆威机电推出汽车偏摆&旋转屏解决方案。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未发现早于专利申请日2019-03-28的该具体产品公开上市/发布证据；现有可核查产品页和公告资料均晚于申请日。亦未发现与权利要求1各特征直接矛盾的公开证据。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种显示终端的执行机构",
+      "competitor_feature": "产品名称和说明为“汽车偏摆&旋转屏驱动系统”“车载中控屏偏摆驱动系统/齿轮箱”，用于驱动车载中控屏/旋转屏运动，属于显示终端的执行/驱动机构。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.zwautomo.com/dzqj/63.html",
+          "title": "汽车偏摆&旋转屏驱动系统",
+          "source_name": "兆威/苏州兆威驱动官网",
+          "snippet": "页面列明产品为“汽车偏摆&旋转屏驱动系统”，产品说明称通过电机加蜗杆斜齿和平行传动组合，带动屏幕主轴运动。"
+        },
+        {
+          "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+          "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+          "source_name": "兆威机电官网",
+          "snippet": "产品名称为“车载中控屏偏摆驱动齿轮箱”，说明为“车载中控屏偏转驱动系统”。"
+        },
+        {
+          "url": "https://www.zwgear.com/special/carping.html",
+          "title": "智能汽车屏幕解决方案",
+          "source_name": "兆威机电官网",
+          "snippet": "页面列出“中控偏摆屏”“中控旋转屏”“两度自由中控屏”等方案，并称中控屏偏摆执行器/旋转执行器用于驱动中控屏幕。"
+        }
+      ],
+      "reasoning": "多个兆威官网页面直接将其称为汽车偏摆/旋转屏驱动系统、中控屏偏摆执行器或驱动齿轮箱，功能对象是车载显示屏，故为显示终端执行机构。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+      "competitor_feature": "公开资料称该系统带动屏幕主轴，使屏幕面向主驾或者副驾，解决中控屏幕左右各15°或左右各20°旋转需求；页面参数还显示手动-15°~+15°摆动屏幕。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+          "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+          "source_name": "兆威机电官网",
+          "snippet": "产品说明：最终带动安装屏幕的主轴，使屏幕面向主驾或者副驾；解决汽车中控屏幕左右各20°的旋转需求。"
+        },
+        {
+          "url": "https://www.zwgear.com/special/carping.html",
+          "title": "智能汽车屏幕解决方案",
+          "source_name": "兆威机电官网",
+          "snippet": "兆威中控屏偏摆执行器通过直流电机+平行传动+蜗轮蜗杆传动……最终带动安装屏幕的主轴实现汽车中控屏幕左右各15°的旋转，使屏幕面向主驾或者副驾。"
+        },
+        {
+          "url": "https://www.zwautomo.com/dzqj/63.html",
+          "title": "汽车偏摆&旋转屏驱动系统",
+          "source_name": "兆威/苏州兆威驱动官网",
+          "snippet": "参数列明“手动换向：支持&支持手动-15°~+15°摆动屏幕”；产品说明称满足客户偏向主驾或副驾以及横竖屏切换需求。"
+        }
+      ],
+      "reasoning": "“主驾/副驾”位于车辆宽度方向两侧，官网明确写明屏幕左右各15°/20°旋转及±15°摆动，因此可直接对应朝左/右转动。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+      "competitor_feature": "证据可见“带动安装屏幕的主轴”“电机+齿轮组+屏幕支架/安装屏幕主轴”等一般结构，图片可见屏幕安装板、齿轮箱和旋转输出部件；但没有公开文字或清晰结构图确认存在“旋转盘”以及旋转盘/安装支架之间的“配合槽+配合凸起伸入”传动配合。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+          "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+          "source_name": "兆威机电官网",
+          "snippet": "产品说明称采用“直流电机+平行传动+蜗轮蜗杆”传动以提升减速增力，最终带动安装屏幕的主轴。"
+        },
+        {
+          "url": "https://www.zwgear.com/special/carping.html",
+          "title": "智能汽车屏幕解决方案",
+          "source_name": "兆威机电官网",
+          "snippet": "中控偏摆屏方案说明称通过直流电机+平行传动+蜗轮蜗杆传动，带动安装屏幕的主轴实现左右旋转。"
+        },
+        {
+          "url": "https://www.zwgear.com/uncategorized/qcpbxzp.html",
+          "title": "汽车偏摆&旋转屏驱动系统-深圳市兆威机电股份有限公司",
+          "source_name": "兆威机电官网",
+          "snippet": "图示证据：产品渲染图可见屏幕背部安装板与黑色偏摆机构，但未标注旋转盘、配合槽或配合凸起。"
+        },
+        {
+          "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+          "title": "车载中控屏偏摆驱动齿轮箱",
+          "source_name": "兆威机电官网",
+          "snippet": "图示证据：局部剖视/爆炸图可见齿轮、主轴、安装件等，但未公开说明旋转盘与安装支架之间的凸起-槽配合。"
+        }
+      ],
+      "reasoning": "官网只公开电机、齿轮、蜗轮蜗杆、主轴和屏幕支架等总体传动；权利要求的旋转盘与支架凸起/槽嵌合关系没有直接或可严谨推出的证据。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+      "competitor_feature": "现有公开资料未披露该产品在旋转盘与安装支架之间设置多个配合凸起和多个配合槽，也未披露一一对应配合关系。图片中虽有多个螺钉孔、齿轮齿和安装孔，但不能等同于权利要求所述多个凸起/槽嵌合传动结构。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+          "title": "车载中控屏偏摆驱动齿轮箱",
+          "source_name": "兆威机电官网",
+          "snippet": "图示证据：爆炸图和局部结构图显示齿轮箱、齿轮、主轴和壳体等零件，但未标注或说明多个配合凸起/配合槽。"
+        },
+        {
+          "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+          "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+          "source_name": "兆威机电官网",
+          "snippet": "文字仅说明直流电机+平行传动+蜗轮蜗杆，最终带动安装屏幕的主轴，未披露凸起和槽数量或一一配合关系。"
+        }
+      ],
+      "reasoning": "多个凸起/槽及一一对应属于内部连接细节；现有证据没有文字标注或可识别结构证明，不能由螺钉孔或齿轮齿推定。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+      "competitor_feature": "未找到任何公开资料说明该产品存在多个配合凸起，更未说明这些凸起沿显示终端长度方向间隔设置。现有图片只能看到屏幕背板、齿轮箱和安装孔，无法确认凸起的方向布置。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.zwgear.com/uncategorized/qcpbxzp.html",
+          "title": "汽车偏摆&旋转屏驱动系统-深圳市兆威机电股份有限公司",
+          "source_name": "兆威机电官网",
+          "snippet": "图示证据：屏幕背部安装板和偏摆机构外观图未显示可判定为配合凸起且沿屏幕长度方向间隔的结构。"
+        },
+        {
+          "url": "https://www.zwgear.com/special/carping.html",
+          "title": "智能汽车屏幕解决方案",
+          "source_name": "兆威机电官网",
+          "snippet": "页面说明中控偏摆屏左右旋转、两度自由中控屏融合横竖旋转和偏摆，但未披露连接凸起的长度方向布置。"
+        }
+      ],
+      "reasoning": "该特征依赖先确认多个配合凸起；公开资料没有凸起结构，更无相对于显示屏长度方向的间隔布置信息。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+      "competitor_feature": "资料可证明驱动系统带动安装屏幕的主轴/屏幕支架旋转，但没有证据表明是“旋转盘带动多个配合凸起”实现同步转动，也没有披露多个配合凸起彼此之间不发生相对运动。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.zwgear.com/qchsj/czzkppbqdclx.html",
+          "title": "车载中控屏偏摆驱动齿轮箱-汽车中控屏旋转电机",
+          "source_name": "兆威机电官网",
+          "snippet": "产品说明：采用直流电机+平行传动+蜗轮蜗杆传动，最终带动安装屏幕的主轴，使屏幕面向主驾或者副驾。"
+        },
+        {
+          "url": "https://www.zwgear.com/special/carping.html",
+          "title": "智能汽车屏幕解决方案",
+          "source_name": "兆威机电官网",
+          "snippet": "中控旋转屏方案称通过直流无刷电机+一级蜗轮蜗杆传动+平行传动带动中控屏幕0-90°横竖旋转；中控偏摆屏带动安装屏幕的主轴实现左右旋转。"
+        },
+        {
+          "url": "https://www.zwgear.com/qcbvv/czzkppbqdxt.html",
+          "title": "车载中控屏偏摆驱动系统-汽车中控屏驱动齿轮箱模组",
+          "source_name": "兆威机电官网",
+          "snippet": "图示证据：局部结构图能看到齿轮传动和主轴组件，但未显示多个凸起随旋转盘整体转动且相互无相对运动的结构关系。"
+        }
+      ],
+      "reasoning": "“主轴带动屏幕”只能证明总体旋转输出；权利要求所限定的多个凸起随旋转盘共同转动且相互无相对运动没有公开结构证据支持。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 53.33,
+  "searched_queries": [
+    "兆威 汽车偏摆 旋转屏 驱动系统 拆解 旋转盘 配合槽 凸起",
+    "兆威 中控屏偏摆驱动齿轮箱 结构图 多个凸起 配合槽",
+    "兆威 汽车偏摆&旋转屏驱动系统（12V DC） 规格书 参数",
+    "兆威 汽车偏摆&旋转屏驱动系统（12V DC） 说明书 PDF",
+    "兆威 汽车偏摆&旋转屏驱动系统（12V DC） 中国 市场"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

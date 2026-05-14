@@ -1,0 +1,664 @@
+{
+  "candidate": {
+    "candidate_id": "P07",
+    "company": "高合汽车（华人运通）",
+    "company_en": "HiPhi / Human Horizons",
+    "product_name": "高合HiPhi Z HiPhi Bot 15.05英寸OLED多轴位移中控屏",
+    "product_name_en": "HiPhi Z HiPhi Bot 15.05-inch OLED multi-axis movable center display",
+    "product_version": "HiPhi Z的15.05英寸OLED中控屏由4自由度/8向可调、高速运动机械臂连接，可前后移动、横竖屏切换，并能前后左右高频摆动。摘要称前后移动1秒到位、横竖屏切换2秒完成、前后左右高频摆动3次/秒。",
+    "market": "中国高端新能源智能座舱量产车型",
+    "reason_for_deep_dive": "该产品的显示终端通过机械臂执行机构实现多轴位移和左右方向摆动，覆盖C1-F1/C1-F2的显示终端执行机构和左/右转动场景。虽然其机构可能不同于简单旋转盘结构，但公开的高速多轴机械连接非常值得拆解核查C1-F3至C1-F6的支架、旋转盘及多点同步传动特征。",
+    "source_result_ids": [
+      "tavily-Q11-01"
+    ],
+    "source_urls": [
+      "https://h5.ifeng.com/c/vivoArticle/v002Ws7--rAXh0a3DSgt8jZbJ2w72HZwucFwOzRTCgAAg8vs__?isNews=1&showComments=0"
+    ],
+    "initial_evidence_summary": "摘要显示：高合HiPhi Z中控屏为15.05英寸OLED，由4自由度8向可调、高速运动机械臂连接；可前后移动、横竖屏切换、前后左右高频摆动；前后移动1秒到位，横竖屏切换2秒完成，前后左右高频摆动3次/秒。"
+  },
+  "launch_date": "2022年7月正式亮相/量产定型车公开报道",
+  "launch_date_evidence": [
+    {
+      "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+      "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+      "source_name": "动点科技",
+      "snippet": "文章日期为2022/07/08，称高合HiPhi Z为“此前发布的量产定型车”，并详细介绍HiPhi Bot多轴位移车载数字机器人。"
+    },
+    {
+      "url": "https://www.autobit.xyz/news/2371.html",
+      "title": "高合 HiPhi Z：打造面向未来的车，我最有发言权",
+      "source_name": "汽车之心",
+      "snippet": "文章日期为2022-07-12，称高合HiPhi Z搭载车载数字机器人HiPhi Bot，采用车规级4自由度、8向调节机械臂。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：现有公开证据显示HiPhi Z/HiPhi Bot在2022年公开亮相或量产定型，晚于专利申请日2019-03-28；未发现权利要求1任一特征被公开证据直接证明为明确不满足。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种显示终端的执行机构，其特征在于，所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动，所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动；\n所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合；\n多个所述配合凸起在所述显示终端的长度方向上间隔设置；\n其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种显示终端的执行机构",
+          "competitor_feature": "HiPhi Z中控显示终端为15.05英寸OLED/AMOLED屏，屏幕后由HiPhi Bot多轴位移车载数字机器人/高速机械臂驱动；该机械臂属于用于显示终端运动的执行机构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "“HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。”"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“HiPhi Z 的中控屏尺寸为 15.05 英寸……高合首创的机械臂组合成了一个 HiPhi Bot……配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”"
+            }
+          ],
+          "reasoning": "官网和新出行评测均直接说明15.05英寸中控屏背后由HiPhi Bot机械臂/多轴位移系统支撑并驱动，属于“显示终端的执行机构”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+          "competitor_feature": "HiPhi Bot支持前后、左右、俯仰、旋转4自由度/8向可调；公开资料称可“前后左右高频摆动”，并可将中控屏转到合适角度和位置。左右摆动/左右角度切换对应车内横向，即车辆宽度方向的左/右调节。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.hiphi.com/intelligence.html",
+              "title": "高合HiPhi Z类人灵智-华人运通高合HiPhi Z",
+              "source_name": "高合官网移动页",
+              "snippet": "“4自由度8向可调、高速运动的机械臂……可前后移动，横竖屏切换，前后左右高频摆动。”英文页亦称“oscillates backward, forwards, left, and right in high frequency”。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“HiPhi Bot 支持前后、左右、俯仰、旋转共4自由度以及8向可调……可以支持多方向的调节。”"
+            },
+            {
+              "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+              "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+              "source_name": "动点科技",
+              "snippet": "“HiPhi Bot能听音识位，通过多轴位移机械臂，将中控屏幕转到合适的角度和位置……前后左右高频摆动，3次/秒。”"
+            }
+          ],
+          "reasoning": "多家公开资料直接写明中控屏机械臂可左右调节/左右摆动，并可把屏幕转到相应角度；车内左右方向即车辆宽度方向。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+          "competitor_feature": "公开资料能证明HiPhi Bot为屏幕后机械臂，配有独立伺服电机、丝杠电推杆、旋转机构，可支撑并调节中控屏；补搜资料还称屏幕背后一根机械臂可90°旋转、多维度动作。但未公开显示屏安装支架、旋转盘，以及旋转盘/支架之间的配合槽与配合凸起伸入配合结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”文中出现“HiPhi Bot 背部机械结构”图片说明，但未公开槽/凸起连接细节。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+              "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+              "source_name": "太平洋汽车",
+              "snippet": "“可90度旋转的中控显示屏，背后通过机械臂进行控制，从而可以实现多维度的动作。”未披露旋转盘、配合槽或配合凸起。"
+            },
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "“这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。”"
+            }
+          ],
+          "reasoning": "现有证据足以证明存在屏幕后执行机构、旋转机构和机械臂，但均停留在整机功能/外观层面；未见支架与旋转盘之间采用槽-凸起插接并同步转动的公开结构图或文字，因此不能确认该具体内部传动配合。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：屏后支架/旋转盘及槽-凸结构图，现证据仅到机械臂/旋转机构。\n可去：HiPhi Z维修手册/零件目录，拆解视频，HiPhi Bot供应商资料\n下一步建议：去17vin、精通汽修或汽修帮手找中控屏/机械臂总成爆炸图"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+          "competitor_feature": "现有公开资料未披露HiPhi Bot内部存在多个配合凸起、多个配合槽，也未披露二者一一对应配合；仅能证明其为多轴机械臂/旋转机构。新出行补搜结果中出现“三轴机械臂共同故障可能性低，单根失效剩下两根仍能正常工作”的表述，但这是机械臂数量/冗余层面的描述，不等同于多个槽-凸起一一对应配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "公开信息只说明“独立的伺服电机、丝杠电推杆、旋转机构”，未说明多个凸起/槽。"
+            },
+            {
+              "url": "https://m.hiphi.com/intelligence.html",
+              "title": "高合HiPhi Z类人灵智-华人运通高合HiPhi Z",
+              "source_name": "高合官网移动页",
+              "snippet": "仅说明“Robot Arm With Multi-axis Movement”“4自由度8向可调、高速运动的机械臂”，无内部槽-凸起数量及配合关系。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/54348",
+              "title": "从概念到现实的数字 GT 实拍解析高合 HiPhi Z 量产版_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "文章提到HiPhi Bot能够通过多轴位移机械臂调节中控屏角度和位置，并称“三轴机械臂共同故障的可能性非常低”，但未公开多个配合槽/凸起。"
+            }
+          ],
+          "reasoning": "多轴机械臂或多根机械臂不必然采用“多个凸起+多个槽一一对应”的旋转盘连接方式。公开资料未披露这些内部配合件的数量、形状和对应关系，无法证实也无法排除。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：多个凸起/槽的数量及一一对应关系，公开图未拆到内部。\n可去：维修手册零件图，拆车件照片，官方结构专利\n下一步建议：检索17vin或jt269.com中“HiPhi Bot/中控机械臂总成”"
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+          "competitor_feature": "未发现公开资料说明HiPhi Bot中存在“多个配合凸起”，更没有说明这些凸起沿15.05英寸显示屏的长度方向间隔布置。公开图片仅显示中控屏位于座舱中央和背后机械臂/支撑区域，不能识别内部凸起及其沿屏幕长边的排布。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "官网仅说明中控屏由HiPhi Bot机械臂实现前后移动、横竖屏切换、无级调节、任意悬停，未披露凸起排列方向。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/53461",
+              "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+              "source_name": "新出行",
+              "snippet": "页面GIF/图示显示中控屏支持横竖向旋转、左右角度偏移；未标注内部配合凸起或其沿屏幕长度方向的布置。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "图示证据：页面展示中控屏正面及机械屏使用场景；文字未标注内部配合凸起或其沿屏幕长度方向的布置。"
+            }
+          ],
+          "reasoning": "该特征依赖内部凸起数量和空间排布。现有证据只到整机运动功能和座舱外观层面，没有拆解图、爆炸图或结构图支撑“沿显示终端长度方向间隔设置”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：凸起沿显示屏长度方向间隔布置；尚未证明存在凸起更无方向。\n可去：屏幕后支架爆炸图，拆解视频，供应商装配图\n下一步建议：优先找中控屏背部支架近照或机械臂连接座拆解图"
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+          "competitor_feature": "公开资料未披露旋转盘驱动多个凸起转动，也未披露多个凸起作为整体同步、彼此无相对运动；仅披露机械臂通过伺服电机、丝杠电推杆、旋转机构实现多方向调节、任意悬停、90°旋转和前后左右高频摆动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”未披露旋转盘-多凸起同步传动。"
+            },
+            {
+              "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+              "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+              "source_name": "动点科技",
+              "snippet": "“HiPhi Bot拥有车规级、4自由度/8向可调、全行程无极调节、高速运动的机械臂……横竖屏切换，2秒完成；前后左右高频摆动，3次/秒。”"
+            },
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "“中控屏在转动过程中，其中的导航地图竟然可以保持相对稳定……软件系统与机械臂等硬件达成了非常完美的协调性。”"
+            }
+          ],
+          "reasoning": "功能性运动、地图稳定和机械臂协调只能证明整机控制精度较高，不能反推出旋转盘带多个凸起同步转动，也不能证明多个凸起之间无相对运动；缺少拆解、结构图或文字说明。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：旋转盘带多凸起同步且无相对运动，功能证据不能证明传动链。\n可去：执行机构结构图，维修手册，拆解视频\n下一步建议：在维修资料站或拆车件平台找HiPhi Bot传动机构内部照片"
+        }
+      ],
+      "claim_score": 53.33
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述的显示终端的执行机构，其特征在于，所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述旋转盘上设有所述配合槽，所述安装支架上设有所述配合凸起",
+          "competitor_feature": "公开资料没有披露HiPhi Bot的旋转盘、安装支架以及二者之间槽/凸起的具体归属位置；无法确认是旋转盘设槽、安装支架设凸起，还是其他连接方式。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "仅说明HiPhi Bot配合独立伺服电机、丝杠电推杆、旋转机构支持多方向调节。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+              "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+              "source_name": "太平洋汽车",
+              "snippet": "“背后通过机械臂进行控制，从而可以实现多维度的动作。”未披露槽/凸起设置在何部件上。"
+            }
+          ],
+          "reasoning": "该从属特征要求明确的部件归属关系。现有资料没有拆到旋转盘和安装支架的连接界面，不能证明旋转盘设槽、支架设凸起。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求1所述的显示终端的执行机构，其特征在于，还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "还包括驱动单元，所述驱动单元与所述旋转盘配合以驱动所述旋转盘转动",
+          "competitor_feature": "HiPhi Bot公开资料明确提到独立伺服电机、丝杠电推杆、旋转机构，能够驱动屏幕进行4自由度/8向调节及90°旋转；这些公开部件可对应“驱动单元”。但公开资料未直接披露该驱动单元与一个“旋转盘”配合并驱动旋转盘转动。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”"
+            },
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "“这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。”"
+            }
+          ],
+          "reasoning": "伺服电机、丝杠电推杆和旋转机构足以严谨推断HiPhi Bot存在用于驱动屏幕运动的驱动单元；但因旋转盘未公开，只能将“与旋转盘配合”部分评价为推定，故为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求3所述的显示终端的执行机构，其特征在于，所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述驱动单元包括：\n动力源；\n减速单元，所述动力源的输出端与所述减速单元的输入端相连，所述减速单元的输出端与所述旋转盘相连",
+          "competitor_feature": "公开资料披露HiPhi Bot使用独立伺服电机、丝杠电推杆和旋转机构；伺服电机可对应动力源，丝杠电推杆/旋转机构通常包含传动或减速功能以实现无级调节、任意悬停和高精度动作。但没有公开电机输出端—减速单元—旋转盘的具体连接链。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“配合独立的伺服电机、丝杠电推杆、旋转机构可以支持多方向的调节。”"
+            },
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "“4自由度8向可调、高速运动的机械臂；可前后移动，横竖屏切换，可无级调节、任意悬停。”"
+            }
+          ],
+          "reasoning": "独立伺服电机直接支撑“动力源”；丝杠电推杆和旋转机构为了高精度、任意悬停通常需要传动/减速链，因此可推定存在减速或传动单元。但公开资料未给出减速单元结构和与旋转盘的输出连接，不能评为明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求4所述的显示终端的执行机构，其特征在于，所述减速单元为蜗杆齿轮传动机构。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述减速单元为蜗杆齿轮传动机构",
+          "competitor_feature": "公开资料仅提到HiPhi Bot具有伺服电机、丝杠电推杆、旋转机构；未披露减速单元类型，更未说明其为蜗杆齿轮传动机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“独立的伺服电机、丝杠电推杆、旋转机构”支持调节；未说明蜗杆齿轮传动。"
+            },
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "仅说明机械臂支持90°旋转和多维度转动，未披露蜗杆齿轮。"
+            }
+          ],
+          "reasoning": "蜗杆齿轮是具体减速机构形式。现有证据没有蜗杆、蜗轮、齿轮传动等文字或图示，不能从“伺服电机/旋转机构”直接推出。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述旋转盘上设有第一定位结构，所述驱动单元的壳体上设有第二定位结构，所述第一定位结构和所述第二定位结构配合以限定所述旋转盘的转动角度",
+          "competitor_feature": "HiPhi Bot公开资料显示中控屏支持90°旋转、横竖屏切换、左右角度偏移和任意悬停；这些功能表明系统存在角度控制/限位能力。但未公开旋转盘上的第一定位结构、驱动单元壳体上的第二定位结构及二者机械配合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/53461",
+              "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+              "source_name": "新出行",
+              "snippet": "“中控屏是支持横竖向的选装的，并且还支持左右角度偏移。”"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+              "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+              "source_name": "太平洋汽车",
+              "snippet": "“可90度旋转的中控显示屏，背后通过机械臂进行控制。”"
+            }
+          ],
+          "reasoning": "角度可控并不必然由旋转盘/壳体上的两个定位结构机械配合实现，也可能由电机控制、编码器、软件限位或其他结构实现。无公开结构细节，证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求3所述的显示终端的执行机构，其特征在于，所述旋转盘还包括穿过所述驱动单元的安装轴，所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述旋转盘还包括穿过所述驱动单元的安装轴",
+          "competitor_feature": "公开资料未披露HiPhi Bot的旋转盘，也未披露穿过驱动单元的安装轴。可见资料仅显示/描述屏幕后机械臂、伺服电机、丝杠电推杆和旋转机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "文字说明伺服电机、丝杠电推杆、旋转机构；没有安装轴穿过驱动单元的披露。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/54348",
+              "title": "从概念到现实的数字 GT 实拍解析高合 HiPhi Z 量产版_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "公开资料主要描述HiPhi Bot多轴位移机械臂调节屏幕角度和位置，未给出安装轴结构。"
+            }
+          ],
+          "reasoning": "该特征是内部轴系结构。现有公开内容没有爆炸图或截面图，不能证明存在穿过驱动单元的安装轴。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "所述执行机构包括弹性件，所述弹性件套设于所述安装轴，且所述弹性件的一端抵压所述安装轴的轴向限位件，另一端抵压所述驱动单元的壳体",
+          "competitor_feature": "公开资料未披露HiPhi Bot执行机构内的弹性件、弹性件套设于安装轴、轴向限位件或弹性件两端分别抵压安装轴限位件和驱动单元壳体的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "官网说明HiPhi Bot可无级调节、任意悬停，但没有公开弹性件/弹簧及安装轴限位结构。"
+            },
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "仅披露中控屏背后机械臂支持90°旋转、多维度转动，未披露弹性件。"
+            }
+          ],
+          "reasoning": "任意悬停或机械臂运动不能反推一定存在套设在安装轴上的弹性件；该从属特征缺少直接公开或图示支持。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7所述的显示终端的执行机构，其特征在于，所述安装轴为中空结构。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述安装轴为中空结构",
+          "competitor_feature": "公开资料未披露HiPhi Bot是否存在安装轴，也未披露该安装轴是否为中空结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "公开资料仅说明机械臂、伺服电机、丝杠电推杆、旋转机构，未说明安装轴或中空轴。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+              "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+              "source_name": "太平洋汽车",
+              "snippet": "公开中控屏背后通过机械臂控制实现多维度动作，但无轴系截面或中空结构说明。"
+            }
+          ],
+          "reasoning": "中空轴属于内部细节。没有安装轴存在性的证据，更无法确认其为空心/中空。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.一种车载显示终端，其特征在于，包括：显示终端；根据权利要求1-8中任一项所述的执行机构；所述显示终端安装于所述执行机构；所述执行机构驱动所述显示终端朝左转动或者朝右转动。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "一种车载显示终端",
+          "competitor_feature": "HiPhi Z座舱中部搭载15.05英寸AMOLED/OLED中控触摸屏，属于车载显示终端。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“HiPhi Z 的中控屏尺寸为 15.05 英寸，并且是一块 AMOLED 2K 屏。”"
+            },
+            {
+              "url": "https://www.autohome.com.cn/ask/7079045.html",
+              "title": "高合HiPhi Z车机多媒体评测-汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "“HiPhi Z配备了15.05英寸的AMOLED屏幕，分辨率达到2K级别。”"
+            }
+          ],
+          "reasoning": "公开资料直接说明HiPhi Z配备15.05英寸中控显示屏/触摸屏，安装在车辆座舱中，满足车载显示终端。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C9-F2",
+          "patent_feature": "包括：显示终端；执行机构",
+          "competitor_feature": "HiPhi Z车载显示终端包括15.05英寸AMOLED中控屏和HiPhi Bot多轴位移机械臂执行机构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "“HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂。”"
+            },
+            {
+              "url": "https://www.autohome.com.cn/ask/7079045.html",
+              "title": "高合HiPhi Z车机多媒体评测-汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "“屏幕与高合首创的机械臂组合成为具有生命感的智能数字机器人——HiPhi Bot，支持多向可调。”"
+            }
+          ],
+          "reasoning": "显示屏与机械臂组合构成车载显示终端组件；机械臂承担驱动显示屏运动的执行机构功能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C9-F3",
+          "patent_feature": "所述显示终端安装于所述执行机构",
+          "competitor_feature": "HiPhi Z大尺寸中控屏背后由机械臂/HiPhi Bot连接和控制；公开图片显示屏体位于机械臂/中控支撑结构前方，说明显示终端安装在该执行机构上。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "“这块大尺寸中控屏背后是一根机械臂，支持90°旋转，可进行多维度转动。”"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/53461",
+              "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+              "source_name": "新出行",
+              "snippet": "图示证据：座舱图片/GIF显示中控屏安装在中控台上方的机械运动机构上，并可横竖向旋转、左右角度偏移。"
+            }
+          ],
+          "reasoning": "“屏幕背后是一根机械臂”以及图示中的屏幕-机械臂组合可直接证明显示终端安装于机械臂执行机构。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C9-F4",
+          "patent_feature": "所述执行机构驱动所述显示终端朝左转动或者朝右转动",
+          "competitor_feature": "HiPhi Bot支持左右角度偏移、前后左右高频摆动和4自由度/8向可调，能够驱动中控屏向驾驶员或副驾方向转动/偏转。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/53461",
+              "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+              "source_name": "新出行",
+              "snippet": "“中控屏是支持横竖向的选装的，并且还支持左右角度偏移。”"
+            },
+            {
+              "url": "https://m.hiphi.com/intelligence.html",
+              "title": "高合HiPhi Z类人灵智-华人运通高合HiPhi Z",
+              "source_name": "高合官网移动页",
+              "snippet": "“4自由度8向可调、高速运动的机械臂……前后左右高频摆动。”"
+            }
+          ],
+          "reasoning": "左右角度偏移和前后左右高频摆动是对车载中控屏左右方向转动/调节的直接公开。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种车辆，其特征在于，包括：如权利要求1-8中任一项所述的执行机构；或者\n包括：如权利要求9所述的车载显示终端；\n所述执行机构安装于车体，所述显示终端安装于所述执行机构。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "一种车辆",
+          "competitor_feature": "高合HiPhi Z是华人运通/高合汽车推出的量产纯电豪华GT/中大型轿跑车型，属于车辆。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://cn.technode.com/post/2022-07-08/hiphi-z",
+              "title": "高合HiPhi Z，代表着想象力和创新力的未来派电动车",
+              "source_name": "动点科技",
+              "snippet": "文章介绍高合HiPhi Z量产定型车及其配置。"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/54348",
+              "title": "从概念到现实的数字 GT 实拍解析高合 HiPhi Z 量产版_评测_新出行",
+              "source_name": "新出行",
+              "snippet": "“高合 HiPhi Z 量产版……定位于科技轿跑 GT。”"
+            }
+          ],
+          "reasoning": "多家汽车媒体和官方页面均将HiPhi Z作为车辆/量产车介绍，满足车辆特征。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F2",
+          "patent_feature": "包括：执行机构；或者\n包括：车载显示终端",
+          "competitor_feature": "HiPhi Z车辆包括HiPhi Bot多轴位移车载数字机器人以及15.05英寸AMOLED中控显示终端，屏幕和机械臂构成车载显示终端组件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.hiphi.cn/hiphiz.html",
+              "title": "高合HiPhi Z 高合汽车官网_华人运通",
+              "source_name": "高合官网",
+              "snippet": "“HiPhi Bot多轴位移机车载数字机器人，4自由度8向可调、高速运动的机械臂。”"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/72423",
+              "title": "「机械臂+游戏引擎」如何构建新交互？静态体验高合 HiPhi Z 智能座舱",
+              "source_name": "新出行",
+              "snippet": "“HiPhi Z 的中控屏尺寸为 15.05 英寸……高合首创的机械臂组合成了一个 HiPhi Bot。”"
+            }
+          ],
+          "reasoning": "车辆内配置的15.05英寸中控屏和HiPhi Bot机械臂直接对应车载显示终端/执行机构。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F3",
+          "patent_feature": "所述执行机构安装于车体，所述显示终端安装于所述执行机构",
+          "competitor_feature": "HiPhi Bot被公开称为“车载数字机器人”，位于HiPhi Z中控台区域；大尺寸中控屏背后是一根机械臂，图示中显示屏安装在座舱中控台上方的机械机构上，因此执行机构安装于车辆座舱/车体，显示终端安装于该执行机构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "http://m.diandong.com/news/161956.html",
+              "title": "高合HiPhi Z最新内饰细节曝光！多维旋转大屏亮点多多",
+              "source_name": "电动邦",
+              "snippet": "“新车搭载了全球首款多轴位移的车载数字机器人HiPhi Bot，这块大尺寸中控屏背后是一根机械臂。”"
+            },
+            {
+              "url": "https://www.xchuxing.com/article/53461",
+              "title": "保留多轴旋转中控屏设计 高合发布 HiPhi Z 量产版内饰_话题文章_新出行",
+              "source_name": "新出行",
+              "snippet": "图示证据：HiPhi Z座舱中控屏位于车辆中控区域，支持横竖向旋转和左右角度偏移。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/nation/3125/31259666.html",
+              "title": "高合HiPhi Z内饰曝光 中控屏可多轴旋转_太平洋汽车网",
+              "source_name": "太平洋汽车",
+              "snippet": "“可90度旋转的中控显示屏，背后通过机械臂进行控制，从而可以实现多维度的动作。”"
+            }
+          ],
+          "reasoning": "“车载数字机器人”说明机械臂执行机构为车辆内装部件；“屏幕背后是一根机械臂”及座舱图示直接支持显示终端安装在执行机构上。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    }
+  ],
+  "claim_1_score": 53.33,
+  "total_score": 53.33,
+  "searched_queries": [
+    "高合 HiPhi Z HiPhi Bot 机械臂 拆解 旋转机构 安装支架",
+    "HiPhi Z HiPhi Bot mechanical arm teardown rotating mechanism bracket",
+    "高合 HiPhi Z HiPhi Bot 中控屏 背部机械结构 拆解 图 旋转盘 配合槽 凸起",
+    "HiPhi Z HiPhi Bot service manual center display actuator exploded view",
+    "高合 HiPhi Z 中控屏 机械臂 总成 零件图 安装支架 旋转盘",
+    "Human Horizons HiPhi Bot display robot arm patent groove protrusion turntable"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

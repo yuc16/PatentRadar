@@ -1,0 +1,792 @@
+{
+  "publication_no": "CN117584868B",
+  "claim_1_summary": "权利要求1涉及一种车载显示终端的旋转执行机构：该机构驱动车内显示终端沿车辆宽度方向向左或向右转动；包括安装显示终端的安装支架和旋转盘，二者通过配合凸起与配合槽嵌合，使旋转盘带动安装支架同步转动；配合凸起/配合槽为多组、一一对应，并沿显示终端长度方向间隔布置，多组凸起随旋转盘同步转动且相互之间不发生相对运动。",
+  "applicant_self_signals": {
+    "domains": [
+      "byd.com",
+      "bydglobal.com",
+      "bydauto.com.cn",
+      "byd.com.cn",
+      "byd-electronic.com",
+      "byd-it.com",
+      "fdoi.com",
+      "fdb.com.cn",
+      "denza.com",
+      "yangwangauto.com",
+      "fangchengbao.com"
+    ],
+    "aliases": [
+      "比亚迪",
+      "比亚迪股份有限公司",
+      "比亚迪汽车",
+      "比亚迪电子",
+      "比亚迪精密制造",
+      "BYD",
+      "BYD Co Ltd",
+      "BYD Company Limited",
+      "BYD Auto",
+      "BYD Electronic",
+      "Build Your Dreams",
+      "DiLink",
+      "DiPilot",
+      "弗迪",
+      "弗迪动力",
+      "弗迪电池",
+      "弗迪科技",
+      "弗迪精工",
+      "Fudi",
+      "FinDreams",
+      "腾势",
+      "腾势汽车",
+      "Denza",
+      "仰望",
+      "仰望汽车",
+      "Yangwang",
+      "方程豹",
+      "方程豹汽车",
+      "Fangchengbao",
+      "Fang Cheng Bao"
+    ]
+  },
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "车载显示终端 执行机构 左右转动",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "汽车中控屏 左右旋转 执行器",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "中控屏 旋转盘 安装支架 配合槽",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "车载显示屏 配合凸起 配合槽 旋转机构",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "显示屏旋转机构 多凸起 多槽 同步转动",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "可旋转中控屏 多点限位 支架 结构",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3",
+        "C1-F4"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "智能座舱 旋转屏 执行器 供应商",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "车载中控屏 左右偏转 量产车型",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "左右旋转中控屏 车型 中国",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "向日葵中控屏 左右旋转 车型",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q11",
+      "query": "中控屏 转向驾驶员 转向副驾",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q12",
+      "query": "悬浮中控屏 左右偏转 评测",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q13",
+      "query": "车载显示屏 旋转机构 规格书 PDF",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q14",
+      "query": "汽车中控屏 执行器 datasheet 旋转",
+      "intent": "specification",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q15",
+      "query": "旋转屏执行器 参数表 智能座舱",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q16",
+      "query": "车载显示终端 安装支架 旋转盘 规格",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q17",
+      "query": "automotive display swivel actuator datasheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q18",
+      "query": "rotating center display mechanism spec sheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q19",
+      "query": "vehicle infotainment screen yaw actuator PDF",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q20",
+      "query": "automotive display mounting bracket rotary plate",
+      "intent": "claim_feature",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q21",
+      "query": "极氪 001 向日葵中控屏 左右旋转",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q22",
+      "query": "极氪 7X 向日葵屏 左右偏转",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q23",
+      "query": "领克 08 向日葵中控屏 评测",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q24",
+      "query": "吉利 银河 可旋转中控屏 车型",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q25",
+      "query": "长安 深蓝 可旋转中控屏 参数",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q26",
+      "query": "蔚来 NOMI 显示屏 旋转机构 拆解",
+      "intent": "evidence",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q27",
+      "query": "小鹏 G9 中控屏 左右旋转 评测",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q28",
+      "query": "问界 M9 中控屏 旋转机构 智能座舱",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q29",
+      "query": "理想 L9 中控屏 支架 拆解",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q30",
+      "query": "高合 HiPhi 中控屏 旋转 评测",
+      "intent": "evidence",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q31",
+      "query": "岚图 FREE 中控屏 旋转升降 评测",
+      "intent": "evidence",
+      "language": "mixed",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q32",
+      "query": "智己 LS7 可升降屏 旋转机构",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q33",
+      "query": "延锋 智能座舱 可旋转显示屏 方案",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q34",
+      "query": "德赛西威 旋转中控屏 智能座舱 量产",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q35",
+      "query": "华阳通用 车载显示 旋转屏 方案",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q36",
+      "query": "航盛电子 中控屏 旋转机构 供应商",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q37",
+      "query": "京东方 车载显示 旋转屏 方案",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q38",
+      "query": "天马 车载显示 可旋转屏 方案",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q39",
+      "query": "Yanfeng smart cockpit swivel display China",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q40",
+      "query": "Desay SV rotating display cockpit supplier",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q41",
+      "query": "Continental swiveling automotive display China",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q42",
+      "query": "FORVIA cockpit rotating display actuator",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q43",
+      "query": "Visteon smart cockpit swivel display screen",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q44",
+      "query": "BOE automotive rotating display solution",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q45",
+      "query": "极氪 向日葵屏 拆解 旋转机构",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q46",
+      "query": "汽车中控屏 旋转机构 拆解 视频",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q47",
+      "query": "swiveling car display teardown actuator",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q48",
+      "query": "rotating infotainment screen teardown bracket",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q49",
+      "query": "向日葵中控屏 首发 量产时间",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q50",
+      "query": "rotating center display launch China model",
+      "intent": "launch_date",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F2"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    }
+  ]
+}

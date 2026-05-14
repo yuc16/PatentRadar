@@ -1,0 +1,233 @@
+{
+  "candidate": {
+    "candidate_id": "P04",
+    "company": "极氪汽车",
+    "company_en": "ZEEKR",
+    "product_name": "极氪007 15.05英寸2.5K OLED向日葵中控屏",
+    "product_name_en": "ZEEKR 007 15.05-inch 2.5K OLED sunflower center display",
+    "product_version": "极氪007配备15.05英寸2.5K OLED向日葵中控屏，公开信息称其具备左右转动/摆动功能，可朝主驾驶侧或副驾驶侧倾斜。另有摘要显示该屏由ADAYO华阳配套，并可通过四指滑动或方向盘后实体按键改变偏转角度。",
+    "market": "中国纯电轿车智能座舱量产车型，前装配套华阳屏幕方案",
+    "reason_for_deep_dive": "公开信息明确了车载显示屏左右转动以服务主驾/副驾，和C1-F2高度相关；同时屏幕为悬浮式中控屏，通常存在背部安装支架及驱动/限位结构。值得查证其可偏转屏幕内部是否有旋转盘带动多个凸起、多个槽同步联动的结构。",
+    "source_result_ids": [
+      "bocha-Q22-02",
+      "bocha-Q22-04",
+      "brave-Q10-04",
+      "tavily-Q22-01"
+    ],
+    "source_urls": [
+      "https://www.pcauto.com.cn/wd/3979197.html",
+      "https://hao.yiche.com/wenzhang/86943804",
+      "https://www.smartautoclub.com/p/63744",
+      "https://www.sina.cn/news/detail/4987502448347837.html"
+    ],
+    "initial_evidence_summary": "摘要显示：极氪007的15.05英寸2.5K OLED向日葵中控屏具有左右转动功能；内饰官图报道称其将极氪X的左右滑动机制调整为左右摆动，可朝主驾驶侧或副驾驶侧倾斜；智能汽车资源网称该屏由ADAYO华阳配套，15.05英寸、2.5K OLED、可偏转式；新浪摘要称四指滑动可转换屏幕偏转角度，方向盘背后还有实体偏转按键。"
+  },
+  "launch_date": "2023年11月17日首次公开亮相并开启预售；2023年12月27日上市发布；2024年1月1日首批交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.foryouge.com/news/195.html",
+      "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+      "source_name": "ADAYO华阳官方",
+      "snippet": "11月17日，极氪智能科技旗下首款纯电豪华轿车极氪007首次全球公开亮相，并开启预售；极氪007搭载由华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏。"
+    },
+    {
+      "url": "https://chejiahao.autohome.com.cn/info/14063987",
+      "title": "极氪007内饰官图发布，搭2.5K超清中控屏、14处氛围灯等",
+      "source_name": "汽车之家车家号",
+      "snippet": "2023年12月12日发布内饰官图；新车将在12月27日召开上市发布会，首款车型于2024年1月1日交付。"
+    },
+    {
+      "url": "https://www.donews.com/news/detail/7/3853865.html",
+      "title": "极氪007中控屏可偏转!配001 FR同款液晶仪表",
+      "source_name": "DoNews汽车",
+      "snippet": "12月12日极氪官方发布内饰图和配置信息，新车将于12月27日上市，2024年1月1日开启交付。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：上述公开亮相、上市和交付时间均晚于专利申请日2019-03-28；证据池中也未发现直接披露与权利要求1相矛盾的结构。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种显示终端的执行机构",
+      "competitor_feature": "极氪007搭载可偏转式15.05英寸2.5K OLED向日葵中控屏；公开资料称其“在运动机构的加持下”可主动偏转，属于用于驱动车载显示终端运动的机构。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.foryouge.com/news/195.html",
+          "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+          "source_name": "ADAYO华阳官方",
+          "snippet": "极氪007搭载由华阳配套的可偏转式15.05英寸2.5K OLED向日葵中控屏；在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度。"
+        },
+        {
+          "url": "https://www.smartautoclub.com/p/63744",
+          "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+          "source_name": "智能汽车资源网",
+          "snippet": "在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度，屏幕既可以从中间位置偏转到主驾位置，也可以偏转到副驾位置。"
+        }
+      ],
+      "reasoning": "ADAYO官方及智能汽车资源网均将该中控屏描述为“可偏转式”并明确有“运动机构”驱动屏幕主动偏转，足以对应显示终端的执行/运动机构。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述执行机构用于在车辆的宽度方向上驱动所述显示终端朝左转动或者朝右转动",
+      "competitor_feature": "中控屏可从中间位置偏转到主驾位置或副驾位置；其他报道称其由左右滑动改为左右摆动/支持左右旋转，方向正对应车辆宽度方向的左、右偏转。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.foryouge.com/news/195.html",
+          "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+          "source_name": "ADAYO华阳官方",
+          "snippet": "屏幕可主动偏转至最佳视觉和操作角度，既可以从中间位置偏转到主驾位置，也可以偏转到副驾位置。"
+        },
+        {
+          "url": "https://hao.yiche.com/wenzhang/86943804",
+          "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+          "source_name": "易车",
+          "snippet": "配有一块15英寸的2.5K悬浮式中控屏，但将极氪X上面的左右滑动机制调整为左右摆动……可以朝主驾驶侧或者副驾驶侧倾斜。"
+        },
+        {
+          "url": "https://m.pcauto.com.cn/x/4681/46810088.html",
+          "title": "极氪007怎么操作屏幕",
+          "source_name": "太平洋汽车",
+          "snippet": "它配备的是15.05英寸的2.5K OLED向日葵中控屏，支持左右旋转，方便驾驶员操作。"
+        },
+        {
+          "url": "https://www.sina.cn/news/detail/4987502448347837.html",
+          "title": "极氪007的这个“向日葵屏”设计不错",
+          "source_name": "新浪新闻",
+          "snippet": "4指滑动就能转换屏幕的偏转角度；补充：在方向盘背后还有实体的屏幕偏转按键。"
+        }
+      ],
+      "reasoning": "多家公开资料直接写明屏幕可向主驾/副驾偏转、左右摆动或左右旋转；主驾与副驾分处车辆宽度方向两侧，故该特征被直接披露。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述执行机构包括：\n用于安装所述显示终端的安装支架；\n旋转盘；所述旋转盘和所述安装支架中的其中一个设有配合槽，所述旋转盘和所述安装支架中的另一个设有配合凸起，所述配合凸起伸入到所述配合槽内；以使所述旋转盘可带动所述安装支架同步转动",
+      "competitor_feature": "公开证据仅说明极氪007中控屏为悬浮式、可偏转式并由运动机构驱动；未公开该运动机构是否包括安装支架、旋转盘，以及旋转盘/安装支架之间是否有配合槽和配合凸起伸入配合的结构。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.foryouge.com/news/195.html",
+          "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+          "source_name": "ADAYO华阳官方",
+          "snippet": "仅披露“在运动机构的加持下，屏幕可主动偏转”，未披露运动机构内部的旋转盘、安装支架、槽/凸起配合结构。"
+        },
+        {
+          "url": "https://hao.yiche.com/wenzhang/86943804",
+          "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+          "source_name": "易车",
+          "snippet": "仅披露15英寸2.5K悬浮式中控屏、左右摆动、朝主驾或副驾侧倾斜；未披露背部机构拆解或传动连接结构。"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/109238",
+          "title": "007的内饰细节之向日葵中控屏",
+          "source_name": "新出行",
+          "snippet": "文章提到中控屏幕三向转动及屏幕调整系统，但作者也称“还没有查到什么详细的资料”，未给出机械结构细节。"
+        }
+      ],
+      "reasoning": "已有证据能证明存在偏转运动机构，但没有拆解图、供应商结构图或维修手册披露旋转盘与安装支架之间的槽/凸起嵌合关系，不能确认该组合结构。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述配合凸起和所述配合槽均为多个，多个所述配合凸起与多个所述配合槽一一对应配合",
+      "competitor_feature": "证据池未披露极氪007向日葵屏运动机构中存在“多个”配合凸起和“多个”配合槽，也未披露一一对应配合关系。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.foryouge.com/news/195.html",
+          "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+          "source_name": "ADAYO华阳官方",
+          "snippet": "披露可偏转式15.05英寸2.5K OLED向日葵中控屏和运动机构，但未披露槽/凸起数量。"
+        },
+        {
+          "url": "https://www.smartautoclub.com/p/63744",
+          "title": "极氪007的OLED向日葵中控大屏由华阳提供",
+          "source_name": "智能汽车资源网",
+          "snippet": "披露运动机构使屏幕从中间偏转到主驾或副驾位置；未披露多个凸起、多个槽或一一对应配合。"
+        }
+      ],
+      "reasoning": "“多个凸起/多个槽一一对应”是内部机械连接细节；现有公开资料只停留在功能层面，未给出任何数量或配合关系，不能据此确认。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "多个所述配合凸起在所述显示终端的长度方向上间隔设置",
+      "competitor_feature": "公开资料未显示或描述运动机构中配合凸起的存在、数量及其沿显示屏长度方向的间隔布置。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://hao.yiche.com/wenzhang/86943804",
+          "title": "配向日葵屏+冰晶氛围灯，极氪007最新内饰官图曝光",
+          "source_name": "易车",
+          "snippet": "披露该屏为15英寸2.5K悬浮式中控屏，并可左右摆动；没有背面机构或凸起布置描述。"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/109238",
+          "title": "007的内饰细节之向日葵中控屏",
+          "source_name": "新出行",
+          "snippet": "图示证据：可见中控位置悬浮式屏幕；正文讨论三向转动，但未展示或说明屏幕背部执行机构内的配合凸起布置。"
+        }
+      ],
+      "reasoning": "即使能从图片确认存在悬浮式中控屏，也无法看到其背部内部机构；没有证据显示多个凸起沿屏幕长度方向间隔设置。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "其中，所述旋转盘带动多个所述配合凸起转动以使所述安装支架同步转动，多个所述配合凸起之间不发生相对运动",
+      "competitor_feature": "证据仅披露屏幕可主动偏转/左右旋转；未披露由旋转盘带动多个配合凸起使安装支架同步转动，也未披露多个凸起之间是否保持相对静止。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.foryouge.com/news/195.html",
+          "title": "ADAYO华阳助力极氪007打造豪华智能专属体验",
+          "source_name": "ADAYO华阳官方",
+          "snippet": "在运动机构的加持下，屏幕可主动偏转至最佳视觉和操作角度；未披露旋转盘带动多个凸起同步转动。"
+        },
+        {
+          "url": "https://www.sina.cn/news/detail/4987502448347837.html",
+          "title": "极氪007的这个“向日葵屏”设计不错",
+          "source_name": "新浪新闻",
+          "snippet": "披露四指滑动可转换屏幕偏转角度、方向盘背后有实体偏转按键；未披露内部同步转动机构。"
+        },
+        {
+          "url": "https://www.smartautoclub.com/p/84704",
+          "title": "车载智能运动显示屏传动机构技术解析及9家供应商盘点",
+          "source_name": "智能汽车资源网",
+          "snippet": "通用介绍中控屏驱动模组可支持左右倾、上下俯仰运动、单轴30°大角度运动，但未指向极氪007具体结构，也未披露槽/凸起同步运动。"
+        }
+      ],
+      "reasoning": "功能性偏转不等同于权利要求限定的旋转盘—多凸起—安装支架同步传动结构；没有产品级拆解或工程图证明多个凸起不相对运动。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 53.33,
+  "searched_queries": [
+    "ADAYO 华阳 极氪007 可偏转式中控屏 运动机构 结构",
+    "极氪007 向日葵中控屏 运动机构 拆解 旋转盘 安装支架",
+    "极氪007 向日葵屏 执行机构 配合凸起 配合槽",
+    "极氪007 中控屏 转向机构 内部结构 槽 凸起",
+    "极氪汽车 极氪007 15.05英寸2.5K OLED向日葵中控屏 拆解 结构",
+    "极氪汽车 极氪007 15.05英寸2.5K OLED向日葵中控屏 上市 日期 发布"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}
