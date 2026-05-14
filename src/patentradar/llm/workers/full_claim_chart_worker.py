@@ -17,9 +17,8 @@ from typing import Any
 
 logger = logging.getLogger(__name__)
 
-# 单候选 vision 图片上限：模块三 round 2 才看图（看 gap search 抓回的新图）。
-# 跟模块二 cap 对齐，控制 vision token 在可预测范围。
-_VISION_IMAGES_PER_CANDIDATE = 10
+# 单候选 vision 图片上限：模块三 round 2 看 5 张。跟模块二对齐。
+_VISION_IMAGES_PER_CANDIDATE = 5
 
 from pydantic import ValidationError
 

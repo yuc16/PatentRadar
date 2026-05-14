@@ -24,15 +24,19 @@ from .pdf import extract_pdf_evidence
 logger = logging.getLogger(__name__)
 
 _USER_AGENT = "patent-radar (python)"
-# HTML 图片抽取上限：避免一页就把单候选 6 张图配额吃光，也防过大 payload。
-_HTML_IMG_TOP_K = 3
+# HTML 图片抽取上限：每 page 最多 1 张图，避免文章页 3 张同 alt 配图把噪声拉满
+_HTML_IMG_TOP_K = 1
 _HTML_IMG_MAX_BYTES = 2 * 1024 * 1024  # 2MB 单图上限，超大图（横幅 banner）直接跳过
 _HTML_IMG_MIN_DIM = 200  # 最短边 < 200px 视为 icon / 小图，跳过
-# URL 路径出现这些片段时加分，命中产品/规格/拆解类内容的可能性高
+# URL 路径出现这些片段时加 +2 分：泛产品/规格/拆解类
 _HTML_IMG_PATH_BOOSTS = (
-    "product", "products", "spec", "specification", "datasheet",
+    "spec", "specification", "datasheet",
     "detail", "details", "gallery", "teardown", "diagram", "figure", "schematic",
     "电池", "电芯", "规格", "尺寸", "拆解", "产品",
+)
+# URL 路径出现这些强信号片段时加 +3 分：显式产品页路径（最可能是主产品图）
+_HTML_IMG_PATH_STRONG_BOOSTS = (
+    "/product/", "/products/", "/datasheet/", "/spec/", "/specs/", "/teardown/",
 )
 # URL 路径出现这些片段时直接跳过（社交/分享/通用 UI 图标）
 _HTML_IMG_PATH_SKIPS = (
@@ -248,8 +252,10 @@ def _extract_html_images(
         meta_text = f"{alt} {title_attr}".lower()
         if keyword_set and any(k in meta_text for k in keyword_set):
             score += 2
-        # URL 路径加分
-        if any(boost in lowered_url for boost in _HTML_IMG_PATH_BOOSTS):
+        # URL 路径加分：强信号 +3（显式 product/datasheet/spec 路径），普通信号 +2
+        if any(boost in lowered_url for boost in _HTML_IMG_PATH_STRONG_BOOSTS):
+            score += 3
+        elif any(boost in lowered_url for boost in _HTML_IMG_PATH_BOOSTS):
             score += 2
         # 在 DOM 前 50% 加分（页面顶部 hero 图概率高）
         if idx < total / 2:
@@ -258,15 +264,33 @@ def _extract_html_images(
 
     if not candidates:
         return []
-    # 去重保留 URL 第一次出现的最高分；按 (score 降序, 原序) 排
+    # 去重 1：同 URL 保留最高 score
     seen: dict[str, tuple[int, str]] = {}
     for score, url_, alt in candidates:
         prev = seen.get(url_)
         if prev is None or score > prev[0]:
             seen[url_] = (score, alt)
-    ranked = sorted(seen.items(), key=lambda kv: (-kv[1][0], kv[0]))
+    # 去重 2：同 alt 保留 score 最高的（文章页常 3 张图共享文章标题 alt，但只有
+    # 1 张是产品图——同 alt 即近似重复，避免把同主题的多张配图全部抓回来）
+    by_alt: dict[str, tuple[int, str]] = {}  # alt_lower → (score, url)
+    for url_, (score, alt) in seen.items():
+        key = (alt or "").strip().lower()
+        if not key:
+            # alt 为空时不参与 alt-去重（产品图 alt 常空，按 URL 各算一条）
+            by_alt[f"__noalt__{url_}"] = (score, url_)
+            continue
+        prev = by_alt.get(key)
+        if prev is None or score > prev[0]:
+            by_alt[key] = (score, url_)
+    # 反查回 (url, score, alt) 形式
+    deduped: dict[str, tuple[int, str]] = {}
+    for key, (score, url_) in by_alt.items():
+        alt_value = "" if key.startswith("__noalt__") else key
+        deduped[url_] = (score, alt_value)
+    ranked = sorted(deduped.items(), key=lambda kv: (-kv[1][0], kv[0]))
     images: list[FetchedImage] = []
-    for url_, (score, alt) in ranked[: _HTML_IMG_TOP_K * 3]:  # 多抓几个备选，下载失败的跳过
+    # 多抓几个备选（下载失败/转换失败的会跳过，仍能取到 _HTML_IMG_TOP_K 张）
+    for url_, (score, alt) in ranked[: max(_HTML_IMG_TOP_K * 4, 4)]:
         # score 阈值：见 _HTML_IMG_MIN_SCORE 注释
         if score < _HTML_IMG_MIN_SCORE:
             continue

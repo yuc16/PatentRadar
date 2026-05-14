@@ -135,6 +135,7 @@ def map_evidence_for_batch(
             is_gap_round=True,
             model=model,
             reasoning_effort=reasoning_effort,
+            visual_log_sent_dir=visual_log_sent_dir,
         )
         for item in gap_result.results:
             final_by_id[item.candidate.candidate_id] = item

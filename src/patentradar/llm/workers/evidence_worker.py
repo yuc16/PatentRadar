@@ -29,10 +29,9 @@ from patentradar.search.relevance import rank_pages_by_relevance, rank_search_re
 
 logger = logging.getLogger(__name__)
 
-# 单候选 vision 图片上限：模块二 round 1+2 看同一批，超过则按 fetched_images
-# 顺序切割。evidence_mapper 已经把 gap search 抓的图排在 list 前面，所以
-# cap 切掉的主要是 initial/seed 池里 score 较低的图。
-_VISION_IMAGES_PER_CANDIDATE = 10
+# 单候选 vision 图片上限：模块二 round 2 看 5 张，配合 fetcher 端 top-K=1/page
+# 和 alt-去重，让 LLM 看到的图集中在每个候选最高质量的 5 张。
+_VISION_IMAGES_PER_CANDIDATE = 5
 
 
 def judge_candidate_batch(
