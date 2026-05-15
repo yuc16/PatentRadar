@@ -68,6 +68,7 @@ def map_evidence_for_batch(
             claim_features=task_package.claim_1_features,
             router=search_router,
             self_signals=self_signals,
+            technology_tag=task_package.technology_tag,
         )
         for candidate in candidates
     ]
@@ -122,6 +123,7 @@ def map_evidence_for_batch(
                 gap_features=gap_features,
                 router=search_router,
                 self_signals=self_signals,
+                technology_tag=task_package.technology_tag,
             )
         # gap 排在前：gap search 抓的图是 LLM round 1 自己提出要补的特征的证据，
         # 价值最高；worker 端有 cap 切割时，gap 图能优先入选。

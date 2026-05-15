@@ -1,18 +1,27 @@
 # 模块一 decompose 用到的 9 个技术领域标签。
 #
-# 这一份是「单一来源」：
-#   - patentradar.core.constants 在 import 时从此文件加载，导出 TECHNOLOGY_TAGS
-#   - llm/prompts/decompose.md 里用 {{TECHNOLOGY_TAGS_DESCRIPTIONS}} 占位符，
-#     decompose_worker 在调用 LLM 前会把此文件的内容渲染进 prompt
-#   - llm/workers/decompose_worker._task_package_response_format() 的 json
-#     schema enum 也从此文件取值
+# src 端用法：
+#   - patentradar.core.constants 在 import 时从本份加载，导出 TECHNOLOGY_TAGS
+#   - llm/prompts/decompose.md 里 {{TECHNOLOGY_TAGS_DESCRIPTIONS}} 占位符
+#   - llm/workers/decompose_worker 的 json schema enum
 #
-# 调整标签时只动这里，三处都会同步生效。
+# 字段说明：
+#   name              ：技术领域标签名（中文），模块一选其一作为 technology_tag
+#   description       ：领域描述，帮助 LLM 判断专利归类
+#   typical_objects   ：典型保护对象示例
+#   recommended_sites ：该 tag 下推荐的垂类证据来源网站（每条 url + description）
+#                       模块二/三 agent 应优先在这些站点检索该领域竞品证据
+#
+# 顶层 [[universal_sites]] 列出**所有 tag 通用**的证据网站（如车型维修手册站、
+# 全行业拆解站等），模块二/三 agent 不论专利属于哪个 tag 都应在这些站点检索。
 
 [[tags]]
 name = "动力电池"
 description = "以电芯、电池模组、电池包、BMS、电池安全、电池热管理为核心对象。"
 typical_objects = ["单体电池", "电池包", "刀片电池", "泄压结构", "液冷板", "BMS"]
+recommended_sites = [
+    { url = "https://batteryfinds.com", description = "电池行业垂类社区，汇集电芯/PACK 厂商规格书、拆解报告、型号对比、容量/能量/尺寸参数；查具体电芯型号尺寸、能量密度等数值证据时优先用" },
+]
 
 [[tags]]
 name = "电驱系统"
@@ -53,3 +62,16 @@ typical_objects = ["电池材料", "导热材料", "阻燃材料", "密封材料
 name = "其他"
 description = "确认权利要求 1 核心保护对象确实不属于前 8 类时才选。"
 typical_objects = []
+
+# ============================================================================
+# 所有 tag 通用的证据来源网站
+# 模块二/三 agent 不论本专利属于哪个 tag 都应在这些站点检索补全证据
+# ============================================================================
+
+[[universal_sites]]
+url = "https://m.asemanshop.com"
+description = "畅易汽车网（移动版），汇集主流车型维修手册电子版/电路图册/零件目录；查车型部件位置、接线关系、电路原理图等内部结构证据时用"
+
+[[universal_sites]]
+url = "https://www.qixiu88.com"
+description = "汽修巴巴，汽修行业资料站，提供车型维修手册/维修案例/技术通报；查车型实际维修拆解信息、关键零件位置证据时用"
