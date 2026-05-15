@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "patentradar.top_competitor_report",
+  "title": "TopCompetitorReport",
+  "description": "模块二输出。详见 top_competitor_report.md 的字段说明。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["publication_no", "top_competitors", "excluded_candidates"],
+  "properties": {
+    "publication_no": {"type": "string", "minLength": 1},
+    "top_competitors": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {"$ref": "#/definitions/CandidateEvidence"}
+    },
+    "excluded_candidates": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/CandidateEvidence"}
+    }
+  },
+  "definitions": {
+    "EvidenceSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "title", "source_name", "snippet"],
+      "properties": {
+        "url": {"type": "string", "pattern": "^https?://"},
+        "title": {"type": "string"},
+        "source_name": {"type": "string"},
+        "snippet": {"type": "string"}
+      }
+    },
+    "FeatureComparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "feature_id",
+        "patent_feature",
+        "competitor_feature",
+        "status",
+        "score",
+        "evidence",
+        "reasoning",
+        "suggested_followup_queries",
+        "evidence_gap_brief"
+      ],
+      "properties": {
+        "feature_id": {"type": "string", "pattern": "^C\\d+-F\\d+$"},
+        "patent_feature": {"type": "string"},
+        "competitor_feature": {"type": "string"},
+        "status": {"type": "string", "enum": ["明确满足", "可能满足", "证据不足", "明确不满足"]},
+        "score": {"type": "number", "enum": [0.0, 0.3, 0.8, 1.0]},
+        "evidence": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/EvidenceSource"}
+        },
+        "reasoning": {"type": "string"},
+        "suggested_followup_queries": {"type": "array", "items": {"type": "string"}},
+        "evidence_gap_brief": {"type": "string"}
+      }
+    },
+    "Candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_id",
+        "company",
+        "company_en",
+        "product_name",
+        "product_name_en",
+        "product_intro",
+        "market",
+        "reason_for_deep_dive",
+        "source_result_ids",
+        "source_urls",
+        "initial_evidence_summary"
+      ],
+      "properties": {
+        "candidate_id": {"type": "string", "pattern": "^P\\d{2}$"},
+        "company": {"type": "string", "minLength": 1},
+        "company_en": {"type": "string"},
+        "product_name": {"type": "string", "minLength": 1},
+        "product_name_en": {"type": "string"},
+        "product_intro": {"type": "string"},
+        "market": {"type": "string"},
+        "reason_for_deep_dive": {"type": "string"},
+        "source_result_ids": {"type": "array", "items": {"type": "string"}},
+        "source_urls": {"type": "array", "items": {"type": "string"}},
+        "initial_evidence_summary": {"type": "string"}
+      }
+    },
+    "CandidateEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate",
+        "launch_date",
+        "launch_date_evidence",
+        "disqualified",
+        "disqualification_reason",
+        "comparisons",
+        "total_score",
+        "searched_queries",
+        "searched_providers"
+      ],
+      "properties": {
+        "candidate": {"$ref": "#/definitions/Candidate"},
+        "launch_date": {"type": "string"},
+        "launch_date_evidence": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/EvidenceSource"}
+        },
+        "disqualified": {"type": "boolean"},
+        "disqualification_reason": {"type": "string"},
+        "comparisons": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/FeatureComparison"}
+        },
+        "total_score": {"type": "number", "minimum": 0, "maximum": 100},
+        "searched_queries": {"type": "array", "items": {"type": "string"}},
+        "searched_providers": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

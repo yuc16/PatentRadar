@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "patentradar.task_package",
+  "title": "TaskPackage",
+  "description": "模块一输出。详见 task_package.md 的字段说明。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "patent",
+    "claims",
+    "claim_1_text",
+    "claim_1_features",
+    "technology_tag",
+    "claims_source"
+  ],
+  "properties": {
+    "patent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "publication_no",
+        "country_code",
+        "title",
+        "applicants",
+        "inventors",
+        "application_date",
+        "google_patents_url"
+      ],
+      "properties": {
+        "publication_no": {"type": "string", "minLength": 1},
+        "country_code": {"type": "string", "minLength": 2, "maxLength": 3},
+        "title": {"type": "string", "minLength": 1},
+        "applicants": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "inventors": {"type": "array", "items": {"type": "string"}},
+        "application_date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+        "google_patents_url": {"type": "string", "format": "uri"},
+        "pdf_url": {"type": "string"}
+      }
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_no", "claim_text", "features"],
+        "properties": {
+          "claim_no": {"type": "integer", "minimum": 1},
+          "claim_text": {"type": "string", "minLength": 1},
+          "features": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["feature_id", "feature_text"],
+              "properties": {
+                "feature_id": {"type": "string", "pattern": "^C\\d+-F\\d+$"},
+                "feature_text": {"type": "string", "minLength": 1}
+              }
+            }
+          }
+        }
+      }
+    },
+    "claim_1_text": {"type": "string", "minLength": 1},
+    "claim_1_features": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["feature_id", "feature_text"],
+        "properties": {
+          "feature_id": {"type": "string", "pattern": "^C1-F\\d+$"},
+          "feature_text": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "technology_tag": {"type": "string", "minLength": 1},
+    "claims_source": {"type": "string", "enum": ["html", "pdf_vision", "mixed"]}
+  }
+}
