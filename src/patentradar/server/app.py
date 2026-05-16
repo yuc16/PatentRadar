@@ -18,6 +18,7 @@ from __future__ import annotations
 import asyncio
 import json
 import os
+import time
 from pathlib import Path
 from typing import AsyncIterator
 
@@ -73,6 +74,7 @@ def _module_output_summary(pub: str) -> dict[int, dict]:
                 "technology_tag": data.get("technology_tag", ""),
                 "claims": len(claims),
                 "claim1_features": len(c1_features or []),
+                "files": [{"name": "task_package.json", "kind": "json"}],
             }
         except Exception:  # noqa: BLE001
             summary[1] = {"error": "task_package.json unparseable"}
@@ -96,6 +98,7 @@ def _module_output_summary(pub: str) -> dict[int, dict]:
                 "top_count": len(top_list),
                 "excluded_count": len(exc_list),
                 "top": top_summary,
+                "files": [{"name": "step5_top5_claim1_candidates.json", "kind": "json"}],
             }
         except Exception:  # noqa: BLE001
             summary[2] = {"error": "step5 file unparseable"}
@@ -117,6 +120,7 @@ def _module_output_summary(pub: str) -> dict[int, dict]:
             summary[3] = {
                 "candidates": chart_summary,
                 "candidate_count": len(entries),
+                "files": [{"name": "top5_full_claim_chart.json", "kind": "json"}],
             }
         except Exception:  # noqa: BLE001
             summary[3] = {"error": "full_claim_chart unparseable"}
@@ -124,10 +128,14 @@ def _module_output_summary(pub: str) -> dict[int, dict]:
     report_md = root / "report.md"
     report_pdf = root / "report.pdf"
     if report_md.exists():
+        files = [{"name": "report.md", "kind": "md"}]
+        if report_pdf.exists():
+            files.append({"name": "report.pdf", "kind": "pdf"})
         summary[4] = {
             "report_md": str(report_md.relative_to(ROOT)),
             "report_pdf": str(report_pdf.relative_to(ROOT)) if report_pdf.exists() else None,
             "size_bytes": report_md.stat().st_size,
+            "files": files,
         }
 
     return summary
@@ -216,6 +224,63 @@ async def get_output_file(pub: str, filename: str):
     return FileResponse(target)
 
 
+_REPORT_CSS = """
+body { font-family: "PingFang SC", "Helvetica Neue", "Inter", "Arial", sans-serif;
+       max-width: 980px; margin: 32px auto; padding: 0 24px 64px;
+       font-size: 14.5px; line-height: 1.65; color: #1f1e1c; background: #faf7f2; }
+h1 { font-size: 24pt; border-bottom: 2px solid #333; padding-bottom: 8pt; }
+h2 { font-size: 17pt; margin-top: 26pt; border-bottom: 1px solid #ccc; padding-bottom: 4pt; }
+h3 { font-size: 14pt; color: #444; margin-top: 20pt; }
+h4, h5 { font-size: 12.5pt; color: #555; }
+table { border-collapse: collapse; width: 100%; margin: 8pt 0; table-layout: fixed; }
+th, td { border: 1px solid #888; padding: 6pt 8pt; font-size: 11pt;
+         vertical-align: top; word-break: normal; overflow-wrap: anywhere; }
+th { background: #f0e6d8; }
+a { color: #c46446; text-decoration: none; word-break: break-all; }
+a:hover { text-decoration: underline; }
+blockquote { border-left: 3px solid #d97757; padding: 6pt 12pt; color: #555;
+             background: #fdf9f3; margin: 8pt 0; border-radius: 0 4px 4px 0; }
+code { background: #f3ede4; padding: 1px 5px; border-radius: 3px;
+       font-family: "Menlo", "Courier New", monospace; font-size: 12pt; }
+pre code { display: block; padding: 10pt; background: #1f1e1c; color: #e8e2d8; }
+ul, ol { padding-left: 24px; }
+"""
+
+
+@app.get("/api/render/{pub}/{filename:path}")
+async def render_markdown(pub: str, filename: str):
+    """Render a .md file to a standalone HTML page so the browser shows it
+    nicely rather than as raw markdown source."""
+    root = _publication_root(pub)
+    target = (root / filename).resolve()
+    if not str(target).startswith(str(root.resolve())):
+        raise HTTPException(status_code=400, detail="invalid path")
+    if not target.is_file():
+        raise HTTPException(status_code=404, detail="file not found")
+    if not target.name.lower().endswith(".md"):
+        raise HTTPException(status_code=400, detail="only .md files can be rendered")
+
+    try:
+        import markdown as md_lib
+    except ImportError as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"markdown library not installed: {exc}",
+        ) from exc
+
+    md_text = target.read_text(encoding="utf-8")
+    html_body = md_lib.markdown(md_text, extensions=["tables", "fenced_code"])
+    page = (
+        "<!doctype html><html lang='zh-CN'><head>"
+        "<meta charset='utf-8'>"
+        f"<title>{filename} · {pub}</title>"
+        f"<style>{_REPORT_CSS}</style></head>"
+        f"<body>{html_body}</body></html>"
+    )
+    from fastapi.responses import HTMLResponse
+    return HTMLResponse(page)
+
+
 @app.get("/api/runs")
 async def list_runs():
     """List all publication_no directories that have run logs."""
@@ -228,25 +293,23 @@ async def list_runs():
     return {"runs": runs}
 
 
-@app.get("/api/replay/{pub}")
-async def get_replay(pub: str):
-    """Return all events for one run, sorted by ts, ready for client-side replay.
+def _build_historical_events(pub: str) -> list[dict]:
+    """Merge run.jsonl + module_N.stream.jsonl + module_N.log into a single
+    chronologically sorted list of SSE-shaped events.
 
-    Sources merged:
-      - run.jsonl                     (lifecycle, ts inline)
-      - module_N.stream.jsonl         (LLM token, ts inline)
-      - module_N.log                  (stdout, NO inline ts → linearly
-                                       interpolated across the module's
-                                       [start_ts, end_ts] interval)
+    Sources:
+      - run.jsonl                 → {"type":"progress", ...}  (ts inline)
+      - module_N.stream.jsonl     → {"type":"token", ...}     (ts inline)
+      - module_N.log              → {"type":"stdout", ...}    (no ts; we
+                                     interpolate across the module's window)
     """
     pub_log_dir = LOGS_ROOT / pub
     if not pub_log_dir.exists():
-        raise HTTPException(status_code=404, detail="run not found")
+        return []
 
     events: list[dict] = []
 
-    # Lifecycle from run.jsonl + figure out each module's time window
-    module_windows: dict[int, dict] = {}  # n -> {"start": ts, "end": ts}
+    module_windows: dict[int, dict] = {}
     for ev in iter_run_events(pub):
         ev_type = ev.get("event")
         n = ev.get("module")
@@ -256,7 +319,6 @@ async def get_replay(pub: str):
             module_windows.setdefault(n, {})["end"] = ev.get("ts")
         events.append({"type": "progress", **ev})
 
-    # LLM token deltas — ts already on each line.
     for n in (1, 2, 3, 4):
         stream_path = pub_log_dir / f"module_{n}.stream.jsonl"
         if not stream_path.exists():
@@ -283,7 +345,6 @@ async def get_replay(pub: str):
         except OSError:
             pass
 
-    # stdout — no per-line ts, interpolate across the module's window.
     for n in (1, 2, 3, 4):
         log_path = pub_log_dir / f"module_{n}.log"
         if not log_path.exists():
@@ -292,8 +353,6 @@ async def get_replay(pub: str):
             lines = log_path.read_text(encoding="utf-8", errors="ignore").splitlines()
         except OSError:
             continue
-        # filter empty lines (we still want to preserve them in display, but
-        # interpolation gets weird with thousands of blanks → drop them).
         lines = [ln for ln in lines if ln]
         if not lines:
             continue
@@ -301,8 +360,6 @@ async def get_replay(pub: str):
         t0 = win.get("start")
         t1 = win.get("end")
         if t0 is None or t1 is None or t1 <= t0:
-            # Module is still running or window unknown → spread evenly across
-            # whatever we have. Use the start (or 0) so events at least have a ts.
             base = t0 if t0 is not None else 0.0
             for i, ln in enumerate(lines):
                 events.append({
@@ -323,14 +380,22 @@ async def get_replay(pub: str):
                     "line": ln,
                 })
 
-    # Sort merged stream by ts (stable). Ties: progress < stdout < token.
     type_order = {"progress": 0, "stdout": 1, "token": 2}
     events.sort(key=lambda e: (e.get("ts") or 0, type_order.get(e.get("type"), 3)))
+    return events
 
+
+@app.get("/api/replay/{pub}")
+async def get_replay(pub: str):
+    pub_log_dir = LOGS_ROOT / pub
+    if not pub_log_dir.exists():
+        raise HTTPException(status_code=404, detail="run not found")
+
+    events = _build_historical_events(pub)
     duration = 0.0
     if events:
-        first = events[0]["ts"]
-        last = events[-1]["ts"]
+        first = events[0].get("ts") or 0
+        last = events[-1].get("ts") or 0
         if first and last:
             duration = max(0.0, last - first)
 
@@ -354,23 +419,39 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
       - {"type":"progress", "event":..., "module":..., ...}            (lifecycle)
       - {"type":"token",  "module": N, "delta": "..."}                 (LLM delta)
       - {"type":"stdout", "module": N, "line":  "..."}                 (cli stdout)
+
+    Initial-connect behavior: dump all historical events sorted by ts so the
+    client sees them in true chronological order (lifecycle + token + stdout
+    interleaved). Then jump file offsets to current EOF and enter the live
+    tail loop.
     """
     pub_log_dir = LOGS_ROOT / pub
     run_log = pub_log_dir / "run.jsonl"
     stream_logs = {n: pub_log_dir / f"module_{n}.stream.jsonl" for n in (1, 2, 3, 4)}
     stdout_logs = {n: pub_log_dir / f"module_{n}.log" for n in (1, 2, 3, 4)}
 
-    # File offsets we've already streamed.
-    run_offset = 0
-    stream_offsets: dict[int, int] = {n: 0 for n in (1, 2, 3, 4)}
-    stdout_offsets: dict[int, int] = {n: 0 for n in (1, 2, 3, 4)}
-
-    # Initial snapshot.
+    # 1) Initial status snapshot.
     snapshot = {
         "type": "status",
         "modules": _module_status(pub),
     }
     yield f"data: {json.dumps(snapshot, ensure_ascii=False)}\n\n"
+
+    # 2) Dump merged historical events in chronological order.
+    historical = _build_historical_events(pub)
+    for ev in historical:
+        yield f"data: {json.dumps(ev, ensure_ascii=False)}\n\n"
+
+    # 3) Jump file offsets to current EOF so live tail picks up new content only.
+    def _file_size(p: Path) -> int:
+        try:
+            return p.stat().st_size if p.exists() else 0
+        except OSError:
+            return 0
+
+    run_offset = _file_size(run_log)
+    stream_offsets: dict[int, int] = {n: _file_size(stream_logs[n]) for n in (1, 2, 3, 4)}
+    stdout_offsets: dict[int, int] = {n: _file_size(stdout_logs[n]) for n in (1, 2, 3, 4)}
 
     while True:
         # Tail run.jsonl (lifecycle events)
@@ -438,6 +519,7 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
                     payload = {
                         "type": "stdout",
                         "module": n,
+                        "ts": time.time(),  # 实时到达时间，方便前端显示
                         "line": line,
                     }
                     yield f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"

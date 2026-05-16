@@ -426,13 +426,41 @@ function handleStdout(p) {
   const n = p.module;
   if (!n) return;
   const line = p.line || "";
-  // 给 stdout 行加个智能 tag：检测 INFO/ERROR/WARNING 前缀
   let kind = "stdout";
   let tag = "STDOUT";
-  if (/^ERROR\b/.test(line) || /Traceback/.test(line)) { kind = "error"; tag = "STDERR"; }
-  else if (/^WARNING\b/.test(line)) { tag = "WARN"; }
-  else if (/^INFO\b/.test(line)) { tag = "INFO"; }
-  appendLine(n, kind, tag, line);
+  let msg = line;
+
+  // 识别 logging 输出格式: "HH:MM:SS [logger.name] message"
+  const m = line.match(/^(\d{2}:\d{2}:\d{2})\s+\[([^\]]+)\]\s+(.*)$/);
+  if (m) {
+    const loggerName = m[2];
+    msg = m[3];
+    if (loggerName.startsWith("patentradar.modules.")) {
+      // patentradar.modules.competitor_search.pipeline → COMPETITOR_SEARCH
+      tag = loggerName.split(".")[2].toUpperCase();
+    } else if (loggerName.startsWith("patentradar.llm")) {
+      tag = "LLM";  // 注意：这里是底层 logger，跟 token 流不冲突（不同 kind）
+    } else if (loggerName.startsWith("patentradar.fetcher")) {
+      tag = "FETCH";
+    } else if (loggerName.startsWith("patentradar.search")) {
+      tag = "SEARCH";
+    } else if (loggerName === "httpx") {
+      tag = "HTTP";
+    } else if (loggerName.startsWith("patentradar.")) {
+      tag = loggerName.replace("patentradar.", "").toUpperCase();
+    } else {
+      tag = loggerName.split(".").pop().toUpperCase();
+    }
+  } else if (/^ERROR\b/.test(line) || /Traceback/.test(line)) {
+    kind = "error";
+    tag = "STDERR";
+  } else if (/^WARNING\b/.test(line)) {
+    tag = "WARN";
+  } else if (/^INFO\b/.test(line)) {
+    tag = "INFO";
+  }
+
+  appendLine(n, kind, tag, msg, p.ts);
 }
 
 // ------------------- REST helpers -------------------
@@ -458,16 +486,29 @@ async function refreshOutputs() {
     const res = await fetch(`/api/status/${encodeURIComponent(state.pub)}`);
     if (!res.ok) return;
     const data = await res.json();
-    const m4 = data.modules?.find(m => m.id === 4);
-    const sm = m4?.summary || {};
     const items = [];
-    if (sm.report_md) items.push({ href: `/api/output/${state.pub}/report.md`, label: "📄 report.md" });
-    if (sm.report_pdf) items.push({ href: `/api/output/${state.pub}/report.pdf`, label: "📕 report.pdf" });
+    for (const m of data.modules || []) {
+      const files = m.summary?.files;
+      if (!Array.isArray(files) || !files.length) continue;
+      for (const f of files) {
+        // .md 走渲染 endpoint（直接显示成漂亮的 HTML）；其余原样返回
+        const href = f.kind === "md"
+          ? `/api/render/${encodeURIComponent(state.pub)}/${encodeURIComponent(f.name)}`
+          : `/api/output/${encodeURIComponent(state.pub)}/${encodeURIComponent(f.name)}`;
+        const icon = f.kind === "md" ? "📄" : f.kind === "pdf" ? "📕" : "📋";
+        items.push({
+          href,
+          label: `${icon} 模块 ${m.id} · ${f.name}`,
+        });
+      }
+    }
     if (items.length) {
       els.outputsList.innerHTML = items.map((it) =>
-        `<li><a href="${it.href}" target="_blank">${it.label}</a></li>`
+        `<li><a href="${escape(it.href)}" target="_blank" rel="noopener">${escape(it.label)}</a></li>`
       ).join("");
       els.outputsSection.hidden = false;
+    } else {
+      els.outputsSection.hidden = true;
     }
   } catch {}
 }

@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import logging
 import os
+import sys
 from pathlib import Path
 
 import typer
@@ -24,10 +26,50 @@ from patentradar.modules.report import (
 
 app = typer.Typer(no_args_is_help=True)
 
+_logging_configured = False
+
+
+def _setup_logging() -> None:
+    """Configure root logger so every src-level logger.info(...) reaches stdout.
+
+    The FastAPI runner tees this subprocess's stdout to module_<N>.log, which
+    the SSE endpoint then forwards to the dashboard. Without this, all
+    `logger.info(...)` calls in src/ are silently dropped (root logger has no
+    handler and default level is WARNING).
+    """
+    global _logging_configured
+    if _logging_configured:
+        return
+    _logging_configured = True
+
+    level_name = os.environ.get("PATENTRADAR_LOG_LEVEL", "INFO").upper()
+    level = getattr(logging, level_name, logging.INFO)
+
+    handler = logging.StreamHandler(stream=sys.stdout)
+    handler.setFormatter(
+        logging.Formatter(
+            fmt="%(asctime)s [%(name)s] %(message)s",
+            datefmt="%H:%M:%S",
+        )
+    )
+
+    root = logging.getLogger()
+    # Wipe any handler typer/uvicorn may have attached so we don't double-print
+    for h in list(root.handlers):
+        root.removeHandler(h)
+    root.addHandler(handler)
+    root.setLevel(level)
+
+    # Tame noisy 3rd-party libraries
+    logging.getLogger("httpx").setLevel(logging.INFO)
+    logging.getLogger("httpcore").setLevel(logging.WARNING)
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
+
 
 @app.callback()
 def callback() -> None:
     """PatentRadar v2 command line."""
+    _setup_logging()
     # When PATENTRADAR_STREAM_LOG env is set (typically by the FastAPI runner
     # launching this CLI as a subprocess), register a JSONL writer that
     # captures every LLM token delta. No-op for direct CLI use.

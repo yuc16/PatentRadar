@@ -195,16 +195,15 @@ def _task_package_response_format() -> dict[str, Any]:
             "technology_tag": {"type": "string", "enum": TECHNOLOGY_TAGS},
             "claims": {"type": "array", "items": claim_schema},
             "claims_source": {"type": "string", "enum": ["html", "pdf_vision"]},
-            "model": {"type": "string"},
-            "reasoning_effort": {"type": "string"},
+            # model / reasoning_effort 不在 schema 中 —— 由 Python 层从 .env
+            # 读到的真实值直接注入到 payload（见 _task_package_from_payload），
+            # 让 LLM 不必猜（避免出现 "ChatGPT" / "gpt-4" 这类自我认知误填）。
         },
         "required": [
             "patent",
             "technology_tag",
             "claims",
             "claims_source",
-            "model",
-            "reasoning_effort",
         ],
     }
     return {
