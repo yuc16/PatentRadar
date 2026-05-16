@@ -13,7 +13,7 @@
 ## 能力说明
 - web 搜索、抓 page、看图：**按需迭代**，由后文"停止条件"控制何时收手。**没有 query 次数/看图张数的硬上限**，但**严禁陷入死循环**（同 query / 同关键词组合重复跑、连续若干轮没新有效证据还在搜，都是死循环征兆，立即停）
 - **回查权利要求原文**：如果对 task_package 中的 `claim_text` / `feature_text` 拆解有疑问（比如从属权利要求的引用关系/单位/数值与原文似有偏差），可直接访问 `patent.google_patents_url` 或 `patent.pdf_url` 复核原文。**不要凭印象判定**——以原文为准。
-- **垂类网站优先**：搜索证据时，优先在 [../configs/technology_tags.toml](../configs/technology_tags.toml) 里 `tags[name==<technology_tag>].recommended_sites` 和顶层 `universal_sites` 列出的网站检索 —— 这些是按本专利技术领域整理的高信号来源（如电池专利的 batteryfinds、车型维修资料的畅易汽车网/汽修巴巴）
+- **不要重复模块 2 已查过的站点**：垂类推荐站点（`recommended_sites` + `universal_sites`）已在模块 2 的 Stage 0 fetch 完了，模块 3 **不要再 fetch 同一批站点**。补搜前先扫一遍模块 2 该候选的 `candidate.source_urls` + 所有 `comparisons[*].evidence[*].url`，整理出"已访问 host 清单"，本轮补搜要**主动跳过这些 host**，转向其它信源 —— 论文站 / 专利文献库 / YouTube 拆解视频 / 行业研究报告 / 二手车评测 / 维修论坛 / 海外电商详情页 等没在模块 2 出现过的来源
 
 ## 工作流（对每个 TOP 候选独立做）
 
@@ -40,7 +40,19 @@
 - ✅ 中英双语择优（"HiPhi Bot multi-axis mechanism teardown YouTube"）
 - ✅ 写清想验证什么（"SVOLT L600 防爆阀 位置 端部"）
 - ❌ 不要写空泛的（"L600 证据"、"HiPhi 屏幕 参数"）
-- ❌ 不要重复模块二已跑过的 query—— 换思路（换语言 / 换关键词组合 / 换具体型号或参数 / 换证据形式如规格书 vs 评测 vs 拆解视频）
+
+**覆盖维度（针对每个权 1 缺口 feature，本轮补搜的 query 至少要跨 3 个维度）**：
+- 权 1 关键技术特征（尺寸/容量/能量/连接关系/几何比例/阈值条件等）
+- 市场俗称（行业惯用名）
+- 产品规格书（规格书 / datasheet / PDF / 参数表 / spec sheet / 技术白皮书）
+- 行业评测/拆解（拆解 / teardown / 第三方评测 / review / 实测）
+- 论文 / 专利文献 / 学术报告（关键词：paper / patent / IEEE / 论文）
+- 维修资料 / 电路图（关键词：维修手册 / wiring diagram / service manual / 线束图）
+
+**硬约束：query 必须和模块 2 字面不同**
+- 进入补搜前，先把模块 2 该候选的 `searched_queries` 整理成"禁查清单"
+- 本轮新 query **不能**与禁查清单里任何一条字符串相等（含仅大小写 / 空格 / 标点差异的等价情况）
+- 仅"加一两个词"还算重复 —— 至少要换**语言** / 换**型号变体** / 换**证据形式**（规格书 ↔ 评测 ↔ 拆解视频 ↔ 论文）/ 换**中英术语对照**（"防爆阀" ↔ "vent valve" ↔ "explosion-proof valve"）中的一个维度
 
 跑搜索 + 抓 page + 必要时看图（产品详情页/拆解文章/规格书/电路图/维修图片/座舱内部结构等）。
 
@@ -70,6 +82,10 @@
 ### 4. 评分
 
 - 沿用模块二的评分规则（明确满足 1.0 / 可能满足 0.8 / 证据不足 0.3 / 明确不满足 0.0）
+- **"可能满足"判定必须重新走 3 段对比分析**（不允许直接沿用模块二的判定结果）：
+  - 模块二对权 1 标为"可能满足"的 feature，模块三 round-2 **必须重新审视 reasoning**——按 [`competitor_search.md`](./competitor_search.md) 评分规则段定义的"3 段对比分析"格式重写：① 权 1 限定的 X / ② 候选证据 Y / ③ X-Y 对应分析。
+  - 如果 X 与 Y 在量纲 / 参考系 / 概念上不等价且无法解释，**必须降为"证据不足"或"明确不满足"**——不要因为"模块二已判可能满足"就盲目沿用。
+  - 这是模块三的最终判定，决定客户拿到的报告 total_score 是否反映真实证据强度。
 - `claim_score = mean(该 claim 各 feature.score) × 100`，任一"明确不满足"该 claim 直接 0
 - **`total_score` 只看权 1**：`total_score = claim_1_score`
   - 非权 1 的 `claim_score` 保留在每个 `ClaimChartEntry` 里供报告展示，但**不进 ranking 总分**

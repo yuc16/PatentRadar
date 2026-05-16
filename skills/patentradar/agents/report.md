@@ -38,16 +38,57 @@
 
 ### 2. 整体侵权风险评估
 
-**这是全文总结**，用自然语言段落（**不分小标题**）覆盖：
+按以下 3 步组织，**严禁内容重复**（"下一步建议"只在第 3 步的 TOP-N 表格里展示一次）：
 
-1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_intro` / `total_score`，上市时间 vs 专利申请日的对比。
-2. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 每条 feature 是「明确满足 / 可能满足 / 证据不足 / 明确不满足」，重点列出证据缺口（status ∈ {证据不足, 可能满足}）的 feature_id 和缺口原因。
-3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（按缺口 feature 各列 1 条 bullet）：**直接复用** `top_competitors[0].claim_charts[claim_no==1].comparisons[*].evidence_gap_brief` 字段（已是写好的"还缺 / 下一步建议"两行结构）。
+1. **最高分竞品介绍**（2-4 句段落）：最高分竞品的 `company` / `product_name` / `product_intro` / `total_score`，上市时间 vs 专利申请日的对比。
+2. **最高分竞品的权 1 满足情况速览**（1 段，**仅点名**）：枚举权 1 每条 feature 的状态，例如 "C1-F1/F5/F6 明确满足；C1-F2/F3/F4/F7 可能满足"。**不写缺口原因，不写下一步建议**——这些留给第 3 步。
+3. **TOP-N 一览表（HTML 表 + rowspan 合并单元格）**：把所有 top_competitors 的缺口和下一步建议汇总成一个表，每个候选**每个缺口 feature 单独一行**；候选信息列（排名 / 公司+产品 / 总分 / 权 1 明确满足）用 `rowspan` 合并。**这是"下一步建议"在整份报告里的唯一展示位**，第 2 章节其它地方和第 3 章节都不再单独列下一步建议。
 
-   每条 bullet 形如：
-   > 「**C1-FX（XX 特征）**：<evidence_gap_brief 内容，原样或适度换行精简>」
+表格语法和示例（**必须用 HTML `<table>`，不用 markdown 表，因为 markdown 不支持单元格合并**）：
 
+```html
+<table>
+<thead>
+<tr>
+  <th>排名</th><th>公司 / 产品</th><th>总分</th><th>权 1 明确满足</th>
+  <th>缺口 feature</th><th>下一步搜索建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="4">1</td>
+  <td rowspan="4">凯迪拉克 / XT4 感应式电动后备箱门</td>
+  <td rowspan="4">88.57</td>
+  <td rowspan="4">3/7</td>
+  <td>C1-F2</td>
+  <td>去 GM Techline/ACDelco TDS 或畅易汽车网调取该车型 Hands-Free Liftgate/Keyless Entry 系统说明</td>
+</tr>
+<tr><td>C1-F3</td><td>去 ACDelco TDS / 汽修巴巴 / diagnostdata.com 查举升门 wiring diagram</td></tr>
+<tr><td>C1-F4</td><td>去车型维修手册或零件目录，定位 hands-free liftgate sensor 诊断章节</td></tr>
+<tr><td>C1-F7</td><td>去 GM Techline 或拆解视频平台查 sensor module 结构图</td></tr>
+<tr>
+  <td rowspan="3">2</td>
+  <td rowspan="3">某候选 / 某产品</td>
+  <td rowspan="3">85.00</td>
+  <td rowspan="3">4/7</td>
+  <td>C1-F2</td>
+  <td>...</td>
+</tr>
+<tr><td>C1-F3</td><td>...</td></tr>
+<tr><td>C1-F5</td><td>...</td></tr>
+</tbody>
+</table>
+```
 
+**填表规则**：
+- **行的展开**：每个候选**每个权 1 缺口 feature 单独一行**。缺口 feature = `status ∈ {可能满足, 证据不足}` 的 feature。
+- **`rowspan` 的值**：等于该候选权 1 中的缺口 feature 数。如果某候选权 1 全部"明确满足"（无缺口），用 `rowspan="1"`，"缺口 feature" 列写"—"、"下一步搜索建议" 列写"—"。
+- **"公司 / 产品" 列**：写 `<company> / <product_name>`（用本专利国主语言，不展开中英双语，太占空间）。
+- **"权 1 明确满足" 列**：写"<明确满足 feature 数> / <权 1 总 feature 数>"，例如 `3/7`。
+- **"缺口 feature" 列**：单 feature_id（如 `C1-F2`）。
+- **"下一步搜索建议" 列**：**只取 `evidence_gap_brief` 的"下一步建议:"那一行**（去掉"还缺：..."部分），保留具体网站名和动作描述。原文里的裸 URL（如 `https://www.diagnostdata.com`）保留为纯文本（HTML `<td>` 内不会渲染 markdown 链接语法，写裸 URL 就够了）。
+- **行顺序**：候选按 `total_score` 降序；同一候选内 feature_id 按字典序升序（C1-F2 → C1-F3 → ... → C1-F7）。
+- **失效候选不进表也不进报告**：`disqualified=true` 的候选在模块 3 已经从 `top_competitors` 排除（进了 `excluded_candidates`）。**整份报告都不展示失效候选**——第 2 章节本表只展示 top_competitors，第 3 章节也只展示 top_competitors。
 
 写作风格：信息密度高，专业克制，不写「本报告」「综上所述」等自指总结。
 
@@ -86,16 +127,12 @@
 |---|---|---|---|---|---|
 | ... | ... | ... | ... | ... | ... |
 
-##### 该候选的证据缺口（如有；只针对权 1）
-
-只枚举**权 1**中 status ∈ {证据不足, 可能满足} 的 feature。**直接复用** `evidence_gap_brief` 字段（模块三已写好），每条 feature 形如：
-
-> **C1-FX（XX 特征）**：<evidence_gap_brief 内容，原样或适度换行精简>
+[**注**：第 3 章节**不再单独输出"证据缺口"段**——下一步建议已在第 2 章节 TOP-N 一览表里集中展示。每个候选的逐权利要求对比表展示完就结束，不需要补"证据缺口"小标题。]
 
 ```
 
 **表格细则**：
-- `证据 URL` 列：列出该 feature 的全部 evidence URL，用 markdown 链接。多个 URL 时用 `1、<link>` `2、<link>` 序号前缀分隔，每个编号+链接之间用换行隔开。单个 URL 也加 `1、` 前缀。
+- `证据 URL` 列：**不限数量，全部 evidence URL 都要展示**（包括同一 host 下不同的 URL），用 markdown 链接。多个 URL 时用 `1、<link>` `2、<link>` 序号前缀分隔，每个编号+链接之间用换行隔开。单个 URL 也加 `1、` 前缀。绝对禁止合并、省略、或只展示"代表性"URL —— 律师 / 工程师需要看到所有来源做交叉核验。
 - `说明` 列：放 reasoning（不超过 200 字）
 - 非权 1 子小节**不需要**输出"证据缺口"段（最终评分只看权 1）
 - 数学计算类（D/V / S/E / L/S 等）的 `competitor_feature` 文字**原样照搬**到表格里
@@ -130,7 +167,9 @@ URL 参数说明：
 - ✅ **全部 feature 都要列在对比表里**，**禁止省略、合并、概括**
 - ✅ **每条 evidence 的 URL 都要列出**
 - ✅ 数学计算的 `competitor_feature` 文字**原样照搬**
-- ✅ 第 2 章节的下一步搜索建议**直接复用 evidence_gap_brief**，不要二次加工
+- ✅ 第 2 章节 TOP-N 表的"下一步搜索建议"列**直接复用 evidence_gap_brief 的"下一步建议:"行**，不要二次加工
+- ✅ **整份报告不展示失效候选**（`disqualified=true` 的候选不进任何章节）
+- ❌ **下一步建议不允许在第 3 章节重复出现** —— 已经在第 2 章节 TOP-N 表里展示，第 3 章节只放逐特征对比表
 - ❌ 不要发明任何新数据。所有数值/URL/产品名/上市日期都从输入 JSON 来
 - ❌ 不要写 "总结" "结论" "综上所述" 等模糊段落 —— 第 2 章节已经承担总结作用
 - ❌ 不要写 markdown 之外的内容（如反思、解释自己怎么写的）
@@ -150,51 +189,20 @@ URL 参数说明：
 
 ### 2. 渲染 PDF（必做）
 
-用 Python + WeasyPrint 把 `report.md` 转成 `report.pdf`：
+**直接调用本 skill 自带的 PDF 渲染脚本**——不要在 subagent 里重新写等价的 Python 代码：
 
-```python
-import markdown
-from pathlib import Path
-from weasyprint import HTML
-
-md_path = Path("<output_dir>/module_4/report.md")
-pdf_path = md_path.with_suffix(".pdf")
-
-html_body = markdown.markdown(
-    md_path.read_text(encoding="utf-8"),
-    extensions=["tables", "fenced_code"],
-)
-style = """
-@page { size: A4; margin: 18mm 14mm; }
-body { font-family: "PingFang SC", "Helvetica Neue", "Arial", sans-serif;
-       font-size: 10.5pt; line-height: 1.55; color: #222; }
-h1 { font-size: 19pt; border-bottom: 2px solid #333; padding-bottom: 4pt; margin-top: 0; }
-h2 { font-size: 14pt; margin-top: 18pt; border-bottom: 1px solid #ccc; padding-bottom: 2pt; }
-h3 { font-size: 12pt; color: #444; margin-top: 14pt; }
-h4, h5 { font-size: 11pt; color: #555; }
-table { border-collapse: collapse; width: 100%; margin: 6pt 0; table-layout: fixed; }
-th, td { border: 1px solid #888; padding: 4pt 6pt; font-size: 9pt;
-         vertical-align: top; word-break: normal; overflow-wrap: anywhere; }
-th { background: #f0f0f0; }
-tr { break-inside: avoid; page-break-inside: avoid; }
-a { color: #1a6dba; text-decoration: none; word-break: break-all; }
-blockquote { border-left: 3px solid #aaa; padding: 4pt 10pt; color: #555;
-             background: #fafafa; margin: 6pt 0; }
-code { background: #f3f3f3; padding: 0 3pt; border-radius: 2pt;
-       font-family: "Menlo", "Courier New", monospace; font-size: 9.5pt; }
-pre code { display: block; padding: 8pt; }
-"""
-html_full = f"""<!doctype html><html><head><meta charset='utf-8'>
-<style>{style}</style></head><body>{html_body}</body></html>"""
-HTML(string=html_full).write_pdf(pdf_path)
+```bash
+python skills/patentradar/scripts/render_pdf.py <output_dir>/module_4/report.md <output_dir>/module_4/report.pdf
 ```
 
-CSS 设置要点：
-- A4 + 上下 18mm / 左右 14mm 边距
-- 中文字体走 macOS `PingFang SC`，自动回退到 Helvetica
-- 表格 `table-layout: fixed` 防短列被挤垮、`break-inside: avoid` 防行劈两半（重要：feature 对比表很长，没这两条 PDF 会很乱）
+脚本内置 A4 排版 + 中文字体 (PingFang SC) + 表格防溢出 CSS，输出与 markdown 视觉一致的 PDF。
 
-如果 WeasyPrint 安装失败（缺 pango/cairo 系统库），**md 仍然落盘成功就算 OK**，只在完成消息里注明"PDF 渲染失败：<原因>"。
+**退出码**：
+- `0` → PDF 落盘成功，stdout `OK <pdf_path>`
+- `1` → 依赖缺失（`weasyprint` / `markdown` 未装，或系统缺 `pango`/`cairo`）→ stderr 给具体错误信息
+- `2` → 入参错误或 md 文件不存在
+
+**容错**：脚本退出码非 0 时，**md 仍然落盘成功就算 OK**，只在完成消息里注明"PDF 渲染失败：<stderr 原因>"。
 
 ## 完成标准
 - markdown 落盘到 `<output_dir>/module_4/report.md`
