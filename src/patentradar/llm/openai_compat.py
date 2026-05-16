@@ -153,33 +153,61 @@ class OpenAICompatibleProvider:
         raise RuntimeError(str(last_exc) if last_exc else "OpenAI provider text call failed")
 
     def _call(self, body: dict[str, Any], *, timeout: int) -> str:
+        # Always force streaming so that the registered on_delta callback
+        # (see patentradar.llm.stream) receives token deltas in real time.
+        # Full content is reassembled before returning, so callers see the
+        # same string they got from the non-streaming path.
+        import json as _json
+
+        body = {**body, "stream": True}
         url = f"{self.base_url}/chat/completions"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
+            "Accept": "text/event-stream",
         }
         timeout_obj = httpx.Timeout(connect=30.0, read=timeout, write=30.0, pool=30.0)
+        from patentradar.llm.stream import emit_delta
+
+        parts: list[str] = []
         with httpx.Client(timeout=timeout_obj) as client:
-            response = client.post(url, headers=headers, json=body)
-        if response.status_code == 400 and _looks_like_schema_rejection(response.text):
-            raise _StrictSchemaRejected(response.text[:500])
-        if response.status_code != 200:
-            raise RuntimeError(
-                f"OpenAI-compatible HTTP {response.status_code}: {response.text[:500]}"
-            )
-        data = response.json()
-        choices = data.get("choices") or []
-        if not choices:
-            raise RuntimeError(f"OpenAI-compatible empty choices: {str(data)[:500]}")
-        message = choices[0].get("message") or {}
-        # DeepSeek and other reasoning models return `reasoning_content` separately;
-        # we intentionally ignore it and only consume `content`.
-        content = message.get("content")
-        if not isinstance(content, str) or not content.strip():
-            raise RuntimeError(
-                f"OpenAI-compatible missing message.content: {str(data)[:500]}"
-            )
-        return content
+            with client.stream("POST", url, headers=headers, json=body) as response:
+                if response.status_code == 400:
+                    raw = response.read().decode("utf-8", "ignore")
+                    if _looks_like_schema_rejection(raw):
+                        raise _StrictSchemaRejected(raw[:500])
+                    raise RuntimeError(
+                        f"OpenAI-compatible HTTP 400: {raw[:500]}"
+                    )
+                if response.status_code != 200:
+                    raw = response.read().decode("utf-8", "ignore")
+                    raise RuntimeError(
+                        f"OpenAI-compatible HTTP {response.status_code}: {raw[:500]}"
+                    )
+
+                for line in response.iter_lines():
+                    if not line or not line.startswith("data:"):
+                        continue
+                    payload = line[5:].strip()
+                    if not payload or payload == "[DONE]":
+                        continue
+                    try:
+                        event = _json.loads(payload)
+                    except _json.JSONDecodeError:
+                        continue
+                    choices = event.get("choices") or []
+                    if not choices:
+                        continue
+                    delta = choices[0].get("delta") or {}
+                    content = delta.get("content")
+                    if isinstance(content, str) and content:
+                        parts.append(content)
+                        emit_delta(content)
+
+        text = "".join(parts).strip()
+        if not text:
+            raise RuntimeError("OpenAI-compatible stream returned empty content")
+        return text
 
 
 class _StrictSchemaRejected(RuntimeError):

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PatentRadar Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">●</span>
+      <span class="title">PatentRadar</span>
+      <span class="subtitle">专利侵权竞品分析 · Dashboard</span>
+    </div>
+
+    <form id="run-form" class="run-form">
+      <input
+        id="pub-input"
+        type="text"
+        placeholder="CN114512759B"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button type="submit" id="run-btn">开始分析</button>
+      <select id="history-select" title="加载历史 run">
+        <option value="">— 历史 run —</option>
+      </select>
+      <label class="stream-toggle">
+        <input type="checkbox" id="stream-toggle" checked />
+        <span>显示 LLM token 流</span>
+      </label>
+    </form>
+  </header>
+
+  <main class="grid">
+    <!-- module 1 -->
+    <section class="module" data-module="1">
+      <header class="module-header">
+        <span class="status-dot pending"></span>
+        <h2>模块 1 · 拆解权利要求</h2>
+        <span class="elapsed"></span>
+      </header>
+      <div class="module-summary" id="summary-1">
+        <p class="placeholder">等待启动…</p>
+      </div>
+      <details class="stream-panel">
+        <summary>LLM token 流</summary>
+        <pre class="stream-text" data-stream="1"></pre>
+      </details>
+      <details class="stream-panel">
+        <summary>原始日志</summary>
+        <pre class="log-text" data-log="1"></pre>
+      </details>
+    </section>
+
+    <!-- module 2 -->
+    <section class="module" data-module="2">
+      <header class="module-header">
+        <span class="status-dot pending"></span>
+        <h2>模块 2 · 竞品搜索 + 权 1 判定</h2>
+        <span class="elapsed"></span>
+      </header>
+      <div class="module-summary" id="summary-2">
+        <p class="placeholder">等待模块 1 完成…</p>
+      </div>
+      <details class="stream-panel">
+        <summary>LLM token 流</summary>
+        <pre class="stream-text" data-stream="2"></pre>
+      </details>
+      <details class="stream-panel">
+        <summary>原始日志</summary>
+        <pre class="log-text" data-log="2"></pre>
+      </details>
+    </section>
+
+    <!-- module 3 -->
+    <section class="module" data-module="3">
+      <header class="module-header">
+        <span class="status-dot pending"></span>
+        <h2>模块 3 · 全部权利要求扩展</h2>
+        <span class="elapsed"></span>
+      </header>
+      <div class="module-summary" id="summary-3">
+        <p class="placeholder">等待模块 2 完成…</p>
+      </div>
+      <details class="stream-panel">
+        <summary>LLM token 流</summary>
+        <pre class="stream-text" data-stream="3"></pre>
+      </details>
+      <details class="stream-panel">
+        <summary>原始日志</summary>
+        <pre class="log-text" data-log="3"></pre>
+      </details>
+    </section>
+
+    <!-- module 4 -->
+    <section class="module" data-module="4">
+      <header class="module-header">
+        <span class="status-dot pending"></span>
+        <h2>模块 4 · 生成报告</h2>
+        <span class="elapsed"></span>
+      </header>
+      <div class="module-summary" id="summary-4">
+        <p class="placeholder">等待模块 3 完成…</p>
+      </div>
+      <details class="stream-panel">
+        <summary>LLM token 流</summary>
+        <pre class="stream-text" data-stream="4"></pre>
+      </details>
+      <details class="stream-panel">
+        <summary>原始日志</summary>
+        <pre class="log-text" data-log="4"></pre>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span id="pipeline-status">空闲</span>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

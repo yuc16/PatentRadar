@@ -96,6 +96,8 @@ def chat(
                     delta = event.get("delta") or ""
                     if delta:
                         parts.append(delta)
+                        from patentradar.llm.stream import emit_delta
+                        emit_delta(delta)
                 elif event_type in {"error", "response.failed"}:
                     raise RuntimeError(
                         f"Codex stream error: {json.dumps(event, ensure_ascii=False)[:500]}"

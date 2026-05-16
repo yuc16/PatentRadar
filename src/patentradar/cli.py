@@ -2,11 +2,13 @@
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import typer
 
 from patentradar.fetcher.google_patents import normalize_publication_no
+from patentradar.llm.stream import install_file_writer_from_env, set_module_label
 from patentradar.modules.competitor_search import run_competitor_search
 from patentradar.modules.decompose import run_decompose
 from patentradar.modules.full_claim_chart import (
@@ -26,6 +28,13 @@ app = typer.Typer(no_args_is_help=True)
 @app.callback()
 def callback() -> None:
     """PatentRadar v2 command line."""
+    # When PATENTRADAR_STREAM_LOG env is set (typically by the FastAPI runner
+    # launching this CLI as a subprocess), register a JSONL writer that
+    # captures every LLM token delta. No-op for direct CLI use.
+    install_file_writer_from_env()
+    label = os.environ.get("PATENTRADAR_MODULE_LABEL")
+    if label:
+        set_module_label(label)
 
 
 @app.command("decompose")
