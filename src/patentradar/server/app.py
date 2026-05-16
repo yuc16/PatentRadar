@@ -228,24 +228,142 @@ async def list_runs():
     return {"runs": runs}
 
 
+@app.get("/api/replay/{pub}")
+async def get_replay(pub: str):
+    """Return all events for one run, sorted by ts, ready for client-side replay.
+
+    Sources merged:
+      - run.jsonl                     (lifecycle, ts inline)
+      - module_N.stream.jsonl         (LLM token, ts inline)
+      - module_N.log                  (stdout, NO inline ts → linearly
+                                       interpolated across the module's
+                                       [start_ts, end_ts] interval)
+    """
+    pub_log_dir = LOGS_ROOT / pub
+    if not pub_log_dir.exists():
+        raise HTTPException(status_code=404, detail="run not found")
+
+    events: list[dict] = []
+
+    # Lifecycle from run.jsonl + figure out each module's time window
+    module_windows: dict[int, dict] = {}  # n -> {"start": ts, "end": ts}
+    for ev in iter_run_events(pub):
+        ev_type = ev.get("event")
+        n = ev.get("module")
+        if ev_type == "start" and n is not None:
+            module_windows.setdefault(n, {})["start"] = ev.get("ts")
+        elif ev_type in ("done", "error") and n is not None:
+            module_windows.setdefault(n, {})["end"] = ev.get("ts")
+        events.append({"type": "progress", **ev})
+
+    # LLM token deltas — ts already on each line.
+    for n in (1, 2, 3, 4):
+        stream_path = pub_log_dir / f"module_{n}.stream.jsonl"
+        if not stream_path.exists():
+            continue
+        try:
+            with stream_path.open("r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        rec = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    ts = rec.get("ts")
+                    if ts is None:
+                        continue
+                    events.append({
+                        "type": "token",
+                        "module": n,
+                        "ts": ts,
+                        "delta": rec.get("delta", ""),
+                    })
+        except OSError:
+            pass
+
+    # stdout — no per-line ts, interpolate across the module's window.
+    for n in (1, 2, 3, 4):
+        log_path = pub_log_dir / f"module_{n}.log"
+        if not log_path.exists():
+            continue
+        try:
+            lines = log_path.read_text(encoding="utf-8", errors="ignore").splitlines()
+        except OSError:
+            continue
+        # filter empty lines (we still want to preserve them in display, but
+        # interpolation gets weird with thousands of blanks → drop them).
+        lines = [ln for ln in lines if ln]
+        if not lines:
+            continue
+        win = module_windows.get(n, {})
+        t0 = win.get("start")
+        t1 = win.get("end")
+        if t0 is None or t1 is None or t1 <= t0:
+            # Module is still running or window unknown → spread evenly across
+            # whatever we have. Use the start (or 0) so events at least have a ts.
+            base = t0 if t0 is not None else 0.0
+            for i, ln in enumerate(lines):
+                events.append({
+                    "type": "stdout",
+                    "module": n,
+                    "ts": base + i * 0.05,
+                    "line": ln,
+                })
+        else:
+            span = t1 - t0
+            denom = max(1, len(lines) - 1) if len(lines) > 1 else 1
+            for i, ln in enumerate(lines):
+                ts = t0 + (i / denom) * span if len(lines) > 1 else t0
+                events.append({
+                    "type": "stdout",
+                    "module": n,
+                    "ts": ts,
+                    "line": ln,
+                })
+
+    # Sort merged stream by ts (stable). Ties: progress < stdout < token.
+    type_order = {"progress": 0, "stdout": 1, "token": 2}
+    events.sort(key=lambda e: (e.get("ts") or 0, type_order.get(e.get("type"), 3)))
+
+    duration = 0.0
+    if events:
+        first = events[0]["ts"]
+        last = events[-1]["ts"]
+        if first and last:
+            duration = max(0.0, last - first)
+
+    return {
+        "publication_no": pub,
+        "duration_s": round(duration, 2),
+        "event_count": len(events),
+        "events": events,
+    }
+
+
 # ---------- SSE: live stream -------------------------------------------------
 
 
 async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
-    """Continuously tail run.jsonl + per-module stream.jsonl, push SSE events.
+    """Continuously tail run.jsonl + per-module stream.jsonl + module_N.log,
+    push SSE events.
 
     Push types:
-      - {"type":"progress", ...}  (one per run.jsonl line)
-      - {"type":"token", "module": N, "delta": "..."}  (one per stream.jsonl line)
-      - {"type":"status", "...": ...}  (initial snapshot + periodic refresh)
+      - {"type":"status", "modules": [...]}                            (initial)
+      - {"type":"progress", "event":..., "module":..., ...}            (lifecycle)
+      - {"type":"token",  "module": N, "delta": "..."}                 (LLM delta)
+      - {"type":"stdout", "module": N, "line":  "..."}                 (cli stdout)
     """
     pub_log_dir = LOGS_ROOT / pub
     run_log = pub_log_dir / "run.jsonl"
     stream_logs = {n: pub_log_dir / f"module_{n}.stream.jsonl" for n in (1, 2, 3, 4)}
+    stdout_logs = {n: pub_log_dir / f"module_{n}.log" for n in (1, 2, 3, 4)}
 
     # File offsets we've already streamed.
     run_offset = 0
     stream_offsets: dict[int, int] = {n: 0 for n in (1, 2, 3, 4)}
+    stdout_offsets: dict[int, int] = {n: 0 for n in (1, 2, 3, 4)}
 
     # Initial snapshot.
     snapshot = {
@@ -255,7 +373,7 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
     yield f"data: {json.dumps(snapshot, ensure_ascii=False)}\n\n"
 
     while True:
-        # Tail run.jsonl
+        # Tail run.jsonl (lifecycle events)
         if run_log.exists():
             try:
                 with run_log.open("r", encoding="utf-8") as f:
@@ -272,13 +390,12 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
                     payload = {"type": "progress", **ev}
                     yield f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
                     if ev.get("event") == "pipeline_end":
-                        # Push final status snapshot then end.
                         final_status = {"type": "status", "modules": _module_status(pub)}
                         yield f"data: {json.dumps(final_status, ensure_ascii=False)}\n\n"
             except OSError:
                 pass
 
-        # Tail every module's stream.jsonl
+        # Tail every module's stream.jsonl (LLM token deltas)
         for n, path in stream_logs.items():
             if not path.exists():
                 continue
@@ -297,7 +414,31 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
                     payload = {
                         "type": "token",
                         "module": n,
+                        "ts": ev.get("ts"),
                         "delta": ev.get("delta", ""),
+                    }
+                    yield f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
+            except OSError:
+                pass
+
+        # Tail every module's plain stdout log
+        for n, path in stdout_logs.items():
+            if not path.exists():
+                continue
+            try:
+                with path.open("r", encoding="utf-8", errors="ignore") as f:
+                    f.seek(stdout_offsets[n])
+                    new_data = f.read()
+                    stdout_offsets[n] = f.tell()
+                if not new_data:
+                    continue
+                for line in new_data.splitlines():
+                    if not line:
+                        continue
+                    payload = {
+                        "type": "stdout",
+                        "module": n,
+                        "line": line,
                     }
                     yield f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
             except OSError:

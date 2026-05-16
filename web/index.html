@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="topbar">
+  <aside class="sidebar">
     <div class="brand">
       <span class="logo">●</span>
-      <span class="title">PatentRadar</span>
-      <span class="subtitle">专利侵权竞品分析 · Dashboard</span>
+      <div class="brand-text">
+        <div class="title">PatentRadar</div>
+        <div class="subtitle">专利侵权竞品分析</div>
+      </div>
     </div>
 
     <form id="run-form" class="run-form">
@@ -23,101 +25,85 @@
         spellcheck="false"
       />
       <button type="submit" id="run-btn">开始分析</button>
-      <select id="history-select" title="加载历史 run">
-        <option value="">— 历史 run —</option>
-      </select>
-      <label class="stream-toggle">
-        <input type="checkbox" id="stream-toggle" checked />
-        <span>显示 LLM token 流</span>
-      </label>
     </form>
-  </header>
 
-  <main class="grid">
-    <!-- module 1 -->
-    <section class="module" data-module="1">
-      <header class="module-header">
-        <span class="status-dot pending"></span>
-        <h2>模块 1 · 拆解权利要求</h2>
-        <span class="elapsed"></span>
-      </header>
-      <div class="module-summary" id="summary-1">
-        <p class="placeholder">等待启动…</p>
+    <button id="replay-btn" class="replay-trigger-btn" hidden>↺ 回看本次</button>
+
+    <div class="modules-section">
+      <div class="section-label">模块进度</div>
+      <ul class="modules-list">
+        <li class="module-item pending" data-module="1">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 1 · 拆解</span>
+          <span class="module-elapsed"></span>
+        </li>
+        <li class="module-item pending" data-module="2">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 2 · 竞品搜索</span>
+          <span class="module-elapsed"></span>
+        </li>
+        <li class="module-item pending" data-module="3">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 3 · 全 claim</span>
+          <span class="module-elapsed"></span>
+        </li>
+        <li class="module-item pending" data-module="4">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 4 · 报告</span>
+          <span class="module-elapsed"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="outputs-section" id="outputs-section" hidden>
+      <div class="section-label">输出文件</div>
+      <ul class="outputs-list" id="outputs-list"></ul>
+    </div>
+
+    <div class="footer-meta" id="pipeline-status">空闲</div>
+  </aside>
+
+  <main class="stage">
+    <header class="stage-header">
+      <div class="stage-title">
+        <span class="status-dot" id="stage-dot"></span>
+        <h2 id="stage-title">等待启动</h2>
       </div>
-      <details class="stream-panel">
-        <summary>LLM token 流</summary>
-        <pre class="stream-text" data-stream="1"></pre>
-      </details>
-      <details class="stream-panel">
-        <summary>原始日志</summary>
-        <pre class="log-text" data-log="1"></pre>
-      </details>
+      <div class="stage-meta">
+        <span id="stage-elapsed"></span>
+        <button id="follow-btn" class="follow-btn active" title="自动滚到底">⤓ 自动跟随</button>
+      </div>
+    </header>
+
+    <section class="replay-bar" id="replay-bar" hidden>
+      <div class="replay-controls">
+        <button id="replay-toggle" class="replay-btn" title="播放/暂停">▶</button>
+        <div class="speed-group" role="group" aria-label="播放速度">
+          <button class="speed-btn active" data-speed="1">1x</button>
+          <button class="speed-btn" data-speed="20">20x</button>
+          <button class="speed-btn" data-speed="100">100x</button>
+          <button class="speed-btn" data-speed="600">600x</button>
+        </div>
+      </div>
+      <div class="replay-progress">
+        <div class="progress-bar" id="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-thumb" id="progress-thumb"></div>
+        </div>
+        <span class="progress-time" id="progress-time">00:00 / 00:00</span>
+      </div>
     </section>
 
-    <!-- module 2 -->
-    <section class="module" data-module="2">
-      <header class="module-header">
-        <span class="status-dot pending"></span>
-        <h2>模块 2 · 竞品搜索 + 权 1 判定</h2>
-        <span class="elapsed"></span>
-      </header>
-      <div class="module-summary" id="summary-2">
-        <p class="placeholder">等待模块 1 完成…</p>
-      </div>
-      <details class="stream-panel">
-        <summary>LLM token 流</summary>
-        <pre class="stream-text" data-stream="2"></pre>
-      </details>
-      <details class="stream-panel">
-        <summary>原始日志</summary>
-        <pre class="log-text" data-log="2"></pre>
-      </details>
-    </section>
+    <section class="stage-summary" id="stage-summary" hidden></section>
 
-    <!-- module 3 -->
-    <section class="module" data-module="3">
-      <header class="module-header">
-        <span class="status-dot pending"></span>
-        <h2>模块 3 · 全部权利要求扩展</h2>
-        <span class="elapsed"></span>
-      </header>
-      <div class="module-summary" id="summary-3">
-        <p class="placeholder">等待模块 2 完成…</p>
+    <section class="stage-log" id="stage-log">
+      <div class="empty-state" id="empty-state">
+        <div class="empty-icon">◔</div>
+        <div class="empty-text">输入专利公开号开始分析</div>
+        <div class="empty-hint">例如 <code>CN114512759B</code></div>
       </div>
-      <details class="stream-panel">
-        <summary>LLM token 流</summary>
-        <pre class="stream-text" data-stream="3"></pre>
-      </details>
-      <details class="stream-panel">
-        <summary>原始日志</summary>
-        <pre class="log-text" data-log="3"></pre>
-      </details>
-    </section>
-
-    <!-- module 4 -->
-    <section class="module" data-module="4">
-      <header class="module-header">
-        <span class="status-dot pending"></span>
-        <h2>模块 4 · 生成报告</h2>
-        <span class="elapsed"></span>
-      </header>
-      <div class="module-summary" id="summary-4">
-        <p class="placeholder">等待模块 3 完成…</p>
-      </div>
-      <details class="stream-panel">
-        <summary>LLM token 流</summary>
-        <pre class="stream-text" data-stream="4"></pre>
-      </details>
-      <details class="stream-panel">
-        <summary>原始日志</summary>
-        <pre class="log-text" data-log="4"></pre>
-      </details>
     </section>
   </main>
-
-  <footer class="footer">
-    <span id="pipeline-status">空闲</span>
-  </footer>
 
   <script src="/app.js"></script>
 </body>
