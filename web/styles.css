@@ -361,6 +361,23 @@ body {
   font-weight: 600;
 }
 
+.export-btn {
+  padding: 6px 12px;
+  border: 1px solid #3a3833;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--log-ts);
+  font-size: 12px;
+  font-family: "JetBrains Mono", "Menlo", monospace;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.export-btn:hover {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  border-color: var(--accent-soft);
+}
+
 .replay-progress {
   flex: 1;
   display: flex;

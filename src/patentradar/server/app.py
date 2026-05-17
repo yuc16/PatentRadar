@@ -407,6 +407,57 @@ async def get_replay(pub: str):
     }
 
 
+@app.get("/api/replay/{pub}/export")
+async def export_replay(pub: str):
+    """Export a standalone HTML replay file that runs without the server.
+
+    All events + CSS + JS are inlined; opening the file in any browser will
+    show the same replay UI (play/pause + 1x/20x/100x/600x speeds + scrub bar).
+    """
+    pub_log_dir = LOGS_ROOT / pub
+    if not pub_log_dir.exists():
+        raise HTTPException(status_code=404, detail="run not found")
+
+    template_path = WEB_DIR / "replay_export.html"
+    styles_path = WEB_DIR / "styles.css"
+    if not template_path.exists() or not styles_path.exists():
+        raise HTTPException(status_code=500, detail="export template missing")
+
+    events = _build_historical_events(pub)
+    duration = 0.0
+    if events:
+        first = events[0].get("ts") or 0
+        last = events[-1].get("ts") or 0
+        if first and last:
+            duration = max(0.0, last - first)
+    payload = {
+        "publication_no": pub,
+        "duration_s": round(duration, 2),
+        "event_count": len(events),
+        "events": events,
+    }
+
+    # Embedded inside <script type="application/json">; only "</" needs escaping
+    # so the browser doesn't terminate the script element early.
+    events_json = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+    styles_text = styles_path.read_text(encoding="utf-8")
+
+    html = (
+        template_path.read_text(encoding="utf-8")
+        .replace("__STYLES__", styles_text)
+        .replace("__PUB__", pub)
+        .replace("__EVENTS_JSON__", events_json)
+    )
+
+    from fastapi.responses import HTMLResponse
+    return HTMLResponse(
+        html,
+        headers={
+            "Content-Disposition": f'attachment; filename="patentradar_replay_{pub}.html"',
+        },
+    )
+
+
 # ---------- SSE: live stream -------------------------------------------------
 
 

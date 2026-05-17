@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PatentRadar 离线回放 · __PUB__</title>
+  <style>__STYLES__</style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="logo">●</span>
+      <div class="brand-text">
+        <div class="title">PatentRadar</div>
+        <div class="subtitle">离线回放 · __PUB__</div>
+      </div>
+    </div>
+
+    <div class="modules-section">
+      <div class="section-label">模块进度</div>
+      <ul class="modules-list">
+        <li class="module-item pending" data-module="1">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 1 · 拆解</span>
+          <span class="module-elapsed"></span>
+        </li>
+        <li class="module-item pending" data-module="2">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 2 · 竞品搜索</span>
+          <span class="module-elapsed"></span>
+        </li>
+        <li class="module-item pending" data-module="3">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 3 · 全 claim</span>
+          <span class="module-elapsed"></span>
+        </li>
+        <li class="module-item pending" data-module="4">
+          <span class="status-dot"></span>
+          <span class="module-name">模块 4 · 报告</span>
+          <span class="module-elapsed"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-meta" id="pipeline-status">离线回放</div>
+  </aside>
+
+  <main class="stage">
+    <header class="stage-header">
+      <div class="stage-title">
+        <span class="status-dot" id="stage-dot"></span>
+        <h2 id="stage-title">点击 ▶ 开始回放</h2>
+      </div>
+      <div class="stage-meta">
+        <span id="stage-elapsed"></span>
+        <button id="follow-btn" class="follow-btn active" title="自动滚到底">⤓ 自动跟随</button>
+      </div>
+    </header>
+
+    <section class="replay-bar">
+      <div class="replay-controls">
+        <button id="replay-toggle" class="replay-btn" title="播放/暂停">▶</button>
+        <div class="speed-group" role="group" aria-label="播放速度">
+          <button class="speed-btn active" data-speed="1">1x</button>
+          <button class="speed-btn" data-speed="20">20x</button>
+          <button class="speed-btn" data-speed="100">100x</button>
+          <button class="speed-btn" data-speed="600">600x</button>
+        </div>
+      </div>
+      <div class="replay-progress">
+        <div class="progress-bar" id="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-thumb" id="progress-thumb"></div>
+        </div>
+        <span class="progress-time" id="progress-time">00:00 / 00:00</span>
+      </div>
+    </section>
+
+    <section class="stage-log" id="stage-log">
+      <div class="empty-state" id="empty-state">
+        <div class="empty-icon">◔</div>
+        <div class="empty-text">离线回放已就绪</div>
+        <div class="empty-hint">点击左上角 <code>▶</code> 开始播放，可切换 <code>1x / 20x / 100x / 600x</code> 倍速</div>
+      </div>
+    </section>
+  </main>
+
+  <script id="replay-data" type="application/json">__EVENTS_JSON__</script>
+  <script>
+  // ==================== Standalone replay logic ====================
+  // 该文件由 /api/replay/{pub}/export 生成。所有事件已嵌入页面，不依赖 server。
+
+  const PUB = "__PUB__";
+  const REPLAY_DATA = JSON.parse(document.getElementById("replay-data").textContent);
+
+  const MODULE_LABELS = {
+    1: "模块 1 · 拆解权利要求",
+    2: "模块 2 · 竞品搜索 + 权 1 判定",
+    3: "模块 3 · 全部权利要求扩展",
+    4: "模块 4 · 生成报告",
+  };
+  const MAX_LINES_PER_MODULE = 5000;
+
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => document.querySelectorAll(s);
+
+  const els = {
+    pipelineStatus: $("#pipeline-status"),
+    moduleItems: $$(".module-item"),
+    stageTitle: $("#stage-title"),
+    stageDot: $("#stage-dot"),
+    stageElapsed: $("#stage-elapsed"),
+    stageLog: $("#stage-log"),
+    emptyState: $("#empty-state"),
+    followBtn: $("#follow-btn"),
+    replayToggle: $("#replay-toggle"),
+    speedBtns: $$(".speed-btn"),
+    progressBar: $("#progress-bar"),
+    progressFill: $("#progress-fill"),
+    progressThumb: $("#progress-thumb"),
+    progressTime: $("#progress-time"),
+  };
+
+  const state = {
+    activeModule: null,
+    followCurrent: true,
+    autoScroll: true,
+    modules: {
+      1: { lines: [], status: "pending", elapsed: null, pendingLLM: null },
+      2: { lines: [], status: "pending", elapsed: null, pendingLLM: null },
+      3: { lines: [], status: "pending", elapsed: null, pendingLLM: null },
+      4: { lines: [], status: "pending", elapsed: null, pendingLLM: null },
+    },
+    replayer: null,
+  };
+
+  function formatTs(tsSeconds) {
+    const d = tsSeconds ? new Date(tsSeconds * 1000) : new Date();
+    const pad = (n) => String(n).padStart(2, "0");
+    return `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+  }
+
+  function escapeHtml(s) {
+    if (s == null) return "";
+    return String(s)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+  }
+
+  function mmss(seconds) {
+    if (!isFinite(seconds) || seconds < 0) seconds = 0;
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+  }
+
+  function appendLine(moduleN, kind, tag, msg, tsSeconds) {
+    const buf = state.modules[moduleN];
+    if (!buf) return;
+    if (kind !== "llm") buf.pendingLLM = null;
+    const line = { ts: formatTs(tsSeconds), kind, tag, msg };
+    buf.lines.push(line);
+    if (buf.lines.length > MAX_LINES_PER_MODULE) {
+      buf.lines.splice(0, buf.lines.length - MAX_LINES_PER_MODULE);
+    }
+    if (state.activeModule === moduleN) renderLine(line);
+  }
+
+  function renderLine(line) {
+    if (els.emptyState && !els.emptyState.hidden) els.emptyState.hidden = true;
+    const el = document.createElement("div");
+    el.className = `log-line ${line.kind}`;
+    el.innerHTML =
+      `<span class="ts">[${line.ts}]</span>` +
+      `<span class="tag">[${line.tag}]</span>` +
+      `<span class="msg"></span>`;
+    el.querySelector(".msg").textContent = line.msg;
+    els.stageLog.appendChild(el);
+    if (state.autoScroll) els.stageLog.scrollTop = els.stageLog.scrollHeight;
+    return el;
+  }
+
+  function appendLLMDelta(moduleN, delta, tsSeconds) {
+    if (!delta) return;
+    const buf = state.modules[moduleN];
+    if (!buf) return;
+    if (!buf.pendingLLM) {
+      const line = { ts: formatTs(tsSeconds), kind: "llm", tag: "LLM", msg: "" };
+      buf.lines.push(line);
+      if (buf.lines.length > MAX_LINES_PER_MODULE) {
+        buf.lines.splice(0, buf.lines.length - MAX_LINES_PER_MODULE);
+      }
+      let msgEl = null;
+      if (state.activeModule === moduleN) {
+        const el = renderLine(line);
+        msgEl = el.querySelector(".msg");
+      }
+      buf.pendingLLM = { lineIndex: buf.lines.length - 1, msgEl };
+    }
+    const line = buf.lines[buf.pendingLLM.lineIndex];
+    if (!line || line.kind !== "llm") {
+      buf.pendingLLM = null;
+      return appendLLMDelta(moduleN, delta, tsSeconds);
+    }
+    line.msg += delta;
+    if (state.activeModule === moduleN && buf.pendingLLM.msgEl) {
+      buf.pendingLLM.msgEl.textContent = line.msg;
+      if (state.autoScroll) els.stageLog.scrollTop = els.stageLog.scrollHeight;
+    }
+  }
+
+  function clearStage() {
+    els.stageLog.innerHTML = "";
+    if (els.emptyState && els.emptyState.parentElement !== els.stageLog) {
+      els.stageLog.appendChild(els.emptyState);
+    }
+    if (els.emptyState) els.emptyState.hidden = true;
+  }
+
+  function showActiveModule(moduleN) {
+    state.activeModule = moduleN;
+    els.moduleItems.forEach((item) => {
+      item.classList.toggle("active", Number(item.dataset.module) === moduleN);
+    });
+    els.stageTitle.textContent = MODULE_LABELS[moduleN] || "—";
+    const buf = state.modules[moduleN];
+    els.stageDot.className = `status-dot ${buf.status}`;
+    els.stageElapsed.textContent = buf.elapsed != null ? `耗时 ${buf.elapsed}s` : "";
+    els.stageLog.innerHTML = "";
+    let lastEl = null;
+    for (const line of buf.lines) lastEl = renderLine(line);
+    if (buf.pendingLLM && lastEl && buf.lines[buf.pendingLLM.lineIndex]?.kind === "llm") {
+      buf.pendingLLM.msgEl = lastEl.querySelector(".msg");
+    }
+    if (state.autoScroll) els.stageLog.scrollTop = els.stageLog.scrollHeight;
+  }
+
+  function setModuleStatus(n, status, elapsed) {
+    const buf = state.modules[n];
+    buf.status = status;
+    if (elapsed != null) buf.elapsed = elapsed;
+    const item = document.querySelector(`.module-item[data-module="${n}"]`);
+    if (item) {
+      item.classList.remove("pending", "running", "done", "error");
+      item.classList.add(status);
+      item.querySelector(".module-elapsed").textContent =
+        elapsed != null ? `${elapsed}s` : "";
+    }
+    if (state.activeModule === n) {
+      els.stageDot.className = `status-dot ${status}`;
+      els.stageElapsed.textContent = elapsed != null ? `耗时 ${elapsed}s` : "";
+    }
+    if (status === "running" && state.followCurrent) showActiveModule(n);
+  }
+
+  function setPipelineStatus(status) {
+    const el = els.pipelineStatus;
+    el.classList.remove("running", "ok", "failed");
+    if (status === "running") {
+      el.classList.add("running");
+      el.textContent = `● 回放中 · ${PUB}`;
+    } else if (status === "ok") {
+      el.classList.add("ok");
+      el.textContent = `✓ 完成 · ${PUB}`;
+    } else if (status === "failed") {
+      el.classList.add("failed");
+      el.textContent = `✕ 失败 · ${PUB}`;
+    } else {
+      el.textContent = `离线回放 · ${PUB}`;
+    }
+  }
+
+  function handleProgress(ev) {
+    const top = ev.event;
+    if (top === "pipeline_start") {
+      setPipelineStatus("running");
+      for (const n of [1, 2, 3, 4]) {
+        appendLine(n, "lifecycle", "LIFECYCLE", `pipeline start (${ev.publication_no || ""})`, ev.ts);
+      }
+      return;
+    }
+    if (top === "pipeline_end") {
+      setPipelineStatus(ev.status || "ok");
+      return;
+    }
+    if (ev.module == null) return;
+    const n = ev.module;
+    if (ev.event === "start") {
+      appendLine(n, "lifecycle", "LIFECYCLE", `模块 ${n} (${ev.label}) 启动`, ev.ts);
+      setModuleStatus(n, "running");
+    } else if (ev.event === "done") {
+      appendLine(n, "lifecycle", "LIFECYCLE", `模块 ${n} 完成 · 耗时 ${ev.elapsed}s`, ev.ts);
+      setModuleStatus(n, "done", ev.elapsed);
+    } else if (ev.event === "error") {
+      const detail = ev.message || `exit_code=${ev.exit_code}`;
+      appendLine(n, "error", "ERROR", `模块 ${n} 失败 · ${detail}`, ev.ts);
+      setModuleStatus(n, "error", ev.elapsed);
+    }
+  }
+
+  function handleToken(p) {
+    const n = p.module;
+    if (!n) return;
+    appendLLMDelta(n, p.delta || "", p.ts);
+  }
+
+  function handleStdout(p) {
+    const n = p.module;
+    if (!n) return;
+    const line = p.line || "";
+    let kind = "stdout";
+    let tag = "STDOUT";
+    let msg = line;
+    const m = line.match(/^(\d{2}:\d{2}:\d{2})\s+\[([^\]]+)\]\s+(.*)$/);
+    if (m) {
+      const loggerName = m[2];
+      msg = m[3];
+      if (loggerName.startsWith("patentradar.modules.")) {
+        tag = loggerName.split(".")[2].toUpperCase();
+      } else if (loggerName.startsWith("patentradar.llm")) {
+        tag = "LLM";
+      } else if (loggerName.startsWith("patentradar.fetcher")) {
+        tag = "FETCH";
+      } else if (loggerName.startsWith("patentradar.search")) {
+        tag = "SEARCH";
+      } else if (loggerName === "httpx") {
+        tag = "HTTP";
+      } else if (loggerName.startsWith("patentradar.")) {
+        tag = loggerName.replace("patentradar.", "").toUpperCase();
+      } else {
+        tag = loggerName.split(".").pop().toUpperCase();
+      }
+    } else if (/^ERROR\b/.test(line) || /Traceback/.test(line)) {
+      kind = "error";
+      tag = "STDERR";
+    } else if (/^WARNING\b/.test(line)) {
+      tag = "WARN";
+    } else if (/^INFO\b/.test(line)) {
+      tag = "INFO";
+    }
+    appendLine(n, kind, tag, msg, p.ts);
+  }
+
+  function dispatchReplayEvent(ev) {
+    if (ev.type === "progress") handleProgress(ev);
+    else if (ev.type === "token") handleToken(ev);
+    else if (ev.type === "stdout") handleStdout(ev);
+  }
+
+  function resetVisuals() {
+    for (const n of [1, 2, 3, 4]) {
+      state.modules[n] = { lines: [], status: "pending", elapsed: null, pendingLLM: null };
+      setModuleStatus(n, "pending", null);
+    }
+    state.activeModule = null;
+    clearStage();
+    els.stageTitle.textContent = "点击 ▶ 开始回放";
+    setPipelineStatus(null);
+  }
+
+  class Replayer {
+    constructor(events, duration) {
+      this.events = events;
+      this.duration = duration;
+      this.startEventTs = events[0]?.ts || 0;
+      this.idx = 0;
+      this.speed = 1;
+      this.playing = false;
+      this.timer = null;
+      this.frameHandle = null;
+      this.startWall = null;
+      this.playedEventMs = 0;
+    }
+    _virtualNowMs() {
+      if (!this.playing) return this.playedEventMs;
+      return this.playedEventMs + (performance.now() - this.startWall) * this.speed;
+    }
+    start() {
+      if (this.playing) return;
+      this.playing = true;
+      this.startWall = performance.now();
+      this._scheduleNext();
+      this._updateProgress();
+    }
+    pause() {
+      if (!this.playing) return;
+      this.playedEventMs = this._virtualNowMs();
+      this.playing = false;
+      if (this.timer) { clearTimeout(this.timer); this.timer = null; }
+      if (this.frameHandle) { cancelAnimationFrame(this.frameHandle); this.frameHandle = null; }
+    }
+    setSpeed(s) {
+      const wasPlaying = this.playing;
+      if (wasPlaying) this.pause();
+      this.speed = s;
+      if (wasPlaying) this.start();
+    }
+    seek(fractionOfDuration) {
+      const wasPlaying = this.playing;
+      if (wasPlaying) this.pause();
+      const targetMs = fractionOfDuration * this.duration * 1000;
+      resetVisuals();
+      this.idx = 0;
+      this.playedEventMs = 0;
+      while (this.idx < this.events.length) {
+        const ev = this.events[this.idx];
+        const elapsedMs = (ev.ts - this.startEventTs) * 1000;
+        if (elapsedMs > targetMs) break;
+        dispatchReplayEvent(ev);
+        this.idx++;
+      }
+      this.playedEventMs = targetMs;
+      this._updateProgressUI();
+      if (wasPlaying) this.start();
+    }
+    _scheduleNext() {
+      if (!this.playing) return;
+      if (this.idx >= this.events.length) { this._onEnded(); return; }
+      if (this.speed > 50) {
+        const cursorMs = this._virtualNowMs();
+        while (this.idx < this.events.length) {
+          const ev = this.events[this.idx];
+          const elapsedMs = (ev.ts - this.startEventTs) * 1000;
+          if (elapsedMs > cursorMs) break;
+          dispatchReplayEvent(ev);
+          this.idx++;
+        }
+        this._updateProgressUI();
+        if (this.idx >= this.events.length) { this._onEnded(); return; }
+        this.frameHandle = requestAnimationFrame(() => this._scheduleNext());
+        return;
+      }
+      const ev = this.events[this.idx];
+      const elapsedMs = (ev.ts - this.startEventTs) * 1000;
+      const cursorMs = this._virtualNowMs();
+      const wallDelay = Math.max(0, (elapsedMs - cursorMs) / this.speed);
+      this.timer = setTimeout(() => {
+        dispatchReplayEvent(ev);
+        this.idx++;
+        this._updateProgressUI();
+        this._scheduleNext();
+      }, wallDelay);
+    }
+    _updateProgress() {
+      const loop = () => {
+        if (!this.playing) return;
+        this._updateProgressUI();
+        requestAnimationFrame(loop);
+      };
+      requestAnimationFrame(loop);
+    }
+    _updateProgressUI() {
+      const cursorMs = this._virtualNowMs();
+      const totalMs = this.duration * 1000;
+      const frac = totalMs > 0 ? Math.min(1, cursorMs / totalMs) : 0;
+      els.progressFill.style.width = `${frac * 100}%`;
+      els.progressThumb.style.left = `${frac * 100}%`;
+      els.progressTime.textContent = `${mmss(cursorMs / 1000)} / ${mmss(this.duration)}`;
+    }
+    _onEnded() {
+      this.playing = false;
+      this.playedEventMs = this.duration * 1000;
+      this._updateProgressUI();
+      els.replayToggle.textContent = "↺";
+      els.replayToggle.title = "重播";
+    }
+  }
+
+  els.moduleItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const n = Number(item.dataset.module);
+      state.followCurrent = false;
+      showActiveModule(n);
+    });
+  });
+
+  els.followBtn.addEventListener("click", () => {
+    state.autoScroll = !state.autoScroll;
+    els.followBtn.classList.toggle("active", state.autoScroll);
+    if (state.autoScroll) els.stageLog.scrollTop = els.stageLog.scrollHeight;
+  });
+
+  els.stageLog.addEventListener("scroll", () => {
+    const el = els.stageLog;
+    const atBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 40;
+    if (!atBottom && state.autoScroll) {
+      state.autoScroll = false;
+      els.followBtn.classList.remove("active");
+    } else if (atBottom && !state.autoScroll) {
+      state.autoScroll = true;
+      els.followBtn.classList.add("active");
+    }
+  });
+
+  els.replayToggle.addEventListener("click", () => {
+    if (!state.replayer) return;
+    if (state.replayer.playing) {
+      state.replayer.pause();
+      els.replayToggle.textContent = "▶";
+    } else {
+      if (state.replayer.idx >= state.replayer.events.length) {
+        state.replayer.seek(0);
+      }
+      state.replayer.start();
+      els.replayToggle.textContent = "⏸";
+    }
+  });
+
+  els.speedBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const s = Number(btn.dataset.speed);
+      els.speedBtns.forEach((b) => b.classList.toggle("active", b === btn));
+      if (state.replayer) state.replayer.setSpeed(s);
+    });
+  });
+
+  els.progressBar.addEventListener("click", (e) => {
+    if (!state.replayer) return;
+    const rect = els.progressBar.getBoundingClientRect();
+    const frac = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    state.replayer.seek(frac);
+    els.replayToggle.textContent = state.replayer.playing ? "⏸" : "▶";
+  });
+
+  if (!REPLAY_DATA.events?.length) {
+    els.emptyState.querySelector(".empty-text").textContent = "该回放文件不含任何事件";
+    els.replayToggle.disabled = true;
+  } else {
+    state.replayer = new Replayer(REPLAY_DATA.events, REPLAY_DATA.duration_s);
+    state.replayer._updateProgressUI();
+  }
+  </script>
+</body>
+</html>

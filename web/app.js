@@ -36,6 +36,7 @@ const els = {
   progressFill: $("#progress-fill"),
   progressThumb: $("#progress-thumb"),
   progressTime: $("#progress-time"),
+  exportReplayBtn: $("#export-replay-btn"),
 };
 
 const state = {
@@ -849,6 +850,18 @@ els.speedBtns.forEach(btn => {
     els.speedBtns.forEach(b => b.classList.toggle("active", b === btn));
     if (state.replayer) state.replayer.setSpeed(s);
   });
+});
+
+// 导出离线回放 html（直接走 server 的 attachment 响应触发浏览器下载）
+els.exportReplayBtn.addEventListener("click", () => {
+  if (!state.pub) return;
+  // 用隐藏 a 标签触发下载，保持 Content-Disposition 里的文件名
+  const a = document.createElement("a");
+  a.href = `/api/replay/${encodeURIComponent(state.pub)}/export`;
+  a.rel = "noopener";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
 });
 
 // Click on progress bar to seek
