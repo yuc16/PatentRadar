@@ -407,6 +407,65 @@ async def get_replay(pub: str):
     }
 
 
+def _collect_export_outputs(pub: str) -> list[dict]:
+    """Read the user-facing artifacts (those listed in module summaries) and
+    return them as embeddable dicts:
+      - kind="json" → {"content": "<raw text>"}
+      - kind="md"   → {"html": "<rendered body html>"}
+      - kind="pdf"  → {"base64": "<base64-encoded bytes>"}
+    """
+    import base64 as _b64
+
+    try:
+        root = _publication_root(pub)
+    except HTTPException:
+        return []
+
+    summary = _module_output_summary(pub)
+    outputs: list[dict] = []
+
+    md_lib = None
+    for module_id in sorted(summary):
+        for f in summary[module_id].get("files") or []:
+            name = f.get("name")
+            kind = f.get("kind")
+            if not name or not kind:
+                continue
+            target = (root / name).resolve()
+            if not str(target).startswith(str(root.resolve())) or not target.is_file():
+                continue
+
+            entry = {"module": module_id, "name": name, "kind": kind}
+            try:
+                if kind == "json":
+                    entry["content"] = target.read_text(encoding="utf-8")
+                elif kind == "md":
+                    if md_lib is None:
+                        try:
+                            import markdown as md_lib
+                        except ImportError:
+                            md_lib = False
+                    md_text = target.read_text(encoding="utf-8")
+                    if md_lib:
+                        entry["html"] = md_lib.markdown(
+                            md_text, extensions=["tables", "fenced_code"]
+                        )
+                    else:
+                        # markdown lib missing — fall back to raw text wrapped in <pre>
+                        from html import escape as _esc
+                        entry["html"] = f"<pre>{_esc(md_text)}</pre>"
+                elif kind == "pdf":
+                    entry["base64"] = _b64.b64encode(target.read_bytes()).decode("ascii")
+                else:
+                    entry["content"] = target.read_text(encoding="utf-8", errors="ignore")
+            except OSError:
+                continue
+
+            outputs.append(entry)
+
+    return outputs
+
+
 @app.get("/api/replay/{pub}/export")
 async def export_replay(pub: str):
     """Export a standalone HTML replay file that runs without the server.
@@ -430,11 +489,16 @@ async def export_replay(pub: str):
         last = events[-1].get("ts") or 0
         if first and last:
             duration = max(0.0, last - first)
+
+    outputs = _collect_export_outputs(pub)
+
     payload = {
         "publication_no": pub,
         "duration_s": round(duration, 2),
         "event_count": len(events),
         "events": events,
+        "outputs": outputs,
+        "report_css": _REPORT_CSS,
     }
 
     # Embedded inside <script type="application/json">; only "</" needs escaping

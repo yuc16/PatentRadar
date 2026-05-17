@@ -42,6 +42,11 @@
       </ul>
     </div>
 
+    <div class="outputs-section" id="outputs-section" hidden>
+      <div class="section-label">输出文件</div>
+      <ul class="outputs-list" id="outputs-list"></ul>
+    </div>
+
     <div class="footer-meta" id="pipeline-status">离线回放</div>
   </aside>
 
@@ -119,6 +124,8 @@
     progressFill: $("#progress-fill"),
     progressThumb: $("#progress-thumb"),
     progressTime: $("#progress-time"),
+    outputsSection: $("#outputs-section"),
+    outputsList: $("#outputs-list"),
   };
 
   const state = {
@@ -524,6 +531,74 @@
     state.replayer.seek(frac);
     els.replayToggle.textContent = state.replayer.playing ? "⏸" : "▶";
   });
+
+  // ---- Outputs (json/md/pdf) ----------------------------------------------
+  // 这些 blob URL 在窗口关闭前不释放（同一文件可能被多次点开）。
+
+  const ICONS = { md: "📄", pdf: "📕", json: "📋" };
+
+  function openInNewTab(html, mime = "text/html") {
+    const blob = new Blob([html], { type: mime });
+    const url = URL.createObjectURL(blob);
+    window.open(url, "_blank", "noopener");
+  }
+
+  function openMd(o) {
+    const css = REPLAY_DATA.report_css || "";
+    const page =
+      `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">` +
+      `<title>${escapeHtml(o.name)} · ${escapeHtml(PUB)}</title>` +
+      `<style>${css}</style></head><body>${o.html || ""}</body></html>`;
+    openInNewTab(page);
+  }
+
+  function openJson(o) {
+    let pretty = o.content || "";
+    try { pretty = JSON.stringify(JSON.parse(pretty), null, 2); } catch {}
+    const page =
+      `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">` +
+      `<title>${escapeHtml(o.name)} · ${escapeHtml(PUB)}</title>` +
+      `<style>body{margin:0;padding:24px;background:#1f1e1c;color:#e8e2d8;` +
+      `font:13px/1.55 "JetBrains Mono","Menlo",monospace}` +
+      `pre{white-space:pre-wrap;word-break:break-word;margin:0}` +
+      `h1{font:600 14px sans-serif;color:#d97757;margin:0 0 16px}</style>` +
+      `</head><body><h1>${escapeHtml(o.name)}</h1><pre>${escapeHtml(pretty)}</pre>` +
+      `</body></html>`;
+    openInNewTab(page);
+  }
+
+  function openPdf(o) {
+    const bin = atob(o.base64 || "");
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    const blob = new Blob([bytes], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+    window.open(url, "_blank", "noopener");
+  }
+
+  function renderOutputsList() {
+    const list = REPLAY_DATA.outputs || [];
+    if (!list.length) return;
+    els.outputsList.innerHTML = "";
+    for (const o of list) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = "#";
+      a.rel = "noopener";
+      a.textContent = `${ICONS[o.kind] || "📎"} 模块 ${o.module} · ${o.name}`;
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (o.kind === "md") openMd(o);
+        else if (o.kind === "pdf") openPdf(o);
+        else openJson(o);
+      });
+      li.appendChild(a);
+      els.outputsList.appendChild(li);
+    }
+    els.outputsSection.hidden = false;
+  }
+
+  renderOutputsList();
 
   if (!REPLAY_DATA.events?.length) {
     els.emptyState.querySelector(".empty-text").textContent = "该回放文件不含任何事件";

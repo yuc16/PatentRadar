@@ -119,10 +119,45 @@ def run_pipeline(pub: str) -> None:
         lock.release()
 
 
+def _is_fully_cached(pub: str) -> bool:
+    """A prior run is considered fully cached and reusable when:
+      1) logs/<pub>/run.jsonl ends with pipeline_end status=ok, AND
+      2) all four modules' final artifacts are present on disk.
+    In that case we skip the pipeline entirely, keeping run.jsonl + module logs
+    intact so the dashboard / replay export keep working against the old run.
+    """
+    pub_log_dir = LOGS_ROOT / pub
+    run_log = pub_log_dir / "run.jsonl"
+    if not run_log.exists():
+        return False
+
+    last_pipeline_end = None
+    for ev in iter_run_events(pub):
+        if ev.get("event") == "pipeline_end":
+            last_pipeline_end = ev
+    if not last_pipeline_end or last_pipeline_end.get("status") != "ok":
+        return False
+
+    out = DATA_OUTPUT / pub
+    required = (
+        "task_package.json",                  # module 1
+        "step5_top5_claim1_candidates.json",  # module 2
+        "top5_full_claim_chart.json",         # module 3
+        "report.md",                          # module 4
+    )
+    return all((out / name).is_file() for name in required)
+
+
 def _run_pipeline_locked(pub: str) -> None:
     pub_log_dir = LOGS_ROOT / pub
     pub_log_dir.mkdir(parents=True, exist_ok=True)
     run_log = pub_log_dir / "run.jsonl"
+
+    # Fully-cached short-circuit: previous successful run with all artifacts
+    # on disk → reuse everything, don't touch run.jsonl / module logs / outputs.
+    if _is_fully_cached(pub):
+        return
+
     # Truncate previous run.jsonl so the dashboard reflects only this run.
     run_log.write_text("", encoding="utf-8")
 
