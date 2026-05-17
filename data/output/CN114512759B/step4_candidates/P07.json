@@ -1,0 +1,219 @@
+{
+  "candidate": {
+    "candidate_id": "P07",
+    "company": "国轩高科股份有限公司",
+    "company_en": "Gotion High-Tech Co., Ltd.",
+    "product_name": "L600 Astroinno 启晨磷酸锰铁锂电芯",
+    "product_name_en": "L600 Astroinno Qichen LMFP cell",
+    "product_version": "国轩/ Gotion L600 Astroinno 启晨电芯采用磷酸锰铁锂（LMFP）体系，摘要称系统能量密度190Wh/kg、单体质量能量密度240Wh/kg、体积能量密度525Wh/L，常温循环4000圈，并支持18分钟快充。",
+    "market": "中国新能源乘用车动力电池，高续航/快充平台",
+    "reason_for_deep_dive": "该产品名称含L600，显示其可能为长度约600mm的长条形电芯，直接对应权1的长度范围；同时摘要公开体积能量密度、质量能量密度和循环/快充信息，后续重点补充硬壳方形形态、长宽厚及单体Wh，以核验C1-F4至C1-F7。",
+    "source_result_ids": [
+      "brave-Q04-01"
+    ],
+    "source_urls": [
+      "https://rfnets.com/blog/lion-brand-value?tmpl=component&print=1&layout=default"
+    ],
+    "initial_evidence_summary": "搜索摘要提到“Gotion L600 Astroinno”及“L600 LMFP 启晨电芯”，给出系统能量密度190Wh/kg、质量能量密度240Wh/kg、体积能量密度525Wh/L、常温循环4000圈、高温循环1800圈、18分钟快充等参数。"
+  },
+  "launch_date": "2023年5月19日发布，计划2024年开始量产",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+      "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+      "source_name": "ACN Newswire",
+      "snippet": "2023年5月22日发布稿称，5月19日国轩高科发布全新LMFP体系的L600启晨电芯及电池包；程骞介绍该LMFP启晨L600电芯计划2024年开始量产。"
+    },
+    {
+      "url": "https://36kr.com/newsflashes/2264419278053378",
+      "title": "国轩高科发布能量密度190Wh/kg磷酸锰铁锂电池，预计2024年量产",
+      "source_name": "36氪",
+      "snippet": "2023-05-19快讯称，国轩高科发布LMFP体系的L600启晨电芯及电池包，续航可达1000公里，预计在2024年量产。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开记录显示产品发布于2023年5月19日、计划2024年量产，晚于专利申请日2019-06-21；现有证据亦未出现与权利要求1明确矛盾的参数。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种单体电池",
+      "competitor_feature": "公开资料反复称该产品为“L600启晨电芯 / L600 Astroinno battery cell”，且另有电池包基于该电芯打造，属于单体电池层级产品。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "5月19日国轩高科发布全新LMFP体系的L600启晨电芯及电池包；文中称“启晨L600 LMFP电芯实现240Wh/kg...”"
+        },
+        {
+          "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+          "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+          "source_name": "每日经济新闻",
+          "snippet": "国轩高科在互动平台表示，L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah。"
+        }
+      ],
+      "reasoning": "ACN和每日经济新闻均直接把对象称为“电芯/cell”，并披露容量和能量密度，足以确认其为单体电池产品。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述单体电池为硬壳电池",
+      "competitor_feature": "现有证据只说明L600启晨为LMFP电芯、容量223Ah、能量密度240Wh/kg和525Wh/L；未直接披露该具体L600电芯为硬壳、铝壳、方形硬壳或软包/圆柱等外壳形态。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "文中披露L600 LMFP电芯的质量能量密度、体积能量密度、循环和快充，但未给出硬壳/铝壳表述。"
+        },
+        {
+          "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+          "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+          "source_name": "每日经济新闻",
+          "snippet": "披露L600启晨电芯容量223Ah和240Wh/kg能量密度，但未披露外壳结构。"
+        }
+      ],
+      "reasoning": "证据池未见针对L600启晨电芯的“硬壳”“铝壳”“prismatic hard case”等直接文字；不能仅由动力电芯或L600型号推定。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+      "competitor_feature": "未取得L600启晨电芯的三维尺寸。现有公开参数为容量223Ah、质量能量密度240Wh/kg、体积能量密度525Wh/L等，不能计算或验证L>H>D，也不能确认长方体形态。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "称“启晨L600 LMFP电芯实现240Wh/kg的质量能量密度，525Wh/L的体积能量密度...”，未列长宽厚。"
+        },
+        {
+          "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+          "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+          "source_name": "每日经济新闻",
+          "snippet": "披露电芯容量223Ah、240Wh/kg能量密度；未披露长、宽、厚。"
+        }
+      ],
+      "reasoning": "“L600”仅为型号/系列名称，证据中没有明示L、H、D数值或长方体/方形外观，无法验证三维关系。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+      "competitor_feature": "无法计算D/V：现有证据未给出厚度D，也未给出由长×宽×厚确定的电池本体体积V。虽然披露体积能量密度525Wh/L，但缺少单体能量E或尺寸体积，不能替代D/V计算。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "披露L600 LMFP电芯体积能量密度525Wh/L，但未披露厚度D或几何体积V。"
+        },
+        {
+          "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+          "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+          "source_name": "每日经济新闻",
+          "snippet": "披露容量223Ah和240Wh/kg，未披露厚度和体积。"
+        }
+      ],
+      "reasoning": "F4必须用D和V现场计算；证据仅有体积能量密度，且缺D及几何体积，不能严谨推导D/V是否落入范围。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+      "competitor_feature": "无法计算S/E：未披露L、H、D，故S=2(LH+LD+HD)不能计算；亦未直接给出单体能量E（Wh）。仅有容量223Ah、质量能量密度240Wh/kg、体积能量密度525Wh/L，缺少标称电压或尺寸。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+          "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+          "source_name": "每日经济新闻",
+          "snippet": "L600启晨电芯容量为223Ah，可以实现240Wh/kg的能量密度。"
+        },
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "启晨L600 LMFP电芯实现240Wh/kg质量能量密度、525Wh/L体积能量密度。"
+        }
+      ],
+      "reasoning": "S/E需要三维尺寸和Wh能量；现有223Ah不能在无标称电压下换算Wh，且无L/H/D，无法计算表面积。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+      "competitor_feature": "未取得公开资料明确写明“L=600mm”或其他长度数值。产品型号/名称含“L600”，但证据未说明该数字代表长度，不能据此确认L落入400~2500mm。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "多处称“L600 LMFP启晨电芯/启晨L600电芯”，但未解释L600为长度或给出mm尺寸。"
+        },
+        {
+          "url": "https://36kr.com/newsflashes/2264419278053378",
+          "title": "国轩高科发布能量密度190Wh/kg磷酸锰铁锂电池，预计2024年量产",
+          "source_name": "36氪",
+          "snippet": "称公司发布LMFP体系的L600启晨电芯及电池包，预计2024年量产；未列长度尺寸。"
+        }
+      ],
+      "reasoning": "权利要求要求长度数值范围。现有资料只出现型号L600，未明示电池本体长度，按严格标准不能认定。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F7",
+      "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+      "competitor_feature": "无法计算L/S：未披露长度L、宽度H、厚度D；因此S=2(LH+LD+HD)无法计算，L/S也无法与0.002~0.005mm⁻¹范围比较。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "披露L600 LMFP电芯能量密度、循环和快充信息，未披露长宽厚。"
+        },
+        {
+          "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+          "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+          "source_name": "每日经济新闻",
+          "snippet": "披露容量223Ah和能量密度，未披露尺寸。"
+        }
+      ],
+      "reasoning": "L/S是几何比例约束，必须有L/H/D计算S。证据池未提供任何可核验尺寸，无法计算。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 40.0,
+  "searched_queries": [
+    "国轩 L600 启晨 电芯 硬壳 铝壳 方形",
+    "国轩 L600 启晨 电芯 尺寸 长 宽 厚 223Ah",
+    "Gotion L600 Astroinno cell prismatic hard case aluminum can",
+    "Gotion High-Tech Co., Ltd. L600 Astroinno Qichen LMFP cell datasheet specifications"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

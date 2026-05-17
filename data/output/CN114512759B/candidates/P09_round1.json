@@ -1,0 +1,630 @@
+{
+  "candidate": {
+    "candidate_id": "P09",
+    "company": "昆宇电源",
+    "company_en": "Kunyu Power",
+    "product_name": "升级版305Ah 长薄短刀储能电芯",
+    "product_name_en": "upgraded 305Ah long-thin short-blade ESS cell",
+    "product_version": "昆宇电源升级版305Ah储能电芯由第一代305Ah演进而来，摘要称厚度变薄几乎一半、长度翻倍，形成“长薄”的短刀造型；昆宇电源年产能达12GWh，全球已投运储能项目4GWh。",
+    "market": "中国储能电芯/储能项目",
+    "reason_for_deep_dive": "该产品虽未在摘要中给出完整数值尺寸，但已明确为305Ah单体电芯并采用长度翻倍、厚度减半的长薄短刀形态，极可能触及权1中L=400–2500mm及D/V、L/S比例的设计区间；适合下游优先检索规格书或客户测试报告。",
+    "source_result_ids": [
+      "brave-Q02-05",
+      "tavily-Q20-02"
+    ],
+    "source_urls": [
+      "https://www.chu21.com/html/chunengy-23640.shtml",
+      "https://m.cehome.com/news/20250216/324835.shtml"
+    ],
+    "initial_evidence_summary": "搜索摘要称昆宇电源第一代305Ah电芯尺寸同71173，升级版305Ah厚度变薄几乎一半、长度翻倍，形成长薄短刀造型；同一摘要还提到昆宇电源年产能12GWh、全球已投运储能项目4GWh。"
+  },
+  "launch_date": "2023年5月已被行业媒体公开收录；未见更早量产/交付具体日期",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.escn.com.cn/news/show-1582883.html",
+      "title": "超20款300Ah+储能电芯出击",
+      "source_name": "中国储能网",
+      "snippet": "发布时间：2023-05-17；文中列出“昆宇电源 305Ah/升级版305Ah”，称第一代305Ah电芯尺寸同71173，升级版305Ah厚度变薄几乎一半、长度翻倍。"
+    },
+    {
+      "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+      "title": "越大越好？盘点市面上300Ah+储能电芯",
+      "source_name": "国际储能网",
+      "snippet": "日期：2023-05-25；文中列出“昆宇电源 305Ah/升级版305Ah”，描述升级版形成“长薄”的短刀造型。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未发现该升级版305Ah电芯早于专利申请日2019-06-21公开、量产或交付；现有公开收录时间为2023年5月，晚于申请日，且权利要求1无明确不满足特征。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，\n所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；\n所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；\n所述电池本体的长度L为400mm~2500mm；\n所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "公开资料将该产品称为“昆宇电源 305Ah/升级版305Ah”储能电芯，属于单体电池/电芯产品。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“昆宇电源 305Ah/升级版305Ah 第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20230628/77665.html",
+              "title": "18家企业300Ah+储能电芯盘点",
+              "source_name": "碳索储能网",
+              "snippet": "“昆宇电源 305Ah/升级版305Ah 第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半……”"
+            }
+          ],
+          "reasoning": "两家行业媒体均以“305Ah/升级版305Ah电芯”描述该对象，直接对应单体电池而非系统或电池包。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "昆宇官网对“储能大电芯/方形铁锂电芯”说明为“方形铝壳结构”；36氪报道昆宇电芯采用“方形铝壳加叠片式工艺”。升级版305Ah属于昆宇储能大电芯，但公开资料未逐字点名该型号为铝壳硬壳。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "“储能大电芯 优选叠片型……安全性高 方形铝壳结构 高精度防爆阀设计。”"
+            },
+            {
+              "url": "https://36kr.com/p/2155166028013568",
+              "title": "昆宇电源：突破锂电性能与应用边界",
+              "source_name": "36氪",
+              "snippet": "“采用方形铝壳加叠片式工艺设计的电芯更稳定、更安全、循环性能更佳。”"
+            }
+          ],
+          "reasoning": "官网和36氪直接证明昆宇储能方形电芯采用铝壳，铝壳通常为硬壳；但证据未对“升级版305Ah”逐型号标注，故为产品系列层面的合理推断。",
+          "suggested_followup_queries": [
+            "Cospowers upgraded 305Ah cell aluminum casing prismatic LFP",
+            "昆宇电源 升级版305Ah 储能电芯 铝壳 方形 产品认证",
+            "昆宇 305Ah 升级版 电芯 外观 顶盖 铝壳 图片"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "公开描述：第一代305Ah尺寸同71173，升级版305Ah“厚度变薄几乎一半、长度翻倍”，形成“长薄”的短刀造型；官网储能电芯为方形铁锂电芯。缺少该型号完整L/H/D数值。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            },
+            {
+              "url": "https://www.escn.com.cn/news/show-1582883.html",
+              "title": "超20款300Ah+储能电芯出击",
+              "source_name": "中国储能网",
+              "snippet": "“昆宇电源 305Ah/升级版305Ah 第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            },
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "“储能大电芯……方形铁锂电芯……方形铝壳结构。”"
+            }
+          ],
+          "reasoning": "“方形铁锂电芯”与“长薄短刀”支持长方体/扁长形态，且长度翻倍、厚度近半支持L>D；但H与D、L与H的逐项数值未公开。",
+          "suggested_followup_queries": [
+            "昆宇电源 升级版305Ah 71173 长薄短刀 外形尺寸 图",
+            "Cospowers 305Ah upgraded cell drawing dimensions 71173",
+            "昆宇电源 305Ah升级版 电芯 尺寸图 长宽厚"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "已知信息仅为“厚度变薄几乎一半、长度翻倍”和“尺寸同71173”的来源背景；未取得升级版305Ah的L、H、D原始数值，无法计算V=L×H×D及D/V。数学上D/V=D/(L×H×D)=1/(L×H)，至少需要L和H。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20230628/77665.html",
+              "title": "18家企业300Ah+储能电芯盘点",
+              "source_name": "碳索储能网",
+              "snippet": "同样描述升级版305Ah“厚度变薄几乎一半、长度翻倍”，但未给出三维尺寸。"
+            }
+          ],
+          "reasoning": "该比例必须现场计算。当前没有升级版305Ah的L、H、D，无法得出V=L×H×D，也无法验证D/V是否落入0.0000065~0.00002 mm^-2。",
+          "suggested_followup_queries": [
+            "昆宇 第一代305Ah 71173 电芯 尺寸 71 173 升级版 长度翻倍 厚度减半",
+            "昆宇电源 升级版305Ah 电芯 体积 长宽高",
+            "Cospowers 305Ah upgraded ESS cell size 71 173 400"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "容量公开为305Ah；按磷酸铁锂常见标称3.2V可估E≈976Wh，但该候选的标称电压、额定能量以及L/H/D未在现有证据中公开，无法计算S=2(LH+LD+HD)，也无法得出S/E。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "列出“昆宇电源 305Ah/升级版305Ah”，但未列能量和三维尺寸。"
+            },
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "官网说明昆宇储能大电芯为方形铁锂电芯，但页面未给出升级版305Ah规格参数。"
+            }
+          ],
+          "reasoning": "S/E必须由三维尺寸和能量计算。现有证据仅可识别305Ah容量和产品类别，缺少L/H/D和型号级额定能量，不能完成S=2(LH+LD+HD)计算。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 标称电压 3.2V 能量Wh 尺寸",
+            "Cospowers upgraded 305Ah nominal voltage energy Wh dimensions",
+            "昆宇电源 305Ah 升级版 储能电芯 参数表 标称电压 尺寸"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "公开报道仅称升级版305Ah相对第一代“长度翻倍”，且第一代尺寸同71173；未直接披露升级版305Ah长度L的毫米数，无法验证L是否落入400~2500mm。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.escn.com.cn/news/show-1582883.html",
+              "title": "超20款300Ah+储能电芯出击",
+              "source_name": "中国储能网",
+              "snippet": "“第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20230628/77665.html",
+              "title": "18家企业300Ah+储能电芯盘点",
+              "source_name": "碳索储能网",
+              "snippet": "“升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            }
+          ],
+          "reasoning": "“长度翻倍”表明方向性变化，但没有第一代长度或升级版L的毫米值；不能用无来源的行业常识替代数值证据。",
+          "suggested_followup_queries": [
+            "昆宇电源 升级版305Ah 短刀 长度翻倍 具体长度 mm",
+            "昆宇 305Ah 升级版 长薄 电芯 长度 400 500 600 mm",
+            "Cospowers upgraded 305Ah long blade cell length mm"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "未获得升级版305Ah的L、H、D；因此无法计算S=2(LH+LD+HD)，也无法计算L/S并与0.002~0.005mm⁻¹比较。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "仅描述“厚度变薄几乎一半、长度翻倍”，未给出L/H/D。"
+            },
+            {
+              "url": "https://www.cospowers.com/download/brochure.html",
+              "title": "下载中心-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "下载中心列有储能电芯/产品手册入口，但现有抓取内容未提供升级版305Ah电芯规格表。"
+            }
+          ],
+          "reasoning": "L/S需要L、H、D全部数值。现有公开页面没有升级版305Ah规格书或尺寸表，不能进行现场计算。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 电芯 长宽厚 表面积 305Ah",
+            "Cospowers 305Ah upgraded cell mechanical dimensions L W T",
+            "昆宇电源 升级版305Ah CAD 图纸 长宽厚"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 54.29
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述单体电池，其特征在于，所述电池本体的长度L与所述电池本体的能量E满足：L/E=0.8 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1 。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的能量E满足：L/E=0.8 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1",
+          "competitor_feature": "现有证据仅公开“305Ah/升级版305Ah”以及长度翻倍的相对描述；没有升级版305Ah的长度L、标称电压或额定能量E，无法计算L/E。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "列出“昆宇电源 305Ah/升级版305Ah”，描述“厚度变薄几乎一半、长度翻倍”，但未给出长度和能量。"
+            },
+            {
+              "url": "https://www.cospowers.com/download/brochure.html",
+              "title": "下载中心-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "下载中心列有储能电芯/产品手册入口，但现有抓取内容未提供升级版305Ah电芯规格表。"
+            }
+          ],
+          "reasoning": "L/E是比例约束，必须由L和E现场计算；现有证据缺少两个关键参数。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 电芯 长度 能量Wh L/E 参数"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求2所述单体电池，其特征在于，所述电池本体的长度L与所述电池本体的能量E满足：L/E=1.65 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1 。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的能量E满足：L/E=1.65 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1",
+          "competitor_feature": "未取得升级版305Ah的长度L和额定能量E，无法计算L/E是否处于1.65~2.45 mm·Wh^-1。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.escn.com.cn/news/show-1582883.html",
+              "title": "超20款300Ah+储能电芯出击",
+              "source_name": "中国储能网",
+              "snippet": "“升级版305Ah厚度变薄几乎一半，而长度翻倍”，但未列长度、能量。"
+            }
+          ],
+          "reasoning": "该从属权利要求相较权2进一步收窄L/E范围；当前仍缺少L和E的型号级数值，不能计算。",
+          "suggested_followup_queries": [
+            "Cospowers upgraded 305Ah length energy Wh ratio specifications"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1~3中任一项所述单体电池，其特征在于，所述电池本体的长度L为400mm~1500mm。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述电池本体的长度L为400mm~1500mm",
+          "competitor_feature": "公开报道仅给出“长度翻倍”的相对描述，未给出升级版305Ah的长度毫米值，因此不能确认其长度是否处于400~1500mm。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            }
+          ],
+          "reasoning": "权4要求较权1的400~2500mm进一步限定为400~1500mm。没有L的具体数值，无法判断。",
+          "suggested_followup_queries": [
+            "昆宇 305Ah 升级版 长度是否小于1500mm 尺寸图"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求1~3中任一项的所述单体电池，其特征在于，所述电池本体的长度方向和厚度方向沿水平方向延伸，所述电池本体的宽度方向沿竖直方向延伸。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述电池本体的长度方向和厚度方向沿水平方向延伸，所述电池本体的宽度方向沿竖直方向延伸",
+          "competitor_feature": "现有证据证明其为长薄短刀形电芯，但未给出该电芯在电池包/模组中的装配姿态，无法确认长度方向和厚度方向是否水平、宽度方向是否竖直。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            }
+          ],
+          "reasoning": "该特征不是单纯外形尺寸，而是安装/使用姿态；现有行业盘点和官网页面没有PACK内部布局、模组装配图或安装方向说明。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 短刀 电芯 PACK 横置 安装方向 宽度方向 竖直"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1~3中任一项所述的单体电池，其特征在于，还包括：\n第一极耳，所述第一极耳设于所述电池本体的长度方向上的一端；\n第二极耳，所述第二极耳设于所述电池本体的长度方向上的另一端。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "还包括：第一极耳，所述第一极耳设于所述电池本体的长度方向上的一端",
+          "competitor_feature": "现有证据未公开升级版305Ah电芯的正极极耳/极柱位置；无法确认第一极耳是否设在长度方向一端。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "官网说明储能大电芯为方形铝壳结构、高精度防爆阀设计，但未给出升级版305Ah顶盖、极耳或极柱布置图。"
+            }
+          ],
+          "reasoning": "该特征需要外观图、顶盖结构图、规格书端子布局图或拆解图；现有文本仅说明电芯类型和壳体材料。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 短刀 电芯 正极极耳 极柱 长度方向 一端 外观"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C6-F2",
+          "patent_feature": "第二极耳，所述第二极耳设于所述电池本体的长度方向上的另一端",
+          "competitor_feature": "现有证据未公开升级版305Ah电芯的负极极耳/极柱位置；无法确认第二极耳是否设在长度方向另一端。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "官网说明储能大电芯为方形铝壳结构、高精度防爆阀设计，但未给出升级版305Ah顶盖、极耳或极柱布置图。"
+            }
+          ],
+          "reasoning": "需要看到正负极耳/极柱分布在电芯长度方向两端的直接图示或规格说明；目前证据没有端子位置。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 短刀 电芯 负极极耳 极柱 长度方向 另一端 外观"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1~3中任一项所述的单体电池，其特征在于，所述单体电池为铝壳方形电池且所述单体电池还包括防爆阀，所述防爆阀设于所述电池本体的长度方向上的至少一端。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述单体电池为铝壳方形电池",
+          "competitor_feature": "昆宇官网将储能大电芯描述为“方形铝壳结构”，36氪报道昆宇电芯采用“方形铝壳加叠片式工艺”。升级版305Ah是昆宇储能大电芯产品线，但现有证据未逐型号标注。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "“储能大电芯 优选叠片型……安全性高 方形铝壳结构 高精度防爆阀设计。”"
+            },
+            {
+              "url": "https://36kr.com/p/2155166028013568",
+              "title": "昆宇电源：突破锂电性能与应用边界",
+              "source_name": "36氪",
+              "snippet": "“采用方形铝壳加叠片式工艺设计的电芯更稳定、更安全、循环性能更佳。”"
+            }
+          ],
+          "reasoning": "证据能证明昆宇储能方形电芯系列采用铝壳方形结构；由于升级版305Ah未在该官网片段中被单独列名，保守判为可能满足。",
+          "suggested_followup_queries": [
+            "Cospowers upgraded 305Ah aluminum shell prismatic cell product sheet"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C7-F2",
+          "patent_feature": "所述单体电池还包括防爆阀，所述防爆阀设于所述电池本体的长度方向上的至少一端",
+          "competitor_feature": "昆宇官网储能大电芯页面提到“高精度防爆阀设计”，但未公开升级版305Ah防爆阀的具体位置，不能确认其是否设于长度方向至少一端。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "“储能大电芯 优选叠片型……安全性高 方形铝壳结构 高精度防爆阀设计。”"
+            }
+          ],
+          "reasoning": "证据可提示昆宇储能电芯具备防爆阀设计，但该权利要求还限定防爆阀位于长度方向端部；现有页面没有顶盖/端部结构图。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 电芯 防爆阀 位置 长度方向 端部 图片"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 55.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7中所述的单体电池，其特征在于，所述电池本体的长度方向上的两端分别设有防爆阀。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述电池本体的长度方向上的两端分别设有防爆阀",
+          "competitor_feature": "现有证据仅有昆宇储能大电芯“高精度防爆阀设计”的系列描述，没有升级版305Ah两端均设防爆阀的图片或文字说明。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "“储能大电芯……方形铝壳结构 高精度防爆阀设计。”"
+            }
+          ],
+          "reasoning": "权8比权7更窄，要求长度方向两端分别设防爆阀；当前证据无法确认防爆阀数量和位置。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 短刀 电芯 两端 防爆阀 外观图"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求1~3中任一项所述的单体电池，其特征在于，所述电池本体的长度L与宽度H满足：L/H=7~20。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "所述电池本体的长度L与宽度H满足：L/H=7~20",
+          "competitor_feature": "现有证据称升级版305Ah“长度翻倍、厚度变薄几乎一半”，形成长薄短刀造型，但没有L和H数值，无法计算L/H。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.escn.com.cn/news/show-1582883.html",
+              "title": "超20款300Ah+储能电芯出击",
+              "source_name": "中国储能网",
+              "snippet": "“第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            },
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            }
+          ],
+          "reasoning": "L/H为明确数值比例，必须由长度L和宽度H计算；现有文本只提供相对变化，不足以验证7~20范围。",
+          "suggested_followup_queries": [
+            "昆宇 升级版305Ah 电芯 长度 宽度 L/H 比 尺寸参数"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种动力电池包，其特征在于，包括：\n包体；\n多个根据权利要求1~9中任一项所述的单体电池，所述多个单体电池设于所述包体内。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "一种动力电池包",
+          "competitor_feature": "本候选对象被公开资料称为“305Ah/升级版305Ah电芯”，即单体电池产品；现有候选并非动力电池包产品。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“昆宇电源 305Ah/升级版305Ah 第一代305Ah电芯……”"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20230628/77665.html",
+              "title": "18家企业300Ah+储能电芯盘点",
+              "source_name": "碳索储能网",
+              "snippet": "将对象列为300Ah+储能“电芯”盘点中的“昆宇电源 305Ah/升级版305Ah”。"
+            }
+          ],
+          "reasoning": "权10保护客体为动力电池包；当前候选是单体储能电芯，而非包级产品。该从属/独立产品形态不满足不影响权1侵权判断。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F2",
+          "patent_feature": "包括：包体",
+          "competitor_feature": "作为电芯产品，公开证据未显示其自身包括电池包的包体结构。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "候选被称为“升级版305Ah电芯”，未描述为包含包体的电池包。"
+            }
+          ],
+          "reasoning": "包体是电池包层级结构；单体电芯本身不具备包体。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F3",
+          "patent_feature": "多个单体电池，所述多个单体电池设于所述包体内",
+          "competitor_feature": "候选为单体电芯型号，公开资料没有显示其为包含多个单体电池并置于包体内的动力电池包。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.escn.com.cn/news/show-1582883.html",
+              "title": "超20款300Ah+储能电芯出击",
+              "source_name": "中国储能网",
+              "snippet": "文章按储能电芯列出“昆宇电源 305Ah/升级版305Ah”，并描述电芯尺寸变化。"
+            }
+          ],
+          "reasoning": "“多个单体电池设于包体内”属于包级结构；候选资料仅对应单体电芯。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 0.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.一种电动车，其特征在于，所述电动车包括权利要求10所述的动力电池包。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "一种电动车，包括：动力电池包",
+          "competitor_feature": "本候选对象是昆宇电源升级版305Ah储能电芯，公开资料未将其描述为电动车整车，也未显示其为包括动力电池包的电动车产品。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "对象被列在300Ah+储能电芯盘点中，称为“昆宇电源 305Ah/升级版305Ah”。"
+            },
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "官网页面为“方形铁锂电芯/储能大电芯”介绍，并非电动车整车产品页。"
+            }
+          ],
+          "reasoning": "权11保护客体为电动车；候选是储能电芯。没有证据表明该候选本身是整车或整车产品。该不满足不影响权1单体电池判断。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 0.0
+    }
+  ],
+  "claim_1_score": 54.29,
+  "total_score": 54.29,
+  "searched_queries": [
+    "昆宇电源 升级版305Ah 短刀 储能电芯 铝壳 硬壳 叠片",
+    "昆宇电源 升级版305Ah 长薄短刀 储能电芯 尺寸 厚度 长度 宽度 规格书",
+    "昆宇电源 升级版305Ah 电芯 规格书 PDF L H D",
+    "昆宇电源 305Ah 升级版 储能电芯 长度 mm 参数",
+    "Kunyu Power upgraded 305Ah long-thin short-blade ESS cell datasheet specifications"
+  ],
+  "searched_providers": [
+    "tavily",
+    "brave"
+  ]
+}

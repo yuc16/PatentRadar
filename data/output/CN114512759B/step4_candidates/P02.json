@@ -1,0 +1,253 @@
+{
+  "candidate": {
+    "candidate_id": "P02",
+    "company": "蜂巢能源科技股份有限公司",
+    "company_en": "SVOLT Energy Technology Co., Ltd.",
+    "product_name": "L600 184Ah 第一代磷酸铁锂短刀电芯",
+    "product_name_en": "L600 184Ah first-generation LFP short blade cell",
+    "product_version": "第一代 L600 短刀片磷酸铁锂电芯，后续报道称第二代196Ah与上一代规格相同、容量由184Ah提升至196Ah；公开英文资料也提到第一代容量为184Ah。该产品已在常州金坛工厂量产下线，并有整车测试/配套信息。",
+    "market": "中国乘用车动力电池，短刀电芯/LCTP方案",
+    "reason_for_deep_dive": "若第一代184Ah沿用L600短刀尺寸，则其长度同样落入权利要求1的400–2500mm区间，属于长方体薄型方壳单体；与196Ah版本相比能量约588.8Wh，S/E、D/V、L/S仍需通过规格书核算，尤其适合核查C1-F4至C1-F7。",
+    "source_result_ids": [
+      "exa-Q07-01",
+      "bocha-Q06-05",
+      "tavily-Q10-03",
+      "brave-Q05-04"
+    ],
+    "source_urls": [
+      "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+      "https://libattery.ofweek.com/recommendfriends-30536371.html",
+      "http://www.cbea.com/djgc/202212/896581.html",
+      "https://libattery.ofweek.com/2022-09/ART-36008-8120-30573395.html"
+    ],
+    "initial_evidence_summary": "exa-Q07-01摘要说明第二代L600容量196Ah、第一代为184Ah；中文摘要说明第二代规格与第一代相同，并提到第一代L600短刀片磷酸铁锂电芯在常州金坛工厂量产下线；电池中国摘要提到搭载184Ah L600磷酸铁锂短刀电芯的整车安全测试。"
+  },
+  "launch_date": "2019年4月上海车展首次展示L600短刀片磷酸铁锂电芯；2021年10月底第一代L600量产下线",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.escn.com.cn/news/show-1278961.html",
+      "title": "中国储能网 - 产业观察 - 蜂巢能源L600短刀片磷酸铁锂电池量产下线",
+      "source_name": "中国储能网/高工锂电",
+      "snippet": "早在2019年4月的上海国际车展上，蜂巢能源在业内首次亮相就展示了内部代号为“L600”的短刀片磷酸铁锂电芯；10月29日，江苏常州，蜂巢能源L600短刀片磷酸铁锂电芯在其金坛工厂量产下线。"
+    },
+    {
+      "url": "https://www.ithome.com/0/587/804.htm",
+      "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+      "source_name": "IT之家",
+      "snippet": "2021年11月19日消息：继10月底宣布第一代L600短刀片磷酸铁锂电芯在常州金坛工厂量产下线之后，第二代产品已经完成开发，预计将在2022年第三季度实现量产。"
+    }
+  ],
+  "disqualified": true,
+  "disqualification_reason": "公开资料称L600短刀片磷酸铁锂电芯已于2019年4月上海车展展示，早于本专利申请日2019-06-21；虽第一代量产下线在2021年10月底，但按首次公开/发布口径该候选失格。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种单体电池",
+      "competitor_feature": "SVOLT L600 184Ah为LiFePO4 Blade Battery Cell/电芯；PDF项目代码为CB0MHW3NA-184Ah，目录包含Cell Performance。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+          "title": "SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+          "source_name": "Battery Finds / SVOLT PDF",
+          "snippet": "蜂巢能源科技有限公司设计文件；产品标准；项目代码Project code：CB0MHW3NA-184Ah；目录列出Cell Performance。"
+        },
+        {
+          "url": "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
+          "title": "Svolt 184Ah LiFePO4 Blade Battery Cells",
+          "source_name": "Battery Finds",
+          "snippet": "标题为“Svolt 184Ah LiFePO4 Blade Battery Cells”，对应184Ah磷酸铁锂刀片电芯。"
+        }
+      ],
+      "reasoning": "PDF和产品页均以“Cell/电芯”描述184Ah LFP Blade产品，能够直接证明其为单体电池。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述单体电池为硬壳电池",
+      "competitor_feature": "公开资料称L600为long prismatic/短刀片电芯；但现有证据未直接出现“硬壳”“铝壳”“metal case”等字样。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+          "title": "SVOLT unveils its second-generation L600 short blade battery",
+          "source_name": "PushEVs",
+          "snippet": "SVOLT introduced its own long prismatic cobalt-free battery cells; prototype of the second generation SVOLT L600 short blade battery cell... first generation was 184 Ah."
+        },
+        {
+          "url": "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
+          "title": "Svolt 184Ah LiFePO4 Blade Battery Cells",
+          "source_name": "Battery Finds",
+          "snippet": "页面摘要称Battery Finds offers LiFePO4 prismatic cells，产品为SVOLT 184Ah LiFePO4 Blade Battery Cells。"
+        }
+      ],
+      "reasoning": "“prismatic/方形”刀片电芯通常对应硬壳方形电芯，但现有URL未直接给出壳体材料或硬壳描述，故仅作一阶推定。",
+      "suggested_followup_queries": [
+        "SVOLT L600 184Ah prismatic cell aluminum case hard shell",
+        "蜂巢 L600 184Ah 短刀 电芯 铝壳 硬壳 结构"
+      ],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+      "competitor_feature": "证据显示为long prismatic/短刀片电芯，长度公开为600mm，另有文章称实际长度574mm；但当前证据未给出宽度H和厚度D，无法字面验证L>H>D。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+          "source_name": "IT之家",
+          "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah。"
+        },
+        {
+          "url": "https://www.ednchina.com/technews/13117.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片成趋势",
+          "source_name": "EDN电子技术设计",
+          "snippet": "根据作者看到的数据，L600的实际长度是574mm，比600小一点点。"
+        },
+        {
+          "url": "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+          "title": "SVOLT unveils its second-generation L600 short blade battery",
+          "source_name": "PushEVs",
+          "snippet": "SVOLT L600 is described as a long prismatic cobalt-free battery cell; first generation was 184 Ah."
+        }
+      ],
+      "reasoning": "“long prismatic/短刀片”支持长方体薄型电芯推定，且长度有直接证据；但H、D缺失，不能明确计算或确认H>D。",
+      "suggested_followup_queries": [
+        "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+        "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+      ],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+      "competitor_feature": "现有证据仅有L≈600mm/574mm、184Ah容量线索；未取得H、D。V=L×H×D无法计算，因此D/V无法现场核算。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+          "source_name": "IT之家",
+          "snippet": "二代L600规格与上一代相同，长度600mm；单体容量提升至196Ah，体积能量密度超过430Wh/L。"
+        },
+        {
+          "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+          "title": "SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+          "source_name": "Battery Finds / SVOLT PDF",
+          "snippet": "PDF封面显示项目代码CB0MHW3NA-184Ah，但当前抓取页仅含封面和目录，未抓到尺寸表。"
+        }
+      ],
+      "reasoning": "D/V必须有厚度D和体积V；现有页面未给H、D，且184Ah规格书关键参数页未抓取到，不能计算比例。",
+      "suggested_followup_queries": [
+        "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+        "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+      ],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+      "competitor_feature": "可由184Ah×3.2V估算E≈588.8Wh；但H、D缺失，S=2(LH+LD+HD)无法计算，故S/E无法核算。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+          "title": "SVOLT unveils its second-generation L600 short blade battery",
+          "source_name": "PushEVs",
+          "snippet": "Model L600 second gen: Capacity 196Ah; Voltage 3.2V; Energy 627.2Wh; first generation was 184Ah."
+        },
+        {
+          "url": "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
+          "title": "Svolt 184Ah LiFePO4 Blade Battery Cells",
+          "source_name": "Battery Finds",
+          "snippet": "产品为SVOLT 184Ah LiFePO4 Blade Battery Cells，LiFePO4 cells have a cell voltage of 3.2V。"
+        }
+      ],
+      "reasoning": "能量可按184Ah×3.2V≈588.8Wh估算，但权利要求比例还需表面积S；缺少H、D导致S无法计算。",
+      "suggested_followup_queries": [
+        "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+        "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+      ],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+      "competitor_feature": "IT之家/OFweek称L600二代与第一代规格相同、长度600mm；EDN文章称实际长度574mm。无论取600mm或574mm，均处于400–2500mm范围内。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+          "source_name": "IT之家",
+          "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm。"
+        },
+        {
+          "url": "https://libattery.ofweek.com/2021-11/ART-36001-8460-30536087.html",
+          "title": "蜂巢能源短刀片磷酸铁锂电池明年三季度量产，能量密度超185wh/kg",
+          "source_name": "OFweek锂电网",
+          "snippet": "蜂巢能源第二代短刀片磷酸铁锂电芯规格与第一代相同，但单体容量提升至196Ah。"
+        },
+        {
+          "url": "https://www.ednchina.com/technews/13117.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片成趋势",
+          "source_name": "EDN电子技术设计",
+          "snippet": "L600的实际长度是574mm，比600小一点点。"
+        }
+      ],
+      "reasoning": "至少IT之家给出长度600mm且说明二代与第一代规格相同；EDN给出实际574mm，两者均落入400–2500mm。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F7",
+      "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+      "competitor_feature": "已知L≈600mm或574mm；但H、D缺失，S=2(LH+LD+HD)无法计算，因此L/S无法核算。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+          "source_name": "IT之家",
+          "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm。"
+        },
+        {
+          "url": "https://www.ednchina.com/technews/13117.html",
+          "title": "蜂巢能源L600短刀片电池量产了？电芯薄片成趋势",
+          "source_name": "EDN电子技术设计",
+          "snippet": "L600的实际长度是574mm，比600小一点点。"
+        }
+      ],
+      "reasoning": "L有直接证据，但L/S需三维尺寸计算表面积；现有证据池未给宽度H和厚度D，无法得出S及L/S。",
+      "suggested_followup_queries": [
+        "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+        "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+      ],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 0.0,
+  "searched_queries": [
+    "蜂巢能源 L600 184Ah 第一代 短刀片 磷酸铁锂 电芯 量产 下线 规格",
+    "SVOLT 184Ah LiFePO4 Blade Cells Specification",
+    "蜂巢能源 L600 第二代 规格与第一代相同 长度600mm 196Ah",
+    "SVOLT L600 184Ah first generation LFP short blade cell site:batteryfinds.com",
+    "蜂巢能源 L600短刀 2019上海车展 展示"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

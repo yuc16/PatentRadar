@@ -1,0 +1,862 @@
+{
+  "publication_no": "CN114512759B",
+  "claim_1_summary": "权利要求1限定一种长条形硬壳单体电池：电池本体为长方体，长度L大于宽度H且宽度H大于厚度D；长度L为400mm~2500mm；并通过D/V、S/E、L/S等关系限定薄型化、大尺寸方形/刀片类电芯的几何尺寸、表面积与能量匹配。",
+  "applicant_self_signals": {
+    "domains": [
+      "byd.com",
+      "bydglobal.com",
+      "bydauto.com.cn",
+      "bydautomotive.com",
+      "bydelectronics.com",
+      "byd-electronics.com",
+      "bydenergy.com",
+      "bydbatterybox.com",
+      "fdb.com.cn",
+      "fdoi.com",
+      "fin-dreams.com",
+      "fdbattery.com",
+      "fdbatt.com"
+    ],
+    "aliases": [
+      "比亚迪",
+      "比亚迪股份有限公司",
+      "比亚迪股份",
+      "比亚迪汽车",
+      "深圳比亚迪",
+      "BYD",
+      "BYD Co Ltd",
+      "BYD Company Limited",
+      "BYD Company",
+      "BYD Auto",
+      "BYD Motors",
+      "Build Your Dreams",
+      "弗迪",
+      "弗迪电池",
+      "弗迪动力",
+      "弗迪科技",
+      "弗迪实业",
+      "弗迪精工",
+      "弗迪视觉",
+      "FinDreams",
+      "FinDreams Battery",
+      "FinDreams Powertrain",
+      "Fudi",
+      "Fudi Battery",
+      "Fudi Power",
+      "比亚迪刀片电池",
+      "BYD Blade Battery"
+    ]
+  },
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "长条方壳电芯 长宽厚 容量Wh 规格书",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "query": "长薄型硬壳电芯 表面积 能量 长宽厚",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F7"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "query": "方形铝壳电芯 长度400mm 厚度 容量",
+      "intent": "claim_feature",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "query": "刀片电池 电芯 长宽厚 容量 参数表",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "query": "短刀电池 L600 196Ah 长宽厚 规格",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "query": "蜂巢能源 L600 196Ah 短刀 规格书 PDF",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "query": "SVOLT L600 196Ah blade cell datasheet dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "query": "蜂巢能源 L500 短刀 电芯 尺寸 量产",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "query": "SVOLT L500 short blade cell dimensions launch",
+      "intent": "launch_date",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "query": "蜂巢能源 龙鳞甲 短刀电芯 拆解",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q11",
+      "query": "SVOLT short blade battery cell teardown dimensions",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q12",
+      "query": "宁德时代 神行超充 方形电芯 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q13",
+      "query": "CATL Shenxing prismatic cell spec sheet PDF",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q14",
+      "query": "宁德时代 麒麟电池 电芯 尺寸 拆解",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q15",
+      "query": "CATL Qilin battery prismatic cell teardown",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q16",
+      "query": "中创新航 OS电池 长薄电芯 参数",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q17",
+      "query": "CALB One-Stop battery prismatic cell dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q18",
+      "query": "中创新航 L221N 221Ah 电芯 尺寸",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q19",
+      "query": "CALB L221N 221Ah cell datasheet dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q20",
+      "query": "国轩高科 问顶电池 方形电芯 尺寸",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q21",
+      "query": "Gotion prismatic LFP cell datasheet PDF dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q22",
+      "query": "瑞浦兰钧 问顶 320Ah 电芯 尺寸",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q23",
+      "query": "REPT Wending 320Ah prismatic cell datasheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q24",
+      "query": "瑞浦兰钧 158Ah 动力电芯 长宽厚",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q25",
+      "query": "REPT 158Ah EV prismatic cell dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q26",
+      "query": "亿纬锂能 LF560K 560Ah 长宽厚 规格书",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q27",
+      "query": "EVE LF560K 560Ah prismatic cell datasheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q28",
+      "query": "亿纬锂能 MB56 628Ah 方形电芯 尺寸",
+      "intent": "specification",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q29",
+      "query": "EVE MB56 628Ah prismatic cell datasheet",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q30",
+      "query": "欣旺达 SFC480 闪充电池 电芯尺寸",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q31",
+      "query": "Sunwoda SFC480 battery cell dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q32",
+      "query": "远景动力 方形电芯 长薄 尺寸 参数",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q33",
+      "query": "AESC prismatic EV cell datasheet dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q34",
+      "query": "孚能科技 SPS 电池 电芯尺寸 参数",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q35",
+      "query": "Farasis SPS battery cell dimensions review",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F1",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q36",
+      "query": "LG新能源 方形电芯 中国 动力电池 规格",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q37",
+      "query": "LG Energy Solution prismatic cell China dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q38",
+      "query": "Samsung SDI prismatic battery cell datasheet dimensions",
+      "intent": "specification",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q39",
+      "query": "SK On 方形电芯 中国 电动车 规格",
+      "intent": "industry_company",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "tavily",
+        "brave",
+        "bocha"
+      ]
+    },
+    {
+      "query_id": "Q40",
+      "query": "SK On prismatic EV cell dimensions China",
+      "intent": "industry_company",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "exa",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q41",
+      "query": "短刀电池 第三方评测 长宽厚 能量密度",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q42",
+      "query": "blade battery competitor review prismatic cell dimensions",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q43",
+      "query": "方形铝壳电芯 拆解 长宽厚 容量",
+      "intent": "evidence",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "bocha",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q44",
+      "query": "prismatic LFP cell teardown dimensions capacity",
+      "intent": "evidence",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F4",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q45",
+      "query": "蜂巢能源 短刀电芯 量产时间 196Ah",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q46",
+      "query": "中创新航 OS电池 量产时间 长薄电芯",
+      "intent": "launch_date",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave"
+      ]
+    },
+    {
+      "query_id": "Q47",
+      "query": "中国 短刀片电池 厂商 车型 量产",
+      "intent": "market_name",
+      "language": "zh",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "bocha",
+        "brave",
+        "tavily"
+      ]
+    },
+    {
+      "query_id": "Q48",
+      "query": "China short blade battery EV launch",
+      "intent": "launch_date",
+      "language": "en",
+      "target_feature_ids": [
+        "C1-F2",
+        "C1-F3",
+        "C1-F5",
+        "C1-F6"
+      ],
+      "preferred_providers": [
+        "brave",
+        "tavily"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "candidate": {
+    "candidate_id": "P06",
+    "company": "蜂巢能源科技股份有限公司",
+    "company_en": "SVOLT Energy Technology Co., Ltd.",
+    "product_name": "L600 168Ah 家庭储能专用短刀电芯",
+    "product_name_en": "L600 168Ah residential ESS short-blade cell",
+    "product_version": "蜂巢能源储能专用短刀电芯系列中的L600型168Ah家庭储能专用电芯，定位户用储能。其与L600短刀平台关联，适合进一步检索尺寸与规格书。",
+    "market": "中国家庭储能/户用储能电芯",
+    "reason_for_deep_dive": "该产品为具体L600型单体电芯，长度信号约600mm且容量168Ah；权1重点在长方体硬壳单体、L范围及D/V、S/E、L/S比例，后续若取得完整长宽厚和能量参数即可快速核算。",
+    "source_result_ids": [
+      "bocha-Q06-02"
+    ],
+    "source_urls": [
+      "https://chuneng.ofweek.com/recommendfriends-30597968.html"
+    ],
+    "initial_evidence_summary": "搜索摘要列明蜂巢能源储能短刀电池系列包括“L600型168Ah家庭储能专用电芯”。现有摘要提供型号、容量和应用场景，但未给出完整长宽厚，需下游补证。"
+  },
+  "launch_date": "2023年5月24日发布；公开报道称2023年下半年实现量产交付",
+  "launch_date_evidence": [
+    {
+      "url": "https://chuneng.ofweek.com/recommendfriends-30597968.html",
+      "title": "蜂巢能源储能电池全域短刀 极致安全赋能储能大时代",
+      "source_name": "OFweek储能网",
+      "snippet": "5月24日，在第十六届（2023）SNEC...蜂巢能源发布了储能专用场景的系列短刀电池，包括...L600型168Ah家庭储能专用电芯等系列产品。"
+    },
+    {
+      "url": "https://www.sohu.com/a/679088273_120988576",
+      "title": "蜂巢能源发布短刀全系储能电芯产品",
+      "source_name": "搜狐/上海证券报",
+      "snippet": "蜂巢能源此次发布的L500型325Ah、L600型124Ah和168Ah三款储能专用电芯...该款电芯将于2023年下半年实现量产交付。"
+    },
+    {
+      "url": "https://www.tmtpost.com/nictation/6543576.html?rss=souhu",
+      "title": "蜂巢能源发布短刀全系储能电芯产品",
+      "source_name": "钛媒体/科创板日报",
+      "snippet": "2023.05.24...蜂巢能源发布了应用于电力、工商业和家庭三大场景的短刀全系储能电芯及产品。其中包括...L600型168Ah家庭储能专用电芯。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开发布及量产交付时间均晚于专利申请日2019-06-21；未发现公开证据直接显示任一技术特征明确不满足。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种单体电池",
+      "competitor_feature": "公开资料将该产品列为“L600型168Ah家庭储能专用电芯”，属于单体电池/电芯产品，而非仅系统或电池包。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://chuneng.ofweek.com/recommendfriends-30597968.html",
+          "title": "蜂巢能源储能电池全域短刀 极致安全赋能储能大时代",
+          "source_name": "OFweek储能网",
+          "snippet": "蜂巢能源发布了储能专用场景的系列短刀电池，包括L500型325Ah电力储能专用电芯、L600型124Ah工商业储能专用电芯、L600型168Ah家庭储能专用电芯等系列产品。"
+        },
+        {
+          "url": "https://www.sohu.com/a/679088273_120988576",
+          "title": "蜂巢能源发布短刀全系储能电芯产品",
+          "source_name": "搜狐/上海证券报",
+          "snippet": "另外两款L600型储能电芯，其中124Ah为应用于工商业储能的短刀电芯...168Ah是应用于家庭的储能短刀电芯。"
+        }
+      ],
+      "reasoning": "多个公开页面直接把168Ah产品称为“电芯/储能电芯”，可验证其为单体电池层级产品。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "所述单体电池为硬壳电池",
+      "competitor_feature": "证据显示该产品是蜂巢L600型短刀储能电芯；公开行业解读称蜂巢短刀/刀片电池本质为方型铝壳电芯。未检索到168Ah规格书直接写明“硬壳/铝壳”。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.sohu.com/a/679088273_120988576",
+          "title": "蜂巢能源发布短刀全系储能电芯产品",
+          "source_name": "搜狐/上海证券报",
+          "snippet": "蜂巢能源此次发布的L500型325Ah、L600型124Ah和168Ah三款储能专用电芯均基于蜂巢能源独特的短刀结构创新。"
+        },
+        {
+          "url": "https://zhuanlan.zhihu.com/p/484682347",
+          "title": "短刀不短，得之于手而应于心",
+          "source_name": "知乎专栏",
+          "snippet": "无论比亚迪刀片电池还是蜂巢短刀电池，它们的本质都是方型铝壳电芯的结构创新。"
+        },
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "短刀电池技术：基于叠片式的长薄电芯，采用LCTP的全新PACK方案。"
+        }
+      ],
+      "reasoning": "产品级证据确认其为蜂巢短刀电芯；另有公开资料说明蜂巢短刀电池属于方型铝壳电芯。方型铝壳通常为硬壳，但缺168Ah规格书直证，故为可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+      "competitor_feature": "公开资料称L600型168Ah为“短刀电芯”；蜂巢官网称短刀电池为“叠片式的长薄电芯”；展会图示中168Ah户用储能电芯呈长条扁平长方体外观。未取得该168Ah电芯的标称H、D数值。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://finance.sina.cn/2023-05-25/detail-imyuyvky2175492.d.html",
+          "title": "蜂巢能源发布短刀全系储能电芯产品",
+          "source_name": "新浪财经/中国能源报",
+          "snippet": "另外两款L600型储能电芯，其中124Ah为应用于工商业储能的短刀电芯...168Ah是应用于家庭的储能短刀电芯。"
+        },
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "短刀电池技术：基于叠片式的长薄电芯，采用LCTP的全新PACK方案。"
+        }
+      ],
+      "reasoning": "“长薄电芯”和产品图可支持长方体、L大于H且H大于D的外形推断；但缺少168Ah的尺寸表直接给出L/H/D，故不升为明确满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+      "competitor_feature": "现有证据未给出L600 168Ah电芯的完整L、H、D。若按长方体，V=L×H×D，D/V=D/(L×H×D)=1/(L×H)；目前仅能从L600命名推断长度约600mm，缺H，无法计算D/V。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://auto-time.36kr.com/p/1584947596659204",
+          "title": "续航1000公里、成本降低一半······是时候展示真正的电池技术了",
+          "source_name": "36氪汽车",
+          "snippet": "基于此，蜂巢能源开发了L600电芯。L代表Long cell, 600代表600mm左右的长度。"
+        },
+        {
+          "url": "https://m.xchuxing.com/article/40101",
+          "title": "蜂巢能源 L600 短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "新出行",
+          "snippet": "根据我看到的数据，L600 的实际长度是574mm，比600小一点点。"
+        },
+        {
+          "url": "https://www.sohu.com/a/679088273_120988576",
+          "title": "蜂巢能源发布短刀全系储能电芯产品",
+          "source_name": "搜狐/上海证券报",
+          "snippet": "168Ah是应用于家庭的储能短刀电芯；文章未给出该168Ah电芯宽度/高度和厚度尺寸。"
+        }
+      ],
+      "reasoning": "D/V对长方体等于1/(L×H)，必须有L和H。证据池只有L600长度线索，没有168Ah电芯H数据，无法现场核算是否落入区间。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+      "competitor_feature": "已知产品容量标识为168Ah且属于LFP短刀储能电芯，但证据池未给出168Ah电芯名义电压/标称能量，也未给出L、H、D。无法计算S=2(LH+LD+HD)，因此无法计算S/E。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://finance.sina.cn/2023-05-25/detail-imyuyvky2175492.d.html",
+          "title": "蜂巢能源发布短刀全系储能电芯产品",
+          "source_name": "新浪财经/中国能源报",
+          "snippet": "在展会现场，蜂巢能源发布了L500型325Ah、L600型124Ah和168Ah三款储能专用电芯。"
+        },
+        {
+          "url": "https://www.svolt.cn/innovation/innovations/cell",
+          "title": "电芯创新-蜂巢能源官方网站",
+          "source_name": "蜂巢能源官网",
+          "snippet": "短刀电池技术：基于叠片式的长薄电芯；官网页面未列出该168Ah户用储能电芯的尺寸和能量规格。"
+        }
+      ],
+      "reasoning": "S/E需要表面积和能量。当前只有容量型号168Ah及LFP/短刀属性，缺标称能量和三维尺寸，不能用行业常值替代规格书数值。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F6",
+      "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+      "competitor_feature": "候选产品为L600型；公开资料解释“L代表Long cell，600代表600mm左右的长度”，另有资料称L600实际长度574mm。574mm/约600mm均落入400~2500mm。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.sohu.com/a/679088273_120988576",
+          "title": "蜂巢能源发布短刀全系储能电芯产品",
+          "source_name": "搜狐/上海证券报",
+          "snippet": "蜂巢能源此次发布的...L600型124Ah和168Ah三款储能专用电芯...168Ah是应用于家庭的储能短刀电芯。"
+        },
+        {
+          "url": "https://auto-time.36kr.com/p/1584947596659204",
+          "title": "续航1000公里、成本降低一半······是时候展示真正的电池技术了",
+          "source_name": "36氪汽车",
+          "snippet": "蜂巢能源开发了L600电芯。L代表Long cell, 600代表600mm左右的长度。"
+        },
+        {
+          "url": "https://m.xchuxing.com/article/40101",
+          "title": "蜂巢能源 L600 短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "新出行",
+          "snippet": "根据我看到的数据，L600的实际长度是574mm，比600小一点点。"
+        }
+      ],
+      "reasoning": "产品型号直接为L600；公开资料对L600命名和实际长度给出约600mm/574mm，均处于400~2500mm范围内。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F7",
+      "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+      "competitor_feature": "现有证据仅支持L600长度约574~600mm；缺少168Ah电芯H、D，无法计算S=2(LH+LD+HD)，因此无法计算L/S。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://auto-time.36kr.com/p/1584947596659204",
+          "title": "续航1000公里、成本降低一半······是时候展示真正的电池技术了",
+          "source_name": "36氪汽车",
+          "snippet": "L代表Long cell, 600代表600mm左右的长度。"
+        },
+        {
+          "url": "https://m.xchuxing.com/article/40101",
+          "title": "蜂巢能源 L600 短刀片电池量产了？电芯薄片是今后行业趋势",
+          "source_name": "新出行",
+          "snippet": "L600 的实际长度是574mm，比600小一点点。"
+        },
+        {
+          "url": "https://www.sohu.com/a/679088273_120988576",
+          "title": "蜂巢能源发布短刀全系储能电芯产品",
+          "source_name": "搜狐/上海证券报",
+          "snippet": "文章确认L600型168Ah家庭储能短刀电芯，但未提供宽度/高度和厚度规格。"
+        }
+      ],
+      "reasoning": "L/S必须先算表面积S。证据池没有168Ah的H、D，不能用视觉比例估算替代规格数值，故无法判断是否在0.002~0.005mm⁻¹。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 64.29,
+  "searched_queries": [
+    "蜂巢 L600 168Ah 户用储能 短刀电芯 硬壳 铝壳 方形",
+    "蜂巢能源科技股份有限公司 L600 168Ah 家庭储能专用短刀电芯 中国 市场",
+    "蜂巢能源 L600 168Ah 家庭储能 电芯 尺寸 规格书",
+    "SVOLT L600 168Ah residential ESS short blade cell datasheet dimensions"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}
