@@ -11,6 +11,25 @@
 - `claim_1_text`：权 1 完整原文
 - `all_claims`：**全部权利要求**的 `[claim_no, claim_text, features[]]`，**模块三要给每条 feature 一个 FeatureComparison**
 - `module_two_evidence`：模块二已抓的全部证据
+- **`candidate.product_name` 带 SKU 标识**（形如 `<基础产品名>（<SKU 标识>）`）——模块二已经按单 SKU 锁定，模块三**不要打破这个锁定**，所有新增 evidence 仍必须指向同一个 SKU（见下文「⛔ SKU 同源约束（模块三继承）」）
+
+## ⛔ SKU 同源约束（模块三继承）
+
+**核心红线**：模块二已经为本候选锁定了一个唯一 SKU（在 `candidate.product_name` 的括号里）。模块三对**全部权利要求**做扩展时，**新增 evidence 仍必须指向同一个 SKU**——证据池可以增长，但 SKU 锁定不能放松。
+
+**操作要求**：
+
+1. 从 `candidate.product_name` 抽出 `<SKU_LOCK>`（沿用模块二的锁定）。
+2. 复用 `module_two_evidence.evidence_pool` 时，假定模块二已通过 SKU 自检（如果发现某条历史 evidence 实际指向其他 SKU，**该 feature 要在模块三 round 2 重新评估**——把该证据丢弃或降级）。
+3. 模块三 round 1 补搜 evidence 时（`suggested_followup_queries`），query 字符串里**必须包含本 SKU 的标识词**（年款 / OTA 版本 / 硬件配置词），避免拉回其他 SKU 的资料。例：
+   - ✅ `问界M5 智驾版 ADS 1.0 车位吸附 维修手册`（含 SKU 标识词"智驾版/ADS 1.0"）
+   - ❌ `问界M5 车位吸附`（没锁 SKU，可能拉回基础版/智驾版/纯电版混合结果）
+4. 模块三 round 2 新增 evidence 入池前，**逐条做 SKU 判定**（同模块二）：
+   - 指向 `<SKU_LOCK>` → 可用
+   - 指向其他 SKU → 丢弃，不能进 `evidence[]`
+   - SKU 模糊 → 只能支撑"可能满足"或更低
+5. 从属权利要求的特征也按同 SKU 判定。例如某权 6 限定"摄像头采集车身周围图像"，证据只能来自 `<SKU_LOCK>` 那个 SKU 的手册/规格——不能用另一个 SKU 的配置表"代证"。
+6. **SKU 锁定自检**：模块三 round 2 输出前，在 `searched_queries` 列表末尾追加一条 `[SKU自检-M3] <SKU_LOCK> / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev 列表: [...]`。
   - `comparisons_for_claim_1`：模块二对权 1 的判断（含 status/score/evidence/reasoning）—— 你可以**直接复用，也可以基于新证据修正**
   - `evidence_pool`：模块二已 fetch 的 URL/text/image 清单
   - `images_manifest`：图片清单（通过 input_image 通道单独送达，每条带 `global_index`）
@@ -88,8 +107,10 @@
 - ✅ 具体到产品型号 + 你想找的事物：`HiPhi Z 中控屏 拆解 内部滑动机构`
 - ✅ 中英双语择优：`HiPhi Bot multi-axis mechanism teardown YouTube`
 - ✅ 写清你想验证什么：`SVOLT L600 防爆阀 位置 端部`
+- ✅ **必带 SKU 标识词**（年款/OTA/硬件配置词），避免拉回别的 SKU：`问界M5 智驾版 ADS 1.0 车位吸附`、`极氪007 OS 6.1 OTA 指尖泊车`
 - ❌ 不要重复你已经看过的内容：评估之前先扫一眼 `evidence_pool`，已经覆盖的别再搜
 - ❌ 不要写空泛的：`SVOLT 短刀 证据`、`HiPhi 屏幕 参数`
+- ❌ 不要写没锁 SKU 的 query：`问界M5 APA 车位吸附`（会拉回基础版/智驾版/纯电版混合结果）
 
 ### query 数量上限
 单候选**总 query 数硬上限 30 条**。如果超过，自己合并相近 query。
@@ -177,4 +198,10 @@
 // 正确：换角度，比如换中文「蜂巢 L600 短刀 电芯 顶盖 焊接 工艺」
 // 或换证据形式「SVOLT L600 196Ah 电芯 拆解 视频 评测」
 // 或换具体术语「SVOLT L600 196Ah prismatic cell casing thickness datasheet」
+
+// ❌ 反例 5：模块三补搜把另一个 SKU 的资料拉回来当本候选证据
+// 本候选 SKU_LOCK = "M5-ADS-1.0"（问界M5 智驾版）
+// 补搜结果命中 m5-product-manual.pdf（基础版手册）和 m5ev-product-manual.pdf（纯电版手册）
+// 模块三把这两份手册的"车位吸附"段落直接当智驾版证据 → 错
+// 正确：丢弃（基础版根本没车位吸附；纯电版是另一 SKU），仅保留 m5-ads-product-manual.pdf 的命中段落
 ```

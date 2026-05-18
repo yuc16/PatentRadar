@@ -29,7 +29,7 @@
 
 **这是全文总结**，用自然语言段落（不分小标题）覆盖：
 
-1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version` / `total_score`，上市时间 vs 专利申请日的对比。
+1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version` / `total_score`，上市时间 vs 专利申请日的对比。**重点指出 `product_name` 括号内的 SKU 标识**（如"问界M5 智驾版（M5 ADS 1.0 / 含激光雷达）"）——本报告所有证据都仅指向该 SKU，不混用其他年款/OTA/硬件配置。
 2. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 每条 feature 是「明确满足 / 可能满足 / 证据不足 / 明确不满足」，重点列出证据缺口的 feature_id 和缺口原因。
 3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（每条缺口 feature 一条 bullet）：**直接复用** `top_competitors_summary[0].claim_1_features[*].evidence_gap_brief` 字段（已经写好"还缺 / 下一步建议"两行结构），每条 bullet 形如：
 

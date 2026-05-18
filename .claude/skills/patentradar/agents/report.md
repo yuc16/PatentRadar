@@ -40,7 +40,7 @@
 
 按以下 3 步组织，**严禁内容重复**（"下一步建议"只在第 3 步的 TOP-N 表格里展示一次）：
 
-1. **最高分竞品介绍**（2-4 句段落）：最高分竞品的 `company` / `product_name` / `product_intro` / `total_score`，上市时间 vs 专利申请日的对比。
+1. **最高分竞品介绍**（2-4 句段落）：最高分竞品的 `company` / `product_name` / `product_intro` / `total_score`，上市时间 vs 专利申请日的对比。**首句必须点出 `product_name` 括号内的 SKU 标识**（如"问界M5 智驾版（M5 ADS 1.0 / 含激光雷达）"），让律师/工程师立刻知道本报告锁定的是哪个具体 SKU——所有证据仅指向该 SKU，不混用其他年款/OTA/硬件配置。
 2. **最高分竞品的权 1 满足情况速览**（1 段，**仅点名**）：枚举权 1 每条 feature 的状态，例如 "C1-F1/F5/F6 明确满足；C1-F2/F3/F4/F7 可能满足"。**不写缺口原因，不写下一步建议**——这些留给第 3 步。
 3. **TOP-N 一览表（HTML 表 + rowspan 合并单元格）**：把所有 top_competitors 的缺口和下一步建议汇总成一个表，每个候选**每个缺口 feature 单独一行**；候选信息列（排名 / 公司+产品 / 总分 / 权 1 明确满足）用 `rowspan` 合并。**这是"下一步建议"在整份报告里的唯一展示位**，第 2 章节其它地方和第 3 章节都不再单独列下一步建议。
 
@@ -110,9 +110,10 @@
 | 候选 ID | candidate_id |
 | 公司（中/英）| company / company_en |
 | 产品（中/英）| product_name / product_name_en |
+| **SKU 锁定** | 从 `product_name` 括号内抽出的 SKU 标识（如 `M5 ADS 1.0 / 含激光雷达`、`ZEEKR OS 6.1 OTA / 2024-05-15 推送`）。本节所有 evidence 仅指向该 SKU |
 | 产品介绍 | product_intro |
 | 市场 | market |
-| 上市日期 | launch_date |
+| 上市日期 | launch_date（应对应本 SKU 的首次推送/量产/交付时间） |
 | 总分（百分制）| total_score |
 
 **逐权利要求对比**：
@@ -166,6 +167,7 @@ URL 参数说明：
 
 - ✅ **全部 feature 都要列在对比表里**，**禁止省略、合并、概括**
 - ✅ **每条 evidence 的 URL 都要列出**
+- ✅ **SKU 锁定行必出**：每个 TOP 候选表里必须有「SKU 锁定」行，内容从 `product_name` 括号内抽取；如果 `product_name` 没带括号 SKU 标识，说明上游模块违反了单 SKU 锁定约束，**在 SKU 锁定行写"⚠ 未锁定 SKU（违反单 SKU 锁定规则，需返工模块 2）"**，不要静默隐藏
 - ✅ 数学计算的 `competitor_feature` 文字**原样照搬**
 - ✅ 第 2 章节 TOP-N 表的"下一步搜索建议"列**直接复用 evidence_gap_brief 的"下一步建议:"行**，不要二次加工
 - ✅ **整份报告不展示失效候选**（`disqualified=true` 的候选不进任何章节）

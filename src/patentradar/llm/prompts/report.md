@@ -36,7 +36,7 @@
 
 **这一章节是全文总结**，用自然语言段落（不分小标题）覆盖以下要点：
 
-1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version`（产品介绍）/ `total_score`，上市时间 vs 专利申请日的对比。
+1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version`（产品介绍）/ `total_score`，上市时间 vs 专利申请日的对比。**首句必须点出 `product_name` 括号内的 SKU 标识**（如"问界M5 智驾版（M5 ADS 1.0 / 含激光雷达）"），让律师/工程师立刻知道本报告锁定的是哪个具体 SKU——所有证据仅指向该 SKU，不混用其他年款/OTA/硬件配置。
 2. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 的每条 feature 是「明确满足/可能满足/证据不足/明确不满足」，重点列出证据缺口（status ∈ {证据不足, 可能满足}）的 feature_id 和缺口原因。
 3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（按缺口 feature 各列 1 条 bullet）：**优先复用** `top_competitors[0].claim_charts[claim_no==1].comparisons[*].evidence_gap_brief` 字段（模块三 round 2 已经给每条权 1 缺口 feature 写好"还缺 / 下一步建议"两行）。
    
@@ -63,8 +63,9 @@
 | 候选 ID | candidate_id |
 | 公司（中/英）| company / company_en |
 | 产品（中/英）| product_name / product_name_en |
+| **SKU 锁定** | 从 `product_name` 括号内抽出的 SKU 标识（如 `M5 ADS 1.0 / 含激光雷达`、`ZEEKR OS 6.1 OTA / 2024-05-15 推送`）。本节所有 evidence 仅指向该 SKU |
 | 产品介绍 | product_version |
-| 上市日期 | launch_date |
+| 上市日期 | launch_date（应对应本 SKU 的首次推送/量产/交付时间） |
 | 侵权评分| total_score |
 
 **逐权利要求对比**：
@@ -117,6 +118,7 @@
 - ✅ **每条 evidence 的 URL 都要列出**（最多 5 个，超过用 "... 等"）
 - ✅ 数学计算（D/V / S/E / L/S 等）的 competitor_feature 文字**原样照搬**到表格里
 - ✅ 第 2 章节的下一步搜索建议**必须具体到 query 字串**，不能笼统
+- ✅ **SKU 锁定行必出**：每个 TOP 候选表里必须有「SKU 锁定」行，内容从 `product_name` 括号内抽取；如果 `product_name` 没带括号 SKU 标识，说明上游模块违反了单 SKU 锁定约束，**在 SKU 锁定行写"⚠ 未锁定 SKU（违反单 SKU 锁定规则，需返工）"**，不要静默隐藏
 - ❌ 不要发明任何新数据。所有数值/URL/产品名都从输入 JSON 来
 - ❌ 不要写 "总结" "结论" "综上所述" 等模糊段落 —— 第 2 章节已经承担总结作用
 - ❌ 不要写 markdown 之外的内容（如反思、解释自己怎么写的）

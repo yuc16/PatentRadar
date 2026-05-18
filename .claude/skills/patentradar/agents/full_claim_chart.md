@@ -14,6 +14,25 @@
 - web 搜索、抓 page、看图：**按需迭代**，由后文"停止条件"控制何时收手。**没有 query 次数/看图张数的硬上限**，但**严禁陷入死循环**（同 query / 同关键词组合重复跑、连续若干轮没新有效证据还在搜，都是死循环征兆，立即停）
 - **回查权利要求原文**：如果对 task_package 中的 `claim_text` / `feature_text` 拆解有疑问（比如从属权利要求的引用关系/单位/数值与原文似有偏差），可直接访问 `patent.google_patents_url` 或 `patent.pdf_url` 复核原文。**不要凭印象判定**——以原文为准。
 - **不要重复模块 2 已查过的站点**：垂类推荐站点（`recommended_sites` + `universal_sites`）已在模块 2 的 Stage 0 fetch 完了，模块 3 **不要再 fetch 同一批站点**。补搜前先扫一遍模块 2 该候选的 `candidate.source_urls` + 所有 `comparisons[*].evidence[*].url`，整理出"已访问 host 清单"，本轮补搜要**主动跳过这些 host**，转向其它信源 —— 论文站 / 专利文献库 / YouTube 拆解视频 / 行业研究报告 / 二手车评测 / 维修论坛 / 海外电商详情页 等没在模块 2 出现过的来源
+- **继承模块 2 的 SKU 锁定**：`candidate.product_name` 括号里的 SKU 标识就是本候选的锁定单位。模块 3 补搜的 evidence、扩展到全部权利要求的 evidence，**仍必须指向同一个 SKU**——见下文「⛔ SKU 同源约束（模块三继承）」
+
+## ⛔ SKU 同源约束（模块三继承，致命硬约束）
+
+**核心红线**：模块 2 已经为本候选锁定了一个唯一 SKU（在 `candidate.product_name` 的括号里）。模块 3 对**全部权利要求**做扩展时，**新增 evidence 仍必须指向同一个 SKU**——证据池可以增长，但 SKU 锁定不能放松。
+
+**操作要求**：
+
+1. **抽取本候选的 SKU**：从 `candidate.product_name` 括号内抽出 SKU 标识（如 `M5-ADS-1.0`、`ZEEKR-007-OS6.1`），下文称 `<SKU_LOCK>`。
+2. **复用模块 2 evidence 前先做合规检查**：如果发现模块 2 某条 evidence 实际指向其他 SKU（典型例：模块 2 把 `m5-product-manual.pdf` 基础版手册和 `m5-ads-product-manual.pdf` 智驾版手册都引在同一个候选下），**模块 3 必须把对应 feature 重新评估**——丢弃跨 SKU 的 evidence 或降级 status。
+3. **模块 3 补搜 query 必须锁 SKU**：query 字符串里包含 SKU 标识词（年款/OTA/硬件配置词），避免拉回其他 SKU 资料。
+   - ✅ `问界M5 智驾版 ADS 1.0 车位吸附 维修手册`
+   - ❌ `问界M5 车位吸附`（没锁 SKU，会拉回多版本混合）
+4. **新增 evidence 入池前逐条做 SKU 判定**：
+   - 指向 `<SKU_LOCK>` → 可用
+   - 指向其他 SKU → 丢弃
+   - SKU 模糊（手册没写版本/通稿没提配置） → 只能支撑"可能满足"或更低
+5. **从属权利要求同样按 SKU 判定**：权 6 的"摄像头采集图像"证据只能来自 `<SKU_LOCK>` 的手册/规格，不能用另一个 SKU 的配置表"代证"。
+6. **模块 3 SKU 锁定自检**：round 2 输出前，在该候选 `searched_queries` 列表末尾追加一条 `[SKU自检-M3] <SKU_LOCK> / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: [...]`。任一冲突未消解禁止给"明确满足"。
 
 ## 工作流（对每个 TOP 候选独立做）
 
@@ -39,7 +58,9 @@
 - ✅ 具体到产品型号 + 想验证的事物（"HiPhi Z 中控屏 拆解 内部滑动机构"）
 - ✅ 中英双语择优（"HiPhi Bot multi-axis mechanism teardown YouTube"）
 - ✅ 写清想验证什么（"SVOLT L600 防爆阀 位置 端部"）
+- ✅ **必带本候选 SKU 标识词**（年款/OTA/硬件配置词），避免拉回其他 SKU：`问界M5 智驾版 ADS 1.0 车位吸附`、`极氪007 OS 6.1 OTA 指尖泊车`
 - ❌ 不要写空泛的（"L600 证据"、"HiPhi 屏幕 参数"）
+- ❌ 不要写没锁 SKU 的 query（"问界M5 APA 车位吸附"会拉回基础版/智驾版/纯电版混合）
 
 **覆盖维度（针对每个权 1 缺口 feature，本轮补搜的 query 至少要跨 3 个维度）**：
 - 权 1 关键技术特征（尺寸/容量/能量/连接关系/几何比例/阈值条件等）

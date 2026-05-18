@@ -10,6 +10,52 @@
 - `claim_1_text`：权利要求 1 的完整原文（参考用，不直接逐句对比）。
 - `claim_1_features`：拆解后的原子特征清单（C1-F1…），**真正的对比单元**。
 - `candidates[]`：每个候选含基础信息 + `search_results`（已经按相关性排序、去专利文献、去申请人自家产品）+ `fetched_pages`（HTML 正文 / PDF 文本片段）+ `fetched_page_images` 清单（PDF 关键页 PNG，图片本体走 multimodal 通道一并送达）。
+- **每个候选的 `candidate.product_name` 都按规范带了 SKU 标识**（形如 `<基础产品名>（<SKU 标识>）`，例 `问界M5 智驾版APA（M5 ADS 1.0 / 含激光雷达）`）。**该 SKU 标识就是本候选的锁定单位**，下文所有证据判定都围绕它展开。
+
+## ⛔ SKU 同源约束（致命硬约束，违反则证据无效）
+
+**核心红线**：本候选所有 FeatureComparison 的 evidence URL 必须能映射到 `candidate.product_name` 锁定的**同一个 SKU**（同年款 / 同 OTA 版本 / 同硬件配置）。证据跨 SKU 混用 = 整份报告的侵权判定无效。
+
+**SKU 维度**（任一不同即视为不同 SKU，证据不能混）：
+1. 不同年款/改款（基础版 vs 智驾版 vs 焕新 Ultra；2022 款 vs 2024 款）
+2. 不同 OTA 版本（OS 6.1 vs OS 6.2；v10 vs v11）
+3. 不同硬件配置（双 Orin-X vs 单 Orin-X；含激光雷达 vs 纯视觉）
+4. 不同子型号（标准版 vs 智驾版 vs Pro/Ultra）
+
+**操作化要求**：
+
+1. **抽取本候选的 SKU 锁定键**：从 `candidate.product_name` 括号内的 SKU 标识抽出一个简短 key（如 `M5-ADS-1.0`、`ZEEKR-007-OS6.1`、`SVOLT-L600-2nd-gen-196Ah`）。下文称为 `<SKU_LOCK>`。
+
+2. **每条候选证据进入 `evidence[]` 前先做 SKU 判定**：
+   - 该 URL 对应的产品手册/通稿/评测文章**明确指向**的是哪个 SKU？
+   - 如果指向 `<SKU_LOCK>` → 可用
+   - 如果指向**其他 SKU**（不同年款 / 不同 OTA / 不同硬件）→ **不能用作本候选 evidence**
+   - 如果**完全无法判定**（手册没说版本 / 通稿没提配置）→ 视作"SKU 模糊"，该证据**只能支撑"可能满足"或更低**，不能支撑"明确满足"
+   - 如果手册里**有明确章节区分 SKU**（如某车型一份手册涵盖多 SKU），按命中本 SKU 的章节锁定，截取对应段落作为 snippet；如果是没区分 SKU 的笼统描述，按"SKU 模糊"处理
+
+3. **典型陷阱**（已在上一轮跑出来踩过的雷，必须避开）：
+   - 同一产品系列的不同 SKU 手册（如 `m5-product-manual.pdf` 是基础版 / `m5-ads-product-manual.pdf` 是智驾版 / `m5ev-product-manual.pdf` 是纯电版 / `m5-se-product-manual-*.pdf` 是标准版）= **三个完全不同的 SKU**，不允许在同一候选里混引
+   - 通稿提"OS 6.1 推送…OS 6.2 上线…"= 两个 SKU，本候选锁了 6.1 就**不能引** 6.2 的功能（车位吸附、白框变蓝、RAPA 等只在某版本上线的功能尤其要警惕）
+   - 焕新/改款车型（如"新 M5 Ultra"`hima.auto/wenjie/m5-new/configuration`）= 独立 SKU，**不能拿来证明基础版**的功能
+   - `launch_date` 必须是 `<SKU_LOCK>` 那个具体 SKU 的发布/量产/推送时间，**不能写"OS 6.1 推送…OS 6.2 上线"两个日期连在一起**
+
+4. **本候选自检（必跑，在最终评分前）**：
+   ```
+   SKU 锁定自检（<SKU_LOCK>）：
+   - product_version 是否糊版本：✓ / ✗（命中：<具体词>）
+   - launch_date 是否跨版本：✓ / ✗
+   - 逐条 evidence sku 一致性：
+     - C1-F1: ev1 host=<...> 锁定 sku=<...> → 匹配/冲突/模糊
+     - C1-F2: ...
+     - C1-FN: ...
+   - 冲突 evidence 处理：丢弃 / 降级为"证据不足" / 拆候选
+   ```
+   把这段写进该候选 `searched_queries` 列表的最后一条（前缀 `"[SKU自检] "`）作为留痕。任何"冲突"未消解就给出"明确满足"判定 = 违规。
+
+5. **冲突 evidence 的标准处理动作**（按严格度排序，选**最保守**的）：
+   - 优先：用本 SKU 的同主题 evidence 替换（找到属于本 SKU 的另一份手册/通稿）
+   - 其次：把对应 feature 降级为"证据不足"（status=证据不足 / score=0.3）
+   - 最后：如果某 SKU 在搜索池里证据极弱，本候选**不该出**——返工拆候选或留下证据更扎实的那个
 
 ## 输出（严格遵守 JSON Schema）
 
@@ -47,6 +93,7 @@
 - 只看到公司层面信息（如「比亚迪是中国电池龙头」）→ 证据不足，不是可能满足
 - 看到产品名但没具体参数 → 证据不足
 - 推理链超过 2 步且每步都不严谨 → 证据不足
+- **证据指向不同 SKU**（不同年款 / 不同 OTA / 不同硬件配置）→ 不能用作本候选证据，按上文「⛔ SKU 同源约束」处理
 
 ## 数学计算硬要求
 
@@ -68,6 +115,7 @@
 
 - 在 `search_results` 和 `fetched_pages` 里寻找候选的**首次发布/量产/交付**时间
 - 写 `launch_date` 字段（中文+具体年月）+ `launch_date_evidence`（≥ 1 个 URL）
+- **launch_date 必须对应 `<SKU_LOCK>` 标定的那个具体 SKU**——不是产品系列首发，是本 SKU 首次推送/量产/交付的时间。**严禁**写"OS 6.1 推送 X 日；OS 6.2 上线 Y 日"这种跨版本表述；如果搜索摘要里同时有两个 SKU 时间，**只保留本 SKU 那个**，另一个**说明该证据指向其他 SKU**
 - 如果该日期**早于** `patent.application_date`，整个候选 `disqualified=true`，`disqualification_reason` 写明依据
 - 任一 `FeatureComparison.status == 明确不满足` 也会触发 `disqualified=true`
 - 如果证据完全找不到上市日期，`launch_date` 写"未明确"，**保留候选**（不视作失格）
@@ -104,6 +152,22 @@
 ## 反例（不要这样写）
 
 ```jsonc
+// ❌ 反例 0（最致命，上一轮跑出来踩的雷）：跨 SKU 混证据给"明确满足"
+{
+  "candidate": {"product_name": "问界M5 APA自动泊入功能"},   // 没锁 SKU
+  "launch_date": "不晚于2022年2月已公开搭载",                // 基础版时间
+  "comparisons": [{
+    "feature_id": "C1-F4",
+    "status": "明确满足",
+    "evidence": [
+      {"url": "https://aito.auto/.../m5-ads-product-manual.pdf"},  // 智驾版手册（2023+，不是基础版）
+      {"url": "https://hima.auto/wenjie/m5-new/configuration"}     // 新 M5 Ultra 焕新车型（2024）
+    ]
+  }]
+}
+// 正确：把候选拆成 P_basic / P_ads / P_ultra 三个，各自只引该 SKU 的 evidence
+// 如果拆完发现基础版手册里根本没"车位吸附/白框变蓝"功能，C1-F4 在 P_basic 上应该写"证据不足"或"明确不满足"
+
 // ❌ 反例 1：没数值的"明确满足"
 {"feature_id": "C1-F4", "status": "明确满足", "score": 1.0,
  "competitor_feature": "S/E 满足权 1 范围",
@@ -171,7 +235,9 @@
 ## 工作流程提示
 
 1. 先把 `claim_1_text` 通读一遍建立整体语境，再逐条对照 `claim_1_features`
-2. 每个候选先查 `launch_date`，明确早于专利申请日就走失格通道（不浪费后续工作）
-3. 对每条特征：先看证据池里有没有直接字面/数值匹配 → 算几何参数 → 比较权 1 范围
-4. 同 URL 跨多个特征复用 OK；「明确满足」最低门槛是 ≥ 1 独立 host 的扎实证据（不强制多 host，但 evidence 不能堆砌重复）
-5. 写 `reasoning` 时把 URL/数值都引用进去，便于人工复核
+2. **从 `candidate.product_name` 抽出 `<SKU_LOCK>`**（括号内的 SKU 标识），后续所有 evidence 判定都围绕它
+3. 每个候选先查 `launch_date`（必须是 `<SKU_LOCK>` 那个 SKU 的首发时间），明确早于专利申请日就走失格通道
+4. 对每条特征：先看证据池里有没有直接字面/数值匹配 → **判定该证据 sku 是否 = `<SKU_LOCK>`** → 算几何参数 → 比较权 1 范围
+5. 同 URL 跨多个特征复用 OK；「明确满足」最低门槛是 ≥ 1 独立 host 的扎实证据**且 sku 匹配 `<SKU_LOCK>`**
+6. 写 `reasoning` 时把 URL/数值都引用进去，并**显式标注**"该证据 sku=<...>，匹配本候选 SKU_LOCK"
+7. **最后跑 SKU 锁定自检**（见上文「⛔ SKU 同源约束」第 4 条），把自检日志写进 `searched_queries` 最后一条

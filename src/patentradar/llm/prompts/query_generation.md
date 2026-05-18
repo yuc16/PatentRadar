@@ -35,9 +35,11 @@
 #### query 写法硬性规则
 - ✅ 用具体型号/参数（如 `蜂巢能源 L600 196Ah 短刀片 规格书` 或 `SVOLT L600 196Ah blade cell datasheet`）。
 - ✅ 同一意图双语并列各写一条，让中英多语种语料都被命中。
+- ✅ **当某产品已知有多个 SKU/版本**（不同年款、OTA、硬件配置）时，每个 SKU 各拼 1-2 条专属 query 并在 query 字符串里带 SKU 标识词（如 `问界M5 智驾版 ADS 1.0 APA 自动泊车`、`问界M5 基础版 APA 自动泊车`、`极氪007 OS 6.1 OTA 指尖泊车`、`极氪007 OS 6.2 RAPA 遥控泊车`）—— 让搜索结果分别落到各 SKU 的资料，下游候选筛选能直接拆成独立候选。
 - ❌ **不要**在 query 里写 `-比亚迪` `-BYD` `-专利` 等负向操作符。负向操作符在 Tavily/Brave/Bocha 上效果不一致，**Exa 完全不支持**（neural embedding 反而会把负词当 boost）。申请人过滤交给 `applicant_self_signals` + 后过滤层处理。
 - ❌ 不要堆砌 6 个以上关键词，召回率会反而下降。每条 query 控制在 4-7 个核心词。
 - ❌ 不要写专利检索 query（patents.google 等），模块二是找产品而非专利。
+- ❌ **不要拼跨 SKU 的混合词**（如 `问界M5 OS 6.1 OS 6.2 APA`、`问界M5 智驾版/标准版 APA`）—— 这种 query 会把多个 SKU 的资料一起拉回，污染下游证据池。一个 query 只锁一个 SKU。
 
 #### Provider 路由偏好（写到 `preferred_providers`）
 

@@ -20,8 +20,9 @@
 | 候选 ID | candidate_id |
 | 公司（中/英）| company / company_en |
 | 产品（中/英）| product_name / product_name_en |
+| **SKU 锁定** | 从 `product_name` 括号内抽出的 SKU 标识（如 `M5 ADS 1.0 / 含激光雷达`、`ZEEKR OS 6.1 OTA / 2024-05-15 推送`）。本节所有 evidence 仅指向该 SKU |
 | 产品介绍 | product_version |
-| 上市日期 | launch_date |
+| 上市日期 | launch_date（应对应本 SKU 的首次推送/量产/交付时间） |
 | 侵权评分 | total_score |
 
 **逐权利要求对比**：
