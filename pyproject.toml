@@ -8,6 +8,7 @@ dependencies = [
     "beautifulsoup4>=4.14.3",
     "fastapi>=0.136.1",
     "httpx>=0.28.1",
+    "jsonschema>=4.26.0",
     "lxml>=6.1.0",
     "markdown>=3.10.2",
     "openai>=2.33.0",

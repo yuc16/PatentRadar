@@ -1,0 +1,989 @@
+{
+  "publication_no": "CN105335144B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "丰田",
+        "company_en": "Toyota",
+        "product_name": "Toyota RAV4 2023-2026 Kick Sensor / Hands-Free Power Liftgate",
+        "product_name_en": "Toyota RAV4 2023-2026 Kick Sensor / Hands-Free Power Liftgate",
+        "product_intro": "Toyota Kick Sensor 功能允许携带 Smart Key 的用户通过脚踢动作开启后尾门，页面列明适用于 2023-2026 RAV4 等车型。",
+        "market": "中国及全球销售的丰田 SUV 后尾门便利进入配置",
+        "reason_for_deep_dive": "具备智能钥匙、脚部传感器、后尾门自动开闭和控制逻辑，覆盖权 1 多个基础模块，但未发现投影图像证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.toyota.com/owners/kick-sensor/"
+        ],
+        "initial_evidence_summary": "Toyota 官方说明：Smart Key 在身上时，可用脚踢动作打开 rear liftgate；keyless entry device 需在车辆传感器范围内，传感器识别脚部后尾门开始开启。"
+      },
+      "launch_date": "2023 年（RAV4 2023-2026 适用页面）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.toyota.com/owners/kick-sensor/",
+          "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+          "source_name": "Toyota Owners",
+          "snippet": "页面列出 How-To: Kick Sensor (2023-2026 RAV4)，并说明 Smart Key 在身上时可用脚踢开启 rear liftgate。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆后备箱自动开启控制系统",
+          "competitor_feature": "Toyota Kick Sensor / Hands-Free Power Liftgate 是车辆后尾门免手动自动开启功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.toyota.com/owners/kick-sensor/",
+              "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+              "source_name": "Toyota Owners",
+              "snippet": "Toyota Kick Sensor allows you to open your vehicle with a simple kick of the foot; open your rear liftgate."
+            }
+          ],
+          "reasoning": "①X为车辆后备箱自动开启控制系统。②Y为脚踢开启rear liftgate。③(a)是，均为尾门自动开启；(b)是，二值功能；(c)是，车辆尾门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "Toyota 公开页面描述传感器、Smart Key/keyless entry device、liftgate 开启控制。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.toyota.com/owners/kick-sensor/",
+              "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+              "source_name": "Toyota Owners",
+              "snippet": "Smart Key on you; keyless entry device must be within range of the vehicle's sensor; sensor recognizes the foot, liftgate starts to open."
+            }
+          ],
+          "reasoning": "①X为传感、智能钥匙、尾门控制三模块集合。②Y为sensor、Smart Key、liftgate动作。③(a)是；(b)是，模块集合；(c)是，尾门系统；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "Toyota 页面显示 keyless device 与传感器条件共同触发 liftgate，但未公开具体电连接/总线。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.toyota.com/owners/kick-sensor/",
+              "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+              "source_name": "Toyota Owners",
+              "snippet": "keyless entry device must be within a range of the vehicle's sensor; sensor recognizes the foot; liftgate starts to open."
+            }
+          ],
+          "reasoning": "①X为模块间信号连接。②Y为钥匙条件+传感器识别后执行。③(a)是，均为信号链；(b)是，存在/不存在；(c)是，尾门控制链；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "Toyota 仅公开脚踢传感器识别脚部，未公开获取用户与后备箱的连续距离信息。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.toyota.com/owners/kick-sensor/",
+              "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+              "source_name": "Toyota Owners",
+              "snippet": "Kick your foot directly under the sensor; first beep is for when the sensor recognizes the foot."
+            }
+          ],
+          "reasoning": "①X为相对后备箱的距离数据。②Y为脚部被sensor识别。③(a)否，识别不等于距离；(b)否，二值非连续量；(c)否，sensor非后备箱距离；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "Toyota 要求 Smart Key/keyless entry device 在车辆传感器范围内，钥匙无需取出。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.toyota.com/owners/kick-sensor/",
+              "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+              "source_name": "Toyota Owners",
+              "snippet": "With your Smart Key on you; keyless entry device must be within a range of the vehicle's sensor; no need to remove the fob."
+            }
+          ],
+          "reasoning": "①X为钥匙端感应单元+车尾探测。②Y为Smart Key在传感器范围内。③(a)是；(b)是，存在/范围；(c)是，车辆后部进入场景；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "Toyota 传感器识别脚部后，第二声蜂鸣出现且 liftgate 开始自动开启。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.toyota.com/owners/kick-sensor/",
+              "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+              "source_name": "Toyota Owners",
+              "snippet": "The first is for when the sensor recognizes the foot, while the second beep occurs once the liftgate starts to open by itself."
+            }
+          ],
+          "reasoning": "①X为控制单元按采集信息启动尾门。②Y为sensor识别后尾门自开。③(a)是；(b)是，判断/动作；(c)是，尾门控制；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "Toyota 公开资料只说明脚踢传感器，未发现投影图像或测量脚部到投影图像距离的公开证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.toyota.com/owners/kick-sensor/",
+              "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+              "source_name": "Toyota Owners",
+              "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+            }
+          ],
+          "reasoning": "①X为投影图像+到图像距离检测。②Y为普通kick sensor。③(a)否，无投影图像；(b)否，动作识别非距离；(c)否，传感器下方非图像参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 77.14,
+      "searched_queries": [
+        "Toyota hands-free power back door logo projection key fob kick sensor manual",
+        "Toyota kick sensor logo projection hands free liftgate",
+        "Toyota RAV4 2023 Kick Sensor Smart Key liftgate sensor",
+        "site:toyota.com owners kick sensor RAV4"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "东风本田",
+        "company_en": "Dongfeng Honda",
+        "product_name": "e:NS1 2022 电动尾门感应开闭功能",
+        "product_name_en": "Honda e:NS1 2022 Hands-Free Power Tailgate",
+        "product_intro": "东风本田 e:NS1 用户手册公开电动尾门可通过后保险杠下方前后踢脚感应开闭，并要求随身携带智能钥匙遥控器。",
+        "market": "中国乘用车前装电动尾门配置",
+        "reason_for_deep_dive": "官方中文手册直接公开智能钥匙、脚踢传感器和电动尾门自动开闭，适合权 1 基础模块判定。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html"
+        ],
+        "initial_evidence_summary": "手册写明按遥控发射器或在后保险杠中央下方前后踢脚操作电动尾门；携带智能钥匙遥控器时，踢脚约 1 秒可打开或关闭电动尾门。"
+      },
+      "launch_date": "2022 年（e:NS1 2022 用户手册）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+          "title": "尾门 | 用户手册",
+          "source_name": "东风本田",
+          "snippet": "URL 路径和页面标题显示 e:NS1 2022 用户手册，页面为尾门功能说明。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆后备箱自动开启控制系统",
+          "competitor_feature": "e:NS1 电动尾门感应开闭功能可通过脚踢自动打开/关闭尾门。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+              "title": "尾门 | 用户手册",
+              "source_name": "东风本田",
+              "snippet": "在后保险杠中央下方前后踢脚进行感应开闭，操作电动尾门。"
+            }
+          ],
+          "reasoning": "①X为车辆后备箱自动开启系统。②Y为电动尾门感应开闭。③(a)是；(b)是，二值开闭；(c)是，车辆尾门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "e:NS1 公开脚部动作传感器、智能钥匙遥控器和电动尾门控制。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+              "title": "尾门 | 用户手册",
+              "source_name": "东风本田",
+              "snippet": "传感器可能无法正确检测您的脚部动作；如果您没有随身携带智能钥匙遥控器，则此功能将不会运作。"
+            }
+          ],
+          "reasoning": "①X为采集、钥匙、控制模块。②Y为脚部传感器、智能钥匙、尾门动作。③(a)是；(b)是，模块集合；(c)是，尾门系统；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "e:NS1 手册显示传感器和智能钥匙条件共同决定尾门动作，但未给出电路/总线图。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+              "title": "尾门 | 用户手册",
+              "source_name": "东风本田",
+              "snippet": "携带了智能钥匙遥控器时，通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+            }
+          ],
+          "reasoning": "①X为电连接信号链。②Y为钥匙+传感器触发尾门。③(a)是，均为控制信号；(b)是，存在/不存在；(c)是，尾门模块链；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "e:NS1 只公开后保险杠下方脚部动作检测，未公开用户与后备箱距离信息。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+              "title": "尾门 | 用户手册",
+              "source_name": "东风本田",
+              "snippet": "传感器可能无法正确检测您的脚部动作；如果将脚放在保险杠下时间过长或扫动，电动尾门将不会打开或关闭。"
+            }
+          ],
+          "reasoning": "①X为后备箱距离信息。②Y为脚部动作检测。③(a)否，动作非距离；(b)否，二值/模式非连续长度；(c)否，保险杠下非后备箱距离；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "e:NS1 功能必须随身携带智能钥匙遥控器才能工作。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+              "title": "尾门 | 用户手册",
+              "source_name": "东风本田",
+              "snippet": "如果您没有随身携带智能钥匙遥控器，则此功能将不会运作。请确保随身携带智能钥匙遥控器。"
+            }
+          ],
+          "reasoning": "①X为钥匙感应+车尾探测。②Y为智能钥匙遥控器必须在场。③(a)是；(b)是，存在/范围；(c)是，尾门感应场景；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "e:NS1 检测脚踢约 1 秒后蜂鸣/灯闪并启动电动尾门。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+              "title": "尾门 | 用户手册",
+              "source_name": "东风本田",
+              "snippet": "通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门；部分车外灯将闪烁，且蜂鸣器将鸣响，然后尾门开始移动。"
+            }
+          ],
+          "reasoning": "①X为判断后启动尾门。②Y为踢脚检测后尾门移动。③(a)是；(b)是，判断/动作；(c)是，电动尾门控制；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "e:NS1 公开为后保险杠下方脚踢传感，未发现投影图像和测量脚部到投影图像距离的证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+              "title": "尾门 | 用户手册",
+              "source_name": "东风本田",
+              "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+            }
+          ],
+          "reasoning": "①X为投影图像+到图像距离检测。②Y为保险杠下脚踢传感。③(a)否，无投影；(b)否，动作检测非图像距离；(c)否，参考为保险杠；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 77.14,
+      "searched_queries": [
+        "东风本田 e:NS1 感应尾门 智能钥匙 后保险杠 用户手册",
+        "Honda e:NS1 hands free power tailgate smart key kick sensor manual",
+        "东风本田 尾门 脚踢 投影",
+        "site:dongfeng-honda.com e:NS1 电动尾门 感应开闭"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "大众",
+        "company_en": "Volkswagen",
+        "product_name": "Volkswagen ID.4 2021-2026 Easy Open motion sensor tailgate",
+        "product_name_en": "Volkswagen ID.4 2021-2026 Easy Open motion sensor tailgate",
+        "product_intro": "Volkswagen ID.4 Easy Open 可在有效钥匙靠近车尾时通过脚部动作免手开启行李箱盖。",
+        "market": "中国及全球销售的大众 ID.4 车型后尾门便利进入配置",
+        "reason_for_deep_dive": "公开资料同时出现有效钥匙、车尾脚部传感、自动开启尾门和中控配置项，但未发现投影单元。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html"
+        ],
+        "initial_evidence_summary": "ID.4 车主手册页面说明 valid key near rear 时，可将脚放在后保险杠中央下方并快速移动，转向灯确认后 trunk lid 自动开启；Easy Open 仅 Keyless Access 激活时可用。"
+      },
+      "launch_date": "2021 年（ID.4 2021-2026 手册适用范围）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+          "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+          "source_name": "VW ID.4 Owner's Manual",
+          "snippet": "Volkswagen ID.4 2021-2026 Owner's Manual / Trunk lid with Easy Open motion sensor."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆后备箱自动开启控制系统",
+          "competitor_feature": "ID.4 Easy Open 是传感控制的行李箱盖免手自动开启功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+              "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+              "source_name": "VW ID.4 Manual",
+              "snippet": "the trunk lid can be opened hands-free using a foot gesture; trunk lid will open automatically."
+            }
+          ],
+          "reasoning": "①X为车辆后备箱自动开启系统。②Y为Easy Open自动开启trunk lid。③(a)是；(b)是，开/不开；(c)是，后尾门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "ID.4 公开 motion sensor/foot gesture、valid key/Keyless Access、trunk lid 自动开启控制。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+              "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+              "source_name": "VW ID.4 Manual",
+              "snippet": "valid key is near the rear; foot gesture; trunk lid will open automatically; available only when Keyless Access is active."
+            }
+          ],
+          "reasoning": "①X为采集、钥匙、控制模块。②Y为motion sensor、valid key、自动尾门。③(a)是；(b)是，模块集合；(c)是，车尾控制；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "ID.4 手册显示有效钥匙和脚部动作共同触发尾门，但未公开电路连接细节。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+              "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+              "source_name": "VW ID.4 Manual",
+              "snippet": "If a valid key is near the rear ... trunk lid can be opened hands-free using a foot gesture."
+            }
+          ],
+          "reasoning": "①X为模块间电信号路径。②Y为钥匙条件+脚部动作触发。③(a)是，均为控制信号链；(b)是，存在/不存在；(c)是，尾门控制链；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "ID.4 公开后保险杠下脚部动作位置和 motion sensor，未公开获取用户与后备箱的距离信息。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+              "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+              "source_name": "VW ID.4 Manual",
+              "snippet": "Position your foot under the center of the rear bumper; move your foot quickly toward the bumper."
+            }
+          ],
+          "reasoning": "①X为用户到后备箱距离数据。②Y为脚移向保险杠动作。③(a)否，动作非距离数据；(b)否，事件非连续长度；(c)否，参考为保险杠；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "ID.4 Easy Open 仅在有效钥匙靠近车尾且 Keyless Access 激活时可用。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+              "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+              "source_name": "VW ID.4 Manual",
+              "snippet": "If a valid key is near the rear; This feature is available only when Keyless Access is active."
+            }
+          ],
+          "reasoning": "①X为钥匙感应和车尾探测。②Y为valid key near rear+Keyless Access。③(a)是；(b)是，存在/范围；(c)是，车尾钥匙探测；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "ID.4 在脚部动作后转向灯确认并自动开启 trunk lid。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+              "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+              "source_name": "VW ID.4 Manual",
+              "snippet": "Turn signals will flash to confirm activation, and the trunk lid ... will open automatically."
+            }
+          ],
+          "reasoning": "①X为根据采集信息启动尾门。②Y为脚部动作确认后自动开启。③(a)是；(b)是，判断/动作；(c)是，trunk lid控制；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "ID.4 仅公开后保险杠下 motion sensor / foot gesture，未发现投影图像和脚到投影图像距离测量。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+              "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+              "source_name": "VW ID.4 Manual",
+              "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+            }
+          ],
+          "reasoning": "①X为投影+到图像距离检测。②Y为motion sensor脚踢。③(a)否，无投影图像；(b)否，动作识别非距离；(c)否，参考为保险杠；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 77.14,
+      "searched_queries": [
+        "Volkswagen Easy Open tailgate key fob sensor manual",
+        "Volkswagen ID.4 Easy Open motion sensor valid key rear bumper",
+        "大众 ID.4 Easy Open 感应尾门 智能钥匙",
+        "Volkswagen Easy Open logo projection kick sensor"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "InnoSenT",
+        "company_en": "InnoSenT",
+        "product_name": "24 GHz radar-based kick sensor for cars",
+        "product_name_en": "24 GHz radar-based kick sensor for cars",
+        "product_intro": "InnoSenT 的汽车踢脚传感器为 24GHz 雷达单设备方案，集成 ECU + sensor，用于通过脚部动作免接触开启后备箱。",
+        "market": "全球 OEM/Tier-1 汽车后备箱脚踢传感器供应市场",
+        "reason_for_deep_dive": "供应商公开资料描述车尾传感器、车钥匙近场校验、传感器向控制单元发送开箱信号，接近权 1 多个控制链特征。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.innosent.de/en/automotive/kick-sensor/"
+        ],
+        "initial_evidence_summary": "InnoSenT 页面称 sensor placed in the rear responds to foot movement when car key is in immediate proximity；sensor transmits a signal to a control unit to open the boot。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆后备箱自动开启控制系统",
+          "competitor_feature": "InnoSenT kick sensor 用于通过脚部动作自动开启车辆 boot/trunk。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+              "title": "Kick sensor - Sensor-controlled automatic tailgate",
+              "source_name": "InnoSenT",
+              "snippet": "The radar system allows the boot to open automatically through a foot movement."
+            }
+          ],
+          "reasoning": "①X为后备箱自动开启系统。②Y为雷达脚踢自动开boot。③(a)是；(b)是，开/不开；(c)是，车辆后备箱；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "InnoSenT 公开 rear sensor、car key proximity、control unit opening boot，但作为传感器产品未公开完整智能钥匙模块结构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+              "title": "Kick sensor - Sensor-controlled automatic tailgate",
+              "source_name": "InnoSenT",
+              "snippet": "A sensor placed in the rear responds to a foot movement when the car key is in the immediate proximity; sensor transmits a signal to a control unit to open the boot."
+            }
+          ],
+          "reasoning": "①X为采集、钥匙、控制模块。②Y为rear sensor、key proximity、control unit。③(a)是；(b)是，模块功能集合；(c)是，车尾；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "InnoSenT 页面描述传感器向控制单元发信号，控制单元再校验车钥匙近场。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+              "title": "Kick sensor - Sensor-controlled automatic tailgate",
+              "source_name": "InnoSenT",
+              "snippet": "the sensor transmits a signal to a control unit to open the boot. The control unit then checks whether the car key is near the rear of the vehicle."
+            }
+          ],
+          "reasoning": "①X为电信号连接。②Y为sensor发信号、control unit查key。③(a)是，均为信号链；(b)是，存在/不存在；(c)是，车尾控制链；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "InnoSenT sensor placed in the rear，可记录/跟踪物体运动，但未明确输出用户到后备箱距离值。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+              "title": "Kick sensor - Sensor-controlled automatic tailgate",
+              "source_name": "InnoSenT",
+              "snippet": "A sensor placed in the rear responds to a foot movement; Radar enables objects to be recorded ... detect objects and track their movement."
+            }
+          ],
+          "reasoning": "①X为车尾距离信息。②Y为rear radar记录并跟踪脚部。③(a)是，均为目标位置/运动数据；(b)是，雷达测量量；(c)是，车尾区域；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "InnoSenT 系统要求 car key 在车辆后部近场，control unit 检查车钥匙是否靠近车尾。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+              "title": "Kick sensor - Sensor-controlled automatic tailgate",
+              "source_name": "InnoSenT",
+              "snippet": "when the car key is in the immediate proximity; The control unit then checks whether the car key is near the rear of the vehicle."
+            }
+          ],
+          "reasoning": "①X为钥匙感应+车尾探测。②Y为control unit检查key near rear。③(a)是；(b)是，存在/范围；(c)是，车辆后部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "InnoSenT 传感器分类脚部动作后向控制单元发送信号以打开后备箱。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+              "title": "Kick sensor - Sensor-controlled automatic tailgate",
+              "source_name": "InnoSenT",
+              "snippet": "If the movement corresponds to the sought pattern, the sensor transmits a signal to a control unit to open the boot."
+            }
+          ],
+          "reasoning": "①X为按采集信息判断并启动。②Y为脚部模式匹配后发开箱信号。③(a)是；(b)是，判断/动作；(c)是，boot控制；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "InnoSenT 公开的是 24GHz 雷达脚踢传感器，未公开投影单元或脚到投影图像距离测量。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+              "title": "Kick sensor - Sensor-controlled automatic tailgate",
+              "source_name": "InnoSenT",
+              "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+            }
+          ],
+          "reasoning": "①X为投影图像+距离检测。②Y为雷达脚踢分类。③(a)否，无投影图像；(b)否，动作分类非图像距离；(c)否，参考非投影；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 75.71,
+      "searched_queries": [
+        "automotive supplier hands-free tailgate kick sensor projection logo lidar",
+        "InnoSenT kick sensor car key rear control unit boot",
+        "InnoSenT automotive kick sensor datasheet",
+        "radar based kick sensor automatic tailgate car key"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "北醒",
+        "company_en": "Benewake",
+        "product_name": "AR 光影感应后尾门-光感（激光）脚踢 / TF-Luna 方案",
+        "product_name_en": "AR light-sensing tailgate laser kick / TF-Luna solution",
+        "product_intro": "北醒公开的 AR 光影感应后尾门方案使用单点激光雷达、AR 投影和主控制板，通过踩踏投影图标触发尾门开启/关闭。",
+        "market": "中国及全球汽车前装/方案供应的电动尾门光感脚踢系统",
+        "reason_for_deep_dive": "公开资料直接命中权 1 的投影单元、距离检测单元、后备箱安装、投影/雷达光斑重合和尾门控制，是最接近关键 F7 的候选。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.benewake.com/ApplicationCases/info_itemid_1103.html"
+        ],
+        "initial_evidence_summary": "北醒页面写明：单点激光雷达搭载 AR 投影/可见光指示模块，可安装于后备箱；雷达光斑与 AR 投影光标重叠；通过距离特征值变化判断踩踏光标；系统包含单点激光雷达、AR 投影、主控制板。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆后备箱自动开启控制系统",
+          "competitor_feature": "北醒 AR 光影感应后尾门方案用于不接触汽车实现尾门自动开启和关闭。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+              "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+              "source_name": "Benewake",
+              "snippet": "与整车系统配合，实现 AR 投影、踩踏检测及尾门开关功能；在不接触汽车的情况下实现汽车尾门的自动开启和关闭。"
+            }
+          ],
+          "reasoning": "①X为车辆后备箱自动开启系统。②Y为AR光影感应尾门。③(a)是；(b)是，开/不开；(c)是，汽车尾门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "北醒公开单点激光雷达、AR投影、主控制板，但未公开智能钥匙模块。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+              "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+              "source_name": "Benewake",
+              "snippet": "整个系统主要包含三大模块：单点激光雷达、AR投影、主控制板。"
+            }
+          ],
+          "reasoning": "①X为采集、钥匙、尾门控制三模块。②Y为雷达、投影、主控板。③(a)否，缺钥匙模块；(b)是，模块集合；(c)是，尾门系统；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "北醒公开雷达距离数据发送给主控制板，但未公开智能钥匙模块与后备箱控制模块电连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+              "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+              "source_name": "Benewake",
+              "snippet": "单点激光雷达 ... 进行距离检测，并把整个过程的距离检测数据发送给主控制板。"
+            }
+          ],
+          "reasoning": "①X为采集和钥匙均电连控制。②Y仅雷达数据到主控板。③(a)否，钥匙链缺失；(b)是，信号连接；(c)是，尾门主控；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "北醒单点激光雷达可安装于后备箱，通过用户动作进行距离检测并将距离数据发给主控制板。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+              "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+              "source_name": "Benewake",
+              "snippet": "可安装于后备箱；系统通过单点激光雷达来检测用户开启/关闭尾门的动作 ... 进行距离检测，并把整个过程的距离检测数据发送给主控制板。"
+            }
+          ],
+          "reasoning": "①X为车尾用户距离信息。②Y为后备箱安装雷达距离数据。③(a)是；(b)是，长度/距离数据；(c)是，后备箱/尾门区域；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "北醒页面未公开钥匙感应单元、后备箱探测天线或 PEPS 细节。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+              "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+              "source_name": "Benewake",
+              "snippet": "与整车系统配合，实现 AR 投影、踩踏检测及尾门开关功能。"
+            }
+          ],
+          "reasoning": "①X为钥匙单元+车尾天线。②Y只称与整车系统配合。③(a)否，未披露钥匙/天线；(b)否，模块缺失；(c)否，参考系不明；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "北醒主控制板处理单点激光雷达距离数据并通过算法判断，实现尾门开启/关闭。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+              "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+              "source_name": "Benewake",
+              "snippet": "主控制板通过单点激光雷达对整个行为过程进行距离数据获取，并通过算法处理判断，实现尾门的稳定且正确的开启和关闭。"
+            }
+          ],
+          "reasoning": "①X为控制单元按采集信息启动尾门。②Y为主控板算法判断后开闭尾门。③(a)是；(b)是，判断/动作；(c)是，尾门控制；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "北醒方案含 AR 投影/可见光指示模块和单点激光雷达；雷达光斑与投影光标重合，通过距离特征值变化判断踩踏光标。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+              "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+              "source_name": "Benewake",
+              "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+            }
+          ],
+          "reasoning": "①X为投影图像+脚到图像距离检测。②Y为投影光标与雷达光斑重合并测距。③(a)是；(b)是，距离量；(c)是，地面投影光标；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 70.0,
+      "searched_queries": [
+        "光影脚踢 后备箱 投影 车型",
+        "AR光影感应尾门 单点激光雷达",
+        "Benewake AR light sensing tailgate laser kick",
+        "单点激光雷达 AR投影 尾门 距离检测",
+        "北醒 TF-Luna 电动尾门 激光脚踢"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "雪佛兰",
+        "company_en": "Chevrolet",
+        "product_name": "Hands-Free Power Liftgate with Logo Projection",
+        "product_name_en": "Hands-Free Power Liftgate with Logo Projection",
+        "product_intro": "Chevrolet 官方支持页公开带 logo projection 的 hands-free power liftgate，携带 key fob 接近车尾后 logo 投影亮起，并可脚踢开启/关闭。",
+        "market": "美国及全球 Chevrolet SUV/EV 前装尾门配置",
+        "reason_for_deep_dive": "表面上同时具备 key fob、logo projection、脚踢和尾门控制，是高相似候选；但官方资料明确称投影只用于指示位置，不参与 liftgate 控制。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+        ],
+        "initial_evidence_summary": "Chevrolet 页面写明 key fob 接近 6 feet 时 logo projection 自动亮起，kick straight over the logo；但 Q&A 明确写 logo projection only helps find location and does not affect hands-free control。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": true,
+      "disqualification_reason": "权 1 F7 明确不满足：Chevrolet 官方资料明确称 logo projection only helps you find the location where you should kick and doesn't affect the hands-free control of the liftgate，且 stepping on the logo projection will not activate the sensor；这与“测量脚部到投影图像距离”的控制关系相矛盾。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆后备箱自动开启控制系统",
+          "competitor_feature": "Chevrolet hands-free power liftgate 可通过脚踢自动开启/关闭 liftgate。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "lets you open and close your liftgate with a simple kicking motion below the bumper."
+            }
+          ],
+          "reasoning": "①X为后备箱自动开启系统。②Y为脚踢开闭liftgate。③(a)是；(b)是，开/关；(c)是，车辆尾门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+          "competitor_feature": "Chevrolet 公开 key fob、脚踢传感/控制、liftgate 控制和 logo projection。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Approach the liftgate with your key fob; kick straight over the logo; the liftgate will open."
+            }
+          ],
+          "reasoning": "①X为采集、钥匙、控制模块。②Y为key fob、kick sensor、liftgate动作。③(a)是；(b)是，模块集合；(c)是，尾门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+          "competitor_feature": "Chevrolet 公开 key fob 和脚踢动作共同触发 liftgate，但未公开电路图。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "key fob within 3 feet; kick directly toward the underside; liftgate will open."
+            }
+          ],
+          "reasoning": "①X为模块间电信号。②Y为key+kick触发尾门。③(a)是，均为控制信号链；(b)是，存在/不存在；(c)是，liftgate控制链；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+          "competitor_feature": "Chevrolet 公开脚踢需接近 bumper 5 inches，但这是触发动作阈值，不是用户与后备箱距离信息。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Make sure that your kick comes within 5 inches of the bumper of your vehicle."
+            }
+          ],
+          "reasoning": "①X为后备箱距离信息。②Y为5英寸触发阈值。③(a)否，阈值非距离数据流；(b)否，二值通过/不通过；(c)否，参考为bumper；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+          "competitor_feature": "Chevrolet 要求 key fob 接近 liftgate，投影在接近 6 feet 时自动亮起，且 key fob 需在 3 feet 内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "Approach the liftgate with your key fob; logo projection will automatically turn on as you get within 6 feet; key fob is within 3 feet."
+            }
+          ],
+          "reasoning": "①X为钥匙感应+车尾探测。②Y为key fob近车尾触发投影/尾门。③(a)是；(b)是，存在/范围；(c)是，liftgate rear；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+          "competitor_feature": "Chevrolet 公开脚踢动作后 liftgate 将开启或关闭，并有灯光/蜂鸣提醒。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "The liftgate will open after giving you time to safely step away. The rear lights will flash and a chime will sound."
+            }
+          ],
+          "reasoning": "①X为判断后启动尾门。②Y为脚踢后liftgate开启。③(a)是；(b)是，动作/启动；(c)是，liftgate控制；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+          "competitor_feature": "Chevrolet 有 logo projection，但官方明确称投影只帮助定位且不影响 liftgate 控制；踩在 logo 投影上不会激活传感器。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+              "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+              "source_name": "Chevrolet",
+              "snippet": "The logo projection only helps you find the location where you should kick. It doesn’t affect the hands-free control of the liftgate; stepping on the logo projection will not activate the sensor."
+            }
+          ],
+          "reasoning": "①X为脚到投影图像距离参与检测。②Y为投影仅指示且不控制。③(a)否，指示图案非检测参考；(b)否，非距离量；(c)否，参考为bumper/sensor；(d)有，投影不影响控制。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "hands free liftgate logo projection key fob kick open owner's manual",
+        "Chevrolet Hands-Free Power Liftgate logo projection key fob 5 inches",
+        "Kick straight over the logo Hands-Free Power Liftgate",
+        "GM TechLink projected logo hands-free liftgate sensor locations"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl"
+      ]
+    }
+  ]
+}

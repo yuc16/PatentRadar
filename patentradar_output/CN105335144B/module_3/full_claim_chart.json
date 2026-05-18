@@ -1,0 +1,3038 @@
+{
+  "publication_no": "CN105335144B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "丰田",
+        "company_en": "Toyota",
+        "product_name": "Toyota RAV4 2023-2026 Kick Sensor / Hands-Free Power Liftgate",
+        "product_name_en": "Toyota RAV4 2023-2026 Kick Sensor / Hands-Free Power Liftgate",
+        "product_intro": "Toyota Kick Sensor 功能允许携带 Smart Key 的用户通过脚踢动作开启后尾门，页面列明适用于 2023-2026 RAV4 等车型。",
+        "market": "中国及全球销售的丰田 SUV 后尾门便利进入配置",
+        "reason_for_deep_dive": "具备智能钥匙、脚部传感器、后尾门自动开闭和控制逻辑，覆盖权 1 多个基础模块，但未发现投影图像证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.toyota.com/owners/kick-sensor/"
+        ],
+        "initial_evidence_summary": "Toyota 官方说明：Smart Key 在身上时，可用脚踢动作打开 rear liftgate；keyless entry device 需在车辆传感器范围内，传感器识别脚部后尾门开始开启。"
+      },
+      "launch_date": "2023 年（RAV4 2023-2026 适用页面）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.toyota.com/owners/kick-sensor/",
+          "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+          "source_name": "Toyota Owners",
+          "snippet": "页面列出 How-To: Kick Sensor (2023-2026 RAV4)，并说明 Smart Key 在身上时可用脚踢开启 rear liftgate。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统",
+              "competitor_feature": "Toyota RAV4 Kick Sensor / Hands-Free Power Liftgate 是脚踢触发的后尾门自动开启控制功能。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Toyota Kick Sensor allows you to open your vehicle with a simple kick of the foot; open your rear liftgate."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：车辆后备箱自动开启控制系统，二值功能，参考对象为车辆后备箱/尾门。\n② 候选公开证据Y：Toyota 官方页面公开 kick sensor 可用脚踢打开 rear liftgate。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。二者均指车辆尾门自动开启控制。\n(b) 单位/量纲是否等价：是。均为开/不开的二值控制功能。\n(c) 参考系是否等价：是。均以车辆后尾门/后备箱为控制对象。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+              "competitor_feature": "公开资料显示该功能包含脚踢传感器、Smart Key/keyless entry device 条件和 liftgate 开启控制。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Smart Key on you; keyless entry device must be within range of the vehicle's sensor; sensor recognizes the foot, liftgate starts to open."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：信息采集模块、智能钥匙模块、后备箱控制模块的功能集合。\n② 候选公开证据Y：Toyota 页面直接列出 vehicle sensor、Smart Key/keyless entry device、liftgate starts to open。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。sensor对应采集，Smart Key对应钥匙模块，liftgate动作对应尾门控制。\n(b) 单位/量纲是否等价：是。均为模块/功能集合。\n(c) 参考系是否等价：是。均处于车辆后尾门免手开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+              "competitor_feature": "公开证据只显示钥匙条件和传感器识别共同触发 liftgate，未公开二者与尾门控制模块的电路/总线连接。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "keyless entry device must be within a range of the vehicle's sensor; sensor recognizes the foot; liftgate starts to open."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：电连接为模块间存在电气/信号传递路径，二值存在关系。\n② 候选公开证据Y：Toyota 页面显示 keyless device 在传感器范围内、sensor 识别脚部、liftgate 开始开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均体现钥匙/传感器信息进入尾门控制链。\n(b) 单位/量纲是否等价：是。均为存在/不存在的信号链关系。\n(c) 参考系是否等价：是。均参考车辆后尾门控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：维修手册电路图确认 kick sensor、Smart Key 接收天线与 power back door ECU 的线束/总线连接。\n下一步建议：去 Toyota TIS 或 techinfo.toyota.com，定位 RAV4 Power Back Door/Kick Sensor 电路图和连接器页。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+              "competitor_feature": "公开证据仅显示脚部被传感器识别，未公开传感器输出用户与后备箱的距离数据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor; first beep is for when the sensor recognizes the foot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：用户与车辆后备箱的距离信息，量纲为长度连续值或可读取距离数据流。\n② 候选公开证据Y：Toyota 页面仅公开脚踢到 sensor 下方并被识别，未公开距离值输出。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。脚部识别事件不等同于距离数据。\n(b) 单位/量纲是否等价：否。X为连续长度/距离数据，Y为识别事件。\n(c) 参考系是否等价：否。X参考后备箱位置，Y参考传感器触发区域。\n(d) 是否有反向证据：无\n③(a)(b)(c)均未等价且无距离输出证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：kick sensor 是否测得脚到后备箱的连续距离/范围数据，而不是仅输出脚踢识别事件。\n下一步建议：去 Toyota TIS 或 RAV4World，查看 Kick Sensor 诊断数据流、DTC B2205 检测条件和安装手册。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+              "competitor_feature": "Smart Key/keyless entry device 必须在车辆传感器范围内，钥匙无需取出。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "With your Smart Key on you; keyless entry device must be within a range of the vehicle's sensor; no need to remove the fob."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：钥匙内感应单元与车尾探测天线/接收单元配合确认钥匙在后部有效范围。\n② 候选公开证据Y：Toyota 页面公开 Smart Key on you、keyless entry device within range of vehicle sensor。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。Smart Key/keyless device 对应钥匙感应单元，vehicle sensor range 对应车侧探测。\n(b) 单位/量纲是否等价：是。均为存在/范围检测。\n(c) 参考系是否等价：是。均参考车辆后部尾门开启场景。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+              "competitor_feature": "传感器识别脚部后，liftgate 开始自动开启。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "The first is for when the sensor recognizes the foot, while the second beep occurs once the liftgate starts to open by itself."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：尾门控制单元根据采集信息判断并启动尾门启动单元。\n② 候选公开证据Y：Toyota 页面公开第一声为 sensor recognizes foot，第二声后 liftgate starts to open by itself。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为识别采集信息后执行尾门开启。\n(b) 单位/量纲是否等价：是。均为判断/启动二值控制。\n(c) 参考系是否等价：是。均参考 rear liftgate 控制。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F7",
+              "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+              "competitor_feature": "公开资料只说明脚踢传感器，未发现投影图像或测量脚部到投影图像距离的公开证据。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：投影图像单元 + 测量脚部到投影图像距离的距离检测单元，且二者朝地安装。\n② 候选公开证据Y：Toyota 页面仅公开 kick sensor 和脚踢动作。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。普通脚踢传感器不等同于投影图像+到图像距离检测。\n(b) 单位/量纲是否等价：否。X包含距离量，Y为脚踢识别事件。\n(c) 参考系是否等价：否。X参考投影图像位置，Y参考传感器下方区域。\n(d) 是否有反向证据：无\n③(a)(b)(c)均不等价，且未发现投影/距离测量证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：是否存在地面投影图像、投影器安装位置，以及脚部到该投影图像距离的测量输出。\n下一步建议：去 Toyota Owners 视频、Toyota TIS 安装说明和 RAV4World 拆杠帖，核对后杠下方是否有投影组件。"
+            }
+          ],
+          "claim_score": 77.14
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+              "competitor_feature": "公开资料未显示投影单元或激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述投影单元为可投射影像的激光投影仪\n② 候选公开证据Y：公开资料未显示投影单元或激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C2-F2",
+              "patent_feature": "所述距离检测单元为直线距离传感器",
+              "competitor_feature": "公开资料未显示直线距离传感器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述距离检测单元为直线距离传感器\n② 候选公开证据Y：公开资料未显示直线距离传感器。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+              "competitor_feature": "公开资料显示传感/钥匙条件进入尾门控制并触发尾门开启。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "The first is for when the sensor recognizes the foot, while the second beep occurs once the liftgate starts to open by itself."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启\n② 候选公开证据Y：公开资料显示传感/钥匙条件进入尾门控制并触发尾门开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+              "competitor_feature": "公开资料显示电动尾门/后尾门自动开启，隐含存在开启执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "The first is for when the sensor recognizes the foot, while the second beep occurs once the liftgate starts to open by itself."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱\n② 候选公开证据Y：公开资料显示电动尾门/后尾门自动开启，隐含存在开启执行机构。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统的控制方法",
+              "competitor_feature": "公开功能属于车辆后备箱自动开启控制方法。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "The first is for when the sensor recognizes the foot, while the second beep occurs once the liftgate starts to open by itself."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：一种车辆后备箱自动开启控制系统的控制方法\n② 候选公开证据Y：公开功能属于车辆后备箱自动开启控制方法。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+              "competitor_feature": "公开资料显示有效钥匙/智能钥匙靠近车尾是触发条件，但未明示从远至近状态变化反馈。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "The first is for when the sensor recognizes the foot, while the second beep occurs once the liftgate starts to open by itself."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息\n② 候选公开证据Y：公开资料显示有效钥匙/智能钥匙靠近车尾是触发条件，但未明示从远至近状态变化反馈。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F3",
+              "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+              "competitor_feature": "公开资料只显示脚部动作检测，未公开人脚与后备箱距离状态信息。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor; first beep is for when the sensor recognizes the foot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块\n② 候选公开证据Y：公开资料只显示脚部动作检测，未公开人脚与后备箱距离状态信息。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F4",
+              "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+              "competitor_feature": "公开资料显示系统分析钥匙/脚部条件并控制尾门开启。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "The first is for when the sensor recognizes the foot, while the second beep occurs once the liftgate starts to open by itself."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启\n② 候选公开证据Y：公开资料显示系统分析钥匙/脚部条件并控制尾门开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 77.5
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+              "competitor_feature": "未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2\n② 候选公开证据Y：未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+              "competitor_feature": "未公开钥匙存在后发送脉冲信号开启激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪\n② 候选公开证据Y：未公开钥匙存在后发送脉冲信号开启激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元",
+              "competitor_feature": "未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元\n② 候选公开证据Y：未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+              "competitor_feature": "未公开 D1...Dn 和 C=Di 的基准值算法。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di\n② 候选公开证据Y：未公开 D1...Dn 和 C=Di 的基准值算法。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+              "competitor_feature": "未公开 C-D≤1cm 判断脚未放到影像上的阈值。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上\n② 候选公开证据Y：未公开 C-D≤1cm 判断脚未放到影像上的阈值。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+              "competitor_feature": "未公开 C-D≤1cm 持续 t1 秒后熄灭影像。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像\n② 候选公开证据Y：未公开 C-D≤1cm 持续 t1 秒后熄灭影像。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+              "competitor_feature": "未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测\n② 候选公开证据Y：未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测",
+              "competitor_feature": "未公开蜂鸣器提示、t2 秒阈值和返回S1流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.toyota.com/owners/kick-sensor/",
+                  "title": "Toyota Kick Sensor | Hands-Free Liftgate & Door Access",
+                  "source_name": "Toyota Owners",
+                  "snippet": "Kick your foot directly under the sensor without touching the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测\n② 候选公开证据Y：未公开蜂鸣器提示、t2 秒阈值和返回S1流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 77.14,
+      "total_score": 77.14,
+      "searched_queries": [
+        "Toyota RAV4 kick sensor installation instructions PDF hands free power liftgate 2023",
+        "RAV4 2023 kick sensor service manual wiring diagram hands free power liftgate",
+        "Toyota kick sensor projection logo hands free liftgate review teardown",
+        "Toyota RAV4 kick sensor parts installation rear bumper sensor",
+        "Toyota RAV4 DTC B2205 kick sensor circuit diagnostic data"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "东风本田",
+        "company_en": "Dongfeng Honda",
+        "product_name": "e:NS1 2022 电动尾门感应开闭功能",
+        "product_name_en": "Honda e:NS1 2022 Hands-Free Power Tailgate",
+        "product_intro": "东风本田 e:NS1 用户手册公开电动尾门可通过后保险杠下方前后踢脚感应开闭，并要求随身携带智能钥匙遥控器。",
+        "market": "中国乘用车前装电动尾门配置",
+        "reason_for_deep_dive": "官方中文手册直接公开智能钥匙、脚踢传感器和电动尾门自动开闭，适合权 1 基础模块判定。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html"
+        ],
+        "initial_evidence_summary": "手册写明按遥控发射器或在后保险杠中央下方前后踢脚操作电动尾门；携带智能钥匙遥控器时，踢脚约 1 秒可打开或关闭电动尾门。"
+      },
+      "launch_date": "2022 年（e:NS1 2022 用户手册）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+          "title": "尾门 | 用户手册",
+          "source_name": "东风本田",
+          "snippet": "URL 路径和页面标题显示 e:NS1 2022 用户手册，页面为尾门功能说明。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统",
+              "competitor_feature": "e:NS1 电动尾门可通过后保险杠下方前后踢脚感应自动开闭。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚进行感应开闭，操作电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：车辆后备箱自动开启控制系统。\n② 候选公开证据Y：东风本田手册公开电动尾门感应开闭，可踢脚打开或关闭电动尾门。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为车辆尾门自动开启控制。\n(b) 单位/量纲是否等价：是。均为开/关二值功能。\n(c) 参考系是否等价：是。均参考车辆尾门。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+              "competitor_feature": "公开资料显示脚部动作传感器、智能钥匙遥控器和电动尾门控制功能共同工作。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "传感器可能无法正确检测您的脚部动作；如果您没有随身携带智能钥匙遥控器，则此功能将不会运作。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：采集模块、智能钥匙模块和后备箱控制模块的组合。\n② 候选公开证据Y：手册公开传感器检测脚部动作、必须携带智能钥匙遥控器、电动尾门开闭。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。三类功能均能逐一对应。\n(b) 单位/量纲是否等价：是。均为模块/功能集合。\n(c) 参考系是否等价：是。均在后尾门感应开闭系统内。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+              "competitor_feature": "传感器和智能钥匙条件共同决定尾门动作，但未公开具体线束/总线。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "携带了智能钥匙遥控器时，通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：电连接为传感/钥匙模块与尾门控制模块之间存在电气信号路径。\n② 候选公开证据Y：手册公开携带智能钥匙时，后保险杠下踢脚约1秒可打开/关闭电动尾门。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均体现钥匙条件和脚部采集信息进入尾门控制。\n(b) 单位/量纲是否等价：是。均为存在/不存在的控制信号关系。\n(c) 参考系是否等价：是。均参考电动尾门控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：脚踢传感器、智能钥匙接收器与电动尾门控制单元之间的原厂电路连接图。\n下一步建议：去 东风本田特约维修系统、畅易汽车网或汽修巴巴，检索 e:NS1 尾门/PEPS 电路图章节。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+              "competitor_feature": "手册只公开后保险杠下方脚部动作检测，未公开用户与后备箱距离信息。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "传感器可能无法正确检测您的脚部动作；如果将脚放在保险杠下时间过长或扫动，电动尾门将不会打开或关闭。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：用户与后备箱距离信息，要求距离数据或连续/可读长度量。\n② 候选公开证据Y：e:NS1 手册公开脚部动作检测、踢脚约1秒和扫动/停留会影响动作。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。动作检测不等同于输出距离信息。\n(b) 单位/量纲是否等价：否。X为长度数据，Y为二值/动作模式。\n(c) 参考系是否等价：否。X参考后备箱，Y参考后保险杠下方动作区域。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：脚部传感器是否输出人脚到后备箱的距离/状态量，而不是仅识别前后踢脚动作。\n下一步建议：去 东风本田维修资料、畅易汽车网或 qixiu88，查看 e:NS1 脚踢传感器诊断数据流。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+              "competitor_feature": "功能必须随身携带智能钥匙遥控器才运作。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "如果您没有随身携带智能钥匙遥控器，则此功能将不会运作。请确保随身携带智能钥匙遥控器。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：钥匙端感应单元与后部探测单元确认钥匙存在。\n② 候选公开证据Y：手册写明未携带智能钥匙遥控器则功能不会运作。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。智能钥匙遥控器对应钥匙感应单元，功能条件对应车侧探测。\n(b) 单位/量纲是否等价：是。均为存在/范围检测。\n(c) 参考系是否等价：是。均参考后尾门感应开闭场景。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+              "competitor_feature": "踢脚约1秒后蜂鸣/灯闪，尾门开始移动。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门；部分车外灯将闪烁，且蜂鸣器将鸣响，然后尾门开始移动。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：控制单元根据采集信息判断是否启动尾门启动单元。\n② 候选公开证据Y：手册公开踢脚动作后车外灯闪烁、蜂鸣器鸣响，然后尾门开始移动。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为根据脚部采集信息启动尾门。\n(b) 单位/量纲是否等价：是。均为判断/动作二值控制。\n(c) 参考系是否等价：是。均参考电动尾门控制。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F7",
+              "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+              "competitor_feature": "公开为后保险杠下方脚踢传感，未发现投影图像和脚到投影图像距离测量。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：投影图像单元和测量脚部到投影图像距离的距离检测单元。\n② 候选公开证据Y：e:NS1 手册仅公开后保险杠下方前后踢脚感应。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。脚踢传感不等同于投影图像+图像距离测量。\n(b) 单位/量纲是否等价：否。X为距离量，Y为动作识别事件。\n(c) 参考系是否等价：否。X参考投影图像，Y参考后保险杠下方。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价且无投影证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：是否有地面投影/光标模块及脚到投影光标的测距逻辑。\n下一步建议：去 东风本田用户手册全册、汽车之家实拍/评测和维修手册，核对尾门下方是否有投影件。"
+            }
+          ],
+          "claim_score": 77.14
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+              "competitor_feature": "公开资料未显示投影单元或激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述投影单元为可投射影像的激光投影仪\n② 候选公开证据Y：公开资料未显示投影单元或激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C2-F2",
+              "patent_feature": "所述距离检测单元为直线距离传感器",
+              "competitor_feature": "公开资料未显示直线距离传感器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述距离检测单元为直线距离传感器\n② 候选公开证据Y：公开资料未显示直线距离传感器。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+              "competitor_feature": "公开资料显示传感/钥匙条件进入尾门控制并触发尾门开启。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门；部分车外灯将闪烁，且蜂鸣器将鸣响，然后尾门开始移动。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启\n② 候选公开证据Y：公开资料显示传感/钥匙条件进入尾门控制并触发尾门开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+              "competitor_feature": "公开资料显示电动尾门/后尾门自动开启，隐含存在开启执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门；部分车外灯将闪烁，且蜂鸣器将鸣响，然后尾门开始移动。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱\n② 候选公开证据Y：公开资料显示电动尾门/后尾门自动开启，隐含存在开启执行机构。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统的控制方法",
+              "competitor_feature": "公开功能属于车辆后备箱自动开启控制方法。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门；部分车外灯将闪烁，且蜂鸣器将鸣响，然后尾门开始移动。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：一种车辆后备箱自动开启控制系统的控制方法\n② 候选公开证据Y：公开功能属于车辆后备箱自动开启控制方法。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+              "competitor_feature": "公开资料显示有效钥匙/智能钥匙靠近车尾是触发条件，但未明示从远至近状态变化反馈。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门；部分车外灯将闪烁，且蜂鸣器将鸣响，然后尾门开始移动。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息\n② 候选公开证据Y：公开资料显示有效钥匙/智能钥匙靠近车尾是触发条件，但未明示从远至近状态变化反馈。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F3",
+              "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+              "competitor_feature": "公开资料只显示脚部动作检测，未公开人脚与后备箱距离状态信息。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "传感器可能无法正确检测您的脚部动作；如果将脚放在保险杠下时间过长或扫动，电动尾门将不会打开或关闭。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块\n② 候选公开证据Y：公开资料只显示脚部动作检测，未公开人脚与后备箱距离状态信息。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F4",
+              "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+              "competitor_feature": "公开资料显示系统分析钥匙/脚部条件并控制尾门开启。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "通过在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门；部分车外灯将闪烁，且蜂鸣器将鸣响，然后尾门开始移动。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启\n② 候选公开证据Y：公开资料显示系统分析钥匙/脚部条件并控制尾门开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 77.5
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+              "competitor_feature": "未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2\n② 候选公开证据Y：未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+              "competitor_feature": "未公开钥匙存在后发送脉冲信号开启激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪\n② 候选公开证据Y：未公开钥匙存在后发送脉冲信号开启激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元",
+              "competitor_feature": "未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元\n② 候选公开证据Y：未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+              "competitor_feature": "未公开 D1...Dn 和 C=Di 的基准值算法。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di\n② 候选公开证据Y：未公开 D1...Dn 和 C=Di 的基准值算法。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+              "competitor_feature": "未公开 C-D≤1cm 判断脚未放到影像上的阈值。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上\n② 候选公开证据Y：未公开 C-D≤1cm 判断脚未放到影像上的阈值。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+              "competitor_feature": "未公开 C-D≤1cm 持续 t1 秒后熄灭影像。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像\n② 候选公开证据Y：未公开 C-D≤1cm 持续 t1 秒后熄灭影像。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+              "competitor_feature": "未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测\n② 候选公开证据Y：未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测",
+              "competitor_feature": "未公开蜂鸣器提示、t2 秒阈值和返回S1流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongfeng-honda.com/car/ens1/manual/2022/4231AC000/hybrid/html/ch3020.html",
+                  "title": "尾门 | 用户手册",
+                  "source_name": "东风本田",
+                  "snippet": "在后保险杠中央下方前后踢脚约 1 秒，可以打开或关闭电动尾门。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测\n② 候选公开证据Y：未公开蜂鸣器提示、t2 秒阈值和返回S1流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 77.14,
+      "total_score": 77.14,
+      "searched_queries": [
+        "e:NS1 感应尾门 维修手册 脚踢传感器 电路图",
+        "Honda e:NS1 power tailgate kick sensor wiring diagram service manual",
+        "e:NS1 电动尾门 脚踢 传感器 投影 拆解",
+        "东风本田 e:NS1 PEPS 尾门 天线 维修手册",
+        "Honda e:NS1 hands free tailgate sensor projection review"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "大众",
+        "company_en": "Volkswagen",
+        "product_name": "Volkswagen ID.4 2021-2026 Easy Open motion sensor tailgate",
+        "product_name_en": "Volkswagen ID.4 2021-2026 Easy Open motion sensor tailgate",
+        "product_intro": "Volkswagen ID.4 Easy Open 可在有效钥匙靠近车尾时通过脚部动作免手开启行李箱盖。",
+        "market": "中国及全球销售的大众 ID.4 车型后尾门便利进入配置",
+        "reason_for_deep_dive": "公开资料同时出现有效钥匙、车尾脚部传感、自动开启尾门和中控配置项，但未发现投影单元。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html"
+        ],
+        "initial_evidence_summary": "ID.4 车主手册页面说明 valid key near rear 时，可将脚放在后保险杠中央下方并快速移动，转向灯确认后 trunk lid 自动开启；Easy Open 仅 Keyless Access 激活时可用。"
+      },
+      "launch_date": "2021 年（ID.4 2021-2026 手册适用范围）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+          "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+          "source_name": "VW ID.4 Owner's Manual",
+          "snippet": "Volkswagen ID.4 2021-2026 Owner's Manual / Trunk lid with Easy Open motion sensor."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统",
+              "competitor_feature": "ID.4 Easy Open 是传感控制的行李箱盖免手自动开启功能。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "the trunk lid can be opened hands-free using a foot gesture; trunk lid will open automatically."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：车辆后备箱自动开启控制系统。\n② 候选公开证据Y：ID.4 手册公开 foot gesture 可使 trunk lid 自动开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为尾门/行李箱盖自动开启。\n(b) 单位/量纲是否等价：是。均为开/不开二值控制。\n(c) 参考系是否等价：是。均参考车辆后尾门。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+              "competitor_feature": "公开资料显示 motion sensor/foot gesture、valid key/Keyless Access 和 trunk lid 自动开启控制。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "valid key is near the rear; foot gesture; trunk lid will open automatically; available only when Keyless Access is active."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：采集模块、智能钥匙模块、后备箱控制模块三部分。\n② 候选公开证据Y：ID.4 手册公开 valid key near rear、foot gesture、trunk lid opens automatically、Keyless Access。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。motion sensor对应采集，valid key对应钥匙，trunk lid automatic open对应控制。\n(b) 单位/量纲是否等价：是。均为模块/功能集合。\n(c) 参考系是否等价：是。均参考车尾 Easy Open 控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+              "competitor_feature": "有效钥匙和脚部动作共同触发尾门，但未公开电路连接细节。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "If a valid key is near the rear ... trunk lid can be opened hands-free using a foot gesture."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：电连接指采集/钥匙模块与尾门控制之间存在电气信号路径。\n② 候选公开证据Y：手册公开 valid key near rear 时，foot gesture 可触发 trunk lid 自动开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为钥匙与脚部采集信息进入尾门控制。\n(b) 单位/量纲是否等价：是。均为存在/不存在的控制信号关系。\n(c) 参考系是否等价：是。均参考 ID.4 后尾门控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：Easy Open motion sensor、Keyless Access 后部天线与尾门控制单元之间的电路/总线连接。\n下一步建议：去 erWin Volkswagen 或 Workshop-Manuals，购买/查看 ID.4 Tailgate/Easy Open wiring diagram。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+              "competitor_feature": "公开资料只说明脚放到后保险杠中央下方并快速移向保险杠，未公开距离信息输出。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Position your foot under the center of the rear bumper; move your foot quickly toward the bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：用户与后备箱距离信息，量纲为长度连续量或距离数据。\n② 候选公开证据Y：ID.4 手册公开脚部位置和移动动作，未公开传感器输出距离值。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。脚部动作路径不等同于距离数据。\n(b) 单位/量纲是否等价：否。X为长度/距离数据，Y为动作事件。\n(c) 参考系是否等价：否。X参考后备箱，Y参考 rear bumper。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：motion sensor 是否输出脚到后备箱的距离/范围数据，而非仅检测脚部动作。\n下一步建议：去 erWin Volkswagen 或 vwidtalk 维修资料帖，查看 Easy Open 传感器诊断/测量值块。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+              "competitor_feature": "Easy Open 仅在有效钥匙靠近车尾且 Keyless Access 激活时可用。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "If a valid key is near the rear; This feature is available only when Keyless Access is active."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：钥匙感应单元和后部探测天线确认有效钥匙在车尾。\n② 候选公开证据Y：ID.4 手册公开 valid key near rear 和 Keyless Access active。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。valid key对应钥匙感应单元，near rear对应车尾探测。\n(b) 单位/量纲是否等价：是。均为存在/范围条件。\n(c) 参考系是否等价：是。均参考车辆后部尾门开启。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+              "competitor_feature": "脚部动作后转向灯确认并自动开启 trunk lid。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Turn signals will flash to confirm activation, and the trunk lid ... will open automatically."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：尾门控制模块根据采集信息判断并启动尾门。\n② 候选公开证据Y：ID.4 手册公开脚部动作后 turn signals confirm activation，trunk lid opens automatically。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为采集信息触发尾门开启。\n(b) 单位/量纲是否等价：是。均为判断/动作二值控制。\n(c) 参考系是否等价：是。均参考 trunk lid 控制。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F7",
+              "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+              "competitor_feature": "ID.4 仅公开后保险杠下 motion sensor/foot gesture，未发现投影图像和脚到投影图像距离测量。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：投影图像单元和脚部到投影图像距离检测单元，二者朝向地面。\n② 候选公开证据Y：ID.4 手册公开 Easy Open motion sensor 和 foot gesture，不公开投影。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。motion sensor不等同于投影图像+距离测量。\n(b) 单位/量纲是否等价：否。X为距离量，Y为动作识别事件。\n(c) 参考系是否等价：否。X参考投影图像，Y参考 rear bumper。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：ID.4 是否存在尾门下方投影光标，以及传感器是否测量脚到投影图像的距离。\n下一步建议：去 VW ID.4 官方手册、erWin 维修资料和车主拆解图，核对 rear bumper/Easy Open 组件清单。"
+            }
+          ],
+          "claim_score": 77.14
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+              "competitor_feature": "公开资料未显示投影单元或激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述投影单元为可投射影像的激光投影仪\n② 候选公开证据Y：公开资料未显示投影单元或激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C2-F2",
+              "patent_feature": "所述距离检测单元为直线距离传感器",
+              "competitor_feature": "公开资料未显示直线距离传感器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述距离检测单元为直线距离传感器\n② 候选公开证据Y：公开资料未显示直线距离传感器。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+              "competitor_feature": "公开资料显示传感/钥匙条件进入尾门控制并触发尾门开启。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Turn signals will flash to confirm activation, and the trunk lid ... will open automatically."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启\n② 候选公开证据Y：公开资料显示传感/钥匙条件进入尾门控制并触发尾门开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+              "competitor_feature": "公开资料显示电动尾门/后尾门自动开启，隐含存在开启执行机构。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Turn signals will flash to confirm activation, and the trunk lid ... will open automatically."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱\n② 候选公开证据Y：公开资料显示电动尾门/后尾门自动开启，隐含存在开启执行机构。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统的控制方法",
+              "competitor_feature": "公开功能属于车辆后备箱自动开启控制方法。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Turn signals will flash to confirm activation, and the trunk lid ... will open automatically."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：一种车辆后备箱自动开启控制系统的控制方法\n② 候选公开证据Y：公开功能属于车辆后备箱自动开启控制方法。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+              "competitor_feature": "公开资料显示有效钥匙/智能钥匙靠近车尾是触发条件，但未明示从远至近状态变化反馈。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Turn signals will flash to confirm activation, and the trunk lid ... will open automatically."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息\n② 候选公开证据Y：公开资料显示有效钥匙/智能钥匙靠近车尾是触发条件，但未明示从远至近状态变化反馈。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F3",
+              "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+              "competitor_feature": "公开资料只显示脚部动作检测，未公开人脚与后备箱距离状态信息。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Position your foot under the center of the rear bumper; move your foot quickly toward the bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块\n② 候选公开证据Y：公开资料只显示脚部动作检测，未公开人脚与后备箱距离状态信息。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F4",
+              "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+              "competitor_feature": "公开资料显示系统分析钥匙/脚部条件并控制尾门开启。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "Turn signals will flash to confirm activation, and the trunk lid ... will open automatically."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启\n② 候选公开证据Y：公开资料显示系统分析钥匙/脚部条件并控制尾门开启。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 77.5
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+              "competitor_feature": "未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2\n② 候选公开证据Y：未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+              "competitor_feature": "未公开钥匙存在后发送脉冲信号开启激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪\n② 候选公开证据Y：未公开钥匙存在后发送脉冲信号开启激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元",
+              "competitor_feature": "未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元\n② 候选公开证据Y：未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+              "competitor_feature": "未公开 D1...Dn 和 C=Di 的基准值算法。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di\n② 候选公开证据Y：未公开 D1...Dn 和 C=Di 的基准值算法。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+              "competitor_feature": "未公开 C-D≤1cm 判断脚未放到影像上的阈值。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上\n② 候选公开证据Y：未公开 C-D≤1cm 判断脚未放到影像上的阈值。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+              "competitor_feature": "未公开 C-D≤1cm 持续 t1 秒后熄灭影像。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像\n② 候选公开证据Y：未公开 C-D≤1cm 持续 t1 秒后熄灭影像。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+              "competitor_feature": "未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测\n② 候选公开证据Y：未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测",
+              "competitor_feature": "未公开蜂鸣器提示、t2 秒阈值和返回S1流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vw-id4.com/trunk-lid-with-easy-open-motion-sensor-67.html",
+                  "title": "Volkswagen ID.4: Trunk lid with Easy Open motion sensor",
+                  "source_name": "VW ID.4 Manual",
+                  "snippet": "General example of the sensor-controlled luggage compartment opener; position your foot under the center of the rear bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测\n② 候选公开证据Y：未公开蜂鸣器提示、t2 秒阈值和返回S1流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 77.14,
+      "total_score": 77.14,
+      "searched_queries": [
+        "Volkswagen ID.4 Easy Open wiring diagram motion sensor tailgate service manual",
+        "VW ID.4 Easy Open motion sensor repair manual rear bumper sensor",
+        "Volkswagen Easy Open sensor logo projection patent paper",
+        "ID.4 Easy Open kick sensor teardown rear bumper",
+        "Volkswagen ID.4 Easy Open measuring value blocks rear bumper sensor"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "InnoSenT",
+        "company_en": "InnoSenT",
+        "product_name": "24 GHz radar-based kick sensor for cars",
+        "product_name_en": "24 GHz radar-based kick sensor for cars",
+        "product_intro": "InnoSenT 的汽车踢脚传感器为 24GHz 雷达单设备方案，集成 ECU + sensor，用于通过脚部动作免接触开启后备箱。",
+        "market": "全球 OEM/Tier-1 汽车后备箱脚踢传感器供应市场",
+        "reason_for_deep_dive": "供应商公开资料描述车尾传感器、车钥匙近场校验、传感器向控制单元发送开箱信号，接近权 1 多个控制链特征。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.innosent.de/en/automotive/kick-sensor/"
+        ],
+        "initial_evidence_summary": "InnoSenT 页面称 sensor placed in the rear responds to foot movement when car key is in immediate proximity；sensor transmits a signal to a control unit to open the boot。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统",
+              "competitor_feature": "InnoSenT 24GHz kick sensor 用于通过脚部动作自动开启 boot/trunk。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "The radar system allows the boot to open automatically through a foot movement."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：车辆后备箱自动开启控制系统。\n② 候选公开证据Y：InnoSenT 页面公开 radar system allows the boot to open automatically through a foot movement。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为脚部动作触发后备箱自动开启。\n(b) 单位/量纲是否等价：是。均为开/不开二值功能。\n(c) 参考系是否等价：是。均参考车辆 boot/trunk。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+              "competitor_feature": "InnoSenT 公开 rear sensor、car key proximity、control unit，但作为传感器供应件未公开完整智能钥匙模块结构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "A sensor placed in the rear responds to a foot movement when the car key is in the immediate proximity; sensor transmits a signal to a control unit to open the boot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：采集模块、智能钥匙模块和后备箱控制模块的组合。\n② 候选公开证据Y：页面公开 sensor placed in rear、car key in immediate proximity、sensor transmits signal to control unit。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。三类功能角色可对应，但供应件未展示整车完整模块。\n(b) 单位/量纲是否等价：是。均为功能模块集合。\n(c) 参考系是否等价：是。均参考车尾后备箱开启系统。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：该供应方案接入整车后的完整系统框图，特别是智能钥匙模块是否作为该方案组成部分。\n下一步建议：去 InnoSenT 产品资料或 OEM 集成白皮书，索取 kick sensor application note/system block diagram。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+              "competitor_feature": "页面描述传感器向控制单元发信号，控制单元检查车钥匙是否靠近车尾。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "the sensor transmits a signal to a control unit to open the boot. The control unit then checks whether the car key is near the rear of the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：电连接为采集/钥匙模块与控制模块间存在电气信号路径。\n② 候选公开证据Y：InnoSenT 公开 sensor transmits a signal to a control unit，control unit checks whether car key is near rear。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为传感器/钥匙信息进入控制单元。\n(b) 单位/量纲是否等价：是。均为存在/不存在的控制信号关系。\n(c) 参考系是否等价：是。均参考车辆后部开箱控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：传感器、控制单元和钥匙检测单元之间的物理连接/通信接口资料。\n下一步建议：去 InnoSenT 技术支持或 datasheet/application note，索取 connector pinout、CAN/LIN/IO 输出说明。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+              "competitor_feature": "后部雷达传感器可检测对象、运动方向/速度和 >±300mm 功能检测范围，但未明示输出用户到后备箱距离值。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "A sensor placed in the rear responds to a foot movement; Radar enables objects to be recorded ... detect objects and track their movement."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：用户与后备箱距离信息，单位为长度或位置/运动测量信息。\n② 候选公开证据Y：InnoSenT 公开 rear radar sensor 评估反射信号，检测对象、运动方向、速度和功能检测范围。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。雷达对象/运动信息可用于表征用户相对车尾位置。\n(b) 单位/量纲是否等价：是。雷达测量为位置/运动量，包含长度范围维度。\n(c) 参考系是否等价：是。均参考车辆后部检测区域。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：雷达输出数据是否包含用户/脚部到车尾的距离值或可换算距离，而非仅分类结果。\n下一步建议：去 InnoSenT datasheet 或工程样机手册，查看 output data、range bin 和 detection area 参数。"
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+              "competitor_feature": "系统要求 car key 在车辆后部近场，control unit 检查车钥匙是否靠近车尾，但未公开探测天线位置。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "when the car key is in the immediate proximity; The control unit then checks whether the car key is near the rear of the vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：钥匙中感应单元与设置于后备箱的探测天线/接收单元。\n② 候选公开证据Y：InnoSenT 页面公开 car key immediate proximity，control unit checks whether the car key is near rear。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为钥匙近场确认。\n(b) 单位/量纲是否等价：是。均为存在/范围检测。\n(c) 参考系是否等价：是。均参考车辆后部。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：车尾探测钥匙的天线/接收器是否设置在后备箱区域，以及钥匙端感应单元结构。\n下一步建议：去 OEM PEPS 维修手册、InnoSenT 集成说明或 Google Patents，查 rear LF antenna/keyless access 架构。"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+              "competitor_feature": "传感器识别脚部模式后向控制单元发送开箱信号，控制单元再校验钥匙。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "If the movement corresponds to the sought pattern, the sensor transmits a signal to a control unit to open the boot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：控制单元根据采集模块信息判断是否启动后备箱启动单元。\n② 候选公开证据Y：InnoSenT 公开 movement corresponds to pattern 时 sensor transmits signal to control unit to open boot。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为采集信息触发控制单元开箱。\n(b) 单位/量纲是否等价：是。均为判断/动作二值控制。\n(c) 参考系是否等价：是。均参考 boot opening control。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：控制单元输出到尾门锁/电机/执行器的启动信号资料。\n下一步建议：去 InnoSenT application note 或整车维修手册，查 boot actuator control input 与 kick sensor 输出连接。"
+            },
+            {
+              "feature_id": "C1-F7",
+              "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+              "competitor_feature": "InnoSenT 公开的是 24GHz 雷达脚踢传感器，未公开投影单元或脚到投影图像距离测量。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：投影图像单元和测量脚部到投影图像距离的检测单元。\n② 候选公开证据Y：InnoSenT 页面只公开 24GHz radar sensor、gesture classification、movement detection。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。雷达脚踢分类不等同于投影图像。\n(b) 单位/量纲是否等价：否。Y为运动/速度/分类，非脚到投影图像距离。\n(c) 参考系是否等价：否。Y参考车辆后部雷达检测区，X参考地面投影图像。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：是否配置地面投影光标/投影器，以及雷达是否测量脚部到该投影图像的距离。\n下一步建议：去 InnoSenT 产品图、展会视频和专利库，查 kick sensor 是否有 projection/logo projector 组合方案。"
+            }
+          ],
+          "claim_score": 75.71
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+              "competitor_feature": "公开资料未显示投影单元或激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述投影单元为可投射影像的激光投影仪\n② 候选公开证据Y：公开资料未显示投影单元或激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C2-F2",
+              "patent_feature": "所述距离检测单元为直线距离传感器",
+              "competitor_feature": "InnoSenT 公开 24GHz 雷达检测对象运动方向/速度，但未公开直线距离传感器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述距离检测单元为直线距离传感器\n② 候选公开证据Y：InnoSenT 公开 24GHz 雷达检测对象运动方向/速度，但未公开直线距离传感器。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+              "competitor_feature": "InnoSenT 公开 sensor transmits signal to control unit to open boot，control unit checks key proximity。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "If the movement corresponds to the sought pattern, the sensor transmits a signal to a control unit to open the boot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启\n② 候选公开证据Y：InnoSenT 公开 sensor transmits signal to control unit to open boot，control unit checks key proximity。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+              "competitor_feature": "作为传感器供应件，公开开箱控制信号但未公开尾门开启电机。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "If the movement corresponds to the sought pattern, the sensor transmits a signal to a control unit to open the boot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱\n② 候选公开证据Y：作为传感器供应件，公开开箱控制信号但未公开尾门开启电机。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统的控制方法",
+              "competitor_feature": "公开功能属于车辆后备箱自动开启控制方法。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "If the movement corresponds to the sought pattern, the sensor transmits a signal to a control unit to open the boot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：一种车辆后备箱自动开启控制系统的控制方法\n② 候选公开证据Y：公开功能属于车辆后备箱自动开启控制方法。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+              "competitor_feature": "公开 car key immediate proximity/near rear，但未明示从远至近状态变化反馈。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "If the movement corresponds to the sought pattern, the sensor transmits a signal to a control unit to open the boot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息\n② 候选公开证据Y：公开 car key immediate proximity/near rear，但未明示从远至近状态变化反馈。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F3",
+              "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+              "competitor_feature": "公开雷达检测脚部动作/方向/速度，但未明示人脚与后备箱距离状态信息。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "A sensor placed in the rear responds to a foot movement; Radar enables objects to be recorded ... detect objects and track their movement."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块\n② 候选公开证据Y：公开雷达检测脚部动作/方向/速度，但未明示人脚与后备箱距离状态信息。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F4",
+              "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+              "competitor_feature": "公开脚部模式匹配后传感器向控制单元发信号打开 boot。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "If the movement corresponds to the sought pattern, the sensor transmits a signal to a control unit to open the boot."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启\n② 候选公开证据Y：公开脚部模式匹配后传感器向控制单元发信号打开 boot。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 72.5
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+              "competitor_feature": "未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2\n② 候选公开证据Y：未公开探测天线检测钥匙从远至近并反馈电控单元的完整流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+              "competitor_feature": "未公开钥匙存在后发送脉冲信号开启激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪\n② 候选公开证据Y：未公开钥匙存在后发送脉冲信号开启激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元",
+              "competitor_feature": "未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元\n② 候选公开证据Y：未公开激光投影到地面及直线距离传感器实时检测投射实际距离D。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+              "competitor_feature": "未公开 D1...Dn 和 C=Di 的基准值算法。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di\n② 候选公开证据Y：未公开 D1...Dn 和 C=Di 的基准值算法。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+              "competitor_feature": "未公开 C-D≤1cm 判断脚未放到影像上的阈值。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上\n② 候选公开证据Y：未公开 C-D≤1cm 判断脚未放到影像上的阈值。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+              "competitor_feature": "未公开 C-D≤1cm 持续 t1 秒后熄灭影像。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像\n② 候选公开证据Y：未公开 C-D≤1cm 持续 t1 秒后熄灭影像。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+              "competitor_feature": "未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测\n② 候选公开证据Y：未公开 1cm<C-D<8cm 或 C-D≥8cm 的阈值流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测",
+              "competitor_feature": "未公开蜂鸣器提示、t2 秒阈值和返回S1流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.innosent.de/en/automotive/kick-sensor/",
+                  "title": "Kick sensor - Sensor-controlled automatic tailgate",
+                  "source_name": "InnoSenT",
+                  "snippet": "24 GHz CW radar sensor; gesture control: detection and classification of foot movement; sensor placed in the rear."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测\n② 候选公开证据Y：未公开蜂鸣器提示、t2 秒阈值和返回S1流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 75.71,
+      "total_score": 75.71,
+      "searched_queries": [
+        "InnoSenT kick sensor 24 GHz datasheet PDF control unit car key proximity",
+        "InnoSenT kick sensor teardown radar foot movement patent",
+        "24 GHz radar kick sensor automotive tailgate car key control unit patent",
+        "InnoSenT kick sensor service manual wiring diagram",
+        "InnoSenT kick sensor projection logo tailgate"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "北醒",
+        "company_en": "Benewake",
+        "product_name": "AR 光影感应后尾门-光感（激光）脚踢 / TF-Luna 方案",
+        "product_name_en": "AR light-sensing tailgate laser kick / TF-Luna solution",
+        "product_intro": "北醒公开的 AR 光影感应后尾门方案使用单点激光雷达、AR 投影和主控制板，通过踩踏投影图标触发尾门开启/关闭。",
+        "market": "中国及全球汽车前装/方案供应的电动尾门光感脚踢系统",
+        "reason_for_deep_dive": "公开资料直接命中权 1 的投影单元、距离检测单元、后备箱安装、投影/雷达光斑重合和尾门控制，是最接近关键 F7 的候选。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.benewake.com/ApplicationCases/info_itemid_1103.html"
+        ],
+        "initial_evidence_summary": "北醒页面写明：单点激光雷达搭载 AR 投影/可见光指示模块，可安装于后备箱；雷达光斑与 AR 投影光标重叠；通过距离特征值变化判断踩踏光标；系统包含单点激光雷达、AR 投影、主控制板。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统",
+              "competitor_feature": "北醒 AR 光影感应后尾门方案用于不接触汽车实现尾门自动开启和关闭。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "与整车系统配合，实现 AR 投影、踩踏检测及尾门开关功能；在不接触汽车的情况下实现汽车尾门的自动开启和关闭。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：车辆后备箱自动开启控制系统。\n② 候选公开证据Y：北醒页面公开与整车系统配合实现尾门开关，在不接触汽车情况下自动开闭尾门。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为车辆尾门自动开启/关闭控制。\n(b) 单位/量纲是否等价：是。均为开/关二值功能。\n(c) 参考系是否等价：是。均参考汽车尾门/后备箱。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+              "competitor_feature": "北醒公开单点激光雷达、AR投影和主控制板，但未公开智能钥匙模块。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "整个系统主要包含三大模块：单点激光雷达、AR投影、主控制板。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：采集模块、智能钥匙模块、后备箱控制模块三者均需存在。\n② 候选公开证据Y：北醒证据列出单点激光雷达、AR投影、主控制板。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。Y缺少智能钥匙模块。\n(b) 单位/量纲是否等价：否。X为三模块集合，Y只公开雷达/投影/主控。\n(c) 参考系是否等价：是。二者均在尾门系统场景，但模块不完整。\n(d) 是否有反向证据：无\n③(a)(b)不等价，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：北醒方案是否接入整车智能钥匙/PEPS 模块，并把该模块作为尾门开启条件。\n下一步建议：去 北醒方案白皮书、OEM 集成资料或客户车型维修手册，查 AR 尾门与 PEPS 的系统框图。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+              "competitor_feature": "北醒公开雷达距离数据发送给主控制板，但未公开智能钥匙模块与后备箱控制模块电连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达 ... 进行距离检测，并把整个过程的距离检测数据发送给主控制板。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：信息采集模块和智能钥匙模块均与后备箱控制模块电连接。\n② 候选公开证据Y：北醒公开单点激光雷达距离数据发送给主控制板。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。Y只证明雷达到主控，未证明钥匙模块到主控。\n(b) 单位/量纲是否等价：否。X要求两条电连接，Y仅一条采集链路。\n(c) 参考系是否等价：是。均参考尾门控制主板。\n(d) 是否有反向证据：无\n③(a)(b)不等价，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：智能钥匙模块到主控制板/尾门控制器的线束、总线或 IO 连接证据。\n下一步建议：去 北醒技术资料或装车车型维修手册，查看 AR 后尾门主控板 connector/pinout 和 PEPS 输入。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+              "competitor_feature": "单点激光雷达可安装于后备箱，通过用户动作进行距离检测并将距离数据发给主控制板。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "可安装于后备箱；系统通过单点激光雷达来检测用户开启/关闭尾门的动作 ... 进行距离检测，并把整个过程的距离检测数据发送给主控制板。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：设置在车辆后备箱的信息采集模块获取用户与后备箱距离信息。\n② 候选公开证据Y：北醒页面公开可安装于后备箱，单点激光雷达进行距离检测并发送距离数据给主控制板。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为车尾用户动作距离检测。\n(b) 单位/量纲是否等价：是。均为距离/长度数据。\n(c) 参考系是否等价：是。均参考后备箱/尾门区域。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+              "competitor_feature": "北醒页面未公开钥匙感应单元、后备箱探测天线或 PEPS 细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "与整车系统配合，实现 AR 投影、踩踏检测及尾门开关功能。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：钥匙中的感应单元和设置在后备箱、可探测该单元的探测天线。\n② 候选公开证据Y：北醒公开与整车系统配合，但未公开钥匙或后部天线。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。Y没有钥匙/天线结构。\n(b) 单位/量纲是否等价：否。X为钥匙存在/范围检测，Y无对应量。\n(c) 参考系是否等价：否。Y参考整车系统泛称，不足以定位后备箱探测天线。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：钥匙感应单元、后备箱探测天线及其与 AR 尾门方案的联动条件。\n下一步建议：去 Google Patents、北醒方案资料或装车车型 PEPS 维修手册，查 rear antenna/key fob detection。"
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+              "competitor_feature": "主控制板处理单点激光雷达距离数据并通过算法判断，实现尾门开启/关闭。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "主控制板通过单点激光雷达对整个行为过程进行距离数据获取，并通过算法处理判断，实现尾门的稳定且正确的开启和关闭。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：控制单元根据信息采集模块提供的信息判断是否启动尾门。\n② 候选公开证据Y：北醒页面公开主控制板获取雷达距离数据，通过算法处理判断，实现尾门开启和关闭。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。均为采集距离数据后判断并控制尾门。\n(b) 单位/量纲是否等价：是。均为判断/动作二值控制。\n(c) 参考系是否等价：是。均参考汽车尾门控制。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F7",
+              "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+              "competitor_feature": "方案含 AR 投影/可见光指示模块和单点激光雷达；雷达光斑与投影光标重合，通过距离特征值变化判断踩踏光标。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：投射图像的投影单元、测量脚部到投影图像距离的距离检测单元，均朝地安装。\n② 候选公开证据Y：北醒公开 AR 投影/可见光指示模块、单点 LiDAR，LiDAR 光斑与投影光标重合，并用距离特征值变化判断踩踏光标；TF-Luna 数据表公开 1cm 距离分辨率和 2° FOV。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。AR 投影光标对应投影图像，LiDAR测距对应距离检测。\n(b) 单位/量纲是否等价：是。均为长度/距离测量。\n(c) 参考系是否等价：是。均参考地面投影光标/光斑重合位置。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 70.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述投影单元为可投射影像的激光投影仪，所述距离检测单元为直线距离传感器。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述投影单元为可投射影像的激光投影仪",
+              "competitor_feature": "AR 投影/可见光指示模块可投射光标，但公开资料未明示其为“激光投影仪”。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述投影单元为可投射影像的激光投影仪\n② 候选公开证据Y：AR 投影/可见光指示模块可投射光标，但公开资料未明示其为“激光投影仪”。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C2-F2",
+              "patent_feature": "所述距离检测单元为直线距离传感器",
+              "competitor_feature": "TF-Luna/单点激光雷达为 ToF 直线距离测量模块，公开 0.2-8m、1cm 分辨率。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述距离检测单元为直线距离传感器\n② 候选公开证据Y：TF-Luna/单点激光雷达为 ToF 直线距离测量模块，公开 0.2-8m、1cm 分辨率。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启",
+              "competitor_feature": "主控制板接收雷达距离数据并通过算法判断，实现尾门开启/关闭。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括电控单元，所述电控单元用于接收判断所述信息采集模块和所述智能钥匙模块提供的信息，并控制后备箱的开启\n② 候选公开证据Y：主控制板接收雷达距离数据并通过算法判断，实现尾门开启/关闭。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆后备箱自动开启控制系统，其特征在于，所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱",
+              "competitor_feature": "方案实现尾门开启/关闭，但未公开具体开启电机安装结构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述后备箱控制模块还包括开启电机，所述开启电机安装在车辆后备箱且用于开启车辆后备箱\n② 候选公开证据Y：方案实现尾门开启/关闭，但未公开具体开启电机安装结构。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。公开证据与该限定的宽泛功能含义可对应，但缺少部件级明文。\n(b) 单位/量纲是否等价：是。均为存在/控制状态或相关信号。\n(c) 参考系是否等价：是。均参考尾门开启控制链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.一种车辆后备箱自动开启控制系统的控制方法，所述控制方法应用于权利要求1-4任一项所述的车辆后备箱自动开启控制系统，其特征在于，包括以下步骤：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息；步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块；步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统的控制方法",
+              "competitor_feature": "该方案是 AR 光影感应后尾门自动开启控制方法。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：一种车辆后备箱自动开启控制系统的控制方法\n② 候选公开证据Y：该方案是 AR 光影感应后尾门自动开启控制方法。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息",
+              "competitor_feature": "未公开智能钥匙由远至近的位置状态变化反馈步骤。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "主控制板通过单点激光雷达对整个行为过程进行距离数据获取，并通过算法处理判断，实现尾门的稳定且正确的开启和关闭。"
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1：所述智能钥匙模块将检测到的所述智能钥匙的位置变化信息反馈到所述后备箱控制模块，所述位置变化信息为所述智能钥匙从远至近的位置状态变化信息\n② 候选公开证据Y：未公开智能钥匙由远至近的位置状态变化反馈步骤。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F3",
+              "patent_feature": "步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块",
+              "competitor_feature": "单点激光雷达采集用户脚部/投影光标距离特征值并发送主控制板。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述信息采集模块采集人脚与后备箱的距离状态信息，并将所述状态信息反馈到所述后备箱控制模块\n② 候选公开证据Y：单点激光雷达采集用户脚部/投影光标距离特征值并发送主控制板。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F4",
+              "patent_feature": "步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启",
+              "competitor_feature": "主控制板分析距离特征值并控制尾门开启/关闭。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：所述后备箱控制模块对所述智能钥匙模块和所述信息采集模块传递来的信息进行分析判断，控制后备箱的开启\n② 候选公开证据Y：主控制板分析距离特征值并控制尾门开启/关闭。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 82.5
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2",
+              "competitor_feature": "未公开探测天线探测钥匙从远至近并进入步骤S2的控制流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S1具体为:所述探测天线探测设置在钥匙中的所述钥匙感应单元是否存在从远至近的位置状态变化的位置变化信息，并将探测到位置变化信息反馈到所述后备箱控制模块的电控单元，当所述电控单元判断所述钥匙感应单元不存在从远至近的位置变化时，返回重新检测；当所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，进入步骤S2\n② 候选公开证据Y：未公开探测天线探测钥匙从远至近并进入步骤S2的控制流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪",
+              "competitor_feature": "未公开电控单元发送脉冲信号开启激光投影仪。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当由所述电控单元判断所述钥匙感应单元存在从远至近的位置变化时，则所述电控单元发送脉冲信号开启所述信息采集模块中的激光投影仪\n② 候选公开证据Y：未公开电控单元发送脉冲信号开启激光投影仪。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元，所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元",
+              "competitor_feature": "AR 投影将光标投向地面，单点 LiDAR 对重合光斑/光标进行距离检测并反馈主控制板。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S2：所述激光投影仪将影像投射到地面，所述信息采集模块中的直线距离传感器实时检测所述直线距离传感器到所述影像的投射实际距离为D，并将D反馈到所述电控单元\n② 候选公开证据Y：AR 投影将光标投向地面，单点 LiDAR 对重合光斑/光标进行距离检测并反馈主控制板。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。候选公开功能与该限定在技术含义上对应。\n(b) 单位/量纲是否等价：是。均为该步骤/模块的存在或控制动作。\n(c) 参考系是否等价：是。均参考车辆后备箱/尾门自动开启链路。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di",
+              "competitor_feature": "未公开 D1...Dn 最大值作为基准 C=Di 的校准算法。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述检测到的D值为D1，D2……Di……Dn(i、n为自然数，且i<n)，设定投射距离基准值为C，设投射实际距离的最大值为Di，则C＝Di\n② 候选公开证据Y：未公开 D1...Dn 最大值作为基准 C=Di 的校准算法。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上",
+              "competitor_feature": "未公开 C-D≤1cm 时判断脚未落在影像上的算法。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3：当所述直线距离传感器检测到C与D的差值小于等于1cm，则所述电控单元判断人脚没有放置到地面的影像上\n② 候选公开证据Y：未公开 C-D≤1cm 时判断脚未落在影像上的算法。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像",
+              "competitor_feature": "未公开 C-D≤1cm 持续 t1 秒后熄灭影像的步骤。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当C与D的差值小于等于1cm，且所述电控单元判断该状态持续时间是大于等于预设的t1秒，则所述电控单元控制所述激光投影仪熄灭影像\n② 候选公开证据Y：未公开 C-D≤1cm 持续 t1 秒后熄灭影像的步骤。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9或10所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测",
+              "competitor_feature": "未公开 C-D 大于1cm且小于8cm判断踩中、≥8cm返回S1的阈值流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：步骤S3，还包括以下步骤：当所述直线距离传感器检测到C与D的差值大于1cm，且小于8cm，则所述电控单元判断人脚落在地面的影像上；当判断所述C与D的差值大于等于8cm，返回S1步骤进行重新检测\n② 候选公开证据Y：未公开 C-D 大于1cm且小于8cm判断踩中、≥8cm返回S1的阈值流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆后备箱自动开启控制系统的控制方法，其特征在于，当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测",
+              "competitor_feature": "未公开蜂鸣器提示和 t2 秒阈值后开启后备箱的完整流程。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.benewake.com/ApplicationCases/info_itemid_1103.html",
+                  "title": "电动尾门-AR 光影感应后尾门-光感（激光）脚踢",
+                  "source_name": "Benewake",
+                  "snippet": "单点激光雷达搭载 AR 投影/可见光指示模块；激光雷达光斑与 AR 投影光标/可见指示光光标重叠；通过距离等特征值变化判断用户是否踩踏光标。"
+                },
+                {
+                  "url": "https://en.benewake.com/ApplicationCases/info_itemid_2072.html",
+                  "title": "AR Light and Shadow Sensing Tailgate - Light Sensing (Laser) Kick",
+                  "source_name": "Benewake",
+                  "snippet": "Single-point LiDAR is equipped with an AR projection/visible light indicator module; LiDAR spot overlaps with the projection cursor and detects distance/feature changes to open/close the tailgate."
+                },
+                {
+                  "url": "https://en.benewake.com/uploadfiles/2025/04/20250430174501874.pdf",
+                  "title": "TF-Luna LiDAR module Datasheet A05",
+                  "source_name": "Benewake Datasheet",
+                  "snippet": "TF-Luna operating range 0.2m~8m, distance resolution 1cm, FOV 2°, UART/I2C/I/O interface, highest frame rate 250Hz."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：当所述电控单元判断人脚落在地面的影像上时，则蜂鸣器发出提示，进一步判断所述C与D的差值大于1cm且小于8cm的状态的持续时间是否大于等于t2秒时，如果是，所述电控单元控制开启后备箱；否则，返回S1进行重新检测\n② 候选公开证据Y：未公开蜂鸣器提示和 t2 秒阈值后开启后备箱的完整流程。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。公开证据未披露该限定的关键对象或步骤。\n(b) 单位/量纲是否等价：否。该限定要求具体距离/投影/阈值/钥匙流程，候选证据没有对应量。\n(c) 参考系是否等价：否。公开证据参考普通脚踢/尾门控制或泛称系统，无法落到该限定参考系。\n(d) 是否有反向证据：无\n③(a)(b)(c)不等价或缺少关键公开证据，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 70.0,
+      "total_score": 70.0,
+      "searched_queries": [
+        "Benewake AR 光影感应后尾门 TF-Luna 规格书 PDF",
+        "北醒 AR光影感应后尾门 主控制板 智能钥匙 PEPS",
+        "TF-Luna LiDAR datasheet distance measurement 1cm FOV 2 degree Benewake",
+        "AR light sensing tailgate laser kick Benewake patent",
+        "北醒 光影脚踢 尾门 PEPS 钥匙 天线"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "雪佛兰",
+        "company_en": "Chevrolet",
+        "product_name": "Hands-Free Power Liftgate with Logo Projection",
+        "product_name_en": "Hands-Free Power Liftgate with Logo Projection",
+        "product_intro": "Chevrolet 官方支持页公开带 logo projection 的 hands-free power liftgate，携带 key fob 接近车尾后 logo 投影亮起，并可脚踢开启/关闭。",
+        "market": "美国及全球 Chevrolet SUV/EV 前装尾门配置",
+        "reason_for_deep_dive": "表面上同时具备 key fob、logo projection、脚踢和尾门控制，是高相似候选；但官方资料明确称投影只用于指示位置，不参与 liftgate 控制。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate"
+        ],
+        "initial_evidence_summary": "Chevrolet 页面写明 key fob 接近 6 feet 时 logo projection 自动亮起，kick straight over the logo；但 Q&A 明确写 logo projection only helps find location and does not affect hands-free control。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": true,
+      "disqualification_reason": "权 1 F7 明确不满足：Chevrolet 官方资料明确称 logo projection only helps you find the location where you should kick and doesn't affect the hands-free control of the liftgate，且 stepping on the logo projection will not activate the sensor；这与“测量脚部到投影图像距离”的控制关系相矛盾。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆后备箱自动开启控制系统，其特征在于，所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块；所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接；所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息；所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线；后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱；所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆后备箱自动开启控制系统",
+              "competitor_feature": "Chevrolet hands-free power liftgate 可通过脚踢自动开启/关闭 liftgate。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+                  "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+                  "source_name": "Chevrolet",
+                  "snippet": "lets you open and close your liftgate with a simple kicking motion below the bumper."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：一种车辆后备箱自动开启控制系统\n② 候选公开证据Y：Chevrolet hands-free power liftgate 可通过脚踢自动开启/关闭 liftgate。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。沿用模块二公开证据。\n(b) 单位/量纲是否等价：是。沿用模块二公开证据中的功能/状态量。\n(c) 参考系是否等价：是。均参考 liftgate 控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块",
+              "competitor_feature": "Chevrolet 公开 key fob、脚踢传感/控制、liftgate 控制和 logo projection。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+                  "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+                  "source_name": "Chevrolet",
+                  "snippet": "Approach the liftgate with your key fob; kick straight over the logo; the liftgate will open."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述系统包括：信息采集模块、智能钥匙模块以及后备箱控制模块\n② 候选公开证据Y：Chevrolet 公开 key fob、脚踢传感/控制、liftgate 控制和 logo projection。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。沿用模块二公开证据。\n(b) 单位/量纲是否等价：是。沿用模块二公开证据中的功能/状态量。\n(c) 参考系是否等价：是。均参考 liftgate 控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接",
+              "competitor_feature": "Chevrolet 公开 key fob 和脚踢动作共同触发 liftgate，但未公开电路图。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+                  "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+                  "source_name": "Chevrolet",
+                  "snippet": "key fob within 3 feet; kick directly toward the underside; liftgate will open."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述信息采集模块、所述智能钥匙模块均与后备箱控制模块电连接\n② 候选公开证据Y：Chevrolet 公开 key fob 和脚踢动作共同触发 liftgate，但未公开电路图。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。沿用模块二公开证据。\n(b) 单位/量纲是否等价：是。沿用模块二公开证据中的功能/状态量。\n(c) 参考系是否等价：是。均参考 liftgate 控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“可能满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息",
+              "competitor_feature": "Chevrolet 公开脚踢需接近 bumper 5 inches，但这是触发动作阈值，不是用户与后备箱距离信息。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+                  "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+                  "source_name": "Chevrolet",
+                  "snippet": "Make sure that your kick comes within 5 inches of the bumper of your vehicle."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述信息采集模块设置在车辆后备箱并用于获取用户与车辆后备箱的距离信息\n② 候选公开证据Y：Chevrolet 公开脚踢需接近 bumper 5 inches，但这是触发动作阈值，不是用户与后备箱距离信息。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。沿用模块二公开证据。\n(b) 单位/量纲是否等价：是。沿用模块二公开证据中的功能/状态量。\n(c) 参考系是否等价：是。均参考 liftgate 控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“证据不足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F5",
+              "patent_feature": "所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线",
+              "competitor_feature": "Chevrolet 要求 key fob 接近 liftgate，投影在接近 6 feet 时自动亮起，且 key fob 需在 3 feet 内。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+                  "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+                  "source_name": "Chevrolet",
+                  "snippet": "Approach the liftgate with your key fob; logo projection will automatically turn on as you get within 6 feet; key fob is within 3 feet."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述智能钥匙模块包括设置在车辆钥匙中的钥匙感应单元，以及设置在车辆后备箱并可探测到所述钥匙感应单元的探测天线\n② 候选公开证据Y：Chevrolet 要求 key fob 接近 liftgate，投影在接近 6 feet 时自动亮起，且 key fob 需在 3 feet 内。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。沿用模块二公开证据。\n(b) 单位/量纲是否等价：是。沿用模块二公开证据中的功能/状态量。\n(c) 参考系是否等价：是。均参考 liftgate 控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F6",
+              "patent_feature": "后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱",
+              "competitor_feature": "Chevrolet 公开脚踢动作后 liftgate 将开启或关闭，并有灯光/蜂鸣提醒。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+                  "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+                  "source_name": "Chevrolet",
+                  "snippet": "The liftgate will open after giving you time to safely step away. The rear lights will flash and a chime will sound."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：后备箱控制模块包括后备箱启动单元和后备箱控制单元，所述后备箱控制单元根据所述信息采集模块提供的信息可判断是否启动所述后备箱启动单元开启后备箱\n② 候选公开证据Y：Chevrolet 公开脚踢动作后 liftgate 将开启或关闭，并有灯光/蜂鸣提醒。\n③ X与Y的4项对比：\n(a) 概念是否等价：是。沿用模块二公开证据。\n(b) 单位/量纲是否等价：是。沿用模块二公开证据中的功能/状态量。\n(c) 参考系是否等价：是。均参考 liftgate 控制链。\n(d) 是否有反向证据：无\n③(a)(b)(c)按上述对比，(d)无，终判为“明确满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F7",
+              "patent_feature": "所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向",
+              "competitor_feature": "Chevrolet 有 logo projection，但官方明确称投影只帮助定位且不影响 liftgate 控制；踩在 logo 投影上不会激活传感器。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.chevrolet.com/support/vehicle/storage-doors-windows/hands-free-power-liftgate",
+                  "title": "Hands-Free Power Liftgate | Vehicle Support | Chevy",
+                  "source_name": "Chevrolet",
+                  "snippet": "The logo projection only helps you find the location where you should kick. It doesn’t affect the hands-free control of the liftgate; stepping on the logo projection will not activate the sensor."
+                }
+              ],
+              "reasoning": "① 权利要求限定的事物X：所述信息采集模块包括投射图像的投影单元，以及可测量脚部到投影图像距离的距离检测单元，所述投影单元和所述距离检测单元均设置在车辆后备箱的下方且指向地面方向\n② 候选公开证据Y：Chevrolet 有 logo projection，但官方明确称投影只帮助定位且不影响 liftgate 控制；踩在 logo 投影上不会激活传感器。\n③ X与Y的4项对比：\n(a) 概念是否等价：否。该候选已在模块二因权1关键特征存在反向证据而排除。\n(b) 单位/量纲是否等价：否。反向证据显示投影不参与控制。\n(c) 参考系是否等价：否。权利要求参考投影图像检测，候选参考 bumper/sensor。\n(d) 是否有反向证据：有：官方资料称 logo projection only helps locate where to kick and does not affect hands-free control.\n③(a)(b)(c)按上述对比，(d)有：官方资料称 logo projection only helps locate where to kick and does not affect hands-free control.，终判为“明确不满足”。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 0.0
+        }
+      ],
+      "claim_1_score": 0.0,
+      "total_score": 0.0,
+      "searched_queries": [],
+      "searched_providers": []
+    }
+  ]
+}
