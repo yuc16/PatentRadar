@@ -1,0 +1,8 @@
+$ /Users/wangyc/Desktop/projects/PatentRadar/.venv/bin/python3 -m patentradar.cli decompose CN110293961B --output-dir /Users/wangyc/Desktop/projects/PatentRadar/data/output
+20:54:41 [httpx] HTTP Request: GET https://patents.google.com/patent/CN110293961B/zh "HTTP/1.1 200 OK"
+20:54:42 [patentradar.llm.codex] codex prompt size=12,418 chars model=gpt-5.5
+20:54:44 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
+20:56:08 [patentradar.modules.decompose.pipeline] decompose completed publication_no=CN110293961B source=html claim_count=15 technology_tag=智能驾驶 elapsed_ms=87135
+Wrote /Users/wangyc/Desktop/projects/PatentRadar/data/output/CN110293961B/task_package.json
+Claims: 15
+Technology tag: 智能驾驶

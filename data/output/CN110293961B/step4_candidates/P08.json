@@ -1,0 +1,209 @@
+{
+  "candidate": {
+    "candidate_id": "P08",
+    "company": "长安汽车",
+    "company_en": "Changan Automobile",
+    "product_name": "长安CS75 PLUS APA 5.0遥控代客泊车系统",
+    "product_name_en": "Changan CS75 PLUS APA 5.0 remote-control valet parking system",
+    "product_version": "长安CS75 PLUS搭载APA 5.0遥控代客泊车系统，摘要称集成4个高清广角摄像头形成360°视图以及前/后泊车雷达，可实现水平、垂直等泊车场景。",
+    "market": "中国自主品牌SUV自动泊车/遥控泊车场景",
+    "reason_for_deep_dive": "4个高清广角摄像头形成360°视图对应权1的车身周围图像信息（C1-F3）；APA 5.0进行泊车场景识别并控制车辆泊入，关联C1-F4，并需进一步核查其HMI是否将优选车位标定在显示图像上（C1-F5）。",
+    "source_result_ids": [
+      "brave-Q18-01"
+    ],
+    "source_urls": [
+      "https://auto2xtech.com/autonomous-parking-l3-4-led-bychinese-carmakers"
+    ],
+    "initial_evidence_summary": "摘要明确点名“Changan CS75 Plus”，称其APA 5.0系统集成“4 HD wide-angle cameras (360° view)”和前后泊车雷达，可实现水平停车等自动泊车能力。"
+  },
+  "launch_date": "2019年9月上市；APA5.0随CS75 PLUS量产/上市搭载",
+  "launch_date_evidence": [
+    {
+      "url": "http://guoqing.china.com.cn/2019-10/28/content_75346777.html",
+      "title": "长安的“智星引领者”之梦",
+      "source_name": "中国网",
+      "snippet": "2019年10月报道称，CS75 PLUS是“长安9月刚刚上市的智能化车型”，并称该车型搭载IACC、AEB、APA5.0遥控代客泊车等智能配置。"
+    },
+    {
+      "url": "https://www.cqnews.net/1/detail/1166456678746284032/web/content_1166456678746284032.html",
+      "title": "大数据智能化应用案例精选|“北斗天枢”开启智能出行时代",
+      "source_name": "华龙网/重庆日报",
+      "snippet": "2019年8月报道称，CS75 PLUS L2级智能驾驶量产车亮相；2.0T顶配车型搭载APA 5.0遥控代客泊车系统，可实现车内、车外多种场景自动泊车入位、出库。"
+    },
+    {
+      "url": "https://aikahao.xcar.com.cn/video/133488.html",
+      "title": "CS75PLUS运动版:APA5.0智能泊车系统实测,很精准",
+      "source_name": "爱卡汽车爱咖号",
+      "snippet": "2019年8月视频简介称，APA5.0智能泊车系统由长安汽车自主研发，首款搭载车型即CS75PLUS。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "可核实上市/搭载时间为2019年8-9月及之后，晚于本专利申请日2018-03-23；未发现该具体CS75 PLUS APA5.0产品在申请日前上市或交付的证据。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "长安CS75 PLUS搭载APA5.0遥控代客泊车/智能泊车系统，可由车内一键、手机APP或钥匙控制车辆自动泊入/出库。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://news.yiche.com/hao/wenzhang/49831405",
+          "title": "长安75PLUS 遥控泊车系统APA5.0",
+          "source_name": "易车",
+          "snippet": "长安CS75 PLUS采用行业首发的遥控泊车系统APA5.0，实现人在车外即可自动泊车，只需车位大于车身71厘米。"
+        },
+        {
+          "url": "https://www.cqnews.net/1/detail/1166456678746284032/web/content_1166456678746284032.html",
+          "title": "大数据智能化应用案例精选|“北斗天枢”开启智能出行时代",
+          "source_name": "华龙网/重庆日报",
+          "snippet": "2.0T顶配车型搭载APA 5.0遥控代客泊车系统，可实现车内、车外多种应用场景下自动泊车入位、出库。"
+        },
+        {
+          "url": "https://zhidao.baidu.com/question/269831788167584285.html",
+          "title": "长安CS75PLUS自动泊车功能怎么样？好不好用？",
+          "source_name": "百度知道/长安汽车官方回答",
+          "snippet": "长安汽车官方回答称，长安CS75 PLUS搭载遥控代客泊车系统APA5.0，可通过APP和实体钥匙遥控车辆一键泊入。"
+        }
+      ],
+      "reasoning": "多个公开来源直接称CS75 PLUS搭载APA5.0遥控代客泊车/智能泊车系统，可自动泊入、出库，落入“自动泊车系统”范畴。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "显示单元：12.3英寸液晶中控屏/双12.3英寸液晶大屏；自动泊车控制单元：APA5.0由12个超声波雷达、4个高清摄像头和1个控制器组成，并执行自动泊车控制。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.pcauto.com.cn/jxwd/4566/45668815.html",
+          "title": "长安cs75plus中控功能图解",
+          "source_name": "太平洋汽车",
+          "snippet": "车内有12.3英寸全液晶仪表盘和12.3英寸液晶中控屏；顶配车型还有APA5.0+遥控代客泊车系统，支持多场景泊车和循迹倒车功能。"
+        },
+        {
+          "url": "https://www.autohome.com.cn/ask/9490218.html",
+          "title": "长安汽车能自动泊车的是什么车型",
+          "source_name": "汽车之家问答",
+          "snippet": "APA5.0系统由12个超声波雷达、4个高清摄像头和1个控制器组成，不仅能自动搜寻车位，还支持手机遥控、低速紧急制动辅助等。"
+        },
+        {
+          "url": "http://ep.ycwb.com/epaper/ycwb/resfile/2022-03-02/A16/ycwb20220302A16.pdf",
+          "title": "第二代CS75PLUS上市 12.49万元起售",
+          "source_name": "羊城晚报",
+          "snippet": "第二代CS75PLUS全系标配双12.3英寸液晶大屏，并创新搭载APA5.0+遥控代客泊车系统等高科技。"
+        }
+      ],
+      "reasoning": "公开资料直接给出中控/液晶大屏作为显示部件，并给出APA5.0含“1个控制器”及传感器构成，满足显示单元和泊车控制单元。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "CS75 PLUS具备360°/540°全景影像及中控屏，APA操作中可在显示屏上选择车位；但现有证据未直接说明驾驶员可在车身周围图像上“划定/绘制”意向泊车区域。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.pcauto.com.cn/jxwd/4566/45668815.html",
+          "title": "长安cs75plus中控功能图解",
+          "source_name": "太平洋汽车",
+          "snippet": "中控屏集成较多功能；车内按键包括360度全景影像；顶配车型还有APA5.0+遥控代客泊车系统。"
+        },
+        {
+          "url": "https://m.pcauto.com.cn/baike/940439/1846343.html",
+          "title": "哪一款长安汽车具备自动泊车功能",
+          "source_name": "太平洋汽车百科",
+          "snippet": "长安CS75能实现水平和垂直泊车，按压APA开关开启功能后控制车辆让系统搜索车位，点击显示屏选择车位，按提示松开刹车进入泊车过程；还配有360度全景影像。"
+        },
+        {
+          "url": "https://auto2xtech.com/autonomous-parking-l3-4-led-bychinese-carmakers",
+          "title": "Autonomous parking L3/L4 led by Chinese carmakers",
+          "source_name": "AUTO2X",
+          "snippet": "摘要称Changan CS75 Plus APA 5.0集成4个高清广角摄像头形成360°视图及前/后泊车雷达，可实现水平等泊车场景。"
+        }
+      ],
+      "reasoning": "证据可直接证明显示周围影像、显示屏上选车位；将“点击选择车位”理解为划定意向区域时可对应，但缺少在图像上手动画定区域的直接证据。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "APA5.0可自动寻找/识别车位，车位宽度大于车身71厘米即可泊入，并可控制车辆自动泊入；但未发现其识别“驾驶员划定区域”并对该区域进行优化的公开说明。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://zhidao.baidu.com/question/269831788167584285.html",
+          "title": "长安CS75PLUS自动泊车功能怎么样？好不好用？",
+          "source_name": "百度知道/长安汽车官方回答",
+          "snippet": "APA5.0实现20米内自动寻找车位，车主可通过APP和实体钥匙遥控车辆一键泊入；只需车位宽度大于车身71厘米即可。"
+        },
+        {
+          "url": "https://www.imsilkroad.com/p/381677.html",
+          "title": "5G加持自动驾驶 重庆开足马力“抢跑”",
+          "source_name": "新华丝路",
+          "snippet": "APA5.0可实现人在车外自动泊车；车主可通过手机APP和实体钥匙一键遥控泊车，能够满足95%以上停车场景，只需车位宽度大于车身71厘米即可自动泊入。"
+        },
+        {
+          "url": "https://m.pcauto.com.cn/baike/940439/1846343.html",
+          "title": "哪一款长安汽车具备自动泊车功能",
+          "source_name": "太平洋汽车百科",
+          "snippet": "按压APA开关开启功能后控制车辆让系统搜索车位，点击显示屏选择车位，松开刹车进入泊车过程，停好后系统提示完成并处理挡位和手刹。"
+        }
+      ],
+      "reasoning": "资料支持自动搜车位、空间阈值和自动控制泊入；但核心的“驾驶员划定区域→系统识别并优化该区域”没有直接或可严谨推出的证据。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "APA5.0依靠车身周围传感器和4个720P高清鱼眼摄像头作为感知输入，可自动识别水平、垂直、斜列车位；识别合适空车位后中控屏出现自动泊车提示/按键，用户可在显示屏选择车位。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/6057150",
+          "title": "中国自动泊车领域10亿级大单：纵目牵手长安量产APA 6.0",
+          "source_name": "汽车之家车家号",
+          "snippet": "长安APA 5.0依靠12颗超声波传感器以及4颗720P高清鱼眼摄像头作为感知输入，可以自动识别水平、垂直、斜列三种停车位，还能识别单、双实线划出的停车位。"
+        },
+        {
+          "url": "https://www.jiemian.com/article/2683457.html",
+          "title": "长安汽车押赌自动驾驶的现实与雄心",
+          "source_name": "界面新闻",
+          "snippet": "一键泊车时按下泊车按键，车辆会自动寻找空车位；当车辆识别到合适的空车位时，中控屏幕中会出现P自动泊车按键显示，点中控屏幕标识即可自行完成泊车。"
+        },
+        {
+          "url": "https://m.pcauto.com.cn/baike/940439/1846343.html",
+          "title": "哪一款长安汽车具备自动泊车功能",
+          "source_name": "太平洋汽车百科",
+          "snippet": "系统搜索车位后，点击显示屏选择车位，按提示操作进入泊车过程；车辆还配有360度全景影像。"
+        }
+      ],
+      "reasoning": "证据显示系统基于摄像头/传感器识别候选车位，并在中控屏显示P/供选择；但未明确该标记叠加在“图像信息”上，故为可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 78.0,
+  "searched_queries": [
+    "长安CS75 PLUS APA5.0 用户手册 选择车位 中控屏 图像",
+    "长安CS75 PLUS APA5.0 自动泊车 控制 计算 泊车路径 车位宽度",
+    "CS75PLUS APA5.0 自动泊车 车位选择 中控屏",
+    "长安CS75 PLUS APA5.0 检测到车位 显示 标记 中控屏",
+    "CS75PLUS APA5.0 parking space detection display screen",
+    "Changan CS75 PLUS APA 5.0 remote-control valet parking system press release launch date"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

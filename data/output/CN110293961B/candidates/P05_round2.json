@@ -1,0 +1,734 @@
+{
+  "candidate": {
+    "candidate_id": "P05",
+    "company": "奇瑞汽车",
+    "company_en": "Chery Automobile",
+    "product_name": "新一代瑞虎8 F-APA全自动泊车辅助系统",
+    "product_name_en": "Chery Tiggo 8 F-APA Fully Automatic Parking Assistance system",
+    "product_version": "2019年4月起在新一代瑞虎8等车型量产的F-APA系统，摘要称融合4颗环视摄像头和12个超声波传感器，支持水平、垂直、斜列和自选车位，驾驶员确认车位后自动泊入。",
+    "market": "中国自主品牌SUV量产自动泊车场景",
+    "reason_for_deep_dive": "该候选同时公开环视图像/传感器、可用车位搜索、自选车位、驾驶员确认车位后自动泊车，较完整对应权1的显示单元、优选区域标定/选择、意向区域识别与自动控制（C1-F2至C1-F5）。",
+    "source_result_ids": [
+      "tavily-Q01-05",
+      "brave-Q02-02"
+    ],
+    "source_urls": [
+      "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+      "https://t1d.cherymanuals.com/views/om004007.html"
+    ],
+    "initial_evidence_summary": "摘要明确称F-APA在新一代瑞虎8、星途LX等量产，融合“4颗环视摄像头和12个超声波传感器”，支持“水平、垂直、斜列和自选车位”，驾驶员确认车位后自动完成泊车。"
+  },
+  "launch_date": "2019年4月起量产；全新一代瑞虎8于2019年4月16日预售、2019年5月28日上市",
+  "launch_date_evidence": [
+    {
+      "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+      "title": "智能泊车功能标准化需求研究",
+      "source_name": "中汽中心/CATARC PDF",
+      "snippet": "“2019年4月，全自动泊车辅助系统F-APA在奇瑞旗下主流车型新一代瑞虎8、星途LX等陆续实现量产。”"
+    },
+    {
+      "url": "http://auto.china.com.cn/special/2019shcz/20190416/696372.shtml",
+      "title": "全新一代瑞虎8于上海车展开启预售 11.99-14.99万元",
+      "source_name": "中国网汽车",
+      "snippet": "2019年04月16日，奇瑞汽车携全新一代瑞虎8登陆上海车展并开启全平台预售。"
+    },
+    {
+      "url": "https://www.autolw.com/archives/51268",
+      "title": "全新一代瑞虎8上市 售价8.88万-15.59万",
+      "source_name": "汽车瞭望哨",
+      "snippet": "“5月28日，奇瑞汽车旗下瑞虎SUV家族旗舰车型——全新一代瑞虎8……正式上市”。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：公开量产/预售/上市时间均晚于专利申请日2018-03-23；未发现与权利要求1直接矛盾的公开证据。",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种自动泊车系统，其特征在于，包括显示单元以及自动泊车控制单元；其中，\n所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域；\n所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车；\n其中，所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种自动泊车系统",
+          "competitor_feature": "奇瑞F-APA被公开称为“全自动泊车辅助系统”，在新一代瑞虎8等车型量产；驾驶员确认车位后，车辆自动完成泊车入库。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“全自动泊车辅助系统F-APA在奇瑞旗下主流车型新一代瑞虎8、星途LX等陆续实现量产……待驾驶员确认车位后自动完成泊车入库。”"
+            }
+          ],
+          "reasoning": "CATARC PDF直接称其为全自动泊车辅助系统，并说明确认车位后自动泊车，直接对应“自动泊车系统”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括显示单元以及自动泊车控制单元",
+          "competitor_feature": "显示侧：新一代瑞虎8配有大尺寸悬浮式中控屏/三屏交互，电子说明书列有“全景影像（若配备）”；控制侧：F-APA融合4颗环视摄像头和12个超声波传感器，并自主提供转向、制动、挡位变换。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器……并自主提供转向、制动、挡位变换等功能。”"
+            },
+            {
+              "url": "https://www.autolw.com/archives/51268",
+              "title": "全新一代瑞虎8上市 售价8.88万-15.59万",
+              "source_name": "汽车瞭望哨",
+              "snippet": "“新车配有大尺寸悬浮式中控屏，并配备了同级独有的三屏交互科技。”"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录列有“音响及娱乐系统”“全景影像（若配备）”“倒车影像”等车辆显示/影像相关功能。"
+            }
+          ],
+          "reasoning": "公开资料分别给出车内显示/全景影像配置，以及F-APA对转向、制动、挡位的自动控制，二者共同对应显示单元和泊车控制单元。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "F-APA融合全景影像4颗环视摄像头，车辆具备全景影像/倒车影像显示入口；系统支持“自选车位”，并由驾驶员确认车位。但现有证据未直接展示驾驶员在显示图像上拖拽或划定泊车区域的HMI界面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器……支持水平、垂直、斜列和自选车位，待驾驶员确认车位后自动完成泊车入库。”"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录在“车辆装置”下列有“全景影像（若配备）”“倒车影像”。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/wd/4092493.html",
+              "title": "瑞虎8有自动泊车功能吗-太平洋汽车",
+              "source_name": "太平洋汽车",
+              "snippet": "“瑞虎8有自动泊车功能……由车辆的多功能摄像头来实现……能够利用车辆周围环境进行判断和计算从而轻松完成泊车。”"
+            }
+          ],
+          "reasoning": "“全景影像+自选车位+驾驶员确认”能较强推断存在基于周围图像的车位选择/划定交互；但缺少具体界面证据证明“根据显示图像划定意向泊车区域”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：2019款瑞虎8F-APA界面截图，确认驾驶员能在环视图像上手动划定意向泊车区域；现证据仅到“自选车位/确认”。\n下一步建议：到奇瑞电子说明书、太平洋汽车或B站查2019新一代瑞虎8 APA操作视频，逐帧看车位选择界面。"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+          "competitor_feature": "F-APA支持自选车位；低速行驶时系统自主寻找合适停车位，驾驶员确认车位后自动泊入；泊车中用12个超声波和4个摄像头监控周围环境/路径障碍，并自主转向、制动、换挡。未见“对驾驶员划定区域优化为满足空间大小区域”的直接表述。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“在车辆低速行驶时，系统可以自主帮助驾驶员寻找合适的停车位（支持水平、垂直、斜列和自选车位），待驾驶员确认车位后自动完成泊车入库……自主提供转向、制动、挡位变换等功能。”"
+            },
+            {
+              "url": "https://aikahao.xcar.com.cn/item/1296814.html",
+              "title": "泰为为奇瑞汽车实现驾驶自动化",
+              "source_name": "爱卡汽车爱咖号",
+              "snippet": "同属奇瑞车型的泰为F-APA方案描述为“实时车位识别……帮助用户轻松选择车位一键泊车”，并在自动泊车过程中实现“动态避障与动态路径规划”。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/wd/4092493.html",
+              "title": "瑞虎8有自动泊车功能吗-太平洋汽车",
+              "source_name": "太平洋汽车",
+              "snippet": "“能够利用车辆周围环境进行判断和计算从而轻松完成泊车……能实现水平、垂直、斜向车位的泊入”。"
+            }
+          ],
+          "reasoning": "自动寻找合适车位、确认后自动泊入及自主控制有直接证据；“识别/优化驾驶员划定区域并满足泊车空间大小”只能由自选车位、合适车位判断、路径规划和自动泊入功能推断。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：F-APA识别驾驶员划定区域并自动修正为满足泊车尺寸区域的算法/HMI说明；现仅证明找合适车位和自动泊入。\n下一步建议：在奇瑞电子说明书和泰为技术资料中定位F-APA用户手册/功能安全说明，查看“自选车位/车位校正”章节。"
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+          "competitor_feature": "F-APA融合全景影像摄像头和超声波，低速时自主帮助驾驶员寻找合适停车位，支持水平、垂直、斜列和自选车位，并需驾驶员确认目标车位。现有证据未直接写明或截图显示“在显示图像上标定”候选车位。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器。在车辆低速行驶时，系统可以自主帮助驾驶员寻找合适的停车位……待驾驶员确认车位后自动完成泊车入库。”"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录列有“全景影像（若配备）”，表明车辆具备显示车身周围影像的配置入口。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/ask/13286736.html",
+              "title": "瑞虎8和瑞虎9的智能驾驶辅助功能有什么区别？-汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "“APA全自动泊车能够自动搜索车位并实现一键水平、垂直、斜向车位泊入”。"
+            }
+          ],
+          "reasoning": "自动寻找合适车位对应选择优选泊车区域；因还需驾驶员确认且有全景影像，较可能在影像界面显示候选车位，但“叠加标定在显示图像上”的直接证据仍缺。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：候选车位框/优选泊车区域被叠加标定在环视图像上的截图；现仅证明系统会主动寻找合适车位并要求确认。\n下一步建议：到汽车之家、懂车帝、太平洋汽车、YouTube/B站查瑞虎8 ICT-300或F-APA实测视频，截取中控泊车界面。"
+        }
+      ],
+      "claim_score": 88.0
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车控制单元还用于将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述自动泊车控制单元还用于将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车",
+          "competitor_feature": "F-APA在低速时自主寻找合适停车位，支持自选车位，待驾驶员确认车位后自动完成泊车入库。公开证据直接证明“驾驶员确认后控制车辆自动泊车”，但未直接展示“将识别区域反馈给驾驶员/驾驶员调整”的界面细节。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“系统可以自主帮助驾驶员寻找合适的停车位（支持水平、垂直、斜列和自选车位），待驾驶员确认车位后自动完成泊车入库。”"
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100326430049",
+              "title": "瑞虎8pro有自动泊车吗 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "同车系问答称车辆传感器开始寻找合适停车位，并显示在车内显示屏上；找到合适车位后进行后续泊车。"
+            }
+          ],
+          "reasoning": "“确认车位后自动完成泊车”直接对应确认后控制车辆泊车；“反馈/调整”由确认车位的交互过程推断，缺少2019新一代瑞虎8的原始HMI截图或手册页。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车控制单元还用于对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述自动泊车控制单元还用于对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域",
+          "competitor_feature": "F-APA泊车过程中使用12个超声波及4颗摄像头监控车身周围环境、监测泊车路径障碍物信息；同类奇瑞F-APA方案有动态避障与动态路径规划。但公开证据未显示识别影响泊车障碍物后会提醒驾驶员重新划定意向泊车区域。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“泊车过程中，车辆使用12个超声波及4颗摄像头传感器监控车身周围环境、监测泊车路径的障碍物信息，保障泊车路径畅通。”"
+            },
+            {
+              "url": "https://aikahao.xcar.com.cn/item/1296814.html",
+              "title": "泰为为奇瑞汽车实现驾驶自动化",
+              "source_name": "爱卡汽车爱咖号",
+              "snippet": "同属奇瑞车型的泰为F-APA方案描述自动泊车过程中实现“动态避障与动态路径规划”。"
+            }
+          ],
+          "reasoning": "现有证据覆盖障碍物监测/避障，但未覆盖“对意向泊车区域障碍物识别后提醒驾驶员重新划定区域”这一特定交互结果，因此不足以确认该从属特征。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车系统还包括探测模块，用于对所述意向泊车区域进行障碍物检测，所述探测模块包括雷达和/或超声波检测单元。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述自动泊车系统还包括探测模块，用于对所述意向泊车区域进行障碍物检测，所述探测模块包括雷达和/或超声波检测单元",
+          "competitor_feature": "F-APA融合12个超声波传感器和4颗环视摄像头；泊车过程中使用12个超声波及4颗摄像头监控周围环境、监测泊车路径障碍物信息。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器……监测泊车路径的障碍物信息。”"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/wd/4092493.html",
+              "title": "瑞虎8有自动泊车功能吗-太平洋汽车",
+              "source_name": "太平洋汽车",
+              "snippet": "瑞虎8自动泊车可与360度全景监测等配置协同工作，提升安全性和便捷性。"
+            }
+          ],
+          "reasoning": "12个超声波传感器即属于权利要求中的“超声波检测单元”，其用于监测泊车路径障碍物信息，直接满足探测模块限定。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车系统还包括输入模块，以便于驾驶员划定所述意向泊车区域，所述输入模块包括触控板、触控屏、鼠标、手势识别模块和语音识别模块中的至少一个。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述自动泊车系统还包括输入模块，以便于驾驶员划定所述意向泊车区域，所述输入模块包括触控板、触控屏、鼠标、手势识别模块和语音识别模块中的至少一个",
+          "competitor_feature": "全新一代瑞虎8内饰配有超清触控电容中控屏/大尺寸悬浮式中控屏；F-APA支持自选车位并需驾驶员确认车位。现有证据能证明触控屏和泊车确认交互，但未直接证明该触控屏用于“划定”意向泊车区域。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.bjnews.com.cn/detail/155542936415310.html",
+              "title": "奇瑞全新瑞虎8开启预售，五座车型预售11.99万元起",
+              "source_name": "新京报",
+              "snippet": "“智联多功能全屏液晶仪表、超清触控电容中控屏、智享空调液晶触控屏，构造了三屏交互科技。”"
+            },
+            {
+              "url": "https://www.autolw.com/archives/51268",
+              "title": "全新一代瑞虎8上市 售价8.88万-15.59万",
+              "source_name": "汽车瞭望哨",
+              "snippet": "“新车配有大尺寸悬浮式中控屏，并配备了同级独有的三屏交互科技。”"
+            },
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "F-APA“支持水平、垂直、斜列和自选车位，待驾驶员确认车位后自动完成泊车入库”。"
+            }
+          ],
+          "reasoning": "触控屏作为输入模块有直接证据，F-APA存在自选/确认车位交互；但“用于划定意向泊车区域”的具体触摸划定动作仍需操作界面证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车系统还包括至少一个摄像头，所述至少一个摄像头用于采集车身周围的图像信息。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述自动泊车系统还包括至少一个摄像头，所述至少一个摄像头用于采集车身周围的图像信息",
+          "competitor_feature": "F-APA融合全景影像的4颗环视摄像头；泊车过程中使用4颗摄像头传感器监控车身周围环境。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器……车辆使用12个超声波及4颗摄像头传感器监控车身周围环境。”"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/wd/4092493.html",
+              "title": "瑞虎8有自动泊车功能吗-太平洋汽车",
+              "source_name": "太平洋汽车",
+              "snippet": "“配备的自动泊车功能是由车辆的多功能摄像头来实现的，能够利用车辆周围环境进行判断和计算”。"
+            }
+          ],
+          "reasoning": "4颗环视摄像头用于全景影像和周围环境监控，直接满足“至少一个摄像头采集车身周围图像信息”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.如权利要求6所述的自动泊车系统，其特征在于，所述自动泊车系统还包括视频采集卡，所述视频采集卡用于对所述车身周围的图像信息进行处理，并将处理后的图像信息发送到所述显示单元进行显示。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述自动泊车系统还包括视频采集卡，所述视频采集卡用于对所述车身周围的图像信息进行处理，并将处理后的图像信息发送到所述显示单元进行显示",
+          "competitor_feature": "瑞虎8具备全景影像/倒车影像显示，F-APA融合4颗环视摄像头；多摄像头图像要在中控/显示系统呈现，必然存在图像采集处理硬件或控制器。但公开资料未直接命名“视频采集卡”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "F-APA“融合了全景影像的4颗环视摄像头和12个超声波传感器”。"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录列有“全景影像（若配备）”“倒车影像”，表明图像信息被处理并显示给驾驶员。"
+            },
+            {
+              "url": "https://www.autolw.com/archives/51268",
+              "title": "全新一代瑞虎8上市 售价8.88万-15.59万",
+              "source_name": "汽车瞭望哨",
+              "snippet": "“新车配有大尺寸悬浮式中控屏，并配备了同级独有的三屏交互科技。”"
+            }
+          ],
+          "reasoning": "全景/倒车影像显示功能从功能上需要图像采集处理并发送到显示单元；但车规系统通常称为AVM/泊车控制器，公开证据未确认其为“视频采集卡”这一具体部件。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.如权利要求6所述的自动泊车系统，其特征在于，所述自动泊车系统还包括视频采集卡，所述视频采集卡用于将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送到所述显示单元进行显示。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述自动泊车系统还包括视频采集卡，所述视频采集卡用于将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送到所述显示单元进行显示",
+          "competitor_feature": "F-APA使用“全景影像”的4颗环视摄像头，瑞虎8手册有“全景影像（若配备）”，其他公开资料称具备360度全景监测/全景影像。多路环视摄像头生成全景图像可推断存在合并处理，但未直接披露视频采集卡。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器。”"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录列有“全景影像（若配备）”。"
+            },
+            {
+              "url": "https://m.pcauto.com.cn/baike/880102/1725928",
+              "title": "奇瑞瑞虎8有自动泊车吗-太平洋汽车百科",
+              "source_name": "太平洋汽车百科",
+              "snippet": "瑞虎8搭载L2级自动驾驶技术，还有“360度全景影像”等安全配置。"
+            }
+          ],
+          "reasoning": "“4颗环视摄像头+全景影像/360度全景影像”强烈说明车身周围图像被合并为全景图并显示；但“视频采集卡”作为部件名称或硬件结构未被直接公开。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.一种车辆，其特征在于，包括权利要求1到8任一项所述的自动泊车系统。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "一种车辆，包括自动泊车系统",
+          "competitor_feature": "新一代瑞虎8为奇瑞SUV车型，2019年4月起搭载/量产F-APA全自动泊车辅助系统。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“全自动泊车辅助系统F-APA在奇瑞旗下主流车型新一代瑞虎8、星途LX等陆续实现量产。”"
+            },
+            {
+              "url": "https://www.autolw.com/archives/51268",
+              "title": "全新一代瑞虎8上市 售价8.88万-15.59万",
+              "source_name": "汽车瞭望哨",
+              "snippet": "“5月28日，奇瑞汽车旗下瑞虎SUV家族旗舰车型——全新一代瑞虎8……正式上市”。"
+            }
+          ],
+          "reasoning": "公开资料直接表明新一代瑞虎8车辆搭载并量产F-APA自动泊车辅助系统。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种自动泊车方法，其特征在于，所述自动泊车方法包括以下步骤：\n显示车身周围的图像信息，以便于驾驶员根据显示的所述图像信息划定意向泊车区域；\n识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据所述意向泊车区域实现自动泊车；\n其中，所述方法还包括根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在显示的所述图像信息上。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "一种自动泊车方法",
+          "competitor_feature": "F-APA在车辆低速行驶时寻找合适停车位，驾驶员确认后自动完成泊车入库，形成自动泊车方法流程。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“系统可以自主帮助驾驶员寻找合适的停车位……待驾驶员确认车位后自动完成泊车入库。”"
+            }
+          ],
+          "reasoning": "从寻找车位、确认目标到自动泊入的公开流程直接对应自动泊车方法。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F2",
+          "patent_feature": "显示车身周围的图像信息，以便于驾驶员根据显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "瑞虎8具备全景影像/倒车影像显示，F-APA融合4颗环视摄像头并支持自选车位；但公开证据未直接显示驾驶员在图像上划定区域的步骤。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "F-APA融合“全景影像的4颗环视摄像头”，并支持“自选车位”。"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录列有“全景影像（若配备）”“倒车影像”。"
+            }
+          ],
+          "reasoning": "全景影像显示和自选车位支持可推断存在基于图像的泊车区域选择步骤；“划定”动作仍缺直接证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F3",
+          "patent_feature": "识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据所述意向泊车区域实现自动泊车",
+          "competitor_feature": "F-APA自主寻找合适停车位，支持自选车位，确认后自动泊入；自动泊车过程中监控障碍物并自主提供转向、制动、挡位变换。未直接披露“优化驾驶员划定区域”的方法步骤。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“自主帮助驾驶员寻找合适的停车位……待驾驶员确认车位后自动完成泊车入库……自主提供转向、制动、挡位变换等功能。”"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/wd/4092493.html",
+              "title": "瑞虎8有自动泊车功能吗-太平洋汽车",
+              "source_name": "太平洋汽车",
+              "snippet": "“能够利用车辆周围环境进行判断和计算从而轻松完成泊车……能实现水平、垂直、斜向车位的泊入”。"
+            }
+          ],
+          "reasoning": "“合适停车位”判断、确认后自动泊入和车辆控制均有证据；对驾驶员划定区域的识别/优化属于由自选车位和路径规划推断。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F4",
+          "patent_feature": "所述方法还包括根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在显示的所述图像信息上",
+          "competitor_feature": "F-APA基于全景影像摄像头和超声波在低速时自主寻找合适停车位，驾驶员确认目标车位后自动泊入；未直接公开候选车位被标定在显示图像上的方法步骤。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器。在车辆低速行驶时，系统可以自主帮助驾驶员寻找合适的停车位……待驾驶员确认车位后自动完成泊车入库。”"
+            },
+            {
+              "url": "https://www.autohome.com.cn/ask/13286736.html",
+              "title": "瑞虎8和瑞虎9的智能驾驶辅助功能有什么区别？-汽车之家",
+              "source_name": "汽车之家",
+              "snippet": "“APA全自动泊车能够自动搜索车位并实现一键水平、垂直、斜向车位泊入”。"
+            }
+          ],
+          "reasoning": "自动搜索/寻找合适车位对应选择优选泊车区域；显示图像上标定候选区域尚缺直接HMI证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 85.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.如权利要求10所述的自动泊车方法，其特征在于，所述自动泊车方法还包括将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "所述自动泊车方法还包括将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车",
+          "competitor_feature": "F-APA在自主寻找合适停车位后，待驾驶员确认车位后自动完成泊车入库。可推断系统将目标车位反馈给驾驶员以供确认，但未直接证明调整后意向区域的控制流程。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“系统可以自主帮助驾驶员寻找合适的停车位……待驾驶员确认车位后自动完成泊车入库。”"
+            },
+            {
+              "url": "https://www.bitauto.com/ask/100326430049",
+              "title": "瑞虎8pro有自动泊车吗 | BitAuto",
+              "source_name": "BitAuto",
+              "snippet": "同车系问答称车辆传感器开始寻找合适停车位，并显示在车内显示屏上；找到合适车位后进行泊车。"
+            }
+          ],
+          "reasoning": "确认车位后自动泊入直接对应后半段；将识别区域反馈给驾驶员可由“确认车位”合理推断，但“调整后区域”未直接公开。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 12,
+      "claim_text": "12.如权利要求10所述的自动泊车方法，其特征在于，所述自动泊车方法还包括对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域。",
+      "comparisons": [
+        {
+          "feature_id": "C12-F1",
+          "patent_feature": "所述自动泊车方法还包括对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域",
+          "competitor_feature": "F-APA泊车过程中监控车身周围环境并监测泊车路径障碍物信息；但没有公开证据显示方法包括在障碍物影响泊车时提醒驾驶员重新划定意向泊车区域。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“泊车过程中，车辆使用12个超声波及4颗摄像头传感器监控车身周围环境、监测泊车路径的障碍物信息，保障泊车路径畅通。”"
+            },
+            {
+              "url": "https://aikahao.xcar.com.cn/item/1296814.html",
+              "title": "泰为为奇瑞汽车实现驾驶自动化",
+              "source_name": "爱卡汽车爱咖号",
+              "snippet": "同属奇瑞车型的泰为F-APA方案描述自动泊车过程中实现“动态避障与动态路径规划”。"
+            }
+          ],
+          "reasoning": "障碍物识别/监测有相关证据；“提醒重新划定意向泊车区域”没有公开证据支持，故该完整方法特征证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 13,
+      "claim_text": "13.如权利要求10所述的自动泊车方法，其特征在于，所述自动泊车方法还包括采集车身周围的图像信息。",
+      "comparisons": [
+        {
+          "feature_id": "C13-F1",
+          "patent_feature": "所述自动泊车方法还包括采集车身周围的图像信息",
+          "competitor_feature": "F-APA融合全景影像4颗环视摄像头，并在泊车过程中用4颗摄像头传感器监控车身周围环境。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头……泊车过程中，车辆使用12个超声波及4颗摄像头传感器监控车身周围环境。”"
+            }
+          ],
+          "reasoning": "4颗环视摄像头用于监控车身周围环境，直接对应采集车身周围图像信息的方法步骤。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 14,
+      "claim_text": "14.如权利要求13所述的自动泊车方法，其特征在于，所述自动泊车方法还包括对所述车身周围的图像信息进行处理，并将处理后的图像信息发送并显示。",
+      "comparisons": [
+        {
+          "feature_id": "C14-F1",
+          "patent_feature": "所述自动泊车方法还包括对所述车身周围的图像信息进行处理，并将处理后的图像信息发送并显示",
+          "competitor_feature": "瑞虎8具备全景影像/倒车影像显示，F-APA使用4颗环视摄像头；将摄像头图像作为全景/倒车影像显示必然涉及图像处理和发送显示，但公开资料未细化处理链路。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "F-APA“融合了全景影像的4颗环视摄像头”。"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录列有“全景影像（若配备）”“倒车影像”。"
+            },
+            {
+              "url": "https://www.autolw.com/archives/51268",
+              "title": "全新一代瑞虎8上市 售价8.88万-15.59万",
+              "source_name": "汽车瞭望哨",
+              "snippet": "“新车配有大尺寸悬浮式中控屏”。"
+            }
+          ],
+          "reasoning": "全景/倒车影像从摄像头采集到中控显示的功能上需要处理、发送并显示；但处理步骤本身未被说明书页面或技术资料直接展开。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 15,
+      "claim_text": "15.如权利要求13所述的自动泊车方法，其特征在于，所述自动泊车方法还包括将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送并显示。",
+      "comparisons": [
+        {
+          "feature_id": "C15-F1",
+          "patent_feature": "所述自动泊车方法还包括将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送并显示",
+          "competitor_feature": "F-APA融合全景影像的4颗环视摄像头，瑞虎8手册列有全景影像，其他公开资料称瑞虎8具备360度全景影像/全景监测。多路环视图像合成为全景图像并显示可合理推断，但未直接公开“合并处理”步骤。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+              "title": "智能泊车功能标准化需求研究",
+              "source_name": "中汽中心/CATARC PDF",
+              "snippet": "“该系统融合了全景影像的4颗环视摄像头和12个超声波传感器。”"
+            },
+            {
+              "url": "https://t18.cherymanuals.com",
+              "title": "瑞虎8用户手册手机版",
+              "source_name": "奇瑞电子说明书",
+              "snippet": "手册目录列有“全景影像（若配备）”。"
+            },
+            {
+              "url": "https://m.pcauto.com.cn/baike/880102/1725928",
+              "title": "奇瑞瑞虎8有自动泊车吗-太平洋汽车百科",
+              "source_name": "太平洋汽车百科",
+              "snippet": "瑞虎8搭载L2级自动驾驶技术，还有“360度全景影像”等安全配置。"
+            }
+          ],
+          "reasoning": "“4颗环视摄像头+全景影像/360度全景影像”足以严谨推断多路车身周围图像被合并为全景图并发送显示；但未见原始技术文档逐字描述“合并处理”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    }
+  ],
+  "claim_1_score": 88.0,
+  "total_score": 88.0,
+  "searched_queries": [
+    "奇瑞汽车 新一代瑞虎8 F-APA全自动泊车辅助系统 上市 日期 发布",
+    "瑞虎8 F-APA 自动泊车 控制器 模块 维修手册",
+    "瑞虎8 F-APA 自选车位 划定 车位 操作 界面",
+    "Chery Tiggo 8 F-APA Fully Automatic Parking Assistance system teardown review structure",
+    "奇瑞汽车 新一代瑞虎8 F-APA 全自动泊车辅助系统 官方 参数",
+    "瑞虎8 F-APA 全自动泊车 自选车位 操作视频 界面 划定车位",
+    "新一代瑞虎8 自动泊车 自选车位 中控屏 拖动 选择 停车位",
+    "Tiggo 8 F-APA custom parking space touchscreen interface video",
+    "瑞虎8 F-APA 自选车位 车位校正 路径规划 自动泊入 说明书"
+  ],
+  "searched_providers": [
+    "tavily",
+    "brave",
+    "bocha",
+    "exa"
+  ]
+}

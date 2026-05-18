@@ -1,0 +1,24 @@
+$ /Users/wangyc/Desktop/projects/PatentRadar/.venv/bin/python3 -m patentradar.cli report /Users/wangyc/Desktop/projects/PatentRadar/data/output/CN110293961B/task_package.json /Users/wangyc/Desktop/projects/PatentRadar/data/output/CN110293961B/top5_full_claim_chart.json --output-dir /Users/wangyc/Desktop/projects/PatentRadar/data/output/CN110293961B
+22:25:11 [patentradar.modules.report.pipeline] module4 report start publication=CN110293961B max_total_score=100.00 threshold=80.00
+22:25:11 [patentradar.modules.report.pipeline] module4 similar-patent deep link generated url=https://patents.google.com/?q=%22%E4%B8%80%E7%A7%8D%E8%87%AA%E5%8A%A8%E6%B3%8A%E8%BD%A6%E7%B3%BB%E7%BB%9F%E3%80%81%E6%96%B9%E6%B3%95%E5%8F%8A%E8%BD%A6%E8%BE%86%22&assignee=BYD+Co+Ltd&country=CN&dups=language
+22:25:11 [patentradar.llm.workers.report_worker] module4 generating overview (sections 1 + 2)
+22:25:11 [patentradar.llm.codex] codex prompt size=9,647 chars model=gpt-5.5
+22:25:13 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
+22:25:30 [patentradar.llm.workers.report_worker] module4 generating TOP1 block: 赛力斯汽车（AITO问界） / 问界M5 APA自动泊入功能
+22:25:30 [patentradar.llm.codex] codex prompt size=37,736 chars model=gpt-5.5
+22:25:31 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
+22:27:55 [patentradar.llm.workers.report_worker] module4 generating TOP2 block: 广汽本田 / 奥德赛2019款 自动泊车辅助系统
+22:27:55 [patentradar.llm.codex] codex prompt size=39,328 chars model=gpt-5.5
+22:27:56 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
+22:30:28 [patentradar.llm.workers.report_worker] module4 generating TOP3 block: 零跑汽车 / 零跑C16 APA语音泊车
+22:30:28 [patentradar.llm.codex] codex prompt size=15,713 chars model=gpt-5.5
+22:30:29 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
+22:31:22 [patentradar.llm.workers.report_worker] module4 generating TOP4 block: 小鹏汽车 / 小鹏G9 自动泊车辅助（APA）
+22:31:22 [patentradar.llm.codex] codex prompt size=34,662 chars model=gpt-5.5
+22:31:23 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
+22:33:40 [patentradar.llm.workers.report_worker] module4 generating TOP5 block: 奇瑞汽车 / 新一代瑞虎8 F-APA全自动泊车辅助系统
+22:33:40 [patentradar.llm.codex] codex prompt size=35,316 chars model=gpt-5.5
+22:33:41 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
+22:36:07 [patentradar.modules.report.pipeline] module4 report pdf=/Users/wangyc/Desktop/projects/PatentRadar/data/output/CN110293961B/report.pdf
+22:36:07 [patentradar.modules.report.pipeline] module4 report done publication=CN110293961B output=/Users/wangyc/Desktop/projects/PatentRadar/data/output/CN110293961B/report.md elapsed_ms=655161
+Wrote /Users/wangyc/Desktop/projects/PatentRadar/data/output/CN110293961B/report.md

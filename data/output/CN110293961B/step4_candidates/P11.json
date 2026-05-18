@@ -1,0 +1,195 @@
+{
+  "candidate": {
+    "candidate_id": "P11",
+    "company": "特斯拉中国",
+    "company_en": "Tesla China",
+    "product_name": "Model 3 自动泊车（Autopark）",
+    "product_name_en": "Tesla Model 3 Autopark",
+    "product_version": "特斯拉中国Model 3车主手册中的自动泊车功能，摘要称只有车辆位置和周围环境可使自动泊车确定适宜行驶路线时，才会显示检测到的停车位；否则需重新定位或寻找其他停车位。",
+    "market": "中国纯电轿车自动泊车/车位检测显示场景",
+    "reason_for_deep_dive": "官方手册明确“显示检测到的停车位”和基于周围环境确定适宜行驶路线，分别对应权1中优选泊车区域标定显示（C1-F5）与控制单元根据区域实现自动泊车（C1-F4）；需进一步核查是否允许驾驶员在图像界面选择或划定意向区域（C1-F3）。",
+    "source_result_ids": [
+      "brave-Q06-01"
+    ],
+    "source_urls": [
+      "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html"
+    ],
+    "initial_evidence_summary": "特斯拉中国手册摘要称自动泊车在车辆位置/周边环境允许确定适宜路线时“显示检测到的停车位”，否则提示重新定位、寻找其他停车位或手动驻车。"
+  },
+  "launch_date": "至少2021年3月已公开；未见早于专利申请日的Model 3 Autopark具体公开证据",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.icauto.com.cn/vvauto/69/699068.html",
+      "title": "Model3自动泊车如何开启?Model3自动泊车按钮在哪里_车主指南",
+      "source_name": "车主指南",
+      "snippet": "2021-03-26文章称：当车辆驶过停车位时，如果屏幕上出现P图标，表明车辆进行了有效识别，挂入倒档、踩刹车，点击弹出的“开始泊车”蓝色按钮就可以自动泊车。"
+    },
+    {
+      "url": "https://www.pcauto.com.cn/jxwd/2813/28131670.html",
+      "title": "特斯拉model 3有自动泊车功能吗_太平洋汽车网",
+      "source_name": "太平洋汽车网",
+      "snippet": "2022-01-17文章称特斯拉Model 3有自动泊车功能，车辆驶过停车位时屏幕出现P图标，点击“开始泊车”按钮进行自动泊车。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "现有证据中Model 3 Autopark的明确公开时间为2021年3月以后，晚于专利申请日2018-03-23；未发现直接证明该候选具体自动泊车功能早于申请日公开/上市的证据，也未发现明确不满足的技术特征。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "Model 3具备Autopark/自动泊车功能：驾驶员在车辆检测到停车位后点击“Start Autopark/开始泊车”，车辆自动驶入停车位。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+          "title": "Model 3 Owner's Manual | Tesla - Autopark",
+          "source_name": "Tesla",
+          "snippet": "When driving, follow these steps to allow Autopark to maneuver Model 3 into a parking space; monitor the touchscreen to see potential parking spaces detected by Autopilot."
+        },
+        {
+          "url": "https://www.pcauto.com.cn/jxwd/2813/28131670.html",
+          "title": "特斯拉model 3有自动泊车功能吗_太平洋汽车网",
+          "source_name": "太平洋汽车网",
+          "snippet": "特斯拉model 3有自动泊车功能……点击弹出的“开始泊车”蓝色按钮就可以进行自动泊车了。"
+        }
+      ],
+      "reasoning": "Tesla官方手册直接称Autopark可使Model 3驶入停车位；中文第三方说明Model 3有自动泊车并可点击开始泊车，构成自动泊车系统。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "显示单元：Model 3前触摸屏/touchscreen；自动泊车控制相关单元：Autopark由Autopilot检测车位并操纵车辆，车辆还具备Autopilot Computer/驾驶辅助传感器体系。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+          "title": "Model 3 Owner's Manual | Tesla - Autopark",
+          "source_name": "Tesla",
+          "snippet": "monitor the touchscreen to see potential parking spaces detected by Autopilot; release the steering wheel, shift Model 3 into Reverse, then touch Start Autopark on the touchscreen."
+        },
+        {
+          "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-2EC65893-8042-48FD-ACAF-D9E9DA8C6F95.html",
+          "title": "Touchscreen - Front (Remove and Replace)",
+          "source_name": "Tesla Service",
+          "snippet": "Model 3 2024+ Service Manual lists the front touchscreen as a replaceable vehicle component."
+        },
+        {
+          "url": "https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-398A1EDE-FA47-4ABB-A10D-CC502CB265F4.html",
+          "title": "Sensor - Parking Distance - Inner - Front (Remove and Replace)",
+          "source_name": "Tesla Service",
+          "snippet": "Service procedure references Driver Assist ➜ Sensors and TEST-RESET_PARK / programming parking sensors."
+        }
+      ],
+      "reasoning": "触摸屏是明确显示单元；官方手册称Autopilot检测车位并由Autopark操纵车辆。证据未直接命名“自动泊车控制单元”，但可由Autopark控制功能和驾驶辅助/泊车传感器体系严谨推得存在控制单元。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "Model 3触摸屏会显示车辆驾驶状态/Autopilot可视化及检测到的停车位图标，驾驶员可触摸“Start Autopark”；但现有证据没有显示驾驶员可在车身周围图像上手动画定/框选意向泊车区域。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+          "title": "Model 3 Owner's Manual | Tesla - Autopark",
+          "source_name": "Tesla",
+          "snippet": "monitor the touchscreen to see potential parking spaces detected by Autopilot; touch Start Autopark on the touchscreen."
+        },
+        {
+          "url": "https://manual.dot.report/tesla/model-3/2021-tesla-model-3-autopark-owners-manual/amp",
+          "title": "2021 Tesla Model 3 Autopark Owners Manual",
+          "source_name": "manual.dot.report",
+          "snippet": "The touchscreen will display a parking icon if the vehicle detects a potential parking spot."
+        },
+        {
+          "url": "https://www.icauto.com.cn/vvauto/69/699068.html",
+          "title": "Model3自动泊车如何开启?Model3自动泊车按钮在哪里_车主指南",
+          "source_name": "车主指南",
+          "snippet": "屏幕上出现P图标表明车辆进行了有效识别，挂入倒档、脚踩刹车，点击弹出的“开始泊车”蓝色按钮。"
+        }
+      ],
+      "reasoning": "证据只证明触摸屏显示检测到的车位/P图标并允许开始泊车；未见驾驶员基于周围图像“划定”意向泊车区域的字面或界面证据。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "Autopark检测潜在停车位；在可确定合适行驶路线时显示车位/允许开始泊车；驾驶员点击Start Autopark后车辆自动操纵进入车位。但未直接证明其识别“驾驶员划定区域”并对该区域进行“优化”。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+          "title": "Model 3 车主手册 | 特斯拉中国 - 自动泊车",
+          "source_name": "Tesla China",
+          "snippet": "摘要显示：只有车辆位置和周围环境可使自动泊车确定适宜行驶路线时，才会显示检测到的停车位；否则需重新定位或寻找其他停车位。"
+        },
+        {
+          "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+          "title": "Model 3 Owner's Manual | Tesla - Autopark",
+          "source_name": "Tesla",
+          "snippet": "While driving slowly, monitor the touchscreen to see potential parking spaces detected by Autopilot; release the steering wheel, shift into Reverse, then touch Start Autopark."
+        },
+        {
+          "url": "https://www.tmodel3.com/autopark-1665.html",
+          "title": "Tesla Model 3 - Autopark - Autopilot",
+          "source_name": "tmodel3.com",
+          "snippet": "Release the steering wheel, shift Model 3 into Reverse, then touch Start Autopark on the touchscreen."
+        }
+      ],
+      "reasoning": "官方手册证明系统检测车位、判断路线适宜性并控制车辆泊入；把驾驶员点击Start视为确认意向车位可推得大部分功能。但“识别驾驶员划定区域/优化区域”未被直接公开，故仅可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "Autopilot检测潜在停车位；触摸屏显示停车图标/P图标以标示检测到的潜在停车位；驾驶员据此启动Autopark。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+          "title": "Model 3 Owner's Manual | Tesla - Autopark",
+          "source_name": "Tesla",
+          "snippet": "monitor the touchscreen ... to see potential parking spaces detected by Autopilot."
+        },
+        {
+          "url": "https://manual.dot.report/tesla/model-3/2021-tesla-model-3-autopark-owners-manual/amp",
+          "title": "2021 Tesla Model 3 Autopark Owners Manual",
+          "source_name": "manual.dot.report",
+          "snippet": "The touchscreen will display a parking icon if the vehicle detects a potential parking spot."
+        },
+        {
+          "url": "https://www.pcauto.com.cn/jxwd/2813/28131670.html",
+          "title": "特斯拉model 3有自动泊车功能吗_太平洋汽车网",
+          "source_name": "太平洋汽车网",
+          "snippet": "当车辆驶过停车位时，如果屏幕上出现P图标，表明车辆进行了有效识别。"
+        }
+      ],
+      "reasoning": "Tesla官方及第三方页面均直接说明车辆检测潜在停车位，并在触摸屏以停车图标/P图标显示；该图标即对优选/潜在泊车区域的屏幕标定。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 78.0,
+  "searched_queries": [
+    "Tesla Model 3 Autopark control module parking controller touchscreen display service manual",
+    "Tesla Model 3 Autopark owner's manual touchscreen select parking spot detected parking space",
+    "特斯拉中国 Model 3 自动泊车（Autopark） 中国 市场",
+    "特斯拉中国 Model 3 自动泊车（Autopark） 特斯拉中国Model3车主手册 site:m.asemanshop.com"
+  ],
+  "searched_providers": [
+    "brave",
+    "bocha",
+    "tavily",
+    "exa"
+  ]
+}

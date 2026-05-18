@@ -1,0 +1,198 @@
+{
+  "publication_no": "CN110293961B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "极氪汽车",
+      "company_en": "ZEEKR",
+      "product_name": "极氪007 ZEEKR OS 6.1 指尖泊车/APA车头泊入",
+      "product_name_en": "ZEEKR 007 ZEEKR OS 6.1 fingertip parking / APA front-in parking",
+      "product_version": "ZEEKR OS 6.1 OTA版本，搜索摘要显示新增APA自动泊车高难度场景、优化FTP指尖泊车交互，并新增指尖泊车单鱼眼视图；另有“APA车头泊入功能上线”报道。",
+      "market": "中国智能电动车低速泊车/自动泊车场景",
+      "reason_for_deep_dive": "“指尖泊车+单鱼眼视图”与权1中驾驶员基于显示单元图像划定/选择意向泊车区域（C1-F3）高度相邻；APA高难度场景与车头泊入涉及控制单元识别目标区域、规划并控制泊车（C1-F4），值得核查是否在环视图像上标定优选区域（C1-F5）。",
+      "source_result_ids": [
+        "tavily-Q03-02",
+        "tavily-Q03-01"
+      ],
+      "source_urls": [
+        "https://www.xchuxing.com/article/118204",
+        "https://chejiahao.autohome.com.cn/info/15250452?isfrom=m"
+      ],
+      "initial_evidence_summary": "搜索摘要明确出现“ZEEKR OS 6.1”“新增APA自动泊车高难度场景”“优化FTP指尖泊车交互”“新增指尖泊车单鱼眼视图”，以及“极氪APA车头泊入功能上线”。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "小鹏汽车",
+      "company_en": "XPeng Motors",
+      "product_name": "小鹏G9 自动泊车辅助（APA）",
+      "product_name_en": "XPeng G9 Automated Parking Assist (APA)",
+      "product_version": "面向小鹏G9的自动泊车功能，摘要称车辆可通过激光雷达和摄像头进行环境感知，车机屏幕出现蓝框可停车位后，驾驶员踩刹选择目标车位并点击开始泊车。",
+      "market": "中国智能电动车自动泊车/车位选择场景",
+      "reason_for_deep_dive": "屏幕蓝框显示可停车位并由驾驶员选择，直接对应权1的显示单元显示周边图像/候选泊车区域并供驾驶员确定意向区域（C1-F3、C1-F5）；车辆随后自动完成泊车，关联控制单元识别目标区域并控制泊车（C1-F4）。",
+      "source_result_ids": [
+        "bocha-Q19-03"
+      ],
+      "source_urls": [
+        "https://bbs.xiaopeng.com/thread/2111633"
+      ],
+      "initial_evidence_summary": "摘要称“小鹏G9的自动泊车”利用“激光雷达和摄像头进行环境感知”，车机屏幕出现“蓝框可停车位”，用户“选择你想停的车位”并点击开始。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "赛力斯汽车（AITO问界）",
+      "company_en": "SERES / AITO",
+      "product_name": "问界M5 APA自动泊入功能",
+      "product_name_en": "AITO M5 APA automatic parking-in function",
+      "product_version": "问界M5的APA自动泊入功能，摘要称支持100+泊车场景，并支持空间车位、斜列车位、自选车位的自动泊入。",
+      "market": "中国新能源SUV自动泊车/自选车位场景",
+      "reason_for_deep_dive": "“自选车位”与权1的驾驶员划定/选择意向泊车区域（C1-F3）接近；支持空间车位、斜列车位等多类型车位，说明系统需判断泊车空间大小并执行自动泊入，值得深挖其是否对意向区域优化并标定优选区域（C1-F4、C1-F5）。",
+      "source_result_ids": [
+        "brave-Q13-01"
+      ],
+      "source_urls": [
+        "https://finance.sina.com.cn/tech/2022-04-13/doc-imcwipii3969702.shtml"
+      ],
+      "initial_evidence_summary": "搜索摘要明确称问界M5 APA自动泊入“支持空间车位、斜列车位、自选车位的自动泊入”，并提到“100+泊车场景”。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "理想汽车",
+      "company_en": "Li Auto",
+      "product_name": "理想ONE 环视泊车系统",
+      "product_name_en": "Li ONE surround-view parking system",
+      "product_version": "理想ONE环视泊车系统通过超声波雷达和侧面摄像头获取车位信息；车速低于20km/h时可寻找车位，在中控屏显示停车位，驾驶员选择车位后执行泊入。",
+      "market": "中国增程式SUV自动泊车/环视泊车场景",
+      "reason_for_deep_dive": "该系统具有中控屏显示停车位、驾驶员选择车位的HMI流程，覆盖权1的显示单元与驾驶员意向泊车区域选择（C1-F2、C1-F3）；摘要还给出车位尺寸要求，关联“优化后的泊车区域满足泊车所需要的空间大小”（C1-F4）。",
+      "source_result_ids": [
+        "bocha-Q04-03",
+        "bocha-Q02-01"
+      ],
+      "source_urls": [
+        "https://baa.yiche.com/lixiangone/thread-42531308.html",
+        "https://www.lixiang.com/community/detail/video/48943.html"
+      ],
+      "initial_evidence_summary": "摘要称环视泊车通过“超声波雷达和侧面摄像头获取车位信息”，系统会在“中控屏上显示停车位”，驾驶员选择车位；支持平行、垂直车位，并给出平行式车位6.25m×2.25m、垂直车位5m×3m等要求。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "奇瑞汽车",
+      "company_en": "Chery Automobile",
+      "product_name": "新一代瑞虎8 F-APA全自动泊车辅助系统",
+      "product_name_en": "Chery Tiggo 8 F-APA Fully Automatic Parking Assistance system",
+      "product_version": "2019年4月起在新一代瑞虎8等车型量产的F-APA系统，摘要称融合4颗环视摄像头和12个超声波传感器，支持水平、垂直、斜列和自选车位，驾驶员确认车位后自动泊入。",
+      "market": "中国自主品牌SUV量产自动泊车场景",
+      "reason_for_deep_dive": "该候选同时公开环视图像/传感器、可用车位搜索、自选车位、驾驶员确认车位后自动泊车，较完整对应权1的显示单元、优选区域标定/选择、意向区域识别与自动控制（C1-F2至C1-F5）。",
+      "source_result_ids": [
+        "tavily-Q01-05",
+        "brave-Q02-02"
+      ],
+      "source_urls": [
+        "https://catarc.org.cn/upload/202107/13/202107132201349457.pdf",
+        "https://t1d.cherymanuals.com/views/om004007.html"
+      ],
+      "initial_evidence_summary": "摘要明确称F-APA在新一代瑞虎8、星途LX等量产，融合“4颗环视摄像头和12个超声波传感器”，支持“水平、垂直、斜列和自选车位”，驾驶员确认车位后自动完成泊车。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "零跑汽车",
+      "company_en": "Leapmotor",
+      "product_name": "零跑C16 APA语音泊车",
+      "product_name_en": "Leapmotor C16 APA voice parking",
+      "product_version": "零跑C16新增APA语音泊车，摘要称泊车系统识别的车位会自行编号，驾驶员可用“第几个”“开始泊车”等免唤醒词代替触控屏选择并启动泊车。",
+      "market": "中国新能源SUV/MPV智能泊车交互场景",
+      "reason_for_deep_dive": "系统先在屏幕/泊车界面显示并编号识别车位，再由驾驶员通过语音选择目标车位，等同于对意向泊车区域进行选择，关联C1-F3、C1-F5；自动启动泊车对应C1-F4。",
+      "source_result_ids": [
+        "bocha-Q02-02"
+      ],
+      "source_urls": [
+        "https://www.yiche.com/zhai/2180985"
+      ],
+      "initial_evidence_summary": "摘要称零跑C16 APA语音泊车可避免起身点击中控屏，系统识别车位后自行编号，用户通过“第几个”和“开始泊车”进行选择与启动。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "广汽本田",
+      "company_en": "GAC Honda",
+      "product_name": "奥德赛2019款 自动泊车辅助系统",
+      "product_name_en": "GAC Honda Odyssey 2019 Automatic Parking Assist system",
+      "product_version": "广汽本田奥德赛2019款操作手册中的自动泊车辅助系统，摘要称车辆通过全景影像系统自动检索停车位置；显示全景影像后进入泊车辅助，选择停车模式并确认停车位，点击“开始”后系统自动调整方向盘。",
+      "market": "中国合资MPV全景影像自动泊车场景",
+      "reason_for_deep_dive": "全景影像显示、自动检索停车位置、用户选择/确认停车位与权1的显示单元、优选泊车区域标定和驾驶员意向区域选择高度相关（C1-F2、C1-F3、C1-F5）；点击开始后自动转向对应C1-F4。",
+      "source_result_ids": [
+        "bocha-Q08-01"
+      ],
+      "source_urls": [
+        "https://www.ghac.cn/static/vehicles/odyssey/2019/manual/ch23.html"
+      ],
+      "initial_evidence_summary": "官方手册摘要称“通过全景影像系统自动检索停车场的停车位置”，显示全景影像后进入泊车辅助；流程包括“选择停车模式”“确认停车位”“目标停车线框住要停入的区域”“点击开始”。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "长安汽车",
+      "company_en": "Changan Automobile",
+      "product_name": "长安CS75 PLUS APA 5.0遥控代客泊车系统",
+      "product_name_en": "Changan CS75 PLUS APA 5.0 remote-control valet parking system",
+      "product_version": "长安CS75 PLUS搭载APA 5.0遥控代客泊车系统，摘要称集成4个高清广角摄像头形成360°视图以及前/后泊车雷达，可实现水平、垂直等泊车场景。",
+      "market": "中国自主品牌SUV自动泊车/遥控泊车场景",
+      "reason_for_deep_dive": "4个高清广角摄像头形成360°视图对应权1的车身周围图像信息（C1-F3）；APA 5.0进行泊车场景识别并控制车辆泊入，关联C1-F4，并需进一步核查其HMI是否将优选车位标定在显示图像上（C1-F5）。",
+      "source_result_ids": [
+        "brave-Q18-01"
+      ],
+      "source_urls": [
+        "https://auto2xtech.com/autonomous-parking-l3-4-led-bychinese-carmakers"
+      ],
+      "initial_evidence_summary": "摘要明确点名“Changan CS75 Plus”，称其APA 5.0系统集成“4 HD wide-angle cameras (360° view)”和前后泊车雷达，可实现水平停车等自动泊车能力。"
+    },
+    {
+      "candidate_id": "P09",
+      "company": "吉利汽车",
+      "company_en": "Geely Auto",
+      "product_name": "吉利ICON 自动泊车自选车位功能",
+      "product_name_en": "Geely ICON automatic parking with user-selectable parking space",
+      "product_version": "吉利ICON自动泊车的自选车位功能，摘要称可根据系统判定选择可停入的位置。",
+      "market": "中国自主品牌SUV自动泊车/自选车位场景",
+      "reason_for_deep_dive": "“系统判定可停入位置+用户自选车位”与权1中控制单元选择优选泊车区域并在显示单元上供驾驶员选择/划定意向区域（C1-F3、C1-F5）接近，适合进一步核查其显示界面和区域优化逻辑。",
+      "source_result_ids": [
+        "bocha-Q06-05"
+      ],
+      "source_urls": [
+        "https://k.sina.com.cn/article_1735546403_m6772562303300mae6.html"
+      ],
+      "initial_evidence_summary": "摘要称“吉利ICON的自动泊车有个特别功能：自选车位”，并称“可根据系统判定选择可停入的位置”。"
+    },
+    {
+      "candidate_id": "P10",
+      "company": "广汽本田",
+      "company_en": "GAC Honda",
+      "product_name": "皓影2020款 自动泊车辅助系统",
+      "product_name_en": "GAC Honda Breeze 2020 Automatic Parking Assist system",
+      "product_version": "广汽本田皓影2020款操作手册中的自动泊车辅助系统，摘要称通过CAMERA/全景影像进入，用户使目标停车线框住要停入区域后选择左/右图标，方向盘自动转动完成泊车流程。",
+      "market": "中国合资SUV全景影像辅助泊车场景",
+      "reason_for_deep_dive": "该流程要求驾驶员基于全景影像把目标停车线框住待泊入区域，接近权1的“根据显示的图像信息划定意向泊车区域”（C1-F3）；系统随后自动转向/执行泊车，关联C1-F4。",
+      "source_result_ids": [
+        "tavily-Q07-04"
+      ],
+      "source_urls": [
+        "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-4.html"
+      ],
+      "initial_evidence_summary": "官方手册摘要列出步骤：按CAMERA/全景影像按钮，选择倒车标签，移动车辆直到“目标停车线框住要停入的区域”，再选择左侧或右侧图标，方向盘自动转动。"
+    },
+    {
+      "candidate_id": "P11",
+      "company": "特斯拉中国",
+      "company_en": "Tesla China",
+      "product_name": "Model 3 自动泊车（Autopark）",
+      "product_name_en": "Tesla Model 3 Autopark",
+      "product_version": "特斯拉中国Model 3车主手册中的自动泊车功能，摘要称只有车辆位置和周围环境可使自动泊车确定适宜行驶路线时，才会显示检测到的停车位；否则需重新定位或寻找其他停车位。",
+      "market": "中国纯电轿车自动泊车/车位检测显示场景",
+      "reason_for_deep_dive": "官方手册明确“显示检测到的停车位”和基于周围环境确定适宜行驶路线，分别对应权1中优选泊车区域标定显示（C1-F5）与控制单元根据区域实现自动泊车（C1-F4）；需进一步核查是否允许驾驶员在图像界面选择或划定意向区域（C1-F3）。",
+      "source_result_ids": [
+        "brave-Q06-01"
+      ],
+      "source_urls": [
+        "https://www.tesla.cn/ownersmanual/model3/zh_cn/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html"
+      ],
+      "initial_evidence_summary": "特斯拉中国手册摘要称自动泊车在车辆位置/周边环境允许确定适宜路线时“显示检测到的停车位”，否则提示重新定位、寻找其他停车位或手动驻车。"
+    }
+  ]
+}

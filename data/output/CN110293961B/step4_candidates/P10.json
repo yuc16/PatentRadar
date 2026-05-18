@@ -1,0 +1,172 @@
+{
+  "candidate": {
+    "candidate_id": "P10",
+    "company": "广汽本田",
+    "company_en": "GAC Honda",
+    "product_name": "皓影2020款 自动泊车辅助系统",
+    "product_name_en": "GAC Honda Breeze 2020 Automatic Parking Assist system",
+    "product_version": "广汽本田皓影2020款操作手册中的自动泊车辅助系统，摘要称通过CAMERA/全景影像进入，用户使目标停车线框住要停入区域后选择左/右图标，方向盘自动转动完成泊车流程。",
+    "market": "中国合资SUV全景影像辅助泊车场景",
+    "reason_for_deep_dive": "该流程要求驾驶员基于全景影像把目标停车线框住待泊入区域，接近权1的“根据显示的图像信息划定意向泊车区域”（C1-F3）；系统随后自动转向/执行泊车，关联C1-F4。",
+    "source_result_ids": [
+      "tavily-Q07-04"
+    ],
+    "source_urls": [
+      "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-4.html"
+    ],
+    "initial_evidence_summary": "官方手册摘要列出步骤：按CAMERA/全景影像按钮，选择倒车标签，移动车辆直到“目标停车线框住要停入的区域”，再选择左侧或右侧图标，方向盘自动转动。"
+  },
+  "launch_date": "2019年上市，2020款手册/功能公开使用",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/index.html",
+      "title": "操作手册- 广汽本田皓影",
+      "source_name": "广汽本田官网",
+      "snippet": "皓影车型操作要点手册；手册说明“本手册主要介绍2019年上市的皓影车型”。"
+    },
+    {
+      "url": "https://www.bilibili.com/s/video/BV1tZ4y1g7B9",
+      "title": "广汽本田皓影自动泊车功能测试",
+      "source_name": "哔哩哔哩",
+      "snippet": "视频条目显示“广汽本田皓影自动泊车功能测试”，发布时间为2020-12-08。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "公开资料显示皓影车型2019年上市、2020年已有自动泊车功能测试，均晚于本专利申请日2018-03-23；未发现直接矛盾到触发失格的技术特征证据。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "皓影2020款官方操作手册在“停车”章节列有“自动泊车辅助*”，并分别给出倒车停入、纵列停入、纵列驶离画有停车线车位的操作流程；流程中“方向盘自动转动”。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-4.html",
+          "title": "广汽本田皓影 | 操作手册 - 自动泊车辅助",
+          "source_name": "广汽本田官网",
+          "snippet": "页面标题及章节为“自动泊车辅助*”；步骤包括按下CAMERA/全景影像按钮、选择倒车/侧停标签，并记载“方向盘自动转动”。"
+        },
+        {
+          "url": "https://www.ghac.cn/vehicles/guide/breeze",
+          "title": "广汽本田皓影操作视频|广汽本田官网",
+          "source_name": "广汽本田官网",
+          "snippet": "“停车智能小能手”栏目列出“自动泊车辅助系统，仿佛老司机相助*”。"
+        }
+      ],
+      "reasoning": "官方手册直接将该功能命名为“自动泊车辅助”，并描述系统在泊车流程中自动转动方向盘，足以证明存在自动泊车系统。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "显示单元：全景影像系统在“多功能综合信息显示系统界面”显示摄像头画面；自动泊车控制功能：自动泊车辅助系统在选定倒车/侧停方向后使“方向盘自动转动”。但公开证据未直接命名“自动泊车控制单元”ECU。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-3.html",
+          "title": "广汽本田皓影 | 操作手册 - 全景影像",
+          "source_name": "广汽本田官网",
+          "snippet": "“全景影像系统配备的4个摄像头可从不同角度查看称为‘盲点’的区域，并在多功能综合信息显示系统界面上显示。”"
+        },
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-4.html",
+          "title": "广汽本田皓影 | 操作手册 - 自动泊车辅助",
+          "source_name": "广汽本田官网",
+          "snippet": "自动泊车辅助流程中，用户选择倒车/侧停及左侧或右侧图标后，“方向盘自动转动”。"
+        },
+        {
+          "url": "https://www.car388.com/cars/4985.html",
+          "title": "皓影混合动力（2020-2021款）广汽本田原厂_汽车维修及诊断手册_电气线路图",
+          "source_name": "car388/畅易",
+          "snippet": "维修资料目录列有“驻车和倒车传感器系统、抬头显示屏”“多视角摄像头系统(MVCS)”等车载电子系统资料。"
+        }
+      ],
+      "reasoning": "显示屏证据直接充分；自动泊车辅助能自动转向，通常需控制模块执行，但网页未直接给出名为自动泊车控制单元的部件，因此按严谨推理评为可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "全景影像系统由4个摄像头在多功能综合信息显示系统显示车辆周围/盲点图像；自动泊车时驾驶员按CAMERA进入倒车或侧停标签，移动车辆直到“目标停车线框住要停入的区域”，即基于显示图像确定/框定目标泊车区域。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-3.html",
+          "title": "广汽本田皓影 | 操作手册 - 全景影像",
+          "source_name": "广汽本田官网",
+          "snippet": "“全景影像系统配备的4个摄像头可从不同角度查看称为‘盲点’的区域，并在多功能综合信息显示系统界面上显示。”"
+        },
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-4.html",
+          "title": "广汽本田皓影 | 操作手册 - 自动泊车辅助",
+          "source_name": "广汽本田官网",
+          "snippet": "倒车停入步骤：“按下CAMERA（全景影像）按钮……选择倒车标签”；“垂直于停车位的方向向前移动车辆，直到目标停车线框住要停入的区域。”侧停步骤亦要求“直到目标停车线框住要停入的区域”。"
+        }
+      ],
+      "reasoning": "官方手册直接说明车身周围图像显示在车内显示界面，且驾驶员通过显示中的目标停车线框住拟泊入区域，和“根据图像划定意向泊车区域”相符。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "驾驶员使目标停车线框住待泊入区域并选择左/右图标后，系统自动转动方向盘，并按提示多次前进/倒车完成倒车入库或侧方停车；手册还限定车位需为带直线停车标记的长方形、周围无障碍物。但未直接出现“优化意向泊车区域”或“校验空间大小”的字面表述。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-4.html",
+          "title": "广汽本田皓影 | 操作手册 - 自动泊车辅助",
+          "source_name": "广汽本田官网",
+          "snippet": "倒车停入：目标停车线框住区域后，选择左侧或右侧图标，“方向盘自动转动”；随后按蜂鸣/信息提示向前、倒车。纵列停入亦记载“可能需要向前或向后移动车辆几次”。"
+        }
+      ],
+      "reasoning": "系统能根据被目标线框定的区域生成转向动作并引导多次前后移动，可推知其识别目标区域并计算泊车路径；但“区域优化/满足空间大小”未被直接公开，且纵向移动、制动由驾驶员执行，故仅可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "证据显示屏幕上存在“目标停车线”并由驾驶员移动车辆使其框住要停入的区域；未见2020款皓影自动泊车辅助系统会基于图像自动搜索/选择一个或多个优选泊车区域并在图像上标定推荐车位的公开说明。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-4.html",
+          "title": "广汽本田皓影 | 操作手册 - 自动泊车辅助",
+          "source_name": "广汽本田官网",
+          "snippet": "操作步骤要求驾驶员“移动车辆，直到目标停车线框住要停入的区域”，再根据倒车方向选择左侧或右侧图标；未描述系统自动选择优选泊车区域。"
+        },
+        {
+          "url": "https://www.ghac.cn/static/vehicles/breeze/2020/manual/ch03-7-3.html",
+          "title": "广汽本田皓影 | 操作手册 - 全景影像",
+          "source_name": "广汽本田官网",
+          "snippet": "全景影像系统说明其在显示界面上显示摄像头图像，用于查看盲点、辅助倒入/平移停车，但未说明自动标定推荐车位。"
+        }
+      ],
+      "reasoning": "现有证据只能证明有全景图像和目标停车线叠加显示；关键的“系统根据图像选择至少一个优选泊车区域”没有直接或可严格推导的公开证据。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 78.0,
+  "searched_queries": [
+    "皓影 2020 自动泊车 控制单元 维修手册",
+    "广汽本田皓影 自动泊车 目标停车线 优化 停车位 大小",
+    "皓影 2020 自动泊车 自动识别 车位 标定 显示 屏幕",
+    "广汽本田 皓影2020款 自动泊车辅助系统 中国 市场",
+    "广汽本田 皓影2020款 自动泊车辅助系统 说明书 PDF"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}
