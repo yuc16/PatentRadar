@@ -28,14 +28,14 @@ CODEX_URL = "https://chatgpt.com/backend-api/codex/responses"
 AUTH_PATH = Path.home() / ".codex" / "auth.json"
 logger = logging.getLogger(__name__)
 
-# Prompt-size 监控阈值（按"中文/混合 ≈ 2.0 char/token + 留余量给 output+reasoning"换算）：
-# Codex 后端 context window = 258K tokens（input + output + reasoning 共享）。
-# 留 58K tokens 给 output + reasoning（medium effort 通常 10-30K tokens + JSON 输出 5-10K）。
-# 实际 input 上限 = 258K - 58K = 200K tokens ≈ 400K 字符（中英混合）。
+# Prompt-size 监控阈值由 core.constants 派生（基于 PATENTRADAR_CONTEXT_LENGTH env，
+# 默认 258K tokens；换模型只改 env 即可）。
 # warn: 给出预警，提示调用方应该自查/压缩
 # critical: 接近上限，立即 raise，让 caller 端 catch 后压缩重试或降级
-PROMPT_SIZE_WARN_CHARS = 300_000     # ≈ 150K tokens
-PROMPT_SIZE_CRITICAL_CHARS = 400_000  # ≈ 200K tokens
+from patentradar.core.constants import (  # noqa: E402
+    PROMPT_SIZE_CRITICAL_CHARS,
+    PROMPT_SIZE_WARN_CHARS,
+)
 
 
 class PromptTooLargeError(RuntimeError):

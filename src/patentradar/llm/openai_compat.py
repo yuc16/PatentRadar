@@ -27,10 +27,31 @@ from typing import Any
 
 import httpx
 
-from patentradar.core.constants import DEFAULT_MODEL
-from patentradar.llm.codex import _is_retryable_error, _parse_json
+from patentradar.core.constants import (
+    DEFAULT_MODEL,
+    PROMPT_SIZE_CRITICAL_CHARS,
+    PROMPT_SIZE_WARN_CHARS,
+)
+from patentradar.llm.codex import PromptTooLargeError, _is_retryable_error, _parse_json
 
 logger = logging.getLogger(__name__)
+
+
+def _check_prompt_size(system: str, user_text: str, model: str | None) -> None:
+    """与 codex.py 同款 prompt-size 监控（PATENTRADAR_CONTEXT_LENGTH 派生）。
+    openai-compat 后端面对的模型不同，但同样会因 prompt 过长触发服务端崩溃 /
+    超时；这里复用同一组阈值（caller 端调 compress_payload_if_needed 兜底）。"""
+    total_chars = len(system) + len(user_text)
+    if total_chars >= PROMPT_SIZE_CRITICAL_CHARS:
+        raise PromptTooLargeError(
+            f"openai-compat prompt size {total_chars:,} chars >= "
+            f"{PROMPT_SIZE_CRITICAL_CHARS:,}; caller must compress user_text"
+        )
+    if total_chars >= PROMPT_SIZE_WARN_CHARS:
+        logger.warning(
+            "openai-compat prompt size %s chars >= warn %s (model=%s)",
+            f"{total_chars:,}", f"{PROMPT_SIZE_WARN_CHARS:,}", model,
+        )
 
 # aihubmix / 中转服务在 DeepSeek 长上下文请求里频繁出现 "Server disconnected
 # without sending a response"（httpx.RemoteProtocolError）。这类断流跟 429
@@ -81,12 +102,15 @@ class OpenAICompatibleProvider:
                 "if the chosen model accepts image input."
             )
 
+        resolved_model = model or os.getenv("PATENTRADAR_MODEL") or DEFAULT_MODEL
+        _check_prompt_size(system, user_text, resolved_model)
+
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": _build_user_content(user_text, images)},
         ]
         request_body: dict[str, Any] = {
-            "model": model or os.getenv("PATENTRADAR_MODEL") or DEFAULT_MODEL,
+            "model": resolved_model,
             "messages": messages,
             "stream": False,
         }
@@ -132,12 +156,15 @@ class OpenAICompatibleProvider:
         verbosity: str = "medium",       # noqa: ARG002 — ignored by design
         timeout: int | None = None,
     ) -> str:
+        resolved_model = model or os.getenv("PATENTRADAR_MODEL") or DEFAULT_MODEL
+        _check_prompt_size(system, user_text, resolved_model)
+
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user_text},
         ]
         body: dict[str, Any] = {
-            "model": model or os.getenv("PATENTRADAR_MODEL") or DEFAULT_MODEL,
+            "model": resolved_model,
             "messages": messages,
             "stream": False,
         }

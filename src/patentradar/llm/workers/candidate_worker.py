@@ -9,12 +9,14 @@ from typing import Any
 from pydantic import ValidationError
 
 from patentradar.core.constants import (
+    CANDIDATE_FILTER_TARGET_CHARS,
     DEFAULT_MODEL,
     DEFAULT_REASONING_EFFORT,
     PATENT_COUNTRY_CODES,
 )
 from patentradar.core.exceptions import LLMOutputError
 from patentradar.llm import get_llm_provider
+from patentradar.llm.payload_compress import compress_payload_if_needed
 from patentradar.schemas import CandidateShortlist, SearchResultsArtifact, TaskPackage
 
 
@@ -25,9 +27,10 @@ def filter_candidates(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> CandidateShortlist:
+    user_text = _build_user_text(task_package=task_package, search_results=search_results)
     payload = get_llm_provider().chat_json(
         system=_load_prompt("candidate_extract.md"),
-        user_text=_build_user_text(task_package=task_package, search_results=search_results),
+        user_text=user_text,
         model=model,
         reasoning_effort=reasoning_effort,
         verbosity="medium",
@@ -59,6 +62,11 @@ def _load_prompt(name: str) -> str:
 
 
 def _build_user_text(*, task_package: TaskPackage, search_results: SearchResultsArtifact) -> str:
+    # 入口处先做 top-N 截断 + snippet 截断：实测 GPT-5.5 codex API 在 prompt
+    # 字符数 >100K 时容易生成不稳定（whitespace 死循环），所以这里主动控制：
+    # - 保留 top-200（覆盖 ≈ top-250 的 88% 唯一域名，但 prompt 缩小 20%）
+    # - snippet 截到 300 字（关键候选信息在前 200-250 字，剩下多是营销话术）
+    # 之后再交给 compress_payload_if_needed 做兜底压缩。
     compact_results = [
         {
             "result_id": result.result_id,
@@ -67,10 +75,10 @@ def _build_user_text(*, task_package: TaskPackage, search_results: SearchResults
             "provider": result.provider,
             "title": result.title,
             "url": result.url,
-            "snippet": result.snippet[:700],
+            "snippet": result.snippet[:300],
             "published_date": result.published_date,
         }
-        for result in search_results.results[:250]
+        for result in search_results.results[:200]
     ]
     display_name, working_lang = PATENT_COUNTRY_CODES.get(
         task_package.patent.country_code,
@@ -96,6 +104,13 @@ def _build_user_text(*, task_package: TaskPackage, search_results: SearchResults
         ],
         "search_results": compact_results,
     }
+    # 兜底压缩：若入口截断后仍超 CANDIDATE_FILTER_TARGET_CHARS（默认 100K），
+    # 由 payload_compress 继续逐档砍 snippet 长度 / search_results 条数
+    compress_payload_if_needed(
+        payload,
+        target_chars=CANDIDATE_FILTER_TARGET_CHARS,
+        context_label="candidate_worker",
+    )
     return json.dumps(payload, ensure_ascii=False, indent=2)
 
 

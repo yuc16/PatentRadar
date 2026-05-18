@@ -17,6 +17,26 @@ DEFAULT_CONTEXT_LENGTH = int(os.getenv("PATENTRADAR_CONTEXT_LENGTH", "258000"))
 DEFAULT_REASONING_EFFORT = os.getenv("PATENTRADAR_REASONING_EFFORT", "high")
 GOOGLE_PATENTS_BASE = "https://patents.google.com/patent"
 
+# ---- Prompt-size 派生阈值（由 PATENTRADAR_CONTEXT_LENGTH 派生，换模型只改这一个 env 即可）----
+# DEFAULT_CONTEXT_LENGTH 单位为 tokens；中英混合按 ~2.0 chars/token 换算为字符数。
+# 给 output + reasoning 留 22.5% 的预算，剩下的才是 input 允许的字符上限。
+# 三档阈值由 input 上限派生，向下兼容：换模型时只改 env，所有阈值自动同步。
+CHARS_PER_TOKEN = 2.0
+_OUTPUT_RESERVE_FRACTION = 0.225  # output + reasoning 预算占总 context 的比例
+_TOTAL_CONTEXT_CHARS = int(DEFAULT_CONTEXT_LENGTH * CHARS_PER_TOKEN)
+
+# CRITICAL：input 上限，超过会被 codex.py 主动 raise（让 caller 端压缩或降级）
+PROMPT_SIZE_CRITICAL_CHARS = int(_TOTAL_CONTEXT_CHARS * (1 - _OUTPUT_RESERVE_FRACTION))
+# WARN：75% CRITICAL，给出预警让 caller 自查
+PROMPT_SIZE_WARN_CHARS = int(PROMPT_SIZE_CRITICAL_CHARS * 0.75)
+# COMPRESS_TARGET：worker 端调 compress_payload_if_needed 时的默认目标，留 20% 余量
+COMPRESS_TARGET_CHARS = int(PROMPT_SIZE_CRITICAL_CHARS * 0.80)
+# 候选筛选阶段（step3 candidate_worker）对 GPT-5.5 codex API 特别敏感——
+# 实测 prompt >150K 字符即可能触发 whitespace 死循环；这里单独定一个更激进的 target。
+# 设 120K：candidate_worker 入口截断（top-200 + snippet[:300]）通常压到 ~100K，
+# 120K 给 ~20K 余量，避免 payload_compress 误触发过度压缩档（档 5 会把 search_results 直接砍到 20 条）。
+CANDIDATE_FILTER_TARGET_CHARS = min(COMPRESS_TARGET_CHARS, 120_000)
+
 # Country code → (display name, working language for prompts/search).
 # Used by PatentInfo to auto-derive country from publication_no prefix.
 PATENT_COUNTRY_CODES: dict[str, tuple[str, str]] = {

@@ -21,11 +21,13 @@ import json
 import logging
 from typing import Any
 
+from patentradar.core.constants import COMPRESS_TARGET_CHARS
+
 logger = logging.getLogger(__name__)
 
-# 目标字符数：worker 端主动压到这个值以下，确保不会触发 codex.py 的 critical raise
-# 见 codex.py PROMPT_SIZE_CRITICAL_CHARS=400K，这里留 80K 余量给 system prompt
-COMPRESS_TARGET_CHARS = 320_000  # ≈ 160K tokens
+# COMPRESS_TARGET_CHARS 从 core.constants 派生（由 PATENTRADAR_CONTEXT_LENGTH env 派生，
+# 默认是 PROMPT_SIZE_CRITICAL_CHARS × 80%，给 system prompt 留余量）。
+# Re-export 给老代码用：
 
 
 def compress_payload_if_needed(
@@ -133,6 +135,11 @@ def _truncate_search_snippet(payload: dict, *, max_chars: int) -> None:
         snippet = r.get("snippet") or ""
         if len(snippet) > max_chars:
             r["snippet"] = snippet[:max_chars]
+    # 顶层 search_results（candidate_worker 的 payload 结构：在 payload 顶层而非 candidates[i] 内）
+    for r in payload.get("search_results") or []:
+        snippet = r.get("snippet") or ""
+        if len(snippet) > max_chars:
+            r["snippet"] = snippet[:max_chars]
 
 
 def _cap_pages(payload: dict, *, max_count: int) -> None:
@@ -154,6 +161,10 @@ def _cap_search_results(payload: dict, *, max_count: int) -> None:
     results = payload.get("new_search_results")
     if results and len(results) > max_count:
         payload["new_search_results"] = results[:max_count]
+    # 顶层 search_results（candidate_worker 的 payload 结构）
+    results = payload.get("search_results")
+    if results and len(results) > max_count:
+        payload["search_results"] = results[:max_count]
 
 
 def _drop_images_manifest(payload: dict) -> None:
