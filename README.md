@@ -196,15 +196,15 @@ sequenceDiagram
     participant U as 用户
     participant ORCH as Orchestrator
     participant M1 as M1 Decompose
-    participant M2 as M2 Competitor<br/>Search
-    participant M3 as M3 Full Claim<br/>Chart
+    participant M2 as M2 Competitor Search
+    participant M3 as M3 Full Claim Chart
     participant M4 as M4 Report
     participant LLM as LLM Provider
     participant SE as Search Router
-    participant WEB as Web/PDF Fetcher
-    participant FS as data/output/&lt;PUB&gt;
+    participant WEB as Web PDF Fetcher
+    participant FS as data output 目录
 
-    U->>ORCH: 输入专利公开号<br/>(CN110293961B)
+    U->>ORCH: 输入专利公开号 (CN110293961B)
     activate ORCH
 
     ORCH->>M1: spawn
