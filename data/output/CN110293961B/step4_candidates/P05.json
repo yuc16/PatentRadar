@@ -1,0 +1,97 @@
+{
+  "candidate": {
+    "candidate_id": "P05",
+    "company": "蔚来汽车",
+    "company_en": "NIO",
+    "product_name": "蔚来ET9随心停（Banyan榕3.1.2 OTA / ET9）",
+    "product_name_en": "NIO ET9 Free Parking (Banyan 3.1.2 OTA / ET9)",
+    "product_version": "Banyan榕3.1.2升级后的“随心停”在ET9用车体验摘要中出现，支持随心选择泊入位置、调整泊车角度。该功能不再局限于划线车位，可用于无划线或非标准车位场景。",
+    "market": "中国市场蔚来NT2平台高端车型复杂泊车、无划线车位泊车场景。",
+    "reason_for_deep_dive": "“随心选择泊入位置、调整泊车角度”直接触及权1中驾驶员划定意向泊车区域以及系统对泊车区域进行优化的核心；无划线车位场景也有助于验证C1-F3和C1-F4的自由区域指定与空间大小优化。",
+    "source_result_ids": [
+      "brave-Q06-01",
+      "tavily-Q06-01"
+    ],
+    "source_urls": [
+      "https://finance.sina.com.cn/tech/digi/2025-03-06/doc-inensrzm8049009.shtml",
+      "https://www.nio.cn/testimonials/20250403002"
+    ],
+    "initial_evidence_summary": "摘要显示Banyan榕3.1.2新增“随心停”，支持随心选择泊入位置、调整泊车角度，无需依赖车位辅助线；蔚来官网口碑摘要将其用于ET9智驾体验并描述支持无划线非标准车位。"
+  },
+  "launch_date": "未明确（未找到验活网页可确认 Banyan榕3.1.2 OTA 的“随心停”已在 ET9 上首发/推送；已验活功能页仅指向 NT2 车型）",
+  "launch_date_evidence": [],
+  "disqualified": false,
+  "disqualification_reason": "未发现该锁定SKU早于专利申请日2018-03-23公开的证据；但本轮验活证据无法确认“Banyan榕3.1.2 / ET9”为同一可用SKU，故不作满足认定。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "锁定SKU为 ET9-Banyan-3.1.2。验活网页中，“随心停”自动泊车功能页均写为“为NT2车型推送 Banyan 榕3.1.2”；ET9官网验活页显示 ET9 为 Cedar 智能系统，未确认 ET9 搭载 Banyan榕3.1.2随心停。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [],
+      "reasoning": "①X=本SKU存在自动泊车系统。②Y=验活页只见NT2 Banyan3.1.2“随心停”，ET9页为Cedar。③(a)否，非同SKU；(b)是，均为功能有无；(c)否，车型/OS不同；(d)无直接否定ET9有泊车。故不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "同SKU验活证据未确认 ET9-Banyan-3.1.2 包括显示单元和自动泊车控制单元。已验活的“中控屏打开辅助泊车界面、360环视影像、泊车框蓝/红可泊状态”等内容仅对应 NT2 车型 Banyan榕3.1.2，不能用于 ET9 锁定SKU。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [],
+      "reasoning": "①X=本SKU含显示单元和泊车控制单元。②Y=NT2页有中控屏/360环视/泊车框，ET9页未给该功能。③(a)否，Y非同SKU；(b)是，模块存在性；(c)否，车型/OTA不同；(d)无直接否定。故不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "未找到验活网页证明 ET9-Banyan-3.1.2 在显示单元显示车身周围图像并允许驾驶员划定意向泊车区域。NT2 Banyan3.1.2页面描述“在中控屏右下的360环视影像画面中，拖动和放置泊车框”，但该证据跨车型/OS，已丢弃。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [],
+      "reasoning": "①X=ET9本SKU在环视图像上由驾驶员划定区域。②Y=NT2页称中控屏360环视中拖放泊车框。③(a)否，非同SKU；(b)是，均为图像+区域输入；(c)否，车型/系统版本不同；(d)无。故不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "未找到同SKU验活证据证明 ET9-Banyan-3.1.2 可识别用户拖放的泊车框、自动优化至满足空间大小并控制泊入。NT2页面虽描述“吸附”到无障碍区域、蓝色可发起泊车、松开刹车车辆即可泊入，但不能跨SKU使用。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [],
+      "reasoning": "①X=本SKU识别用户区域、优化空间并控制泊入。②Y=NT2随心停有吸附、蓝/红状态和自动泊入。③(a)否，Y非ET9-Banyan同SKU；(b)是，均为控制流程；(c)否，车型/OTA不同；(d)无。故不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "未找到同SKU验活证据证明 ET9-Banyan-3.1.2 会根据图像信息自动选择至少一个优选泊车区域并标定在显示图像上。NT2随心停页面中的“吸附到附近无障碍物区域、泊车框蓝/红显示”即使相关，也因SKU不一致不能用于明确或可能满足。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [],
+      "reasoning": "①X=本SKU基于图像选择并标定优选泊车区域。②Y=NT2页有吸附和泊车框颜色提示，ET9页无该描述。③(a)否，非同SKU；(b)是，均为区域标定信息；(c)否，车型/OS不同；(d)无。故不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 30.0,
+  "searched_queries": [
+    "蔚来汽车 蔚来ET9随心停（Banyan榕3.1.2 OTA / ET9） 中国 市场",
+    "site:nio.cn ET9 Banyan 3.1.2 随心停 官方",
+    "蔚来 ET9 Banyan 3.1.2 随心停 中控屏 360环视 自动泊车",
+    "蔚来ET9 Banyan 3.1.2 自动选择车位 标定 泊车框",
+    "NIO ET9 Free Parking Banyan 3.1.2 OTA ET9",
+    "[SKU自检] SKU_LOCK=ET9-Banyan-3.1.2；product_version是否糊版本：✓（不糊，命中“Banyan榕3.1.2 / ET9 / 随心停”），但命中ET9的官网口碑页未在fetched_pages验活；launch_date是否跨版本：✓（未写跨版本日期，因ET9同SKU首发/推送日期未明确）；逐条evidence sku一致性：C1-F1至C1-F5 evidence[]均为空，未引入跨SKU证据；被丢弃证据：ithome.com、finance.sina.com.cn、163.com、pcd.com.cn、link-nemo.com均锁定为NT2-Banyan3.1.2随心停→与ET9-Banyan3.1.2不匹配；nio.io/et9锁定ET9-Cedar→与Banyan3.1.2 OTA冲突；nio.cn/testimonials/20250403002在fetched_pages缺失→未验活丢弃；冲突evidence处理：全部丢弃，对各特征降级为证据不足。"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

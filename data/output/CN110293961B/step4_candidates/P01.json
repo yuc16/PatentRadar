@@ -1,0 +1,182 @@
+{
+  "candidate": {
+    "candidate_id": "P01",
+    "company": "赛力斯汽车（AITO问界）",
+    "company_en": "SERES / AITO",
+    "product_name": "问界M5 APA智能泊车（华为高阶智能驾驶版 / HUAWEI ADS 2.0）",
+    "product_name_en": "AITO M5 APA intelligent parking (Huawei Advanced Intelligent Driving Edition / HUAWEI ADS 2.0)",
+    "product_version": "问界M5华为高阶智能驾驶版为搜索摘要中明确提到的HUAWEI ADS 2.0首发搭载车型。其APA智能泊车辅助具备自动搜索车位、360°车位发现并显示可泊车位的能力。",
+    "market": "中国市场高阶智能驾驶乘用车自动泊车场景。",
+    "reason_for_deep_dive": "权1强调显示车身周围图像、标定至少一个优选泊车区域并控制自动泊车；该SKU公开摘要已出现“360°车位发现、显示可泊车位、APA智能泊车”，与C1-F2、C1-F4、C1-F5高度相关，值得核查其HMI是否允许驾驶员选择/划定意向泊车区域及系统优化逻辑。",
+    "source_result_ids": [
+      "bocha-Q01-03",
+      "brave-Q01-01",
+      "tavily-Q01-05"
+    ],
+    "source_urls": [
+      "https://www.hangyan.co/charts/3159692531818563071",
+      "https://www.xchuxing.com/article/77356",
+      "https://pdf.dfcfw.com/pdf/H3_AP202304191585579862_1.pdf"
+    ],
+    "initial_evidence_summary": "摘要显示HUAWEI ADS 2.0的APA可自动搜索车位、360°车位发现、显示可泊车位，并支持160多种车位智能泊车；证券研报摘要明确ADS 2.0首发搭载于AITO问界M5华为高阶智能驾驶版。"
+  },
+  "launch_date": "2023年4月17日正式上市",
+  "launch_date_evidence": [
+    {
+      "url": "https://pdf.dfcfw.com/pdf/H3_AP202304191585579862_1.pdf",
+      "title": "华为汽车系列之十四：全新一代智能汽车解决方案发布，问界M9开启预定",
+      "source_name": "东方财富PDF / 国信证券",
+      "snippet": "4 月17 日，问界M5 系列华为高阶智能驾驶版正式上市，首次搭载HUAWEI ADS 2.0 系统，后续阿维塔11、极狐阿尔法S･HI 版也将升级。"
+    },
+    {
+      "url": "https://www.xchuxing.com/article/77356",
+      "title": "HUAWEI ADS 2.0 首发 一文读懂 2023 华为智能汽车解决方案发布会",
+      "source_name": "新出行",
+      "snippet": "4 月 16 日，华为在上海车展前夕举办 2023 华为智能汽车解决方案发布会……余承东也宣布将会率先搭载在问界 M5 高阶智能驾驶版车型上。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "该SKU公开上市日期为2023年4月17日，晚于专利申请日2018年3月23日；未发现任一技术特征存在明确反向证据。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "问界M5华为高阶智能驾驶版搭载HUAWEI ADS 2.0；其APA（智能泊车辅助）支持自动搜索车位、360°车位发现、显示可泊车位及多种车位泊入，属于自动泊车系统。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/77356",
+          "title": "HUAWEI ADS 2.0 首发 一文读懂 2023 华为智能汽车解决方案发布会",
+          "source_name": "新出行",
+          "snippet": "HUAWEI ADS 2.0 的首发亮相……将会率先搭载在问界 M5 高阶智能驾驶版车型上。……在智能泊车方面，APA 智能泊车辅助可实现自动搜索车位，360° 车位发现，并显示可泊车位。"
+        },
+        {
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202304191585579862_1.pdf",
+          "title": "华为汽车系列之十四",
+          "source_name": "东方财富PDF / 国信证券",
+          "snippet": "HUAWEI ADS 2.0 系统首发搭载于在AITO 问界M5 华为高阶智能驾驶版……APA（智能泊车辅助）具备业界领先的车位识别能力。"
+        }
+      ],
+      "reasoning": "①X=自动泊车系统，二值功能集合。②Y=SKU M5-ADS2.0的APA智能泊车辅助。③(a)是，APA即自动泊车辅助；(b)是，均为系统有无；(c)是，均为车载泊车；(d)无。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "ADS 2.0/APA具备显示可泊车位的人机显示能力；同时公开资料称ADS 2.0基于高性能智能驾驶平台及拟人化智驾算法、多传感融合感知实现泊车，构成自动泊车控制单元。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/77356",
+          "title": "HUAWEI ADS 2.0 首发 一文读懂 2023 华为智能汽车解决方案发布会",
+          "source_name": "新出行",
+          "snippet": "在智能泊车方面，APA 智能泊车辅助可实现自动搜索车位，360° 车位发现，并显示可泊车位。"
+        },
+        {
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202304191585579862_1.pdf",
+          "title": "华为汽车系列之十四",
+          "source_name": "东方财富PDF / 国信证券",
+          "snippet": "华为高阶智能驾驶系统基于多传感器融合，结合高性能智能驾驶平台及拟人化智驾算法……实现面向高速、城区、泊车全场景极致连续体验。"
+        }
+      ],
+      "reasoning": "①X=显示单元+泊车控制单元。②Y=APA显示可泊车位，ADS2.0平台/算法执行泊车。③(a)是，显示+控制均对应；(b)是，部件/功能有无；(c)是，车载泊车HMI/控制；(d)无。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "SKU匹配证据显示APA可进行360°车位发现并显示可泊车位；BitAuto的问界M5操作说明还称“通过全景影像泊入车位”，且可点击“自定义车位”并“拖动车位框到合适位置来放置车位”。但BitAuto未明确限定为华为高阶智能驾驶版/HUAWEI ADS 2.0，故该划定证据为SKU模糊。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/77356",
+          "title": "HUAWEI ADS 2.0 首发 一文读懂 2023 华为智能汽车解决方案发布会",
+          "source_name": "新出行",
+          "snippet": "在智能泊车方面，APA 智能泊车辅助可实现自动搜索车位，360° 车位发现，并显示可泊车位。"
+        },
+        {
+          "url": "https://www.bitauto.com/ask/10039796530",
+          "title": "问界m5自动泊车怎么用",
+          "source_name": "BitAuto",
+          "snippet": "通过全景影像泊入车位……可以点击屏幕下方的“自定义车位”，拖动车位框到合适位置来放置车位。"
+        }
+      ],
+      "reasoning": "①X=显示周围图像并让驾驶员划定区域。②Y=ADS2.0显示车位；泛M5可全景影像拖动车位框。③(a)是；(b)是，图形区域；(c)是，中控泊车画面；(d)无。划定证据SKU模糊，故可能。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "SKU匹配证据显示问界M5智驾版HUAWEI ADS 2.0具有泊车规控算法，可自动导航至目标车位完成停车，并支持160种车位泊入、车位识别率/泊入成功率数据；BitAuto的泛M5说明给出自定义车位拖框和点击开始泊车。公开资料未直接写明“对驾驶员划定区域进行优化”，需由自定义车位接受、规控算法和自动泊入严谨推得。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.yiche.com/zhai/1698192",
+          "title": "问界M5智驾版的HUAWEI ADS 2.0高阶智能驾驶系统更是",
+          "source_name": "易车",
+          "snippet": "泊车时，问界M5智驾版的HUAWEI ADS 2.0高阶智能驾驶系统……得益于华为的专属泊车规控算法，问界M5智驾版可以轻松应对包括断头路泊入/泊出、自动整车泊入、代客泊车辅助等超过160种泊车场景。"
+        },
+        {
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202304191585579862_1.pdf",
+          "title": "华为汽车系列之十四",
+          "source_name": "东方财富PDF / 国信证券",
+          "snippet": "APA（智能泊车辅助）具备业界领先的车位识别能力，支持360 度车位识别及显示，可实现前向/侧向/后向车位自动搜索，支持160 种车位泊入。"
+        },
+        {
+          "url": "https://www.bitauto.com/ask/10039796530",
+          "title": "问界m5自动泊车怎么用",
+          "source_name": "BitAuto",
+          "snippet": "踩住制动踏板，点击“开始泊车”……可以点击屏幕下方的“自定义车位”，拖动车位框到合适位置来放置车位。"
+        }
+      ],
+      "reasoning": "①X=识别用户区域、优化为可泊空间并控制泊入。②Y=泛M5拖框后开始泊车；SKU ADS2.0有泊车规控算法并完成泊入。③(a)是；(b)是，图形区域/控制动作；(c)是，车位坐标；(d)无。优化未直述，故可能。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "HUAWEI ADS 2.0在问界M5华为高阶智能驾驶版首发；其APA支持360度车位识别及显示、前向/侧向/后向车位自动搜索，并“显示可泊车位”，等同于系统根据周围感知/图像信息选择至少一个可泊车位并在泊车显示界面标定。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202304191585579862_1.pdf",
+          "title": "华为汽车系列之十四",
+          "source_name": "东方财富PDF / 国信证券",
+          "snippet": "APA（智能泊车辅助）具备业界领先的车位识别能力，支持360 度车位识别及显示，可实现前向/侧向/后向车位自动搜索，支持160 种车位泊入。"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/77356",
+          "title": "HUAWEI ADS 2.0 首发 一文读懂 2023 华为智能汽车解决方案发布会",
+          "source_name": "新出行",
+          "snippet": "APA 智能泊车辅助可实现自动搜索车位，360° 车位发现，并显示可泊车位。支持 160 多种车位的智能泊车，如斜坡车位、断头车位等非常规车位。"
+        }
+      ],
+      "reasoning": "①X=基于图像选择并标定优选车位。②Y=SKU APA自动搜索、360°发现并显示可泊车位。③(a)是，可泊车位即系统选定优选区域；(b)是，区域集合；(c)是，泊车显示画面；(d)无。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 92.0,
+  "searched_queries": [
+    "问界M5 智驾版 用户手册 APA 智能泊车 中控屏 划定 车位",
+    "HUAWEI ADS 2.0 APA 可见即可泊 选择车位 中控屏 操作",
+    "问界M5智驾版 HUAWEI ADS 2.0 智能泊车 规控算法 自动泊入",
+    "问界M5 华为高阶智能驾驶版 正式上市 ADS 2.0 APA",
+    "[SKU自检] SKU锁定自检（M5-ADS2.0）：product_version是否糊版本：✓（命中“华为高阶智能驾驶版 / HUAWEI ADS 2.0”）；launch_date是否跨版本：✓（仅采2023-04-17该SKU正式上市）；逐条evidence sku一致性：C1-F1 dfcfw/xchuxing锁定M5高阶智能驾驶版ADS2.0→匹配；C1-F2 dfcfw/xchuxing→匹配；C1-F3 xchuxing→匹配，bitauto泛问界M5→模糊（仅支撑可能）；C1-F4 yiche/dfcfw→匹配，bitauto→模糊（仅支撑可能）；C1-F5 dfcfw/xchuxing→匹配；冲突evidence处理：丢弃m5-new Ultra、ADS3.0、M9、M5 EV/普通版手册、2024 OTA特定新增功能证据，未用冲突证据给明确满足。"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

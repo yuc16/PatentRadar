@@ -1,0 +1,175 @@
+{
+  "candidate": {
+    "candidate_id": "P10",
+    "company": "智己汽车",
+    "company_en": "IM Motors",
+    "product_name": "智己LS6一键泊车（2023款首发量产版 / IM AD）",
+    "product_name_en": "IM LS6 one-touch parking (2023 initial production version / IM AD)",
+    "product_version": "2023款智己LS6首发量产阶段的IM AD一键泊车，低速驶入停车区域后系统自动检索周边可泊车位并显示在主驾屏幕/C屏上。用户点击屏幕一键泊车后，车辆自动泊入并自动挂入P挡。",
+    "market": "中国市场中大型纯电SUV车机屏幕自动泊车场景。",
+    "reason_for_deep_dive": "该SKU摘要明确“系统检索周边可泊车位并显示在屏幕上”“点击一键泊车”“自动泊入”，对应权1的显示单元标定优选泊车区域、驾驶员确认区域和控制单元执行泊车；值得进一步核查是否支持用户调整或系统优化目标泊车区域。",
+    "source_result_ids": [
+      "bocha-Q12-02",
+      "brave-Q12-02"
+    ],
+    "source_urls": [
+      "https://hao.yiche.com/wenzhang/86058086",
+      "https://www.xchuxing.com/article/101039"
+    ],
+    "initial_evidence_summary": "摘要显示智己LS6在停车场或路边找到可泊车位后，系统会自动检索四周可泊车位并在屏幕显示；用户点击一键泊车，松开制动和方向盘后车辆自动寻找车位并自动泊车，泊好后方向盘回正并挂P挡。"
+  },
+  "launch_date": "2023年10月12日正式上市",
+  "launch_date_evidence": [
+    {
+      "url": "https://www.momenta.ai/article/146.html",
+      "title": "客户的声音 | “超级爆品”智己LS6正式上市，全系具备高速高架和城市NOA高阶智驾能力",
+      "source_name": "Momenta（搜索结果摘要）",
+      "snippet": "2023-10-12 10月12日，智能纯电SUV超级爆品智己LS6正式上市，上市权益价21.49万-27.69万元。"
+    },
+    {
+      "url": "https://www.immotors.com/website/news_detail/128",
+      "title": "倒计时3天，“超级爆品” 智己LS6 上市在即",
+      "source_name": "智己汽车官网（搜索结果摘要）",
+      "snippet": "2023年10月09日……10月12日，智己LS6将正式上市，更惊喜的价格、更详尽的配置……"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：可查公开上市时间为2023年10月12日，晚于本专利申请日2018年03月23日；未发现明确不满足特征。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "智己LS6页面/图示证据显示“智己LS6如何一键泊车”“智己LS6一键泊车体验”，车内屏幕处于泊车相关界面，可推知其具备自动泊车系统；但页面未明示“2023款首发量产版 / IM AD”具体交付软件版本。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/101039",
+          "title": "智己LS6如何一键泊车_文章_新出行",
+          "source_name": "新出行（fetched_page_images）",
+          "snippet": "图示证据：global_index 1-3 为智己LS6座舱，显示全画幅屏/C屏的泊车相关界面；图片来源页标题为“智己LS6如何一键泊车”。"
+        },
+        {
+          "url": "https://hao.yiche.com/wenzhang/86058086",
+          "title": "智己LS6一键泊车体验_易车",
+          "source_name": "易车（fetched_page_images）",
+          "snippet": "图示证据：global_index 4 显示智己LS6座舱下方C屏出现车辆俯视泊车界面；图片来源页标题为“智己LS6一键泊车体验”。"
+        }
+      ],
+      "reasoning": "①X：自动泊车系统=车辆泊车辅助功能，二值存在。②Y：新出行/易车图示标题均为LS6一键泊车，屏幕有泊车界面；SKU为LS6早期座舱但未明示2023首发。③(a)是，均指自动泊车；(b)是，存在/不存在；(c)是，泊车场景；(d)无。故可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "图示可见智己LS6具备全画幅数字驾舱屏和下方C屏等显示单元；“一键泊车”功能可推知存在用于执行泊车的控制单元，但公开图示未直接拆解或命名自动泊车控制单元。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/101039",
+          "title": "智己LS6如何一键泊车_文章_新出行",
+          "source_name": "新出行（fetched_page_images）",
+          "snippet": "图示证据：global_index 1-3 可见智己LS6前排全画幅屏及中控/C屏，屏幕显示泊车相关车辆视图。"
+        },
+        {
+          "url": "https://hao.yiche.com/wenzhang/86058086",
+          "title": "智己LS6一键泊车体验_易车",
+          "source_name": "易车（fetched_page_images）",
+          "snippet": "图示证据：global_index 4 可见智己LS6下方C屏显示车辆俯视泊车界面，上方全画幅屏也处于行车/泊车显示状态。"
+        }
+      ],
+      "reasoning": "①X：显示单元+自动泊车控制单元=屏幕与执行泊车控制的部件。②Y：图示有全画幅屏/C屏，且页面为一键泊车体验；控制单元由功能执行推知，SKU早期LS6但版本模糊。③(a)是；(b)是，均为二值部件存在；(c)是，车载泊车系统；(d)无。故可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "图示只能确认智己LS6车内屏幕显示车辆俯视/泊车界面；未验活到可引用正文证明显示的是“车身周围图像信息”，也未直接证明驾驶员可在该图像上划定或选择意向泊车区域。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/101039",
+          "title": "智己LS6如何一键泊车_文章_新出行",
+          "source_name": "新出行（fetched_page_images）",
+          "snippet": "图示证据：global_index 1-3 可见智己LS6座舱屏幕及泊车相关界面，但图片文字/车位选择框不可清晰核验。"
+        },
+        {
+          "url": "https://hao.yiche.com/wenzhang/86058086",
+          "title": "智己LS6一键泊车体验_易车",
+          "source_name": "易车（fetched_page_images）",
+          "snippet": "图示证据：global_index 4 可见下方C屏车辆俯视界面，但不能清楚读出驾驶员在周围图像上划定泊车区域的操作。"
+        }
+      ],
+      "reasoning": "①X：屏显车身周围图像并供驾驶员划定意向泊车区域，含图像与用户输入。②Y：图示仅见泊车/俯视界面，未验活到“划定/选择车位”文字。③(a)否，界面显示不等于划定动作；(b)否，X含输入事件，Y为静态图；(c)是，均为车内泊车屏；(d)无。故证据不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "现有已验活图示可支持“一键泊车/泊车界面”这一结果层事实；未找到同SKU正文或清晰图示证明系统会识别驾驶员划定区域、对该区域进行尺寸/位置优化，并按优化后的区域泊入。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/101039",
+          "title": "智己LS6如何一键泊车_文章_新出行",
+          "source_name": "新出行（fetched_page_images）",
+          "snippet": "图示证据：global_index 1-3 的来源页标题为“智己LS6如何一键泊车”，但图中未显示目标区域优化过程。"
+        },
+        {
+          "url": "https://hao.yiche.com/wenzhang/86058086",
+          "title": "智己LS6一键泊车体验_易车",
+          "source_name": "易车（fetched_page_images）",
+          "snippet": "图示证据：global_index 4 为智己LS6一键泊车体验画面，未见“识别驾驶员划定区域/优化泊车区域”的可读说明。"
+        }
+      ],
+      "reasoning": "①X：识别驾驶员划定区、优化至可泊空间并控制泊车，是算法处理链。②Y：图示/标题只证明一键泊车存在，未给区域识别或优化。③(a)否，自动泊车结果不等同优化意向区；(b)否，X为处理链，Y为功能结果；(c)是，均泊车场景；(d)无。故证据不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "候选摘要称其会检索周边可泊车位并显示，但在已验活的正文/图示中，仅能看到泊车相关界面和车辆俯视画面；未能清晰核验系统“根据图像选择优选泊车区域”以及在图像上标定候选车位框。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/101039",
+          "title": "智己LS6如何一键泊车_文章_新出行",
+          "source_name": "新出行（fetched_page_images）",
+          "snippet": "图示证据：global_index 1-3 可见泊车界面，但候选车位框/优选泊车区域标定文字不可清晰核验。"
+        },
+        {
+          "url": "https://hao.yiche.com/wenzhang/86058086",
+          "title": "智己LS6一键泊车体验_易车",
+          "source_name": "易车（fetched_page_images）",
+          "snippet": "图示证据：global_index 4 可见车辆俯视泊车界面，未能读出至少一个优选泊车区域被标定在周围图像上。"
+        }
+      ],
+      "reasoning": "①X：系统根据图像选至少一个优选泊车区并标定在显示图像上，量纲为候选区域集合。②Y：图示仅见泊车/俯视界面，看不清车位候选框或文字。③(a)否，泊车界面≠选择并标定区域；(b)否，X为区域集合，Y为静态界面；(c)是，均为屏幕泊车视图；(d)无。故证据不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 50.0,
+  "searched_queries": [
+    "2023 智己LS6 用户手册 一键泊车 屏幕 选择车位 环视图像",
+    "智己LS6 2023 一键泊车 UI 截图 可泊车位 主驾屏 C屏",
+    "2023 智己LS6 自动泊车 车位框 调整 优化 说明书",
+    "IM LS6 2023 APA parking slot adjustment optimization manual",
+    "智己汽车 智己LS6一键泊车（2023款首发量产版 / IM AD） 上市 日期 发布",
+    "[SKU自检] SKU_LOCK=LS6-2023首发-IMAD；product_version是否糊版本：✓（命中“2023款智己LS6首发量产阶段的IM AD一键泊车”）；launch_date是否跨版本：✓（仅采用2023年10月12日正式上市，未引用2024全新LS6/IMOS3.5/IMOS3.6日期）；逐条evidence sku一致性：C1-F1 ev1 host=xchuxing.com 锁定sku=智己LS6早期座舱/未明示2023首发 → 模糊，ev2 host=hao.yiche.com 锁定sku=智己LS6/未明示2023首发 → 模糊；C1-F2 同F1 → 模糊；C1-F3 同F1 → 模糊且不足以证明划定；C1-F4 同F1 → 模糊且不足以证明优化；C1-F5 同F1 → 模糊且不足以证明优选车位标定；冲突evidence处理：丢弃/不用于特征证明 immotors.com news_detail/199/201/202、yiche.com/zhai/2208211、autohome 2024/2025全新LS6、IT之家AVP后续OTA等跨年款/跨OTA材料；因此未给任何特征‘明确满足’。"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

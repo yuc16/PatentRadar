@@ -1,10 +1,10 @@
-{"ts": 1779108880.854644, "event": "pipeline_start", "publication_no": "CN110293961B"}
-{"ts": 1779108880.855341, "module": 1, "label": "decompose", "event": "start"}
-{"ts": 1779108968.492856, "module": 1, "label": "decompose", "event": "done", "elapsed": 87.64, "log_path": "logs/CN110293961B/module_1.log"}
-{"ts": 1779108968.49317, "module": 2, "label": "competitor-search", "event": "start"}
-{"ts": 1779112066.42942, "module": 2, "label": "competitor-search", "event": "done", "elapsed": 3097.94, "log_path": "logs/CN110293961B/module_2.log"}
-{"ts": 1779112066.4298398, "module": 3, "label": "full-claim-chart", "event": "start"}
-{"ts": 1779114311.6367848, "module": 3, "label": "full-claim-chart", "event": "done", "elapsed": 2245.21, "log_path": "logs/CN110293961B/module_3.log"}
-{"ts": 1779114311.637391, "module": 4, "label": "report", "event": "start"}
-{"ts": 1779114967.1999092, "module": 4, "label": "report", "event": "done", "elapsed": 655.56, "log_path": "logs/CN110293961B/module_4.log"}
-{"ts": 1779114967.20019, "event": "pipeline_end", "status": "ok", "elapsed": 6086.35}
+{"ts": 1779192745.297489, "event": "pipeline_start", "publication_no": "CN110293961B"}
+{"ts": 1779192745.2978098, "module": 1, "label": "decompose", "event": "start"}
+{"ts": 1779192827.238422, "module": 1, "label": "decompose", "event": "done", "elapsed": 81.94, "log_path": "logs/CN110293961B/module_1.log"}
+{"ts": 1779192827.2392309, "module": 2, "label": "competitor-search", "event": "start"}
+{"ts": 1779196534.320715, "module": 2, "label": "competitor-search", "event": "done", "elapsed": 3707.08, "log_path": "logs/CN110293961B/module_2.log"}
+{"ts": 1779196534.322166, "module": 3, "label": "full-claim-chart", "event": "start"}
+{"ts": 1779199485.108395, "module": 3, "label": "full-claim-chart", "event": "done", "elapsed": 2950.79, "log_path": "logs/CN110293961B/module_3.log"}
+{"ts": 1779199485.1110668, "module": 4, "label": "report", "event": "start"}
+{"ts": 1779200547.751168, "module": 4, "label": "report", "event": "done", "elapsed": 1062.64, "log_path": "logs/CN110293961B/module_4.log"}
+{"ts": 1779200547.7513118, "event": "pipeline_end", "status": "ok", "elapsed": 7802.45}

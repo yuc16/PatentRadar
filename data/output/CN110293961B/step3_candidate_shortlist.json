@@ -1,0 +1,257 @@
+{
+  "publication_no": "CN110293961B",
+  "candidates": [
+    {
+      "candidate_id": "P01",
+      "company": "赛力斯汽车（AITO问界）",
+      "company_en": "SERES / AITO",
+      "product_name": "问界M5 APA智能泊车（华为高阶智能驾驶版 / HUAWEI ADS 2.0）",
+      "product_name_en": "AITO M5 APA intelligent parking (Huawei Advanced Intelligent Driving Edition / HUAWEI ADS 2.0)",
+      "product_version": "问界M5华为高阶智能驾驶版为搜索摘要中明确提到的HUAWEI ADS 2.0首发搭载车型。其APA智能泊车辅助具备自动搜索车位、360°车位发现并显示可泊车位的能力。",
+      "market": "中国市场高阶智能驾驶乘用车自动泊车场景。",
+      "reason_for_deep_dive": "权1强调显示车身周围图像、标定至少一个优选泊车区域并控制自动泊车；该SKU公开摘要已出现“360°车位发现、显示可泊车位、APA智能泊车”，与C1-F2、C1-F4、C1-F5高度相关，值得核查其HMI是否允许驾驶员选择/划定意向泊车区域及系统优化逻辑。",
+      "source_result_ids": [
+        "bocha-Q01-03",
+        "brave-Q01-01",
+        "tavily-Q01-05"
+      ],
+      "source_urls": [
+        "https://www.hangyan.co/charts/3159692531818563071",
+        "https://www.xchuxing.com/article/77356",
+        "https://pdf.dfcfw.com/pdf/H3_AP202304191585579862_1.pdf"
+      ],
+      "initial_evidence_summary": "摘要显示HUAWEI ADS 2.0的APA可自动搜索车位、360°车位发现、显示可泊车位，并支持160多种车位智能泊车；证券研报摘要明确ADS 2.0首发搭载于AITO问界M5华为高阶智能驾驶版。"
+    },
+    {
+      "candidate_id": "P02",
+      "company": "阿维塔科技",
+      "company_en": "AVATR Technology",
+      "product_name": "阿维塔11 AVP代客泊车（ADS 2.0完整订阅 / 2023-06试驾车）",
+      "product_name_en": "AVATR 11 AVP valet parking (ADS 2.0 full subscription / June 2023 test vehicle)",
+      "product_version": "2023年6月试驾摘要指向阿维塔11已升级到ADS 2.0且处于完整订阅状态，车机中已有停车场地图。用户可在地图上点选车位并确认前往，车辆自动前往并泊入。",
+      "market": "中国市场高阶智能驾驶SUV/轿跑SUV停车场AVP代客泊车场景。",
+      "reason_for_deep_dive": "权1的核心在于显示单元上的区域选择、自动泊车控制单元识别并优化目标区域后控制泊车；该SKU已出现“地图点选车位并确认”“车位随心选”“实时规划最优路径”等信号，直接对应C1-F3至C1-F5的交互与控制链条。",
+      "source_result_ids": [
+        "brave-Q03-02",
+        "tavily-Q03-04"
+      ],
+      "source_urls": [
+        "https://www.ifanr.com/1553009",
+        "https://www.avatr.com/news?newsChId=b6046d4f9f82ff04835f9054d79d53bc&newsEngId="
+      ],
+      "initial_evidence_summary": "爱范儿摘要称阿维塔11升级ADS 2.0后，启用AVP时只需在地图上点选一个车位并确认前往；阿维塔官网摘要称AVP具备车位随心选、算路走捷径、多地库路径、多车位管理和泊车路线生成算法。"
+    },
+    {
+      "candidate_id": "P03",
+      "company": "小鹏汽车",
+      "company_en": "XPeng Motors",
+      "product_name": "小鹏G9自定义泊车（2026款G9 / 天玑AIOS全场景AI辅助驾驶配置）",
+      "product_name_en": "XPeng G9 custom parking (2026 G9 / Tianji AIOS full-scenario AI driving configuration)",
+      "product_version": "2026款G9参数配置表列明全场景AI辅助驾驶配置，包含APA超级智能辅助泊车、RPA遥控泊车、离车泊入、智能出库和自定义泊车。该配置还列明双14.96英寸2.4K智能屏，可作为泊车交互显示端。",
+      "market": "中国市场智能电动SUV自动泊车与自定义泊车场景。",
+      "reason_for_deep_dive": "权1特别关注驾驶员在显示图像上划定意向泊车区域并由控制单元优化；该SKU配置项中直接出现“自定义泊车”，并配备车机大屏和APA/RPA等功能，值得核查其自定义泊车界面是否呈现周围图像、目标区域框选/拖拽和空间优化。",
+      "source_result_ids": [
+        "tavily-Q04-02",
+        "brave-Q04-04"
+      ],
+      "source_urls": [
+        "https://www.xiaopeng.com/g9_2026/configuration.html",
+        "https://www.xiaopeng.com/instruction_book/112?type=page"
+      ],
+      "initial_evidence_summary": "官方配置摘要列出2026款G9搭载全场景AI辅助驾驶、APA超级智能辅助泊车、RPA遥控泊车、离车泊入、智能出库和自定义泊车；小鹏说明书摘要显示可点击触摸屏左上角“P”按钮进入超级智能辅助泊车。"
+    },
+    {
+      "candidate_id": "P04",
+      "company": "蔚来汽车",
+      "company_en": "NIO",
+      "product_name": "蔚来ES6 APA自动泊车（ES6 430KM首发纪念版 / NIO OS 2.6.5）",
+      "product_name_en": "NIO ES6 APA automatic parking (ES6 430 km Founders Edition / NIO OS 2.6.5)",
+      "product_version": "ES6 430KM首发纪念版在NIO OS 2.6.5相关报道中被明确关联自动泊车功能。选中车位后，用户挂入R挡并点击中控屏“开始泊车”，系统自动泊入所选车位。",
+      "market": "中国市场高端纯电SUV车机中控屏自动泊车场景。",
+      "reason_for_deep_dive": "该SKU摘要出现“选中车位”“点击中控屏开始泊车”“自动泊入选择的车位”，与权1的显示单元、驾驶员指定意向泊车区域、自动泊车控制执行逻辑对应度高，适合进一步核查其屏幕是否显示周围图像及候选车位标定。",
+      "source_result_ids": [
+        "bocha-Q07-01",
+        "brave-Q07-01"
+      ],
+      "source_urls": [
+        "https://www.pcauto.com.cn/jxwd/2525/25254774.html",
+        "https://auto.zol.com.cn/747/7476539.html"
+      ],
+      "initial_evidence_summary": "摘要称ES6在升级NIO OS 2.6.5后，自动泊车可在选中车位后通过中控屏“开始泊车”触发；车辆自动泊入选择的车位。"
+    },
+    {
+      "candidate_id": "P05",
+      "company": "蔚来汽车",
+      "company_en": "NIO",
+      "product_name": "蔚来ET9随心停（Banyan榕3.1.2 OTA / ET9）",
+      "product_name_en": "NIO ET9 Free Parking (Banyan 3.1.2 OTA / ET9)",
+      "product_version": "Banyan榕3.1.2升级后的“随心停”在ET9用车体验摘要中出现，支持随心选择泊入位置、调整泊车角度。该功能不再局限于划线车位，可用于无划线或非标准车位场景。",
+      "market": "中国市场蔚来NT2平台高端车型复杂泊车、无划线车位泊车场景。",
+      "reason_for_deep_dive": "“随心选择泊入位置、调整泊车角度”直接触及权1中驾驶员划定意向泊车区域以及系统对泊车区域进行优化的核心；无划线车位场景也有助于验证C1-F3和C1-F4的自由区域指定与空间大小优化。",
+      "source_result_ids": [
+        "brave-Q06-01",
+        "tavily-Q06-01"
+      ],
+      "source_urls": [
+        "https://finance.sina.com.cn/tech/digi/2025-03-06/doc-inensrzm8049009.shtml",
+        "https://www.nio.cn/testimonials/20250403002"
+      ],
+      "initial_evidence_summary": "摘要显示Banyan榕3.1.2新增“随心停”，支持随心选择泊入位置、调整泊车角度，无需依赖车位辅助线；蔚来官网口碑摘要将其用于ET9智驾体验并描述支持无划线非标准车位。"
+    },
+    {
+      "candidate_id": "P06",
+      "company": "蔚来汽车",
+      "company_en": "NIO",
+      "product_name": "蔚来超感泊车（Banyan 2.4.5 OTA / NIO Phone配套）",
+      "product_name_en": "NIO Super-Sensing Parking (Banyan 2.4.5 OTA / NIO Phone enabled)",
+      "product_version": "Banyan 2.4.5新增超感泊车功能；用户选定车位后，携带关联账号的NIO Phone下车，无需额外操作即可让车辆自动泊入。该SKU锁定为Banyan 2.4.5车机OTA功能。",
+      "market": "中国市场蔚来Banyan平台车型离车自动泊入与手机协同泊车场景。",
+      "reason_for_deep_dive": "权1要求驾驶员先指定意向泊车区域，系统识别并控制车辆泊入；该功能摘要明确“选定车位后”车辆自动泊入，值得深挖车机泊车界面是否显示环视图像、可泊车位标定和目标泊车区域优化。",
+      "source_result_ids": [
+        "bocha-Q06-02",
+        "bocha-Q06-05",
+        "brave-Q06-04"
+      ],
+      "source_urls": [
+        "https://news.zol.com.cn/865/8656941.html",
+        "https://www.ithome.com/0/761/547.htm",
+        "https://m.ithome.com/html/761547.htm"
+      ],
+      "initial_evidence_summary": "IT之家等摘要称Banyan 2.4.5新增超感泊车，选定车位后，携关联账号NIO Phone下车，车辆即可自动泊入；使用方式涉及泊车界面入口和手机车控设置。"
+    },
+    {
+      "candidate_id": "P07",
+      "company": "理想汽车",
+      "company_en": "Li Auto",
+      "product_name": "理想L9 Max代客泊车（OTA 5.0 / Max硬件）",
+      "product_name_en": "Li Auto L9 Max valet parking (OTA 5.0 / Max hardware)",
+      "product_version": "理想L9 Max升级OTA 5.0后可学习地库泊车路线，学习完成后车辆可主动完成从地库入口到目标车位的行驶和泊入。该SKU锁定为L9 Max硬件上的OTA 5.0智能泊车能力。",
+      "market": "中国市场大型增程SUV地下车库代客泊车、离车泊入场景。",
+      "reason_for_deep_dive": "权1涉及显示单元上的泊车区域选择以及自动泊车控制；该SKU摘要显示车机屏幕一键开启、寻找车位、泊车入位和路线学习，值得核查其目标车位选择界面是否标定优选泊车区域并对泊车空间进行优化。",
+      "source_result_ids": [
+        "bocha-Q08-04",
+        "brave-Q08-02",
+        "brave-Q08-05",
+        "tavily-Q08-01"
+      ],
+      "source_urls": [
+        "https://cj.sina.com.cn/articles/view/2554757470/m9846815e03301a6or",
+        "https://news.mydrivers.com/1/953/953877.htm",
+        "https://www.xchuxing.com/article/106145",
+        "https://news.qq.com/rain/a/20231221A0967D00"
+      ],
+      "initial_evidence_summary": "摘要称理想L9 Max升级OTA 5.0后会学习泊车路线并主动完成停车；理想智能泊车介绍显示可车机屏幕一键开启，支持断头路、角落车位、逆向垂直车位等泊入，同一停车场可学习多条路线。"
+    },
+    {
+      "candidate_id": "P08",
+      "company": "极氪汽车",
+      "company_en": "ZEEKR",
+      "product_name": "极氪007指尖泊车（ZEEKR OS 6.1 OTA / 2024-05-15推送）",
+      "product_name_en": "ZEEKR 007 fingertip parking (ZEEKR OS 6.1 OTA / pushed 2024-05-15)",
+      "product_version": "ZEEKR OS 6.1为极氪007在2024-05-15分批推送的OTA版本，新增和优化多项智能泊车能力。指尖泊车支持在无车位线场景进入自定义泊车界面，通过拖动虚拟车模规划停放空间，车辆自动完成泊车。",
+      "market": "中国市场纯电轿车无划线车位、自定义泊车和复杂车位自动泊入场景。",
+      "reason_for_deep_dive": "该SKU几乎直接命中权1：显示界面呈现自定义泊车区域，驾驶员拖动虚拟车模规划意向停放空间，系统自动完成泊车并支持空间适配；应重点深挖其是否对意向泊车区域进行尺寸/姿态优化并标定优选区域。",
+      "source_result_ids": [
+        "bocha-Q10-01",
+        "bocha-Q10-03",
+        "brave-Q10-01",
+        "brave-Q10-03",
+        "tavily-Q10-05"
+      ],
+      "source_urls": [
+        "https://m.pcauto.com.cn/baike/583140/1133360",
+        "https://www.toutiao.com/article/7373195771258176035",
+        "https://chejiahao.autohome.com.cn/info/15319270",
+        "https://m.pcauto.com.cn/baike/761939/1490243",
+        "https://www.cqnews.net/web/aritcle/1237799776398610432/web/content_1237799776398610432.html"
+      ],
+      "initial_evidence_summary": "摘要显示极氪007 OS 6.1于5月15日OTA推送，新增/优化自动泊车；指尖泊车可在没有车位线的停车位进入自定义泊车界面，手动规划停放空间或拖动虚拟车模，系统自动完成泊车；还提到机械车位、车头泊入、平均泊车时长36秒等能力。"
+    },
+    {
+      "candidate_id": "P09",
+      "company": "智己汽车",
+      "company_en": "IM Motors",
+      "product_name": "智己L7无划线车位自动泊入（IMOS 2.0 OTA / Beta）",
+      "product_name_en": "IM L7 automatic parking into unmarked spaces (IMOS 2.0 OTA / Beta)",
+      "product_version": "IMOS 2.0为智己L7相关整车软件升级版本，摘要显示新增自动泊入无划线车位Beta功能。该功能使APA可泊入无划线车位，车位选择更加灵活。",
+      "market": "中国市场智能电动轿车无划线车位APA自动泊入场景。",
+      "reason_for_deep_dive": "权1的“驾驶员划定意向泊车区域”和“优化后满足泊车所需空间大小”在无划线车位场景中尤为关键；该SKU公开摘要已出现无划线车位泊入和车位选择灵活，值得深挖其HMI是否允许用户在图像上选定/调整目标区域。",
+      "source_result_ids": [
+        "brave-Q13-05",
+        "tavily-Q13-01",
+        "tavily-Q13-02"
+      ],
+      "source_urls": [
+        "https://ithome.com/0/687/863.htm",
+        "https://m.immotors.com/app/community/content?type=260&id=2332133683413521668",
+        "https://im-cdn.immotors.com/capp/h5/cms/1749782957698im0lw4sg1t.pdf"
+      ],
+      "initial_evidence_summary": "IT之家摘要称IMOS 2.0新增自动泊入无线充电车位及高精度自动泊车能力；智己升级摘要称新增自动泊入无划线车位Beta，APA支持泊入无划线车位、车位选择更加灵活；智己功能介绍PDF摘要显示可在中枢屏选择停泊车位并开始自动泊车。"
+    },
+    {
+      "candidate_id": "P10",
+      "company": "智己汽车",
+      "company_en": "IM Motors",
+      "product_name": "智己LS6一键泊车（2023款首发量产版 / IM AD）",
+      "product_name_en": "IM LS6 one-touch parking (2023 initial production version / IM AD)",
+      "product_version": "2023款智己LS6首发量产阶段的IM AD一键泊车，低速驶入停车区域后系统自动检索周边可泊车位并显示在主驾屏幕/C屏上。用户点击屏幕一键泊车后，车辆自动泊入并自动挂入P挡。",
+      "market": "中国市场中大型纯电SUV车机屏幕自动泊车场景。",
+      "reason_for_deep_dive": "该SKU摘要明确“系统检索周边可泊车位并显示在屏幕上”“点击一键泊车”“自动泊入”，对应权1的显示单元标定优选泊车区域、驾驶员确认区域和控制单元执行泊车；值得进一步核查是否支持用户调整或系统优化目标泊车区域。",
+      "source_result_ids": [
+        "bocha-Q12-02",
+        "brave-Q12-02"
+      ],
+      "source_urls": [
+        "https://hao.yiche.com/wenzhang/86058086",
+        "https://www.xchuxing.com/article/101039"
+      ],
+      "initial_evidence_summary": "摘要显示智己LS6在停车场或路边找到可泊车位后，系统会自动检索四周可泊车位并在屏幕显示；用户点击一键泊车，松开制动和方向盘后车辆自动寻找车位并自动泊车，泊好后方向盘回正并挂P挡。"
+    },
+    {
+      "candidate_id": "P11",
+      "company": "深蓝汽车",
+      "company_en": "Deepal Auto",
+      "product_name": "深蓝S07自定义泊车（2024款 / 华为乾崑ADS SE）",
+      "product_name_en": "Deepal S07 custom parking (2024 model / Huawei Qiankun ADS SE)",
+      "product_version": "2024款深蓝S07相关摘要显示其自动泊车支持自定义泊车、标准车位与空间车位，并可处理断头路、极窄车位等复杂情况。用户可在自动泊车界面点击带P标识的方框泊入；无标准车位时可使用自定义泊车。",
+      "market": "中国市场新能源SUV华为乾崑智驾自动泊车、遥控泊车与自定义泊车场景。",
+      "reason_for_deep_dive": "“自定义泊车”“空间车位”“界面点击P方框”与权1中驾驶员根据显示图像划定/选择意向泊车区域、控制单元优化并泊入密切相关；该SKU还涉及复杂车位，适合核查其对目标区域大小和姿态的优化。",
+      "source_result_ids": [
+        "bocha-Q14-01",
+        "bocha-Q14-04",
+        "brave-Q14-04",
+        "brave-Q14-05"
+      ],
+      "source_urls": [
+        "https://www.pcauto.com.cn/ask/296396.html",
+        "https://clubajax.autohome.com.cn/bbs/threadowner/2e19a9598b043745/109073185-1.html",
+        "https://auto.zol.com.cn/925/9250011.html",
+        "https://www.pcauto.com.cn/ask/292322.html"
+      ],
+      "initial_evidence_summary": "摘要称深蓝S7/S07自动泊车支持自定义设置，能识别常规垂直、平行、斜列、断头路、极窄车位、空间车位等；车主体验称标准车位可在自动泊车界面点击P方框自动泊入，无标准车位可利用自定义泊车；中关村在线摘要称深蓝S07上线AVP、RPA等功能。"
+    },
+    {
+      "candidate_id": "P12",
+      "company": "长安汽车",
+      "company_en": "Changan Automobile",
+      "product_name": "长安UNI-K远程智能泊车（2021款UNI-K / APA6.0）",
+      "product_name_en": "Changan UNI-K remote intelligent parking (2021 UNI-K / APA6.0)",
+      "product_version": "2021款UNI-K装车应用APA6.0远程智能泊车。系统可自动寻找车辆30米范围内车位，在车位线宽度大于车宽65cm时主动识别并完成垂直、平行、斜列等泊车操作。",
+      "market": "中国市场燃油/混动SUV远程智能泊车、手机端泊车监控场景。",
+      "reason_for_deep_dive": "权1包含根据图像信息选择优选泊车区域并控制车辆自动泊车；APA6.0摘要显示系统主动识别附近车位并完成泊车，且通过手机实现远程监控/控制，值得核查其手机或车机显示是否标定优选泊车区域以及是否允许用户指定目标车位。",
+      "source_result_ids": [
+        "brave-Q15-01",
+        "brave-Q15-02",
+        "brave-Q15-03",
+        "tavily-Q15-02"
+      ],
+      "source_urls": [
+        "https://news.qq.com/rain/a/20210302A04Z4300",
+        "https://chejiahao.autohome.com.cn/info/8072741",
+        "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+        "https://epaper.cqrb.cn/kjb/2021-03/04/05/content_kj_273450.htm"
+      ],
+      "initial_evidence_summary": "摘要显示长安APA6.0在UNI-K上装车应用，可通过手机远程智能泊车和挪车；系统自动寻找30米范围内车位，当车位线宽度大于车宽65cm时主动识别，完成垂直、平行、斜列泊车；硬件包括12个超声波雷达、4个环视摄像头和5个毫米波雷达。"
+    }
+  ]
+}

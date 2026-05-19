@@ -1,0 +1,197 @@
+{
+  "candidate": {
+    "candidate_id": "P12",
+    "company": "长安汽车",
+    "company_en": "Changan Automobile",
+    "product_name": "长安UNI-K远程智能泊车（2021款UNI-K / APA6.0）",
+    "product_name_en": "Changan UNI-K remote intelligent parking (2021 UNI-K / APA6.0)",
+    "product_version": "2021款UNI-K装车应用APA6.0远程智能泊车。系统可自动寻找车辆30米范围内车位，在车位线宽度大于车宽65cm时主动识别并完成垂直、平行、斜列等泊车操作。",
+    "market": "中国市场燃油/混动SUV远程智能泊车、手机端泊车监控场景。",
+    "reason_for_deep_dive": "权1包含根据图像信息选择优选泊车区域并控制车辆自动泊车；APA6.0摘要显示系统主动识别附近车位并完成泊车，且通过手机实现远程监控/控制，值得核查其手机或车机显示是否标定优选泊车区域以及是否允许用户指定目标车位。",
+    "source_result_ids": [
+      "brave-Q15-01",
+      "brave-Q15-02",
+      "brave-Q15-03",
+      "tavily-Q15-02"
+    ],
+    "source_urls": [
+      "https://news.qq.com/rain/a/20210302A04Z4300",
+      "https://chejiahao.autohome.com.cn/info/8072741",
+      "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+      "https://epaper.cqrb.cn/kjb/2021-03/04/05/content_kj_273450.htm"
+    ],
+    "initial_evidence_summary": "摘要显示长安APA6.0在UNI-K上装车应用，可通过手机远程智能泊车和挪车；系统自动寻找30米范围内车位，当车位线宽度大于车宽65cm时主动识别，完成垂直、平行、斜列泊车；硬件包括12个超声波雷达、4个环视摄像头和5个毫米波雷达。"
+  },
+  "launch_date": "2021年3月1日APA6.0远程智能泊车技术首发，2021款UNI-K率先搭载/演示",
+  "launch_date_evidence": [
+    {
+      "url": "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+      "title": "想挪车？手机几个步骤轻松实现！ 长安汽车发布APA6.0远程智能泊车系统",
+      "source_name": "新浪汽车",
+      "snippet": "新浪汽车讯 3月1日，长安汽车举行了线上发布会，首发了APA6.0远程智能泊车系统...而该系统也将率先搭载到旗下全新中型SUV——UNI-K上。"
+    },
+    {
+      "url": "https://epaper.cqrb.cn/kjb/2021-03/04/05/content_kj_273450.htm",
+      "title": "主动识别车位 自动寻找车辆·重庆科技报数字报",
+      "source_name": "重庆科技报",
+      "snippet": "2021年03月04日...3月1日，在长安汽车直播间大牌带货官系列十平米发布会上，长安汽车宣布已完成APA6.0远程智能泊车技术在渝首发...搭载这一智能技术的长安UNI-K已经于2月28日开启全球预售"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "未失格：本SKU证据指向2021年3月1日APA6.0技术首发/UNI-K率先搭载，晚于专利申请日2018-03-23；未采用UNI-T APA5.0或APA7/8等跨SKU证据。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "长安APA6.0远程智能泊车系统：通过手机端远程监控泊车，可自动寻找30米范围内车位，在车位线宽度大于车宽65cm时主动识别并完成垂直、平行、斜列泊车。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+          "title": "想挪车？手机几个步骤轻松实现！ 长安汽车发布APA6.0远程智能泊车系统",
+          "source_name": "新浪汽车",
+          "snippet": "首发了APA6.0远程智能泊车系统，该系统可以通过手机端实现“远程监控泊车”的能力...APA6.0自动泊车系统可以自动寻找车辆30米范围内的车位...主动识别车位，并完成垂直、平行、斜列等泊车操作。"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/30239",
+          "title": "远程智能泊车技术 长安汽车发布 APA6.0 远程智能泊车系统",
+          "source_name": "新出行",
+          "snippet": "长安汽车正式宣布企业已完成 APA6.0 远程智能泊车技术的首发...实现了“用户通过手机，就能实现远程智能泊车和挪车”功能。功能包括，自动寻找车辆 30 米范围内的车位"
+        }
+      ],
+      "reasoning": "①X为自动泊车系统。②Y为2021 UNI-K/APA6.0远程智能泊车系统。③(a)是，均为自动完成泊车的车辆系统；(b)是，二值存在；(c)是，整车泊车场景；(d)无。证据sku=UNI-K+APA6.0匹配。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "APA6.0使用手机端实现远程监控/操控泊车，UNI-K还配置12.3英寸中控屏；系统在传感器感知后自动完成泊车。公开证据直接显示“手机/中控显示”和“APA6.0控制泊车功能”，但未直接公开名为自动泊车控制单元的ECU/控制器。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+          "title": "想挪车？手机几个步骤轻松实现！ 长安汽车发布APA6.0远程智能泊车系统",
+          "source_name": "新浪汽车",
+          "snippet": "该系统可以通过手机端实现“远程监控泊车”的能力...用户需要先通过手机对车辆进行初始化操作，采集车辆周边信息...用户可以选择一键泊车，长按三秒即可进入自动泊车操作。"
+        },
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/8060948",
+          "title": "解密长安UNI-K的“独门武器”APA6.0远程智能泊车系统",
+          "source_name": "汽车之家车家号",
+          "snippet": "新车搭载了三联液晶仪表+12.3英寸中控屏的组合...此外，UNI-K还有长安汽车的“独门武器”——APA6.0远程智能泊车系统。"
+        }
+      ],
+      "reasoning": "①X为显示单元+自动泊车控制单元。②Y为手机/中控显示及APA6.0自动控制泊车。③(a)是，功能对应；(b)是，二值部件/功能；(c)是，车端泊车系统；(d)无。因未明示控制器硬件，判可能满足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "APA6.0在手机端/车机端显示车辆周边画面；图示车机界面有环视画面和绿色停车位框，界面文字为“请选择停车位”，支持用户基于显示图像选择目标车位。公开文字未直接使用“划定意向泊车区域”表述。",
+      "status": "可能满足",
+      "score": 0.8,
+      "evidence": [
+        {
+          "url": "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+          "title": "想挪车？手机几个步骤轻松实现！ 长安汽车发布APA6.0远程智能泊车系统",
+          "source_name": "新浪汽车",
+          "snippet": "用户需要先通过手机对车辆进行初始化操作，采集车辆周边信息，再控制车辆向前移动，当车辆检测到空车位时，用户可以选择一键泊车"
+        },
+        {
+          "url": "https://m.youcheyihou.com/news/1062939?ivk_sa=1024320u",
+          "title": "UNI-K率先装备，长安发布APA 6.0，新增远程遥控泊车功能_有车以后",
+          "source_name": "有车以后（图示）",
+          "snippet": "图示证据：车机界面左侧显示“请选择停车位”，右侧为车身周围俯视/环视图像，并以绿色框标出P、P3等停车位。"
+        },
+        {
+          "url": "https://www.xchuxing.com/article/30239",
+          "title": "远程智能泊车技术 长安汽车发布 APA6.0 远程智能泊车系统",
+          "source_name": "新出行",
+          "snippet": "用户需要先通过手机对车辆进行初始化操作，采集车辆周边信息，再控制车辆向前移动，当车辆检测到空车位时，用户可以选择一键泊车"
+        }
+      ],
+      "reasoning": "①X为显示周围图像并让驾驶员定义目标区域。②Y为手机/车机环视图+“请选择停车位”。③(a)是，选择车位可定义目标；(b)是，区域/车位集合；(c)是，均基于周围图像；(d)无。无“划定”字面，判可能。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "APA6.0可检测符合停车要求的空车位；当车位线宽度大于车宽65cm时主动识别，并完成垂直、平行、斜列泊车。现有公开证据能证明“识别足够大车位”和“控制自动泊车”，但未直接证明其识别驾驶员划定区域并对该区域进行优化。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+          "title": "想挪车？手机几个步骤轻松实现！ 长安汽车发布APA6.0远程智能泊车系统",
+          "source_name": "新浪汽车",
+          "snippet": "当车辆检测到空车位时，用户可以选择一键泊车，长按三秒即可进入自动泊车操作...当车位线宽度大于车宽65cm时，主动识别车位，并完成垂直、平行、斜列等泊车操作。"
+        },
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/8060948",
+          "title": "解密长安UNI-K的“独门武器”APA6.0远程智能泊车系统",
+          "source_name": "汽车之家车家号",
+          "snippet": "当车辆检测到符合停车要求的车位时，用户可以长按三秒进入自动泊车操作...车位线宽度大于车宽65cm时即可主动识别"
+        },
+        {
+          "url": "https://epaper.cqrb.cn/kjb/2021-03/04/05/content_kj_273450.htm",
+          "title": "主动识别车位 自动寻找车辆·重庆科技报数字报",
+          "source_name": "重庆科技报",
+          "snippet": "搭载该技术的车辆，可以自动寻找车辆30米范围内的车位，当车位线宽度大于车宽65厘米时，车辆可以主动识别车位，并完成垂直、平行、斜列等泊车操作。"
+        }
+      ],
+      "reasoning": "①X为识别驾驶员划定区域、优化至足够空间并泊车。②Y为检测合格车位、一键泊车。③(a)否，Y未公开对驾驶员划定区域做优化；(b)否，X为区域几何优化，Y为阈值检测/动作；(c)否；(d)无。故不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "APA6.0通过4个环视摄像头等采集周边信息，可自动寻找30米范围内车位并主动识别；图示车机环视界面在周围图像上以绿色框标定多个候选/优选停车位（P、P3），供用户选择。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/30239",
+          "title": "远程智能泊车技术 长安汽车发布 APA6.0 远程智能泊车系统",
+          "source_name": "新出行",
+          "snippet": "用户需要先通过手机对车辆进行初始化操作，采集车辆周边信息...自动寻找车辆 30 米范围内的车位，当车位线宽度大于车宽 65cm 时，主动识别车位...全车拥有 12 个超声波雷达、4 个环视摄像头"
+        },
+        {
+          "url": "https://m.youcheyihou.com/news/1062939?ivk_sa=1024320u",
+          "title": "UNI-K率先装备，长安发布APA 6.0，新增远程遥控泊车功能_有车以后",
+          "source_name": "有车以后（图示）",
+          "snippet": "图示证据：车机环视/俯视图像上出现多个绿色停车位框，标有P、P3，界面提示“请选择停车位”，显示系统已在图像上标定可选车位。"
+        },
+        {
+          "url": "https://auto.sina.cn/jishu/2021-03-01/detail-ikftssap9436882.d.html",
+          "title": "想挪车？手机几个步骤轻松实现！ 长安汽车发布APA6.0远程智能泊车系统",
+          "source_name": "新浪汽车",
+          "snippet": "通过UNI-K整车12个超声波雷达、4个环视摄像头、 5个毫米波雷达、1个前摄像头...APA6.0自动泊车系统可以自动寻找车辆30米范围内的车位...主动识别车位"
+        }
+      ],
+      "reasoning": "①X为按图像选优选泊车区并标在显示图像上。②Y为环视摄像头采集、自动识别车位，界面绿框P/P3。③(a)是；(b)是，区域集合/标记；(c)是，周围图像显示；(d)无。sku匹配。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 78.0,
+  "searched_queries": [
+    "长安 UNI-K APA6.0 系统架构 显示单元 控制器 自动泊车",
+    "长安 UNI-K APA6.0 手机APP 泊车 界面 环视 图像 车位 选择",
+    "长安 APA6.0 远程智能泊车 用户手册 手机端 车位选择",
+    "长安 APA6.0 意向泊车区域 划定 优化 泊车区域",
+    "长安 UNI-K APA6.0 自动泊车 车位框 显示 标定 界面",
+    "[SKU自检] SKU_LOCK=2021-UNI-K-APA6.0；product_version是否糊版本：✓（命中“2021款UNI-K装车应用APA6.0远程智能泊车”）；launch_date是否跨版本：✓（仅取2021-03-01 APA6.0首发/UNI-K率先搭载，未混UNI-T APA5.0、APA7/8）；逐条evidence sku一致性：C1-F1 sina/xchuxing均为UNI-K+APA6.0→匹配；C1-F2 sina/autohome均为UNI-K+APA6.0→匹配；C1-F3 sina/xchuxing/youcheyihou图均为UNI-K+APA6.0→匹配或图示同SKU；C1-F4 sina/autohome/epaper均为UNI-K+APA6.0→匹配；C1-F5 xchuxing/sina/youcheyihou图均为UNI-K+APA6.0→匹配。冲突evidence处理：m.yiche UNI-T APA5.0和changan官网空页未入证据；量产尊贵版减配争议未作为本SKU功能证据，本报告按APA6.0演示/装车SKU保守评估。"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}

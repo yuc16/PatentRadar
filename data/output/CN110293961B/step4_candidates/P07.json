@@ -1,0 +1,178 @@
+{
+  "candidate": {
+    "candidate_id": "P07",
+    "company": "理想汽车",
+    "company_en": "Li Auto",
+    "product_name": "理想L9 Max代客泊车（OTA 5.0 / Max硬件）",
+    "product_name_en": "Li Auto L9 Max valet parking (OTA 5.0 / Max hardware)",
+    "product_version": "理想L9 Max升级OTA 5.0后可学习地库泊车路线，学习完成后车辆可主动完成从地库入口到目标车位的行驶和泊入。该SKU锁定为L9 Max硬件上的OTA 5.0智能泊车能力。",
+    "market": "中国市场大型增程SUV地下车库代客泊车、离车泊入场景。",
+    "reason_for_deep_dive": "权1涉及显示单元上的泊车区域选择以及自动泊车控制；该SKU摘要显示车机屏幕一键开启、寻找车位、泊车入位和路线学习，值得核查其目标车位选择界面是否标定优选泊车区域并对泊车空间进行优化。",
+    "source_result_ids": [
+      "bocha-Q08-04",
+      "brave-Q08-02",
+      "brave-Q08-05",
+      "tavily-Q08-01"
+    ],
+    "source_urls": [
+      "https://cj.sina.com.cn/articles/view/2554757470/m9846815e03301a6or",
+      "https://news.mydrivers.com/1/953/953877.htm",
+      "https://www.xchuxing.com/article/106145",
+      "https://news.qq.com/rain/a/20231221A0967D00"
+    ],
+    "initial_evidence_summary": "摘要称理想L9 Max升级OTA 5.0后会学习泊车路线并主动完成停车；理想智能泊车介绍显示可车机屏幕一键开启，支持断头路、角落车位、逆向垂直车位等泊入，同一停车场可学习多条路线。"
+  },
+  "launch_date": "2023年12月19日起全量推送OTA 5.0（Max车型升级AD Max 3.0）",
+  "launch_date_evidence": [
+    {
+      "url": "http://www.news.cn/auto/20231211/2ba37c3c82df44f5998c9c8ff31baf09/c.html",
+      "title": "理想汽车发布OTA 5.0 智能驾驶和智能空间全面进化-新华网",
+      "source_name": "新华网",
+      "snippet": "12月10日，理想汽车正式发布OTA 5.0，并宣布计划于12月19日开启全量用户推送……智能驾驶方面，Max车型将率先升级AD Max 3.0"
+    },
+    {
+      "url": "https://m.yiche.com/zhai/1722743",
+      "title": "理想L9智能泊车功能分为离车泊入和代客泊车两种_易车",
+      "source_name": "易车",
+      "snippet": "理想L9智能泊车功能分为离车泊入和代客泊车两种……摘要来自：《理想L系列车型OTA 5.0正式开启推送 新增145项功》……时间：2023-12-19"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "锁定SKU为L9 Max硬件上的OTA 5.0/AD Max 3.0智能泊车能力；公开推送时间为2023年12月19日，晚于本专利申请日2018-03-23，未因上市时间失格；未发现明确不满足特征。",
+  "comparisons": [
+    {
+      "feature_id": "C1-F1",
+      "patent_feature": "一种自动泊车系统",
+      "competitor_feature": "理想L9 Max在OTA 5.0后具备智能泊车能力，含离车泊入、代客泊车、自动泊车；代客泊车可沿学习路线驶向目标车位并泊入，离车泊入可通过手机App一键泊入。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "http://www.news.cn/auto/20231211/2ba37c3c82df44f5998c9c8ff31baf09/c.html",
+          "title": "理想汽车发布OTA 5.0 智能驾驶和智能空间全面进化-新华网",
+          "source_name": "新华网",
+          "snippet": "AD Max 3.0也为用户带来了智能泊车的全面升级……使用新增的离车泊入功能，用户可以在下车后通过手机操作车辆自行完成泊车……代客泊车功能，可以帮助用户在多层地下停车场记忆指定车位，并自动泊入"
+        },
+        {
+          "url": "https://news.mydrivers.com/1/953/953877.htm",
+          "title": "一键自动进地库找车位停车！理想智能泊车一图看懂--快科技",
+          "source_name": "快科技",
+          "snippet": "在理想L系列车型OTA 5.0中， 理想AD Max 3.0的智能泊车功能全面升级，并详细介绍了代客泊车、离车泊入、自动泊车三大功能……车辆会沿学习路线驶向目标车位并泊入"
+        }
+      ],
+      "reasoning": "①X为车辆自动泊车系统。②Y为L9 Max/OTA5.0的AD Max3.0智能泊车。③(a)是，均完成自动泊入；(b)是，系统有/无；(c)是，车辆泊车场景；(d)无。证据sku=L9/OTA5.0/Max，匹配。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F2",
+      "patent_feature": "包括显示单元以及自动泊车控制单元",
+      "competitor_feature": "显示单元：车机屏幕/中控屏APA界面；自动泊车控制单元：AD Max 3.0智能驾驶平台及其BEV、Occupancy、启发式规划搜索、MPC控制算法，用于控制转向、加减速和泊入。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://news.mydrivers.com/1/953/953877.htm",
+          "title": "一键自动进地库找车位停车！理想智能泊车一图看懂--快科技",
+          "source_name": "快科技",
+          "snippet": "至于“自动泊车”功能，此次理想也将其识别、停车能力大大提升，除了车机屏幕一键开启外，还支持无感动态换挡。"
+        },
+        {
+          "url": "http://www.news.cn/auto/20231211/2ba37c3c82df44f5998c9c8ff31baf09/c.html",
+          "title": "理想汽车发布OTA 5.0 智能驾驶和智能空间全面进化-新华网",
+          "source_name": "新华网",
+          "snippet": "视觉领域领先的BEV大模型和Occupancy占用网络让感知更精准；规划算法逐步切换为时空联合规划算法……MPC模型预测控制算法带来低时延、高精度的转向和加减速"
+        }
+      ],
+      "reasoning": "①X为显示单元+泊车控制单元。②Y为车机屏幕与AD Max3.0控制算法。③(a)是，屏幕显示/控制算法对应两单元；(b)是，组成二值；(c)是，车端泊车系统；(d)无。sku匹配。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F3",
+      "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+      "competitor_feature": "中控屏APA界面右侧显示车身周围环视俯视图，左侧显示多个车位框；驾驶员在屏幕上选择/确认蓝色高亮的目标车位，形成意向泊车区域。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/106145",
+          "title": "春卷又开车 | 理想L9升级OTA5.0后全场景泊车带来巨大惊喜_文章_新出行",
+          "source_name": "新出行（图示证据）",
+          "snippet": "图示证据：第4张输入图显示L9 OTA5.0 APA界面，右侧为车辆周围俯视影像，左侧为多个带“P”的车位框；手指在屏幕上操作，底部车位及泊车路径以蓝色高亮。"
+        },
+        {
+          "url": "https://news.mydrivers.com/1/953/953877.htm",
+          "title": "一键自动进地库找车位停车！理想智能泊车一图看懂--快科技",
+          "source_name": "快科技",
+          "snippet": "“自动泊车”功能……识别、停车能力大大提升，除了车机屏幕一键开启外，还支持无感动态换挡……断头路、角落车位、逆向垂直车位等也均支持智能泊入"
+        }
+      ],
+      "reasoning": "①X为显示周边图像并由驾驶员指定泊车区域。②Y为中控环视图+屏上选择高亮车位。③(a)是，选择车位即划定意向区域；(b)是，区域集合；(c)是，车身周边图像参考系；(d)无。图示sku=L9/OTA5.0。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F4",
+      "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+      "competitor_feature": "已公开证据显示：系统能识别车位、规划最优驾驶轨迹并控制车辆泊入目标车位；但未直接披露其会对驾驶员选定的“意向泊车区域”进行几何优化，并使优化后的区域满足泊车空间大小。",
+      "status": "证据不足",
+      "score": 0.3,
+      "evidence": [
+        {
+          "url": "http://www.news.cn/auto/20231211/2ba37c3c82df44f5998c9c8ff31baf09/c.html",
+          "title": "理想汽车发布OTA 5.0 智能驾驶和智能空间全面进化-新华网",
+          "source_name": "新华网",
+          "snippet": "在将BEV大模型和Occupancy占用网络算法引入环视鱼眼相机后，车辆周围环境得到精准识别……启发式的规划搜索算法和MPC控制算法则让泊车效率也得到显著提升……记忆指定车位，并自动泊入"
+        },
+        {
+          "url": "https://m.yiche.com/zhai/1722743",
+          "title": "理想L9智能泊车功能分为离车泊入和代客泊车两种_易车",
+          "source_name": "易车",
+          "snippet": "智能泊车功能分为离车泊入和代客泊车两种……通行路线灵活，遇到障碍物可倒车绕行。一键学习行驶路线，寻找车位、泊车入位。"
+        }
+      ],
+      "reasoning": "①X为识别用户划定区域、优化区域尺寸、按优化区泊入。②Y为识别环境/路径规划/目标车位泊入。③(a)否，轨迹规划不等同区域优化；(b)否，Y无区域尺寸量；(c)是，泊车空间；(d)无。降证据不足。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    },
+    {
+      "feature_id": "C1-F5",
+      "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+      "competitor_feature": "APA界面在车辆周边图像/泊车场景中显示多个可泊车区域（P车位框），并在显示单元上以车位框及蓝色高亮方式标定可选/目标泊车区域。",
+      "status": "明确满足",
+      "score": 1.0,
+      "evidence": [
+        {
+          "url": "https://www.xchuxing.com/article/106145",
+          "title": "春卷又开车 | 理想L9升级OTA5.0后全场景泊车带来巨大惊喜_文章_新出行",
+          "source_name": "新出行（图示证据）",
+          "snippet": "图示证据：第4张输入图的中控APA界面显示多个“P”车位框，右侧为环视俯视图；其中一个车位/路径以蓝色标定，呈现系统识别出的可泊车区域。"
+        },
+        {
+          "url": "https://news.zol.com.cn/848/8480137.html",
+          "title": "理想汽车 L5升级 解读来了_业界资讯-中关村在线",
+          "source_name": "中关村在线",
+          "snippet": "改进后的“自动泊车”功能不仅识别和停车能力更强……无论是断头路、角落车位还是逆向垂直车位等场景都支持智能泊入"
+        }
+      ],
+      "reasoning": "①X为基于图像选择优选泊车区并标定在图像上。②Y为APA识别车位并在屏幕显示P框/蓝色目标。③(a)是，P框为系统可选泊车区；(b)是，区域集合；(c)是，周边影像界面；(d)无。sku匹配。",
+      "suggested_followup_queries": [],
+      "evidence_gap_brief": ""
+    }
+  ],
+  "total_score": 86.0,
+  "searched_queries": [
+    "理想L9 Max OTA 5.0 自动泊车 车机屏幕 选择车位 图像 划定",
+    "理想L9 AD Max 3.0 自动泊车 控制 泊入 目标车位 优化",
+    "理想汽车 理想L9 Max代客泊车（OTA 5.0 / Max硬件） 上市 日期 发布",
+    "理想汽车 理想L9 Max代客泊车（OTA 5.0 / Max硬件） 说明书 PDF",
+    "[SKU自检] SKU_LOCK=L9-Max-OTA5.0-ADMax3.0；product_version是否糊版本：✓，命中“L9 Max硬件上的OTA 5.0智能泊车能力”；launch_date是否跨版本：✓，仅采用2023-12-19 OTA5.0全量推送/Max车型升级AD Max3.0，未采用OTA5.0.4/5.1/6.5/8.0日期；逐条evidence sku一致性：C1-F1 news.cn=OTA5.0+Max车型AD Max3.0→匹配，mydrivers=L系列OTA5.0 AD Max3.0/含L9标签→匹配；C1-F2 mydrivers=OTA5.0车机屏幕→匹配，news.cn=OTA5.0 Max车型AD Max3.0→匹配；C1-F3 xchuxing图=L9升级OTA5.0→匹配，mydrivers=L系列OTA5.0/理想L9标签→匹配；C1-F4 news.cn=OTA5.0 Max车型AD Max3.0→匹配，yiche=L9/OTA5.0正式推送→匹配；C1-F5 xchuxing图=L9升级OTA5.0→匹配，ZOL=L系列OTA5.0智能泊车→匹配；冲突evidence处理：lixiang社区OTA8.0、OTA6.5、L8Pro/OTA5.2手册、OTA5.1/5.0.4等跨版本证据均丢弃，未用于明确满足。"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}
