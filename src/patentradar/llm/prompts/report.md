@@ -34,15 +34,58 @@
 
 ### 2. 整体侵权风险评估
 
-**这一章节是全文总结**，用自然语言段落（不分小标题）覆盖以下要点：
+按以下 3 步组织，**严禁内容重复**（"下一步建议"只在第 3 步的 TOP-N 一览表里展示一次，第 2 步和第 3 章节都不再单独列）：
 
-1. **最高分竞品介绍**（2-4 句）：最高分竞品的 `company` / `product_name` / `product_version`（产品介绍）/ `total_score`，上市时间 vs 专利申请日的对比。**首句必须点出 `product_name` 括号内的 SKU 标识**（如"问界M5 智驾版（M5 ADS 1.0 / 含激光雷达）"），让律师/工程师立刻知道本报告锁定的是哪个具体 SKU——所有证据仅指向该 SKU，不混用其他年款/OTA/硬件配置。
-2. **最高分竞品的权 1 满足情况**（1 段）：枚举权 1 的每条 feature 是「明确满足/可能满足/证据不足/明确不满足」，重点列出证据缺口（status ∈ {证据不足, 可能满足}）的 feature_id 和缺口原因。
-3. **针对最高分竞品权 1 证据缺口的下一步搜索建议**（按缺口 feature 各列 1 条 bullet）：**优先复用** `top_competitors[0].claim_charts[claim_no==1].comparisons[*].evidence_gap_brief` 字段（模块三 round 2 已经给每条权 1 缺口 feature 写好"还缺 / 下一步建议"两行）。
-   
-   每条 bullet 形如：
-   > 「**C1-FX（XX 特征）**：<evidence_gap_brief 内容，可适度精简换行>」
-   
+1. **最高分竞品介绍**（2-4 句段落）：最高分竞品的 `company` / `product_name` / `product_version`（产品介绍）/ `total_score`，上市时间 vs 专利申请日的对比。**首句必须点出 `product_name` 括号内的 SKU 标识**（如"问界M5 智驾版（M5 ADS 1.0 / 含激光雷达）"），让律师/工程师立刻知道本报告锁定的是哪个具体 SKU——所有证据仅指向该 SKU，不混用其他年款/OTA/硬件配置。
+2. **最高分竞品的权 1 满足情况速览**（1 段，**仅点名**）：枚举权 1 每条 feature 的状态，例如 "C1-F1/F5/F6 明确满足；C1-F2/F3/F4/F7 可能满足"。**不写缺口原因，不写下一步建议**——这些留给第 3 步。
+3. **TOP-N 一览表（HTML 表 + rowspan 合并单元格）**：把所有 top_competitors 的缺口和下一步建议汇总成一个表，每个候选**每个缺口 feature 单独一行**；候选信息列（排名 / 公司+产品 / 总分 / 权 1 明确满足）用 `rowspan` 合并。**这是"下一步建议"在整份报告里的唯一展示位**，第 2 章节其它地方和第 3 章节都不再单独列下一步建议。
+
+表格语法和示例（**必须用 HTML `<table>`，不用 markdown 表，因为 markdown 不支持单元格合并**）：
+
+```html
+<table>
+<thead>
+<tr>
+  <th>排名</th><th>公司 / 产品</th><th>总分</th><th>权 1 明确满足</th>
+  <th>缺口 feature</th><th>下一步搜索建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="4">1</td>
+  <td rowspan="4">凯迪拉克 / XT4 感应式电动后备箱门</td>
+  <td rowspan="4">88.57</td>
+  <td rowspan="4">3/7</td>
+  <td>C1-F2</td>
+  <td>去 GM Techline/ACDelco TDS 或畅易汽车网调取该车型 Hands-Free Liftgate/Keyless Entry 系统说明</td>
+</tr>
+<tr><td>C1-F3</td><td>去 ACDelco TDS / 汽修巴巴 / diagnostdata.com 查举升门 wiring diagram</td></tr>
+<tr><td>C1-F4</td><td>去车型维修手册或零件目录，定位 hands-free liftgate sensor 诊断章节</td></tr>
+<tr><td>C1-F7</td><td>去 GM Techline 或拆解视频平台查 sensor module 结构图</td></tr>
+<tr>
+  <td rowspan="3">2</td>
+  <td rowspan="3">某候选 / 某产品</td>
+  <td rowspan="3">85.00</td>
+  <td rowspan="3">4/7</td>
+  <td>C1-F2</td>
+  <td>...</td>
+</tr>
+<tr><td>C1-F3</td><td>...</td></tr>
+<tr><td>C1-F5</td><td>...</td></tr>
+</tbody>
+</table>
+```
+
+**填表规则**：
+- **行的展开**：每个候选**每个权 1 缺口 feature 单独一行**。缺口 feature = `status ∈ {可能满足, 证据不足}` 的 feature。
+- **`rowspan` 的值**：等于该候选权 1 中的缺口 feature 数。如果某候选权 1 全部"明确满足"（无缺口），用 `rowspan="1"`，"缺口 feature" 列写"—"、"下一步搜索建议" 列写"—"。
+- **"公司 / 产品" 列**：写 `<company> / <product_name>`（用本专利国主语言，不展开中英双语，太占空间）。
+- **"权 1 明确满足" 列**：写"<明确满足 feature 数> / <权 1 总 feature 数>"，例如 `3/7`。
+- **"缺口 feature" 列**：单 feature_id（如 `C1-F2`）。
+- **"下一步搜索建议" 列**：**只取 `evidence_gap_brief` 的"下一步建议:"那一行**（去掉"还缺：..."部分），保留具体网站名和动作描述。原文里的裸 URL 保留为纯文本（HTML `<td>` 内不会渲染 markdown 链接语法，写裸 URL 就够了）。
+- **行顺序**：候选按 `total_score` 降序；同一候选内 feature_id 按字典序升序。
+- **失格候选不进表也不进报告**：`disqualified=true` 的候选在模块 3 已经从 `top_competitors` 排除（进了 `excluded_candidates`）。**整份报告都不展示失格候选**。
+
 写作风格：信息密度高，专业克制，不写「本报告」「综上所述」自指总结。
 
 ### 3. TOP-N 竞品对比
@@ -80,20 +123,12 @@
 |---|---|---|---|---|---|
 | ... | ... | ... | ... | ... | ... |
 
-##### 该候选的证据缺口（如有；只针对权 1）
-
-只枚举**权 1**中 status ∈ {证据不足, 可能满足} 的 feature。**直接复用**
-`evidence_gap_brief` 字段（模块三 round 2 已经写好），每条 feature 形如：
-
-> **C1-FX（XX 特征）**：<evidence_gap_brief 内容，原样或最多换行精简>
-
-`evidence_gap_brief` 为空时退回到 `suggested_followup_queries`（也空则标"需人工补查"）。
-不要自行造 query。
+[**注**：第 3 章节**不再单独输出"证据缺口"段** —— 下一步建议已在第 2 章节 TOP-N 一览表里集中展示。每个候选的逐权利要求对比表展示完就结束，不需要补"证据缺口"小标题。]
 
 **说明**：
 - 表格 `证据 URL` 列：列出该 feature 的全部 evidence URL，用 markdown 链接。当某条 feature 有多个 URL 时，用 `1. <link>` `2. <link>` `3. <link>` 这样的有序前缀分隔（注意不是真正的 markdown 列表，列表语法在表格单元格里不会被渲染——只是用裸字符 `1. ` `2. ` 做编号），每个编号 + 链接之间用换行隔开。单个 URL 时不要加 `1.` 前缀。
-- 表格 `说明` 列：放 reasoning（不超过 200 字）
-- 非权 1 子小节**不需要**输出"证据缺口"段，因为最终评分只看权 1
+- 表格 `说明` 列：放 **完整 reasoning，不允许截断 / 省略 / 加"..."**——reasoning 是 ①②③ 三段 + (a)(b)(c)(d) 4 对比项填空，律师 / 工程师需要看完整推理链做核验。表格列宽放不下时由 CSS 自动换行，不要主动删减文字。
+- 非权 1 子小节本身就不展示"证据缺口"段（最终评分只看权 1）
 ```
 
 ### 4. 相似专利人工核查（仅当 infringement_risk_triggered=true）

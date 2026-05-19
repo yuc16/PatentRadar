@@ -8,7 +8,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.14+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/managed_with-uv-DE5FE9?logo=python&logoColor=white)](https://github.com/astral-sh/uv)
-[![LLM](https://img.shields.io/badge/LLM-Codex_/_OpenAI_compatible-10A37F?logo=openai&logoColor=white)](#-llm-后端)
+[![LLM](https://img.shields.io/badge/LLM-ChatGPT_auth_/_OpenAI_compatible-10A37F?logo=openai&logoColor=white)](#-llm-后端)
 [![Skill](https://img.shields.io/badge/Claude_Code-Skill_ready-D97757?logo=anthropic&logoColor=white)](#模式-2跨-agent-skill嵌入-claude-code--codex-cli)
 [![License](https://img.shields.io/badge/license-MIT-blue)](#-license)
 
@@ -48,54 +48,224 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 
 ## 🏗️ 架构
 
+系统采用**分层解耦**设计，从顶到底共 6 层：接入层 → 调度层 → 业务模块层 → 适配层 → 外部服务层 → 持久层。下面给出三个视图：**系统分层架构**、**模块内部工作流**、**核心数据流时序**。
+
+### 视图 1：系统分层架构（6 层）
+
 ```mermaid
 graph TB
-    subgraph IN["🟢 入口"]
-        CLI["CLI<br/>patentradar &lt;cmd&gt;"]
-        WEB["Web Dashboard<br/>FastAPI + SSE"]
-        SKILL["Claude Code / Codex<br/>skill 触发"]
+    subgraph L1["①  接入层 · Access Layer"]
+        direction LR
+        CLI["🖥️  CLI<br/><i>typer</i><br/>patentradar decompose / search / chart / report"]
+        WEB["🌐  Web Dashboard<br/><i>FastAPI + SSE 流式推送</i><br/>· 4 模块进度可视化<br/>· 回放 1x ~ 600x · 离线 HTML 导出"]
+        SKILL["🤖  Skill Adapter<br/><i>Claude Code / Codex CLI</i><br/>spawn 4 个 subagent 串行 + schema 自校验"]
     end
 
-    subgraph PIPE["🔄 4 模块流水线"]
-        M1["📑 模块 1<br/>Decompose<br/>拆解权利要求"]
-        M2["🌐 模块 2<br/>Competitor Search<br/>竞品挖掘 + 权 1 判定"]
-        M3["📋 模块 3<br/>Full Claim Chart<br/>全权利要求扩展"]
-        M4["📝 模块 4<br/>Report<br/>markdown + PDF"]
-        M1 -->|task_package.json| M2
-        M2 -->|top_competitors.json| M3
-        M3 -->|full_claim_chart.json| M4
+    subgraph L2["②  调度层 · Orchestration"]
+        direction LR
+        ORCH["⚙️  Pipeline Orchestrator<br/><code>scripts/run_full_pipeline.py</code><br/>· 4 模块串行调度 · 失败重试 · 产物落盘"]
+        VAL["✅  Schema Validator<br/><code>schemas/validate.py</code><br/>每模块跑完自动校验 → 失败回填 LLM 重交（最多 2 次）"]
+        STREAM["📡  LLM Stream Writer<br/><code>llm/stream.py</code><br/>所有 LLM payload / response → <code>logs/&lt;PUB&gt;/module_N/</code>"]
     end
 
-    subgraph EXT["🔌 外部依赖"]
-        LLM["LLM<br/>Codex / OpenAI 兼容"]
-        SE["Search Provider<br/>Tavily · Bocha · Exa · Brave"]
-        WEBPAGE["Web / PDF<br/>Google Patents · 厂商官网 · 评测 · 拆解"]
+    subgraph L3["③  业务模块层 · Business Modules（4 模块流水线）"]
+        direction LR
+        M1["📑  <b>M1 · Decompose</b><br/>━━━━━━━━━━━<br/>① 抓 Google Patents HTML<br/>② PDF Vision 兜底（公式/乱码）<br/>③ LLM 拆原子特征 C{n}-F{m}<br/>④ 选 9 大技术领域 tag"]
+        M2["🌐  <b>M2 · Competitor Search</b>　（5 step）<br/>━━━━━━━━━━━<br/>① 拼 query（≥8 头部公司 × 双语 × 多维度）<br/>② 多 provider 并发搜索 + 申请人域名过滤<br/>③ LLM 抽 8-12 候选（带 SKU 锁定）<br/>④ 候选级并发 fetch 证据 + LLM 多模态判定<br/>⑤ Round-1/2 gap 补搜 → TOP-N 排名"]
+        M3["📋  <b>M3 · Full Claim Chart</b><br/>━━━━━━━━━━━<br/>① 复用 M2 evidence pool<br/>② 扩展全部从属权利要求<br/>③ 缺口特征带 SKU query 补搜<br/>④ Round-2 终判 + evidence_gap_brief"]
+        M4["📝  <b>M4 · Report</b><br/>━━━━━━━━━━━<br/>① 渲染 4 章节 markdown<br/>② TOP-N 一览表（HTML rowspan）<br/>③ WeasyPrint → A4 PDF<br/>④ 相似专利核查深链"]
     end
 
-    OUT["📁 data/output/&lt;PUB&gt;/<br/>report.md + report.pdf<br/>+ 全过程 JSON 留痕"]
+    subgraph L4["④  适配层 · Adapters"]
+        direction LR
+        LLMA["🧠  LLM Provider<br/><i>llm/provider.py</i><br/>━━━━━━━━━━━<br/>· codex.py：ChatGPT OAuth + Responses SSE<br/>· openai_compat.py：/chat/completions<br/>· payload_compress.py：超长 prompt 自动压缩"]
+        SEARCH["🔍  Search Router<br/><i>search/router.py</i><br/>━━━━━━━━━━━<br/>按 query 意图路由 2-3 provider<br/>· Tavily（多 key 轮换）· Bocha（中文）<br/>· Exa（英文 neural）· Brave（评测/拆解）"]
+        FETCH["📡  Web / PDF Fetcher<br/><i>fetcher/</i><br/>━━━━━━━━━━━<br/>· google_patents.py<br/>· pdf.py：PyMuPDF 关键页 PNG<br/>· web_fetcher.py：httpx + lxml + 反爬识别"]
+        REND["🖨️  PDF Renderer<br/><i>scripts/render_pdf.py</i><br/>WeasyPrint + PingFang SC + 表格防溢 CSS"]
+    end
 
-    CLI --> PIPE
-    WEB --> PIPE
-    SKILL --> PIPE
-    M1 -.-> LLM
-    M2 -.-> LLM
-    M2 -.-> SE
-    M2 -.-> WEBPAGE
-    M3 -.-> LLM
-    M3 -.-> SE
-    M3 -.-> WEBPAGE
-    M4 -.-> LLM
-    PIPE --> OUT
+    subgraph L5["⑤  外部服务层 · External Services"]
+        direction LR
+        EXT_LLM["🤖 LLM Backends<br/>Codex (gpt-5.5)<br/>OpenAI 兼容网关<br/>aihubmix / DeepSeek"]
+        EXT_SE["🔎 Search APIs<br/>Tavily · Bocha<br/>Exa · Brave"]
+        EXT_WEB["🌐 Web Sources<br/>Google Patents · 厂商官网<br/>评测站 / 拆解站 / 维修手册"]
+    end
 
-    classDef entry fill:#E3F2FD,stroke:#1976D2,color:#0D47A1,stroke-width:2px
-    classDef module fill:#FFF3E0,stroke:#F57C00,color:#E65100,stroke-width:2px
-    classDef ext fill:#F3E5F5,stroke:#7B1FA2,color:#4A148C,stroke-width:1px,stroke-dasharray:4 3
-    classDef output fill:#E8F5E9,stroke:#388E3C,color:#1B5E20,stroke-width:2px
-    class CLI,WEB,SKILL entry
-    class M1,M2,M3,M4 module
-    class LLM,SE,WEBPAGE ext
-    class OUT output
+    subgraph L6["⑥  持久层 · Persistence"]
+        direction LR
+        SCHEMA["📜  Pydantic Schema 契约<br/><i>schemas/*.py + schemas/*.schema.json</i><br/>Candidate · FeatureComparison<br/>EvidenceSource · TopCompetitorReport ..."]
+        OUT["📁  <b>data/output/&lt;PUB&gt;/</b><br/>━━━━━━━━━━━<br/>report.md · report.pdf<br/>+ 8 个 step JSON 全过程留痕"]
+        LOGS["📋  <b>logs/&lt;PUB&gt;/</b><br/>━━━━━━━━━━━<br/>module_N/payload.json<br/>module_N/response.json<br/>(LLM 原始往返调试用)"]
+    end
+
+    CLI --> ORCH
+    WEB --> ORCH
+    SKILL -.->|skill 模式直接驱动 subagent，<br/>跳过 Python orchestrator| M1
+    ORCH --> M1
+    ORCH --> VAL
+    ORCH --> STREAM
+    M1 -->|task_package.json| M2
+    M2 -->|step5_top5_claim1_candidates.json| M3
+    M3 -->|top5_full_claim_chart.json| M4
+
+    M1 -.调用.-> LLMA
+    M1 -.抓专利.-> FETCH
+    M2 -.LLM 判定.-> LLMA
+    M2 -.搜索.-> SEARCH
+    M2 -.fetch 证据.-> FETCH
+    M3 -.LLM 判定.-> LLMA
+    M3 -.补搜.-> SEARCH
+    M3 -.fetch 证据.-> FETCH
+    M4 -.装配文本.-> LLMA
+    M4 -.PDF 渲染.-> REND
+
+    LLMA --> EXT_LLM
+    SEARCH --> EXT_SE
+    FETCH --> EXT_WEB
+
+    VAL -.读.-> SCHEMA
+    M1 -.契约约束.-> SCHEMA
+    M2 -.契约约束.-> SCHEMA
+    M3 -.契约约束.-> SCHEMA
+    M4 -.契约约束.-> SCHEMA
+    M4 --> OUT
+    STREAM --> LOGS
+
+    classDef l1 fill:#E3F2FD,stroke:#1565C0,color:#0D47A1,stroke-width:2px
+    classDef l2 fill:#FCE4EC,stroke:#C2185B,color:#880E4F,stroke-width:2px
+    classDef l3 fill:#FFF3E0,stroke:#E65100,color:#BF360C,stroke-width:2px
+    classDef l4 fill:#F3E5F5,stroke:#6A1B9A,color:#4A148C,stroke-width:2px
+    classDef l5 fill:#FFEBEE,stroke:#B71C1C,color:#B71C1C,stroke-width:1px,stroke-dasharray:5 3
+    classDef l6 fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20,stroke-width:2px
+    class CLI,WEB,SKILL l1
+    class ORCH,VAL,STREAM l2
+    class M1,M2,M3,M4 l3
+    class LLMA,SEARCH,FETCH,REND l4
+    class EXT_LLM,EXT_SE,EXT_WEB l5
+    class SCHEMA,OUT,LOGS l6
 ```
+
+> **关键设计点**：
+> - **接入层与业务层完全解耦**——CLI / Web / Skill 三种入口共享同一套 4 模块业务逻辑，无重复代码
+> - **调度层独立**——Orchestrator + Validator + Stream Writer 三件套，让"业务执行"与"流程治理"分离
+> - **适配层屏蔽外部不确定性**——LLM 后端切换、搜索 provider 增减、PDF 渲染替换都不会冒泡到业务模块
+> - **契约驱动**——Pydantic Schema 同时是「LLM 输出格式约束」、「模块间数据传递契约」、「Validator 自动校验依据」
+
+### 视图 2：4 模块内部工作流（最复杂模块 M2 详细展开）
+
+```mermaid
+flowchart LR
+    subgraph M2_DETAIL["🌐 模块 2 · Competitor Search 内部工作流"]
+        direction TB
+        S1["<b>step 1 · query generation</b><br/>━━━━━━━━━━━━━<br/>LLM 列 ≥ 8 家头部公司清单 + 双语 30-50 query<br/>覆盖：规格书 · 拆解 · 评测 · 厂商官网 · 论文"]
+        S2["<b>step 2 · multi-provider search</b><br/>━━━━━━━━━━━━━<br/>router 按意图路由 2-3 provider 并发<br/>结果去重 + 申请人域名黑名单过滤"]
+        S3["<b>step 3 · candidate shortlist</b><br/>━━━━━━━━━━━━━<br/>LLM 从搜索结果抽 8-12 候选<br/>必带 SKU 锁定标识（基础版 / 智驾版 / OS 6.1 OTA）"]
+        S4["<b>step 4 · per-candidate evidence</b><br/>━━━━━━━━━━━━━<br/>候选级并发：<br/>· 抓 source_urls 全文 + PDF + 图片<br/>· LLM 多模态判定权 1 各特征<br/>· 4 档 status + 严谨推理 ①②③ + (a)(b)(c)(d)<br/>· Round 1：'证据不足/可能满足' → 提 follow-up query<br/>· Round 2：跑完 gap 补搜后终判"]
+        S5["<b>step 5 · rank top-N</b><br/>━━━━━━━━━━━━━<br/>过滤 disqualified → 按 total_score 排序<br/>同公司不同 SKU 都保留 → 取前 5"]
+
+        S1 -->|step1_query_plan.json| S2
+        S2 -->|step2_search_results.json| S3
+        S3 -->|step3_candidate_shortlist.json| S4
+        S4 -->|step4_candidate_evidence.json| S5
+    end
+
+    subgraph QUALITY["🛡️ 横切质量约束（贯穿 step 1-5）"]
+        direction TB
+        Q1["申请人自家过滤<br/>applicant_self_signals 黑名单"]
+        Q2["单 SKU 锁定<br/>product_name 必带 SKU 标识<br/>evidence 同源校验"]
+        Q3["URL 验活<br/>HTTP 200 · 跨 host 跳转丢弃<br/>反爬墙登录页丢弃"]
+        Q4["数学约束现场算<br/>D/V · S/E · L/S 代入数值"]
+        Q5["停止条件<br/>硬规则：全 feature ≥ 1 独立 host 明确满足<br/>软判断：2-3 轮无新证据停搜"]
+    end
+
+    QUALITY -.约束.-> M2_DETAIL
+
+    classDef step fill:#FFF3E0,stroke:#E65100,color:#BF360C,stroke-width:2px
+    classDef qc fill:#FFFDE7,stroke:#F57F17,color:#E65100,stroke-width:1px,stroke-dasharray:3 2
+    class S1,S2,S3,S4,S5 step
+    class Q1,Q2,Q3,Q4,Q5 qc
+```
+
+> M1 / M3 / M4 内部步骤参考 [🔄 4 模块工作流](#-4-模块工作流) 章节。M2 之所以最复杂，是因为它承担「全网竞品发现 + 多模态证据抓取 + Round-1/2 自适应补搜」三件事——其它三个模块均围绕它产出/复用数据。
+
+### 视图 3：核心数据流时序（Sequence）
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant U as 用户
+    participant ORCH as Orchestrator
+    participant M1 as M1 Decompose
+    participant M2 as M2 Competitor<br/>Search
+    participant M3 as M3 Full Claim<br/>Chart
+    participant M4 as M4 Report
+    participant LLM as LLM Provider
+    participant SE as Search Router
+    participant WEB as Web/PDF Fetcher
+    participant FS as data/output/&lt;PUB&gt;
+
+    U->>ORCH: 输入专利公开号<br/>(CN110293961B)
+    activate ORCH
+
+    ORCH->>M1: spawn
+    activate M1
+    M1->>WEB: fetch Google Patents HTML/PDF
+    WEB-->>M1: claim text + 公式图
+    M1->>LLM: 拆原子特征 C{n}-F{m}
+    LLM-->>M1: features[]
+    M1->>FS: 写 task_package.json
+    M1-->>ORCH: 完成
+    deactivate M1
+
+    ORCH->>M2: spawn (with task_package)
+    activate M2
+    M2->>LLM: 生成 query (≥30 条双语)
+    LLM-->>M2: query plan
+    M2->>SE: 并发搜索 (Tavily/Bocha/Exa/Brave)
+    SE-->>M2: search results[]
+    M2->>LLM: 抽 8-12 候选 (带 SKU 锁定)
+    LLM-->>M2: candidates[]
+
+    loop 对每个候选并发
+        M2->>WEB: fetch evidence URL + PDF + 图片
+        WEB-->>M2: fetched_pages + images
+        M2->>LLM: Round 1 评估权 1 各特征
+        LLM-->>M2: status + 推理 + follow-up queries
+        M2->>SE: gap 补搜
+        SE-->>M2: gap 证据
+        M2->>LLM: Round 2 终判
+        LLM-->>M2: 最终 FeatureComparison
+    end
+
+    M2->>FS: 写 step5_top5_claim1_candidates.json
+    M2-->>ORCH: TOP-N
+    deactivate M2
+
+    ORCH->>M3: spawn (with task_package + TOP-N)
+    activate M3
+    Note over M3: 复用 M2 evidence pool<br/>扩展全部从属权利要求
+    M3->>SE: 缺口特征带 SKU 补搜
+    M3->>LLM: Round 2 终判 + evidence_gap_brief
+    M3->>FS: 写 top5_full_claim_chart.json
+    M3-->>ORCH: 完成
+    deactivate M3
+
+    ORCH->>M4: spawn
+    activate M4
+    M4->>LLM: 装配 4 章节 markdown<br/>(含 TOP-N 一览表 rowspan)
+    LLM-->>M4: report.md
+    M4->>FS: 写 report.md
+    M4->>FS: WeasyPrint → report.pdf
+    M4-->>ORCH: 完成
+    deactivate M4
+
+    ORCH-->>U: 报告路径 + 风险摘要
+    deactivate ORCH
+```
+
+> 时序图体现两个关键设计：
+> 1. **每模块 IO 边界清晰**——模块内部任何步骤失败都不影响其它模块的产物；可基于已落盘 JSON 单步重跑
+> 2. **M2 的 Round-1/2 自适应循环**——LLM 不是"一次性给答案"，而是先评估证据缺口、自己提补搜 query、代码端跑完再让 LLM 终判，把搜索深度和评分严格度两个看似矛盾的目标统一起来
 
 ### 双模运行结构
 
@@ -345,14 +515,6 @@ PatentRadar/
 
 ---
 
-## 🛣️ Roadmap
-
-- [ ] **多 claim 失效短路**：模块 3 全权扩展过程中如果发现权 1 失效，立即停搜余下从属权
-- [ ] **国际专利同族**：模块 4 自动检索同族 + 续案 + 分案的 claim chart 差异
-- [ ] **跨数据库证据扩展**：接入 IEEE / arXiv / Espacenet / WIPO 学术专利数据
-- [ ] **批量分析**：从 CSV 读多个公开号，并行跑流水线 + 汇总 dashboard
-
----
 
 ## 🧪 开发
 
@@ -375,12 +537,7 @@ logs/<PUB>/module_<N>/
 
 ## 🤝 贡献
 
-欢迎 issue / PR。改 prompt 时请同步修改两个位置：
-
-- `src/patentradar/llm/prompts/*.md` （独立项目模式）
-- `.claude/skills/patentradar/agents/*.md` （skill 模式）
-
-两份 prompt 的核心规则（评分阈值 / SKU 锁定 / 证据缺口模板）必须保持一致——否则两种模式产出会出现"同一专利不同结论"。
+欢迎 issue / PR。
 
 ---
 
