@@ -1,0 +1,587 @@
+{
+  "candidate": {
+    "candidate_id": "P04",
+    "company": "理想汽车",
+    "company_en": "Li Auto",
+    "product_name": "理想L8 Pro（2023款/AD Pro 3.0车位随心画）",
+    "product_name_en": "Li L8 Pro (2023 / AD Pro 3.0 custom parking-space drawing)",
+    "product_version": "",
+    "market": "中国乘用车前装智能泊车市场",
+    "reason_for_deep_dive": "官方手册直接公开“车位随心画”：拖拽车位图标画临时车位、调整车位框位置/角度，车位框蓝色后可自动泊入，同时系统自动搜索并推荐可用车位。",
+    "source_result_ids": [],
+    "source_urls": [
+      "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+      "https://detail.zol.com.cn/1965/1964167/param.shtml"
+    ],
+    "initial_evidence_summary": "理想官方手册说明智能泊车系统通过环视摄像头和超声波雷达获取车辆周围车位、空间和障碍物信息，计算泊入路线并控制转向/换挡/加速/制动；车位随心画可拖拽车位图标画临时车位，车位框高亮蓝色后可立即泊入。"
+  },
+  "launch_date": "2022 年 9 月上市",
+  "launch_date_evidence": [
+    {
+      "url": "https://detail.zol.com.cn/1965/1964167/param.shtml",
+      "title": "理想L8 2023款 Pro参数",
+      "source_name": "ZOL汽车",
+      "snippet": "参数页列明理想L8 2023款 Pro 上市时间为 2022.09，且自动泊车入位为标配。"
+    }
+  ],
+  "disqualified": false,
+  "disqualification_reason": "",
+  "claim_charts": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种自动泊车系统，其特征在于，包括显示单元以及自动泊车控制单元；其中，\n所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域；\n所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车；\n其中，所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种自动泊车系统",
+          "competitor_feature": "理想L8 Pro 官方手册公开“智能泊车系统”，用于获取车辆周围车位、空间和障碍物信息，计算泊入路线并控制车辆完成泊车。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明智能泊车系统获取车辆周围车位、空间和障碍物信息，计算泊入路线并控制车辆完成泊车。"
+            }
+          ],
+          "reasoning": "① 权利要求X是“自动泊车系统”，属于车辆泊车控制功能系统，量纲为系统/功能是否存在。② 候选Y是理想L8 Pro官方手册公开的“智能泊车系统”，可获取车位、空间、障碍物信息并计算泊入路线、控制车辆泊车。③ (a)概念是否等价：是，X的自动泊车系统与Y的智能泊车系统均指自动完成泊入的车辆控制系统；(b)单位/量纲是否等价：是，均为系统存在性及功能能力；(c)参考系是否等价：是，均以车辆泊车场景和目标车位为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括显示单元以及自动泊车控制单元",
+          "competitor_feature": "L8 Pro通过中控屏进入车位搜索/泊车界面；智能泊车系统控制车辆转向、换挡、加速及制动，对应显示单元与自动泊车控制单元。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明可通过中控屏进入车位搜索/泊车界面，智能泊车系统控制车辆转向、换挡、加速及制动。"
+            }
+          ],
+          "reasoning": "① 权利要求X是系统包括显示单元和自动泊车控制单元，量纲为两个功能部件是否存在。② 候选Y是L8 Pro的中控屏泊车界面以及能控制转向、换挡、加速、制动的智能泊车系统。③ (a)概念是否等价：是，中控屏泊车界面对应显示单元，控制车辆运动的智能泊车系统对应自动泊车控制单元；(b)单位/量纲是否等价：是，均为功能模块存在性；(c)参考系是否等价：是，均处于车辆自动泊车人机交互和车辆控制链路中；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "L8 Pro通过环视摄像头和超声波雷达获取车辆周围信息；车位随心画允许用户在中控屏泊车界面拖拽车位图标画临时车位，并调整车位框位置/角度。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息；车位随心画可拖拽车位图标画临时车位，并调整车位框位置/角度。"
+            }
+          ],
+          "reasoning": "① 权利要求X是显示车身周围图像并让驾驶员基于显示图像划定意向泊车区域，量纲为图像显示与区域输入功能。② 候选Y是L8 Pro环视摄像头获取周围信息，并在中控屏上通过车位随心画拖拽车位图标、调整车位框。③ (a)概念是否等价：是，X的“划定意向泊车区域”与Y的“拖拽车位图标画临时车位/调整车位框”均是在车周显示界面指定泊车目标区域；(b)单位/量纲是否等价：是，均为二维图像/区域框信息；(c)参考系是否等价：是，均以车身周围泊车环境图像和目标车位区域为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+          "competitor_feature": "L8 Pro车位随心画中，车位框高亮蓝色且出现“立即泊入/离车后泊入”后可开启自动泊车；红色表示暂不支持泊入，需再次调整位置，系统据此完成可泊性判断并控制泊入。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明车位框显示为高亮蓝色且出现立即泊入/离车后泊入按钮后可开启自动泊车；红色表示暂不支持泊入，需再次调整位置。"
+            }
+          ],
+          "reasoning": "① 权利要求X是识别驾驶员划定区域、优化到满足泊车空间并控制车辆泊入，量纲为区域可泊状态和车辆控制动作。② 候选Y是L8 Pro对用户绘制车位框给出蓝色可泊/红色不可泊反馈，蓝色且出现泊入按钮后控制车辆自动泊入。③ (a)概念是否等价：是，Y的蓝/红状态判定、要求调整位置和泊入控制直接对应X的识别、优化/可泊性判断和控制泊车；(b)单位/量纲是否等价：是，均为目标区域状态二值/多状态判定加车辆控制；(c)参考系是否等价：是，均以用户划定的目标车位区域及车辆泊入空间为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "其中，所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+          "competitor_feature": "L8 Pro检测到车位时，中控屏显示可用车位信息；目标车位内显示P或编号，多个车位时显示编号，蓝色高亮车位表示推荐车位。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统检测到车位时中控屏显示可用车位信息；仅一个可用车位时目标车位内显示 P，多个车位显示编号，蓝色高亮为推荐车位。"
+            }
+          ],
+          "reasoning": "① 权利要求X是根据图像信息选择至少一个优选泊车区域并在显示图像上标定，量纲为候选/推荐车位区域集合及图像标注。② 候选Y是L8 Pro在中控屏显示可用车位，以P、编号和蓝色高亮标示推荐车位。③ (a)概念是否等价：是，Y的可用车位识别和蓝色推荐标注对应X的优选泊车区域选择与标定；(b)单位/量纲是否等价：是，均为车位区域集合及其标记状态；(c)参考系是否等价：是，均在车身周围泊车图像/泊车界面上标定；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车控制单元还用于将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车。",
+      "comparisons": [
+        {
+          "feature_id": "C2-F1",
+          "patent_feature": "所述自动泊车控制单元还用于将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车",
+          "competitor_feature": "L8 Pro将车位框以高亮蓝色/红色反馈给驾驶员；驾驶员可调整车位框位置/角度，蓝色且出现立即泊入/离车后泊入按钮后，车辆按该车位控制自动泊入。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明车位随心画可拖拽车位图标画临时车位，并调整车位框位置/角度；车位框显示为高亮蓝色且出现立即泊入/离车后泊入按钮后可开启自动泊车。"
+            }
+          ],
+          "reasoning": "① X是将识别到的意向泊车区域反馈给驾驶员，并按驾驶员确认或调整后的区域泊车，量纲为区域反馈、用户确认/调整和控制动作。② Y是L8 Pro在中控屏显示车位框状态，允许调整位置/角度，出现泊入按钮后执行泊入。③ (a)概念是否等价：是，车位框颜色/按钮反馈及调整后泊入对应X的反馈、确认/调整和控制泊车；(b)单位/量纲是否等价：是，均为二维车位区域及操作状态；(c)参考系是否等价：是，均以驾驶员指定的目标车位区域为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车控制单元还用于对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域。",
+      "comparisons": [
+        {
+          "feature_id": "C3-F1",
+          "patent_feature": "所述自动泊车控制单元还用于对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域",
+          "competitor_feature": "L8 Pro官方资料说明智能泊车系统获取车辆周围车位、空间和障碍物信息；当车位框为红色表示暂不支持泊入，需再次调整位置。但公开资料未逐字说明“因意向区域障碍物而提醒重新划定”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明智能泊车系统获取车辆周围车位、空间和障碍物信息，计算泊入路线并控制车辆完成泊车。"
+            }
+          ],
+          "reasoning": "① X是对驾驶员划定的泊车区域进行障碍物识别，并在障碍物影响泊车时提示重新划定，量纲为空间区域内障碍物状态和用户提示。② Y是L8 Pro智能泊车获取车位、空间、障碍物信息，并以红色车位框提示暂不支持泊入、需再次调整位置。③ (a)概念是否等价：是，在宽定义下，Y的障碍物信息获取和红色不可泊提示对应X的障碍物/可泊性识别与重新调整提示；(b)单位/量纲是否等价：是，均为区域可泊状态和提示动作；(c)参考系是否等价：是，均以目标泊车区域及车辆周围障碍物为参考；(d)是否有反向证据：无。因公开资料未直接把红色提示的原因限定为“意向区域障碍物”，故为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车系统还包括探测模块，用于对所述意向泊车区域进行障碍物检测，所述探测模块包括雷达和/或超声波检测单元。",
+      "comparisons": [
+        {
+          "feature_id": "C4-F1",
+          "patent_feature": "所述自动泊车系统还包括探测模块，用于对所述意向泊车区域进行障碍物检测，所述探测模块包括雷达和/或超声波检测单元",
+          "competitor_feature": "L8 Pro辅助驾驶/智能泊车系统通过摄像头、毫米波雷达、超声波雷达等传感器感知周围环境；智能泊车还通过环视摄像头和超声波雷达获取车辆周围信息。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-251B876B-003.html",
+              "title": "前言",
+              "source_name": "理想汽车",
+              "snippet": "理想 L8 的辅助驾驶系统通过摄像头、毫米波雷达以及超声波雷达等传感器感知周围环境，并对环境信息进行运算与分析。"
+            },
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息。"
+            }
+          ],
+          "reasoning": "① X是障碍物检测探测模块，且包括雷达和/或超声波检测单元，量纲为传感器模块存在性。② Y是L8 Pro公开的摄像头、毫米波雷达、超声波雷达传感器，智能泊车使用超声波雷达获取周围信息。③ (a)概念是否等价：是，Y的雷达/超声波传感器对应X的探测模块；(b)单位/量纲是否等价：是，均为硬件传感器存在性和检测功能；(c)参考系是否等价：是，均检测车辆周围/泊车目标区域环境；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车系统还包括输入模块，以便于驾驶员划定所述意向泊车区域，所述输入模块包括触控板、触控屏、鼠标、手势识别模块和语音识别模块中的至少一个。",
+      "comparisons": [
+        {
+          "feature_id": "C5-F1",
+          "patent_feature": "所述自动泊车系统还包括输入模块，以便于驾驶员划定所述意向泊车区域，所述输入模块包括触控板、触控屏、鼠标、手势识别模块和语音识别模块中的至少一个",
+          "competitor_feature": "L8 Pro车位随心画在中控屏泊车界面中通过拖拽车位图标画临时车位、调整车位框位置/角度，属于触控屏输入划定意向泊车区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明可通过中控屏进入车位搜索/泊车界面；车位随心画可拖拽车位图标画临时车位，并调整车位框位置/角度。"
+            }
+          ],
+          "reasoning": "① X是用于划定意向泊车区域的输入模块，列举触控屏等至少一种，量纲为输入设备/交互方式存在性。② Y是L8 Pro中控屏泊车界面，驾驶员通过拖拽车位图标和调整车位框输入目标车位。③ (a)概念是否等价：是，中控屏拖拽输入对应触控屏输入模块；(b)单位/量纲是否等价：是，均为人机输入设备和二维区域输入；(c)参考系是否等价：是，均针对泊车界面中的目标车位区域；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.如权利要求1所述的自动泊车系统，其特征在于，所述自动泊车系统还包括至少一个摄像头，所述至少一个摄像头用于采集车身周围的图像信息。",
+      "comparisons": [
+        {
+          "feature_id": "C6-F1",
+          "patent_feature": "所述自动泊车系统还包括至少一个摄像头，所述至少一个摄像头用于采集车身周围的图像信息",
+          "competitor_feature": "L8 Pro智能泊车系统通过环视摄像头获取车辆周围信息；前言亦说明辅助驾驶系统通过摄像头等传感器感知周围环境。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息。"
+            },
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-251B876B-003.html",
+              "title": "前言",
+              "source_name": "理想汽车",
+              "snippet": "理想 L8 的辅助驾驶系统通过摄像头、毫米波雷达以及超声波雷达等传感器感知周围环境。"
+            }
+          ],
+          "reasoning": "① X是至少一个摄像头采集车身周围图像信息，量纲为摄像头硬件和图像采集功能。② Y是L8 Pro环视摄像头及摄像头传感器用于获取/感知车辆周围信息。③ (a)概念是否等价：是，环视摄像头获取周围信息对应车身周围图像采集；(b)单位/量纲是否等价：是，均为摄像头硬件及图像/环境信息采集；(c)参考系是否等价：是，均以车身周围环境为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.如权利要求6所述的自动泊车系统，其特征在于，所述自动泊车系统还包括视频采集卡，所述视频采集卡用于对所述车身周围的图像信息进行处理，并将处理后的图像信息发送到所述显示单元进行显示。",
+      "comparisons": [
+        {
+          "feature_id": "C7-F1",
+          "patent_feature": "所述自动泊车系统还包括视频采集卡，所述视频采集卡用于对所述车身周围的图像信息进行处理，并将处理后的图像信息发送到所述显示单元进行显示",
+          "competitor_feature": "已公开L8 Pro具有环视摄像头、中控屏显示和智能泊车处理能力，但现有公开证据未披露独立或等同的“视频采集卡”硬件，也未公开其向显示单元发送处理后图像的硬件链路。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息；可通过中控屏进入车位搜索/泊车界面。"
+            },
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-251B876B-003.html",
+              "title": "前言",
+              "source_name": "理想汽车",
+              "snippet": "理想 L8 的辅助驾驶系统通过摄像头、毫米波雷达以及超声波雷达等传感器感知周围环境，并对环境信息进行运算与分析。"
+            }
+          ],
+          "reasoning": "① X是“视频采集卡”这一图像采集/处理硬件，并将处理后图像发送到显示单元，量纲为特定硬件及图像传输链路。② Y仅公开摄像头、传感器、中控屏和系统运算分析，未公开视频采集卡或其发送处理后图像的硬件结构。③ (a)概念是否等价：否，摄像头/中控屏/系统运算不能直接等同于视频采集卡硬件；(b)单位/量纲是否等价：否，X是特定硬件链路，Y是功能级传感器和显示公开；(c)参考系是否等价：否，X参考图像处理硬件链路，Y参考整车辅助驾驶系统功能；(d)是否有反向证据：无。故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.如权利要求6所述的自动泊车系统，其特征在于，所述自动泊车系统还包括视频采集卡，所述视频采集卡用于将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送到所述显示单元进行显示。",
+      "comparisons": [
+        {
+          "feature_id": "C8-F1",
+          "patent_feature": "所述自动泊车系统还包括视频采集卡，所述视频采集卡用于将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送到所述显示单元进行显示",
+          "competitor_feature": "公开证据显示L8 Pro使用环视摄像头并在中控屏泊车界面显示车周/车位信息，但未披露视频采集卡，也未直接披露由该视频采集卡将多路图像合并为全景图像并发送显示。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息；系统检测到车位时中控屏显示可用车位信息。"
+            }
+          ],
+          "reasoning": "① X是视频采集卡把车身周围图像合并处理为全景图像并发送显示，量纲为特定硬件、图像融合处理和全景图像输出。② Y是L8 Pro环视摄像头和中控屏可用车位显示，公开层级为传感器/显示功能。③ (a)概念是否等价：否，环视摄像头和车位显示不直接等同于视频采集卡及全景融合输出；(b)单位/量纲是否等价：否，X为硬件链路加全景图像数据，Y为功能说明；(c)参考系是否等价：否，X参考多路图像融合到显示的内部链路，Y参考泊车界面外部功能；(d)是否有反向证据：无。故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.一种车辆，其特征在于，包括权利要求1到8任一项所述的自动泊车系统。",
+      "comparisons": [
+        {
+          "feature_id": "C9-F1",
+          "patent_feature": "一种车辆，包括自动泊车系统",
+          "competitor_feature": "理想L8 2023款 Pro为量产车辆，参数页列明自动泊车入位为标配；官方手册公开其智能泊车系统。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://detail.zol.com.cn/1965/1964167/param.shtml",
+              "title": "理想L8 2023款 Pro参数",
+              "source_name": "ZOL汽车",
+              "snippet": "参数页列明理想L8 2023款 Pro 上市时间为 2022.09，且自动泊车入位为标配。"
+            },
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明智能泊车系统获取车辆周围车位、空间和障碍物信息，计算泊入路线并控制车辆完成泊车。"
+            }
+          ],
+          "reasoning": "① X是一种车辆且包括自动泊车系统，量纲为整车产品及系统配置存在性。② Y是理想L8 2023款 Pro量产车，配置自动泊车入位并有官方智能泊车系统说明。③ (a)概念是否等价：是，Y为车辆且包含泊车系统；(b)单位/量纲是否等价：是，均为整车配置存在性；(c)参考系是否等价：是，均指乘用车前装自动泊车配置；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种自动泊车方法，其特征在于，所述自动泊车方法包括以下步骤：\n显示车身周围的图像信息，以便于驾驶员根据显示的所述图像信息划定意向泊车区域；\n识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据所述意向泊车区域实现自动泊车；\n其中，所述方法还包括根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在显示的所述图像信息上。",
+      "comparisons": [
+        {
+          "feature_id": "C10-F1",
+          "patent_feature": "一种自动泊车方法",
+          "competitor_feature": "L8 Pro官方手册公开智能泊车流程：获取车辆周围信息，计算泊入路线并控制车辆完成泊车。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明智能泊车系统获取车辆周围车位、空间和障碍物信息，计算泊入路线并控制车辆完成泊车。"
+            }
+          ],
+          "reasoning": "① X是自动泊车方法，量纲为泊车过程步骤。② Y是L8 Pro智能泊车的获取信息、计算路线、控制车辆泊入流程。③ (a)概念是否等价：是，均为自动完成车辆泊入的方法流程；(b)单位/量纲是否等价：是，均为方法步骤/功能流程；(c)参考系是否等价：是，均在车辆泊入目标车位场景；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F2",
+          "patent_feature": "显示车身周围的图像信息，以便于驾驶员根据显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "L8 Pro通过环视摄像头获取周围信息并在中控屏泊车界面供用户拖拽车位图标画临时车位、调整车位框位置/角度。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息；车位随心画可拖拽车位图标画临时车位，并调整车位框位置/角度。"
+            }
+          ],
+          "reasoning": "① X是显示车身周围图像并据此划定意向泊车区域的方法步骤，量纲为图像显示和区域输入。② Y是L8 Pro环视信息显示及车位随心画拖拽/调整车位框。③ (a)概念是否等价：是，拖拽车位图标画临时车位对应划定意向泊车区域；(b)单位/量纲是否等价：是，均为二维图像/区域框；(c)参考系是否等价：是，均以车身周围泊车界面为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F3",
+          "patent_feature": "识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据所述意向泊车区域实现自动泊车",
+          "competitor_feature": "L8 Pro对车位框给出蓝色可泊/红色不可泊状态；蓝色并出现泊入按钮后可控制车辆自动泊入，红色时要求再次调整位置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明车位框显示为高亮蓝色且出现立即泊入/离车后泊入按钮后可开启自动泊车；红色表示暂不支持泊入，需再次调整位置。"
+            }
+          ],
+          "reasoning": "① X是识别、优化用户划定区域并控制泊入的方法步骤，量纲为区域可泊性判断和车辆控制。② Y是L8 Pro用蓝/红车位框判断可泊状态，调整后通过立即泊入/离车后泊入执行泊车。③ (a)概念是否等价：是，Y对应识别区域、判定/调整到可泊并控制车辆泊入；(b)单位/量纲是否等价：是，均为目标区域状态和控制动作；(c)参考系是否等价：是，均以用户划定车位区域和车辆泊车空间为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C10-F4",
+          "patent_feature": "其中，所述方法还包括根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在显示的所述图像信息上",
+          "competitor_feature": "L8 Pro检测到车位时中控屏显示可用车位信息；目标车位内显示P或编号，蓝色高亮车位为推荐车位。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统检测到车位时中控屏显示可用车位信息；仅一个可用车位时目标车位内显示 P，多个车位显示编号，蓝色高亮为推荐车位。"
+            }
+          ],
+          "reasoning": "① X是选择优选泊车区域并在图像上标定的方法步骤，量纲为车位区域集合及标注。② Y是L8 Pro在中控屏以P/编号显示可用车位，并以蓝色高亮推荐车位。③ (a)概念是否等价：是，推荐车位标注对应优选泊车区域标定；(b)单位/量纲是否等价：是，均为区域集合和显示标记；(c)参考系是否等价：是，均在泊车显示界面/车周图像上；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.如权利要求10所述的自动泊车方法，其特征在于，所述自动泊车方法还包括将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车。",
+      "comparisons": [
+        {
+          "feature_id": "C11-F1",
+          "patent_feature": "所述自动泊车方法还包括将识别的所述意向泊车区域向驾驶员反馈，并根据驾驶员确认或者调整后的意向泊车区域控制车辆自动泊车",
+          "competitor_feature": "L8 Pro通过车位框颜色和泊入按钮向驾驶员反馈意向泊车区域；驾驶员调整车位框位置/角度后，可控制车辆泊入。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明车位随心画可拖拽车位图标画临时车位，并调整车位框位置/角度；车位框显示为高亮蓝色且出现立即泊入/离车后泊入按钮后可开启自动泊车。"
+            }
+          ],
+          "reasoning": "① X是反馈识别区域并根据确认或调整后的区域泊车的方法步骤，量纲为反馈、确认/调整和控制。② Y是L8 Pro车位随心画的车位框显示、调整位置/角度和泊入按钮执行。③ (a)概念是否等价：是，Y的显示/调整/泊入流程对应X；(b)单位/量纲是否等价：是，均为区域框状态和用户操作流程；(c)参考系是否等价：是，均以驾驶员目标泊车区域为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 12,
+      "claim_text": "12.如权利要求10所述的自动泊车方法，其特征在于，所述自动泊车方法还包括对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域。",
+      "comparisons": [
+        {
+          "feature_id": "C12-F1",
+          "patent_feature": "所述自动泊车方法还包括对所述意向泊车区域进行障碍物识别，并在识别出影响泊车的障碍物时提醒驾驶员重新划定意向泊车区域",
+          "competitor_feature": "L8 Pro智能泊车方法获取车辆周围车位、空间和障碍物信息；红色车位框提示暂不支持泊入且需再次调整位置，但未直接公开红色提示一定由意向区域障碍物触发。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明智能泊车系统获取车辆周围车位、空间和障碍物信息，计算泊入路线并控制车辆完成泊车。"
+            }
+          ],
+          "reasoning": "① X是对意向泊车区域识别障碍物并在影响泊车时提示重新划定的方法步骤，量纲为障碍物状态和提示动作。② Y是L8 Pro获取障碍物信息，并以红色车位框提示不可泊、需调整位置。③ (a)概念是否等价：是，在宽定义下，障碍物信息获取与不可泊调整提示可对应障碍物/空间影响泊车后的提示；(b)单位/量纲是否等价：是，均为区域状态判定和调整提示；(c)参考系是否等价：是，均以目标泊车区域和周围障碍物为参考；(d)是否有反向证据：无。因未直接公开触发原因，判为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 80.0
+    },
+    {
+      "claim_no": 13,
+      "claim_text": "13.如权利要求10所述的自动泊车方法，其特征在于，所述自动泊车方法还包括采集车身周围的图像信息。",
+      "comparisons": [
+        {
+          "feature_id": "C13-F1",
+          "patent_feature": "所述自动泊车方法还包括采集车身周围的图像信息",
+          "competitor_feature": "L8 Pro智能泊车通过环视摄像头获取车辆周围信息，辅助驾驶系统通过摄像头等传感器感知周围环境。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息。"
+            },
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-251B876B-003.html",
+              "title": "前言",
+              "source_name": "理想汽车",
+              "snippet": "理想 L8 的辅助驾驶系统通过摄像头、毫米波雷达以及超声波雷达等传感器感知周围环境。"
+            }
+          ],
+          "reasoning": "① X是采集车身周围图像信息的方法步骤，量纲为图像/环境信息采集。② Y是L8 Pro通过环视摄像头及摄像头传感器获取/感知车辆周围环境。③ (a)概念是否等价：是，摄像头获取周围信息对应图像采集；(b)单位/量纲是否等价：是，均为图像/环境数据采集；(c)参考系是否等价：是，均以车身周围环境为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 14,
+      "claim_text": "14.如权利要求13所述的自动泊车方法，其特征在于，所述自动泊车方法还包括对所述车身周围的图像信息进行处理，并将处理后的图像信息发送并显示。",
+      "comparisons": [
+        {
+          "feature_id": "C14-F1",
+          "patent_feature": "所述自动泊车方法还包括对所述车身周围的图像信息进行处理，并将处理后的图像信息发送并显示",
+          "competitor_feature": "L8 Pro获取车身周围信息后，在中控屏泊车界面显示可用车位、P/编号、蓝色推荐车位及车位框状态，体现对车周图像/环境信息的处理与显示。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统检测到车位时中控屏显示可用车位信息；仅一个可用车位时目标车位内显示 P，多个车位显示编号，蓝色高亮为推荐车位。"
+            },
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-251B876B-003.html",
+              "title": "前言",
+              "source_name": "理想汽车",
+              "snippet": "理想 L8 的辅助驾驶系统通过摄像头、毫米波雷达以及超声波雷达等传感器感知周围环境，并对环境信息进行运算与分析。"
+            }
+          ],
+          "reasoning": "① X是处理车身周围图像信息并发送显示的方法步骤，量纲为图像/环境信息处理和显示输出。② Y是L8 Pro对传感器环境信息进行运算分析，并在中控屏显示P/编号、蓝色推荐车位等处理后的泊车信息。③ (a)概念是否等价：是，Y的运算分析和带标注的中控屏显示对应X的处理并显示；(b)单位/量纲是否等价：是，均为图像/环境数据处理结果及显示状态；(c)参考系是否等价：是，均以车身周围泊车环境为参考；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 100.0
+    },
+    {
+      "claim_no": 15,
+      "claim_text": "15.如权利要求13所述的自动泊车方法，其特征在于，所述自动泊车方法还包括将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送并显示。",
+      "comparisons": [
+        {
+          "feature_id": "C15-F1",
+          "patent_feature": "所述自动泊车方法还包括将所述车身周围的图像信息合并处理为全景图像信息，并将所述全景图像信息发送并显示",
+          "competitor_feature": "已公开L8 Pro使用环视摄像头并在中控屏显示车周泊车信息，但现有证据未直接公开将多路车身周围图像合并为全景图像并发送显示的具体方法步骤。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/autoinfo/user-manual-app/l8prohelp2023-app/topic-2022-B2E2EBC4-009.html",
+              "title": "理想L8 Pro 智能泊车",
+              "source_name": "理想汽车",
+              "snippet": "官方手册说明系统通过环视摄像头和超声波雷达获取车辆周围信息；系统检测到车位时中控屏显示可用车位信息。"
+            }
+          ],
+          "reasoning": "① X是把车身周围图像合并处理为全景图像并显示的方法步骤，量纲为多路图像融合、全景图像输出和显示。② Y是L8 Pro环视摄像头获取周围信息及中控屏显示可用车位信息，公开为功能层描述。③ (a)概念是否等价：否，环视摄像头获取周围信息不直接等同于全景图像合并处理；(b)单位/量纲是否等价：否，X是融合后的全景图像数据，Y是未说明融合形式的环境/车位信息；(c)参考系是否等价：否，X参考全景图像生成链路，Y参考泊车界面显示功能；(d)是否有反向证据：无。故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "claim_score": 30.0
+    }
+  ],
+  "claim_1_score": 100.0,
+  "total_score": 100.0,
+  "searched_queries": [
+    "理想 L8 Pro 2023 车位随心画 使用手册 车位框 自动泊车",
+    "site:lixiang.com L8 Pro 车位随心画 自动泊车 360 手册",
+    "理想 L8 Pro 2023 款 上市时间 自动泊车",
+    "理想L8 Pro 2023款 AD Pro 3.0 车位随心画 障碍物 红色车位框 重新调整 手册",
+    "理想L8 Pro 2023款 AD Pro 3.0 智能泊车 障碍物 提醒 重新选择车位",
+    "理想L8 Pro 2023款 AD Pro 3.0 车位随心画 中控屏 触控 拖拽 车位框",
+    "理想L8 Pro 2023款 AD Pro 3.0 车位随心画 操作视频 拖动车位图标 触摸屏",
+    "理想L8 Pro 2023款 AD Pro 3.0 环视摄像头 视频采集 处理 控制器 维修手册",
+    "[SKU自检-M3] 2023款/AD Pro 3.0车位随心画 / 入池或引用新增 evidence sku 一致性: 全部匹配 / 冲突 ev 列表(已剔除): [P04-M3-004 Max图片, P04-M3-011 L9, P04-M3-012 L7, P04-M3-018 L6, P04-M3-029 AD Max视频]"
+  ],
+  "searched_providers": [
+    "tavily",
+    "bocha",
+    "exa",
+    "brave"
+  ]
+}
