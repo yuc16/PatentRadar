@@ -1,0 +1,2605 @@
+{
+  "publication_no": "CN110316092B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "红旗",
+        "company_en": "FAW Hongqi",
+        "product_name": "红旗国雅（2024款V8版 / 国风柔性车载卷轴屏）",
+        "product_name_en": "Hongqi Guoya (2024 V8 / flexible rollable center screen)",
+        "product_intro": "大型豪华轿车，四座/五座；V8版公开搭载国风柔性车载卷轴屏。",
+        "market": "中国超豪华行政轿车市场",
+        "reason_for_deep_dive": "公开出现车载滑移卷曲AMOLED中控屏，是最接近“可移动显示装置”的非BYD车型之一。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.pcauto.com.cn/nation/4255/42558008.html",
+          "https://www.smartautoclub.com/p/76399/"
+        ],
+        "initial_evidence_summary": "红旗国雅为车辆且有前后排/中控台；另有滑移卷曲AMOLED中控屏，但未公开从中控台到后排座椅的纵向导轨或横竖屏切换。"
+      },
+      "launch_date": "2024年4月25日北京车展亮相并开启预订",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.pcauto.com.cn/nation/4255/42558008.html",
+          "title": "2024北京车展：红旗L1定名“红旗国雅”",
+          "source_name": "太平洋汽车",
+          "snippet": "红旗国雅是一款超过5.3米长的豪华轿车，车型提供4座和5座配置，四座版本中央通道会延伸至前后排。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆，其特征在于，包括：车体，所述车体包括中控台和后排座椅；导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "红旗国雅是一款红旗旗下豪华轿车。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.pcauto.com.cn/nation/4255/42558008.html",
+                  "title": "2024北京车展：红旗L1定名“红旗国雅”",
+                  "source_name": "太平洋汽车",
+                  "snippet": "红旗国雅是一款超过5.3米长的豪华轿车，车型提供4座和5座配置，四座版本中央通道会延伸至前后排。"
+                }
+              ],
+              "reasoning": "① 权利要求X：一种车辆。② 候选公开证据Y：红旗国雅是一款红旗旗下豪华轿车。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "车体，所述车体包括中控台和后排座椅",
+              "competitor_feature": "红旗国雅有中控台，提供4座/5座版本，四座中央通道延伸至前后排并公开后排座椅配置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.pcauto.com.cn/nation/4255/42558008.html",
+                  "title": "2024北京车展：红旗L1定名“红旗国雅”",
+                  "source_name": "太平洋汽车",
+                  "snippet": "红旗国雅是一款超过5.3米长的豪华轿车，车型提供4座和5座配置，四座版本中央通道会延伸至前后排。"
+                }
+              ],
+              "reasoning": "① 权利要求X：车体，所述车体包括中控台和后排座椅。② 候选公开证据Y：红旗国雅有中控台，提供4座/5座版本，四座中央通道延伸至前后排并公开后排座椅配置。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+              "competitor_feature": "公开资料显示中央通道延伸至前后排且中控卷轴屏为车载滑移卷曲AMOLED，但未公开从中控台到后排座椅的导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.pcauto.com.cn/nation/4255/42558008.html",
+                  "title": "2024北京车展：红旗L1定名“红旗国雅”",
+                  "source_name": "太平洋汽车",
+                  "snippet": "红旗国雅是一款超过5.3米长的豪华轿车，车型提供4座和5座配置，四座版本中央通道会延伸至前后排。"
+                },
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅。② 候选公开证据Y：公开资料显示中央通道延伸至前后排且中控卷轴屏为车载滑移卷曲AMOLED，但未公开从中控台到后排座椅的导轨。。③ 对比：(a) 概念是否等价：否，Y只证明中央通道和中控屏滑移卷曲，未证明权项导轨路径；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：屏幕/卷轴屏运动机构的车身安装图；现有证据只到中央通道和中控卷轴屏，不能证明导轨从中控台延伸至后排座椅。\n下一步建议：去 17vin.com、qixiu88.com 或一汽红旗售后资料库，定位国雅V8内饰/显示屏维修手册和轨道爆炸图。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+              "competitor_feature": "公开资料证明国雅有14.2英寸车载滑移卷曲AMOLED中控屏，但未公开沿前后排导轨滑动、横竖屏切换或配合导轨时切至竖屏。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/76399/",
+                  "title": "UTG用于全球首款14.2英寸车载滑移卷曲AMOLED中控屏",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "红旗国雅搭载“国风柔性车载卷轴屏”，为全球首款车载滑移卷曲AMOLED显示屏，滑移卷曲超20万次。"
+                },
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。② 候选公开证据Y：公开资料证明国雅有14.2英寸车载滑移卷曲AMOLED中控屏，但未公开沿前后排导轨滑动、横竖屏切换或配合导轨时切至竖屏。。③ 对比：(a) 概念是否等价：否，Y为中控卷曲/滑移屏，不含前后排导轨配合和横竖屏切换；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：卷轴屏沿该导轨在前后排之间滑动并横竖屏切换的机构或视频证据；现有资料只证明中控滑移卷曲。\n下一步建议：去 Google Patents、Visionox/佛吉亚资料页或汽车之家视频，查国风柔性卷轴屏运动机构、旋转姿态和行程。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+              "competitor_feature": "公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。② 候选公开证据Y：公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+              "competitor_feature": "公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。② 候选公开证据Y：公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+              "competitor_feature": "公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。② 候选公开证据Y：公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+              "competitor_feature": "公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为两个且分别位于所述副仪表台的左侧和右侧。② 候选公开证据Y：公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+              "competitor_feature": "公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。② 候选公开证据Y：公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：显示主体，所述显示主体具有收纳槽；滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "显示主体，所述显示主体具有收纳槽",
+              "competitor_feature": "公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示主体，所述显示主体具有收纳槽。② 候选公开证据Y：公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+              "competitor_feature": "公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。② 候选公开证据Y：公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：支撑腿，所述支撑腿可转动地安装于所述显示主体；滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "支撑腿，所述支撑腿可转动地安装于所述显示主体",
+              "competitor_feature": "公开证据未披露可转动安装于显示主体的支撑腿。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：支撑腿，所述支撑腿可转动地安装于所述显示主体。② 候选公开证据Y：公开证据未披露可转动安装于显示主体的支撑腿。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+              "competitor_feature": "公开证据未披露显示导轨为齿条且滑行脚为齿轮。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.oled-info.com/hongqi-launches-2025-guoya-luxury-sedan-first-sliding-automotive-oled-display",
+                  "title": "Hongqi launches the 2025 Guoya luxury sedan, with the first sliding automotive OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Hongqi Guoya adopts a 14.2-inch rollable (sliding) AMOLED display for the center multimedia display, produced by Visionox with Ultra-Thin-Glass cover."
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-100395",
+                  "title": "红旗国雅 2024款4.0T V8版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "红旗国雅2024款4.0T V8版参数页列后排液晶屏为标配，后排屏幕尺寸为7+14.2+14.2英寸。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为齿条，所述滑行脚为齿轮。② 候选公开证据Y：公开证据未披露显示导轨为齿条且滑行脚为齿轮。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "红旗国雅 2024 V8 国风柔性车载卷轴屏 导轨 中央通道 后排 评测",
+        "红旗国雅 2024 V8 国风柔性车载卷轴屏 规格 参数 PDF",
+        "红旗国雅 国风柔性车载卷轴屏 专利 导轨 滑移 横竖屏",
+        "Hongqi Guoya rollable in-car screen rail patent rotating portrait landscape",
+        "[SKU自检-M3] 2024款V8版 / 国风柔性车载卷轴屏 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "urllib.fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "岚图",
+        "company_en": "VOYAH",
+        "product_name": "岚图知音（2024款 / 15.05英寸OLED曲边滑移屏）",
+        "product_name_en": "VOYAH Zhiyin (2024 / 15.05-inch OLED sliding curved screen)",
+        "product_intro": "纯电SUV，配备15.05英寸OLED曲边滑移屏，可在主驾、副驾和中间共享位置之间使用。",
+        "market": "中国纯电SUV智能座舱市场",
+        "reason_for_deep_dive": "公开滑移屏且可兼顾后排儿童共享影音，需深挖是否存在纵向导轨结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.ithome.com/0/791/006.htm",
+          "https://www.ithome.com/0/794/378.htm"
+        ],
+        "initial_evidence_summary": "资料显示OLED滑移屏可移至副驾或中间共享位置，但未公开从中控台延伸至后排座椅的导轨，也未公开横竖屏状态切换。"
+      },
+      "launch_date": "2024年8月30日开启预售",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/791/006.htm",
+          "title": "岚图汽车：知音 SUV 配备 15.05 英寸 OLED 曲屏",
+          "source_name": "IT之家",
+          "snippet": "岚图知音配备15.05英寸OLED曲屏；滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆，其特征在于，包括：车体，所述车体包括中控台和后排座椅；导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "岚图知音为纯电SUV。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/791/006.htm",
+                  "title": "岚图汽车：知音 SUV 配备 15.05 英寸 OLED 曲屏",
+                  "source_name": "IT之家",
+                  "snippet": "岚图知音配备15.05英寸OLED曲屏；滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                }
+              ],
+              "reasoning": "① 权利要求X：一种车辆。② 候选公开证据Y：岚图知音为纯电SUV。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "车体，所述车体包括中控台和后排座椅",
+              "competitor_feature": "岚图知音公开中控屏、主副驾使用场景和969mm后排腿部空间。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/791/006.htm",
+                  "title": "岚图汽车：知音 SUV 配备 15.05 英寸 OLED 曲屏",
+                  "source_name": "IT之家",
+                  "snippet": "岚图知音配备15.05英寸OLED曲屏；滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                }
+              ],
+              "reasoning": "① 权利要求X：车体，所述车体包括中控台和后排座椅。② 候选公开证据Y：岚图知音公开中控屏、主副驾使用场景和969mm后排腿部空间。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+              "competitor_feature": "公开资料显示15.05英寸OLED滑移屏可在主驾、副驾和中间共享位置之间使用，但未公开导轨延伸到后排座椅。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/791/006.htm",
+                  "title": "岚图汽车：知音 SUV 配备 15.05 英寸 OLED 曲屏",
+                  "source_name": "IT之家",
+                  "snippet": "岚图知音配备15.05英寸OLED曲屏；滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅。② 候选公开证据Y：公开资料显示15.05英寸OLED滑移屏可在主驾、副驾和中间共享位置之间使用，但未公开导轨延伸到后排座椅。。③ 对比：(a) 概念是否等价：否，Y的滑移范围限于主副驾/中间共享语境，未达到后排座椅导轨；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：滑移屏导轨的物理行程和端点；现有资料只证明主驾/副驾/中间共享位置，不能证明延伸至后排座椅。\n下一步建议：去 岚图官网服务手册、17vin.com 或汽车之家高清实拍，查知音OLED滑移屏导轨安装位置和座舱剖面。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+              "competitor_feature": "公开资料证明岚图知音OLED曲边滑移屏可根据主副驾场景滑动并在P挡中间共享，但未公开横竖屏切换及导轨配合切竖屏。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/791/006.htm",
+                  "title": "岚图汽车：知音 SUV 配备 15.05 英寸 OLED 曲屏",
+                  "source_name": "IT之家",
+                  "snippet": "岚图知音配备15.05英寸OLED曲屏；滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.ithome.com/0/794/378.htm",
+                  "title": "岚图知音 SUV 汽车搭载高通 SA8295P 芯片",
+                  "source_name": "IT之家",
+                  "snippet": "岚图知音配备15.05英寸OLED曲屏、全系标配AR-HUD，并针对OLED滑移屏开发环绕式气囊折叠技术。"
+                },
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。② 候选公开证据Y：公开资料证明岚图知音OLED曲边滑移屏可根据主副驾场景滑动并在P挡中间共享，但未公开横竖屏切换及导轨配合切竖屏。。③ 对比：(a) 概念是否等价：否，Y为横向滑移共享，未公开权项要求的前后滑动和横竖姿态切换；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：屏幕与导轨配合时可在横屏/竖屏状态切换的公开证据；现有资料只证明曲边滑移屏横向共享。\n下一步建议：去 CNIPA/Google Patents、懂车帝视频或B站拆解，查“岚图知音 OLED滑移屏”专利图和实车操作视频。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+              "competitor_feature": "公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。② 候选公开证据Y：公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+              "competitor_feature": "公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。② 候选公开证据Y：公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+              "competitor_feature": "公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。② 候选公开证据Y：公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+              "competitor_feature": "公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为两个且分别位于所述副仪表台的左侧和右侧。② 候选公开证据Y：公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+              "competitor_feature": "公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。② 候选公开证据Y：公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：显示主体，所述显示主体具有收纳槽；滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "显示主体，所述显示主体具有收纳槽",
+              "competitor_feature": "公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：显示主体，所述显示主体具有收纳槽。② 候选公开证据Y：公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+              "competitor_feature": "公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。② 候选公开证据Y：公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：支撑腿，所述支撑腿可转动地安装于所述显示主体；滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "支撑腿，所述支撑腿可转动地安装于所述显示主体",
+              "competitor_feature": "公开证据未披露可转动安装于显示主体的支撑腿。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：支撑腿，所述支撑腿可转动地安装于所述显示主体。② 候选公开证据Y：公开证据未披露可转动安装于显示主体的支撑腿。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+              "competitor_feature": "公开证据未披露显示导轨为齿条且滑行脚为齿轮。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.sohu.com/a/803554761_114760",
+                  "title": "岚图知音 SUV 配 15.05 英寸 OLED 曲屏，后续 OTA 更多功能",
+                  "source_name": "搜狐汽车",
+                  "snippet": "岚图知音15.05英寸OLED曲边滑移屏可靠近主驾、移至副驾，P挡下在中间共享位置兼顾后排儿童影音。"
+                },
+                {
+                  "url": "https://www.bitauto.com/zh-us/news/100396693272.html",
+                  "title": "2024款岚图知音新车商品性评价",
+                  "source_name": "BitAuto",
+                  "snippet": "2024款岚图知音的OLED曲边滑移屏能够根据主副驾不同使用场景进行滑动；另有2900mm轴距和后排腿部空间。"
+                },
+                {
+                  "url": "https://www.oled-info.com/voyah-set-launch-all-electric-zhiyin-suv-oled-taillights-and-sliding-oled",
+                  "title": "Voyah set to launch the all-electric Zhiyin SUV, with OLED taillights and a sliding OLED display",
+                  "source_name": "OLED-Info",
+                  "snippet": "Zhiyin will have an AMOLED curved sliding screen that can slide to accommodate different user needs."
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为齿条，所述滑行脚为齿轮。② 候选公开证据Y：公开证据未披露显示导轨为齿条且滑行脚为齿轮。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "岚图知音 2024 15.05英寸 OLED 曲边滑移屏 主驾 副驾 中间 评测",
+        "岚图知音 2024 OLED滑移屏 规格书 PDF 参数",
+        "岚图知音 OLED 滑移屏 拆解 导轨 中控台",
+        "VOYAH Courage Zhiyin 15.05 OLED sliding screen review rail",
+        "[SKU自检-M3] 2024款 / 15.05英寸OLED曲边滑移屏 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "urllib.fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "赛力斯 / 鸿蒙智行",
+        "company_en": "SERES / HIMA",
+        "product_name": "问界M9（2025款增程版 / 智能投影系统与车载悬浮窗）",
+        "product_name_en": "AITO M9 (2025 EREV / intelligent projection system and in-car floating window)",
+        "product_intro": "大型SUV，官方配置表公开One Glass三联屏、15.6英寸中控屏、16英寸副驾屏、智能投影系统和车载悬浮窗。",
+        "market": "中国高端智能SUV市场",
+        "reason_for_deep_dive": "后排娱乐与多屏互动明显，但是否有中控至后排导轨式移动显示装置需要严格核查。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://hima.auto/wenjie/m9/configuration/"
+        ],
+        "initial_evidence_summary": "官方配置证明多屏和后排娱乐/投影相关配置，但未公开任何显示装置沿中控台至后排座椅导轨滑动或横竖屏切换。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆，其特征在于，包括：车体，所述车体包括中控台和后排座椅；导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "问界M9为车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m9/configuration/",
+                  "title": "问界 M9 参数配置表",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "配置表列出One Glass三联屏、12.3英寸仪表盘、15.6英寸中控屏、16英寸副驾屏、智能投影系统、车载悬浮窗。"
+                }
+              ],
+              "reasoning": "① 权利要求X：一种车辆。② 候选公开证据Y：问界M9为车辆。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "车体，所述车体包括中控台和后排座椅",
+              "competitor_feature": "问界M9配置表公开中控屏、前后车门、智能投影系统等整车内部配置，可确认车体含中控台和后排乘坐区。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m9/configuration/",
+                  "title": "问界 M9 参数配置表",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "配置表列出One Glass三联屏、12.3英寸仪表盘、15.6英寸中控屏、16英寸副驾屏、智能投影系统、车载悬浮窗。"
+                }
+              ],
+              "reasoning": "① 权利要求X：车体，所述车体包括中控台和后排座椅。② 候选公开证据Y：问界M9配置表公开中控屏、前后车门、智能投影系统等整车内部配置，可确认车体含中控台和后排乘坐区。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+              "competitor_feature": "公开资料显示OneGlass三联屏、智能投影系统和车载悬浮窗；未公开中控台至后排座椅的显示导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m9/configuration/",
+                  "title": "问界 M9 参数配置表",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "配置表列出One Glass三联屏、12.3英寸仪表盘、15.6英寸中控屏、16英寸副驾屏、智能投影系统、车载悬浮窗。"
+                },
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅。② 候选公开证据Y：公开资料显示OneGlass三联屏、智能投影系统和车载悬浮窗；未公开中控台至后排座椅的显示导轨。。③ 对比：(a) 概念是否等价：否，Y是固定屏/投影幕或软件悬浮窗，不是实体显示导轨；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：从中控台到后排座椅的显示装置导轨；现有证据为固定三联屏、投影幕和悬浮窗，未见实体导轨。\n下一步建议：去 hima.auto 官方说明书、17vin.com 或汽修巴巴，查看问界M9 2025增程版座舱/投影幕布维修章节。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+              "competitor_feature": "公开资料证明问界M9有OneGlass三联屏、智能投影系统和车载悬浮窗；未公开显示装置与导轨配合滑动或横竖屏切换。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://hima.auto/wenjie/m9/configuration/",
+                  "title": "问界 M9 参数配置表",
+                  "source_name": "鸿蒙智行官网",
+                  "snippet": "配置表列出One Glass三联屏、12.3英寸仪表盘、15.6英寸中控屏、16英寸副驾屏、智能投影系统、车载悬浮窗。"
+                },
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。② 候选公开证据Y：公开资料证明问界M9有OneGlass三联屏、智能投影系统和车载悬浮窗；未公开显示装置与导轨配合滑动或横竖屏切换。。③ 对比：(a) 概念是否等价：否，Y为固定屏、投影/软件画幅，不是实体显示装置导轨运动；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：显示装置沿导轨滑动且横竖屏切换的证据；现有资料只证明投影画幅/悬浮窗软件移动或幕布升降。\n下一步建议：去 ZOL视频、懂车帝视频或B站，查问界M9智能投影系统机械结构演示和车载悬浮窗使用手册。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+              "competitor_feature": "公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。② 候选公开证据Y：公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+              "competitor_feature": "公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。② 候选公开证据Y：公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+              "competitor_feature": "公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。② 候选公开证据Y：公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+              "competitor_feature": "公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为两个且分别位于所述副仪表台的左侧和右侧。② 候选公开证据Y：公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+              "competitor_feature": "公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。② 候选公开证据Y：公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：显示主体，所述显示主体具有收纳槽；滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "显示主体，所述显示主体具有收纳槽",
+              "competitor_feature": "公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示主体，所述显示主体具有收纳槽。② 候选公开证据Y：公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+              "competitor_feature": "公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。② 候选公开证据Y：公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：支撑腿，所述支撑腿可转动地安装于所述显示主体；滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "支撑腿，所述支撑腿可转动地安装于所述显示主体",
+              "competitor_feature": "公开证据未披露可转动安装于显示主体的支撑腿。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：支撑腿，所述支撑腿可转动地安装于所述显示主体。② 候选公开证据Y：公开证据未披露可转动安装于显示主体的支撑腿。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+              "competitor_feature": "公开证据未披露显示导轨为齿条且滑行脚为齿轮。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://auto.zol.com.cn/970/9705231_all.html",
+                  "title": "问界M9内饰曝光：零重力座椅+车规级投影系统",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "问界M9 2025款增程Ultra内饰中控台以OneGlass三联屏搭配HarmonyOS4；配置车规级投影系统、75英寸AR-HUD和中央扶手台车载冷暖箱。"
+                },
+                {
+                  "url": "https://zhytauto.com/wp-content/uploads/2025/04/AITO-M9-1.pdf",
+                  "title": "AITO M9 2025 Extended specification PDF",
+                  "source_name": "zhytauto",
+                  "snippet": "AITO M9 2025 Extended规格PDF的配置表列有Intelligent laser projection等智能配置。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为齿条，所述滑行脚为齿轮。② 候选公开证据Y：公开证据未披露显示导轨为齿条且滑行脚为齿轮。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "问界M9 2025 增程版 智能投影系统 车载悬浮窗 评测 后排",
+        "问界M9 2025 增程版 智能投影系统 规格 PDF 车载悬浮窗",
+        "问界M9 车载悬浮窗 拆解 导轨 滑动 横竖屏",
+        "AITO M9 2025 intelligent projection system in-car floating window review",
+        "[SKU自检-M3] 2025款增程版 / 智能投影系统与车载悬浮窗 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "urllib.fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "理想汽车",
+        "company_en": "Li Auto",
+        "product_name": "理想L9（2022款Max / 五屏三维空间交互系统）",
+        "product_name_en": "Li L9 (2022 Max / 5-screen 3D spatial interaction system)",
+        "product_intro": "家庭智能旗舰SUV，前后排含三块15.7英寸OLED显示屏，形成五屏三维空间交互系统。",
+        "market": "中国家庭智能SUV市场",
+        "reason_for_deep_dive": "具备前后排多屏互动和后舱娱乐屏，是权1显示装置/后排娱乐方向的相邻竞品。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.liauto.ph/li-l9"
+        ],
+        "initial_evidence_summary": "公开中控屏、副驾屏、后舱娱乐屏，但未公开导轨从中控到后排，也未公开单一显示装置在前后排之间滑动。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆，其特征在于，包括：车体，所述车体包括中控台和后排座椅；导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "理想L9为家庭智能旗舰SUV。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.liauto.ph/li-l9",
+                  "title": "Li L9",
+                  "source_name": "Li Auto Philippines",
+                  "snippet": "Li L9为家庭智能旗舰SUV，配备5-Screen 3D Spatial Interaction system，含前后排三块15.7英寸OLED显示屏。"
+                }
+              ],
+              "reasoning": "① 权利要求X：一种车辆。② 候选公开证据Y：理想L9为家庭智能旗舰SUV。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "车体，所述车体包括中控台和后排座椅",
+              "competitor_feature": "理想L9公开前后排显示系统，可对应中控台和后排座椅乘坐区。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.liauto.ph/li-l9",
+                  "title": "Li L9",
+                  "source_name": "Li Auto Philippines",
+                  "snippet": "Li L9为家庭智能旗舰SUV，配备5-Screen 3D Spatial Interaction system，含前后排三块15.7英寸OLED显示屏。"
+                }
+              ],
+              "reasoning": "① 权利要求X：车体，所述车体包括中控台和后排座椅。② 候选公开证据Y：理想L9公开前后排显示系统，可对应中控台和后排座椅乘坐区。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+              "competitor_feature": "公开资料显示中控屏、副驾娱乐屏、后舱娱乐屏为多块独立屏；未公开中控台至后排座椅的显示导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.liauto.ph/li-l9",
+                  "title": "Li L9",
+                  "source_name": "Li Auto Philippines",
+                  "snippet": "Li L9为家庭智能旗舰SUV，配备5-Screen 3D Spatial Interaction system，含前后排三块15.7英寸OLED显示屏。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅。② 候选公开证据Y：公开资料显示中控屏、副驾娱乐屏、后舱娱乐屏为多块独立屏；未公开中控台至后排座椅的显示导轨。。③ 对比：(a) 概念是否等价：否，Y是多块固定/独立屏幕布局，不是单一显示装置导轨；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：理想L9中控至后排的显示导轨；现有资料显示中控/副驾/后舱三块独立OLED屏，没有共同导轨。\n下一步建议：去 理想汽车服务手册、17vin.com 或新出行长测图库，定位L9后舱娱乐屏安装支架和顶棚结构图。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+              "competitor_feature": "公开资料证明理想L9有中控/副驾/后舱三块15.7英寸OLED屏，后排屏可展开/收起并支持语音/手势；未公开前后滑动或横竖屏切换。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.liauto.ph/li-l9",
+                  "title": "Li L9",
+                  "source_name": "Li Auto Philippines",
+                  "snippet": "Li L9为家庭智能旗舰SUV，配备5-Screen 3D Spatial Interaction system，含前后排三块15.7英寸OLED显示屏。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。② 候选公开证据Y：公开资料证明理想L9有中控/副驾/后舱三块15.7英寸OLED屏，后排屏可展开/收起并支持语音/手势；未公开前后滑动或横竖屏切换。。③ 对比：(a) 概念是否等价：否，Y为独立后舱娱乐屏的翻折/交互，不是沿导轨前后滑动和姿态切换；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：单一显示装置在前后排间滑动和横竖屏切换证据；现有资料为后排吸顶屏展开/收起及手势操作。\n下一步建议：去 理想社区、汽车之家视频或维修手册，查看2022款Max后舱娱乐屏结构、铰链和是否存在滑移/旋转机构。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+              "competitor_feature": "公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。② 候选公开证据Y：公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+              "competitor_feature": "公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。② 候选公开证据Y：公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+              "competitor_feature": "公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。② 候选公开证据Y：公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+              "competitor_feature": "公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为两个且分别位于所述副仪表台的左侧和右侧。② 候选公开证据Y：公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+              "competitor_feature": "公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。② 候选公开证据Y：公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：显示主体，所述显示主体具有收纳槽；滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "显示主体，所述显示主体具有收纳槽",
+              "competitor_feature": "公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示主体，所述显示主体具有收纳槽。② 候选公开证据Y：公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+              "competitor_feature": "公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。② 候选公开证据Y：公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：支撑腿，所述支撑腿可转动地安装于所述显示主体；滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "支撑腿，所述支撑腿可转动地安装于所述显示主体",
+              "competitor_feature": "公开证据未披露可转动安装于显示主体的支撑腿。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：支撑腿，所述支撑腿可转动地安装于所述显示主体。② 候选公开证据Y：公开证据未披露可转动安装于显示主体的支撑腿。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+              "competitor_feature": "公开证据未披露显示导轨为齿条且滑行脚为齿轮。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/32065/",
+                  "title": "理想汽车L9座舱要点：5屏交互",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "理想L9三块15.7英寸3K OLED屏分别为中控屏、副驾娱乐屏、后舱娱乐屏，构成五屏三维空间交互。"
+                },
+                {
+                  "url": "https://www.xchuxing.com/article/55005",
+                  "title": "奶爸的“理想”家用车 伟健试驾理想L9",
+                  "source_name": "新出行",
+                  "snippet": "理想L9后排娱乐屏位于后排座椅上方中央位置，展开/收起可通过语音或前排中控屏操作。"
+                },
+                {
+                  "url": "https://www.yiche.com/zhishiku/12687.html",
+                  "title": "理想L9后排液晶屏表现怎么样？",
+                  "source_name": "易车知识库",
+                  "snippet": "2022款L9 Max后排液晶屏可语音唤醒，支持手动触控和手势操控，可看电影、听音乐及连接游戏机。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为齿条，所述滑行脚为齿轮。② 候选公开证据Y：公开证据未披露显示导轨为齿条且滑行脚为齿轮。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "理想L9 2022 Max 五屏三维空间交互系统 后排娱乐屏 评测",
+        "理想L9 2022 Max 15.7 OLED 后舱屏 规格 PDF",
+        "理想L9 后排娱乐屏 拆解 导轨 滑动 横竖屏",
+        "Li L9 2022 Max 5-screen 3D spatial interaction rear cabin screen review",
+        "[SKU自检-M3] 2022款Max / 五屏三维空间交互系统 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "urllib.fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "别克",
+        "company_en": "Buick",
+        "product_name": "别克世纪CENTURY（2025款四座私享版 / 32英寸隔断屏与后排座椅智能滑轨）",
+        "product_name_en": "Buick Century (2025 four-seat / 32-inch partition screen and rear-seat smart slide rail)",
+        "product_intro": "豪华MPV，2025款配备30英寸前舱曲面屏，四座版有32英寸可升降隔断屏和后排座椅智能滑轨。",
+        "market": "中国豪华MPV后排娱乐与商务座舱市场",
+        "reason_for_deep_dive": "同时公开后排滑轨和大屏，但滑轨对象是座椅而非显示装置，需严格区分。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.gm.com.cn/en/home/newsroom.detail.html/Pages/news/cn/en/2024/nov/1112-buick.html"
+        ],
+        "initial_evidence_summary": "GM中国新闻稿公开后排座椅智能滑轨使座椅滑动320mm，以及EYEMAX 30英寸曲面屏；未公开显示屏沿中控到后排导轨滑动。"
+      },
+      "launch_date": "2024年11月12日发布上市信息",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.gm.com.cn/en/home/newsroom.detail.html/Pages/news/cn/en/2024/nov/1112-buick.html",
+          "title": "Buick Launches a New Era of Luxury and Innovation in China with the 2025 CENTURY",
+          "source_name": "GM China",
+          "snippet": "2025 CENTURY全系配备EYEMAX 30英寸一体曲面屏；行业首创后排智能座椅滑轨使座椅滑动320mm。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种车辆，其特征在于，包括：车体，所述车体包括中控台和后排座椅；导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅；显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "别克世纪CENTURY为车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.gm.com.cn/en/home/newsroom.detail.html/Pages/news/cn/en/2024/nov/1112-buick.html",
+                  "title": "Buick Launches a New Era of Luxury and Innovation in China with the 2025 CENTURY",
+                  "source_name": "GM China",
+                  "snippet": "2025 CENTURY全系配备EYEMAX 30英寸一体曲面屏；行业首创后排智能座椅滑轨使座椅滑动320mm。"
+                }
+              ],
+              "reasoning": "① 权利要求X：一种车辆。② 候选公开证据Y：别克世纪CENTURY为车辆。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "车体，所述车体包括中控台和后排座椅",
+              "competitor_feature": "2025款CENTURY公开前舱曲面屏、后排智能座椅滑轨和后排商务座舱配置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.gm.com.cn/en/home/newsroom.detail.html/Pages/news/cn/en/2024/nov/1112-buick.html",
+                  "title": "Buick Launches a New Era of Luxury and Innovation in China with the 2025 CENTURY",
+                  "source_name": "GM China",
+                  "snippet": "2025 CENTURY全系配备EYEMAX 30英寸一体曲面屏；行业首创后排智能座椅滑轨使座椅滑动320mm。"
+                }
+              ],
+              "reasoning": "① 权利要求X：车体，所述车体包括中控台和后排座椅。② 候选公开证据Y：2025款CENTURY公开前舱曲面屏、后排智能座椅滑轨和后排商务座舱配置。。③ 对比：(a) 概念是否等价：是，证据直接对应该结构/对象；(b) 单位/量纲是否等价：是，均为存在性限定；(c) 参考系是否等价：是，均指同一锁定SKU车辆；(d) 是否有反向证据：无。终判：明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅",
+              "competitor_feature": "公开资料显示后排座椅有320mm电动/智能滑轨，但这是座椅滑轨；未公开显示装置导轨从中控台延伸至后排座椅。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.gm.com.cn/en/home/newsroom.detail.html/Pages/news/cn/en/2024/nov/1112-buick.html",
+                  "title": "Buick Launches a New Era of Luxury and Innovation in China with the 2025 CENTURY",
+                  "source_name": "GM China",
+                  "snippet": "2025 CENTURY全系配备EYEMAX 30英寸一体曲面屏；行业首创后排智能座椅滑轨使座椅滑动320mm。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：导轨，所述导轨安装于所述车体且从所述中控台延伸至所述后排座椅。② 候选公开证据Y：公开资料显示后排座椅有320mm电动/智能滑轨，但这是座椅滑轨；未公开显示装置导轨从中控台延伸至后排座椅。。③ 对比：(a) 概念是否等价：否，Y是座椅滑轨或普通座舱配置，不是显示装置导轨；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：显示装置导轨从中控台延伸至后排座椅的证据；现有公开的是后排座椅滑轨，不是屏幕导轨。\n下一步建议：去 上汽通用TIS/售后资料、17vin.com 或汽修巴巴，查2025世纪四座版幕墙屏和座椅滑轨维修图。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态",
+              "competitor_feature": "公开资料证明别克世纪四座版有32英寸可升降隔断屏和后排座椅320mm滑轨；未公开显示屏沿导轨前后滑动或横竖屏切换。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.gm.com.cn/en/home/newsroom.detail.html/Pages/news/cn/en/2024/nov/1112-buick.html",
+                  "title": "Buick Launches a New Era of Luxury and Innovation in China with the 2025 CENTURY",
+                  "source_name": "GM China",
+                  "snippet": "2025 CENTURY全系配备EYEMAX 30英寸一体曲面屏；行业首创后排智能座椅滑轨使座椅滑动320mm。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示装置，所述显示装置安装于所述车体且与所述导轨配合以在所述中控台和所述后排座椅之间可滑动，所述显示装置在横屏状态和竖屏状态之间可切换，所述显示装置与所述导轨配合时切换至所述竖屏状态。② 候选公开证据Y：公开资料证明别克世纪四座版有32英寸可升降隔断屏和后排座椅320mm滑轨；未公开显示屏沿导轨前后滑动或横竖屏切换。。③ 对比：(a) 概念是否等价：否，Y为屏幕升降和座椅滑动，未公开显示屏沿导轨滑动及横竖切换；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：32英寸隔断屏与导轨配合前后滑动并横竖屏切换的证据；现有资料只证明隔断屏可升降。\n下一步建议：去 别克官网说明书、汽车之家/凤凰网图解或B站实拍，查32英寸隔断屏升降机构和屏幕姿态说明。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的车辆，其特征在于，所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述导轨从所述中控台延伸至所述后排座椅的中央扶手处",
+              "competitor_feature": "公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨从所述中控台延伸至所述后排座椅的中央扶手处。② 候选公开证据Y：公开证据未披露导轨从中控台延伸至后排座椅中央扶手处。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求1所述的车辆，其特征在于，所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构",
+              "competitor_feature": "公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述中控台和所述后排座椅中的至少一个设有用于对所述显示装置进行定位的锁止机构。② 候选公开证据Y：公开证据未披露中控台或后排座椅设有对显示装置定位的锁止机构。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求1所述的车辆，其特征在于，所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合",
+              "competitor_feature": "公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述车体还包括副仪表台，所述副仪表台在前后方向上位于所述中控台和所述后排座椅之间，所述导轨与所述副仪表台的内饰相配合。② 候选公开证据Y：公开证据虽显示车辆有中控/中央通道/后排区域，但未披露与副仪表台内饰配合的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的车辆，其特征在于，所述导轨为两个且分别位于所述副仪表台的左侧和右侧。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述导轨为两个且分别位于所述副仪表台的左侧和右侧",
+              "competitor_feature": "公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为两个且分别位于所述副仪表台的左侧和右侧。② 候选公开证据Y：公开证据未披露两条分别位于副仪表台左右侧的显示装置导轨。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求1所述的车辆，其特征在于，所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器",
+              "competitor_feature": "公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述显示装置与所述车体有线连接，所述车辆还包括用于收纳所述显示装置的线体的卷线器。② 候选公开证据Y：公开证据未披露显示装置与车体有线连接及收纳线体的卷线器。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求1-6中任一项所述的车辆，其特征在于，所述显示装置包括：显示主体，所述显示主体具有收纳槽；滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "显示主体，所述显示主体具有收纳槽",
+              "competitor_feature": "公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：显示主体，所述显示主体具有收纳槽。② 候选公开证据Y：公开证据未披露显示主体具有用于收纳滑行支脚的收纳槽。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C7-F2",
+              "patent_feature": "滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行支脚，所述滑行支脚在收起位置和展开位置之间可转动地设于所述显示主体，所述滑行支脚在所述收起位置时位于所述收纳槽内，所述滑行支脚在所述展开位置时伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动收起/展开的滑行支脚及其与导轨配合。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的车辆，其特征在于，所述显示装置还包括：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接",
+              "competitor_feature": "公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：驱动装置，所述驱动装置设于所述显示主体且与所述滑行支脚传动连接。② 候选公开证据Y：公开证据未披露设于显示主体并与滑行支脚传动连接的驱动装置。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求7所述的车辆，其特征在于，所述滑行支脚包括：支撑腿，所述支撑腿可转动地安装于所述显示主体；滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "支撑腿，所述支撑腿可转动地安装于所述显示主体",
+              "competitor_feature": "公开证据未披露可转动安装于显示主体的支撑腿。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：支撑腿，所述支撑腿可转动地安装于所述显示主体。② 候选公开证据Y：公开证据未披露可转动安装于显示主体的支撑腿。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合",
+              "competitor_feature": "公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：滑行脚，所述滑行脚可转动地安装于所述支撑腿，所述滑行支脚在所述展开位置时所述滑行脚伸出所述显示主体且与所述导轨相配合。② 候选公开证据Y：公开证据未披露可转动安装于支撑腿、展开时伸出并配合导轨的滑行脚。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的车辆，其特征在于，所述导轨为齿条，所述滑行脚为齿轮。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述导轨为齿条，所述滑行脚为齿轮",
+              "competitor_feature": "公开证据未披露显示导轨为齿条且滑行脚为齿轮。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2268014.html",
+                  "title": "新增后排大彩电/升级座椅，2025款别克世纪到店",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "2025款别克世纪四座版后排双独立座椅配备电动腿托和320mm电动滑轨，另配32英寸可升降屏幕和BOSE音响。"
+                },
+                {
+                  "url": "https://auto.ifeng.com/tujie/20221104/1814415.shtml",
+                  "title": "让出行成为享受，实拍别克世纪四座私享版/六座蕴世版",
+                  "source_name": "凤凰网汽车",
+                  "snippet": "别克世纪四座版使用豪华智慧幕墙系统分隔前后排，幕墙设计有32英寸可升降智能屏，可一键快速升降。"
+                },
+                {
+                  "url": "https://detail.zol.com.cn/car/index2113440.shtml",
+                  "title": "别克世纪 2025款 2.0T 四座私享版参数",
+                  "source_name": "ZOL中关村在线",
+                  "snippet": "别克世纪2025款2.0T四座私享版车型参数页对应四座私享版配置；页面已验活。"
+                }
+              ],
+              "reasoning": "① 权利要求X：所述导轨为齿条，所述滑行脚为齿轮。② 候选公开证据Y：公开证据未披露显示导轨为齿条且滑行脚为齿轮。。③ 对比：(a) 概念是否等价：否，Y未公开该从属限定所需的具体机构/连接/材料或传动关系；(b) 单位/量纲是否等价：否，X为具体结构/动作存在性，Y未公开该结构/动作；(c) 参考系是否等价：否，Y未定位到同一层级结构；(d) 是否有反向证据：无。终判：证据不足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "别克世纪 2025 四座私享版 32英寸隔断屏 后排座椅智能滑轨 评测",
+        "别克世纪CENTURY 2025 四座私享版 32英寸 隔断屏 规格 PDF",
+        "别克世纪 32英寸 隔断屏 拆解 后排座椅滑轨 导轨",
+        "2025 Buick Century four-seat 32-inch partition screen rear seat smart slide rail review",
+        "别克 世纪 2025款 2.0T 四座私享版 后排液晶屏 32英寸 参数 ZOL",
+        "[SKU自检-M3] 2025款四座私享版 / 32英寸隔断屏与后排座椅智能滑轨 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "urllib.fetch"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}
