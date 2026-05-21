@@ -1,0 +1,659 @@
+{
+  "publication_no": "CN101725317B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "艾利丹尼森",
+        "company_en": "Avery Dennison",
+        "product_name": "Vela动态显示薄膜（PET+ITO/PS胶自贴室内玻璃版）",
+        "product_name_en": "Avery Dennison Vela Dynamic Display Film (PET+ITO / PS adhesive retrofit glazing film)",
+        "product_intro": "Vela是贴覆在室内玻璃上的PDLC动态显示薄膜，公开结构包含PET+ITO、PDLC、PS压敏胶和耐刮硬涂层。",
+        "market": "建筑室内隐私玻璃、会议室和商业空间玻璃改造市场",
+        "reason_for_deep_dive": "资料直接公开PET+ITO、PDLC、PS adhesive、glass和scratch resistant coating，和权1的导电硬质膜层+PDLC+导电层+粘合层+玻璃路径高度接近。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://graphics.averydennison.com/content/dam/averydennison/graphics/eu/en/product-overview/vela-technology.pdf"
+        ],
+        "initial_evidence_summary": "PDF图文列出PET+ITO、Glass、Polymer Dispersed Liquid Crystals、PS Adhesive、Scratch Resistant Coating；正文说明薄膜贴覆在室内玻璃上。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种调光玻璃",
+          "competitor_feature": "Vela是贴覆在玻璃上的PDLC动态调光薄膜，通电透明、断电半透明，形成可调光玻璃组件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://graphics.averydennison.com/content/dam/averydennison/graphics/eu/en/product-overview/vela-technology.pdf",
+              "title": "Avery Dennison Vela Technology",
+              "source_name": "Avery Dennison",
+              "snippet": "Vela is a retrofit window film over indoor glass panes; when switched-on, it transforms to transparent; PDLC is the basis for the technology."
+            }
+          ],
+          "reasoning": "①X=调光玻璃。②Y=玻璃上贴PDLC Vela膜。③(a)是，均为电控透光状态切换；(b)是，二值/可调状态；(c)是，玻璃组件；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该调光玻璃包括依次层叠的第一基体、聚合物分散液晶层、导电层、粘合层和第二基体",
+          "competitor_feature": "按外侧到玻璃方向可读为PET+ITO第一基体、PDLC层、PET+ITO导电层、PS Adhesive粘合层、Glass第二基体。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://graphics.averydennison.com/content/dam/averydennison/graphics/eu/en/product-overview/vela-technology.pdf",
+              "title": "Avery Dennison Vela Technology",
+              "source_name": "Avery Dennison",
+              "snippet": "Structure labels include PET + ITO, PET + ITO, Glass, Polymer Dispersed Liquid Crystals, PS Adhesive, and Scratch Resistant Coating."
+            }
+          ],
+          "reasoning": "①X=五层顺序结构。②Y=PET+ITO/PDLC/PET+ITO/PS胶/玻璃。③(a)是，层名对应；(b)是，层状实体；(c)是，玻璃贴膜剖面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一基体、聚合物分散液晶层和导电层为一体结构",
+          "competitor_feature": "Vela正文称薄膜内部有两层ITO透明导电层，PDLC位于两层之间，作为一张薄膜产品贴覆到玻璃上。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://graphics.averydennison.com/content/dam/averydennison/graphics/eu/en/product-overview/vela-technology.pdf",
+              "title": "Avery Dennison Vela Technology",
+              "source_name": "Avery Dennison",
+              "snippet": "Inside the film structure are two optically clear sputtered ITO conductive layers and between these layers are the PDLC."
+            }
+          ],
+          "reasoning": "①X=三层预制成一体。②Y=Vela film structure内部含ITO/PDLC/ITO。③(a)是，一张膜内集成；(b)是，结构存在；(c)是，膜产品内部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第一基体为导电玻璃，第二基体为硬质膜层",
+          "competitor_feature": "公开资料显示Vela采用PET+ITO薄膜与玻璃贴合，未显示第一基体为导电玻璃且第二基体为硬质膜层的替代分支。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://graphics.averydennison.com/content/dam/averydennison/graphics/eu/en/product-overview/vela-technology.pdf",
+              "title": "Avery Dennison Vela Technology",
+              "source_name": "Avery Dennison",
+              "snippet": "The disclosed structure is PET + ITO, PS Adhesive and Glass; no conductive-glass first substrate branch is stated."
+            }
+          ],
+          "reasoning": "①X=导电玻璃+硬质膜层分支。②Y=PET+ITO贴玻璃。③(a)否，未见导电玻璃；(b)是，层结构；(c)否，分支不同；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "或者第一基体为导电硬质膜层，第二基体为玻璃",
+          "competitor_feature": "Vela公开PET+ITO导电膜、Scratch Resistant Coating硬涂层、PS Adhesive和Glass，可对应导电硬质膜层+玻璃分支。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://graphics.averydennison.com/content/dam/averydennison/graphics/eu/en/product-overview/vela-technology.pdf",
+              "title": "Avery Dennison Vela Technology",
+              "source_name": "Avery Dennison",
+              "snippet": "Labels and text identify PET + ITO, Scratch Resistant Coating, PS Adhesive, Glass, and PDLC between ITO layers."
+            }
+          ],
+          "reasoning": "①X=导电硬质膜层+玻璃分支。②Y=PET+ITO+SR硬涂层薄膜贴玻璃。③(a)是；(b)是，层状材料；(c)是，玻璃贴膜剖面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 86.0,
+      "searched_queries": [
+        "Avery Dennison Vela PDLC PET ITO PS adhesive hardcoat datasheet",
+        "Avery Vela dynamic display technology PDF PDLC",
+        "Avery Dennison Vela film China smart glass",
+        "Avery Dennison Vela teardown PDLC film",
+        "Avery Dennison Vela specification PET ITO adhesive glass"
+      ],
+      "searched_providers": [
+        "web.run search/open",
+        "curl GET verification"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "Gauzy",
+        "company_en": "Gauzy",
+        "product_name": "LCG PDLC智能调光膜（贴附到现有玻璃版本）",
+        "product_name_en": "Gauzy LCG PDLC Smart Film (self-adhesive / applied-to-existing-glass version)",
+        "product_intro": "Gauzy LCG的PDLC技术公开为PDLC配方涂覆在两片PET-ITO之间并UV固化成调光膜，该膜可夹胶进玻璃中或安装在玻璃上。",
+        "market": "建筑、交通和室内隐私调光玻璃市场；Gauzy提供中文产品页和全球安装网络。",
+        "reason_for_deep_dive": "中文官方页直接披露PET-ITO/PDLC/PET-ITO一体调光膜，并披露可安装在玻璃上，贴近权1第二替代分支。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.gauzy.com/lcg%E6%99%BA%E8%83%BD%E8%B0%83%E5%85%89%E7%8E%BB%E7%92%83/?lang=zh-hans"
+        ],
+        "initial_evidence_summary": "官方中文页称LCG技术通过PDLC配方涂覆在两片PET-ITO之间并UV固化成调光膜，调光膜夹胶进玻璃中或安装在玻璃上。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种调光玻璃",
+          "competitor_feature": "Gauzy LCG为PDLC智能调光玻璃/调光膜，可在不透明和透明之间切换。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.gauzy.com/lcg%E6%99%BA%E8%83%BD%E8%B0%83%E5%85%89%E7%8E%BB%E7%92%83/?lang=zh-hans",
+              "title": "LCG智能调光玻璃",
+              "source_name": "Gauzy",
+              "snippet": "PDLC智能调光玻璃可以将玻璃从不透明变为透明，按需提供隐私保护和温度控制。"
+            }
+          ],
+          "reasoning": "①X=调光玻璃。②Y=Gauzy PDLC智能调光玻璃。③(a)是；(b)是，透光状态切换；(c)是，玻璃/贴膜组件；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该调光玻璃包括依次层叠的第一基体、聚合物分散液晶层、导电层、粘合层和第二基体",
+          "competitor_feature": "按膜外侧到玻璃方向，可对应PET-ITO第一基体、PDLC层、PET-ITO/ITO导电层、安装粘合层、玻璃第二基体。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.gauzy.com/lcg%E6%99%BA%E8%83%BD%E8%B0%83%E5%85%89%E7%8E%BB%E7%92%83/?lang=zh-hans",
+              "title": "LCG智能调光玻璃",
+              "source_name": "Gauzy",
+              "snippet": "PDLC配方涂覆在两片PET-ITO之间，经紫外线固化形成调光膜；调光膜夹胶进玻璃中或安装在玻璃上。"
+            }
+          ],
+          "reasoning": "①X=五层顺序。②Y=PET-ITO/PDLC/PET-ITO/粘合/玻璃。③(a)是；(b)是，层状结构；(c)是，贴附或夹胶玻璃；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一基体、聚合物分散液晶层和导电层为一体结构",
+          "competitor_feature": "Gauzy公开PDLC配方涂覆在两片PET-ITO之间并UV固化成一片调光膜。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.gauzy.com/lcg%E6%99%BA%E8%83%BD%E8%B0%83%E5%85%89%E7%8E%BB%E7%92%83/?lang=zh-hans",
+              "title": "LCG智能调光玻璃",
+              "source_name": "Gauzy",
+              "snippet": "PDLC配方涂覆在两片PET-ITO之间，再经过紫外线固化，形成一片调光膜。"
+            }
+          ],
+          "reasoning": "①X=基体/PDLC/导电层一体。②Y=两片PET-ITO夹PDLC固化成膜。③(a)是；(b)是，一体膜；(c)是，膜内部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第一基体为导电玻璃，第二基体为硬质膜层",
+          "competitor_feature": "公开证据指向PET-ITO调光膜安装在玻璃上，未披露第一基体为导电玻璃的替代分支。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.gauzy.com/lcg%E6%99%BA%E8%83%BD%E8%B0%83%E5%85%89%E7%8E%BB%E7%92%83/?lang=zh-hans",
+              "title": "LCG智能调光玻璃",
+              "source_name": "Gauzy",
+              "snippet": "公开结构为两片PET-ITO之间涂覆PDLC配方并安装/夹胶至玻璃中。"
+            }
+          ],
+          "reasoning": "①X=导电玻璃分支。②Y=PET-ITO膜+玻璃。③(a)否，未见导电玻璃；(b)是，层结构；(c)否，分支不同；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "或者第一基体为导电硬质膜层，第二基体为玻璃",
+          "competitor_feature": "Gauzy的PET-ITO调光膜安装在玻璃上；PET-ITO为导电膜基体，玻璃为第二基体，硬涂层细节未单独公开。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.gauzy.com/lcg%E6%99%BA%E8%83%BD%E8%B0%83%E5%85%89%E7%8E%BB%E7%92%83/?lang=zh-hans",
+              "title": "LCG智能调光玻璃",
+              "source_name": "Gauzy",
+              "snippet": "PDLC配方涂覆在两片PET-ITO之间形成调光膜；这些调光膜会夹胶进玻璃中或安装在玻璃上。"
+            }
+          ],
+          "reasoning": "①X=导电硬质膜层+玻璃。②Y=PET-ITO调光膜安装在玻璃上。③(a)是但硬涂层未明示；(b)是，层状；(c)是，膜-玻璃；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 82.0,
+      "searched_queries": [
+        "Gauzy LCG PDLC PET-ITO 调光膜 玻璃",
+        "Gauzy PDLC smart glass adhesive interlayer PET ITO",
+        "Gauzy LCG self adhesive smart film existing glass",
+        "Gauzy PDLC smart glass datasheet PET-ITO",
+        "site:gauzy.com Gauzy PDLC PET-ITO glass adhesive"
+      ],
+      "searched_providers": [
+        "web.run search/open",
+        "curl GET verification"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "Magic Film",
+        "company_en": "Magic Film",
+        "product_name": "Self-adhesive Magic Film（既有玻璃自贴PDLC膜）",
+        "product_name_en": "Self-adhesive Magic Film (retrofit PDLC film for existing glass)",
+        "product_intro": "Self-adhesive Magic Film为可贴到既有玻璃表面的PDLC调光膜；其PDLC薄膜制造资料公开ITO-PET、LC-polymer混合物和保护/粘合层。",
+        "market": "建筑隔断、窗户、商用展示和室内改造调光玻璃市场",
+        "reason_for_deep_dive": "同一品牌公开自贴到既有玻璃的产品形态，并公开LC-polymer混合物涂覆在两层ITO-PET之间的制造结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.magic-film.com/self-adhesive-smart-films/",
+          "https://www.magic-film.com/how-to-make-smart-glass-film/",
+          "https://www.magic-film.com/horap-pdlc-film/"
+        ],
+        "initial_evidence_summary": "自贴膜页面称其贴附任何既有玻璃表面；制造页称使用ITO-coated PET films，并将LC-polymer混合物置于两层ITO-PET之间。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种调光玻璃",
+          "competitor_feature": "Self-adhesive Magic Film贴到玻璃后，可通过ON/OFF使玻璃从透明变为雾化。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.magic-film.com/self-adhesive-smart-films/",
+              "title": "Self-adhesive SMART FILM",
+              "source_name": "Magic Film",
+              "snippet": "Adhesive Smart Film applies to any existing glass surface allowing to change glass from clear to opaque on command."
+            }
+          ],
+          "reasoning": "①X=调光玻璃。②Y=自贴膜使玻璃透明/雾化切换。③(a)是；(b)是，ON/OFF状态；(c)是，玻璃表面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该调光玻璃包括依次层叠的第一基体、聚合物分散液晶层、导电层、粘合层和第二基体",
+          "competitor_feature": "按膜外侧到玻璃方向可对应ITO-PET第一基体、LC-polymer/PDLC层、ITO-PET导电层、自粘层、既有玻璃。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.magic-film.com/how-to-make-smart-glass-film/",
+              "title": "How to make smart PDLC film?",
+              "source_name": "Magic Film",
+              "snippet": "Use ITO-coated PET films; apply the LC-polymer mixture between two ITO-PET layers; add protective layers (EVA, PET)."
+            },
+            {
+              "url": "https://www.magic-film.com/self-adhesive-smart-films/",
+              "title": "Self-adhesive SMART FILM",
+              "source_name": "Magic Film",
+              "snippet": "Self-adhesive layer sticks to any existing glass without special equipment."
+            }
+          ],
+          "reasoning": "①X=五层顺序。②Y=ITO-PET/PDLC/ITO-PET/自粘层/玻璃。③(a)是；(b)是，层状结构；(c)是，贴膜玻璃；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一基体、聚合物分散液晶层和导电层为一体结构",
+          "competitor_feature": "Magic Film公开LC-polymer混合物涂覆于两层ITO-PET之间并UV固化，形成PDLC薄膜。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.magic-film.com/how-to-make-smart-glass-film/",
+              "title": "How to make smart PDLC film?",
+              "source_name": "Magic Film",
+              "snippet": "Apply the LC-polymer mixture between two ITO-PET layers; UV curing traps LC droplets in a polymer network."
+            }
+          ],
+          "reasoning": "①X=三层一体结构。②Y=两层ITO-PET夹LC-polymer并固化。③(a)是；(b)是，一体膜；(c)是，膜内部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第一基体为导电玻璃，第二基体为硬质膜层",
+          "competitor_feature": "公开证据显示自贴PDLC膜贴于既有玻璃，未显示第一基体为导电玻璃的替代分支。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.magic-film.com/self-adhesive-smart-films/",
+              "title": "Self-adhesive SMART FILM",
+              "source_name": "Magic Film",
+              "snippet": "The self-adhesive film applies to existing glass; no conductive-glass first substrate is disclosed."
+            }
+          ],
+          "reasoning": "①X=导电玻璃分支。②Y=自贴PDLC膜+玻璃。③(a)否，未见导电玻璃；(b)是；(c)否，分支不同；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "或者第一基体为导电硬质膜层，第二基体为玻璃",
+          "competitor_feature": "Magic Film使用ITO-coated PET作为导电膜基体并贴到玻璃；硬涂层/硬质膜层未在同SKU页面明示。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.magic-film.com/how-to-make-smart-glass-film/",
+              "title": "How to make smart PDLC film?",
+              "source_name": "Magic Film",
+              "snippet": "Conductive Layers (ITO/PET) apply voltage; use ITO-coated PET films."
+            },
+            {
+              "url": "https://www.magic-film.com/self-adhesive-smart-films/",
+              "title": "Self-adhesive SMART FILM",
+              "source_name": "Magic Film",
+              "snippet": "The self-adhesive layer sticks to any existing glass."
+            }
+          ],
+          "reasoning": "①X=导电硬质膜层+玻璃。②Y=ITO-PET导电膜贴玻璃。③(a)是但硬涂层未明示；(b)是，层状；(c)是，膜-玻璃；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 82.0,
+      "searched_queries": [
+        "Magic Film self adhesive PDLC film ITO PET glass adhesive",
+        "Magic Film smart glass windows PDLC laminated glass",
+        "Magic Film how to make smart PDLC film ITO PET",
+        "site:magic-film.com self adhesive smart film existing glass",
+        "Magic Film PDLC film teardown structure"
+      ],
+      "searched_providers": [
+        "web.run search/open",
+        "curl GET verification"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "UniteGlass",
+        "company_en": "UniteGlass",
+        "product_name": "Smart Glass PDLC Film Rolls（自贴既有玻璃卷材）",
+        "product_name_en": "UniteGlass Smart Glass PDLC Film Rolls (self-adhesive retrofit roll)",
+        "product_intro": "UniteGlass自贴PDLC卷材可剥离贴到既有玻璃，公开为两层透明导电ITO膜中间夹聚合物分散液晶。",
+        "market": "中国及出口建筑玻璃加工、室内隔断和住宅商用隐私玻璃市场",
+        "reason_for_deep_dive": "产品页直接公开自贴到玻璃、ITO膜、PDLC层和厚度参数，且公司页面披露自有ITO与PDLC制造能力。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.uniteglass.com/product/smart-glass-pdlc-film-rolls/",
+          "https://www.uniteglass.com/product/non-adhesive-smart-pdlc-film-china-manufacturer/",
+          "https://www.uniteglass.com/"
+        ],
+        "initial_evidence_summary": "Smart Glass PDLC Film Rolls页面称电静胶/自贴层可贴到既有玻璃；Non-Adhesive页面称由两层透明导电ITO膜和中间PDLC组成。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种调光玻璃",
+          "competitor_feature": "UniteGlass自贴PDLC卷材贴到玻璃后，通过ON/OFF在透明与雾化之间切换。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.uniteglass.com/product/smart-glass-pdlc-film-rolls/",
+              "title": "Smart Glass PDLC Film Rolls",
+              "source_name": "UniteGlass",
+              "snippet": "Self adhesive smart film can be peel and stick to existing glass; ON-OFF switches the film from clear to frosted."
+            }
+          ],
+          "reasoning": "①X=调光玻璃。②Y=PDLC膜贴玻璃后透明/雾化切换。③(a)是；(b)是，ON/OFF状态；(c)是，玻璃表面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该调光玻璃包括依次层叠的第一基体、聚合物分散液晶层、导电层、粘合层和第二基体",
+          "competitor_feature": "按膜外侧到玻璃方向，可对应透明导电ITO膜、PDLC层、透明导电ITO膜、自贴/电静胶层、既有玻璃。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.uniteglass.com/product/non-adhesive-smart-pdlc-film-china-manufacturer/",
+              "title": "Non-Adhesive Smart Film for Laminated Glass",
+              "source_name": "UniteGlass",
+              "snippet": "Non-Adhesive Smart Film is made of 2 layers of transparent conductive ITO films with polymer dispersed liquid crystal in between."
+            },
+            {
+              "url": "https://www.uniteglass.com/product/smart-glass-pdlc-film-rolls/",
+              "title": "Smart Glass PDLC Film Rolls",
+              "source_name": "UniteGlass",
+              "snippet": "With electrostatic glue at rear side, self adhesive smart film can be peel and stick to the existing glass."
+            }
+          ],
+          "reasoning": "①X=五层顺序。②Y=ITO膜/PDLC/ITO膜/胶/玻璃。③(a)是；(b)是，层状结构；(c)是，贴膜玻璃；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一基体、聚合物分散液晶层和导电层为一体结构",
+          "competitor_feature": "UniteGlass公开智能膜由两层透明导电ITO膜与中间PDLC组成，并作为卷材/膜材供应。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.uniteglass.com/product/non-adhesive-smart-pdlc-film-china-manufacturer/",
+              "title": "Non-Adhesive Smart Film for Laminated Glass",
+              "source_name": "UniteGlass",
+              "snippet": "Smart Film is made of 2 layers of transparent conductive ITO films with polymer dispersed liquid crystal in between."
+            }
+          ],
+          "reasoning": "①X=三层一体。②Y=两层ITO膜夹PDLC成膜材。③(a)是；(b)是，一体膜；(c)是，膜内部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第一基体为导电玻璃，第二基体为硬质膜层",
+          "competitor_feature": "公开证据为ITO膜/PDLC/ITO膜贴玻璃，未显示第一基体为导电玻璃。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.uniteglass.com/product/smart-glass-pdlc-film-rolls/",
+              "title": "Smart Glass PDLC Film Rolls",
+              "source_name": "UniteGlass",
+              "snippet": "Product is a self-adhesive film fitted to existing glass, not disclosed as conductive glass first substrate."
+            }
+          ],
+          "reasoning": "①X=导电玻璃分支。②Y=ITO膜贴玻璃。③(a)否，未见导电玻璃；(b)是；(c)否，分支不同；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "或者第一基体为导电硬质膜层，第二基体为玻璃",
+          "competitor_feature": "UniteGlass公开透明导电ITO膜和既有玻璃；硬质膜层/硬涂层未在同SKU页面明示。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.uniteglass.com/product/non-adhesive-smart-pdlc-film-china-manufacturer/",
+              "title": "Non-Adhesive Smart Film for Laminated Glass",
+              "source_name": "UniteGlass",
+              "snippet": "2 layers of transparent conductive ITO films with polymer dispersed liquid crystal in between."
+            },
+            {
+              "url": "https://www.uniteglass.com/product/smart-glass-pdlc-film-rolls/",
+              "title": "Smart Glass PDLC Film Rolls",
+              "source_name": "UniteGlass",
+              "snippet": "Self adhesive smart film can be peel and stick to the existing glass."
+            }
+          ],
+          "reasoning": "①X=导电硬质膜层+玻璃。②Y=透明导电ITO膜贴玻璃。③(a)是但硬涂层未明示；(b)是；(c)是，膜-玻璃；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 82.0,
+      "searched_queries": [
+        "UniteGlass Smart Glass PDLC Film Rolls ITO existing glass",
+        "UniteGlass non adhesive smart film laminated glass ITO PDLC",
+        "UniteGlass 自贴 PDLC 调光膜 ITO 玻璃",
+        "UniteGlass PDLC film datasheet teardown",
+        "site:uniteglass.com PDLC ITO glass adhesive"
+      ],
+      "searched_providers": [
+        "web.run search/open",
+        "curl GET verification"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "LT Smart",
+        "company_en": "LT Smart",
+        "product_name": "Smart Glass Technical Parameters（PDLC夹层玻璃结构版）",
+        "product_name_en": "LT Smart Smart Glass Technical Parameters (PDLC multilayer glass structure)",
+        "product_intro": "LT Smart公开的PDLC调光玻璃为多层材料紧密结合结构，层次为玻璃、自粘层、ITO导电膜、液晶分子、ITO导电膜、玻璃。",
+        "market": "建筑隔断、会议室、酒店及住宅调光玻璃市场",
+        "reason_for_deep_dive": "页面直接列出玻璃、自粘层、ITO导电膜、液晶分子、ITO导电膜、玻璃的层序，可逐项对照权1。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.ltsmart.com/technical-parameters/"
+        ],
+        "initial_evidence_summary": "技术参数页列出1 Glass Layer、2 Self-Adhesive layer、3 ITO conductive film、4 Liquid crystal molecular、5 ITO conductive film、6 Glass Layer。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种调光玻璃",
+          "competitor_feature": "LT Smart页面为采用PDLC膜作中间层的Smart Glass，可通过液晶分子排列实现透明和不透明。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ltsmart.com/technical-parameters/",
+              "title": "How is Smart Glass made | How does it work",
+              "source_name": "LT Smart",
+              "snippet": "Smart Glass Technical Parameters adopt Polymer Dispersed Liquid Crystal (PDLC) film as the intermediate layer."
+            }
+          ],
+          "reasoning": "①X=调光玻璃。②Y=采用PDLC中间层的Smart Glass。③(a)是；(b)是，透光状态切换；(c)是，玻璃组件；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该调光玻璃包括依次层叠的第一基体、聚合物分散液晶层、导电层、粘合层和第二基体",
+          "competitor_feature": "反向读取LT Smart层序为玻璃、ITO导电膜、液晶分子、ITO导电膜、自粘层、玻璃；与权1五层序列存在对应但方向和额外玻璃层需解释。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ltsmart.com/technical-parameters/",
+              "title": "How is Smart Glass made | How does it work",
+              "source_name": "LT Smart",
+              "snippet": "1 Glass Layer; 2 Self-Adhesive layer; 3 ITO conductive film; 4 Liquid crystal molecular; 5 ITO conductive film; 6 Glass Layer."
+            }
+          ],
+          "reasoning": "①X=五层顺序。②Y=玻璃/胶/ITO/LC/ITO/玻璃。③(a)是，核心层对应；(b)是，层状；(c)是，夹层玻璃；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一基体、聚合物分散液晶层和导电层为一体结构",
+          "competitor_feature": "LT Smart称PDLC膜作为中间层并由多层材料紧密结合，ITO/液晶/ITO为核心工作层。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ltsmart.com/technical-parameters/",
+              "title": "How is Smart Glass made | How does it work",
+              "source_name": "LT Smart",
+              "snippet": "PDLC film as the intermediate layer via a special manufacturing process; close combination by multi-layer materials."
+            }
+          ],
+          "reasoning": "①X=三层一体。②Y=ITO/LC/ITO紧密结合为PDLC中间层。③(a)是但未写预制一体膜；(b)是；(c)是，核心层；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第一基体为导电玻璃，第二基体为硬质膜层",
+          "competitor_feature": "LT Smart层序公开的是普通玻璃层和柔性透明ITO导电膜，未显示导电玻璃+硬质膜层分支。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ltsmart.com/technical-parameters/",
+              "title": "How is Smart Glass made | How does it work",
+              "source_name": "LT Smart",
+              "snippet": "Layer list identifies Glass Layer and Soft flexible transparent ITO conductive film; conductive glass is not stated."
+            }
+          ],
+          "reasoning": "①X=导电玻璃分支。②Y=玻璃+柔性ITO膜。③(a)否，未见导电玻璃；(b)是；(c)否，分支不同；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "或者第一基体为导电硬质膜层，第二基体为玻璃",
+          "competitor_feature": "LT Smart有ITO导电膜和玻璃层，但公开称ITO膜为soft flexible，未直接证明为硬质膜层。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ltsmart.com/technical-parameters/",
+              "title": "How is Smart Glass made | How does it work",
+              "source_name": "LT Smart",
+              "snippet": "Soft flexible transparent Indium Tin Oxide (ITO) conductive film; Glass Layer."
+            }
+          ],
+          "reasoning": "①X=导电硬质膜层+玻璃。②Y=soft flexible ITO膜+玻璃。③(a)否，硬质未证；(b)是，层状；(c)是，玻璃组件；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 64.0,
+      "searched_queries": [
+        "LT Smart smart glass technical parameters ITO conductive film glass layer",
+        "LT Smart PDLC glass self adhesive ITO conductive film",
+        "LT Smart 调光玻璃 ITO 导电膜 玻璃 自粘层",
+        "site:ltsmart.com PDLC ITO glass adhesive",
+        "LT Smart smart glass datasheet teardown"
+      ],
+      "searched_providers": [
+        "web.run search/open",
+        "curl GET verification"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}
