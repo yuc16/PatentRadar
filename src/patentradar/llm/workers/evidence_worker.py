@@ -138,11 +138,17 @@ def _build_user_text(
         # via codex.chat_json(images=...) in batch order).
         image_manifest = []
         for img in images[:_VISION_IMAGES_PER_CANDIDATE]:
-            image_manifest.append({
+            entry = {
                 "global_index": image_cursor,
                 "url": img.get("url", ""),
                 "title": img.get("title", ""),
-            })
+            }
+            # surrounding_text 是图所在 HTML 上下文（figcaption + 前后段落首句拼接），
+            # 让 LLM 看图时能做"图-文交叉验证"：很多 HTML 的 <img alt> 为空，但
+            # surrounding_text 写明"图 3：自定义车位界面"——这种是判图的关键文字信号。
+            # 字段为空字符串时 LLM 端按"无上下文"处理。
+            entry["surrounding_text"] = (img.get("surrounding_text") or "")[:300]
+            image_manifest.append(entry)
             image_cursor += 1
         candidate_payloads.append(
             {

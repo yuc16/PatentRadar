@@ -32,7 +32,7 @@
 6. **SKU 锁定自检**：模块三 round 2 输出前，在 `searched_queries` 列表末尾追加一条 `[SKU自检-M3] <SKU_LOCK> / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev 列表: [...]`。
   - `comparisons_for_claim_1`：模块二对权 1 的判断（含 status/score/evidence/reasoning）—— 你可以**直接复用，也可以基于新证据修正**
   - `evidence_pool`：模块二已 fetch 的 URL/text/image 清单
-  - `images_manifest`：图片清单（通过 input_image 通道单独送达，每条带 `global_index`）
+  - `images_manifest`：图片清单（通过 input_image 通道单独送达，每条带 `global_index` + `url` + `title` + **`surrounding_text`**——图所在 HTML 上下文 / PDF 同页文本头部，最多 300 字符；是判图的关键文字信号，详见下文"图片证据引用"）
   - `queries_already_tried_in_module_two`：模块二已经跑过的 query 列表（含 initial 和 gap 轮）。**你 round 1 提议 `suggested_followup_queries` 时不要重复这些 query**：模块二已经跑过但没拿到新证据，说明该角度走不通。换思路（换语言 / 换关键词组合 / 换具体型号或参数 / 换载体语义 / 换证据形式如规格书 vs 评测 vs 拆解视频）。
 - `is_finalization_round`：
   - `false`：本次输出**要给 `suggested_followup_queries`**（你认为代码端该跑什么 query 补缺口）
@@ -186,6 +186,12 @@
 **Round 2（is_finalization_round=true）**：所有 `suggested_followup_queries` 必须为空数组。你已经看完所有该看的证据，给最终判断。
 
 **图片证据引用**：图片由代码端在 fetch 阶段自动抓取（产品页 HTML 嵌图 + PDF 关键页），通过 `images_manifest[i].url` 标识来源页面。引用图证据时 evidence[].url 写图片所在页面的 url（即 `images_manifest[i].url`），不要硬造直链；snippet 用 "图示证据：xxx" 前缀。
+
+**`surrounding_text` 字段是关键判图信号**——图所在 HTML 的 figcaption + 前后段落首句拼接（HTML 图）或 PDF 同页文本头部 200 字（PDF 图）。`title`/`alt` 经常为空或泛标识（"PDF page 3"），surrounding_text 才能告诉你"这张图讲的是什么"：
+- 例：图 `title="PDF page 5"`、`surrounding_text="蜂巢能源 L600 196Ah 短刀电芯 规格表 长 574mm 宽 118mm"` → 规格书数值页，直接读数值
+- 例：图 `title=""`、`surrounding_text="问界M5 智驾版APA 自定义车位 | 用户拖拽车位框"` → UI 截图，**展开看**
+- **图-文交叉验证**：图里 OCR 出的文字应该与 `surrounding_text` 互证；如果两者完全无关（图是 A 车型但 surrounding_text 写 B 车型），警惕该图是引用配图（非本候选实物），按"SKU 模糊"降级处理
+- snippet 可以直接复用 surrounding_text 的关键片段，律师核查时能直接 cross-check
 
 ## evidence_gap_brief 写作要求（Round 2 权 1 缺口 feature 必填）
 

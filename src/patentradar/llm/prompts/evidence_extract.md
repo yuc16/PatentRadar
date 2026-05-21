@@ -9,7 +9,7 @@
 - `patent.publication_no` / `patent.application_date`：用来比对竞品上市日期。
 - `claim_1_text`：权利要求 1 的完整原文（参考用，不直接逐句对比）。
 - `claim_1_features`：拆解后的原子特征清单（C1-F1…），**真正的对比单元**。
-- `candidates[]`：每个候选含基础信息 + `search_results`（已经按相关性排序、去专利文献、去申请人自家产品）+ `fetched_pages`（HTML 正文 / PDF 文本片段）+ `fetched_page_images` 清单（PDF 关键页 PNG，图片本体走 multimodal 通道一并送达）。
+- `candidates[]`：每个候选含基础信息 + `search_results`（已经按相关性排序、去专利文献、去申请人自家产品）+ `fetched_pages`（HTML 正文 / PDF 文本片段）+ `fetched_page_images` 清单（PDF 关键页 PNG / HTML 嵌图；每张图带 `url` + `title` + **`surrounding_text`**——图所在 HTML 上下文 / PDF 同页文本头部，是判图的关键文字信号；图片本体走 multimodal 通道一并送达）。
 - **每个候选的 `candidate.product_name` 都按规范带了 SKU 标识**（形如 `<基础产品名>（<SKU 标识>）`，例 `问界M5 智驾版APA（M5 ADS 1.0 / 含激光雷达）`）。**该 SKU 标识就是本候选的锁定单位**，下文所有证据判定都围绕它展开。
 
 ## ⛔ SKU 同源约束（致命硬约束，违反则证据无效）
@@ -191,10 +191,14 @@
 
 ## 多模态图片使用
 
-- `fetched_page_images` 数组里每条记录有 `global_index` + `url` + `title`，对应**第 N 张** input_image
+- `fetched_page_images` 数组里每条记录有 `global_index` + `url` + `title` + **`surrounding_text`**，对应**第 N 张** input_image
 - 图片来源有两类：(a) **PDF 关键页 PNG**（规格书/技术手册扫描页），(b) **HTML 嵌入的产品图/规格示意/拆解照**（自动从产品详情页、评测/拆解文章里抓取）
 - 图片优先用于：读规格书表格里的数值（D、L、H、W、容量、能量）、看部件位置/朝向/连接关系示意、看拆解图判断硬壳/方形/圆柱形态、看渲染图判断尺寸级别
-- **图片证据要在 `evidence` 字段标注 URL**：用 `fetched_page_images[i].url`（即图片所在页面 URL），不要硬编造图片直链。`snippet` 字段里加 "图示证据：xxx" 前缀帮人工核查
+- **`surrounding_text` 是关键判图信号**——它是该图所在 HTML 上下文（figcaption + 前后段落首句拼接，最多 300 字符）或 PDF 同页文本头部 200 字。当 `title`/`alt` 为空或泛泛（如 `"PDF page 3"`、`""`）时，**必须用 `surrounding_text` 判断这张图讲的是什么**：
+  - 例：图 `title=""`、`surrounding_text="问界M5 智驾版APA 自定义车位 | 用户拖拽车位框 | 白色车位框变蓝表示可泊入"` → 高度怀疑这是 UI 截图证据，**值得展开看**
+  - 例：图 `title="PDF page 3"`、`surrounding_text="蜂巢能源 L600 196Ah 短刀电芯 规格表 长 574mm 宽 118mm"` → 这是规格书数值页，**直接读数值**
+- **图-文交叉验证**：看图时如果 OCR 出来的文字与 `surrounding_text` 一致（如图里写"白色车位框变蓝"且周围文字也写"白色车位框变蓝"），可信度极高；如果完全无关（图是某车型对比但 `surrounding_text` 写的是另一车型），警惕这张图可能是文章引用配图（非本候选实物），按"SKU 模糊证据"处理
+- **图片证据要在 `evidence` 字段标注 URL**：用 `fetched_page_images[i].url`（即图片所在页面 URL），不要硬编造图片直链。`snippet` 字段里加 "图示证据：xxx" 前缀帮人工核查；如果 `surrounding_text` 有强相关文字，**snippet 可以直接复用 surrounding_text 的关键片段**，律师核查时一眼能 cross-check
 - 不要把 LLM 自己 OCR 出的内容**当**字面证据——必须能在原图找到对应位置
 
 ## reasoning 字段写作要求

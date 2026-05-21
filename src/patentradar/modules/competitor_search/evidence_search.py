@@ -43,6 +43,7 @@ def build_initial_evidence_context(
         claim_features=claim_features,
         urls=list(candidate.source_urls),
         max_pages=10,
+        technology_tag=technology_tag,
     )
     seen_urls = {page["url"] for page in seed_pages}
 
@@ -64,6 +65,7 @@ def build_initial_evidence_context(
             claim_features=claim_features,
             results=[r for r in site_results if r.url not in seen_urls],
             max_pages=8,
+            technology_tag=technology_tag,
         )
         seen_urls.update(page["url"] for page in site_pages)
 
@@ -81,6 +83,7 @@ def build_initial_evidence_context(
         claim_features=claim_features,
         results=[r for r in general_results if r.url not in seen_urls],
         max_pages=max(0, 12 - len(seed_pages) - len(site_pages)),
+        technology_tag=technology_tag,
     )
 
     queries = list(site_queries) + list(general_queries)
@@ -124,6 +127,7 @@ def build_gap_evidence_context(
             claim_features=gap_features,
             results=site_results,
             max_pages=6,
+            technology_tag=technology_tag,
         )
         seen_urls.update(page["url"] for page in site_pages)
 
@@ -140,6 +144,7 @@ def build_gap_evidence_context(
         candidate=candidate,
         claim_features=gap_features,
         results=[r for r in general_results if r.url not in seen_urls],
+        technology_tag=technology_tag,
     )
     queries = list(site_queries) + list(general_queries)
     results = list(site_results) + list(general_results)
@@ -300,6 +305,7 @@ def _fetch_url_list(
     claim_features: list[ClaimFeature],
     urls: list[str],
     max_pages: int,
+    technology_tag: str | None = None,
 ) -> tuple[list[dict[str, str]], list[dict]]:
     """Fetch a hand-picked URL list (e.g. step3 source_urls). Returns
     (text-pages, image-records) tuples; image-records carry per-image source url
@@ -314,7 +320,7 @@ def _fetch_url_list(
         if url in seen:
             continue
         seen.add(url)
-        evidence = fetch_evidence(url, keywords=keywords, max_chars=6000)
+        evidence = fetch_evidence(url, keywords=keywords, max_chars=6000, technology_tag=technology_tag)
         if evidence is None:
             continue
         if evidence.text:
@@ -325,6 +331,7 @@ def _fetch_url_list(
                 "title": img.alt or evidence.title or "",
                 "png": img.png,
                 "score": img.score,
+                "surrounding_text": img.surrounding_text,
             })
         if len(pages) >= max_pages:
             break
@@ -337,6 +344,7 @@ def fetch_relevant_pages(
     claim_features: list[ClaimFeature],
     results: list[SearchResult],
     max_pages: int = 12,
+    technology_tag: str | None = None,
 ) -> tuple[list[dict[str, str]], list[dict]]:
     keywords = _build_keywords(candidate=candidate, claim_features=claim_features)
     pages: list[dict[str, str]] = []
@@ -346,7 +354,7 @@ def fetch_relevant_pages(
         if result.url in seen_urls:
             continue
         seen_urls.add(result.url)
-        evidence = fetch_evidence(result.url, keywords=keywords, max_chars=6000)
+        evidence = fetch_evidence(result.url, keywords=keywords, max_chars=6000, technology_tag=technology_tag)
         if evidence is None:
             continue
         if evidence.text:
@@ -364,6 +372,7 @@ def fetch_relevant_pages(
                     "title": img.alt or evidence.title or result.title,
                     "png": img.png,
                     "score": img.score,
+                    "surrounding_text": img.surrounding_text,
                 }
             )
         if len(pages) >= max_pages:

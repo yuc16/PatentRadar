@@ -152,8 +152,15 @@ def _build_user_text(
     new_search_results: list[SearchResult],
     is_finalization_round: bool,
 ) -> str:
+    # surrounding_text 是图所在 HTML 上下文（figcaption + 前后段落首句拼接），
+    # 让 LLM 看图时能做"图-文交叉验证"。详见 evidence_worker._build_user_text 同字段注释。
     images_manifest = [
-        {"global_index": idx, "url": img.get("url", ""), "title": img.get("title", "")}
+        {
+            "global_index": idx,
+            "url": img.get("url", ""),
+            "title": img.get("title", ""),
+            "surrounding_text": (img.get("surrounding_text") or "")[:300],
+        }
         for idx, img in enumerate(evidence_pool_images)
     ]
     all_claims = [

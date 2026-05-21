@@ -108,6 +108,7 @@ def map_evidence_for_batch(
                 queries=llm_queries,
                 router=search_router,
                 self_signals=self_signals,
+                technology_tag=task_package.technology_tag,
             )
         else:
             gap_features = _gap_features(item=item, claim_features=task_package.claim_1_features)
@@ -217,6 +218,7 @@ def _gap_context_from_queries(
     queries: list[str],
     router: SearchRouter,
     self_signals: ApplicantSelfSignals | None,
+    technology_tag: str | None = None,
 ) -> CandidateEvidenceContext:
     """Build a CandidateEvidenceContext from a pre-supplied query list (LLM-driven gap)."""
     results = router.search_queries(
@@ -227,7 +229,8 @@ def _gap_context_from_queries(
         self_signals=self_signals,
     ).results
     pages, images = _fetch_pages_for_results(
-        candidate=candidate, claim_features=claim_features, results=results, max_pages=8
+        candidate=candidate, claim_features=claim_features, results=results, max_pages=8,
+        technology_tag=technology_tag,
     )
     return CandidateEvidenceContext(
         candidate=candidate,
@@ -244,6 +247,7 @@ def _fetch_pages_for_results(
     claim_features: list[ClaimFeature],
     results: list[SearchResult],
     max_pages: int,
+    technology_tag: str | None = None,
 ) -> tuple[list[dict[str, str]], list[dict]]:
     keywords: list[str] = [
         candidate.company,
@@ -261,7 +265,7 @@ def _fetch_pages_for_results(
         if result.url in seen_urls:
             continue
         seen_urls.add(result.url)
-        evidence = fetch_evidence(result.url, keywords=keywords, max_chars=6000)
+        evidence = fetch_evidence(result.url, keywords=keywords, max_chars=6000, technology_tag=technology_tag)
         if evidence is None:
             continue
         if evidence.text:
@@ -279,6 +283,7 @@ def _fetch_pages_for_results(
                     "title": img.alt or evidence.title or result.title,
                     "png": img.png,
                     "score": img.score,
+                    "surrounding_text": img.surrounding_text,
                 }
             )
         if len(pages) >= max_pages:

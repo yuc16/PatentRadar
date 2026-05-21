@@ -81,12 +81,18 @@ class FetchedImage:
     - alt: HTML <img alt> 文本；PDF 用 'PDF page N'
     - score: 启发式得分（HTML 见 _extract_html_images，PDF 固定 _PDF_IMAGE_SCORE）
       worker 端按 score 全局降序排，cap 切割时保留高分图。
+    - surrounding_text: 图所在 HTML 上下文（figcaption + 前后段落首句拼接，
+      最多 300 字符）。用于：(a) score 启发式命中 alt 之外的领域词；(b) LLM 看图
+      时做"图-文交叉验证"——很多 HTML 的 <img alt> 为空，但 figcaption 或前
+      后段落明确写了"图 3：自定义车位界面"，这种是关键判图信号。PDF 图也填同
+      页文字头部（match 段头 100 字）。
     """
 
     png: bytes
     src_url: str
     alt: str = ""
     score: int = 0
+    surrounding_text: str = ""
 
 
 @dataclass
@@ -107,12 +113,17 @@ def fetch_evidence(
     keywords: list[str] | None = None,
     max_chars: int = 6000,
     timeout: float = 30.0,
+    technology_tag: str | None = None,
 ) -> FetchedEvidence | None:
     """Fetch a URL and return text + (for PDFs) key-page images.
 
     Returns None on hard failures (network/HTTP). Returns an empty-ish
     FetchedEvidence (text="") when the URL is reachable but yields nothing
     useful; callers may still use it as a "we tried this URL" marker.
+
+    `technology_tag` is forwarded to HTML image extraction so the score
+    heuristic uses domain-specific boost keywords loaded from
+    `configs/technology_tags.toml`.
     """
     try:
         with httpx.Client(timeout=timeout, follow_redirects=True) as client:
@@ -135,7 +146,13 @@ def fetch_evidence(
         # Some other binary; skip rather than false-positive.
         return None
 
-    return _extract_html(url=url, html=response.text, keywords=keywords or [], max_chars=max_chars)
+    return _extract_html(
+        url=url,
+        html=response.text,
+        keywords=keywords or [],
+        max_chars=max_chars,
+        technology_tag=technology_tag,
+    )
 
 
 def fetch_page_text(
@@ -153,10 +170,22 @@ def fetch_page_text(
     return FetchedPage(url=evidence.url, title=evidence.title, text=evidence.text)
 
 
-def _extract_html(*, url: str, html: str, keywords: list[str], max_chars: int) -> FetchedEvidence:
+def _extract_html(
+    *,
+    url: str,
+    html: str,
+    keywords: list[str],
+    max_chars: int,
+    technology_tag: str | None = None,
+) -> FetchedEvidence:
     soup = BeautifulSoup(html, "lxml")
     # 图片扫描必须在 decompose 之前（否则 <img> 也会被 strip）；先抓图，再 strip 文本元素
-    images = _extract_html_images(soup=soup, page_url=url, keywords=keywords)
+    images = _extract_html_images(
+        soup=soup,
+        page_url=url,
+        keywords=keywords,
+        technology_tag=technology_tag,
+    )
     for tag in soup(["script", "style", "noscript", "svg"]):
         tag.decompose()
     title = soup.title.get_text(" ", strip=True) if soup.title else ""
@@ -180,9 +209,17 @@ def _extract_pdf(*, url: str, pdf_bytes: bytes, keywords: list[str], max_chars: 
         kind = "skipped"
     title = url.rsplit("/", 1)[-1]
     # PDF 所有 image 都归属于该 PDF 的 url；alt 用 page number 标识便于 LLM 引用
+    # surrounding_text 取 PDF 文本段首部 200 字（让 LLM 知道这张关键页大致在讲什么）
+    pdf_text_head = (extraction.text_segments[0] if extraction.text_segments else "")[:200]
     images: list[FetchedImage] = []
     for idx, png in enumerate(extraction.image_pngs, start=1):
-        images.append(FetchedImage(png=png, src_url=url, alt=f"PDF page {idx}", score=_PDF_IMAGE_SCORE))
+        images.append(FetchedImage(
+            png=png,
+            src_url=url,
+            alt=f"PDF page {idx}",
+            score=_PDF_IMAGE_SCORE,
+            surrounding_text=pdf_text_head,
+        ))
     return FetchedEvidence(
         url=url,
         title=title,
@@ -193,23 +230,76 @@ def _extract_pdf(*, url: str, pdf_bytes: bytes, keywords: list[str], max_chars: 
     )
 
 
+def _extract_surrounding_text(img_tag, *, char_limit: int = 300) -> str:
+    """抽图的语义上下文：figcaption + 前一个段落首部 + 后一个段落首部。
+
+    HTML <img> 的 alt 经常为空，但 figcaption / 上下段落里往往直接写明图的内容
+    （"图 3：自定义车位界面"）。把这些拼起来给下游 score 启发式 + LLM 看图时
+    做交叉验证用。
+
+    返回最多 char_limit 个字符，三段之间用 " | " 分隔。无任何上下文时返回 ""。
+    """
+    pieces: list[str] = []
+    # 1) figcaption（同 figure 父节点内）
+    fig_parent = img_tag.find_parent("figure")
+    if fig_parent is not None:
+        cap = fig_parent.find("figcaption")
+        if cap:
+            cap_text = cap.get_text(" ", strip=True)
+            if cap_text:
+                pieces.append(cap_text[:120])
+    # 2) 前一个段落 / 标题 / 列表项
+    prev = img_tag.find_previous(["p", "h1", "h2", "h3", "h4", "h5", "h6", "li"])
+    if prev is not None:
+        prev_text = prev.get_text(" ", strip=True)
+        if prev_text and (not pieces or prev_text != pieces[0]):
+            pieces.append(prev_text[:120])
+    # 3) 后一个段落（图说常出现在图下方）
+    nxt = img_tag.find_next(["p", "li"])
+    if nxt is not None:
+        nxt_text = nxt.get_text(" ", strip=True)
+        if nxt_text and nxt_text not in pieces:
+            pieces.append(nxt_text[:120])
+    if not pieces:
+        return ""
+    joined = " | ".join(pieces)
+    return joined[:char_limit]
+
+
 def _extract_html_images(
     *,
     soup: BeautifulSoup,
     page_url: str,
     keywords: list[str],
+    technology_tag: str | None = None,
 ) -> list[FetchedImage]:
     """从 HTML 抽取 <img>，按启发式排序，下载 top-K PNG 字节流。
 
     评分维度：
-    - 容器：在 <figure>/<picture>/gallery class 里  +3
-    - alt/title/周围文字含候选关键词           +2
-    - URL 路径含 product/spec/teardown/规格...  +2
-    - 显式 width/height >= 200px              +1（用作过滤 + 评分）
-    - 在 page 前 50% DOM 顺序里                +1
-    - URL 含 social / icon / sprite 等        直接跳过
+    - 容器：在 <figure>/<picture>/gallery class 里         +3
+    - alt/title/周围文字含候选关键词                       +2
+    - alt/title/周围文字命中 tag 专属 path_boost 领域词      +2
+    - 周围文字命中候选关键词（额外信号；alt 为空时尤其重要）  +2
+    - URL 路径含 tag 专属 path_strong_boost                +3
+    - URL 路径含 tag 专属 path_boost                       +2
+    - 显式 width/height >= 200px                          +1
+    - 在 page 前 50% DOM 顺序里                            +1
+    - URL 含 social / icon / sprite / SVG 等              直接跳过
+    - alt 命中全局黑名单 _HTML_IMG_ALT_BLACKLIST            直接跳过
+    - alt 命中 tag 专属 alt_blacklist                      直接跳过
+
+    `technology_tag` 决定路径 / 文字 boost 词的来源：传入则用该 tag 的领域词
+    （见 configs/technology_tags.toml [tags.image_boost_keywords]），未传或未命
+    中则用 default_image_boost_keywords 兜底。
     """
-    candidates: list[tuple[int, str, str]] = []  # (score, abs_url, alt)
+    from patentradar.core.constants import get_image_boosts_for_tag
+
+    boosts = get_image_boosts_for_tag(technology_tag)
+    tag_path_strong = tuple(b.lower() for b in boosts.path_strong_boost)
+    tag_path_boost = tuple(b.lower() for b in boosts.path_boost)
+    tag_alt_blacklist = tuple(b.lower() for b in boosts.alt_blacklist)
+
+    candidates: list[tuple[int, str, str, str]] = []  # (score, abs_url, alt, surrounding_text)
     keyword_set = {k.strip().lower() for k in (keywords or []) if k and k.strip()}
     all_imgs = soup.find_all("img")
     total = max(len(all_imgs), 1)
@@ -246,60 +336,81 @@ def _extract_html_images(
             if any(tok in cls for tok in ("gallery", "product", "spec", "datasheet", "detail")):
                 score += 2
                 break
-        # alt/title 关键词命中
+        # alt/title 噪音过滤（全局 + tag 专属黑名单两层）
         alt = (img.get("alt") or "").strip()
         title_attr = (img.get("title") or "").strip()
         if _is_noisy_alt(alt) or _is_noisy_alt(title_attr):
             continue
-        meta_text = f"{alt} {title_attr}".lower()
-        if keyword_set and any(k in meta_text for k in keyword_set):
+        alt_lower = f"{alt} {title_attr}".lower()
+        if tag_alt_blacklist and any(b in alt_lower for b in tag_alt_blacklist):
+            continue
+        # 抽周围文字（figcaption + 前后段落首句）
+        surrounding_text = _extract_surrounding_text(img)
+        surrounding_lower = surrounding_text.lower()
+        # 候选关键词命中：alt/title +2；周围文字另算 +2（alt 空时这是主信号）
+        meta_text = f"{alt_lower} {surrounding_lower}"
+        if keyword_set and any(k in alt_lower for k in keyword_set):
+            score += 2
+        if keyword_set and surrounding_lower and any(k in surrounding_lower for k in keyword_set):
+            score += 2
+        # tag 专属 path_boost 词命中（URL 路径 + alt + 周围文字三处任一命中 +2）
+        if tag_path_boost and any(b in lowered_url or b in meta_text for b in tag_path_boost):
             score += 2
         # URL 路径加分：强信号 +3（显式 product/datasheet/spec 路径），普通信号 +2
         if any(boost in lowered_url for boost in _HTML_IMG_PATH_STRONG_BOOSTS):
             score += 3
         elif any(boost in lowered_url for boost in _HTML_IMG_PATH_BOOSTS):
             score += 2
+        # tag 专属 path_strong_boost（显式领域专题路径）+3
+        if tag_path_strong and any(b in lowered_url for b in tag_path_strong):
+            score += 3
         # 在 DOM 前 50% 加分（页面顶部 hero 图概率高）
         if idx < total / 2:
             score += 1
-        candidates.append((score, abs_url, alt or title_attr))
+        candidates.append((score, abs_url, alt or title_attr, surrounding_text))
 
     if not candidates:
         return []
-    # 去重 1：同 URL 保留最高 score
-    seen: dict[str, tuple[int, str]] = {}
-    for score, url_, alt in candidates:
+    # 去重 1：同 URL 保留最高 score（保留对应的 alt 和 surrounding_text）
+    seen: dict[str, tuple[int, str, str]] = {}
+    for score, url_, alt, surrounding_text in candidates:
         prev = seen.get(url_)
         if prev is None or score > prev[0]:
-            seen[url_] = (score, alt)
+            seen[url_] = (score, alt, surrounding_text)
     # 去重 2：同 alt 保留 score 最高的（文章页常 3 张图共享文章标题 alt，但只有
     # 1 张是产品图——同 alt 即近似重复，避免把同主题的多张配图全部抓回来）
-    by_alt: dict[str, tuple[int, str]] = {}  # alt_lower → (score, url)
-    for url_, (score, alt) in seen.items():
+    by_alt: dict[str, tuple[int, str, str]] = {}  # alt_lower → (score, url, surrounding_text)
+    for url_, (score, alt, surrounding_text) in seen.items():
         key = (alt or "").strip().lower()
         if not key:
             # alt 为空时不参与 alt-去重（产品图 alt 常空，按 URL 各算一条）
-            by_alt[f"__noalt__{url_}"] = (score, url_)
+            by_alt[f"__noalt__{url_}"] = (score, url_, surrounding_text)
             continue
         prev = by_alt.get(key)
         if prev is None or score > prev[0]:
-            by_alt[key] = (score, url_)
-    # 反查回 (url, score, alt) 形式
-    deduped: dict[str, tuple[int, str]] = {}
-    for key, (score, url_) in by_alt.items():
+            by_alt[key] = (score, url_, surrounding_text)
+    # 反查回 (url, score, alt, surrounding_text) 形式
+    deduped: dict[str, tuple[int, str, str]] = {}
+    for key, (score, url_, surrounding_text) in by_alt.items():
         alt_value = "" if key.startswith("__noalt__") else key
-        deduped[url_] = (score, alt_value)
+        deduped[url_] = (score, alt_value, surrounding_text)
     ranked = sorted(deduped.items(), key=lambda kv: (-kv[1][0], kv[0]))
     images: list[FetchedImage] = []
     # 多抓几个备选（下载失败/转换失败的会跳过，仍能取到 _HTML_IMG_TOP_K 张）
-    for url_, (score, alt) in ranked[: max(_HTML_IMG_TOP_K * 4, 4)]:
+    for url_, (score, alt, surrounding_text) in ranked[: max(_HTML_IMG_TOP_K * 4, 4)]:
         # score 阈值：见 _HTML_IMG_MIN_SCORE 注释
         if score < _HTML_IMG_MIN_SCORE:
             continue
         png = _download_as_png(url_)
         if png is None:
             continue
-        images.append(FetchedImage(png=png, src_url=page_url, alt=alt, score=score))
+        images.append(FetchedImage(
+            png=png,
+            src_url=page_url,
+            alt=alt,
+            score=score,
+            surrounding_text=surrounding_text,
+        ))
         if len(images) >= _HTML_IMG_TOP_K:
             break
     return images

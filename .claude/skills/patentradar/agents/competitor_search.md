@@ -341,6 +341,7 @@ Tier-1/前装方案商：一数科技 (ASU)、北醒、保隆、敏实
 #### 图片证据引用
 - 引用图证据时 `evidence[].url` 写图片所在**页面 URL**（不要硬编造图片直链）
 - `snippet` 加 `"图示证据：xxx"` 前缀方便人工核查
+- **如果 subagent 模式下你能拿到 `surrounding_text`（图所在 HTML 上下文：figcaption + 前后段落首句拼接，或 PDF 同页文本头部）**：用它做"图-文交叉验证"——`title`/`alt` 经常为空，`surrounding_text` 才告诉你"这张图讲的是什么"。图里 OCR 出的文字应该与 surrounding_text 互证；完全无关时警惕该图为引用配图（非本候选实物），按"SKU 模糊"降级处理。snippet 可以直接复用 surrounding_text 的关键片段
 
 
 #### 停止条件（subagent 内部判）

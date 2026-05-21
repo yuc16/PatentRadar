@@ -38,7 +38,7 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 
 - **🔍 4 模块流水线**　拆解权利要求 → 全网竞品搜索 → 全权扩展对比 → 生成可复核报告，每一步落盘 JSON 可单步重跑
 - **🌐 多搜索源智能路由**　Tavily / Bocha / Exa / Brave 四套 search provider 按 query 类型自动选最优 2-3 个，支持 key 轮换 + 申请人自家域名过滤
-- **🖼 多模态证据**　PDF 关键页 OCR + 产品页 / 拆解文章嵌图 / 电路图自动抓取，LLM 直接读图取尺寸/结构/连接关系
+- **🖼 多模态证据 + 领域感知选图**　PDF 关键页 + 产品页/拆解文章嵌图自动抓取；按当前专利的技术 tag（9 大领域）加载领域关键词做 score 启发式排序，每张图带 `surrounding_text`（figcaption + 前后段落首句）作为图-文交叉验证信号，alt 不可靠时仍能选准关键图
 - **📊 实时 Dashboard**　FastAPI + SSE 后端 + 单页 Web UI，4 个模块进度可视化，每一次 LLM 调用 / 工具调用全程留痕，支持回放与离线 HTML 导出
 - **🧠 双 LLM 后端**　ChatGPT OAuth（Codex Responses SSE，gpt-5.5 默认）或任意 OpenAI 兼容网关（aihubmix / DeepSeek / 自建）一键切换
 - **📄 自动 PDF 渲染**　WeasyPrint + PingFang SC 中文字体 + 表格防溢出 CSS，markdown / PDF 双格式落盘
@@ -471,9 +471,19 @@ BRAVE_API_KEY=...                # 英文新闻 / 评测强项
 | 拆解 / teardown | brave → bocha → tavily | brave → tavily |
 | 上市日期 / 发布新闻 | bocha → brave | brave → tavily |
 
-### 技术领域 + 垂类网站清单
+### 技术领域 + 垂类网站清单 + 图像 boost 词
 
-[`.claude/skills/patentradar/configs/technology_tags.toml`](.claude/skills/patentradar/configs/technology_tags.toml) 维护了 **9 大技术领域**（动力电池 / 电驱系统 / 智能驾驶 / 车身底盘 …）+ 每个领域的推荐垂类站点（如电池领域优先用 `batteryfinds.com`、车型维修手册优先用 `汽修巴巴`）。新增推荐网站只改这个 toml 即可。
+[`configs/technology_tags.toml`](configs/technology_tags.toml)（src 端）和 [`.claude/skills/patentradar/configs/technology_tags.toml`](.claude/skills/patentradar/configs/technology_tags.toml)（skill 端，需保持同步）维护了 **9 大技术领域**（动力电池 / 电驱系统 / 智能驾驶 / 车身底盘 …），每个 tag 含三组配置：
+
+| 字段 | 用途 | 用到的模块 |
+|---|---|---|
+| `recommended_sites` | 该领域推荐的垂类证据站点（如电池领域 `batteryfinds.com`、车型维修手册 `汽修巴巴`） | 模块 2 / 3 搜索 query 拼 `site:host` |
+| `image_boost_keywords` | 该领域的图像 score 启发式加分词（`path_strong_boost +3` / `path_boost +2` / `alt_blacklist` 直接丢） | fetcher 抓 HTML 嵌图时按 tag 加载，决定哪张图进 LLM 视觉通道 |
+| `typical_objects` | 典型保护对象示例 | 模块 1 decompose prompt 帮 LLM 分类 |
+
+**为什么需要 `image_boost_keywords`**：HTML 嵌图的 `<img alt>` 经常为空或写"image1"，单凭路径 keyword 判断会漏掉关键 UI 截图/规格图。按当前专利所属 tag 加载领域词（智驾领域 `parking/apa/avp/cockpit/screen`、电池领域 `cell/pack/datasheet/teardown`），让"路径 / alt / 周围文字命中领域词"的图能拿到 +2~+5 加分，cap 截掉时不会再误伤关键证据图。
+
+**新增推荐网站 / 调整 boost 词只改这个 toml 即可**（两份同步），无需动代码或 prompt。
 
 ---
 

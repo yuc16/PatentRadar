@@ -177,6 +177,7 @@ def _process_one_candidate(
             keywords=_keywords_from_round1(round1),
             pool_url_set=pool_url_set,
             max_pages=8,
+            technology_tag=task_package.technology_tag,
         )
         pool_pages.extend(new_pages)
         pool_images.extend(new_images)
@@ -316,6 +317,7 @@ def _fetch_new_evidence(
     keywords: list[str],
     pool_url_set: set[str],
     max_pages: int,
+    technology_tag: str | None = None,
 ) -> tuple[list[dict[str, str]], list[dict]]:
     pages: list[dict[str, str]] = []
     images: list[dict] = []
@@ -324,7 +326,7 @@ def _fetch_new_evidence(
         if result.url in pool_url_set or result.url in seen_in_call:
             continue
         seen_in_call.add(result.url)
-        evidence = fetch_evidence(result.url, keywords=keywords, max_chars=6000)
+        evidence = fetch_evidence(result.url, keywords=keywords, max_chars=6000, technology_tag=technology_tag)
         if evidence is None:
             continue
         if evidence.text:
@@ -342,6 +344,7 @@ def _fetch_new_evidence(
                     "title": img.alt or evidence.title or result.title,
                     "png": img.png,
                     "score": img.score,
+                    "surrounding_text": img.surrounding_text,
                 }
             )
         if len(pages) >= max_pages:

@@ -83,6 +83,9 @@ def dump_visual_log(
             "size_bytes": len(png_bytes),
             "sha256_prefix": h,
             "score": img.get("score", 0),
+            # surrounding_text = 图所在 HTML 上下文（figcaption + 前后段落首句）
+            # 或 PDF 同页文本头部，最多 300 字符——审计 LLM 看图时实际拿到的文字线索
+            "surrounding_text": (img.get("surrounding_text") or "")[:300],
         })
     (cand_dir / "manifest.json").write_text(
         json.dumps({"candidate_id": candidate_id, "images": manifest}, ensure_ascii=False, indent=2) + "\n",
