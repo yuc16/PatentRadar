@@ -1,0 +1,893 @@
+{
+  "publication_no": "CN106560904B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "Abracon",
+        "company_en": "Abracon",
+        "product_name": "AWCCA-50N50H40-C02-B（H40/C02 6.3uH 版本）",
+        "product_name_en": "AWCCA-50N50H40-C02-B (H40/C02 6.3uH)",
+        "product_intro": "50mm x 50mm 无线充电发射/接收线圈组件，C02 绕组，10 匝，6.3uH。",
+        "market": "中国可采购的无线充电线圈组件市场",
+        "reason_for_deep_dive": "公开系列数据手册同时给出匝数、线材、线圈/磁片尺寸和电感，适合逐项比对权 1。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html"
+        ],
+        "initial_evidence_summary": "H40/C02 对应 50±1mm 磁性屏蔽、44±1.5mm 线圈、10 turns、6.3uH。"
+      },
+      "launch_date": "2019 年 8 月规格书修订",
+      "launch_date_evidence": [
+        {
+          "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+          "title": "AWCCA-50N50 系列数据手册页",
+          "source_name": "elecfans",
+          "snippet": "数据手册页列示 REVISED: 08-2-19。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种感应线圈结构",
+          "competitor_feature": "AWCCA-50N50 是无线充电 Coil Assembly。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+              "title": "AWCCA-50N50 系列数据手册页",
+              "source_name": "elecfans",
+              "snippet": "AWCCA-50N50 系列：50 x 50mm；C02 规格为 1 coil、0.08x105X2P、10 turns、6.3uH；H40 外形 50±1mm、线圈 44±1.5mm。"
+            }
+          ],
+          "reasoning": "①X：感应线圈结构，二值对象。。②Y：无线充电线圈组件，二值对象。。③(a)概念是否等价：是，同为线圈组件；(b)单位/量纲是否等价：是，存在/不存在；(c)参考系是否等价：是，均为线圈结构；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成",
+          "competitor_feature": "C02 绕组为 Number of Coils=1，单线圈绕制。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+              "title": "AWCCA-50N50 系列数据手册页",
+              "source_name": "elecfans",
+              "snippet": "AWCCA-50N50 系列：50 x 50mm；C02 规格为 1 coil、0.08x105X2P、10 turns、6.3uH；H40 外形 50±1mm、线圈 44±1.5mm。"
+            }
+          ],
+          "reasoning": "①X：至少一层、由导线绕成。。②Y：1 coil 的无线充电线圈，线材 0.08x105X2P。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，线圈数量/线材规格；(c)参考系是否等价：是，绕组本体；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "每层所述感应线圈的圈数为3～20",
+          "competitor_feature": "C02 Number of Turns=10，落入 3-20。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+              "title": "AWCCA-50N50 系列数据手册页",
+              "source_name": "elecfans",
+              "snippet": "AWCCA-50N50 系列：50 x 50mm；C02 规格为 1 coil、0.08x105X2P、10 turns、6.3uH；H40 外形 50±1mm、线圈 44±1.5mm。"
+            }
+          ],
+          "reasoning": "①X：每层匝数 3-20，连续数值。。②Y：C02 明示 10 turns，连续数值。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，匝数；(c)参考系是否等价：是，单个绕组；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述感应线圈的最大外径为10～100毫米",
+          "competitor_feature": "最大外径/外形 50mm，50 在 10-100mm 内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+              "title": "AWCCA-50N50 系列数据手册页",
+              "source_name": "elecfans",
+              "snippet": "AWCCA-50N50 系列：50 x 50mm；C02 规格为 1 coil、0.08x105X2P、10 turns、6.3uH；H40 外形 50±1mm、线圈 44±1.5mm。"
+            }
+          ],
+          "reasoning": "①X：最大外径 10-100mm。。②Y：H40 外形 50±1mm、线圈 44±1.5mm，均在范围。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，mm；(c)参考系是否等价：是，线圈/组件外形；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述导线的直径为0.1～5毫米",
+          "competitor_feature": "线材为 0.08x105X2P 多股线；单股 0.08mm 未直接等于完整导线直径，按利兹线束推定大于0.1mm。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+              "title": "AWCCA-50N50 系列数据手册页",
+              "source_name": "elecfans",
+              "snippet": "AWCCA-50N50 系列：50 x 50mm；C02 规格为 1 coil、0.08x105X2P、10 turns、6.3uH；H40 外形 50±1mm、线圈 44±1.5mm。"
+            }
+          ],
+          "reasoning": "①X：导线直径 0.1-5mm，长度量。。②Y：公开为 0.08x105X2P 多股线材规格。。③(a)概念是否等价：是，均为绕组导线规格；(b)单位/量纲是否等价：是，线径/线束尺寸；(c)参考系是否等价：是，绕组导线；(d)是否有反向证据：无；缺完整束径实测。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述感应线圈的自身电感为5～30微亨",
+          "competitor_feature": "自身电感 6.3uH，落入 5-30uH。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+              "title": "AWCCA-50N50 系列数据手册页",
+              "source_name": "elecfans",
+              "snippet": "AWCCA-50N50 系列：50 x 50mm；C02 规格为 1 coil、0.08x105X2P、10 turns、6.3uH；H40 外形 50±1mm、线圈 44±1.5mm。"
+            }
+          ],
+          "reasoning": "①X：自身电感 5-30uH。。②Y：C02 电感 6.3uH±10%。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，uH；(c)参考系是否等价：是，线圈自身；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米",
+          "competitor_feature": "磁性屏蔽 50±1mm，线圈外径 44±1.5mm；最小边距=(49-45.5)/2=1.75mm，大于1mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/ABRACON/AWCCA-50N50H50-C01-B.html",
+              "title": "AWCCA-50N50 系列数据手册页",
+              "source_name": "elecfans",
+              "snippet": "AWCCA-50N50 系列：50 x 50mm；C02 规格为 1 coil、0.08x105X2P、10 turns、6.3uH；H40 外形 50±1mm、线圈 44±1.5mm。"
+            }
+          ],
+          "reasoning": "①X：磁性元件在一侧且边缘距线圈圆周>1mm。。②Y：H40/C02 磁性屏蔽与线圈同轴，最小边距约1.75mm。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，mm；(c)参考系是否等价：是，磁片相对线圈；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 97.14,
+      "searched_queries": [
+        "无线充电线圈 A11 6.3uH 10T 磁片",
+        "wireless charging coil A11 6.3uH turns ferrite",
+        "site:lcsc.com/product-detail/wireless-charging-coils 6.3uH Number of Coils",
+        "site:pdf.elecfans.com 无线充电线圈 6.3uH Turns",
+        "wireless charging coil datasheet number of turns ferrite shield",
+        "A11 wireless power transmitter coils litz wire ferrite shielding",
+        "AWCCA-50N50H40-C02-B 6.3uH turns ferrite",
+        "Abracon AWCCA-50N50H40-C02-B datasheet"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "磁联达",
+        "company_en": "CND-tek / Magnetic Link",
+        "product_name": "YX-A11-R501053-G0807(BEIJIAO)（2019-05-07 A0 背胶版）",
+        "product_name_en": "YX-A11-R501053-G0807(BEIJIAO) (2019-05-07 A0 adhesive version)",
+        "product_intro": "A11 无线发射单线圈模组背胶版，OCL 6.30uH，10T，50mm 级外形。",
+        "market": "中国电子元器件/无线充电线圈市场",
+        "reason_for_deep_dive": "用户指定重点候选；公开规格书给出 A0 日期、型号、匝数、电感、线材和磁片。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.lcsc.com/product-detail/C424430.html",
+          "https://pdf.elecfans.com/p/11113768.html"
+        ],
+        "initial_evidence_summary": "背胶版 A0 规格书：2019-05-07；尺寸 50/43/20/5.5/3/7mm；OCL 6.30uH；10T；0.08mm*105P；磁片 G 50.0*5.3*1.0mm。"
+      },
+      "launch_date": "2019 年 5 月 A0 新制作",
+      "launch_date_evidence": [
+        {
+          "url": "https://pdf.elecfans.com/p/11113768.html",
+          "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+          "source_name": "elecfans",
+          "snippet": "变更履历表：2019-05-07 新制作 A0。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种感应线圈结构",
+          "competitor_feature": "A11 无线发射单线圈模组是无线充电感应线圈结构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lcsc.com/product-detail/C424430.html",
+              "title": "CND-tek YX-A11-R501053-G0807(BEIJIAO)",
+              "source_name": "LCSC",
+              "snippet": "Key Attributes: TX 1 Coil,1 LYR 6.3uH 75mOhm；MPN YX-A11-R501053-G0807(BEIJIAO)。"
+            },
+            {
+              "url": "https://pdf.elecfans.com/p/11113768.html",
+              "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+              "source_name": "elecfans",
+              "snippet": "2019-05-07 新制作 A0；A11 无线发射单线圈模组；OCL 6.30±10%uH；Diameter 0.08mm*105P；Turns Ratio 10T；磁片 G 50.0*5.3*1.0mm。"
+            }
+          ],
+          "reasoning": "①X：感应线圈结构。。②Y：无线充电发射单线圈模组。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，二值对象；(c)参考系是否等价：是，线圈组件；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成",
+          "competitor_feature": "LCSC 写明 TX 1 Coil,1 LYR；规格书为单线圈模组。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lcsc.com/product-detail/C424430.html",
+              "title": "CND-tek YX-A11-R501053-G0807(BEIJIAO)",
+              "source_name": "LCSC",
+              "snippet": "Key Attributes: TX 1 Coil,1 LYR 6.3uH 75mOhm；MPN YX-A11-R501053-G0807(BEIJIAO)。"
+            },
+            {
+              "url": "https://pdf.elecfans.com/p/11113768.html",
+              "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+              "source_name": "elecfans",
+              "snippet": "2019-05-07 新制作 A0；A11 无线发射单线圈模组；OCL 6.30±10%uH；Diameter 0.08mm*105P；Turns Ratio 10T；磁片 G 50.0*5.3*1.0mm。"
+            }
+          ],
+          "reasoning": "①X：至少一层且由一根导线绕制。。②Y：单线圈单层，材料为丝包线/自粘线。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，层/线材规格；(c)参考系是否等价：是，绕组本体；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "每层所述感应线圈的圈数为3～20",
+          "competitor_feature": "Turns Ratio=10T，落入 3-20。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/p/11113768.html",
+              "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+              "source_name": "elecfans",
+              "snippet": "2019-05-07 新制作 A0；A11 无线发射单线圈模组；OCL 6.30±10%uH；Diameter 0.08mm*105P；Turns Ratio 10T；磁片 G 50.0*5.3*1.0mm。"
+            }
+          ],
+          "reasoning": "①X：匝数 3-20。。②Y：10T。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，匝数；(c)参考系是否等价：是，单层绕组；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述感应线圈的最大外径为10～100毫米",
+          "competitor_feature": "尺寸 A=50.00±1.00mm，最大外径不超过约51mm，落入 10-100mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/p/11113768.html",
+              "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+              "source_name": "elecfans",
+              "snippet": "2019-05-07 新制作 A0；A11 无线发射单线圈模组；OCL 6.30±10%uH；Diameter 0.08mm*105P；Turns Ratio 10T；磁片 G 50.0*5.3*1.0mm。"
+            }
+          ],
+          "reasoning": "①X：最大外径 10-100mm。。②Y：A 尺寸 50mm 级。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，mm；(c)参考系是否等价：是，组件/线圈外形；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述导线的直径为0.1～5毫米",
+          "competitor_feature": "Diameter=0.08mm*105P；单股0.08mm低于0.1mm，但多股线束等效外径通常大于0.1mm。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/p/11113768.html",
+              "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+              "source_name": "elecfans",
+              "snippet": "2019-05-07 新制作 A0；A11 无线发射单线圈模组；OCL 6.30±10%uH；Diameter 0.08mm*105P；Turns Ratio 10T；磁片 G 50.0*5.3*1.0mm。"
+            }
+          ],
+          "reasoning": "①X：导线直径0.1-5mm。。②Y：0.08mm*105P多股丝包线规格。。③(a)概念是否等价：是，均为导线规格；(b)单位/量纲是否等价：是，长度尺寸；(c)参考系是否等价：是，绕组导线；(d)是否有反向证据：无；缺线束外径实测。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述感应线圈的自身电感为5～30微亨",
+          "competitor_feature": "OCL=6.30±10%uH，落入 5-30uH。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lcsc.com/product-detail/C424430.html",
+              "title": "CND-tek YX-A11-R501053-G0807(BEIJIAO)",
+              "source_name": "LCSC",
+              "snippet": "Key Attributes: TX 1 Coil,1 LYR 6.3uH 75mOhm；MPN YX-A11-R501053-G0807(BEIJIAO)。"
+            },
+            {
+              "url": "https://pdf.elecfans.com/p/11113768.html",
+              "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+              "source_name": "elecfans",
+              "snippet": "2019-05-07 新制作 A0；A11 无线发射单线圈模组；OCL 6.30±10%uH；Diameter 0.08mm*105P；Turns Ratio 10T；磁片 G 50.0*5.3*1.0mm。"
+            }
+          ],
+          "reasoning": "①X：自身电感5-30uH。。②Y：OCL 6.30±10%uH。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，uH；(c)参考系是否等价：是，线圈自身；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米",
+          "competitor_feature": "BOM 有磁片 G 50.0*5.3*1.0mm；A/B 尺寸 50/43mm 可推出长度边距约(50-43)/2=3.5mm，但宽向边距图示证据不足。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://pdf.elecfans.com/p/11113768.html",
+              "title": "YX-A11-R501053-G0807(BEIJIAO) 数据手册",
+              "source_name": "elecfans",
+              "snippet": "2019-05-07 新制作 A0；A11 无线发射单线圈模组；OCL 6.30±10%uH；Diameter 0.08mm*105P；Turns Ratio 10T；磁片 G 50.0*5.3*1.0mm。"
+            }
+          ],
+          "reasoning": "①X：磁片一侧且各边距>1mm。。②Y：公开有磁片和部分尺寸，长度边距可算，宽向未完整标注。。③(a)概念是否等价：是；(b)单位/量纲是否等价：是，mm；(c)参考系是否等价：是，磁片相对线圈；(d)是否有反向证据：无；缺清晰二维图。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 94.29,
+      "searched_queries": [
+        "无线充电线圈 A11 6.3uH 10T 磁片",
+        "wireless charging coil A11 6.3uH turns ferrite",
+        "site:lcsc.com/product-detail/wireless-charging-coils 6.3uH Number of Coils",
+        "site:pdf.elecfans.com 无线充电线圈 6.3uH Turns",
+        "wireless charging coil datasheet number of turns ferrite shield",
+        "A11 wireless power transmitter coils litz wire ferrite shielding",
+        "YX-A11-R501053-G0807 2019-05-07 A0",
+        "YX-A11-R501053-G0807(BEIJIAO) 磁联达 规格书",
+        "R501053-G0807 Magnetic Link datasheet"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "杰恒线圈/JHCOIL",
+        "company_en": "JHCOIL",
+        "product_name": "JH-H24-T-A11-1（A11 Coil / G50 ferrite 8mm leads）",
+        "product_name_en": "JH-H24-T-A11-1 (A11 Coil / G50 ferrite 8mm leads)",
+        "product_intro": "A11 发射线圈设计，50mm*5mm*1.0mm 铁氧体，标称 6.4uH。",
+        "market": "无线充电线圈 OEM/ODM 市场",
+        "reason_for_deep_dive": "A11 线圈页面直接披露 WPC A11 结构、线径、约 10 匝、电感和磁屏蔽外扩要求。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/"
+        ],
+        "initial_evidence_summary": "页面称 A11 coil 为 wire-wound type，no.17 AWG 1.15mm type 2 litz wire，约10匝，6.3±10%uH；屏蔽外扩至少2mm；SKU JH-H24-T-A11-1。"
+      },
+      "launch_date": "2017 年 1 月页面首次发布",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+          "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+          "source_name": "JHCOIL",
+          "snippet": "页面结构化数据显示 datePublished=2017-01-31。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种感应线圈结构",
+          "competitor_feature": "JH-H24-T-A11-1 是 A11 Qi transmitter coil。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+              "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+              "source_name": "JHCOIL",
+              "snippet": "A11 coil: no.17 AWG 1.15mm type 2 litz wire, about 10 turns, 6.3±10%uH with ferrite shielding；shielding extends at least 2mm beyond primary coil；JH-H24-T-A11-1 ferrite 50mm*5mm*1.0mm, inductance 6.4uH ref。"
+            }
+          ],
+          "reasoning": "①X：权1对应一种感应线圈结构。②Y：JHCOIL 页面公开的 A11/JH-H24-T-A11-1 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成",
+          "competitor_feature": "A11 Primary Coil 为 wire-wound type，JH 产品表列 single layer tx coil。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+              "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+              "source_name": "JHCOIL",
+              "snippet": "A11 coil: no.17 AWG 1.15mm type 2 litz wire, about 10 turns, 6.3±10%uH with ferrite shielding；shielding extends at least 2mm beyond primary coil；JH-H24-T-A11-1 ferrite 50mm*5mm*1.0mm, inductance 6.4uH ref。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成。②Y：JHCOIL 页面公开的 A11/JH-H24-T-A11-1 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "每层所述感应线圈的圈数为3～20",
+          "competitor_feature": "A11 coil 页面写 generally about 10 turns，落入 3-20；但对 JH-H24-T-A11-1 未单独列匝数。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+              "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+              "source_name": "JHCOIL",
+              "snippet": "A11 coil: no.17 AWG 1.15mm type 2 litz wire, about 10 turns, 6.3±10%uH with ferrite shielding；shielding extends at least 2mm beyond primary coil；JH-H24-T-A11-1 ferrite 50mm*5mm*1.0mm, inductance 6.4uH ref。"
+            }
+          ],
+          "reasoning": "①X：权1对应每层所述感应线圈的圈数为3～20。②Y：JHCOIL 页面公开的 A11/JH-H24-T-A11-1 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无；但部分参数为A11通用说明。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述感应线圈的最大外径为10～100毫米",
+          "competitor_feature": "Ferrite size 50mm*5mm*1.0mm 且屏蔽外扩至少2mm，推得线圈最大外径小于50mm，在10-100mm内。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+              "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+              "source_name": "JHCOIL",
+              "snippet": "A11 coil: no.17 AWG 1.15mm type 2 litz wire, about 10 turns, 6.3±10%uH with ferrite shielding；shielding extends at least 2mm beyond primary coil；JH-H24-T-A11-1 ferrite 50mm*5mm*1.0mm, inductance 6.4uH ref。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈的最大外径为10～100毫米。②Y：JHCOIL 页面公开的 A11/JH-H24-T-A11-1 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无；但部分参数为A11通用说明。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述导线的直径为0.1～5毫米",
+          "competitor_feature": "no.17 AWG type 2 litz wire 为 1.15mm diameter，落入0.1-5mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+              "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+              "source_name": "JHCOIL",
+              "snippet": "A11 coil: no.17 AWG 1.15mm type 2 litz wire, about 10 turns, 6.3±10%uH with ferrite shielding；shielding extends at least 2mm beyond primary coil；JH-H24-T-A11-1 ferrite 50mm*5mm*1.0mm, inductance 6.4uH ref。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述导线的直径为0.1～5毫米。②Y：JHCOIL 页面公开的 A11/JH-H24-T-A11-1 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述感应线圈的自身电感为5～30微亨",
+          "competitor_feature": "A11 coil 6.3±10%uH；JH-H24-T-A11-1 标称 6.4uH REF，落入5-30uH。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+              "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+              "source_name": "JHCOIL",
+              "snippet": "A11 coil: no.17 AWG 1.15mm type 2 litz wire, about 10 turns, 6.3±10%uH with ferrite shielding；shielding extends at least 2mm beyond primary coil；JH-H24-T-A11-1 ferrite 50mm*5mm*1.0mm, inductance 6.4uH ref。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈的自身电感为5～30微亨。②Y：JHCOIL 页面公开的 A11/JH-H24-T-A11-1 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米",
+          "competitor_feature": "Ferrite shielding extends at least 2mm beyond outer diameter of primary coil，满足>1mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.jhcoils.com/wireless-transmission-coil/a11-wireless-power-transmitter-coils/",
+              "title": "A11 Qi Transmitter Coil Supplier - JHCOIL",
+              "source_name": "JHCOIL",
+              "snippet": "A11 coil: no.17 AWG 1.15mm type 2 litz wire, about 10 turns, 6.3±10%uH with ferrite shielding；shielding extends at least 2mm beyond primary coil；JH-H24-T-A11-1 ferrite 50mm*5mm*1.0mm, inductance 6.4uH ref。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米。②Y：JHCOIL 页面公开的 A11/JH-H24-T-A11-1 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 94.29,
+      "searched_queries": [
+        "无线充电线圈 A11 6.3uH 10T 磁片",
+        "wireless charging coil A11 6.3uH turns ferrite",
+        "site:lcsc.com/product-detail/wireless-charging-coils 6.3uH Number of Coils",
+        "site:pdf.elecfans.com 无线充电线圈 6.3uH Turns",
+        "wireless charging coil datasheet number of turns ferrite shield",
+        "A11 wireless power transmitter coils litz wire ferrite shielding",
+        "JH-H24-T-A11-1 A11 coil ferrite 6.4uH",
+        "JHCOIL A11 coil litz wire 10 turns ferrite shielding"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "深圳富昌维/Forewell",
+        "company_en": "Forewell",
+        "product_name": "FW-W-025（A11 QI 发射线圈）",
+        "product_name_en": "FW-W-025 (A11 Qi transmitter coil)",
+        "product_intro": "A11 QI 发射线圈，6.3uH，10TS，0.08*105 利兹线，50mm 级铁氧体。",
+        "market": "无线充电线圈 OEM/ODM 市场",
+        "reason_for_deep_dive": "公开产品页给出型号、匝数、电感、线材和铁氧体尺寸。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html"
+        ],
+        "initial_evidence_summary": "FW-W-025：Inductance 6.3uH 5%，Turns 10TS，wire 0.08*105，Ferrite size Phi50*5.3*1.0。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种感应线圈结构",
+          "competitor_feature": "FW-W-025 是 wireless charging coil A11。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html",
+              "title": "Forewell FW-W-025 A11 wireless charging coil",
+              "source_name": "EveryChina",
+              "snippet": "Forewell FW-W-025：Inductance 6.3uH 5%；Turns 10TS；wire specification 0.08*105；ferrite size Phi50*5.3*1.0。"
+            }
+          ],
+          "reasoning": "①X：权1对应一种感应线圈结构。②Y：FW-W-025 产品页参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成",
+          "competitor_feature": "产品为 A11 QI winding copper litz wire ferrite 发射线圈。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html",
+              "title": "Forewell FW-W-025 A11 wireless charging coil",
+              "source_name": "EveryChina",
+              "snippet": "Forewell FW-W-025：Inductance 6.3uH 5%；Turns 10TS；wire specification 0.08*105；ferrite size Phi50*5.3*1.0。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成。②Y：FW-W-025 产品页参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "每层所述感应线圈的圈数为3～20",
+          "competitor_feature": "Turns=10TS，落入3-20。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html",
+              "title": "Forewell FW-W-025 A11 wireless charging coil",
+              "source_name": "EveryChina",
+              "snippet": "Forewell FW-W-025：Inductance 6.3uH 5%；Turns 10TS；wire specification 0.08*105；ferrite size Phi50*5.3*1.0。"
+            }
+          ],
+          "reasoning": "①X：权1对应每层所述感应线圈的圈数为3～20。②Y：FW-W-025 产品页参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述感应线圈的最大外径为10～100毫米",
+          "competitor_feature": "铁氧体 Phi50mm，A11 线圈外径通常小于等于该尺寸，落入10-100mm；未给线圈外径图。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html",
+              "title": "Forewell FW-W-025 A11 wireless charging coil",
+              "source_name": "EveryChina",
+              "snippet": "Forewell FW-W-025：Inductance 6.3uH 5%；Turns 10TS；wire specification 0.08*105；ferrite size Phi50*5.3*1.0。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈的最大外径为10～100毫米。②Y：FW-W-025 产品页参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无；缺完整机械图。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述导线的直径为0.1～5毫米",
+          "competitor_feature": "Wire Specification 0.08*105；多股线束等效外径可大于0.1mm，但缺束径实测。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html",
+              "title": "Forewell FW-W-025 A11 wireless charging coil",
+              "source_name": "EveryChina",
+              "snippet": "Forewell FW-W-025：Inductance 6.3uH 5%；Turns 10TS；wire specification 0.08*105；ferrite size Phi50*5.3*1.0。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述导线的直径为0.1～5毫米。②Y：FW-W-025 产品页参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无；缺完整机械图。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述感应线圈的自身电感为5～30微亨",
+          "competitor_feature": "Inductance 6.3uH 5%，落入5-30uH。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html",
+              "title": "Forewell FW-W-025 A11 wireless charging coil",
+              "source_name": "EveryChina",
+              "snippet": "Forewell FW-W-025：Inductance 6.3uH 5%；Turns 10TS；wire specification 0.08*105；ferrite size Phi50*5.3*1.0。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈的自身电感为5～30微亨。②Y：FW-W-025 产品页参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米",
+          "competitor_feature": "Ferrite size Phi50*5.3*1.0，且产品为带 ferrite 的 A11 线圈；未公开磁片相对线圈全边距。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://inductorscoil.sell.everychina.com/p-112670659-odm-wireless-charging-transmitter-coil-a11-qi-winding-copper-lize-wire-ferrite.html",
+              "title": "Forewell FW-W-025 A11 wireless charging coil",
+              "source_name": "EveryChina",
+              "snippet": "Forewell FW-W-025：Inductance 6.3uH 5%；Turns 10TS；wire specification 0.08*105；ferrite size Phi50*5.3*1.0。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米。②Y：FW-W-025 产品页参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无；缺完整机械图。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 91.43,
+      "searched_queries": [
+        "无线充电线圈 A11 6.3uH 10T 磁片",
+        "wireless charging coil A11 6.3uH turns ferrite",
+        "site:lcsc.com/product-detail/wireless-charging-coils 6.3uH Number of Coils",
+        "site:pdf.elecfans.com 无线充电线圈 6.3uH Turns",
+        "wireless charging coil datasheet number of turns ferrite shield",
+        "A11 wireless power transmitter coils litz wire ferrite shielding",
+        "Forewell FW-W-025 A11 wireless charging coil 10TS 6.3uH",
+        "深圳富昌维 FW-W-025 无线充电线圈"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "Vishay",
+        "company_en": "Vishay",
+        "product_name": "IWTX5050DZEB6R3KF1（50mm Qi A11 发射线圈）",
+        "product_name_en": "IWTX5050DZEB6R3KF1 (50mm Qi A11 transmitter coil)",
+        "product_intro": "Vishay 50mm 无线充电发射线圈/屏蔽件，6.3uH，Qi A11 design。",
+        "market": "中国可采购的国际品牌无线充电线圈市场",
+        "reason_for_deep_dive": "官方数据手册给出电感、线圈/铁氧体尺寸和磁性屏蔽边距。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+          "https://www.lcsc.com/product-detail/C3606567.html"
+        ],
+        "initial_evidence_summary": "官方 PDF：6.3uH，Qi A11 design；Ferrite 50.0±0.6mm，Coil OD 44.0±1.5mm；LCSC 有同型号销售页。"
+      },
+      "launch_date": "2020 年 1 月规格书修订",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+          "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+          "source_name": "Vishay",
+          "snippet": "数据手册 Revision: 27-Jan-2020。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种感应线圈结构",
+          "competitor_feature": "IWTX5050DZEB6R3KF1 是无线充电发射线圈/屏蔽件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+              "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+              "source_name": "Vishay",
+              "snippet": "Wireless Charging Transmitter Coil / Shield；6.3uH at 100kHz；DCR 25mOhm max；coil/ferrite dimensions show ferrite 50.0±0.6mm and coil OD 44.0±1.5mm；Revision 27-Jan-2020。"
+            },
+            {
+              "url": "https://www.lcsc.com/product-detail/C3606567.html",
+              "title": "Vishay IWTX5050DZEB6R3KF1",
+              "source_name": "LCSC",
+              "snippet": "Transmitter 6.3uH wireless charging coil; LCSC product page verified HTTP 200。"
+            }
+          ],
+          "reasoning": "①X：权1对应一种感应线圈结构。②Y：Vishay 官方 PDF/LCSC 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成",
+          "competitor_feature": "LCSC/数据手册标识为 1 Coil,1 Layer 发射线圈。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+              "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+              "source_name": "Vishay",
+              "snippet": "Wireless Charging Transmitter Coil / Shield；6.3uH at 100kHz；DCR 25mOhm max；coil/ferrite dimensions show ferrite 50.0±0.6mm and coil OD 44.0±1.5mm；Revision 27-Jan-2020。"
+            },
+            {
+              "url": "https://www.lcsc.com/product-detail/C3606567.html",
+              "title": "Vishay IWTX5050DZEB6R3KF1",
+              "source_name": "LCSC",
+              "snippet": "Transmitter 6.3uH wireless charging coil; LCSC product page verified HTTP 200。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈结构包括至少一层感应线圈，所述至少一层感应线圈经一根导线绕制而成。②Y：Vishay 官方 PDF/LCSC 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "每层所述感应线圈的圈数为3～20",
+          "competitor_feature": "已核验数据手册和分销页，未公开匝数。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+              "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+              "source_name": "Vishay",
+              "snippet": "Wireless Charging Transmitter Coil / Shield；6.3uH at 100kHz；DCR 25mOhm max；coil/ferrite dimensions show ferrite 50.0±0.6mm and coil OD 44.0±1.5mm；Revision 27-Jan-2020。"
+            }
+          ],
+          "reasoning": "①X：权1对应每层所述感应线圈的圈数为3～20。②Y：Vishay 官方 PDF/LCSC 参数。③(a)概念是否等价：否，缺公开值；(b)单位/量纲是否等价：否；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述感应线圈的最大外径为10～100毫米",
+          "competitor_feature": "Ferrite 50.0±0.6mm、Coil OD 44.0±1.5mm，最大尺寸在10-100mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+              "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+              "source_name": "Vishay",
+              "snippet": "Wireless Charging Transmitter Coil / Shield；6.3uH at 100kHz；DCR 25mOhm max；coil/ferrite dimensions show ferrite 50.0±0.6mm and coil OD 44.0±1.5mm；Revision 27-Jan-2020。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈的最大外径为10～100毫米。②Y：Vishay 官方 PDF/LCSC 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述导线的直径为0.1～5毫米",
+          "competitor_feature": "公开资料未给导线直径或利兹线规格。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+              "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+              "source_name": "Vishay",
+              "snippet": "Wireless Charging Transmitter Coil / Shield；6.3uH at 100kHz；DCR 25mOhm max；coil/ferrite dimensions show ferrite 50.0±0.6mm and coil OD 44.0±1.5mm；Revision 27-Jan-2020。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述导线的直径为0.1～5毫米。②Y：Vishay 官方 PDF/LCSC 参数。③(a)概念是否等价：否，缺公开值；(b)单位/量纲是否等价：否；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述感应线圈的自身电感为5～30微亨",
+          "competitor_feature": "L0 inductance 6.3uH at 100kHz，落入5-30uH。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+              "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+              "source_name": "Vishay",
+              "snippet": "Wireless Charging Transmitter Coil / Shield；6.3uH at 100kHz；DCR 25mOhm max；coil/ferrite dimensions show ferrite 50.0±0.6mm and coil OD 44.0±1.5mm；Revision 27-Jan-2020。"
+            },
+            {
+              "url": "https://www.lcsc.com/product-detail/C3606567.html",
+              "title": "Vishay IWTX5050DZEB6R3KF1",
+              "source_name": "LCSC",
+              "snippet": "Transmitter 6.3uH wireless charging coil; LCSC product page verified HTTP 200。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈的自身电感为5～30微亨。②Y：Vishay 官方 PDF/LCSC 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米",
+          "competitor_feature": "Ferrite 50.0±0.6mm，Coil OD 44.0±1.5mm；最小边距=(49.4-45.5)/2=1.95mm，大于1mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vishay.com/docs/34485/iwtx5050dzeb6r3kf1.pdf",
+              "title": "Vishay IWTX5050DZEB6R3KF1 datasheet",
+              "source_name": "Vishay",
+              "snippet": "Wireless Charging Transmitter Coil / Shield；6.3uH at 100kHz；DCR 25mOhm max；coil/ferrite dimensions show ferrite 50.0±0.6mm and coil OD 44.0±1.5mm；Revision 27-Jan-2020。"
+            }
+          ],
+          "reasoning": "①X：权1对应所述感应线圈结构包括置于所述感应线圈一侧的磁性元件，所述感应线圈在垂直于所述磁性元件方向上的投影位于所述磁性元件内，所述磁性元件的各边缘距离所述感应线圈的圆周大于1毫米。②Y：Vishay 官方 PDF/LCSC 参数。③(a)概念是否等价：是；(b)单位/量纲是否等价：是；(c)参考系是否等价：是；(d)是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 80.0,
+      "searched_queries": [
+        "无线充电线圈 A11 6.3uH 10T 磁片",
+        "wireless charging coil A11 6.3uH turns ferrite",
+        "site:lcsc.com/product-detail/wireless-charging-coils 6.3uH Number of Coils",
+        "site:pdf.elecfans.com 无线充电线圈 6.3uH Turns",
+        "wireless charging coil datasheet number of turns ferrite shield",
+        "A11 wireless power transmitter coils litz wire ferrite shielding",
+        "IWTX5050DZEB6R3KF1 datasheet turns ferrite",
+        "Vishay IWTX5050DZEB6R3KF1 LCSC"
+      ],
+      "searched_providers": [
+        "web_search",
+        "curl_fetch"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}
