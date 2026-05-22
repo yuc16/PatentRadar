@@ -1,0 +1,15 @@
+services:
+  patentradar:
+    build: .
+    image: patentradar:latest
+    container_name: patentradar
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./configs:/app/configs
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./patentradar_output:/app/patentradar_output
+    restart: unless-stopped

@@ -14,6 +14,11 @@ from __future__ import annotations
 import os
 from typing import Any, Protocol
 
+# Importing constants triggers load_dotenv() at module import time, so any
+# caller that reaches provider.py without going through cli/server entry
+# points still sees PATENTRADAR_* env vars before _build() reads them.
+from patentradar.core import constants as _constants  # noqa: F401
+
 
 class LLMProvider(Protocol):
     name: str

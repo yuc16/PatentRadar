@@ -1,0 +1,29 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+.pytest_cache
+.ruff_cache
+.mypy_cache
+
+# runtime artifacts — should be volume-mounted, not baked in
+data
+logs
+patentradar_output
+
+# local secrets
+.env
+.env.*
+!.env.example
+
+# editor / OS
+.vscode
+.idea
+.DS_Store
+
+# docs that don't need to be in image
+*.md
+!README.md

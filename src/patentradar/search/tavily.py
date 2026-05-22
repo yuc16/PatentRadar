@@ -4,9 +4,7 @@ from __future__ import annotations
 
 import logging
 import os
-import re
 import threading
-from pathlib import Path
 
 import httpx
 
@@ -25,33 +23,15 @@ _QUOTA_STATUSES = (401, 403, 429, 432)
 
 
 def _load_tavily_key_pool() -> list[str]:
-    """Read all Tavily keys from `.env`: the primary `TAVILY_API_KEY=...`
-    plus extra naked `tvly-...` lines that follow it. Multiple keys let
-    us rotate when one key hits its monthly quota."""
-    keys: list[str] = []
-    env_path = Path(".env")
-    if env_path.exists():
-        in_block = False
-        for raw in env_path.read_text(encoding="utf-8").splitlines():
-            line = raw.strip().rstrip(",")
-            if line.startswith("TAVILY_API_KEY="):
-                first = line.split("=", 1)[1].strip().rstrip(",")
-                if first:
-                    keys.append(first)
-                in_block = True
-                continue
-            if in_block:
-                if not line or line.startswith("#"):
-                    continue
-                if re.match(r"^[A-Z_][A-Z0-9_]*=", line):
-                    break
-                if line.startswith("tvly-"):
-                    keys.append(line)
-    # Fallback: if .env doesn't exist or no TAVILY block, use env var
-    if not keys:
-        primary = os.getenv("TAVILY_API_KEY", "").strip().rstrip(",")
-        if primary:
-            keys.append(primary)
+    """Read Tavily keys from env. Multiple keys let us rotate when one
+    key hits its monthly quota.
+
+    Format: comma-separated values in either ``TAVILY_API_KEYS`` (preferred)
+    or ``TAVILY_API_KEY`` (backwards-compatible; also accepts a single key).
+    """
+    raw = os.getenv("TAVILY_API_KEYS") or os.getenv("TAVILY_API_KEY") or ""
+    keys = [part.strip() for part in raw.split(",")]
+    keys = [k for k in keys if k]
     return list(dict.fromkeys(keys))
 
 

@@ -63,7 +63,7 @@ graph TB
 
     subgraph L2["②  调度层 · Orchestration"]
         direction LR
-        ORCH["⚙️  Pipeline Orchestrator<br/><code>scripts/run_full_pipeline.py</code><br/>· 4 模块串行调度 · 失败重试 · 产物落盘"]
+        ORCH["⚙️  Pipeline Orchestrator<br/><code>server/runner.py</code><br/>4 模块按序 subprocess 调度 · 失败重试 · 产物落盘"]
         VAL["✅  Schema Validator<br/><code>schemas/validate.py</code><br/>每模块跑完自动校验 → 失败回填 LLM 重交（最多 2 次）"]
         STREAM["📡  LLM Stream Writer<br/><code>llm/stream.py</code><br/>所有 LLM payload / response → <code>logs/&lt;PUB&gt;/module_N/</code>"]
     end
@@ -318,13 +318,58 @@ uv sync                          # 装全部依赖
 cp .env.example .env             # 填入 API keys 和 backend 选择
 ```
 
-### 模式 1：独立项目（CLI / Web）
+### Docker 部署（推荐分发方式）
 
-#### 方式 A — 一行命令跑完整 pipeline
+**不需要装 uv、不需要装 Python 3.14、不需要装 weasyprint 系统库**，只要有 Docker 即可。
+
+前置：填好 `.env`（API keys 和 backend 选择，跟本地安装一致）。
 
 ```bash
-uv run python scripts/run_full_pipeline.py CN110293961B \
-    --out-dir data/output/CN110293961B
+docker compose up -d --build         # 首次构建并后台启动
+open http://localhost:8000           # 浏览器打开 dashboard 即可使用
+docker compose logs -f               # 跟随日志
+docker compose down                  # 关停
+```
+
+只改了 `.env` 不需要 `--build`，`docker compose down && docker compose up -d` 让进程重新 load 即可。改了 `src/`、`Dockerfile`、`pyproject.toml` 才需要 `--build`。
+
+容器内 `/app/data`、`/app/logs`、`/app/configs`、`/app/patentradar_output` 通过 volume 挂到宿主机同名目录，产物落盘后宿主机能直接看到。
+
+**LLM 后端注意**：Docker 容器里**无法用 ChatGPT OAuth（Codex 后端）**（依赖宿主机 `~/.codex/auth.json`），必须用 `PATENTRADAR_LLM_BACKEND=openai` + OpenAI 兼容 API key（aihubmix / DeepSeek / 自建网关均可）。
+
+### 模式 1：独立项目（Web / CLI）
+
+#### 方式 A — Web Dashboard（**推荐**，可视化 + 完整日志）
+
+```bash
+uv run uvicorn patentradar.server.app:app --reload --port 8000
+```
+
+浏览器打开 `http://localhost:8000`：
+
+- 输入专利公开号，点「开始分析」即可端到端跑完 4 模块
+- 4 个模块进度、每一次 LLM 调用 / 搜索调用 / 网页 fetch 实时显示
+- 跑完后可回放（1x / 20x / 100x / 600x 倍速），支持导出离线 HTML 分享给同事
+- 完整结构化日志写入 `logs/<PUB>/`（`run.jsonl` + `module_N.log` + `module_N.stream.jsonl`），CLI 模式没有这套
+
+等价的 HTTP 触发方式（适合脚本化 / CI）：
+
+```bash
+curl -X POST http://localhost:8000/api/run/CN110293961B
+curl -N    http://localhost:8000/api/stream/CN110293961B   # SSE 实时事件
+```
+
+#### 方式 B — 分步 CLI（调试 / 重跑某一步）
+
+直接调每个模块的 CLI，**没有 `logs/<PUB>/` 结构化日志**（那是 server 写的），但所有业务产物（`task_package.json` / `report.md` ...）都会正常落到 `data/output/<PUB>/`：
+
+```bash
+uv run patentradar decompose CN110293961B
+uv run patentradar competitor-search data/output/CN110293961B/task_package.json
+uv run patentradar full-claim-chart  data/output/CN110293961B/task_package.json \
+                                     data/output/CN110293961B/step5_top5_claim1_candidates.json
+uv run patentradar report            data/output/CN110293961B/task_package.json \
+                                     data/output/CN110293961B/top5_full_claim_chart.json
 ```
 
 跑完后产物在 `data/output/CN110293961B/`：
@@ -340,28 +385,7 @@ uv run python scripts/run_full_pipeline.py CN110293961B \
 └── report.pdf                       #         最终报告（PDF）
 ```
 
-#### 方式 B — 分步跑（调试 / 重跑某一步）
-
-```bash
-uv run patentradar decompose CN110293961B
-uv run patentradar competitor-search data/output/CN110293961B/task_package.json
-uv run patentradar full-claim-chart  data/output/CN110293961B/task_package.json \
-                                     data/output/CN110293961B/step5_top5_claim1_candidates.json
-uv run patentradar report            data/output/CN110293961B/task_package.json \
-                                     data/output/CN110293961B/top5_full_claim_chart.json
-```
-
-#### 方式 C — 启动 Web Dashboard
-
-```bash
-uv run uvicorn patentradar.server.app:app --reload --port 8000
-```
-
-浏览器打开 `http://localhost:8000`：
-
-- 输入专利公开号，点「开始分析」
-- 4 个模块进度、每一次 LLM 调用 / 搜索调用 / 网页 fetch 实时显示
-- 跑完后可回放（1x / 20x / 100x / 600x 倍速），支持导出离线 HTML 分享给同事
+> `scripts/run_full_pipeline.py` 是模块 2-4 的**测试 wrapper**（固定从 `tests/decompose/outputs/<PUB>/` 读模块一 fixture），仅供开发期调试，不适合跑生产专利。
 
 ### 模式 2：跨 agent skill（嵌入 Claude Code / Codex CLI）
 
@@ -445,19 +469,20 @@ PATENTRADAR_REASONING_EFFORT=high
 
 # 选项 2：任意 OpenAI 兼容网关
 PATENTRADAR_LLM_BACKEND=openai
-PATENTRADAR_MODEL=deepseek-chat
-PATENTRADAR_OPENAI_BASE_URL=https://api.deepseek.com/v1
+PATENTRADAR_MODEL=deepseek-v4-pro
+PATENTRADAR_OPENAI_BASE_URL=https://aihubmix.com/v1
 PATENTRADAR_OPENAI_API_KEY=sk-xxxxxx
-PATENTRADAR_CONTEXT_LENGTH=128000
+PATENTRADAR_CONTEXT_LENGTH=1000000
 PATENTRADAR_OPENAI_VISION=false       # 模型不支持图像时设 false
 ```
 
 ### 搜索 Provider
 
-至少连接一个，连越多召回越广。**Tavily 支持多 key 轮换**（逗号分隔）：
+至少连接一个，连越多召回越广。**Tavily 支持多 key 轮换**（`TAVILY_API_KEYS`，单行、逗号分隔）：
 
 ```bash
-TAVILY_API_KEY=key1,key2,key3
+TAVILY_API_KEYS=tvly-key1,tvly-key2,tvly-key3   # 多 key 池，自动轮换
+# 或单 key 写法（向后兼容）：TAVILY_API_KEY=tvly-key1
 BOCHA_API_KEY=...                # 中文搜索强项
 EXA_API_KEY=...                  # 英文 neural 搜索强项
 BRAVE_API_KEY=...                # 英文新闻 / 评测强项
