@@ -302,44 +302,61 @@ PatentRadar/
 
 ### 前置依赖
 
-- Python ≥ 3.14
-- [uv](https://github.com/astral-sh/uv)（推荐的 Python 包管理器）
+- 选好下面**部署方式 A 或 B** 之一（决定要装什么）
 - 至少一个搜索 API key（Tavily / Bocha / Exa / Brave 任一即可，越多越好）
 - LLM 后端二选一：
-  - **Codex**（推荐，免费 ChatGPT 订阅可用）：先跑 `codex login` 完成 OAuth
-  - **OpenAI 兼容**：aihubmix / DeepSeek / 自建网关等
+  - **OpenAI 兼容**（aihubmix / DeepSeek / 自建网关）—— Docker 和本地都支持
+  - **Codex**（免费 ChatGPT 订阅可用，需 `codex login` 完成 OAuth）—— **仅本地 uv 路径可用**（容器里读不到宿主机 `~/.codex/auth.json`）
 
-### 安装
+---
+
+### 部署：二选一
+
+#### 方式 A · Docker（推荐分发，零额外依赖）
+
+宿主机只要装 Docker，不需要 Python / uv / weasyprint 系统库。
 
 ```bash
 git clone https://github.com/<your-org>/PatentRadar.git
 cd PatentRadar
-uv sync                          # 装全部依赖
-cp .env.example .env             # 填入 API keys 和 backend 选择
-```
-
-### Docker 部署（推荐分发方式）
-
-**不需要装 uv、不需要装 Python 3.14、不需要装 weasyprint 系统库**，只要有 Docker 即可。
-
-前置：填好 `.env`（API keys 和 backend 选择，跟本地安装一致）。
-
-```bash
+cp .env.example .env                 # 填入 API keys（容器里必须用 openai 兼容后端）
 docker compose up -d --build         # 首次构建并后台启动
 open http://localhost:8000           # 浏览器打开 dashboard 即可使用
-docker compose logs -f               # 跟随日志
-docker compose down                  # 关停
 ```
 
-只改了 `.env` 不需要 `--build`，`docker compose down && docker compose up -d` 让进程重新 load 即可。改了 `src/`、`Dockerfile`、`pyproject.toml` 才需要 `--build`。
+常用维护命令：
+
+```bash
+docker compose logs -f                                  # 跟随日志
+docker compose down                                     # 关停
+docker compose down && docker compose up -d            # 改了 .env 后重启
+docker compose down && docker compose up -d --build    # 改了 src/Dockerfile/pyproject 后重建
+```
 
 容器内 `/app/data`、`/app/logs`、`/app/configs`、`/app/patentradar_output` 通过 volume 挂到宿主机同名目录，产物落盘后宿主机能直接看到。
 
-**LLM 后端注意**：Docker 容器里**无法用 ChatGPT OAuth（Codex 后端）**（依赖宿主机 `~/.codex/auth.json`），必须用 `PATENTRADAR_LLM_BACKEND=openai` + OpenAI 兼容 API key（aihubmix / DeepSeek / 自建网关均可）。
+#### 方式 B · 本地 uv（开发用，可选 Codex 后端）
 
-### 模式 1：独立项目（Web / CLI）
+```bash
+git clone https://github.com/<your-org>/PatentRadar.git
+cd PatentRadar
+uv sync                              # 装全部依赖（需要 Python ≥ 3.14 + [uv](https://github.com/astral-sh/uv)）
+cp .env.example .env                 # 填入 API keys 和 backend 选择
+```
 
-#### 方式 A — Web Dashboard（**推荐**，可视化 + 完整日志）
+> 若选 Codex 后端：到宿主机跑 `codex login` 完成 OAuth；选 OpenAI 兼容后端：直接填 `.env`。
+
+---
+
+### 使用：跑一篇专利
+
+> 命令前缀按你的部署方式替换，命令体和产物路径完全一致：
+> - **Docker**：`docker compose exec patentradar <命令>`
+> - **本地 uv**：`uv run <命令>`
+
+#### Web Dashboard（**推荐**，可视化 + 完整日志）
+
+Docker 方式 A 启动后即可访问；本地 uv 需要手动起 server：
 
 ```bash
 uv run uvicorn patentradar.server.app:app --reload --port 8000
@@ -350,18 +367,21 @@ uv run uvicorn patentradar.server.app:app --reload --port 8000
 - 输入专利公开号，点「开始分析」即可端到端跑完 4 模块
 - 4 个模块进度、每一次 LLM 调用 / 搜索调用 / 网页 fetch 实时显示
 - 跑完后可回放（1x / 20x / 100x / 600x 倍速），支持导出离线 HTML 分享给同事
-- 完整结构化日志写入 `logs/<PUB>/`（`run.jsonl` + `module_N.log` + `module_N.stream.jsonl`），CLI 模式没有这套
+- 完整结构化日志写入 `logs/<PUB>/`：`run.jsonl` + `module_N.log` + `module_N.stream.jsonl`
 
-等价的 HTTP 触发方式（适合脚本化 / CI）：
+#### HTTP API（脚本化 / CI 集成）
+
+与 Web Dashboard 同源同接口，适合无人值守：
 
 ```bash
 curl -X POST http://localhost:8000/api/run/CN110293961B
 curl -N    http://localhost:8000/api/stream/CN110293961B   # SSE 实时事件
+curl       http://localhost:8000/api/status/CN110293961B   # JSON 快照
 ```
 
-#### 方式 B — 分步 CLI（调试 / 重跑某一步）
+#### 分步 CLI（调试 / 重跑某一步）
 
-直接调每个模块的 CLI，**没有 `logs/<PUB>/` 结构化日志**（那是 server 写的），但所有业务产物（`task_package.json` / `report.md` ...）都会正常落到 `data/output/<PUB>/`：
+直接调每个模块的 CLI，业务产物正常落到 `data/output/<PUB>/`，但**没有 `logs/<PUB>/` 结构化日志**（那是 server 模式专属）：
 
 ```bash
 uv run patentradar decompose CN110293961B
@@ -372,9 +392,10 @@ uv run patentradar report            data/output/CN110293961B/task_package.json 
                                      data/output/CN110293961B/top5_full_claim_chart.json
 ```
 
-跑完后产物在 `data/output/CN110293961B/`：
+产物落盘位置（**三种使用方式一致**）：
 
 ```
+data/output/CN110293961B/
 ├── task_package.json                # 模块 1：权利要求拆解
 ├── step2_search_results.json        # 模块 2：搜索原始结果
 ├── step3_candidate_shortlist.json
@@ -387,7 +408,9 @@ uv run patentradar report            data/output/CN110293961B/task_package.json 
 
 > `scripts/run_full_pipeline.py` 是模块 2-4 的**测试 wrapper**（固定从 `tests/decompose/outputs/<PUB>/` 读模块一 fixture），仅供开发期调试，不适合跑生产专利。
 
-### 模式 2：跨 agent skill（嵌入 Claude Code / Codex CLI）
+---
+
+### 另一种用法：作为 Claude Code / Codex CLI skill 嵌入
 
 把 `.claude/skills/patentradar/` 目录放到你的 [Claude Code](https://docs.claude.com/claude-code) skill 路径下（或软链）。
 
@@ -399,11 +422,11 @@ uv run patentradar report            data/output/CN110293961B/task_package.json 
 
 skill 会自动触发，按顺序 spawn 4 个独立 subagent，每个 subagent 跑完用 JSON Schema 自动校验产物（失败时把错误清单透传给该 subagent 让它修正后重交，最多重试 2 次），4 个模块全跑完后告诉你 `report.md` / `report.pdf` 落盘位置。
 
-**与模式 1 的差异**：
+**与独立部署（Docker / 本地 uv）的差异**：
 
-| 维度 | 模式 1（src 直跑）| 模式 2（skill）|
+| 维度 | 独立部署 | skill 嵌入 |
 |---|---|---|
-| 调度 | Python pipeline.py 串联 | 主 agent spawn 4 个 subagent |
+| 调度 | `server/runner.py` 串 4 个 CLI subprocess | 主 agent spawn 4 个 subagent |
 | LLM 调用 | 项目内的 `llm/provider.py` 统一发包 | 由宿主 agent（Claude Code / Codex）的对话能力直接调用 |
 | 搜索 / 抓页 | 项目内的 `search/` + `fetcher/` 模块 | 由宿主 agent 的 WebSearch / WebFetch 工具直接调用 |
 | 可观测 | Web Dashboard + 4 个 module log 文件 | 宿主 agent 的对话窗口 + 落盘 JSON |
