@@ -1,0 +1,481 @@
+{
+  "publication_no": "CN102458060B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "决色",
+        "company_en": "DEFENSE",
+        "product_name": "决色 iClear 小冰砖透明防摔壳（iPhone 12 Pro Max / 晶透极光图案款）",
+        "product_name_en": "DEFENSE iClear transparent anti-drop case (iPhone 12 Pro Max / Crystal Aurora graphic colorway)",
+        "product_intro": "面向 iPhone 12 Pro Max 的透明防摔手机壳，晶透极光图案款；公开评测称其采用高透 2H 防刮背板，并将油墨注塑在壳体内部。",
+        "market": "中国手机保护壳零售市场",
+        "reason_for_deep_dive": "用户重点关注产品；同时具备透明背板、渐变/极光图案、内部注塑油墨和防摔壳体等与权利要求 1 高相关的公开描述。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://zhongce.sina.com.cn/article/view/93312/",
+          "https://best.pconline.com.cn/yuanchuang/10627923.html",
+          "https://www.jd.com/phb/key_998740ecf4f40a0aa311.html"
+        ],
+        "initial_evidence_summary": "新浪众测明确锁定 iPhone 12 Pro Max 晶透极光配色，并披露双面立体图案、油墨注塑在壳体内部、高透防刮背板；聚超值称 i-clear 系列有晶透极光限量版、2H 高清全透明 PC 背板、侧边合金边框+软胶气囊。"
+      },
+      "launch_date": "2021 年 6 月前已在售/评测",
+      "launch_date_evidence": [
+        {
+          "url": "https://zhongce.sina.com.cn/article/view/93312/",
+          "title": "兼顾美感与实用：决色小冰砖透明防摔壳上手",
+          "source_name": "新浪众测",
+          "snippet": "2021-06-15 文章以 iPhone 12 Pro Max 晶透极光配色版本为例进行上手评测。"
+        },
+        {
+          "url": "https://best.pconline.com.cn/yuanchuang/10627923.html",
+          "title": "iPhone手机壳这么贵？决色冰砖透明防摔壳帮你打动女人心",
+          "source_name": "聚超值",
+          "snippet": "2021-06-15 文章称 i-clear 系列有晶透极光限量版，作者已下单并上手使用。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种具有渐变色图案效果的外壳",
+          "competitor_feature": "决色 iClear 小冰砖是透明防摔手机壳，晶透极光配色具有渐变色图案效果。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://zhongce.sina.com.cn/article/view/93312/",
+              "title": "兼顾美感与实用：决色小冰砖透明防摔壳上手",
+              "source_name": "新浪众测",
+              "snippet": "文章锁定 iPhone12ProMax 晶透极光配色版本，并称该配色看起来是渐变色，背部做了特别图案设计。"
+            },
+            {
+              "url": "https://best.pconline.com.cn/yuanchuang/10627923.html",
+              "title": "iPhone手机壳这么贵？决色冰砖透明防摔壳帮你打动女人心",
+              "source_name": "聚超值",
+              "snippet": "文章称 i-clear 系列有晶透极光限量版、海洋之心、晶透星际三款，买的是晶透极光限量版。"
+            }
+          ],
+          "reasoning": "① X=具有渐变色图案效果的外壳，二值外观特征。② Y=晶透极光配色透明防摔手机壳，公开称渐变色和背部图案。③ (a)是，均为外壳渐变图案；(b)是，均为有/无外观特征；(c)是，均相对壳体外观；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透明片材和形成在透明片材第一表面具有渐变色效果的透明图案",
+          "competitor_feature": "公开资料显示该款采用高透/高清全透明 PC 背板，晶透极光配色背部有渐变和图案设计；但未直接公开图案位于透明片材第一表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://zhongce.sina.com.cn/article/view/93312/",
+              "title": "兼顾美感与实用：决色小冰砖透明防摔壳上手",
+              "source_name": "新浪众测",
+              "snippet": "文章称晶透极光有渐变色和背部特别图案设计，并称材质为高透 2H 硬度防刮背板。"
+            },
+            {
+              "url": "https://best.pconline.com.cn/yuanchuang/10627923.html",
+              "title": "iPhone手机壳这么贵？决色冰砖透明防摔壳帮你打动女人心",
+              "source_name": "聚超值",
+              "snippet": "文章称官网显示采用 2H 高清全透明 PC 背板。"
+            }
+          ],
+          "reasoning": "① X=透明片材及其第一表面渐变透明图案，集合+位置特征。② Y=高透/全透明 PC 背板和晶透极光渐变图案。③ (a)是，透明背板可对应透明片材，晶透极光图案对应渐变透明图案；(b)是，均为结构/外观集合；(c)是，均在手机壳背板区域，但第一表面未字面公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述透明片材的第一表面附着有塑胶层，透明图案与塑胶层结合",
+          "competitor_feature": "公开评测称油墨注塑在壳体内部、侧边为软胶气囊/软胶结构；可推知图案油墨被壳体塑胶结构包覆或结合，但未直接公开透明片材第一表面的层间关系。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://zhongce.sina.com.cn/article/view/93312/",
+              "title": "兼顾美感与实用：决色小冰砖透明防摔壳上手",
+              "source_name": "新浪众测",
+              "snippet": "文章称该款采用双面立体图案，油墨注塑在壳体内部，并且油墨不直接与空气接触。"
+            },
+            {
+              "url": "https://best.pconline.com.cn/yuanchuang/10627923.html",
+              "title": "iPhone手机壳这么贵？决色冰砖透明防摔壳帮你打动女人心",
+              "source_name": "聚超值",
+              "snippet": "文章称侧边采用合金边框+软胶气囊，四角加入 3D 防摔气囊和内置缓冲层。"
+            }
+          ],
+          "reasoning": "① X=透明片材第一表面附塑胶层且图案与塑胶结合，层间结构特征。② Y=油墨注塑在壳体内部且不接触空气，壳体含软胶/PC 等塑胶结构。③ (a)是，注塑内部油墨可对应图案与塑胶结合；(b)是，均为层间结合二值；(c)是，均相对壳体内部表面，但第一表面未字面公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 86.67,
+      "searched_queries": [
+        "决色 iClear 小冰砖透明防摔壳 iPhone 12 Pro Max 晶透极光图案款",
+        "决色 小冰砖 晶透极光 iPhone 12 Pro Max PC TPU",
+        "site:m.asemanshop.com 决色 iClear 小冰砖 晶透极光",
+        "site:www.qixiu88.com 决色 iClear 小冰砖 晶透极光"
+      ],
+      "searched_providers": [
+        "web"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "东莞市伊卡登智能科技有限公司",
+        "company_en": "Dongguan Ycaden Intelligent Technology Co., Ltd",
+        "product_name": "IMD TPU 电镀渐变手机壳（iP15/16/17 Pro Max / M004）",
+        "product_name_en": "IMD TPU Electroplated Gradient Mobile Phone Case (iP15/16/17 Pro Max / M004)",
+        "product_intro": "Made-in-China 页面列明该 SKU 为 M004，PC+TPU+PET 材质，IMD two-color gradient case，支持透明款和 14 色选择。",
+        "market": "中国手机壳 OEM/ODM 与跨境批发市场",
+        "reason_for_deep_dive": "直接公开 IMD、双色渐变、PC+TPU+PET 多层材料和透明款，权利要求 1 的透明片材、渐变图案、塑胶结合特征相关性高。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://ycadencase25.en.made-in-china.com/product/XpCRmvLVgUkr/China-IMD-TPU-Electroplated-Gradient-Mobile-Phone-Case-for-IP-15-16-17-Promax.html"
+        ],
+        "initial_evidence_summary": "产品页列明 IMD two-color gradient/electroplated craft、14 色含 transparent styles、PC+TPU+Pet 材料、Phone Case Feature 为 IMD Two Color Gradient Case。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种具有渐变色图案效果的外壳",
+          "competitor_feature": "该 SKU 是 IMD TPU 电镀渐变手机壳，产品亮点写明 IMD two-color gradient 和 electroplated craft。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://ycadencase25.en.made-in-china.com/product/XpCRmvLVgUkr/China-IMD-TPU-Electroplated-Gradient-Mobile-Phone-Case-for-IP-15-16-17-Promax.html",
+              "title": "IMD TPU Electroplated Gradient Mobile Phone Case for IP 15 16 17 Promax",
+              "source_name": "Made-in-China / YCADEN",
+              "snippet": "Product Highlights: IMD Gradient Design; features IMD two-color gradient and electroplated craft."
+            }
+          ],
+          "reasoning": "① X=渐变色图案效果外壳，二值外观特征。② Y=IMD two-color gradient 手机壳。③ (a)是，均为外壳渐变图案；(b)是，均为有/无外观特征；(c)是，均针对手机壳外表面/背部视觉效果；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透明片材和形成在透明片材第一表面具有渐变色效果的透明图案",
+          "competitor_feature": "产品页列明 PC+TPU+Pet 材料、IMD Two Color Gradient Case，并称 14 色中包括 transparent styles；但未逐字公开透明图案位于 PET/PC 片材第一表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://ycadencase25.en.made-in-china.com/product/XpCRmvLVgUkr/China-IMD-TPU-Electroplated-Gradient-Mobile-Phone-Case-for-IP-15-16-17-Promax.html",
+              "title": "IMD TPU Electroplated Gradient Mobile Phone Case for IP 15 16 17 Promax",
+              "source_name": "Made-in-China / YCADEN",
+              "snippet": "Material: PC+TPU+Pet; Phone Case Feature: IMD Two Color Gradient Case; 14 color options including transparent styles."
+            }
+          ],
+          "reasoning": "① X=透明片材+第一表面渐变透明图案，集合+位置特征。② Y=PC+TPU+PET 材料、透明款和 IMD 双色渐变。③ (a)是，PET/PC 可对应透明片材且 IMD 渐变对应图案；(b)是，均为层状外观结构；(c)是，均在手机壳外壳/背板区域，但第一表面未明示；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述透明片材的第一表面附着有塑胶层，透明图案与塑胶层结合",
+          "competitor_feature": "产品页公开 PC+TPU+PET 多材料、IMD and Electroplated 工艺；IMD 语义上对应模内装饰与塑胶成型结合，但页面未逐字说明第一表面附着塑胶层。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://ycadencase25.en.made-in-china.com/product/XpCRmvLVgUkr/China-IMD-TPU-Electroplated-Gradient-Mobile-Phone-Case-for-IP-15-16-17-Promax.html",
+              "title": "IMD TPU Electroplated Gradient Mobile Phone Case for IP 15 16 17 Promax",
+              "source_name": "Made-in-China / YCADEN",
+              "snippet": "Material: PC+TPU+Pet; Craft: IMD and Electroplated; Product Name: IMD process gradient glitter phone case."
+            }
+          ],
+          "reasoning": "① X=透明片材第一表面附塑胶层且图案与塑胶结合，层间结构特征。② Y=PC+TPU+PET 材料和 IMD 工艺渐变壳。③ (a)是，IMD 可对应装饰层与塑胶壳体结合；(b)是，均为层间结合二值；(c)是，均在壳体内部/背板层间，但第一表面未逐字公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 86.67,
+      "searched_queries": [
+        "Dongguan Ycaden IMD TPU Electroplated Gradient Mobile Phone Case PC TPU PET",
+        "ycadencase25 IMD Two Color Gradient Case M004 transparent styles",
+        "site:m.asemanshop.com IMD TPU Electroplated Gradient Mobile Phone Case",
+        "site:www.qixiu88.com IMD TPU Electroplated Gradient Mobile Phone Case"
+      ],
+      "searched_providers": [
+        "web"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "Guess",
+        "company_en": "Guess",
+        "product_name": "Guess IML Glitter Gradient MagSafe 手机壳（iPhone 16 Pro / Brown / GUHMP16LHGRCELW）",
+        "product_name_en": "Guess IML Glitter Gradient MagSafe case (iPhone 16 Pro / Brown / GUHMP16LHGRCELW)",
+        "product_intro": "iPhone 16 Pro 保护壳，型号 GUHMP16LHGRCELW；公开页面称其为 IML Glitter Gradient MagSafe，TPU/PC 材质，图形以透明聚氨酯薄层增强耐磨。",
+        "market": "国际手机保护壳零售市场",
+        "reason_for_deep_dive": "产品名称直接包含 IML 和 Glitter Gradient，页面公开 TPU/PC 材料及透明 PU 图形保护层，与权利要求 1 的渐变图案和塑胶结合特征高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://topbuy.eu/en/products/guess-iml-glitter-gradient-magsafe-iphone-16-pro-case-brown-21700",
+          "https://www.mimovrste.com/torbice-ovitki-telefon/shumee-ovitek-guess-iml-glitter-100164958664"
+        ],
+        "initial_evidence_summary": "TopBuy 页面称该壳由 TPU 和 PC 制成，具有 subtle gradient effect and brocade surface，graphics reinforced with a thin layer of transparent polyurethane，并列出 symbol GUHMP16LHGRCELW。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种具有渐变色图案效果的外壳",
+          "competitor_feature": "Guess IML Glitter Gradient MagSafe 是具有渐变效果和闪粉表面的 iPhone 16 Pro 手机壳。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://topbuy.eu/en/products/guess-iml-glitter-gradient-magsafe-iphone-16-pro-case-brown-21700",
+              "title": "Guess IML Glitter Gradient MagSafe - iPhone 16 Pro Case (brown)",
+              "source_name": "TopBuy",
+              "snippet": "The cover is distinguished by a subtle gradient effect and brocade surface."
+            }
+          ],
+          "reasoning": "① X=渐变色图案效果外壳，二值外观特征。② Y=subtle gradient effect 的 iPhone 16 Pro case。③ (a)是，均为壳体渐变外观；(b)是，均为外观有/无；(c)是，均相对手机壳外观；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透明片材和形成在透明片材第一表面具有渐变色效果的透明图案",
+          "competitor_feature": "产品为 IML Glitter Gradient，公开有渐变效果、TPU/PC 材质和透明聚氨酯保护层；但页面未直接公开透明片材及第一表面图案位置。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://topbuy.eu/en/products/guess-iml-glitter-gradient-magsafe-iphone-16-pro-case-brown-21700",
+              "title": "Guess IML Glitter Gradient MagSafe - iPhone 16 Pro Case (brown)",
+              "source_name": "TopBuy",
+              "snippet": "Made of durable TPU/PC; the cover has a subtle gradient effect; graphics reinforced with a thin layer of transparent polyurethane."
+            },
+            {
+              "url": "https://www.mimovrste.com/torbice-ovitki-telefon/shumee-ovitek-guess-iml-glitter-100164958664",
+              "title": "shumee Ovitek Guess IML Glitter Gradient MagSafe - iPhone 16 Pro",
+              "source_name": "mimovrste",
+              "snippet": "Product text describes gradient effect, transparent polyurethane layer, and durable TPU/PC material."
+            }
+          ],
+          "reasoning": "① X=透明片材及第一表面渐变透明图案，集合+位置特征。② Y=IML 渐变壳、TPU/PC 材料和透明 PU 图形层。③ (a)是，IML/透明 PU 支持透明层状图案对应；(b)是，均为层状结构集合；(c)是，均位于壳体图形层，但第一表面未明示；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述透明片材的第一表面附着有塑胶层，透明图案与塑胶层结合",
+          "competitor_feature": "页面直接公开图形由透明聚氨酯薄层增强，壳体由 TPU/PC 制成；可对应图案与塑胶层结合，但未公开透明片材第一表面的精确层序。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://topbuy.eu/en/products/guess-iml-glitter-gradient-magsafe-iphone-16-pro-case-brown-21700",
+              "title": "Guess IML Glitter Gradient MagSafe - iPhone 16 Pro Case (brown)",
+              "source_name": "TopBuy",
+              "snippet": "The graphics have been reinforced with a thin layer of transparent polyurethane; made of durable TPU/PC."
+            }
+          ],
+          "reasoning": "① X=透明片材表面附塑胶层且图案与塑胶结合，层间结合特征。② Y=图形有透明 PU 薄层增强，壳体 TPU/PC。③ (a)是，透明 PU/TPU/PC 均为塑胶且与图形层结合；(b)是，均为结合有/无；(c)是，均相对壳体图形层，精确第一表面未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 86.67,
+      "searched_queries": [
+        "Guess IML Glitter Gradient MagSafe GUHMP16LHGRCELW TPU PC transparent polyurethane",
+        "Guess IML Glitter Gradient MagSafe iPhone 16 Pro case brown",
+        "site:m.asemanshop.com Guess IML Glitter Gradient MagSafe",
+        "site:www.qixiu88.com Guess IML Glitter Gradient MagSafe"
+      ],
+      "searched_providers": [
+        "web"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "Case-Custom",
+        "company_en": "Case-Custom",
+        "product_name": "Gradient Cube 透明手机壳（iPhone 12 Pro Max Clear Case）",
+        "product_name_en": "Gradient Cube clear case (iPhone 12 Pro Max Clear Case)",
+        "product_intro": "Case-Custom 面向 iPhone 12 Pro Max 的 Gradient Cube Clear Case，页面称采用耐用 TPU、耐黄变长久清晰，并有 Permanent HD Print。",
+        "market": "国际定制手机壳零售市场",
+        "reason_for_deep_dive": "该 SKU 为透明手机壳且有 Gradient Cube 图案和永久高清印刷，权利要求 1 的渐变图案透明外壳特征相关，但未公开模内结合结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.case-custom.com/works/6690338275-gradient-cube/case/iphone-12-pro-max-clear-case"
+        ],
+        "initial_evidence_summary": "页面标题为 Gradient Cube iPhone 12 Pro Max Clear Case，特征列明 durable TPU、long-lasting clarity resistant to yellowing、Permanent HD Print。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种具有渐变色图案效果的外壳",
+          "competitor_feature": "该 SKU 为 Gradient Cube iPhone 12 Pro Max Clear Case，商品名和设计说明明确为 Gradient Cube。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.case-custom.com/works/6690338275-gradient-cube/case/iphone-12-pro-max-clear-case",
+              "title": "Gradient Cube iPhone 12 Pro Max Clear Case",
+              "source_name": "Case-Custom",
+              "snippet": "Page title and product name: Gradient Cube iPhone 12 Pro Max Clear Case."
+            }
+          ],
+          "reasoning": "① X=渐变色图案效果外壳，二值外观特征。② Y=Gradient Cube clear case。③ (a)是，Gradient Cube 表示渐变图案壳；(b)是，均为外观有/无；(c)是，均相对壳体视觉外观；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透明片材和形成在透明片材第一表面具有渐变色效果的透明图案",
+          "competitor_feature": "页面称该产品是 Clear Case，采用 durable TPU 且 long-lasting clarity resistant to yellowing，并有 Permanent HD Print；但未说明透明片材和第一表面图案。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.case-custom.com/works/6690338275-gradient-cube/case/iphone-12-pro-max-clear-case",
+              "title": "Gradient Cube iPhone 12 Pro Max Clear Case",
+              "source_name": "Case-Custom",
+              "snippet": "Features include Made from durable TPU, Long-lasting clarity resistant to yellowing, and Permanent HD Print."
+            }
+          ],
+          "reasoning": "① X=透明片材+第一表面渐变透明图案，集合+位置特征。② Y=透明 TPU 壳和 Gradient Cube 永久高清印刷。③ (a)是，透明壳和渐变印刷可对应透明片材与渐变图案；(b)是，均为结构/外观集合；(c)是，均在壳体背部/外观区域，第一表面未明示；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述透明片材的第一表面附着有塑胶层，透明图案与塑胶层结合",
+          "competitor_feature": "仅公开 durable TPU 和 Permanent HD Print；未找到透明片材第一表面附着塑胶层、图案与塑胶层结合的直接或足够严谨证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.case-custom.com/works/6690338275-gradient-cube/case/iphone-12-pro-max-clear-case",
+              "title": "Gradient Cube iPhone 12 Pro Max Clear Case",
+              "source_name": "Case-Custom",
+              "snippet": "Page discloses durable TPU and Permanent HD Print, but not a layer stack or in-mold plastic bonding relationship."
+            }
+          ],
+          "reasoning": "① X=透明片材表面附塑胶层且图案与塑胶结合，层间结构。② Y=TPU 壳体和永久高清印刷。③ (a)否，印刷耐久不等于附塑胶层结合；(b)否，X 是层间结构，Y 是工艺/效果描述；(c)否，Y 未给表面参考系；(d)无。故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 70.0,
+      "searched_queries": [
+        "Gradient Cube iPhone 12 Pro Max Clear Case TPU Permanent HD Print",
+        "Case-Custom Gradient Cube clear case teardown material",
+        "site:m.asemanshop.com Gradient Cube iPhone 12 Pro Max Clear Case",
+        "site:www.qixiu88.com Gradient Cube iPhone 12 Pro Max Clear Case"
+      ],
+      "searched_providers": [
+        "web"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "iCases",
+        "company_en": "iCases",
+        "product_name": "渐变 PC+TPU 防摔手机壳（iPhone 12 Pro Max / Light Blue Purple / SK-EDA005072808B）",
+        "product_name_en": "Gradient PC + TPU shockproof phone case (iPhone 12 Pro Max / Light Blue Purple / SK-EDA005072808B)",
+        "product_intro": "iCases 页面锁定 iPhone 12 Pro Max、Light Blue Purple 色，SKU 为 SK-EDA005072808B；产品名公开为 Gradient PC + TPU Shockproof Phone Case。",
+        "market": "国际手机壳零售市场",
+        "reason_for_deep_dive": "该 SKU 与用户重点产品同为 iPhone 12 Pro Max 渐变防摔壳，且公开 PC+TPU 材质；但缺少透明图案和层间结合公开资料。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.icases.com/other-iphone-cases/iphone-12-pro-max-cases/iphone-12-pro-max-gradient-pc-tpu-shockproof-phone-case-light-blue-purple/"
+        ],
+        "initial_evidence_summary": "页面标题、描述和 SKU 均锁定 iPhone 12 Pro Max Gradient PC + TPU Shockproof Phone Case - Light Blue Purple。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种具有渐变色图案效果的外壳",
+          "competitor_feature": "该 SKU 名称为 iPhone 12 Pro Max Gradient PC + TPU Shockproof Phone Case - Light Blue Purple。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.icases.com/other-iphone-cases/iphone-12-pro-max-cases/iphone-12-pro-max-gradient-pc-tpu-shockproof-phone-case-light-blue-purple/",
+              "title": "iPhone 12 Pro Max Gradient PC + TPU Shockproof Phone Case - Light Blue Purple",
+              "source_name": "iCases",
+              "snippet": "Description: iPhone 12 Pro Max Gradient PC + TPU Shockproof Phone Case - Light Blue Purple; SKU SK-EDA005072808B."
+            }
+          ],
+          "reasoning": "① X=渐变色图案效果外壳，二值外观特征。② Y=Gradient PC+TPU shockproof phone case。③ (a)是，均为渐变外观壳；(b)是，均为有/无外观特征；(c)是，均相对手机壳外观；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透明片材和形成在透明片材第一表面具有渐变色效果的透明图案",
+          "competitor_feature": "页面仅公开 PC+TPU 渐变防摔壳，未公开透明片材、透明图案或图案所在第一表面。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.icases.com/other-iphone-cases/iphone-12-pro-max-cases/iphone-12-pro-max-gradient-pc-tpu-shockproof-phone-case-light-blue-purple/",
+              "title": "iPhone 12 Pro Max Gradient PC + TPU Shockproof Phone Case - Light Blue Purple",
+              "source_name": "iCases",
+              "snippet": "The page discloses Gradient PC + TPU Shockproof Phone Case, but no transparent sheet or pattern layer location."
+            }
+          ],
+          "reasoning": "① X=透明片材及第一表面渐变透明图案，集合+位置特征。② Y=PC+TPU 渐变壳，未公开透明片材/图案位置。③ (a)否，渐变壳不等于透明片材上透明图案；(b)否，X 是层状集合，Y 仅材料/外观名；(c)否，Y 无第一表面参考系；(d)无。故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述透明片材的第一表面附着有塑胶层，透明图案与塑胶层结合",
+          "competitor_feature": "页面未公开透明片材第一表面附着塑胶层，也未公开透明图案与塑胶层结合。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.icases.com/other-iphone-cases/iphone-12-pro-max-cases/iphone-12-pro-max-gradient-pc-tpu-shockproof-phone-case-light-blue-purple/",
+              "title": "iPhone 12 Pro Max Gradient PC + TPU Shockproof Phone Case - Light Blue Purple",
+              "source_name": "iCases",
+              "snippet": "The page gives product name and SKU only for PC+TPU gradient shockproof case; no in-mold or layer-bonding description found."
+            }
+          ],
+          "reasoning": "① X=透明片材第一表面附塑胶层且图案与塑胶结合，层间结构。② Y=PC+TPU 渐变防摔壳名称。③ (a)否，材料组合不等于图案层结合；(b)否，X 是层间结构，Y 是材料类别；(c)否，Y 未给层序/表面参考系；(d)无。故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "iPhone 12 Pro Max Gradient PC TPU Shockproof Phone Case Light Blue Purple SKU SK-EDA005072808B",
+        "iCases SK-EDA005072808B material IMD transparent sheet",
+        "site:m.asemanshop.com SK-EDA005072808B",
+        "site:www.qixiu88.com SK-EDA005072808B"
+      ],
+      "searched_providers": [
+        "web"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}
