@@ -1,0 +1,1104 @@
+{
+  "publication_no": "CN101192630B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "现代汽车",
+        "company_en": "Hyundai Motor Company",
+        "product_name": "Sonata 混动版 太阳能车顶（2019款 Limited 韩国/北美首发）",
+        "product_name_en": "Sonata Hybrid Solar Roof (2019 Limited, KR/NA launch)",
+        "product_intro": "搭载于第七代 Sonata Hybrid Limited 顶配的太阳能车顶，由 38.9×25.9 in 双 panel 组成，总输出 205W，电池效率 22.8%；电池层压在 panoramic 玻璃车顶内，直接为高压 1.6 kWh 电池与 12V 电池充电。",
+        "market": "韩国、北美中高端混动轿车市场",
+        "reason_for_deep_dive": "权 1 所有要素（玻璃天窗+至少一个太阳能电池+固定连接到天窗玻璃）均明确具备；具体内表面是否含平面段需查图证。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.hyundaimotorgroup.com/en/story/CONT0000000000091508",
+          "https://pv-magazine-usa.com/2022/03/24/hyundai-sonata-hybrid-is-equipped-with-a-solar-roof/",
+          "https://www.greencarreports.com/news/1127010_2020-hyundai-sonata-hybrid-adds-solar-roof-challenges-camry-hybrid-at-52-mpg",
+          "https://www.slashgear.com/2020-hyundai-sonata-hybrid-limited-review-solar-roof-economy-technology-value-05658352/",
+          "https://cleantechnica.com/2019/07/22/the-solar-roof-on-hyundais-new-sonata-hybrid-adds-1300km-of-range-per-year/"
+        ],
+        "initial_evidence_summary": "Sonata Hybrid Limited 太阳能车顶含两片 panel（每片 38.9×25.9 英寸，总 205W，22.8% 效率），cell embedded in glass panoramic roof，laminated glass safety construction，2019 年 7 月韩国首发；公开资料未明确描述玻璃内表面是否含平面段。"
+      },
+      "launch_date": "2019 年 7 月（韩国首发）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000091508",
+          "title": "Everything About the Sonata Hybrid's Solar Roof",
+          "source_name": "Hyundai Motor Group",
+          "snippet": "released last July (article published Jan 2020) ..."
+        },
+        {
+          "url": "https://cleantechnica.com/2019/07/22/the-solar-roof-on-hyundais-new-sonata-hybrid-adds-1300km-of-range-per-year/",
+          "title": "The Solar Roof On Hyundai's New Sonata Hybrid Adds 1,300km Of Range Per Year",
+          "source_name": "CleanTechnica",
+          "snippet": "On Sunday, Hyundai introduced its new 7th generation Sonata Hybrid (in South Korea)... It's the first Hyundai car to have a solar roof. (July 2019)"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "Sonata Hybrid Limited 标配的太阳能车顶（Solar Roof）整合在车辆 panoramic 玻璃天窗上，是名副其实的太阳能电池天窗。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000091508",
+              "title": "Everything About the Sonata Hybrid's Solar Roof",
+              "source_name": "Hyundai Motor Group",
+              "snippet": "the solar roof consists of two panels with a total system output of 205 watts, with each panel housed in glass"
+            },
+            {
+              "url": "https://pv-magazine-usa.com/2022/03/24/hyundai-sonata-hybrid-is-equipped-with-a-solar-roof/",
+              "title": "Hyundai Sonata hybrid is equipped with a solar roof",
+              "source_name": "pv-magazine-usa",
+              "snippet": "a 205W solar PV array that directly charges the car's battery, with the solar panels featuring 22.8% efficiency"
+            }
+          ],
+          "reasoning": "① 权1 X：'太阳能电池天窗' 概念=车辆顶部玻璃天窗+太阳能电池，二值（具备/不具备）。② 候选 Y：Sonata Hybrid Limited 公开规格直接称为 'Solar Roof'，且'each panel housed in glass'、'solar panels featuring 22.8% efficiency'。③ 对比：(a)概念是否等价：是。X 即车顶玻璃+太阳能电池，Y 同。(b)单位/量纲是否等价：是。同为二值（具备/不具备）。(c)参考系是否等价：是。同指车辆顶盖位置。(d)是否有反向证据：无。全为'是'+无反向证据 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "该太阳能车顶组件由 2 片玻璃 panel 构成天窗玻璃，每片 38.9×25.9 英寸（约 988×658mm），合计输出 205W；玻璃内嵌多颗高效太阳能电池，效率 22.8%。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000091508",
+              "title": "Everything About the Sonata Hybrid's Solar Roof",
+              "source_name": "Hyundai Motor Group",
+              "snippet": "the roof is split into two actual solar panels—38.9 inches by 25.9 inches each ... total system output of 205 watts ... cells on the Sonata's panels have a 22.8% efficiency rate"
+            },
+            {
+              "url": "https://www.greencarreports.com/news/1127010_2020-hyundai-sonata-hybrid-adds-solar-roof-challenges-camry-hybrid-at-52-mpg",
+              "title": "2020 Hyundai Sonata Hybrid adds solar roof",
+              "source_name": "Green Car Reports",
+              "snippet": "actually charges the hybrid battery, not just the 12-volt accessory battery, with an output of up to 205 watts"
+            }
+          ],
+          "reasoning": "① 权1 X：'天窗玻璃' + 至少一个太阳能电池，两者同时存在，二值。② 候选 Y：两片玻璃 panel 构成 panoramic 天窗 + 多颗 cell 内嵌。③ 对比：(a)是。X/Y 均为'玻璃+电池'共构。(b)是。同为二值。(c)是。同指顶盖天窗位置。(d)无。全'是'+无反 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Sonata 整车车顶按现代轿车造型为微外凸的流线弧面（轿车车顶通用造型），双片 solar panel 作为 panoramic 天窗整体嵌于车顶，外表面随车顶弧度成外凸弧形；公开资料未直接刻画其内表面，但 laminated panoramic 玻璃天窗内表面常规为内凹形态。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000091508",
+              "title": "Everything About the Sonata Hybrid's Solar Roof",
+              "source_name": "Hyundai Motor Group",
+              "snippet": "the SONATA Limited Hybrid trim includes a panoramic glass roof built with tough laminated glass for safety"
+            },
+            {
+              "url": "https://www.slashgear.com/2020-hyundai-sonata-hybrid-limited-review-solar-roof-economy-technology-value-05658352/",
+              "title": "2020 Hyundai Sonata Hybrid Review: The Solar Roof Is Really Good For One Thing",
+              "source_name": "SlashGear",
+              "snippet": "the Sonata Hybrid Limited includes solar cells embedded in the glass roof"
+            }
+          ],
+          "reasoning": "① 权1 X：天窗玻璃外凸弧形外表面+内凹内表面（二值描述：外凸/内凹）。② 候选 Y：Sonata 整车车顶按轿车造型为微弧曲面，但公开规格未明文标注外凸/内凹。③ 对比：(a)概念是否等价：是。轿车车顶 panoramic 天窗按惯例外表与车顶弧度一致即外凸（流线造型），内表面对应内凹。(b)单位/量纲等价：是。同为二值描述。(c)参考系等价：是。同对车体外/内侧。(d)反向证据：无（公开图像车顶为常规外凸轿车造型）。维持'可能满足'，差异：缺直接文字标注内凹但权1限定可以宽泛接受。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "Sonata Hybrid 太阳能 panoramic 车顶由两个独立 panel 构成（38.9×25.9 in），laminated 玻璃 + cell 内嵌；公开资料未明确披露玻璃内表面是否设置专用'平面段'供电池贴附。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000091508",
+              "title": "Everything About the Sonata Hybrid's Solar Roof",
+              "source_name": "Hyundai Motor Group",
+              "snippet": "the roof is split into two actual solar panels—38.9 inches by 25.9 inches each"
+            }
+          ],
+          "reasoning": "① 权1 X：内凹的内表面上具有'至少一个平面'，'平面'为几何特征（曲率=0 的局部区域），单位为几何形状，二值（含/不含）。② 候选 Y：Sonata 公开规格描述为 laminated panoramic glass，仅说'两个 panel'，未公开内表面是否设计为平面段或保持连续弧面。③ 对比：(a)概念是否等价：否。X 要求'内表面存在平面区域'（几何）；Y 只说'分两个 panel'（panel 划分≠表面平面）。(b)单位/量纲是否等价：部分等价。'平面'与'panel'本质不同：panel 是制造单位（可以是弧面/平面），plane 是几何形态。(c)参考系是否等价：否。X 指玻璃内表面几何，Y 指制造分件。(d)反向证据：无。(a)(b)(c) 出现'否/部分'且公开资料不能在权1限定范围内解释差异 → 降'证据不足'。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "太阳能电池通过 lamination（层压）工艺固定连接在 panoramic 玻璃车顶上，22.8% 效率 cell 由 EVA 等层压料封装；'固定连接'已确证，但'连接到平面'因 C1-F4 证据不足而无法成立。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000091508",
+              "title": "Everything About the Sonata Hybrid's Solar Roof",
+              "source_name": "Hyundai Motor Group",
+              "snippet": "each panel housed in glass ... laminated glass for safety"
+            },
+            {
+              "url": "https://pv-magazine-usa.com/2022/03/24/hyundai-sonata-hybrid-is-equipped-with-a-solar-roof/",
+              "title": "Hyundai Sonata hybrid is equipped with a solar roof",
+              "source_name": "pv-magazine-usa",
+              "snippet": "the solar panels are embedded in the glass roof via a converter"
+            }
+          ],
+          "reasoning": "① 权1 X：太阳能电池固定连接于内表面'平面'，固定连接=laminate/粘接/胶合 等任一固化结合方式，'平面'限定连接面几何。② 候选 Y：cell embedded in laminated glass（已固定）；但 Y 未公开连接面为平面。③ 对比：(a)概念是否等价：部分等价。'固定连接'等价（laminate ≡ 固定），但连接面几何形态未确证。(b)单位/量纲：是。(c)参考系：部分等价。(d)反向证据：无。因 C1-F4 平面要求不能确证，本特征链条断裂 → 降'证据不足'。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 68.0,
+      "searched_queries": [
+        "Hyundai Sonata Hybrid solar roof 2019 curved glass laminated",
+        "Hyundai Sonata Hybrid solar roof panel cell layout dimensions"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "现代汽车",
+        "company_en": "Hyundai Motor Company",
+        "product_name": "Ioniq 5 太阳能车顶（2021款 Top trim 选装，国际市场首发）",
+        "product_name_en": "Ioniq 5 Solar Roof (2021 top-trim option, international launch)",
+        "product_intro": "Hyundai Ioniq 5（2021）顶配选装太阳能车顶，约 200-205W 功率，22.8% 效率 cell，集成在玻璃车顶上，宣称每年可加约 2000km 续航（理想光照）。",
+        "market": "国际市场（韩国/欧洲/部分亚太）纯电 CUV 市场",
+        "reason_for_deep_dive": "继 Sonata Hybrid 后第二款搭载 Hyundai 太阳能车顶量产车，结构思路同源；同公司不同 SKU 须各自评估。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.techradar.com/news/hyundais-new-electric-car-has-a-solar-panel-roof-and-the-ability-to-charge-other-evs",
+          "https://www.ioniqforum.com/threads/ioniq-5-solar-roof-questions-expandability.40805/",
+          "https://interestingengineering.com/transportation/hyundai-unveils-charger-on-wheels-ioniq-5-with-solar-panel-roof"
+        ],
+        "initial_evidence_summary": "Ioniq 5 太阳能车顶 ~200Wp，电池 22.8% 效率，集成于玻璃车顶；公开资料未详细披露玻璃几何形态（曲面/平面）。"
+      },
+      "launch_date": "2021 年（Ioniq 5 国际首发）",
+      "launch_date_evidence": [
+        {
+          "url": "https://interestingengineering.com/transportation/hyundai-unveils-charger-on-wheels-ioniq-5-with-solar-panel-roof",
+          "title": "Hyundai Unveils 'Charger on Wheels' IONIQ 5 With Solar Panel Roof",
+          "source_name": "Interesting Engineering",
+          "snippet": "Hyundai unveiled the IONIQ 5 ... with solar panel roof option (Feb 2021)"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "Ioniq 5 顶配选装的 solar roof 即太阳能电池天窗。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.techradar.com/news/hyundais-new-electric-car-has-a-solar-panel-roof-and-the-ability-to-charge-other-evs",
+              "title": "Hyundai's new electric car has a solar panel roof",
+              "source_name": "TechRadar",
+              "snippet": "the Ioniq 5 has solar panels built into the roof"
+            }
+          ],
+          "reasoning": "① X：太阳能电池天窗，二值。② Y：solar panel roof。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "Ioniq 5 solar roof 由玻璃车顶+多颗 22.8% 效率太阳能电池构成，~200W 输出。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ioniqforum.com/threads/ioniq-5-solar-roof-questions-expandability.40805/",
+              "title": "Ioniq 5 Solar Roof Questions",
+              "source_name": "Hyundai IONIQ Forum",
+              "snippet": "204 Wp (Watt peak) ... cells with 22.8% efficiency"
+            }
+          ],
+          "reasoning": "① X：玻璃+电池共构，二值。② Y：玻璃车顶+多颗 cell。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Ioniq 5 整车 CUV 造型车顶为微外凸弧面，solar roof 玻璃随车顶弧度成外凸；公开资料未明文描述。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.techradar.com/news/hyundais-new-electric-car-has-a-solar-panel-roof-and-the-ability-to-charge-other-evs",
+              "title": "Hyundai Ioniq 5",
+              "source_name": "TechRadar",
+              "snippet": "the solar panels cover most of the top of the car"
+            }
+          ],
+          "reasoning": "① X：外凸+内凹，二值。② Y：CUV panoramic 玻璃车顶按造型为微外凸（图像可见）；未明文标注。③ (a)是 (b)是 (c)是 (d)无 → 可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "公开资料未具体披露 Ioniq 5 太阳能车顶玻璃内表面是否含平面段。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ioniqforum.com/threads/ioniq-5-solar-roof-questions-expandability.40805/",
+              "title": "Ioniq 5 Solar Roof Questions",
+              "source_name": "Hyundai IONIQ Forum",
+              "snippet": "panel covers most of the top of the car"
+            }
+          ],
+          "reasoning": "① X：内表面有平面（几何）。② Y：未公开几何形态。③ (a)概念等价：否（信息缺）。(b)单位/量纲：部分等价。(c)参考系：是。(d)反向：无。→ 证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "太阳能电池通过常规 PV 玻璃 laminated 工艺固定连接到玻璃车顶，'固定连接'确证；'连接到平面'随 C1-F4 证据不足而无法成立。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ioniqforum.com/threads/ioniq-5-solar-roof-questions-expandability.40805/",
+              "title": "Ioniq 5 Solar Roof",
+              "source_name": "Hyundai IONIQ Forum",
+              "snippet": "solar panel ... built into the roof"
+            }
+          ],
+          "reasoning": "'固定连接'存在（laminated 嵌入），'连接到平面'随 C1-F4 不确证而降'证据不足'。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 68.0,
+      "searched_queries": [
+        "Hyundai Ioniq 5 solar roof option specifications",
+        "现代 起亚 Hyundai Kia solar roof Sorento Niro Kona specifications"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "Fisker",
+        "company_en": "Fisker Inc.",
+        "product_name": "Ocean SolarSky 太阳能车顶（2023 Extreme 量产首发版）",
+        "product_name_en": "Ocean SolarSky Solar Roof (2023 Extreme launch edition)",
+        "product_intro": "Fisker Ocean Extreme 顶配标配的 SolarSky 全景太阳能可开启天窗，由两片 panel（前后）组成，集成约 120 颗太阳能电池（厂方称 1200 cells，实际 photo 估计 120），每年可贡献约 1500-2000 mile 续航。",
+        "market": "北美/欧洲高端纯电 SUV 市场",
+        "reason_for_deep_dive": "大面积太阳能车顶+量产开放选装+双 panel 分段，外观形态接近权 1 描述。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.popsci.com/technology/fisker-ocean-ev/",
+          "https://www.autoevolution.com/news/henrik-fisker-shows-fisker-ocean-s-solarsky-solar-roof-in-action-183194.html",
+          "https://fiskerati.com/fisker-ocean/is-the-fisker-ocean-solarsky-roof-worth-it/",
+          "https://salvagesurfers.com/products/2023-fisker-oceansolar-roof-glass-panel-w-glass-tracks-frame-motor"
+        ],
+        "initial_evidence_summary": "Ocean SolarSky 由两片可滑动玻璃 panel 组成 panoramic 顶，含 120 颗太阳能电池（前 panel 72 + 后 panel 48）；公开资料未具体披露玻璃内表面是否含平面段。"
+      },
+      "launch_date": "2023 年（Ocean Extreme 首批交付）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.popsci.com/technology/fisker-ocean-ev/",
+          "title": "Fisker's sold-out EV has a sun roof that's also a solar panel",
+          "source_name": "Popular Science",
+          "snippet": "The Fisker Ocean's top-of-the-line Extreme and limited edition One models feature a panoramic glass roof integrated with 1200 solar cells, called SolarSky"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "Ocean SolarSky 即为太阳能电池天窗——'panoramic glass roof integrated with 1200 solar cells'。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.popsci.com/technology/fisker-ocean-ev/",
+              "title": "Fisker's sold-out EV has a sun roof that's also a solar panel",
+              "source_name": "Popular Science",
+              "snippet": "panoramic glass roof integrated with 1200 solar cells, called SolarSky"
+            }
+          ],
+          "reasoning": "① X：太阳能电池天窗，二值。② Y：'panoramic glass roof integrated with ... solar cells'。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "Ocean SolarSky 由两片 panoramic 玻璃 panel 构成天窗玻璃，集成约 120 颗（厂方 1200 cells）太阳能电池。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://fiskerati.com/fisker-ocean/is-the-fisker-ocean-solarsky-roof-worth-it/",
+              "title": "Is the Fisker Ocean SolarSky Roof Worth It?",
+              "source_name": "Fiskerati",
+              "snippet": "the roof appears to have 120 solar cells (48 in the back panel in an 8-across by 6-forward layout and 72 on the front panel in a 9-across by 8-forward layout)"
+            }
+          ],
+          "reasoning": "① X：玻璃+电池共构，二值。② Y：两片玻璃 panel + 多颗 cell。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Ocean 整车车顶为 SUV 微弧外凸造型，panoramic 玻璃随车顶弧度成外凸形态，玻璃内表面对应内凹；公开规格未明文描述。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.popsci.com/technology/fisker-ocean-ev/",
+              "title": "Fisker Ocean EV",
+              "source_name": "Popular Science",
+              "snippet": "panoramic glass roof"
+            }
+          ],
+          "reasoning": "① X：外凸弧形外表面+内凹内表面，二值。② Y：SUV panoramic 玻璃车顶按整体造型为外凸弧面（图像可见车顶整体微外凸）；公开规格未直接标注。③ (a)是 (b)是 (c)是 (d)无 → 维持'可能满足'，差异：缺直接文字标注但权1限定可宽泛接受。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "Ocean SolarSky 由两片可滑动 panoramic 玻璃 panel + 120 颗 cell 矩阵排列（前 9×8 + 后 8×6 cell 网格），cell 矩阵布局暗示 panel 内表面或为局部平面或弧度极小，但公开资料未明文标注'内表面平面'。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://fiskerati.com/fisker-ocean/is-the-fisker-ocean-solarsky-roof-worth-it/",
+              "title": "Is the Fisker Ocean SolarSky Roof Worth It?",
+              "source_name": "Fiskerati",
+              "snippet": "48 in the back panel in an 8-across by 6-forward layout and 72 on the front panel in a 9-across by 8-forward layout"
+            }
+          ],
+          "reasoning": "① 权1 X：内凹内表面有'至少一个平面'（曲率=0 几何特征）。② 候选 Y：两片 panel + 矩阵 cell；'panel'是结构单位非几何描述，cell 矩阵紧密排列暗示 panel 微弯/平面但无明文。③ (a)概念等价：否。'panel'≠'平面'。(b)单位/量纲：部分等价。(c)参考系：否。(d)反向：无。→ 降'证据不足'。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "120 颗 cell 通过 laminated glass 工艺固定连接到 panel 玻璃，但连接面是否为平面未确证。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://salvagesurfers.com/products/2023-fisker-oceansolar-roof-glass-panel-w-glass-tracks-frame-motor",
+              "title": "2023 Fisker Ocean OEM Solar Roof Glass Panel",
+              "source_name": "salvagesurfers",
+              "snippet": "OEM Solar Roof Glass Panel w/ Glass/Tracks/Frame/Motor — 实物 OEM 替换件"
+            }
+          ],
+          "reasoning": "'固定连接'存在（laminate），'连接到平面'随 C1-F4 证据不足而无法成立。→ 证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 68.0,
+      "searched_queries": [
+        "Fisker Ocean solar roof SolarSky specifications panels",
+        "Fisker Ocean roof options SolarSky cell layout"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P11",
+        "company": "大众汽车",
+        "company_en": "Volkswagen AG",
+        "product_name": "Phaeton 太阳能天窗（2002 起 Phaeton 选装）",
+        "product_name_en": "Phaeton Solar Sunroof (2002 onwards Phaeton option)",
+        "product_intro": "Volkswagen Phaeton（D1 平台）选装的 sliding/tilting 太阳能天窗，集成太阳能电池为通风风扇供电，2002 年随 Phaeton 上市。",
+        "market": "欧洲/中国/部分国际市场高端豪华轿车",
+        "reason_for_deep_dive": "早期量产'太阳能天窗+弧面玻璃'方案；但上市早于本专利申请日。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.vwvortex.com/threads/solar-sunroof-how-good-is-it-really.3368092/",
+          "https://www.volkswagen.se/idhub/content/dam/onehub_pkw/importers/se/hjalp-och-support/broschyrer/phaeton/000.the_phaeton_equipment.download.pdf"
+        ],
+        "initial_evidence_summary": "Phaeton 2002 起选装 solar sliding sunroof，集成太阳能电池+通风风扇。"
+      },
+      "launch_date": "2002 年（Phaeton 上市）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.volkswagen.se/idhub/content/dam/onehub_pkw/importers/se/hjalp-och-support/broschyrer/phaeton/000.the_phaeton_equipment.download.pdf",
+          "title": "The Phaeton — Equipment",
+          "source_name": "Volkswagen",
+          "snippet": "sliding/tilting solar roof has integral solar cells that supply the ventilation"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "launch_date 2002 < patent.application_date 2006-11-30，属于本专利申请日前的现有技术。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "Phaeton solar sunroof — 太阳能电池天窗确证。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vwvortex.com/threads/solar-sunroof-how-good-is-it-really.3368092/",
+              "title": "VW Phaeton solar sunroof",
+              "source_name": "VW Vortex",
+              "snippet": "sliding/tilting solar roof has integral solar cells that supply the ventilation"
+            }
+          ],
+          "reasoning": "① X：太阳能电池天窗。② Y：solar sliding sunroof。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "天窗玻璃+集成太阳能电池组件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vwvortex.com/threads/solar-sunroof-how-good-is-it-really.3368092/",
+              "title": "VW Phaeton solar sunroof",
+              "source_name": "VW Vortex",
+              "snippet": "integral solar cells"
+            }
+          ],
+          "reasoning": "① X：玻璃+电池。② Y：玻璃+integral cells。③ (a)是(b)是(c)是(d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Phaeton 整车豪华轿车车顶为微外凸造型，sliding sunroof 玻璃随车顶弧度；公开资料未明文标注。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.volkswagen.se/idhub/content/dam/onehub_pkw/importers/se/hjalp-och-support/broschyrer/phaeton/000.the_phaeton_equipment.download.pdf",
+              "title": "Phaeton Equipment",
+              "source_name": "Volkswagen",
+              "snippet": "sliding/tilting solar roof"
+            }
+          ],
+          "reasoning": "① X：外凸+内凹，二值。② Y：豪华轿车微弧造型车顶。③ (a)是(b)是(c)是(d)无 → 可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "公开资料未披露玻璃内表面几何形态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vwvortex.com/threads/solar-sunroof-how-good-is-it-really.3368092/",
+              "title": "VW Phaeton solar sunroof",
+              "source_name": "VW Vortex",
+              "snippet": "integral solar cells"
+            }
+          ],
+          "reasoning": "①X：内表面有平面。②Y：未公开几何。③(a)否(b)部分等价(c)是(d)无 → 证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "integral 即固定，但连接面是否平面未确证。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vwvortex.com/threads/solar-sunroof-how-good-is-it-really.3368092/",
+              "title": "VW Phaeton solar sunroof",
+              "source_name": "VW Vortex",
+              "snippet": "integral solar cells"
+            }
+          ],
+          "reasoning": "随 C1-F4 不确证而降'证据不足'。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "Volkswagen Phaeton solar roof option specifications"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P12",
+        "company": "马自达",
+        "company_en": "Mazda Motor Corporation",
+        "product_name": "929/Sentia HD 太阳能天窗（1992 HD 平台选装）",
+        "product_name_en": "929/Sentia HD Solar Sunroof (1992 HD platform option)",
+        "product_intro": "Mazda 929 / Eunos 800 / Sentia HD（1992 年起）选装的太阳能 moonroof，集成非晶硅 amorphous solar cell 为通风风扇供电，$600 选装。",
+        "market": "日本/北美/欧洲中高端轿车",
+        "reason_for_deep_dive": "早期量产太阳能天窗产品；上市早于本专利申请日。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.electronicdesign.com/markets/automotive/article/21805255/a-sunroof-of-a-different-kind",
+          "https://www.mazdaworld.org/threads/hd-929-solar-ventilation-system.87314/"
+        ],
+        "initial_evidence_summary": "Mazda 929 HD (1992) 选装 $600 amorphous solar cell moonroof，驱动通风风扇。"
+      },
+      "launch_date": "1992 年（Mazda 929 HD 上市）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.electronicdesign.com/markets/automotive/article/21805255/a-sunroof-of-a-different-kind",
+          "title": "A Sunroof of a Different Kind",
+          "source_name": "Electronic Design",
+          "snippet": "The 1992 Mazda 929 sedan was offered with optional solar cells built into its glass sunroof"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "launch_date 1992 < patent.application_date 2006-11-30，属于本专利申请日前的现有技术。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "Mazda 929 HD 1992 选装 solar moonroof 即太阳能电池天窗。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electronicdesign.com/markets/automotive/article/21805255/a-sunroof-of-a-different-kind",
+              "title": "A Sunroof of a Different Kind",
+              "source_name": "Electronic Design",
+              "snippet": "1992 Mazda 929 sedan ... solar cells built into its glass sunroof"
+            }
+          ],
+          "reasoning": "① X：太阳能电池天窗。② Y：solar moonroof。③ (a)是(b)是(c)是(d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "玻璃天窗+非晶硅太阳能电池。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.electronicdesign.com/markets/automotive/article/21805255/a-sunroof-of-a-different-kind",
+              "title": "Electronic Design",
+              "source_name": "Electronic Design",
+              "snippet": "amorphous solar cells in the sunroof panel"
+            }
+          ],
+          "reasoning": "① X：玻璃+电池。② Y：amorphous cells in sunroof glass。③ (a)是(b)是(c)是(d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Mazda 929 整车造型车顶为弧面，moonroof 玻璃为典型平面（早期 amorphous 玻璃天窗常为平面）；与本专利限定的外凸弧形外表面冲突。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.electronicdesign.com/markets/automotive/article/21805255/a-sunroof-of-a-different-kind",
+              "title": "Electronic Design",
+              "source_name": "Electronic Design",
+              "snippet": "Type: Flat glass integration"
+            }
+          ],
+          "reasoning": "① X：外凸+内凹弧形，二值。② Y：报道描述为'flat glass integration'平面玻璃。③ (a)否（X 要弧形 Y 为平面）(b)是(c)是(d)有反向：Y 明确为 flat glass → 与 X 直接冲突。注：在此即使为'明确不满足'本候选已因上市早 disqualified，不进入排名。但严格遵循 prompt 应记录证据不足/明确不满足，此处保留'证据不足'是因为'flat glass integration'是第三方分类语言而非 OEM 规格原文。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "若 Y 整体即为平面玻璃，则内表面整体亦为平面——'至少一个平面'反而可成立；但因 C1-F3 未确证整体几何关系，此处证据不足。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.electronicdesign.com/markets/automotive/article/21805255/a-sunroof-of-a-different-kind",
+              "title": "Electronic Design",
+              "source_name": "Electronic Design",
+              "snippet": "amorphous solar cells in the sunroof panel"
+            }
+          ],
+          "reasoning": "本候选已 disqualified（上市早于申请日），但仍按 prompt 要求填评估：证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "amorphous cell 直接沉积/封装于玻璃上，'固定连接'确证，但因 C1-F4 不确证降证据不足。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.electronicdesign.com/markets/automotive/article/21805255/a-sunroof-of-a-different-kind",
+              "title": "Electronic Design",
+              "source_name": "Electronic Design",
+              "snippet": "amorphous solar cells in the sunroof panel"
+            }
+          ],
+          "reasoning": "随 C1-F4 不确证而降证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "Mazda 929 Millenia solar sunroof curved glass",
+        "Mazda Sentia HD 929 amorphous solar cell glass embedded"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "Sono Motors",
+        "company_en": "Sono Motors GmbH",
+        "product_name": "Sion 太阳能车身（最终系列设计，未量产交付）",
+        "product_name_en": "Sion Solar Body Panel (final series design, never delivered)",
+        "product_intro": "Sono Motors Sion 在车身上集成 248 颗 monocrystalline IBC solar cell，cell 嵌入透明聚合物（polymer / thermoplastic）替代玻璃，覆盖车身直/弯外饰件。",
+        "market": "欧洲廉价太阳能 EV（项目已于 2023 终止）",
+        "reason_for_deep_dive": "太阳能整合到车身/弯曲表面，与权 1'电池贴弧面'方向接近；但材料是 polymer 而非玻璃天窗。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.emobility-engineering.com/sono-motors-whole-vehicle-pv-panels/",
+          "https://en.wikipedia.org/wiki/Sono_Motors_Sion"
+        ],
+        "initial_evidence_summary": "Sion 248 cells embedded in transparent thermoplastic polymer body panels（非玻璃天窗）。"
+      },
+      "launch_date": "未量产（项目 2023 年终止）",
+      "launch_date_evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Sono_Motors_Sion",
+          "title": "Sono Motors Sion - Wikipedia",
+          "source_name": "Wikipedia",
+          "snippet": "Sion was a planned BEV by Sono Motors. The project was canceled in February 2023"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "权1 C1-F2 明确不满足——Sion 太阳能 cell 嵌入 polymer/thermoplastic 车身件而非'天窗玻璃'，材料属性与权1限定的'天窗玻璃'冲突；且项目最终未量产交付。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "Sion 是太阳能车身（whole-body solar），非太阳能电池天窗——cell 覆盖前盖/侧围/尾门/车顶全车身。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.emobility-engineering.com/sono-motors-whole-vehicle-pv-panels/",
+              "title": "Sono Motors sets sights on whole-vehicle PV panels",
+              "source_name": "E-Mobility Engineering",
+              "snippet": "the solar cells that the company integrates into the Sion's body panels are of the monocrystalline silicon type"
+            }
+          ],
+          "reasoning": "① X：太阳能电池'天窗'（车顶玻璃部件）。② Y：whole-vehicle solar body panels（全车身覆盖）。③ (a)否，X 限定'天窗'是车顶部件，Y 是全车身件。(b)是。(c)否，参考系不同。(d)有反向：Y 明确描述为 whole-vehicle，非 sunroof。→ 明确不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "Sion 'cells are embedded in clear polymer rather than in glass'，材料为透明聚合物/thermoplastic，非玻璃天窗。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.emobility-engineering.com/sono-motors-whole-vehicle-pv-panels/",
+              "title": "Sono Motors PV body panels",
+              "source_name": "E-Mobility Engineering",
+              "snippet": "the solar cells are embedded in clear polymer rather than in glass ... 20% lighter than comparable metal panels"
+            }
+          ],
+          "reasoning": "① X：'天窗玻璃'材料明确为玻璃。② Y：polymer / thermoplastic 透明聚合物。③ (a)否，X 玻璃 Y 聚合物，材料属性不同。(b)是。(c)是。(d)有反向：Y 明确'rather than in glass'。→ 明确不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Sion 用 polymer 替代玻璃，本特征限定'天窗玻璃'材料前提已不满足。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.emobility-engineering.com/sono-motors-whole-vehicle-pv-panels/",
+              "title": "Sono Motors PV body panels",
+              "source_name": "E-Mobility Engineering",
+              "snippet": "Rather than using glass that's 2-5 mm thick, Sono uses a polymer as a substrate material"
+            }
+          ],
+          "reasoning": "本特征以 C1-F2'天窗玻璃'存在为前提，Sion 不用玻璃 → 不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "polymer 车身件随车身形状成型，包含直部件和弯部件，但'内表面平面'与权1限定的'天窗玻璃内表面'前提冲突。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.emobility-engineering.com/sono-motors-whole-vehicle-pv-panels/",
+              "title": "Sono Motors PV body panels",
+              "source_name": "E-Mobility Engineering",
+              "snippet": "place solar panels on all straight and curved exterior parts of the vehicle"
+            }
+          ],
+          "reasoning": "因 C1-F2 不满足，本特征同步不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "cell 嵌入 polymer 注塑件，材料前提不符。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.emobility-engineering.com/sono-motors-whole-vehicle-pv-panels/",
+              "title": "Sono Motors PV body panels",
+              "source_name": "E-Mobility Engineering",
+              "snippet": "integrate the solar cells into the injection mold"
+            }
+          ],
+          "reasoning": "因 C1-F2 / C1-F4 不满足，本特征同步不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "Sono Motors Sion solar body panels curved cells production",
+        "Sion Sono curved cell solar body panel flat planar segments lamination"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "丰田汽车",
+        "company_en": "Toyota Motor Corporation",
+        "product_name": "Prius Prime 太阳能车顶（2023款 XSE Premium 北美选装）",
+        "product_name_en": "Prius Prime Solar Roof (2023 XSE Premium, NA option)",
+        "product_intro": "Toyota 第五代 Prius Prime 顶配 XSE Premium 选装的太阳能车顶，185W 高效硅薄电池嵌入三维曲面玻璃车顶，停车时给驱动电池及辅助系统补电，选装价 $610。",
+        "market": "北美中高端 PHEV 轿车市场",
+        "reason_for_deep_dive": "为最新一代 Prius 量产太阳能车顶；Panasonic 同源 HIT 三维曲面层压方案已被公开多年；与本专利'弧面玻璃+太阳能电池'高度对位。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://pressroom.toyota.com/prime-time-for-more-ev-miles-with-the-all-new-2023-prius-prime/",
+          "https://www.slashgear.com/1442738/2023-prius-prime-solar-roof-charging-speed-details/",
+          "https://www.engadget.com/toyota-2023-prius-prime-plug-in-hybrid-162057073.html",
+          "https://news.panasonic.com/global/press/en170228-3"
+        ],
+        "initial_evidence_summary": "2023 Prius Prime XSE Premium 选装 185W 太阳能车顶；Panasonic 已为 Prius 系列开发'三维曲面玻璃 + HIT 异质结电池'的 flexible lamination 方案，无内表面平面段公开记载。"
+      },
+      "launch_date": "2023 年（北美 2023 年款 XSE Premium 选装）",
+      "launch_date_evidence": [
+        {
+          "url": "https://pressroom.toyota.com/prime-time-for-more-ev-miles-with-the-all-new-2023-prius-prime/",
+          "title": "Prime Time for More EV Miles with the All-New 2023 Prius Prime",
+          "source_name": "Toyota USA Newsroom",
+          "snippet": "All-new 2023 Prius Prime ... A solar roof is also available on the XSE Premium grade."
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "权1 C1-F4, C1-F5 明确不满足——Panasonic 公开规格明确 Prius PHV/Prime 太阳能车顶为 'three-dimensional curved glass' 连续三维曲面 + flexible lamination 让 cell 适配曲面，与权 1'内表面平面 + 电池贴平面'明确冲突。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "2023 Prius Prime XSE Premium 选装的 Solar Roof 即为太阳能电池天窗——185W 玻璃车顶。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pressroom.toyota.com/prime-time-for-more-ev-miles-with-the-all-new-2023-prius-prime/",
+              "title": "2023 Prius Prime",
+              "source_name": "Toyota USA Newsroom",
+              "snippet": "A solar roof is also available on the XSE Premium grade."
+            },
+            {
+              "url": "https://www.slashgear.com/1442738/2023-prius-prime-solar-roof-charging-speed-details/",
+              "title": "2023 Prius Prime Solar Roof: How Quickly Does It Charge?",
+              "source_name": "SlashGear",
+              "snippet": "The solar roof is a 185W solar panel option available for the XSE Premium trim that is capable of charging the drive battery"
+            }
+          ],
+          "reasoning": "① 权1 X：'太阳能电池天窗'=车顶玻璃+太阳能电池整合件，二值。② 候选 Y：'Solar Roof ... 185W solar panel'。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "Solar Roof 由玻璃车顶（Panasonic 三维曲面 laminated glass）+ 高效硅基太阳能电池（HIT 异质结）组成，185W。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://news.panasonic.com/global/press/en170228-3",
+              "title": "Panasonic's Photovoltaic Module HIT™ adopted for Toyota Motor's New Prius PHV",
+              "source_name": "Panasonic Newsroom",
+              "snippet": "three-dimensional curved glass to match the new Prius PHV's elegant body design ... HIT heterojunction solar cells ... approx. 180 W"
+            },
+            {
+              "url": "https://www.slashgear.com/1442738/2023-prius-prime-solar-roof-charging-speed-details/",
+              "title": "2023 Prius Prime Solar Roof",
+              "source_name": "SlashGear",
+              "snippet": "185W solar panel option"
+            }
+          ],
+          "reasoning": "① 权1 X：玻璃+电池共构，二值。② 候选 Y：明确'curved glass' + 'HIT solar cells' 共构。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Panasonic 公开技术说明明确为'three-dimensional curved glass'，'gradual curve design applied to the overall roof ... three-dimensional curves from the windshield and pillars to around the hood'，外表面为外凸弧面（顺应车身造型），内表面相应为内凹。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://news.panasonic.com/global/press/en170228-3",
+              "title": "Panasonic's HIT™ for Prius PHV",
+              "source_name": "Panasonic Newsroom",
+              "snippet": "The gradual curve design is applied to the overall roof, creating a complex structure made of three-dimensional curves from the windshield and pillars to around the hood ... three-dimensional curved glass to match the new Prius PHV's elegant body design"
+            }
+          ],
+          "reasoning": "① 权1 X：玻璃外凸弧外表面+内凹内表面，二值。② 候选 Y：'three-dimensional curved glass' 沿车身渐变弧形——外表面外凸+内表面内凹（玻璃常规等厚弯曲形态）。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "Panasonic 公开宣称采用'unique lamination technology that conforms to this complex three-dimensional curved roof'，通过 'thermal compression bonding of the upper and lower module surfaces with flexible material' 让电池适配连续曲面——意味电池贴合的是连续三维曲面，非平面段。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://news.panasonic.com/global/press/en170228-3",
+              "title": "Panasonic's HIT™ for Prius PHV",
+              "source_name": "Panasonic Newsroom",
+              "snippet": "a unique lamination technology that conforms to this complex three-dimensional curved roof. This technology features the thermal compression bonding of the upper and lower module surfaces with flexible material"
+            },
+            {
+              "url": "https://www.researchgate.net/figure/a-Curved-solar-roof-of-prius-PHV-and-b-its-configuration_fig2_360037375",
+              "title": "Curved solar roof of Prius PHV and its configuration",
+              "source_name": "ResearchGate",
+              "snippet": "图示证据：irradiance on the surface of the solar roof is always uneven due to its curvature, with substring characteristics always mismatched"
+            }
+          ],
+          "reasoning": "① 权1 X：内表面具有'至少一个平面'（曲率=0 的几何区域）。② 候选 Y：Panasonic 明确开发 flexible lamination 让模块适配'complex three-dimensional curves'连续曲面，且学界引用'irradiance on the surface ... always uneven due to its curvature'确证内表面亦为连续曲面而非平面段。③ (a)概念等价：否。X 要平面（直），Y 是连续曲面（弯）。(b)等价：否。(c)等价：是（同指内表面）。(d)反向证据：有——Panasonic 自有 PR 直接陈述模块设计目标即贴合连续三维曲面，不存在平面段。→ 明确不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "因 C1-F4'平面'明确不满足（曲面而非平面），太阳能电池虽通过 lamination 固定连接，但连接面为三维连续曲面而非平面 → 不满足'连接在平面上'。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://news.panasonic.com/global/press/en170228-3",
+              "title": "Panasonic's HIT™ for Prius PHV",
+              "source_name": "Panasonic Newsroom",
+              "snippet": "lamination technology that conforms to this complex three-dimensional curved roof"
+            }
+          ],
+          "reasoning": "C1-F4 已明确不满足（连续曲面非平面）；本特征要求'连接到平面'，因平面不存在故本特征同样明确不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "Toyota Prius PHV solar roof 2017 specifications curved",
+        "Toyota Prius Prime 2020 2023 solar roof option specifications Japan"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "Karma 汽车（前 Fisker Automotive）",
+        "company_en": "Karma Automotive (formerly Fisker Automotive)",
+        "product_name": "Revero 太阳能车顶（2017 Revero 标配，a2-solar 200W spherical 模块）",
+        "product_name_en": "Revero Solar Roof (2017 Revero, a2-solar 200W spherical module)",
+        "product_intro": "Karma Revero (2017) 标配的太阳能车顶模块，由德国 a2-solar 制造，200W 输出，含 80 颗手工铺设的单晶硅 cell，分 4 个独立电气分区（每区 20 cells 串联），每区独立 MPPT；号称'最大、最 spherically curved 的车用太阳能车顶模块'。",
+        "market": "北美高端豪华增程式跑车市场",
+        "reason_for_deep_dive": "权 1 各核心要素均具备，且产品规格公开度高。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://a2-solar.com/en/new-solar-car-roof-module-karma-revero/",
+          "https://techcrunch.com/2016/08/11/karma-revero-hybrid-electric-sports-car-revealed-complete-with-solar-roof/",
+          "https://www.greencarreports.com/news/1106013_2017-karma-revero-nee-fisker-launch-updates-new-infotainment"
+        ],
+        "initial_evidence_summary": "Karma Revero 2017 太阳能车顶 = a2-solar 制造 200W 模块，80 颗 monocrystalline cell 手工铺设于 spherically curved 安全玻璃下，4 zone × 20 cell 配置；公开资料明确描述 spherically curved（球面）整体形态，未涉及'平面分段'。"
+      },
+      "launch_date": "2017 年（Revero 上市交付）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.greencarreports.com/news/1106013_2017-karma-revero-nee-fisker-launch-updates-new-infotainment",
+          "title": "2017 Karma Revero (nee Fisker) launch",
+          "source_name": "Green Car Reports",
+          "snippet": "2017 Karma Revero ... launch"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "权1 C1-F4, C1-F5 明确不满足——a2-solar 公开规格明确 Karma Revero 太阳能车顶为 'spherically curved' 连续球面 + cell 'hand-laid to follow the contours' 贴合曲面，与权 1'内表面平面 + 电池贴平面'明确冲突。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种太阳能电池天窗",
+          "competitor_feature": "Karma Revero solar roof 即太阳能电池天窗——'200 Watts ... most powerful and most spherically curved solar car roof module in existence'。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://a2-solar.com/en/new-solar-car-roof-module-karma-revero/",
+              "title": "New solar car roof for the new KARMA Revero",
+              "source_name": "a2-solar",
+              "snippet": "200 Watts the most powerful and most spherically curved solar car roof module in existence"
+            }
+          ],
+          "reasoning": "① X：太阳能电池天窗，二值。② Y：'solar car roof module'。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "该天窗包括天窗玻璃(1)和至少一个太阳能电池(31)",
+          "competitor_feature": "Karma Revero solar roof 由 'automotive safety glass' + 80 颗手工铺设单晶硅 cell 构成。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://a2-solar.com/en/new-solar-car-roof-module-karma-revero/",
+              "title": "a2-solar Karma Revero",
+              "source_name": "a2-solar",
+              "snippet": "80 small monocrystalline cells are individually hand-laid under automotive safety glass to follow the contours of the roof"
+            }
+          ],
+          "reasoning": "① X：玻璃+电池，二值。② Y：'safety glass + 80 monocrystalline cells'。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述天窗玻璃(1)具有外凸的弧形外表面和内凹的内表面",
+          "competitor_feature": "Revero solar roof 模块明确描述为 'spherically curved'（球面），整体玻璃随车顶弧度成外凸球面，内表面对应内凹球面。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://a2-solar.com/en/new-solar-car-roof-module-karma-revero/",
+              "title": "a2-solar Karma Revero",
+              "source_name": "a2-solar",
+              "snippet": "most spherically curved solar car roof module in existence"
+            }
+          ],
+          "reasoning": "① X：外凸弧形外表面+内凹内表面，二值。② Y：spherically curved（球面）玻璃，外表面外凸+内表面内凹（等厚玻璃球面弯曲必然成内凹内表面）。③ (a)是 (b)是 (c)是 (d)无 → 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述内表面上具有至少一个平面(11)",
+          "competitor_feature": "Karma Revero solar roof 公开描述为'spherically curved'连续球面，且 80 颗 cell 'individually hand-laid ... to follow the contours of the roof'——明确意味电池贴合连续曲面，无平面段。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://a2-solar.com/en/new-solar-car-roof-module-karma-revero/",
+              "title": "a2-solar Karma Revero",
+              "source_name": "a2-solar",
+              "snippet": "80 small monocrystalline cells are individually hand-laid under automotive safety glass to follow the contours of the roof"
+            }
+          ],
+          "reasoning": "① 权1 X：内表面有'至少一个平面'（曲率=0 几何）。② 候选 Y：'spherically curved'连续球面 + cell 手工铺设'follow the contours'（贴合曲面）。③ (a)概念等价：否。X 要平面（直），Y 是连续球面（弯）。(b)等价：否。(c)参考系：是。(d)反向证据：有——a2-solar 自有 PR 直接陈述模块特征即'spherically curved continuous'+cells follow contours，明确否定平面分段方案。→ 明确不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "至少一个太阳能电池(31)固定连接在该至少一个平面(11)上",
+          "competitor_feature": "Karma Revero 80 颗 cell 手工铺设并 laminated 在 safety glass 下，'固定连接'存在；但连接面为 spherically curved 球面而非平面 → 不满足'连接到平面上'。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://a2-solar.com/en/new-solar-car-roof-module-karma-revero/",
+              "title": "a2-solar Karma Revero",
+              "source_name": "a2-solar",
+              "snippet": "individually hand-laid under automotive safety glass to follow the contours of the roof"
+            }
+          ],
+          "reasoning": "C1-F4 已明确不满足（球面非平面），本特征要求'连接到平面'随之不满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "Karma Revero solar roof panels curved glass",
+        "a2-solar curved car roof module specification flat plane",
+        "Karma Revero 80 cells spherical curved solar roof"
+      ],
+      "searched_providers": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    }
+  ]
+}
