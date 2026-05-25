@@ -90,9 +90,9 @@ class TechnologyTag:
 
 
 _CONFIG_PATH = Path(__file__).resolve().parents[3] / "configs" / "technology_tags.toml"
-# 注意：skills/patentradar/configs/technology_tags.toml 是这一份的副本（skill
-# 单独移植时需要带走那份）。**编辑标签或网站推荐时两份都要改**，否则会出现
-# Python pipeline 和 skill agent 看到的标签集合不一致。
+# 注意：根目录 skills/patentradar/configs/technology_tags.toml 是这一份的副本
+# （skill 单独移植时需要带走那份）。**编辑标签或网站推荐时两份都要改**，否则
+# 会出现 Python pipeline 和 skill agent 看到的标签集合不一致。
 
 
 def _parse_sites(items: list[dict] | None) -> tuple[RecommendedSite, ...]:

@@ -280,7 +280,7 @@ PatentRadar/
 │   ├── search/                ← 4 个 search provider + 智能路由
 │   └── schemas/               ← Pydantic 数据契约（贯穿 4 模块）
 │
-└── .claude/skills/patentradar/   ← 模式 2：作为 Claude Code skill 被其他 agent 调用
+└── skills/patentradar/           ← 模式 2：作为 Claude Code skill 被其他 agent 调用
     ├── SKILL.md                  ← skill 入口（声明触发词 / 工作流）
     ├── agents/                   ← 4 个 subagent 的完整 prompt
     │   ├── decompose.md
@@ -412,7 +412,7 @@ data/output/CN110293961B/
 
 ### 另一种用法：作为 Claude Code / Codex CLI skill 嵌入
 
-把 `.claude/skills/patentradar/` 目录放到你的 [Claude Code](https://docs.claude.com/claude-code) skill 路径下（或软链）。
+把 `skills/patentradar/` 目录放到你的 [Claude Code](https://docs.claude.com/claude-code) skill 路径下（或软链）。
 
 在 Claude Code / Codex CLI 中：
 
@@ -521,7 +521,7 @@ BRAVE_API_KEY=...                # 英文新闻 / 评测强项
 
 ### 技术领域 + 垂类网站清单 + 图像 boost 词
 
-[`configs/technology_tags.toml`](configs/technology_tags.toml)（src 端）和 [`.claude/skills/patentradar/configs/technology_tags.toml`](.claude/skills/patentradar/configs/technology_tags.toml)（skill 端，需保持同步）维护了 **9 大技术领域**（动力电池 / 电驱系统 / 智能驾驶 / 车身底盘 …），每个 tag 含三组配置：
+[`configs/technology_tags.toml`](configs/technology_tags.toml)（src 端）和 [`skills/patentradar/configs/technology_tags.toml`](skills/patentradar/configs/technology_tags.toml)（skill 端，需保持同步）维护了 **9 大技术领域**（动力电池 / 电驱系统 / 智能驾驶 / 车身底盘 …），每个 tag 含三组配置：
 
 | 字段 | 用途 | 用到的模块 |
 |---|---|---|
@@ -555,7 +555,7 @@ PatentRadar/
 │   ├── search/                       # Tavily / Bocha / Exa / Brave + router
 │   ├── schemas/                      # Pydantic 数据契约
 │   └── server/                       # FastAPI Dashboard + SSE
-├── .claude/skills/patentradar/       # 跨 agent skill 模式
+├── skills/patentradar/               # 跨 agent skill 模式
 │   ├── SKILL.md
 │   ├── agents/                       # 4 个 subagent 的完整 prompt
 │   ├── schemas/                      # JSON Schema（与 src/schemas 同源）
