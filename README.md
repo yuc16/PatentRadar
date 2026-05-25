@@ -4,15 +4,15 @@
 
 **专利侵权竞品分析 · 全自动 · 可复核**
 
-输入一个专利公开号，自动产出一份律师 / 工程师可直接复核的 claim chart 报告——含可点击的证据 URL、PDF 图像证据、逐特征推理链，以及"还缺什么 / 下一步去哪查"的可执行建议。
+输入一个专利公开号，自动产出一份律师 / 工程师可直接复核的 claim chart 报告——含可点击的证据 URL、逐特征对比推理，以及"还缺什么 / 下一步去哪查"的可执行建议。
 
 [![Python](https://img.shields.io/badge/python-3.14+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/managed_with-uv-DE5FE9?logo=python&logoColor=white)](https://github.com/astral-sh/uv)
 [![LLM](https://img.shields.io/badge/LLM-ChatGPT_auth_/_OpenAI_compatible-10A37F?logo=openai&logoColor=white)](#-llm-后端)
-[![Skill](https://img.shields.io/badge/Claude_Code-Skill_ready-D97757?logo=anthropic&logoColor=white)](#模式-2跨-agent-skill嵌入-claude-code--codex-cli)
+[![Skill](https://img.shields.io/badge/Claude_Code-Skill_ready-D97757?logo=anthropic&logoColor=white)](#模式-2作为-skill-嵌入-claude-code--codex-cli)
 [![License](https://img.shields.io/badge/license-MIT-blue)](#-license)
 
-[快速开始](#-快速开始) · [架构](#%EF%B8%8F-架构) · [4 模块工作流](#-4-模块工作流) · [Skill 模式](#模式-2跨-agent-skill嵌入-claude-code--codex-cli)
+[快速开始](#-快速开始) · [架构](#%EF%B8%8F-架构) · [4 模块工作流](#-4-模块工作流) · [Skill 模式](#模式-2作为-skill-嵌入-claude-code--codex-cli)
 
 </div>
 
@@ -42,7 +42,7 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 - **📊 实时 Dashboard**　FastAPI + SSE 后端 + 单页 Web UI，4 个模块进度可视化，每一次 LLM 调用 / 工具调用全程留痕，支持回放与离线 HTML 导出
 - **🧠 双 LLM 后端**　ChatGPT OAuth（Codex Responses SSE，gpt-5.5 默认）或任意 OpenAI 兼容网关（aihubmix / DeepSeek / 自建）一键切换
 - **📄 自动 PDF 渲染**　WeasyPrint + PingFang SC 中文字体 + 表格防溢出 CSS，markdown / PDF 双格式落盘
-- **🤖 双模运行**　既能作为独立项目跑（CLI / Web），又能作为 Claude Code / Codex CLI 的 skill 被其他 agent 调用
+- **🤖 双模运行**　既能作为独立项目跑（CLI / Web），又能作为 skill 被其他 agent 如 claude-code/codex 调用
 
 ---
 
@@ -417,7 +417,7 @@ data/output/CN110293961B/
 
 ---
 
-### 另一种用法：作为 Claude Code / Codex CLI skill 嵌入
+### 模式 2：作为 skill 嵌入 Claude Code / Codex CLI
 
 把 `skills/patentradar/` 目录放到你的 [Claude Code](https://docs.claude.com/claude-code) skill 路径下（或软链）。
 
