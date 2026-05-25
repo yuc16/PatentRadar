@@ -16,3 +16,6 @@ wheels/
 *.mp4
 
 .DS_Store
+
+# Per-run logs（每次 pipeline 自动生成的 stdout / SSE stream / run.jsonl）
+logs/

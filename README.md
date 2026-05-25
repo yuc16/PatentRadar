@@ -379,6 +379,9 @@ curl -N    http://localhost:8000/api/stream/CN110293961B   # SSE 实时事件
 curl       http://localhost:8000/api/status/CN110293961B   # JSON 快照
 ```
 
+`POST /api/run/{pub}` 同步校验格式（不合法专利号 → **400** + 错误信息）；
+若该 pub 已经在跑则直接 **409**，避免重复启动 BackgroundTask。
+
 #### 分步 CLI（调试 / 重跑某一步）
 
 直接调每个模块的 CLI，业务产物正常落到 `data/output/<PUB>/`，但**没有 `logs/<PUB>/` 结构化日志**（那是 server 模式专属）：
@@ -397,10 +400,14 @@ uv run patentradar report            data/output/CN110293961B/task_package.json 
 ```
 data/output/CN110293961B/
 ├── task_package.json                # 模块 1：权利要求拆解
-├── step2_search_results.json        # 模块 2：搜索原始结果
-├── step3_candidate_shortlist.json
-├── step4_candidate_evidence.json
-├── step5_top5_claim1_candidates.json
+├── step1_query_plan.json            # 模块 2 step1：查询计划
+├── step2_search_results.json        # 模块 2 step2：搜索原始结果
+├── step3_candidate_shortlist.json   #          step3：候选清单
+├── step4_candidate_evidence.json    #          step4：逐候选权 1 证据
+├── step4_fetched_pages/<cid>.json   #          step4：全文证据池（供模块 3 复用）
+├── step4_visual_log_fetched/        #          step4：fetch 阶段抓回的全部图（审计用）
+├── step4_visual_log_sent/           #          step4：实际送给 LLM 的图（审计用）
+├── step5_top5_claim1_candidates.json#          step5：TOP-N 排名
 ├── top5_full_claim_chart.json       # 模块 3：全 claim 对比
 ├── report.md                        # 模块 4：最终报告（markdown）
 └── report.pdf                       #         最终报告（PDF）
@@ -565,7 +572,7 @@ PatentRadar/
 ├── scripts/
 │   ├── run_full_pipeline.py          # 4 模块一键串行
 │   └── smoke_aihubmix.py             # 跨 LLM backend 烟囱测试
-├── configs/                          # 搜索过滤规则
+├── configs/                          # search_filters.toml + technology_tags.toml（9 大技术领域）
 ├── tests/                            # 各模块 fixture + 历史产物
 ├── data/output/<PUB>/                # 报告落盘（gitignored）
 └── logs/<PUB>/                       # 每模块原始 LLM payload 与响应（调试用）
@@ -585,10 +592,12 @@ uv run python scripts/smoke_aihubmix.py      # 跨 LLM backend 烟囱测试
 调试某次跑挂掉的模块：
 
 ```bash
-# 所有 LLM 原始 payload 和响应都落盘在
-logs/<PUB>/module_<N>/
+# 每模块完整日志（server 模式才有）：
+#   logs/<PUB>/run.jsonl                  # 4 模块生命周期事件
+#   logs/<PUB>/module_<N>.log             # 模块 N 子进程 stdout/stderr
+#   logs/<PUB>/module_<N>.stream.jsonl    # 模块 N 内部 LLM payload / token 流
 
-# 单步重跑：直接复用上一步产物 JSON，命令见「方式 B 分步跑」
+# 单步重跑：直接复用上一步产物 JSON，命令见上面「分步 CLI」
 ```
 
 ---

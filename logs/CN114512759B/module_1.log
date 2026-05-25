@@ -1,8 +1,0 @@
-$ /Users/wangyc/Desktop/projects/PatentRadar/.venv/bin/python3 -m patentradar.cli decompose CN114512759B --output-dir /Users/wangyc/Desktop/projects/PatentRadar/data/output
-11:55:58 [httpx] HTTP Request: GET https://patents.google.com/patent/CN114512759B/zh "HTTP/1.1 200 OK"
-11:55:59 [patentradar.llm.codex] codex prompt size=11,746 chars model=gpt-5.5
-11:56:01 [httpx] HTTP Request: POST https://chatgpt.com/backend-api/codex/responses "HTTP/1.1 200 OK"
-11:59:15 [patentradar.modules.decompose.pipeline] decompose completed publication_no=CN114512759B source=html claim_count=11 technology_tag=动力电池 elapsed_ms=197099
-Wrote /Users/wangyc/Desktop/projects/PatentRadar/data/output/CN114512759B/task_package.json
-Claims: 11
-Technology tag: 动力电池
