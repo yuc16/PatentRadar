@@ -118,6 +118,19 @@ def _append_event(run_log: Path, event: dict) -> None:
         f.write(json.dumps(event, ensure_ascii=False) + "\n")
 
 
+def _tail_message(log_path: Path, *, max_lines: int = 6, max_chars: int = 500) -> str:
+    # subprocess 失败时只暴露 exit_code,前端只看到 "exit_code=1" 不知所云。
+    # 从 module_N.log 末尾捞最后几行非空内容当作人话错误消息,
+    # 让 Google Patents 503 / 429 这类暂时性故障能透到 UI。
+    try:
+        lines = log_path.read_text(encoding="utf-8", errors="ignore").splitlines()
+    except OSError:
+        return ""
+    tail = [ln.strip() for ln in lines[-max_lines:] if ln.strip()]
+    msg = " | ".join(tail)
+    return msg[-max_chars:] if len(msg) > max_chars else msg
+
+
 def _env_for_step(step: ModuleStep, stream_log: Path) -> dict[str, str]:
     env = os.environ.copy()
     env["PATENTRADAR_STREAM_LOG"] = str(stream_log)
@@ -221,6 +234,7 @@ def _run_pipeline_locked(pub: str) -> None:
                         "event": "error",
                         "elapsed": round(elapsed, 2),
                         "exit_code": rc,
+                        "message": _tail_message(step_log),
                         "log_path": str(step_log.relative_to(ROOT)),
                     },
                 )
