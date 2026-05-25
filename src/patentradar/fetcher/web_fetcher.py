@@ -466,12 +466,17 @@ def _download_as_png(url: str, *, timeout: float = 15.0) -> bytes | None:
 def _extract_relevant_text(text: str, keywords: list[str], *, max_chars: int) -> str:
     if len(text) <= max_chars:
         return text
+    # 有 keywords 但所有 keyword 都未命中 → 返回空：旧版退回 text[:max_chars]
+    # 等于把 nav/header/营销话术当证据喂 LLM，反而触发 "证据不足" 误判。
+    # 调用方收到 text="" 后会跳过该 page（见 _fetch_new_evidence / fetch_relevant_pages
+    # 里的 `if evidence.text:` 守卫），但图片仍正常返回。
+    # 无 keywords（如老接口）保持原行为返回文档头部，避免误删一切。
+    effective_keywords = [k.strip().lower() for k in (keywords or []) if k and k.strip()]
+    if not effective_keywords:
+        return text[:max_chars]
     windows: list[str] = []
     lowered = text.lower()
-    for keyword in keywords:
-        key = keyword.strip().lower()
-        if not key:
-            continue
+    for key in effective_keywords:
         index = lowered.find(key)
         if index < 0:
             continue
@@ -481,6 +486,6 @@ def _extract_relevant_text(text: str, keywords: list[str], *, max_chars: int) ->
         if sum(len(item) for item in windows) >= max_chars:
             break
     if not windows:
-        return text[:max_chars]
+        return ""
     merged = "\n...\n".join(windows)
     return merged[:max_chars]

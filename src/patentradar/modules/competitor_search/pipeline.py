@@ -177,6 +177,8 @@ def run_step4_map_evidence(
     visual_log_sent_dir = output_dir / "step4_visual_log_sent"
     visual_log_fetched_dir.mkdir(parents=True, exist_ok=True)
     visual_log_sent_dir.mkdir(parents=True, exist_ok=True)
+    # 模块 3 round 1 用的 fetched_pages 全文池（避免被 LLM 裁成 snippet 后再次进 LLM）
+    fetched_pages_dump_dir = output_dir / "step4_fetched_pages"
     evidence_results: list[CandidateEvidence] = []
 
     def _process(candidate):
@@ -189,6 +191,7 @@ def run_step4_map_evidence(
             reasoning_effort=reasoning_effort,
             visual_log_dir=visual_log_fetched_dir,
             visual_log_sent_dir=visual_log_sent_dir,
+            fetched_pages_dump_dir=fetched_pages_dump_dir,
         )
         return candidate, batch
 
@@ -206,11 +209,18 @@ def run_step4_map_evidence(
             except Exception as exc:  # noqa: BLE001
                 logger.warning("module2 step4 cache invalid for %s, re-running: %s", candidate.candidate_id, exc)
         # 单候选错误隔离：LLM/网络炸了不拖死整 pipeline，写一条 disqualified 占位
+        # ⚠️ 故意不把 fallback 写盘：transient 错误若 cache 下来，下次重跑会
+        # `path.exists()` → 直接 load → 候选被永久排除。本次返回 fallback 让
+        # 当前 run 能继续打榜，重跑时仍会真正调用 LLM。
         try:
             _, result = _process(candidate)
         except Exception as exc:  # noqa: BLE001
-            logger.error("module2 step4 candidate=%s FAILED, marking disqualified: %s", candidate.candidate_id, exc)
-            fallback = CandidateEvidence(
+            logger.error(
+                "module2 step4 candidate=%s FAILED, marking disqualified in-memory "
+                "(NOT cached, will retry next run): %s",
+                candidate.candidate_id, exc,
+            )
+            return CandidateEvidence(
                 candidate=candidate,
                 launch_date="",
                 launch_date_evidence=[],
@@ -221,8 +231,6 @@ def run_step4_map_evidence(
                 searched_providers=[],
                 searched_queries=[],
             )
-            _write_json(path, fallback.model_dump())
-            return fallback
         if not result.results:
             return None
         ev = result.results[0]

@@ -533,14 +533,24 @@
   });
 
   // ---- Outputs (json/md/pdf) ----------------------------------------------
-  // 这些 blob URL 在窗口关闭前不释放（同一文件可能被多次点开）。
+  // 旧版 blob URL 从不释放，多次点开后台累积；这里在新窗口加载完成后立即
+  // revoke（浏览器已经拿到了 blob 引用，revoke 不会撤掉它），失败回退到
+  // 60s 兜底定时器。
 
   const ICONS = { md: "📄", pdf: "📕", json: "📋" };
 
   function openInNewTab(html, mime = "text/html") {
     const blob = new Blob([html], { type: mime });
     const url = URL.createObjectURL(blob);
-    window.open(url, "_blank", "noopener");
+    const w = window.open(url, "_blank", "noopener");
+    const revoke = () => URL.revokeObjectURL(url);
+    if (w && typeof w.addEventListener === "function") {
+      w.addEventListener("load", () => setTimeout(revoke, 0), { once: true });
+      // 兜底：浏览器策略可能阻止上面的事件，60s 后无论如何释放
+      setTimeout(revoke, 60_000);
+    } else {
+      setTimeout(revoke, 60_000);
+    }
   }
 
   function openMd(o) {
@@ -573,7 +583,14 @@
     for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
     const blob = new Blob([bytes], { type: "application/pdf" });
     const url = URL.createObjectURL(blob);
-    window.open(url, "_blank", "noopener");
+    const w = window.open(url, "_blank", "noopener");
+    const revoke = () => URL.revokeObjectURL(url);
+    if (w && typeof w.addEventListener === "function") {
+      w.addEventListener("load", () => setTimeout(revoke, 0), { once: true });
+      setTimeout(revoke, 60_000);
+    } else {
+      setTimeout(revoke, 60_000);
+    }
   }
 
   function renderOutputsList() {

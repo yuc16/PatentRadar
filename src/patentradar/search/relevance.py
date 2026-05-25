@@ -66,7 +66,9 @@ def rank_pages_by_relevance(
         title = page.get("title") or ""
         haystack = f"{title} {text}"
         hits = _keyword_hits(haystack, keywords)
-        per_1k = (hits / max(1, len(text))) * 1000
+        # 分母用 len(haystack)：旧版用 len(text) 会让短 title 高命中虚增 density，
+        # 排序把短噪声页推到前面挤掉长正文。
+        per_1k = (hits / max(1, len(haystack))) * 1000
         # Tiebreaker: title hits matter more than tail text hits.
         title_hits = _keyword_hits(title, keywords)
         return per_1k + title_hits * 0.5

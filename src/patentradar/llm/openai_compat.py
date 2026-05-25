@@ -124,8 +124,10 @@ class OpenAICompatibleProvider:
             try:
                 text = self._call(request_body, timeout=timeout or self.default_timeout)
                 return _parse_json(text)
-            except _StrictSchemaRejected:
+            except _StrictSchemaRejected as exc:
                 # One-shot fallback: retry the same request with json_object mode.
+                # 保留 last_exc 让最终兜底 raise 时仍有可读错误信息。
+                last_exc = exc
                 logger.warning(
                     "OpenAI provider rejected json_schema strict mode; "
                     "falling back to json_object for this request."
@@ -212,24 +214,33 @@ class OpenAICompatibleProvider:
                         f"OpenAI-compatible HTTP {response.status_code}: {raw[:500]}"
                     )
 
+                # SSE 帧由空行分隔，每帧内可有多行 data:。把同帧多个 data 行的
+                # payload 用换行拼起来再 json.loads——大多数云厂商单行就够，但
+                # 某些 (vLLM / 自建网关) 会把长 chunk 拆成多行。
+                buffer_data: list[str] = []
                 for line in response.iter_lines():
-                    if not line or not line.startswith("data:"):
+                    if line == "":
+                        if not buffer_data:
+                            continue
+                        payload = "\n".join(buffer_data).strip()
+                        buffer_data = []
+                        if not payload or payload == "[DONE]":
+                            continue
+                        try:
+                            event = _json.loads(payload)
+                        except _json.JSONDecodeError:
+                            continue
+                        choices = event.get("choices") or []
+                        if not choices:
+                            continue
+                        delta = choices[0].get("delta") or {}
+                        content = delta.get("content")
+                        if isinstance(content, str) and content:
+                            parts.append(content)
+                            emit_delta(content)
                         continue
-                    payload = line[5:].strip()
-                    if not payload or payload == "[DONE]":
-                        continue
-                    try:
-                        event = _json.loads(payload)
-                    except _json.JSONDecodeError:
-                        continue
-                    choices = event.get("choices") or []
-                    if not choices:
-                        continue
-                    delta = choices[0].get("delta") or {}
-                    content = delta.get("content")
-                    if isinstance(content, str) and content:
-                        parts.append(content)
-                        emit_delta(content)
+                    if line.startswith("data:"):
+                        buffer_data.append(line[5:].lstrip())
 
         text = "".join(parts).strip()
         if not text:

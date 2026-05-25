@@ -124,15 +124,30 @@ def _dedupe_images(images: list[dict]) -> list[dict]:
 def _drop_empty_url_evidence(payload: dict[str, Any]) -> None:
     """同 evidence_worker._drop_empty_url_evidence：DeepSeek 偶尔会塞 url='' 的
     evidence，绕过这道防御 Pydantic 校验会让整轮失败。模块三 payload 形态嵌套更深，
-    所有可能放 EvidenceSource 的字段都得 sanitize。"""
+    所有可能放 EvidenceSource 的字段都得 sanitize。
+
+    清空后若 comparison.evidence 列表已空 → 同步把 status 降级为「证据不足」，
+    避免"status=明确满足 但 evidence=[]"对外报告（人工审核找不到依据）。
+    """
     def _scrub(items: list | None) -> list:
         if not items:
             return []
         return [i for i in items if isinstance(i.get("url"), str) and i["url"].strip()]
 
-    for entry in payload.get("claim_chart") or []:
+    # ⚠️ 字段名必须是 claim_charts（复数），与 schema 一致；旧版误写 claim_chart 单数，
+    # 让这段 scrub 永远空跑 → 空 URL 透传到 Pydantic 触发 ValidationError 让整轮失败。
+    for entry in payload.get("claim_charts") or []:
         for comparison in entry.get("comparisons") or []:
-            comparison["evidence"] = _scrub(comparison.get("evidence"))
+            before = len(comparison.get("evidence") or [])
+            scrubbed = _scrub(comparison.get("evidence"))
+            comparison["evidence"] = scrubbed
+            if before > 0 and not scrubbed:
+                # 同 evidence_worker：只改 status，score 由 Pydantic 重写。
+                comparison["status"] = "证据不足"
+                reason = comparison.get("reasoning") or ""
+                marker = "（LLM 给出的 evidence URL 为空，按证据不足处理）"
+                if marker not in reason:
+                    comparison["reasoning"] = (reason + " " + marker).strip()
     payload["launch_date_evidence"] = _scrub(payload.get("launch_date_evidence"))
 
 

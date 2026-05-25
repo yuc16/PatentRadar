@@ -34,6 +34,7 @@ from patentradar.llm.workers.full_claim_chart_worker import evaluate_candidate
 from patentradar.schemas import (
     ApplicantSelfSignals,
     CandidateEvidence,
+    ClaimChartEntry,
     FullClaimChartCandidate,
     FullClaimChartReport,
     SearchResult,
@@ -70,6 +71,8 @@ def run_full_claim_chart(
     competitors_to_process = top_report.top_competitors
     completed_candidates: list[FullClaimChartCandidate] = []
     router = SearchRouter(country_code=task_package.patent.country_code)
+    # 模块 2 落盘的全文证据池（每候选一个 json）；不存在时模块 3 退回 snippet 重建
+    module_two_pages_dir = output_dir / "step4_fetched_pages"
 
     started = time.perf_counter()
     worker_count = max(1, min(max_workers, len(competitors_to_process)))
@@ -86,11 +89,22 @@ def run_full_claim_chart(
                 output_dir=per_candidate_dir,
                 visual_log_dir=visual_log_fetched_dir,
                 visual_log_sent_dir=visual_log_sent_dir,
+                module_two_pages_dir=module_two_pages_dir,
             ): evidence
             for evidence in competitors_to_process
         }
         for future in as_completed(futures):
-            result = future.result()
+            # 单候选错误隔离：某个候选崩了不能丢掉已完成的其他候选 round2 结果。
+            # 失败时构造 disqualified 占位让排序还能继续。
+            ev_meta = futures[future]
+            try:
+                result = future.result()
+            except Exception as exc:  # noqa: BLE001
+                logger.error(
+                    "module3 candidate=%s FAILED, marking disqualified in-memory: %s",
+                    ev_meta.candidate.candidate_id, exc,
+                )
+                result = _failed_candidate_placeholder(ev_meta, reason=str(exc))
             completed_candidates.append(result)
 
     # Preserve original ranking order (by candidate_id in top_report)
@@ -124,13 +138,19 @@ def _process_one_candidate(
     output_dir: Path,
     visual_log_dir: Path | None = None,
     visual_log_sent_dir: Path | None = None,
+    module_two_pages_dir: Path | None = None,
 ) -> FullClaimChartCandidate:
     candidate_id = module_two_evidence.candidate.candidate_id
     started = time.perf_counter()
     logger.info("module3 candidate=%s start", candidate_id)
 
-    # Initial evidence pool reuses everything module two collected.
-    pool_pages = _evidence_pool_from_module_two(module_two_evidence)
+    # Initial evidence pool 优先读模块 2 落盘的 fetched_pages 全文；缺失才退回
+    # 旧路径（从 LLM 筛过的 snippet 重建）。
+    pool_pages = _load_or_rebuild_evidence_pool(
+        candidate_id=candidate_id,
+        module_two_pages_dir=module_two_pages_dir,
+        module_two_evidence=module_two_evidence,
+    )
     pool_images: list[dict] = []  # module-two image bytes are not stored in TopCompetitorReport
     pool_url_set = {page["url"] for page in pool_pages}
 
@@ -210,6 +230,77 @@ def _process_one_candidate(
         int((time.perf_counter() - started) * 1000),
     )
     return round2
+
+
+def _load_or_rebuild_evidence_pool(
+    *,
+    candidate_id: str,
+    module_two_pages_dir: Path | None,
+    module_two_evidence: CandidateEvidence,
+) -> list[dict[str, str]]:
+    """优先读模块 2 落盘的 fetched_pages 全文（step4_fetched_pages/<cid>.json）。
+
+    旧 run 没这个目录（升级前的 cache）时 fallback 到 `_evidence_pool_from_module_two`
+    —— 从 LLM 筛过的 evidence snippet 重建，证据精度差但能跑。
+    """
+    if module_two_pages_dir is not None:
+        path = module_two_pages_dir / f"{candidate_id}.json"
+        if path.exists():
+            try:
+                data = json.loads(path.read_text(encoding="utf-8"))
+                pages = data.get("fetched_pages") or []
+                # 防御性过滤：只保留有 url 的页，避免下游 dict-key 出错
+                cleaned = [
+                    {
+                        "url": p.get("url", ""),
+                        "title": p.get("title", ""),
+                        "text": p.get("text", ""),
+                    }
+                    for p in pages
+                    if p.get("url")
+                ]
+                logger.info(
+                    "module3 candidate=%s evidence pool loaded full-text from %s (%d pages)",
+                    candidate_id, path.name, len(cleaned),
+                )
+                return cleaned
+            except (OSError, json.JSONDecodeError) as exc:
+                logger.warning(
+                    "module3 candidate=%s failed to load %s, falling back to snippet: %s",
+                    candidate_id, path, exc,
+                )
+    return _evidence_pool_from_module_two(module_two_evidence)
+
+
+def _failed_candidate_placeholder(
+    module_two_evidence: CandidateEvidence,
+    *,
+    reason: str,
+) -> FullClaimChartCandidate:
+    """模块 3 单候选异常时返回的占位记录，保证其他候选 round2 结果不丢。
+
+    用 disqualified=True + 空 claim_1 entry，让排序/报告环节能继续而不会
+    把这个失败实例当作正常 TOP 收入榜。
+    """
+    return FullClaimChartCandidate(
+        candidate=module_two_evidence.candidate,
+        launch_date=module_two_evidence.launch_date,
+        launch_date_evidence=module_two_evidence.launch_date_evidence,
+        disqualified=True,
+        disqualification_reason=f"模块3异常：{reason[:200]}",
+        claim_charts=[
+            ClaimChartEntry(
+                claim_no=1,
+                claim_text="",
+                comparisons=[],
+                claim_score=0.0,
+            )
+        ],
+        claim_1_score=0.0,
+        total_score=0.0,
+        searched_queries=list(module_two_evidence.searched_queries),
+        searched_providers=list(module_two_evidence.searched_providers),
+    )
 
 
 def _evidence_pool_from_module_two(module_two_evidence: CandidateEvidence) -> list[dict[str, str]]:

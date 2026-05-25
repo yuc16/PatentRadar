@@ -45,6 +45,24 @@ def _lock_for(pub: str) -> Lock:
         return _run_locks[pub]
 
 
+def is_run_in_progress(pub: str) -> bool:
+    """非阻塞探测某 pub 的 pipeline 是否正在跑。用于 FastAPI 同步返回 409。"""
+    with _locks_guard:
+        lock = _run_locks.get(pub)
+    if lock is None:
+        return False
+    return lock.locked()
+
+
+def _release_lock_entry(pub: str) -> None:
+    """跑完后丢弃 _run_locks 里该 pub 的条目，避免长跑服务端字典无界增长。
+    只在锁当前未被占用时弹出（防止误删一个还在跑的并发 run 的锁实例）。"""
+    with _locks_guard:
+        existing = _run_locks.get(pub)
+        if existing is not None and not existing.locked():
+            _run_locks.pop(pub, None)
+
+
 @dataclass
 class ModuleStep:
     n: int
@@ -117,6 +135,7 @@ def run_pipeline(pub: str) -> None:
         _run_pipeline_locked(pub)
     finally:
         lock.release()
+        _release_lock_entry(pub)
 
 
 def _is_fully_cached(pub: str) -> bool:

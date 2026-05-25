@@ -47,6 +47,11 @@ logger = logging.getLogger(__name__)
 # cap at 5 to keep the search-API budget bounded.
 PER_CANDIDATE_GAP_QUERY_CAP = 5
 
+# 落盘到 step4_fetched_pages/<cid>.json 时单页 text 的硬上限（字符数）。
+# 上游 fetch_evidence 已用 max_chars=6000 截过，这里取同值做防御性 cap
+# —— 如果上游配置被改大也不会让 dump 文件膨胀到 MB 级。
+_DUMP_TEXT_MAX_CHARS = 6000
+
 
 def map_evidence_for_batch(
     *,
@@ -59,6 +64,7 @@ def map_evidence_for_batch(
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
     visual_log_dir: Path | None = None,
     visual_log_sent_dir: Path | None = None,
+    fetched_pages_dump_dir: Path | None = None,
 ) -> EvidenceBatchResult:
     search_router = router or SearchRouter(country_code=task_package.patent.country_code)
     initial_contexts = [
@@ -143,13 +149,47 @@ def map_evidence_for_batch(
         for item in gap_result.results:
             final_by_id[item.candidate.candidate_id] = item
 
+    # gap_contexts 内部已经 merge 了 initial_contexts 的 fetched_pages（参见
+    # merge_contexts 调用），所以 gap 触发的候选取 gap context，未触发的退回
+    # initial context。这样每个 cid 拿到的是该候选抓页面的全集。
+    ctx_by_id = {ctx.candidate.candidate_id: ctx for ctx in initial_contexts}
+    for ctx in gap_contexts:
+        ctx_by_id[ctx.candidate.candidate_id] = ctx
+
     if visual_log_dir is not None:
         # fetched 全集 dump：fetcher 抓回的全部图（含 worker cap 之外的）
-        ctx_by_id = {ctx.candidate.candidate_id: ctx for ctx in initial_contexts}
-        for ctx in gap_contexts:
-            ctx_by_id[ctx.candidate.candidate_id] = ctx
         for cid, ctx in ctx_by_id.items():
             dump_visual_log(visual_log_dir, cid, ctx.fetched_images)
+
+    # 给模块 3 用的「全文证据池」：模块 2 抓回的 fetched_pages（url/title/text）
+    # 落盘到 step4_fetched_pages/<cid>.json。模块 3 round 1 拿到全文（不是 LLM
+    # 筛过的 200-300 字 snippet），能更准确判断哪些 feature 已被覆盖、哪些需要
+    # gap search。
+    #
+    # 磁盘占用预估：上游 fetch_evidence 已用 max_chars=6000 把单页 text 截过；
+    # 这里再用 _DUMP_TEXT_MAX_CHARS 做一道防御性硬上限，保证即使上游配置改大也
+    # 不会让单个 cid 文件爆 MB。典型 5-10 页 × 6KB ≈ 30-60KB/cid，5 候选 ≈ 300KB/run，
+    # 可控。同 publication_no 重跑会覆盖，无需主动清理。
+    if fetched_pages_dump_dir is not None:
+        fetched_pages_dump_dir.mkdir(parents=True, exist_ok=True)
+        for cid, ctx in ctx_by_id.items():
+            path = fetched_pages_dump_dir / f"{cid}.json"
+            payload = {
+                "candidate_id": cid,
+                # 仅 url/title/text 三字段，图片字节走 visual_log 路径
+                "fetched_pages": [
+                    {
+                        "url": page.get("url", ""),
+                        "title": page.get("title", ""),
+                        "text": (page.get("text") or "")[:_DUMP_TEXT_MAX_CHARS],
+                    }
+                    for page in ctx.fetched_pages
+                ],
+            }
+            path.write_text(
+                json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
 
     return EvidenceBatchResult(
         publication_no=task_package.patent.publication_no,

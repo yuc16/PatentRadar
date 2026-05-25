@@ -30,20 +30,31 @@ def normalize_png(raw: bytes, *, max_edge: int = DEFAULT_MAX_EDGE) -> bytes | No
     except ImportError as exc:
         logger.warning("Pillow not available, skip image normalize: %s", exc)
         return None
+    converted = None
+    resized = None
     try:
+        # 原 image 由 with 管理；convert()/resize() 产物是新 Image 实例，with
+        # 不会管它们，手动 close 避免 Pillow 文件描述符 / 解码缓冲累积。
         with Image.open(BytesIO(raw)) as im:
-            im = im.convert("RGB")
-            w, h = im.size
-            long_edge = max(w, h)
-            if long_edge > max_edge:
-                ratio = max_edge / long_edge
-                im = im.resize((int(w * ratio), int(h * ratio)), Image.LANCZOS)
-            buf = BytesIO()
-            im.save(buf, format="PNG", optimize=True)
-            return buf.getvalue()
+            converted = im.convert("RGB")
+        w, h = converted.size
+        long_edge = max(w, h)
+        target = converted
+        if long_edge > max_edge:
+            ratio = max_edge / long_edge
+            resized = converted.resize((int(w * ratio), int(h * ratio)), Image.LANCZOS)
+            target = resized
+        buf = BytesIO()
+        target.save(buf, format="PNG", optimize=True)
+        return buf.getvalue()
     except Exception as exc:  # noqa: BLE001 - Pillow raises many things
         logger.info("normalize_png failed: %s", exc)
         return None
+    finally:
+        if resized is not None:
+            resized.close()
+        if converted is not None:
+            converted.close()
 
 
 def png_hash(png: bytes) -> str:

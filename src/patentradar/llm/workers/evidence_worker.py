@@ -48,6 +48,17 @@ def judge_candidate_batch(
     visual_log_sent_dir: Path | None = None,
 ) -> EvidenceBatchResult:
     fetched_images_by_candidate = _dedupe_images_per_candidate(fetched_images_by_candidate or {})
+    provider = get_llm_provider()
+    # vision 不可用时同步清空 image manifest：否则 user_text 里仍带 image_manifest
+    # 引用（global_index/url/surrounding_text），LLM 看到引用却收不到图，可能
+    # 凭引用编造证据。此时应让 LLM 完全不知道图存在。
+    if fetched_images_by_candidate and not provider.supports_vision:
+        logger.warning(
+            "evidence_worker: provider %s does not support vision; dropping "
+            "image manifest from prompt so LLM judges from text-only evidence.",
+            provider.name,
+        )
+        fetched_images_by_candidate = {}
     # dedup + score 排序 + [:cap] 后即 LLM 实际送入图集合：落盘到 sent_dir
     if visual_log_sent_dir is not None and is_gap_round:
         # 仅 round 2 (is_gap_round=True) 才真发图给 LLM；round 1 text-only 不 dump
@@ -62,15 +73,7 @@ def judge_candidate_batch(
         is_gap_round=is_gap_round,
     )
     image_bytes_list = _flatten_images(candidates, fetched_images_by_candidate)
-    provider = get_llm_provider()
     images_arg = image_bytes_list or None
-    if images_arg and not provider.supports_vision:
-        logger.warning(
-            "evidence_worker: dropping %d image(s) because provider %s does not "
-            "support vision input; LLM will judge from text-only evidence.",
-            len(images_arg), provider.name,
-        )
-        images_arg = None
     payload = provider.chat_json(
         system=_load_prompt("evidence_extract.md"),
         user_text=user_text,
@@ -95,7 +98,12 @@ def judge_candidate_batch(
 def _drop_empty_url_evidence(payload: dict[str, Any]) -> None:
     """LLM 偶尔给某条 feature 配上 url='' 的 evidence 凑数；Pydantic 的
     `url must be absolute` 会让整个 batch 抛 ValidationError，拖垮 step4。
-    这里就地剔除所有 url 为空字符串/None/空白的 evidence 项（含 launch_date_evidence）。"""
+    这里就地剔除所有 url 为空字符串/None/空白的 evidence 项（含 launch_date_evidence）。
+
+    清空后若 comparison.evidence 列表已空 → 同步把 status 降级为「证据不足」、
+    score 降到 0.3，并在 reasoning 末尾追加说明。否则会出现「status=明确满足
+    但 evidence=[]」的对外报告，让人工审核找不到任何依据。
+    """
     def _scrub(items: list | None) -> list:
         if not items:
             return []
@@ -103,7 +111,18 @@ def _drop_empty_url_evidence(payload: dict[str, Any]) -> None:
 
     for result in payload.get("results") or []:
         for comparison in result.get("comparisons") or []:
-            comparison["evidence"] = _scrub(comparison.get("evidence"))
+            before = len(comparison.get("evidence") or [])
+            scrubbed = _scrub(comparison.get("evidence"))
+            comparison["evidence"] = scrubbed
+            if before > 0 and not scrubbed:
+                # 原来有 evidence 但全是空 URL → 失去依据，降级 status；
+                # score 不在此处赋值——Pydantic 的 FeatureComparison.validate_score
+                # 会按 status 强制重写（"证据不足" → 0.3），手动赋值是 dead code。
+                comparison["status"] = "证据不足"
+                reason = comparison.get("reasoning") or ""
+                marker = "（LLM 给出的 evidence URL 为空，按证据不足处理）"
+                if marker not in reason:
+                    comparison["reasoning"] = (reason + " " + marker).strip()
         result["launch_date_evidence"] = _scrub(result.get("launch_date_evidence"))
 
 

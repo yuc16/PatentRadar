@@ -2,13 +2,18 @@
 
 from __future__ import annotations
 
+import hashlib
+import logging
 import re
+import time
 from dataclasses import dataclass
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 import httpx
 from bs4 import BeautifulSoup, Tag
+
+logger = logging.getLogger(__name__)
 
 from patentradar.core.constants import GOOGLE_PATENTS_BASE, PATENT_COUNTRY_CODES
 from patentradar.core.exceptions import PatentFetchError
@@ -108,6 +113,8 @@ def fetch_patent(
 def _fetch_text(
     *, url: str, retries: int, timeout: float, headers: dict[str, str]
 ) -> str:
+    # Retry on both network errors AND non-200 (Google Patents偶发 503 / 429)。
+    # 退避 1s/2s/4s 给上游恢复时间，避免立刻把 retry 预算烧完。
     last_exc: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
@@ -120,10 +127,16 @@ def _fetch_text(
                 if response.status_code != 200:
                     raise PatentFetchError(f"HTTP {response.status_code}: {url}")
                 return response.text
-        except (httpx.TransportError, httpx.TimeoutException) as exc:
+        except (httpx.TransportError, httpx.TimeoutException, PatentFetchError) as exc:
             last_exc = exc
             if attempt == retries:
                 break
+            backoff = min(2 ** (attempt - 1), 8)
+            logger.warning(
+                "fetch_patent retry %d/%d after error: %s (sleeping %ds)",
+                attempt, retries, exc, backoff,
+            )
+            time.sleep(backoff)
     raise PatentFetchError(f"Failed to fetch {url}: {last_exc}") from last_exc
 
 
@@ -141,6 +154,9 @@ def _extract_claims(soup: BeautifulSoup) -> tuple[list[Claim], bool]:
     )
     claims: list[Claim] = []
     has_placeholders = False
+    # Dedupe by (claim_no, sha1(full claim_text))。中文权要求前 30 字常是固定句式
+    # ("根据权利要求 1 所述的方法，其特征在于...")，老的 claim_text[:30] 前缀键
+    # 会把真正独立的 claim 误判成重复并丢弃，导致 task_package 缺条。
     seen: set[tuple[int, str]] = set()
     for tag in claim_tags:
         if not isinstance(tag, Tag):
@@ -154,7 +170,8 @@ def _extract_claims(soup: BeautifulSoup) -> tuple[list[Claim], bool]:
         claim_text = _claim_text(tag)
         if not claim_text:
             continue
-        dedupe_key = (claim_no, claim_text[:30])
+        text_hash = hashlib.sha1(claim_text.encode("utf-8")).hexdigest()
+        dedupe_key = (claim_no, text_hash)
         if dedupe_key in seen:
             continue
         seen.add(dedupe_key)

@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import AsyncIterator
 
 from dotenv import load_dotenv
-from fastapi import BackgroundTasks, FastAPI, HTTPException
+from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -31,6 +31,7 @@ from patentradar.server.runner import (
     DATA_OUTPUT,
     LOGS_ROOT,
     ROOT,
+    is_run_in_progress,
     iter_run_events,
     run_pipeline,
 )
@@ -42,6 +43,12 @@ app = FastAPI(title="PatentRadar Dashboard")
 
 WEB_DIR = ROOT / "web"
 
+# pipeline_end 后 SSE 循环继续轮询多少轮（每轮 0.4s）再退出，让收尾的 token
+# delta / stdout 行有时间落到 stream.jsonl / module.log 再被 tail 出去。
+# 3 轮 ≈ 1.2s 经验值：覆盖大多数 stdout flush 抖动；容器或慢盘环境如果观察到
+# 报告末尾 token 偶发被截，调到 5。继续往上调代价是 SSE 协程多挂 N×0.4s。
+_SSE_TRAILING_ROUNDS_AFTER_END = 3
+
 
 # ---------- helpers ----------------------------------------------------------
 
@@ -52,6 +59,21 @@ def _publication_root(pub: str) -> Path:
     if not pub or not pub.replace("/", "").replace("\\", "").isalnum():
         raise HTTPException(status_code=400, detail="invalid publication_no")
     return DATA_OUTPUT / pub
+
+
+def _safe_resolve(root: Path, filename: str) -> Path:
+    """Resolve `root / filename` and enforce that it stays inside `root`.
+
+    用 Path.relative_to 而不是 str.startswith：startswith 在 root 名是兄弟目录
+    前缀时会被绕过（root=/x/AB，filename='../ABC/secret' → /x/ABC/secret 也
+    "startswith /x/AB" 为 True）。
+    """
+    target = (root / filename).resolve()
+    try:
+        target.relative_to(root.resolve())
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail="invalid path") from exc
+    return target
 
 
 def _module_output_summary(pub: str) -> dict[int, dict]:
@@ -174,10 +196,14 @@ def _module_status(pub: str) -> list[dict]:
 @app.post("/api/run/{pub}")
 async def start_run(pub: str, background: BackgroundTasks):
     _publication_root(pub)  # validate format
-    try:
-        background.add_task(run_pipeline, pub)
-    except Exception as exc:  # noqa: BLE001
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    # 同步检查 lock：BackgroundTasks 里 raise 的 RuntimeError 会被静默吞掉，
+    # 让用户以为 {"started": True} 但实际没启动。这里直接 409 让前端知道。
+    if is_run_in_progress(pub):
+        raise HTTPException(
+            status_code=409,
+            detail=f"pipeline for {pub} is already running",
+        )
+    background.add_task(run_pipeline, pub)
     return {"started": True, "publication_no": pub}
 
 
@@ -216,9 +242,7 @@ async def get_log(pub: str, module: int, tail: int = 200):
 @app.get("/api/output/{pub}/{filename:path}")
 async def get_output_file(pub: str, filename: str):
     root = _publication_root(pub)
-    target = (root / filename).resolve()
-    if not str(target).startswith(str(root.resolve())):
-        raise HTTPException(status_code=400, detail="invalid path")
+    target = _safe_resolve(root, filename)
     if not target.is_file():
         raise HTTPException(status_code=404, detail="file not found")
     return FileResponse(target)
@@ -252,9 +276,7 @@ async def render_markdown(pub: str, filename: str):
     """Render a .md file to a standalone HTML page so the browser shows it
     nicely rather than as raw markdown source."""
     root = _publication_root(pub)
-    target = (root / filename).resolve()
-    if not str(target).startswith(str(root.resolve())):
-        raise HTTPException(status_code=400, detail="invalid path")
+    target = _safe_resolve(root, filename)
     if not target.is_file():
         raise HTTPException(status_code=404, detail="file not found")
     if not target.name.lower().endswith(".md"):
@@ -431,8 +453,11 @@ def _collect_export_outputs(pub: str) -> list[dict]:
             kind = f.get("kind")
             if not name or not kind:
                 continue
-            target = (root / name).resolve()
-            if not str(target).startswith(str(root.resolve())) or not target.is_file():
+            try:
+                target = _safe_resolve(root, name)
+            except HTTPException:
+                continue
+            if not target.is_file():
                 continue
 
             entry = {"module": module_id, "name": name, "kind": kind}
@@ -525,7 +550,7 @@ async def export_replay(pub: str):
 # ---------- SSE: live stream -------------------------------------------------
 
 
-async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
+async def _sse_event_stream(pub: str, request: Request | None = None) -> AsyncIterator[str]:
     """Continuously tail run.jsonl + per-module stream.jsonl + module_N.log,
     push SSE events.
 
@@ -568,7 +593,15 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
     stream_offsets: dict[int, int] = {n: _file_size(stream_logs[n]) for n in (1, 2, 3, 4)}
     stdout_offsets: dict[int, int] = {n: _file_size(stdout_logs[n]) for n in (1, 2, 3, 4)}
 
+    pipeline_ended = False
+    # pipeline_end 后再额外 tail 几轮，保证最后一批 token / stdout 行被吐出去
+    trailing_rounds_after_end = 0
+
     while True:
+        # 客户端断连 → 主动退出循环，否则每个关闭的 tab 都留一个常驻协程
+        if request is not None and await request.is_disconnected():
+            return
+
         # Tail run.jsonl (lifecycle events)
         if run_log.exists():
             try:
@@ -588,6 +621,7 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
                     if ev.get("event") == "pipeline_end":
                         final_status = {"type": "status", "modules": _module_status(pub)}
                         yield f"data: {json.dumps(final_status, ensure_ascii=False)}\n\n"
+                        pipeline_ended = True
             except OSError:
                 pass
 
@@ -641,14 +675,20 @@ async def _sse_event_stream(pub: str) -> AsyncIterator[str]:
             except OSError:
                 pass
 
+        # pipeline 已结束 → 再吐若干轮把残留的 token / stdout 收尾，然后退出
+        if pipeline_ended:
+            trailing_rounds_after_end += 1
+            if trailing_rounds_after_end >= _SSE_TRAILING_ROUNDS_AFTER_END:
+                return
+
         await asyncio.sleep(0.4)
 
 
 @app.get("/api/stream/{pub}")
-async def sse_stream(pub: str):
+async def sse_stream(pub: str, request: Request):
     _publication_root(pub)
     return StreamingResponse(
-        _sse_event_stream(pub),
+        _sse_event_stream(pub, request=request),
         media_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
