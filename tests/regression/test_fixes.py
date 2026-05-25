@@ -435,5 +435,39 @@ class FailedCandidatePlaceholderSchemaTest(unittest.TestCase):
         self.assertEqual(summary["claim_1_features"], [])
 
 
+class StartRunRejectsInvalidPubTest(unittest.TestCase):
+    """新 bug：POST /api/run/{pub} 旧版只做宽松 alnum 校验（"xyz123" 也过），
+    错号会被 BackgroundTask 启动 → 前端误以为 {"started": true}，且会留下
+    data/output/<pub>/ + logs/<pub>/ 孤儿目录。
+    修复：入口同步调 normalize_publication_no，失败 400。"""
+
+    def test_invalid_pub_returns_400_synchronously(self) -> None:
+        from fastapi.testclient import TestClient
+
+        from patentradar.server import app as app_module
+
+        # mock 掉 run_pipeline 防止真启动 BackgroundTask；通过断言它未被调用
+        # 间接验证入口同步 reject。
+        with mock.patch.object(app_module, "run_pipeline") as mocked_run:
+            client = TestClient(app_module.app)
+            r = client.post("/api/run/xyz123")  # alnum 但不是合法专利号
+            self.assertEqual(r.status_code, 400)
+            self.assertIn("Invalid patent publication number", r.json()["detail"])
+            mocked_run.assert_not_called()
+
+    def test_valid_pub_is_normalized_and_started(self) -> None:
+        """小写 + "-" 分隔的合法号应被规范化后启动，而不是 reject。"""
+        from fastapi.testclient import TestClient
+
+        from patentradar.server import app as app_module
+
+        with mock.patch.object(app_module, "run_pipeline") as mocked_run, \
+             mock.patch.object(app_module, "is_run_in_progress", return_value=False):
+            client = TestClient(app_module.app)
+            r = client.post("/api/run/cn-114512759-a")
+            self.assertEqual(r.status_code, 200)
+            self.assertEqual(r.json()["publication_no"], "CN114512759A")
+
+
 if __name__ == "__main__":
     unittest.main()

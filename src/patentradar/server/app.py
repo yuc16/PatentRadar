@@ -27,6 +27,8 @@ from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
+from patentradar.core.exceptions import PatentFetchError
+from patentradar.fetcher.google_patents import normalize_publication_no
 from patentradar.server.runner import (
     DATA_OUTPUT,
     LOGS_ROOT,
@@ -195,7 +197,16 @@ def _module_status(pub: str) -> list[dict]:
 
 @app.post("/api/run/{pub}")
 async def start_run(pub: str, background: BackgroundTasks):
-    _publication_root(pub)  # validate format
+    # 同步做严格格式校验：调用 normalize_publication_no 让 web 入口与 CLI 完全
+    # 等价（容忍小写 / "-" 分隔 / 完整 Google Patents URL，规范化后再校验
+    # ^[A-Z]{2}\d{6,}[A-Z]?\d?$）。失败直接 400，避免：
+    #   1) 错号被 BackgroundTask 静默启动 → 前端误以为 {"started": true}
+    #   2) data/output/<pub>/ + logs/<pub>/ 产生无意义的孤儿目录
+    try:
+        pub = normalize_publication_no(pub)
+    except PatentFetchError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    _publication_root(pub)  # path-traversal 双保险（normalize 已经只返回字母数字）
     # 同步检查 lock：BackgroundTasks 里 raise 的 RuntimeError 会被静默吞掉，
     # 让用户以为 {"started": True} 但实际没启动。这里直接 409 让前端知道。
     if is_run_in_progress(pub):
