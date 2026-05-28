@@ -546,6 +546,7 @@ BRAVE_API_KEY=...                # 英文新闻 / 评测强项
 
 ```
 PatentRadar/
+├── Dockerfile · docker-compose.yml   # 容器化部署（见「Docker 部署」）
 ├── src/patentradar/                  # 项目源码（独立运行模式）
 │   ├── cli.py                        # typer CLI: decompose / competitor-search / ...
 │   ├── modules/                      # 4 模块各自的 pipeline.py
@@ -570,12 +571,14 @@ PatentRadar/
 │   └── scripts/render_pdf.py
 ├── web/                              # Dashboard 单页前端（HTML + CSS + JS）
 ├── scripts/
-│   ├── run_full_pipeline.py          # 4 模块一键串行
+│   ├── run_full_pipeline.py          # 模块 2-4 测试 wrapper（读 tests fixture，非生产入口）
 │   └── smoke_aihubmix.py             # 跨 LLM backend 烟囱测试
+├── evaluate/                         # 黄金集评估：eval.py / check_*.py + 测试集.xlsx + EVALUATION.md
 ├── configs/                          # search_filters.toml + technology_tags.toml（9 大技术领域）
 ├── tests/                            # 各模块 fixture + 历史产物
-├── data/output/<PUB>/                # 报告落盘（gitignored）
-└── logs/<PUB>/                       # 每模块原始 LLM payload 与响应（调试用）
+├── data/output/<PUB>/                # src 模式报告落盘（gitignored）
+├── patentradar_output/<PUB>/         # skill 模式报告落盘（gitignored）
+└── logs/<PUB>/                       # 每模块原始 LLM payload 与响应（gitignored）
 ```
 
 ---
