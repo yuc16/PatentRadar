@@ -1,0 +1,242 @@
+{
+  "publication_no": "CN220180685U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "赛力斯汽车",
+        "company_en": "Seres / AITO",
+        "product_name": "问界M8增程Max（2025款 / 192线激光雷达）",
+        "product_name_en": "AITO M8 EREV Max (2025 / 192-line LiDAR)",
+        "product_intro": "2025款问界M8增程Max为鸿蒙智行中大型SUV，官方参数配置表将其列入“问界M8（192线激光雷达）”车型组，上市报道显示该增程Max SKU于2025年4月发布并开启交付。",
+        "market": "中国新能源乘用车前装智能驾驶市场",
+        "reason_for_deep_dive": "用户额外关注候选；其公开配置明确搭载192线激光雷达，且上市日期晚于本专利申请日，具备深挖激光雷达安装结构的必要性。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://aito.auto/model/m8/configuration/",
+          "https://www.ithome.com/0/845/682.htm"
+        ],
+        "initial_evidence_summary": "官方配置页显示“问界M8（192线激光雷达）”并列出增程Max等SKU；IT之家上市报道显示问界M8于2025年4月16日正式上市，4月20日开启交付。未在可验活公开网页中找到该SKU顶盖横梁、支架、装饰板安装口或密封件的直接证据。"
+      },
+      "launch_date": "2025年4月16日上市，2025年4月20日开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/845/682.htm",
+          "title": "35.98 万-44.98 万元，鸿蒙智行家庭智慧旗舰 SUV 问界 M8 正式上市",
+          "source_name": "IT之家",
+          "snippet": "IT之家2025/4/16报道：问界 M8 今日正式上市，提供增程 Max、增程 Max+、增程 Ultra 三种不同配置，4 月 20 日开启交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种激光雷达的安装结构",
+          "competitor_feature": "问界M8增程Max（2025款 / 192线激光雷达）为公开配置列明搭载192线激光雷达的量产SUV；该公开事实足以证明车辆存在用于布置该激光雷达的安装结构，但公开资料未披露其内部构造。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m8/configuration/",
+              "title": "问界 M8 参数配置表 - 赛力斯华为联合设计 - AITO",
+              "source_name": "AITO官网",
+              "snippet": "官方参数配置页列出“问界 M8（192 线激光雷达）”，配置列包含问界 M8 增程 Max、增程 Max+、增程 Ultra等车型。"
+            }
+          ],
+          "reasoning": "① 权1X：激光雷达安装结构=车辆上用于固定/布置激光雷达的物理结构，二值存在。② 候选Y：同SKU官方配置列明192线激光雷达。③ (a)概念是否等价：是，搭载车载激光雷达必有安装结构；(b)单位/量纲是否等价：是，均为存在/不存在；(c)参考系是否等价：是，均为本车辆激光雷达；(d)反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "顶盖横梁",
+          "competitor_feature": "已验活公开证据未说明问界M8增程Max的激光雷达安装结构包含顶盖横梁，也未公开相应白车身局部图或维修手册。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m8/configuration/",
+              "title": "问界 M8 参数配置表 - 赛力斯华为联合设计 - AITO",
+              "source_name": "AITO官网",
+              "snippet": "官方参数配置页可确认本SKU激光雷达配置，但未披露顶盖横梁或车顶安装结构。"
+            }
+          ],
+          "reasoning": "① 权1X：顶盖横梁=白车身顶盖区域横向承载件，二值部件。② 候选Y：公开配置只说明192线激光雷达。③ (a)概念是否等价：否，激光雷达配置不等同于顶盖横梁；(b)单位/量纲是否等价：是，均为部件存在性；(c)参考系是否等价：否，Y未给车顶骨架参考系；(d)反向证据：无。因此证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "安装支架，所述安装支架安装于所述顶盖横梁，所述安装支架用于安装激光雷达",
+          "competitor_feature": "已验活公开证据未披露问界M8增程Max的激光雷达安装支架、支架与顶盖横梁的连接关系，或支架用于安装激光雷达的维修/拆解图。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m8/configuration/",
+              "title": "问界 M8 参数配置表 - 赛力斯华为联合设计 - AITO",
+              "source_name": "AITO官网",
+              "snippet": "官方参数配置页可确认本SKU激光雷达配置，但未披露支架或支架连接对象。"
+            }
+          ],
+          "reasoning": "① 权1X：支架安装于顶盖横梁且用于安装激光雷达，包含部件+连接关系。② 候选Y：仅公开激光雷达配置。③ (a)概念是否等价：否，配置项不等同于支架/横梁连接；(b)单位/量纲是否等价：是，均为结构存在性；(c)参考系是否等价：否，Y未给车顶横梁连接参考系；(d)反向证据：无。因此证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "装饰板，所述装饰板罩设于所述激光雷达外且与所述顶盖横梁相连，所述装饰板设有敞开的安装口，所述激光雷达的镜面在所述安装口处裸露，且所述激光雷达与所述安装口的周边连接处设有密封件",
+          "competitor_feature": "已验活公开证据未直接说明问界M8增程Max存在罩设激光雷达的装饰板、敞开安装口、镜面裸露以及安装口周边密封件。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m8/configuration/",
+              "title": "问界 M8 参数配置表 - 赛力斯华为联合设计 - AITO",
+              "source_name": "AITO官网",
+              "snippet": "官方参数配置页可确认本SKU激光雷达配置，但未披露装饰板、安装口、镜面裸露或密封件。"
+            }
+          ],
+          "reasoning": "① 权1X：装饰板+安装口+镜面裸露+密封件为复合结构，参考系为车顶激光雷达安装处。② 候选Y：公开资料仅说明搭载192线激光雷达。③ (a)概念是否等价：否，激光雷达配置不等同于该复合结构；(b)单位/量纲是否等价：是，均为结构存在性；(c)参考系是否等价：否，Y未公开安装口或密封参考系；(d)反向证据：无。因此证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 47.5,
+      "searched_queries": [
+        "CONFIG_USED: skills/patentradar/configs/technology_tags.toml；比对 configs/technology_tags.toml 内容一致；task_package technology_tag=自动驾驶与传感，语义映射为 智能驾驶；该tag无专属recommended_sites，使用universal_sites。",
+        "HEAD_COMPANIES_SELF_CHECK: 本土主机厂/品牌覆盖赛力斯/问界、理想、小米、长安/阿维塔、奇瑞/智界/星纪元、吉利/极氪、上汽/智己、零跑、蔚来、小鹏、广汽埃安；国际覆盖沃尔沃、Polestar、Lotus、Mercedes、BMW；Tier-1/Tier-2覆盖Huawei、Hesai、RoboSense、Bosch、Valeo、Luminar；保守排除比亚迪/BYD、丰田/Toyota、比亚迪丰田JV及明显关联产品。",
+        "STAGE2A_QUERY_SELF_CHECK: 已跑中文主语种>=8、英文>=6、规格/参数类>=2、拆解/teardown类>=2；用户要求停止扩展后未继续横向扩展新候选。",
+        "问界M8 2025 增程版 激光雷达 车顶 安装 支架 装饰板 密封",
+        "问界 M8 增程 2025 激光雷达 车顶 192线 官方 配置 上市",
+        "问界M8 维修手册 激光雷达 顶盖 横梁 支架",
+        "问界M8 激光雷达 拆解 车顶 支架",
+        "AITO M8 2025 roof mounted lidar teardown bracket seal",
+        "Stage0 m.asemanshop.com: root=200; /Cars/search.html q=问界M8 fetched; no usable SKU-specific deep evidence found before stop.",
+        "Stage0 qixiu88.com: root=200; /search/?q=问界M8 fetched; no usable SKU-specific deep evidence found before stop.",
+        "EVIDENCE_VALIDATED: https://aito.auto/model/m8/configuration/ status=200 final same host;正文含问界M8 192线激光雷达配置。",
+        "EVIDENCE_VALIDATED: https://www.ithome.com/0/845/682.htm status=200 final same host;正文含2025年4月16日上市、4月20日交付。"
+      ],
+      "searched_providers": [
+        "web.search",
+        "curl",
+        "recommended_sites:m.asemanshop.com",
+        "recommended_sites:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "理想汽车",
+        "company_en": "Li Auto",
+        "product_name": "理想MEGA（2025官网在售版 / ATL全天候激光雷达）",
+        "product_name_en": "Li Auto MEGA (2025 official-current / ATL all-weather LiDAR)",
+        "product_intro": "理想MEGA为理想汽车官网在售MPV，官方产品页技术参数列明感知能力为“视觉感知+ATL全天候激光雷达”。本轮已验活公开证据未锁定更细的年款上市日期，故以官网在售版单SKU收敛。",
+        "market": "中国新能源乘用车前装智能驾驶市场",
+        "reason_for_deep_dive": "同阶段候选发现中，理想MEGA属于中国市场头部智能驾驶车型，官方页面明确列出激光雷达感知配置，晚于本专利申请日的失效证据未在已验活证据中出现。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.lixiang.com/mega"
+        ],
+        "initial_evidence_summary": "理想官方MEGA页面技术参数列明“感知能力：视觉感知+ATL全天候激光雷达”，同时给出车身尺寸等配置；未在可验活公开网页中找到顶盖横梁、激光雷达支架、装饰板安装口或密封件的直接证据。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种激光雷达的安装结构",
+          "competitor_feature": "理想MEGA官网技术参数列明“视觉感知+ATL全天候激光雷达”；这支持车辆存在激光雷达及相应安装结构，但公开正文未直接说明安装结构形态。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/mega",
+              "title": "理想MEGA - 理想汽车",
+              "source_name": "理想汽车官网",
+              "snippet": "官方页面技术参数：感知能力为“视觉感知+ATL全天候激光雷达”；同页列明车长5350毫米、车宽1965毫米、轴距3300毫米。"
+            }
+          ],
+          "reasoning": "① 权1X：激光雷达安装结构=用于安装车载激光雷达的物理结构，二值存在。② 候选Y：官网技术参数列明ATL全天候激光雷达。③ (a)概念是否等价：是，车辆搭载激光雷达通常需安装结构；(b)单位/量纲是否等价：是，均为存在/不存在；(c)参考系是否等价：是，均为本车激光雷达；(d)反向证据：无。因未直述结构形态，判可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "顶盖横梁",
+          "competitor_feature": "已验活公开证据未说明理想MEGA的激光雷达安装结构包含顶盖横梁。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/mega",
+              "title": "理想MEGA - 理想汽车",
+              "source_name": "理想汽车官网",
+              "snippet": "官方页面确认激光雷达感知能力，但未披露顶盖横梁或激光雷达安装处白车身结构。"
+            }
+          ],
+          "reasoning": "① 权1X：顶盖横梁=车顶白车身横向结构件。② 候选Y：官网只公开激光雷达感知配置。③ (a)概念是否等价：否，感知配置不等同于顶盖横梁；(b)单位/量纲是否等价：是，均为部件存在性；(c)参考系是否等价：否，Y未给车顶骨架参考系；(d)反向证据：无。因此证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "安装支架，所述安装支架安装于所述顶盖横梁，所述安装支架用于安装激光雷达",
+          "competitor_feature": "已验活公开证据未披露理想MEGA的激光雷达安装支架、支架安装于顶盖横梁，或支架用于安装激光雷达的直接结构证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/mega",
+              "title": "理想MEGA - 理想汽车",
+              "source_name": "理想汽车官网",
+              "snippet": "官方页面确认激光雷达感知能力，但未披露安装支架或支架与顶盖横梁的连接关系。"
+            }
+          ],
+          "reasoning": "① 权1X：支架+顶盖横梁连接+安装激光雷达为复合结构关系。② 候选Y：官网仅列激光雷达感知配置。③ (a)概念是否等价：否，配置项不等同于支架连接；(b)单位/量纲是否等价：是，均为结构存在性；(c)参考系是否等价：否，Y未公开连接参考系；(d)反向证据：无。因此证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "装饰板，所述装饰板罩设于所述激光雷达外且与所述顶盖横梁相连，所述装饰板设有敞开的安装口，所述激光雷达的镜面在所述安装口处裸露，且所述激光雷达与所述安装口的周边连接处设有密封件",
+          "competitor_feature": "已验活公开证据未直接说明理想MEGA存在罩设激光雷达的装饰板、敞开安装口、镜面裸露及安装口周边密封件。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/mega",
+              "title": "理想MEGA - 理想汽车",
+              "source_name": "理想汽车官网",
+              "snippet": "官方页面确认激光雷达感知能力，但未披露装饰板、安装口、镜面裸露或密封件。"
+            }
+          ],
+          "reasoning": "① 权1X：装饰板、安装口、镜面裸露、密封件构成车顶激光雷达外部安装复合结构。② 候选Y：官网仅公开激光雷达感知配置。③ (a)概念是否等价：否，感知配置不等同于装饰板/安装口/密封结构；(b)单位/量纲是否等价：是，均为结构存在性；(c)参考系是否等价：否，Y未公开安装口或密封参考系；(d)反向证据：无。因此证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 42.5,
+      "searched_queries": [
+        "CONFIG_USED: skills/patentradar/configs/technology_tags.toml；比对 configs/technology_tags.toml 内容一致；task_package technology_tag=自动驾驶与传感，语义映射为 智能驾驶；该tag无专属recommended_sites，使用universal_sites。",
+        "理想 MEGA 2024 车顶 禾赛 AT128 激光雷达 官方 上市 2024年3月",
+        "Li Auto MEGA roof lidar teardown bracket",
+        "https://www.lixiang.com/mega direct fetch for official configuration",
+        "Stage0 m.asemanshop.com: root=200; /Cars/search.html q=理想MEGA fetched; no usable SKU-specific deep evidence found before stop.",
+        "Stage0 qixiu88.com: root=200; /search/?q=理想MEGA fetched; no usable SKU-specific deep evidence found before stop.",
+        "EVIDENCE_VALIDATED: https://www.lixiang.com/mega status=200 final same host;正文含理想MEGA技术参数和ATL全天候激光雷达。",
+        "STOP_REASON: 已连续多轮未在推荐站点、官方页和已执行拆解/teardown query中找到顶盖横梁/支架/装饰板/密封件的公开有效证据，按停止条件收敛为证据不足。"
+      ],
+      "searched_providers": [
+        "web.search",
+        "curl",
+        "recommended_sites:m.asemanshop.com",
+        "recommended_sites:qixiu88.com"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

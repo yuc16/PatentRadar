@@ -14,8 +14,14 @@ wheels/
 
 # example
 *.mp4
+logs/
+data/
+patentradar_output/
+
+
+
+
 
 .DS_Store
 
-# Per-run logs（每次 pipeline 自动生成的 stdout / SSE stream / run.jsonl）
-logs/
+

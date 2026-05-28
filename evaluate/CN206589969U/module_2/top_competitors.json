@@ -1,0 +1,782 @@
+{
+  "publication_no": "CN206589969U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "极氪汽车",
+        "company_en": "ZEEKR",
+        "product_name": "极氪001（2021款ME版/中国大陆首发交付SKU）",
+        "product_name_en": "ZEEKR 001 (2021 ME trim / China first-delivery SKU)",
+        "product_intro": "2021年中国大陆首发交付的极氪001 ME版纯电猎装车，基于SEA浩瀚架构，公开底盘拆解显示其后副车架为铝合金全框式结构。",
+        "market": "中国高端纯电乘用车前装市场",
+        "reason_for_deep_dive": "公开拆解直接写明后副车架由两根过梁和两端铸铝件焊接形成全框式副车架，最贴近权1的左右纵梁总成与前后横梁组合。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://auto.ifeng.com/qichezixun/20221010/1804622.shtml",
+          "https://m.pcauto.com.cn/baike/789626/1545546/",
+          "https://m.asemanshop.com/www/carsm/7596.html",
+          "https://zgh.com/media-center/news/2021-04-15/?lang=en"
+        ],
+        "initial_evidence_summary": "凤凰网/易车底盘解析与太平洋汽车百科均指向极氪001后副车架为铝合金、两根过梁和两端铸铝件焊接成全框式结构；畅易维修目录含后副车架相关拆装条目。"
+      },
+      "launch_date": "2021年4月15日发布，2021年10月开始中国交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://zgh.com/media-center/news/2021-04-15/?lang=en",
+          "title": "Goodbye dull EVs - the Zeekr 001 has arrived",
+          "source_name": "Zhejiang Geely Holding Group",
+          "snippet": "2021-04-15发布001；第一市场为中国，交付从2021年10月开始。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种后副车架",
+          "competitor_feature": "极氪001公开底盘解析明确描述其后副车架，且维修目录列有后副车架相关拆装/接地线条目。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/qichezixun/20221010/1804622.shtml",
+              "title": "大量运用铝合金件 极氪001底盘解析",
+              "source_name": "凤凰网汽车",
+              "snippet": "底盘解析明确讨论极氪001后副车架及其材料和结构。"
+            },
+            {
+              "url": "https://m.asemanshop.com/www/carsm/7596.html",
+              "title": "极氪001-2023维修手册电路图",
+              "source_name": "畅易汽车网",
+              "snippet": "维修目录出现“后副车架接地线，拆装单元”。"
+            }
+          ],
+          "reasoning": "①X为后副车架。②Y为极氪001公开拆解/维修目录中的后副车架。③(a)是，名称相同；(b)是，均为部件存在性；(c)是，均在车辆后桥；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括左纵梁总成及右纵梁总成",
+          "competitor_feature": "极氪001后副车架公开为两端铸铝件加过梁焊接的全框式结构，两端铸铝件对应左右侧纵向承载总成。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/qichezixun/20221010/1804622.shtml",
+              "title": "大量运用铝合金件 极氪001底盘解析",
+              "source_name": "凤凰网汽车",
+              "snippet": "后副车架由两根过梁和两端与悬架相连的铸铝件焊接，形成全框式副车架。"
+            },
+            {
+              "url": "https://m.pcauto.com.cn/baike/789626/1545546/",
+              "title": "极氪底盘全是铝合金吗",
+              "source_name": "太平洋汽车百科",
+              "snippet": "极氪001后副车架为铝合金，由两根过梁和两端铸铝件焊接而成。"
+            }
+          ],
+          "reasoning": "①X为左右纵梁总成。②Y为两端铸铝件构成的全框式后副车架侧部。③(a)是，左右两端侧部等同左右纵梁总成；(b)是，集合部件；(c)是，车身左右向；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述左纵梁总成包括左纵梁及与所述左纵梁一体成型的多个左侧安装部件",
+          "competitor_feature": "公开资料显示一端铸铝件与悬架相连，图片和文字支持其侧向铸件集成悬架连接/衬套等安装区，但未逐字命名左侧多个安装部件。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/qichezixun/20221010/1804622.shtml",
+              "title": "大量运用铝合金件 极氪001底盘解析",
+              "source_name": "凤凰网汽车",
+              "snippet": "两端铸铝件与悬架相连；后副车架与车身之间由液压衬套相连。"
+            }
+          ],
+          "reasoning": "①X为左纵梁及一体成型安装部。②Y为侧端铸铝件的悬架/衬套连接区。③(a)是，铸件侧部承担纵梁和安装；(b)是，集合部件；(c)是，左侧侧部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述右纵梁总成包括右纵梁及与所述右纵梁一体成型的多个右侧安装部件",
+          "competitor_feature": "公开资料显示另一端铸铝件与悬架相连，结构左右对称推定右侧铸件集成悬架连接/衬套等安装区，但未逐字命名右侧多个安装部件。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/qichezixun/20221010/1804622.shtml",
+              "title": "大量运用铝合金件 极氪001底盘解析",
+              "source_name": "凤凰网汽车",
+              "snippet": "两端铸铝件与悬架相连；后副车架与车身之间由液压衬套相连。"
+            }
+          ],
+          "reasoning": "①X为右纵梁及一体成型安装部。②Y为另一侧端部铸铝件连接悬架/车身。③(a)是，侧端铸件承担右侧纵梁安装；(b)是，集合部件；(c)是，右侧侧部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述左纵梁的前端朝向所述右纵梁横向延伸形成前横梁左连接管，所述右纵梁的前端朝向所述左纵梁横向延伸形成前横梁右连接管，所述前横梁左连接管与前横梁右连接管的末端相连以构成前横梁",
+          "competitor_feature": "极氪001后副车架两端铸铝件之间焊接有两根过梁；靠前的一根过梁与左右端部铸铝件连接构成前横梁。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/qichezixun/20221010/1804622.shtml",
+              "title": "大量运用铝合金件 极氪001底盘解析",
+              "source_name": "凤凰网汽车",
+              "snippet": "后副车架由两根过梁和两端铸铝件焊接而成，形成全框式副车架。"
+            },
+            {
+              "url": "https://m.pcauto.com.cn/baike/789626/1545546/",
+              "title": "极氪底盘全是铝合金吗",
+              "source_name": "太平洋汽车百科",
+              "snippet": "后副车架由两根过梁和两端铸铝件焊接而成。"
+            }
+          ],
+          "reasoning": "①X为左右纵梁前端横向连接成前横梁。②Y为两端铸铝件之间的两根过梁之一。③(a)是，过梁即横梁；(b)是，结构件连接；(c)是，前后两梁中的前梁；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述左纵梁的后端朝向所述右纵梁横向延伸形成后横梁左连接管，所述右纵梁的后端朝向所述左纵梁横向延伸形成后横梁右连接管，所述后横梁左连接管与后横梁右连接管的末端相连以构成后横梁",
+          "competitor_feature": "极氪001后副车架两端铸铝件之间焊接有两根过梁；靠后的一根过梁与左右端部铸铝件连接构成后横梁。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://auto.ifeng.com/qichezixun/20221010/1804622.shtml",
+              "title": "大量运用铝合金件 极氪001底盘解析",
+              "source_name": "凤凰网汽车",
+              "snippet": "后副车架由两根过梁和两端铸铝件焊接而成，形成全框式副车架。"
+            },
+            {
+              "url": "https://m.pcauto.com.cn/baike/789626/1545546/",
+              "title": "极氪底盘全是铝合金吗",
+              "source_name": "太平洋汽车百科",
+              "snippet": "后副车架由两根过梁和两端铸铝件焊接而成。"
+            }
+          ],
+          "reasoning": "①X为左右纵梁后端横向连接成后横梁。②Y为两端铸铝件之间的第二根过梁。③(a)是，过梁即横梁；(b)是，结构件连接；(c)是，前后两梁中的后梁；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 93.33,
+      "searched_queries": [
+        "极氪001 2021款 后副车架 铝合金 拆解",
+        "极氪001 后副车架 两根过梁 铸铝件",
+        "ZEEKR 001 rear subframe aluminum 2021",
+        "site:m.asemanshop.com 极氪001 后副车架 维修手册"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "蔚来汽车",
+        "company_en": "NIO",
+        "product_name": "蔚来ET7（2022款首批交付/NT2.0平台）",
+        "product_name_en": "NIO ET7 (2022 first-delivery / NT2.0 platform)",
+        "product_intro": "2022年3月开始交付的蔚来ET7旗舰纯电轿车，公开底盘技术文章称其后副车架采用一体化中空铸铝技术。",
+        "market": "中国高端纯电轿车前装市场",
+        "reason_for_deep_dive": "后副车架公开为一体化中空铸铝全框结构，后悬架4点与后副车架连接，具备落入权1宽结构的可能。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://m.geeknev.com/article/742599450593091584?ad=181",
+          "https://www.nio.com/news/nio-starts-delivery-et7",
+          "https://www.nio.com/news/nio-launches-first-autonomous-driving-model-et7"
+        ],
+        "initial_evidence_summary": "皆电底盘技术文章描述ET7增强型H-arm多连杆后悬通过4点与后副车架相连，后副车架采用一体化中空铸铝技术。"
+      },
+      "launch_date": "2022年3月28日开始交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.nio.com/news/nio-starts-delivery-et7",
+          "title": "NIO Starts Delivery of the ET7",
+          "source_name": "NIO",
+          "snippet": "NIO于2022-03-28宣布ET7正式开始交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种后副车架",
+          "competitor_feature": "蔚来ET7公开底盘技术文章明确描述其后副车架。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.geeknev.com/article/742599450593091584?ad=181",
+              "title": "蔚来ET7底盘也能OTA 黑科技还不少",
+              "source_name": "皆电",
+              "snippet": "文章明确称ET7的后副车架采用一体化中空铸铝技术。"
+            }
+          ],
+          "reasoning": "①X为后副车架。②Y为ET7后副车架。③(a)是，名称相同；(b)是，部件存在性；(c)是，后桥位置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括左纵梁总成及右纵梁总成",
+          "competitor_feature": "ET7后副车架为全框式/中空铸铝后桥副车架，后悬架4点与其相连，按全框后副车架的左右侧承载部可能对应左右纵梁总成。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.geeknev.com/article/742599450593091584?ad=181",
+              "title": "蔚来ET7底盘也能OTA 黑科技还不少",
+              "source_name": "皆电",
+              "snippet": "后悬架通过4点与后副车架相连，后副车架为一体化中空铸铝。"
+            }
+          ],
+          "reasoning": "①X为左右纵梁总成。②Y为ET7全框后副车架左右侧承载区。③(a)是，框架侧边承担纵梁功能；(b)是，集合部件；(c)是，后桥左右侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述左纵梁总成包括左纵梁及与所述左纵梁一体成型的多个左侧安装部件",
+          "competitor_feature": "ET7公开为一体化中空铸铝后副车架，后悬架4点连接到后副车架；左侧安装点与铸铝框架一体形成具有较高可能性。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.geeknev.com/article/742599450593091584?ad=181",
+              "title": "蔚来ET7底盘也能OTA 黑科技还不少",
+              "source_name": "皆电",
+              "snippet": "增强型H-arm多连杆后悬通过4点与后副车架相连；后副车架采用一体化中空铸铝。"
+            }
+          ],
+          "reasoning": "①X为左纵梁及一体安装部。②Y为一体化铸铝后副车架左侧连接区。③(a)是，铸铝侧区含安装功能；(b)是，集合部件；(c)是，左后侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述右纵梁总成包括右纵梁及与所述右纵梁一体成型的多个右侧安装部件",
+          "competitor_feature": "ET7公开为一体化中空铸铝后副车架，后悬架4点连接到后副车架；右侧安装点与铸铝框架一体形成具有较高可能性。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.geeknev.com/article/742599450593091584?ad=181",
+              "title": "蔚来ET7底盘也能OTA 黑科技还不少",
+              "source_name": "皆电",
+              "snippet": "增强型H-arm多连杆后悬通过4点与后副车架相连；后副车架采用一体化中空铸铝。"
+            }
+          ],
+          "reasoning": "①X为右纵梁及一体安装部。②Y为一体化铸铝后副车架右侧连接区。③(a)是，铸铝侧区含安装功能；(b)是，集合部件；(c)是，右后侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述左纵梁的前端朝向所述右纵梁横向延伸形成前横梁左连接管，所述右纵梁的前端朝向所述左纵梁横向延伸形成前横梁右连接管，所述前横梁左连接管与前横梁右连接管的末端相连以构成前横梁",
+          "competitor_feature": "ET7一体化中空铸铝全框后副车架通常包含前侧横向连接梁；公开资料未逐字拆出左右前连接管，但全框结构支持可能满足。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.geeknev.com/article/742599450593091584?ad=181",
+              "title": "蔚来ET7底盘也能OTA 黑科技还不少",
+              "source_name": "皆电",
+              "snippet": "后副车架为一体化中空铸铝，后悬架4点与后副车架相连。"
+            }
+          ],
+          "reasoning": "①X为前横梁连接。②Y为一体化全框后副车架前侧横向边。③(a)是，全框前边承担横梁功能；(b)是，结构连接；(c)是，前侧横向；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述左纵梁的后端朝向所述右纵梁横向延伸形成后横梁左连接管，所述右纵梁的后端朝向所述左纵梁横向延伸形成后横梁右连接管，所述后横梁左连接管与后横梁右连接管的末端相连以构成后横梁",
+          "competitor_feature": "ET7一体化中空铸铝全框后副车架通常包含后侧横向连接梁；公开资料未逐字拆出左右后连接管，但全框结构支持可能满足。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.geeknev.com/article/742599450593091584?ad=181",
+              "title": "蔚来ET7底盘也能OTA 黑科技还不少",
+              "source_name": "皆电",
+              "snippet": "后副车架为一体化中空铸铝，后悬架4点与后副车架相连。"
+            }
+          ],
+          "reasoning": "①X为后横梁连接。②Y为一体化全框后副车架后侧横向边。③(a)是，全框后边承担横梁功能；(b)是，结构连接；(c)是，后侧横向；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 83.33,
+      "searched_queries": [
+        "蔚来 ET7 后副车架 一体化中空铸铝",
+        "NIO ET7 rear subframe cast aluminum",
+        "蔚来ET7 底盘 后悬架 4点 后副车架",
+        "site:nio.com ET7 delivery March 2022"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "特斯拉中国",
+        "company_en": "Tesla China",
+        "product_name": "Model Y（2020-2024款中国维修手册后副车架总成）",
+        "product_name_en": "Tesla Model Y (2020-2024 service-manual rear subframe assembly)",
+        "product_intro": "2020-2024款Model Y维修手册公开了后副车架总成的拆卸和安装流程，并列出左右后副框架螺栓、左右剪力板和后驱动电机相关安装步骤。",
+        "market": "中国纯电SUV前装市场",
+        "reason_for_deep_dive": "官方维修手册可直接确认后副车架总成及左右侧连接/铸件位置，但公开资料未充分拆解前后横梁与左右纵梁端部连接形态。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://service.tesla.com/docs/ModelY/ServiceManual/zh-cn/GUID-452A1E31-5D1E-4B1A-8C3E-746FDEE81B72.html",
+          "https://electrek.co/2021/01/11/tesla-starts-production-model-y-massive-single-piece-rear-casting/"
+        ],
+        "initial_evidence_summary": "Tesla官方2020-2024 Model Y维修手册公开“副车架总成-后”流程，涉及左右后副框架、后副车架固定螺栓和后驱动电机随副车架举升。"
+      },
+      "launch_date": "2021年1月起公开报道采用一体式后部铸件生产",
+      "launch_date_evidence": [
+        {
+          "url": "https://electrek.co/2021/01/11/tesla-starts-production-model-y-massive-single-piece-rear-casting/",
+          "title": "Tesla starts production of Model Y with massive single-piece rear casting",
+          "source_name": "Electrek",
+          "snippet": "2021-01-11报道Model Y开始采用大型单件后部铸件生产。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种后副车架",
+          "competitor_feature": "Model Y官方维修手册标题为“副车架总成-后”，明确存在后副车架总成。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://service.tesla.com/docs/ModelY/ServiceManual/zh-cn/GUID-452A1E31-5D1E-4B1A-8C3E-746FDEE81B72.html",
+              "title": "副车架总成 - 后（拆卸和安装）",
+              "source_name": "Tesla Service",
+              "snippet": "2020-2024 Model Y维修手册章节名为“副车架总成-后”。"
+            }
+          ],
+          "reasoning": "①X为后副车架。②Y为官方维修手册“后副车架总成”。③(a)是，名称相同；(b)是，部件存在性；(c)是，车辆后部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括左纵梁总成及右纵梁总成",
+          "competitor_feature": "维修手册要求标记LH/RH后副框架螺栓，并提到LH/RH副框架铸件和副框架衬套位置，支持左右侧总成存在。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://service.tesla.com/docs/ModelY/ServiceManual/zh-cn/GUID-452A1E31-5D1E-4B1A-8C3E-746FDEE81B72.html",
+              "title": "副车架总成 - 后（拆卸和安装）",
+              "source_name": "Tesla Service",
+              "snippet": "手册涉及LH/RH后副框架螺栓及LH/RH副框架铸件/衬套位置。"
+            }
+          ],
+          "reasoning": "①X为左右纵梁总成。②Y为LH/RH副框架铸件/衬套位置。③(a)是，左右副框架侧件承担纵梁功能；(b)是，集合部件；(c)是，左右侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述左纵梁总成包括左纵梁及与所述左纵梁一体成型的多个左侧安装部件",
+          "competitor_feature": "维修手册公开LH副框架铸件/衬套位置以及左侧剪力板和后副车架连接，支持左侧铸件含安装结构，但缺少多个安装部件逐项名称。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://service.tesla.com/docs/ModelY/ServiceManual/zh-cn/GUID-452A1E31-5D1E-4B1A-8C3E-746FDEE81B72.html",
+              "title": "副车架总成 - 后（拆卸和安装）",
+              "source_name": "Tesla Service",
+              "snippet": "手册涉及LH副框架铸件/衬套位置，左侧剪力板与后副车架固定。"
+            }
+          ],
+          "reasoning": "①X为左纵梁及一体安装部。②Y为LH副框架铸件/衬套/剪力板连接区。③(a)是，左铸件含安装功能；(b)是，集合部件；(c)是，左侧后部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述右纵梁总成包括右纵梁及与所述右纵梁一体成型的多个右侧安装部件",
+          "competitor_feature": "维修手册公开RH副框架铸件/衬套位置以及右侧剪力板和后副车架连接，支持右侧铸件含安装结构，但缺少多个安装部件逐项名称。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://service.tesla.com/docs/ModelY/ServiceManual/zh-cn/GUID-452A1E31-5D1E-4B1A-8C3E-746FDEE81B72.html",
+              "title": "副车架总成 - 后（拆卸和安装）",
+              "source_name": "Tesla Service",
+              "snippet": "手册涉及RH副框架铸件/衬套位置，右侧剪力板与后副车架固定。"
+            }
+          ],
+          "reasoning": "①X为右纵梁及一体安装部。②Y为RH副框架铸件/衬套/剪力板连接区。③(a)是，右铸件含安装功能；(b)是，集合部件；(c)是，右侧后部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述左纵梁的前端朝向所述右纵梁横向延伸形成前横梁左连接管，所述右纵梁的前端朝向所述左纵梁横向延伸形成前横梁右连接管，所述前横梁左连接管与前横梁右连接管的末端相连以构成前横梁",
+          "competitor_feature": "官方资料确认后副车架和左右副框架铸件，但未公开前横梁由左右纵梁前端横向延伸并末端相连的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://service.tesla.com/docs/ModelY/ServiceManual/zh-cn/GUID-452A1E31-5D1E-4B1A-8C3E-746FDEE81B72.html",
+              "title": "副车架总成 - 后（拆卸和安装）",
+              "source_name": "Tesla Service",
+              "snippet": "手册未逐字公开前横梁与左右纵梁端部连接方式。"
+            }
+          ],
+          "reasoning": "①X为前横梁端部连接。②Y仅为后副车架总成及左右侧安装信息。③(a)否，未见前横梁构型；(b)否，缺结构连接信息；(c)否，参考部位未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述左纵梁的后端朝向所述右纵梁横向延伸形成后横梁左连接管，所述右纵梁的后端朝向所述左纵梁横向延伸形成后横梁右连接管，所述后横梁左连接管与后横梁右连接管的末端相连以构成后横梁",
+          "competitor_feature": "官方资料确认后副车架和左右副框架铸件，但未公开后横梁由左右纵梁后端横向延伸并末端相连的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://service.tesla.com/docs/ModelY/ServiceManual/zh-cn/GUID-452A1E31-5D1E-4B1A-8C3E-746FDEE81B72.html",
+              "title": "副车架总成 - 后（拆卸和安装）",
+              "source_name": "Tesla Service",
+              "snippet": "手册未逐字公开后横梁与左右纵梁端部连接方式。"
+            }
+          ],
+          "reasoning": "①X为后横梁端部连接。②Y仅为后副车架总成及左右侧安装信息。③(a)否，未见后横梁构型；(b)否，缺结构连接信息；(c)否，参考部位未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 66.67,
+      "searched_queries": [
+        "Model Y 中国 后副车架 全框式 后悬架 拆解",
+        "Tesla Model Y rear subframe assembly service manual",
+        "Tesla Model Y rear casting 2021 production",
+        "site:service.tesla.com Model Y 后副车架"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "小鹏汽车",
+        "company_en": "XPeng",
+        "product_name": "小鹏P7（2020款中国首发交付SKU）",
+        "product_name_en": "XPeng P7 (2020 China first-delivery SKU)",
+        "product_intro": "2020年7月开始交付的小鹏P7纯电轿跑，公开底盘文章确认其后部固定下托臂的后副车架存在且可因剐蹭变形。",
+        "market": "中国纯电轿车前装市场",
+        "reason_for_deep_dive": "公开资料确认后副车架和后悬挂部件，但未披露左右纵梁总成与前后横梁的具体连接形态。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.yiche.com/zhai/1394035",
+          "https://zh.wikipedia.org/wiki/%E5%B0%8F%E9%B9%8FP7"
+        ],
+        "initial_evidence_summary": "易车页面标题和描述确认小鹏P7后部固定下托臂的副车架及后副车架变形；维基百科页面给出2020年7月交付。"
+      },
+      "launch_date": "2020年4月27日上市，2020年7月开始交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E9%B9%8FP7",
+          "title": "小鹏P7",
+          "source_name": "Wikipedia",
+          "snippet": "页面记载P7于2020年4月27日上市，并于2020年7月开始交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种后副车架",
+          "competitor_feature": "小鹏P7公开页面确认后部固定下托臂的副车架及后副车架变形问题。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1394035",
+              "title": "这辆小鹏P7的底盘数据为何会发生变化呢后部固定下托臂的副车架凸出",
+              "source_name": "易车",
+              "snippet": "页面描述后部固定下托臂的副车架凸出，剐蹭导致后副车架变形。"
+            }
+          ],
+          "reasoning": "①X为后副车架。②Y为P7后部固定下托臂的副车架。③(a)是，名称和位置相同；(b)是，部件存在性；(c)是，车辆后部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括左纵梁总成及右纵梁总成",
+          "competitor_feature": "P7后副车架需固定左右后悬下托臂，按后副车架功能通常具有左右侧承载部，但公开页未直接命名左右纵梁总成。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1394035",
+              "title": "这辆小鹏P7的底盘数据为何会发生变化呢后部固定下托臂的副车架凸出",
+              "source_name": "易车",
+              "snippet": "后部固定下托臂的副车架凸出，剐蹭导致后副车架变形。"
+            }
+          ],
+          "reasoning": "①X为左右纵梁总成。②Y为固定后部下托臂的后副车架。③(a)是，左右悬架固定需左右侧承载区；(b)是，集合部件；(c)是，后桥左右侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述左纵梁总成包括左纵梁及与所述左纵梁一体成型的多个左侧安装部件",
+          "competitor_feature": "公开资料仅确认后副车架固定下托臂，未说明左纵梁及左侧多个安装部件是否一体成型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1394035",
+              "title": "这辆小鹏P7的底盘数据为何会发生变化呢后部固定下托臂的副车架凸出",
+              "source_name": "易车",
+              "snippet": "页面未披露左侧安装部件一体成型细节。"
+            }
+          ],
+          "reasoning": "①X为左纵梁及一体安装部。②Y只有后副车架/下托臂固定信息。③(a)否，缺左侧铸件/安装部；(b)否，缺一体成型信息；(c)否，未定位左侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述右纵梁总成包括右纵梁及与所述右纵梁一体成型的多个右侧安装部件",
+          "competitor_feature": "公开资料仅确认后副车架固定下托臂，未说明右纵梁及右侧多个安装部件是否一体成型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1394035",
+              "title": "这辆小鹏P7的底盘数据为何会发生变化呢后部固定下托臂的副车架凸出",
+              "source_name": "易车",
+              "snippet": "页面未披露右侧安装部件一体成型细节。"
+            }
+          ],
+          "reasoning": "①X为右纵梁及一体安装部。②Y只有后副车架/下托臂固定信息。③(a)否，缺右侧铸件/安装部；(b)否，缺一体成型信息；(c)否，未定位右侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述左纵梁的前端朝向所述右纵梁横向延伸形成前横梁左连接管，所述右纵梁的前端朝向所述左纵梁横向延伸形成前横梁右连接管，所述前横梁左连接管与前横梁右连接管的末端相连以构成前横梁",
+          "competitor_feature": "公开资料未披露P7后副车架前横梁由左右纵梁前端连接管相连形成。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1394035",
+              "title": "这辆小鹏P7的底盘数据为何会发生变化呢后部固定下托臂的副车架凸出",
+              "source_name": "易车",
+              "snippet": "页面未披露前横梁连接管结构。"
+            }
+          ],
+          "reasoning": "①X为前横梁连接管结构。②Y仅为后副车架存在。③(a)否，未见前横梁；(b)否，缺连接方式；(c)否，前侧参考系未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述左纵梁的后端朝向所述右纵梁横向延伸形成后横梁左连接管，所述右纵梁的后端朝向所述左纵梁横向延伸形成后横梁右连接管，所述后横梁左连接管与后横梁右连接管的末端相连以构成后横梁",
+          "competitor_feature": "公开资料未披露P7后副车架后横梁由左右纵梁后端连接管相连形成。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1394035",
+              "title": "这辆小鹏P7的底盘数据为何会发生变化呢后部固定下托臂的副车架凸出",
+              "source_name": "易车",
+              "snippet": "页面未披露后横梁连接管结构。"
+            }
+          ],
+          "reasoning": "①X为后横梁连接管结构。②Y仅为后副车架存在。③(a)否，未见后横梁；(b)否，缺连接方式；(c)否，后侧参考系未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 50.0,
+      "searched_queries": [
+        "小鹏P7 后副车架 铝合金 拆解",
+        "小鹏P7 后部 下托臂 副车架",
+        "XPeng P7 rear subframe suspension",
+        "小鹏P7 2020 交付"
+      ],
+      "searched_providers": [
+        "web.search",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "智马达汽车",
+        "company_en": "smart Automobile",
+        "product_name": "smart精灵#1（2022款后驱版/SEA平台）",
+        "product_name_en": "smart #1 (2022 rear-drive version / SEA platform)",
+        "product_intro": "2022年发布预售的smart精灵#1后驱版，新能源情报分析网页面确认其前后副车架和动力电池布置规整，后悬架为多连杆。",
+        "market": "中国紧凑型纯电SUV前装市场",
+        "reason_for_deep_dive": "同属SEA平台车型且公开资料确认后副车架存在，但未公开两根过梁/两端铸铝件等细节，保守作为较低分候选。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.evupdates.com/Home/Index/article_article/id/1207.html"
+        ],
+        "initial_evidence_summary": "新能源情报分析网页面称smart精灵#1四驱/后驱版悬架系统为钢铝混合配件，前后副车架及中置动力电池设定规整，后悬架刚性占优。"
+      },
+      "launch_date": "2022年4月25日发布预售",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.evupdates.com/Home/Index/article_article/id/1207.html",
+          "title": "快评：smart精灵#1四驱版电驱动及车型平台技术状态",
+          "source_name": "新能源情报分析网",
+          "snippet": "页面记载smart精灵#1于2022年4月25日发布并公布预售价。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种后副车架",
+          "competitor_feature": "公开技术状态文章确认smart精灵#1存在前后副车架。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evupdates.com/Home/Index/article_article/id/1207.html",
+              "title": "快评：smart精灵#1四驱版电驱动及车型平台技术状态",
+              "source_name": "新能源情报分析网",
+              "snippet": "文章称smart精灵#1前后副车架及中置动力电池设定规整。"
+            }
+          ],
+          "reasoning": "①X为后副车架。②Y为smart精灵#1公开前后副车架。③(a)是，名称包含后副车架；(b)是，部件存在性；(c)是，车辆后部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括左纵梁总成及右纵梁总成",
+          "competitor_feature": "后副车架配合后多连杆悬架，通常包含左右侧承载安装区；公开页面未直接命名左右纵梁总成。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.evupdates.com/Home/Index/article_article/id/1207.html",
+              "title": "快评：smart精灵#1四驱版电驱动及车型平台技术状态",
+              "source_name": "新能源情报分析网",
+              "snippet": "文章称前后副车架设定规整，并评价后多连杆悬架刚性占优。"
+            }
+          ],
+          "reasoning": "①X为左右纵梁总成。②Y为后副车架配合后多连杆的左右侧安装区。③(a)是，功能等价；(b)是，集合部件；(c)是，后桥左右侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述左纵梁总成包括左纵梁及与所述左纵梁一体成型的多个左侧安装部件",
+          "competitor_feature": "公开资料未说明smart精灵#1左纵梁及多个左侧安装部件是否一体成型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.evupdates.com/Home/Index/article_article/id/1207.html",
+              "title": "快评：smart精灵#1四驱版电驱动及车型平台技术状态",
+              "source_name": "新能源情报分析网",
+              "snippet": "页面未披露左侧后副车架安装部件一体成型细节。"
+            }
+          ],
+          "reasoning": "①X为左纵梁及一体安装部。②Y仅为前后副车架存在和后多连杆信息。③(a)否，缺左侧部件；(b)否，缺一体成型；(c)否，未定位左侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述右纵梁总成包括右纵梁及与所述右纵梁一体成型的多个右侧安装部件",
+          "competitor_feature": "公开资料未说明smart精灵#1右纵梁及多个右侧安装部件是否一体成型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.evupdates.com/Home/Index/article_article/id/1207.html",
+              "title": "快评：smart精灵#1四驱版电驱动及车型平台技术状态",
+              "source_name": "新能源情报分析网",
+              "snippet": "页面未披露右侧后副车架安装部件一体成型细节。"
+            }
+          ],
+          "reasoning": "①X为右纵梁及一体安装部。②Y仅为前后副车架存在和后多连杆信息。③(a)否，缺右侧部件；(b)否，缺一体成型；(c)否，未定位右侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述左纵梁的前端朝向所述右纵梁横向延伸形成前横梁左连接管，所述右纵梁的前端朝向所述左纵梁横向延伸形成前横梁右连接管，所述前横梁左连接管与前横梁右连接管的末端相连以构成前横梁",
+          "competitor_feature": "公开资料未披露smart精灵#1后副车架前横梁连接管构型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.evupdates.com/Home/Index/article_article/id/1207.html",
+              "title": "快评：smart精灵#1四驱版电驱动及车型平台技术状态",
+              "source_name": "新能源情报分析网",
+              "snippet": "页面未披露后副车架前横梁端部连接方式。"
+            }
+          ],
+          "reasoning": "①X为前横梁连接管。②Y仅为后副车架存在。③(a)否，未公开前横梁；(b)否，缺连接方式；(c)否，前侧参考系未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述左纵梁的后端朝向所述右纵梁横向延伸形成后横梁左连接管，所述右纵梁的后端朝向所述左纵梁横向延伸形成后横梁右连接管，所述后横梁左连接管与后横梁右连接管的末端相连以构成后横梁",
+          "competitor_feature": "公开资料未披露smart精灵#1后副车架后横梁连接管构型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.evupdates.com/Home/Index/article_article/id/1207.html",
+              "title": "快评：smart精灵#1四驱版电驱动及车型平台技术状态",
+              "source_name": "新能源情报分析网",
+              "snippet": "页面未披露后副车架后横梁端部连接方式。"
+            }
+          ],
+          "reasoning": "①X为后横梁连接管。②Y仅为后副车架存在。③(a)否，未公开后横梁；(b)否，缺连接方式；(c)否，后侧参考系未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 50.0,
+      "searched_queries": [
+        "smart 精灵#1 后副车架 SEA 后悬架",
+        "smart #1 rear subframe SEA platform",
+        "smart精灵#1 四驱 后驱 前后副车架",
+        "smart精灵#1 2022 发布 预售"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

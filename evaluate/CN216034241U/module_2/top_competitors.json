@@ -1,0 +1,486 @@
+{
+  "publication_no": "CN216034241U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "吉利汽车",
+        "company_en": "Geely Auto",
+        "product_name": "吉利银河M9（2025款210km四驱领航版）",
+        "product_name_en": "Geely Galaxy M9 (2025 210km AWD Flagship)",
+        "product_intro": "吉利银河M9 2025款210km四驱领航版为中国市场大六座插混SUV；官网配置表列明该SKU配备前排正面安全气囊、前排侧面安全气囊、第二排侧面安全气囊和双腔远端气囊。",
+        "market": "中国新能源大六座SUV前装市场",
+        "reason_for_deep_dive": "用户指定重点线索；该SKU公开披露多处安全气囊配置，适合先做权利要求1的公开证据筛查。",
+        "source_result_ids": [
+          "turn0search0",
+          "turn0search6",
+          "turn10search4"
+        ],
+        "source_urls": [
+          "https://www.galaxy-geely.com/M9",
+          "https://www.dongchedi.com/auto/params-carIds-248363",
+          "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml"
+        ],
+        "initial_evidence_summary": "吉利银河M9官网页面披露9个安全气囊及各SKU气囊数量；同页配置数据列出210km四驱领航版的前排正面、前排侧面、第二排侧面和双腔远端气囊。未找到该SKU气囊本体开孔和发生器固定件的公开拆解证据。"
+      },
+      "launch_date": "2025年9月17日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml",
+          "title": "吉利银河M9正式上市 限时价17.38-23.88万元",
+          "source_name": "新浪汽车",
+          "snippet": "9月17日，吉利银河M9正式上市，共推出6款车型，含210km四驱领航版。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种安全气囊",
+          "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开配置包含安全气囊，官网配置数据列明前排正面安全气囊、前排侧面安全气囊、第二排侧面安全气囊和双腔远端气囊。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.galaxy-geely.com/M9",
+              "title": "吉利银河M9",
+              "source_name": "吉利银河官网",
+              "snippet": "页面列明“9个安全气囊，含双腔远端气囊”；配置数据列明前排正面安全气囊、前排侧面安全气囊、第二排侧面安全气囊和双腔远端气囊。"
+            },
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+              "title": "吉利银河M9 2025款210km 四驱领航版参数配置",
+              "source_name": "懂车帝",
+              "snippet": "被动安全配置列明前排安全气囊、侧安全气囊、侧安全气帘和中央安全气囊等项目。"
+            }
+          ],
+          "reasoning": "① 权1 X：“一种安全气囊”是车辆被动安全气囊/气囊总成这一产品类别，判断维度为二值存在/不存在。② 候选公开证据 Y：官网和参数页均直接列明该SKU配备多种安全气囊，判断维度同为二值存在/不存在。③ 对比：(a) 概念是否等价：是，X和Y均指车辆被动安全气囊；(b) 单位/量纲是否等价：是，均为是否配备该类部件；(c) 参考系是否等价：是，均以车辆安全气囊配置为参考对象；(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "吉利银河M9 210km四驱领航版 安全气囊 总成 拆解",
+            "吉利银河M9 210km四驱领航版 SRS 维修手册"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气囊本体，所述气囊本体上形成有固定件安装孔和发生器安装孔",
+          "competitor_feature": "公开资料仅披露该SKU配备安全气囊，未披露气囊本体织物/本体上是否形成固定件安装孔和发生器安装孔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气囊本体上的固定件安装孔和发生器安装孔，是气囊本体内部实体结构特征，判断对象为具体开孔结构。② 候选公开证据 Y：现有公开网页只给出安全气囊配置和数量，判断对象为整车配置项。③ 对比：(a) 概念是否等价：否，配置项不能直接证明气囊本体开孔；(b) 单位/量纲是否等价：否，X是结构存在及位置，Y是配置存在；(c) 参考系是否等价：否，X参考气囊本体，Y参考整车配置；(d) 是否有反向证据：无。故按严格规则为证据不足。",
+          "suggested_followup_queries": [
+            "吉利银河M9 安全气囊 本体 安装孔",
+            "吉利银河M9 气囊发生器 安装孔 维修手册"
+          ],
+          "evidence_gap_brief": "缺少该SKU气囊总成拆解图、零件图或维修手册中对气囊本体开孔的明文/图示。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，所述气体发生器的一部分穿过所述发生器安装孔伸入所述气囊本体内，所述气体发生器上设有第一固定件和第二固定件，所述第一固定件设在所述气体发生器的所述一部分上，且所述第一固定件穿设于所述固定件安装孔处，所述第二固定件位于所述气囊本体外",
+          "competitor_feature": "公开资料未披露该SKU气囊的气体发生器、发生器穿入气囊本体的方式、第一固定件/第二固定件及其内外位置关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气体发生器穿过发生器安装孔并通过第一、第二固定件与气囊本体形成内外固定关系，是气囊总成内部装配结构。② 候选公开证据 Y：现有公开资料只证明车辆配备安全气囊，未公开气体发生器及固定件装配。③ 对比：(a) 概念是否等价：否，安全气囊配置不能直接等同于特定发生器固定结构；(b) 单位/量纲是否等价：否，X是多部件空间连接关系，Y是配置项；(c) 参考系是否等价：否，X参考气囊本体和气体发生器，Y参考整车被动安全配置；(d) 是否有反向证据：无。故按严格规则为证据不足。",
+          "suggested_followup_queries": [
+            "吉利银河M9 气体发生器 固定件 安全气囊",
+            "Geely Galaxy M9 airbag inflator mounting"
+          ],
+          "evidence_gap_brief": "缺少该SKU气囊总成拆解图、供应商零件图或维修资料中对气体发生器和固定件位置关系的证据。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "吉利银河M9 210km 四驱领航版 安全气囊",
+        "吉利 银河M9 210km 四驱领航版 配置表 安全气囊",
+        "吉利银河 M9 安全气囊 维修手册",
+        "Geely Galaxy M9 210km AWD airbag",
+        "site:m.asemanshop.com 吉利银河M9 安全气囊",
+        "site:qixiu88.com 吉利银河M9 安全气囊"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_site:galaxy-geely.com",
+        "dongchedi.com",
+        "recommended_site:m.asemanshop.com",
+        "recommended_site:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "赛力斯汽车",
+        "company_en": "Seres / AITO",
+        "product_name": "问界M9（2025款增程Max六座版 / 192线激光雷达）",
+        "product_name_en": "AITO M9 (2025 EREV Max six-seat / 192-line LiDAR)",
+        "product_intro": "问界M9 2025款增程Max六座版为中国市场大型增程SUV；公开参数页和2025款增程版用户手册披露该车型配备正面气囊、座椅侧气囊、帘式气囊和远端侧气囊。",
+        "market": "中国新能源大型SUV前装市场",
+        "reason_for_deep_dive": "与吉利银河M9同属大六座新能源SUV竞品，公开资料披露多种安全气囊，适合做权利要求1筛查。",
+        "source_result_ids": [
+          "turn12search8",
+          "turn12search13"
+        ],
+        "source_urls": [
+          "https://www.dongchedi.com/auto/params-carIds-245375",
+          "https://hima.auto/wenjie/m9/configuration/",
+          "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m9-2025-evr-product-manual-20250514.pdf"
+        ],
+        "initial_evidence_summary": "懂车帝该SKU参数页列明前排安全气囊、侧安全气囊、侧安全气帘和中央安全气囊；鸿蒙智行2025款增程版用户手册说明安全气囊为被动式辅助保护系统并列出安装位置。未找到气囊本体开孔和发生器固定件结构证据。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种安全气囊",
+          "competitor_feature": "问界M9 2025款增程Max六座版公开参数和用户手册披露车辆配备安全气囊，含驾驶员正面气囊、副驾驶员正面气囊、侧气囊、帘式气囊和远端侧气囊。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-245375",
+              "title": "问界M9 2025款增程 Max 六座版参数配置",
+              "source_name": "懂车帝",
+              "snippet": "被动安全配置列明前排安全气囊、侧安全气囊、侧安全气帘和中央安全气囊。"
+            },
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m9-2025-evr-product-manual-20250514.pdf",
+              "title": "问界 M9 2025款 增程版 使用说明书",
+              "source_name": "鸿蒙智行",
+              "snippet": "手册写明“安全气囊是一种被动式辅助保护系统”，并列出驾驶员正面气囊、副驾驶员正面气囊、座椅侧气囊、帘式气囊和远端侧气囊。"
+            }
+          ],
+          "reasoning": "① 权1 X：“一种安全气囊”是车辆被动安全气囊/气囊总成这一产品类别，判断维度为二值存在/不存在。② 候选公开证据 Y：参数页和用户手册直接披露该SKU所属2025款增程版配备多种安全气囊，判断维度同为二值存在/不存在。③ 对比：(a) 概念是否等价：是，X和Y均为车辆被动安全气囊；(b) 单位/量纲是否等价：是，均为是否配备；(c) 参考系是否等价：是，均参考车辆安全气囊系统；(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "问界M9 2025 增程 Max 安全气囊 总成",
+            "AITO M9 2025 EREV airbag inflator"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气囊本体，所述气囊本体上形成有固定件安装孔和发生器安装孔",
+          "competitor_feature": "公开资料未披露问界M9 2025款增程Max六座版气囊本体上的固定件安装孔和发生器安装孔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气囊本体开设固定件安装孔和发生器安装孔，属于气囊本体内部结构。② 候选公开证据 Y：参数页和用户手册仅披露安全气囊类型和安装位置，未公开气囊本体开孔。③ 对比：(a) 概念是否等价：否，气囊类型/位置不能直接证明本体开孔；(b) 单位/量纲是否等价：否，X是结构关系，Y是配置/位置描述；(c) 参考系是否等价：否，X参考气囊本体，Y参考整车座舱安装位置；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "问界M9 安全气囊 本体 安装孔",
+            "问界M9 SRS 气囊总成 拆解"
+          ],
+          "evidence_gap_brief": "缺少该SKU气囊总成内部结构、气囊本体开孔或维修拆解证据。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，所述气体发生器的一部分穿过所述发生器安装孔伸入所述气囊本体内，所述气体发生器上设有第一固定件和第二固定件，所述第一固定件设在所述气体发生器的所述一部分上，且所述第一固定件穿设于所述固定件安装孔处，所述第二固定件位于所述气囊本体外",
+          "competitor_feature": "公开资料未披露问界M9 2025款增程Max六座版气囊总成内的气体发生器穿入方式、第一固定件和第二固定件位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气体发生器及第一/第二固定件的穿孔、内外位置关系，是具体装配结构。② 候选公开证据 Y：现有资料仅说明配备安全气囊及安装区域，未说明气体发生器或固定件。③ 对比：(a) 概念是否等价：否，气囊系统配置不等于发生器固定结构；(b) 单位/量纲是否等价：否，X是多部件空间连接关系，Y是配置存在；(c) 参考系是否等价：否，X参考气囊本体和发生器，Y参考整车安全系统；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "问界M9 气体发生器 固定件",
+            "AITO M9 airbag gas generator fixing member"
+          ],
+          "evidence_gap_brief": "缺少该SKU气体发生器、固定件和气囊本体相对位置的公开证据。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "问界M9 2025款 增程 Max 六座版 安全气囊",
+        "问界M9 2025款 增程版 使用说明书 安全气囊",
+        "问界M9 2025款 SRS 维修手册 气囊总成",
+        "AITO M9 2025 EREV Max airbag",
+        "site:m.asemanshop.com 问界M9 安全气囊",
+        "site:qixiu88.com 问界M9 安全气囊"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_site:hima.auto",
+        "dongchedi.com",
+        "recommended_site:m.asemanshop.com",
+        "recommended_site:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "理想汽车",
+        "company_en": "Li Auto",
+        "product_name": "理想L9（2025款Ultra智能焕新版）",
+        "product_name_en": "Li Auto L9 (2025 Ultra Intelligent Refresh)",
+        "product_intro": "理想L9 2025款Ultra智能焕新版为中国市场大型增程SUV；公开参数页列明该SKU配备前排安全气囊、前后排侧气囊、侧安全气帘和前排中央安全气囊。",
+        "market": "中国新能源大型SUV前装市场",
+        "reason_for_deep_dive": "与吉利银河M9、问界M9同处家庭大六座/大型SUV竞品带，且公开参数披露多项安全气囊配置。",
+        "source_result_ids": [
+          "turn16search0"
+        ],
+        "source_urls": [
+          "https://www.dongchedi.com/auto/params-carIds-245717"
+        ],
+        "initial_evidence_summary": "懂车帝参数页显示该SKU上市时间为2025.05，并在被动安全配置中列明前排安全气囊、侧安全气囊、侧安全气帘和中央安全气囊。未找到气囊本体开孔和气体发生器固定件公开证据。"
+      },
+      "launch_date": "2025年5月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongchedi.com/auto/params-carIds-245717",
+          "title": "理想L9 2025款Ultra智能焕新版参数配置",
+          "source_name": "懂车帝",
+          "snippet": "基本信息列明上市时间为2025.05。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种安全气囊",
+          "competitor_feature": "理想L9 2025款Ultra智能焕新版公开参数页列明配备前排安全气囊、侧安全气囊、侧安全气帘和前排中央安全气囊。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-245717",
+              "title": "理想L9 2025款Ultra智能焕新版参数配置",
+              "source_name": "懂车帝",
+              "snippet": "被动安全配置列明前排安全气囊、侧安全气囊、侧安全气帘和中央安全气囊。"
+            }
+          ],
+          "reasoning": "① 权1 X：“一种安全气囊”是车辆被动安全气囊产品类别，判断维度为二值存在/不存在。② 候选公开证据 Y：参数页直接列明该SKU配备多项安全气囊，判断维度同为二值存在/不存在。③ 对比：(a) 概念是否等价：是，X和Y均为车辆被动安全气囊；(b) 单位/量纲是否等价：是，均为是否配备；(c) 参考系是否等价：是，均参考车辆被动安全系统；(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "理想L9 2025 Ultra 安全气囊 总成",
+            "Li L9 2025 airbag module inflator"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气囊本体，所述气囊本体上形成有固定件安装孔和发生器安装孔",
+          "competitor_feature": "公开资料未披露理想L9 2025款Ultra智能焕新版气囊本体上的固定件安装孔和发生器安装孔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气囊本体上的固定件安装孔和发生器安装孔，是气囊总成内部结构。② 候选公开证据 Y：参数页只披露安全气囊配置类型，未公开气囊本体开孔。③ 对比：(a) 概念是否等价：否，配置类型不能证明本体开孔；(b) 单位/量纲是否等价：否，X是结构存在及位置，Y是配置存在；(c) 参考系是否等价：否，X参考气囊本体，Y参考整车配置；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "理想L9 2025 安全气囊 本体 安装孔",
+            "理想L9 2025 SRS 维修手册 气囊总成"
+          ],
+          "evidence_gap_brief": "缺少该SKU气囊本体开孔的拆解图、维修手册或供应商结构图。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，所述气体发生器的一部分穿过所述发生器安装孔伸入所述气囊本体内，所述气体发生器上设有第一固定件和第二固定件，所述第一固定件设在所述气体发生器的所述一部分上，且所述第一固定件穿设于所述固定件安装孔处，所述第二固定件位于所述气囊本体外",
+          "competitor_feature": "公开资料未披露理想L9 2025款Ultra智能焕新版气囊气体发生器及第一/第二固定件的穿设和内外位置关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气体发生器穿过发生器安装孔并由第一、第二固定件固定，是具体内部装配关系。② 候选公开证据 Y：参数页仅证明配备安全气囊，未公开气体发生器和固定件结构。③ 对比：(a) 概念是否等价：否，气囊配置不能直接证明发生器固定结构；(b) 单位/量纲是否等价：否，X是空间连接关系，Y是配置项；(c) 参考系是否等价：否，X参考气囊本体/气体发生器，Y参考整车配置；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "理想L9 气体发生器 固定件 安全气囊",
+            "Li L9 airbag gas generator mounting"
+          ],
+          "evidence_gap_brief": "缺少该SKU气囊气体发生器、固定件和气囊本体相对位置证据。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "理想L9 2025款 Ultra 智能焕新版 安全气囊",
+        "理想L9 2025 Ultra 参数配置 被动安全",
+        "理想L9 2025 SRS 维修手册 气囊总成",
+        "Li Auto L9 2025 Ultra airbags",
+        "site:m.asemanshop.com 理想L9 2025 安全气囊",
+        "site:qixiu88.com 理想L9 2025 安全气囊"
+      ],
+      "searched_providers": [
+        "web_search",
+        "dongchedi.com",
+        "recommended_site:m.asemanshop.com",
+        "recommended_site:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "蔚来汽车",
+        "company_en": "NIO",
+        "product_name": "全新蔚来ES8（2025年六座版 / 奥托立夫安全配置）",
+        "product_name_en": "All-new NIO ES8 (2025 six-seat version / Autoliv safety package)",
+        "product_intro": "全新蔚来ES8为中国市场大型纯电SUV；公开供应链资料披露奥托立夫为该车型提供前沿气囊系统、骨盆约束气囊和覆盖至第三排的侧气帘。",
+        "market": "中国新能源大型SUV前装市场",
+        "reason_for_deep_dive": "该车型与吉利银河M9同属大三排SUV竞品，且公开资料直接披露安全气囊系统供应信息。",
+        "source_result_ids": [
+          "turn16search4"
+        ],
+        "source_urls": [
+          "https://www.marklines.com/cn/news/333106"
+        ],
+        "initial_evidence_summary": "MarkLines公开页面披露奥托立夫为全新ES8提供前沿气囊系统、骨盆约束气囊和超长尺寸侧气帘。页面未披露气囊本体开孔、气体发生器穿设和固定件结构。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种安全气囊",
+          "competitor_feature": "公开供应链资料披露奥托立夫为全新蔚来ES8提供气囊系统、骨盆约束气囊和侧气帘。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.marklines.com/cn/news/333106",
+              "title": "奥托立夫为蔚来全新ES8提供多款安全配置",
+              "source_name": "MarkLines",
+              "snippet": "页面披露奥托立夫为蔚来全新ES8提供前沿气囊系统；全车6座标配骨盆约束气囊，并提供覆盖至第三排的侧气帘。"
+            }
+          ],
+          "reasoning": "① 权1 X：“一种安全气囊”是车辆被动安全气囊/气囊系统产品类别，判断维度为二值存在/不存在。② 候选公开证据 Y：供应链公开资料直接披露该车型配套气囊系统、骨盆约束气囊和侧气帘，判断维度同为二值存在/不存在。③ 对比：(a) 概念是否等价：是，X和Y均为安全气囊类被动约束部件；(b) 单位/量纲是否等价：是，均为是否存在该类部件；(c) 参考系是否等价：是，均参考车辆被动安全/约束系统；(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "全新ES8 奥托立夫 气囊系统 结构",
+            "NIO ES8 Autoliv airbag module inflator"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气囊本体，所述气囊本体上形成有固定件安装孔和发生器安装孔",
+          "competitor_feature": "公开资料未披露全新蔚来ES8配套气囊的气囊本体上是否形成固定件安装孔和发生器安装孔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气囊本体上形成固定件安装孔和发生器安装孔，是具体气囊本体结构。② 候选公开证据 Y：供应链资料披露气囊系统和气帘配套，但未公开气囊本体开孔结构。③ 对比：(a) 概念是否等价：否，配套气囊系统不能证明本体开孔；(b) 单位/量纲是否等价：否，X是实体开孔结构，Y是配套部件类型；(c) 参考系是否等价：否，X参考气囊本体，Y参考车型供应关系；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "全新蔚来ES8 气囊本体 安装孔",
+            "Autoliv NIO ES8 airbag module drawing"
+          ],
+          "evidence_gap_brief": "缺少全新ES8对应气囊总成或奥托立夫配套件的开孔结构图。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，所述气体发生器的一部分穿过所述发生器安装孔伸入所述气囊本体内，所述气体发生器上设有第一固定件和第二固定件，所述第一固定件设在所述气体发生器的所述一部分上，且所述第一固定件穿设于所述固定件安装孔处，所述第二固定件位于所述气囊本体外",
+          "competitor_feature": "公开资料未披露全新蔚来ES8配套气囊的气体发生器穿入气囊本体、第一/第二固定件及其内外布置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气体发生器和第一/第二固定件的穿设及内外布置，是气囊总成内部装配结构。② 候选公开证据 Y：公开资料仅披露奥托立夫供应气囊系统、骨盆约束气囊和侧气帘，未公开发生器固定结构。③ 对比：(a) 概念是否等价：否，气囊系统供应关系不能直接证明发生器固定件结构；(b) 单位/量纲是否等价：否，X是多部件连接关系，Y是配套关系；(c) 参考系是否等价：否，X参考气囊本体和气体发生器，Y参考车型与供应商；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "蔚来ES8 奥托立夫 气体发生器 固定件",
+            "NIO ES8 airbag gas generator fixing"
+          ],
+          "evidence_gap_brief": "缺少该车型配套气囊的气体发生器及固定件结构证据。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "蔚来 全新ES8 奥托立夫 气囊 系统",
+        "蔚来ES8 2025 安全气囊 配置",
+        "NIO all-new ES8 Autoliv airbag systems",
+        "NIO ES8 airbag module inflator",
+        "site:m.asemanshop.com 蔚来ES8 安全气囊",
+        "site:qixiu88.com 蔚来ES8 安全气囊"
+      ],
+      "searched_providers": [
+        "web_search",
+        "marklines.com",
+        "recommended_site:m.asemanshop.com",
+        "recommended_site:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "北京现代",
+        "company_en": "Beijing Hyundai",
+        "product_name": "第十一代索纳塔（完整版使用说明书 / 2024-2025款）",
+        "product_name_en": "11th-generation Hyundai Sonata (full owner manual / 2024-2025 CN model)",
+        "product_intro": "第十一代索纳塔为中国市场合资品牌轿车；北京现代官方完整版说明书披露SRS包含驾驶位正面气囊总成、副驾驶正面气囊总成、侧气囊总成、侧气帘总成和膝盖气囊总成。",
+        "market": "中国乘用车前装被动安全系统市场",
+        "reason_for_deep_dive": "官方用户手册直接列出SRS气囊总成部件，较普通营销配置表更接近权利要求1的气囊总成对象。",
+        "source_result_ids": [
+          "turn4search17"
+        ],
+        "source_urls": [
+          "https://www.beijing-hyundai.com.cn/media/14741/%E7%AC%AC%E5%8D%81%E4%B8%80%E4%BB%A3%E7%B4%A2%E7%BA%B3%E5%A1%94%E5%AE%8C%E6%95%B4%E7%89%88%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf"
+        ],
+        "initial_evidence_summary": "北京现代官方说明书的SRS部件章节列明驾驶位正面气囊总成、副驾驶正面气囊总成、侧气囊总成、侧气帘总成和膝盖气囊总成。未找到气囊本体开孔和气体发生器固定件的公开证据。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种安全气囊",
+          "competitor_feature": "第十一代索纳塔官方说明书披露SRS包含驾驶位正面气囊总成、副驾驶正面气囊总成、侧气囊总成、侧气帘总成和驾驶位膝盖气囊总成。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.beijing-hyundai.com.cn/media/14741/%E7%AC%AC%E5%8D%81%E4%B8%80%E4%BB%A3%E7%B4%A2%E7%BA%B3%E5%A1%94%E5%AE%8C%E6%95%B4%E7%89%88%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+              "title": "第十一代索纳塔完整版说明书",
+              "source_name": "北京现代",
+              "snippet": "SRS部件章节列明：驾驶位正面气囊总成、副驾驶正面气囊总成、侧气囊总成、侧气帘总成、驾驶位膝盖气囊总成等。"
+            }
+          ],
+          "reasoning": "① 权1 X：“一种安全气囊”是安全气囊/气囊总成产品类别，判断维度为二值存在/不存在。② 候选公开证据 Y：官方说明书直接列出多个气囊总成，判断维度同为二值存在/不存在。③ 对比：(a) 概念是否等价：是，X和Y均指车辆安全气囊总成；(b) 单位/量纲是否等价：是，均为是否存在该部件；(c) 参考系是否等价：是，均参考SRS辅助保护系统；(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "第十一代索纳塔 气囊总成 发生器",
+            "Hyundai Sonata 11th airbag module inflator"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气囊本体，所述气囊本体上形成有固定件安装孔和发生器安装孔",
+          "competitor_feature": "官方说明书列出气囊总成，但未披露第十一代索纳塔气囊本体上的固定件安装孔和发生器安装孔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气囊本体形成固定件安装孔和发生器安装孔，是具体内部结构。② 候选公开证据 Y：官方说明书列出SRS气囊总成部件，但未展开气囊本体结构。③ 对比：(a) 概念是否等价：否，气囊总成名称不能直接证明本体开孔；(b) 单位/量纲是否等价：否，X是结构开孔，Y是部件清单；(c) 参考系是否等价：否，X参考气囊本体，Y参考SRS系统部件列表；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "第十一代索纳塔 安全气囊 本体 安装孔",
+            "第十一代索纳塔 气囊总成 拆解"
+          ],
+          "evidence_gap_brief": "缺少该车型气囊总成内部结构图或维修手册中的气囊本体开孔描述。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，所述气体发生器的一部分穿过所述发生器安装孔伸入所述气囊本体内，所述气体发生器上设有第一固定件和第二固定件，所述第一固定件设在所述气体发生器的所述一部分上，且所述第一固定件穿设于所述固定件安装孔处，所述第二固定件位于所述气囊本体外",
+          "competitor_feature": "官方说明书未披露第十一代索纳塔气囊总成内的气体发生器、固定件数量、固定件位置和穿设关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① 权1 X：气体发生器穿入气囊本体并通过第一/第二固定件形成内外固定，是具体空间装配结构。② 候选公开证据 Y：官方说明书仅列出气囊总成部件，未披露发生器和固定件。③ 对比：(a) 概念是否等价：否，气囊总成部件清单不能直接证明特定发生器固定结构；(b) 单位/量纲是否等价：否，X是多部件连接关系，Y是部件名称；(c) 参考系是否等价：否，X参考气囊本体/气体发生器，Y参考SRS系统清单；(d) 是否有反向证据：无。故为证据不足。",
+          "suggested_followup_queries": [
+            "第十一代索纳塔 气体发生器 固定件 安全气囊",
+            "Hyundai Sonata airbag gas generator mounting holes"
+          ],
+          "evidence_gap_brief": "缺少该车型气体发生器及第一/第二固定件内外布置的公开证据。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "第十一代索纳塔 完整版说明书 安全气囊 总成",
+        "第十一代索纳塔 SRS 气囊总成",
+        "北京现代 第十一代索纳塔 安全气囊 维修手册",
+        "Hyundai Sonata 11th generation airbag assembly manual",
+        "site:m.asemanshop.com 第十一代索纳塔 安全气囊",
+        "site:qixiu88.com 第十一代索纳塔 安全气囊"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_site:beijing-hyundai.com.cn",
+        "recommended_site:m.asemanshop.com",
+        "recommended_site:qixiu88.com"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

@@ -1,0 +1,798 @@
+{
+  "publication_no": "CN222577204U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "Raybestos",
+        "company_en": "Raybestos",
+        "product_name": "H6000 制动片减拖卡簧（H6000 drag reduction clip kit）",
+        "product_name_en": "H6000 brake pad drag reduction clips (H6000 kit)",
+        "product_intro": "H6000 为制动片减拖弹簧夹套件，夹在 brake pad steel/tabs 上，用于降低拖滞并保持制动片分离。",
+        "market": "中国售后维修/进口制动零部件市场",
+        "reason_for_deep_dive": "公开资料直接描述制动片弹簧夹、卡接位置和弹性分离功能，最接近权1卡簧结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://images.carid.com/raybestos/items/pdf/drag-reduction-clips-features.pdf",
+          "https://www.carid.com/raybestos/r-line-front-disc-brake-hardware-kit-mpn-h15950a.html"
+        ],
+        "initial_evidence_summary": "PDF 公开 springs、clips、brake pad tabs、减拖和安装方式。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种卡簧结构(42)",
+          "competitor_feature": "Raybestos H6000 为制动片 drag reduction clip/弹簧夹套件，用于盘式制动片。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://images.carid.com/raybestos/items/pdf/drag-reduction-clips-features.pdf",
+              "title": "Raybestos Brake Parts Features",
+              "source_name": "Raybestos/CARiD",
+              "snippet": "PDF称 drag reduction clips 的 springs 对制动摩擦片施加压力，使其在未制动时与制动面分离；clips fit over pad steel，springs snap into place under brake pad tabs。"
+            }
+          ],
+          "reasoning": "① 权1 X：卡簧结构为用于卡接/弹性作用的弹簧夹结构。② 候选公开证据 Y：公开资料称 drag reduction clips 含 springs 与 clips，用于 brake pad tabs。③ 对比：(a) 概念是否等价：是，均为制动片弹簧夹结构。 (b) 单位/量纲是否等价：是，均为结构存在性。 (c) 参考系是否等价：是，均在盘式制动片/制动钳安装场景。 (d) 是否有反向证据：",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述卡簧结构(42)包括卡簧本体和卡接部",
+          "competitor_feature": "PDF 与产品页显示该夹件有 clip/spring 实体并通过 brake pad tabs 卡接，可对应本体与卡接部。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://images.carid.com/raybestos/items/pdf/drag-reduction-clips-features.pdf",
+              "title": "Raybestos Brake Parts Features",
+              "source_name": "Raybestos/CARiD",
+              "snippet": "PDF称 drag reduction clips 的 springs 对制动摩擦片施加压力，使其在未制动时与制动面分离；clips fit over pad steel，springs snap into place under brake pad tabs。"
+            },
+            {
+              "url": "https://www.carid.com/raybestos/r-line-front-disc-brake-hardware-kit-mpn-h15950a.html",
+              "title": "Raybestos H15950A R-Line Front Disc Brake Hardware Kit",
+              "source_name": "CARiD",
+              "snippet": "Includes: 4 Pad Retaining Clips；产品详情称 R-Line brake hardware 按 form, fit and function 精确制造。"
+            }
+          ],
+          "reasoning": "① 权1 X：卡簧包括本体和卡接部，为二值结构划分。② 候选公开证据 Y：Y 为夹件本体、弹簧段及卡到 brake pad tabs 的安装部。③ 对比：(a) 概念是否等价：是，卡接弹簧夹具备本体与卡接功能部。 (b) 单位/量纲是否等价：是，均为部件/子结构存在性。 (c) 参考系是否等价：是，均为制动片卡接安装参考系。 (d) 是否有反向证据：无。公开图文未逐段命名，故不升为明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "卡接部包括弹性回位段(30)和第一连接段",
+          "competitor_feature": "“springs provide positive pressure” 对应弹性回位/分离功能；“snap into place under brake pad tabs” 对应连接/卡接路径。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://images.carid.com/raybestos/items/pdf/drag-reduction-clips-features.pdf",
+              "title": "Raybestos Brake Parts Features",
+              "source_name": "Raybestos/CARiD",
+              "snippet": "PDF称 drag reduction clips 的 springs 对制动摩擦片施加压力，使其在未制动时与制动面分离；clips fit over pad steel，springs snap into place under brake pad tabs。"
+            }
+          ],
+          "reasoning": "① 权1 X：弹性回位段和第一连接段是卡簧的功能段与连接段。② 候选公开证据 Y：Y 公开弹簧压力使摩擦片分离，并卡在 brake pad tabs 下。③ 对比：(a) 概念是否等价：是，均为弹性复位/分离与卡接连接。 (b) 单位/量纲是否等价：是，均为结构存在性。 (c) 参考系是否等价：是，均以制动片夹件为参考。 (d) 是否有反向证据：无。未公开分段名称，按严谨推理给可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述弹性回位段(30)与所述卡簧本体(10)通过第一连接段连接",
+          "competitor_feature": "弹性施压的 spring 通过夹件结构卡在 brake pad tabs 下，可推定弹性段经连接部与夹件主体连成一体。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://images.carid.com/raybestos/items/pdf/drag-reduction-clips-features.pdf",
+              "title": "Raybestos Brake Parts Features",
+              "source_name": "Raybestos/CARiD",
+              "snippet": "PDF称 drag reduction clips 的 springs 对制动摩擦片施加压力，使其在未制动时与制动面分离；clips fit over pad steel，springs snap into place under brake pad tabs。"
+            }
+          ],
+          "reasoning": "① 权1 X：弹性回位段通过第一连接段连接卡簧本体。② 候选公开证据 Y：Y 为一体安装的 drag reduction clip/spring under pad tabs。③ 对比：(a) 概念是否等价：是，均为弹簧功能段与本体连接关系。 (b) 单位/量纲是否等价：是，均为二值连接关系。 (c) 参考系是否等价：是，均在同一制动片夹件上。 (d) 是否有反向证据：无。图文不足以直接命名第一连",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "第一连接段至少包括第一弧形子段(31)，所述第一弧形子段(31)所在圆的圆心位于所述第一弧形子段(31)靠近所述弹性回位段(30)的一侧",
+          "competitor_feature": "公开资料未标注第一弧形子段及其所在圆圆心相对弹性回位段的位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://images.carid.com/raybestos/items/pdf/drag-reduction-clips-features.pdf",
+              "title": "Raybestos Brake Parts Features",
+              "source_name": "Raybestos/CARiD",
+              "snippet": "PDF称 drag reduction clips 的 springs 对制动摩擦片施加压力，使其在未制动时与制动面分离；clips fit over pad steel，springs snap into place under brake pad tabs。"
+            }
+          ],
+          "reasoning": "① 权1 X：第一弧形子段及圆心位置是具体几何约束。② 候选公开证据 Y：Y 仅公开夹件/弹簧安装和功能，未给圆心位置。③ 对比：(a) 概念是否等价：否，Y 未公开该几何概念。 (b) 单位/量纲是否等价：否，X 为几何位置，Y 为功能/安装描述。 (c) 参考系是否等价：否，X 以弹性回位段为参考，Y 无该参考。 (d) 是否有反向证据：无。缺少可核查几何证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 74.0,
+      "searched_queries": [
+        "Raybestos H6000 drag reduction clips brake pad tabs",
+        "Raybestos H6000 制动片 弹簧夹",
+        "site:carid.com Raybestos H6000 drag reduction clips"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "Dorman",
+        "company_en": "Dorman Products",
+        "product_name": "HW6194 盘式制动硬件卡簧套件（HW6194 / Cadillac ATS-CTS-XTS适配）",
+        "product_name_en": "HW6194 disc brake hardware kit (Cadillac ATS/CTS/XTS applications)",
+        "product_intro": "HW6194 为 Dorman First Stop 盘式制动硬件套件，规格含 2 个 spreader springs 和 4 个 pad pins。",
+        "market": "中国售后维修/跨境进口制动零部件市场",
+        "reason_for_deep_dive": "官方页给出具体 SKU、尺寸、套件内容和多视角图，适合比对卡簧本体/卡接/弹性段。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dormanproducts.com/p-81159-hw6194.aspx"
+        ],
+        "initial_evidence_summary": "HW6194 为 Disc Brake Hardware Kit；规格含 Clip Length 117.6 mm、Clip Width 67.75 mm、Package Contents: 2 Spreader Springs; 4 Pad Pins，并有多视角产品图。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种卡簧结构(42)",
+          "competitor_feature": "Dorman HW6194 是盘式制动硬件套件，含 2 个 spreader springs。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dormanproducts.com/p-81159-hw6194.aspx",
+              "title": "Dorman HW6194 Disc Brake Hardware Kit",
+              "source_name": "Dorman Products",
+              "snippet": "HW6194 为 Disc Brake Hardware Kit；规格含 Clip Length 117.6 mm、Clip Width 67.75 mm、Package Contents: 2 Spreader Springs; 4 Pad Pins，并有多视角产品图。"
+            }
+          ],
+          "reasoning": "① 权1 X：卡簧结构为弹性夹/簧结构。② 候选公开证据 Y：Y 为 Disc Brake Hardware Kit 中的 Spreader Springs。③ 对比：(a) 概念是否等价：是，均为制动弹簧夹结构。 (b) 单位/量纲是否等价：是，结构存在性。 (c) 参考系是否等价：是，盘式制动硬件场景。 (d) 是否有反向证据：无。产品页字面公开 spring/clip。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述卡簧结构(42)包括卡簧本体和卡接部",
+          "competitor_feature": "多视角实物图与“2 Spreader Springs; 4 Pad Pins”显示弹簧主体和用于制动片/销轴安装的卡接连接区域。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dormanproducts.com/p-81159-hw6194.aspx",
+              "title": "Dorman HW6194 Disc Brake Hardware Kit",
+              "source_name": "Dorman Products",
+              "snippet": "HW6194 为 Disc Brake Hardware Kit；规格含 Clip Length 117.6 mm、Clip Width 67.75 mm、Package Contents: 2 Spreader Springs; 4 Pad Pins，并有多视角产品图。"
+            }
+          ],
+          "reasoning": "① 权1 X：该特征要求卡簧的本体、卡接部及弹性/连接关系。② 候选公开证据 Y：Y 为成形 spreader spring 与 pad pins 的盘式制动硬件。③ 对比：(a) 概念是否等价：是，功能上对应弹性夹件和卡接连接。 (b) 单位/量纲是否等价：是，均为二值结构关系。 (c) 参考系是否等价：是，均为制动片硬件。 (d) 是否有反向证据：无。未公开逐段标号，保守为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "卡接部包括弹性回位段(30)和第一连接段",
+          "competitor_feature": "多视角实物图与“2 Spreader Springs; 4 Pad Pins”显示弹簧主体和用于制动片/销轴安装的卡接连接区域。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dormanproducts.com/p-81159-hw6194.aspx",
+              "title": "Dorman HW6194 Disc Brake Hardware Kit",
+              "source_name": "Dorman Products",
+              "snippet": "HW6194 为 Disc Brake Hardware Kit；规格含 Clip Length 117.6 mm、Clip Width 67.75 mm、Package Contents: 2 Spreader Springs; 4 Pad Pins，并有多视角产品图。"
+            }
+          ],
+          "reasoning": "① 权1 X：该特征要求卡簧的本体、卡接部及弹性/连接关系。② 候选公开证据 Y：Y 为成形 spreader spring 与 pad pins 的盘式制动硬件。③ 对比：(a) 概念是否等价：是，功能上对应弹性夹件和卡接连接。 (b) 单位/量纲是否等价：是，均为二值结构关系。 (c) 参考系是否等价：是，均为制动片硬件。 (d) 是否有反向证据：无。未公开逐段标号，保守为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述弹性回位段(30)与所述卡簧本体(10)通过第一连接段连接",
+          "competitor_feature": "多视角实物图与“2 Spreader Springs; 4 Pad Pins”显示弹簧主体和用于制动片/销轴安装的卡接连接区域。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dormanproducts.com/p-81159-hw6194.aspx",
+              "title": "Dorman HW6194 Disc Brake Hardware Kit",
+              "source_name": "Dorman Products",
+              "snippet": "HW6194 为 Disc Brake Hardware Kit；规格含 Clip Length 117.6 mm、Clip Width 67.75 mm、Package Contents: 2 Spreader Springs; 4 Pad Pins，并有多视角产品图。"
+            }
+          ],
+          "reasoning": "① 权1 X：该特征要求卡簧的本体、卡接部及弹性/连接关系。② 候选公开证据 Y：Y 为成形 spreader spring 与 pad pins 的盘式制动硬件。③ 对比：(a) 概念是否等价：是，功能上对应弹性夹件和卡接连接。 (b) 单位/量纲是否等价：是，均为二值结构关系。 (c) 参考系是否等价：是，均为制动片硬件。 (d) 是否有反向证据：无。未公开逐段标号，保守为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "第一连接段至少包括第一弧形子段(31)，所述第一弧形子段(31)所在圆的圆心位于所述第一弧形子段(31)靠近所述弹性回位段(30)的一侧",
+          "competitor_feature": "Dorman 页面未公开第一弧形子段圆心位于靠近弹性回位段一侧。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.dormanproducts.com/p-81159-hw6194.aspx",
+              "title": "Dorman HW6194 Disc Brake Hardware Kit",
+              "source_name": "Dorman Products",
+              "snippet": "HW6194 为 Disc Brake Hardware Kit；规格含 Clip Length 117.6 mm、Clip Width 67.75 mm、Package Contents: 2 Spreader Springs; 4 Pad Pins，并有多视角产品图。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是弧形子段圆心相对位置。② 候选公开证据 Y：Y 仅公开尺寸、套件内容和产品图。③ 对比：(a) 概念是否等价：否，未给圆心位置。 (b) 单位/量纲是否等价：否，X 为几何约束，Y 为规格/图片。 (c) 参考系是否等价：否，Y 无弹性回位段参考。 (d) 是否有反向证据：无。图可见弯折但不足以判定圆心侧。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 74.0,
+      "searched_queries": [
+        "Dorman HW6194 spreader springs brake hardware kit",
+        "Dorman HW6194 制动 硬件 卡簧",
+        "site:dormanproducts.com HW6194 Spreader Springs"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "Brembo",
+        "company_en": "Brembo",
+        "product_name": "120225590 制动钳制动片卡簧（120.2255.90 / P4 30-34卡钳）",
+        "product_name_en": "120225590 caliper pad spring (120.2255.90 / P4 30-34 calipers)",
+        "product_intro": "Brembo 120225590 为替换用 Caliper Pad Spring，适配 Brembo P4/34 等卡钳，页面含实物和安装图。",
+        "market": "中国高性能制动改装/维修零件市场",
+        "reason_for_deep_dive": "具体 SKU 明确为制动钳制动片弹簧，并有装配图，适合做卡簧结构比对。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.kurveygirl.com/products/brembo-repair-kit-caliper-pad-spring-120225590-120-2255-90"
+        ],
+        "initial_evidence_summary": "页面公开 Caliper Pad Spring、part number、适配卡钳及安装图。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种卡簧结构(42)",
+          "competitor_feature": "Brembo 120225590 是 Caliper Pad Spring，即制动钳制动片弹簧。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.kurveygirl.com/products/brembo-repair-kit-caliper-pad-spring-120225590-120-2255-90",
+              "title": "BREMBO Repair Kit: Caliper Pad Spring 120225590",
+              "source_name": "KurveyGirl",
+              "snippet": "Brembo Caliper Repair Part: Caliper Pad Spring；Part Number 120225590；Fits Brembo P4/34 等制动卡钳；页面含弹簧实物图和安装图。"
+            }
+          ],
+          "reasoning": "① 权1 X：卡簧结构为制动钳内弹簧卡持件。② 候选公开证据 Y：Y 明确为 Caliper Pad Spring。③ 对比：(a) 概念是否等价：是，均为制动钳弹簧卡持结构。 (b) 单位/量纲是否等价：是，结构存在性。 (c) 参考系是否等价：是，制动钳/制动片内。 (d) 是否有反向证据：无。字面满足卡簧结构。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述卡簧结构(42)包括卡簧本体和卡接部",
+          "competitor_feature": "页面实物图/安装图显示单片弹簧装入 Brembo 卡钳并约束制动片，具备本体、卡持部和弹性连接。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.kurveygirl.com/products/brembo-repair-kit-caliper-pad-spring-120225590-120-2255-90",
+              "title": "BREMBO Repair Kit: Caliper Pad Spring 120225590",
+              "source_name": "KurveyGirl",
+              "snippet": "Brembo Caliper Repair Part: Caliper Pad Spring；Part Number 120225590；Fits Brembo P4/34 等制动卡钳；页面含弹簧实物图和安装图。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 要求本体、卡接部、弹性回位段和连接段。② 候选公开证据 Y：Y 为安装在卡钳中的 pad spring 图示和适配卡钳列表。③ 对比：(a) 概念是否等价：是，均为制动片弹性卡持件。 (b) 单位/量纲是否等价：是，均为结构/连接关系。 (c) 参考系是否等价：是，均以卡钳内制动片为参考。 (d) 是否有反向证据：无。未公开分段术语，按图片和用途推理。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "卡接部包括弹性回位段(30)和第一连接段",
+          "competitor_feature": "页面实物图/安装图显示单片弹簧装入 Brembo 卡钳并约束制动片，具备本体、卡持部和弹性连接。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.kurveygirl.com/products/brembo-repair-kit-caliper-pad-spring-120225590-120-2255-90",
+              "title": "BREMBO Repair Kit: Caliper Pad Spring 120225590",
+              "source_name": "KurveyGirl",
+              "snippet": "Brembo Caliper Repair Part: Caliper Pad Spring；Part Number 120225590；Fits Brembo P4/34 等制动卡钳；页面含弹簧实物图和安装图。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 要求本体、卡接部、弹性回位段和连接段。② 候选公开证据 Y：Y 为安装在卡钳中的 pad spring 图示和适配卡钳列表。③ 对比：(a) 概念是否等价：是，均为制动片弹性卡持件。 (b) 单位/量纲是否等价：是，均为结构/连接关系。 (c) 参考系是否等价：是，均以卡钳内制动片为参考。 (d) 是否有反向证据：无。未公开分段术语，按图片和用途推理。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述弹性回位段(30)与所述卡簧本体(10)通过第一连接段连接",
+          "competitor_feature": "页面实物图/安装图显示单片弹簧装入 Brembo 卡钳并约束制动片，具备本体、卡持部和弹性连接。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.kurveygirl.com/products/brembo-repair-kit-caliper-pad-spring-120225590-120-2255-90",
+              "title": "BREMBO Repair Kit: Caliper Pad Spring 120225590",
+              "source_name": "KurveyGirl",
+              "snippet": "Brembo Caliper Repair Part: Caliper Pad Spring；Part Number 120225590；Fits Brembo P4/34 等制动卡钳；页面含弹簧实物图和安装图。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 要求本体、卡接部、弹性回位段和连接段。② 候选公开证据 Y：Y 为安装在卡钳中的 pad spring 图示和适配卡钳列表。③ 对比：(a) 概念是否等价：是，均为制动片弹性卡持件。 (b) 单位/量纲是否等价：是，均为结构/连接关系。 (c) 参考系是否等价：是，均以卡钳内制动片为参考。 (d) 是否有反向证据：无。未公开分段术语，按图片和用途推理。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "第一连接段至少包括第一弧形子段(31)，所述第一弧形子段(31)所在圆的圆心位于所述第一弧形子段(31)靠近所述弹性回位段(30)的一侧",
+          "competitor_feature": "公开页未标明第一弧形子段的圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.kurveygirl.com/products/brembo-repair-kit-caliper-pad-spring-120225590-120-2255-90",
+              "title": "BREMBO Repair Kit: Caliper Pad Spring 120225590",
+              "source_name": "KurveyGirl",
+              "snippet": "Brembo Caliper Repair Part: Caliper Pad Spring；Part Number 120225590；Fits Brembo P4/34 等制动卡钳；页面含弹簧实物图和安装图。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 为特定弧形几何圆心位置。② 候选公开证据 Y：Y 仅给实物/安装图和适配卡钳。③ 对比：(a) 概念是否等价：否，未公开几何圆心。 (b) 单位/量纲是否等价：否，X 几何位置，Y 图片/用途。 (c) 参考系是否等价：否，缺弹性回位段参照标识。 (d) 是否有反向证据：无。无法从网页图可靠测定。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 74.0,
+      "searched_queries": [
+        "Brembo 120225590 caliper pad spring",
+        "Brembo 120.2255.90 制动钳 卡簧",
+        "Brembo P4 30 34 pad spring"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "采埃孚 TRW",
+        "company_en": "ZF TRW",
+        "product_name": "TRW 制动片安装卡簧套件（Pad Fitting Kit / 通用PFK）",
+        "product_name_en": "TRW pad fitting kit (generic PFK)",
+        "product_intro": "TRW 技术公告说明制动片安装套件的弹簧张力会随服役降低，并建议换片时更换 PFK。",
+        "market": "中国售后维修/制动系统服务市场",
+        "reason_for_deep_dive": "TRW 是头部 Tier-1，PFK 属制动片卡簧/附件类别，但公开页不是具体型号，证据粒度较弱。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.truckspares365.co.uk/hub/wp-content/uploads/2022/07/TRW-Technical-Bulletin-004-Pad-Fitting-Kits.pdf"
+        ],
+        "initial_evidence_summary": "TRW 公告公开 pad fitting kits 与 spring tension，但未给具体几何。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种卡簧结构(42)",
+          "competitor_feature": "TRW 技术公告讨论 Pad Fitting Kits 的 spring tension，说明该类套件含制动片弹簧卡持件。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.truckspares365.co.uk/hub/wp-content/uploads/2022/07/TRW-Technical-Bulletin-004-Pad-Fitting-Kits.pdf",
+              "title": "TRW Technical Bulletin 004 Pad Fitting Kits",
+              "source_name": "TRW",
+              "snippet": "TRW 技术公告称 pad fitting kits 的 spring tension 随服役降低，会造成噪声或制动片不均匀/过度磨损，建议每次更换制动片时更换。"
+            }
+          ],
+          "reasoning": "① 权1 X：卡簧结构为制动片弹簧卡持件。② 候选公开证据 Y：Y 为 Pad Fitting Kit 中随寿命衰减的 spring tension。③ 对比：(a) 概念是否等价：是，均为制动片弹簧硬件。 (b) 单位/量纲是否等价：是，结构存在性。 (c) 参考系是否等价：是，制动片安装系统。 (d) 是否有反向证据：无。公告不是具体 SKU 图，故可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述卡簧结构(42)包括卡簧本体和卡接部",
+          "competitor_feature": "公告只说明 pad fitting kits 及弹簧张力对噪声/磨损的影响，未公开具体本体、卡接部和连接段。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.truckspares365.co.uk/hub/wp-content/uploads/2022/07/TRW-Technical-Bulletin-004-Pad-Fitting-Kits.pdf",
+              "title": "TRW Technical Bulletin 004 Pad Fitting Kits",
+              "source_name": "TRW",
+              "snippet": "TRW 技术公告称 pad fitting kits 的 spring tension 随服役降低，会造成噪声或制动片不均匀/过度磨损，建议每次更换制动片时更换。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是具体卡簧子结构和连接关系。② 候选公开证据 Y：Y 是通用 PFK 弹簧张力维护说明。③ 对比：(a) 概念是否等价：否，未公开具体段落。 (b) 单位/量纲是否等价：否，X 为结构关系，Y 为维护属性。 (c) 参考系是否等价：否，缺具体卡簧参考系。 (d) 是否有反向证据：无。缺具体 SKU 与图示。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "卡接部包括弹性回位段(30)和第一连接段",
+          "competitor_feature": "公告只说明 pad fitting kits 及弹簧张力对噪声/磨损的影响，未公开具体本体、卡接部和连接段。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.truckspares365.co.uk/hub/wp-content/uploads/2022/07/TRW-Technical-Bulletin-004-Pad-Fitting-Kits.pdf",
+              "title": "TRW Technical Bulletin 004 Pad Fitting Kits",
+              "source_name": "TRW",
+              "snippet": "TRW 技术公告称 pad fitting kits 的 spring tension 随服役降低，会造成噪声或制动片不均匀/过度磨损，建议每次更换制动片时更换。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是具体卡簧子结构和连接关系。② 候选公开证据 Y：Y 是通用 PFK 弹簧张力维护说明。③ 对比：(a) 概念是否等价：否，未公开具体段落。 (b) 单位/量纲是否等价：否，X 为结构关系，Y 为维护属性。 (c) 参考系是否等价：否，缺具体卡簧参考系。 (d) 是否有反向证据：无。缺具体 SKU 与图示。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述弹性回位段(30)与所述卡簧本体(10)通过第一连接段连接",
+          "competitor_feature": "公告只说明 pad fitting kits 及弹簧张力对噪声/磨损的影响，未公开具体本体、卡接部和连接段。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.truckspares365.co.uk/hub/wp-content/uploads/2022/07/TRW-Technical-Bulletin-004-Pad-Fitting-Kits.pdf",
+              "title": "TRW Technical Bulletin 004 Pad Fitting Kits",
+              "source_name": "TRW",
+              "snippet": "TRW 技术公告称 pad fitting kits 的 spring tension 随服役降低，会造成噪声或制动片不均匀/过度磨损，建议每次更换制动片时更换。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是具体卡簧子结构和连接关系。② 候选公开证据 Y：Y 是通用 PFK 弹簧张力维护说明。③ 对比：(a) 概念是否等价：否，未公开具体段落。 (b) 单位/量纲是否等价：否，X 为结构关系，Y 为维护属性。 (c) 参考系是否等价：否，缺具体卡簧参考系。 (d) 是否有反向证据：无。缺具体 SKU 与图示。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "第一连接段至少包括第一弧形子段(31)，所述第一弧形子段(31)所在圆的圆心位于所述第一弧形子段(31)靠近所述弹性回位段(30)的一侧",
+          "competitor_feature": "公告未公开第一弧形子段圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.truckspares365.co.uk/hub/wp-content/uploads/2022/07/TRW-Technical-Bulletin-004-Pad-Fitting-Kits.pdf",
+              "title": "TRW Technical Bulletin 004 Pad Fitting Kits",
+              "source_name": "TRW",
+              "snippet": "TRW 技术公告称 pad fitting kits 的 spring tension 随服役降低，会造成噪声或制动片不均匀/过度磨损，建议每次更换制动片时更换。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是弧形子段圆心几何约束。② 候选公开证据 Y：Y 为通用技术公告。③ 对比：(a) 概念是否等价：否。 (b) 单位/量纲是否等价：否。 (c) 参考系是否等价：否。 (d) 是否有反向证据：无。无几何证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 40.0,
+      "searched_queries": [
+        "TRW pad fitting kit spring tension",
+        "TRW PFK 制动片 安装套件 弹簧",
+        "TRW Technical Bulletin Pad Fitting Kits"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "赛力斯问界",
+        "company_en": "AITO / SERES",
+        "product_name": "问界 M8 增程 Max+版（2025款中国版 / 53.4kWh 5座版）",
+        "product_name_en": "AITO M8 EREV Max+ (2025 China / 53.4kWh 5-seat)",
+        "product_intro": "中国版问界 M8 2025款增程 Max+ 53.4kWh 5座 SKU，2025年4月上市，官方手册和维修目录公开到制动系统层级。",
+        "market": "中国大型新能源 SUV 前装市场",
+        "reason_for_deep_dive": "用户指定重点关注；上市晚于本专利申请日，但公开资料未到制动卡簧零件几何层级。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m8-product-manual-20250506.pdf",
+          "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/AITO/7602.html",
+          "https://www.qichejingwei.com/brand/product-15032.html",
+          "https://db.m.auto.sohu.com/model_7554"
+        ],
+        "initial_evidence_summary": "官方/第三方资料锁定 2025 款中国增程 SKU 和制动系统目录，未披露具体卡簧结构。"
+      },
+      "launch_date": "2025 年 4 月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.qichejingwei.com/brand/product-15032.html",
+          "title": "问界M8 2025款 增程 Max+版 53.4kWh 5座版参数",
+          "source_name": "汽车经纬",
+          "snippet": "页面锁定 SKU：问界M8 2025款 增程 Max+版 53.4kWh 5座版；能源类型增程式，上市时间 2025.04。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种卡簧结构(42)",
+          "competitor_feature": "问界 M8 2025款增程 Max+ 具备制动系统和前/后制动维修手册目录，但公开资料未披露具体卡簧结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m8-product-manual-20250506.pdf",
+              "title": "问界 M8 增程版使用说明书",
+              "source_name": "鸿蒙智行/AITO",
+              "snippet": "官方手册前言为问界 M8 增程版；目录含“制动”；正文列有制动踏板、制动系统故障、防抱死制动系统、电子驻车制动器等。"
+            },
+            {
+              "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/AITO/7602.html",
+              "title": "2025 AITO M8 Repair Manual & Wiring Diagrams",
+              "source_name": "17VIN",
+              "snippet": "2025 AITO M8 维修手册目录含 Group 23 - Braking System、2301 Pre-Braking、2302 Rear Braking、2305 Brake Regulator、2306 Brake Pedal Assembly 等。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是具体卡簧结构。② 候选公开证据 Y：Y 是整车制动系统/维修目录。③ 对比：(a) 概念是否等价：否，制动系统不等同卡簧。 (b) 单位/量纲是否等价：否，X 为零件结构，Y 为系统存在性。 (c) 参考系是否等价：是，均在车辆制动系统中。 (d) 是否有反向证据：无。只能证明有制动系统，不能证明权1卡簧。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述卡簧结构(42)包括卡簧本体和卡接部",
+          "competitor_feature": "问界 M8 公开使用说明书和维修目录未披露卡簧本体、卡接部、弹性回位段、第一连接段或弧形子段圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m8-product-manual-20250506.pdf",
+              "title": "问界 M8 增程版使用说明书",
+              "source_name": "鸿蒙智行/AITO",
+              "snippet": "官方手册前言为问界 M8 增程版；目录含“制动”；正文列有制动踏板、制动系统故障、防抱死制动系统、电子驻车制动器等。"
+            },
+            {
+              "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/AITO/7602.html",
+              "title": "2025 AITO M8 Repair Manual & Wiring Diagrams",
+              "source_name": "17VIN",
+              "snippet": "2025 AITO M8 维修手册目录含 Group 23 - Braking System、2301 Pre-Braking、2302 Rear Braking、2305 Brake Regulator、2306 Brake Pedal Assembly 等。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是卡簧内部子结构/几何关系。② 候选公开证据 Y：Y 是 M8 制动系统目录与用户手册。③ 对比：(a) 概念是否等价：否，未公开对应子结构。 (b) 单位/量纲是否等价：否，X 为几何/连接结构，Y 为系统目录。 (c) 参考系是否等价：否，Y 无卡簧局部参考。 (d) 是否有反向证据：无。重点候选已查，但公开证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "卡接部包括弹性回位段(30)和第一连接段",
+          "competitor_feature": "问界 M8 公开使用说明书和维修目录未披露卡簧本体、卡接部、弹性回位段、第一连接段或弧形子段圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m8-product-manual-20250506.pdf",
+              "title": "问界 M8 增程版使用说明书",
+              "source_name": "鸿蒙智行/AITO",
+              "snippet": "官方手册前言为问界 M8 增程版；目录含“制动”；正文列有制动踏板、制动系统故障、防抱死制动系统、电子驻车制动器等。"
+            },
+            {
+              "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/AITO/7602.html",
+              "title": "2025 AITO M8 Repair Manual & Wiring Diagrams",
+              "source_name": "17VIN",
+              "snippet": "2025 AITO M8 维修手册目录含 Group 23 - Braking System、2301 Pre-Braking、2302 Rear Braking、2305 Brake Regulator、2306 Brake Pedal Assembly 等。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是卡簧内部子结构/几何关系。② 候选公开证据 Y：Y 是 M8 制动系统目录与用户手册。③ 对比：(a) 概念是否等价：否，未公开对应子结构。 (b) 单位/量纲是否等价：否，X 为几何/连接结构，Y 为系统目录。 (c) 参考系是否等价：否，Y 无卡簧局部参考。 (d) 是否有反向证据：无。重点候选已查，但公开证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述弹性回位段(30)与所述卡簧本体(10)通过第一连接段连接",
+          "competitor_feature": "问界 M8 公开使用说明书和维修目录未披露卡簧本体、卡接部、弹性回位段、第一连接段或弧形子段圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m8-product-manual-20250506.pdf",
+              "title": "问界 M8 增程版使用说明书",
+              "source_name": "鸿蒙智行/AITO",
+              "snippet": "官方手册前言为问界 M8 增程版；目录含“制动”；正文列有制动踏板、制动系统故障、防抱死制动系统、电子驻车制动器等。"
+            },
+            {
+              "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/AITO/7602.html",
+              "title": "2025 AITO M8 Repair Manual & Wiring Diagrams",
+              "source_name": "17VIN",
+              "snippet": "2025 AITO M8 维修手册目录含 Group 23 - Braking System、2301 Pre-Braking、2302 Rear Braking、2305 Brake Regulator、2306 Brake Pedal Assembly 等。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是卡簧内部子结构/几何关系。② 候选公开证据 Y：Y 是 M8 制动系统目录与用户手册。③ 对比：(a) 概念是否等价：否，未公开对应子结构。 (b) 单位/量纲是否等价：否，X 为几何/连接结构，Y 为系统目录。 (c) 参考系是否等价：否，Y 无卡簧局部参考。 (d) 是否有反向证据：无。重点候选已查，但公开证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "第一连接段至少包括第一弧形子段(31)，所述第一弧形子段(31)所在圆的圆心位于所述第一弧形子段(31)靠近所述弹性回位段(30)的一侧",
+          "competitor_feature": "问界 M8 公开使用说明书和维修目录未披露卡簧本体、卡接部、弹性回位段、第一连接段或弧形子段圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m8-product-manual-20250506.pdf",
+              "title": "问界 M8 增程版使用说明书",
+              "source_name": "鸿蒙智行/AITO",
+              "snippet": "官方手册前言为问界 M8 增程版；目录含“制动”；正文列有制动踏板、制动系统故障、防抱死制动系统、电子驻车制动器等。"
+            },
+            {
+              "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/AITO/7602.html",
+              "title": "2025 AITO M8 Repair Manual & Wiring Diagrams",
+              "source_name": "17VIN",
+              "snippet": "2025 AITO M8 维修手册目录含 Group 23 - Braking System、2301 Pre-Braking、2302 Rear Braking、2305 Brake Regulator、2306 Brake Pedal Assembly 等。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 是卡簧内部子结构/几何关系。② 候选公开证据 Y：Y 是 M8 制动系统目录与用户手册。③ 对比：(a) 概念是否等价：否，未公开对应子结构。 (b) 单位/量纲是否等价：否，X 为几何/连接结构，Y 为系统目录。 (c) 参考系是否等价：否，Y 无卡簧局部参考。 (d) 是否有反向证据：无。重点候选已查，但公开证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 30.0,
+      "searched_queries": [
+        "问界 M8 增程式 2025款 制动卡钳 刹车片 卡簧",
+        "问界 M8 2025 增程 维修手册 制动系统",
+        "2025 AITO M8 Repair Manual Braking System",
+        "site:hima.auto m8 product manual 20250506"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites_stage0"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "海拉",
+        "company_en": "HELLA",
+        "product_name": "制动钳保持弹簧（通用说明资料 / 非单一SKU）",
+        "product_name_en": "Brake caliper retaining spring (generic technical note, not a single SKU)",
+        "product_intro": "HELLA 资料是制动钳保持弹簧通用技术说明，不是锁定单一 SKU 的产品页。",
+        "market": "中国售后维修技术资料市场",
+        "reason_for_deep_dive": "能证明制动钳保持弹簧类别，但不满足单 SKU 锁定要求。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.hella.com/techworld/us/bi/pdf/brake-caliper-retaining-spring/brake-caliper-retaining-spring.pdf"
+        ],
+        "initial_evidence_summary": "通用技术资料，不是具体产品 SKU。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": true,
+      "disqualification_reason": "非单一 SKU，不能作为合格候选进入 TOP；仅作为技术背景证据保留。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种卡簧结构(42)",
+          "competitor_feature": "HELLA 技术资料明确 brake caliper retaining spring 是制动钳保持弹簧。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.hella.com/techworld/us/bi/pdf/brake-caliper-retaining-spring/brake-caliper-retaining-spring.pdf",
+              "title": "Brake caliper retaining spring",
+              "source_name": "HELLA",
+              "snippet": "HELLA 技术资料称 brake caliper retaining spring 的任务是保持制动钳位置并确保 brake pad 正确定位，缺失或损坏会造成噪声和过早磨损。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 为制动钳/制动片卡簧结构。② 候选公开证据 Y：Y 为 brake caliper retaining spring。③ 对比：(a) 概念是否等价：是。 (b) 单位/量纲是否等价：是。 (c) 参考系是否等价：是，制动钳系统。 (d) 是否有反向证据：无。字面满足通用卡簧结构。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述卡簧结构(42)包括卡簧本体和卡接部",
+          "competitor_feature": "HELLA 资料为通用保持弹簧说明，未公开具体 SKU 的权1内部段落和圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hella.com/techworld/us/bi/pdf/brake-caliper-retaining-spring/brake-caliper-retaining-spring.pdf",
+              "title": "Brake caliper retaining spring",
+              "source_name": "HELLA",
+              "snippet": "HELLA 技术资料称 brake caliper retaining spring 的任务是保持制动钳位置并确保 brake pad 正确定位，缺失或损坏会造成噪声和过早磨损。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 为具体内部结构或几何关系。② 候选公开证据 Y：Y 为通用功能资料。③ 对比：(a) 概念是否等价：否。 (b) 单位/量纲是否等价：否。 (c) 参考系是否等价：否。 (d) 是否有反向证据：无。不作为 TOP。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "卡接部包括弹性回位段(30)和第一连接段",
+          "competitor_feature": "HELLA 资料为通用保持弹簧说明，未公开具体 SKU 的权1内部段落和圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hella.com/techworld/us/bi/pdf/brake-caliper-retaining-spring/brake-caliper-retaining-spring.pdf",
+              "title": "Brake caliper retaining spring",
+              "source_name": "HELLA",
+              "snippet": "HELLA 技术资料称 brake caliper retaining spring 的任务是保持制动钳位置并确保 brake pad 正确定位，缺失或损坏会造成噪声和过早磨损。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 为具体内部结构或几何关系。② 候选公开证据 Y：Y 为通用功能资料。③ 对比：(a) 概念是否等价：否。 (b) 单位/量纲是否等价：否。 (c) 参考系是否等价：否。 (d) 是否有反向证据：无。不作为 TOP。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述弹性回位段(30)与所述卡簧本体(10)通过第一连接段连接",
+          "competitor_feature": "HELLA 资料为通用保持弹簧说明，未公开具体 SKU 的权1内部段落和圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hella.com/techworld/us/bi/pdf/brake-caliper-retaining-spring/brake-caliper-retaining-spring.pdf",
+              "title": "Brake caliper retaining spring",
+              "source_name": "HELLA",
+              "snippet": "HELLA 技术资料称 brake caliper retaining spring 的任务是保持制动钳位置并确保 brake pad 正确定位，缺失或损坏会造成噪声和过早磨损。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 为具体内部结构或几何关系。② 候选公开证据 Y：Y 为通用功能资料。③ 对比：(a) 概念是否等价：否。 (b) 单位/量纲是否等价：否。 (c) 参考系是否等价：否。 (d) 是否有反向证据：无。不作为 TOP。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "第一连接段至少包括第一弧形子段(31)，所述第一弧形子段(31)所在圆的圆心位于所述第一弧形子段(31)靠近所述弹性回位段(30)的一侧",
+          "competitor_feature": "HELLA 资料为通用保持弹簧说明，未公开具体 SKU 的权1内部段落和圆心位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.hella.com/techworld/us/bi/pdf/brake-caliper-retaining-spring/brake-caliper-retaining-spring.pdf",
+              "title": "Brake caliper retaining spring",
+              "source_name": "HELLA",
+              "snippet": "HELLA 技术资料称 brake caliper retaining spring 的任务是保持制动钳位置并确保 brake pad 正确定位，缺失或损坏会造成噪声和过早磨损。"
+            }
+          ],
+          "reasoning": "① 权1 X：X 为具体内部结构或几何关系。② 候选公开证据 Y：Y 为通用功能资料。③ 对比：(a) 概念是否等价：否。 (b) 单位/量纲是否等价：否。 (c) 参考系是否等价：否。 (d) 是否有反向证据：无。不作为 TOP。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "HELLA brake caliper retaining spring",
+        "海拉 制动钳 保持弹簧"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites_stage0"
+      ]
+    }
+  ]
+}

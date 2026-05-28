@@ -1,0 +1,1202 @@
+{
+  "publication_no": "CN218228600U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "领克汽车",
+        "company_en": "Lynk & Co",
+        "product_name": "领克900（2025款 2.0T 探索版/中国版）",
+        "product_name_en": "Lynk & Co 900 (2025 2.0T Exploration Edition / China)",
+        "product_intro": "中国版2025款2.0T探索版六座插混SUV，公开配置显示1个激光雷达和分段式不可开启天窗。",
+        "market": "中国新能源旗舰SUV前装市场",
+        "reason_for_deep_dive": "用户指定重点候选；车顶瞭望塔式激光雷达与天窗区域高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.ithome.com/0/849/633.htm",
+          "https://m.zhichepai.com/auto/8001/peizhi/223389"
+        ],
+        "initial_evidence_summary": "2025款2.0T探索版锁定；配置表显示1个激光雷达、分段式不可开启天窗；上市报道称全系瞭望塔式激光雷达。"
+      },
+      "launch_date": "2025年4月正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/849/633.htm",
+          "title": "领克900正式上市：全系标配天地门、激光雷达",
+          "source_name": "IT之家",
+          "snippet": "2025-04-28报道：领克900正式上市；2.0T探索版41.69万元；全系标配瞭望塔式激光雷达。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆天窗",
+          "competitor_feature": "2025款2.0T探索版配置页写明天窗类型为分段式不可开启天窗。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.zhichepai.com/auto/8001/peizhi/223389",
+              "title": "领克900 2025款2.0T探索版配置参数",
+              "source_name": "智车派",
+              "snippet": "配置页锁定2025款2.0T探索版；激光雷达(个)=1；天窗类型=分段式不可开启天窗。"
+            }
+          ],
+          "reasoning": "①X：权1对象为车辆天窗/雷达配置。②Y：2025款2.0T探索版配置页写明天窗类型为分段式不可开启天窗。。③(a)是；(b)是，存在/数量类；(c)是，均为本SKU车顶配置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括天窗骨架、饰板以及雷达，所述饰板安装在所述天窗骨架上",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）公开资料可确认天窗/天幕与车顶激光雷达同时存在，但未公开天窗骨架、饰板及其安装关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.zhichepai.com/auto/8001/peizhi/223389",
+              "title": "领克900 2025款2.0T探索版配置参数",
+              "source_name": "智车派",
+              "snippet": "配置页锁定2025款2.0T探索版；激光雷达(个)=1；天窗类型=分段式不可开启天窗。"
+            },
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900正式上市：全系标配天地门、激光雷达",
+              "source_name": "IT之家",
+              "snippet": "2025-04-28报道：领克900正式上市；2.0T探索版41.69万元；全系标配瞭望塔式激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有天窗/天幕和激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述雷达安装在所述天窗骨架上",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）公开资料可确认车顶/瞭望塔式激光雷达，但未公开雷达安装在天窗骨架上。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900正式上市：全系标配天地门、激光雷达",
+              "source_name": "IT之家",
+              "snippet": "2025-04-28报道：领克900正式上市；2.0T探索版41.69万元；全系标配瞭望塔式激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有车顶/瞭望塔式激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述饰板包括饰板主体和设置在所述饰板主体上的凸起",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）外观图显示车顶前缘激光雷达外壳形成向上突起，可对应饰板主体上的凸起。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900上市外观图",
+              "source_name": "IT之家",
+              "snippet": "图示证据：页面外观图显示车顶前缘有瞭望塔式激光雷达突起及前向黑色窗口。"
+            },
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900正式上市：全系标配天地门、激光雷达",
+              "source_name": "IT之家",
+              "snippet": "2025-04-28报道：领克900正式上市；2.0T探索版41.69万元；全系标配瞭望塔式激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图可见车顶激光雷达突起。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述凸起罩设在所述雷达的上方",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）车顶激光雷达位于该突起/外壳内，突起从上方罩设传感器。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900上市外观图",
+              "source_name": "IT之家",
+              "snippet": "图示证据：页面外观图显示车顶前缘有瞭望塔式激光雷达突起及前向黑色窗口。"
+            },
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900正式上市：全系标配天地门、激光雷达",
+              "source_name": "IT之家",
+              "snippet": "2025-04-28报道：领克900正式上市；2.0T探索版41.69万元；全系标配瞭望塔式激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图和配置显示雷达在突起内。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述凸起的外表面包括第一侧面",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）激光雷达外壳具有可见前侧面/侧向外表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900上市外观图",
+              "source_name": "IT之家",
+              "snippet": "图示证据：页面外观图显示车顶前缘有瞭望塔式激光雷达突起及前向黑色窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起外表面可见前侧面。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述第一侧面上设置有过孔",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）激光雷达外壳前侧可见黑色传感器窗口，可推定为镜头过孔。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900上市外观图",
+              "source_name": "IT之家",
+              "snippet": "图示证据：页面外观图显示车顶前缘有瞭望塔式激光雷达突起及前向黑色窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起前侧可见黑色窗口。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F8",
+          "patent_feature": "所述雷达的镜头外露于所述过孔中",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）公开资料确认该位置为激光雷达，前侧窗口内外露雷达镜头/透光面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900上市外观图",
+              "source_name": "IT之家",
+              "snippet": "图示证据：页面外观图显示车顶前缘有瞭望塔式激光雷达突起及前向黑色窗口。"
+            },
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900正式上市：全系标配天地门、激光雷达",
+              "source_name": "IT之家",
+              "snippet": "2025-04-28报道：领克900正式上市；2.0T探索版41.69万元；全系标配瞭望塔式激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：车顶激光雷达窗口外露。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F9",
+          "patent_feature": "所述雷达的镜头的外露面与所述第一侧面共面",
+          "competitor_feature": "领克900（2025款 2.0T 探索版/中国版）外观图不足以测量或确认镜头外露面与第一侧面共面。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/849/633.htm",
+              "title": "领克900上市外观图",
+              "source_name": "IT之家",
+              "snippet": "图示证据：页面外观图显示车顶前缘有瞭望塔式激光雷达突起及前向黑色窗口。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：外观图不能确认共面。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.56,
+      "searched_queries": [
+        "site:m.asemanshop.com 车型 车顶 激光雷达 天窗 维修手册",
+        "site:www.qixiu88.com 车型 车顶 激光雷达 天窗 维修手册",
+        "roof mounted lidar panoramic sunroof China EV 2024",
+        "车顶激光雷达 全景天窗 参数配置 2024款",
+        "激光雷达 装饰罩 车顶 维修手册",
+        "中版 领克900 2025款 激光雷达 全景天窗",
+        "领克900 2025款 2.0T 探索版 激光雷达 天窗 配置",
+        "Lynk & Co 900 2025 LiDAR panoramic sunroof roof",
+        "site:ithome.com 领克900 瞭望塔式激光雷达"
+      ],
+      "searched_providers": [
+        "web.search_query",
+        "web.open",
+        "curl fetch",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "赛力斯汽车/AITO",
+        "company_en": "Seres AITO",
+        "product_name": "问界M9（2025款 纯电Ultra六座版/中国版）",
+        "product_name_en": "AITO M9 (2025 BEV Ultra six-seat / China)",
+        "product_intro": "2025款纯电Ultra六座旗舰SUV，官方配置列全景双层静音隔热隐私玻璃和896线双光路图像级激光雷达感知系统。",
+        "market": "中国高端新能源SUV前装市场",
+        "reason_for_deep_dive": "车顶/前挡上方多雷达感知硬件与全景玻璃顶组合，结构相近。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://aito.auto/model/m9/configuration/",
+          "https://aito.auto/model/m9/",
+          "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/"
+        ],
+        "initial_evidence_summary": "官方配置锁定纯电Ultra；车型页公开896线双光路图像级激光雷达；配置页公开全景双层玻璃天窗。"
+      },
+      "launch_date": "2025年3月更新款上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/",
+          "title": "Huawei-backed Aito launches updated M9 SUV with 4 LiDARs",
+          "source_name": "CnEVPost",
+          "snippet": "2025-03-20报道：updated Aito M9 launched，标题说明with 4 LiDARs。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆天窗",
+          "competitor_feature": "2025款问界M9配置页写明天窗为全景双层静音隔热隐私玻璃+电动遮阳帘。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m9/configuration/",
+              "title": "问界M9配置",
+              "source_name": "AITO官方",
+              "snippet": "配置页列出问界M9纯电Ultra；天窗为全景双层静音隔热隐私玻璃+电动遮阳帘。"
+            }
+          ],
+          "reasoning": "①X：权1对象为车辆天窗/雷达配置。②Y：2025款问界M9配置页写明天窗为全景双层静音隔热隐私玻璃+电动遮阳帘。。③(a)是；(b)是，存在/数量类；(c)是，均为本SKU车顶配置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括天窗骨架、饰板以及雷达，所述饰板安装在所述天窗骨架上",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）公开资料可确认天窗/天幕与车顶激光雷达同时存在，但未公开天窗骨架、饰板及其安装关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m9/configuration/",
+              "title": "问界M9配置",
+              "source_name": "AITO官方",
+              "snippet": "配置页列出问界M9纯电Ultra；天窗为全景双层静音隔热隐私玻璃+电动遮阳帘。"
+            },
+            {
+              "url": "https://aito.auto/model/m9/",
+              "title": "问界M9车型页",
+              "source_name": "AITO官方",
+              "snippet": "车型页写明1个896线双光路图像级激光雷达、3个高精度固态激光雷达等感知配置。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有天窗/天幕和激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述雷达安装在所述天窗骨架上",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）公开资料可确认车顶/瞭望塔式激光雷达，但未公开雷达安装在天窗骨架上。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m9/",
+              "title": "问界M9车型页",
+              "source_name": "AITO官方",
+              "snippet": "车型页写明1个896线双光路图像级激光雷达、3个高精度固态激光雷达等感知配置。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有车顶/瞭望塔式激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述饰板包括饰板主体和设置在所述饰板主体上的凸起",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）外观图显示车顶前缘激光雷达外壳形成向上突起，可对应饰板主体上的凸起。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/",
+              "title": "Aito M9 launch images",
+              "source_name": "CnEVPost",
+              "snippet": "图示证据：发布图显示车顶/前挡上方有激光雷达外壳突起和前向透光窗口。"
+            },
+            {
+              "url": "https://aito.auto/model/m9/",
+              "title": "问界M9车型页",
+              "source_name": "AITO官方",
+              "snippet": "车型页写明1个896线双光路图像级激光雷达、3个高精度固态激光雷达等感知配置。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图可见车顶激光雷达突起。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述凸起罩设在所述雷达的上方",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）车顶激光雷达位于该突起/外壳内，突起从上方罩设传感器。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/",
+              "title": "Aito M9 launch images",
+              "source_name": "CnEVPost",
+              "snippet": "图示证据：发布图显示车顶/前挡上方有激光雷达外壳突起和前向透光窗口。"
+            },
+            {
+              "url": "https://aito.auto/model/m9/",
+              "title": "问界M9车型页",
+              "source_name": "AITO官方",
+              "snippet": "车型页写明1个896线双光路图像级激光雷达、3个高精度固态激光雷达等感知配置。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图和配置显示雷达在突起内。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述凸起的外表面包括第一侧面",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）激光雷达外壳具有可见前侧面/侧向外表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/",
+              "title": "Aito M9 launch images",
+              "source_name": "CnEVPost",
+              "snippet": "图示证据：发布图显示车顶/前挡上方有激光雷达外壳突起和前向透光窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起外表面可见前侧面。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述第一侧面上设置有过孔",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）激光雷达外壳前侧可见黑色传感器窗口，可推定为镜头过孔。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/",
+              "title": "Aito M9 launch images",
+              "source_name": "CnEVPost",
+              "snippet": "图示证据：发布图显示车顶/前挡上方有激光雷达外壳突起和前向透光窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起前侧可见黑色窗口。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F8",
+          "patent_feature": "所述雷达的镜头外露于所述过孔中",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）公开资料确认该位置为激光雷达，前侧窗口内外露雷达镜头/透光面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/",
+              "title": "Aito M9 launch images",
+              "source_name": "CnEVPost",
+              "snippet": "图示证据：发布图显示车顶/前挡上方有激光雷达外壳突起和前向透光窗口。"
+            },
+            {
+              "url": "https://aito.auto/model/m9/",
+              "title": "问界M9车型页",
+              "source_name": "AITO官方",
+              "snippet": "车型页写明1个896线双光路图像级激光雷达、3个高精度固态激光雷达等感知配置。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：车顶激光雷达窗口外露。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F9",
+          "patent_feature": "所述雷达的镜头的外露面与所述第一侧面共面",
+          "competitor_feature": "问界M9（2025款 纯电Ultra六座版/中国版）外观图不足以测量或确认镜头外露面与第一侧面共面。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cnevpost.com/2025/03/20/aito-launches-updated-m9/",
+              "title": "Aito M9 launch images",
+              "source_name": "CnEVPost",
+              "snippet": "图示证据：发布图显示车顶/前挡上方有激光雷达外壳突起和前向透光窗口。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：外观图不能确认共面。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.56,
+      "searched_queries": [
+        "site:m.asemanshop.com 车型 车顶 激光雷达 天窗 维修手册",
+        "site:www.qixiu88.com 车型 车顶 激光雷达 天窗 维修手册",
+        "roof mounted lidar panoramic sunroof China EV 2024",
+        "车顶激光雷达 全景天窗 参数配置 2024款",
+        "激光雷达 装饰罩 车顶 维修手册",
+        "问界M9 2025款 纯电Ultra 激光雷达 天窗 配置",
+        "AITO M9 2025 roof lidar panoramic sunroof",
+        "site:aito.auto M9 896线 激光雷达 天窗",
+        "AITO M9 updated 2025 4 LiDARs launch"
+      ],
+      "searched_providers": [
+        "web.search_query",
+        "web.open",
+        "curl fetch",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "小米汽车",
+        "company_en": "Xiaomi Auto",
+        "product_name": "小米SU7（2024款 四驱Max创始版/中国版）",
+        "product_name_en": "Xiaomi SU7 (2024 AWD Max Founders Edition / China)",
+        "product_intro": "2024款四驱Max创始版纯电轿车，公开配置显示车顶禾赛AT128 128线激光雷达和全景玻璃天窗/天幕。",
+        "market": "中国智能纯电轿车前装市场",
+        "reason_for_deep_dive": "车顶激光雷达明确，且Max版本单SKU公开资料较完整。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://price.pcauto.com.cn/m127655/config.html",
+          "https://www.arenaev.com/xiaomi_su7_su7_max_2024-specs-574.php",
+          "https://www.antutu.com/doc/131380.htm"
+        ],
+        "initial_evidence_summary": "PCauto配置锁定四驱Max创始版，激光雷达布局=车顶；ArenaEV列Roof=Panoramic glass sunroof；安兔兔试驾确认2024-03-28上市和Max增加128线激光雷达。"
+      },
+      "launch_date": "2024年3月28日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.antutu.com/doc/131380.htm",
+          "title": "试驾体验小米SU7 Max",
+          "source_name": "安兔兔",
+          "snippet": "2024-03-29试驾：小米SU7 2024年3月28日正式上市；Max版增加一颗128线激光雷达；全系全景天幕。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆天窗",
+          "competitor_feature": "Xiaomi SU7 Max规格页写明Roof=Panoramic glass sunroof。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.arenaev.com/xiaomi_su7_su7_max_2024-specs-574.php",
+              "title": "Xiaomi SU7 Max full specifications",
+              "source_name": "ArenaEV",
+              "snippet": "Xiaomi SU7 Max：Released 2024, March；Roof=Panoramic glass sunroof；Driving aids=1 LiDAR。"
+            }
+          ],
+          "reasoning": "①X：权1对象为车辆天窗/雷达配置。②Y：Xiaomi SU7 Max规格页写明Roof=Panoramic glass sunroof。。③(a)是；(b)是，存在/数量类；(c)是，均为本SKU车顶配置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括天窗骨架、饰板以及雷达，所述饰板安装在所述天窗骨架上",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）公开资料可确认天窗/天幕与车顶激光雷达同时存在，但未公开天窗骨架、饰板及其安装关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.arenaev.com/xiaomi_su7_su7_max_2024-specs-574.php",
+              "title": "Xiaomi SU7 Max full specifications",
+              "source_name": "ArenaEV",
+              "snippet": "Xiaomi SU7 Max：Released 2024, March；Roof=Panoramic glass sunroof；Driving aids=1 LiDAR。"
+            },
+            {
+              "url": "https://price.pcauto.com.cn/m127655/config.html",
+              "title": "小米SU7 2024款四驱Max创始版参数配置",
+              "source_name": "太平洋汽车",
+              "snippet": "配置页锁定四驱Max创始版；激光雷达布局=车顶；禾赛AT128；激光雷达线数128。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有天窗/天幕和激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述雷达安装在所述天窗骨架上",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）公开资料可确认车顶/瞭望塔式激光雷达，但未公开雷达安装在天窗骨架上。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://price.pcauto.com.cn/m127655/config.html",
+              "title": "小米SU7 2024款四驱Max创始版参数配置",
+              "source_name": "太平洋汽车",
+              "snippet": "配置页锁定四驱Max创始版；激光雷达布局=车顶；禾赛AT128；激光雷达线数128。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有车顶/瞭望塔式激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述饰板包括饰板主体和设置在所述饰板主体上的凸起",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）外观图显示车顶前缘激光雷达外壳形成向上突起，可对应饰板主体上的凸起。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.antutu.com/doc/131380.htm",
+              "title": "小米SU7 Max试驾图",
+              "source_name": "安兔兔",
+              "snippet": "图示证据：试驾图集中外观图可见车顶小型激光雷达突起，前侧有黑色传感器窗口。"
+            },
+            {
+              "url": "https://price.pcauto.com.cn/m127655/config.html",
+              "title": "小米SU7 2024款四驱Max创始版参数配置",
+              "source_name": "太平洋汽车",
+              "snippet": "配置页锁定四驱Max创始版；激光雷达布局=车顶；禾赛AT128；激光雷达线数128。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图可见车顶激光雷达突起。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述凸起罩设在所述雷达的上方",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）车顶激光雷达位于该突起/外壳内，突起从上方罩设传感器。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.antutu.com/doc/131380.htm",
+              "title": "小米SU7 Max试驾图",
+              "source_name": "安兔兔",
+              "snippet": "图示证据：试驾图集中外观图可见车顶小型激光雷达突起，前侧有黑色传感器窗口。"
+            },
+            {
+              "url": "https://price.pcauto.com.cn/m127655/config.html",
+              "title": "小米SU7 2024款四驱Max创始版参数配置",
+              "source_name": "太平洋汽车",
+              "snippet": "配置页锁定四驱Max创始版；激光雷达布局=车顶；禾赛AT128；激光雷达线数128。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图和配置显示雷达在突起内。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述凸起的外表面包括第一侧面",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）激光雷达外壳具有可见前侧面/侧向外表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.antutu.com/doc/131380.htm",
+              "title": "小米SU7 Max试驾图",
+              "source_name": "安兔兔",
+              "snippet": "图示证据：试驾图集中外观图可见车顶小型激光雷达突起，前侧有黑色传感器窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起外表面可见前侧面。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述第一侧面上设置有过孔",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）激光雷达外壳前侧可见黑色传感器窗口，可推定为镜头过孔。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.antutu.com/doc/131380.htm",
+              "title": "小米SU7 Max试驾图",
+              "source_name": "安兔兔",
+              "snippet": "图示证据：试驾图集中外观图可见车顶小型激光雷达突起，前侧有黑色传感器窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起前侧可见黑色窗口。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F8",
+          "patent_feature": "所述雷达的镜头外露于所述过孔中",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）公开资料确认该位置为激光雷达，前侧窗口内外露雷达镜头/透光面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.antutu.com/doc/131380.htm",
+              "title": "小米SU7 Max试驾图",
+              "source_name": "安兔兔",
+              "snippet": "图示证据：试驾图集中外观图可见车顶小型激光雷达突起，前侧有黑色传感器窗口。"
+            },
+            {
+              "url": "https://price.pcauto.com.cn/m127655/config.html",
+              "title": "小米SU7 2024款四驱Max创始版参数配置",
+              "source_name": "太平洋汽车",
+              "snippet": "配置页锁定四驱Max创始版；激光雷达布局=车顶；禾赛AT128；激光雷达线数128。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：车顶激光雷达窗口外露。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F9",
+          "patent_feature": "所述雷达的镜头的外露面与所述第一侧面共面",
+          "competitor_feature": "小米SU7（2024款 四驱Max创始版/中国版）外观图不足以测量或确认镜头外露面与第一侧面共面。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.antutu.com/doc/131380.htm",
+              "title": "小米SU7 Max试驾图",
+              "source_name": "安兔兔",
+              "snippet": "图示证据：试驾图集中外观图可见车顶小型激光雷达突起，前侧有黑色传感器窗口。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：外观图不能确认共面。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.56,
+      "searched_queries": [
+        "site:m.asemanshop.com 车型 车顶 激光雷达 天窗 维修手册",
+        "site:www.qixiu88.com 车型 车顶 激光雷达 天窗 维修手册",
+        "roof mounted lidar panoramic sunroof China EV 2024",
+        "车顶激光雷达 全景天窗 参数配置 2024款",
+        "激光雷达 装饰罩 车顶 维修手册",
+        "小米SU7 四驱Max创始版 激光雷达 布局 车顶 天幕",
+        "Xiaomi SU7 Max roof LiDAR panoramic glass sunroof",
+        "site:price.pcauto.com.cn m127655 激光雷达 布局 车顶",
+        "小米SU7 Max 128线激光雷达 全景天幕 试驾"
+      ],
+      "searched_providers": [
+        "web.search_query",
+        "web.open",
+        "curl fetch",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "阿维塔科技",
+        "company_en": "AVATR",
+        "product_name": "阿维塔07（2024款 EV RWD Max/中国版）",
+        "product_name_en": "AVATR 07 (2024 EV RWD Max / China)",
+        "product_intro": "2024款EV RWD Max中型SUV，Data.CarNewsChina锁定该SKU并列1个192线激光雷达、不可开启全景天窗。",
+        "market": "中国新能源SUV前装市场",
+        "reason_for_deep_dive": "车顶激光雷达/全景天窗组合与权1车顶雷达天窗结构相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://data.carnewschina.com/database/avatr/avita-07/2024/650km-252kw-249900-25747",
+          "https://www.avatr.com/en/07",
+          "https://cnevpost.com/2024/09/27/avatr-launches-07/"
+        ],
+        "initial_evidence_summary": "Data.CarNewsChina锁定EV RWD Max，Released September 2024；1个192线LiDAR；Non-opening panoramic sunroof。官方页亦写全景大天幕和1个192线激光雷达。"
+      },
+      "launch_date": "2024年9月发布/上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://data.carnewschina.com/database/avatr/avita-07/2024/650km-252kw-249900-25747",
+          "title": "Avatr 07 2024 EV RWD Max",
+          "source_name": "Data.CarNewsChina",
+          "snippet": "Avatr 07 2024 EV RWD Max：Released September 2024；Number of LiDARs=1；Sunroof type=Non-opening panoramic sunroof；LIDAR lines=192。"
+        },
+        {
+          "url": "https://cnevpost.com/2024/09/27/avatr-launches-07/",
+          "title": "Avatr launches 07 SUV",
+          "source_name": "CnEVPost",
+          "snippet": "2024-09-27报道：Avatr launches 07 SUV；页面主图展示车顶前缘激光雷达突起。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆天窗",
+          "competitor_feature": "Data.CarNewsChina列Sunroof type=Non-opening panoramic sunroof。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://data.carnewschina.com/database/avatr/avita-07/2024/650km-252kw-249900-25747",
+              "title": "Avatr 07 2024 EV RWD Max",
+              "source_name": "Data.CarNewsChina",
+              "snippet": "Avatr 07 2024 EV RWD Max：Released September 2024；Number of LiDARs=1；Sunroof type=Non-opening panoramic sunroof；LIDAR lines=192。"
+            }
+          ],
+          "reasoning": "①X：权1对象为车辆天窗/雷达配置。②Y：Data.CarNewsChina列Sunroof type=Non-opening panoramic sunroof。。③(a)是；(b)是，存在/数量类；(c)是，均为本SKU车顶配置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括天窗骨架、饰板以及雷达，所述饰板安装在所述天窗骨架上",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）公开资料可确认天窗/天幕与车顶激光雷达同时存在，但未公开天窗骨架、饰板及其安装关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://data.carnewschina.com/database/avatr/avita-07/2024/650km-252kw-249900-25747",
+              "title": "Avatr 07 2024 EV RWD Max",
+              "source_name": "Data.CarNewsChina",
+              "snippet": "Avatr 07 2024 EV RWD Max：Released September 2024；Number of LiDARs=1；Sunroof type=Non-opening panoramic sunroof；LIDAR lines=192。"
+            },
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 official page",
+              "source_name": "AVATR官方",
+              "snippet": "官方页：AVATR 07；全景大天幕；华为乾崑ADS 4；全车27颗高感知传感器，1个192线激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有天窗/天幕和激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述雷达安装在所述天窗骨架上",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）公开资料可确认车顶/瞭望塔式激光雷达，但未公开雷达安装在天窗骨架上。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 official page",
+              "source_name": "AVATR官方",
+              "snippet": "官方页：AVATR 07；全景大天幕；华为乾崑ADS 4；全车27颗高感知传感器，1个192线激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有车顶/瞭望塔式激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述饰板包括饰板主体和设置在所述饰板主体上的凸起",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）外观图显示车顶前缘激光雷达外壳形成向上突起，可对应饰板主体上的凸起。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 exterior images",
+              "source_name": "AVATR官方",
+              "snippet": "图示证据：官方KV/外观图显示车顶前缘有激光雷达外壳突起及前向窗口。"
+            },
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 official page",
+              "source_name": "AVATR官方",
+              "snippet": "官方页：AVATR 07；全景大天幕；华为乾崑ADS 4；全车27颗高感知传感器，1个192线激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图可见车顶激光雷达突起。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述凸起罩设在所述雷达的上方",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）车顶激光雷达位于该突起/外壳内，突起从上方罩设传感器。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 exterior images",
+              "source_name": "AVATR官方",
+              "snippet": "图示证据：官方KV/外观图显示车顶前缘有激光雷达外壳突起及前向窗口。"
+            },
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 official page",
+              "source_name": "AVATR官方",
+              "snippet": "官方页：AVATR 07；全景大天幕；华为乾崑ADS 4；全车27颗高感知传感器，1个192线激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图和配置显示雷达在突起内。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述凸起的外表面包括第一侧面",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）激光雷达外壳具有可见前侧面/侧向外表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 exterior images",
+              "source_name": "AVATR官方",
+              "snippet": "图示证据：官方KV/外观图显示车顶前缘有激光雷达外壳突起及前向窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起外表面可见前侧面。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述第一侧面上设置有过孔",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）激光雷达外壳前侧可见黑色传感器窗口，可推定为镜头过孔。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 exterior images",
+              "source_name": "AVATR官方",
+              "snippet": "图示证据：官方KV/外观图显示车顶前缘有激光雷达外壳突起及前向窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起前侧可见黑色窗口。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F8",
+          "patent_feature": "所述雷达的镜头外露于所述过孔中",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）公开资料确认该位置为激光雷达，前侧窗口内外露雷达镜头/透光面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 exterior images",
+              "source_name": "AVATR官方",
+              "snippet": "图示证据：官方KV/外观图显示车顶前缘有激光雷达外壳突起及前向窗口。"
+            },
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 official page",
+              "source_name": "AVATR官方",
+              "snippet": "官方页：AVATR 07；全景大天幕；华为乾崑ADS 4；全车27颗高感知传感器，1个192线激光雷达。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：车顶激光雷达窗口外露。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F9",
+          "patent_feature": "所述雷达的镜头的外露面与所述第一侧面共面",
+          "competitor_feature": "阿维塔07（2024款 EV RWD Max/中国版）外观图不足以测量或确认镜头外露面与第一侧面共面。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.avatr.com/en/07",
+              "title": "AVATR 07 exterior images",
+              "source_name": "AVATR官方",
+              "snippet": "图示证据：官方KV/外观图显示车顶前缘有激光雷达外壳突起及前向窗口。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：外观图不能确认共面。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.56,
+      "searched_queries": [
+        "site:m.asemanshop.com 车型 车顶 激光雷达 天窗 维修手册",
+        "site:www.qixiu88.com 车型 车顶 激光雷达 天窗 维修手册",
+        "roof mounted lidar panoramic sunroof China EV 2024",
+        "车顶激光雷达 全景天窗 参数配置 2024款",
+        "激光雷达 装饰罩 车顶 维修手册",
+        "阿维塔07 2024 EV RWD Max 激光雷达 全景天窗",
+        "Avatr 07 2024 EV RWD Max LiDAR panoramic sunroof",
+        "site:avatr.com/en/07 192-Line LiDAR panoramic",
+        "site:data.carnewschina.com avita-07 Number of LiDARs Sunroof type"
+      ],
+      "searched_providers": [
+        "web.search_query",
+        "web.open",
+        "curl fetch",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "星途汽车",
+        "company_en": "EXEED / Exeed Exlantix",
+        "product_name": "星纪元ET（2024款 纯电Ultra/中国版）",
+        "product_name_en": "Exeed Exlantix ET / Sterra ET (2024 EV Ultra / China)",
+        "product_intro": "2024款纯电Ultra中大型SUV，官方页列2.38㎡全景天幕；上市报道称整车配备车顶激光雷达。",
+        "market": "中国新能源SUV前装市场",
+        "reason_for_deep_dive": "前装车顶激光雷达与大面积全景天幕组合，可能接近权1车顶雷达天窗方案。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+          "https://www.exeedcars.com/xjy/et/",
+          "https://cnevpost.com/2024/05/10/chery-exeed-launches-sterra-et-suv/"
+        ],
+        "initial_evidence_summary": "CarNewsChina报道2024-05-09上市，配备roof lidar和2.38㎡ panoramic sunroof；官方页锁定2024款纯电Ultra并列2.38㎡最大天幕。"
+      },
+      "launch_date": "2024年5月9日上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+          "title": "Chery Exeed Exlantix ET launched",
+          "source_name": "CarNewsChina",
+          "snippet": "2024-05-10报道：Exeed Exlantix ET于May 9进入市场；equipped with a roof lidar；has a 2.38㎡ panoramic sunroof。"
+        },
+        {
+          "url": "https://cnevpost.com/2024/05/10/chery-exeed-launches-sterra-et-suv/",
+          "title": "Exeed launches Sterra ET SUV",
+          "source_name": "CnEVPost",
+          "snippet": "2024-05-10报道：Sterra ET SUV launched，起售价RMB 189,800。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车辆天窗",
+          "competitor_feature": "官方页和报道均显示星纪元ET具有2.38㎡全景天幕/全景天窗。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.exeedcars.com/xjy/et/",
+              "title": "星纪元ET官方车型页",
+              "source_name": "EXEED星途官方",
+              "snippet": "官方页：2024款星纪元ET；2.38㎡同级最大天幕；纯电Ultra 31.98万元；多版本配置列全景天幕。"
+            }
+          ],
+          "reasoning": "①X：权1对象为车辆天窗/雷达配置。②Y：官方页和报道均显示星纪元ET具有2.38㎡全景天幕/全景天窗。。③(a)是；(b)是，存在/数量类；(c)是，均为本SKU车顶配置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括天窗骨架、饰板以及雷达，所述饰板安装在所述天窗骨架上",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）公开资料可确认天窗/天幕与车顶激光雷达同时存在，但未公开天窗骨架、饰板及其安装关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.exeedcars.com/xjy/et/",
+              "title": "星纪元ET官方车型页",
+              "source_name": "EXEED星途官方",
+              "snippet": "官方页：2024款星纪元ET；2.38㎡同级最大天幕；纯电Ultra 31.98万元；多版本配置列全景天幕。"
+            },
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Chery Exeed Exlantix ET launched",
+              "source_name": "CarNewsChina",
+              "snippet": "2024-05-10报道：Exeed Exlantix ET于May 9进入市场；equipped with a roof lidar；has a 2.38㎡ panoramic sunroof。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有天窗/天幕和激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述雷达安装在所述天窗骨架上",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）公开资料可确认车顶/瞭望塔式激光雷达，但未公开雷达安装在天窗骨架上。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Chery Exeed Exlantix ET launched",
+              "source_name": "CarNewsChina",
+              "snippet": "2024-05-10报道：Exeed Exlantix ET于May 9进入市场；equipped with a roof lidar；has a 2.38㎡ panoramic sunroof。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：仅有车顶/瞭望塔式激光雷达配置。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述饰板包括饰板主体和设置在所述饰板主体上的凸起",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）外观图显示车顶前缘激光雷达外壳形成向上突起，可对应饰板主体上的凸起。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Exeed Exlantix ET exterior image",
+              "source_name": "CarNewsChina",
+              "snippet": "图示证据：页面主图显示车顶前缘的激光雷达突起及前向黑色窗口。"
+            },
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Chery Exeed Exlantix ET launched",
+              "source_name": "CarNewsChina",
+              "snippet": "2024-05-10报道：Exeed Exlantix ET于May 9进入市场；equipped with a roof lidar；has a 2.38㎡ panoramic sunroof。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图可见车顶激光雷达突起。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述凸起罩设在所述雷达的上方",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）车顶激光雷达位于该突起/外壳内，突起从上方罩设传感器。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Exeed Exlantix ET exterior image",
+              "source_name": "CarNewsChina",
+              "snippet": "图示证据：页面主图显示车顶前缘的激光雷达突起及前向黑色窗口。"
+            },
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Chery Exeed Exlantix ET launched",
+              "source_name": "CarNewsChina",
+              "snippet": "2024-05-10报道：Exeed Exlantix ET于May 9进入市场；equipped with a roof lidar；has a 2.38㎡ panoramic sunroof。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：外观图和配置显示雷达在突起内。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述凸起的外表面包括第一侧面",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）激光雷达外壳具有可见前侧面/侧向外表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Exeed Exlantix ET exterior image",
+              "source_name": "CarNewsChina",
+              "snippet": "图示证据：页面主图显示车顶前缘的激光雷达突起及前向黑色窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起外表面可见前侧面。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述第一侧面上设置有过孔",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）激光雷达外壳前侧可见黑色传感器窗口，可推定为镜头过孔。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Exeed Exlantix ET exterior image",
+              "source_name": "CarNewsChina",
+              "snippet": "图示证据：页面主图显示车顶前缘的激光雷达突起及前向黑色窗口。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：突起前侧可见黑色窗口。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F8",
+          "patent_feature": "所述雷达的镜头外露于所述过孔中",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）公开资料确认该位置为激光雷达，前侧窗口内外露雷达镜头/透光面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Exeed Exlantix ET exterior image",
+              "source_name": "CarNewsChina",
+              "snippet": "图示证据：页面主图显示车顶前缘的激光雷达突起及前向黑色窗口。"
+            },
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Chery Exeed Exlantix ET launched",
+              "source_name": "CarNewsChina",
+              "snippet": "2024-05-10报道：Exeed Exlantix ET于May 9进入市场；equipped with a roof lidar；has a 2.38㎡ panoramic sunroof。"
+            }
+          ],
+          "reasoning": "①X：权1限定车顶饰板凸起、孔/镜头等结构。②Y：车顶激光雷达窗口外露。③(a)是，外观覆盖件与突起可对应；(b)是，均为结构存在；(c)是，均在车顶前缘；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F9",
+          "patent_feature": "所述雷达的镜头的外露面与所述第一侧面共面",
+          "competitor_feature": "星纪元ET（2024款 纯电Ultra/中国版）外观图不足以测量或确认镜头外露面与第一侧面共面。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://carnewschina.com/2024/05/10/chery-exeed-sterra-et-suv-launched-for-26300-usd-available-in-ev-and-erev/",
+              "title": "Exeed Exlantix ET exterior image",
+              "source_name": "CarNewsChina",
+              "snippet": "图示证据：页面主图显示车顶前缘的激光雷达突起及前向黑色窗口。"
+            }
+          ],
+          "reasoning": "①X：权1要求天窗骨架/饰板安装或镜头共面。②Y：外观图不能确认共面。③(a)否，公开资料未给该安装/共面关系；(b)否，Y仅为配置/外观；(c)否，未到天窗骨架基准；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.56,
+      "searched_queries": [
+        "site:m.asemanshop.com 车型 车顶 激光雷达 天窗 维修手册",
+        "site:www.qixiu88.com 车型 车顶 激光雷达 天窗 维修手册",
+        "roof mounted lidar panoramic sunroof China EV 2024",
+        "车顶激光雷达 全景天窗 参数配置 2024款",
+        "激光雷达 装饰罩 车顶 维修手册",
+        "星纪元ET 2024款 纯电Ultra 激光雷达 全景天幕",
+        "Exeed Exlantix ET 2024 EV Ultra roof lidar panoramic sunroof",
+        "site:exeedcars.com/xjy/et 纯电Ultra 全景天幕",
+        "Sterra ET roof lidar panoramic sunroof launched May 2024"
+      ],
+      "searched_providers": [
+        "web.search_query",
+        "web.open",
+        "curl fetch",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

@@ -1,0 +1,783 @@
+{
+  "publication_no": "CN207140992U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "奇瑞汽车",
+        "company_en": "Chery Automobile",
+        "product_name": "瑞虎8（首代T1X车身 / 2018上市，2019-2020维修手册适用）",
+        "product_name_en": "Chery Tiggo 8 (first-generation T1X body / 2018 launch, 2019-2020 service manual coverage)",
+        "product_intro": "首代瑞虎8为奇瑞T1X平台SUV；本候选锁定2018上市首代车身外饰结构，维修资料显示同一车身外饰章节覆盖2019-2020款。",
+        "market": "中国乘用车SUV前装市场",
+        "reason_for_deep_dive": "维修资料与配件页同时出现前保险杠总成、前保险杠安装支架、翼子板总成及前保险杠左右支架，接近权1的前保-支架-翼子板结构组合。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.qixiu88.com/shouce/1850.html",
+          "https://www.bossgoo.com/product-detail/chery-tiggo-8-front-bumper-bracket-65148351.html",
+          "https://www.eliteparts.org/products/chery-tiggo-8-original-front-bumper-replaceable-accessories",
+          "https://www.automotiveworld.com/news-releases/cherys-new-suv-tiggo8-launched-china/"
+        ],
+        "initial_evidence_summary": "汽修巴巴索引列出2019-2020款瑞虎8外饰章节含前保险杠总成、前保险杠安装支架和翼子板总成；配件页列出Tiggo 8 front bumper bracket/left-right bracket support。"
+      },
+      "launch_date": "2018 年 4 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.automotiveworld.com/news-releases/cherys-new-suv-tiggo8-launched-china/",
+          "title": "Chery's all-new SUV TIGGO8 launched in China",
+          "source_name": "Automotive World",
+          "snippet": "Chery launched TIGGO8 in China market at the Beijing International Auto Show on April 25, 2018."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种前保险杠安装结构",
+          "competitor_feature": "2019-2020款瑞虎8维修手册外饰章节公开前保险杠总成、前保险杠安装支架和相关车身外饰结构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1850.html",
+              "title": "2019-2020款奇瑞瑞虎8维修手册和电路图",
+              "source_name": "汽修巴巴",
+              "snippet": "外饰章节列有前保险杠总成、前保险杠安装支架、翼子板总成。"
+            }
+          ],
+          "reasoning": "①X=前保险杠安装结构，二值存在。②Y=维修手册外饰章节列前保总成及安装支架。③(a)是，均为前保安装结构；(b)是，存在项；(c)是，车身前部外饰；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括前保险杠、前保险杠安装支架及翼子板",
+          "competitor_feature": "瑞虎8维修资料列出前保险杠总成、前保险杠安装支架、翼子板总成，配件页列出Tiggo 8 front bumper bracket。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1850.html",
+              "title": "2019-2020款奇瑞瑞虎8维修手册和电路图",
+              "source_name": "汽修巴巴",
+              "snippet": "车上维修条目包括前保险杠总成、前保险杠安装支架、翼子板总成。"
+            },
+            {
+              "url": "https://www.bossgoo.com/product-detail/chery-tiggo-8-front-bumper-bracket-65148351.html",
+              "title": "Chery Tiggo 8 Front Bumper Bracket 602002600AA",
+              "source_name": "Bossgoo",
+              "snippet": "Product name: front bumper bracket; applicable car model: Tiggo 8."
+            }
+          ],
+          "reasoning": "①X=三件组合：前保、安装支架、翼子板。②Y=手册和配件页逐项列出三件。③(a)是；(b)是，集合项；(c)是，同一车型前部外饰；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述前保险杠的上侧向后翻折形成前保险杠内翻边",
+          "competitor_feature": "公开维修索引和配件页未显示瑞虎8前保险杠上侧向后翻折并形成内翻边的结构细节。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1850.html",
+              "title": "2019-2020款奇瑞瑞虎8维修手册和电路图",
+              "source_name": "汽修巴巴",
+              "snippet": "页面为维修目录级证据，未展开前保险杠上侧翻边结构图。"
+            }
+          ],
+          "reasoning": "①X=前保上侧后翻形成内翻边，几何结构。②Y=目录级前保总成/支架条目。③(a)否，未披露翻边；(b)否，Y非几何量；(c)否，缺上侧参考系；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述翼子板的下侧向后翻折形成翼子板内翻边",
+          "competitor_feature": "公开资料仅列出翼子板总成，未显示翼子板下侧向后翻折形成内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1850.html",
+              "title": "2019-2020款奇瑞瑞虎8维修手册和电路图",
+              "source_name": "汽修巴巴",
+              "snippet": "外饰章节列有翼子板总成，但无下侧内翻边几何图。"
+            }
+          ],
+          "reasoning": "①X=翼子板下侧后翻内翻边。②Y=翼子板总成目录项。③(a)否，零件存在不等于翻边存在；(b)否，Y非几何；(c)否，缺下侧参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述前保险杠安装支架固定连接在所述翼子板内翻边的下方",
+          "competitor_feature": "瑞虎8公开资料证明有前保险杠安装支架和翼子板，但未证明支架固定在翼子板内翻边下方。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.eliteparts.org/products/chery-tiggo-8-original-front-bumper-replaceable-accessories",
+              "title": "CHERY Tiggo 8 Original Front Bumper Replaceable Accessories",
+              "source_name": "Elite Parts",
+              "snippet": "Product specifications list Front Bumper Left Bracket Support and Front Bumper Right Bracket Support."
+            }
+          ],
+          "reasoning": "①X=支架相对翼子板内翻边下方固定。②Y=前保左右支架配件存在。③(a)否，未指向翼子板内翻边；(b)否，缺方位关系；(c)否，缺下方参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述前保险杠内翻边与所述前保险杠安装支架卡接",
+          "competitor_feature": "公开配件页未直接显示前保险杠内翻边与前保险杠安装支架之间为卡接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.bossgoo.com/product-detail/chery-tiggo-8-front-bumper-bracket-65148351.html",
+              "title": "Chery Tiggo 8 Front Bumper Bracket 602002600AA",
+              "source_name": "Bossgoo",
+              "snippet": "The page identifies a Tiggo 8 front bumper bracket, but does not state a clip-fit with an inner flange."
+            }
+          ],
+          "reasoning": "①X=前保内翻边与安装支架卡接，连接方式。②Y=前保支架配件存在。③(a)否，支架存在不等于卡接；(b)否，缺连接方式；(c)否，缺内翻边参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "瑞虎8 前保险杠安装支架 翼子板 维修手册 2019",
+        "Chery Tiggo 8 front bumper bracket fender clip",
+        "site:qixiu88.com 瑞虎8 前保险杠安装支架 翼子板",
+        "site:m.asemanshop.com 瑞虎8 前保险杠安装支架"
+      ],
+      "searched_providers": [
+        "web_search",
+        "qixiu88",
+        "m.asemanshop"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "星途汽车",
+        "company_en": "EXEED",
+        "product_name": "星途TXL（2019款 1.6T / TXL车身外饰结构）",
+        "product_name_en": "EXEED TXL (2019 1.6T / TXL body exterior structure)",
+        "product_intro": "星途TXL为奇瑞高端品牌星途的中型SUV；本候选锁定2019款TXL车身外饰结构。",
+        "market": "中国乘用车SUV前装市场",
+        "reason_for_deep_dive": "畅易与汽修巴巴均显示2019款星途TX/TXL维修资料包含前保险杠总成、前保险杠安装支架、翼子板总成，结构要素接近权1。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://m.asemanshop.com/www/carsm/3026.html",
+          "https://www.qixiu88.com/shouce/1854.html",
+          "https://www.chinapev.com/chery/chery-exeed-tx-is-amost-ready-in-china-market-price-starts-at-usd19200/"
+        ],
+        "initial_evidence_summary": "维修资料索引列出星途TX/TXL外饰章节含前保险杠总成、前保险杠安装支架、翼子板总成；车型上市时间在专利申请日之后。"
+      },
+      "launch_date": "2019 年 3 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.chinapev.com/chery/chery-exeed-tx-is-amost-ready-in-china-market-price-starts-at-usd19200/",
+          "title": "Chery EXEED TX is almost ready in China market",
+          "source_name": "ChinaPEV",
+          "snippet": "The article dated March 29, 2019 describes EXEED TX/TXL as the first model of the EXEED brand."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种前保险杠安装结构",
+          "competitor_feature": "星途TX/TXL维修资料外饰章节公开前保险杠总成和前保险杠安装支架。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.asemanshop.com/www/carsm/3026.html",
+              "title": "星途TX-2019维修手册电路图",
+              "source_name": "畅易汽车维修资料库",
+              "snippet": "资料纲要列有前保险杠总成、前保险杠安装支架、前保险杠横梁总成。"
+            }
+          ],
+          "reasoning": "①X=前保险杠安装结构。②Y=维修资料列前保总成及安装支架。③(a)是，均为前保安装；(b)是，存在项；(c)是，车身前部外饰；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括前保险杠、前保险杠安装支架及翼子板",
+          "competitor_feature": "星途TX/TXL维修资料列出前保险杠总成、前保险杠安装支架和翼子板总成。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.asemanshop.com/www/carsm/3026.html",
+              "title": "星途TX-2019维修手册电路图",
+              "source_name": "畅易汽车维修资料库",
+              "snippet": "外饰章节列出前保险杠总成、前保险杠安装支架、翼子板总成。"
+            },
+            {
+              "url": "https://www.qixiu88.com/shouce/1854.html",
+              "title": "2019-2020款星途TX/TXL维修手册和电路图",
+              "source_name": "汽修巴巴",
+              "snippet": "目录列出03-前保险杠安装支架、09-翼子板总成。"
+            }
+          ],
+          "reasoning": "①X=前保、前保安装支架、翼子板三件。②Y=两站维修目录逐项列出。③(a)是；(b)是，集合项；(c)是，同一TX/TXL外饰章节；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述前保险杠的上侧向后翻折形成前保险杠内翻边",
+          "competitor_feature": "公开目录未披露星途TXL前保险杠上侧后翻内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.asemanshop.com/www/carsm/3026.html",
+              "title": "星途TX-2019维修手册电路图",
+              "source_name": "畅易汽车维修资料库",
+              "snippet": "页面为维修资料纲要，未展示前保险杠翻边细节。"
+            }
+          ],
+          "reasoning": "①X=前保上侧后翻内翻边，几何形态。②Y=目录项。③(a)否，未披露翻边；(b)否；(c)否，缺上侧/后向参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述翼子板的下侧向后翻折形成翼子板内翻边",
+          "competitor_feature": "公开目录未披露星途TXL翼子板下侧后翻内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1854.html",
+              "title": "2019-2020款星途TX/TXL维修手册和电路图",
+              "source_name": "汽修巴巴",
+              "snippet": "目录列出翼子板总成，但未展开翼子板下侧翻边。"
+            }
+          ],
+          "reasoning": "①X=翼子板下侧后翻内翻边。②Y=翼子板总成目录项。③(a)否，零件存在不等于内翻边；(b)否；(c)否，缺下侧参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述前保险杠安装支架固定连接在所述翼子板内翻边的下方",
+          "competitor_feature": "公开资料证明有前保险杠安装支架和翼子板总成，但未证明二者相对位置为翼子板内翻边下方。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.asemanshop.com/www/carsm/3026.html",
+              "title": "星途TX-2019维修手册电路图",
+              "source_name": "畅易汽车维修资料库",
+              "snippet": "目录列有前保险杠安装支架和翼子板总成，未列安装剖面。"
+            }
+          ],
+          "reasoning": "①X=支架固定在翼子板内翻边下方，方位关系。②Y=支架/翼子板目录项。③(a)否，未公开相对位置；(b)否；(c)否，缺内翻边参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述前保险杠内翻边与所述前保险杠安装支架卡接",
+          "competitor_feature": "公开资料未显示星途TXL前保险杠内翻边与安装支架之间为卡接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1854.html",
+              "title": "2019-2020款星途TX/TXL维修手册和电路图",
+              "source_name": "汽修巴巴",
+              "snippet": "目录层级仅确认前保险杠安装支架存在，未公开卡接结构。"
+            }
+          ],
+          "reasoning": "①X=内翻边与支架卡接，连接方式。②Y=支架目录项。③(a)否，未披露卡接；(b)否，缺连接方式；(c)否，缺内翻边参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "星途TXL 2019 前保险杠安装支架 翼子板",
+        "EXEED TXL front bumper bracket fender 2019",
+        "site:m.asemanshop.com 星途TX 前保险杠安装支架",
+        "site:qixiu88.com 星途TX/TXL 前保险杠安装支架"
+      ],
+      "searched_providers": [
+        "web_search",
+        "m.asemanshop",
+        "qixiu88"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "领克汽车",
+        "company_en": "Lynk & Co",
+        "product_name": "领克01（2017款中国上市车身外饰结构）",
+        "product_name_en": "Lynk & Co 01 (2017 China launch body exterior structure)",
+        "product_intro": "领克01为领克品牌首款SUV；本候选锁定2017年中国上市首代车身外饰结构。",
+        "market": "中国乘用车SUV前装市场",
+        "reason_for_deep_dive": "维修资料列出前保险杠部件位置、保险杠盖板前部和翼子板支架，配件站另列Lynk & Co 01 front bumper bracket，显示前保-车身侧安装件组合值得深挖。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.qixiu88.com/shouce/1840.html",
+          "https://www.japotoparts.com/en/parts/lynk%2B-%2Bco/01/body/bumper/bumper%2Bbracket",
+          "https://www.chinadaily.com.cn/business/motoring/2017-11/30/content_35140867.htm"
+        ],
+        "initial_evidence_summary": "汽修巴巴领克01维修手册目录列出前保险杠部件位置、保险杠盖板前部、翼子板支架；Japotoparts列出Lynk & Co 01 front bumper bracket。"
+      },
+      "launch_date": "2017 年 11 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.chinadaily.com.cn/business/motoring/2017-11/30/content_35140867.htm",
+          "title": "Geely's Lynk & Co launches new SUV in China",
+          "source_name": "China Daily",
+          "snippet": "Lynk & Co launches 01 in China on Nov 29, 2017."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种前保险杠安装结构",
+          "competitor_feature": "领克01维修手册目录公开前保险杠部件位置、保险杠盖板前部及翼子板支架等前部外饰安装项目。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1840.html",
+              "title": "2017款领克01维修手册（不含电路图）",
+              "source_name": "汽修巴巴",
+              "snippet": "目录含前保险杠部件位置、保险杠盖板-前部拆装、翼子板支架-左前/右前更换。"
+            }
+          ],
+          "reasoning": "①X=前保险杠安装结构。②Y=前保险杠部件位置及拆装项目。③(a)是；(b)是，结构存在；(c)是，车身前部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括前保险杠、前保险杠安装支架及翼子板",
+          "competitor_feature": "领克01资料显示前保险杠和翼子板支架；配件页显示Lynk & Co 01 front bumper bracket。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1840.html",
+              "title": "2017款领克01维修手册（不含电路图）",
+              "source_name": "汽修巴巴",
+              "snippet": "目录列出前保险杠、保险杠盖板-前部、翼子板支架。"
+            },
+            {
+              "url": "https://www.japotoparts.com/en/parts/lynk%2B-%2Bco/01/body/bumper/bumper%2Bbracket",
+              "title": "Bumper bracket for Lynk & Co 01",
+              "source_name": "Japotoparts",
+              "snippet": "The page lists front bumper bracket, right, for Lynk & Co 01."
+            }
+          ],
+          "reasoning": "①X=前保、安装支架、翼子板。②Y=维修目录和配件页列出对应部件。③(a)是；(b)是，集合项；(c)是，同一车型前部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述前保险杠的上侧向后翻折形成前保险杠内翻边",
+          "competitor_feature": "公开资料未披露领克01前保险杠上侧后翻形成内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1840.html",
+              "title": "2017款领克01维修手册（不含电路图）",
+              "source_name": "汽修巴巴",
+              "snippet": "目录未展开前保险杠上侧翻边结构。"
+            }
+          ],
+          "reasoning": "①X=前保上侧后翻内翻边。②Y=目录级前保项目。③(a)否，未披露翻边；(b)否；(c)否，缺上侧后向参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述翼子板的下侧向后翻折形成翼子板内翻边",
+          "competitor_feature": "公开资料仅显示翼子板支架，未披露翼子板下侧后翻内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1840.html",
+              "title": "2017款领克01维修手册（不含电路图）",
+              "source_name": "汽修巴巴",
+              "snippet": "目录列翼子板支架-左前/右前更换，未列翼子板内翻边。"
+            }
+          ],
+          "reasoning": "①X=翼子板下侧内翻边。②Y=翼子板支架条目。③(a)否，支架不等于翻边；(b)否；(c)否，缺下侧参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述前保险杠安装支架固定连接在所述翼子板内翻边的下方",
+          "competitor_feature": "公开资料未证明领克01前保险杠安装支架固定在翼子板内翻边下方。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.japotoparts.com/en/parts/lynk%2B-%2Bco/01/body/bumper/bumper%2Bbracket",
+              "title": "Bumper bracket for Lynk & Co 01",
+              "source_name": "Japotoparts",
+              "snippet": "The page confirms a front bumper bracket for Lynk & Co 01, but not its position relative to a fender inner flange."
+            }
+          ],
+          "reasoning": "①X=支架在翼子板内翻边下方固定。②Y=前保支架配件存在。③(a)否，未指向翼子板内翻边；(b)否，缺方位；(c)否，缺下方参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述前保险杠内翻边与所述前保险杠安装支架卡接",
+          "competitor_feature": "公开资料未显示领克01前保险杠内翻边与安装支架卡接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.japotoparts.com/en/parts/lynk%2B-%2Bco/01/body/bumper/bumper%2Bbracket",
+              "title": "Bumper bracket for Lynk & Co 01",
+              "source_name": "Japotoparts",
+              "snippet": "Parts listing confirms a bumper bracket, with no clip-fit description."
+            }
+          ],
+          "reasoning": "①X=内翻边与支架卡接。②Y=前保支架配件存在。③(a)否，未披露卡接；(b)否，连接方式缺失；(c)否，缺内翻边参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "领克01 前保险杠 支架 翼子板 维修手册 2017",
+        "Lynk & Co 01 front bumper bracket fender",
+        "site:qixiu88.com 领克01 前保险杠 翼子板支架",
+        "site:m.asemanshop.com 领克01 前保险杠安装支架"
+      ],
+      "searched_providers": [
+        "web_search",
+        "qixiu88",
+        "m.asemanshop"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "高合汽车",
+        "company_en": "HiPhi",
+        "product_name": "高合HiPhi X（2022款维修手册适用车身外饰结构）",
+        "product_name_en": "HiPhi X (2022 service-manual body exterior structure)",
+        "product_intro": "高合HiPhi X为高端纯电SUV；本候选锁定2022款维修手册覆盖的车身外饰结构。",
+        "market": "中国高端纯电SUV前装市场",
+        "reason_for_deep_dive": "汽修巴巴2022款HiPhi X维修手册列出前保险杠蒙皮总成、前保蒙皮延伸板、左前翼子板总成等外饰件，但未找到前保安装支架与卡接剖面。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.qixiu88.com/shouce/1913.html",
+          "https://www.prnewswire.com/news-releases/human-horizons-super-suv-hiphi-x-debuts-at-2020-beijing-international-auto-show-301138605.html"
+        ],
+        "initial_evidence_summary": "2022款HiPhi X维修资料列出保险杠、前保蒙皮延伸板和左前翼子板总成；结构细节仍缺少翻边/卡接证据。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种前保险杠安装结构",
+          "competitor_feature": "2022款HiPhi X维修资料列出前保险杠蒙皮总成、前保蒙皮延伸板等前部保险杠结构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1913.html",
+              "title": "2022款高合汽车HiPhi X维修手册和电路图及故障诊断",
+              "source_name": "汽修巴巴",
+              "snippet": "外饰章节列有前保上蒙皮、前保下蒙皮、前保险杠蒙皮总成、前保蒙皮延伸板。"
+            }
+          ],
+          "reasoning": "①X=前保险杠安装结构。②Y=维修资料列前保蒙皮及延伸板。③(a)是，均为前保结构；(b)是，存在项；(c)是，车身前部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括前保险杠、前保险杠安装支架及翼子板",
+          "competitor_feature": "公开资料显示HiPhi X具有前保险杠蒙皮总成和左前翼子板总成，但未直接列出前保险杠安装支架。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1913.html",
+              "title": "2022款高合汽车HiPhi X维修手册和电路图及故障诊断",
+              "source_name": "汽修巴巴",
+              "snippet": "目录列出前保险杠蒙皮总成、前保蒙皮延伸板、左前翼子板总成。"
+            }
+          ],
+          "reasoning": "①X=前保、安装支架、翼子板三件。②Y=前保和翼子板被列出，支架未明示。③(a)否，集合缺项；(b)是，二值集合；(c)是，前部外饰；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述前保险杠的上侧向后翻折形成前保险杠内翻边",
+          "competitor_feature": "公开资料未披露HiPhi X前保险杠上侧后翻内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1913.html",
+              "title": "2022款高合汽车HiPhi X维修手册和电路图及故障诊断",
+              "source_name": "汽修巴巴",
+              "snippet": "目录列出前保上蒙皮、下蒙皮、蒙皮延伸板，未展示后翻内翻边。"
+            }
+          ],
+          "reasoning": "①X=前保上侧后翻内翻边。②Y=前保蒙皮目录项。③(a)否，未披露翻边；(b)否；(c)否，缺上侧/后向参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述翼子板的下侧向后翻折形成翼子板内翻边",
+          "competitor_feature": "公开资料未披露HiPhi X左前翼子板下侧后翻内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1913.html",
+              "title": "2022款高合汽车HiPhi X维修手册和电路图及故障诊断",
+              "source_name": "汽修巴巴",
+              "snippet": "车身外饰件中列左前翼子板总成，未列翼子板内翻边。"
+            }
+          ],
+          "reasoning": "①X=翼子板下侧后翻内翻边。②Y=左前翼子板总成目录项。③(a)否，未披露翻边；(b)否；(c)否，缺下侧参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述前保险杠安装支架固定连接在所述翼子板内翻边的下方",
+          "competitor_feature": "公开资料未披露HiPhi X前保险杠安装支架及其相对翼子板内翻边的位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1913.html",
+              "title": "2022款高合汽车HiPhi X维修手册和电路图及故障诊断",
+              "source_name": "汽修巴巴",
+              "snippet": "目录未直接列出前保险杠安装支架固定在翼子板内翻边下方。"
+            }
+          ],
+          "reasoning": "①X=支架固定于翼子板内翻边下方。②Y=前保蒙皮/翼子板目录。③(a)否，缺支架及位置；(b)否，缺方位；(c)否，缺内翻边参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述前保险杠内翻边与所述前保险杠安装支架卡接",
+          "competitor_feature": "公开资料未披露HiPhi X前保险杠内翻边与安装支架卡接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.qixiu88.com/shouce/1913.html",
+              "title": "2022款高合汽车HiPhi X维修手册和电路图及故障诊断",
+              "source_name": "汽修巴巴",
+              "snippet": "目录层级未公开前保内翻边与安装支架的卡接方式。"
+            }
+          ],
+          "reasoning": "①X=内翻边与支架卡接。②Y=前保蒙皮目录项。③(a)否，未披露卡接；(b)否，连接方式缺失；(c)否，缺内翻边/支架参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "高合 HiPhi X 前保险杠 支架 翼子板 维修手册 2022",
+        "HiPhi X front bumper bracket fender",
+        "site:qixiu88.com HiPhi X 前保险杠 翼子板",
+        "site:m.asemanshop.com 高合 HiPhi X 前保险杠"
+      ],
+      "searched_providers": [
+        "web_search",
+        "qixiu88",
+        "m.asemanshop"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "长安启源",
+        "company_en": "Changan Nevo / Qiyuan",
+        "product_name": "长安启源Q05（2026款 405Max 纯电动）",
+        "product_name_en": "Changan Nevo Q05 (2026 405Max BEV)",
+        "product_intro": "公开参数页显示该SKU为2026款启源Q05 405Max，燃油类型为纯电动，上市年份为2025-11。公开资料未发现该2026款纯电SKU的前保险杠安装支架维修图。",
+        "market": "中国小型/紧凑型纯电SUV前装市场",
+        "reason_for_deep_dive": "用户重点关注对象；公开证据确认其为2026款纯电405Max SKU并具有前保险杠造型，但缺少支架、翼子板翻边和卡接公开证据，需后续实车/维修手册核查。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.17vin.com/model/sjd0q.html",
+          "https://carnewschina.com/2025/11/21/2026-changan-nevo-q05-electric-suv-with-506km-range-launched-starting-from-11200-usd/",
+          "https://www.bitauto.com/news/1001103338330.html"
+        ],
+        "initial_evidence_summary": "17vin页面将SKU标为2026款长安启源Q05纯电动405Max，上市年份2025-11；CarNewsChina称2026 Changan Nevo Q05为pure electric compact SUV；BitAuto披露前保险杠外观。"
+      },
+      "launch_date": "2025 年 11 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.17vin.com/model/sjd0q.html",
+          "title": "2026款 长安启源 启源Q05 纯电动 405Max 参数配置",
+          "source_name": "17vin",
+          "snippet": "页面列出2026款启源Q05纯电动405Max，上市年份为2025-11。"
+        },
+        {
+          "url": "https://carnewschina.com/2025/11/21/2026-changan-nevo-q05-electric-suv-with-506km-range-launched-starting-from-11200-usd/",
+          "title": "2026 Changan Nevo Q05 electric SUV launched",
+          "source_name": "CarNewsChina",
+          "snippet": "Changan officially launched its new Changan Nevo (Qiyuan) Q05 electric compact SUV on Nov. 21, 2025."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种前保险杠安装结构",
+          "competitor_feature": "2026款启源Q05公开外观资料显示前保险杠；但未公开该SKU的安装结构细节。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/news/1001103338330.html",
+              "title": "All-new Changan Nevo Q05 revealed",
+              "source_name": "BitAuto",
+              "snippet": "The article describes the all-new Nevo Q05 front bumper and front fascia design."
+            }
+          ],
+          "reasoning": "①X=前保险杠安装结构，二值存在。②Y=公开外观确认前保险杠。③(a)是，前保通常需安装结构；(b)是，存在项；(c)是，车身前部；(d)无。缺维修图，降为可能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括前保险杠、前保险杠安装支架及翼子板",
+          "competitor_feature": "2026款启源Q05公开资料确认前保险杠和前翼子板外观区域，但未公开前保险杠安装支架。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/news/1001103338330.html",
+              "title": "All-new Changan Nevo Q05 revealed",
+              "source_name": "BitAuto",
+              "snippet": "The article mentions the front bumper and front fender side-view camera area, but not a front bumper mounting bracket."
+            }
+          ],
+          "reasoning": "①X=前保、安装支架、翼子板三件集合。②Y=前保/翼子板外观区，未见支架。③(a)否，集合缺安装支架；(b)是；(c)是，前部外观；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述前保险杠的上侧向后翻折形成前保险杠内翻边",
+          "competitor_feature": "公开资料未披露2026款启源Q05前保险杠上侧后翻内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/news/1001103338330.html",
+              "title": "All-new Changan Nevo Q05 revealed",
+              "source_name": "BitAuto",
+              "snippet": "外观报道仅描述前保险杠造型，未披露上侧后翻内翻边。"
+            }
+          ],
+          "reasoning": "①X=前保上侧后翻内翻边。②Y=外观描述。③(a)否，外观不等于内翻边；(b)否，非几何剖面；(c)否，缺上侧后向参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述翼子板的下侧向后翻折形成翼子板内翻边",
+          "competitor_feature": "公开资料未披露2026款启源Q05翼子板下侧后翻内翻边。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/news/1001103338330.html",
+              "title": "All-new Changan Nevo Q05 revealed",
+              "source_name": "BitAuto",
+              "snippet": "报道提及front fender侧摄区域，但未公开翼子板下侧内翻边。"
+            }
+          ],
+          "reasoning": "①X=翼子板下侧后翻内翻边。②Y=翼子板外观区域。③(a)否，外观区不等于翻边；(b)否；(c)否，缺下侧后向参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述前保险杠安装支架固定连接在所述翼子板内翻边的下方",
+          "competitor_feature": "公开资料未披露2026款启源Q05前保险杠安装支架，也未披露其与翼子板内翻边的位置关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.17vin.com/model/sjd0q.html",
+              "title": "2026款 长安启源 启源Q05 纯电动 405Max 参数配置",
+              "source_name": "17vin",
+              "snippet": "参数页锁定405Max纯电SKU，但不含前保安装支架结构。"
+            }
+          ],
+          "reasoning": "①X=支架固定于翼子板内翻边下方。②Y=SKU参数页。③(a)否，未公开支架；(b)否，缺方位；(c)否，缺内翻边参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述前保险杠内翻边与所述前保险杠安装支架卡接",
+          "competitor_feature": "公开资料未披露2026款启源Q05前保险杠内翻边与安装支架卡接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.17vin.com/model/sjd0q.html",
+              "title": "2026款 长安启源 启源Q05 纯电动 405Max 参数配置",
+              "source_name": "17vin",
+              "snippet": "参数页未公开前保险杠内翻边或卡接安装结构。"
+            }
+          ],
+          "reasoning": "①X=内翻边与支架卡接。②Y=SKU参数页和外观报道。③(a)否，未披露卡接；(b)否，连接方式缺失；(c)否，缺内翻边/支架参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 38.33,
+      "searched_queries": [
+        "2026款 长安启源 Q05 纯电动 405Max 前保险杠 支架",
+        "Changan Nevo Q05 2026 405Max front bumper bracket fender",
+        "site:qixiu88.com 启源Q05 2026 前保险杠 维修手册",
+        "site:m.asemanshop.com 启源Q05 前保险杠 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "qixiu88",
+        "m.asemanshop"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

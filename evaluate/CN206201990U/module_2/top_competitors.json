@@ -1,0 +1,567 @@
+{
+  "publication_no": "CN206201990U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "极氪",
+        "company_en": "ZEEKR",
+        "product_name": "极氪X（2023中国四座版/14.6英寸电动滑移智慧屏）",
+        "product_name_en": "ZEEKR X (2023 China four-seat version / 14.6-inch electric sliding smart screen)",
+        "product_intro": "2023年中国上市的极氪X四座版智能座舱车型，前排配备14.6英寸电动滑移中控屏，可从中间位置移向副驾侧。",
+        "market": "中国豪华紧凑型纯电SUV市场",
+        "reason_for_deep_dive": "用户特别点名关注；公开资料显示其车载中控屏具备左右滑移/中间至副驾位置移动能力，直接对应权1核心特征。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.zeekrlife.com/global/posts/introducing-zeekr-x-an-urban-electric-suv-that-can-take-you-everywhere",
+          "https://www.smartautoclub.com/p/50237/",
+          "https://www.ifanr.com/1554208"
+        ],
+        "initial_evidence_summary": "官方新闻确认ZEEKR X于2023年4月12日发布；第三方实拍/试驾资料显示四座版可使用14.6英寸中控滑移屏，五座版不支持，故锁定四座版SKU。"
+      },
+      "launch_date": "2023年4月发布，2023年6月中国交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.zeekrlife.com/global/posts/introducing-zeekr-x-an-urban-electric-suv-that-can-take-you-everywhere",
+          "title": "Introducing ZEEKR X: An Urban Electric SUV That Can Take You Everywhere",
+          "source_name": "ZEEKR",
+          "snippet": "官方新闻称ZEEKR X在2023-04-12发布，6月开始中国交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种驾驶室仪表台",
+          "competitor_feature": "极氪X四座版为车辆前排驾驶室座舱，公开内饰资料展示其仪表/中控台区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.zeekrlife.com/global/posts/introducing-zeekr-x-an-urban-electric-suv-that-can-take-you-everywhere",
+              "title": "Introducing ZEEKR X: An Urban Electric SUV That Can Take You Everywhere",
+              "source_name": "ZEEKR",
+              "snippet": "官方新闻说明ZEEKR X为SUV并介绍其Inside/内饰设计。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/50237/",
+              "title": "极氪X：14.6英寸滑移大屏+指尖怀挡",
+              "source_name": "智能汽车资源网",
+              "snippet": "文章围绕极氪X内饰官图及前排座舱配置展开。"
+            }
+          ],
+          "reasoning": "①X=驾驶室仪表台，是车辆前排仪表/中控承载区域。②Y=极氪X前排内饰/中控区域。③(a)是，均为驾驶室仪表台对象；(b)是，二值存在；(c)是，均以车辆前排座舱为参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括仪表台本体(40)和车载多媒体显示屏(10)",
+          "competitor_feature": "极氪X四座版前排仪表/中控台区域配有14.6英寸车载中控多媒体显示屏。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/50237/",
+              "title": "极氪X：14.6英寸滑移大屏+指尖怀挡",
+              "source_name": "智能汽车资源网",
+              "snippet": "资料称极氪X配备14.6英寸大尺寸中控屏。"
+            },
+            {
+              "url": "https://www.ifanr.com/1554208",
+              "title": "极氪 X 试驾：前排沙发，后排蹦床",
+              "source_name": "爱范儿",
+              "snippet": "试驾文说明四座版可使用14.6英寸中控屏。"
+            }
+          ],
+          "reasoning": "①X=仪表台本体+车载多媒体显示屏的组合。②Y=极氪X前排中控台+14.6英寸中控屏。③(a)是，中控屏属于车载多媒体显示屏；(b)是，部件存在；(c)是，均在前排仪表/中控台；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述车载多媒体显示屏(10)安装在所述仪表台本体(40)上且具有左极限位置和右极限位置，所述车载多媒体显示屏(10)能够在所述左极限位置和右极限位置之间滑动",
+          "competitor_feature": "极氪X四座版14.6英寸中控屏可通过手势从中间位置滑移到副驾位置；四座版可用，五座版不支持，故本候选锁定四座版。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/50237/",
+              "title": "极氪X：14.6英寸滑移大屏+指尖怀挡",
+              "source_name": "智能汽车资源网",
+              "snippet": "文章称中控屏可手势滑移，从中间位置移动到副驾位置。"
+            },
+            {
+              "url": "https://www.ifanr.com/1554208",
+              "title": "极氪 X 试驾：前排沙发，后排蹦床",
+              "source_name": "爱范儿",
+              "snippet": "试驾资料说明四座版可把14.6英寸中控屏滑到副驾面前。"
+            }
+          ],
+          "reasoning": "①X=显示屏沿仪表台横向在左右端位间滑动。②Y=极氪X四座版中控屏从中间到副驾侧滑移。③(a)是，均为横向位置切换；(b)是，二值/位置集合；(c)是，均相对仪表台左右；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100.0,
+      "searched_queries": [
+        "极氪X 2023 四座版 14.6英寸 电动滑移智慧屏",
+        "ZEEKR X 2023 China four-seat sliding smart screen passenger side",
+        "极氪X 说明书 电动滑移智慧屏",
+        "site:m.asemanshop.com 极氪X ZEEKR X 电动滑移智慧屏",
+        "site:qixiu88.com 极氪X ZEEKR X 中控屏 滑移"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites:m.asemanshop.com",
+        "recommended_sites:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "上汽荣威",
+        "company_en": "SAIC Roewe",
+        "product_name": "第三代荣威RX5（2022款滑移好屏版/27英寸4K滑移屏）",
+        "product_name_en": "Third-generation Roewe RX5 (2022 sliding-screen trim / 27-inch 4K slidable display)",
+        "product_intro": "2022年8月发布的第三代荣威RX5滑移屏配置车型，智能座舱采用27英寸4K滑移车载显示屏，公开资料称可左右移动300mm。",
+        "market": "中国紧凑型SUV燃油/混动市场",
+        "reason_for_deep_dive": "公开资料直接描述27英寸车载显示屏沿滑轨左右移动300mm，权1滑动显示屏特征证据强。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.mblock.com.tw/en/news/detail/327",
+          "https://www.pcauto.com.cn/nation/3095/30959206.html",
+          "https://www.smartautoclub.com/p/86726/"
+        ],
+        "initial_evidence_summary": "Macroblock案例与太平洋汽车均描述第三代荣威RX5采用27英寸4K滑移屏，滑轨左右移动300mm。"
+      },
+      "launch_date": "2022年8月发布",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.mblock.com.tw/en/news/detail/327",
+          "title": "Roewe RX5's 27-inch 4K In-vehicle Display Adopts Macroblock mini-LED Backlight Driver IC",
+          "source_name": "Macroblock",
+          "snippet": "案例页称第三代Roewe RX5于2022年8月正式发布。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种驾驶室仪表台",
+          "competitor_feature": "第三代荣威RX5为乘用SUV，其前排智能座舱包含仪表台/中控台区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.pcauto.com.cn/nation/3095/30959206.html",
+              "title": "配27英寸无界滑移屏 全新荣威RX5座舱细节曝光",
+              "source_name": "太平洋汽车",
+              "snippet": "报道从全新第三代荣威RX5智能座舱角度介绍前排配置。"
+            }
+          ],
+          "reasoning": "①X=车辆驾驶室仪表台。②Y=荣威RX5智能座舱的仪表/中控承载区。③(a)是，均为前排仪表台对象；(b)是，二值存在；(c)是，均在车辆驾驶室；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括仪表台本体(40)和车载多媒体显示屏(10)",
+          "competitor_feature": "第三代荣威RX5智能座舱搭载27英寸4K车载滑移显示屏，集成仪表、中控和娱乐显示功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.mblock.com.tw/en/news/detail/327",
+              "title": "Roewe RX5's 27-inch 4K In-vehicle Display Adopts Macroblock mini-LED Backlight Driver IC",
+              "source_name": "Macroblock",
+              "snippet": "案例页说明27英寸车载显示屏整合仪表、中控和娱乐显示。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/nation/3095/30959206.html",
+              "title": "配27英寸无界滑移屏 全新荣威RX5座舱细节曝光",
+              "source_name": "太平洋汽车",
+              "snippet": "报道称第三代荣威RX5搭载27英寸全景无界滑移屏。"
+            }
+          ],
+          "reasoning": "①X=仪表台本体+车载多媒体显示屏。②Y=RX5中控台/仪表区+27英寸4K车载显示屏。③(a)是，显示功能对应多媒体显示屏；(b)是，部件存在；(c)是，均在前排仪表台；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述车载多媒体显示屏(10)安装在所述仪表台本体(40)上且具有左极限位置和右极限位置，所述车载多媒体显示屏(10)能够在所述左极限位置和右极限位置之间滑动",
+          "competitor_feature": "第三代荣威RX5的27英寸宽屏可在滑轨上左右移动300mm，在主驾/副驾之间切换交互位置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.mblock.com.tw/en/news/detail/327",
+              "title": "Roewe RX5's 27-inch 4K In-vehicle Display Adopts Macroblock mini-LED Backlight Driver IC",
+              "source_name": "Macroblock",
+              "snippet": "案例页称27英寸宽屏可沿滑轨左右移动300mm。"
+            },
+            {
+              "url": "https://www.pcauto.com.cn/nation/3095/30959206.html",
+              "title": "配27英寸无界滑移屏 全新荣威RX5座舱细节曝光",
+              "source_name": "太平洋汽车",
+              "snippet": "报道称滑移屏配合300mm滑动距离，形成两种驾乘模式。"
+            }
+          ],
+          "reasoning": "①X=显示屏在仪表台左右极限之间滑动。②Y=RX5显示屏沿滑轨左右移动300mm。③(a)是，均为横向滑轨滑移；(b)是，位置/距离量纲匹配；(c)是，均相对仪表台左右；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100.0,
+      "searched_queries": [
+        "第三代荣威RX5 27英寸 4K 滑移屏 左右300mm",
+        "Roewe RX5 27-inch 4K slidable display 300mm rail",
+        "第三代荣威RX5 滑移好屏版 配置表",
+        "site:m.asemanshop.com 荣威 RX5 滑移屏",
+        "site:qixiu88.com 荣威 RX5 中控屏 滑移"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites:m.asemanshop.com",
+        "recommended_sites:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "岚图",
+        "company_en": "VOYAH",
+        "product_name": "岚图知音（2024四驱全球版/中控屏电动智慧滑移功能）",
+        "product_name_en": "VOYAH Courage/Zhiyin (2024 AWD global version / electric smart sliding center screen)",
+        "product_intro": "2024年上市的岚图知音四驱全球版，配置表列明15.05英寸OLED曲边中控屏和中控屏电动智慧滑移功能。",
+        "market": "中国及全球中型纯电SUV市场",
+        "reason_for_deep_dive": "官方配置PDF和用户手册均指向中控屏电动滑移及驾驶员/中间/副驾三个位置，权1核心特征证据直接。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dfmc.com.cn/news/company/news_20241014_1029.html",
+          "https://www.voyah.com.cn/resources/download/%E5%B2%9A%E5%9B%BE%E7%9F%A5%E9%9F%B3%E9%85%8D%E7%BD%AE%E8%A1%A8-%E5%85%A8%E7%90%83%E7%89%88.pdf",
+          "https://voyah.nl/hubfs/VOYAH_COURAGE_User_Manual250521_EN.pdf?hsLang=nl",
+          "https://www.autohome.com.cn/news/202410/1301118.html"
+        ],
+        "initial_evidence_summary": "东风新闻确认岚图知音2024年10月13日上市；配置PDF列出15.05英寸OLED曲边中控屏和电动智慧滑移功能；海外手册列出滑移屏位置设置。"
+      },
+      "launch_date": "2024年10月13日上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dfmc.com.cn/news/company/news_20241014_1029.html",
+          "title": "岚图知音正式上市 17.99万元起售",
+          "source_name": "东风汽车集团",
+          "snippet": "东风新闻称岚图知音于2024-10-13晚正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种驾驶室仪表台",
+          "competitor_feature": "岚图知音为纯电SUV，前排座舱包含仪表台/中控台和中控屏安装区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.autohome.com.cn/news/202410/1301118.html",
+              "title": "限量价17.99万起 岚图知音正式上市",
+              "source_name": "汽车之家",
+              "snippet": "报道说明车辆中控台采用平直线条并配悬浮式中控大屏。"
+            }
+          ],
+          "reasoning": "①X=驾驶室仪表台。②Y=岚图知音前排中控台区域。③(a)是，均为前排仪表/中控承载结构；(b)是，二值存在；(c)是，均在驾驶室前部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括仪表台本体(40)和车载多媒体显示屏(10)",
+          "competitor_feature": "岚图知音四驱全球版配置15.05英寸OLED曲边中控屏，安装于前排中控台/仪表台区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.voyah.com.cn/resources/download/%E5%B2%9A%E5%9B%BE%E7%9F%A5%E9%9F%B3%E9%85%8D%E7%BD%AE%E8%A1%A8-%E5%85%A8%E7%90%83%E7%89%88.pdf",
+              "title": "岚图知音配置表-全球版",
+              "source_name": "岚图",
+              "snippet": "配置表列出15.05英寸OLED曲边中控屏。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/news/202410/1301118.html",
+              "title": "限量价17.99万起 岚图知音正式上市",
+              "source_name": "汽车之家",
+              "snippet": "报道称新车将配备15.05英寸OLED曲边滑移屏。"
+            }
+          ],
+          "reasoning": "①X=仪表台本体+车载多媒体显示屏。②Y=知音中控台+15.05英寸OLED中控屏。③(a)是，中控屏属于车载显示屏；(b)是，部件存在；(c)是，均在前排仪表台；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述车载多媒体显示屏(10)安装在所述仪表台本体(40)上且具有左极限位置和右极限位置，所述车载多媒体显示屏(10)能够在所述左极限位置和右极限位置之间滑动",
+          "competitor_feature": "岚图知音四驱全球版列明中控屏电动智慧滑移功能；VOYAH Courage用户手册显示滑移屏位置可设为驾驶员、中间、副驾。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.voyah.com.cn/resources/download/%E5%B2%9A%E5%9B%BE%E7%9F%A5%E9%9F%B3%E9%85%8D%E7%BD%AE%E8%A1%A8-%E5%85%A8%E7%90%83%E7%89%88.pdf",
+              "title": "岚图知音配置表-全球版",
+              "source_name": "岚图",
+              "snippet": "配置表列出中控屏电动智慧滑移功能。"
+            },
+            {
+              "url": "https://voyah.nl/hubfs/VOYAH_COURAGE_User_Manual250521_EN.pdf?hsLang=nl",
+              "title": "VOYAH COURAGE User Manual",
+              "source_name": "VOYAH Netherlands",
+              "snippet": "手册显示滑移屏位置可设置为驾驶员、中间和副驾。"
+            }
+          ],
+          "reasoning": "①X=显示屏在左右极限间滑动。②Y=知音滑移屏具驾驶员/中间/副驾位置。③(a)是，均为横向位置滑移；(b)是，位置集合一致；(c)是，均相对仪表台左右；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100.0,
+      "searched_queries": [
+        "岚图知音 四驱全球版 中控屏 电动智慧滑移功能 配置表",
+        "VOYAH Courage user manual sliding screen driver middle passenger",
+        "岚图知音 15.05英寸 OLED 曲边滑移屏",
+        "site:m.asemanshop.com 岚图知音 滑移屏",
+        "site:qixiu88.com 岚图知音 中控屏 滑移"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites:m.asemanshop.com",
+        "recommended_sites:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "奇瑞",
+        "company_en": "Chery",
+        "product_name": "瑞虎7L（2026款1.6T顶配/15.6英寸2.5K中控滑移屏）",
+        "product_name_en": "Chery Tiggo 7L (2026 1.6T top trim / 15.6-inch 2.5K sliding infotainment screen)",
+        "product_intro": "2026年4月上市的瑞虎7L燃油SUV，1.6T高配车型公开资料显示搭载15.6英寸中控滑移屏，可在中控与副驾之间切换。",
+        "market": "中国A级燃油SUV市场",
+        "reason_for_deep_dive": "新近上市车型明确宣传中控屏横向/左右滑移至副驾侧，特征与权1滑动显示屏高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.donews.com/news/detail/4/6505747.html",
+          "https://www.bitauto.com/article/1003109127779/",
+          "https://paultan.org/2026/04/07/chery-tiggo-7l-in-china-rebadged-omoda-c7-sliding-15-6-inch-touchscreen-197-ps-1-6l-turbo-4-cylinder/"
+        ],
+        "initial_evidence_summary": "DoNews确认瑞虎7L于2026年4月8日上市并搭载15.6英寸滑移屏；BitAuto与Paultan描述屏幕可沿滑轨横向移动至副驾侧。"
+      },
+      "launch_date": "2026年4月8日上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.donews.com/news/detail/4/6505747.html",
+          "title": "奇瑞发布瑞虎7L、2026款瑞虎7及瑞虎5运动版",
+          "source_name": "DoNews",
+          "snippet": "报道称奇瑞在2026-04-08正式上市瑞虎7L等车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种驾驶室仪表台",
+          "competitor_feature": "瑞虎7L为紧凑型SUV，公开内饰资料描述其环抱式座舱和中控台区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/article/1003109127779/",
+              "title": "瑞虎7L实车解析，滑移屏+1.6T，是否值得入手？",
+              "source_name": "BitAuto",
+              "snippet": "报道说明瑞虎7L座舱采用环抱式布局并介绍中控台。"
+            }
+          ],
+          "reasoning": "①X=驾驶室仪表台。②Y=瑞虎7L前排环抱式座舱/中控台。③(a)是，均为驾驶室前部承载区；(b)是，二值存在；(c)是，均在车辆前排；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括仪表台本体(40)和车载多媒体显示屏(10)",
+          "competitor_feature": "瑞虎7L高配车型前排中控台搭载15.6英寸2.5K中控滑移屏。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.donews.com/news/detail/4/6505747.html",
+              "title": "奇瑞发布瑞虎7L、2026款瑞虎7及瑞虎5运动版",
+              "source_name": "DoNews",
+              "snippet": "报道称瑞虎7L搭载1.6T发动机与15.6英寸滑移屏。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003109127779/",
+              "title": "瑞虎7L实车解析，滑移屏+1.6T，是否值得入手？",
+              "source_name": "BitAuto",
+              "snippet": "报道称核心配置为15.6英寸可左右滑移中控屏。"
+            }
+          ],
+          "reasoning": "①X=仪表台本体+车载多媒体显示屏。②Y=瑞虎7L中控台+15.6英寸中控屏。③(a)是，中控屏对应车载多媒体显示屏；(b)是，部件存在；(c)是，均在前排仪表台；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述车载多媒体显示屏(10)安装在所述仪表台本体(40)上且具有左极限位置和右极限位置，所述车载多媒体显示屏(10)能够在所述左极限位置和右极限位置之间滑动",
+          "competitor_feature": "瑞虎7L 15.6英寸中控屏可沿滑轨横向移动，并移至副驾前方作为娱乐屏使用。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/article/1003109127779/",
+              "title": "瑞虎7L实车解析，滑移屏+1.6T，是否值得入手？",
+              "source_name": "BitAuto",
+              "snippet": "报道称屏幕可沿滑轨横向移动，移至副驾前方。"
+            },
+            {
+              "url": "https://paultan.org/2026/04/07/chery-tiggo-7l-in-china-rebadged-omoda-c7-sliding-15-6-inch-touchscreen-197-ps-1-6l-turbo-4-cylinder/",
+              "title": "Chery Tiggo 7L in China - sliding 15.6-inch touchscreen",
+              "source_name": "Paultan",
+              "snippet": "报道称15.6英寸触控屏可电动滑到副驾侧。"
+            }
+          ],
+          "reasoning": "①X=显示屏沿仪表台左右端位滑动。②Y=瑞虎7L中控屏沿滑轨横移至副驾前方。③(a)是，均为横向滑动；(b)是，位置/方向量纲匹配；(c)是，均相对仪表台左右；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100.0,
+      "searched_queries": [
+        "瑞虎7L 2026 15.6英寸 2.5K 中控滑移屏 副驾",
+        "Chery Tiggo 7L sliding 15.6-inch infotainment screen passenger",
+        "瑞虎7L 1.6T 顶配 中控屏 横向滑移",
+        "site:m.asemanshop.com 瑞虎7L 滑移屏",
+        "site:qixiu88.com 瑞虎7L 中控屏 滑移"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites:m.asemanshop.com",
+        "recommended_sites:qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "领克",
+        "company_en": "Lynk & Co",
+        "product_name": "领克03（2023款/12.8英寸智能随动滑移屏）",
+        "product_name_en": "Lynk & Co 03 (2023 model / 12.8-inch adaptive sliding smart screen)",
+        "product_intro": "2022年9月上市的2023款领克03，公开资料显示搭载12.8英寸智能随动滑移屏，可按座舱场景调整位置和视角。",
+        "market": "中国紧凑型运动轿车市场",
+        "reason_for_deep_dive": "公开资料称其具备智能随动滑移屏，但左/右极限位置的直接描述少于其他候选，因此严格降为可能满足。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://chejiahao.autohome.com.cn/info/11166786",
+          "https://www.smartautoclub.com/p/86726/"
+        ],
+        "initial_evidence_summary": "汽车之家车家号确认2023款领克03于2022年9月23日上市，并描述12.8英寸中控屏可按座舱场景调整位置和视角；智能汽车资源网称其为智能随动滑移屏。"
+      },
+      "launch_date": "2022年9月23日上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/11166786",
+          "title": "芯片也卷！新一代领克03正式上市",
+          "source_name": "汽车之家车家号",
+          "snippet": "报道称2023款领克03在2022-09-23正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种驾驶室仪表台",
+          "competitor_feature": "2023款领克03为乘用轿车，前排战斗座舱包含中控台/仪表台区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/11166786",
+              "title": "芯片也卷！新一代领克03正式上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "报道称新一代03采用全新的战斗座舱并重新设计中控屏。"
+            }
+          ],
+          "reasoning": "①X=驾驶室仪表台。②Y=领克03前排战斗座舱/中控台区域。③(a)是，均为前排仪表台对象；(b)是，二值存在；(c)是，均位于驾驶室前部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括仪表台本体(40)和车载多媒体显示屏(10)",
+          "competitor_feature": "2023款领克03前排中控台配备12.8英寸智能中控屏/智能随动滑移屏。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/11166786",
+              "title": "芯片也卷！新一代领克03正式上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "报道称12.8英寸智能中控屏可按座舱场景调整位置和视角。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/86726/",
+              "title": "电动滑移中控屏新趋势，荣威RX5|领克03|极氪X|岚图知音",
+              "source_name": "智能汽车资源网",
+              "snippet": "文章称新一代03配备12.8英寸智能随动滑移屏。"
+            }
+          ],
+          "reasoning": "①X=仪表台本体+车载多媒体显示屏。②Y=领克03中控台+12.8英寸智能中控屏。③(a)是，中控屏属于车载显示屏；(b)是，部件存在；(c)是，均在前排仪表台；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述车载多媒体显示屏(10)安装在所述仪表台本体(40)上且具有左极限位置和右极限位置，所述车载多媒体显示屏(10)能够在所述左极限位置和右极限位置之间滑动",
+          "competitor_feature": "2023款领克03公开资料称12.8英寸智能中控屏/随动滑移屏可按座舱场景调整位置和视角，但未找到直接写明左右端位或副驾端位的SKU级证据。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/11166786",
+              "title": "芯片也卷！新一代领克03正式上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "报道称12.8英寸智能中控屏可自动调整位置和视角。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/86726/",
+              "title": "电动滑移中控屏新趋势，荣威RX5|领克03|极氪X|岚图知音",
+              "source_name": "智能汽车资源网",
+              "snippet": "文章将领克03列入电动滑移中控屏车型并称其为随动滑移屏。"
+            }
+          ],
+          "reasoning": "①X=显示屏在仪表台左右极限间滑动。②Y=领克03随动滑移屏可调位置/视角。③(a)是，滑移屏概念相同；(b)是，位置集合；(c)可能是，公开资料未明示左右端位；(d)无。故不放宽为明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 93.33,
+      "searched_queries": [
+        "2023款 领克03 12.8英寸 智能随动滑移屏",
+        "Lynk & Co 03 2023 adaptive sliding infotainment screen",
+        "领克03 智能随动滑移屏 位置 视角",
+        "site:m.asemanshop.com 领克03 滑移屏",
+        "site:qixiu88.com 领克03 中控屏 滑移"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites:m.asemanshop.com",
+        "recommended_sites:qixiu88.com"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

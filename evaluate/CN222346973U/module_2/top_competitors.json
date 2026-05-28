@@ -1,0 +1,558 @@
+{
+  "publication_no": "CN222346973U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "浙江松原汽车安全系统股份有限公司",
+        "company_en": "Songyuan Automotive Safety Systems",
+        "product_name": "HA308.2预紧限力式卷收器（132x107.5x78 mm）",
+        "product_name_en": "HA308.2 pretensioning load-limiting retractor (132x107.5x78 mm)",
+        "product_intro": "松原官网列明的安全带产品系列-卷收器单品，尺寸为132x107.5x78 mm，具备预紧、限力、车感/带感锁止等功能。",
+        "market": "中国汽车被动安全系统及前装安全带总成配套市场",
+        "reason_for_deep_dive": "权1核心对象是安全带卷收装置中的框架；HA308.2是公开销售/展示的预紧限力式卷收器单品，最接近待比对对象。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.songyuansafety.com/index.php/solution/info/306.html",
+          "https://www.songyuansafety.com/index.php/solution/belt.html"
+        ],
+        "initial_evidence_summary": "官网产品页直接列出HA308.2预紧限力式卷收器、尺寸132x107.5x78 mm，并说明碰撞时织带快速回卷、车感/带感进入锁止状态。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种框架，应用于安全带卷收装置",
+          "competitor_feature": "HA308.2是预紧限力式安全带卷收器，公开资料未单独披露其内部框架件。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.songyuansafety.com/index.php/solution/info/306.html",
+              "title": "HA308.2预紧限力式卷收器",
+              "source_name": "Songyuan",
+              "snippet": "页面标题为HA308.2预紧限力式卷收器，尺寸132x107.5x78 mm；正文描述碰撞时织带快速回卷、卷收器在车感/带感作用下进入锁止状态。"
+            }
+          ],
+          "reasoning": "①X是用于卷收装置的框架，二值存在。②Y是预紧限力式卷收器，需支承卷带筒/限力杆。③(a)是，卷收器通常包含支承框架；(b)是，均为存在性；(c)是，均在卷收器内部；(d)无。未公开框架件，故可能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述框架包括第一侧板，所述第一侧板适于与所述安全带卷收装置的壳体连接，以形成收纳腔",
+          "competitor_feature": "HA308.2公开资料说明卷收器总成和卷带筒/限力杆功能，但未披露第一侧板、壳体连接关系或收纳腔结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.songyuansafety.com/index.php/solution/info/306.html",
+              "title": "HA308.2预紧限力式卷收器",
+              "source_name": "Songyuan",
+              "snippet": "公开参数和功能描述覆盖预紧、限力、车感、带感、角度锁止等，但未给出侧板-壳体连接剖面或收纳腔图。"
+            }
+          ],
+          "reasoning": "①X为第一侧板与壳体连接形成收纳腔。②Y仅公开卷收器功能/参数。③(a)否，功能描述不等同具体侧板连接；(b)是，存在性；(c)否，缺内部参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述第一侧板在靠近所述收纳腔的一侧设置有凸台",
+          "competitor_feature": "HA308.2公开页面未披露第一侧板靠近收纳腔一侧是否设置凸台。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.songyuansafety.com/index.php/solution/info/306.html",
+              "title": "HA308.2预紧限力式卷收器",
+              "source_name": "Songyuan",
+              "snippet": "页面未公开内部框架第一侧板、收纳腔侧结构或凸台/凸起细节。"
+            }
+          ],
+          "reasoning": "①X为第一侧板内侧凸台。②Y无凸台、侧板内侧或收纳腔侧公开结构。③(a)否；(b)是，存在性；(c)否，缺第一侧板内侧参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 46.67,
+      "searched_queries": [
+        "松原股份 HA308.2 预紧限力式卷收器 132x107.5x78",
+        "Songyuan HA308.2 pretensioning load limiting retractor",
+        "site:songyuansafety.com HA308.2 卷收器 技术参数",
+        "HA308.2 安全带卷收器 框架 侧板 凸台",
+        "HA308.2 retractor frame side plate boss"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "ZF LIFETEC",
+        "company_en": "ZF LIFETEC",
+        "product_name": "SPR6.1卷收器预紧器（mid-2025 rear-seat SKU）",
+        "product_name_en": "SPR6.1 Retractor Pretensioner (mid-2025 rear-seat SKU)",
+        "product_intro": "ZF LIFETEC公开的轻量化安全带卷收器预紧器，采用Snake Pretensioner Retractor方案，官方称2025年中开始供应。",
+        "market": "全球乘用车后排安全带预紧卷收器前装市场",
+        "reason_for_deep_dive": "SPR6.1是明确命名的卷收器预紧器SKU，属于安全带卷收装置核心部件，且供应时间晚于本专利申请日。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://zf-lifetec.com/products/retractor-pretensioner",
+          "https://zf-lifetec.com/press-releases/zf-lifetec-spr6-1"
+        ],
+        "initial_evidence_summary": "官网产品页称SPR6.1为Lightweight seat belt retractor pretensioner；新闻稿说明SPR6.1为new retractor tensioner，并可直接/间接卷收。"
+      },
+      "launch_date": "2025 年中开始供应",
+      "launch_date_evidence": [
+        {
+          "url": "https://zf-lifetec.com/press-releases/zf-lifetec-spr6-1",
+          "title": "ZF LIFETEC SPR6.1",
+          "source_name": "ZF LIFETEC",
+          "snippet": "The new SPR6.1 seat belt will be available from mid-2025, offering vehicle manufacturers a new option to help improve passenger safety."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种框架，应用于安全带卷收装置",
+          "competitor_feature": "SPR6.1为安全带卷收器预紧器，公开资料未单独披露其内部框架件。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://zf-lifetec.com/products/retractor-pretensioner",
+              "title": "Retractor Pretensioner (SPR6.1)",
+              "source_name": "ZF LIFETEC",
+              "snippet": "Lightweight seat belt retractor pretensioner with silent locking；Direct spool-drive pretensioner unit with constant-force load limiter."
+            }
+          ],
+          "reasoning": "①X为卷收装置框架。②Y为SPR6.1卷收器预紧器，含spool-drive和锁止机构。③(a)是，卷收器需框架支承；(b)是，存在性；(c)是，均在卷收器内部；(d)无。缺拆解图，故可能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述框架包括第一侧板，所述第一侧板适于与所述安全带卷收装置的壳体连接，以形成收纳腔",
+          "competitor_feature": "SPR6.1公开资料披露卷收器预紧器、spool-drive和锁止传感器，但未披露侧板与壳体形成收纳腔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://zf-lifetec.com/press-releases/zf-lifetec-spr6-1",
+              "title": "ZF LIFETEC SPR6.1",
+              "source_name": "ZF LIFETEC",
+              "snippet": "SPR6.1 combines variable pretensioning through the torsion bar with compactness of pretensioning through the spool; compatible with sensors that mechanically lock the belt retractor."
+            }
+          ],
+          "reasoning": "①X为侧板-壳体-收纳腔结构。②Y为功能级卷收器说明。③(a)否，功能级公开不等同内部侧板连接；(b)是；(c)否，缺壳体/收纳腔参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述第一侧板在靠近所述收纳腔的一侧设置有凸台",
+          "competitor_feature": "SPR6.1公开页面未披露第一侧板靠近收纳腔侧是否设置凸台。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://zf-lifetec.com/products/retractor-pretensioner",
+              "title": "Retractor Pretensioner (SPR6.1)",
+              "source_name": "ZF LIFETEC",
+              "snippet": "产品页披露SPR6.1的预紧、限力、SLS/ALR等功能；未公开内部框架凸台结构。"
+            }
+          ],
+          "reasoning": "①X为第一侧板内侧凸台。②Y仅有外部产品/功能说明。③(a)否；(b)是，存在性；(c)否，未公开靠收纳腔一侧；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 46.67,
+      "searched_queries": [
+        "ZF LIFETEC SPR6.1 retractor pretensioner frame",
+        "ZF LIFETEC SPR6.1 side plate boss cavity",
+        "site:zf-lifetec.com SPR6.1 retractor pretensioner",
+        "SPR6.1 安全带 卷收器 预紧器",
+        "ZF SPR6.1 seat belt retractor teardown"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "均胜汽车安全系统",
+        "company_en": "Joyson Safety Systems",
+        "product_name": "烟火式预紧装置卷收器（Retractor with Pyrotechnic Pretensioner官网产品页）",
+        "product_name_en": "Retractor with Pyrotechnic Pretensioner (official product page)",
+        "product_intro": "均胜汽车安全系统官网公开的烟火式预紧卷收器产品，面向乘用车、卡车和飞机等量产应用。",
+        "market": "全球汽车安全带卷收器及预紧器前装市场",
+        "reason_for_deep_dive": "该产品直接对应安全带卷收器预紧装置，属于权1框架可能所在的安全带卷收装置。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.joysonsafety.com/en/technology/seatbelts/retractor-with-pyrotechnic-pretensioner/",
+          "https://www.joysonsafety.com/cn/technology/seatbelts/retractor-with-load-limiter/"
+        ],
+        "initial_evidence_summary": "英文官网称其pretensioner retractor紧凑，可安装在多种车辆布局并可集成至座椅；中文官网列有标准卷收器、带限力装置卷收器和烟火式预紧装置卷收器。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种框架，应用于安全带卷收装置",
+          "competitor_feature": "均胜烟火式预紧装置卷收器为安全带卷收装置；公开资料未单独披露内部框架。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.joysonsafety.com/en/technology/seatbelts/retractor-with-pyrotechnic-pretensioner/",
+              "title": "Retractor with Pyrotechnic Pretensioner",
+              "source_name": "Joyson Safety Systems",
+              "snippet": "The compact design of our pretensioner retractor allows installation in various vehicle layouts and can also be integrated directly into the seat structure."
+            }
+          ],
+          "reasoning": "①X为用于安全带卷收装置的框架。②Y为pretensioner retractor。③(a)是，卷收器需内部支承框架；(b)是，存在性；(c)是，均属卷收器内部；(d)无。未公开框架结构，故可能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述框架包括第一侧板，所述第一侧板适于与所述安全带卷收装置的壳体连接，以形成收纳腔",
+          "competitor_feature": "均胜公开资料未披露该卷收器的第一侧板、壳体连接和收纳腔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.joysonsafety.com/cn/technology/seatbelts/retractor-with-load-limiter/",
+              "title": "带限力装置的卷收器",
+              "source_name": "Joyson Safety Systems",
+              "snippet": "中文官网展示带限力装置的卷收器、标准卷收器、烟火式预紧装置的卷收器等产品分类，但未公开内部侧板连接剖面。"
+            }
+          ],
+          "reasoning": "①X为第一侧板与壳体形成收纳腔。②Y为产品分类和功能描述。③(a)否，未到结构连接层级；(b)是；(c)否，缺收纳腔参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述第一侧板在靠近所述收纳腔的一侧设置有凸台",
+          "competitor_feature": "均胜公开资料未披露第一侧板内侧凸台。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.joysonsafety.com/en/technology/seatbelts/retractor-with-pyrotechnic-pretensioner/",
+              "title": "Retractor with Pyrotechnic Pretensioner",
+              "source_name": "Joyson Safety Systems",
+              "snippet": "页面披露烟火式预紧器可减少肩带与乘员之间松弛、紧凑设计可适配多种布局；未公开第一侧板凸台。"
+            }
+          ],
+          "reasoning": "①X为靠收纳腔侧凸台。②Y无凸台/侧板内侧结构公开。③(a)否；(b)是；(c)否，缺收纳腔侧参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 46.67,
+      "searched_queries": [
+        "Joyson Retractor with Pyrotechnic Pretensioner frame",
+        "均胜 烟火式预紧装置 卷收器 框架",
+        "site:joysonsafety.com retractor with pyrotechnic pretensioner side plate",
+        "Joyson seat belt retractor boss cavity",
+        "均胜 安全带 卷收器 拆解 侧板"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "奥托立夫",
+        "company_en": "Autoliv",
+        "product_name": "智能安全带卷收器/预紧器（官网Retractors & Pretensioners产品页）",
+        "product_name_en": "Intelligent seatbelt retractor/pretensioner (official Retractors & Pretensioners page)",
+        "product_intro": "Autoliv官网公开的现代安全带卷收器/预紧器产品族，说明卷收器内的旋转卷轴存储织带，并在碰撞或危险状态下通过传感器和预紧功能保护乘员。",
+        "market": "全球汽车安全带系统及卷收器前装市场",
+        "reason_for_deep_dive": "Autoliv为全球主要安全带供应商，官网明确披露卷收器和预紧器技术，属于安全带卷收装置框架的重点竞品方向。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.autoliv.com/seatbelt"
+        ],
+        "initial_evidence_summary": "官网称seatbelt retractor是紧凑高性能机构，织带存储在旋转spool上，碰撞时pyrotechnic pretensioning收紧安全带。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种框架，应用于安全带卷收装置",
+          "competitor_feature": "Autoliv公开的安全带卷收器/预紧器属于安全带卷收装置，但未公开单独框架件。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.autoliv.com/seatbelt",
+              "title": "Seatbelts",
+              "source_name": "Autoliv",
+              "snippet": "The seatbelt retractor may be hidden, but it plays a crucial role；the webbing is stored on a rotating spool；pyrotechnic pretensioning tightens the belt in a crash."
+            }
+          ],
+          "reasoning": "①X为卷收装置框架。②Y为含旋转spool的安全带卷收器/预紧器。③(a)是，卷收器需框架支承spool；(b)是，存在性；(c)是，卷收器内部；(d)无。未公开框架件，故可能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述框架包括第一侧板，所述第一侧板适于与所述安全带卷收装置的壳体连接，以形成收纳腔",
+          "competitor_feature": "Autoliv官网未披露其卷收器的第一侧板、壳体连接和收纳腔结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.autoliv.com/seatbelt",
+              "title": "Seatbelts",
+              "source_name": "Autoliv",
+              "snippet": "公开资料描述织带存储在rotating spool上，并有传感器、预紧器和限力技术；未给出侧板-壳体连接结构。"
+            }
+          ],
+          "reasoning": "①X为侧板与壳体形成收纳腔。②Y为功能级卷收器说明。③(a)否，功能与具体侧板连接不等价；(b)是；(c)否，缺壳体/收纳腔参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述第一侧板在靠近所述收纳腔的一侧设置有凸台",
+          "competitor_feature": "Autoliv公开资料未披露第一侧板靠近收纳腔一侧的凸台。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.autoliv.com/seatbelt",
+              "title": "Seatbelts",
+              "source_name": "Autoliv",
+              "snippet": "页面未公开卷收器内部框架侧板、收纳腔侧或凸台结构。"
+            }
+          ],
+          "reasoning": "①X为第一侧板内侧凸台。②Y为卷收器/预紧器功能说明，无凸台结构。③(a)否；(b)是；(c)否，缺第一侧板内侧参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 46.67,
+      "searched_queries": [
+        "Autoliv seatbelt retractor frame side plate boss",
+        "Autoliv retractor pretensioner assembly frame",
+        "site:autoliv.com seatbelt retractor pretensioner",
+        "奥托立夫 安全带 卷收器 预紧器 框架",
+        "Autoliv intelligent seatbelt retractor teardown"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "吉利银河",
+        "company_en": "Geely Galaxy",
+        "product_name": "吉利银河M9（2025款210km四驱领航版）",
+        "product_name_en": "Geely Galaxy M9 (2025 210km AWD Linghang Edition)",
+        "product_intro": "吉利银河M9 2025款210km四驱领航版为插电式混合动力六座SUV，2025年9月17日正式上市，公开配置含安全气囊、安全带未系提示，第三方资料称配合预紧限力安全带。",
+        "market": "中国插电式混合动力中大型SUV市场",
+        "reason_for_deep_dive": "用户指定重点关注车型；该车为比亚迪以外的2025年上市插混竞品，公开资料涉及乘员约束与预紧限力安全带。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.galaxy-geely.com/M9",
+          "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml",
+          "https://www.dongchedi.com/auto/params-carIds-248363",
+          "https://chejiahao.m.autohome.com.cn/info/21314287",
+          "https://db.m.auto.sohu.com/model_7673/a/965654976_121130993"
+        ],
+        "initial_evidence_summary": "官方和垂媒资料确认银河M9为2025年上市插混SUV；配置页披露被动安全项目和安全带未系提示；汽车之家/搜狐资料称有预紧式或预紧限力安全带，但未公开卷收器框架内部结构。"
+      },
+      "launch_date": "2025 年 9 月 17 日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml",
+          "title": "吉利银河M9正式上市 限时价17.38-23.88万元",
+          "source_name": "新浪汽车",
+          "snippet": "9月17日，吉利银河M9正式上市，共推出6款车型，官方指导价18.38-24.88万元。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种框架，应用于安全带卷收装置",
+          "competitor_feature": "银河M9公开资料显示车辆具有安全带/预紧限力安全带相关乘员约束配置，但没有公开安全带卷收器或其内部框架。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://chejiahao.m.autohome.com.cn/info/21314287",
+              "title": "银河M9实车曝光：水墨光影+8295芯片，三季度交付即巅峰",
+              "source_name": "汽车之家车家号",
+              "snippet": "安全特性段称结合7气囊系统与预紧式安全带构筑第一层安全防护屏障。"
+            },
+            {
+              "url": "https://db.m.auto.sohu.com/model_7673/a/965654976_121130993",
+              "title": "银河M9构建全维安全体系，重新定义家庭出行防护标准",
+              "source_name": "搜狐汽车",
+              "snippet": "资料称气囊系统与预紧限力安全带协同工作，根据碰撞力度智能调节约束力度。"
+            }
+          ],
+          "reasoning": "①X为卷收装置框架。②Y为整车安全带/预紧限力安全带配置。③(a)否，整车约束配置不等同卷收器框架；(b)是，存在性；(c)否，未到卷收器内部；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述框架包括第一侧板，所述第一侧板适于与所述安全带卷收装置的壳体连接，以形成收纳腔",
+          "competitor_feature": "银河M9公开资料未披露安全带卷收器的第一侧板、壳体连接或收纳腔结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+              "title": "吉利银河M9 2025款210km 四驱领航版参数配置",
+              "source_name": "懂车帝",
+              "snippet": "被动安全配置列明前排/后排气囊、侧安全气帘、中央安全气囊和安全带未系提示；未公开卷收器结构。"
+            }
+          ],
+          "reasoning": "①X为侧板与壳体形成收纳腔。②Y为整车被动安全配置表。③(a)否，配置表无内部结构；(b)是；(c)否，缺卷收器内部参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述第一侧板在靠近所述收纳腔的一侧设置有凸台",
+          "competitor_feature": "银河M9公开资料未披露第一侧板靠近收纳腔一侧设置凸台。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.galaxy-geely.com/M9",
+              "title": "吉利银河M9",
+              "source_name": "吉利银河官网",
+              "snippet": "官网披露车型空间、底盘、动力和安全气囊配置等整车信息，未披露安全带卷收器框架凸台结构。"
+            }
+          ],
+          "reasoning": "①X为第一侧板内侧凸台。②Y为整车官网/参数配置，无卷收器拆解信息。③(a)否；(b)是；(c)否，缺第一侧板内侧参考系；(d)无。证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 30.0,
+      "searched_queries": [
+        "吉利 银河M9 2025款 210km 四驱领航版 安全带 预紧 限力",
+        "吉利 银河M9 安全带卷收器 维修手册",
+        "Geely Galaxy M9 2025 PHEV seat belt pretensioner retractor",
+        "site:qixiu88.com 吉利 银河M9 安全带 维修手册",
+        "site:m.asemanshop.com 银河M9 安全带 卷收器"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch",
+        "recommended_sites"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "赛力斯问界",
+        "company_en": "AITO / Seres",
+        "product_name": "问界M9（2023首发增程/纯电SKU）",
+        "product_name_en": "AITO M9 (2023 launch EREV/EV SKU)",
+        "product_intro": "问界M9为赛力斯与华为合作的全尺寸SUV，2023年12月26日正式上市，早于本专利申请日。",
+        "market": "中国新能源大型SUV市场",
+        "reason_for_deep_dive": "车型级别和用户点名的银河M9直接竞争，且市场资料显示其上市时间早于本专利申请日，需作为排除样本记录。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://auto.sina.com.cn/newcar/x/2023-12-26/detail-imzzapuf4490428.shtml"
+        ],
+        "initial_evidence_summary": "新浪汽车报道2023年12月26日AITO问界M9正式上市，售价46.98-56.98万元，2024年2月26日批量交付。"
+      },
+      "launch_date": "2023 年 12 月 26 日正式上市；2024 年 2 月 26 日批量交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.com.cn/newcar/x/2023-12-26/detail-imzzapuf4490428.shtml",
+          "title": "问界M9正式上市 售价46.98-56.98万元",
+          "source_name": "新浪汽车",
+          "snippet": "2023年12月26日，AITO问界M9正式上市，售价为46.98-56.98万元，新车将于2024年2月26日批量交付。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "该SKU正式上市时间为2023年12月26日，早于本专利申请日2024年4月30日；按模块二规则作为失效/排除候选处理。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种框架，应用于安全带卷收装置",
+          "competitor_feature": "公开上市资料未披露问界M9安全带卷收器框架。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X为卷收器框架。②Y仅为整车上市信息。③(a)否，整车上市不等同框架；(b)是；(c)否，无卷收器内部参考系；(d)无。且上市早于申请日，排除。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述框架包括第一侧板，所述第一侧板适于与所述安全带卷收装置的壳体连接，以形成收纳腔",
+          "competitor_feature": "公开上市资料未披露问界M9安全带卷收器第一侧板、壳体连接或收纳腔。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X为侧板-壳体-收纳腔结构。②Y为上市新闻。③(a)否；(b)是；(c)否；(d)无。无内部结构证据，且时间失效。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述第一侧板在靠近所述收纳腔的一侧设置有凸台",
+          "competitor_feature": "公开上市资料未披露问界M9安全带卷收器第一侧板内侧凸台。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X为第一侧板内侧凸台。②Y无卷收器内部结构。③(a)否；(b)是；(c)否；(d)无。无凸台证据，且该SKU早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "问界M9 2023 正式上市 日期",
+        "问界M9 安全带 预紧 卷收器",
+        "AITO M9 seat belt pretensioner retractor",
+        "site:m.asemanshop.com 问界M9 安全带 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    }
+  ]
+}

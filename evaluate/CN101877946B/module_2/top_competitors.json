@@ -1,0 +1,596 @@
+{
+  "publication_no": "CN101877946B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "深圳市好年璟科技有限公司",
+        "company_en": "Shenzhen Haonianjing Technology Co., Ltd.",
+        "product_name": "光学纹理手机电池后盖（玻璃+防爆膜 / CMPE2018展出）",
+        "product_name_en": "Optical-texture phone battery cover (glass + anti-explosion film / CMPE2018 exhibit)",
+        "product_intro": "玻璃与防爆膜贴合的光学纹理手机电池后盖，在防爆膜上转印UV纹理，并结合真空电子枪镀膜与丝印盖底形成颜色效果。",
+        "market": "中国5G手机非金属外壳、手机电池后盖装饰件市场",
+        "reason_for_deep_dive": "用户指定重点对象；公开报道直接描述“玻璃+防爆膜”、UV纹理转印、丝印盖底、手机电池后盖。",
+        "source_result_ids": [
+          "web:cmpe360-95114",
+          "web:abnotebook-16546"
+        ],
+        "source_urls": [
+          "https://www.cmpe360.com/p/95114",
+          "https://www.abnotebook.com/a/16546"
+        ],
+        "initial_evidence_summary": "CMPE报道写明“光学纹理手机电池后盖（玻璃+防爆膜）”，并描述“在防爆膜上转印UV纹理，结合真空电子枪镀膜与丝印盖底...最后与玻璃进行贴合完成产品”。"
+      },
+      "launch_date": "2018年9月公开展出",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.cmpe360.com/p/95114",
+          "title": "好年璟-5G非金属手机外壳的一颗新星",
+          "source_name": "CMPE艾邦",
+          "snippet": "页面发布时间为2018年9月27日，并写明“好年璟光学纹理手机后盖，摄于CMPE2018手机加工展”。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种电子产品壳体",
+          "competitor_feature": "好年璟公开产品为“光学纹理手机电池后盖（玻璃+防爆膜）”，属于手机电子产品壳体部件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/95114",
+              "title": "好年璟-5G非金属手机外壳的一颗新星",
+              "source_name": "CMPE艾邦",
+              "snippet": "“光学纹理手机电池后盖（玻璃+防爆膜）”；“5G非金属手机外壳”。"
+            }
+          ],
+          "reasoning": "①X为电子产品壳体。②Y为手机电池后盖。③(a)是，手机后盖是电子产品壳体部件；(b)是，均为物件；(c)是，均对应电子产品外壳；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透光基材层",
+          "competitor_feature": "产品采用玻璃与防爆膜贴合；玻璃作为透光基材，防爆膜为贴合层。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/95114",
+              "title": "好年璟-5G非金属手机外壳的一颗新星",
+              "source_name": "CMPE艾邦",
+              "snippet": "“光学纹理手机电池后盖（玻璃+防爆膜）”；“最后与玻璃进行贴合完成产品”。"
+            }
+          ],
+          "reasoning": "①X为透光基材层。②Y为玻璃层。③(a)是，玻璃是透光基材；(b)是，均为材料层；(c)是，均在壳体叠层中；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "还包括位于基材层内表面的透光的光固化胶图案层",
+          "competitor_feature": "报道描述在防爆膜上转印UV纹理，再与玻璃贴合；UV转印通常由UV光固化胶形成纹理图案层，贴合后位于玻璃内侧。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/95114",
+              "title": "好年璟-5G非金属手机外壳的一颗新星",
+              "source_name": "CMPE艾邦",
+              "snippet": "“在防爆膜上转印UV纹理...最后与玻璃进行贴合完成产品”；“拥有先进的UV转印加工设备”。"
+            }
+          ],
+          "reasoning": "①X为内表面透光光固化胶图案层。②Y为防爆膜UV纹理转印层。③(a)是，UV转印对应光固化纹理；(b)是，均为图案层；(c)是，贴合后在玻璃内侧；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "覆盖在图案层上的油墨层",
+          "competitor_feature": "工艺顺序为UV纹理后结合真空电子枪镀膜与丝印盖底；“丝印盖底”是覆盖并形成底色效果的印刷油墨层。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/95114",
+              "title": "好年璟-5G非金属手机外壳的一颗新星",
+              "source_name": "CMPE艾邦",
+              "snippet": "“在防爆膜上转印UV纹理，结合真空电子枪镀膜与丝印盖底最后形成客户想要的颜色及效果”。"
+            }
+          ],
+          "reasoning": "①X为覆盖图案层的油墨层。②Y为UV纹理后的丝印盖底层。③(a)是，丝印盖底为印刷油墨遮盖/显色层；(b)是，均为覆盖层；(c)是，在纹理之后；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 95.0,
+      "searched_queries": [
+        "好年璟 光学纹理 手机电池后盖 玻璃 防爆膜",
+        "好年璟 光学纹理 手机 电池后盖 玻璃 防爆膜 UV纹理 油墨",
+        "好年璟 玻璃+防爆膜 手机",
+        "site:m.asemanshop.com 好年璟 光学纹理手机电池后盖",
+        "site:www.qixiu88.com 好年璟 光学纹理手机电池后盖"
+      ],
+      "searched_providers": [
+        "web.run",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "荣耀终端有限公司",
+        "company_en": "Honor Device Co., Ltd.",
+        "product_name": "荣耀20i（3D复合板材电池盖 / 2019发布）",
+        "product_name_en": "Honor 20i (3D composite-board battery cover / 2019 launch)",
+        "product_intro": "荣耀20i采用3D双曲面复合板材电池盖，公开报道披露其透明3D UV层、UV胶纹理转印、油墨丝印盖底层与3D复合板材等表面装饰结构。",
+        "market": "中国智能手机终端后盖市场",
+        "reason_for_deep_dive": "该终端产品公开报道对后盖叠层和工艺描述最完整，逐层对应权1图案层和油墨层。",
+        "source_result_ids": [
+          "web:cmpe360-103921"
+        ],
+        "source_urls": [
+          "https://www.cmpe360.com/p/103921"
+        ],
+        "initial_evidence_summary": "艾邦文章写明荣耀20i为3D复合板材外壳手机，描述“3D双曲面复合板材电池盖”、透明3D UV层、UV胶纹理转印、油墨丝印盖底层。"
+      },
+      "launch_date": "2019年4月17日发布",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.cmpe360.com/p/103921",
+          "title": "3D复合板材手机塑胶外壳又增加一员：荣耀20i",
+          "source_name": "CMPE艾邦",
+          "snippet": "“4月17日，继华为、OPPO、vivo以及联想之后，荣耀在北京发布全新的3D复合板材外壳手机-荣耀20i”。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种电子产品壳体",
+          "competitor_feature": "荣耀20i的3D复合板材电池盖为手机电子产品壳体。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/103921",
+              "title": "3D复合板材手机塑胶外壳又增加一员：荣耀20i",
+              "source_name": "CMPE艾邦",
+              "snippet": "“全新的3D复合板材外壳手机-荣耀20i”；“3D双曲面复合板材电池盖”。"
+            }
+          ],
+          "reasoning": "①X为电子产品壳体。②Y为荣耀20i手机电池盖。③(a)是，手机电池盖属于电子产品壳体；(b)是，均为物件；(c)是，均为手机外壳部位；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透光基材层",
+          "competitor_feature": "荣耀20i采用3D双曲面复合板材电池盖；报道同时称存在透明3D UV层并通过转印形成炫光效果，基材透光性未逐字明示。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/103921",
+              "title": "3D复合板材手机塑胶外壳又增加一员：荣耀20i",
+              "source_name": "CMPE艾邦",
+              "snippet": "“3D双曲面复合板材电池盖”；“形成透明的3D UV层...打造出光影随行的炫光效果”。"
+            }
+          ],
+          "reasoning": "①X为透光基材层。②Y为复合板材电池盖及透明3D UV层。③(a)是，炫光纹理需透过外层呈现；(b)是，均为层状材料；(c)是，同在后盖叠层；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "还包括位于基材层内表面的透光的光固化胶图案层",
+          "competitor_feature": "荣耀20i报道写明形成透明3D UV层，并通过UV胶纹理转印将纹理转印至复合板材上。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/103921",
+              "title": "3D复合板材手机塑胶外壳又增加一员：荣耀20i",
+              "source_name": "CMPE艾邦",
+              "snippet": "“形成透明的3D UV层...再通过UV胶纹理转印，将纹理转印至复合板材上”。"
+            }
+          ],
+          "reasoning": "①X为透光光固化胶图案层。②Y为透明3D UV层和UV胶纹理转印层。③(a)是，UV胶转印即光固化胶图案；(b)是，均为图案层；(c)是，位于板材叠层；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "覆盖在图案层上的油墨层",
+          "competitor_feature": "荣耀20i表面装饰8层工艺列明“油墨丝印盖底层”，位于光栅纹理转印层之后。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/103921",
+              "title": "3D复合板材手机塑胶外壳又增加一员：荣耀20i",
+              "source_name": "CMPE艾邦",
+              "snippet": "8层工艺包括“光栅纹理转印层”和“油墨丝印盖底层”。"
+            }
+          ],
+          "reasoning": "①X为覆盖图案层的油墨层。②Y为光栅纹理转印后的油墨丝印盖底层。③(a)是，均为油墨覆盖/盖底层；(b)是，均为层；(c)是，位于纹理之后；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 95.0,
+      "searched_queries": [
+        "荣耀20i 3D复合板材 电池盖 UV胶 纹理转印 油墨丝印盖底层",
+        "Honor 20i 3D composite back cover UV transfer ink layer",
+        "site:m.asemanshop.com 荣耀20i 3D复合板材 电池盖",
+        "site:www.qixiu88.com 荣耀20i 3D复合板材 电池盖"
+      ],
+      "searched_providers": [
+        "web.run",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "东莞市聚龙高科电子技术有限公司",
+        "company_en": "Dongguan Julotec Electronic Technology Co., Ltd.",
+        "product_name": "荣耀30后盖（3D炫彩光学膜片 / 胶印+转印+PVD+印刷 SKU）",
+        "product_name_en": "Honor 30 back cover (3D colorful optical film / offset printing + transfer + PVD + printing SKU)",
+        "product_intro": "聚龙高科产品页列出“荣耀30后盖”，制造工艺为胶印、转印、PVD高亮银膜系、印刷、镭雕；公司主页称3D炫彩光学膜片使用玻纤、PMMA、PC等复合材料并配合3D微结构设计。",
+        "market": "中国手机后盖及装饰膜片供应链市场",
+        "reason_for_deep_dive": "聚龙高科为手机电池后盖、复合板后盖和3D微纳炫光膜片供应商；其荣耀30后盖页面公开了转印和印刷工艺。",
+        "source_result_ids": [
+          "web:julotec-pro3",
+          "web:ithome-482828",
+          "web:aibang-38544"
+        ],
+        "source_urls": [
+          "https://julotec.com/pro3/",
+          "https://www.ithome.com/0/482/828.htm",
+          "https://www.aibang.com/a/38544"
+        ],
+        "initial_evidence_summary": "聚龙官网“荣耀30后盖”工艺为胶印+转印+PVD（高亮银膜系）+印刷+镭雕；主页描述3D炫彩光学膜片用于手机，使用玻纤、PMMA、PC等复合材料并配合3D微结构设计。"
+      },
+      "launch_date": "2020年4月15日发布、2020年4月21日上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/482/828.htm",
+          "title": "2999 元至 5499 元，荣耀 30/30 Pro/30 Pro+ 手机正式发布",
+          "source_name": "IT之家",
+          "snippet": "IT之家报道荣耀30系列2020年4月15日正式亮相，并将于4月21日正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种电子产品壳体",
+          "competitor_feature": "聚龙高科“荣耀30后盖”属于手机后盖，即电子产品壳体部件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://julotec.com/pro3/",
+              "title": "3D炫彩光学膜片",
+              "source_name": "聚龙高科",
+              "snippet": "产品列表含“荣耀30 后盖”；公司产品中心定位为手机电池后盖、手机复合板后盖、3D微纳炫光膜片。"
+            }
+          ],
+          "reasoning": "①X为电子产品壳体。②Y为荣耀30手机后盖。③(a)是，手机后盖属于电子产品壳体；(b)是，均为结构件；(c)是，同为手机外壳部件；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透光基材层",
+          "competitor_feature": "聚龙3D炫彩光学膜片使用玻纤、PMMA、PC等复合材料；PMMA/PC属于常见透明基材，但荣耀30后盖页未逐字写“透光”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://julotec.com/",
+              "title": "手机电池后盖,手机复合板后盖,玻纤后盖,3D微纳炫光膜片",
+              "source_name": "聚龙高科",
+              "snippet": "“3D炫彩光学膜片”使用玻纤、PMMA、PC等复合材料，配合3D微结构设计。"
+            }
+          ],
+          "reasoning": "①X为透光基材层。②Y为PMMA/PC等复合材料光学膜片。③(a)是，PMMA/PC可作透光基材；(b)是，均为材料层；(c)是，手机后盖叠层；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "还包括位于基材层内表面的透光的光固化胶图案层",
+          "competitor_feature": "荣耀30后盖工艺含“转印”，公司能力强调纹理设计、纹理加工和3D微结构设计；未逐字说明UV胶位于基材内表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://julotec.com/pro3/",
+              "title": "3D炫彩光学膜片",
+              "source_name": "聚龙高科",
+              "snippet": "“荣耀30 后盖”；“制造工艺：胶印+转印+PVD（高亮银膜系）+印刷+镭雕”。"
+            },
+            {
+              "url": "https://julotec.com/",
+              "title": "手机电池后盖,手机复合板后盖,玻纤后盖,3D微纳炫光膜片",
+              "source_name": "聚龙高科",
+              "snippet": "具备纹理设计、纹理加工能力；3D炫彩光学膜片配合3D微结构设计。"
+            }
+          ],
+          "reasoning": "①X为内表面光固化胶图案层。②Y为转印纹理/3D微结构层。③(a)是，光学转印纹理对应图案层；(b)是，均为纹理层；(c)可能在叠层内；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "覆盖在图案层上的油墨层",
+          "competitor_feature": "荣耀30后盖工艺列出“印刷”；聚龙材料能力页提及油墨等物料分析能力，可对应印刷油墨层。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://julotec.com/pro3/",
+              "title": "3D炫彩光学膜片",
+              "source_name": "聚龙高科",
+              "snippet": "“荣耀30 后盖”；“制造工艺：胶印+转印+PVD（高亮银膜系）+印刷+镭雕”。"
+            },
+            {
+              "url": "https://julotec.com/",
+              "title": "手机电池后盖,手机复合板后盖,玻纤后盖,3D微纳炫光膜片",
+              "source_name": "聚龙高科",
+              "snippet": "材料研究覆盖“油墨，胶水，PVD靶材”等全工艺链物料。"
+            }
+          ],
+          "reasoning": "①X为覆盖图案层的油墨层。②Y为转印后印刷层。③(a)是，印刷在该工艺中对应油墨层；(b)是，均为覆盖层；(c)是，工艺在转印之后；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 90.0,
+      "searched_queries": [
+        "聚龙高科 荣耀30 后盖 转印 PVD 印刷",
+        "Julotec Honor 30 back cover transfer PVD printing",
+        "聚龙高科 3D炫彩光学膜片 PMMA PC 微结构 手机后盖",
+        "site:m.asemanshop.com 聚龙高科 荣耀30 后盖",
+        "site:www.qixiu88.com 聚龙高科 荣耀30 后盖"
+      ],
+      "searched_providers": [
+        "web.run",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "浙江兆奕科技有限公司",
+        "company_en": "Zhejiang Decotec Technology Co., Ltd.",
+        "product_name": "IML手机后盖（IML/IMTL + 薄膜与玻璃贴合 / CMPE2018展示）",
+        "product_name_en": "IML phone back cover (IML/IMTL + film-glass lamination / CMPE2018 showcase)",
+        "product_intro": "行业报道称兆奕为手机塑胶电池盖综合解决方案供应商，研发生产IML/IMTL模内装饰件、3D复合板工艺、薄膜与玻璃贴合工艺，并展示“IML手机后盖”。",
+        "market": "中国手机塑胶电池盖、IML/IMT装饰件供应链市场",
+        "reason_for_deep_dive": "该公司产品覆盖手机塑胶电池盖、IML/IMTL、薄膜与玻璃贴合，与权1的透光基材、光固化图案层、油墨装饰层高度相关。",
+        "source_result_ids": [
+          "web:cmpe360-87527"
+        ],
+        "source_urls": [
+          "https://www.cmpe360.com/p/87527"
+        ],
+        "initial_evidence_summary": "CMPE文章列明兆奕生产IML/IMTL、3D复合板、薄膜与玻璃贴合工艺，并配图说明“兆奕生产的IML手机后盖”。"
+      },
+      "launch_date": "2018年6月公开报道",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.cmpe360.com/p/87527",
+          "title": "仿玻璃后盖之IMT加工企业",
+          "source_name": "CMPE艾邦",
+          "snippet": "页面发布时间为2018年6月13日，文章配图标注“兆奕生产的IML手机后盖 来源于兆奕官网”。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种电子产品壳体",
+          "competitor_feature": "兆奕生产的IML手机后盖、手机塑胶电池盖属于电子产品壳体部件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/87527",
+              "title": "仿玻璃后盖之IMT加工企业",
+              "source_name": "CMPE艾邦",
+              "snippet": "“作为手机塑胶电池盖综合解决方案供应商”；“图 兆奕生产的IML手机后盖”。"
+            }
+          ],
+          "reasoning": "①X为电子产品壳体。②Y为IML手机后盖。③(a)是，手机后盖属于电子产品壳体；(b)是，均为物件；(c)是，同为手机壳体部位；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透光基材层",
+          "competitor_feature": "兆奕披露薄膜与玻璃贴合工艺、薄膜与玻纤复合工艺；玻璃和膜片结构可对应透光基材层，但页面未逐字给出该展示后盖的透光率。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/87527",
+              "title": "仿玻璃后盖之IMT加工企业",
+              "source_name": "CMPE艾邦",
+              "snippet": "兆奕研发生产“3D复合板工艺、薄膜与玻璃贴合工艺、薄膜与玻纤复合工艺”。"
+            }
+          ],
+          "reasoning": "①X为透光基材层。②Y为薄膜与玻璃贴合结构。③(a)是，玻璃/膜片可作透光基材；(b)是，均为层状材料；(c)是，手机后盖叠层；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "还包括位于基材层内表面的透光的光固化胶图案层",
+          "competitor_feature": "兆奕披露IML/IMTL、膜片表面处理与深加工；IML/IMTL手机后盖通常含转印装饰层，但未直接写明UV光固化胶位于内表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/87527",
+              "title": "仿玻璃后盖之IMT加工企业",
+              "source_name": "CMPE艾邦",
+              "snippet": "“模内装饰件（IML/IMTL）、3D复合板工艺...在膜片表面处理和深加工领域获得20多项专利”。"
+            }
+          ],
+          "reasoning": "①X为光固化胶图案层。②Y为IML/IMTL膜片装饰层。③(a)是，IML/IMTL用于图案装饰；(b)是，均为图案层；(c)可能位于膜片/玻璃内侧；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "覆盖在图案层上的油墨层",
+          "competitor_feature": "兆奕IML/IMTL装饰件可包含印刷油墨层；公开页面未直接披露该IML手机后盖的油墨覆盖层。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cmpe360.com/p/87527",
+              "title": "仿玻璃后盖之IMT加工企业",
+              "source_name": "CMPE艾邦",
+              "snippet": "兆奕产品包括“模内装饰件（IML/IMTL）”和“IML手机后盖”。"
+            }
+          ],
+          "reasoning": "①X为覆盖图案层的油墨层。②Y为IML/IMTL装饰件印刷层。③(a)是，模内装饰通常含印刷油墨；(b)是，均为覆盖层；(c)可能覆盖图案；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 85.0,
+      "searched_queries": [
+        "浙江兆奕 IML手机后盖 薄膜 玻璃贴合 UV转印 油墨",
+        "Decotec IML phone back cover film glass lamination UV ink",
+        "兆奕 IMTL 手机塑胶电池盖 3D复合板工艺",
+        "site:m.asemanshop.com 浙江兆奕 IML手机后盖",
+        "site:www.qixiu88.com 浙江兆奕 IML手机后盖"
+      ],
+      "searched_providers": [
+        "web.run",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "深圳市悦迅福科技有限公司",
+        "company_en": "Shenzhen Yuexunfu Technology Co., Ltd.",
+        "product_name": "IML工艺光学纹理手机后盖（UV光学转印纹理电镀级 / 2024产品页）",
+        "product_name_en": "IML optical-texture phone back cover (UV optical transfer texture electroplating grade / 2024 product page)",
+        "product_intro": "悦迅福产品页显示其专业生产IMD/IML工艺类UV光学转印纹理电镀级高端手机后盖及复合板后盖，产品覆盖数码、家电、智能家居、汽车等领域。",
+        "market": "中国IMD/IML手机后盖及复合板后盖加工市场",
+        "reason_for_deep_dive": "产品名称直接是光学纹理手机后盖，且页面公开“UV光学转印纹理”和手机/复合板后盖。",
+        "source_result_ids": [
+          "web:yxfimd-257"
+        ],
+        "source_urls": [
+          "https://www.yxfimd.com/product-detail-257.html"
+        ],
+        "initial_evidence_summary": "悦迅福产品页标题为“IML工艺光学纹理手机后盖”，正文称专业生产IMD/IML工艺类UV光学转印纹理电镀级高端手机后盖及复合板后盖。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种电子产品壳体",
+          "competitor_feature": "悦迅福“IML工艺光学纹理手机后盖”为手机电子产品壳体部件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yxfimd.com/product-detail-257.html",
+              "title": "IML工艺光学纹理手机后盖",
+              "source_name": "悦迅福",
+              "snippet": "页面标题和产品展示名称为“IML工艺光学纹理手机后盖”。"
+            }
+          ],
+          "reasoning": "①X为电子产品壳体。②Y为手机后盖。③(a)是，手机后盖属于电子产品壳体；(b)是，均为物件；(c)是，同为手机壳体；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括透光基材层",
+          "competitor_feature": "产品为IML/复合板后盖；IML手机后盖通常以透明薄膜/片材承载图案，但页面未直接公开基材材质或透光率。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yxfimd.com/product-detail-257.html",
+              "title": "IML工艺光学纹理手机后盖",
+              "source_name": "悦迅福",
+              "snippet": "“IMD/IML工艺类...高端手机后盖及复合板后盖”。"
+            }
+          ],
+          "reasoning": "①X为透光基材层。②Y为IML/复合板手机后盖。③(a)是，IML通常使用透光薄膜承载装饰；(b)是，均为层状材料；(c)同在后盖叠层；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "还包括位于基材层内表面的透光的光固化胶图案层",
+          "competitor_feature": "产品页直接描述“UV光学转印纹理”，可对应光固化纹理图案层；但未明示其位于基材内表面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yxfimd.com/product-detail-257.html",
+              "title": "IML工艺光学纹理手机后盖",
+              "source_name": "悦迅福",
+              "snippet": "“专业生产制造IMD/IML工艺类UV光学转印纹理电镀级高端手机后盖及复合板后盖”。"
+            }
+          ],
+          "reasoning": "①X为内表面透光光固化胶图案层。②Y为UV光学转印纹理层。③(a)是，UV转印对应光固化纹理；(b)是，均为图案层；(c)内表面位置未明示但IML常在内侧；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "覆盖在图案层上的油墨层",
+          "competitor_feature": "页面未直接披露油墨层或丝印盖底层；IML工艺通常有印刷装饰油墨，但当前公开证据不足以确认覆盖关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yxfimd.com/product-detail-257.html",
+              "title": "IML工艺光学纹理手机后盖",
+              "source_name": "悦迅福",
+              "snippet": "页面仅直接披露“UV光学转印纹理电镀级高端手机后盖及复合板后盖”，未检出“油墨/丝印盖底”字面证据。"
+            }
+          ],
+          "reasoning": "①X为覆盖图案层的油墨层。②Y仅公开IML/UV转印纹理。③(a)否，未公开油墨覆盖；(b)否，缺层级证据；(c)否，覆盖位置未知；(d)无反向证据，故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 72.5,
+      "searched_queries": [
+        "悦迅福 IML工艺光学纹理手机后盖 UV光学转印纹理 油墨",
+        "Yuexunfu IML optical texture phone back cover UV transfer ink",
+        "悦迅福 UV光学转印纹理 电镀级 高端手机后盖",
+        "site:m.asemanshop.com 悦迅福 IML 光学纹理 手机后盖",
+        "site:www.qixiu88.com 悦迅福 IML 光学纹理 手机后盖"
+      ],
+      "searched_providers": [
+        "web.run",
+        "curl"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

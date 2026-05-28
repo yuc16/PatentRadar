@@ -1,0 +1,1081 @@
+{
+  "publication_no": "CN222591184U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "赛力斯/问界",
+        "company_en": "SERES/AITO",
+        "product_name": "问界新 M5 香氛盒（2024 新 M5 / 扶手箱前侧底部香氛盒）",
+        "product_name_en": "AITO New M5 fragrance box (2024 New M5 / front lower console box)",
+        "product_intro": "2024 新 M5 的扶手箱前侧底部设置香氛盒，用户可按压弹出后更换香氛块。",
+        "market": "中国智能电动车前装座舱香氛系统",
+        "reason_for_deep_dive": "公开手册出现按压弹出式香氛盒，接近权 1 的锁止/解锁机构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://aito.auto/model/m5-new/document/manual.html",
+          "https://aito.auto/model/m5-new/"
+        ],
+        "initial_evidence_summary": "手册直接给出香氛盒位置、按压弹出、更换香氛块。"
+      },
+      "launch_date": "2024 年 4 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://aito.auto/model/m5-new/",
+          "title": "问界新 M5 官方车型页",
+          "source_name": "AITO",
+          "snippet": "官方新 M5 车型页，对应新 M5 SKU；公开上市报道显示新 M5 于 2024 年 4 月发布。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种香氛装置，用于容纳香氛瓶",
+          "competitor_feature": "问界新 M5 扶手箱前侧底部的香氛盒/香氛系统用于容纳可更换香氛块。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m5-new/document/manual.html",
+              "title": "问界新 M5 用户手册：更换香氛",
+              "source_name": "AITO",
+              "snippet": "手册“更换香氛”：香氛盒位于扶手箱前侧底部；按压香氛盒，待其弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=容纳香氛瓶/香氛块的车载香氛装置。②Y=手册明示香氛盒及香氛块。③(a)是，均为容纳香氛耗材；(b)是，存在/不存在；(c)是，车内香氛模块；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述香氛装置包括：底座，用于放置所述香氛瓶",
+          "competitor_feature": "香氛盒位于扶手箱前侧底部，用于放入香氛块，功能上对应承载香氛耗材的底座/座体。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m5-new/document/manual.html",
+              "title": "问界新 M5 用户手册：更换香氛",
+              "source_name": "AITO",
+              "snippet": "手册“更换香氛”：香氛盒位于扶手箱前侧底部；按压香氛盒，待其弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=底座放置香氛瓶。②Y=扶手箱底部香氛盒放置香氛块。③(a)是，均是耗材承载位；(b)是，二值结构；(c)是，香氛盒内部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一支撑臂，与所述底座连接",
+          "competitor_feature": "公开手册未展示香氛盒内部是否有第一支撑臂与底座连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=与底座连接的第一支撑臂。②Y=仅公开香氛盒位置和更换动作。③(a)否，未公开臂结构；(b)是，结构存在性；(c)否，缺内部参考位置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶",
+          "competitor_feature": "公开手册未展示第二支撑臂或两支撑臂夹持香氛块/瓶。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=两支撑臂夹持香氛瓶。②Y=只见香氛盒和香氛块更换。③(a)否，未公开夹持臂；(b)是，结构存在性；(c)否，缺夹持参考系；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动",
+          "competitor_feature": "手册要求按压香氛盒后弹出，表明存在可在锁止/弹出位置间移动的按压/弹出机构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m5-new/document/manual.html",
+              "title": "问界新 M5 用户手册：更换香氛",
+              "source_name": "AITO",
+              "snippet": "手册“更换香氛”：香氛盒位于扶手箱前侧底部；按压香氛盒，待其弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=作用件在两位置间活动。②Y=按压香氛盒并弹出。③(a)是，均为位置切换机构；(b)是，二值位置；(c)是，沿香氛盒弹出方向；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定",
+          "competitor_feature": "香氛盒日常安装在扶手箱前侧底部，需按压才弹出，推定第一位置下机构抵接并锁定香氛块/盒。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m5-new/document/manual.html",
+              "title": "问界新 M5 用户手册：更换香氛",
+              "source_name": "AITO",
+              "snippet": "手册“更换香氛”：香氛盒位于扶手箱前侧底部；按压香氛盒，待其弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=第一位置抵接并锁定。②Y=按压前香氛盒保持在安装位。③(a)是，保持安装等同锁定；(b)是，二值；(c)是，香氛盒安装位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁",
+          "competitor_feature": "按压后香氛盒弹出并可更换香氛块，推定第二位置解除保持状态。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://aito.auto/model/m5-new/document/manual.html",
+              "title": "问界新 M5 用户手册：更换香氛",
+              "source_name": "AITO",
+              "snippet": "手册“更换香氛”：香氛盒位于扶手箱前侧底部；按压香氛盒，待其弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=第二位置分离并解锁。②Y=弹出后可更换。③(a)是，均为释放耗材；(b)是，二值；(c)是，香氛盒弹出位置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 71.43,
+      "searched_queries": [
+        "site:m.asemanshop.com 香氛盒 吉利",
+        "site:m.asemanshop.com 香氛系统 问界 M5",
+        "site:www.qixiu88.com 香氛盒 极氪",
+        "site:www.qixiu88.com 香氛系统 问界",
+        "吉利 车载香氛系统 香氛盒 更换 2024 车型",
+        "Geely car fragrance system cartridge replacement 2024",
+        "极氪 车载香氛系统 香氛盒 更换 2024",
+        "领克 Z10 香氛系统 香氛盒",
+        "香氛盒 安装于副仪表板 更换 用户手册",
+        "智能香氛 香氛弹 更换 汽车 2024",
+        "按压 香氛盒 弹出 更换 汽车 用户手册",
+        "香氛盒 凹槽 顺时针旋转 汽车",
+        "问界 新M5 香氛盒 按压 弹出 用户手册",
+        "AITO New M5 fragrance box press eject manual",
+        "site:aito.auto/model/m5-new 香氛 更换"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "东风本田",
+        "company_en": "Dongfeng Honda",
+        "product_name": "e:NS2 空气芳香剂滤芯座（2025 e:NS2 / 用户手册旋转式滤芯）",
+        "product_name_en": "e:NS2 air freshener cartridge holder (2025 e:NS2 / rotary cartridge)",
+        "product_intro": "e:NS2 用户手册公开空气芳香剂滤芯采用对齐凹槽、旋转固定和反向旋转拆卸的更换方式。",
+        "market": "中国合资纯电车型前装座舱香氛系统",
+        "reason_for_deep_dive": "旋转式滤芯固定/拆卸动作能覆盖权 1 锁止/解锁核心，但支撑臂细节未公开。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongfeng-honda.com/cars/e_ns2/manual/2025/50TYF600/zh-cn/index.html",
+          "https://www.dongfeng-honda.com/cars/e_ns2"
+        ],
+        "initial_evidence_summary": "手册直接披露凹槽对齐、顺时针旋转安装牢固、逆时针旋转拉出。"
+      },
+      "launch_date": "2024 年 4 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongfeng-honda.com/cars/e_ns2",
+          "title": "东风本田 e:NS2 车型页",
+          "source_name": "Dongfeng Honda",
+          "snippet": "e:NS2 为东风本田 2024 年上市纯电车型，车型页对应 e:NS2 SKU。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种香氛装置，用于容纳香氛瓶",
+          "competitor_feature": "e:NS2 空气芳香剂滤芯/香氛装置用于容纳并固定可更换芳香剂滤芯。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/cars/e_ns2/manual/2025/50TYF600/zh-cn/index.html",
+              "title": "东风本田 e:NS2 用户手册：更换空气芳香剂",
+              "source_name": "Dongfeng Honda",
+              "snippet": "手册“更换空气芳香剂”：逆时针旋转空气芳香剂滤芯后拉出；对齐凹槽插入后顺时针旋转并安装牢固。"
+            }
+          ],
+          "reasoning": "①X=容纳香氛瓶的香氛装置。②Y=手册明示空气芳香剂滤芯更换。③(a)是，均为香氛耗材容纳；(b)是，存在性；(c)是，车内芳香剂装置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述香氛装置包括：底座，用于放置所述香氛瓶",
+          "competitor_feature": "滤芯需对齐凹槽插入安装位，安装位承担放置/承载滤芯的底座功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/cars/e_ns2/manual/2025/50TYF600/zh-cn/index.html",
+              "title": "东风本田 e:NS2 用户手册：更换空气芳香剂",
+              "source_name": "Dongfeng Honda",
+              "snippet": "手册“更换空气芳香剂”：逆时针旋转空气芳香剂滤芯后拉出；对齐凹槽插入后顺时针旋转并安装牢固。"
+            }
+          ],
+          "reasoning": "①X=底座放置香氛瓶。②Y=凹槽插入位承载滤芯。③(a)是，均为放置座；(b)是，结构存在；(c)是，滤芯安装座；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一支撑臂，与所述底座连接",
+          "competitor_feature": "手册仅公开凹槽和旋转动作，未展示第一支撑臂。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第一支撑臂。②Y=凹槽/旋转安装位。③(a)否，凹槽不等同支撑臂；(b)是；(c)否，缺臂的具体位置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶",
+          "competitor_feature": "未公开第二支撑臂与第一支撑臂共同夹持滤芯。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=两臂夹持。②Y=凹槽导向加旋转固定。③(a)否，公开的是凹槽而非双臂；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动",
+          "competitor_feature": "逆时针/顺时针旋转滤芯在拆卸与固定位置间切换，体现沿旋转方向活动的锁止件/配合件。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/cars/e_ns2/manual/2025/50TYF600/zh-cn/index.html",
+              "title": "东风本田 e:NS2 用户手册：更换空气芳香剂",
+              "source_name": "Dongfeng Honda",
+              "snippet": "手册“更换空气芳香剂”：逆时针旋转空气芳香剂滤芯后拉出；对齐凹槽插入后顺时针旋转并安装牢固。"
+            }
+          ],
+          "reasoning": "①X=作用件两位置活动。②Y=滤芯旋转切换安装/拆卸。③(a)是，均位置切换；(b)是，二值位置；(c)是，绕滤芯轴向旋转；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定",
+          "competitor_feature": "顺时针旋转并安装牢固，说明第一位置下滤芯被锁定在装置内。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/cars/e_ns2/manual/2025/50TYF600/zh-cn/index.html",
+              "title": "东风本田 e:NS2 用户手册：更换空气芳香剂",
+              "source_name": "Dongfeng Honda",
+              "snippet": "手册“更换空气芳香剂”：逆时针旋转空气芳香剂滤芯后拉出；对齐凹槽插入后顺时针旋转并安装牢固。"
+            }
+          ],
+          "reasoning": "①X=第一位置抵接锁定。②Y=顺时针旋转安装牢固。③(a)是，牢固安装等同锁定；(b)是；(c)是，滤芯安装座；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁",
+          "competitor_feature": "逆时针旋转后拉出滤芯，说明第二位置解除锁定并允许分离。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dongfeng-honda.com/cars/e_ns2/manual/2025/50TYF600/zh-cn/index.html",
+              "title": "东风本田 e:NS2 用户手册：更换空气芳香剂",
+              "source_name": "Dongfeng Honda",
+              "snippet": "手册“更换空气芳香剂”：逆时针旋转空气芳香剂滤芯后拉出；对齐凹槽插入后顺时针旋转并安装牢固。"
+            }
+          ],
+          "reasoning": "①X=第二位置分离解锁。②Y=逆时针旋转后拉出。③(a)是，均释放耗材；(b)是；(c)是，滤芯安装座；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 71.43,
+      "searched_queries": [
+        "site:m.asemanshop.com 香氛盒 吉利",
+        "site:m.asemanshop.com 香氛系统 问界 M5",
+        "site:www.qixiu88.com 香氛盒 极氪",
+        "site:www.qixiu88.com 香氛系统 问界",
+        "吉利 车载香氛系统 香氛盒 更换 2024 车型",
+        "Geely car fragrance system cartridge replacement 2024",
+        "极氪 车载香氛系统 香氛盒 更换 2024",
+        "领克 Z10 香氛系统 香氛盒",
+        "香氛盒 安装于副仪表板 更换 用户手册",
+        "智能香氛 香氛弹 更换 汽车 2024",
+        "按压 香氛盒 弹出 更换 汽车 用户手册",
+        "香氛盒 凹槽 顺时针旋转 汽车",
+        "东风本田 e:NS2 香氛 更换 空气芳香剂滤芯",
+        "Dongfeng Honda e:NS2 air freshener cartridge rotate manual",
+        "site:dongfeng-honda.com e_ns2 空气芳香剂 滤芯"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "猛士科技",
+        "company_en": "M-Hero",
+        "product_name": "猛士 M817 香氛盒（2025 M817 / 扶手箱按压弹出式）",
+        "product_name_en": "M-Hero M817 fragrance box (2025 M817 / press-eject console box)",
+        "product_intro": "M817 用户手册公开扶手箱内香氛盒，按压弹出后更换香氛块。",
+        "market": "中国豪华越野新能源车型前装座舱香氛系统",
+        "reason_for_deep_dive": "与 AITO 类似，公开“按压弹出”动作，值得深挖锁止结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://yjsc.m-hero.com/M817L29/SF-04001006_f8507.html",
+          "https://www.m-hero.com/m817"
+        ],
+        "initial_evidence_summary": "官方手册披露香氛盒位置和按压弹出更换动作。"
+      },
+      "launch_date": "2025 年",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.m-hero.com/m817",
+          "title": "猛士 M817 官方车型页",
+          "source_name": "M-Hero",
+          "snippet": "官方车型页对应 M817 SKU；该车为 2025 年上市/交付车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种香氛装置，用于容纳香氛瓶",
+          "competitor_feature": "猛士 M817 香氛盒用于容纳可更换香氛块。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://yjsc.m-hero.com/M817L29/SF-04001006_f8507.html",
+              "title": "猛士 M817 用户手册：更换香氛",
+              "source_name": "M-Hero",
+              "snippet": "用户手册“更换香氛”：打开扶手箱，找到香氛盒位置；按压香氛盒并弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=容纳香氛瓶的装置。②Y=手册明示香氛盒/香氛块。③(a)是；(b)是，存在性；(c)是，车内香氛盒；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述香氛装置包括：底座，用于放置所述香氛瓶",
+          "competitor_feature": "香氛盒位于扶手箱内，提供放置香氛块的承载空间。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://yjsc.m-hero.com/M817L29/SF-04001006_f8507.html",
+              "title": "猛士 M817 用户手册：更换香氛",
+              "source_name": "M-Hero",
+              "snippet": "用户手册“更换香氛”：打开扶手箱，找到香氛盒位置；按压香氛盒并弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=底座放置香氛瓶。②Y=香氛盒内放置香氛块。③(a)是；(b)是；(c)是，香氛盒内部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一支撑臂，与所述底座连接",
+          "competitor_feature": "未公开第一支撑臂。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第一支撑臂。②Y=仅公开香氛盒位置。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶",
+          "competitor_feature": "未公开第二支撑臂及双臂夹持。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第二支撑臂夹持。②Y=未披露内部夹持结构。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动",
+          "competitor_feature": "按压香氛盒并弹出，表明存在可在安装位与弹出位之间活动的机构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://yjsc.m-hero.com/M817L29/SF-04001006_f8507.html",
+              "title": "猛士 M817 用户手册：更换香氛",
+              "source_name": "M-Hero",
+              "snippet": "用户手册“更换香氛”：打开扶手箱，找到香氛盒位置；按压香氛盒并弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=作用件位置活动。②Y=按压弹出动作。③(a)是；(b)是，二值位置；(c)是，弹出方向；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定",
+          "competitor_feature": "香氛盒在按压前保持关闭/安装状态，可推定第一位置锁定。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://yjsc.m-hero.com/M817L29/SF-04001006_f8507.html",
+              "title": "猛士 M817 用户手册：更换香氛",
+              "source_name": "M-Hero",
+              "snippet": "用户手册“更换香氛”：打开扶手箱，找到香氛盒位置；按压香氛盒并弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=抵接锁定。②Y=按压前香氛盒保持于扶手箱内。③(a)是；(b)是；(c)是，安装位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁",
+          "competitor_feature": "按压后弹出并可更换香氛块，推定第二位置释放。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://yjsc.m-hero.com/M817L29/SF-04001006_f8507.html",
+              "title": "猛士 M817 用户手册：更换香氛",
+              "source_name": "M-Hero",
+              "snippet": "用户手册“更换香氛”：打开扶手箱，找到香氛盒位置；按压香氛盒并弹出后更换香氛块。"
+            }
+          ],
+          "reasoning": "①X=分离解锁。②Y=弹出后更换。③(a)是；(b)是；(c)是，弹出位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 71.43,
+      "searched_queries": [
+        "site:m.asemanshop.com 香氛盒 吉利",
+        "site:m.asemanshop.com 香氛系统 问界 M5",
+        "site:www.qixiu88.com 香氛盒 极氪",
+        "site:www.qixiu88.com 香氛系统 问界",
+        "吉利 车载香氛系统 香氛盒 更换 2024 车型",
+        "Geely car fragrance system cartridge replacement 2024",
+        "极氪 车载香氛系统 香氛盒 更换 2024",
+        "领克 Z10 香氛系统 香氛盒",
+        "香氛盒 安装于副仪表板 更换 用户手册",
+        "智能香氛 香氛弹 更换 汽车 2024",
+        "按压 香氛盒 弹出 更换 汽车 用户手册",
+        "香氛盒 凹槽 顺时针旋转 汽车",
+        "猛士 M817 香氛盒 按压 弹出 用户手册",
+        "M-Hero M817 fragrance box press eject manual",
+        "site:m-hero.com M817 香氛盒"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "广汽传祺",
+        "company_en": "GAC Motor",
+        "product_name": "传祺 T9M 长续航香氛系统（2025 T9M 长续航 / 用户手册香氛系统）",
+        "product_name_en": "GAC Trumpchi T9M long-range fragrance system (2025 T9M / user manual)",
+        "product_intro": "T9M 长续航用户手册包含香氛系统章节，但公开可抓取文本未展开内部锁止结构。",
+        "market": "中国 MPV/新能源车型前装座舱香氛系统",
+        "reason_for_deep_dive": "同为 2025 前装香氛系统，需深挖手册/PDF 图页确认香氛盒结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_LONG_UserManual/toc.html",
+          "https://www.gacmotor.com/static/upload/explanation/T9M%E9%95%BF%E7%BB%AD%E8%88%AA_%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_20250507.pdf",
+          "https://www.gacmotor.com/vehicles/t9m"
+        ],
+        "initial_evidence_summary": "官方手册目录/PDF 证明该 SKU 配置香氛系统；机械锁止细节不足。"
+      },
+      "launch_date": "2025 年",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.gacmotor.com/vehicles/t9m",
+          "title": "传祺 T9M 官方车型页",
+          "source_name": "GAC Motor",
+          "snippet": "官方车型页对应 T9M SKU；T9M 长续航为 2025 年车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种香氛装置，用于容纳香氛瓶",
+          "competitor_feature": "传祺 T9M 长续航用户手册含香氛系统/香氛盒条目，用于容纳香氛耗材。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_LONG_UserManual/toc.html",
+              "title": "传祺 T9M 长续航用户手册目录",
+              "source_name": "GAC Motor",
+              "snippet": "用户手册含“香氛系统”条目；公开 PDF/HTML 用户手册对应 T9M 长续航 SKU。"
+            },
+            {
+              "url": "https://www.gacmotor.com/static/upload/explanation/T9M%E9%95%BF%E7%BB%AD%E8%88%AA_%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_20250507.pdf",
+              "title": "T9M 长续航用户手册 PDF",
+              "source_name": "GAC Motor",
+              "snippet": "PDF HTTP 200；文件名和手册目录指向 2025-05-07 T9M 长续航用户手册，含香氛系统章节。"
+            }
+          ],
+          "reasoning": "①X=容纳香氛瓶装置。②Y=手册香氛系统条目。③(a)是，均为车内香氛耗材装置；(b)是；(c)是，座舱香氛系统；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述香氛装置包括：底座，用于放置所述香氛瓶",
+          "competitor_feature": "手册目录存在香氛系统，通常包括香氛盒座体；但公开页面未直接给出底座结构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_LONG_UserManual/toc.html",
+              "title": "传祺 T9M 长续航用户手册目录",
+              "source_name": "GAC Motor",
+              "snippet": "用户手册含“香氛系统”条目；公开 PDF/HTML 用户手册对应 T9M 长续航 SKU。"
+            },
+            {
+              "url": "https://www.gacmotor.com/static/upload/explanation/T9M%E9%95%BF%E7%BB%AD%E8%88%AA_%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_20250507.pdf",
+              "title": "T9M 长续航用户手册 PDF",
+              "source_name": "GAC Motor",
+              "snippet": "PDF HTTP 200；文件名和手册目录指向 2025-05-07 T9M 长续航用户手册，含香氛系统章节。"
+            }
+          ],
+          "reasoning": "①X=底座放置香氛瓶。②Y=香氛系统/香氛盒章节。③(a)是，在宽定义下均为承载耗材；(b)是；(c)是，香氛系统内部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一支撑臂，与所述底座连接",
+          "competitor_feature": "未公开第一支撑臂。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第一支撑臂。②Y=仅有香氛系统章节。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶",
+          "competitor_feature": "未公开第二支撑臂和夹持关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=双支撑臂夹持。②Y=未披露内部结构。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动",
+          "competitor_feature": "未检索到 T9M 香氛盒按压、旋转或滑动作用件的公开文字。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=作用件两位置活动。②Y=仅香氛系统条目。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定",
+          "competitor_feature": "未公开第一位置下抵接锁定。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=抵接锁定。②Y=未见锁定动作。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁",
+          "competitor_feature": "未公开第二位置下分离解锁。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=分离解锁。②Y=未见解锁动作。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 47.14,
+      "searched_queries": [
+        "site:m.asemanshop.com 香氛盒 吉利",
+        "site:m.asemanshop.com 香氛系统 问界 M5",
+        "site:www.qixiu88.com 香氛盒 极氪",
+        "site:www.qixiu88.com 香氛系统 问界",
+        "吉利 车载香氛系统 香氛盒 更换 2024 车型",
+        "Geely car fragrance system cartridge replacement 2024",
+        "极氪 车载香氛系统 香氛盒 更换 2024",
+        "领克 Z10 香氛系统 香氛盒",
+        "香氛盒 安装于副仪表板 更换 用户手册",
+        "智能香氛 香氛弹 更换 汽车 2024",
+        "按压 香氛盒 弹出 更换 汽车 用户手册",
+        "香氛盒 凹槽 顺时针旋转 汽车",
+        "传祺 T9M 长续航 香氛系统 用户手册",
+        "GAC Trumpchi T9M fragrance system manual",
+        "site:gacmotor.com T9M 香氛系统"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "吉利汽车",
+        "company_en": "Geely",
+        "product_name": "吉利银河 E5 车内香氛装置（2024 Galaxy E5 / 配置表香氛装置）",
+        "product_name_en": "Geely Galaxy E5 cabin fragrance device (2024 Galaxy E5 / configuration fragrance device)",
+        "product_intro": "银河 E5 公开配置包含车内香氛装置；目前公开资料未披露香氛盒拆装或锁止结构。",
+        "market": "中国新能源 SUV 前装智能座舱香氛系统",
+        "reason_for_deep_dive": "用户点名关注吉利；该 SKU 具备香氛装置但需要维修手册或拆解图验证内部结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongchedi.com/auto/series/6920/config",
+          "https://global.geely.com/-/media/project/web-portal/parallel-car/e5/geely-galaxy-e5-specification-table.pdf",
+          "https://www.geely.com/galaxy/e5"
+        ],
+        "initial_evidence_summary": "配置表证明配备车内香氛装置；未找到可验活的吉利官方香氛盒拆装页面。"
+      },
+      "launch_date": "2024 年 8 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.geely.com/galaxy/e5",
+          "title": "吉利银河 E5 官方车型页",
+          "source_name": "Geely",
+          "snippet": "官方车型页对应 Galaxy E5 SKU；该车为 2024 年 8 月上市车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种香氛装置，用于容纳香氛瓶",
+          "competitor_feature": "吉利银河 E5 配置表/车型资料显示配备车内香氛装置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/series/6920/config",
+              "title": "吉利银河 E5 参数配置",
+              "source_name": "懂车帝",
+              "snippet": "配置表列“车内香氛装置/智能香氛”等舒适配置，用于确认车辆配备车载香氛装置。"
+            },
+            {
+              "url": "https://global.geely.com/-/media/project/web-portal/parallel-car/e5/geely-galaxy-e5-specification-table.pdf",
+              "title": "Geely Galaxy E5 specification table",
+              "source_name": "Geely Global",
+              "snippet": "官方 Galaxy E5 规格表对应 Galaxy E5 SKU；用于锁定车型及上市后市场销售配置。"
+            }
+          ],
+          "reasoning": "①X=容纳香氛瓶的香氛装置。②Y=配置表列车内香氛装置。③(a)是，均为车载香氛装置；(b)是，存在性；(c)是，座舱香氛；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述香氛装置包括：底座，用于放置所述香氛瓶",
+          "competitor_feature": "公开资料未说明 Galaxy E5 香氛耗材座体或底座。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/series/6920/config",
+              "title": "吉利银河 E5 参数配置",
+              "source_name": "懂车帝",
+              "snippet": "配置表列“车内香氛装置/智能香氛”等舒适配置，用于确认车辆配备车载香氛装置。"
+            }
+          ],
+          "reasoning": "①X=底座放置香氛瓶。②Y=仅配置“车内香氛装置”。③(a)否，未公开底座；(b)是；(c)否，缺内部位置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一支撑臂，与所述底座连接",
+          "competitor_feature": "未公开第一支撑臂。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第一支撑臂。②Y=无内部结构证据。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶",
+          "competitor_feature": "未公开第二支撑臂和双臂夹持。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=双臂夹持。②Y=无内部结构证据。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动",
+          "competitor_feature": "未公开可移动作用件。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=作用件两位置活动。②Y=仅配置项。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定",
+          "competitor_feature": "未公开抵接锁定状态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第一位置抵接锁定。②Y=未公开锁止。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁",
+          "competitor_feature": "未公开分离解锁状态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第二位置分离解锁。②Y=未公开解锁。③(a)否；(b)是；(c)否；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 40.0,
+      "searched_queries": [
+        "site:m.asemanshop.com 香氛盒 吉利",
+        "site:m.asemanshop.com 香氛系统 问界 M5",
+        "site:www.qixiu88.com 香氛盒 极氪",
+        "site:www.qixiu88.com 香氛系统 问界",
+        "吉利 车载香氛系统 香氛盒 更换 2024 车型",
+        "Geely car fragrance system cartridge replacement 2024",
+        "极氪 车载香氛系统 香氛盒 更换 2024",
+        "领克 Z10 香氛系统 香氛盒",
+        "香氛盒 安装于副仪表板 更换 用户手册",
+        "智能香氛 香氛弹 更换 汽车 2024",
+        "按压 香氛盒 弹出 更换 汽车 用户手册",
+        "香氛盒 凹槽 顺时针旋转 汽车",
+        "吉利银河E5 香氛系统 香氛盒 更换",
+        "Geely Galaxy E5 fragrance system cartridge manual",
+        "site:geely.com 银河E5 香氛",
+        "site:manual.geely.com 银河E5 香氛"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "极氪",
+        "company_en": "ZEEKR",
+        "product_name": "极氪 001 香氛系统（2024 款 001 / 申请日前发布）",
+        "product_name_en": "ZEEKR 001 fragrance system (2024 model / pre-application launch)",
+        "product_intro": "极氪 001/2024 款在本专利申请日前已发布，作为时间失效候选记录。",
+        "market": "中国高端纯电车型前装香氛系统",
+        "reason_for_deep_dive": "可作为吉利系对照，但发布日期早于 2024-03-07。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.zeekrlife.com/zeekr001"
+        ],
+        "initial_evidence_summary": "车型发布时间早于申请日；不进入 TOP。"
+      },
+      "launch_date": "2024 年 2 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.zeekrlife.com/zeekr001",
+          "title": "极氪 001 官方车型页",
+          "source_name": "ZEEKR",
+          "snippet": "极氪 001 车型页；公开资料显示极氪 001/2024 款早于 2024-03-07 已发布，按流程作为失效候选。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "候选 SKU 首次发布早于本专利申请日 2024-03-07，按流程判定失效。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种香氛装置，用于容纳香氛瓶",
+          "competitor_feature": "极氪 001 配置中存在车载香氛/座舱香氛系统线索。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.zeekrlife.com/zeekr001",
+              "title": "极氪 001 官方车型页",
+              "source_name": "ZEEKR",
+              "snippet": "极氪 001 车型页；公开资料显示极氪 001/2024 款早于 2024-03-07 已发布，按流程作为失效候选。"
+            }
+          ],
+          "reasoning": "①X=车载香氛装置。②Y=极氪001配置香氛系统线索。③(a)是；(b)是；(c)是；(d)有，SKU 早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述香氛装置包括：底座，用于放置所述香氛瓶",
+          "competitor_feature": "极氪 001 公开有座舱舒适配置线索，但本轮未采用跨 SKU 证据证明 所述香氛装置包括：底座，用于放置所述香氛瓶。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=所述香氛装置包括：底座，用于放置所述香氛瓶。②Y=极氪001旧款配置资料。③(a)否，证据未锁定内部结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一支撑臂，与所述底座连接",
+          "competitor_feature": "极氪 001 公开有座舱舒适配置线索，但本轮未采用跨 SKU 证据证明 第一支撑臂，与所述底座连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第一支撑臂，与所述底座连接。②Y=极氪001旧款配置资料。③(a)否，证据未锁定内部结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶",
+          "competitor_feature": "极氪 001 公开有座舱舒适配置线索，但本轮未采用跨 SKU 证据证明 第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶。②Y=极氪001旧款配置资料。③(a)否，证据未锁定内部结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动",
+          "competitor_feature": "极氪 001 公开有座舱舒适配置线索，但本轮未采用跨 SKU 证据证明 作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动。②Y=极氪001旧款配置资料。③(a)否，证据未锁定内部结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定",
+          "competitor_feature": "极氪 001 公开有座舱舒适配置线索，但本轮未采用跨 SKU 证据证明 在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定。②Y=极氪001旧款配置资料。③(a)否，证据未锁定内部结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁",
+          "competitor_feature": "极氪 001 公开有座舱舒适配置线索，但本轮未采用跨 SKU 证据证明 在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁。②Y=极氪001旧款配置资料。③(a)否，证据未锁定内部结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "site:m.asemanshop.com 香氛盒 吉利",
+        "site:m.asemanshop.com 香氛系统 问界 M5",
+        "site:www.qixiu88.com 香氛盒 极氪",
+        "site:www.qixiu88.com 香氛系统 问界",
+        "吉利 车载香氛系统 香氛盒 更换 2024 车型",
+        "Geely car fragrance system cartridge replacement 2024",
+        "极氪 车载香氛系统 香氛盒 更换 2024",
+        "领克 Z10 香氛系统 香氛盒",
+        "香氛盒 安装于副仪表板 更换 用户手册",
+        "智能香氛 香氛弹 更换 汽车 2024",
+        "按压 香氛盒 弹出 更换 汽车 用户手册",
+        "香氛盒 凹槽 顺时针旋转 汽车",
+        "极氪001 2024款 香氛系统 上市 2024 2月",
+        "ZEEKR 001 fragrance system 2024 launch"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "蔚来",
+        "company_en": "NIO",
+        "product_name": "蔚来 ES6 香氛系统（第二代 ES6 / 申请日前发布）",
+        "product_name_en": "NIO ES6 fragrance system (second-generation ES6 / pre-application launch)",
+        "product_intro": "ES6 香氛系统为申请日前公开车型配置，作为时间失效候选。",
+        "market": "中国智能电动车前装香氛系统",
+        "reason_for_deep_dive": "车型发布时间早于 2024-03-07；不进入 TOP。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.nio.cn/es6"
+        ],
+        "initial_evidence_summary": "车型早于申请日；不作为有效竞品 TOP。"
+      },
+      "launch_date": "2023 年 5 月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.nio.cn/es6",
+          "title": "蔚来 ES6 官方车型页",
+          "source_name": "NIO",
+          "snippet": "蔚来 ES6 车型页；蔚来香氛系统为早期上市车型配置，早于本专利申请日。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "候选 SKU 首次上市早于本专利申请日 2024-03-07，按流程判定失效。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种香氛装置，用于容纳香氛瓶",
+          "competitor_feature": "蔚来 ES6 作为搭载座舱香氛配置的量产车型。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.nio.cn/es6",
+              "title": "蔚来 ES6 官方车型页",
+              "source_name": "NIO",
+              "snippet": "蔚来 ES6 车型页；蔚来香氛系统为早期上市车型配置，早于本专利申请日。"
+            }
+          ],
+          "reasoning": "①X=车载香氛装置。②Y=ES6车型座舱香氛配置线索。③(a)是；(b)是；(c)是；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述香氛装置包括：底座，用于放置所述香氛瓶",
+          "competitor_feature": "蔚来 ES6 公开有香氛系统线索，但本轮未锁定权 1 内部结构 所述香氛装置包括：底座，用于放置所述香氛瓶。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=所述香氛装置包括：底座，用于放置所述香氛瓶。②Y=蔚来ES6旧款香氛配置线索。③(a)否，未公开对应结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "第一支撑臂，与所述底座连接",
+          "competitor_feature": "蔚来 ES6 公开有香氛系统线索，但本轮未锁定权 1 内部结构 第一支撑臂，与所述底座连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第一支撑臂，与所述底座连接。②Y=蔚来ES6旧款香氛配置线索。③(a)否，未公开对应结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶",
+          "competitor_feature": "蔚来 ES6 公开有香氛系统线索，但本轮未锁定权 1 内部结构 第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=第二支撑臂，与所述底座连接，所述第二支撑臂与所述第一支撑臂夹持所述香氛瓶。②Y=蔚来ES6旧款香氛配置线索。③(a)否，未公开对应结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动",
+          "competitor_feature": "蔚来 ES6 公开有香氛系统线索，但本轮未锁定权 1 内部结构 作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=作用件，所述作用件可沿第一方向在第一位置与第二位置之间活动。②Y=蔚来ES6旧款香氛配置线索。③(a)否，未公开对应结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定",
+          "competitor_feature": "蔚来 ES6 公开有香氛系统线索，但本轮未锁定权 1 内部结构 在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=在所述第一位置下，所述作用件与所述香氛瓶抵接，此位置下所述香氛瓶与所述香氛装置锁定。②Y=蔚来ES6旧款香氛配置线索。③(a)否，未公开对应结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁",
+          "competitor_feature": "蔚来 ES6 公开有香氛系统线索，但本轮未锁定权 1 内部结构 在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=在所述第二位置下，所述作用件与所述香氛瓶分离，在此位置下所述香氛瓶可实现与所述香氛装置解锁。②Y=蔚来ES6旧款香氛配置线索。③(a)否，未公开对应结构；(b)是；(c)否；(d)有，上市早于申请日。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0,
+      "searched_queries": [
+        "site:m.asemanshop.com 香氛盒 吉利",
+        "site:m.asemanshop.com 香氛系统 问界 M5",
+        "site:www.qixiu88.com 香氛盒 极氪",
+        "site:www.qixiu88.com 香氛系统 问界",
+        "吉利 车载香氛系统 香氛盒 更换 2024 车型",
+        "Geely car fragrance system cartridge replacement 2024",
+        "极氪 车载香氛系统 香氛盒 更换 2024",
+        "领克 Z10 香氛系统 香氛盒",
+        "香氛盒 安装于副仪表板 更换 用户手册",
+        "智能香氛 香氛弹 更换 汽车 2024",
+        "按压 香氛盒 弹出 更换 汽车 用户手册",
+        "香氛盒 凹槽 顺时针旋转 汽车",
+        "蔚来 ES6 香氛系统 香氛瓶 更换",
+        "NIO ES6 fragrance system cartridge"
+      ],
+      "searched_providers": [
+        "web_search",
+        "direct_fetch"
+      ]
+    }
+  ]
+}

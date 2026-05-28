@@ -1,0 +1,561 @@
+{
+  "publication_no": "CN222576765U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "雷克萨斯",
+        "company_en": "Lexus",
+        "product_name": "雷克萨斯RX（2025款350h 四驱醇享版/A25B-FXS 2.5L HEV）",
+        "product_name_en": "Lexus RX 350h (2025 AWD Premium China trim / A25B-FXS 2.5L HEV)",
+        "product_intro": "中国进口雷克萨斯RX 350h四驱醇享版，2.5L自然吸气油电混动，2024年10月上市。",
+        "market": "中国进口中大型混动SUV市场",
+        "reason_for_deep_dive": "用户重点关注候选；同年款2.5L RX350h公开零件页列有空气进气管和进气谐振器。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://detail.zol.com.cn/car/index2111644.shtml",
+          "https://www.dongchedi.com/auto/params-carIds-241507",
+          "https://www.lexuspartsnow.com/oem-lexus-rx350h-air_duct.html",
+          "https://www.lexuspartsnow.com/parts/lexus-resonator-intake-ai~17893-f0140.html"
+        ],
+        "initial_evidence_summary": "车型参数锁定2025款中国RX 350h四驱醇享版；LexusPartsNow显示2023-2025 RX350h 2.5L存在Air Inlet Hose/Duct和17893-F0140 RESONATOR, INTAKE AI。"
+      },
+      "launch_date": "2024年10月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://detail.zol.com.cn/car/index2111644.shtml",
+          "title": "雷克萨斯RX 2025款 350h 四驱醇享版",
+          "source_name": "ZOL汽车",
+          "snippet": "车型页列明：2025款RX 350h四驱醇享版，油电混合，2.5L自然吸气，上市时间2024.10。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种进气装置",
+          "competitor_feature": "2025款雷克萨斯RX 350h的发动机进气系统/空气进气部件构成一种车辆进气装置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://detail.zol.com.cn/car/index2111644.shtml",
+              "title": "雷克萨斯RX 2025款 350h 四驱醇享版",
+              "source_name": "ZOL汽车",
+              "snippet": "车型页列明：2025款RX 350h四驱醇享版，油电混合，2.5L自然吸气，上市时间2024.10。"
+            },
+            {
+              "url": "https://www.lexuspartsnow.com/oem-lexus-rx350h-air_duct.html",
+              "title": "Genuine Lexus RX350h Air Duct",
+              "source_name": "LexusPartsNow",
+              "snippet": "2023-2025 RX350h 2.5L列有Air Inlet Hose、Air Inlet Duct等进气管/导管零件。"
+            }
+          ],
+          "reasoning": "① 权1X：进气装置，二值集合概念，参考对象为车辆/发动机进气系统部件。② 候选Y：公开车型和零件页均指向该车型发动机进气部件。③(a)是，均为进气系统部件；(b)是，存在/不存在；(c)是，均相对发动机进气系统；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "管状件(21)，所述管状件内部设有进气通道",
+          "competitor_feature": "公开零件清单列有RX350h Air Inlet Hose、Air Inlet Duct，属于内部形成进气通道的管状进气件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lexuspartsnow.com/oem-lexus-rx350h-air_duct.html",
+              "title": "Genuine Lexus RX350h Air Duct",
+              "source_name": "LexusPartsNow",
+              "snippet": "2023-2025 RX350h 2.5L列有Air Inlet Hose、Air Inlet Duct等进气管/导管零件。"
+            }
+          ],
+          "reasoning": "① 权1X：内部形成进气通道的管状件，二值结构概念。② 候选Y：公开零件名为air inlet hose/duct/tube或air intake系统清单。③(a)是，hose/duct/tube即进气管路；(b)是，结构存在；(c)是，均在空气滤清器至发动机进气路径；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "消音件(22)，所述消音件(22)包括密封连接于所述管状件外壁上的空心壳体(23)，所述空心壳体(23)的内腔可与所述进气通道连通，使进气噪声能从所述进气通道进入所述内腔来消音",
+          "competitor_feature": "公开零件17893-F0140为RX350h 2.5L RESONATOR, INTAKE AI；可对应外接进气谐振/消音空腔，但未公开密封连接剖面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.lexuspartsnow.com/parts/lexus-resonator-intake-ai~17893-f0140.html",
+              "title": "Lexus 17893-F0140 RESONATOR, INTAKE AI",
+              "source_name": "LexusPartsNow",
+              "snippet": "17893-F0140为Genuine Lexus RESONATOR, INTAKE AI，适配2023-2025 Lexus RX350h 2.5L。"
+            },
+            {
+              "url": "https://www.lexuspartsnow.com/oem-lexus-rx350h-air_duct.html",
+              "title": "Genuine Lexus RX350h Air Duct",
+              "source_name": "LexusPartsNow",
+              "snippet": "2023-2025 RX350h 2.5L列有Air Inlet Hose、Air Inlet Duct等进气管/导管零件。"
+            }
+          ],
+          "reasoning": "① 权1X：外接空心消音壳体且与进气通道连通以消音。② 候选Y：公开零件为intake/air resonator或resonator chamber。③(a)是，resonator对应进气消音腔；(b)是，结构存在；(c)是，均在发动机进气路径；(d)无反向证据。缺密封剖面，故可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 93.33,
+      "searched_queries": [
+        "雷克萨斯RX 2025款 350h 四驱醇享版 上市时间 A25B-FXS",
+        "2025 Lexus RX350h 2.5L air inlet hose resonator 17893-F0140",
+        "Lexus RX350h air duct 17880 17893-F0140"
+      ],
+      "searched_providers": [
+        "web.run",
+        "urllib/curl fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "斯巴鲁",
+        "company_en": "Subaru",
+        "product_name": "CROSSTREK旭豹（2025款2.5i AWD豪华版EyeSight/FB25 2.5L）",
+        "product_name_en": "Subaru Crosstrek (2025 2.5i AWD Luxury EyeSight / FB25 2.5L)",
+        "product_intro": "中国进口斯巴鲁CROSSTREK旭豹2025款2.5i AWD豪华版，2.5L水平对置自然吸气，全时四驱。",
+        "market": "中国进口紧凑型SUV市场",
+        "reason_for_deep_dive": "2.5L自然吸气车型的公开OEM零件页列有2024-2025 Crosstrek专用进气谐振器。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongchedi.com/auto/series/6155/model-243232",
+          "https://www.autohome.com.cn/news/202412/1302599.html",
+          "https://www.subarupartsdeal.com/parts/subaru-resonator-compl~46043fn03a.html",
+          "https://www.subarupartsdeal.com/parts-list/2025-subaru-crosstrek--2_5l_h4-limited_eyesight_4s/engine_auxiliaries/air_cleaner_element.html"
+        ],
+        "initial_evidence_summary": "2025款Crosstrek旭豹于2024年12月上市；SubaruPartsDeal显示46043FN03A RESONATOR COMPL适配2024-2025 Crosstrek 2.5L，空气滤清器清单列有Engine Air Intake Resonator。"
+      },
+      "launch_date": "2024年12月7日上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.autohome.com.cn/news/202412/1302599.html",
+          "title": "2025款斯巴鲁旭豹上市，推3款配置车型",
+          "source_name": "汽车之家",
+          "snippet": "2024年12月7日，2025款斯巴鲁旭豹正式上市，三款车型搭载2.5L水平对置发动机。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种进气装置",
+          "competitor_feature": "2025款CROSSTREK旭豹2.5L发动机空气滤清器/进气系统构成一种车辆进气装置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/series/6155/model-243232",
+              "title": "CROSSTREK旭豹 2025款 2.5i AWD豪华版EyeSight",
+              "source_name": "懂车帝",
+              "snippet": "车型页列明2025款CROSSTREK旭豹，2.5L H4自然吸气，全时四驱。"
+            },
+            {
+              "url": "https://www.subarupartsdeal.com/parts-list/2025-subaru-crosstrek--2_5l_h4-limited_eyesight_4s/engine_auxiliaries/air_cleaner_element.html",
+              "title": "Air Cleaner & Element - 2025 Subaru Crosstrek 2.5L",
+              "source_name": "SubaruPartsDeal",
+              "snippet": "2025 Crosstrek 2.5L空气滤清器/进气系统清单列有Engine Air Intake Resonator及相关安装件。"
+            }
+          ],
+          "reasoning": "① 权1X：进气装置，二值集合概念，参考对象为车辆/发动机进气系统部件。② 候选Y：公开车型和零件页均指向该车型发动机进气部件。③(a)是，均为进气系统部件；(b)是，存在/不存在；(c)是，均相对发动机进气系统；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "管状件(21)，所述管状件内部设有进气通道",
+          "competitor_feature": "2025 Crosstrek 2.5L空气滤清器/进气系统清单含进气相关管路、夹具和谐振器，说明存在管状进气通道。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.subarupartsdeal.com/parts-list/2025-subaru-crosstrek--2_5l_h4-limited_eyesight_4s/engine_auxiliaries/air_cleaner_element.html",
+              "title": "Air Cleaner & Element - 2025 Subaru Crosstrek 2.5L",
+              "source_name": "SubaruPartsDeal",
+              "snippet": "2025 Crosstrek 2.5L空气滤清器/进气系统清单列有Engine Air Intake Resonator及相关安装件。"
+            }
+          ],
+          "reasoning": "① 权1X：内部形成进气通道的管状件，二值结构概念。② 候选Y：公开零件名为air inlet hose/duct/tube或air intake系统清单。③(a)是，hose/duct/tube即进气管路；(b)是，结构存在；(c)是，均在空气滤清器至发动机进气路径；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "消音件(22)，所述消音件(22)包括密封连接于所述管状件外壁上的空心壳体(23)，所述空心壳体(23)的内腔可与所述进气通道连通，使进气噪声能从所述进气通道进入所述内腔来消音",
+          "competitor_feature": "46043FN03A为2024-2025 Crosstrek 2.5L RESONATOR COMPL，位于air cleaner/进气系统；缺少密封连接剖面公开。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.subarupartsdeal.com/parts/subaru-resonator-compl~46043fn03a.html",
+              "title": "Subaru 46043FN03A RESONATOR COMPL",
+              "source_name": "SubaruPartsDeal",
+              "snippet": "46043FN03A为Genuine Subaru RESONATOR COMPL，适配2024-2025 Subaru Crosstrek 2.5L。"
+            },
+            {
+              "url": "https://www.subarupartsdeal.com/parts-list/2025-subaru-crosstrek--2_5l_h4-limited_eyesight_4s/engine_auxiliaries/air_cleaner_element.html",
+              "title": "Air Cleaner & Element - 2025 Subaru Crosstrek 2.5L",
+              "source_name": "SubaruPartsDeal",
+              "snippet": "2025 Crosstrek 2.5L空气滤清器/进气系统清单列有Engine Air Intake Resonator及相关安装件。"
+            }
+          ],
+          "reasoning": "① 权1X：外接空心消音壳体且与进气通道连通以消音。② 候选Y：公开零件为intake/air resonator或resonator chamber。③(a)是，resonator对应进气消音腔；(b)是，结构存在；(c)是，均在发动机进气路径；(d)无反向证据。缺密封剖面，故可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 93.33,
+      "searched_queries": [
+        "2025款 斯巴鲁旭豹 上市 2.5i AWD",
+        "2025 Subaru Crosstrek 2.5L engine air intake resonator 46043FN03A",
+        "Subaru Crosstrek air cleaner element 46043FN03A"
+      ],
+      "searched_providers": [
+        "web.run",
+        "urllib/curl fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "沃尔沃亚太",
+        "company_en": "Volvo Cars",
+        "product_name": "沃尔沃XC60（2025款B5 四驱智远豪华版/B420T11 2.0T 48V）",
+        "product_name_en": "Volvo XC60 (2025 B5 AWD Plus/Luxury China trim / B420T11 2.0T MHEV)",
+        "product_intro": "沃尔沃亚太XC60 2025款B5四驱智远豪华版，2.0T汽油+48V轻混，2024年6月上市。",
+        "market": "中国豪华中型SUV市场",
+        "reason_for_deep_dive": "公开零件页显示XC60 B5 2022-2026上部进气谐振器32298336，并有2021-2025车型适配证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://detail.zol.com.cn/2031/2030406/param.shtml",
+          "https://detail.zol.com.cn/series/2530/10867276_1.html",
+          "https://www.ebay.com/p/19056451211",
+          "https://aleto.md/detail/rezonator-vozdushnyi-volvo-xc60-22-25-b5-verhnii/"
+        ],
+        "initial_evidence_summary": "ZOL锁定2025款XC60 B5智远豪华版；eBay/Aleto公开32298336为Volvo XC60 2022-2026 B5 Engine Air Intake Resonator。"
+      },
+      "launch_date": "2024年6月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://detail.zol.com.cn/2031/2030406/param.shtml",
+          "title": "沃尔沃XC60 2025款 B5 四驱智远豪华版参数",
+          "source_name": "ZOL汽车",
+          "snippet": "参数页列明沃尔沃XC60 2025款B5四驱智远豪华版，上市时间2024.06，2.0T 48V轻混。"
+        },
+        {
+          "url": "https://detail.zol.com.cn/series/2530/10867276_1.html",
+          "title": "沃尔沃XC60 2025款系列汽车",
+          "source_name": "ZOL汽车",
+          "snippet": "2025款XC60系列为沃尔沃亚太车型，能源类型汽油+48V轻混，上市时间含2024.06/2024.11。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种进气装置",
+          "competitor_feature": "2025款沃尔沃XC60 B5发动机空气进气/空气滤清器谐振器系统构成一种车辆进气装置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://detail.zol.com.cn/2031/2030406/param.shtml",
+              "title": "沃尔沃XC60 2025款 B5 四驱智远豪华版参数",
+              "source_name": "ZOL汽车",
+              "snippet": "参数页列明沃尔沃XC60 2025款B5四驱智远豪华版，上市时间2024.06，2.0T 48V轻混。"
+            },
+            {
+              "url": "https://aleto.md/detail/rezonator-vozdushnyi-volvo-xc60-22-25-b5-verhnii/",
+              "title": "Volvo XC60 22-26 B5 Engine Air Intake Resonator 32298336",
+              "source_name": "Aleto",
+              "snippet": "页面列明Volvo XC60 22-26 B5上部空气谐振器，目录名称Engine Air Intake Resonator 32298336。"
+            }
+          ],
+          "reasoning": "① 权1X：进气装置，二值集合概念，参考对象为车辆/发动机进气系统部件。② 候选Y：公开车型和零件页均指向该车型发动机进气部件。③(a)是，均为进气系统部件；(b)是，存在/不存在；(c)是，均相对发动机进气系统；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "管状件(21)，所述管状件内部设有进气通道",
+          "competitor_feature": "32298336被公开为Fresh Air Pipe/Engine Air Intake Resonator，指向发动机空气进气管路。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ebay.com/p/19056451211",
+              "title": "2022-2025 VOLVO XC40 AIR CLEANER RESONATOR 32298336",
+              "source_name": "eBay/Volvo Cars Gilbert Parts",
+              "snippet": "页面列明Genuine Volvo Engine Air Intake Resonator 32298336，适配S60/S90/V60/V90/XC60/XC90 2021-2025。"
+            },
+            {
+              "url": "https://aleto.md/detail/rezonator-vozdushnyi-volvo-xc60-22-25-b5-verhnii/",
+              "title": "Volvo XC60 22-26 B5 Engine Air Intake Resonator 32298336",
+              "source_name": "Aleto",
+              "snippet": "页面列明Volvo XC60 22-26 B5上部空气谐振器，目录名称Engine Air Intake Resonator 32298336。"
+            }
+          ],
+          "reasoning": "① 权1X：内部形成进气通道的管状件，二值结构概念。② 候选Y：公开零件名为air inlet hose/duct/tube或air intake系统清单。③(a)是，hose/duct/tube即进气管路；(b)是，结构存在；(c)是，均在空气滤清器至发动机进气路径；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "消音件(22)，所述消音件(22)包括密封连接于所述管状件外壁上的空心壳体(23)，所述空心壳体(23)的内腔可与所述进气通道连通，使进气噪声能从所述进气通道进入所述内腔来消音",
+          "competitor_feature": "32298336公开名称为Engine Air Intake Resonator并适配XC60 B5；可对应进气消音空腔，未见密封连接剖面。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ebay.com/p/19056451211",
+              "title": "2022-2025 VOLVO XC40 AIR CLEANER RESONATOR 32298336",
+              "source_name": "eBay/Volvo Cars Gilbert Parts",
+              "snippet": "页面列明Genuine Volvo Engine Air Intake Resonator 32298336，适配S60/S90/V60/V90/XC60/XC90 2021-2025。"
+            },
+            {
+              "url": "https://aleto.md/detail/rezonator-vozdushnyi-volvo-xc60-22-25-b5-verhnii/",
+              "title": "Volvo XC60 22-26 B5 Engine Air Intake Resonator 32298336",
+              "source_name": "Aleto",
+              "snippet": "页面列明Volvo XC60 22-26 B5上部空气谐振器，目录名称Engine Air Intake Resonator 32298336。"
+            }
+          ],
+          "reasoning": "① 权1X：外接空心消音壳体且与进气通道连通以消音。② 候选Y：公开零件为intake/air resonator或resonator chamber。③(a)是，resonator对应进气消音腔；(b)是，结构存在；(c)是，均在发动机进气路径；(d)无反向证据。缺密封剖面，故可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 93.33,
+      "searched_queries": [
+        "沃尔沃XC60 2025款 B5 智远豪华版 上市时间",
+        "32298336 Volvo XC60 2025 Engine Air Intake Resonator",
+        "Volvo XC60 22-26 B5 resonator 32298336"
+      ],
+      "searched_providers": [
+        "web.run",
+        "urllib/curl fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "北京奔驰",
+        "company_en": "Mercedes-Benz",
+        "product_name": "奔驰GLC（2025款改款GLC 300 L 4MATIC动感型5座/M254 2.0T）",
+        "product_name_en": "Mercedes-Benz GLC 300 L (2025 facelift 4MATIC Dynamic 5-seat / M254 2.0T)",
+        "product_intro": "北京奔驰GLC 300 L 4MATIC动感型5座，M254 2.0T发动机，2025年3月上市。",
+        "market": "中国豪华中型SUV市场",
+        "reason_for_deep_dive": "M254 2.0T车型公开资料直接描述进气谐振器为连接进气管的塑料腔体，用于降低进气噪声。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongchedi.com/auto/params-carIds-246162",
+          "https://ahparts.com/buy-used/2023-mercedes-c300-air-intake-to-damper-filter-2-0l-254-090-10-00-2540901000/554517-1"
+        ],
+        "initial_evidence_summary": "懂车帝锁定中国GLC 300 L 2025改款/M254；AH Parts公开2540901000为OEM air intake to damper filter，兼容2025 GLC300 4Matic 2.0L。"
+      },
+      "launch_date": "2025年3月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongchedi.com/auto/params-carIds-246162",
+          "title": "奔驰GLC 2025款 改款 GLC 300 L 4MATIC 动感型 5座参数配置",
+          "source_name": "懂车帝",
+          "snippet": "参数页列明北京奔驰GLC 300 L 4MATIC，上市时间2025.03，发动机254 920，2.0T。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种进气装置",
+          "competitor_feature": "2025款奔驰GLC 300 L的M254发动机空气进气谐振器/进气管路构成一种车辆进气装置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-246162",
+              "title": "奔驰GLC 2025款 改款 GLC 300 L 4MATIC 动感型 5座参数配置",
+              "source_name": "懂车帝",
+              "snippet": "参数页列明北京奔驰GLC 300 L 4MATIC，上市时间2025.03，发动机254 920，2.0T。"
+            },
+            {
+              "url": "https://ahparts.com/buy-used/2023-mercedes-c300-air-intake-to-damper-filter-2-0l-254-090-10-00-2540901000/554517-1",
+              "title": "2023 Mercedes C300 Air Intake To Damper Filter - 2.0l 254-090-10-00",
+              "source_name": "AH Parts",
+              "snippet": "页面列明OEM air intake to damper filter，零件254-090-10-00/2540901000；兼容2025 GLC300 4Matic 2.0L。"
+            }
+          ],
+          "reasoning": "① 权1X：进气装置，二值集合概念，参考对象为车辆/发动机进气系统部件。② 候选Y：公开车型和零件页均指向该车型发动机进气部件。③(a)是，均为进气系统部件；(b)是，存在/不存在；(c)是，均相对发动机进气系统；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "管状件(21)，所述管状件内部设有进气通道",
+          "competitor_feature": "公开零件2540901000为OEM air intake to damper filter，兼容2025 GLC300 4Matic 2.0L，指向发动机进气管路。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://ahparts.com/buy-used/2023-mercedes-c300-air-intake-to-damper-filter-2-0l-254-090-10-00-2540901000/554517-1",
+              "title": "2023 Mercedes C300 Air Intake To Damper Filter - 2.0l 254-090-10-00",
+              "source_name": "AH Parts",
+              "snippet": "页面列明OEM air intake to damper filter，零件254-090-10-00/2540901000；兼容2025 GLC300 4Matic 2.0L。"
+            }
+          ],
+          "reasoning": "① 权1X：内部形成进气通道的管状件，二值结构概念。② 候选Y：公开零件名为air inlet hose/duct/tube或air intake系统清单。③(a)是，hose/duct/tube即进气管路；(b)是，结构存在；(c)是，均在空气滤清器至发动机进气路径；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "消音件(22)，所述消音件(22)包括密封连接于所述管状件外壁上的空心壳体(23)，所述空心壳体(23)的内腔可与所述进气通道连通，使进气噪声能从所述进气通道进入所述内腔来消音",
+          "competitor_feature": "公开零件2540901000为air intake to damper filter；可对应进气消音/阻尼腔，但未公开中国GLC 300 L剖面和密封连接细节。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://ahparts.com/buy-used/2023-mercedes-c300-air-intake-to-damper-filter-2-0l-254-090-10-00-2540901000/554517-1",
+              "title": "2023 Mercedes C300 Air Intake To Damper Filter - 2.0l 254-090-10-00",
+              "source_name": "AH Parts",
+              "snippet": "页面列明OEM air intake to damper filter，零件254-090-10-00/2540901000；兼容2025 GLC300 4Matic 2.0L。"
+            },
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-246162",
+              "title": "奔驰GLC 2025款 改款 GLC 300 L 4MATIC 动感型 5座参数配置",
+              "source_name": "懂车帝",
+              "snippet": "参数页列明北京奔驰GLC 300 L 4MATIC，上市时间2025.03，发动机254 920，2.0T。"
+            }
+          ],
+          "reasoning": "① 权1X：外接空心消音壳体且与进气通道连通以消音。② 候选Y：2540901000为air intake to damper filter，兼容2025 GLC300 2.0L。③(a)是，damper filter对应进气阻尼/消音件；(b)是，结构存在；(c)是，均在发动机进气路径；(d)无反向证据。缺剖面，故可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 93.33,
+      "searched_queries": [
+        "奔驰GLC 2025款 改款 GLC 300 L 4MATIC 动感型 5座 发动机254 920",
+        "2025 Mercedes GLC300 M254 air intake resonator 2540901000",
+        "Mercedes GLC300 intake resonator plastic chamber connected to air intake tube",
+        "2540901000 2025 GLC300 air intake to damper filter"
+      ],
+      "searched_providers": [
+        "web.run",
+        "urllib/curl fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "东风本田",
+        "company_en": "Honda",
+        "product_name": "本田CR-V（2025款240TURBO两驱锋尚版/1.5T）",
+        "product_name_en": "Honda CR-V (2025 240TURBO FWD Fashion trim / 1.5T)",
+        "product_intro": "中国东风本田CR-V 2025款240TURBO两驱锋尚版，1.5T+CVT燃油动力。",
+        "market": "中国紧凑型SUV市场",
+        "reason_for_deep_dive": "同代1.5T CR-V公开OEM零件页列有intake air cleaner resonator chamber，结构名称与权1消音空心壳体高度对应。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongchedi.com/article/7518726837011366415",
+          "https://detail.zol.com.cn/car/index2142768.shtml",
+          "https://www.hondapartsnow.com/genuine/honda~chamber~b~resonator~17236-6cj-h00.html",
+          "https://ahparts.com/buy-used/2025-honda-cr-v-intake-air-cleaner-resonator-chamber-17236-6cj-h00-172366cjh00/549259-1"
+        ],
+        "initial_evidence_summary": "懂车帝文章列出中国2025款CR-V 240TURBO配置；HondaPartsNow/AH Parts列明2025 Honda CR-V 1.5T进气空气滤清器谐振腔17236-6CJ-H00。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种进气装置",
+          "competitor_feature": "2025款本田CR-V 1.5T的空气进气/空气滤清器谐振腔系统构成一种车辆进气装置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/article/7518726837011366415",
+              "title": "2025款本田CR-V全系配置对比",
+              "source_name": "懂车帝",
+              "snippet": "文章列出2025款CR-V 240TURBO两驱锋尚版，1.5T+CVT，作为中国在售配置。"
+            },
+            {
+              "url": "https://ahparts.com/buy-used/2025-honda-cr-v-intake-air-cleaner-resonator-chamber-17236-6cj-h00-172366cjh00/549259-1",
+              "title": "2025 Honda CR-V Intake Air Cleaner Resonator Chamber",
+              "source_name": "AH Parts",
+              "snippet": "页面列明2025 Honda CR-V intake air cleaner resonator chamber，OEM零件17236-6CJ-H00，1.5L Turbo。"
+            }
+          ],
+          "reasoning": "① 权1X：进气装置，二值集合概念，参考对象为车辆/发动机进气系统部件。② 候选Y：公开车型和零件页均指向该车型发动机进气部件。③(a)是，均为进气系统部件；(b)是，存在/不存在；(c)是，均相对发动机进气系统；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "管状件(21)，所述管状件内部设有进气通道",
+          "competitor_feature": "2025 Honda CR-V 1.5T公开零件为intake air cleaner resonator chamber并属于air intake系统，存在进气管路。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://ahparts.com/buy-used/2025-honda-cr-v-intake-air-cleaner-resonator-chamber-17236-6cj-h00-172366cjh00/549259-1",
+              "title": "2025 Honda CR-V Intake Air Cleaner Resonator Chamber",
+              "source_name": "AH Parts",
+              "snippet": "页面列明2025 Honda CR-V intake air cleaner resonator chamber，OEM零件17236-6CJ-H00，1.5L Turbo。"
+            },
+            {
+              "url": "https://www.hondapartsnow.com/genuine/honda~chamber~b~resonator~17236-6cj-h00.html",
+              "title": "Honda 17236-6CJ-H00 CHAMBER B, RESONATOR",
+              "source_name": "HondaPartsNow",
+              "snippet": "17236-6CJ-H00为CHAMBER B, RESONATOR，适配2023-2025 Honda CR-V。"
+            }
+          ],
+          "reasoning": "① 权1X：内部形成进气通道的管状件，二值结构概念。② 候选Y：公开零件名为air inlet hose/duct/tube或air intake系统清单。③(a)是，hose/duct/tube即进气管路；(b)是，结构存在；(c)是，均在空气滤清器至发动机进气路径；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "消音件(22)，所述消音件(22)包括密封连接于所述管状件外壁上的空心壳体(23)，所述空心壳体(23)的内腔可与所述进气通道连通，使进气噪声能从所述进气通道进入所述内腔来消音",
+          "competitor_feature": "17236-6CJ-H00公开为CHAMBER B, RESONATOR/进气空气滤清器谐振腔；缺少中国240TURBO SKU剖面和密封连接公开。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.hondapartsnow.com/genuine/honda~chamber~b~resonator~17236-6cj-h00.html",
+              "title": "Honda 17236-6CJ-H00 CHAMBER B, RESONATOR",
+              "source_name": "HondaPartsNow",
+              "snippet": "17236-6CJ-H00为CHAMBER B, RESONATOR，适配2023-2025 Honda CR-V。"
+            },
+            {
+              "url": "https://ahparts.com/buy-used/2025-honda-cr-v-intake-air-cleaner-resonator-chamber-17236-6cj-h00-172366cjh00/549259-1",
+              "title": "2025 Honda CR-V Intake Air Cleaner Resonator Chamber",
+              "source_name": "AH Parts",
+              "snippet": "页面列明2025 Honda CR-V intake air cleaner resonator chamber，OEM零件17236-6CJ-H00，1.5L Turbo。"
+            }
+          ],
+          "reasoning": "① 权1X：外接空心消音壳体且与进气通道连通以消音。② 候选Y：公开零件为intake/air resonator或resonator chamber。③(a)是，resonator对应进气消音腔；(b)是，结构存在；(c)是，均在发动机进气路径；(d)无反向证据。缺密封剖面，故可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 93.33,
+      "searched_queries": [
+        "2025款 本田CR-V 240TURBO 两驱锋尚版 1.5T",
+        "2025 Honda CR-V 1.5T intake air cleaner resonator chamber 17236-6CJ-H00",
+        "Honda 17236-6CJ-H00 chamber B resonator"
+      ],
+      "searched_providers": [
+        "web.run",
+        "urllib/curl fetch"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

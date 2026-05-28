@@ -1,0 +1,509 @@
+{
+  "publication_no": "CN222841298U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "岚图汽车",
+        "company_en": "VOYAH",
+        "product_name": "岚图FREE+ 7L紫外线杀菌冷暖箱（2025-07-12上市 / 全系标配英得尔方案）",
+        "product_name_en": "VOYAH FREE+ 7L UV-sterilizing cold/warm refrigerator (2025-07-12 launch / IndelB OEM)",
+        "product_intro": "2025年7月12日上市的岚图FREE+，中控扶手处7L双侧开门冷暖箱，支持-6℃至50℃控温，并公开写明紫外线杀菌。",
+        "market": "中国中大型智能SUV前装车载冷暖箱市场",
+        "reason_for_deep_dive": "用户特别提示关注车型；公开资料直接命中“车载冰箱/冷暖箱+紫外线杀菌”。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://finance.sina.com.cn/tech/roll/2025-07-15/doc-inffqazq2021294.shtml"
+        ],
+        "initial_evidence_summary": "阶段2A横扫20个候选方向后，岚图FREE+是少数在申请日后上市且明确写有车载冰箱紫外线杀菌的整车SKU。"
+      },
+      "launch_date": "2025年7月12日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://finance.sina.com.cn/tech/roll/2025-07-15/doc-inffqazq2021294.shtml",
+          "title": "岚图FREE+正式上市！全系标配英得尔车载冰箱",
+          "source_name": "新浪科技/A5创业网",
+          "snippet": "7月12日上市；7L车载冰箱，特别配备紫外线杀菌功能。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种用于车载冰箱(1)的杀菌灯组件(20)",
+          "competitor_feature": "岚图FREE+配置7L车载冷暖箱，公开资料写明“特别配备紫外线杀菌功能”。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://finance.sina.com.cn/tech/roll/2025-07-15/doc-inffqazq2021294.shtml",
+              "title": "岚图FREE+正式上市！全系标配英得尔车载冰箱",
+              "source_name": "新浪科技/A5创业网",
+              "snippet": "7月12日上市；7L车载冰箱，特别配备紫外线杀菌功能。"
+            }
+          ],
+          "reasoning": "公开页面直接同时披露车载冰箱和紫外线杀菌，可对应权1“用于车载冰箱的杀菌灯组件”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括：第一上壳体(200)，所述第一上壳体(200)适于设置于所述车载冰箱的内胆(10)，且所述第一上壳体(200)适于穿设至所述内胆(10)的内侧，所述第一上壳体(200)为一体注塑成型的结构件",
+          "competitor_feature": "公开资料仅披露冷暖箱位置、双侧开门、温控和紫外线杀菌；未披露杀菌灯上壳体、穿设内胆内侧或一体注塑结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://finance.sina.com.cn/tech/roll/2025-07-15/doc-inffqazq2021294.shtml",
+              "title": "岚图FREE+正式上市！全系标配英得尔车载冰箱",
+              "source_name": "新浪科技/A5创业网",
+              "snippet": "7月12日上市；7L车载冰箱，特别配备紫外线杀菌功能。"
+            }
+          ],
+          "reasoning": "权1 F2是内部灯组件结构和制造方式。现有公开营销资料不足以确认壳体穿设内胆及一体注塑。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "岚图 Free+ 车载冰箱 紫外线杀菌",
+        "岚图 FREE+ 冷暖箱 -6 50 紫外线",
+        "VOYAH FREE+ refrigerator UV sterilization",
+        "岚图FREE+ 英得尔 车载冰箱",
+        "site:m.asemanshop.com 岚图 FREE 冷暖箱",
+        "site:www.qixiu88.com 岚图 FREE 冷暖箱",
+        "岚图FREE+ 车载冰箱 拆解",
+        "岚图FREE+ 冷暖箱 维修手册"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "curl/http_fetch",
+        "recommended_site:m.asemanshop.com(root+site search)",
+        "recommended_site:www.qixiu88.com(root attempted, HTTP 403)"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "鸿蒙智行/江汽集团",
+        "company_en": "HIMA / JAC",
+        "product_name": "尊界S800冷暖箱杀菌消毒功能（2025-05-30上市 / 产品手册20250708）",
+        "product_name_en": "MAEXTRO S800 refrigerator sterilization function (2025-05-30 launch / 20250708 manual)",
+        "product_intro": "尊界S800于2025年5月30日上市；官方产品手册披露车辆配备冷暖箱，可在中控屏或后排屏开启杀菌消毒，且说明通过紫外线进行。",
+        "market": "中国百万级超豪华轿车前装冷暖箱市场",
+        "reason_for_deep_dive": "官方手册直接披露冷暖箱和紫外线杀菌消毒，是高质量证据源。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://hima.auto/dam/hima-site/cn/zunjie/service/pdf/s800-product-manual-20250708.pdf",
+          "https://auto.sina.cn/newcar/2025-05-30/detail-inexyfen9206941.d.html",
+          "https://m.asemanshop.com/www/cars/8898.html"
+        ],
+        "initial_evidence_summary": "官方手册命中冷暖箱杀菌消毒；畅易维修资料站检索到S800手册目录，但未公开到杀菌灯组件结构页。"
+      },
+      "launch_date": "2025年5月30日正式上市；2025年6月26日开始交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.cn/newcar/2025-05-30/detail-inexyfen9206941.d.html",
+          "title": "尊界S800正式上市 售价70.8-101.8万元",
+          "source_name": "新浪汽车",
+          "snippet": "2025年5月30日正式上市；6月26日开始交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种用于车载冰箱(1)的杀菌灯组件(20)",
+          "competitor_feature": "尊界S800官方手册写明车辆配备冷暖箱，控制界面可开启杀菌消毒，且“杀菌消毒功能通过紫外线进行”。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/zunjie/service/pdf/s800-product-manual-20250708.pdf",
+              "title": "尊界S800产品手册（20250708）",
+              "source_name": "鸿蒙智行/HIMA",
+              "snippet": "冷暖箱支持制冷制热；可开启杀菌消毒，紫外线进行杀菌消毒。"
+            }
+          ],
+          "reasoning": "官方产品手册直接披露冷暖箱内紫外线杀菌消毒功能，满足权1杀菌灯组件的功能场景。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括：第一上壳体(200)，所述第一上壳体(200)适于设置于所述车载冰箱的内胆(10)，且所述第一上壳体(200)适于穿设至所述内胆(10)的内侧，所述第一上壳体(200)为一体注塑成型的结构件",
+          "competitor_feature": "手册披露冷暖箱、冷暖箱灯、紫外线杀菌消毒，但未公开杀菌灯组件的上壳体、内胆穿设关系或一体注塑工艺。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/zunjie/service/pdf/s800-product-manual-20250708.pdf",
+              "title": "尊界S800产品手册（20250708）",
+              "source_name": "鸿蒙智行/HIMA",
+              "snippet": "冷暖箱支持制冷制热；可开启杀菌消毒，紫外线进行杀菌消毒。"
+            },
+            {
+              "url": "https://m.asemanshop.com/www/cars/8898.html",
+              "title": "尊界S800维修手册及电路图目录",
+              "source_name": "畅易汽车维修支持平台",
+              "snippet": "站内含尊界S800维修手册及电路图目录，但未命中冷暖箱杀菌灯结构。"
+            }
+          ],
+          "reasoning": "维修目录未命中具体杀菌灯结构；仅凭功能手册无法确认F2限定的内部壳体构造。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "尊界S800 产品手册 冷暖箱 杀菌消毒 紫外线",
+        "MAEXTRO S800 refrigerator UV sterilization manual",
+        "尊界S800 冷暖箱 紫外线 杀菌",
+        "尊界S800 维修手册 冷暖箱",
+        "site:m.asemanshop.com 尊界 S800 冷暖箱",
+        "site:www.qixiu88.com 尊界 S800 冷暖箱",
+        "hima S800 product manual refrigerator sterilization"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "curl/http_fetch",
+        "recommended_site:m.asemanshop.com(root+site search)",
+        "recommended_site:www.qixiu88.com(root attempted, HTTP 403)"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "捷途汽车",
+        "company_en": "Jetour",
+        "product_name": "捷途山海L7 PLUS 6.4L紫外线杀菌冷暖扶手冰箱（2025-08-26上市 / 智能双冰箱配置）",
+        "product_name_en": "Jetour Shanhai L7 PLUS 6.4L UV-sterilizing armrest refrigerator (2025-08-26 launch)",
+        "product_intro": "捷途山海L7 PLUS于2025年8月26日上市，公开资料披露6.4L冷暖扶手冰箱，温区覆盖-6~6℃/35~50℃，并带紫外线杀菌与24小时离车保温。",
+        "market": "中国家庭插混SUV前装智能双冰箱市场",
+        "reason_for_deep_dive": "价格带下探明显且直接披露紫外线杀菌冷暖扶手冰箱，具备高市场覆盖风险。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.bitauto.com/article/1003103145921/"
+        ],
+        "initial_evidence_summary": "同级双冰箱配置中，6.4L扶手冰箱公开写明紫外线杀菌，上市时间晚于本专利申请日。"
+      },
+      "launch_date": "2025年8月26日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.bitauto.com/article/1003103145921/",
+          "title": "长续航豪华电七座SUV捷途山海L7 PLUS正式上市",
+          "source_name": "易车/BitAuto",
+          "snippet": "8月26日上市；6.4L冷暖扶手冰箱，紫外线杀菌。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种用于车载冰箱(1)的杀菌灯组件(20)",
+          "competitor_feature": "捷途山海L7 PLUS的6.4L冷暖扶手冰箱公开写明具备紫外线杀菌。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/article/1003103145921/",
+              "title": "长续航豪华电七座SUV捷途山海L7 PLUS正式上市",
+              "source_name": "易车/BitAuto",
+              "snippet": "8月26日上市；6.4L冷暖扶手冰箱，紫外线杀菌。"
+            }
+          ],
+          "reasoning": "公开页面直接披露“冷暖扶手冰箱”和“紫外线杀菌”，可对应权1杀菌灯组件场景。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括：第一上壳体(200)，所述第一上壳体(200)适于设置于所述车载冰箱的内胆(10)，且所述第一上壳体(200)适于穿设至所述内胆(10)的内侧，所述第一上壳体(200)为一体注塑成型的结构件",
+          "competitor_feature": "公开页面未披露紫外线杀菌灯在冰箱内胆上的安装、穿设结构和一体注塑上壳体。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/article/1003103145921/",
+              "title": "长续航豪华电七座SUV捷途山海L7 PLUS正式上市",
+              "source_name": "易车/BitAuto",
+              "snippet": "8月26日上市；6.4L冷暖扶手冰箱，紫外线杀菌。"
+            }
+          ],
+          "reasoning": "F2属于组件结构与制造工艺，现有上市配置资料不足以确认。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "捷途山海L7 PLUS 紫外线杀菌 冷暖扶手冰箱",
+        "Jetour Shanhai L7 Plus refrigerator UV sterilization",
+        "捷途山海L7 PLUS 6.4L 冷暖箱 拆解",
+        "捷途山海L7 PLUS 维修手册 冷暖箱",
+        "site:m.asemanshop.com 捷途山海L7 PLUS 冷暖箱",
+        "site:www.qixiu88.com 捷途山海L7 PLUS 冷暖箱"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "curl/http_fetch",
+        "recommended_site:m.asemanshop.com(root+site search)",
+        "recommended_site:www.qixiu88.com(root attempted, HTTP 403)"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "广汽昊铂",
+        "company_en": "GAC Hyptec",
+        "product_name": "昊铂HL增程版紫外线杀菌高级冷暖冰箱（2025-08-19上市 / 家庭智享套装）",
+        "product_name_en": "GAC Hyptec HL EREV UV-sterilizing premium cold/warm refrigerator (2025-08-19 launch)",
+        "product_intro": "昊铂HL增程版于2025年8月19日上市，上市权益资料披露家庭智享套装包含紫外线杀菌冰箱。",
+        "market": "中国大型家庭SUV前装冷暖冰箱市场",
+        "reason_for_deep_dive": "上市后官方权益/媒体资料直接出现“紫外线杀菌冰箱”，属于权1功能命中候选。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.pcauto.com.cn/nation/4984/49848596.html"
+        ],
+        "initial_evidence_summary": "公开上市资料命中“紫外线杀菌冰箱”，但未找到内部杀菌灯组件结构证据。"
+      },
+      "launch_date": "2025年8月19日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.pcauto.com.cn/nation/4984/49848596.html",
+          "title": "售26.98万起 昊铂HL增程版上市",
+          "source_name": "太平洋汽车",
+          "snippet": "8月19日上市；家庭智享套装含紫外线杀菌冰箱。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种用于车载冰箱(1)的杀菌灯组件(20)",
+          "competitor_feature": "昊铂HL增程版家庭智享套装包含紫外线杀菌冰箱。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.pcauto.com.cn/nation/4984/49848596.html",
+              "title": "售26.98万起 昊铂HL增程版上市",
+              "source_name": "太平洋汽车",
+              "snippet": "8月19日上市；家庭智享套装含紫外线杀菌冰箱。"
+            }
+          ],
+          "reasoning": "公开上市页面直接披露“紫外线杀菌冰箱”，满足权1杀菌组件的应用对象和功能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括：第一上壳体(200)，所述第一上壳体(200)适于设置于所述车载冰箱的内胆(10)，且所述第一上壳体(200)适于穿设至所述内胆(10)的内侧，所述第一上壳体(200)为一体注塑成型的结构件",
+          "competitor_feature": "公开资料未说明冰箱内胆、杀菌灯上壳体、穿设关系或一体注塑成型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.pcauto.com.cn/nation/4984/49848596.html",
+              "title": "售26.98万起 昊铂HL增程版上市",
+              "source_name": "太平洋汽车",
+              "snippet": "8月19日上市；家庭智享套装含紫外线杀菌冰箱。"
+            }
+          ],
+          "reasoning": "F2需要结构证据；上市权益说明只能证明功能配置，不能证明壳体结构。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "昊铂HL 增程版 紫外线杀菌冰箱",
+        "GAC Hyptec HL refrigerator UV sterilization",
+        "昊铂HL 冷暖箱 紫外线杀菌",
+        "昊铂HL 维修手册 冷暖箱",
+        "site:m.asemanshop.com 昊铂HL 冷暖箱",
+        "site:www.qixiu88.com 昊铂HL 冷暖箱"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "curl/http_fetch",
+        "recommended_site:m.asemanshop.com(root+site search)",
+        "recommended_site:www.qixiu88.com(root attempted, HTTP 403)"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "极氪汽车",
+        "company_en": "ZEEKR",
+        "product_name": "全新极氪009车载紫外线杀菌冷暖冰箱（2024-07-19上市 / 2024全新009）",
+        "product_name_en": "All-new ZEEKR 009 UV-sterilizing cold/warm refrigerator (2024-07-19 launch)",
+        "product_intro": "全新极氪009于2024年7月19日发布指导价，公开资料披露-6℃至50℃带紫外线杀菌功能的车载冷暖冰箱。",
+        "market": "中国高端纯电MPV前装冷暖冰箱市场",
+        "reason_for_deep_dive": "上市日期仅晚于本专利申请日7天，且公开资料直接命中“车载冷暖冰箱+紫外线杀菌”。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://db.m.auto.sohu.com/model_6838/a/794769760_613425"
+        ],
+        "initial_evidence_summary": "2024年7月19日后上市，公开资料写明冷暖冰箱带紫外线杀菌；需重点核查早期光辉版/全新009 SKU差异。"
+      },
+      "launch_date": "2024年7月19日发布指导价",
+      "launch_date_evidence": [
+        {
+          "url": "https://db.m.auto.sohu.com/model_6838/a/794769760_613425",
+          "title": "43.9万起，全新极氪009上市",
+          "source_name": "搜狐汽车/踢车帮",
+          "snippet": "7月19日发布指导价；车载冷暖冰箱带紫外线杀菌功能。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种用于车载冰箱(1)的杀菌灯组件(20)",
+          "competitor_feature": "全新极氪009公开资料披露-6℃至50℃车载冷暖冰箱，并带紫外线杀菌功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_6838/a/794769760_613425",
+              "title": "43.9万起，全新极氪009上市",
+              "source_name": "搜狐汽车/踢车帮",
+              "snippet": "7月19日发布指导价；车载冷暖冰箱带紫外线杀菌功能。"
+            }
+          ],
+          "reasoning": "公开页面直接披露车载冷暖冰箱和紫外线杀菌，功能上命中权1主题。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括：第一上壳体(200)，所述第一上壳体(200)适于设置于所述车载冰箱的内胆(10)，且所述第一上壳体(200)适于穿设至所述内胆(10)的内侧，所述第一上壳体(200)为一体注塑成型的结构件",
+          "competitor_feature": "公开资料未披露杀菌灯组件与内胆之间的穿设安装结构，也未披露上壳体一体注塑成型。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.m.auto.sohu.com/model_6838/a/794769760_613425",
+              "title": "43.9万起，全新极氪009上市",
+              "source_name": "搜狐汽车/踢车帮",
+              "snippet": "7月19日发布指导价；车载冷暖冰箱带紫外线杀菌功能。"
+            }
+          ],
+          "reasoning": "F2是内部组件结构特征，不能从温控和杀菌功能直接推出。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "全新极氪009 车载冷暖冰箱 紫外线杀菌",
+        "ZEEKR 009 refrigerator UV sterilization",
+        "极氪009 2024 车载冰箱 杀菌",
+        "极氪009 冷暖箱 维修手册",
+        "site:m.asemanshop.com 极氪009 冷暖箱",
+        "site:www.qixiu88.com 极氪009 冷暖箱"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "curl/http_fetch",
+        "recommended_site:m.asemanshop.com(root+site search)",
+        "recommended_site:www.qixiu88.com(root attempted, HTTP 403)"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "深圳市普能达实业有限公司",
+        "company_en": "PNDA / PUNEDA",
+        "product_name": "普能达PDC-32 UVC杀菌32L车载冰箱（2024-06上市 / 苏宁SKU）",
+        "product_name_en": "PNDA PDC-32 32L UVC-sterilizing car refrigerator (2024-06 listing)",
+        "product_intro": "普能达PDC-32为32L车用压缩机车载冰箱，商品标题公开写明UVC杀菌；苏宁参数页显示上市时间为2024-06。",
+        "market": "中国便携/后备箱式车载冰箱零售市场",
+        "reason_for_deep_dive": "便携车载冰箱方向中直接命中UVC杀菌，但上市时间早于本专利申请日。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://m.suning.com/product/0000000000/12446297110.html"
+        ],
+        "initial_evidence_summary": "苏宁页面标题命中“车载冰箱+UVC杀菌”，参数显示上市时间2024-06，早于申请日2024-07-12。"
+      },
+      "launch_date": "2024年6月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://m.suning.com/product/0000000000/12446297110.html",
+          "title": "普能达PDC-32车载冰箱",
+          "source_name": "苏宁易购",
+          "snippet": "PDC-32为32L车载冰箱，商品标题含UVC杀菌；上市时间2024-06。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "上市时间2024-06早于本专利申请日2024-07-12，按模块二规则失效。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种用于车载冰箱(1)的杀菌灯组件(20)",
+          "competitor_feature": "普能达PDC-32商品标题为32L车载冰箱，并写明UVC杀菌。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.suning.com/product/0000000000/12446297110.html",
+              "title": "普能达PDC-32车载冰箱",
+              "source_name": "苏宁易购",
+              "snippet": "PDC-32为32L车载冰箱，商品标题含UVC杀菌；上市时间2024-06。"
+            }
+          ],
+          "reasoning": "公开电商参数页直接披露车载冰箱和UVC杀菌，功能上对应权1主题。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括：第一上壳体(200)，所述第一上壳体(200)适于设置于所述车载冰箱的内胆(10)，且所述第一上壳体(200)适于穿设至所述内胆(10)的内侧，所述第一上壳体(200)为一体注塑成型的结构件",
+          "competitor_feature": "电商页面未披露杀菌灯组件上壳体、内胆穿设或一体注塑结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.suning.com/product/0000000000/12446297110.html",
+              "title": "普能达PDC-32车载冰箱",
+              "source_name": "苏宁易购",
+              "snippet": "PDC-32为32L车载冰箱，商品标题含UVC杀菌；上市时间2024-06。"
+            }
+          ],
+          "reasoning": "即便功能命中，页面没有内部结构和制造工艺证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "普能达 PDC-32 UVC 杀菌 车载冰箱",
+        "PNDA PDC-32 UVC car refrigerator",
+        "site:m.suning.com PDC-32 UVC杀菌 车载冰箱",
+        "普能达 PDC-32 上市时间 2024-06",
+        "普能达 PDC-32 拆解 UVC"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "curl/http_fetch",
+        "recommended_site:m.asemanshop.com(root+site search)",
+        "recommended_site:www.qixiu88.com(root attempted, HTTP 403)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2265 @@
+{
+  "publication_no": "CN219492004U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "广汽埃安",
+        "company_en": "GAC Aion",
+        "product_name": "第二代AION V（2024款 520km版 / 中国上市车型）",
+        "product_name_en": "Second-generation AION V (2024 520 km China launch SKU)",
+        "product_intro": "第二代 AION V 于 2024 年在中国上市，520km 版本属于首批车型。公开用户手册显示其外门把手为手动按压翘起后拉开车门的结构，畅易维修目录列有隐藏门把手系统和门外把手总成。",
+        "market": "中国新能源 SUV 前装市场",
+        "reason_for_deep_dive": "该 SKU 公开资料同时出现隐藏门把手系统、门外把手总成和外部拉动开门流程，和权 1 的门把手机械解锁链路最接近。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+          "https://m.asemanshop.com/www/carsm/7661.html",
+          "https://www.marklines.com/en/news/312877"
+        ],
+        "initial_evidence_summary": "ManualsLib 用户手册页写明解锁后按压门把手前端使另一侧翘起并拉动开门；畅易维修目录列出隐藏门把手系统、左前/右前门外把手总成；MarkLines 报道第二代 AION V 于 2024 年 7 月上市并含 520km 版本。"
+      },
+      "launch_date": "2024年7月中国上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.marklines.com/en/news/312877",
+          "title": "2nd-generation Aion V all-electric SUV launched",
+          "source_name": "MarkLines",
+          "snippet": "On July 23, GAC Aion launched the 2nd-generation Aion V; the version lineup includes 520km, 650km and 750km models."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种门把手，其特征在于，包括：手柄(11)；传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动；以及推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种门把手",
+              "competitor_feature": "第二代 AION V 公开用户手册和维修目录均指向车辆外门把手/隐藏门把手系统。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+                  "title": "GAC Aion V 2024 Owner's Manual - Exterior Door Handle",
+                  "source_name": "ManualsLib",
+                  "snippet": "Exterior Door Handle: unlock the vehicle, push the front side of the handle, and pull the handle to open the door."
+                },
+                {
+                  "url": "https://m.asemanshop.com/www/carsm/7661.html",
+                  "title": "广汽新能源Aion V 2024维修手册和电路图",
+                  "source_name": "畅易汽车",
+                  "snippet": "目录列出 4.8.4 隐藏门把手系统、4.8.6.6 左前门外把手总成、4.8.6.7 右前门外把手总成。"
+                }
+              ],
+              "reasoning": "①X=车辆门把手。②Y=外门把手/隐藏门把手系统。③(a)是，均为车门外部开启件；(b)是，二值部件存在；(c)是，均在车门；(d)无反向证据。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "手柄(11)",
+              "competitor_feature": "用户手册明确称该 SKU 有 exterior door handle，操作时按压把手前端、拉动把手打开车门。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+                  "title": "GAC Aion V 2024 Owner's Manual - Exterior Door Handle",
+                  "source_name": "ManualsLib",
+                  "snippet": "Press the front side of the handle to make the other side tilt up, then pull the handle to open the door."
+                }
+              ],
+              "reasoning": "①X=可被用户操作的手柄。②Y=exterior door handle。③(a)是，均为手握/拉动车门部件；(b)是，二值存在；(c)是，车门外部；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+              "competitor_feature": "公开资料仅能确认第二代AION V有手动隐藏门把手、门外把手总成目录和拉动开门流程，未公开操纵轴/传动轴。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://m.asemanshop.com/www/carsm/7661.html",
+                  "title": "广汽新能源Aion V 2024维修手册和电路图",
+                  "source_name": "畅易汽车",
+                  "snippet": "维修目录列有隐藏门把手系统和门外把手总成，但公开页未展示内部传动轴/操纵轴剖面。"
+                },
+                {
+                  "url": "https://www.gacgroup.com/en-eu/configuration/aion-v/2024",
+                  "title": "AION V Specification",
+                  "source_name": "GAC Europe",
+                  "snippet": "AION V 2024 specification table lists Hidden Door Handle as Manual for available versions; page does not disclose internal shaft or push-rod linkage."
+                }
+              ],
+              "reasoning": "① X=手柄带动操纵轴转动、操纵轴输出端带动传动轴转动的轴系传动链。② Y=第二代AION V公开证据仅显示手动隐藏门把手、门外把手总成目录和拉动开门流程。③ (a) 概念是否等价：否，Y未公开操纵轴/传动轴；(b) 单位/量纲是否等价：否，X是内部机械结构链路，Y是外观/操作/目录线索；(c) 参考系是否等价：否，X定位到把手内部输入输出端，Y未给内部剖面；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：同一520km SKU门外把手爆炸图，确认手柄是否经操纵轴、传动轴转动传递；现有资料只到把手操作/目录。\n下一步建议：去广汽埃安售后EPC、https://www.qixiu88.com 或车云维修资料查外门把手总成剖面。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+              "competitor_feature": "公开资料未展示第二代AION V门把手与锁具之间是否通过传动轴驱动推杆移动解锁。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+                  "title": "GAC Aion V 2024 Owner's Manual - Exterior Door Handle",
+                  "source_name": "ManualsLib",
+                  "snippet": "Manual shows the user can pull the exterior handle to open the door, but does not disclose a push rod or latch-side linkage."
+                },
+                {
+                  "url": "https://www.gacgroup.com/en-eu/configuration/aion-v/2024",
+                  "title": "AION V Specification",
+                  "source_name": "GAC Europe",
+                  "snippet": "AION V 2024 specification table lists Hidden Door Handle as Manual for available versions; page does not disclose internal shaft or push-rod linkage."
+                }
+              ],
+              "reasoning": "① X=传动轴输出端连接推杆，传动轴带动推杆移动以解锁锁具。② Y=第二代AION V公开资料只说明拉动外把手可开门，未显示锁具端推杆。③ (a) 概念是否等价：否，开门结果不等同推杆结构；(b) 单位/量纲是否等价：否，X是机械位移链，Y是使用结果；(c) 参考系是否等价：否，X要求锁具端连接关系，Y未给锁具剖面；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：同一520km SKU锁具端维修图，确认传动轴输出是否推动推杆解锁锁具；现有资料未给锁具联动件。\n下一步建议：去广汽埃安4S维修系统或汽修巴巴查门锁/外把手联动章节，重点看推杆、锁块连接。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的门把手，其特征在于，所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的门把手，其特征在于，所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端；在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求2所述的门把手，其特征在于，所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合；所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C4-F2",
+              "patent_feature": "所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求2所述的门把手，其特征在于，所述传动夹角大于0°且小于180°。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述传动夹角大于0°且小于180°",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动夹角大于0°且小于180°。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求2所述的门把手，其特征在于，所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的门把手，其特征在于，还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的门把手，其特征在于，还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的门把手，其特征在于，所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求8所述的门把手，其特征在于，所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.一种车辆，其特征在于，包括权利要求1-10任一项所述的门把手和锁具(3)，所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "第二代AION V（2024款 520km版 / 中国上市车型） 为公开上市/销售的乘用车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.marklines.com/en/news/312877",
+                  "title": "2nd-generation Aion V all-electric SUV launched",
+                  "source_name": "MarkLines",
+                  "snippet": "On July 23, GAC Aion launched the 2nd-generation Aion V; the version lineup includes 520km, 650km and 750km models."
+                }
+              ],
+              "reasoning": "① X=车辆。② Y=第二代AION V（2024款 520km版 / 中国上市车型），公开上市资料将其作为乘用车/纯电车型销售。③ (a) 概念是否等价：是，均为车辆；(b) 单位/量纲是否等价：是，均为二值对象存在；(c) 参考系是否等价：是，均指整车产品；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C11-F2",
+              "patent_feature": "所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆，其特征在于，包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上",
+              "competitor_feature": "未找到第二代AION V（2024款 520km版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "第二代AION V 520km 车门把手 拆解 锁块 推杆",
+        "广汽埃安 第二代AION V 门把手 维修手册 外把手",
+        "site:gacgroup.com AION V 2024 Hidden Door Handle Manual",
+        "AION V 2024 exterior door handle operating cable service manual",
+        "[SKU自检-M3] 2024款 520km版 / 新增 evidence sku 一致性: 模糊SKU仅作低分辅助; 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "吉利汽车",
+        "company_en": "Geely Auto",
+        "product_name": "吉利星愿（2025款 310km青春版）",
+        "product_name_en": "Geely Xingyuan (2025 310 km Youth Edition)",
+        "product_intro": "吉利星愿 2025 款 310km 青春版为中国市场小型纯电车型。官方配置表公开半隐藏式门把手，畅易汽车公开页指向 2025 年星愿维修手册和电路图资料。",
+        "market": "中国小型纯电车前装市场",
+        "reason_for_deep_dive": "用户指定重点关注；该 SKU 采用半隐藏式门把手，上市晚于本专利申请日，且有维修资料索引可继续核查内部传动结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://global.geely.com/-/media/project/web-portal/parallel-car/xingyuan-01/geely-xingyuan-specification-table.pdf",
+          "https://m.asemanshop.com/www/message/289191.html",
+          "https://www.dongchedi.com/article/7423718269400023606"
+        ],
+        "initial_evidence_summary": "官方配置表列出 Geely Xingyuan 310km Youth Edition 并公开半隐藏式门把手；畅易汽车公开问答确认可参考 2025 年吉利星愿维修手册/线路图；懂车帝报道吉利星愿于 2024 年 10 月上市。"
+      },
+      "launch_date": "2024年10月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongchedi.com/article/7423718269400023606",
+          "title": "吉利星愿上市",
+          "source_name": "懂车帝",
+          "snippet": "吉利星愿正式上市，上市时间为 2024 年 10 月，车型覆盖 310km 续航版本。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种门把手，其特征在于，包括：手柄(11)；传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动；以及推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种门把手",
+              "competitor_feature": "吉利星愿官方配置表列出半隐藏式门把手，属于车辆门把手。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://global.geely.com/-/media/project/web-portal/parallel-car/xingyuan-01/geely-xingyuan-specification-table.pdf",
+                  "title": "Geely Xingyuan Specification Table",
+                  "source_name": "Geely Global",
+                  "snippet": "Specification table for Xingyuan lists the 310km Youth Edition and semi-hidden door handles."
+                },
+                {
+                  "url": "https://db.auto.sina.com.cn/car/73159/",
+                  "title": "2025款吉利星愿 310km 青春版",
+                  "source_name": "新浪汽车",
+                  "snippet": "车型页锁定 2025款吉利星愿 310km 青春版，列明车身尺寸、纯电动、小型两厢等车型信息。"
+                }
+              ],
+              "reasoning": "①X=门把手。②Y=半隐藏式门把手配置。③(a)是，均为车门把手；(b)是，二值存在；(c)是，车辆车门外部；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "手柄(11)",
+              "competitor_feature": "半隐藏式门把手包含用户可操作的外部手柄。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://global.geely.com/-/media/project/web-portal/parallel-car/xingyuan-01/geely-xingyuan-specification-table.pdf",
+                  "title": "Geely Xingyuan Specification Table",
+                  "source_name": "Geely Global",
+                  "snippet": "The configuration item identifies semi-hidden door handles for the Xingyuan SKU family including the 310km Youth Edition."
+                }
+              ],
+              "reasoning": "①X=手柄部件。②Y=半隐藏式门把手的可操作手柄。③(a)是，概念同为供用户操作的把手；(b)是，二值部件；(c)是，车门外部；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+              "competitor_feature": "新增资料将星愿门把手描述为半隐藏式、纯物理机械拉线结构；仍未披露310km青春版操纵轴、传动轴及二者转动连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://m.asemanshop.com/www/message/289191.html",
+                  "title": "吉利汽车星愿310km 青春版维修手册和电路图",
+                  "source_name": "畅易汽车",
+                  "snippet": "公开页回复称可参考 2025 年吉利星愿电路图和维修手册资料，但未在公开页展示门把手内部轴系。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=手柄带动操纵轴转动、操纵轴输出端带动传动轴转动的轴系传动链。② Y=吉利星愿公开资料显示半隐藏式门把手和纯物理机械拉线结构，但未给310km青春版门外把手剖面。③ (a) 概念是否等价：否，机械拉线只说明物理开门路径，不等同操纵轴+传动轴；(b) 单位/量纲是否等价：否，X为轴系转动连接，Y为拉线式高层描述；(c) 参考系是否等价：否，X要求把手内部输入/输出端，Y未给内部结构参考；(d) 是否有反向证据：无直接反向证据，Y未排除局部转轴但不能证明权1链路。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：同一SKU门外把手爆炸图，确认手柄内是否有操纵轴、传动轴及二者转动传递；现有资料仅到半隐藏/机械拉线。\n下一步建议：去吉利4S EPC、https://autopartscatalogue.net 或 https://www.qixiu88.com 查星愿310km青春版门外把手总成。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+              "competitor_feature": "新增资料显示星愿为纯物理机械拉线开门路径；仍未披露310km青春版传动轴、推杆、锁具端连接或推杆移动解锁结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://m.asemanshop.com/www/message/289191.html",
+                  "title": "吉利汽车星愿310km 青春版维修手册和电路图",
+                  "source_name": "畅易汽车",
+                  "snippet": "公开回复确认 2025 年星愿维修手册/线路图资料路径，但公开页未披露推杆或锁具联动结构。"
+                },
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=传动轴输出端连接推杆，并带动推杆移动解锁锁具。② Y=吉利星愿公开资料仅显示纯物理机械拉线/手拉门把手，未展示310km青春版锁具端结构。③ (a) 概念是否等价：否，拉线解锁不等同传动轴推动推杆；(b) 单位/量纲是否等价：否，X为刚性推杆位移链，Y为拉线/机械路径描述；(c) 参考系是否等价：否，X要求锁具端推杆连接，Y未给锁具剖面；(d) 是否有反向证据：无直接反向证据，现有资料不足以排除或确认推杆。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：同一SKU锁具端剖面/维修图，确认传动轴输出是否驱动推杆移动进入锁具；现有资料未公开锁具联动件。\n下一步建议：去吉利4S EPC或汽修巴巴下载星愿维修手册，查看车门锁块、外把手拉线/推杆连接图。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的门把手，其特征在于，所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的门把手，其特征在于，所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端；在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求2所述的门把手，其特征在于，所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合；所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合",
+              "competitor_feature": "未找到吉利星愿（2025款 310km青春版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C4-F2",
+              "patent_feature": "所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动",
+              "competitor_feature": "未找到吉利星愿（2025款 310km青春版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求2所述的门把手，其特征在于，所述传动夹角大于0°且小于180°。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述传动夹角大于0°且小于180°",
+              "competitor_feature": "未找到吉利星愿（2025款 310km青春版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动夹角大于0°且小于180°。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求2所述的门把手，其特征在于，所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的门把手，其特征在于，还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上",
+              "competitor_feature": "未找到吉利星愿（2025款 310km青春版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的门把手，其特征在于，还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的门把手，其特征在于，所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求8所述的门把手，其特征在于，所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.一种车辆，其特征在于，包括权利要求1-10任一项所述的门把手和锁具(3)，所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "吉利星愿（2025款 310km青春版） 为公开上市/销售的乘用车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/article/7423718269400023606",
+                  "title": "吉利星愿上市",
+                  "source_name": "懂车帝",
+                  "snippet": "吉利星愿正式上市，上市时间为 2024 年 10 月，车型覆盖 310km 续航版本。"
+                }
+              ],
+              "reasoning": "① X=车辆。② Y=吉利星愿（2025款 310km青春版），公开上市资料将其作为乘用车/纯电车型销售。③ (a) 概念是否等价：是，均为车辆；(b) 单位/量纲是否等价：是，均为二值对象存在；(c) 参考系是否等价：是，均指整车产品；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C11-F2",
+              "patent_feature": "所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内",
+              "competitor_feature": "吉利星愿公开资料补强了半隐藏式/纯物理机械拉线，但未披露310km青春版该从属限定所需的具体轴、凸轮/齿轮、摆臂、扭簧、推杆或锁具导向槽。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.smartautoclub.com/p/104599/",
+                  "title": "10款半隐藏式门把手新车型盘点",
+                  "source_name": "智能汽车资源网",
+                  "snippet": "文章称吉利星愿采用半隐藏式门把手，保留传统手拉造型以及纯物理的机械拉线结构。"
+                },
+                {
+                  "url": "https://aikahao.xcar.com.cn/item/2452914.html",
+                  "title": "它就是中国最畅销的车？",
+                  "source_name": "爱卡汽车爱咖号",
+                  "snippet": "文章称吉利星愿门把手为原始机械物理式门把手，采用纯物理机械拉线结构，断电时不依赖电子门把手打开车门。"
+                }
+              ],
+              "reasoning": "① X=所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆，其特征在于，包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上",
+              "competitor_feature": "未找到吉利星愿（2025款 310km青春版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "吉利星愿 门把手 专利 操纵轴 传动轴 推杆",
+        "吉利星愿 外门把手 配件 OE 半隐藏式",
+        "\"2025款 310km 青春版\" \"门把手\" \"机械拉线\"",
+        "\"吉利星愿\" \"纯物理的机械拉线结构\"",
+        "Geely Xingyuan door handle spare part exploded view",
+        "[SKU自检-M3] 2025款 310km青春版 / 新增 evidence sku 一致性: 泛SKU仅用于证据不足判断; 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "深蓝汽车",
+        "company_en": "Deepal",
+        "product_name": "深蓝S05（2025款 纯电510Plus版）",
+        "product_name_en": "Deepal S05 (2025 EV 510Plus)",
+        "product_intro": "深蓝 S05 于 2024 年 10 月在中国上市，纯电 510Plus 属首批销售配置。公开车型资料显示其采用隐藏式/机械隐藏式门把手，用户按压后把手弹出再开门。",
+        "market": "中国新能源紧凑型 SUV 前装市场",
+        "reason_for_deep_dive": "该 SKU 晚于申请日上市，市场资料明确指向隐藏式门把手和按压弹出操作，具有继续核查内部机械传动的价值。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.autohome.com.cn/news/202410/1301664.html",
+          "https://www.bitauto.com/wiki/100313706975/"
+        ],
+        "initial_evidence_summary": "汽车之家报道深蓝 S05 于 2024 年 10 月上市；易车百科页显示深蓝 S05 采用机械隐藏式门把手，按下把手一部分后门把手自动弹出。"
+      },
+      "launch_date": "2024年10月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.autohome.com.cn/news/202410/1301664.html",
+          "title": "深蓝S05正式上市",
+          "source_name": "汽车之家",
+          "snippet": "深蓝 S05 于 2024 年 10 月正式上市，推出纯电和增程版本。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种门把手，其特征在于，包括：手柄(11)；传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动；以及推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种门把手",
+              "competitor_feature": "深蓝 S05 配置资料显示车辆采用隐藏式/机械隐藏式门把手。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.bitauto.com/wiki/100313706975/",
+                  "title": "深蓝S05配置",
+                  "source_name": "易车",
+                  "snippet": "深蓝S05的机械隐藏式门把手隐藏在车门内部；需要打开车门时，按下把手的一部分，门把手会自动弹出。"
+                }
+              ],
+              "reasoning": "①X=门把手。②Y=隐藏式门把手配置。③(a)是，均为车门把手；(b)是，二值存在；(c)是，车身车门；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "手柄(11)",
+              "competitor_feature": "深蓝 S05 的隐藏式门把手为可按压弹出的外部手柄。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.bitauto.com/wiki/100313706975/",
+                  "title": "深蓝S05配置",
+                  "source_name": "易车",
+                  "snippet": "易车百科说明深蓝S05机械隐藏式门把手按压后把手自动弹出，方便开门。"
+                }
+              ],
+              "reasoning": "①X=用户操作手柄。②Y=隐藏式门把手的可按压/拉动部分。③(a)是，均为手柄；(b)是，二值部件；(c)是，车门外侧；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+              "competitor_feature": "公开资料仅确认深蓝S05机械隐藏式门把手/按压弹出操作，未公开510Plus同SKU内部操纵轴、传动轴。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.bitauto.com/wiki/100313706975/",
+                  "title": "深蓝S05配置",
+                  "source_name": "易车",
+                  "snippet": "公开资料确认隐藏式门把手，但未给出门把手内部传动组件拆解图。"
+                }
+              ],
+              "reasoning": "① X=手柄经操纵轴、传动轴完成转动传递。② Y=深蓝S05公开证据仅显示机械隐藏式门把手按压弹出/拉开，缺少510Plus同SKU拆解。③ (a) 概念是否等价：否，Y未披露轴系；(b) 单位/量纲是否等价：否，X为内部结构链，Y为外部操作描述；(c) 参考系是否等价：否，X定位把手内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：同一510Plus SKU门把手拆解图，确认是否有操纵轴、传动轴及转动传递；现有资料只证明隐藏式把手。\n下一步建议：去深蓝4S维修系统、https://www.qixiu88.com 或拆车件平台查S05 510Plus外门把手总成。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+              "competitor_feature": "公开资料未显示深蓝S05 510Plus外门把手与锁具之间是否为传动轴驱动推杆移动。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.bitauto.com/wiki/100313706975/",
+                  "title": "深蓝S05配置",
+                  "source_name": "易车",
+                  "snippet": "公开资料未披露推杆、锁具连接或解锁机构剖面。"
+                }
+              ],
+              "reasoning": "① X=传动轴带动推杆移动以解锁锁具。② Y=深蓝S05资料未展示外把手到锁具之间的推杆、传动轴或连接关系。③ (a) 概念是否等价：否，隐藏式把手配置不等同推杆解锁机构；(b) 单位/量纲是否等价：否，X为机械位移链，Y为配置/操作线索；(c) 参考系是否等价：否，X要求锁具端，Y未给锁具端结构；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：同一510Plus SKU锁块/外把手联动图，确认是否存在传动轴带动推杆解锁；现有资料未见锁具剖面。\n下一步建议：去深蓝售后维修手册或汽修巴巴查前门锁块、外把手拉线/推杆连接章节。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的门把手，其特征在于，所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的门把手，其特征在于，所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端；在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求2所述的门把手，其特征在于，所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合；所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C4-F2",
+              "patent_feature": "所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求2所述的门把手，其特征在于，所述传动夹角大于0°且小于180°。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述传动夹角大于0°且小于180°",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动夹角大于0°且小于180°。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求2所述的门把手，其特征在于，所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的门把手，其特征在于，还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的门把手，其特征在于，还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的门把手，其特征在于，所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求8所述的门把手，其特征在于，所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.一种车辆，其特征在于，包括权利要求1-10任一项所述的门把手和锁具(3)，所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "深蓝S05（2025款 纯电510Plus版） 为公开上市/销售的乘用车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.autohome.com.cn/news/202410/1301664.html",
+                  "title": "深蓝S05正式上市",
+                  "source_name": "汽车之家",
+                  "snippet": "深蓝 S05 于 2024 年 10 月正式上市，推出纯电和增程版本。"
+                }
+              ],
+              "reasoning": "① X=车辆。② Y=深蓝S05（2025款 纯电510Plus版），公开上市资料将其作为乘用车/纯电车型销售。③ (a) 概念是否等价：是，均为车辆；(b) 单位/量纲是否等价：是，均为二值对象存在；(c) 参考系是否等价：是，均指整车产品；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C11-F2",
+              "patent_feature": "所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆，其特征在于，包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上",
+              "competitor_feature": "未找到深蓝S05（2025款 纯电510Plus版）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "Deepal S05 510 Plus hidden door handle mechanical",
+        "深蓝S05 外门把手 拆解 锁块 推杆",
+        "\"Deepal S05\" \"door handle\" \"owner manual\"",
+        "\"深蓝S05\" \"隐藏式门把手\" \"机械\" \"拉线\"",
+        "[SKU自检-M3] 2025款 纯电510Plus版 / 新增 evidence sku 一致性: 未纳入跨SKU证据; 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "一汽-大众",
+        "company_en": "FAW-Volkswagen",
+        "product_name": "ID.7 VIZZION（2024款 AIR版 / 中国上市车型）",
+        "product_name_en": "ID.7 VIZZION (2024 AIR China launch SKU)",
+        "product_intro": "ID.7 VIZZION 于 2023 年 12 月在中国上市，AIR 版为首发配置之一。公开用户手册资料显示车门外把手可通过钥匙/按钮解锁并拉动打开车门。",
+        "market": "中国合资纯电轿车前装市场",
+        "reason_for_deep_dive": "该 SKU 晚于申请日上市，外门把手有公开用户手册说明，且大众 ID 系半隐藏把手通常采用可拉动外部把手形式。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.vwid7.org/vehicle_key_functions-52.html",
+          "https://www.vwid7.org/driver_door-7.html",
+          "https://www.faw-vw.com/newsDetail?newsId=14986"
+        ],
+        "initial_evidence_summary": "vwid7.org 用户手册页公开 ID.7 的车门、钥匙和外门把手相关操作；一汽-大众新闻页公开 ID.7 VIZZION 于 2023 年 12 月上市。"
+      },
+      "launch_date": "2023年12月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.faw-vw.com/newsDetail?newsId=14986",
+          "title": "ID.7 VIZZION上市",
+          "source_name": "一汽-大众",
+          "snippet": "一汽-大众 ID.7 VIZZION 于 2023 年 12 月正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种门把手，其特征在于，包括：手柄(11)；传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动；以及推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种门把手",
+              "competitor_feature": "ID.7 VIZZION 用户手册资料描述车门外把手和车门开启功能。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vwid7.org/vehicle_key_functions-52.html",
+                  "title": "ID.7 Vehicle key functions",
+                  "source_name": "vwid7.org",
+                  "snippet": "Manual section discusses vehicle key functions and door handle/locking behavior for ID.7."
+                },
+                {
+                  "url": "https://www.vwid7.org/driver_door-7.html",
+                  "title": "ID.7 Driver Door",
+                  "source_name": "vwid7.org",
+                  "snippet": "Manual chapter covers the driver door and door operation controls."
+                }
+              ],
+              "reasoning": "①X=车门把手。②Y=ID.7 外门把手/车门开启资料。③(a)是，均为车门开启把手；(b)是，二值存在；(c)是，车辆车门；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "手柄(11)",
+              "competitor_feature": "ID.7 公开手册资料指向用户可操作的外门把手。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.vwid7.org/vehicle_key_functions-52.html",
+                  "title": "ID.7 Vehicle key functions",
+                  "source_name": "vwid7.org",
+                  "snippet": "Door handle behavior is described in the vehicle key and opening/closing context."
+                }
+              ],
+              "reasoning": "①X=手柄。②Y=外门把手。③(a)是，均为用户手动接触部件；(b)是，部件存在；(c)是，车门外侧；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+              "competitor_feature": "新增泛ID.7维修索引列出外门把手、门锁和外把手操作拉索，但未公开VIZZION AIR同SKU操纵轴/传动轴转动链。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vwid7.org/vehicle_key_functions-52.html",
+                  "title": "ID.7 Vehicle key functions",
+                  "source_name": "vwid7.org",
+                  "snippet": "Manual material is operational; no exploded handle linkage or shaft disclosure was found."
+                },
+                {
+                  "url": "https://dms.kfz-verlag.de/pub/more_downloads/en-ebook-vw-id7-ed-0070.pdf",
+                  "title": "ID.7 2024 General body repairs, exterior - Edition 02.2024",
+                  "source_name": "KFZ-Verlag",
+                  "snippet": "Repair manual index lists door handle and door lock assembly overview, removing/installing exterior door handle, lock unit, mounting bracket and operating cable for exterior door handle."
+                }
+              ],
+              "reasoning": "① X=手柄带动操纵轴和传动轴转动的轴系传动组件。② Y=泛ID.7维修资料索引列出外门把手、门锁和外把手操作拉索，但未展示ID.7 VIZZION AIR同SKU轴系剖面。③ (a) 概念是否等价：否，操作拉索目录不等同操纵轴+传动轴；(b) 单位/量纲是否等价：否，X为轴系转动链，Y为拉索/目录项；(c) 参考系是否等价：否，X要求把手内部端部连接，Y未给连接图；(d) 是否有反向证据：无，目录不足以直接排除内部局部轴件。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：ID.7 VIZZION AIR中国SKU外把手总成细图，确认是否为操纵轴+传动轴转动链；现有泛ID.7资料只列操作拉索。\n下一步建议：去大众ErWin/一汽大众4S维修系统或partslink24查ID.7 VIZZION AIR外门把手总成。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+              "competitor_feature": "新增泛ID.7维修索引列出锁单元和外把手操作拉索，未公开VIZZION AIR推杆、导向槽或传动轴输出连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.vwid7.org/driver_door-7.html",
+                  "title": "ID.7 Driver Door",
+                  "source_name": "vwid7.org",
+                  "snippet": "Driver door manual page does not disclose push rod or latch-side mechanical linkage details."
+                },
+                {
+                  "url": "https://dms.kfz-verlag.de/pub/more_downloads/en-ebook-vw-id7-ed-0070.pdf",
+                  "title": "ID.7 2024 General body repairs, exterior - Edition 02.2024",
+                  "source_name": "KFZ-Verlag",
+                  "snippet": "Repair manual index lists door handle and door lock assembly overview, removing/installing exterior door handle, lock unit, mounting bracket and operating cable for exterior door handle."
+                }
+              ],
+              "reasoning": "① X=传动轴输出端驱动推杆移动解锁锁具。② Y=泛ID.7维修索引列出锁单元和外把手操作拉索，未公开中国AIR版推杆或导向槽。③ (a) 概念是否等价：否，拉索/锁单元目录不等同推杆结构；(b) 单位/量纲是否等价：否，X为刚性推杆位移，Y为目录级拉索；(c) 参考系是否等价：否，X锁具端连接未被展示；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：中国AIR版锁具端剖面，确认外把手是否经传动轴驱动推杆解锁；现有维修索引只到拉索和锁单元目录。\n下一步建议：去大众ErWin或一汽大众维修资料查door lock、operating cable、push rod章节。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的门把手，其特征在于，所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的门把手，其特征在于，所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端；在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求2所述的门把手，其特征在于，所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合；所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C4-F2",
+              "patent_feature": "所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求2所述的门把手，其特征在于，所述传动夹角大于0°且小于180°。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述传动夹角大于0°且小于180°",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动夹角大于0°且小于180°。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求2所述的门把手，其特征在于，所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接",
+              "competitor_feature": "泛ID.7维修索引出现外把手、锁单元、安装支架和操作拉索目录，但未披露VIZZION AIR同SKU该从属限定的具体连接关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://dms.kfz-verlag.de/pub/more_downloads/en-ebook-vw-id7-ed-0070.pdf",
+                  "title": "ID.7 2024 General body repairs, exterior - Edition 02.2024",
+                  "source_name": "KFZ-Verlag",
+                  "snippet": "Repair manual index lists door handle and door lock assembly overview, removing/installing exterior door handle, lock unit, mounting bracket and operating cable for exterior door handle."
+                }
+              ],
+              "reasoning": "① X=所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的门把手，其特征在于，还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的门把手，其特征在于，还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的门把手，其特征在于，所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求8所述的门把手，其特征在于，所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接",
+              "competitor_feature": "未找到ID.7 VIZZION（2024款 AIR版 / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.一种车辆，其特征在于，包括权利要求1-10任一项所述的门把手和锁具(3)，所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "ID.7 VIZZION（2024款 AIR版 / 中国上市车型） 为公开上市/销售的乘用车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.faw-vw.com/newsDetail?newsId=14986",
+                  "title": "ID.7 VIZZION上市",
+                  "source_name": "一汽-大众",
+                  "snippet": "一汽-大众 ID.7 VIZZION 于 2023 年 12 月正式上市。"
+                }
+              ],
+              "reasoning": "① X=车辆。② Y=ID.7 VIZZION（2024款 AIR版 / 中国上市车型），公开上市资料将其作为乘用车/纯电车型销售。③ (a) 概念是否等价：是，均为车辆；(b) 单位/量纲是否等价：是，均为二值对象存在；(c) 参考系是否等价：是，均指整车产品；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C11-F2",
+              "patent_feature": "所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内",
+              "competitor_feature": "泛ID.7维修索引出现外把手、锁单元、安装支架和操作拉索目录，但未披露VIZZION AIR同SKU该从属限定的具体连接关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://dms.kfz-verlag.de/pub/more_downloads/en-ebook-vw-id7-ed-0070.pdf",
+                  "title": "ID.7 2024 General body repairs, exterior - Edition 02.2024",
+                  "source_name": "KFZ-Verlag",
+                  "snippet": "Repair manual index lists door handle and door lock assembly overview, removing/installing exterior door handle, lock unit, mounting bracket and operating cable for exterior door handle."
+                }
+              ],
+              "reasoning": "① X=所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆，其特征在于，包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上",
+              "competitor_feature": "泛ID.7维修索引出现外把手、锁单元、安装支架和操作拉索目录，但未披露VIZZION AIR同SKU该从属限定的具体连接关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://dms.kfz-verlag.de/pub/more_downloads/en-ebook-vw-id7-ed-0070.pdf",
+                  "title": "ID.7 2024 General body repairs, exterior - Edition 02.2024",
+                  "source_name": "KFZ-Verlag",
+                  "snippet": "Repair manual index lists door handle and door lock assembly overview, removing/installing exterior door handle, lock unit, mounting bracket and operating cable for exterior door handle."
+                }
+              ],
+              "reasoning": "① X=包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "ID.7 VIZZION door handle exterior service manual linkage",
+        "大众 ID.7 VIZZION 门把手 拆解 锁块 推杆",
+        "Volkswagen ID.7 exterior door handle manual release push rod",
+        "ID.7 2024 general body repairs exterior door handle operating cable",
+        "[SKU自检-M3] 2024款 AIR版 / 新增 evidence sku 一致性: ID.7泛SKU仅作低分辅助; 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "小鹏汽车",
+        "company_en": "XPeng",
+        "product_name": "小鹏G6（2023款 580长续航Pro / 中国上市车型）",
+        "product_name_en": "XPeng G6 (2023 580 Long Range Pro China launch SKU)",
+        "product_intro": "小鹏 G6 于 2023 年 6 月在中国上市，580 长续航 Pro 为首批车型之一。公开资料显示该车采用隐藏式/隐藏门把手，外部把手作为用户进入车门的部件。",
+        "market": "中国智能纯电 SUV 前装市场",
+        "reason_for_deep_dive": "该 SKU 晚于申请日上市，采用隐藏式门把手，属于本专利门把手机械/解锁结构的同类竞品入口。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.xpeng.com/news/01889",
+          "https://detail.zol.com.cn/1966/1965691/param.shtml"
+        ],
+        "initial_evidence_summary": "小鹏官方新闻披露 G6 于 2023 年 6 月上市及车型版本；ZOL 参数页锁定 2023款 580 长续航 Pro，并列出隐藏电动门把手为标配。"
+      },
+      "launch_date": "2023年6月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.xpeng.com/news/01889",
+          "title": "XPENG G6 officially launched",
+          "source_name": "XPeng",
+          "snippet": "XPENG G6 was officially launched in June 2023 with China-market trims including 580 long range versions."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种门把手，其特征在于，包括：手柄(11)；传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动；以及推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种门把手",
+              "competitor_feature": "小鹏 G6 公开资料和用户手册入口指向隐藏式门把手/车门外部开启部件。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+                  "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+                  "source_name": "ZOL",
+                  "snippet": "参数页锁定小鹏G6 2023款 580 长续航 Pro，并列出隐藏电动门把手为标配。"
+                }
+              ],
+              "reasoning": "①X=门把手。②Y=G6 外部进入/车门把手系统。③(a)是，均为车辆门把手；(b)是，部件存在；(c)是，车门；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "手柄(11)",
+              "competitor_feature": "小鹏 G6 隐藏式门把手包含用户操作的外部手柄。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+                  "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+                  "source_name": "ZOL",
+                  "snippet": "配置项显示该 SKU 标配隐藏电动门把手。"
+                }
+              ],
+              "reasoning": "①X=手柄。②Y=隐藏式门把手的外部操作件。③(a)是，均供用户操作；(b)是，二值部件；(c)是，车门外侧；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+              "competitor_feature": "公开资料仅确认小鹏G6 580长续航Pro有隐藏电动门把手，境外580 Pro资料显示隐藏把手/电释放按钮；未公开中国SKU轴系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+                  "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+                  "source_name": "ZOL",
+                  "snippet": "公开参数确认隐藏电动门把手，但未公开门把手内部操纵轴/传动轴结构。"
+                },
+                {
+                  "url": "https://xpeng.com.hk/g6-spec",
+                  "title": "G6 Specifications",
+                  "source_name": "XPENG Hong Kong",
+                  "snippet": "G6 580 Pro specification table lists Hidden Door Handles and Electric Release Door Open Button; page is market/SKU adjacent and does not show China 580长续航Pro internal linkage."
+                },
+                {
+                  "url": "https://www.dsf.my/2024/12/xpeng-g6-580-pro-review-my-favourite-ev-of-2024-has-a-massive-design-flaw/",
+                  "title": "Xpeng G6 580 Pro Review",
+                  "source_name": "DSF.my",
+                  "snippet": "Review identifies an Xpeng G6 580 Pro, but it is not the locked China 2023 580长续航Pro SKU and does not disclose exterior-handle shaft or push-rod structure."
+                }
+              ],
+              "reasoning": "① X=手柄带动操纵轴、传动轴转动的机械轴系。② Y=小鹏G6公开参数显示隐藏电动门把手/境外580 Pro资料显示电释放按钮，未给中国580长续航Pro内部结构。③ (a) 概念是否等价：否，隐藏电动门把手不等同轴系传动；(b) 单位/量纲是否等价：否，X为机械转动链，Y为配置项/电释放功能；(c) 参考系是否等价：否，X定位把手内部连接端，Y未给剖面；(d) 是否有反向证据：无足以锁定中国SKU的直接反证。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：中国580长续航Pro外把手爆炸图，确认隐藏电动门把手内部是否仍有操纵轴/传动轴；参数页未披露轴系。\n下一步建议：去小鹏售后维修系统、https://www.qixiu88.com 或拆车件平台查G6外门把手总成拆装图。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+              "competitor_feature": "公开资料未披露小鹏G6中国580长续航Pro是否通过传动轴带动推杆移动解锁锁具。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+                  "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+                  "source_name": "ZOL",
+                  "snippet": "公开参数页未披露推杆/锁具联动结构。"
+                },
+                {
+                  "url": "https://xpeng.com.hk/g6-spec",
+                  "title": "G6 Specifications",
+                  "source_name": "XPENG Hong Kong",
+                  "snippet": "G6 580 Pro specification table lists Hidden Door Handles and Electric Release Door Open Button; page is market/SKU adjacent and does not show China 580长续航Pro internal linkage."
+                },
+                {
+                  "url": "https://www.dsf.my/2024/12/xpeng-g6-580-pro-review-my-favourite-ev-of-2024-has-a-massive-design-flaw/",
+                  "title": "Xpeng G6 580 Pro Review",
+                  "source_name": "DSF.my",
+                  "snippet": "Review identifies an Xpeng G6 580 Pro, but it is not the locked China 2023 580长续航Pro SKU and does not disclose exterior-handle shaft or push-rod structure."
+                }
+              ],
+              "reasoning": "① X=传动轴带动推杆移动以解锁锁具。② Y=小鹏G6现有公开资料只到隐藏电动门把手配置，未展示锁具端推杆。③ (a) 概念是否等价：否，电动/隐藏把手配置不是推杆结构；(b) 单位/量纲是否等价：否，X为机械位移链，Y为功能配置；(c) 参考系是否等价：否，X要求锁具端连接，Y未给锁块内部；(d) 是否有反向证据：无足以锁定中国SKU的直接反证。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：中国580长续航Pro锁具端联动图，确认是否有传动轴驱动推杆移动；现有资料只到隐藏电动门把手配置。\n下一步建议：去小鹏4S维修手册或汽修巴巴查前门锁块、外把手、电释放/机械应急连接关系。"
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的门把手，其特征在于，所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动组件还包括转向机构，所述转向机构至少包括第一部件和第二部件，所述第一部件设于所述操纵轴上，所述第二部件设于所述传动轴上，所述第一部件的转动轴线和所述第二部件的转动轴线形成传动夹角。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的门把手，其特征在于，所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端；在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为凸轮(211)和凸块(121)中的一者，所述第二部件为所述凸轮和所述凸块中的另一者，所述第一部件固定于所述操纵轴(12)的输出端，所述第二部件固定于所述传动轴(21)的输入端。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=在所述操纵轴转动的过程中，所述第一部件与所述第二部件能够接触并使得所述第一部件带动所述第二部件转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求2所述的门把手，其特征在于，所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合；所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述第一部件为第一锥齿轮，所述第二部件为第二锥齿轮，所述第一锥齿轮固定于所述传动轴(21)的输入端，所述第二锥齿轮固定于所述操纵轴(12)的输出端，所述第二锥齿轮与所述第一锥齿轮啮合。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C4-F2",
+              "patent_feature": "所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述操纵轴(12)在转动的情况下带动所述第二锥齿轮转动，所述第二锥齿轮能够带动所述第一锥齿轮和所述传动轴(21)同步转动。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求2所述的门把手，其特征在于，所述传动夹角大于0°且小于180°。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述传动夹角大于0°且小于180°",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动夹角大于0°且小于180°。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求2所述的门把手，其特征在于，所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述传动轴(21)还包括连接轴(212)和摆臂(213)，所述连接轴(212)的一端与所述转向机构连接，所述连接轴(212)的另一端与所述摆臂(213)的第一端连接，所述摆臂(213)的第二端与所述推杆(22)的输入端转动连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的门把手，其特征在于，还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括手柄座(13)，所述手柄座(13)上设置有安装壁(131)，所述连接轴(212)转动连接于所述安装壁(131)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的门把手，其特征在于，还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=还包括复位件(4)，所述复位件(4)与所述连接轴(212)连接，并用于在所述推杆(22)实现解锁后带动所述连接轴(212)复位。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求8所述的门把手，其特征在于，所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件为扭簧，所述扭簧的一端固定连接所述手柄座，所述扭簧的另一端连接设置于所述第二部件远离所述第一部件的一侧。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求8所述的门把手，其特征在于，所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述复位件(4)包括第一扭簧和第二扭簧，所述手柄座(13)上设置有两个的安装壁(131)，所述第一扭簧和第二扭簧均套设于所述连接轴(212)上，并且所述第一扭簧的一端与一个所述安装壁(131)连接，所述第一扭簧的另一端与第二部件连接，所述第二扭簧的一端与另一个所述安装壁(131)连接，所述第二扭簧的另一端与所述摆臂(213)连接。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.一种车辆，其特征在于，包括权利要求1-10任一项所述的门把手和锁具(3)，所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "小鹏G6（2023款 580长续航Pro / 中国上市车型） 为公开上市/销售的乘用车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.xpeng.com/news/01889",
+                  "title": "XPENG G6 officially launched",
+                  "source_name": "XPeng",
+                  "snippet": "XPENG G6 was officially launched in June 2023 with China-market trims including 580 long range versions."
+                }
+              ],
+              "reasoning": "① X=车辆。② Y=小鹏G6（2023款 580长续航Pro / 中国上市车型），公开上市资料将其作为乘用车/纯电车型销售。③ (a) 概念是否等价：是，均为车辆；(b) 单位/量纲是否等价：是，均为二值对象存在；(c) 参考系是否等价：是，均指整车产品；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C11-F2",
+              "patent_feature": "所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=所述锁具(3)上设有导向槽，所述推杆的输出端设于所述导向槽内。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 65.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求11所述的车辆，其特征在于，包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上",
+              "competitor_feature": "未找到小鹏G6（2023款 580长续航Pro / 中国上市车型）同一SKU公开资料披露该特征对应的内部机械结构、连接关系或尺寸/位置细节。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [],
+              "reasoning": "① X=包括车门安装支架(100)，所述门把手设置于所述车门安装支架(100)上。② Y=当前证据池仅能确认候选车辆/外门把手配置或目录级维修线索，未见同一SKU公开爆炸图、维修手册正文或拆解图披露该内部结构。③ (a) 概念是否等价：否，Y未公开X所需部件或连接；(b) 单位/量纲是否等价：否，X为具体机械结构/连接关系，Y为外观、操作或目录线索；(c) 参考系是否等价：否，X定位到把手、锁具或车门内部，Y未给内部参考；(d) 是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 65.0,
+      "total_score": 65.0,
+      "searched_queries": [
+        "XPeng G6 580 Long Range Pro hidden electric door handle",
+        "小鹏G6 外门把手 拆解 锁块 推杆",
+        "小鹏G6 维修手册 门把手 外拉手 锁块",
+        "Xpeng G6 doors mechanical or electric 580 Pro",
+        "小鹏Xiao Peng G6 580 长续航 PRO 门把手 配置 PDF",
+        "[SKU自检-M3] 2023款 580长续航Pro / 新增 evidence sku 一致性: 境外580 Pro未用于明确满足; 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "小米汽车",
+        "company_en": "Xiaomi Auto",
+        "product_name": "小米SU7（2024款 标准版 / 中国上市车型）",
+        "product_name_en": "Xiaomi SU7 (2024 Standard China launch SKU)",
+        "product_intro": "小米 SU7 于 2024 年 3 月在中国上市，标准版属首批车型。公开事故/拆解报道显示其外部门把手采用电子释放逻辑，外侧没有可在断电状态下机械解锁车门的把手链路。",
+        "market": "中国智能纯电轿车前装市场",
+        "reason_for_deep_dive": "该车为 2024 年高关注度纯电轿车且采用半隐藏/隐藏式外把手，但公开资料显示其外把手电子释放特征与权 1 的机械传动推杆链路存在直接冲突。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://xueqiu.com/4350838678/329816643",
+          "https://www.bitauto.com/wiki/100335479530/",
+          "https://autonews.gasgoo.com/articles/news/xiaomi-evs-su7-all-electric-sedan-hits-market-starting-at-215900-yuan-70032193"
+        ],
+        "initial_evidence_summary": "SU7 2024 年 3 月上市；公开资料称车内设置应急机械拉手，另有公开讨论指出车外门把手无机械应急开关、仅为电子开关。"
+      },
+      "launch_date": "2024年3月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://autonews.gasgoo.com/articles/news/xiaomi-evs-su7-all-electric-sedan-hits-market-starting-at-215900-yuan-70032193",
+          "title": "Xiaomi EV's SU7 all-electric sedan hits market",
+          "source_name": "Gasgoo",
+          "snippet": "Xiaomi EV's first production model, the SU7 battery-electric sedan, officially hit the market on March 28, 2024."
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "C1-F3/C1-F4 明确不满足：公开资料显示外部门把手依赖电子释放，机械应急释放位于车内，不能证明且直接排斥外把手经操纵轴、传动轴和推杆机械解锁锁具。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种门把手，其特征在于，包括：手柄(11)；传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动；以及推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种门把手",
+              "competitor_feature": "小米 SU7 具有外部门把手/车门进入部件。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://autonews.gasgoo.com/articles/news/xiaomi-evs-su7-all-electric-sedan-hits-market-starting-at-215900-yuan-70032193",
+                  "title": "Xiaomi EV's SU7 all-electric sedan hits market",
+                  "source_name": "Gasgoo",
+                  "snippet": "Launch report describes Xiaomi SU7 as a passenger vehicle with standard door access equipment."
+                }
+              ],
+              "reasoning": "①X=门把手。②Y=SU7 外部车门进入部件。③(a)是；(b)是，部件存在；(c)是，车门外部；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "手柄(11)",
+              "competitor_feature": "SU7 有外部隐藏/半隐藏门把手作为用户操作入口。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.bitauto.com/wiki/100335479530/",
+                  "title": "小米su7车门机械拉手",
+                  "source_name": "易车百科",
+                  "snippet": "资料说明小米SU7全系车型在四个车门的内饰板下方设置应急机械拉手。"
+                }
+              ],
+              "reasoning": "①X=手柄。②Y=SU7 外部电子门把手。③(a)是，均为外部操作入口；(b)是，二值部件；(c)是，车门外部；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+              "competitor_feature": "SU7 外部门把手为电子释放，公开资料未显示外手柄带动操纵轴/传动轴转动，且电子释放与机械轴传动路径相冲突。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://xueqiu.com/4350838678/329816643",
+                  "title": "小米SU7车外门把手有机械应急开关吗",
+                  "source_name": "雪球",
+                  "snippet": "页面称小米SU7车外门把手没有机械应急开关，仅为电子开关；车内有机械应急开门方式。"
+                }
+              ],
+              "reasoning": "①X=外手柄带动机械轴系转动。②Y=外部电子门把手/车内机械应急。③(a)否，电子释放非轴传动；(b)否，X机械链、Y电信号；(c)否，机械应急在车内；(d)有，电子外把手报道。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+              "competitor_feature": "SU7 公开资料显示外部开门依赖电子释放，未见外把手传动轴驱动推杆移动解锁锁具；车内机械应急拉手不是本 SKU 外门把手推杆结构。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.bitauto.com/wiki/100335479530/",
+                  "title": "小米su7车门机械拉手",
+                  "source_name": "易车百科",
+                  "snippet": "资料说明小米SU7的应急机械拉手位于车门内饰板下方，属于车内机械应急释放。"
+                }
+              ],
+              "reasoning": "①X=外把手经传动轴推动推杆解锁。②Y=电子外把手+车内应急释放。③(a)否；(b)否，X机械位移、Y电子释放；(c)否，参考位置不同；(d)有，电子外把手为反证。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 0.0
+        }
+      ],
+      "claim_1_score": 0.0,
+      "total_score": 0.0,
+      "searched_queries": [
+        "[SKU自检-M3] 2024款 标准版 / 中国上市车型 / 新增 evidence sku 一致性: 模块二已失效未补搜; 冲突 ev: []"
+      ],
+      "searched_providers": []
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "特斯拉中国",
+        "company_en": "Tesla China",
+        "product_name": "Model 3（2020款 Standard Range Plus / 中国销售）",
+        "product_name_en": "Tesla Model 3 (2020 Standard Range Plus China SKU)",
+        "product_intro": "Model 3 2020 款早于本专利申请日进入中国市场。公开车主手册镜像显示外部门把手顶部按钮依赖低压电源；断电时无法使用该按钮开门。",
+        "market": "中国纯电轿车前装市场",
+        "reason_for_deep_dive": "Model 3 是头部竞品且有公开车主手册；该 2020 SKU 早于本专利申请日，按模块二规则失效。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+          "https://www.tmodel3.com/exterior_door_handles-1895.html"
+        ],
+        "initial_evidence_summary": "公开 2020 Model 3 车主手册镜像说明外部门把手按钮在无低压电源时无法工作；服务手册镜像列有 2017-2025 Model 3 外部门把手维修章节。"
+      },
+      "launch_date": "2020年款公开用户手册，早于2023年2月10日申请日",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+          "title": "TESLA MODEL 3 2020 Owner's Manuals",
+          "source_name": "CarManualsOnline",
+          "snippet": "Page identifies the 2020 Tesla Model 3 owner's manual and door-handle/no-power content."
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "launch_date 早于本专利申请日 2023-02-10；同时公开手册镜像显示外门把手按钮依赖低压电源，进一步削弱权 1 机械轴-推杆链路。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种门把手，其特征在于，包括：手柄(11)；传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动；以及推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种门把手",
+              "competitor_feature": "Model 3 具有外部门把手。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+                  "title": "Opening and Closing Doors",
+                  "source_name": "CarManualsOnline",
+                  "snippet": "Manual describes the exterior door handle and button used for opening Model 3 doors."
+                }
+              ],
+              "reasoning": "①X=门把手。②Y=Model 3 exterior door handle。③(a)是；(b)是，部件存在；(c)是，车门外部；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "手柄(11)",
+              "competitor_feature": "Model 3 外部门把手为用户可操作的把手/按钮组合。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+                  "title": "Opening and Closing Doors",
+                  "source_name": "CarManualsOnline",
+                  "snippet": "The manual gives user instructions for operating the exterior door handle."
+                }
+              ],
+              "reasoning": "①X=手柄。②Y=外部门把手/按钮。③(a)是，均是用户操作件；(b)是；(c)是，车门外侧；(d)无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+              "competitor_feature": "官方手册显示外部门把手顶部按钮依赖低压电源；断电时不能用外部按钮开门，反向证明外把手不是机械轴系直接解锁。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+                  "title": "Opening and Closing Doors",
+                  "source_name": "CarManualsOnline",
+                  "snippet": "Manual states that without low voltage power, Model 3 cannot be opened by pressing the button at the top of the exterior door handle."
+                }
+              ],
+              "reasoning": "①X=外手柄带动操纵轴/传动轴转动。②Y=低压供电按钮开门。③(a)否，按钮电释放非轴转动；(b)否，X机械链、Y电信号；(c)否；(d)有，断电无法外部开门。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+              "competitor_feature": "外部门把手按钮依赖低压电源，未通过传动轴驱动推杆移动来解锁锁具。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+                  "title": "Opening and Closing Doors",
+                  "source_name": "CarManualsOnline",
+                  "snippet": "No-low-voltage-power warning for the exterior door handle button contradicts a purely mechanical push-rod unlocking path."
+                }
+              ],
+              "reasoning": "①X=传动轴推动推杆解锁。②Y=低压供电外部按钮。③(a)否，Y是电释放；(b)否，X位移链、Y电信号；(c)否，缺机械锁具端连接；(d)有。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 0.0
+        }
+      ],
+      "claim_1_score": 0.0,
+      "total_score": 0.0,
+      "searched_queries": [
+        "[SKU自检-M3] 2020款 Standard Range Plus / 中国销售 / 新增 evidence sku 一致性: 模块二已失效未补搜; 冲突 ev: []"
+      ],
+      "searched_providers": []
+    }
+  ]
+}

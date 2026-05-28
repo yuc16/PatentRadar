@@ -1,0 +1,472 @@
+{
+  "publication_no": "CN221477024U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "乐道汽车",
+        "company_en": "ONVO / NIO",
+        "product_name": "乐道L90（2025款Max六座版 / 20250815用户手册）",
+        "product_name_en": "ONVO L90 (2025 Max six-seat / 20250815 user manual)",
+        "product_intro": "2025年7月上市的六座大三排纯电SUV；用户手册披露侧面安全气囊包括前两排座椅两侧的座椅侧气囊、主驾座椅内侧远端气囊及侧气帘。",
+        "market": "中国新能源大三排SUV前装市场",
+        "reason_for_deep_dive": "同级家庭SUV，被动安全配置公开资料较多，且手册明示座椅侧气囊和气囊内部气体发生器，适合优先判定权1。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+          "https://finance.sina.cn/2025-07-31/detail-infikvpk7093876.d.html?vt=4",
+          "https://www.automotiveworld.com/news-releases/onvos-flagship-suv-l90-officially-launched-starting-at-rmb-265800/"
+        ],
+        "initial_evidence_summary": "L90用户手册披露：侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；同一手册披露气囊内部气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+      },
+      "launch_date": "2025年7月31日正式上市，2025年8月1日开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://finance.sina.cn/2025-07-31/detail-infikvpk7093876.d.html?vt=4",
+          "title": "蔚来乐道L90正式上市 起售价26.58万元",
+          "source_name": "新浪财经",
+          "snippet": "2025年7月31日，蔚来汽车旗下乐道品牌正式发布旗舰车型乐道L90；全系标配9安全气囊。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+          "competitor_feature": "L90的侧面安全气囊包括座椅侧气囊（前两排座椅两侧），属于应用于车辆并安装在座椅侧部的侧气囊。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+              "title": "乐道L90用户手册",
+              "source_name": "ONVO",
+              "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘。"
+            }
+          ],
+          "reasoning": "①X=车辆座椅一侧的侧气囊。②Y=L90前两排座椅两侧的座椅侧气囊。③(a)是，均为座椅侧部侧气囊；(b)是，二值存在；(c)是，车辆座椅侧部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+          "competitor_feature": "L90公开手册仅披露气囊空间充气形成缓冲保护层，未披露座椅侧气囊气袋的第一/第二袋面及周沿密封结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+              "title": "乐道L90用户手册",
+              "source_name": "ONVO",
+              "snippet": "气体充满整个气囊空间，形成缓冲保护层。"
+            }
+          ],
+          "reasoning": "①X=两片袋面周沿密封成气袋。②Y=手册仅称气体充满气囊空间。③(a)否，未公开袋面；(b)不明；(c)不明；(d)无。无法确认裁片和密封线。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：L90座椅侧气囊拆解图、供应商图纸或维修手册中气袋裁片/缝线结构。下一步：检索奥托立夫L90配套安全气囊资料、L90 SRS维修手册、事故后侧气囊实物拆解图。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+          "competitor_feature": "L90手册披露气囊内部的气体发生器点燃并释放压力气体，气体充满气囊空间；但未公开气体发生器是否固定在第一袋面上。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+              "title": "乐道L90用户手册",
+              "source_name": "ONVO",
+              "snippet": "气囊内部的气体发生器点燃并释放一定压力的气体，弹开气囊盖板，气体充满整个气囊空间。"
+            }
+          ],
+          "reasoning": "①X=气体发生器在气袋一袋面并充气。②Y=L90气囊内气体发生器释放气体充满气囊。③(a)是，充气功能等价；(b)是，存在/功能；(c)是，气囊内部；(d)无。袋面固定点未明示。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：气体发生器固定在L90座椅侧气囊哪一袋面上的直接证据。下一步：找L90座椅侧气囊总成拆卸图、供应商装配图或实物照片。"
+        }
+      ],
+      "total_score": 70.0,
+      "searched_queries": [
+        "乐道 L90 用户手册 座椅侧气囊 气体发生器",
+        "乐道L90 安全气囊 气体发生器 座椅侧气囊",
+        "ONVO L90 side airbag inflator seat airbag",
+        "ONVO L90 user manual airbags seat side",
+        "site:m.asemanshop.com 乐道L90 安全气囊 维修手册",
+        "site:www.qixiu88.com 乐道L90 安全气囊 维修手册",
+        "奥托立夫 乐道L90 配套 安全气囊"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual",
+        "recommended_sites:m.asemanshop.com,www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "吉利汽车",
+        "company_en": "Geely Auto",
+        "product_name": "吉利银河M9（2025款210km四驱领航版）",
+        "product_name_en": "Geely Galaxy M9 (2025 210km AWD Linghang Edition)",
+        "product_intro": "2025年9月上市的六座大型电混SUV；官方页披露9个安全气囊含双腔远端气囊，配置表披露第一排和第二排侧气囊。",
+        "market": "中国新能源大六座SUV前装市场",
+        "reason_for_deep_dive": "用户点名重点候选；车型安全配置公开度高，与座椅侧气囊/远端气囊应用场景高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.galaxy-geely.com/M9",
+          "https://www.evlook.com/yinhem9/peizhi",
+          "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml"
+        ],
+        "initial_evidence_summary": "吉利官方页披露银河M9有9个安全气囊，含双腔远端气囊；EV视界配置表披露第一排侧气囊、第二排侧气囊、侧安全气帘均为标配。"
+      },
+      "launch_date": "2025年9月17日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml",
+          "title": "吉利银河M9正式上市 限时价17.38-23.88万元",
+          "source_name": "新浪汽车",
+          "snippet": "9月17日，吉利银河M9正式上市，共推出6款车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+          "competitor_feature": "银河M9配置表列出第一排侧气囊和第二排侧气囊，官方页列出9个安全气囊含双腔远端气囊，属于车辆座椅侧向约束气囊配置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlook.com/yinhem9/peizhi",
+              "title": "银河M9配置表",
+              "source_name": "EV视界",
+              "snippet": "被动安全：第一排侧气囊、第二排侧气囊、侧安全气帘均为标配。"
+            },
+            {
+              "url": "https://www.galaxy-geely.com/M9",
+              "title": "吉利银河M9",
+              "source_name": "吉利银河官网",
+              "snippet": "9个安全气囊，含双腔远端气囊，多维守护驾乘安全。"
+            }
+          ],
+          "reasoning": "①X=车辆座椅一侧的侧气囊。②Y=M9第一/二排侧气囊及远端气囊。③(a)是，均为座椅侧向气囊；(b)是，二值存在；(c)是，车辆座椅区域；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+          "competitor_feature": "银河M9公开页面仅披露气囊配置数量和类型，未披露侧气囊气袋的第一袋面、第二袋面或周沿密封结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=两袋面周沿密封成气袋。②Y=M9公开资料只列侧气囊/远端气囊配置。③(a)否，未公开气袋结构；(b)不明；(c)不明；(d)无。不能凭配置名确认袋面。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：吉利银河M9座椅侧气囊气袋裁片、周沿密封线或拆解照片。下一步：检索M9维修手册SRS章节、座椅侧气囊总成零件图、事故后气囊展开实拍。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+          "competitor_feature": "银河M9公开页面未披露侧气囊气体发生器、安装袋面或气体发生器与气袋的连接关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=气体发生器固定于袋面并充气。②Y=M9资料仅有气囊配置项。③(a)否，未见发生器；(b)不明；(c)不明；(d)无。内部装配关系缺证。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：银河M9侧气囊气体发生器实物/装配位置证据。下一步：找M9 SRS维修手册、供应商配套公告、座椅侧气囊总成拆卸视频或零件图。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "吉利 银河M9 210km 四驱领航版 第一排侧气囊",
+        "银河M9 用户手册 侧气囊 气体发生器",
+        "银河M9 配置表 第一排侧气囊 第二排侧气囊",
+        "Geely Galaxy M9 side airbag seat airbag configuration",
+        "Geely Galaxy M9 far-side airbag dual chamber",
+        "site:m.asemanshop.com 银河M9 安全气囊 维修手册",
+        "site:www.qixiu88.com 银河M9 安全气囊 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_page",
+        "recommended_sites:m.asemanshop.com,www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "赛力斯问界",
+        "company_en": "SERES AITO",
+        "product_name": "问界M8增程Max+六座版（2025-04上市 / 20250716用户手册）",
+        "product_name_en": "AITO M8 EREV Max+ six-seat (2025 launch / 20250716 user manual)",
+        "product_intro": "2025年4月上市的中大型增程SUV；用户手册披露驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。",
+        "market": "中国新能源家庭SUV前装市场",
+        "reason_for_deep_dive": "同级大六座SUV，侧气囊覆盖前排和第二排，公开手册有座椅侧气囊位置证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+          "https://www.ithome.com/0/845/682.htm"
+        ],
+        "initial_evidence_summary": "问界M8手册披露车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊；上市报道披露2025年4月16日正式上市。"
+      },
+      "launch_date": "2025年4月16日正式上市，2025年4月20日开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/845/682.htm",
+          "title": "鸿蒙智行家庭智慧旗舰 SUV 问界 M8 正式上市",
+          "source_name": "IT之家",
+          "snippet": "2025年4月16日，问界M8正式上市，新车提供增程Max、增程Max+、增程Ultra三种配置，4月20日开启交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+          "competitor_feature": "问界M8手册列明驾驶员座椅侧气囊、副驾驶员座椅侧气囊及第二排座椅侧气囊，属于安装于车辆座椅侧部的侧气囊。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+              "title": "问界M8增程版用户手册",
+              "source_name": "AITO",
+              "snippet": "车辆安全气囊安装位置：驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊、远端侧气囊。"
+            }
+          ],
+          "reasoning": "①X=车辆座椅侧部侧气囊。②Y=M8驾驶员/副驾驶/二排座椅侧气囊。③(a)是；(b)是，存在项；(c)是，座椅侧部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+          "competitor_feature": "问界M8公开手册没有披露座椅侧气囊的气袋袋面数量、裁片或周沿密封方式。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=两袋面周沿密封。②Y=M8手册只列气囊位置。③(a)否，结构未公开；(b)不明；(c)不明；(d)无。缺气袋构造证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：M8座椅侧气囊气袋裁片/缝线/密封结构。下一步：检索M8维修手册、座椅SRS总成零件图、侧气囊展开后实物照片。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+          "competitor_feature": "问界M8公开手册未披露座椅侧气囊的气体发生器及其安装在气袋袋面上的位置关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=气体发生器在第一袋面并充气。②Y=M8资料仅列座椅侧气囊位置。③(a)否，未公开发生器；(b)不明；(c)不明；(d)无。不能确认安装关系。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：M8侧气囊气体发生器与气袋连接/固定位置证据。下一步：找SRS维修拆装图、供应商公告或拆解视频。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "问界M8 2025 用户手册 座椅侧气囊",
+        "AITO M8 seat side airbag user manual",
+        "问界M8 气体发生器 座椅侧气囊",
+        "问界M8 增程 Max+ 六座 安全气囊",
+        "site:m.asemanshop.com 问界M8 安全气囊 维修手册",
+        "site:www.qixiu88.com 问界M8 安全气囊 维修手册",
+        "AITO M8 side airbag inflator"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual",
+        "recommended_sites:m.asemanshop.com,www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "广汽传祺",
+        "company_en": "GAC Trumpchi",
+        "product_name": "传祺向往M8宗师（T9M短续航智驾 / 2025-10上市）",
+        "product_name_en": "GAC Trumpchi Xiangwang M8 Master (T9M short-range ADAS / 2025 launch)",
+        "product_intro": "2025年10月上市的新能源MPV；在线用户手册披露前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部。",
+        "market": "中国新能源MPV前装市场",
+        "reason_for_deep_dive": "用户手册HTML可直接验证前排座椅侧气囊的座椅靠背内安装位置和迅速膨胀功能。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+          "https://auto.sina.com.cn/newcar/x/2025-10-16/detail-infuautn9635023.shtml"
+        ],
+        "initial_evidence_summary": "广汽传祺在线手册披露前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；侧碰触发时迅速膨胀。"
+      },
+      "launch_date": "2025年10月16日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.com.cn/newcar/x/2025-10-16/detail-infuautn9635023.shtml",
+          "title": "24.99万元起 传祺向往M8宗师正式上市",
+          "source_name": "新浪汽车",
+          "snippet": "10月16日，传祺向往M8宗师在2025中国国际新能源和智能网联汽车展览会上发布上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+          "competitor_feature": "向往M8宗师前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部，座椅外侧标有AIRBAG。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+              "title": "安全气囊分布",
+              "source_name": "广汽传祺用户手册",
+              "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部，前排座椅外侧标有“AIRBAG”字样。"
+            }
+          ],
+          "reasoning": "①X=车辆座椅一侧的侧气囊。②Y=M8前排座椅靠背向门侧内部侧气囊。③(a)是；(b)是，存在项；(c)是，座椅侧部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+          "competitor_feature": "向往M8宗师用户手册未披露前排侧面安全气囊气袋的第一/第二袋面及周沿密封连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=两袋面周沿密封气袋。②Y=手册仅列安装位置和膨胀。③(a)否，袋面未公开；(b)不明；(c)不明；(d)无。结构证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：T9M前排座椅侧气囊气袋裁片和密封线证据。下一步：检索广汽传祺T9M维修手册、座椅侧气囊总成拆装页或事故展开图。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+          "competitor_feature": "向往M8宗师手册披露侧面安全气囊触发后迅速膨胀，但未披露气体发生器或其设置在第一袋面上的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+              "title": "安全气囊分布",
+              "source_name": "广汽传祺用户手册",
+              "snippet": "系统触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+            }
+          ],
+          "reasoning": "①X=气体发生器在袋面并使气袋膨胀。②Y=手册只说系统触发侧气囊膨胀。③(a)否，发生器未公开；(b)不明；(c)不明；(d)无。仅有功能结果。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：T9M侧气囊气体发生器装配位置。下一步：查SRS拆装手册、供应商资料、座椅侧气囊总成照片。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "传祺 向往M8 宗师 用户手册 前排侧面安全气囊",
+        "GAC Trumpchi Xiangwang M8 side airbag manual",
+        "传祺向往M8 气体发生器 侧气囊",
+        "传祺向往M8宗师 2025 上市 安全气囊",
+        "site:m.asemanshop.com 传祺向往M8 安全气囊 维修手册",
+        "site:www.qixiu88.com 传祺向往M8 安全气囊 维修手册",
+        "T9M UserManual side airbag seatback"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual_html",
+        "recommended_sites:m.asemanshop.com,www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "特斯拉中国",
+        "company_en": "Tesla China",
+        "product_name": "Model Y焕新版（2025款后轮驱动首发版 / 中国）",
+        "product_name_en": "Tesla Model Y Refresh (2025 RWD Launch Edition / China)",
+        "product_intro": "2025年1月在中国发布的焕新版Model Y；官方车主手册披露前排座椅上的座椅侧气囊和驾驶位座椅内侧远端气囊。",
+        "market": "中国新能源SUV前装市场",
+        "reason_for_deep_dive": "国际头部车型，官方手册公开座椅侧气囊位置和气囊膨胀工作说明。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+          "https://www.nbd.com.cn/articles/2025-01-10/3716778.html"
+        ],
+        "initial_evidence_summary": "Tesla官方手册披露Model Y座椅侧气囊位于前排座椅，可保护胸部及骨盆；手册说明气囊在传感器检测超过阈值后充气并迅速膨胀。"
+      },
+      "launch_date": "2025年1月10日中国发布，预计2025年3月交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.nbd.com.cn/articles/2025-01-10/3716778.html",
+          "title": "特斯拉中国官宣：新款Model Y发布",
+          "source_name": "每日经济新闻",
+          "snippet": "1月10日，特斯拉中国宣布推出焕新版Model Y，起售价为26.35万元，预计3月交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+          "competitor_feature": "Model Y官方手册列出座椅侧气囊；前排座椅上的座椅侧气囊保护躯干胸部和骨盆。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+              "title": "Model Y Owner's Manual - 气囊",
+              "source_name": "Tesla",
+              "snippet": "座椅侧气囊：前排座椅上的座椅侧气囊可帮助保护人体躯干的胸部及骨盆。"
+            }
+          ],
+          "reasoning": "①X=车辆座椅一侧侧气囊。②Y=Model Y前排座椅座椅侧气囊。③(a)是；(b)是，存在项；(c)是，前排座椅侧部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+          "competitor_feature": "Model Y官方手册未披露座椅侧气囊气袋的第一/第二袋面或周沿密封连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "①X=两袋面周沿密封气袋。②Y=手册仅列座椅侧气囊类型。③(a)否，袋面未公开；(b)不明；(c)不明；(d)无。缺内部构造证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：2025款Model Y座椅侧气囊气袋裁片/密封线证据。下一步：查Tesla 2025 Model Y维修手册SRS侧气囊拆装页和事故展开实物图。"
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+          "competitor_feature": "Model Y手册披露气囊在传感器探测后充气并强力膨胀，但未披露气体发生器及其在气袋袋面上的设置位置。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+              "title": "Model Y Owner's Manual - 气囊",
+              "source_name": "Tesla",
+              "snippet": "当传感器探测到超出展开阈值的冲击力后，气囊将充气；气囊瞬间强力膨胀。"
+            }
+          ],
+          "reasoning": "①X=气体发生器在袋面并充气。②Y=手册只说气囊充气膨胀。③(a)否，未公开发生器；(b)不明；(c)不明；(d)无。功能结果不足以确认结构。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "还缺：Model Y座椅侧气囊气体发生器与气袋连接/固定位置。下一步：检索Tesla服务手册侧气囊模块拆装图、供应商/召回零件图。"
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "2025 Model Y 中国 座椅侧气囊 用户手册",
+        "Tesla Model Y 2025 seat-mounted side airbag inflator",
+        "Model Y Owner Manual seat side airbags inflator",
+        "特斯拉 焕新版 Model Y 气体发生器 座椅侧气囊",
+        "site:m.asemanshop.com Model Y 2025 安全气囊 维修手册",
+        "site:www.qixiu88.com Model Y 2025 安全气囊 维修手册",
+        "Tesla service manual 2025 Model Y side airbag module"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual",
+        "recommended_sites:m.asemanshop.com,www.qixiu88.com"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

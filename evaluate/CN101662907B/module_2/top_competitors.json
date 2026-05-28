@@ -1,0 +1,639 @@
+{
+  "publication_no": "CN101662907B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "安平县皇发丝网制品有限公司",
+        "company_en": "Anping Huangfa Wire Mesh Products Co., Ltd.",
+        "product_name": "皇发镀锌防滑冲孔板 鱼眼孔防滑板（供应商网4051511689 / 鱼眼孔）",
+        "product_name_en": "Huangfa galvanized anti-slip perforated plate fisheye-hole plate (GYS 4051511689 / fisheye hole)",
+        "product_intro": "供应商网 4051511689 页面锁定的皇发鱼眼孔防滑冲孔板，品牌皇发，孔型为鱼眼孔，材料为镀锌板，板厚 0.3mm、孔径 10mm。",
+        "market": "中国工业平台、楼梯脚踏板、防滑冲孔板市场",
+        "reason_for_deep_dive": "用户点名关注；该 SKU 明确为金属镀锌板、鱼眼孔防滑冲孔板，店铺分类写有“鱼眼（圆凸起）防滑板”，与权 1 的金属基板、凸起图案和位于凸起处的通孔高度相关。",
+        "source_result_ids": [
+          "search:皇发 鱼眼 冲孔板",
+          "fetch:gys-4051511689"
+        ],
+        "source_urls": [
+          "https://anpinghuangfa.gys.cn/supply/4051511689.html"
+        ],
+        "initial_evidence_summary": "产品页标题为“皇发镀锌防滑冲孔板 鱼眼孔防滑板 楼梯脚踏板”，参数列明品牌皇发、孔型鱼眼孔、材料镀锌板、用途防滑板、板厚 0.3mm、孔径 10mm；同页分类为鱼眼（圆凸起）防滑板。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种装饰有图案的金属板",
+          "competitor_feature": "产品页为“镀锌防滑冲孔板/鱼眼孔防滑板”，鱼眼孔阵列构成可见表面图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://anpinghuangfa.gys.cn/supply/4051511689.html",
+              "title": "皇发镀锌防滑冲孔板 鱼眼孔防滑板 楼梯脚踏板",
+              "source_name": "供应商网皇发店铺",
+              "snippet": "标题写明“皇发镀锌防滑冲孔板 鱼眼孔防滑板 楼梯脚踏板”，参数区列“品牌：皇发、孔型：鱼眼孔、材料：镀锌板”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：装饰有图案的金属板，是带有可见表面图案的金属板材，量纲为产品/结构集合。② 候选公开证据 Y：皇发 SKU 为镀锌防滑冲孔板、鱼眼孔防滑板，鱼眼孔阵列形成表面图案。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，二者均为具有表面孔型图案的金属板。(b) 单位/量纲是否等价：是，均为实体板材结构。(c) 参考系是否等价：是，均以板材表面可见结构作为图案参考。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "皇发 4051511689 鱼眼孔 防滑冲孔板 实物图",
+            "皇发 鱼眼圆孔凸起冲孔板 孔型 参数"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "金属基板",
+          "competitor_feature": "产品材料为镀锌板，属于金属板基材。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://anpinghuangfa.gys.cn/supply/4051511689.html",
+              "title": "皇发镀锌防滑冲孔板 鱼眼孔防滑板 楼梯脚踏板",
+              "source_name": "供应商网皇发店铺",
+              "snippet": "详细信息列明“材料：镀锌板”“板厚：0.3mm”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：金属基板，是金属材质的板状基材，量纲为材料/板材结构。② 候选公开证据 Y：产品详细信息列材料为镀锌板、板厚 0.3mm。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，镀锌板是金属板材。(b) 单位/量纲是否等价：是，均为板材实体，厚度以 mm 表征。(c) 参考系是否等价：是，均指承载孔型和凸起结构的基板。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "皇发镀锌防滑冲孔板 材料 镀锌板",
+            "anpinghuangfa 4051511689 板厚 孔径"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "凸起部，该凸起部位于金属基板上，并形成图案",
+          "competitor_feature": "店铺分类为鱼眼（圆凸起）防滑板，SKU 孔型为鱼眼孔，鱼眼/圆凸起孔型在板面形成防滑图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://anpinghuangfa.gys.cn/supply/4051511689.html",
+              "title": "皇发镀锌防滑冲孔板 鱼眼孔防滑板 楼梯脚踏板",
+              "source_name": "供应商网皇发店铺",
+              "snippet": "同页产品分类包含“鱼眼（圆凸起）防滑板”，SKU 标题和参数均指向鱼眼孔防滑板。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：位于金属基板上的凸起部，并由凸起部形成图案，量纲为板面局部凸出结构集合。② 候选公开证据 Y：皇发页面把本类产品归入“鱼眼（圆凸起）防滑板”，且本 SKU 孔型为鱼眼孔。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，圆凸起/鱼眼孔型是板面凸起结构。(b) 单位/量纲是否等价：是，均为多个局部凸起构成的集合结构。(c) 参考系是否等价：是，均相对于金属板面形成凸出图案。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "皇发 鱼眼 圆凸起 防滑板",
+            "皇发镀锌防滑冲孔板 鱼眼孔 实拍"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "多个通孔，所述多个通孔位于凸起部上，并贯穿突起部和金属基板",
+          "competitor_feature": "SKU 为防滑冲孔板，孔型鱼眼孔，页面给出孔径 10mm；鱼眼圆凸起孔型即在圆凸起区域形成冲孔。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://anpinghuangfa.gys.cn/supply/4051511689.html",
+              "title": "皇发镀锌防滑冲孔板 鱼眼孔防滑板 楼梯脚踏板",
+              "source_name": "供应商网皇发店铺",
+              "snippet": "产品为“防滑冲孔板”，参数列“孔型：鱼眼孔”“孔径：10mm”，同页分类为“鱼眼（圆凸起）防滑板”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：多个通孔位于凸起部并贯穿凸起部和金属基板，量纲为贯通孔的结构集合。② 候选公开证据 Y：皇发 SKU 是防滑冲孔板，孔型为鱼眼孔，孔径 10mm，并归入圆凸起防滑板。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，冲孔板的鱼眼孔是穿透板材的孔型，且与圆凸起防滑结构绑定。(b) 单位/量纲是否等价：是，均为多个孔的集合，孔径以 mm 表征。(c) 参考系是否等价：是，孔位于鱼眼/圆凸起防滑结构所在的板面区域。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "皇发 鱼眼孔 防滑板 孔径 10mm",
+            "皇发 鱼眼孔 防滑冲孔板 贯穿"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100,
+      "searched_queries": [
+        "皇发 鱼眼 冲孔板",
+        "皇发 鱼眼圆孔凸起冲孔板",
+        "site:anpinghuangfa.gys.cn 鱼眼孔 防滑板",
+        "site:gys.cn 皇发 圆孔起鼓 防滑踏板",
+        "皇发镀锌防滑冲孔板 鱼眼孔防滑板 4051511689"
+      ],
+      "searched_providers": [
+        "web search",
+        "供应商网 gys.cn",
+        "curl fetch with HTTP 200 verification",
+        "m.asemanshop.com root checked, no relevant evidence",
+        "qixiu88.com root checked, no relevant evidence"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "衡水宜轩金属制品有限公司",
+        "company_en": "Hengshui Yixuan Metal Products Co., Ltd.",
+        "product_name": "鱼眼孔镀锌防滑板（APXSX-547 / 镀锌板1-3mm）",
+        "product_name_en": "Galvanized fisheye-hole anti-slip plate (APXSX-547 / galvanized sheet 1-3mm)",
+        "product_intro": "宜轩 APXSX-547 页面锁定的鱼眼孔镀锌防滑板，材质为镀锌板，厚度 1-3mm，按客户要求定做。",
+        "market": "中国工业厂房、生产车间、交通设施、楼梯脚踏板防滑板市场",
+        "reason_for_deep_dive": "页面直接披露镀锌板、圆孔冲孔、起鼓处理、形成防滑孔，并说明表面凸起是冲孔的眼，权 1 四个特征均有字面证据。",
+        "source_result_ids": [
+          "search:鱼眼孔镀锌防滑板 宜轩",
+          "fetch:apxsx-547"
+        ],
+        "source_urls": [
+          "https://www.apxsx.com/chanpinzhanshi/yuankong/547.html"
+        ],
+        "initial_evidence_summary": "页面标题和正文为“鱼眼孔镀锌防滑板”，写明材质镀锌板、厚度 1mm-3mm；加工工艺为圆孔冲孔后起鼓处理形成防滑孔；产品特点写明表面的凸起是冲孔的眼。"
+      },
+      "launch_date": "2020-08-29 页面发布时间；SKU 首次销售未明确",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.apxsx.com/chanpinzhanshi/yuankong/547.html",
+          "title": "鱼眼孔镀锌防滑板",
+          "source_name": "宜轩金属防滑板公司",
+          "snippet": "页面显示“鱼眼孔镀锌防滑板 发布时间：2020-08-29 22:26”。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种装饰有图案的金属板",
+          "competitor_feature": "鱼眼孔镀锌防滑板，板面由鱼眼孔/防滑孔形成规则图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.apxsx.com/chanpinzhanshi/yuankong/547.html",
+              "title": "鱼眼孔镀锌防滑板",
+              "source_name": "宜轩金属防滑板公司",
+              "snippet": "页面标题为“鱼眼孔镀锌防滑板”，正文写“加工生产鱼眼孔镀锌防滑板”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：装饰有图案的金属板，是具有表面图案的金属板材。② 候选公开证据 Y：候选为鱼眼孔镀锌防滑板，鱼眼孔/防滑孔在板面形成规则图案。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，二者均为带图案化板面结构的金属板。(b) 单位/量纲是否等价：是，均为板材实体结构。(c) 参考系是否等价：是，均以板面图案为参考。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "APXSX 547 鱼眼孔镀锌防滑板",
+            "宜轩 鱼眼孔镀锌防滑板 实物"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "金属基板",
+          "competitor_feature": "材质为镀锌板，厚度 1mm-3mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.apxsx.com/chanpinzhanshi/yuankong/547.html",
+              "title": "鱼眼孔镀锌防滑板",
+              "source_name": "宜轩金属防滑板公司",
+              "snippet": "正文列明“材质：镀锌板；厚度：1mm-3mm”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：金属基板，是金属材质板状基材。② 候选公开证据 Y：候选材质为镀锌板，厚度 1mm-3mm。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，镀锌板属于金属板基材。(b) 单位/量纲是否等价：是，二者均为板材，厚度以 mm 表征。(c) 参考系是否等价：是，均为后续冲孔/起鼓加工的板材基体。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "鱼眼孔镀锌防滑板 材质 镀锌板 厚度",
+            "apxsx 547 镀锌板 1mm 3mm"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "凸起部，该凸起部位于金属基板上，并形成图案",
+          "competitor_feature": "圆孔冲孔后再起鼓处理形成防滑孔，表面凸起为鱼眼孔防滑图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.apxsx.com/chanpinzhanshi/yuankong/547.html",
+              "title": "鱼眼孔镀锌防滑板",
+              "source_name": "宜轩金属防滑板公司",
+              "snippet": "加工工艺写明“经过圆孔冲孔，冲成所需孔型，然后再经过起鼓处理，形成防滑孔”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：金属基板上的凸起部，并由凸起部形成图案。② 候选公开证据 Y：候选通过圆孔冲孔后起鼓处理形成防滑孔，鱼眼孔阵列在板面形成图案。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，起鼓处理产生的防滑孔就是板面凸起部。(b) 单位/量纲是否等价：是，均为多个凸起局部的集合。(c) 参考系是否等价：是，均相对于金属板表面凸出并形成图案。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "宜轩 鱼眼孔 防滑板 起鼓处理",
+            "鱼眼孔镀锌防滑板 防滑孔 起鼓"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "多个通孔，所述多个通孔位于凸起部上，并贯穿突起部和金属基板",
+          "competitor_feature": "表面凸起是冲孔的眼，水油等能从孔眼排出，说明通孔位于凸起处并贯通板材。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.apxsx.com/chanpinzhanshi/yuankong/547.html",
+              "title": "鱼眼孔镀锌防滑板",
+              "source_name": "宜轩金属防滑板公司",
+              "snippet": "产品特点写明“表面的凸起是冲孔的眼，水，油，清洁剂和一些细小润滑的东西能从踏板表面的孔眼排出”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：多个通孔位于凸起部，并贯穿凸起部和金属基板。② 候选公开证据 Y：候选表面的凸起就是冲孔的眼，液体能从孔眼排出。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，能排出液体的冲孔眼是贯通孔，且位于表面凸起处。(b) 单位/量纲是否等价：是，均为多个孔的集合结构。(c) 参考系是否等价：是，均以凸起部/鱼眼孔处作为孔位置参考。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "鱼眼孔镀锌防滑板 表面的凸起是冲孔的眼",
+            "鱼眼孔防滑板 孔眼 排水 起鼓"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100,
+      "searched_queries": [
+        "鱼眼孔镀锌防滑板 宜轩",
+        "site:apxsx.com 鱼眼孔镀锌防滑板 起鼓处理",
+        "site:haofanghua.com 圆孔起鼓防滑板 鱼眼防滑板",
+        "圆孔防滑板 表面的凸起是冲孔的眼",
+        "鱼眼孔防滑板 圆孔冲孔 起鼓处理"
+      ],
+      "searched_providers": [
+        "web search",
+        "宜轩官网 apxsx.com",
+        "宜轩官网 haofanghua.com",
+        "curl fetch with HTTP 200 verification",
+        "m.asemanshop.com root checked, no relevant evidence",
+        "qixiu88.com root checked, no relevant evidence"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "河北二阳丝网有限公司",
+        "company_en": "Hebei Eryang Silk Mesh Co., Ltd.",
+        "product_name": "Anti Slip Dimpled Steel Plate（YY-09 / galvanized sheet plate）",
+        "product_name_en": "Anti Slip Dimpled Steel Plate (YY-09 / galvanized sheet plate)",
+        "product_intro": "Made-in-China 页面锁定的 ERYANG YY-09 防滑凹凸钢板，材料为 galvanized sheet plate，规格 1000*2000mm/1200*2400/customized。",
+        "market": "中国及出口工业平台、船舶、交通、重工业防滑板市场",
+        "reason_for_deep_dive": "页面直接披露 raised fish-eye-like protrusions、每个突起顶部有 drainage hole，并给出凸起间距、凸起高度和排水孔直径，权 1 对应关系最清楚。",
+        "source_result_ids": [
+          "search:Anti Slip Dimpled Steel Plate YY-09",
+          "fetch:eryang-YY-09"
+        ],
+        "source_urls": [
+          "https://eryangmesh.en.made-in-china.com/product/GUYRMgychKVI/China-Anti-Slip-Dimpled-Steel-Plate-with-High-Load-Bearing-Capacity.html"
+        ],
+        "initial_evidence_summary": "页面列 Model NO. YY-09、Material galvanized sheet plate、Hole Shape round；产品说明称其具有 raised fish-eye-like protrusions stamped onto metal sheets，每个 protrusion 顶部有 drainage hole。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种装饰有图案的金属板",
+          "competitor_feature": "防滑凹凸钢板，鱼眼状/半球状凸起阵列构成板面图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://eryangmesh.en.made-in-china.com/product/GUYRMgychKVI/China-Anti-Slip-Dimpled-Steel-Plate-with-High-Load-Bearing-Capacity.html",
+              "title": "Anti Slip Dimpled Steel Plate with High Load Bearing Capacity",
+              "source_name": "Made-in-China / Hebei Eryang",
+              "snippet": "Product Description: “Dimpled anti-slip plate ... features raised fish-eye-like (or hemispherical) protrusions stamped onto metal sheets.”"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：装饰有图案的金属板，是具有表面图案的金属板材。② 候选公开证据 Y：YY-09 是带有鱼眼状/半球状凸起阵列的金属防滑板。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，鱼眼状凸起阵列构成板面图案。(b) 单位/量纲是否等价：是，均为板材实体结构。(c) 参考系是否等价：是，均以金属板表面图案结构为参考。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "YY-09 anti slip dimpled steel plate fisheye protrusions",
+            "Hebei Eryang YY-09 drainage hole protrusion"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "金属基板",
+          "competitor_feature": "材料为 galvanized sheet plate，并可选低碳钢板、不锈钢板、铝材。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://eryangmesh.en.made-in-china.com/product/GUYRMgychKVI/China-Anti-Slip-Dimpled-Steel-Plate-with-High-Load-Bearing-Capacity.html",
+              "title": "Anti Slip Dimpled Steel Plate with High Load Bearing Capacity",
+              "source_name": "Made-in-China / Hebei Eryang",
+              "snippet": "Product Attributes list “Material: Galvanized Sheet Plate” and “Material Selection: Low-Carbon Steel Plate, Stainless Steel Plate, Alu”."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：金属基板，是金属材质的板状基材。② 候选公开证据 Y：YY-09 材料为镀锌钢板，并列出低碳钢板、不锈钢板、铝材可选。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，镀锌钢板是金属基板。(b) 单位/量纲是否等价：是，均为板材实体。(c) 参考系是否等价：是，均为承载凸起和孔的基板。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "YY-09 galvanized sheet plate material",
+            "Anti Slip Dimpled Steel Plate material selection"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "凸起部，该凸起部位于金属基板上，并形成图案",
+          "competitor_feature": "鱼眼状或半球状凸起冲压在金属板上，梅花状错列排布。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://eryangmesh.en.made-in-china.com/product/GUYRMgychKVI/China-Anti-Slip-Dimpled-Steel-Plate-with-High-Load-Bearing-Capacity.html",
+              "title": "Anti Slip Dimpled Steel Plate with High Load Bearing Capacity",
+              "source_name": "Made-in-China / Hebei Eryang",
+              "snippet": "页面写明“raised fish-eye-like (or hemispherical) protrusions stamped onto metal sheets”，并列“Protrusion arrangement: Staggered (quincunx) arrangement”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：位于金属基板上的凸起部，并由凸起部形成图案。② 候选公开证据 Y：YY-09 的鱼眼状/半球状凸起冲压在金属板上，且以梅花状错列排布。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，stamped protrusions 是金属板上的凸起部。(b) 单位/量纲是否等价：是，均为多个凸起构成的结构集合。(c) 参考系是否等价：是，均相对于金属板表面形成图案。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "YY-09 fish-eye protrusion arrangement",
+            "dimpled anti-slip plate protrusion height"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "多个通孔，所述多个通孔位于凸起部上，并贯穿突起部和金属基板",
+          "competitor_feature": "每个突起顶部带 drainage hole，排水孔直径通常 Φ4-Φ10mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://eryangmesh.en.made-in-china.com/product/GUYRMgychKVI/China-Anti-Slip-Dimpled-Steel-Plate-with-High-Load-Bearing-Capacity.html",
+              "title": "Anti Slip Dimpled Steel Plate with High Load Bearing Capacity",
+              "source_name": "Made-in-China / Hebei Eryang",
+              "snippet": "产品说明写明“Each protrusion is topped with a drainage hole”；规格表写明“Drainage hole diameter: Openings are made on the top of protrusions, ... Φ4 to Φ10mm”。"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：多个通孔位于凸起部并贯穿凸起部和金属基板。② 候选公开证据 Y：YY-09 每个突起顶部有排水孔，开口位于突起顶部且直径 Φ4-Φ10mm。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，drainage hole/opening 是用于排水的贯通孔。(b) 单位/量纲是否等价：是，均为多个孔的集合，孔径以 mm 表征。(c) 参考系是否等价：是，Y 明确位于 protrusions top，对应 X 的凸起部上。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "YY-09 drainage hole diameter Φ4 Φ10",
+            "Anti Slip Dimpled Steel Plate each protrusion topped with drainage hole"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100,
+      "searched_queries": [
+        "Anti Slip Dimpled Steel Plate YY-09",
+        "Hebei Eryang dimpled anti-slip plate drainage hole",
+        "raised fish-eye-like protrusions stamped onto metal sheets",
+        "fish-eye dimpled steel plate top drainage hole",
+        "Made-in-China YY-09 Anti Slip Dimpled Steel Plate"
+      ],
+      "searched_providers": [
+        "web search",
+        "Made-in-China",
+        "curl fetch with browser UA HTTP 200 verification",
+        "m.asemanshop.com root checked, no relevant evidence",
+        "qixiu88.com root checked, no relevant evidence"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "天津思普乐金属制品有限公司",
+        "company_en": "Tianjin Simpler Metal Products Co., Ltd.",
+        "product_name": "Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate（TSMP-54 / round fisheye hole）",
+        "product_name_en": "Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate (TSMP-54 / round fisheye hole)",
+        "product_intro": "Simpler Metal TSMP-54 页面锁定的鱼眼鼓包孔防滑冲孔板，孔型为 round fisheye hole，材料可为铝、镀锌铁、低碳钢、AISI 302/304/316/316L。",
+        "market": "中国及出口防滑安全格栅、工业冲孔金属板市场",
+        "reason_for_deep_dive": "页面直接给出 Item No. TSMP-54、round fisheye hole、金属材料和板面凸起/孔边翻起冲压成型，落入权 1 结构的公开证据较完整。",
+        "source_result_ids": [
+          "search:Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate",
+          "fetch:simpler-TSMP-54"
+        ],
+        "source_urls": [
+          "https://www.simplermetal.com/product/Perforated-Metal-Sheet-Safety-Grating-Fisheye-Bulge-Hole-Skid-Plate.html"
+        ],
+        "initial_evidence_summary": "产品页标题即为 Fisheye Bulge Hole Skid Plate，列 Item No. TSMP-54、Hole shape round fisheye hole、Material 为多种金属；产品介绍称 anti-slip perforated sheet 以 metal sheet 为原料，通过 punching equipment 使 hole edges flip 或 plate surface bulges。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种装饰有图案的金属板",
+          "competitor_feature": "TSMP-54 为鱼眼鼓包孔防滑冲孔金属板，板面鱼眼孔和鼓包构成图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.simplermetal.com/product/Perforated-Metal-Sheet-Safety-Grating-Fisheye-Bulge-Hole-Skid-Plate.html",
+              "title": "Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate",
+              "source_name": "Tianjin Simpler Metal Products",
+              "snippet": "Product page lists “Item No.: TSMP-54”, “Hole shape: round fisheye hole” and describes a perforated metal plate with holes on the surface."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：装饰有图案的金属板，是带可见表面图案的金属板材。② 候选公开证据 Y：TSMP-54 是鱼眼鼓包孔防滑冲孔金属板，鱼眼孔和鼓包在表面形成图案。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，二者均为带图案化表面结构的金属板。(b) 单位/量纲是否等价：是，均为板材实体。(c) 参考系是否等价：是，均以板材表面孔型/凸起为参考。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "TSMP-54 fisheye bulge hole skid plate",
+            "Simpler Metal TSMP-54 round fisheye hole"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "金属基板",
+          "competitor_feature": "产品材料为 Aluminum、GI、Low carbon steel、AISI 302/304/316/316L 等金属。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.simplermetal.com/product/Perforated-Metal-Sheet-Safety-Grating-Fisheye-Bulge-Hole-Skid-Plate.html",
+              "title": "Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate",
+              "source_name": "Tianjin Simpler Metal Products",
+              "snippet": "Parameter table states “Material: Aluminum GI Low carbon steel Aisi302 304 316 316L” and “Thickness: 0.1-30mm”."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：金属基板，是金属材质板状基材。② 候选公开证据 Y：TSMP-54 材料包括铝、镀锌铁、低碳钢和不锈钢，厚度 0.1-30mm。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，Y 的材料均为金属板材料。(b) 单位/量纲是否等价：是，均为板材实体，厚度以 mm 表征。(c) 参考系是否等价：是，均为冲孔和鼓包结构的基板。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "TSMP-54 material Aluminum GI low carbon steel",
+            "Simpler Metal fisheye bulge hole thickness"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "凸起部，该凸起部位于金属基板上，并形成图案",
+          "competitor_feature": "防滑冲孔板通过冲压设备使孔边翻起或板面鼓包，鱼眼圆孔区域形成凸起图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.simplermetal.com/product/Perforated-Metal-Sheet-Safety-Grating-Fisheye-Bulge-Hole-Skid-Plate.html",
+              "title": "Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate",
+              "source_name": "Tianjin Simpler Metal Products",
+              "snippet": "Product Introduction states “hole edges flip or plate surface bulges through punching equipment” and lists “Fisheye Round Hole”."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：金属基板上的凸起部，并由凸起部形成图案。② 候选公开证据 Y：TSMP-54 的孔边翻起或板面鼓包由冲压设备形成，且孔型为鱼眼圆孔。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，plate surface bulges/hole edges flip 是板面凸起结构。(b) 单位/量纲是否等价：是，均为多个局部凸起结构集合。(c) 参考系是否等价：是，均相对于金属板表面形成图案。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "TSMP-54 plate surface bulges punching equipment",
+            "Fisheye Round Hole skid plate bulge"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "多个通孔，所述多个通孔位于凸起部上，并贯穿突起部和金属基板",
+          "competitor_feature": "产品为 perforated metal sheet，孔型为 round fisheye hole；冲压形成孔边翻起或板面鼓包，孔与凸起结构绑定。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.simplermetal.com/product/Perforated-Metal-Sheet-Safety-Grating-Fisheye-Bulge-Hole-Skid-Plate.html",
+              "title": "Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate",
+              "source_name": "Tianjin Simpler Metal Products",
+              "snippet": "The page states “Perforated metal plate is a metal plate with various shapes of holes on the surface”; TSMP-54 hole shape is “round fisheye hole”."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：多个通孔位于凸起部，并贯穿凸起部和金属基板。② 候选公开证据 Y：TSMP-54 是带 round fisheye hole 的 perforated metal sheet，并通过孔边翻起/板面鼓包形成防滑结构。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，perforated metal sheet 的 holes 是贯穿板材的孔，鱼眼孔与鼓包结构绑定。(b) 单位/量纲是否等价：是，均为多个孔的集合结构。(c) 参考系是否等价：是，均位于板面凸起/鱼眼孔区域。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "TSMP-54 round fisheye hole perforated sheet",
+            "perforated metal sheet fisheye bulge hole through hole"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100,
+      "searched_queries": [
+        "Perforated Metal Sheet Safety Grating Fisheye Bulge Hole Skid Plate",
+        "Simpler Metal TSMP-54 fisheye round hole",
+        "Fisheye Non-Slip Stainless Steel Perforated Plate TSMP-53 TSMP-54",
+        "round fisheye hole plate surface bulges punching equipment",
+        "anti-slip perforated sheet hole edges flip plate surface bulges"
+      ],
+      "searched_providers": [
+        "web search",
+        "simplermetal.com",
+        "curl fetch with HTTP 200 verification",
+        "m.asemanshop.com root checked, no relevant evidence",
+        "qixiu88.com root checked, no relevant evidence"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "安平东杰丝网制品有限公司",
+        "company_en": "Anping Dongjie Wire Mesh Products Co., Ltd.",
+        "product_name": "Fisheye round hole raised non-slip pedal perforated metal plate（DJ-Fisheye-Raised / round raised hole）",
+        "product_name_en": "Fisheye round hole raised non-slip pedal perforated metal plate (DJ-Fisheye-Raised / round raised hole)",
+        "product_intro": "东杰页面锁定的鱼眼圆孔凸起防滑踏板冲孔金属板，材料可为铝、不锈钢、黑钢、镀锌钢、铜/黄铜，孔型为 round raised hole。",
+        "market": "中国及出口建筑、工业防滑地板、走道、楼梯踏板冲孔板市场",
+        "reason_for_deep_dive": "页面把产品名锁定为 fisheye round hole raised non-slip pedal perforated metal plate，并列出金属材料、round raised hole、perforated raised hole panels、production process punching。",
+        "source_result_ids": [
+          "search:Fisheye round hole raised non-slip pedal perforated metal plate",
+          "fetch:dongjie-fisheye-raised"
+        ],
+        "source_urls": [
+          "https://www.dj-metal-mesh.com/fisheye-round-hole-raised-non-slip-pedal-perforated-metal-plate-products/"
+        ],
+        "initial_evidence_summary": "产品页写 Product Name 为 Fisheye round hole raised non-slip pedal perforated metal plate，Material 为多种金属，Hole Shape 为 round raised hole，Applications 为 perforated raised hole panels；工艺流程含 Punching。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种装饰有图案的金属板",
+          "competitor_feature": "鱼眼圆孔凸起防滑踏板冲孔金属板，圆形凸起孔阵列构成表面图案。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dj-metal-mesh.com/fisheye-round-hole-raised-non-slip-pedal-perforated-metal-plate-products/",
+              "title": "Fisheye round hole raised non-slip pedal perforated metal plate",
+              "source_name": "Anping Dongjie Wire Mesh Products",
+              "snippet": "Product table lists “Product Name: Fisheye round hole raised non-slip pedal perforated metal plate” and “Hole Shape: Round raised hole”."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：装饰有图案的金属板，是具有可见表面图案的金属板材。② 候选公开证据 Y：候选为鱼眼圆孔凸起防滑踏板冲孔金属板，round raised hole 阵列构成图案。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，二者均为带表面孔型/凸起图案的金属板。(b) 单位/量纲是否等价：是，均为板材实体结构。(c) 参考系是否等价：是，均以板材表面结构为参考。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "Dongjie fisheye round hole raised non-slip pedal perforated metal plate",
+            "dj-metal-mesh round raised hole perforated plate"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "金属基板",
+          "competitor_feature": "材料列为 aluminum、stainless sheet、black steel、galvanized steel、copper/brass 等金属板材。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dj-metal-mesh.com/fisheye-round-hole-raised-non-slip-pedal-perforated-metal-plate-products/",
+              "title": "Fisheye round hole raised non-slip pedal perforated metal plate",
+              "source_name": "Anping Dongjie Wire Mesh Products",
+              "snippet": "Product description states “Material: Aluminum, stainless sheet, black steel, galvanized steel, copper/brass, etc.”"
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：金属基板，是金属材质板状基材。② 候选公开证据 Y：候选材料包括铝、不锈钢板、黑钢、镀锌钢和铜/黄铜。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，这些均是金属板材料。(b) 单位/量纲是否等价：是，均为板材实体。(c) 参考系是否等价：是，均作为冲孔和凸起图案的基板。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "Dongjie fisheye raised plate material galvanized steel",
+            "fIsheye round hole raised non-slip pedal material stainless sheet"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "凸起部，该凸起部位于金属基板上，并形成图案",
+          "competitor_feature": "孔型为 round raised hole；应用描述为 perforated raised hole panels，可按 raised hole sizes 配置。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dj-metal-mesh.com/fisheye-round-hole-raised-non-slip-pedal-perforated-metal-plate-products/",
+              "title": "Fisheye round hole raised non-slip pedal perforated metal plate",
+              "source_name": "Anping Dongjie Wire Mesh Products",
+              "snippet": "Product table states “Hole Shape: Round raised hole”; applications state “Perforated raised hole panels ... raised hole sizes”."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：位于金属基板上的凸起部，并由凸起部形成图案。② 候选公开证据 Y：候选孔型是 round raised hole，且为 perforated raised hole panels，可配置 raised hole sizes。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，raised hole 是板面凸起孔结构。(b) 单位/量纲是否等价：是，均为多个凸起部构成的集合。(c) 参考系是否等价：是，均相对于金属板面形成图案。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "Dongjie round raised hole raised hole sizes",
+            "perforated raised hole panels Dongjie"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "多个通孔，所述多个通孔位于凸起部上，并贯穿突起部和金属基板",
+          "competitor_feature": "产品为 perforated metal plate，孔型为 round raised hole，并通过 punching 工序形成多个凸起冲孔。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dj-metal-mesh.com/fisheye-round-hole-raised-non-slip-pedal-perforated-metal-plate-products/",
+              "title": "Fisheye round hole raised non-slip pedal perforated metal plate",
+              "source_name": "Anping Dongjie Wire Mesh Products",
+              "snippet": "Product name includes “perforated metal plate”; table lists “Hole Shape: Round raised hole”; production process includes “Punching”."
+            }
+          ],
+          "reasoning": "① 权 1 限定的事物 X：多个通孔位于凸起部，并贯穿凸起部和金属基板。② 候选公开证据 Y：候选为 perforated metal plate，孔型为 round raised hole，生产流程含 punching。③ X 与 Y 的 4 项对比：(a) 概念是否等价：是，perforated/punching 表明孔穿透板材，round raised hole 表明孔与凸起部绑定。(b) 单位/量纲是否等价：是，均为多个孔的集合。(c) 参考系是否等价：是，均位于凸起孔型所在的板面区域。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [
+            "Dongjie round raised hole punching perforated plate",
+            "Fisheye round hole raised non-slip perforated metal plate through holes"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100,
+      "searched_queries": [
+        "Fisheye round hole raised non-slip pedal perforated metal plate",
+        "Dongjie round raised hole perforated raised hole panels",
+        "fish eye raised non slip perforated metal plate punching",
+        "round raised hole non-slip pedal perforated metal plate",
+        "Anping Dongjie fisheye round hole raised plate"
+      ],
+      "searched_providers": [
+        "web search",
+        "dj-metal-mesh.com",
+        "curl fetch with HTTP 200 verification",
+        "m.asemanshop.com root checked, no relevant evidence",
+        "qixiu88.com root checked, no relevant evidence"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

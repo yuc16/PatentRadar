@@ -1,0 +1,631 @@
+{
+  "publication_no": "CN222973176U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "吉利银河",
+        "company_en": "Geely Galaxy",
+        "product_name": "吉利银河M9（2025款 100km 两驱智航版）",
+        "product_name_en": "Geely Galaxy M9 (2025 100km 2WD Smart Voyage Edition)",
+        "product_intro": "2025年9月上市的中大型六座插电混动SUV，DCD配置显示分段式不可开启全景天窗和全景天幕遮阳帘为标配。",
+        "market": "中国中大型新能源SUV前装全景天窗/天幕遮阳帘市场",
+        "reason_for_deep_dive": "用户重点关注的单SKU；上市晚于本专利申请日，且公开配置明确含全景天窗和天幕遮阳帘。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongchedi.com/auto/params-carIds-x-25521",
+          "https://www.bitauto.com/article/1003103721429/"
+        ],
+        "initial_evidence_summary": "懂车帝参数页列明2025.09上市、分段式不可开启全景天窗及全景天幕遮阳帘标配；未找到该SKU遮阳帘横梁截面、帘布连接/绕设路径的公开证据。"
+      },
+      "launch_date": "2025年9月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.bitauto.com/article/1003103721429/",
+          "title": "吉利银河M9上市：17.38万起，6座插混SUV实力出圈",
+          "source_name": "BitAuto",
+          "snippet": "2025年9月17日吉利银河M9正式上市，定位中大型插电混动SUV，全系2+2+2六座布局。"
+        },
+        {
+          "url": "https://www.dongchedi.com/auto/params-carIds-x-25521",
+          "title": "银河M9 2025款参数配置",
+          "source_name": "懂车帝",
+          "snippet": "车型配置列明上市时间2025.09；天窗类型为分段式不可开启全景天窗，全景天幕遮阳帘为标配。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种遮阳帘横梁(10)",
+          "competitor_feature": "吉利银河M9（2025款 100km 两驱智航版）公开资料仅证明配置了天窗/天幕遮阳帘，未直接披露遮阳帘横梁或拉杆结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-x-25521",
+              "title": "银河M9 2025款参数配置",
+              "source_name": "懂车帝",
+              "snippet": "车型配置列明上市时间2025.09；天窗类型为分段式不可开启全景天窗，全景天幕遮阳帘为标配。"
+            }
+          ],
+          "reasoning": "① X：权1限定一种遮阳帘横梁实体。② Y：懂车帝参数页列明2025.09上市、分段式不可开启全景天窗及全景天幕遮阳帘标配。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述遮阳帘横梁(10)应用于车辆的天窗",
+          "competitor_feature": "吉利银河M9（2025款 100km 两驱智航版）公开配置明确为车辆全景天窗/天幕配套遮阳帘，属于车辆天窗遮阳应用场景。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-x-25521",
+              "title": "银河M9 2025款参数配置",
+              "source_name": "懂车帝",
+              "snippet": "车型配置列明上市时间2025.09；天窗类型为分段式不可开启全景天窗，全景天幕遮阳帘为标配。"
+            }
+          ],
+          "reasoning": "① X：遮阳帘横梁应用于车辆天窗，属车辆天窗遮阳系统场景。② Y：懂车帝参数页列明2025.09上市、分段式不可开启全景天窗及全景天幕遮阳帘标配。③ (a)是，均为车辆天窗/天幕遮阳场景；(b)是，均为存在性配置；(c)是，参考系均为车辆顶部天窗区域；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述遮阳帘横梁(10)具有沿第一方向相对设置的第一表面(10a)和第二表面(10b)以及沿第二方向相对设置的第三表面(10c)和第四表面(10d)，所述第一表面(10a)、所述第三表面(10c)、所述第二表面(10b)和所述第四表面(10d)依次首尾连接",
+          "competitor_feature": "吉利银河M9（2025款 100km 两驱智航版）未公开遮阳帘横梁截面四个表面及依次首尾连接关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定横梁四表面及首尾连接几何。② Y：已检索到的配置/手册只说明天窗遮阳帘存在。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述第一表面(10a)朝向所述天窗设置，所述第一表面(10a)用于连接帘布(50)",
+          "competitor_feature": "吉利银河M9（2025款 100km 两驱智航版）未公开第一表面朝向天窗以及第一表面连接帘布的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一表面朝向天窗并连接帘布。② Y：公开资料没有横梁表面命名、帘布固定点或装配剖面。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述第三表面(10c)及所述第二表面(10b)用于供所述帘布(50)绕设",
+          "competitor_feature": "吉利银河M9（2025款 100km 两驱智航版）未公开帘布绕设于横梁第三表面及第二表面的具体路径。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第三表面及第二表面供帘布绕设。② Y：公开资料没有帘布绕梁路径、截面图或拆解图。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述第一方向不同于所述第二方向",
+          "competitor_feature": "吉利银河M9（2025款 100km 两驱智航版）未公开第一方向、第二方向或横梁截面坐标关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一方向不同于第二方向。② Y：公开资料没有横梁截面方向定义或装配坐标系。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "吉利 银河M9 2025款 100km 两驱智航版 全景天幕遮阳帘",
+        "吉利 银河M9 2025款 天窗遮阳帘 横梁 拆解",
+        "Geely Galaxy M9 2025 panoramic sunroof sunshade",
+        "site:m.asemanshop.com 银河M9 天窗 遮阳帘",
+        "site:www.qixiu88.com 银河M9 天窗 遮阳帘"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "Stage0:m.asemanshop.com",
+        "Stage0:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "赛力斯汽车",
+        "company_en": "SERES / AITO",
+        "product_name": "问界M9（2025款 增程 Max 五座版）",
+        "product_name_en": "AITO M9 (2025 EREV Max five-seat edition)",
+        "product_intro": "2025年3月上市的大型增程式SUV，公开配置显示分段式不可开启全景天窗和全景天幕遮阳帘为标配。",
+        "market": "中国高端新能源SUV前装全景天窗/天幕遮阳帘市场",
+        "reason_for_deep_dive": "同为高端大尺寸新能源SUV，天幕遮阳帘配置明确且上市晚于本专利申请日。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongchedi.com/auto/params-carIds-245374",
+          "https://hima.auto/dam/hima-site/cn/wenjie/service/pdf/m9-2025-evr-product-manual-20250908.pdf"
+        ],
+        "initial_evidence_summary": "懂车帝参数页列明2025.03上市、分段式不可开启全景天窗及全景天幕遮阳帘标配；HIMA手册含天幕遮阳帘操作；未找到该SKU遮阳帘横梁截面、帘布连接/绕设路径的公开证据。"
+      },
+      "launch_date": "2025年3月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongchedi.com/auto/params-carIds-245374",
+          "title": "问界M9 2025款 增程 Max 五座版参数配置",
+          "source_name": "懂车帝",
+          "snippet": "车型配置列明上市时间2025.03；天窗类型为分段式不可开启全景天窗，全景天幕遮阳帘为标配。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种遮阳帘横梁(10)",
+          "competitor_feature": "问界M9（2025款 增程 Max 五座版）公开资料仅证明配置了天窗/天幕遮阳帘，未直接披露遮阳帘横梁或拉杆结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-245374",
+              "title": "问界M9 2025款 增程 Max 五座版参数配置",
+              "source_name": "懂车帝",
+              "snippet": "车型配置列明上市时间2025.03；天窗类型为分段式不可开启全景天窗，全景天幕遮阳帘为标配。"
+            }
+          ],
+          "reasoning": "① X：权1限定一种遮阳帘横梁实体。② Y：懂车帝参数页列明2025.03上市、分段式不可开启全景天窗及全景天幕遮阳帘标配；HIMA手册含天幕遮阳帘操作。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述遮阳帘横梁(10)应用于车辆的天窗",
+          "competitor_feature": "问界M9（2025款 增程 Max 五座版）公开配置明确为车辆全景天窗/天幕配套遮阳帘，属于车辆天窗遮阳应用场景。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/auto/params-carIds-245374",
+              "title": "问界M9 2025款 增程 Max 五座版参数配置",
+              "source_name": "懂车帝",
+              "snippet": "车型配置列明上市时间2025.03；天窗类型为分段式不可开启全景天窗，全景天幕遮阳帘为标配。"
+            }
+          ],
+          "reasoning": "① X：遮阳帘横梁应用于车辆天窗，属车辆天窗遮阳系统场景。② Y：懂车帝参数页列明2025.03上市、分段式不可开启全景天窗及全景天幕遮阳帘标配；HIMA手册含天幕遮阳帘操作。③ (a)是，均为车辆天窗/天幕遮阳场景；(b)是，均为存在性配置；(c)是，参考系均为车辆顶部天窗区域；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述遮阳帘横梁(10)具有沿第一方向相对设置的第一表面(10a)和第二表面(10b)以及沿第二方向相对设置的第三表面(10c)和第四表面(10d)，所述第一表面(10a)、所述第三表面(10c)、所述第二表面(10b)和所述第四表面(10d)依次首尾连接",
+          "competitor_feature": "问界M9（2025款 增程 Max 五座版）未公开遮阳帘横梁截面四个表面及依次首尾连接关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定横梁四表面及首尾连接几何。② Y：已检索到的配置/手册只说明天窗遮阳帘存在。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述第一表面(10a)朝向所述天窗设置，所述第一表面(10a)用于连接帘布(50)",
+          "competitor_feature": "问界M9（2025款 增程 Max 五座版）未公开第一表面朝向天窗以及第一表面连接帘布的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一表面朝向天窗并连接帘布。② Y：公开资料没有横梁表面命名、帘布固定点或装配剖面。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述第三表面(10c)及所述第二表面(10b)用于供所述帘布(50)绕设",
+          "competitor_feature": "问界M9（2025款 增程 Max 五座版）未公开帘布绕设于横梁第三表面及第二表面的具体路径。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第三表面及第二表面供帘布绕设。② Y：公开资料没有帘布绕梁路径、截面图或拆解图。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述第一方向不同于所述第二方向",
+          "competitor_feature": "问界M9（2025款 增程 Max 五座版）未公开第一方向、第二方向或横梁截面坐标关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一方向不同于第二方向。② Y：公开资料没有横梁截面方向定义或装配坐标系。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "问界M9 2025款 增程 Max 五座版 全景天幕遮阳帘",
+        "问界M9 2025款 增程版 使用说明书 天幕遮阳帘",
+        "AITO M9 2025 panoramic sunroof sunshade manual",
+        "site:m.asemanshop.com 问界M9 2025 天窗 遮阳帘",
+        "site:www.qixiu88.com 问界M9 2025 天窗 遮阳帘"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "Stage0:m.asemanshop.com",
+        "Stage0:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "一汽红旗",
+        "company_en": "FAW Hongqi",
+        "product_name": "红旗HS6 PHEV（2026款 145智混版）",
+        "product_name_en": "Hongqi HS6 PHEV (2026 145 Zhihun Edition)",
+        "product_intro": "2025年12月上市的红旗插电混动SUV，公开配置/论坛资料指向可开启全景天窗及电动遮阳帘。",
+        "market": "中国插电混动SUV前装全景天窗/电动遮阳帘市场",
+        "reason_for_deep_dive": "上市晚于本专利申请日，且同级SUV公开资料显示全景天窗和电动遮阳帘配置。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://db.auto.sina.cn/5373/peizhi/",
+          "https://www.bitauto.com/article/1003106011101/",
+          "https://club.autohome.com.cn/bbs/thread/0b1ea6eb3a1c176c/113646265-1.html"
+        ],
+        "initial_evidence_summary": "新浪配置页列出2026款145智混版并出现遮阳帘、可开启全景天窗配置项；汽车之家内容称1.38平方米全景天窗搭配电动遮阳帘；未找到该SKU遮阳帘横梁截面、帘布连接/绕设路径的公开证据。"
+      },
+      "launch_date": "2025年12月",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.bitauto.com/article/1003106011101/",
+          "title": "红旗HS6 PHEV正式上市",
+          "source_name": "BitAuto",
+          "snippet": "2025年12月16日红旗HS6 PHEV正式上市；文章提到1.38平方米全景天窗等配置。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种遮阳帘横梁(10)",
+          "competitor_feature": "红旗HS6 PHEV（2026款 145智混版）公开资料仅证明配置了天窗/天幕遮阳帘，未直接披露遮阳帘横梁或拉杆结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://db.auto.sina.cn/5373/peizhi/",
+              "title": "红旗HS6 PHEV配置表",
+              "source_name": "新浪汽车",
+              "snippet": "配置页列出2026款红旗HS6 PHEV 145智混版，并出现遮阳帘、可开启全景天窗配置项。"
+            }
+          ],
+          "reasoning": "① X：权1限定一种遮阳帘横梁实体。② Y：新浪配置页列出2026款145智混版并出现遮阳帘、可开启全景天窗配置项；汽车之家内容称1.38平方米全景天窗搭配电动遮阳帘。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述遮阳帘横梁(10)应用于车辆的天窗",
+          "competitor_feature": "红旗HS6 PHEV（2026款 145智混版）公开配置明确为车辆全景天窗/天幕配套遮阳帘，属于车辆天窗遮阳应用场景。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://db.auto.sina.cn/5373/peizhi/",
+              "title": "红旗HS6 PHEV配置表",
+              "source_name": "新浪汽车",
+              "snippet": "配置页列出2026款红旗HS6 PHEV 145智混版，并出现遮阳帘、可开启全景天窗配置项。"
+            }
+          ],
+          "reasoning": "① X：遮阳帘横梁应用于车辆天窗，属车辆天窗遮阳系统场景。② Y：新浪配置页列出2026款145智混版并出现遮阳帘、可开启全景天窗配置项；汽车之家内容称1.38平方米全景天窗搭配电动遮阳帘。③ (a)是，均为车辆天窗/天幕遮阳场景；(b)是，均为存在性配置；(c)是，参考系均为车辆顶部天窗区域；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述遮阳帘横梁(10)具有沿第一方向相对设置的第一表面(10a)和第二表面(10b)以及沿第二方向相对设置的第三表面(10c)和第四表面(10d)，所述第一表面(10a)、所述第三表面(10c)、所述第二表面(10b)和所述第四表面(10d)依次首尾连接",
+          "competitor_feature": "红旗HS6 PHEV（2026款 145智混版）未公开遮阳帘横梁截面四个表面及依次首尾连接关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定横梁四表面及首尾连接几何。② Y：已检索到的配置/手册只说明天窗遮阳帘存在。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述第一表面(10a)朝向所述天窗设置，所述第一表面(10a)用于连接帘布(50)",
+          "competitor_feature": "红旗HS6 PHEV（2026款 145智混版）未公开第一表面朝向天窗以及第一表面连接帘布的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一表面朝向天窗并连接帘布。② Y：公开资料没有横梁表面命名、帘布固定点或装配剖面。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述第三表面(10c)及所述第二表面(10b)用于供所述帘布(50)绕设",
+          "competitor_feature": "红旗HS6 PHEV（2026款 145智混版）未公开帘布绕设于横梁第三表面及第二表面的具体路径。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第三表面及第二表面供帘布绕设。② Y：公开资料没有帘布绕梁路径、截面图或拆解图。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述第一方向不同于所述第二方向",
+          "competitor_feature": "红旗HS6 PHEV（2026款 145智混版）未公开第一方向、第二方向或横梁截面坐标关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一方向不同于第二方向。② Y：公开资料没有横梁截面方向定义或装配坐标系。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "红旗HS6 PHEV 2026款 145智混版 可开启全景天窗 遮阳帘",
+        "红旗HS6 PHEV 145智混版 天窗遮阳帘 拆解",
+        "Hongqi HS6 PHEV panoramic sunroof electric sunshade",
+        "site:m.asemanshop.com 红旗HS6 PHEV 天窗 遮阳帘",
+        "site:www.qixiu88.com 红旗HS6 PHEV 天窗 遮阳帘"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "Stage0:m.asemanshop.com",
+        "Stage0:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "北汽蓝谷/享界",
+        "company_en": "BAIC BluePark / Stelato",
+        "product_name": "享界S9增程版（2025款 增程 Max+后驱版）",
+        "product_name_en": "Stelato S9 EREV (2025 Max+ RWD edition)",
+        "product_intro": "2025年4月上市的豪华增程轿车，官方手册公开天幕遮阳帘操作说明。",
+        "market": "中国高端新能源轿车前装天幕遮阳帘市场",
+        "reason_for_deep_dive": "上市晚于本专利申请日，公开手册包含天幕遮阳帘，适合检索车顶遮阳系统结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://news.sina.cn/gn/2025-04-16/detail-inetkpat4327186.d.html",
+          "https://hima.auto/dam/hima-site/cn/xiangjie/service/pdf/s9-evr-product-manual-20250821.pdf"
+        ],
+        "initial_evidence_summary": "新浪新闻确认2025年4月16日享界S9增程版上市；HIMA手册含天幕遮阳帘按键及开闭操作说明；未找到该SKU遮阳帘横梁截面、帘布连接/绕设路径的公开证据。"
+      },
+      "launch_date": "2025年4月",
+      "launch_date_evidence": [
+        {
+          "url": "https://news.sina.cn/gn/2025-04-16/detail-inetkpat4327186.d.html",
+          "title": "享界S9增程版正式上市",
+          "source_name": "新浪新闻",
+          "snippet": "2025年4月16日享界S9增程版正式上市，售价30.98万元起，并提到全向隐私遮阳帘。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种遮阳帘横梁(10)",
+          "competitor_feature": "享界S9增程版（2025款 增程 Max+后驱版）公开资料仅证明配置了天窗/天幕遮阳帘，未直接披露遮阳帘横梁或拉杆结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/xiangjie/service/pdf/s9-evr-product-manual-20250821.pdf",
+              "title": "享界S9增程车型使用说明书",
+              "source_name": "HIMA",
+              "snippet": "使用说明书包含天幕遮阳帘按键及打开/关闭天幕遮阳帘的操作说明。"
+            }
+          ],
+          "reasoning": "① X：权1限定一种遮阳帘横梁实体。② Y：新浪新闻确认2025年4月16日享界S9增程版上市；HIMA手册含天幕遮阳帘按键及开闭操作说明。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述遮阳帘横梁(10)应用于车辆的天窗",
+          "competitor_feature": "享界S9增程版（2025款 增程 Max+后驱版）公开配置明确为车辆全景天窗/天幕配套遮阳帘，属于车辆天窗遮阳应用场景。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/xiangjie/service/pdf/s9-evr-product-manual-20250821.pdf",
+              "title": "享界S9增程车型使用说明书",
+              "source_name": "HIMA",
+              "snippet": "使用说明书包含天幕遮阳帘按键及打开/关闭天幕遮阳帘的操作说明。"
+            }
+          ],
+          "reasoning": "① X：遮阳帘横梁应用于车辆天窗，属车辆天窗遮阳系统场景。② Y：新浪新闻确认2025年4月16日享界S9增程版上市；HIMA手册含天幕遮阳帘按键及开闭操作说明。③ (a)是，均为车辆天窗/天幕遮阳场景；(b)是，均为存在性配置；(c)是，参考系均为车辆顶部天窗区域；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述遮阳帘横梁(10)具有沿第一方向相对设置的第一表面(10a)和第二表面(10b)以及沿第二方向相对设置的第三表面(10c)和第四表面(10d)，所述第一表面(10a)、所述第三表面(10c)、所述第二表面(10b)和所述第四表面(10d)依次首尾连接",
+          "competitor_feature": "享界S9增程版（2025款 增程 Max+后驱版）未公开遮阳帘横梁截面四个表面及依次首尾连接关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定横梁四表面及首尾连接几何。② Y：已检索到的配置/手册只说明天窗遮阳帘存在。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述第一表面(10a)朝向所述天窗设置，所述第一表面(10a)用于连接帘布(50)",
+          "competitor_feature": "享界S9增程版（2025款 增程 Max+后驱版）未公开第一表面朝向天窗以及第一表面连接帘布的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一表面朝向天窗并连接帘布。② Y：公开资料没有横梁表面命名、帘布固定点或装配剖面。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述第三表面(10c)及所述第二表面(10b)用于供所述帘布(50)绕设",
+          "competitor_feature": "享界S9增程版（2025款 增程 Max+后驱版）未公开帘布绕设于横梁第三表面及第二表面的具体路径。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第三表面及第二表面供帘布绕设。② Y：公开资料没有帘布绕梁路径、截面图或拆解图。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述第一方向不同于所述第二方向",
+          "competitor_feature": "享界S9增程版（2025款 增程 Max+后驱版）未公开第一方向、第二方向或横梁截面坐标关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一方向不同于第二方向。② Y：公开资料没有横梁截面方向定义或装配坐标系。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "享界S9 增程 Max+ 后驱版 天幕遮阳帘",
+        "享界S9 增程车型 使用说明书 天幕遮阳帘",
+        "Stelato S9 EREV roof sunshade manual",
+        "site:m.asemanshop.com 享界S9 天幕 遮阳帘",
+        "site:www.qixiu88.com 享界S9 天幕 遮阳帘"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "Stage0:m.asemanshop.com",
+        "Stage0:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "长城欧拉",
+        "company_en": "GWM ORA",
+        "product_name": "欧拉好猫GT木兰版（2025款 木兰版 豪华型）",
+        "product_name_en": "ORA Good Cat GT Mulan Edition (2025 Luxury trim)",
+        "product_intro": "2025款欧拉好猫GT木兰版配置表公开可开启全景天窗（含电动遮阳帘）配置。",
+        "market": "中国小型纯电车前装全景天窗/电动遮阳帘市场",
+        "reason_for_deep_dive": "非比亚迪品牌，公开配置明确含可开启全景天窗和电动遮阳帘，但内部横梁结构仍未公开。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.oraev.com/configure/haomaogt/",
+          "https://www.bitauto.com/article/1003102362862/"
+        ],
+        "initial_evidence_summary": "欧拉官方配置表检索内容显示可开启全景天窗（含电动遮阳帘）；未检索到该SKU明确上市年月；未找到该SKU遮阳帘横梁截面、帘布连接/绕设路径的公开证据。"
+      },
+      "launch_date": "未明确",
+      "launch_date_evidence": [],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种遮阳帘横梁(10)",
+          "competitor_feature": "欧拉好猫GT木兰版（2025款 木兰版 豪华型）公开资料仅证明配置了天窗/天幕遮阳帘，未直接披露遮阳帘横梁或拉杆结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.oraev.com/configure/haomaogt/",
+              "title": "2025款欧拉好猫GT车型配置表",
+              "source_name": "欧拉汽车官网",
+              "snippet": "官方配置表检索内容显示可开启全景天窗（含电动遮阳帘）为2025款好猫GT木兰版配置项。"
+            }
+          ],
+          "reasoning": "① X：权1限定一种遮阳帘横梁实体。② Y：欧拉官方配置表检索内容显示可开启全景天窗（含电动遮阳帘）；未检索到该SKU明确上市年月。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述遮阳帘横梁(10)应用于车辆的天窗",
+          "competitor_feature": "欧拉好猫GT木兰版（2025款 木兰版 豪华型）公开配置明确为车辆全景天窗/天幕配套遮阳帘，属于车辆天窗遮阳应用场景。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.oraev.com/configure/haomaogt/",
+              "title": "2025款欧拉好猫GT车型配置表",
+              "source_name": "欧拉汽车官网",
+              "snippet": "官方配置表检索内容显示可开启全景天窗（含电动遮阳帘）为2025款好猫GT木兰版配置项。"
+            }
+          ],
+          "reasoning": "① X：遮阳帘横梁应用于车辆天窗，属车辆天窗遮阳系统场景。② Y：欧拉官方配置表检索内容显示可开启全景天窗（含电动遮阳帘）；未检索到该SKU明确上市年月。③ (a)是，均为车辆天窗/天幕遮阳场景；(b)是，均为存在性配置；(c)是，参考系均为车辆顶部天窗区域；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述遮阳帘横梁(10)具有沿第一方向相对设置的第一表面(10a)和第二表面(10b)以及沿第二方向相对设置的第三表面(10c)和第四表面(10d)，所述第一表面(10a)、所述第三表面(10c)、所述第二表面(10b)和所述第四表面(10d)依次首尾连接",
+          "competitor_feature": "欧拉好猫GT木兰版（2025款 木兰版 豪华型）未公开遮阳帘横梁截面四个表面及依次首尾连接关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定横梁四表面及首尾连接几何。② Y：已检索到的配置/手册只说明天窗遮阳帘存在。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述第一表面(10a)朝向所述天窗设置，所述第一表面(10a)用于连接帘布(50)",
+          "competitor_feature": "欧拉好猫GT木兰版（2025款 木兰版 豪华型）未公开第一表面朝向天窗以及第一表面连接帘布的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一表面朝向天窗并连接帘布。② Y：公开资料没有横梁表面命名、帘布固定点或装配剖面。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述第三表面(10c)及所述第二表面(10b)用于供所述帘布(50)绕设",
+          "competitor_feature": "欧拉好猫GT木兰版（2025款 木兰版 豪华型）未公开帘布绕设于横梁第三表面及第二表面的具体路径。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第三表面及第二表面供帘布绕设。② Y：公开资料没有帘布绕梁路径、截面图或拆解图。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述第一方向不同于所述第二方向",
+          "competitor_feature": "欧拉好猫GT木兰版（2025款 木兰版 豪华型）未公开第一方向、第二方向或横梁截面坐标关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "① X：权1限定第一方向不同于第二方向。② Y：公开资料没有横梁截面方向定义或装配坐标系。③ (a)否，公开资料未披露该内部横梁细节；(b)否，不能确认部件/几何量纲；(c)否，缺少天窗内参考系；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "2025款 欧拉好猫GT 木兰版 豪华型 可开启全景天窗 电动遮阳帘",
+        "欧拉好猫GT木兰版 天窗遮阳帘 横梁 拆解",
+        "ORA Good Cat GT Mulan panoramic sunroof electric sunshade",
+        "site:m.asemanshop.com 欧拉好猫GT 天窗 遮阳帘",
+        "site:www.qixiu88.com 欧拉好猫GT 天窗 遮阳帘"
+      ],
+      "searched_providers": [
+        "web.search",
+        "web.open",
+        "Stage0:m.asemanshop.com",
+        "Stage0:www.qixiu88.com"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

@@ -1,0 +1,2995 @@
+{
+  "publication_no": "CN221477024U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "乐道汽车",
+        "company_en": "ONVO / NIO",
+        "product_name": "乐道L90（2025款Max六座版 / 20250815用户手册）",
+        "product_name_en": "ONVO L90 (2025 Max six-seat / 20250815 user manual)",
+        "product_intro": "2025年7月上市的六座大三排纯电SUV；用户手册披露侧面安全气囊包括前两排座椅两侧的座椅侧气囊、主驾座椅内侧远端气囊及侧气帘。",
+        "market": "中国新能源大三排SUV前装市场",
+        "reason_for_deep_dive": "同级家庭SUV，被动安全配置公开资料较多，且手册明示座椅侧气囊和气囊内部气体发生器，适合优先判定权1。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+          "https://finance.sina.cn/2025-07-31/detail-infikvpk7093876.d.html?vt=4",
+          "https://www.automotiveworld.com/news-releases/onvos-flagship-suv-l90-officially-launched-starting-at-rmb-265800/"
+        ],
+        "initial_evidence_summary": "L90用户手册披露：侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；同一手册披露气囊内部气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+      },
+      "launch_date": "2025年7月31日正式上市，2025年8月1日开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://finance.sina.cn/2025-07-31/detail-infikvpk7093876.d.html?vt=4",
+          "title": "蔚来乐道L90正式上市 起售价26.58万元",
+          "source_name": "新浪财经",
+          "snippet": "2025年7月31日，蔚来汽车旗下乐道品牌正式发布旗舰车型乐道L90；全系标配9安全气囊。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧，其特征在于，包括： 气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋；以及 气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+              "competitor_feature": "L90用户手册披露侧面安全气囊包括前两排座椅两侧的座椅侧气囊和主驾座椅内侧远端气囊，属于车辆座椅侧部侧气囊。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权1 X：车辆座椅一侧、收纳后碰撞时展开的侧气囊，量纲为存在/不存在，参考系为车辆座椅侧部。②候选公开证据 Y：L90用户手册披露前两排座椅两侧的座椅侧气囊和主驾座椅内侧远端气囊。③X 与 Y 的4项对比：(a)概念是否等价：是，均为座椅侧部侧气囊；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅侧部；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料仅披露座椅侧气囊/远端气囊配置或膨胀功能，未披露气袋第一袋面、第二袋面及周沿密封结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权1 X：两片袋面周沿密封形成气袋，量纲为气袋裁片/密封结构，参考系为第一袋面、第二袋面及其周沿。②候选公开证据 Y：公开资料只披露该SKU有座椅侧气囊/远端气囊或气囊空间，未披露气袋裁片与密封线。③X 与 Y 的4项对比：(a)概念是否等价：否，配置项/气囊空间不等同于两袋面周沿密封结构；(b)单位/量纲是否等价：否，X是具体结构，Y是配置存在或功能描述；(c)参考系是否等价：否，X相对气袋袋面，Y相对车辆气囊配置/座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：L90 Max六座版侧气囊气袋裁片/周沿密封线；现有手册只说明气囊空间，不能证明两袋面结构。\n下一步建议：去 https://m.asemanshop.com 或 https://www.qixiu88.com 查L90 SRS维修手册的座椅侧气囊总成图。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露座椅侧气囊气体发生器固定在第一袋面上的装配关系。 已有资料至多证明侧气囊膨胀/前排座椅气囊存在。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权1 X：气体发生器设置于第一袋面上并向气袋充气，量纲为发生器存在、安装位置和充气功能，参考系为第一袋面/气袋。②候选公开证据 Y：公开资料至多披露侧气囊会膨胀或气囊内发生器释放气体，但未披露发生器固定在哪一袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，充气/膨胀功能不等同于发生器设置于第一袋面；(b)单位/量纲是否等价：否，X包含结构位置关系，Y主要是功能或配置存在项；(c)参考系是否等价：否，X相对第一袋面，Y相对气囊或座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：L90侧气囊气体发生器与气袋第一袋面的固定位置；手册只证明发生器充气，未公开安装袋面。\n下一步建议：去畅易汽车网、汽修巴巴或ONVO售后资料库定位L90座椅侧气囊拆装/零件图。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面对称设置。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面对称设置",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述第一袋面和所述第二袋面对称设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面和第二袋面对称设置，量纲为结构几何关系，参考系为气袋两袋面。②候选公开证据 Y：公开资料只披露座椅侧气囊配置/位置，未披露气袋袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，配置/位置不等同于袋面对称；(b)单位/量纲是否等价：否，X是几何关系，Y是配置存在项；(c)参考系是否等价：否，X相对气袋裁片，Y相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.如权利要求2所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折，所述气体发生器与所述对称线间隔设置。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：两袋面一体成型并沿对称线对折，量纲为裁片成型/折叠结构，参考系为气袋裁片。②候选公开证据 Y：公开资料未披露气袋裁片或折线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开一体裁片；(b)单位/量纲是否等价：否，X是制造结构，Y无对应量纲；(c)参考系是否等价：否，X相对气袋对称线，Y无裁片参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "所述气体发生器与所述对称线间隔设置",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述气体发生器与所述对称线间隔设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器与对称线间隔设置，量纲为长度/位置关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器与气袋对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开该位置关系；(b)单位/量纲是否等价：否，X是长度间距，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相平行。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相平行",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相平行。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器轴线方向与对称线平行，量纲为角度/方向关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开轴线平行关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.如权利要求4所述的侧气囊，其特征在于， 所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线与对称线间距为[50,120]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露该间距数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开数值间距；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相倾斜。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相倾斜",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相倾斜。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线方向与对称线倾斜，量纲为方向/角度关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开倾斜关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.如权利要求6所述的侧气囊，其特征在于， 所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线相对对称线倾角为[10,30]°，量纲为角度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露倾角数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开角度；(b)单位/量纲是否等价：否，X为角度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.如权利要求7所述的侧气囊，其特征在于， 所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm，所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器靠近对称线一端到对称线间距为[0,130]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器远离对称线一端到对称线间距为[60,190]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有装配孔供发生器穿设且至少部分发生器位于气袋内，量纲为孔位/穿设结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露装配孔或发生器穿设关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开孔位结构；(b)单位/量纲是否等价：否，X为结构存在和位置关系，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有固定孔用于将发生器固定于车辆座椅，量纲为孔位/固定结构，参考系为第一袋面和座椅。②候选公开证据 Y：公开资料未披露固定孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开固定孔；(b)单位/量纲是否等价：否，X为结构存在项，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述第一袋面上设置有防呆孔，所述防呆孔为异形孔",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面设置异形防呆孔，量纲为孔形/装配防错结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露防呆孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开异形孔；(b)单位/量纲是否等价：否，X为孔形结构，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.如权利要求1所述的侧气囊，其特征在于， 所述第二袋面上具有泄气孔。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述第二袋面上具有泄气孔",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述第二袋面上具有泄气孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：第二袋面具有泄气孔，量纲为孔位结构，参考系为第二袋面。②候选公开证据 Y：公开资料未披露侧气囊气袋泄气孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开泄气孔；(b)单位/量纲是否等价：否，X为孔位结构，Y无对应结构；(c)参考系是否等价：否，Y无第二袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.一种座椅系统，应用于车辆，其特征在于，包括： 如权利要求1至12任意一项所述的侧气囊；以及 座椅，所述气体发生器安装于所述座椅的靠背上； 所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "一种座椅系统，应用于车辆",
+              "competitor_feature": "乐道L90 2025款Max六座版为车辆产品，公开资料披露其座椅侧气囊/安全气囊系统，构成应用于车辆的座椅安全约束系统。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://finance.sina.cn/2025-07-31/detail-infikvpk7093876.d.html?vt=4",
+                  "title": "蔚来乐道L90正式上市 起售价26.58万元",
+                  "source_name": "新浪财经",
+                  "snippet": "2025年7月31日，蔚来汽车旗下乐道品牌正式发布旗舰车型乐道L90；全系标配9安全气囊。"
+                },
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：应用于车辆的座椅系统，量纲为系统存在项，参考系为车辆座椅。②候选公开证据 Y：该SKU公开资料披露车辆及其座椅侧气囊配置。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅及其安全约束系统；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F2",
+              "patent_feature": "座椅，所述气体发生器安装于所述座椅的靠背上",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料可证明座椅侧气囊/前排座椅气囊存在，但未披露气体发生器安装于座椅靠背。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：座椅及安装在座椅靠背上的气体发生器，量纲为部件安装位置，参考系为座椅靠背。②候选公开证据 Y：公开资料披露座椅侧气囊或前排座椅气囊，但未披露气体发生器本体和靠背安装点。③X 与 Y 的4项对比：(a)概念是否等价：否，气囊存在不等同于发生器安装于靠背；(b)单位/量纲是否等价：否，X为安装位置关系，Y为配置/模块存在项；(c)参考系是否等价：否，X相对座椅靠背及发生器，Y相对座椅气囊；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F3",
+              "patent_feature": "所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露侧气囊展开时从乘员手臂下方伸入、抬起手臂并位于手臂下方及胸腹部围成空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀气袋与乘员手臂、胸腹部之间的动态/最终空间关系，量纲为空间位置和动作效果，参考系为乘员身体。②候选公开证据 Y：公开资料只说明侧气囊保护胸部/骨盆或侧碰时膨胀，未披露抬手臂路径。③X 与 Y 的4项对比：(a)概念是否等价：否，常规侧碰保护不等同于从手臂下方伸入并抬臂；(b)单位/量纲是否等价：否，X为空间/动作关系，Y为保护功能描述；(c)参考系是否等价：否，X相对乘员手臂和胸腹部空间，Y相对座椅/躯干保护区域；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.如权利要求13所述的座椅系统，其特征在于， 所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料未披露该侧气囊的所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀状态下两袋面连接线部分位于乘员手臂下方及胸腹部围成空间内，量纲为空间位置关系，参考系为乘员身体与气袋连接线。②候选公开证据 Y：公开资料未披露气袋连接线或其与乘员手臂/胸腹部空间的关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开连接线位置；(b)单位/量纲是否等价：否，X为空间位置关系，Y无对应结构；(c)参考系是否等价：否，Y无乘员手臂/胸腹部参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括： 如权利要求13或14任意一项所述的座椅系统；以及 车身，所述座椅安装于所述车身内。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "乐道L90 2025款Max六座版为公开上市/发布的车辆产品。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://finance.sina.cn/2025-07-31/detail-infikvpk7093876.d.html?vt=4",
+                  "title": "蔚来乐道L90正式上市 起售价26.58万元",
+                  "source_name": "新浪财经",
+                  "snippet": "2025年7月31日，蔚来汽车旗下乐道品牌正式发布旗舰车型乐道L90；全系标配9安全气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：一种车辆，量纲为产品存在项，参考系为整车。②候选公开证据 Y：上市/产品资料披露该SKU或车型为车辆。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆产品；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C15-F2",
+              "patent_feature": "车身，所述座椅安装于所述车身内",
+              "competitor_feature": "乐道L90 2025款Max六座版公开资料披露车辆座椅/座椅侧气囊配置，座椅安装在车身乘员舱内。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://finance.sina.cn/2025-07-31/detail-infikvpk7093876.d.html?vt=4",
+                  "title": "蔚来乐道L90正式上市 起售价26.58万元",
+                  "source_name": "新浪财经",
+                  "snippet": "2025年7月31日，蔚来汽车旗下乐道品牌正式发布旗舰车型乐道L90；全系标配9安全气囊。"
+                },
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：车身及安装于车身内的座椅，量纲为部件装配存在项，参考系为整车车身。②候选公开证据 Y：该SKU公开资料披露车身/座位数及座椅侧气囊或座椅安全系统。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆车身内座椅配置；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车乘员舱/座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 16,
+          "claim_text": "16.如权利要求15所述的车辆，其特征在于， 所述侧气囊安装于所述座椅靠近所述车身的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C16-F1",
+              "patent_feature": "所述侧气囊安装于所述座椅靠近所述车身的一侧",
+              "competitor_feature": "L90用户手册披露前两排座椅两侧的座椅侧气囊，座椅两侧包括靠近车身的一侧。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://cdn-up-public.onvo.cn/www-alps-cn/user-instructions/L90-user-manual-20250815.pdf",
+                  "title": "乐道L90用户手册",
+                  "source_name": "ONVO",
+                  "snippet": "侧面安全气囊包括座椅侧气囊（前两排座椅两侧）、远端气囊（主驾座椅内侧）以及侧气帘；气囊内部的气体发生器点燃并释放压力气体，气体充满整个气囊空间。"
+                }
+              ],
+              "reasoning": "①权项 X：侧气囊安装于座椅靠近车身的一侧，量纲为安装位置存在项，参考系为座椅外侧/车身侧。②候选公开证据 Y：L90手册披露前两排座椅两侧的座椅侧气囊。③X 与 Y 的4项对比：(a)概念是否等价：是，座椅两侧覆盖靠近车身的一侧；(b)单位/量纲是否等价：是，均为二值安装位置；(c)参考系是否等价：是，均相对车辆座椅侧部/车身侧；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "乐道L90 2025款Max六座版 侧气囊 气体发生器 拆解",
+        "乐道L90 20250815 用户手册 气囊 气体发生器 座椅侧气囊",
+        "ONVO L90 2025 Max six seat side airbag inflator teardown",
+        "乐道L90 SRS 维修手册 座椅侧气囊 气袋",
+        "[SKU自检-M3] 2025款Max六座版 / 20250815用户手册 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual_or_config",
+        "repair_or_service_manual_search"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "吉利汽车",
+        "company_en": "Geely Auto",
+        "product_name": "吉利银河M9（2025款210km四驱领航版）",
+        "product_name_en": "Geely Galaxy M9 (2025 210km AWD Linghang Edition)",
+        "product_intro": "2025年9月上市的六座大型电混SUV；官方页披露9个安全气囊含双腔远端气囊，配置表披露第一排和第二排侧气囊。",
+        "market": "中国新能源大六座SUV前装市场",
+        "reason_for_deep_dive": "用户点名重点候选；车型安全配置公开度高，与座椅侧气囊/远端气囊应用场景高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.galaxy-geely.com/M9",
+          "https://www.evlook.com/yinhem9/peizhi",
+          "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml"
+        ],
+        "initial_evidence_summary": "吉利官方页披露银河M9有9个安全气囊，含双腔远端气囊；EV视界配置表披露第一排侧气囊、第二排侧气囊、侧安全气帘均为标配。"
+      },
+      "launch_date": "2025年9月17日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.com.cn/newcar/2025-09-17/detail-infqumnm2830598.shtml",
+          "title": "吉利银河M9正式上市 限时价17.38-23.88万元",
+          "source_name": "新浪汽车",
+          "snippet": "9月17日，吉利银河M9正式上市，共推出6款车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧，其特征在于，包括： 气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋；以及 气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+              "competitor_feature": "银河M9 210km四驱领航版参数页披露前排/后排侧安全气囊，官方页披露9个安全气囊含双腔远端气囊，属于车辆座椅侧向约束气囊配置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                },
+                {
+                  "url": "https://www.evlook.com/yinhem9/peizhi",
+                  "title": "银河M9配置表",
+                  "source_name": "EV视界",
+                  "snippet": "被动安全配置列出第一排侧气囊、第二排侧气囊、侧安全气帘均为全系标配。"
+                },
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                }
+              ],
+              "reasoning": "①权1 X：车辆座椅一侧、收纳后碰撞时展开的侧气囊，量纲为存在/不存在，参考系为车辆座椅侧部。②候选公开证据 Y：M9 210km四驱领航版参数页列明前排/后排侧安全气囊，官方页列明9个安全气囊含双腔远端气囊。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅侧向气囊；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅/乘员侧部；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料仅披露座椅侧气囊/远端气囊配置或膨胀功能，未披露气袋第一袋面、第二袋面及周沿密封结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权1 X：两片袋面周沿密封形成气袋，量纲为气袋裁片/密封结构，参考系为第一袋面、第二袋面及其周沿。②候选公开证据 Y：公开资料只披露该SKU有座椅侧气囊/远端气囊或气囊空间，未披露气袋裁片与密封线。③X 与 Y 的4项对比：(a)概念是否等价：否，配置项/气囊空间不等同于两袋面周沿密封结构；(b)单位/量纲是否等价：否，X是具体结构，Y是配置存在或功能描述；(c)参考系是否等价：否，X相对气袋袋面，Y相对车辆气囊配置/座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：M9 210km四驱领航版侧气囊气袋裁片/周沿密封线；现有配置页只证明有侧气囊，不能证明两袋面结构。\n下一步建议：去 https://m.asemanshop.com 或 https://www.qixiu88.com 查银河M9 SRS维修手册的座椅侧气囊总成图。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露座椅侧气囊气体发生器固定在第一袋面上的装配关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                },
+                {
+                  "url": "https://www.evlook.com/yinhem9/peizhi",
+                  "title": "银河M9配置表",
+                  "source_name": "EV视界",
+                  "snippet": "被动安全配置列出第一排侧气囊、第二排侧气囊、侧安全气帘均为全系标配。"
+                },
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                }
+              ],
+              "reasoning": "①权1 X：气体发生器设置于第一袋面上并向气袋充气，量纲为发生器存在、安装位置和充气功能，参考系为第一袋面/气袋。②候选公开证据 Y：公开资料至多披露侧气囊会膨胀或气囊内发生器释放气体，但未披露发生器固定在哪一袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，充气/膨胀功能不等同于发生器设置于第一袋面；(b)单位/量纲是否等价：否，X包含结构位置关系，Y主要是功能或配置存在项；(c)参考系是否等价：否，X相对第一袋面，Y相对气囊或座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：M9侧气囊气体发生器与气袋第一袋面的固定位置；现有页面未公开发生器实物或安装袋面。\n下一步建议：去畅易汽车网、汽修巴巴或吉利EPC按VIN查银河M9座椅侧气囊总成拆装/零件图。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面对称设置。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面对称设置",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述第一袋面和所述第二袋面对称设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面和第二袋面对称设置，量纲为结构几何关系，参考系为气袋两袋面。②候选公开证据 Y：公开资料只披露座椅侧气囊配置/位置，未披露气袋袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，配置/位置不等同于袋面对称；(b)单位/量纲是否等价：否，X是几何关系，Y是配置存在项；(c)参考系是否等价：否，X相对气袋裁片，Y相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.如权利要求2所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折，所述气体发生器与所述对称线间隔设置。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：两袋面一体成型并沿对称线对折，量纲为裁片成型/折叠结构，参考系为气袋裁片。②候选公开证据 Y：公开资料未披露气袋裁片或折线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开一体裁片；(b)单位/量纲是否等价：否，X是制造结构，Y无对应量纲；(c)参考系是否等价：否，X相对气袋对称线，Y无裁片参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "所述气体发生器与所述对称线间隔设置",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述气体发生器与所述对称线间隔设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器与对称线间隔设置，量纲为长度/位置关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器与气袋对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开该位置关系；(b)单位/量纲是否等价：否，X是长度间距，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相平行。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相平行",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相平行。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器轴线方向与对称线平行，量纲为角度/方向关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开轴线平行关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.如权利要求4所述的侧气囊，其特征在于， 所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线与对称线间距为[50,120]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露该间距数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开数值间距；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相倾斜。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相倾斜",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相倾斜。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线方向与对称线倾斜，量纲为方向/角度关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开倾斜关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.如权利要求6所述的侧气囊，其特征在于， 所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线相对对称线倾角为[10,30]°，量纲为角度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露倾角数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开角度；(b)单位/量纲是否等价：否，X为角度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.如权利要求7所述的侧气囊，其特征在于， 所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm，所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器靠近对称线一端到对称线间距为[0,130]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器远离对称线一端到对称线间距为[60,190]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有装配孔供发生器穿设且至少部分发生器位于气袋内，量纲为孔位/穿设结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露装配孔或发生器穿设关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开孔位结构；(b)单位/量纲是否等价：否，X为结构存在和位置关系，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有固定孔用于将发生器固定于车辆座椅，量纲为孔位/固定结构，参考系为第一袋面和座椅。②候选公开证据 Y：公开资料未披露固定孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开固定孔；(b)单位/量纲是否等价：否，X为结构存在项，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述第一袋面上设置有防呆孔，所述防呆孔为异形孔",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面设置异形防呆孔，量纲为孔形/装配防错结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露防呆孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开异形孔；(b)单位/量纲是否等价：否，X为孔形结构，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.如权利要求1所述的侧气囊，其特征在于， 所述第二袋面上具有泄气孔。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述第二袋面上具有泄气孔",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述第二袋面上具有泄气孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：第二袋面具有泄气孔，量纲为孔位结构，参考系为第二袋面。②候选公开证据 Y：公开资料未披露侧气囊气袋泄气孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开泄气孔；(b)单位/量纲是否等价：否，X为孔位结构，Y无对应结构；(c)参考系是否等价：否，Y无第二袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.一种座椅系统，应用于车辆，其特征在于，包括： 如权利要求1至12任意一项所述的侧气囊；以及 座椅，所述气体发生器安装于所述座椅的靠背上； 所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "一种座椅系统，应用于车辆",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版为车辆产品，公开资料披露其座椅侧气囊/安全气囊系统，构成应用于车辆的座椅安全约束系统。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：应用于车辆的座椅系统，量纲为系统存在项，参考系为车辆座椅。②候选公开证据 Y：该SKU公开资料披露车辆及其座椅侧气囊配置。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅及其安全约束系统；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F2",
+              "patent_feature": "座椅，所述气体发生器安装于所述座椅的靠背上",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料可证明座椅侧气囊/前排座椅气囊存在，但未披露气体发生器安装于座椅靠背。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                },
+                {
+                  "url": "https://www.evlook.com/yinhem9/peizhi",
+                  "title": "银河M9配置表",
+                  "source_name": "EV视界",
+                  "snippet": "被动安全配置列出第一排侧气囊、第二排侧气囊、侧安全气帘均为全系标配。"
+                },
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                }
+              ],
+              "reasoning": "①权项 X：座椅及安装在座椅靠背上的气体发生器，量纲为部件安装位置，参考系为座椅靠背。②候选公开证据 Y：公开资料披露座椅侧气囊或前排座椅气囊，但未披露气体发生器本体和靠背安装点。③X 与 Y 的4项对比：(a)概念是否等价：否，气囊存在不等同于发生器安装于靠背；(b)单位/量纲是否等价：否，X为安装位置关系，Y为配置/模块存在项；(c)参考系是否等价：否，X相对座椅靠背及发生器，Y相对座椅气囊；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F3",
+              "patent_feature": "所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露侧气囊展开时从乘员手臂下方伸入、抬起手臂并位于手臂下方及胸腹部围成空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                },
+                {
+                  "url": "https://www.evlook.com/yinhem9/peizhi",
+                  "title": "银河M9配置表",
+                  "source_name": "EV视界",
+                  "snippet": "被动安全配置列出第一排侧气囊、第二排侧气囊、侧安全气帘均为全系标配。"
+                },
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀气袋与乘员手臂、胸腹部之间的动态/最终空间关系，量纲为空间位置和动作效果，参考系为乘员身体。②候选公开证据 Y：公开资料只说明侧气囊保护胸部/骨盆或侧碰时膨胀，未披露抬手臂路径。③X 与 Y 的4项对比：(a)概念是否等价：否，常规侧碰保护不等同于从手臂下方伸入并抬臂；(b)单位/量纲是否等价：否，X为空间/动作关系，Y为保护功能描述；(c)参考系是否等价：否，X相对乘员手臂和胸腹部空间，Y相对座椅/躯干保护区域；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.如权利要求13所述的座椅系统，其特征在于， 所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料未披露该侧气囊的所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀状态下两袋面连接线部分位于乘员手臂下方及胸腹部围成空间内，量纲为空间位置关系，参考系为乘员身体与气袋连接线。②候选公开证据 Y：公开资料未披露气袋连接线或其与乘员手臂/胸腹部空间的关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开连接线位置；(b)单位/量纲是否等价：否，X为空间位置关系，Y无对应结构；(c)参考系是否等价：否，Y无乘员手臂/胸腹部参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括： 如权利要求13或14任意一项所述的座椅系统；以及 车身，所述座椅安装于所述车身内。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版为公开上市/发布的车辆产品。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                }
+              ],
+              "reasoning": "①权项 X：一种车辆，量纲为产品存在项，参考系为整车。②候选公开证据 Y：上市/产品资料披露该SKU或车型为车辆。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆产品；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C15-F2",
+              "patent_feature": "车身，所述座椅安装于所述车身内",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料披露车辆座椅/座椅侧气囊配置，座椅安装在车身乘员舱内。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                },
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                }
+              ],
+              "reasoning": "①权项 X：车身及安装于车身内的座椅，量纲为部件装配存在项，参考系为整车车身。②候选公开证据 Y：该SKU公开资料披露车身/座位数及座椅侧气囊或座椅安全系统。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆车身内座椅配置；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车乘员舱/座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 16,
+          "claim_text": "16.如权利要求15所述的车辆，其特征在于， 所述侧气囊安装于所述座椅靠近所述车身的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C16-F1",
+              "patent_feature": "所述侧气囊安装于所述座椅靠近所述车身的一侧",
+              "competitor_feature": "吉利银河M9 2025款210km四驱领航版公开资料仅披露座椅侧气囊配置，未明确其安装于座椅靠近车身的一侧。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.dongchedi.com/auto/params-carIds-248363",
+                  "title": "吉利银河M9 2025款210km四驱领航版参数配置",
+                  "source_name": "懂车帝",
+                  "snippet": "被动安全配置列明：侧安全气囊为前排、后排；侧安全气帘为标配；中央安全气囊为前排。"
+                },
+                {
+                  "url": "https://www.evlook.com/yinhem9/peizhi",
+                  "title": "银河M9配置表",
+                  "source_name": "EV视界",
+                  "snippet": "被动安全配置列出第一排侧气囊、第二排侧气囊、侧安全气帘均为全系标配。"
+                },
+                {
+                  "url": "https://www.galaxy-geely.com/M9",
+                  "title": "吉利银河M9",
+                  "source_name": "吉利银河官网",
+                  "snippet": "官方页披露银河M9“9个安全气囊，含双腔远端气囊”；车型列表包含210km四驱领航版。"
+                }
+              ],
+              "reasoning": "①权项 X：侧气囊安装于座椅靠近车身的一侧，量纲为安装位置存在项，参考系为座椅外侧/车身侧。②候选公开证据 Y：公开资料只列座椅侧气囊/侧气囊配置，未明确靠车身侧或向门侧。③X 与 Y 的4项对比：(a)概念是否等价：否，侧气囊配置不等同于靠车身侧安装；(b)单位/量纲是否等价：否，X为安装位置，Y为配置存在项；(c)参考系是否等价：否，X相对车身侧，Y未给出该参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "吉利 银河M9 210km 四驱领航版 座椅侧气囊 维修手册 SRS 气体发生器",
+        "银河M9 210km 四驱领航版 侧气囊 气体发生器 拆解",
+        "Geely Galaxy M9 210km AWD Linghang side airbag inflator teardown",
+        "吉利 银河M9 双腔远端气囊 侧气囊 供应商",
+        "[SKU自检-M3] 2025款210km四驱领航版 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual_or_config",
+        "repair_or_service_manual_search"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "赛力斯问界",
+        "company_en": "SERES AITO",
+        "product_name": "问界M8增程Max+六座版（2025-04上市 / 20250716用户手册）",
+        "product_name_en": "AITO M8 EREV Max+ six-seat (2025 launch / 20250716 user manual)",
+        "product_intro": "2025年4月上市的中大型增程SUV；用户手册披露驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。",
+        "market": "中国新能源家庭SUV前装市场",
+        "reason_for_deep_dive": "同级大六座SUV，侧气囊覆盖前排和第二排，公开手册有座椅侧气囊位置证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+          "https://www.ithome.com/0/845/682.htm"
+        ],
+        "initial_evidence_summary": "问界M8手册披露车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊；上市报道披露2025年4月16日正式上市。"
+      },
+      "launch_date": "2025年4月16日正式上市，2025年4月20日开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/845/682.htm",
+          "title": "鸿蒙智行家庭智慧旗舰 SUV 问界 M8 正式上市",
+          "source_name": "IT之家",
+          "snippet": "2025年4月16日，问界M8正式上市，新车提供增程Max、增程Max+、增程Ultra三种配置，4月20日开启交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧，其特征在于，包括： 气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋；以及 气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+              "competitor_feature": "问界M8手册列明驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊，属于安装于车辆座椅侧部的侧气囊。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权1 X：车辆座椅一侧、收纳后碰撞时展开的侧气囊，量纲为存在/不存在，参考系为车辆座椅侧部。②候选公开证据 Y：M8手册列明驾驶员/副驾驶/第二排座椅侧气囊和远端侧气囊。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅侧部气囊；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅侧部；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+              "competitor_feature": "问界M8增程Max+六座版公开资料仅披露座椅侧气囊/远端气囊配置或膨胀功能，未披露气袋第一袋面、第二袋面及周沿密封结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权1 X：两片袋面周沿密封形成气袋，量纲为气袋裁片/密封结构，参考系为第一袋面、第二袋面及其周沿。②候选公开证据 Y：公开资料只披露该SKU有座椅侧气囊/远端气囊或气囊空间，未披露气袋裁片与密封线。③X 与 Y 的4项对比：(a)概念是否等价：否，配置项/气囊空间不等同于两袋面周沿密封结构；(b)单位/量纲是否等价：否，X是具体结构，Y是配置存在或功能描述；(c)参考系是否等价：否，X相对气袋袋面，Y相对车辆气囊配置/座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：M8增程Max+六座版侧气囊气袋裁片/周沿密封线；现有手册只列气囊位置，不能证明两袋面结构。\n下一步建议：去 https://m.asemanshop.com 或 https://www.qixiu88.com 查问界M8 SRS维修手册的侧气囊总成图。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露座椅侧气囊气体发生器固定在第一袋面上的装配关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权1 X：气体发生器设置于第一袋面上并向气袋充气，量纲为发生器存在、安装位置和充气功能，参考系为第一袋面/气袋。②候选公开证据 Y：公开资料至多披露侧气囊会膨胀或气囊内发生器释放气体，但未披露发生器固定在哪一袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，充气/膨胀功能不等同于发生器设置于第一袋面；(b)单位/量纲是否等价：否，X包含结构位置关系，Y主要是功能或配置存在项；(c)参考系是否等价：否，X相对第一袋面，Y相对气囊或座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：M8侧气囊气体发生器与气袋第一袋面的固定位置；公开手册未披露发生器或安装袋面。\n下一步建议：去畅易汽车网、汽修巴巴或AITO售后资料库定位M8座椅侧气囊拆装/零件图。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面对称设置。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面对称设置",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述第一袋面和所述第二袋面对称设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面和第二袋面对称设置，量纲为结构几何关系，参考系为气袋两袋面。②候选公开证据 Y：公开资料只披露座椅侧气囊配置/位置，未披露气袋袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，配置/位置不等同于袋面对称；(b)单位/量纲是否等价：否，X是几何关系，Y是配置存在项；(c)参考系是否等价：否，X相对气袋裁片，Y相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.如权利要求2所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折，所述气体发生器与所述对称线间隔设置。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：两袋面一体成型并沿对称线对折，量纲为裁片成型/折叠结构，参考系为气袋裁片。②候选公开证据 Y：公开资料未披露气袋裁片或折线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开一体裁片；(b)单位/量纲是否等价：否，X是制造结构，Y无对应量纲；(c)参考系是否等价：否，X相对气袋对称线，Y无裁片参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "所述气体发生器与所述对称线间隔设置",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述气体发生器与所述对称线间隔设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器与对称线间隔设置，量纲为长度/位置关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器与气袋对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开该位置关系；(b)单位/量纲是否等价：否，X是长度间距，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相平行。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相平行",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相平行。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器轴线方向与对称线平行，量纲为角度/方向关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开轴线平行关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.如权利要求4所述的侧气囊，其特征在于， 所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线与对称线间距为[50,120]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露该间距数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开数值间距；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相倾斜。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相倾斜",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相倾斜。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线方向与对称线倾斜，量纲为方向/角度关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开倾斜关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.如权利要求6所述的侧气囊，其特征在于， 所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线相对对称线倾角为[10,30]°，量纲为角度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露倾角数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开角度；(b)单位/量纲是否等价：否，X为角度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.如权利要求7所述的侧气囊，其特征在于， 所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm，所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器靠近对称线一端到对称线间距为[0,130]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器远离对称线一端到对称线间距为[60,190]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有装配孔供发生器穿设且至少部分发生器位于气袋内，量纲为孔位/穿设结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露装配孔或发生器穿设关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开孔位结构；(b)单位/量纲是否等价：否，X为结构存在和位置关系，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有固定孔用于将发生器固定于车辆座椅，量纲为孔位/固定结构，参考系为第一袋面和座椅。②候选公开证据 Y：公开资料未披露固定孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开固定孔；(b)单位/量纲是否等价：否，X为结构存在项，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述第一袋面上设置有防呆孔，所述防呆孔为异形孔",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面设置异形防呆孔，量纲为孔形/装配防错结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露防呆孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开异形孔；(b)单位/量纲是否等价：否，X为孔形结构，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.如权利要求1所述的侧气囊，其特征在于， 所述第二袋面上具有泄气孔。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述第二袋面上具有泄气孔",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述第二袋面上具有泄气孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：第二袋面具有泄气孔，量纲为孔位结构，参考系为第二袋面。②候选公开证据 Y：公开资料未披露侧气囊气袋泄气孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开泄气孔；(b)单位/量纲是否等价：否，X为孔位结构，Y无对应结构；(c)参考系是否等价：否，Y无第二袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.一种座椅系统，应用于车辆，其特征在于，包括： 如权利要求1至12任意一项所述的侧气囊；以及 座椅，所述气体发生器安装于所述座椅的靠背上； 所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "一种座椅系统，应用于车辆",
+              "competitor_feature": "问界M8增程Max+六座版为车辆产品，公开资料披露其座椅侧气囊/安全气囊系统，构成应用于车辆的座椅安全约束系统。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/845/682.htm",
+                  "title": "鸿蒙智行家庭智慧旗舰 SUV 问界 M8 正式上市",
+                  "source_name": "IT之家",
+                  "snippet": "2025年4月16日，问界M8正式上市，新车提供增程Max、增程Max+、增程Ultra三种配置，4月20日开启交付。"
+                },
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：应用于车辆的座椅系统，量纲为系统存在项，参考系为车辆座椅。②候选公开证据 Y：该SKU公开资料披露车辆及其座椅侧气囊配置。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅及其安全约束系统；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F2",
+              "patent_feature": "座椅，所述气体发生器安装于所述座椅的靠背上",
+              "competitor_feature": "问界M8增程Max+六座版公开资料可证明座椅侧气囊/前排座椅气囊存在，但未披露气体发生器安装于座椅靠背。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：座椅及安装在座椅靠背上的气体发生器，量纲为部件安装位置，参考系为座椅靠背。②候选公开证据 Y：公开资料披露座椅侧气囊或前排座椅气囊，但未披露气体发生器本体和靠背安装点。③X 与 Y 的4项对比：(a)概念是否等价：否，气囊存在不等同于发生器安装于靠背；(b)单位/量纲是否等价：否，X为安装位置关系，Y为配置/模块存在项；(c)参考系是否等价：否，X相对座椅靠背及发生器，Y相对座椅气囊；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F3",
+              "patent_feature": "所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露侧气囊展开时从乘员手臂下方伸入、抬起手臂并位于手臂下方及胸腹部围成空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀气袋与乘员手臂、胸腹部之间的动态/最终空间关系，量纲为空间位置和动作效果，参考系为乘员身体。②候选公开证据 Y：公开资料只说明侧气囊保护胸部/骨盆或侧碰时膨胀，未披露抬手臂路径。③X 与 Y 的4项对比：(a)概念是否等价：否，常规侧碰保护不等同于从手臂下方伸入并抬臂；(b)单位/量纲是否等价：否，X为空间/动作关系，Y为保护功能描述；(c)参考系是否等价：否，X相对乘员手臂和胸腹部空间，Y相对座椅/躯干保护区域；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.如权利要求13所述的座椅系统，其特征在于， 所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "问界M8增程Max+六座版公开资料未披露该侧气囊的所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀状态下两袋面连接线部分位于乘员手臂下方及胸腹部围成空间内，量纲为空间位置关系，参考系为乘员身体与气袋连接线。②候选公开证据 Y：公开资料未披露气袋连接线或其与乘员手臂/胸腹部空间的关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开连接线位置；(b)单位/量纲是否等价：否，X为空间位置关系，Y无对应结构；(c)参考系是否等价：否，Y无乘员手臂/胸腹部参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括： 如权利要求13或14任意一项所述的座椅系统；以及 车身，所述座椅安装于所述车身内。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "问界M8增程Max+六座版为公开上市/发布的车辆产品。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/845/682.htm",
+                  "title": "鸿蒙智行家庭智慧旗舰 SUV 问界 M8 正式上市",
+                  "source_name": "IT之家",
+                  "snippet": "2025年4月16日，问界M8正式上市，新车提供增程Max、增程Max+、增程Ultra三种配置，4月20日开启交付。"
+                }
+              ],
+              "reasoning": "①权项 X：一种车辆，量纲为产品存在项，参考系为整车。②候选公开证据 Y：上市/产品资料披露该SKU或车型为车辆。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆产品；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C15-F2",
+              "patent_feature": "车身，所述座椅安装于所述车身内",
+              "competitor_feature": "问界M8增程Max+六座版公开资料披露车辆座椅/座椅侧气囊配置，座椅安装在车身乘员舱内。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ithome.com/0/845/682.htm",
+                  "title": "鸿蒙智行家庭智慧旗舰 SUV 问界 M8 正式上市",
+                  "source_name": "IT之家",
+                  "snippet": "2025年4月16日，问界M8正式上市，新车提供增程Max、增程Max+、增程Ultra三种配置，4月20日开启交付。"
+                },
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：车身及安装于车身内的座椅，量纲为部件装配存在项，参考系为整车车身。②候选公开证据 Y：该SKU公开资料披露车身/座位数及座椅侧气囊或座椅安全系统。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆车身内座椅配置；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车乘员舱/座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 16,
+          "claim_text": "16.如权利要求15所述的车辆，其特征在于， 所述侧气囊安装于所述座椅靠近所述车身的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C16-F1",
+              "patent_feature": "所述侧气囊安装于所述座椅靠近所述车身的一侧",
+              "competitor_feature": "问界M8增程Max+六座版公开资料仅披露座椅侧气囊配置，未明确其安装于座椅靠近车身的一侧。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://aito.auto/dam/content/dam/aito/cn/service/pdf/m8-product-manual-20250716-new.pdf",
+                  "title": "问界M8增程版用户手册",
+                  "source_name": "AITO",
+                  "snippet": "车辆安全气囊安装位置包括驾驶员座椅侧气囊、副驾驶员座椅侧气囊、第二排座椅侧气囊和远端侧气囊。"
+                }
+              ],
+              "reasoning": "①权项 X：侧气囊安装于座椅靠近车身的一侧，量纲为安装位置存在项，参考系为座椅外侧/车身侧。②候选公开证据 Y：公开资料只列座椅侧气囊/侧气囊配置，未明确靠车身侧或向门侧。③X 与 Y 的4项对比：(a)概念是否等价：否，侧气囊配置不等同于靠车身侧安装；(b)单位/量纲是否等价：否，X为安装位置，Y为配置存在项；(c)参考系是否等价：否，X相对车身侧，Y未给出该参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "问界M8 增程 Max+ 六座 侧气囊 气体发生器 拆解",
+        "AITO M8 EREV Max+ six seat side airbag inflator teardown",
+        "问界M8 增程Max+ SRS 维修手册 座椅侧气囊 气袋",
+        "问界M8 20250716 用户手册 气囊 气体发生器",
+        "[SKU自检-M3] 2025-04上市 / 20250716用户手册 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual_or_config",
+        "repair_or_service_manual_search"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "广汽传祺",
+        "company_en": "GAC Trumpchi",
+        "product_name": "传祺向往M8宗师（T9M短续航智驾 / 2025-10上市）",
+        "product_name_en": "GAC Trumpchi Xiangwang M8 Master (T9M short-range ADAS / 2025 launch)",
+        "product_intro": "2025年10月上市的新能源MPV；在线用户手册披露前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部。",
+        "market": "中国新能源MPV前装市场",
+        "reason_for_deep_dive": "用户手册HTML可直接验证前排座椅侧气囊的座椅靠背内安装位置和迅速膨胀功能。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+          "https://auto.sina.com.cn/newcar/x/2025-10-16/detail-infuautn9635023.shtml"
+        ],
+        "initial_evidence_summary": "广汽传祺在线手册披露前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；侧碰触发时迅速膨胀。"
+      },
+      "launch_date": "2025年10月16日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.sina.com.cn/newcar/x/2025-10-16/detail-infuautn9635023.shtml",
+          "title": "24.99万元起 传祺向往M8宗师正式上市",
+          "source_name": "新浪汽车",
+          "snippet": "10月16日，传祺向往M8宗师在2025中国国际新能源和智能网联汽车展览会上发布上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧，其特征在于，包括： 气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋；以及 气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+              "competitor_feature": "向往M8宗师前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部，侧碰触发后迅速膨胀。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权1 X：车辆座椅一侧、收纳后碰撞时展开的侧气囊，量纲为存在/不存在，参考系为车辆座椅侧部。②候选公开证据 Y：T9M用户手册披露前排侧面安全气囊安装在座椅靠背向门侧内部，侧碰时迅速膨胀。③X 与 Y 的4项对比：(a)概念是否等价：是，均为安装在车辆座椅侧部的侧气囊；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅靠背门侧；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料仅披露座椅侧气囊/远端气囊配置或膨胀功能，未披露气袋第一袋面、第二袋面及周沿密封结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权1 X：两片袋面周沿密封形成气袋，量纲为气袋裁片/密封结构，参考系为第一袋面、第二袋面及其周沿。②候选公开证据 Y：公开资料只披露该SKU有座椅侧气囊/远端气囊或气囊空间，未披露气袋裁片与密封线。③X 与 Y 的4项对比：(a)概念是否等价：否，配置项/气囊空间不等同于两袋面周沿密封结构；(b)单位/量纲是否等价：否，X是具体结构，Y是配置存在或功能描述；(c)参考系是否等价：否，X相对气袋袋面，Y相对车辆气囊配置/座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：T9M短续航智驾侧气囊气袋裁片/周沿密封线；用户手册只披露安装位置和膨胀，不能证明两袋面结构。\n下一步建议：去 https://m.asemanshop.com 或 https://www.qixiu88.com 查T9M SRS维修手册的前排侧气囊总成图。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露座椅侧气囊气体发生器固定在第一袋面上的装配关系。 已有资料至多证明侧气囊膨胀/前排座椅气囊存在。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权1 X：气体发生器设置于第一袋面上并向气袋充气，量纲为发生器存在、安装位置和充气功能，参考系为第一袋面/气袋。②候选公开证据 Y：公开资料至多披露侧气囊会膨胀或气囊内发生器释放气体，但未披露发生器固定在哪一袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，充气/膨胀功能不等同于发生器设置于第一袋面；(b)单位/量纲是否等价：否，X包含结构位置关系，Y主要是功能或配置存在项；(c)参考系是否等价：否，X相对第一袋面，Y相对气囊或座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：T9M侧气囊气体发生器与气袋第一袋面的固定位置；手册只说明侧气囊迅速膨胀，未公开发生器装配。\n下一步建议：去畅易汽车网、汽修巴巴或广汽传祺售后资料库定位T9M座椅侧气囊拆装/零件图。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面对称设置。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面对称设置",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述第一袋面和所述第二袋面对称设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面和第二袋面对称设置，量纲为结构几何关系，参考系为气袋两袋面。②候选公开证据 Y：公开资料只披露座椅侧气囊配置/位置，未披露气袋袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，配置/位置不等同于袋面对称；(b)单位/量纲是否等价：否，X是几何关系，Y是配置存在项；(c)参考系是否等价：否，X相对气袋裁片，Y相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.如权利要求2所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折，所述气体发生器与所述对称线间隔设置。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：两袋面一体成型并沿对称线对折，量纲为裁片成型/折叠结构，参考系为气袋裁片。②候选公开证据 Y：公开资料未披露气袋裁片或折线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开一体裁片；(b)单位/量纲是否等价：否，X是制造结构，Y无对应量纲；(c)参考系是否等价：否，X相对气袋对称线，Y无裁片参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "所述气体发生器与所述对称线间隔设置",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述气体发生器与所述对称线间隔设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器与对称线间隔设置，量纲为长度/位置关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器与气袋对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开该位置关系；(b)单位/量纲是否等价：否，X是长度间距，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相平行。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相平行",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相平行。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器轴线方向与对称线平行，量纲为角度/方向关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开轴线平行关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.如权利要求4所述的侧气囊，其特征在于， 所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线与对称线间距为[50,120]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露该间距数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开数值间距；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相倾斜。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相倾斜",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相倾斜。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线方向与对称线倾斜，量纲为方向/角度关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开倾斜关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.如权利要求6所述的侧气囊，其特征在于， 所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线相对对称线倾角为[10,30]°，量纲为角度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露倾角数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开角度；(b)单位/量纲是否等价：否，X为角度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.如权利要求7所述的侧气囊，其特征在于， 所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm，所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器靠近对称线一端到对称线间距为[0,130]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器远离对称线一端到对称线间距为[60,190]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有装配孔供发生器穿设且至少部分发生器位于气袋内，量纲为孔位/穿设结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露装配孔或发生器穿设关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开孔位结构；(b)单位/量纲是否等价：否，X为结构存在和位置关系，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有固定孔用于将发生器固定于车辆座椅，量纲为孔位/固定结构，参考系为第一袋面和座椅。②候选公开证据 Y：公开资料未披露固定孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开固定孔；(b)单位/量纲是否等价：否，X为结构存在项，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述第一袋面上设置有防呆孔，所述防呆孔为异形孔",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面设置异形防呆孔，量纲为孔形/装配防错结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露防呆孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开异形孔；(b)单位/量纲是否等价：否，X为孔形结构，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.如权利要求1所述的侧气囊，其特征在于， 所述第二袋面上具有泄气孔。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述第二袋面上具有泄气孔",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述第二袋面上具有泄气孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第二袋面具有泄气孔，量纲为孔位结构，参考系为第二袋面。②候选公开证据 Y：公开资料未披露侧气囊气袋泄气孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开泄气孔；(b)单位/量纲是否等价：否，X为孔位结构，Y无对应结构；(c)参考系是否等价：否，Y无第二袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.一种座椅系统，应用于车辆，其特征在于，包括： 如权利要求1至12任意一项所述的侧气囊；以及 座椅，所述气体发生器安装于所述座椅的靠背上； 所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "一种座椅系统，应用于车辆",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾为车辆产品，公开资料披露其座椅侧气囊/安全气囊系统，构成应用于车辆的座椅安全约束系统。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://auto.sina.com.cn/newcar/x/2025-10-16/detail-infuautn9635023.shtml",
+                  "title": "24.99万元起 传祺向往M8宗师正式上市",
+                  "source_name": "新浪汽车",
+                  "snippet": "10月16日，传祺向往M8宗师在2025中国国际新能源和智能网联汽车展览会上发布上市。"
+                },
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：应用于车辆的座椅系统，量纲为系统存在项，参考系为车辆座椅。②候选公开证据 Y：该SKU公开资料披露车辆及其座椅侧气囊配置。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅及其安全约束系统；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F2",
+              "patent_feature": "座椅，所述气体发生器安装于所述座椅的靠背上",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料可证明座椅侧气囊/前排座椅气囊存在，但未披露气体发生器安装于座椅靠背。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：座椅及安装在座椅靠背上的气体发生器，量纲为部件安装位置，参考系为座椅靠背。②候选公开证据 Y：公开资料披露座椅侧气囊或前排座椅气囊，但未披露气体发生器本体和靠背安装点。③X 与 Y 的4项对比：(a)概念是否等价：否，气囊存在不等同于发生器安装于靠背；(b)单位/量纲是否等价：否，X为安装位置关系，Y为配置/模块存在项；(c)参考系是否等价：否，X相对座椅靠背及发生器，Y相对座椅气囊；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F3",
+              "patent_feature": "所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露侧气囊展开时从乘员手臂下方伸入、抬起手臂并位于手臂下方及胸腹部围成空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀气袋与乘员手臂、胸腹部之间的动态/最终空间关系，量纲为空间位置和动作效果，参考系为乘员身体。②候选公开证据 Y：公开资料只说明侧气囊保护胸部/骨盆或侧碰时膨胀，未披露抬手臂路径。③X 与 Y 的4项对比：(a)概念是否等价：否，常规侧碰保护不等同于从手臂下方伸入并抬臂；(b)单位/量纲是否等价：否，X为空间/动作关系，Y为保护功能描述；(c)参考系是否等价：否，X相对乘员手臂和胸腹部空间，Y相对座椅/躯干保护区域；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.如权利要求13所述的座椅系统，其特征在于， 所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料未披露该侧气囊的所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀状态下两袋面连接线部分位于乘员手臂下方及胸腹部围成空间内，量纲为空间位置关系，参考系为乘员身体与气袋连接线。②候选公开证据 Y：公开资料未披露气袋连接线或其与乘员手臂/胸腹部空间的关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开连接线位置；(b)单位/量纲是否等价：否，X为空间位置关系，Y无对应结构；(c)参考系是否等价：否，Y无乘员手臂/胸腹部参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括： 如权利要求13或14任意一项所述的座椅系统；以及 车身，所述座椅安装于所述车身内。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾为公开上市/发布的车辆产品。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://auto.sina.com.cn/newcar/x/2025-10-16/detail-infuautn9635023.shtml",
+                  "title": "24.99万元起 传祺向往M8宗师正式上市",
+                  "source_name": "新浪汽车",
+                  "snippet": "10月16日，传祺向往M8宗师在2025中国国际新能源和智能网联汽车展览会上发布上市。"
+                }
+              ],
+              "reasoning": "①权项 X：一种车辆，量纲为产品存在项，参考系为整车。②候选公开证据 Y：上市/产品资料披露该SKU或车型为车辆。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆产品；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C15-F2",
+              "patent_feature": "车身，所述座椅安装于所述车身内",
+              "competitor_feature": "传祺向往M8宗师T9M短续航智驾公开资料披露车辆座椅/座椅侧气囊配置，座椅安装在车身乘员舱内。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://auto.sina.com.cn/newcar/x/2025-10-16/detail-infuautn9635023.shtml",
+                  "title": "24.99万元起 传祺向往M8宗师正式上市",
+                  "source_name": "新浪汽车",
+                  "snippet": "10月16日，传祺向往M8宗师在2025中国国际新能源和智能网联汽车展览会上发布上市。"
+                },
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：车身及安装于车身内的座椅，量纲为部件装配存在项，参考系为整车车身。②候选公开证据 Y：该SKU公开资料披露车身/座位数及座椅侧气囊或座椅安全系统。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆车身内座椅配置；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车乘员舱/座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 16,
+          "claim_text": "16.如权利要求15所述的车辆，其特征在于， 所述侧气囊安装于所述座椅靠近所述车身的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C16-F1",
+              "patent_feature": "所述侧气囊安装于所述座椅靠近所述车身的一侧",
+              "competitor_feature": "T9M用户手册披露前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部，即座椅靠近车身/车门的一侧。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://pic-gsp.gacmotor.com/app/manual/GZH_T9M_SHORT_UserManual/html/AFM_1_3_2.html",
+                  "title": "安全气囊分布",
+                  "source_name": "广汽传祺用户手册",
+                  "snippet": "前排侧面安全气囊安装在驾驶员座椅及前排乘员座椅靠背向门侧内部；严重侧碰时触发车辆碰撞侧的侧面安全气囊，使其迅速膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：侧气囊安装于座椅靠近车身的一侧，量纲为安装位置存在项，参考系为座椅外侧/车身侧。②候选公开证据 Y：T9M手册披露前排侧气囊位于座椅靠背向门侧内部。③X 与 Y 的4项对比：(a)概念是否等价：是，向门侧内部即座椅靠近车身侧；(b)单位/量纲是否等价：是，均为二值安装位置；(c)参考系是否等价：是，均相对座椅外侧/车门车身侧；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "传祺 向往M8 宗师 T9M 短续航智驾 侧气囊 气体发生器 拆解",
+        "GZH_T9M_SHORT_UserManual 侧气囊 气体发生器 座椅侧气囊",
+        "传祺 T9M SRS 维修手册 前排侧面安全气囊 气袋",
+        "GAC Trumpchi Xiangwang M8 T9M side airbag inflator service manual",
+        "[SKU自检-M3] T9M短续航智驾 / 2025-10上市 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual_or_config",
+        "repair_or_service_manual_search"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "特斯拉中国",
+        "company_en": "Tesla China",
+        "product_name": "Model Y焕新版（2025款后轮驱动首发版 / 中国）",
+        "product_name_en": "Tesla Model Y Refresh (2025 RWD Launch Edition / China)",
+        "product_intro": "2025年1月在中国发布的焕新版Model Y；官方车主手册披露前排座椅上的座椅侧气囊和驾驶位座椅内侧远端气囊。",
+        "market": "中国新能源SUV前装市场",
+        "reason_for_deep_dive": "国际头部车型，官方手册公开座椅侧气囊位置和气囊膨胀工作说明。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+          "https://www.nbd.com.cn/articles/2025-01-10/3716778.html"
+        ],
+        "initial_evidence_summary": "Tesla官方手册披露Model Y座椅侧气囊位于前排座椅，可保护胸部及骨盆；手册说明气囊在传感器检测超过阈值后充气并迅速膨胀。"
+      },
+      "launch_date": "2025年1月10日中国发布，预计2025年3月交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.nbd.com.cn/articles/2025-01-10/3716778.html",
+          "title": "特斯拉中国官宣：新款Model Y发布",
+          "source_name": "每日经济新闻",
+          "snippet": "1月10日，特斯拉中国宣布推出焕新版Model Y，起售价为26.35万元，预计3月交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧，其特征在于，包括： 气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋；以及 气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种侧气囊，应用于车辆，适于折叠并安装于车辆座椅的一侧",
+              "competitor_feature": "Model Y官方手册列出前排座椅上的座椅侧气囊和驾驶位座椅内侧气囊，严重侧碰时座椅侧气囊会膨胀。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权1 X：车辆座椅一侧、收纳后碰撞时展开的侧气囊，量纲为存在/不存在，参考系为车辆座椅侧部。②候选公开证据 Y：Model Y官方手册披露座椅侧气囊和驾驶位座椅内侧气囊，严重侧碰时座椅侧气囊膨胀。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅侧部气囊；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆前排座椅侧部；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "气袋，包括第一袋面和第二袋面，所述第一袋面的周沿与所述第二袋面的周沿密封连接形成所述气袋",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料仅披露座椅侧气囊/远端气囊配置或膨胀功能，未披露气袋第一袋面、第二袋面及周沿密封结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权1 X：两片袋面周沿密封形成气袋，量纲为气袋裁片/密封结构，参考系为第一袋面、第二袋面及其周沿。②候选公开证据 Y：公开资料只披露该SKU有座椅侧气囊/远端气囊或气囊空间，未披露气袋裁片与密封线。③X 与 Y 的4项对比：(a)概念是否等价：否，配置项/气囊空间不等同于两袋面周沿密封结构；(b)单位/量纲是否等价：否，X是具体结构，Y是配置存在或功能描述；(c)参考系是否等价：否，X相对气袋袋面，Y相对车辆气囊配置/座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：2025款中国焕新版Model Y座椅侧气囊裁片/周沿密封线；手册只披露气囊类型和展开，不能证明两袋面结构。\n下一步建议：去 https://service.tesla.com 查2025+ Model Y SRS/seat airbag服务手册，定位侧气囊模块拆装图。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "气体发生器，设置于所述第一袋面上；所述气体发生器用于向所述气袋充气，以使所述气袋膨胀",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露座椅侧气囊气体发生器固定在第一袋面上的装配关系。 已有资料至多证明侧气囊膨胀/前排座椅气囊存在。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                },
+                {
+                  "url": "https://service.tesla.com/docs/ModelY/ServiceManual/2025/en-us/GUID-0068B1A9-27C4-46CD-92E9-C1596492D219.html",
+                  "title": "Remove The Front Seat Airbag And Discard",
+                  "source_name": "Tesla Service Manual",
+                  "snippet": "服务手册说明该程序适用于安装在前排座椅中的气囊，拆解项包括Side airbag，且座椅需先从车辆移除。"
+                }
+              ],
+              "reasoning": "①权1 X：气体发生器设置于第一袋面上并向气袋充气，量纲为发生器存在、安装位置和充气功能，参考系为第一袋面/气袋。②候选公开证据 Y：公开资料至多披露侧气囊会膨胀或气囊内发生器释放气体，但未披露发生器固定在哪一袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，充气/膨胀功能不等同于发生器设置于第一袋面；(b)单位/量纲是否等价：否，X包含结构位置关系，Y主要是功能或配置存在项；(c)参考系是否等价：否，X相对第一袋面，Y相对气囊或座椅位置；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：Model Y座椅侧气囊气体发生器与气袋第一袋面的固定位置；服务手册未公开气袋袋面装配关系。\n下一步建议：去Tesla Service或零件目录按VIN查看2025+ Model Y front seat airbag模块结构图。"
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面对称设置。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面对称设置",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述第一袋面和所述第二袋面对称设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面和第二袋面对称设置，量纲为结构几何关系，参考系为气袋两袋面。②候选公开证据 Y：公开资料只披露座椅侧气囊配置/位置，未披露气袋袋面。③X 与 Y 的4项对比：(a)概念是否等价：否，配置/位置不等同于袋面对称；(b)单位/量纲是否等价：否，X是几何关系，Y是配置存在项；(c)参考系是否等价：否，X相对气袋裁片，Y相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.如权利要求2所述的侧气囊，其特征在于， 所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折，所述气体发生器与所述对称线间隔设置。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述第一袋面和所述第二袋面一体成型，所述第二袋面沿对称线相对于所述第一袋面对折。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：两袋面一体成型并沿对称线对折，量纲为裁片成型/折叠结构，参考系为气袋裁片。②候选公开证据 Y：公开资料未披露气袋裁片或折线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开一体裁片；(b)单位/量纲是否等价：否，X是制造结构，Y无对应量纲；(c)参考系是否等价：否，X相对气袋对称线，Y无裁片参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C3-F2",
+              "patent_feature": "所述气体发生器与所述对称线间隔设置",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述气体发生器与所述对称线间隔设置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器与对称线间隔设置，量纲为长度/位置关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器与气袋对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开该位置关系；(b)单位/量纲是否等价：否，X是长度间距，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相平行。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相平行",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相平行。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：气体发生器轴线方向与对称线平行，量纲为角度/方向关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开轴线平行关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.如权利要求4所述的侧气囊，其特征在于， 所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述气体发生器的轴线与所述对称线之间的间距的范围为[50，120]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线与对称线间距为[50,120]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露该间距数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开数值间距；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.如权利要求3所述的侧气囊，其特征在于， 所述气体发生器的轴线方向与所述对称线相倾斜。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述气体发生器的轴线方向与所述对称线相倾斜",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述气体发生器的轴线方向与所述对称线相倾斜。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线方向与对称线倾斜，量纲为方向/角度关系，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露发生器轴线或对称线。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开倾斜关系；(b)单位/量纲是否等价：否，X是方向/角度，Y无对应量纲；(c)参考系是否等价：否，Y无气袋对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.如权利要求6所述的侧气囊，其特征在于， 所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述气体发生器的轴线相对于所述对称线的倾斜角度的范围为[10，30]°。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器轴线相对对称线倾角为[10,30]°，量纲为角度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露倾角数值。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开角度；(b)单位/量纲是否等价：否，X为角度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.如权利要求7所述的侧气囊，其特征在于， 所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm，所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述气体发生器靠近所述对称线的一端与所述对称线之间的间距的范围为[0，130]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器靠近对称线一端到对称线间距为[0,130]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C8-F2",
+              "patent_feature": "所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述气体发生器远离所述对称线的一端与所述对称线之间的间距的范围为[60，190]mm。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：发生器远离对称线一端到对称线间距为[60,190]mm，量纲为毫米长度，参考系为气袋对称线。②候选公开证据 Y：公开资料未披露端部间距。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开端部距离；(b)单位/量纲是否等价：否，X为mm长度，Y无数值；(c)参考系是否等价：否，Y无对称线参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.如权利要求1所述的侧气囊，其特征在于， 所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述第一袋面上设置有装配孔，所述装配孔用于供所述气体发生器穿设，以使至少部分所述气体发生器位于所述气袋内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有装配孔供发生器穿设且至少部分发生器位于气袋内，量纲为孔位/穿设结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露装配孔或发生器穿设关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开孔位结构；(b)单位/量纲是否等价：否，X为结构存在和位置关系，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述第一袋面上设置有固定孔，所述固定孔用于将所述气体发生器固定于车辆的座椅上。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面有固定孔用于将发生器固定于车辆座椅，量纲为孔位/固定结构，参考系为第一袋面和座椅。②候选公开证据 Y：公开资料未披露固定孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开固定孔；(b)单位/量纲是否等价：否，X为结构存在项，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.如权利要求9所述的侧气囊，其特征在于， 所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述第一袋面上设置有防呆孔，所述防呆孔为异形孔",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述第一袋面上设置有防呆孔，所述防呆孔为异形孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第一袋面设置异形防呆孔，量纲为孔形/装配防错结构，参考系为第一袋面。②候选公开证据 Y：公开资料未披露防呆孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开异形孔；(b)单位/量纲是否等价：否，X为孔形结构，Y无对应结构；(c)参考系是否等价：否，Y无第一袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.如权利要求1所述的侧气囊，其特征在于， 所述第二袋面上具有泄气孔。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述第二袋面上具有泄气孔",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述第二袋面上具有泄气孔。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：第二袋面具有泄气孔，量纲为孔位结构，参考系为第二袋面。②候选公开证据 Y：公开资料未披露侧气囊气袋泄气孔。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开泄气孔；(b)单位/量纲是否等价：否，X为孔位结构，Y无对应结构；(c)参考系是否等价：否，Y无第二袋面参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.一种座椅系统，应用于车辆，其特征在于，包括： 如权利要求1至12任意一项所述的侧气囊；以及 座椅，所述气体发生器安装于所述座椅的靠背上； 所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "一种座椅系统，应用于车辆",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国为车辆产品，公开资料披露其座椅侧气囊/安全气囊系统，构成应用于车辆的座椅安全约束系统。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.nbd.com.cn/articles/2025-01-10/3716778.html",
+                  "title": "特斯拉中国官宣：新款Model Y发布",
+                  "source_name": "每日经济新闻",
+                  "snippet": "1月10日，特斯拉中国宣布推出焕新版Model Y，起售价为26.35万元，预计3月交付。"
+                },
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：应用于车辆的座椅系统，量纲为系统存在项，参考系为车辆座椅。②候选公开证据 Y：该SKU公开资料披露车辆及其座椅侧气囊配置。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆座椅及其安全约束系统；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对车辆座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F2",
+              "patent_feature": "座椅，所述气体发生器安装于所述座椅的靠背上",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料可证明座椅侧气囊/前排座椅气囊存在，但未披露气体发生器安装于座椅靠背。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                },
+                {
+                  "url": "https://service.tesla.com/docs/ModelY/ServiceManual/2025/en-us/GUID-0068B1A9-27C4-46CD-92E9-C1596492D219.html",
+                  "title": "Remove The Front Seat Airbag And Discard",
+                  "source_name": "Tesla Service Manual",
+                  "snippet": "服务手册说明该程序适用于安装在前排座椅中的气囊，拆解项包括Side airbag，且座椅需先从车辆移除。"
+                }
+              ],
+              "reasoning": "①权项 X：座椅及安装在座椅靠背上的气体发生器，量纲为部件安装位置，参考系为座椅靠背。②候选公开证据 Y：公开资料披露座椅侧气囊或前排座椅气囊，但未披露气体发生器本体和靠背安装点。③X 与 Y 的4项对比：(a)概念是否等价：否，气囊存在不等同于发生器安装于靠背；(b)单位/量纲是否等价：否，X为安装位置关系，Y为配置/模块存在项；(c)参考系是否等价：否，X相对座椅靠背及发生器，Y相对座椅气囊；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C13-F3",
+              "patent_feature": "所述侧气囊膨胀的过程中，所述气袋的部分能够从驾乘人员的手臂下方伸入，并将驾乘人员的手臂抬起；当所述气袋完全膨胀后，所述气袋的部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露侧气囊展开时从乘员手臂下方伸入、抬起手臂并位于手臂下方及胸腹部围成空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀气袋与乘员手臂、胸腹部之间的动态/最终空间关系，量纲为空间位置和动作效果，参考系为乘员身体。②候选公开证据 Y：公开资料只说明侧气囊保护胸部/骨盆或侧碰时膨胀，未披露抬手臂路径。③X 与 Y 的4项对比：(a)概念是否等价：否，常规侧碰保护不等同于从手臂下方伸入并抬臂；(b)单位/量纲是否等价：否，X为空间/动作关系，Y为保护功能描述；(c)参考系是否等价：否，X相对乘员手臂和胸腹部空间，Y相对座椅/躯干保护区域；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 53.33
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.如权利要求13所述的座椅系统，其特征在于， 所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料未披露该侧气囊的所述侧气囊处于膨胀状态时，所述第一袋面和所述第二袋面之间的连接线部分位于驾乘人员的手臂下方及胸腹部围成的空间内。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：膨胀状态下两袋面连接线部分位于乘员手臂下方及胸腹部围成空间内，量纲为空间位置关系，参考系为乘员身体与气袋连接线。②候选公开证据 Y：公开资料未披露气袋连接线或其与乘员手臂/胸腹部空间的关系。③X 与 Y 的4项对比：(a)概念是否等价：否，未公开连接线位置；(b)单位/量纲是否等价：否，X为空间位置关系，Y无对应结构；(c)参考系是否等价：否，Y无乘员手臂/胸腹部参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括： 如权利要求13或14任意一项所述的座椅系统；以及 车身，所述座椅安装于所述车身内。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国为公开上市/发布的车辆产品。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.nbd.com.cn/articles/2025-01-10/3716778.html",
+                  "title": "特斯拉中国官宣：新款Model Y发布",
+                  "source_name": "每日经济新闻",
+                  "snippet": "1月10日，特斯拉中国宣布推出焕新版Model Y，起售价为26.35万元，预计3月交付。"
+                }
+              ],
+              "reasoning": "①权项 X：一种车辆，量纲为产品存在项，参考系为整车。②候选公开证据 Y：上市/产品资料披露该SKU或车型为车辆。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆产品；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C15-F2",
+              "patent_feature": "车身，所述座椅安装于所述车身内",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料披露车辆座椅/座椅侧气囊配置，座椅安装在车身乘员舱内。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.nbd.com.cn/articles/2025-01-10/3716778.html",
+                  "title": "特斯拉中国官宣：新款Model Y发布",
+                  "source_name": "每日经济新闻",
+                  "snippet": "1月10日，特斯拉中国宣布推出焕新版Model Y，起售价为26.35万元，预计3月交付。"
+                },
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：车身及安装于车身内的座椅，量纲为部件装配存在项，参考系为整车车身。②候选公开证据 Y：该SKU公开资料披露车身/座位数及座椅侧气囊或座椅安全系统。③X 与 Y 的4项对比：(a)概念是否等价：是，均为车辆车身内座椅配置；(b)单位/量纲是否等价：是，均为二值存在项；(c)参考系是否等价：是，均相对整车乘员舱/座椅；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 16,
+          "claim_text": "16.如权利要求15所述的车辆，其特征在于， 所述侧气囊安装于所述座椅靠近所述车身的一侧。",
+          "comparisons": [
+            {
+              "feature_id": "C16-F1",
+              "patent_feature": "所述侧气囊安装于所述座椅靠近所述车身的一侧",
+              "competitor_feature": "Model Y焕新版2025款后轮驱动首发版中国公开资料仅披露座椅侧气囊配置，未明确其安装于座椅靠近车身的一侧。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.tesla.com/ownersmanual/modely/zh_cn/GUID-2F410353-A4FB-444C-8146-921FEB23941C.html",
+                  "title": "Model Y Owner's Manual - 气囊",
+                  "source_name": "Tesla",
+                  "snippet": "气囊位置包括驾驶位座椅内侧部分的座椅气囊、座椅侧气囊；前排座椅上的座椅侧气囊可保护胸部及骨盆，严重侧碰时座椅侧气囊会膨胀。"
+                }
+              ],
+              "reasoning": "①权项 X：侧气囊安装于座椅靠近车身的一侧，量纲为安装位置存在项，参考系为座椅外侧/车身侧。②候选公开证据 Y：公开资料只列座椅侧气囊/侧气囊配置，未明确靠车身侧或向门侧。③X 与 Y 的4项对比：(a)概念是否等价：否，侧气囊配置不等同于靠车身侧安装；(b)单位/量纲是否等价：否，X为安装位置，Y为配置存在项；(c)参考系是否等价：否，X相对车身侧，Y未给出该参考系；(d)是否有反向证据：无。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        }
+      ],
+      "claim_1_score": 53.33,
+      "total_score": 53.33,
+      "searched_queries": [
+        "2025 Model Y refresh China seat side airbag inflator service manual",
+        "2025+ Model Y 用户手册 座椅侧气囊 气体发生器",
+        "Tesla Model Y 2025 side airbag module removal service manual inflator",
+        "焕新版 Model Y 座椅侧气囊 气体发生器 拆解",
+        "[SKU自检-M3] 2025款后轮驱动首发版 / 中国 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web_search",
+        "official_manual_or_config",
+        "repair_or_service_manual_search"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

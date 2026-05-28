@@ -1,0 +1,2967 @@
+{
+  "publication_no": "CN223085813U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "Tesstudio",
+        "company_en": "Tesstudio",
+        "product_name": "Model Y Juniper 电动天幕遮阳帘（03/2025+ / TESS0030）",
+        "product_name_en": "Power Sunshade Voice-Controlled Electric Sunshade For Tesla Model Y Juniper (03/2025+ / TESS0030)",
+        "product_intro": "适配 Tesla Model Y Juniper 03/2025+ 的电动天幕遮阳帘 SKU TESS0030，支持一键/语音开合，安装在全景玻璃车顶下方。",
+        "market": "Tesla Model Y Juniper 后装天幕遮阳帘市场",
+        "reason_for_deep_dive": "产品页同时公开 Model Y Juniper 玻璃车顶、电动可伸缩遮阳帘和 roof track 安装语句，最接近权 1 的天幕玻璃+导轨+遮阳帘结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade"
+        ],
+        "initial_evidence_summary": "页面称该 SKU custom-fit for Tesla Model Y Juniper (2025.03+)，是 motorized roof shade，可 open/close/pause；图像 alt 显示安装在 panoramic glass roof 上。"
+      },
+      "launch_date": "2025 年 3 月后（Model Y Juniper 2025.03+ 专用 SKU 在售）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade",
+          "title": "Tesla Model Y Juniper Sunshade | Voice-Controlled Electric | Tesstudio",
+          "source_name": "Tesstudio",
+          "snippet": "Model Y Juniper（03/2025+）variant; SKU TESS0030; availability InStock."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种天幕装置，其特征在于，包括：天幕玻璃，连接有或形成有导轨；遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接；其中，所述导轨设置在所述天幕玻璃的内表面上。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种天幕装置",
+              "competitor_feature": "TESS0030 是 Model Y Juniper 玻璃车顶用电动遮阳帘天幕装置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade",
+                  "title": "Tesla Model Y Juniper Sunshade | Voice-Controlled Electric | Tesstudio",
+                  "source_name": "Tesstudio",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (03/2025+); one-touch/voice open, close, pause; roof track mentioned."
+                },
+                {
+                  "url": "https://www.ctmods.com/products/tesla-model-y-juniper-electric-voice-control-power-sunshade",
+                  "title": "Tesla Model Y Juniper Electric Voice-Controlled Power Sunshade (2025+) - With Ambient Light",
+                  "source_name": "CTmods",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (2025.03+); DIY install; installation manual for TESS0030/TESS0043 linked."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种天幕装置。② 候选公开证据 Y：TESS0030 是 Model Y Juniper 玻璃车顶用电动遮阳帘天幕装置。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "天幕玻璃，连接有或形成有导轨",
+              "competitor_feature": "产品公开 Model Y Juniper 玻璃车顶、roof track，并在 TESS0030/TESS0043 安装说明中公开铝合金型材轨道。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade",
+                  "title": "Tesla Model Y Juniper Sunshade | Voice-Controlled Electric | Tesstudio",
+                  "source_name": "Tesstudio",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (03/2025+); one-touch/voice open, close, pause; roof track mentioned."
+                },
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：天幕玻璃，连接有或形成有导轨。② 候选公开证据 Y：产品公开 Model Y Juniper 玻璃车顶、roof track，并在 TESS0030/TESS0043 安装说明中公开铝合金型材轨道。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接",
+              "competitor_feature": "电动遮阳帘可通过按键/语音 open、close、pause，并经 roof track/铝合金型材轨道导向伸缩。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade",
+                  "title": "Tesla Model Y Juniper Sunshade | Voice-Controlled Electric | Tesstudio",
+                  "source_name": "Tesstudio",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (03/2025+); one-touch/voice open, close, pause; roof track mentioned."
+                },
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接。② 候选公开证据 Y：电动遮阳帘可通过按键/语音 open、close、pause，并经 roof track/铝合金型材轨道导向伸缩。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述导轨设置在所述天幕玻璃的内表面上",
+              "competitor_feature": "产品安装在全景玻璃车顶下方并接合 roof track；但公开资料未直接给出导轨固定在玻璃内表面的截面。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade",
+                  "title": "Tesla Model Y Juniper Sunshade | Voice-Controlled Electric | Tesstudio",
+                  "source_name": "Tesstudio",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (03/2025+); one-touch/voice open, close, pause; roof track mentioned."
+                },
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨设置在所述天幕玻璃的内表面上。② 候选公开证据 Y：安装说明显示遮阳帘置入车内、前后支架进入 roof trim，产品页称安装于 panoramic glass roof/roof track 区域。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。公开资料指向座舱侧玻璃车顶区域，但缺少导轨与玻璃内表面直接接触/固定的截面，故不能给明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：TESS0030 安装截面，直接显示 guide rail/roof track 固定在天幕玻璃内表面而非顶棚饰板。\n下一步建议：去 CTmods/Tesstudio 下载 TESS0030 安装 PDF 或看安装视频，定位轨道与玻璃接触/固定步骤。"
+            }
+          ],
+          "claim_score": 95.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的天幕装置，其特征在于，所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动",
+              "competitor_feature": "TESS0030 为 motorized roof shade，支持一键/语音开合；安装说明要求连接主电源线。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.ctmods.com/products/tesla-model-y-juniper-electric-voice-control-power-sunshade",
+                  "title": "Tesla Model Y Juniper Electric Voice-Controlled Power Sunshade (2025+) - With Ambient Light",
+                  "source_name": "CTmods",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (2025.03+); DIY install; installation manual for TESS0030/TESS0043 linked."
+                },
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。② 候选公开证据 Y：TESS0030 为 motorized roof shade，支持一键/语音开合；安装说明要求连接主电源线。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的天幕装置，其特征在于，所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧",
+              "competitor_feature": "安装说明列 4 个 fixed brackets，并说明先放置 rear assembly fixed bracket、将前后支架插入 roof trim；未明示支架与驱动机构的固定关系。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。② 候选公开证据 Y：安装说明列 4 个 fixed brackets，并说明先放置 rear assembly fixed bracket、将前后支架插入 roof trim；未明示支架与驱动机构的固定关系。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的天幕装置，其特征在于，所述驱动机构设置在所述安装支架的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动机构设置在所述安装支架的内侧",
+              "competitor_feature": "公开说明能看到前后固定支架和电动遮阳帘，但未公开驱动机构相对安装支架内侧/外侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构设置在所述安装支架的内侧。② 候选公开证据 Y：公开说明能看到前后固定支架和电动遮阳帘，但未公开驱动机构相对安装支架内侧/外侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的天幕装置，其特征在于，所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧；传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧",
+              "competitor_feature": "产品为电动遮阳帘并有两侧电动部件/主电源线；未直接公开驱动电机固定在安装支架内侧。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.ctmods.com/products/tesla-model-y-juniper-electric-voice-control-power-sunshade",
+                  "title": "Tesla Model Y Juniper Electric Voice-Controlled Power Sunshade (2025+) - With Ambient Light",
+                  "source_name": "CTmods",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (2025.03+); DIY install; installation manual for TESS0030/TESS0043 linked."
+                },
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧。② 候选公开证据 Y：产品为电动遮阳帘并有两侧电动部件/主电源线；未直接公开驱动电机固定在安装支架内侧。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动",
+              "competitor_feature": "安装说明 FAQ 明确传动方式为 synchronous gear belt + traction rope，用于电动遮阳帘开合。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。② 候选公开证据 Y：安装说明 FAQ 明确传动方式为 synchronous gear belt + traction rope，用于电动遮阳帘开合。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的天幕装置，其特征在于，所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合；横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合",
+              "competitor_feature": "安装说明部件清单含 sunshade curtains 和 fixed brackets；但未直接说明帘布端部与安装支架结合。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合。② 候选公开证据 Y：安装说明部件清单含 sunshade curtains 和 fixed brackets；但未直接说明帘布端部与安装支架结合。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C6-F2",
+              "patent_feature": "横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动",
+              "competitor_feature": "公开资料未说明横杆、横杆与帘布固定连接，或横杆与传动件随动连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。② 候选公开证据 Y：公开资料未说明横杆、横杆与帘布固定连接，或横杆与传动件随动连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的天幕装置，其特征在于，所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠",
+              "competitor_feature": "资料可证明遮阳帘可开/关/暂停和收卷，但未公开收拢位置时横杆端与安装支架在玻璃内表面投影重叠。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.ctmods.com/products/tesla-model-y-juniper-electric-voice-control-power-sunshade",
+                  "title": "Tesla Model Y Juniper Electric Voice-Controlled Power Sunshade (2025+) - With Ambient Light",
+                  "source_name": "CTmods",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (2025.03+); DIY install; installation manual for TESS0030/TESS0043 linked."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。② 候选公开证据 Y：资料可证明遮阳帘可开/关/暂停和收卷，但未公开收拢位置时横杆端与安装支架在玻璃内表面投影重叠。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的天幕装置，其特征在于，所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端",
+              "competitor_feature": "资料可证明遮阳帘可展开/收起，但未公开铺陈位置下横杆端与安装支架分别位于玻璃第一方向两端。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.ctmods.com/products/tesla-model-y-juniper-electric-voice-control-power-sunshade",
+                  "title": "Tesla Model Y Juniper Electric Voice-Controlled Power Sunshade (2025+) - With Ambient Light",
+                  "source_name": "CTmods",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (2025.03+); DIY install; installation manual for TESS0030/TESS0043 linked."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。② 候选公开证据 Y：资料可证明遮阳帘可展开/收起，但未公开铺陈位置下横杆端与安装支架分别位于玻璃第一方向两端。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求6所述的天幕装置，其特征在于，所述导轨包括：连接部，与所述天幕玻璃连接；导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述导轨包括：连接部，与所述天幕玻璃连接",
+              "competitor_feature": "产品公开 roof track/铝合金型材轨道，并安装在玻璃车顶区域；但未拆解出“连接部”与天幕玻璃的连接结构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade",
+                  "title": "Tesla Model Y Juniper Sunshade | Voice-Controlled Electric | Tesstudio",
+                  "source_name": "Tesstudio",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (03/2025+); one-touch/voice open, close, pause; roof track mentioned."
+                },
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨包括：连接部，与所述天幕玻璃连接。② 候选公开证据 Y：产品公开 roof track/铝合金型材轨道，并安装在玻璃车顶区域；但未拆解出“连接部”与天幕玻璃的连接结构。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动",
+              "competitor_feature": "安装说明明确轨道材料为 car-grade aluminum alloy profile，配合电动伸缩遮阳帘导向开合。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。② 候选公开证据 Y：安装说明明确轨道材料为 car-grade aluminum alloy profile，配合电动伸缩遮阳帘导向开合。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的天幕装置，其特征在于，所述横杆至少部分设置在所述导向部的外侧。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述横杆至少部分设置在所述导向部的外侧",
+              "competitor_feature": "公开资料未说明横杆相对导向部外侧/内侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述横杆至少部分设置在所述导向部的外侧。② 候选公开证据 Y：公开资料未说明横杆相对导向部外侧/内侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9所述的天幕装置，其特征在于，所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接",
+              "competitor_feature": "安装说明公开前后固定支架进入 roof trim 并固定遮阳帘总成；但未直接说明导向部端部固定结构与安装支架固定连接。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。② 候选公开证据 Y：安装说明公开前后固定支架进入 roof trim 并固定遮阳帘总成；但未直接说明导向部端部固定结构与安装支架固定连接。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨",
+              "competitor_feature": "安装说明称遮阳帘两侧有电动部件且配合轨道材料，结构上对应左右两侧导轨；但未逐字说明至少两个导轨沿第二方向间隔。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                },
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "FAQ states transmission method: synchronous gear belt + traction rope; track material: car-grade aluminum alloy profile; control mode: electric physical button/voice control."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。② 候选公开证据 Y：安装说明称遮阳帘两侧有电动部件且配合轨道材料，结构上对应左右两侧导轨；但未逐字说明至少两个导轨沿第二方向间隔。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.根据权利要求12所述的天幕装置，其特征在于，至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面",
+              "competitor_feature": "左右侧轨道/支架布置可推得平行间隔于玻璃车顶内侧；缺少俯视安装图直接证明。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。② 候选公开证据 Y：左右侧轨道/支架布置可推得平行间隔于玻璃车顶内侧；缺少俯视安装图直接证明。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位",
+              "competitor_feature": "公开资料未披露位于天幕玻璃和导轨之间、用于拉紧固定导轨并阻碍导轨移位的结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://cdn.shopify.com/s/files/1/0879/8928/9249/files/TESS0015TESS0030TESS0043TESS0044MODEL_Y._Model_Y_Juniper_Sound-controlled_Electric_Sunshade_-_Scroll_with_Ambient_Light_English_Version_Installation_Instructions.pdf?v=1753262726",
+                  "title": "TESS0030/TESS0043 Model Y Juniper Electric Sunshade Installation Instructions",
+                  "source_name": "Shopify CDN / Tesstudio manual",
+                  "snippet": "Parts list includes sunshade curtains, 4 fixed brackets, screws, power cord; installation steps insert rear/front brackets into roof trim and connect main power harness."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。② 候选公开证据 Y：公开资料未披露位于天幕玻璃和导轨之间、用于拉紧固定导轨并阻碍导轨移位的结构。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括如权利要求1至14任意一项所述的天幕装置。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆，包括如权利要求1至14任意一项所述的天幕装置",
+              "competitor_feature": "该装置适配并安装于 Tesla Model Y Juniper 车辆玻璃车顶。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.tesstudio.com/products/tesla-model-y-juniper-sunshade",
+                  "title": "Tesla Model Y Juniper Sunshade | Voice-Controlled Electric | Tesstudio",
+                  "source_name": "Tesstudio",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (03/2025+); one-touch/voice open, close, pause; roof track mentioned."
+                },
+                {
+                  "url": "https://www.ctmods.com/products/tesla-model-y-juniper-electric-voice-control-power-sunshade",
+                  "title": "Tesla Model Y Juniper Electric Voice-Controlled Power Sunshade (2025+) - With Ambient Light",
+                  "source_name": "CTmods",
+                  "snippet": "SKU TESS0030; custom-fit motorized roof shade for Tesla Model Y Juniper (2025.03+); DIY install; installation manual for TESS0030/TESS0043 linked."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种车辆，包括如权利要求1至14任意一项所述的天幕装置。② 候选公开证据 Y：该装置适配并安装于 Tesla Model Y Juniper 车辆玻璃车顶。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 95.0,
+      "total_score": 95.0,
+      "searched_queries": [
+        "TESS0030 Tesla Model Y Juniper sunshade installation rail",
+        "Tesla Model Y Juniper TESS0030 installation manual transmission track material",
+        "[SKU自检-M3] TESS0030 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "EVBASE",
+        "company_en": "EVBASE",
+        "product_name": "Model Y Juniper 自动电动天幕遮阳帘（2025.03+ / C1-TAB1016）",
+        "product_name_en": "EVBASE Tesla Model Y Electric Automatic Shades Glass Roof Powered Sunshade (2025.03+ / C1-TAB1016)",
+        "product_intro": "适配 Tesla Model Y Juniper 2025.03+ 的电动玻璃车顶遮阳帘 SKU C1-TAB1016，黑色款在售，支持自动伸缩和语音/按键控制。",
+        "market": "Tesla Model Y Juniper 后装电动玻璃车顶遮阳帘市场",
+        "reason_for_deep_dive": "产品页明确给出 Model Y Juniper 2025.03+ SKU、glass roof powered sunshade、automatic/retractable 及 smooth track 证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.evbase.com/products/evbase-tesla-model-y-electric-automatic-shades-glass-roof-powered-sunshade-retractable-sunshade-model-y-accessories",
+          "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades"
+        ],
+        "initial_evidence_summary": "页面称产品适配 Model Y 2020-2025.02 和 Model Y Juniper 2025.03+；Juniper black SKU C1-TAB1016；评论描述 powered, retractable, voice-controlled。"
+      },
+      "launch_date": "2025 年 3 月后（Model Y Juniper 2025.03+ SKU；2025-03-24 已有用户评价）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+          "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+          "source_name": "EVBASE",
+          "snippet": "Review timestamp data-content='2025-03-24 15:53:05 UTC'; product supports Model Y Juniper 2025.03+."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种天幕装置，其特征在于，包括：天幕玻璃，连接有或形成有导轨；遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接；其中，所述导轨设置在所述天幕玻璃的内表面上。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种天幕装置",
+              "competitor_feature": "C1-TAB1016 是 Model Y Juniper 玻璃车顶电动自动遮阳帘装置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-electric-automatic-shades-glass-roof-powered-sunshade-retractable-sunshade-model-y-accessories",
+                  "title": "EVBASE Tesla Model Y Electric Automatic Shades Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ SKU C1-TAB1016 per module 2; powered, retractable and voice/button-controlled glass roof sunshade."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种天幕装置。② 候选公开证据 Y：C1-TAB1016 是 Model Y Juniper 玻璃车顶电动自动遮阳帘装置。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "天幕玻璃，连接有或形成有导轨",
+              "competitor_feature": "EVBASE 公开 glass roof powered sunshade 和 smooth track；但 C1-TAB1016 专属页面未直接说明导轨与天幕玻璃连接。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                },
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-electric-automatic-shades-glass-roof-powered-sunshade-retractable-sunshade-model-y-accessories",
+                  "title": "EVBASE Tesla Model Y Electric Automatic Shades Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ SKU C1-TAB1016 per module 2; powered, retractable and voice/button-controlled glass roof sunshade."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：天幕玻璃，连接有或形成有导轨。② 候选公开证据 Y：产品页公开玻璃车顶电动遮阳帘和 smooth track，且变体为 Model Y Juniper 2025.03+。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。track 与导轨概念可对应，但精确 SKU 的导轨-玻璃连接方式未公开，故仅可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：C1-TAB1016 专属安装手册或截面图，证明 smooth track 与 Model Y Juniper 天幕玻璃连接/形成一体。\n下一步建议：去 EVBASE 产品页或官方客服索取 C1-TAB1016 安装 PDF，查看导轨固定位置与物料清单。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接",
+              "competitor_feature": "产品为 powered/retractable，支持开合，并公开 retractable sunshade glides along a smooth track。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接。② 候选公开证据 Y：产品为 powered/retractable，支持开合，并公开 retractable sunshade glides along a smooth track。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述导轨设置在所述天幕玻璃的内表面上",
+              "competitor_feature": "资料称电动遮阳帘 fits snugly on the glass roof，并在 smooth track 中开合；未字面说明轨道在玻璃内表面。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨设置在所述天幕玻璃的内表面上。② 候选公开证据 Y：产品页称 fits snugly on the glass roof，powered sunshade fits inside part of the roof glass，且使用 smooth track。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。公开证据指向玻璃车顶内侧安装，但缺少轨道相对玻璃内表面的截面证据，故仅可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：C1-TAB1016 轨道相对天幕玻璃内表面的实拍/截面证据；现有证据仅说明贴合玻璃车顶。\n下一步建议：去 EVBASE 安装视频或 YouTube review 找导轨卡扣与玻璃内表面接触的镜头。"
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的天幕装置，其特征在于，所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动",
+              "competitor_feature": "EVBASE 电动遮阳帘可按键开合，连接后备箱点烟器电源，驱动遮阳帘相对玻璃车顶滑动。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。② 候选公开证据 Y：EVBASE 电动遮阳帘可按键开合，连接后备箱点烟器电源，驱动遮阳帘相对玻璃车顶滑动。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的天幕装置，其特征在于，所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧",
+              "competitor_feature": "包装含 buckle、screws，FAQ 称 black brackets screwed above the visors；但未明示该支架固定并支撑驱动机构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。② 候选公开证据 Y：包装含 buckle、screws，FAQ 称 black brackets screwed above the visors；但未明示该支架固定并支撑驱动机构。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的天幕装置，其特征在于，所述驱动机构设置在所述安装支架的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动机构设置在所述安装支架的内侧",
+              "competitor_feature": "公开资料未披露驱动机构相对 black brackets 或其他安装支架的内侧位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构设置在所述安装支架的内侧。② 候选公开证据 Y：公开资料未披露驱动机构相对 black brackets 或其他安装支架的内侧位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的天幕装置，其特征在于，所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧；传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧",
+              "competitor_feature": "产品公开 high-quality electric motor，但未说明电机固定在安装支架内侧。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧。② 候选公开证据 Y：产品公开 high-quality electric motor，但未说明电机固定在安装支架内侧。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动",
+              "competitor_feature": "公开资料未披露电机与遮阳帘之间的传动件类型或连接关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。② 候选公开证据 Y：公开资料未披露电机与遮阳帘之间的传动件类型或连接关系。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的天幕装置，其特征在于，所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合；横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合",
+              "competitor_feature": "产品为 5-layer composite fabric 电动遮阳帘，包装有 buckle/screws；但未说明帘布端部与安装支架结合。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合。② 候选公开证据 Y：产品为 5-layer composite fabric 电动遮阳帘，包装有 buckle/screws；但未说明帘布端部与安装支架结合。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C6-F2",
+              "patent_feature": "横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动",
+              "competitor_feature": "公开资料未说明横杆及横杆与传动件随动连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。② 候选公开证据 Y：公开资料未说明横杆及横杆与传动件随动连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的天幕装置，其特征在于，所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠",
+              "competitor_feature": "能证明遮阳帘开合，但未证明收拢位置时横杆端与安装支架投影重叠。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。② 候选公开证据 Y：能证明遮阳帘开合，但未证明收拢位置时横杆端与安装支架投影重叠。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的天幕装置，其特征在于，所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端",
+              "competitor_feature": "能证明遮阳帘开合，但未证明铺陈位置下横杆端和安装支架分别位于天幕玻璃两端。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。② 候选公开证据 Y：能证明遮阳帘开合，但未证明铺陈位置下横杆端和安装支架分别位于天幕玻璃两端。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求6所述的天幕装置，其特征在于，所述导轨包括：连接部，与所述天幕玻璃连接；导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述导轨包括：连接部，与所述天幕玻璃连接",
+              "competitor_feature": "产品公开 smooth track 与 glass roof fit；但未拆分出导轨连接部与玻璃连接结构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨包括：连接部，与所述天幕玻璃连接。② 候选公开证据 Y：产品公开 smooth track 与 glass roof fit；但未拆分出导轨连接部与玻璃连接结构。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动",
+              "competitor_feature": "产品页明确写明 retractable sunshade glides along a smooth track，说明导向结构引导遮阳帘开合。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。② 候选公开证据 Y：产品页明确写明 retractable sunshade glides along a smooth track，说明导向结构引导遮阳帘开合。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的天幕装置，其特征在于，所述横杆至少部分设置在所述导向部的外侧。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述横杆至少部分设置在所述导向部的外侧",
+              "competitor_feature": "公开资料未说明横杆相对导向部外侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述横杆至少部分设置在所述导向部的外侧。② 候选公开证据 Y：公开资料未说明横杆相对导向部外侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9所述的天幕装置，其特征在于，所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接",
+              "competitor_feature": "虽然 FAQ 提及 black brackets screwed above the visors，但未说明导向部端部固定结构与安装支架固定连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。② 候选公开证据 Y：虽然 FAQ 提及 black brackets screwed above the visors，但未说明导向部端部固定结构与安装支架固定连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨",
+              "competitor_feature": "产品为玻璃车顶电动遮阳帘并公开 aluminum alloy rods/smooth track，结构上通常为左右导向；但未直接公开两个导轨。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。② 候选公开证据 Y：产品为玻璃车顶电动遮阳帘并公开 aluminum alloy rods/smooth track，结构上通常为左右导向；但未直接公开两个导轨。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.根据权利要求12所述的天幕装置，其特征在于，至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面",
+              "competitor_feature": "公开资料未直接说明两个导轨平行间隔设置在天幕玻璃内表面。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。② 候选公开证据 Y：公开资料未直接说明两个导轨平行间隔设置在天幕玻璃内表面。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位",
+              "competitor_feature": "公开资料未披露导轨与玻璃之间的拉紧结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。② 候选公开证据 Y：公开资料未披露导轨与玻璃之间的拉紧结构。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括如权利要求1至14任意一项所述的天幕装置。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆，包括如权利要求1至14任意一项所述的天幕装置",
+              "competitor_feature": "该装置适配 Tesla Model Y Juniper 2025.03+ 车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-electric-automatic-shades-glass-roof-powered-sunshade-retractable-sunshade-model-y-accessories",
+                  "title": "EVBASE Tesla Model Y Electric Automatic Shades Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ SKU C1-TAB1016 per module 2; powered, retractable and voice/button-controlled glass roof sunshade."
+                },
+                {
+                  "url": "https://www.evbase.com/products/evbase-tesla-model-y-automatic-electric-sunshade-glass-roof-sunshade-retractable-window-shades",
+                  "title": "EVBASE Tesla Model Y Automatic Electric Sunshade Glass Roof Powered Sunshade",
+                  "source_name": "EVBASE",
+                  "snippet": "Model Y Juniper 2025.03+ variant; electric sunshade opens/closes by button; high-quality electric motor; smooth track; snug fit on the glass roof; box includes buckle, screws, power cord."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种车辆，包括如权利要求1至14任意一项所述的天幕装置。② 候选公开证据 Y：该装置适配 Tesla Model Y Juniper 2025.03+ 车辆。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 90.0,
+      "total_score": 90.0,
+      "searched_queries": [
+        "C1-TAB1016 EVBASE installation manual sunshade rail",
+        "EVBASE Model Y Juniper Electric Sunshade C1-TAB1016 track bracket",
+        "[SKU自检-M3] C1-TAB1016 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: [C1-TAB420 泛型号页面仅用于可能满足或弃用]"
+      ],
+      "searched_providers": [
+        "web",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "Hansshow",
+        "company_en": "Hansshow",
+        "product_name": "Model Y Juniper 集成电动伸缩玻璃车顶遮阳帘（2025.03+ / C1-HSTAB1078）",
+        "product_name_en": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade (2025.03+ / C1-HSTAB1078)",
+        "product_intro": "适配 Tesla Model Y Juniper 2025.03+ 的集成电动伸缩玻璃车顶遮阳帘 SKU C1-HSTAB1078，白色款在售，带高强度铝导轨。",
+        "market": "Tesla Model Y Juniper 后装电动伸缩玻璃车顶遮阳帘市场",
+        "reason_for_deep_dive": "产品页明确列出 Model Y Juniper 2025.03+ SKU、automatic retractable、High-strength Guide Rail 和 snug fit on the glass roof。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade"
+        ],
+        "initial_evidence_summary": "页面称产品为 Integrated Electric Retractable Glass Roof Sunshade，variant 为 Model Y Juniper 2025.03+，并有 High-strength Guide Rail 和 snug fit on the glass roof 说明。"
+      },
+      "launch_date": "2025 年 3 月后（Model Y Juniper 2025.03+ SKU 在售）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+          "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+          "source_name": "Hansshow",
+          "snippet": "Variant: Model Y Juniper 2025.03+ / White; SKU C1-HSTAB1078; available=true."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种天幕装置，其特征在于，包括：天幕玻璃，连接有或形成有导轨；遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接；其中，所述导轨设置在所述天幕玻璃的内表面上。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种天幕装置",
+              "competitor_feature": "HSTAB1078/MYJ 为 Model Y Juniper 集成电动伸缩玻璃车顶遮阳帘装置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                },
+                {
+                  "url": "https://drive.google.com/uc?export=download&id=1M9izRBfXCSJ6VCOIqGVFBu_jgKjenqEt",
+                  "title": "HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual",
+                  "source_name": "Google Drive / Hansshow manual",
+                  "snippet": "HTTP 200 direct download; Content-Disposition filename identifies HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种天幕装置。② 候选公开证据 Y：HSTAB1078/MYJ 为 Model Y Juniper 集成电动伸缩玻璃车顶遮阳帘装置。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "天幕玻璃，连接有或形成有导轨",
+              "competitor_feature": "产品公开 glass roof sunshade、High-strength Guide Rail，并称 snug fit on the glass roof。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                },
+                {
+                  "url": "https://drive.google.com/uc?export=download&id=1M9izRBfXCSJ6VCOIqGVFBu_jgKjenqEt",
+                  "title": "HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual",
+                  "source_name": "Google Drive / Hansshow manual",
+                  "snippet": "HTTP 200 direct download; Content-Disposition filename identifies HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：天幕玻璃，连接有或形成有导轨。② 候选公开证据 Y：产品公开 glass roof sunshade、High-strength Guide Rail，并称 snug fit on the glass roof。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接",
+              "competitor_feature": "产品具有 automatic retractable/smart electric control，可 deploy or stow，并使用高强度导轨。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接。② 候选公开证据 Y：产品具有 automatic retractable/smart electric control，可 deploy or stow，并使用高强度导轨。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述导轨设置在所述天幕玻璃的内表面上",
+              "competitor_feature": "产品公开高强度导轨和 snug fit on the glass roof；但未逐字给出导轨位于玻璃内表面的截面。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                },
+                {
+                  "url": "https://drive.google.com/uc?export=download&id=1M9izRBfXCSJ6VCOIqGVFBu_jgKjenqEt",
+                  "title": "HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual",
+                  "source_name": "Google Drive / Hansshow manual",
+                  "snippet": "HTTP 200 direct download; Content-Disposition filename identifies HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨设置在所述天幕玻璃的内表面上。② 候选公开证据 Y：Hansshow 页面称高强度导轨且 electric sunshade snug fit on the glass roof，HSTAB1078 安装手册在线可下载。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。证据将导轨和玻璃车顶贴合关联起来，但缺少导轨截面/安装页文字，故不能给明确满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：HSTAB1078 手册中的横截面/安装步骤，直接证明高强度导轨位于玻璃内表面而非车顶饰件。\n下一步建议：去 Hansshow/Google Drive 下载 Model Y Juniper 安装手册，查看 guide rail 安装页。"
+            }
+          ],
+          "claim_score": 95.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的天幕装置，其特征在于，所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动",
+              "competitor_feature": "Hansshow 智能电控可 expand/retract，电机使遮阳帘 deploy 或 stow。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。② 候选公开证据 Y：Hansshow 智能电控可 expand/retract，电机使遮阳帘 deploy 或 stow。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的天幕装置，其特征在于，所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧",
+              "competitor_feature": "页面称非侵入式安装且提供安装手册；包装含 latch/screws/decorative strip；但未明示安装支架支撑驱动机构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                },
+                {
+                  "url": "https://drive.google.com/uc?export=download&id=1M9izRBfXCSJ6VCOIqGVFBu_jgKjenqEt",
+                  "title": "HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual",
+                  "source_name": "Google Drive / Hansshow manual",
+                  "snippet": "HTTP 200 direct download; Content-Disposition filename identifies HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。② 候选公开证据 Y：页面称非侵入式安装且提供安装手册；包装含 latch/screws/decorative strip；但未明示安装支架支撑驱动机构。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的天幕装置，其特征在于，所述驱动机构设置在所述安装支架的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动机构设置在所述安装支架的内侧",
+              "competitor_feature": "公开资料未披露驱动机构相对安装支架内侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构设置在所述安装支架的内侧。② 候选公开证据 Y：公开资料未披露驱动机构相对安装支架内侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的天幕装置，其特征在于，所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧；传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧",
+              "competitor_feature": "页面公开 premium-grade electric motor，但没有说明电机固定在安装支架内侧。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧。② 候选公开证据 Y：页面公开 premium-grade electric motor，但没有说明电机固定在安装支架内侧。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动",
+              "competitor_feature": "公开资料未披露电机与遮阳帘之间的传动件。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。② 候选公开证据 Y：公开资料未披露电机与遮阳帘之间的传动件。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的天幕装置，其特征在于，所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合；横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合",
+              "competitor_feature": "遮阳帘为 5-layer composite fabric；安装手册存在但当前公开文本未说明帘布端部与安装支架结合。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                },
+                {
+                  "url": "https://drive.google.com/uc?export=download&id=1M9izRBfXCSJ6VCOIqGVFBu_jgKjenqEt",
+                  "title": "HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual",
+                  "source_name": "Google Drive / Hansshow manual",
+                  "snippet": "HTTP 200 direct download; Content-Disposition filename identifies HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合。② 候选公开证据 Y：遮阳帘为 5-layer composite fabric；安装手册存在但当前公开文本未说明帘布端部与安装支架结合。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C6-F2",
+              "patent_feature": "横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动",
+              "competitor_feature": "公开资料未说明横杆以及横杆与传动件随动连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。② 候选公开证据 Y：公开资料未说明横杆以及横杆与传动件随动连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的天幕装置，其特征在于，所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠",
+              "competitor_feature": "资料可证明 deploy/stow，但未公开收拢位置投影重叠关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。② 候选公开证据 Y：资料可证明 deploy/stow，但未公开收拢位置投影重叠关系。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的天幕装置，其特征在于，所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端",
+              "competitor_feature": "资料可证明 deploy/stow，但未公开铺陈位置下横杆端与安装支架分别位于天幕两端。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。② 候选公开证据 Y：资料可证明 deploy/stow，但未公开铺陈位置下横杆端与安装支架分别位于天幕两端。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求6所述的天幕装置，其特征在于，所述导轨包括：连接部，与所述天幕玻璃连接；导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述导轨包括：连接部，与所述天幕玻璃连接",
+              "competitor_feature": "高强度导轨与 glass roof snug fit，但未拆出连接部。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨包括：连接部，与所述天幕玻璃连接。② 候选公开证据 Y：高强度导轨与 glass roof snug fit，但未拆出连接部。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动",
+              "competitor_feature": "页面明确高强度铝导轨经切割、去毛刺、折弯、热处理和阳极氧化，用于电动伸缩遮阳帘导向。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。② 候选公开证据 Y：页面明确高强度铝导轨经切割、去毛刺、折弯、热处理和阳极氧化，用于电动伸缩遮阳帘导向。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的天幕装置，其特征在于，所述横杆至少部分设置在所述导向部的外侧。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述横杆至少部分设置在所述导向部的外侧",
+              "competitor_feature": "公开资料未说明横杆相对导向部外侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述横杆至少部分设置在所述导向部的外侧。② 候选公开证据 Y：公开资料未说明横杆相对导向部外侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9所述的天幕装置，其特征在于，所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接",
+              "competitor_feature": "公开资料未披露导向部端部固定结构与安装支架的固定连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                },
+                {
+                  "url": "https://drive.google.com/uc?export=download&id=1M9izRBfXCSJ6VCOIqGVFBu_jgKjenqEt",
+                  "title": "HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual",
+                  "source_name": "Google Drive / Hansshow manual",
+                  "snippet": "HTTP 200 direct download; Content-Disposition filename identifies HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。② 候选公开证据 Y：公开资料未披露导向部端部固定结构与安装支架的固定连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨",
+              "competitor_feature": "产品为覆盖玻璃车顶的伸缩遮阳帘并有 guide rail；但未逐字说明至少两个导轨沿第二方向间隔设置。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。② 候选公开证据 Y：产品为覆盖玻璃车顶的伸缩遮阳帘并有 guide rail；但未逐字说明至少两个导轨沿第二方向间隔设置。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.根据权利要求12所述的天幕装置，其特征在于，至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面",
+              "competitor_feature": "公开资料未直接说明至少两个导轨平行间隔设置在天幕玻璃内表面。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。② 候选公开证据 Y：公开资料未直接说明至少两个导轨平行间隔设置在天幕玻璃内表面。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位",
+              "competitor_feature": "公开资料未披露位于天幕玻璃和导轨之间的拉紧结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。② 候选公开证据 Y：公开资料未披露位于天幕玻璃和导轨之间的拉紧结构。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括如权利要求1至14任意一项所述的天幕装置。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆，包括如权利要求1至14任意一项所述的天幕装置",
+              "competitor_feature": "该装置适配 Tesla Model Y Juniper 2025.03+ 车辆玻璃车顶。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.hansshow.com/products/hansshow-model-y-integrated-electric-retractable-glass-roof-sunshade",
+                  "title": "Hansshow Model Y Integrated Electric Retractable Glass Roof Sunshade With Voice Control Upgrade",
+                  "source_name": "Hansshow",
+                  "snippet": "Model Y Juniper 2025.03+ variants; smart electric control; automatic retractable; 5-layer fabric; premium electric motor; high-strength aluminum guide rail; snug fit on glass roof."
+                },
+                {
+                  "url": "https://drive.google.com/uc?export=download&id=1M9izRBfXCSJ6VCOIqGVFBu_jgKjenqEt",
+                  "title": "HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual",
+                  "source_name": "Google Drive / Hansshow manual",
+                  "snippet": "HTTP 200 direct download; Content-Disposition filename identifies HSTAB1078 MYJ Power Sunshade Retractable Glass Roof Sun Shade Voice Control Installation Manual."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种车辆，包括如权利要求1至14任意一项所述的天幕装置。② 候选公开证据 Y：该装置适配 Tesla Model Y Juniper 2025.03+ 车辆玻璃车顶。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 95.0,
+      "total_score": 95.0,
+      "searched_queries": [
+        "C1-HSTAB1078 Hansshow Model Y Juniper sunshade guide rail installation",
+        "HSTAB1078 MYJ Power Sunshade installation manual",
+        "[SKU自检-M3] C1-HSTAB1078 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "Yeslak",
+        "company_en": "Yeslak",
+        "product_name": "Model Y Juniper 手动可伸缩黑色天幕遮阳帘（2025.03+ / YSLK-I0470-MY-25-26）",
+        "product_name_en": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof (2025.03+ / YSLK-I0470-MY-25-26)",
+        "product_intro": "适配 Tesla Model Y 2025.03+ Juniper 的全覆盖手动可伸缩玻璃车顶遮阳帘 SKU YSLK-I0470-MY-25-26，使用 reinforced aluminum side rails。",
+        "market": "Tesla Model Y Juniper 后装手动可伸缩玻璃车顶遮阳帘市场",
+        "reason_for_deep_dive": "产品页公开 glass roof、full panoramic roof coverage、smooth retractable design 和 reinforced aluminum side rails，结构上接近权 1。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper"
+        ],
+        "initial_evidence_summary": "页面称兼容 Tesla Model Y 2025.03+ Juniper，cover front/rear panoramic glass roof sections，smooth retractable design，并说明 reinforced aluminum side rails。"
+      },
+      "launch_date": "2025 年 3 月后（兼容 Tesla Model Y 2025.03+ Juniper，SKU 在售）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+          "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+          "source_name": "Yeslak",
+          "snippet": "Compatible With: Tesla Model Y 2025.03+ Juniper; SKU:YSLK-I0470-MY-25-26; availability InStock."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种天幕装置，其特征在于，包括：天幕玻璃，连接有或形成有导轨；遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接；其中，所述导轨设置在所述天幕玻璃的内表面上。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种天幕装置",
+              "competitor_feature": "YSLK-I0470-MY-25-26 是 Tesla Model Y Juniper 玻璃车顶手动可伸缩天幕遮阳帘装置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种天幕装置。② 候选公开证据 Y：YSLK-I0470-MY-25-26 是 Tesla Model Y Juniper 玻璃车顶手动可伸缩天幕遮阳帘装置。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "天幕玻璃，连接有或形成有导轨",
+              "competitor_feature": "产品覆盖 Model Y Juniper 前后 panoramic glass roof，并使用 reinforced aluminum side rails。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：天幕玻璃，连接有或形成有导轨。② 候选公开证据 Y：产品覆盖 Model Y Juniper 前后 panoramic glass roof，并使用 reinforced aluminum side rails。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接",
+              "competitor_feature": "集成可伸缩结构可 open/close/partially extend，reinforced aluminum side rails 和高张力弹簧系统保持帘布平整。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接。② 候选公开证据 Y：集成可伸缩结构可 open/close/partially extend，reinforced aluminum side rails 和高张力弹簧系统保持帘布平整。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述导轨设置在所述天幕玻璃的内表面上",
+              "competitor_feature": "产品 snap-on 安装在玻璃车顶内侧区域并会降低头部空间约 3.5cm；但未直接写明 side rails 位于玻璃内表面。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨设置在所述天幕玻璃的内表面上。② 候选公开证据 Y：Yeslak 页面称玻璃车顶遮阳帘、snap-on installation、安装后降低 glass roof/headroom 约 3.5cm，并公开 side rails。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。公开证据指向座舱内侧玻璃车顶区域，但缺少侧导轨与玻璃内表面接触的安装截面。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：YSLK-I0470-MY-25-26 侧导轨与玻璃内表面的位置/固定证据；现有证据只说明 snap-on。\n下一步建议：去 Yeslak 产品页安装视频查看 side rails 卡装位置，或向 Yeslak 索取安装说明。"
+            }
+          ],
+          "claim_score": 95.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的天幕装置，其特征在于，所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动",
+              "competitor_feature": "手动可伸缩结构配合 high-tension spring system 可驱动/辅助遮阳帘收放；但非电动驱动，未公开独立驱动机构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。② 候选公开证据 Y：手动可伸缩结构配合 high-tension spring system 可驱动/辅助遮阳帘收放；但非电动驱动，未公开独立驱动机构。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的天幕装置，其特征在于，所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧",
+              "competitor_feature": "公开资料未披露用于支撑驱动机构的安装支架。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。② 候选公开证据 Y：公开资料未披露用于支撑驱动机构的安装支架。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的天幕装置，其特征在于，所述驱动机构设置在所述安装支架的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动机构设置在所述安装支架的内侧",
+              "competitor_feature": "未公开驱动机构及其相对安装支架内侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构设置在所述安装支架的内侧。② 候选公开证据 Y：未公开驱动机构及其相对安装支架内侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的天幕装置，其特征在于，所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧；传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧",
+              "competitor_feature": "该 SKU 明确为 retractable manual sunshade；公开资料没有电动驱动电机。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧。② 候选公开证据 Y：Yeslak 页面明确称 retractable manual sunshade，并以高张力弹簧系统描述手动伸缩。③ 对比：(a) 概念是否等价：否，公开证据直接指向相反结构/方式；(b) 单位/量纲是否等价：否，X 要求的结构存在事实与 Y 的公开方式相冲突；(c) 参考系是否等价：否，Y 的参考结构不包含 X 所要求的对象；(d) 是否有反向证据：有：产品明示为 manual sunshade，与“驱动电机”要求相冲突。因此该从属特征明确不满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动",
+              "competitor_feature": "因公开为手动遮阳帘且无驱动电机，未存在连接电机与遮阳帘组件的电机传动件。",
+              "status": "明确不满足",
+              "score": 0.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。② 候选公开证据 Y：Yeslak 页面公开手动可伸缩和 high-tension spring system，而非电机驱动传动。③ 对比：(a) 概念是否等价：否，公开证据直接指向相反结构/方式；(b) 单位/量纲是否等价：否，X 要求的结构存在事实与 Y 的公开方式相冲突；(c) 参考系是否等价：否，Y 的参考结构不包含 X 所要求的对象；(d) 是否有反向证据：有：产品明示手动方案，未公开电机，故不存在电机-帘组件传动件。因此该从属特征明确不满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 0.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的天幕装置，其特征在于，所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合；横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合",
+              "competitor_feature": "产品含 thermal-reflective fabric 全覆盖可伸缩遮阳帘；但未公开帘布端部与安装支架结合。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合。② 候选公开证据 Y：产品含 thermal-reflective fabric 全覆盖可伸缩遮阳帘；但未公开帘布端部与安装支架结合。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C6-F2",
+              "patent_feature": "横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动",
+              "competitor_feature": "公开资料虽有 front slide 用户评价，但未说明横杆、横杆固定帘布及与传动件随动连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。② 候选公开证据 Y：公开资料虽有 front slide 用户评价，但未说明横杆、横杆固定帘布及与传动件随动连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的天幕装置，其特征在于，所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠",
+              "competitor_feature": "产品可 open/close/partially extend，但未公开收拢位置时横杆端与安装支架投影重叠。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。② 候选公开证据 Y：产品可 open/close/partially extend，但未公开收拢位置时横杆端与安装支架投影重叠。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的天幕装置，其特征在于，所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端",
+              "competitor_feature": "产品可铺开遮挡前后玻璃，但未公开铺陈位置下横杆端与安装支架分别位于天幕玻璃两端。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。② 候选公开证据 Y：产品可铺开遮挡前后玻璃，但未公开铺陈位置下横杆端与安装支架分别位于天幕玻璃两端。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求6所述的天幕装置，其特征在于，所述导轨包括：连接部，与所述天幕玻璃连接；导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述导轨包括：连接部，与所述天幕玻璃连接",
+              "competitor_feature": "产品有 reinforced aluminum side rails 并安装于 Model Y Juniper glass roof；但未公开导轨连接部结构。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨包括：连接部，与所述天幕玻璃连接。② 候选公开证据 Y：产品有 reinforced aluminum side rails 并安装于 Model Y Juniper glass roof；但未公开导轨连接部结构。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动",
+              "competitor_feature": "reinforced aluminum side rails 与 smooth retractable design/高张力弹簧系统配合，引导遮阳帘开合并保持平整。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。② 候选公开证据 Y：reinforced aluminum side rails 与 smooth retractable design/高张力弹簧系统配合，引导遮阳帘开合并保持平整。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 90.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的天幕装置，其特征在于，所述横杆至少部分设置在所述导向部的外侧。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述横杆至少部分设置在所述导向部的外侧",
+              "competitor_feature": "公开资料未说明横杆至少部分设置在导向部外侧。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述横杆至少部分设置在所述导向部的外侧。② 候选公开证据 Y：公开资料未说明横杆至少部分设置在导向部外侧。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9所述的天幕装置，其特征在于，所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接",
+              "competitor_feature": "公开资料未披露导向部端部固定结构与安装支架固定连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。② 候选公开证据 Y：公开资料未披露导向部端部固定结构与安装支架固定连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨",
+              "competitor_feature": "产品使用 reinforced aluminum side rails（复数侧导轨），沿玻璃车顶左右两侧间隔设置以支撑全覆盖遮阳帘。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。② 候选公开证据 Y：产品使用 reinforced aluminum side rails（复数侧导轨），沿玻璃车顶左右两侧间隔设置以支撑全覆盖遮阳帘。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.根据权利要求12所述的天幕装置，其特征在于，至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面",
+              "competitor_feature": "侧导轨为复数并服务于前后全景玻璃覆盖，通常平行间隔布置；但页面未给俯视安装图证明内表面平行关系。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。② 候选公开证据 Y：侧导轨为复数并服务于前后全景玻璃覆盖，通常平行间隔布置；但页面未给俯视安装图证明内表面平行关系。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 80.0
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位",
+              "competitor_feature": "high-tension spring system 用于保持帘布平整，未证明其位于玻璃和导轨之间并用于固定导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。② 候选公开证据 Y：high-tension spring system 用于保持帘布平整，未证明其位于玻璃和导轨之间并用于固定导轨。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括如权利要求1至14任意一项所述的天幕装置。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆，包括如权利要求1至14任意一项所述的天幕装置",
+              "competitor_feature": "该装置适配 Tesla Model Y 2025.03+ Juniper 车辆玻璃车顶。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.yeslak.com/products/retractable-black-sunshade-for-tesla-model-y-juniper",
+                  "title": "Yeslak Black Retractable Sunshade for Tesla Model Y Juniper Glass Roof",
+                  "source_name": "Yeslak",
+                  "snippet": "SKU YSLK-I0470-MY-25-26; manual retractable sunshade for Tesla Model Y 2025.03+ Juniper; covers front/rear panoramic glass roof; reinforced aluminum side rails and high-tension spring system; snap-on design."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种车辆，包括如权利要求1至14任意一项所述的天幕装置。② 候选公开证据 Y：该装置适配 Tesla Model Y 2025.03+ Juniper 车辆玻璃车顶。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 95.0,
+      "total_score": 95.0,
+      "searched_queries": [
+        "YSLK-I0470-MY-25-26 Yeslak installation side rails",
+        "Yeslak Model Y Juniper retractable sunshade reinforced aluminum side rails",
+        "[SKU自检-M3] YSLK-I0470-MY-25-26 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: []"
+      ],
+      "searched_providers": [
+        "web",
+        "curl"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "XPENGCD",
+        "company_en": "XPENGCD",
+        "product_name": "小鹏 G6 电动可伸缩天幕遮阳帘（BP-6205-RET-XPE-G6）",
+        "product_name_en": "Retractable Roof Sunshade for XPENG G6 (Electric retractable model / BP-6205-RET-XPE-G6)",
+        "product_intro": "适配小鹏 G6 的后装电动可伸缩车顶遮阳帘 SKU BP-6205-RET-XPE-G6，产品图更新于 2025-08-30，页面显示在售。",
+        "market": "小鹏 G6/G9/P7 系列后装可伸缩天幕遮阳帘市场",
+        "reason_for_deep_dive": "小鹏 G6 为中国市场高销量全景天幕车型，页面公开 G6 Electric retractable model；但未公开导轨位置，需严格降分。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade"
+        ],
+        "initial_evidence_summary": "产品页标题为 Retractable Roof Sunshade for XPENG G6/G9/P7/P7+/M03/G7；G6 Electric retractable model SKU BP-6205-RET-XPE-G6；描述 perfect fit/custom-molded。"
+      },
+      "launch_date": "2025 年 8 月后（产品图片 created_at 2025-08-30；G6 SKU 在售）",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+          "title": "Retractable Roof Sunshade for XPENG G6/G9/P7/P7+/M03/G7",
+          "source_name": "XPENGCD",
+          "snippet": "G6 / Electric retractable model; SKU BP-6205-RET-XPE-G6; product image created_at 2025-08-30."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种天幕装置，其特征在于，包括：天幕玻璃，连接有或形成有导轨；遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接；其中，所述导轨设置在所述天幕玻璃的内表面上。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种天幕装置",
+              "competitor_feature": "BP-6205-RET-XPE-G6 是小鹏 G6 车顶电动可伸缩天幕遮阳帘装置。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种天幕装置。② 候选公开证据 Y：BP-6205-RET-XPE-G6 是小鹏 G6 车顶电动可伸缩天幕遮阳帘装置。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "天幕玻璃，连接有或形成有导轨",
+              "competitor_feature": "页面仅公开 G6 electric retractable roof sunshade、custom-molded to original car window；未公开导轨或导轨与天幕玻璃连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：天幕玻璃，连接有或形成有导轨。② 候选公开证据 Y：页面仅公开 G6 electric retractable roof sunshade、custom-molded to original car window；未公开导轨或导轨与天幕玻璃连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：BP-6205-RET-XPE-G6 是否有导轨及导轨与 G6 天幕玻璃连接的结构证据。\n下一步建议：去 XPENGCD 产品页/客服索取 G6 electric retractable model 安装说明，核对导轨零件。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接",
+              "competitor_feature": "G6 electric retractable model 有 open/close demo，说明遮阳帘可沿车顶方向伸缩；但未公开其通过导轨与天幕玻璃滑动连接。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接。② 候选公开证据 Y：XPENGCD 页面公开 G6 electric retractable model 和 open/close demo。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。电动可伸缩与沿车顶方向滑动功能相符，但缺少导轨连接证据，故只给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：BP-6205-RET-XPE-G6 遮阳帘通过导轨沿车顶方向滑动的安装/拆解证据。\n下一步建议：去 XPENGCD 页面视频链接或 YouTube shorts 查 G6 开合演示和轨道局部镜头。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述导轨设置在所述天幕玻璃的内表面上",
+              "competitor_feature": "页面未公开导轨，更未公开导轨设置在 G6 天幕玻璃内表面。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨设置在所述天幕玻璃的内表面上。② 候选公开证据 Y：页面未公开导轨，更未公开导轨设置在 G6 天幕玻璃内表面。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：BP-6205-RET-XPE-G6 导轨设置在天幕玻璃内表面的截面或安装步骤；现有页面未公开导轨。\n下一步建议：去 XPENGCD 或小鹏 G6 改装店安装视频，查天幕内侧导轨固定位置。"
+            }
+          ],
+          "claim_score": 60.0
+        },
+        {
+          "claim_no": 2,
+          "claim_text": "2.根据权利要求1所述的天幕装置，其特征在于，所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C2-F1",
+              "patent_feature": "所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动",
+              "competitor_feature": "G6 Electric retractable model 支持电动收放，页面公开电源选项包括点烟器或 AC power supply。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：驱动机构，与所述遮阳帘组件连接以在工作时驱动所述遮阳帘组件相对所述天幕玻璃沿所述第一方向滑动。② 候选公开证据 Y：G6 Electric retractable model 支持电动收放，页面公开电源选项包括点烟器或 AC power supply。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        },
+        {
+          "claim_no": 3,
+          "claim_text": "3.根据权利要求2所述的天幕装置，其特征在于，所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C3-F1",
+              "patent_feature": "所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧",
+              "competitor_feature": "公开资料未披露安装支架及其支撑驱动机构的关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：安装支架，与所述驱动机构固定连接以用于支撑所述驱动机构；其中，所述安装支架设置在所述天幕玻璃的内侧。② 候选公开证据 Y：公开资料未披露安装支架及其支撑驱动机构的关系。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 4,
+          "claim_text": "4.根据权利要求3所述的天幕装置，其特征在于，所述驱动机构设置在所述安装支架的内侧。",
+          "comparisons": [
+            {
+              "feature_id": "C4-F1",
+              "patent_feature": "所述驱动机构设置在所述安装支架的内侧",
+              "competitor_feature": "公开资料未披露驱动机构相对安装支架内侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构设置在所述安装支架的内侧。② 候选公开证据 Y：公开资料未披露驱动机构相对安装支架内侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 5,
+          "claim_text": "5.根据权利要求4所述的天幕装置，其特征在于，所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧；传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。",
+          "comparisons": [
+            {
+              "feature_id": "C5-F1",
+              "patent_feature": "所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧",
+              "competitor_feature": "电动可伸缩型号通常包含电机，但页面未直接公开驱动电机，更未公开电机固定在安装支架内侧。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述驱动机构包括：驱动电机，固定设置在所述安装支架的内侧。② 候选公开证据 Y：电动可伸缩型号通常包含电机，但页面未直接公开驱动电机，更未公开电机固定在安装支架内侧。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C5-F2",
+              "patent_feature": "传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动",
+              "competitor_feature": "公开资料未披露电机与遮阳帘之间的传动件。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：传动件，连接于所述遮阳帘组件和所述驱动电机之间以在所述驱动电机的驱动下带动所述遮阳帘组件滑动。② 候选公开证据 Y：公开资料未披露电机与遮阳帘之间的传动件。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 6,
+          "claim_text": "6.根据权利要求5所述的天幕装置，其特征在于，所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合；横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。",
+          "comparisons": [
+            {
+              "feature_id": "C6-F1",
+              "patent_feature": "所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合",
+              "competitor_feature": "页面公开 polymer composite honeycomb structure 和电动可伸缩遮阳帘；但未公开帘布端部与安装支架结合。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件包括：帘布，至少一端与所述安装支架结合。② 候选公开证据 Y：页面公开 polymer composite honeycomb structure 和电动可伸缩遮阳帘；但未公开帘布端部与安装支架结合。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。现有公开证据支撑同一技术方向，但缺少安装截面或部件连接细节，故仅给可能满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C6-F2",
+              "patent_feature": "横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动",
+              "competitor_feature": "公开资料未说明横杆及其与传动件的随动连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：横杆，固定连接于所述帘布的一端；其中，所述横杆与所述传动件构成随动连接以使所述帘布随所述传动件的移动而活动。② 候选公开证据 Y：公开资料未说明横杆及其与传动件的随动连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 55.0
+        },
+        {
+          "claim_no": 7,
+          "claim_text": "7.根据权利要求6所述的天幕装置，其特征在于，所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。",
+          "comparisons": [
+            {
+              "feature_id": "C7-F1",
+              "patent_feature": "所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠",
+              "competitor_feature": "open/close demo 可支持收放动作，但未公开收拢位置投影重叠关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件与所述天幕玻璃滑动连接而至少具有收拢位置和铺陈位置；所述遮阳帘组件处于所述收拢位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃的内表面的投影至少部分重叠。② 候选公开证据 Y：open/close demo 可支持收放动作，但未公开收拢位置投影重叠关系。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 8,
+          "claim_text": "8.根据权利要求7所述的天幕装置，其特征在于，所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。",
+          "comparisons": [
+            {
+              "feature_id": "C8-F1",
+              "patent_feature": "所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端",
+              "competitor_feature": "open/close demo 可支持铺陈动作，但未公开铺陈位置下两端位置关系。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述遮阳帘组件处于所述铺陈位置时，所述帘布连接所述横杆的一端和所述安装支架在所述天幕玻璃内表面的投影分别位于所述天幕玻璃沿所述第一方向的两端。② 候选公开证据 Y：open/close demo 可支持铺陈动作，但未公开铺陈位置下两端位置关系。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 9,
+          "claim_text": "9.根据权利要求6所述的天幕装置，其特征在于，所述导轨包括：连接部，与所述天幕玻璃连接；导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。",
+          "comparisons": [
+            {
+              "feature_id": "C9-F1",
+              "patent_feature": "所述导轨包括：连接部，与所述天幕玻璃连接",
+              "competitor_feature": "未公开导轨连接部。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨包括：连接部，与所述天幕玻璃连接。② 候选公开证据 Y：未公开导轨连接部。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C9-F2",
+              "patent_feature": "导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动",
+              "competitor_feature": "未公开导向部、沿第一方向延伸的导向结构或横杆滑动连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：导向部，设置有沿所述第一方向延伸的导向结构；其中，所述横杆与所述导向结构构成滑动连接以使所述导向部引导所述横杆沿所述第一方向移动。② 候选公开证据 Y：未公开导向部、沿第一方向延伸的导向结构或横杆滑动连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 10,
+          "claim_text": "10.根据权利要求9所述的天幕装置，其特征在于，所述横杆至少部分设置在所述导向部的外侧。",
+          "comparisons": [
+            {
+              "feature_id": "C10-F1",
+              "patent_feature": "所述横杆至少部分设置在所述导向部的外侧",
+              "competitor_feature": "未公开横杆相对导向部外侧的位置。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述横杆至少部分设置在所述导向部的外侧。② 候选公开证据 Y：未公开横杆相对导向部外侧的位置。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 11,
+          "claim_text": "11.根据权利要求9所述的天幕装置，其特征在于，所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。",
+          "comparisons": [
+            {
+              "feature_id": "C11-F1",
+              "patent_feature": "所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接",
+              "competitor_feature": "未公开导向部端部固定结构与安装支架固定连接。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导向部沿所述第一方向的一端设有固定结构；所述导向部通过所述固定结构与所述安装支架构成固定连接。② 候选公开证据 Y：未公开导向部端部固定结构与安装支架固定连接。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 12,
+          "claim_text": "12.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。",
+          "comparisons": [
+            {
+              "feature_id": "C12-F1",
+              "patent_feature": "所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨",
+              "competitor_feature": "未公开天幕玻璃沿第二方向间隔设置至少两个导轨。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕玻璃沿异于所述第一方向的第二方向上间隔设置有至少两个所述导轨。② 候选公开证据 Y：未公开天幕玻璃沿第二方向间隔设置至少两个导轨。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 13,
+          "claim_text": "13.根据权利要求12所述的天幕装置，其特征在于，至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。",
+          "comparisons": [
+            {
+              "feature_id": "C13-F1",
+              "patent_feature": "至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面",
+              "competitor_feature": "未公开至少两个导轨平行间隔设置在天幕玻璃内表面。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：至少两个所述导轨平行间隔设置在所述天幕玻璃的内表面。② 候选公开证据 Y：未公开至少两个导轨平行间隔设置在天幕玻璃内表面。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 14,
+          "claim_text": "14.根据权利要求1至11任意一项所述的天幕装置，其特征在于，所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。",
+          "comparisons": [
+            {
+              "feature_id": "C14-F1",
+              "patent_feature": "所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位",
+              "competitor_feature": "未公开位于天幕玻璃和导轨之间的拉紧结构。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述天幕装置还包括：拉紧结构，用于将所述导轨固定连接至所述天幕玻璃；其中，所述拉紧结构至少部分设置在所述天幕玻璃和所述导轨之间以阻碍所述导轨相对所述天幕玻璃移位。② 候选公开证据 Y：未公开位于天幕玻璃和导轨之间的拉紧结构。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开资料未给出该限定的必要结构、位置或连接关系，不能把功能近似推成满足。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 30.0
+        },
+        {
+          "claim_no": 15,
+          "claim_text": "15.一种车辆，其特征在于，包括如权利要求1至14任意一项所述的天幕装置。",
+          "comparisons": [
+            {
+              "feature_id": "C15-F1",
+              "patent_feature": "一种车辆，包括如权利要求1至14任意一项所述的天幕装置",
+              "competitor_feature": "该装置为小鹏 G6 车辆车顶遮阳帘，适配并安装于 G6 车辆。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://www.xpengcd.com/products/xpeng-g6-g9-p7-p7plus-m03-g7-retractable-sunshade",
+                  "title": "XPeng G6/G9/P7/P7+/M03/G7 Retractable Sunshade Roof | 99% UV Block",
+                  "source_name": "XPENGCD",
+                  "snippet": "G6 / Electric retractable model; product images include open/close demo; custom-molded to match original car window; non-trace installation; power options include cigarette lighter or AC power supply."
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种车辆，包括如权利要求1至14任意一项所述的天幕装置。② 候选公开证据 Y：该装置为小鹏 G6 车辆车顶遮阳帘，适配并安装于 G6 车辆。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。公开证据可直接读出该结构/动作。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            }
+          ],
+          "claim_score": 100.0
+        }
+      ],
+      "claim_1_score": 60.0,
+      "total_score": 60.0,
+      "searched_queries": [
+        "BP-6205-RET-XPE-G6 retractable sunshade guide rail",
+        "XPENGCD BP-6205-RET-XPE-G6 electric retractable sunshade installation",
+        "小鹏 G6 BP-6205-RET-XPE-G6 遮阳帘 导轨 安装",
+        "[SKU自检-M3] BP-6205-RET-XPE-G6 / 新增 evidence sku 一致性: 全部匹配 / 冲突 ev: [Alibaba 泛供应商结果弃用]"
+      ],
+      "searched_providers": [
+        "web",
+        "curl"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "伟巴斯特",
+        "company_en": "Webasto",
+        "product_name": "全景天幕加装遮阳帘方案（2023 进博会 22mm 高分子导轨）",
+        "product_name_en": "Webasto panoramic canopy add-on sunshade solution (CIIE 2023 / 22mm polymer guide rail)",
+        "product_intro": "Webasto 在 2023 年上海进博会展示的全景天幕加装遮阳帘方案，使用 22mm 高分子材料导轨和特制遮阳帘。",
+        "market": "中国新能源车全景天幕遮阳帘前装/改装方案市场",
+        "reason_for_deep_dive": "报道直接公开导轨粘贴在天幕两侧并装上特制遮阳帘，权 1 结构相关度高；但公开时间早于本专利申请日。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://auto.gasgoo.com/news/202311/8I70369002C601.shtml"
+        ],
+        "initial_evidence_summary": "盖世汽车报道称 Webasto 设计制造厚度 22mm 的高分子导轨，可用特制黏合剂粘贴在天幕两侧，然后装上特制遮阳帘。"
+      },
+      "launch_date": "2023 年 11 月上海进博会公开展示",
+      "launch_date_evidence": [
+        {
+          "url": "https://auto.gasgoo.com/news/202311/8I70369002C601.shtml",
+          "title": "逛逛进博会，看看各家智舱技术",
+          "source_name": "盖世汽车",
+          "snippet": "2023-11-08; Webasto 在第六届上海进博会展台介绍全景天幕遮阳帘方案。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "公开展示时间 2023 年 11 月早于本专利申请日 2024-09-30。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种天幕装置，其特征在于，包括：天幕玻璃，连接有或形成有导轨；遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接；其中，所述导轨设置在所述天幕玻璃的内表面上。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种天幕装置",
+              "competitor_feature": "Webasto 方案用于全景天幕并加装可展开/收起遮阳帘。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://auto.gasgoo.com/news/202311/8I70369002C601.shtml",
+                  "title": "逛逛进博会，看看各家智舱技术",
+                  "source_name": "盖世汽车",
+                  "snippet": "第一个方案，是给全景天幕加装可展开和收起的遮阳帘。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种天幕装置。② 候选公开证据 Y：Webasto 方案用于全景天幕并加装可展开/收起遮阳帘。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。结构证据可读出；但候选因公开时间早于申请日而整体排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "天幕玻璃，连接有或形成有导轨",
+              "competitor_feature": "22mm 高分子材料导轨用特制黏合剂粘贴在天幕两侧。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://auto.gasgoo.com/news/202311/8I70369002C601.shtml",
+                  "title": "逛逛进博会，看看各家智舱技术",
+                  "source_name": "盖世汽车",
+                  "snippet": "厚度只有22毫米的高分子材料导轨，可用特制黏合剂粘贴在天幕两侧。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：天幕玻璃，连接有或形成有导轨。② 候选公开证据 Y：22mm 高分子材料导轨用特制黏合剂粘贴在天幕两侧。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。结构证据可读出；但候选因公开时间早于申请日而整体排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接",
+              "competitor_feature": "导轨粘贴在天幕两侧后装上特制遮阳帘，遮阳帘可展开和收起。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://auto.gasgoo.com/news/202311/8I70369002C601.shtml",
+                  "title": "逛逛进博会，看看各家智舱技术",
+                  "source_name": "盖世汽车",
+                  "snippet": "导轨...粘贴在天幕两侧，然后装上特制的遮阳帘；遮阳帘可展开和收起。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接。② 候选公开证据 Y：导轨粘贴在天幕两侧后装上特制遮阳帘，遮阳帘可展开和收起。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。结构证据可读出；但候选因公开时间早于申请日而整体排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述导轨设置在所述天幕玻璃的内表面上",
+              "competitor_feature": "导轨粘贴在天幕两侧；报道未逐字说明为内表面，但加装遮阳帘必须位于座舱内侧。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://auto.gasgoo.com/news/202311/8I70369002C601.shtml",
+                  "title": "逛逛进博会，看看各家智舱技术",
+                  "source_name": "盖世汽车",
+                  "snippet": "高分子材料导轨可用特制黏合剂粘贴在天幕两侧，然后装上特制的遮阳帘。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨设置在所述天幕玻璃的内表面上。② 候选公开证据 Y：导轨粘贴在天幕两侧；报道未逐字说明为内表面，但加装遮阳帘必须位于座舱内侧。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。证据能支撑同类结构方向，但缺少内表面/连接截面；候选另因公开时间早于申请日排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：Webasto 方案的截面图，证明导轨粘贴面确为天幕玻璃内表面。\n下一步建议：去 Webasto/盖世汽车或进博会资料查该 22mm 导轨安装图。"
+            }
+          ],
+          "claim_score": 0.0
+        }
+      ],
+      "claim_1_score": 0.0,
+      "total_score": 0.0,
+      "searched_queries": [
+        "[SKU自检-M3] 全景天幕加装遮阳帘方案（2023 进博会 22mm 高分子导轨） / 模块二已因公开日期排除，未补搜"
+      ],
+      "searched_providers": []
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "福耀集团",
+        "company_en": "Fuyao Group",
+        "product_name": "遮光系列一体式遮阳帘天幕（2024-06 新品发布）",
+        "product_name_en": "Fuyao shading-series integrated sunshade panoramic canopy (2024-06 launch)",
+        "product_intro": "福耀 2024 年 6 月发布的遮光系列一体式遮阳帘天幕，将遮阳帘与天窗总成无缝集成为一体，导轨侧厚度减少 6mm。",
+        "market": "中国汽车玻璃/全景天幕前装供应链市场",
+        "reason_for_deep_dive": "公开报道显示遮阳帘与天窗总成集成、导轨侧厚度减薄，技术方向与权 1 接近；但发布早于本专利申请日。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://k.sina.cn/article_2648084231_9dd68f070270193ze.html"
+        ],
+        "initial_evidence_summary": "新浪汽车报道 2024-06-21 福耀发布三大系列遮阳隔热天幕产品，遮光系列一体式遮阳帘与天窗总成无缝集成，导轨侧厚度减少 6mm。"
+      },
+      "launch_date": "2024 年 6 月 21 日新品发布",
+      "launch_date_evidence": [
+        {
+          "url": "https://k.sina.cn/article_2648084231_9dd68f070270193ze.html",
+          "title": "福耀全新一代智能隔热全景天幕上市，重构汽车天窗新体验",
+          "source_name": "新浪汽车",
+          "snippet": "2024年6月21日，福耀集团发布遮光系列、滤光系列、御光系列汽车遮阳隔热天幕产品。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "新品发布时间 2024-06-21 早于本专利申请日 2024-09-30。",
+      "claim_charts": [
+        {
+          "claim_no": 1,
+          "claim_text": "1.一种天幕装置，其特征在于，包括：天幕玻璃，连接有或形成有导轨；遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接；其中，所述导轨设置在所述天幕玻璃的内表面上。",
+          "comparisons": [
+            {
+              "feature_id": "C1-F1",
+              "patent_feature": "一种天幕装置",
+              "competitor_feature": "福耀遮光系列是一体式遮阳帘汽车天幕产品。",
+              "status": "明确满足",
+              "score": 1.0,
+              "evidence": [
+                {
+                  "url": "https://k.sina.cn/article_2648084231_9dd68f070270193ze.html",
+                  "title": "福耀全新一代智能隔热全景天幕上市，重构汽车天窗新体验",
+                  "source_name": "新浪汽车",
+                  "snippet": "福耀集团发布三大系列汽车遮阳隔热天幕产品，包括遮光系列、滤光系列、御光系列。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：一种天幕装置。② 候选公开证据 Y：福耀遮光系列是一体式遮阳帘汽车天幕产品。。③ 对比：(a) 概念是否等价：是，二者指向同一结构或功能限定；(b) 单位/量纲是否等价：是，均为结构存在或动作存在的二值事实；(c) 参考系是否等价：是，均以车辆天幕/玻璃车顶及其内侧遮阳帘为参考；(d) 是否有反向证据：无。结构证据可读出；但候选因公开时间早于申请日而整体排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": ""
+            },
+            {
+              "feature_id": "C1-F2",
+              "patent_feature": "天幕玻璃，连接有或形成有导轨",
+              "competitor_feature": "报道说明遮阳帘与天窗总成无缝集成，且导轨侧厚度减少 6mm；未直接说明导轨连接到天幕玻璃。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://k.sina.cn/article_2648084231_9dd68f070270193ze.html",
+                  "title": "福耀全新一代智能隔热全景天幕上市，重构汽车天窗新体验",
+                  "source_name": "新浪汽车",
+                  "snippet": "将遮阳帘与天窗总成无缝集成为一体；导轨侧厚度减少6mm。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：天幕玻璃，连接有或形成有导轨。② 候选公开证据 Y：报道说明遮阳帘与天窗总成无缝集成，且导轨侧厚度减少 6mm；未直接说明导轨连接到天幕玻璃。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。证据能支撑同类结构方向，但缺少内表面/连接截面；候选另因公开时间早于申请日排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：福耀遮光系列导轨与天幕玻璃连接/一体成型的结构图。\n下一步建议：去福耀官网或新品发布资料查遮光系列天幕总成剖面。"
+            },
+            {
+              "feature_id": "C1-F3",
+              "patent_feature": "遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接",
+              "competitor_feature": "遮光系列为一体式集成遮光帘，报道说明开合噪声 50dB/45dB 以下，表明遮阳帘可开合活动。",
+              "status": "可能满足",
+              "score": 0.8,
+              "evidence": [
+                {
+                  "url": "https://k.sina.cn/article_2648084231_9dd68f070270193ze.html",
+                  "title": "福耀全新一代智能隔热全景天幕上市，重构汽车天窗新体验",
+                  "source_name": "新浪汽车",
+                  "snippet": "一体式集成遮光帘在开合过程中仅会产生50dB的音量；一体式集成直驱遮光帘更可将天幕开合声音降低至45dB以下。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：遮阳帘组件，通过所述导轨与所述天幕玻璃构成沿第一方向的滑动连接。② 候选公开证据 Y：遮光系列为一体式集成遮光帘，报道说明开合噪声 50dB/45dB 以下，表明遮阳帘可开合活动。。③ 对比：(a) 概念是否等价：是，在权利要求的宽定义下可对应；(b) 单位/量纲是否等价：是，均为结构存在/位置关系/运动关系的二值事实；(c) 参考系是否等价：是，均围绕车辆天幕或玻璃车顶内侧遮阳帘；(d) 是否有反向证据：无。证据能支撑同类结构方向，但缺少内表面/连接截面；候选另因公开时间早于申请日排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：福耀遮光系列遮阳帘通过导轨滑动连接的结构说明或开合机构图。\n下一步建议：去福耀官网/新浪汽车原报道延伸资料查一体式遮阳帘开合机构。"
+            },
+            {
+              "feature_id": "C1-F4",
+              "patent_feature": "所述导轨设置在所述天幕玻璃的内表面上",
+              "competitor_feature": "未公开导轨是否设置在天幕玻璃内表面。",
+              "status": "证据不足",
+              "score": 0.3,
+              "evidence": [
+                {
+                  "url": "https://k.sina.cn/article_2648084231_9dd68f070270193ze.html",
+                  "title": "福耀全新一代智能隔热全景天幕上市，重构汽车天窗新体验",
+                  "source_name": "新浪汽车",
+                  "snippet": "报道仅公开导轨侧厚度减少6mm，未公开导轨相对天幕玻璃内表面的具体位置。"
+                }
+              ],
+              "reasoning": "① 权利要求限定 X：所述导轨设置在所述天幕玻璃的内表面上。② 候选公开证据 Y：未公开导轨是否设置在天幕玻璃内表面。。③ 对比：(a) 概念是否等价：否，Y 未公开 X 的必要结构或连接关系；(b) 单位/量纲是否等价：否，X 是具体结构/位置限定，Y 只有泛化功能或未公开；(c) 参考系是否等价：否，Y 未给出与 X 相同的参考部件或安装位置；(d) 是否有反向证据：无。公开报道未给出该结构细节；候选另因公开时间早于申请日排除。",
+              "suggested_followup_queries": [],
+              "evidence_gap_brief": "还缺：福耀导轨设置在天幕玻璃内表面的截面证据；报道只公开导轨侧厚度。\n下一步建议：去福耀技术资料或展会资料查遮光系列天幕导轨截面图。"
+            }
+          ],
+          "claim_score": 0.0
+        }
+      ],
+      "claim_1_score": 0.0,
+      "total_score": 0.0,
+      "searched_queries": [
+        "[SKU自检-M3] 遮光系列一体式遮阳帘天幕（2024-06 新品发布） / 模块二已因公开日期排除，未补搜"
+      ],
+      "searched_providers": []
+    }
+  ]
+}

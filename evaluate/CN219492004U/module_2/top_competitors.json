@@ -1,0 +1,829 @@
+{
+  "publication_no": "CN219492004U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "广汽埃安",
+        "company_en": "GAC Aion",
+        "product_name": "第二代AION V（2024款 520km版 / 中国上市车型）",
+        "product_name_en": "Second-generation AION V (2024 520 km China launch SKU)",
+        "product_intro": "第二代 AION V 于 2024 年在中国上市，520km 版本属于首批车型。公开用户手册显示其外门把手为手动按压翘起后拉开车门的结构，畅易维修目录列有隐藏门把手系统和门外把手总成。",
+        "market": "中国新能源 SUV 前装市场",
+        "reason_for_deep_dive": "该 SKU 公开资料同时出现隐藏门把手系统、门外把手总成和外部拉动开门流程，和权 1 的门把手机械解锁链路最接近。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+          "https://m.asemanshop.com/www/carsm/7661.html",
+          "https://www.marklines.com/en/news/312877"
+        ],
+        "initial_evidence_summary": "ManualsLib 用户手册页写明解锁后按压门把手前端使另一侧翘起并拉动开门；畅易维修目录列出隐藏门把手系统、左前/右前门外把手总成；MarkLines 报道第二代 AION V 于 2024 年 7 月上市并含 520km 版本。"
+      },
+      "launch_date": "2024年7月中国上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.marklines.com/en/news/312877",
+          "title": "2nd-generation Aion V all-electric SUV launched",
+          "source_name": "MarkLines",
+          "snippet": "On July 23, GAC Aion launched the 2nd-generation Aion V; the version lineup includes 520km, 650km and 750km models."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种门把手",
+          "competitor_feature": "第二代 AION V 公开用户手册和维修目录均指向车辆外门把手/隐藏门把手系统。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+              "title": "GAC Aion V 2024 Owner's Manual - Exterior Door Handle",
+              "source_name": "ManualsLib",
+              "snippet": "Exterior Door Handle: unlock the vehicle, push the front side of the handle, and pull the handle to open the door."
+            },
+            {
+              "url": "https://m.asemanshop.com/www/carsm/7661.html",
+              "title": "广汽新能源Aion V 2024维修手册和电路图",
+              "source_name": "畅易汽车",
+              "snippet": "目录列出 4.8.4 隐藏门把手系统、4.8.6.6 左前门外把手总成、4.8.6.7 右前门外把手总成。"
+            }
+          ],
+          "reasoning": "①X=车辆门把手。②Y=外门把手/隐藏门把手系统。③(a)是，均为车门外部开启件；(b)是，二值部件存在；(c)是，均在车门；(d)无反向证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "手柄(11)",
+          "competitor_feature": "用户手册明确称该 SKU 有 exterior door handle，操作时按压把手前端、拉动把手打开车门。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+              "title": "GAC Aion V 2024 Owner's Manual - Exterior Door Handle",
+              "source_name": "ManualsLib",
+              "snippet": "Press the front side of the handle to make the other side tilt up, then pull the handle to open the door."
+            }
+          ],
+          "reasoning": "①X=可被用户操作的手柄。②Y=exterior door handle。③(a)是，均为手握/拉动车门部件；(b)是，二值存在；(c)是，车门外部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+          "competitor_feature": "公开资料仅能确认外门把手总成和手动拉开车门流程，未公开操纵轴、传动轴及二者连接/转动传递关系。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.asemanshop.com/www/carsm/7661.html",
+              "title": "广汽新能源Aion V 2024维修手册和电路图",
+              "source_name": "畅易汽车",
+              "snippet": "维修目录列有隐藏门把手系统和门外把手总成，但公开页未展示内部传动轴/操纵轴剖面。"
+            }
+          ],
+          "reasoning": "①X=手柄经操纵轴到传动轴的转动传递。②Y=外把手总成目录和拉动开门流程。③(a)否，Y未列轴系；(b)否，X为结构链路、Y为操作；(c)否，缺内部参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+          "competitor_feature": "公开资料仅确认拉动外门把手可打开车门，未公开推杆、推杆与传动轴连接、或推杆移动解锁锁具的结构证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.manualslib.com/manual/3983997/Gac-Aion-V-2024.html?page=26",
+              "title": "GAC Aion V 2024 Owner's Manual - Exterior Door Handle",
+              "source_name": "ManualsLib",
+              "snippet": "Manual shows the user can pull the exterior handle to open the door, but does not disclose a push rod or latch-side linkage."
+            }
+          ],
+          "reasoning": "①X=传动轴驱动推杆移动解锁锁具。②Y=用户拉外把手开门。③(a)否，Y是结果非推杆结构；(b)否，X为机械位移链；(c)否，缺锁具连接参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "第二代 AION V 2024 7月23日 上市 官方",
+        "AION V 2024 Owner's Manual exterior door handle open outside",
+        "广汽埃安 第二代AION V 隐藏门把手系统 左前门外把手总成",
+        "site:m.asemanshop.com AION V 2024 隐藏门把手 外把手总成",
+        "site:qixiu88.com Aion V 维修手册 隐藏门把手"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "吉利汽车",
+        "company_en": "Geely Auto",
+        "product_name": "吉利星愿（2025款 310km青春版）",
+        "product_name_en": "Geely Xingyuan (2025 310 km Youth Edition)",
+        "product_intro": "吉利星愿 2025 款 310km 青春版为中国市场小型纯电车型。官方配置表公开半隐藏式门把手，畅易汽车公开页指向 2025 年星愿维修手册和电路图资料。",
+        "market": "中国小型纯电车前装市场",
+        "reason_for_deep_dive": "用户指定重点关注；该 SKU 采用半隐藏式门把手，上市晚于本专利申请日，且有维修资料索引可继续核查内部传动结构。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://global.geely.com/-/media/project/web-portal/parallel-car/xingyuan-01/geely-xingyuan-specification-table.pdf",
+          "https://m.asemanshop.com/www/message/289191.html",
+          "https://www.dongchedi.com/article/7423718269400023606"
+        ],
+        "initial_evidence_summary": "官方配置表列出 Geely Xingyuan 310km Youth Edition 并公开半隐藏式门把手；畅易汽车公开问答确认可参考 2025 年吉利星愿维修手册/线路图；懂车帝报道吉利星愿于 2024 年 10 月上市。"
+      },
+      "launch_date": "2024年10月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongchedi.com/article/7423718269400023606",
+          "title": "吉利星愿上市",
+          "source_name": "懂车帝",
+          "snippet": "吉利星愿正式上市，上市时间为 2024 年 10 月，车型覆盖 310km 续航版本。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种门把手",
+          "competitor_feature": "吉利星愿官方配置表列出半隐藏式门把手，属于车辆门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://global.geely.com/-/media/project/web-portal/parallel-car/xingyuan-01/geely-xingyuan-specification-table.pdf",
+              "title": "Geely Xingyuan Specification Table",
+              "source_name": "Geely Global",
+              "snippet": "Specification table for Xingyuan lists the 310km Youth Edition and semi-hidden door handles."
+            }
+          ],
+          "reasoning": "①X=门把手。②Y=半隐藏式门把手配置。③(a)是，均为车门把手；(b)是，二值存在；(c)是，车辆车门外部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "手柄(11)",
+          "competitor_feature": "半隐藏式门把手包含用户可操作的外部手柄。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://global.geely.com/-/media/project/web-portal/parallel-car/xingyuan-01/geely-xingyuan-specification-table.pdf",
+              "title": "Geely Xingyuan Specification Table",
+              "source_name": "Geely Global",
+              "snippet": "The configuration item identifies semi-hidden door handles for the Xingyuan SKU family including the 310km Youth Edition."
+            }
+          ],
+          "reasoning": "①X=手柄部件。②Y=半隐藏式门把手的可操作手柄。③(a)是，概念同为供用户操作的把手；(b)是，二值部件；(c)是，车门外部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+          "competitor_feature": "公开资料仅确认半隐藏式门把手和 2025 年维修资料存在，未公开手柄内操纵轴、传动轴及转动传递结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.asemanshop.com/www/message/289191.html",
+              "title": "吉利汽车星愿310km 青春版维修手册和电路图",
+              "source_name": "畅易汽车",
+              "snippet": "公开页回复称可参考 2025 年吉利星愿电路图和维修手册资料，但未在公开页展示门把手内部轴系。"
+            }
+          ],
+          "reasoning": "①X=操纵轴和传动轴的机械转动链。②Y=配置项和维修资料入口。③(a)否，Y未公开轴件；(b)否，X为结构链、Y为目录线索；(c)否，缺内部位置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+          "competitor_feature": "公开资料未展示吉利星愿 310km 青春版外门把手与锁具之间是否通过推杆移动解锁。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.asemanshop.com/www/message/289191.html",
+              "title": "吉利汽车星愿310km 青春版维修手册和电路图",
+              "source_name": "畅易汽车",
+              "snippet": "公开回复确认 2025 年星愿维修手册/线路图资料路径，但公开页未披露推杆或锁具联动结构。"
+            }
+          ],
+          "reasoning": "①X=传动轴输出带动推杆移动解锁锁具。②Y=维修资料入口和半隐藏把手配置。③(a)否，Y未列推杆；(b)否，X为机械位移链；(c)否，缺锁具参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "吉利星愿 2025款 门把手 隐藏式 外门把手 维修 手册",
+        "吉利星愿 2025款 外门把手 拆解 推杆 锁具",
+        "吉利 星愿 2025 款 隐藏式门把手 外拉手 解锁 锁块",
+        "吉利星愿 310km 青春版 半隐藏式门把手 官方配置表",
+        "site:m.asemanshop.com 吉利 星愿 维修手册 门把手",
+        "site:qixiu88.com 吉利 星愿 维修手册 门把手",
+        "Geely Xingyuan user manual door handle open door"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open",
+        "curl_fetch"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "深蓝汽车",
+        "company_en": "Deepal",
+        "product_name": "深蓝S05（2025款 纯电510Plus版）",
+        "product_name_en": "Deepal S05 (2025 EV 510Plus)",
+        "product_intro": "深蓝 S05 于 2024 年 10 月在中国上市，纯电 510Plus 属首批销售配置。公开车型资料显示其采用隐藏式/机械隐藏式门把手，用户按压后把手弹出再开门。",
+        "market": "中国新能源紧凑型 SUV 前装市场",
+        "reason_for_deep_dive": "该 SKU 晚于申请日上市，市场资料明确指向隐藏式门把手和按压弹出操作，具有继续核查内部机械传动的价值。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.autohome.com.cn/news/202410/1301664.html",
+          "https://www.bitauto.com/wiki/100313706975/"
+        ],
+        "initial_evidence_summary": "汽车之家报道深蓝 S05 于 2024 年 10 月上市；易车百科页显示深蓝 S05 采用机械隐藏式门把手，按下把手一部分后门把手自动弹出。"
+      },
+      "launch_date": "2024年10月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.autohome.com.cn/news/202410/1301664.html",
+          "title": "深蓝S05正式上市",
+          "source_name": "汽车之家",
+          "snippet": "深蓝 S05 于 2024 年 10 月正式上市，推出纯电和增程版本。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种门把手",
+          "competitor_feature": "深蓝 S05 配置资料显示车辆采用隐藏式/机械隐藏式门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/wiki/100313706975/",
+              "title": "深蓝S05配置",
+              "source_name": "易车",
+              "snippet": "深蓝S05的机械隐藏式门把手隐藏在车门内部；需要打开车门时，按下把手的一部分，门把手会自动弹出。"
+            }
+          ],
+          "reasoning": "①X=门把手。②Y=隐藏式门把手配置。③(a)是，均为车门把手；(b)是，二值存在；(c)是，车身车门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "手柄(11)",
+          "competitor_feature": "深蓝 S05 的隐藏式门把手为可按压弹出的外部手柄。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/wiki/100313706975/",
+              "title": "深蓝S05配置",
+              "source_name": "易车",
+              "snippet": "易车百科说明深蓝S05机械隐藏式门把手按压后把手自动弹出，方便开门。"
+            }
+          ],
+          "reasoning": "①X=用户操作手柄。②Y=隐藏式门把手的可按压/拉动部分。③(a)是，均为手柄；(b)是，二值部件；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+          "competitor_feature": "公开资料未显示深蓝 S05 门把手内部是否存在操纵轴、传动轴及转动传递。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/wiki/100313706975/",
+              "title": "深蓝S05配置",
+              "source_name": "易车",
+              "snippet": "公开资料确认隐藏式门把手，但未给出门把手内部传动组件拆解图。"
+            }
+          ],
+          "reasoning": "①X=手柄到操纵轴/传动轴的转动传递。②Y=隐藏门把手配置。③(a)否，Y未公开轴件；(b)否，X为机械链路、Y为配置；(c)否，缺内部参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+          "competitor_feature": "公开资料未显示深蓝 S05 门把手与锁具之间是否为传动轴驱动推杆移动的结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/wiki/100313706975/",
+              "title": "深蓝S05配置",
+              "source_name": "易车",
+              "snippet": "公开资料未披露推杆、锁具连接或解锁机构剖面。"
+            }
+          ],
+          "reasoning": "①X=推杆移动解锁锁具。②Y=隐藏把手配置。③(a)否，Y不等同推杆结构；(b)否，X为机械位移；(c)否，缺锁具连接位置；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "深蓝S05 隐藏式门把手 上市 2024 10 月 20 日",
+        "深蓝S05 用户手册 门把手 外门把手 打开车门",
+        "Deepal S05 owner manual door handle outside",
+        "深蓝S05 机械隐藏式门把手 按下 把手 弹出 开门",
+        "site:qixiu88.com 深蓝S05 维修手册 门把手"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "一汽-大众",
+        "company_en": "FAW-Volkswagen",
+        "product_name": "ID.7 VIZZION（2024款 AIR版 / 中国上市车型）",
+        "product_name_en": "ID.7 VIZZION (2024 AIR China launch SKU)",
+        "product_intro": "ID.7 VIZZION 于 2023 年 12 月在中国上市，AIR 版为首发配置之一。公开用户手册资料显示车门外把手可通过钥匙/按钮解锁并拉动打开车门。",
+        "market": "中国合资纯电轿车前装市场",
+        "reason_for_deep_dive": "该 SKU 晚于申请日上市，外门把手有公开用户手册说明，且大众 ID 系半隐藏把手通常采用可拉动外部把手形式。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.vwid7.org/vehicle_key_functions-52.html",
+          "https://www.vwid7.org/driver_door-7.html",
+          "https://www.faw-vw.com/newsDetail?newsId=14986"
+        ],
+        "initial_evidence_summary": "vwid7.org 用户手册页公开 ID.7 的车门、钥匙和外门把手相关操作；一汽-大众新闻页公开 ID.7 VIZZION 于 2023 年 12 月上市。"
+      },
+      "launch_date": "2023年12月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.faw-vw.com/newsDetail?newsId=14986",
+          "title": "ID.7 VIZZION上市",
+          "source_name": "一汽-大众",
+          "snippet": "一汽-大众 ID.7 VIZZION 于 2023 年 12 月正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种门把手",
+          "competitor_feature": "ID.7 VIZZION 用户手册资料描述车门外把手和车门开启功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vwid7.org/vehicle_key_functions-52.html",
+              "title": "ID.7 Vehicle key functions",
+              "source_name": "vwid7.org",
+              "snippet": "Manual section discusses vehicle key functions and door handle/locking behavior for ID.7."
+            },
+            {
+              "url": "https://www.vwid7.org/driver_door-7.html",
+              "title": "ID.7 Driver Door",
+              "source_name": "vwid7.org",
+              "snippet": "Manual chapter covers the driver door and door operation controls."
+            }
+          ],
+          "reasoning": "①X=车门把手。②Y=ID.7 外门把手/车门开启资料。③(a)是，均为车门开启把手；(b)是，二值存在；(c)是，车辆车门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "手柄(11)",
+          "competitor_feature": "ID.7 公开手册资料指向用户可操作的外门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.vwid7.org/vehicle_key_functions-52.html",
+              "title": "ID.7 Vehicle key functions",
+              "source_name": "vwid7.org",
+              "snippet": "Door handle behavior is described in the vehicle key and opening/closing context."
+            }
+          ],
+          "reasoning": "①X=手柄。②Y=外门把手。③(a)是，均为用户手动接触部件；(b)是，部件存在；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+          "competitor_feature": "公开用户手册仅说明外门把手/门锁操作，未公开外把手内部操纵轴、传动轴结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vwid7.org/vehicle_key_functions-52.html",
+              "title": "ID.7 Vehicle key functions",
+              "source_name": "vwid7.org",
+              "snippet": "Manual material is operational; no exploded handle linkage or shaft disclosure was found."
+            }
+          ],
+          "reasoning": "①X=操纵轴/传动轴转动链。②Y=外把手使用说明。③(a)否，Y缺轴件；(b)否，X为内部结构、Y为操作；(c)否，缺内部参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+          "competitor_feature": "公开资料未确认 ID.7 外门把手通过传动轴带动推杆移动来解锁锁具。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.vwid7.org/driver_door-7.html",
+              "title": "ID.7 Driver Door",
+              "source_name": "vwid7.org",
+              "snippet": "Driver door manual page does not disclose push rod or latch-side mechanical linkage details."
+            }
+          ],
+          "reasoning": "①X=传动轴输出到推杆并解锁锁具。②Y=车门操作资料。③(a)否，Y无推杆；(b)否，X为机械位移链；(c)否，缺锁具连接；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "大众 ID.7 VIZZION 半隐藏式 门把手 机械结构 2023 上市",
+        "ID.7 VIZZION 用户手册 门把手 开启 半隐藏式",
+        "Volkswagen ID.7 VIZZION China launch 2023 door handle semi-hidden mechanical",
+        "site:vwid7.org exterior door handles ID.7 opening doors",
+        "一汽大众 ID.7 VIZZION 正式上市 2023 12 月 15 日"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "小鹏汽车",
+        "company_en": "XPeng",
+        "product_name": "小鹏G6（2023款 580长续航Pro / 中国上市车型）",
+        "product_name_en": "XPeng G6 (2023 580 Long Range Pro China launch SKU)",
+        "product_intro": "小鹏 G6 于 2023 年 6 月在中国上市，580 长续航 Pro 为首批车型之一。公开资料显示该车采用隐藏式/隐藏门把手，外部把手作为用户进入车门的部件。",
+        "market": "中国智能纯电 SUV 前装市场",
+        "reason_for_deep_dive": "该 SKU 晚于申请日上市，采用隐藏式门把手，属于本专利门把手机械/解锁结构的同类竞品入口。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.xpeng.com/news/01889",
+          "https://detail.zol.com.cn/1966/1965691/param.shtml"
+        ],
+        "initial_evidence_summary": "小鹏官方新闻披露 G6 于 2023 年 6 月上市及车型版本；ZOL 参数页锁定 2023款 580 长续航 Pro，并列出隐藏电动门把手为标配。"
+      },
+      "launch_date": "2023年6月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.xpeng.com/news/01889",
+          "title": "XPENG G6 officially launched",
+          "source_name": "XPeng",
+          "snippet": "XPENG G6 was officially launched in June 2023 with China-market trims including 580 long range versions."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种门把手",
+          "competitor_feature": "小鹏 G6 公开资料和用户手册入口指向隐藏式门把手/车门外部开启部件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+              "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+              "source_name": "ZOL",
+              "snippet": "参数页锁定小鹏G6 2023款 580 长续航 Pro，并列出隐藏电动门把手为标配。"
+            }
+          ],
+          "reasoning": "①X=门把手。②Y=G6 外部进入/车门把手系统。③(a)是，均为车辆门把手；(b)是，部件存在；(c)是，车门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "手柄(11)",
+          "competitor_feature": "小鹏 G6 隐藏式门把手包含用户操作的外部手柄。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+              "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+              "source_name": "ZOL",
+              "snippet": "配置项显示该 SKU 标配隐藏电动门把手。"
+            }
+          ],
+          "reasoning": "①X=手柄。②Y=隐藏式门把手的外部操作件。③(a)是，均供用户操作；(b)是，二值部件；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+          "competitor_feature": "公开资料未披露小鹏 G6 外门把手内部操纵轴、传动轴及转动传递结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+              "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+              "source_name": "ZOL",
+              "snippet": "公开参数确认隐藏电动门把手，但未公开门把手内部操纵轴/传动轴结构。"
+            }
+          ],
+          "reasoning": "①X=操纵轴至传动轴转动传递。②Y=车型手册入口/隐藏把手线索。③(a)否，Y未公开轴系；(b)否，X为机械结构链；(c)否，缺内部参考；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+          "competitor_feature": "公开资料未披露小鹏 G6 是否通过推杆移动解锁锁具，也未公开推杆与传动轴连接。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://detail.zol.com.cn/1966/1965691/param.shtml",
+              "title": "小鹏G6 2023款 580 长续航 Pro 参数",
+              "source_name": "ZOL",
+              "snippet": "公开参数页未披露推杆/锁具联动结构。"
+            }
+          ],
+          "reasoning": "①X=推杆移动解锁锁具。②Y=公开手册入口和隐藏把手线索。③(a)否，Y未列推杆；(b)否，X为位移链路；(c)否，缺锁具端连接；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "小鹏 G6 用户手册 车门外把手 拉动 开门 2024款 上市",
+        "XPENG G6 owner manual exterior door handles open door",
+        "小鹏 G6 2023 6月29日 上市 隐藏式门把手",
+        "site:xpeng.com G6 owners manual door handle",
+        "site:qixiu88.com 小鹏 G6 维修手册 门把手"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "小米汽车",
+        "company_en": "Xiaomi Auto",
+        "product_name": "小米SU7（2024款 标准版 / 中国上市车型）",
+        "product_name_en": "Xiaomi SU7 (2024 Standard China launch SKU)",
+        "product_intro": "小米 SU7 于 2024 年 3 月在中国上市，标准版属首批车型。公开事故/拆解报道显示其外部门把手采用电子释放逻辑，外侧没有可在断电状态下机械解锁车门的把手链路。",
+        "market": "中国智能纯电轿车前装市场",
+        "reason_for_deep_dive": "该车为 2024 年高关注度纯电轿车且采用半隐藏/隐藏式外把手，但公开资料显示其外把手电子释放特征与权 1 的机械传动推杆链路存在直接冲突。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://xueqiu.com/4350838678/329816643",
+          "https://www.bitauto.com/wiki/100335479530/",
+          "https://autonews.gasgoo.com/articles/news/xiaomi-evs-su7-all-electric-sedan-hits-market-starting-at-215900-yuan-70032193"
+        ],
+        "initial_evidence_summary": "SU7 2024 年 3 月上市；公开资料称车内设置应急机械拉手，另有公开讨论指出车外门把手无机械应急开关、仅为电子开关。"
+      },
+      "launch_date": "2024年3月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://autonews.gasgoo.com/articles/news/xiaomi-evs-su7-all-electric-sedan-hits-market-starting-at-215900-yuan-70032193",
+          "title": "Xiaomi EV's SU7 all-electric sedan hits market",
+          "source_name": "Gasgoo",
+          "snippet": "Xiaomi EV's first production model, the SU7 battery-electric sedan, officially hit the market on March 28, 2024."
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "C1-F3/C1-F4 明确不满足：公开资料显示外部门把手依赖电子释放，机械应急释放位于车内，不能证明且直接排斥外把手经操纵轴、传动轴和推杆机械解锁锁具。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种门把手",
+          "competitor_feature": "小米 SU7 具有外部门把手/车门进入部件。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://autonews.gasgoo.com/articles/news/xiaomi-evs-su7-all-electric-sedan-hits-market-starting-at-215900-yuan-70032193",
+              "title": "Xiaomi EV's SU7 all-electric sedan hits market",
+              "source_name": "Gasgoo",
+              "snippet": "Launch report describes Xiaomi SU7 as a passenger vehicle with standard door access equipment."
+            }
+          ],
+          "reasoning": "①X=门把手。②Y=SU7 外部车门进入部件。③(a)是；(b)是，部件存在；(c)是，车门外部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "手柄(11)",
+          "competitor_feature": "SU7 有外部隐藏/半隐藏门把手作为用户操作入口。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/wiki/100335479530/",
+              "title": "小米su7车门机械拉手",
+              "source_name": "易车百科",
+              "snippet": "资料说明小米SU7全系车型在四个车门的内饰板下方设置应急机械拉手。"
+            }
+          ],
+          "reasoning": "①X=手柄。②Y=SU7 外部电子门把手。③(a)是，均为外部操作入口；(b)是，二值部件；(c)是，车门外部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+          "competitor_feature": "SU7 外部门把手为电子释放，公开资料未显示外手柄带动操纵轴/传动轴转动，且电子释放与机械轴传动路径相冲突。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://xueqiu.com/4350838678/329816643",
+              "title": "小米SU7车外门把手有机械应急开关吗",
+              "source_name": "雪球",
+              "snippet": "页面称小米SU7车外门把手没有机械应急开关，仅为电子开关；车内有机械应急开门方式。"
+            }
+          ],
+          "reasoning": "①X=外手柄带动机械轴系转动。②Y=外部电子门把手/车内机械应急。③(a)否，电子释放非轴传动；(b)否，X机械链、Y电信号；(c)否，机械应急在车内；(d)有，电子外把手报道。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+          "competitor_feature": "SU7 公开资料显示外部开门依赖电子释放，未见外把手传动轴驱动推杆移动解锁锁具；车内机械应急拉手不是本 SKU 外门把手推杆结构。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/wiki/100335479530/",
+              "title": "小米su7车门机械拉手",
+              "source_name": "易车百科",
+              "snippet": "资料说明小米SU7的应急机械拉手位于车门内饰板下方，属于车内机械应急释放。"
+            }
+          ],
+          "reasoning": "①X=外把手经传动轴推动推杆解锁。②Y=电子外把手+车内应急释放。③(a)否；(b)否，X机械位移、Y电子释放；(c)否，参考位置不同；(d)有，电子外把手为反证。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "小米SU7 门把手 纯电动 没有机械 外把手 用户手册 低压电源",
+        "小米SU7 半隐藏式门把手 上市 2024 3月28日 官方",
+        "Xiaomi SU7 door handle no mechanical exterior handle pure electric",
+        "小米SU7 外部门把手 电子释放 机械应急拉手 车内"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "特斯拉中国",
+        "company_en": "Tesla China",
+        "product_name": "Model 3（2020款 Standard Range Plus / 中国销售）",
+        "product_name_en": "Tesla Model 3 (2020 Standard Range Plus China SKU)",
+        "product_intro": "Model 3 2020 款早于本专利申请日进入中国市场。公开车主手册镜像显示外部门把手顶部按钮依赖低压电源；断电时无法使用该按钮开门。",
+        "market": "中国纯电轿车前装市场",
+        "reason_for_deep_dive": "Model 3 是头部竞品且有公开车主手册；该 2020 SKU 早于本专利申请日，按模块二规则失效。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+          "https://www.tmodel3.com/exterior_door_handles-1895.html"
+        ],
+        "initial_evidence_summary": "公开 2020 Model 3 车主手册镜像说明外部门把手按钮在无低压电源时无法工作；服务手册镜像列有 2017-2025 Model 3 外部门把手维修章节。"
+      },
+      "launch_date": "2020年款公开用户手册，早于2023年2月10日申请日",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+          "title": "TESLA MODEL 3 2020 Owner's Manuals",
+          "source_name": "CarManualsOnline",
+          "snippet": "Page identifies the 2020 Tesla Model 3 owner's manual and door-handle/no-power content."
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "launch_date 早于本专利申请日 2023-02-10；同时公开手册镜像显示外门把手按钮依赖低压电源，进一步削弱权 1 机械轴-推杆链路。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种门把手",
+          "competitor_feature": "Model 3 具有外部门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+              "title": "Opening and Closing Doors",
+              "source_name": "CarManualsOnline",
+              "snippet": "Manual describes the exterior door handle and button used for opening Model 3 doors."
+            }
+          ],
+          "reasoning": "①X=门把手。②Y=Model 3 exterior door handle。③(a)是；(b)是，部件存在；(c)是，车门外部；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "手柄(11)",
+          "competitor_feature": "Model 3 外部门把手为用户可操作的把手/按钮组合。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+              "title": "Opening and Closing Doors",
+              "source_name": "CarManualsOnline",
+              "snippet": "The manual gives user instructions for operating the exterior door handle."
+            }
+          ],
+          "reasoning": "①X=手柄。②Y=外部门把手/按钮。③(a)是，均是用户操作件；(b)是；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "传动组件(2)，所述传动组件(2)包括操纵轴(12)和传动轴(21)，所述操纵轴(12)的输入端与所述手柄(11)连接，所述手柄(11)能够带动所述操纵轴(12)转动，所述操纵轴(12)输出端与所述传动轴(21)的输入端连接，所述操纵轴(12)能够带动所述传动轴(21)转动",
+          "competitor_feature": "官方手册显示外部门把手顶部按钮依赖低压电源；断电时不能用外部按钮开门，反向证明外把手不是机械轴系直接解锁。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+              "title": "Opening and Closing Doors",
+              "source_name": "CarManualsOnline",
+              "snippet": "Manual states that without low voltage power, Model 3 cannot be opened by pressing the button at the top of the exterior door handle."
+            }
+          ],
+          "reasoning": "①X=外手柄带动操纵轴/传动轴转动。②Y=低压供电按钮开门。③(a)否，按钮电释放非轴转动；(b)否，X机械链、Y电信号；(c)否；(d)有，断电无法外部开门。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "推杆(22)，所述推杆(22)的输入端与所述传动轴(21)的输出端连接，所述传动轴(21)能够带动所述推杆(22)移动以解锁锁具(3)",
+          "competitor_feature": "外部门把手按钮依赖低压电源，未通过传动轴驱动推杆移动来解锁锁具。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://www.carmanualsonline.info/tesla-model-3-2020-owner-s-manuals/?srch=power+window",
+              "title": "Opening and Closing Doors",
+              "source_name": "CarManualsOnline",
+              "snippet": "No-low-voltage-power warning for the exterior door handle button contradicts a purely mechanical push-rod unlocking path."
+            }
+          ],
+          "reasoning": "①X=传动轴推动推杆解锁。②Y=低压供电外部按钮。③(a)否，Y是电释放；(b)否，X位移链、Y电信号；(c)否，缺机械锁具端连接；(d)有。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "Tesla Model 3 2024 owner's manual door handle pivots open door",
+        "Tesla Model 3 Highland 2024 launched China September 2023 door handle",
+        "Tesla Model 3 2024 owner's manual using exterior door handles",
+        "Model 3 Owner's Manual door exterior handle button without low voltage power cannot open door"
+      ],
+      "searched_providers": [
+        "web_search",
+        "web_open"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "publication_no": "CN222352627U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "上汽大通MAXUS",
+        "company_en": "SAIC MAXUS",
+        "product_name": "上汽大通MAXUS大家7超混（2024款超长续航旗舰版 / 车规级智能压缩机冰箱）",
+        "product_name_en": "SAIC MAXUS MIFA 7 PHEV (2024 extended-range flagship / automotive intelligent compressor refrigerator)",
+        "product_intro": "2024款大家7超混超长续航旗舰版；配置表显示该旗舰版配备车规级智能压缩机冰箱，手册说明支持0-10摄氏度制冷、30-50摄氏度加热以及冰箱门自动弹出。",
+        "market": "中国中型新能源MPV前装车载冰箱市场",
+        "reason_for_deep_dive": "同一SKU有官方配置表和官方手册；手册出现冰箱门自动弹出，贴近权1的抽拉驱动特征。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://finance.sina.com.cn/tech/digi/2024-06-07/doc-inaxxqfz3649878.shtml",
+          "https://www.saicmaxus.com/uploads/month_202408/files/1d27bdd0442cbf7bedf7506648e76881.pdf",
+          "https://www.saicmaxus.com/uploads/month_202503/files/5b61ded4f26bfc5f65a457bd42b8ae92.pdf"
+        ],
+        "initial_evidence_summary": "官方配置表锁定超长续航旗舰版有智能压缩机冰箱；官方手册显示冰箱制冷/加热、门自动弹出。"
+      },
+      "launch_date": "2024年6月7日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://finance.sina.com.cn/tech/digi/2024-06-07/doc-inaxxqfz3649878.shtml",
+          "title": "19.99 万元起，上汽大通大家 7 混动 MPV 车型上市",
+          "source_name": "IT之家/新浪科技",
+          "snippet": "2024-06-07 上市；文中列“24h 冷热一体电动冰箱”。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车载冰箱",
+          "competitor_feature": "该SKU配备车规级智能压缩机车载冰箱。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.saicmaxus.com/uploads/month_202408/files/1d27bdd0442cbf7bedf7506648e76881.pdf",
+              "title": "大家7超混配置表（2.0版）",
+              "source_name": "上汽大通MAXUS",
+              "snippet": "配置表显示超长续航旗舰版配备车规级智能压缩机冰箱。"
+            },
+            {
+              "url": "https://www.saicmaxus.com/uploads/month_202503/files/5b61ded4f26bfc5f65a457bd42b8ae92.pdf",
+              "title": "大家7超混系列产品使用手册",
+              "source_name": "上汽大通MAXUS",
+              "snippet": "手册列制冷/加热模式、冰箱门开启按键，按下后门自动弹出。"
+            }
+          ],
+          "reasoning": "① 权1 X：车载冰箱，是安装在车辆内用于低温储物的装置。② 候选 Y：官方配置表列车规级智能压缩机冰箱，手册章节为车载冰箱。③ 对比：(a) 概念是否等价：是，Y 即车辆内冰箱。(b) 单位/量纲是否等价：是，均为装置存在/不存在。(c) 参考系是否等价：是，均为车辆内配置。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "箱体，所述箱体设置有制冷腔",
+          "competitor_feature": "手册公开冰箱制冷模式、目标温度0-10摄氏度，并说明可放入饮料或食物。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.saicmaxus.com/uploads/month_202503/files/5b61ded4f26bfc5f65a457bd42b8ae92.pdf",
+              "title": "大家7超混系列产品使用手册",
+              "source_name": "上汽大通MAXUS",
+              "snippet": "手册列制冷/加热模式、冰箱门开启按键，按下后门自动弹出。"
+            }
+          ],
+          "reasoning": "① 权1 X：箱体设置有制冷腔，要求冰箱箱体内存在可制冷的容纳空间。② 候选 Y：手册说明车载冰箱可制冷/加热并调节冰箱内温度。③ 对比：(a) 概念是否等价：是，Y 的冰箱内部空间即制冷腔。(b) 单位/量纲是否等价：是，均为结构存在并有温度功能。(c) 参考系是否等价：是，均以冰箱箱体内部为参考。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "抽屉，所述抽屉可活动地设置于所述制冷腔内",
+          "competitor_feature": "手册说明按键后冰箱门自动弹出，过载无法自动弹出时需从侧面缝隙拉出。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.saicmaxus.com/uploads/month_202503/files/5b61ded4f26bfc5f65a457bd42b8ae92.pdf",
+              "title": "大家7超混系列产品使用手册",
+              "source_name": "上汽大通MAXUS",
+              "snippet": "手册列制冷/加热模式、冰箱门开启按键，按下后门自动弹出。"
+            }
+          ],
+          "reasoning": "① 权1 X：抽屉可活动地设置于制冷腔内，抽屉相对箱体沿抽拉方向移动。② 候选 Y：公开资料显示冰箱门会自动弹出，异常时从侧面缝隙拉出，但未直接称为抽屉。③ 对比：(a) 概念是否等价：是，在权1宽口径下，“门弹出/拉出”指向可移动取物组件。(b) 单位/量纲是否等价：是，均为二值结构动作存在。(c) 参考系是否等价：是，动作参考冰箱箱体。(d) 是否有反向证据：无。因缺少抽屉本体进入制冷腔的明文，降为可能满足。",
+          "suggested_followup_queries": [
+            "大家7超混 冰箱 抽屉 结构图",
+            "大家7超混 车载冰箱 维修手册 冰箱门 自动弹出"
+          ],
+          "evidence_gap_brief": "缺少该SKU冰箱剖面或零件图直接显示抽屉本体位于制冷腔内。"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "驱动机构，所述驱动机构设置于所述制冷腔外，并与所述抽屉传动连接，所述驱动机构用于驱动所述抽屉沿抽拉方向相对于所述箱体移动",
+          "competitor_feature": "冰箱门开启按键触发后门自动弹出，说明存在电动/弹出驱动机构；但公开资料未说明驱动机构位置。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.saicmaxus.com/uploads/month_202503/files/5b61ded4f26bfc5f65a457bd42b8ae92.pdf",
+              "title": "大家7超混系列产品使用手册",
+              "source_name": "上汽大通MAXUS",
+              "snippet": "手册列制冷/加热模式、冰箱门开启按键，按下后门自动弹出。"
+            }
+          ],
+          "reasoning": "① 权1 X：驱动机构设在制冷腔外并与抽屉传动连接，驱动抽屉沿抽拉方向移动。② 候选 Y：官方手册说明按下冰箱门开启按键后冰箱门自动弹出。③ 对比：(a) 概念是否等价：是，自动弹出需要驱动/释放机构使门体发生抽拉方向位移。(b) 单位/量纲是否等价：是，均为机构存在及动作存在。(c) 参考系是否等价：是，均相对冰箱箱体运动。(d) 是否有反向证据：无。驱动机构是否位于制冷腔外、是否与抽屉传动连接未被公开图纸直接证明，故为可能满足。",
+          "suggested_followup_queries": [
+            "大家7超混 车载冰箱 总成 驱动机构",
+            "SAIC MAXUS MIFA 7 PHEV refrigerator automatic pop out mechanism"
+          ],
+          "evidence_gap_brief": "需要冰箱总成零件图或供应商图纸确认驱动机构位于制冷腔外。"
+        }
+      ],
+      "total_score": 90.0,
+      "searched_queries": [
+        "site:m.asemanshop.com 车载冰箱 冰箱门 自动弹出",
+        "site:www.qixiu88.com 车载冰箱 冰箱门 自动弹出",
+        "上汽大通MAXUS 大家7超混 超长续航旗舰版 车规级智能压缩机冰箱 配置表",
+        "大家7超混 产品使用手册 车载冰箱 冰箱门自动弹出",
+        "大家7超混 冰箱门开启按键 自动弹出",
+        "SAIC MAXUS MIFA 7 PHEV refrigerator electric door user manual",
+        "MIFA 7 PHEV automotive refrigerator automatic pop out",
+        "大家7超混 车载冰箱 拆解 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "saicmaxus.com PDF",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "蔚来",
+        "company_en": "NIO",
+        "product_name": "蔚来全新ES8（2025款六座行政签名版 / 8.8L电动开合智能冰箱）",
+        "product_name_en": "NIO All-New ES8 (2025 six-seat Executive Signature / 8.8L electric-opening intelligent refrigerator)",
+        "product_intro": "2025年9月上市的全新ES8六座行政签名版；公开上市稿称配备8.8L电动开合智能冰箱，车规级压缩机，温度范围-2至55摄氏度。",
+        "market": "中国高端纯电大三排SUV前装车载冰箱市场",
+        "reason_for_deep_dive": "2025款新SKU上市时间晚于申请日，公开资料直接出现“电动开合智能冰箱”。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://chejiahao.autohome.com.cn/info/22259337",
+          "https://www.bitauto.com/article/1003103786481/"
+        ],
+        "initial_evidence_summary": "上市稿与配置报道均指向2025款全新ES8；证据显示8.8L冷暖冰箱和电动开合。"
+      },
+      "launch_date": "2025年9月20日正式上市，9月21日起交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://chejiahao.autohome.com.cn/info/22259337",
+          "title": "蔚来全新ES8正式上市",
+          "source_name": "汽车之家车家号",
+          "snippet": "2025-09-20 上市；8.8L 电动开合智能冰箱，-2至55摄氏度。"
+        },
+        {
+          "url": "https://www.bitauto.com/article/1003103786481/",
+          "title": "全新蔚来ES8上市，售价40.68-44.68万元",
+          "source_name": "BitAuto",
+          "snippet": "2025-09-20 上市；配置列 8.8L 冷暖冰箱。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车载冰箱",
+          "competitor_feature": "2025款全新ES8配备8.8L智能车载冷暖冰箱。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/22259337",
+              "title": "蔚来全新ES8正式上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "2025-09-20 上市；8.8L 电动开合智能冰箱，-2至55摄氏度。"
+            },
+            {
+              "url": "https://www.bitauto.com/article/1003103786481/",
+              "title": "全新蔚来ES8上市，售价40.68-44.68万元",
+              "source_name": "BitAuto",
+              "snippet": "2025-09-20 上市；配置列 8.8L 冷暖冰箱。"
+            }
+          ],
+          "reasoning": "① 权1 X：车载冰箱，是车辆内制冷/保温装置。② 候选 Y：公开资料列8.8L冷暖冰箱/智能冰箱。③ 对比：(a) 概念是否等价：是，Y 为车辆前装冰箱。(b) 单位/量纲是否等价：是，均为装置存在。(c) 参考系是否等价：是，均为车辆座舱内配置。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "箱体，所述箱体设置有制冷腔",
+          "competitor_feature": "8.8L冷暖冰箱采用车规级压缩机，支持-2至55摄氏度温度范围。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/22259337",
+              "title": "蔚来全新ES8正式上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "2025-09-20 上市；8.8L 电动开合智能冰箱，-2至55摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：箱体内有制冷腔。② 候选 Y：8.8L容量冰箱并可调至-2摄氏度，说明箱体内存在可制冷容纳空间。③ 对比：(a) 概念是否等价：是，容量空间加制冷功能对应制冷腔。(b) 单位/量纲是否等价：是，均为结构空间及温度功能。(c) 参考系是否等价：是，均为冰箱内部。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "抽屉，所述抽屉可活动地设置于所述制冷腔内",
+          "competitor_feature": "公开资料称该冰箱为电动开合，但未直接公开抽屉本体在制冷腔内的结构图。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/22259337",
+              "title": "蔚来全新ES8正式上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "2025-09-20 上市；8.8L 电动开合智能冰箱，-2至55摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：抽屉在制冷腔内可活动，沿抽拉方向移动。② 候选 Y：8.8L电动开合智能冰箱，公开语义指向前装冰箱可开合取物组件。③ 对比：(a) 概念是否等价：是，在车载中岛冰箱语境下，电动开合通常对应可移动门/抽屉组件。(b) 单位/量纲是否等价：是，均为结构动作存在。(c) 参考系是否等价：是，均相对冰箱箱体。(d) 是否有反向证据：无。因未见“抽屉式”或剖面图明文，保守给可能满足。",
+          "suggested_followup_queries": [
+            "全新ES8 8.8L 冰箱 抽屉式",
+            "蔚来全新ES8 电动开合冰箱 结构 滑轨"
+          ],
+          "evidence_gap_brief": "缺少2025款8.8L冰箱的抽屉式结构明示证据。"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "驱动机构，所述驱动机构设置于所述制冷腔外，并与所述抽屉传动连接，所述驱动机构用于驱动所述抽屉沿抽拉方向相对于所述箱体移动",
+          "competitor_feature": "公开资料称8.8L电动开合智能冰箱，但未说明驱动机构位于制冷腔外。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://chejiahao.autohome.com.cn/info/22259337",
+              "title": "蔚来全新ES8正式上市",
+              "source_name": "汽车之家车家号",
+              "snippet": "2025-09-20 上市；8.8L 电动开合智能冰箱，-2至55摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：制冷腔外驱动机构与抽屉传动连接，驱动抽屉抽拉。② 候选 Y：公开资料中的“电动开合智能冰箱”证明开合动作由电动机构参与。③ 对比：(a) 概念是否等价：是，电动开合与驱动抽拉在功能层面一致。(b) 单位/量纲是否等价：是，均为机构动作存在。(c) 参考系是否等价：是，均相对冰箱箱体/箱门运动。(d) 是否有反向证据：无。缺少机构位置和传动连接的公开结构证据，故不判明确满足。",
+          "suggested_followup_queries": [
+            "NIO ES8 8.8L electric refrigerator mechanism",
+            "全新ES8 冰箱 电动开合 滑轨 电机"
+          ],
+          "evidence_gap_brief": "需维修手册或供应商资料确认电机/传动件在制冷腔外且连接抽屉。"
+        }
+      ],
+      "total_score": 90.0,
+      "searched_queries": [
+        "site:m.asemanshop.com 车载冰箱 冰箱门 自动弹出",
+        "site:www.qixiu88.com 车载冰箱 冰箱门 自动弹出",
+        "蔚来全新ES8 2025 8.8L 电动开合智能冰箱",
+        "全新ES8 电动开合智能冰箱 车规级压缩机 -2 55",
+        "蔚来全新ES8 六座行政签名版 冰箱 2025 上市",
+        "NIO all-new ES8 2025 electric opening refrigerator 8.8L",
+        "NIO ES8 intelligent refrigerator drawer electric opening",
+        "全新ES8 冰箱 拆解 滑轨 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "autohome.com.cn",
+        "bitauto.com",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "领克",
+        "company_en": "Lynk & Co",
+        "product_name": "领克900（2025款上市车 / 英得尔9L抽屉式压缩机冰箱）",
+        "product_name_en": "Lynk & Co 900 (2025 launch model / Indel 9L drawer-type compressor refrigerator)",
+        "product_intro": "2025年4月28日上市的领克900；英得尔公开文章称其压缩机冰箱采用抽屉式开关门设计，9L容量，温控-6至50摄氏度。",
+        "market": "中国旗舰六座插混SUV前装车载冰箱市场",
+        "reason_for_deep_dive": "用户点名候选；供应商公开资料直接说明抽屉式压缩机冰箱和温控范围。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://mp.weixin.qq.com/s/y504Wh-7mehb-jE66MNQbw"
+        ],
+        "initial_evidence_summary": "英得尔文章直接锁定领克900，公开抽屉式开关门、9L、-6至50摄氏度。"
+      },
+      "launch_date": "2025年4月28日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://mp.weixin.qq.com/s/y504Wh-7mehb-jE66MNQbw",
+          "title": "英得尔车载冰箱×领克900｜悦享百变智能座舱",
+          "source_name": "英得尔",
+          "snippet": "2025-04-28 上市；压缩机冰箱采用抽屉式开关门设计，9L，-6至50摄氏度。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车载冰箱",
+          "competitor_feature": "领克900配备英得尔前装压缩机车载冰箱。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://mp.weixin.qq.com/s/y504Wh-7mehb-jE66MNQbw",
+              "title": "英得尔车载冰箱×领克900｜悦享百变智能座舱",
+              "source_name": "英得尔",
+              "snippet": "2025-04-28 上市；压缩机冰箱采用抽屉式开关门设计，9L，-6至50摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：车载冰箱。② 候选 Y：英得尔文章称领克900搭载车载冰箱/压缩机冰箱。③ 对比：(a) 概念是否等价：是，Y 即车辆内冰箱。(b) 单位/量纲是否等价：是，均为装置存在。(c) 参考系是否等价：是，均为车辆座舱配置。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "箱体，所述箱体设置有制冷腔",
+          "competitor_feature": "领克900压缩机冰箱容量9L，温控-6至50摄氏度。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://mp.weixin.qq.com/s/y504Wh-7mehb-jE66MNQbw",
+              "title": "英得尔车载冰箱×领克900｜悦享百变智能座舱",
+              "source_name": "英得尔",
+              "snippet": "2025-04-28 上市；压缩机冰箱采用抽屉式开关门设计，9L，-6至50摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：箱体有制冷腔。② 候选 Y：9L压缩机冰箱可达-6摄氏度并可保温。③ 对比：(a) 概念是否等价：是，9L可制冷空间对应制冷腔。(b) 单位/量纲是否等价：是，均为空间和温度功能。(c) 参考系是否等价：是，均为冰箱箱体内部。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "抽屉，所述抽屉可活动地设置于所述制冷腔内",
+          "competitor_feature": "供应商公开称领克900压缩机冰箱采用抽屉式开关门设计。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://mp.weixin.qq.com/s/y504Wh-7mehb-jE66MNQbw",
+              "title": "英得尔车载冰箱×领克900｜悦享百变智能座舱",
+              "source_name": "英得尔",
+              "snippet": "2025-04-28 上市；压缩机冰箱采用抽屉式开关门设计，9L，-6至50摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：抽屉可活动地设置于制冷腔内。② 候选 Y：领克900压缩机冰箱为抽屉式开关门设计。③ 对比：(a) 概念是否等价：是，“抽屉式开关门”直接对应抽屉式活动组件。(b) 单位/量纲是否等价：是，均为结构动作存在。(c) 参考系是否等价：是，均相对冰箱箱体/制冷空间抽拉。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "驱动机构，所述驱动机构设置于所述制冷腔外，并与所述抽屉传动连接，所述驱动机构用于驱动所述抽屉沿抽拉方向相对于所述箱体移动",
+          "competitor_feature": "公开资料仅显示抽屉式和中控/扶手屏模式切换，未显示电动驱动抽屉抽拉。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://mp.weixin.qq.com/s/y504Wh-7mehb-jE66MNQbw",
+              "title": "英得尔车载冰箱×领克900｜悦享百变智能座舱",
+              "source_name": "英得尔",
+              "snippet": "2025-04-28 上市；压缩机冰箱采用抽屉式开关门设计，9L，-6至50摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：驱动机构在制冷腔外并传动连接抽屉，驱动抽屉沿抽拉方向移动。② 候选 Y：领克900资料显示抽屉式开关门和屏幕切换冰箱模式，但未描述自动开合或电动弹出。③ 对比：(a) 概念是否等价：否，Y 证明抽屉式开关门，不证明驱动机构。(b) 单位/量纲是否等价：否，X 是机构驱动存在，Y 是结构形态和温控控制。(c) 参考系是否等价：是，均围绕冰箱开口/箱体。(d) 是否有反向证据：无。因缺少自动抽拉证据，判证据不足。",
+          "suggested_followup_queries": [
+            "领克900 冰箱 电动开合 自动弹出",
+            "领克900 英得尔 冰箱 电机 滑轨 维修"
+          ],
+          "evidence_gap_brief": "未找到领克900冰箱具备电动开合/自动弹出或驱动机构位置的公开证据。"
+        }
+      ],
+      "total_score": 82.5,
+      "searched_queries": [
+        "site:m.asemanshop.com 车载冰箱 冰箱门 自动弹出",
+        "site:www.qixiu88.com 车载冰箱 冰箱门 自动弹出",
+        "领克900 英得尔 车载冰箱 抽屉式 开关门 9L -6 50",
+        "领克900 车载冰箱 电动 抽屉 冷暖箱",
+        "领克900 冰箱 电动开门 抽屉式 冷暖箱",
+        "Lynk Co 900 car refrigerator drawer compressor",
+        "Lynk Co 900 refrigerator electric drawer",
+        "领克900 冰箱 拆解 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "iceco.cn",
+        "mp.weixin.qq.com",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "广汽传祺",
+        "company_en": "GAC Trumpchi",
+        "product_name": "传祺向往M8乾崑（2025款Pro舒享舱 / 9.0L独立压缩机冷暖箱）",
+        "product_name_en": "GAC Trumpchi Xiangwang M8 Qiankun (2025 Pro / 9.0L independent-compressor cold-warm box)",
+        "product_intro": "2025年5月26日上市的向往M8乾崑Pro舒享舱；上市报道称全系标配9.0升独立压缩机车载冰箱，官方手册说明可制冷、冷冻、制热并可按键/中控屏开关冰箱门。",
+        "market": "中国高端新能源MPV前装冷暖箱市场",
+        "reason_for_deep_dive": "同一2025款乾崑系列SKU有上市配置证据和官方手册；冰箱门可由按键/中控屏打开或关闭。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.bitauto.com/article/1003100904270/",
+          "https://www.gacmotor.com/static/upload/explanation/%E5%90%91%E5%BE%80M8%E4%B9%BE%E5%B4%91%EF%BC%88T9M%E9%95%BF%E7%BB%AD%E8%88%AA%EF%BC%89_%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6_20250725.pdf"
+        ],
+        "initial_evidence_summary": "上市报道显示全系标配9.0L独立压缩机冰箱；官方手册显示冷暖箱门可电控开闭。"
+      },
+      "launch_date": "2025年5月26日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.bitauto.com/article/1003100904270/",
+          "title": "传祺向往M8乾崑系列上市 售35.99万元起",
+          "source_name": "BitAuto",
+          "snippet": "2025-05-26 上市；全系标配智能冷暖9.0升车载冰箱。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车载冰箱",
+          "competitor_feature": "该SKU全系标配9.0升独立压缩机车载冰箱/冷暖箱。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.bitauto.com/article/1003100904270/",
+              "title": "传祺向往M8乾崑系列上市 售35.99万元起",
+              "source_name": "BitAuto",
+              "snippet": "2025-05-26 上市；全系标配智能冷暖9.0升车载冰箱。"
+            },
+            {
+              "url": "https://www.gacmotor.com/static/upload/explanation/%E5%90%91%E5%BE%80M8%E4%B9%BE%E5%B4%91%EF%BC%88T9M%E9%95%BF%E7%BB%AD%E8%88%AA%EF%BC%89_%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6_20250725.pdf",
+              "title": "向往M8乾崑（T9M长续航）使用说明书",
+              "source_name": "广汽传祺",
+              "snippet": "手册说明冷暖箱可制冷/制热，并可通过按键或中控屏开关冰箱门。"
+            }
+          ],
+          "reasoning": "① 权1 X：车载冰箱。② 候选 Y：向往M8乾崑公开配备车载冰箱/冷暖箱。③ 对比：(a) 概念是否等价：是，Y 是车辆内冷暖冰箱。(b) 单位/量纲是否等价：是，均为装置存在。(c) 参考系是否等价：是，均为车辆座舱内配置。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "箱体，所述箱体设置有制冷腔",
+          "competitor_feature": "手册说明冷暖箱内可放入饮料、面包等并进行制冷、冷冻或制热。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.gacmotor.com/static/upload/explanation/%E5%90%91%E5%BE%80M8%E4%B9%BE%E5%B4%91%EF%BC%88T9M%E9%95%BF%E7%BB%AD%E8%88%AA%EF%BC%89_%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6_20250725.pdf",
+              "title": "向往M8乾崑（T9M长续航）使用说明书",
+              "source_name": "广汽传祺",
+              "snippet": "手册说明冷暖箱可制冷/制热，并可通过按键或中控屏开关冰箱门。"
+            }
+          ],
+          "reasoning": "① 权1 X：箱体设置制冷腔。② 候选 Y：冷暖箱可放置物品并切换冷藏/冷冻/制热模式。③ 对比：(a) 概念是否等价：是，可制冷容纳空间对应制冷腔。(b) 单位/量纲是否等价：是，均为空间和温度功能。(c) 参考系是否等价：是，均为冷暖箱内部空间。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "抽屉，所述抽屉可活动地设置于所述制冷腔内",
+          "competitor_feature": "公开资料显示有冷暖箱门，但未公开抽屉本体位于制冷腔内或抽屉式结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.gacmotor.com/static/upload/explanation/%E5%90%91%E5%BE%80M8%E4%B9%BE%E5%B4%91%EF%BC%88T9M%E9%95%BF%E7%BB%AD%E8%88%AA%EF%BC%89_%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6_20250725.pdf",
+              "title": "向往M8乾崑（T9M长续航）使用说明书",
+              "source_name": "广汽传祺",
+              "snippet": "手册说明冷暖箱可制冷/制热，并可通过按键或中控屏开关冰箱门。"
+            }
+          ],
+          "reasoning": "① 权1 X：抽屉可活动地设置于制冷腔内。② 候选 Y：手册只说明冷暖箱门可打开/关闭。③ 对比：(a) 概念是否等价：否，箱门开闭不必然等于抽屉位于制冷腔内。(b) 单位/量纲是否等价：否，X 是抽屉结构存在，Y 是门动作存在。(c) 参考系是否等价：是，均相对冷暖箱箱体。(d) 是否有反向证据：无。缺少抽屉式证据，判证据不足。",
+          "suggested_followup_queries": [
+            "向往M8乾崑 冷暖箱 抽屉式",
+            "T9M 长续航 冷暖箱 结构图 维修手册"
+          ],
+          "evidence_gap_brief": "缺少向往M8乾崑冷暖箱抽屉结构或滑轨图。"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "驱动机构，所述驱动机构设置于所述制冷腔外，并与所述抽屉传动连接，所述驱动机构用于驱动所述抽屉沿抽拉方向相对于所述箱体移动",
+          "competitor_feature": "手册称按键或中控屏可打开/关闭冷暖箱门，推定存在开闭驱动机构，但未公开制冷腔外位置。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.gacmotor.com/static/upload/explanation/%E5%90%91%E5%BE%80M8%E4%B9%BE%E5%B4%91%EF%BC%88T9M%E9%95%BF%E7%BB%AD%E8%88%AA%EF%BC%89_%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6_20250725.pdf",
+              "title": "向往M8乾崑（T9M长续航）使用说明书",
+              "source_name": "广汽传祺",
+              "snippet": "手册说明冷暖箱可制冷/制热，并可通过按键或中控屏开关冰箱门。"
+            }
+          ],
+          "reasoning": "① 权1 X：驱动机构设于制冷腔外并驱动抽屉抽拉。② 候选 Y：官方手册列“打开或关闭冷暖箱门”按键和中控屏开关冰箱门功能。③ 对比：(a) 概念是否等价：是，电控开闭门功能指向驱动机构控制门/抽拉组件运动。(b) 单位/量纲是否等价：是，均为机构动作存在。(c) 参考系是否等价：是，均相对冷暖箱箱体移动。(d) 是否有反向证据：无。因未公开驱动机构位置及与抽屉传动连接，给可能满足。",
+          "suggested_followup_queries": [
+            "向往M8乾崑 冷暖箱门 电动 驱动机构",
+            "GAC Trumpchi Xiangwang M8 refrigerator door actuator"
+          ],
+          "evidence_gap_brief": "需要冷暖箱维修资料确认驱动机构和传动连接。"
+        }
+      ],
+      "total_score": 77.5,
+      "searched_queries": [
+        "site:m.asemanshop.com 车载冰箱 冰箱门 自动弹出",
+        "site:www.qixiu88.com 车载冰箱 冰箱门 自动弹出",
+        "传祺向往M8乾崑 9.0升 独立压缩机 车载冰箱 全系标配",
+        "向往M8乾崑 使用说明书 冷暖箱 打开关闭冰箱门",
+        "向往M8乾崑 冷暖箱 抽屉式 电动开合",
+        "GAC Trumpchi Xiangwang M8 Qiankun refrigerator electric door",
+        "GAC M8 Qiankun 9.0L refrigerator independent compressor",
+        "T9M 长续航 冷暖箱 拆解 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "gacmotor.com PDF",
+        "bitauto.com",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "广汽昊铂",
+        "company_en": "GAC Hyptec",
+        "product_name": "昊铂HL（2025款750 Max六座激光雷达版 / 车载冷暖冰箱）",
+        "product_name_en": "Hyptec HL (2025 750 Max six-seat LiDAR / onboard cold-warm refrigerator)",
+        "product_intro": "2025年4月上市的昊铂HL 750 Max六座激光雷达版；公开上市/论坛资料显示该级别配置含车载冷暖冰箱，用户实测称18L并可维持0-4摄氏度。",
+        "market": "中国30万元级家庭旗舰SUV前装冷暖冰箱市场",
+        "reason_for_deep_dive": "用户点名候选；公开资料支持该SKU有车载冷暖冰箱，但未找到抽屉式或电动抽拉证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.autohome.com.cn/news/202504/1305289.html",
+          "https://club.autohome.com.cn/bbs/thread/f757162018b15397/111355193-1.html",
+          "https://club.autohome.com.cn/bbs/thread/6c3f90424b0ee0b9/112388231-1.html"
+        ],
+        "initial_evidence_summary": "可确认2025款昊铂HL有车载冷暖冰箱；未找到冰箱门电动开合或抽屉驱动机构证据。"
+      },
+      "launch_date": "2025年4月12日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.autohome.com.cn/news/202504/1305289.html",
+          "title": "昊铂HL售价26.98万起",
+          "source_name": "汽车之家",
+          "snippet": "2025-04-12 上市；配置说明包含车载冰箱。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车载冰箱",
+          "competitor_feature": "2025款昊铂HL 750 Max六座版配置车载冷暖冰箱。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.autohome.com.cn/news/202504/1305289.html",
+              "title": "昊铂HL售价26.98万起",
+              "source_name": "汽车之家",
+              "snippet": "2025-04-12 上市；配置说明包含车载冰箱。"
+            },
+            {
+              "url": "https://club.autohome.com.cn/bbs/thread/f757162018b15397/111355193-1.html",
+              "title": "昊铂 HL 正式上市，车型选择之我见",
+              "source_name": "汽车之家论坛",
+              "snippet": "帖子称 MAX 中配含紫外线杀菌车载冷暖冰箱。"
+            }
+          ],
+          "reasoning": "① 权1 X：车载冰箱。② 候选 Y：昊铂HL配置资料和论坛评测均提到车载/车载冷暖冰箱。③ 对比：(a) 概念是否等价：是，Y 为车辆内冰箱。(b) 单位/量纲是否等价：是，均为装置存在。(c) 参考系是否等价：是，均为座舱内配置。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "箱体，所述箱体设置有制冷腔",
+          "competitor_feature": "公开用户实测称昊铂HL冰箱为18L，内部可维持0-4摄氏度。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://club.autohome.com.cn/bbs/thread/6c3f90424b0ee0b9/112388231-1.html",
+              "title": "夏日出行新标配：昊铂HL大冰箱",
+              "source_name": "汽车之家论坛",
+              "snippet": "用户实测称昊铂HL冰箱为18L，内部可维持0-4摄氏度。"
+            },
+            {
+              "url": "https://club.autohome.com.cn/bbs/thread/f757162018b15397/111355193-1.html",
+              "title": "昊铂 HL 正式上市，车型选择之我见",
+              "source_name": "汽车之家论坛",
+              "snippet": "帖子称 MAX 中配含紫外线杀菌车载冷暖冰箱。"
+            }
+          ],
+          "reasoning": "① 权1 X：箱体设置有制冷腔。② 候选 Y：公开资料显示18L容量并能保持0-4摄氏度。③ 对比：(a) 概念是否等价：是，低温容量空间对应制冷腔。(b) 单位/量纲是否等价：是，均为空间与温度能力。(c) 参考系是否等价：是，均为冰箱内部空间。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "抽屉，所述抽屉可活动地设置于所述制冷腔内",
+          "competitor_feature": "未找到公开资料说明昊铂HL冰箱为抽屉式或抽屉位于制冷腔内。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://club.autohome.com.cn/bbs/thread/f757162018b15397/111355193-1.html",
+              "title": "昊铂 HL 正式上市，车型选择之我见",
+              "source_name": "汽车之家论坛",
+              "snippet": "帖子称 MAX 中配含紫外线杀菌车载冷暖冰箱。"
+            },
+            {
+              "url": "https://club.autohome.com.cn/bbs/thread/6c3f90424b0ee0b9/112388231-1.html",
+              "title": "夏日出行新标配：昊铂HL大冰箱",
+              "source_name": "汽车之家论坛",
+              "snippet": "用户实测称昊铂HL冰箱为18L，内部可维持0-4摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：抽屉可活动地设置于制冷腔内。② 候选 Y：资料仅证明有冷暖冰箱和容量/温度，未说明抽屉结构。③ 对比：(a) 概念是否等价：否，冰箱存在不等于抽屉结构存在。(b) 单位/量纲是否等价：否，X 是抽屉结构，Y 是冰箱配置。(c) 参考系是否等价：是，均与冰箱内部有关。(d) 是否有反向证据：无。证据不足。",
+          "suggested_followup_queries": [
+            "昊铂HL 车载冰箱 抽屉式",
+            "昊铂HL 750 Max 冰箱 维修手册"
+          ],
+          "evidence_gap_brief": "未找到昊铂HL车载冰箱抽屉式开合、滑轨或弹出结构证据。"
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "驱动机构，所述驱动机构设置于所述制冷腔外，并与所述抽屉传动连接，所述驱动机构用于驱动所述抽屉沿抽拉方向相对于所述箱体移动",
+          "competitor_feature": "未找到公开资料说明昊铂HL冰箱具备电动开合、自动弹出或外置驱动机构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://club.autohome.com.cn/bbs/thread/f757162018b15397/111355193-1.html",
+              "title": "昊铂 HL 正式上市，车型选择之我见",
+              "source_name": "汽车之家论坛",
+              "snippet": "帖子称 MAX 中配含紫外线杀菌车载冷暖冰箱。"
+            },
+            {
+              "url": "https://club.autohome.com.cn/bbs/thread/6c3f90424b0ee0b9/112388231-1.html",
+              "title": "夏日出行新标配：昊铂HL大冰箱",
+              "source_name": "汽车之家论坛",
+              "snippet": "用户实测称昊铂HL冰箱为18L，内部可维持0-4摄氏度。"
+            }
+          ],
+          "reasoning": "① 权1 X：制冷腔外驱动机构传动连接抽屉并驱动抽拉。② 候选 Y：公开资料仅有冷暖冰箱、容量和温控；没有电动开合或驱动机构描述。③ 对比：(a) 概念是否等价：否，温控/容量不是抽拉驱动机构。(b) 单位/量纲是否等价：否，X 是机构动作存在，Y 是功能配置。(c) 参考系是否等价：否，Y 未给出抽拉运动参考系。(d) 是否有反向证据：无。证据不足。",
+          "suggested_followup_queries": [
+            "昊铂HL 冰箱 电动开合",
+            "Hyptec HL refrigerator electric drawer"
+          ],
+          "evidence_gap_brief": "若要进入更高风险TOP，需官方手册或实车视频证明冰箱门/抽屉自动开闭。"
+        }
+      ],
+      "total_score": 65.0,
+      "searched_queries": [
+        "site:m.asemanshop.com 车载冰箱 冰箱门 自动弹出",
+        "site:www.qixiu88.com 车载冰箱 冰箱门 自动弹出",
+        "广汽昊铂HL 750 Max 六座 车载冷暖冰箱",
+        "昊铂HL 车载冰箱 电动 抽屉 冷暖箱",
+        "昊铂HL 智能冰箱 开关门 电动 冷暖箱",
+        "Hyptec HL refrigerator cooler box drawer electric",
+        "昊铂HL 车载冰箱 18L 0-4℃",
+        "昊铂HL 冰箱 拆解 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "autohome.com.cn",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P06",
+        "company": "理想汽车",
+        "company_en": "Li Auto",
+        "product_name": "理想L9（2022款Max / 前装抽屉式8.8L车载冰箱）",
+        "product_name_en": "Li L9 (2022 Max / front-installed drawer-type 8.8L car refrigerator)",
+        "product_intro": "2022款理想L9 Max；理想社区资料称其为乘用车首款前装抽屉式冰箱，8.8L，并具备一键电动弹出/面板、中控屏、语音开门能力。",
+        "market": "中国高端增程SUV前装车载冰箱市场",
+        "reason_for_deep_dive": "证据高度贴近权1，但整车发布和交付均早于本专利申请日，按模块二规则排除。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.globenewswire.com/news-release/2022/06/21/2466277/0/en/Li-Auto-Inc-Unveils-Li-L9-Its-Flagship-Smart-SUV.html",
+          "https://www.lixiang.com/community/detail/article/900379.html",
+          "https://www.lixiang.com/community/detail/article/771734.html"
+        ],
+        "initial_evidence_summary": "强证据候选；因2022年发布/交付早于2024-04-29，放入excluded。"
+      },
+      "launch_date": "2022年6月21日发布，2022年8月开始交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2022/06/21/2466277/0/en/Li-Auto-Inc-Unveils-Li-L9-Its-Flagship-Smart-SUV.html",
+          "title": "Li Auto Inc. Unveils Li L9, Its Flagship Smart SUV",
+          "source_name": "Li Auto / GlobeNewswire",
+          "snippet": "Li L9 于 2022-06-21 发布，2022 年 8 月开始交付。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "上市/交付时间早于本专利申请日2024-04-29，按模块二规则 total_score 置0并排除。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车载冰箱",
+          "competitor_feature": "理想L9配备前装车载冰箱。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/community/detail/article/900379.html",
+              "title": "理想L9交付一周年：聊一聊这辆车的“败家”往事",
+              "source_name": "理想汽车社区",
+              "snippet": "文章称 L9 为乘用车首款前装抽屉式冰箱，且有一键电动弹出功能。"
+            },
+            {
+              "url": "https://www.lixiang.com/community/detail/article/771734.html",
+              "title": "妙用冰箱，这些方法你都知道吗？",
+              "source_name": "理想汽车社区",
+              "snippet": "文章说明冰箱门可用面板、中控屏或语音开启，手动推回关闭。"
+            }
+          ],
+          "reasoning": "① 权1 X：车载冰箱。② 候选 Y：理想L9资料称前装抽屉式冰箱/车载冰箱。③ 对比：(a) 概念是否等价：是。(b) 单位/量纲是否等价：是，均为装置存在。(c) 参考系是否等价：是，均在车辆座舱内。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "箱体，所述箱体设置有制冷腔",
+          "competitor_feature": "理想L9冰箱为8.8L储物冰箱，可制冷制热。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/community/detail/article/900379.html",
+              "title": "理想L9交付一周年：聊一聊这辆车的“败家”往事",
+              "source_name": "理想汽车社区",
+              "snippet": "文章称 L9 为乘用车首款前装抽屉式冰箱，且有一键电动弹出功能。"
+            }
+          ],
+          "reasoning": "① 权1 X：箱体设置制冷腔。② 候选 Y：8.8L储物冰箱且可制冷制热。③ 对比：(a) 概念是否等价：是，储物低温空间对应制冷腔。(b) 单位/量纲是否等价：是。(c) 参考系是否等价：是，均为冰箱内部。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "抽屉，所述抽屉可活动地设置于所述制冷腔内",
+          "competitor_feature": "理想资料直接称“前装抽屉式冰箱”。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/community/detail/article/900379.html",
+              "title": "理想L9交付一周年：聊一聊这辆车的“败家”往事",
+              "source_name": "理想汽车社区",
+              "snippet": "文章称 L9 为乘用车首款前装抽屉式冰箱，且有一键电动弹出功能。"
+            }
+          ],
+          "reasoning": "① 权1 X：抽屉可活动地设置于制冷腔内。② 候选 Y：前装抽屉式冰箱。③ 对比：(a) 概念是否等价：是，抽屉式冰箱直接对应可抽拉抽屉组件。(b) 单位/量纲是否等价：是，均为结构动作存在。(c) 参考系是否等价：是，均相对冰箱箱体。(d) 是否有反向证据：无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "驱动机构，所述驱动机构设置于所述制冷腔外，并与所述抽屉传动连接，所述驱动机构用于驱动所述抽屉沿抽拉方向相对于所述箱体移动",
+          "competitor_feature": "理想资料称冰箱抽屉具备一键电动弹出；开门可由面板、中控屏或语音触发。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.lixiang.com/community/detail/article/900379.html",
+              "title": "理想L9交付一周年：聊一聊这辆车的“败家”往事",
+              "source_name": "理想汽车社区",
+              "snippet": "文章称 L9 为乘用车首款前装抽屉式冰箱，且有一键电动弹出功能。"
+            },
+            {
+              "url": "https://www.lixiang.com/community/detail/article/771734.html",
+              "title": "妙用冰箱，这些方法你都知道吗？",
+              "source_name": "理想汽车社区",
+              "snippet": "文章说明冰箱门可用面板、中控屏或语音开启，手动推回关闭。"
+            }
+          ],
+          "reasoning": "① 权1 X：驱动机构设于制冷腔外并传动连接抽屉，驱动抽屉抽拉。② 候选 Y：一键电动弹出和多入口打开冰箱门证明电动驱动动作存在。③ 对比：(a) 概念是否等价：是，电动弹出与驱动抽屉抽拉功能一致。(b) 单位/量纲是否等价：是，均为机构动作存在。(c) 参考系是否等价：是，均相对冰箱箱体/抽屉运动。(d) 是否有反向证据：无。驱动机构位置未公开，故不判明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": "未公开电机/传动件是否位于制冷腔外。"
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "site:m.asemanshop.com 车载冰箱 冰箱门 自动弹出",
+        "site:www.qixiu88.com 车载冰箱 冰箱门 自动弹出",
+        "理想L9 前装抽屉式 车载冰箱 一键电动弹出",
+        "理想L9 车载冰箱 打开冰箱门 中控屏 语音",
+        "Li L9 front installed drawer refrigerator electric pop out",
+        "理想L9 2022 发布 交付 车载冰箱",
+        "理想L9 冰箱 拆解 维修手册"
+      ],
+      "searched_providers": [
+        "web_search",
+        "lixiang.com",
+        "globenewswire.com",
+        "site:m.asemanshop.com",
+        "site:www.qixiu88.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "publication_no": "CN216974483U",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "赛力斯问界",
+        "company_en": "AITO / SERES",
+        "product_name": "问界M8车门外把手（2025款增程Max / 半隐藏式机械拉手）",
+        "product_name_en": "AITO M8 exterior door handle (2025 REEV Max / semi-hidden mechanical pull handle)",
+        "product_intro": "2025款问界M8增程Max使用半隐藏式门把拉手，公开评测称其可轻触微动开关电弹解锁，并保留整体掀起的机械解锁方式。",
+        "market": "中国中大型新能源SUV前装市场",
+        "reason_for_deep_dive": "公开资料同时出现半隐藏式门把、微动开关、电弹解锁和整体掀起机械解锁，和权1的翻转外把手及微动信号链高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.xchuxing.com/article/149351",
+          "https://www.smartautoclub.com/p/104599/",
+          "https://www.ithome.com/0/845/682.htm"
+        ],
+        "initial_evidence_summary": "新出行静态体验写明M8半隐藏式门把拉手、轻触微动开关可电弹解锁、整体掀起即可机械解锁；行业盘点亦列M8为半隐藏式机械拉手。"
+      },
+      "launch_date": "2025年4月16日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/845/682.htm",
+          "title": "鸿蒙智行家庭智慧旗舰SUV问界M8正式上市",
+          "source_name": "IT之家",
+          "snippet": "页面记载问界M8于2025年4月16日上市，提供增程Max、Max+、Ultra等配置并于4月20日开启交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车门外把手",
+          "competitor_feature": "问界M8公开资料明确描述其车门外把手/门把拉手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/149351",
+              "title": "静态体验问界M8",
+              "source_name": "新出行",
+              "snippet": "该页在M8细节部分说明其搭载半隐藏式门把拉手。"
+            }
+          ],
+          "reasoning": "①X: 车门外把手为车门外侧开门部件。②Y: M8公开页称半隐藏式门把拉手。③(a)是，同为外把手；(b)是，存在性二值；(c)是，均相对车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "把手座，所述把手座适于安装于车门",
+          "competitor_feature": "M8半隐藏式门把拉手安装在车门侧面，公开图片和文字均指向车门外侧装配。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/149351",
+              "title": "静态体验问界M8",
+              "source_name": "新出行",
+              "snippet": "图文围绕M8车身侧面门把手展开，显示把手嵌入车门外板区域。"
+            }
+          ],
+          "reasoning": "①X: 把手座安装于车门，二值结构关系。②Y: M8半隐藏式门把位于车门外板。③(a)是；(b)是，安装关系；(c)是，车门外侧参考系；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "微动开关，所述微动开关设于所述把手座内，所述微动开关具有从所述把手座露出的触点",
+          "competitor_feature": "M8资料写明轻触微动开关可实现电弹解锁，但未公开该微动开关是否设在把手座内及触点是否从把手座露出。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/149351",
+              "title": "静态体验问界M8",
+              "source_name": "新出行",
+              "snippet": "该页描述M8半隐藏式门把手可轻触微动开关实现电弹解锁。"
+            }
+          ],
+          "reasoning": "①X: 把手座内微动开关及露出触点。②Y: M8门把有微动开关触发解锁。③(a)是，均为微动开关；(b)是，开关二值；(c)是，均在门把区域但具体座内位置未明；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "上掀手柄，所述上掀手柄在掀起位置和关闭位置之间可翻转地安装于所述把手座，所述上掀手柄位于所述掀起位置时向车门外侧展开，所述上掀手柄位于所述关闭位置时遮盖所述把手座",
+          "competitor_feature": "M8门把手公开资料称保留机械结构，整体掀起即可机械解锁；半隐藏式关闭状态遮蔽门把结构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/149351",
+              "title": "静态体验问界M8",
+              "source_name": "新出行",
+              "snippet": "该页说明M8半隐藏式门把手保留机械结构，整体掀起即可机械解锁。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/104599/",
+              "title": "10款半隐藏式门把手新车型盘点",
+              "source_name": "智能汽车资源网",
+              "snippet": "行业盘点将问界M8列为配备半隐藏式机械拉手门把手的车型。"
+            }
+          ],
+          "reasoning": "①X: 手柄在关闭/掀起两位间翻转并外展。②Y: M8整体掀起机械解锁。③(a)是，掀起即翻转外展；(b)是，二位运动；(c)是，相对车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "微动按键，所述微动按键安装于所述上掀手柄的外表面，所述上掀手柄位于所述关闭位置时遮盖所述微动开关，且所述微动按键与所述微动开关的触点接触，所述微动按键通过触动所述触点以使所述微动开关发送解锁信号和/或锁止信号",
+          "competitor_feature": "M8公开资料显示轻触微动开关可电弹解锁；但未公开按键与开关触点的相互接触结构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.xchuxing.com/article/149351",
+              "title": "静态体验问界M8",
+              "source_name": "新出行",
+              "snippet": "M8门把手资料写到轻触微动开关可实现电弹解锁。"
+            }
+          ],
+          "reasoning": "①X: 外表面按键触动微动开关并发送解锁/锁止信号。②Y: M8轻触开关/按钮电弹解锁。③(a)是，均为触发门锁信号；(b)是，二值信号；(c)是，门把区域；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 92.0,
+      "searched_queries": [
+        "问界M8 2025款 增程Max 半隐藏式机械拉手 微动开关",
+        "问界M8 2025款 增程Max 门把手 整体掀起 机械解锁",
+        "AITO M8 2025 semi hidden door handle micro switch",
+        "问界M8 2025款 使用说明书 车门外把手 微动开关",
+        "site:m.asemanshop.com 问界M8 门把手 维修手册",
+        "site:www.qixiu88.com 问界M8 门把手 电路图"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "一汽奥迪",
+        "company_en": "FAW Audi",
+        "product_name": "一汽奥迪A5L外门把手（2025款运动版 / 机电双保险半隐藏式）",
+        "product_name_en": "FAW Audi A5L exterior door handle (2025 Sport trim / mechatronic semi-hidden handle)",
+        "product_intro": "2025款一汽奥迪A5L运动版使用半隐藏式门把手，公开资料称其内置微动开关，并具有机械应急开启设计。",
+        "market": "中国豪华中型轿车前装市场",
+        "reason_for_deep_dive": "该SKU公开出现内置微动开关、半隐藏式门把手和机械应急设计，和权1的外把手开关/翻转结构高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.dongchedi.com/article/7562765860373414436",
+          "https://www.smartautoclub.com/p/104599/",
+          "https://www.dongchedi.com/article/7535830298005684779"
+        ],
+        "initial_evidence_summary": "一汽奥迪A5L公开宣传称采用内置微动开关的半隐藏式门把手，事故时有红色应急拉绳；行业盘点也描述其正常轻拉即可开门。"
+      },
+      "launch_date": "2025年8月7日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.dongchedi.com/article/7535830298005684779",
+          "title": "一汽奥迪A5L上市",
+          "source_name": "懂车帝",
+          "snippet": "页面记载一汽奥迪A5L于2025年8月7日上市，售价区间覆盖25.58万至30.98万元。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车门外把手",
+          "competitor_feature": "一汽奥迪A5L公开资料明确说明采用外部门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/article/7562765860373414436",
+              "title": "一汽奥迪A5L半隐藏式门把手的安全哲学",
+              "source_name": "懂车帝",
+              "snippet": "该页围绕一汽奥迪A5L半隐藏式门把手设计进行说明。"
+            }
+          ],
+          "reasoning": "①X: 车门外把手。②Y: A5L半隐藏式门把手。③(a)是；(b)是，存在性；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "把手座，所述把手座适于安装于车门",
+          "competitor_feature": "A5L半隐藏式门把手集成于车门外板，具备安装座/门把手总成结构。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/104599/",
+              "title": "10款半隐藏式门把手新车型盘点",
+              "source_name": "智能汽车资源网",
+              "snippet": "该文将一汽奥迪A5L列入半隐藏式电子门把手车型。"
+            }
+          ],
+          "reasoning": "①X: 把手座安装于车门。②Y: A5L半隐藏式门把手为车门外侧总成。③(a)是；(b)是，安装关系；(c)是，车门参考系；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "微动开关，所述微动开关设于所述把手座内，所述微动开关具有从所述把手座露出的触点",
+          "competitor_feature": "A5L公开宣传称半隐藏式门把手内置微动开关，但未进一步公开触点是否从把手座露出。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/article/7562765860373414436",
+              "title": "一汽奥迪A5L半隐藏式门把手的安全哲学",
+              "source_name": "懂车帝",
+              "snippet": "该页写到一汽奥迪A5L采用内置微动开关的半隐藏式门把手。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/104599/",
+              "title": "10款半隐藏式门把手新车型盘点",
+              "source_name": "智能汽车资源网",
+              "snippet": "行业盘点同样描述A5L半隐藏式门把手内置微动开关。"
+            }
+          ],
+          "reasoning": "①X: 把手座内微动开关且触点露出。②Y: A5L内置微动开关。③(a)是；(b)是，开关二值；(c)是，门把内部但把手座/触点未细分；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "上掀手柄，所述上掀手柄在掀起位置和关闭位置之间可翻转地安装于所述把手座，所述上掀手柄位于所述掀起位置时向车门外侧展开，所述上掀手柄位于所述关闭位置时遮盖所述把手座",
+          "competitor_feature": "A5L半隐藏式门把手正常轻拉可开门，且事故时红色应急结构可拉动；公开资料未完整展开铰接轴线。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.smartautoclub.com/p/104599/",
+              "title": "10款半隐藏式门把手新车型盘点",
+              "source_name": "智能汽车资源网",
+              "snippet": "该文称一汽奥迪A5L半隐藏式电子门把手正常轻拉即可开门，并有内侧红色应急装置。"
+            },
+            {
+              "url": "https://www.dongchedi.com/article/7562765860373414436",
+              "title": "一汽奥迪A5L半隐藏式门把手的安全哲学",
+              "source_name": "懂车帝",
+              "snippet": "该页描述A5L半隐藏式门把手在事故场景下可通过红色应急拉绳快速打开车门。"
+            }
+          ],
+          "reasoning": "①X: 可翻转上掀手柄。②Y: 半隐藏手柄轻拉/应急拉动。③(a)是，均为拉动外展开门；(b)是，二位运动；(c)是，门外侧；(d)无；缺铰接细节故可能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "微动按键，所述微动按键安装于所述上掀手柄的外表面，所述上掀手柄位于所述关闭位置时遮盖所述微动开关，且所述微动按键与所述微动开关的触点接触，所述微动按键通过触动所述触点以使所述微动开关发送解锁信号和/或锁止信号",
+          "competitor_feature": "A5L公开的内置微动开关门把手用于电子开门，但未公开外表面微动按键与触点接触结构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.dongchedi.com/article/7562765860373414436",
+              "title": "一汽奥迪A5L半隐藏式门把手的安全哲学",
+              "source_name": "懂车帝",
+              "snippet": "该页称A5L半隐藏式门把手内置微动开关，正常开启轻便。"
+            }
+          ],
+          "reasoning": "①X: 外表面按键触动微动开关输出锁信号。②Y: A5L内置微动开关用于开门。③(a)是，均触发门锁；(b)是，二值信号；(c)是，门把内部；(d)无；按键触点未明。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 92.0,
+      "searched_queries": [
+        "一汽奥迪A5L 2025款 运动版 半隐藏式门把手 微动开关",
+        "一汽奥迪A5L 2025款 机电双保险 门把手 红色应急拉绳",
+        "FAW Audi A5L 2025 semi hidden door handle microswitch",
+        "一汽奥迪A5L 2025款 使用说明书 门把手 微动开关",
+        "site:m.asemanshop.com 一汽奥迪A5L 门把手 维修手册",
+        "site:www.qixiu88.com 一汽奥迪A5L 门把手 电路图"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "吉利银河",
+        "company_en": "Geely Galaxy",
+        "product_name": "吉利星愿车门外把手（2025款UP 410km探索+版 / 主驾驶门把手按键）",
+        "product_name_en": "Geely Xingyuan exterior door handle (2025 UP 410km Explore+ / driver-side handle button)",
+        "product_intro": "2025款吉利星愿UP 410km探索+版第三方实测称驾驶者需按主驾驶车门把手按键完成解锁和落锁。",
+        "market": "中国A0级纯电小车前装市场",
+        "reason_for_deep_dive": "用户指定重点线索；该SKU公开出现主驾驶门把手实体按键，和权1微动按键锁止/解锁链条相关，但内部微动开关及上掀结构需要进一步维修资料确认。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://m.12365auto.com/scbg/20250312/544186.shtml",
+          "https://www.news.cn/auto/20241011/cd8ccfea013f43e4bd550ef0f82d8134/c.html"
+        ],
+        "initial_evidence_summary": "车质网对2025款UP 410km探索+版实测称按主驾驶车门把手按键完成解锁和落锁；未找到直接公开维修图证明内部微动开关或上掀手柄结构。"
+      },
+      "launch_date": "2024年10月9日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.news.cn/auto/20241011/cd8ccfea013f43e4bd550ef0f82d8134/c.html",
+          "title": "吉利全新A0级纯电小车吉利星愿正式上市",
+          "source_name": "新华网",
+          "snippet": "新华网页面记载吉利星愿在2024年10月9日正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车门外把手",
+          "competitor_feature": "吉利星愿2025款UP 410km探索+版实测资料明确提到主驾驶车门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.12365auto.com/scbg/20250312/544186.shtml",
+              "title": "2025款吉利星愿日常实用性测试报告",
+              "source_name": "车质网",
+              "snippet": "实测报告称评测车需按下主驾驶车门把手上的按键完成解锁和落锁。"
+            }
+          ],
+          "reasoning": "①X: 车门外把手。②Y: 主驾驶车门把手。③(a)是；(b)是，存在性；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "把手座，所述把手座适于安装于车门",
+          "competitor_feature": "星愿半隐藏式门把手安装于车门外侧，实测文字指向主驾驶车门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.12365auto.com/scbg/20250312/544186.shtml",
+              "title": "2025款吉利星愿日常实用性测试报告",
+              "source_name": "车质网",
+              "snippet": "该实测报告针对2025款UP 410km探索+版，描述主驾驶车门把手上的按键。"
+            }
+          ],
+          "reasoning": "①X: 把手座安装于车门。②Y: 主驾驶车门把手。③(a)是；(b)是，安装关系；(c)是，主驾驶车门；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "微动开关，所述微动开关设于所述把手座内，所述微动开关具有从所述把手座露出的触点",
+          "competitor_feature": "星愿公开资料仅证明主驾驶门把手有解锁/落锁按键，未公开把手座内微动开关及露出触点。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.12365auto.com/scbg/20250312/544186.shtml",
+              "title": "2025款吉利星愿日常实用性测试报告",
+              "source_name": "车质网",
+              "snippet": "实测称需按下主驾驶车门把手上的按键完成解锁和落锁。"
+            }
+          ],
+          "reasoning": "①X: 把手座内微动开关和露出触点。②Y: 门把手按键。③(a)否，按键不等同内部开关位置；(b)是，二值；(c)否，未给座内触点；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "上掀手柄，所述上掀手柄在掀起位置和关闭位置之间可翻转地安装于所述把手座，所述上掀手柄位于所述掀起位置时向车门外侧展开，所述上掀手柄位于所述关闭位置时遮盖所述把手座",
+          "competitor_feature": "星愿公开实测资料证明存在主驾驶车门把手和按键，但未找到直接证据证明其为上掀翻转手柄或关闭时遮盖把手座。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.12365auto.com/scbg/20250312/544186.shtml",
+              "title": "2025款吉利星愿日常实用性测试报告",
+              "source_name": "车质网",
+              "snippet": "实测报告仅证明主驾驶车门把手上有按键，未公开手柄上掀/翻转结构。"
+            }
+          ],
+          "reasoning": "①X: 上掀手柄翻转外展并关闭遮盖。②Y: 主驾驶车门把手按键。③(a)否，按键资料不等于上掀手柄；(b)否，未给翻转运动；(c)是，均在车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "微动按键，所述微动按键安装于所述上掀手柄的外表面，所述上掀手柄位于所述关闭位置时遮盖所述微动开关，且所述微动按键与所述微动开关的触点接触，所述微动按键通过触动所述触点以使所述微动开关发送解锁信号和/或锁止信号",
+          "competitor_feature": "星愿2025款UP 410km探索+版主驾驶车门把手上的按键可完成解锁和落锁，但未公开其与微动开关触点接触结构。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://m.12365auto.com/scbg/20250312/544186.shtml",
+              "title": "2025款吉利星愿日常实用性测试报告",
+              "source_name": "车质网",
+              "snippet": "实测称按下主驾驶车门把手上的按键方可完成解锁和落锁。"
+            }
+          ],
+          "reasoning": "①X: 外表面按键触动微动开关发送锁信号。②Y: 门把手按键完成解锁/落锁。③(a)是；(b)是，锁信号二值；(c)是，门把手外侧；(d)无；触点未公开。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 68.0,
+      "searched_queries": [
+        "吉利星愿 2025款 UP 410km 探索+版 门把手 按键 解锁 落锁",
+        "吉利星愿 2025款 UP 410km 探索+版 半隐藏式门把手",
+        "Geely Xingyuan 2025 UP 410km Explore+ semi-hidden door handle button",
+        "吉利星愿 2025款 维修手册 车门把手 微动开关",
+        "site:m.asemanshop.com 吉利星愿 门把手 维修手册",
+        "site:www.qixiu88.com 吉利星愿 门把手 电路图"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "奇瑞风云",
+        "company_en": "Chery Fulwin",
+        "product_name": "奇瑞风云A9L车门外把手（2025款标准版 / 触摸感应+机械式半隐藏）",
+        "product_name_en": "Chery Fulwin A9L exterior door handle (2025 Standard / touch sensing plus mechanical semi-hidden)",
+        "product_intro": "2025款奇瑞风云A9L标准版采用半隐藏式车门把手，公开报道称提供触摸感应式和机械式两种开启方式。",
+        "market": "中国插混中大型轿车前装市场",
+        "reason_for_deep_dive": "该SKU采用半隐藏式门把手且兼具电控感应和机械开启，和权1的翻转式门把手与解锁信号特征相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.12365auto.com/xcdg/20250708/550925.shtml",
+          "https://www.ithome.com/0/866/705.htm",
+          "https://www.smartautoclub.com/p/104599/"
+        ],
+        "initial_evidence_summary": "车质网报道风云A9L门把手为半隐藏式，提供触摸感应式和机械式两种开启方式；IT之家确认该车2025年7月8日上市。"
+      },
+      "launch_date": "2025年7月8日正式上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/866/705.htm",
+          "title": "奇瑞风云A9L插混轿车上市",
+          "source_name": "IT之家",
+          "snippet": "页面记载奇瑞风云A9L在2025年7月8日上市，并推出4款配置车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车门外把手",
+          "competitor_feature": "风云A9L公开报道明确说明车身配备半隐藏式车门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.12365auto.com/xcdg/20250708/550925.shtml",
+              "title": "奇瑞风云A9L上市",
+              "source_name": "车质网",
+              "snippet": "报道说明风云A9L门把手采用半隐藏式设计。"
+            }
+          ],
+          "reasoning": "①X: 车门外把手。②Y: A9L半隐藏式车门把手。③(a)是；(b)是，存在性；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "把手座，所述把手座适于安装于车门",
+          "competitor_feature": "风云A9L半隐藏式车门把手安装在车身侧面车门区域。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.12365auto.com/xcdg/20250708/550925.shtml",
+              "title": "奇瑞风云A9L上市",
+              "source_name": "车质网",
+              "snippet": "报道在车身侧面描述该车半隐藏式门把手。"
+            }
+          ],
+          "reasoning": "①X: 把手座安装于车门。②Y: 车身侧面半隐藏式门把手。③(a)是；(b)是，安装关系；(c)是，车门侧面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "微动开关，所述微动开关设于所述把手座内，所述微动开关具有从所述把手座露出的触点",
+          "competitor_feature": "风云A9L公开资料证明存在触摸感应开启，但未公开把手座内微动开关及触点结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.12365auto.com/xcdg/20250708/550925.shtml",
+              "title": "奇瑞风云A9L上市",
+              "source_name": "车质网",
+              "snippet": "报道称其门把手提供触摸感应式和机械式开启方式。"
+            }
+          ],
+          "reasoning": "①X: 微动开关在把手座内且触点露出。②Y: 触摸感应开启。③(a)否，感应不等同微动开关；(b)否，感应/机械未明；(c)否，位置未公开；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "上掀手柄，所述上掀手柄在掀起位置和关闭位置之间可翻转地安装于所述把手座，所述上掀手柄位于所述掀起位置时向车门外侧展开，所述上掀手柄位于所述关闭位置时遮盖所述把手座",
+          "competitor_feature": "风云A9L门把手为半隐藏式并提供机械式开启，公开资料未直接说明铰接/上掀方向。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.12365auto.com/xcdg/20250708/550925.shtml",
+              "title": "奇瑞风云A9L上市",
+              "source_name": "车质网",
+              "snippet": "报道称其门把手提供触摸感应式和机械式两种开启方式，兼顾美观与实用。"
+            },
+            {
+              "url": "https://www.smartautoclub.com/p/104599/",
+              "title": "10款半隐藏式门把手新车型盘点",
+              "source_name": "智能汽车资源网",
+              "snippet": "行业盘点称风云A9L采用双冗余半隐藏式门把手，含感应开启和物理开启模式。"
+            }
+          ],
+          "reasoning": "①X: 翻转上掀手柄。②Y: 半隐藏机械式开启。③(a)是，均可机械拉开；(b)是，二位运动；(c)是，车门外侧；(d)无；缺上掀轴线故可能。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "微动按键，所述微动按键安装于所述上掀手柄的外表面，所述上掀手柄位于所述关闭位置时遮盖所述微动开关，且所述微动按键与所述微动开关的触点接触，所述微动按键通过触动所述触点以使所述微动开关发送解锁信号和/或锁止信号",
+          "competitor_feature": "风云A9L公开有触摸感应式开启和物理开启，但未证明存在微动按键接触微动开关触点。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.12365auto.com/xcdg/20250708/550925.shtml",
+              "title": "奇瑞风云A9L上市",
+              "source_name": "车质网",
+              "snippet": "报道公开了触摸感应式开启与机械式开启两种方式。"
+            }
+          ],
+          "reasoning": "①X: 外表面微动按键触发锁信号。②Y: 触摸感应开启。③(a)否，感应不等同按键触点；(b)否，量纲不同；(c)否，未明外表面按键；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 68.0,
+      "searched_queries": [
+        "奇瑞风云A9L 2025款 标准版 半隐藏式门把手 机械式开启",
+        "奇瑞风云A9L 2025款 门把手 触摸感应 机械物理",
+        "Chery Fulwin A9L 2025 semi-hidden door handle mechanical touch",
+        "奇瑞风云A9L 维修手册 门把手 微动开关",
+        "site:m.asemanshop.com 风云A9L 门把手 维修手册",
+        "site:www.qixiu88.com 风云A9L 门把手 电路图"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites_stage0"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "一汽-大众",
+        "company_en": "FAW-Volkswagen",
+        "product_name": "大众ID.4 CROZZ车门外把手（2025款纯享版 / 半隐藏式电动按键）",
+        "product_name_en": "Volkswagen ID.4 CROZZ exterior door handle (2025 entry trim / semi-hidden electric button)",
+        "product_intro": "2025款大众ID.4 CROZZ延续半隐藏式门把手设计；公开评测称扣动门把手下按钮即可打开车门。",
+        "market": "中国合资紧凑型纯电SUV前装市场",
+        "reason_for_deep_dive": "该SKU公开出现半隐藏式把手、把手下按钮和上提/拉动开门方式，和权1的翻转外把手及按键触发锁信号相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.yiche.com/zhai/1805087/",
+          "https://cn.technode.com/post/2025-01-05/2025-wv-id-4-crozz%E4%B8%8A%E5%B8%82/"
+        ],
+        "initial_evidence_summary": "易车称ID.4 X/CROZZ同类半隐藏式门把手扣动下方按钮即可开门；未纳入未验活的维修/救援资料链接。"
+      },
+      "launch_date": "2025年1月上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://cn.technode.com/post/2025-01-05/2025-wv-id-4-crozz%E4%B8%8A%E5%B8%82/",
+          "title": "2025款大众ID.4 CROZZ上市",
+          "source_name": "动点科技",
+          "snippet": "页面记载2025款大众ID.4 CROZZ正式上市，共推出4款配置车型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种车门外把手",
+          "competitor_feature": "ID.4 CROZZ公开资料明确说明其采用半隐藏式车门把手。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1805087/",
+              "title": "ID.4 X车门把手采用半隐藏式设计",
+              "source_name": "易车",
+              "snippet": "该页称大众ID.4车门把手采用半隐藏式设计。"
+            }
+          ],
+          "reasoning": "①X: 车门外把手。②Y: ID.4半隐藏式车门把手。③(a)是；(b)是，存在性；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "把手座，所述把手座适于安装于车门",
+          "competitor_feature": "ID.4半隐藏式门把手位于车门外侧，门把手下方集成按钮。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1805087/",
+              "title": "ID.4 X车门把手采用半隐藏式设计",
+              "source_name": "易车",
+              "snippet": "该页描述扣动门把手下按钮即可打开车门，表明把手总成位于车门外侧。"
+            }
+          ],
+          "reasoning": "①X: 把手座安装于车门。②Y: ID.4门把手下方按钮和把手总成。③(a)是；(b)是，安装关系；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "微动开关，所述微动开关设于所述把手座内，所述微动开关具有从所述把手座露出的触点",
+          "competitor_feature": "ID.4公开资料证明把手内侧/下方有按钮，但未公开微动开关位于把手座内及触点露出。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1805087/",
+              "title": "ID.4 X车门把手采用半隐藏式设计",
+              "source_name": "易车",
+              "snippet": "该页称扣动门把手下按钮即可打开车门，但未公开微动开关及触点结构。"
+            }
+          ],
+          "reasoning": "①X: 座内微动开关和露出触点。②Y: 把手内侧按钮。③(a)否，按钮不等同内部开关触点；(b)是，二值；(c)否，未明座内触点；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "上掀手柄，所述上掀手柄在掀起位置和关闭位置之间可翻转地安装于所述把手座，所述上掀手柄位于所述掀起位置时向车门外侧展开，所述上掀手柄位于所述关闭位置时遮盖所述把手座",
+          "competitor_feature": "ID.4公开资料证明其半隐藏式门把手可通过下方按钮开门，但未找到已验活证据证明上掀翻转手柄结构。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1805087/",
+              "title": "ID.4 X车门把手采用半隐藏式设计",
+              "source_name": "易车",
+              "snippet": "该页称ID.4车门把手采用半隐藏式设计，扣动门把手下按钮即可打开车门。"
+            }
+          ],
+          "reasoning": "①X: 上掀翻转外展。②Y: 半隐藏把手下按钮开门。③(a)否，按钮开门不等于上掀手柄；(b)否，未公开翻转运动；(c)是，车门外侧；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "微动按键，所述微动按键安装于所述上掀手柄的外表面，所述上掀手柄位于所述关闭位置时遮盖所述微动开关，且所述微动按键与所述微动开关的触点接触，所述微动按键通过触动所述触点以使所述微动开关发送解锁信号和/或锁止信号",
+          "competitor_feature": "ID.4门把手下方/内侧按钮可辅助打开车门，但公开资料未证明该按钮触动微动开关触点并发送解锁/锁止信号。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.yiche.com/zhai/1805087/",
+              "title": "ID.4 X车门把手采用半隐藏式设计",
+              "source_name": "易车",
+              "snippet": "该页称扣动门把手下按钮即可打开车门。"
+            }
+          ],
+          "reasoning": "①X: 外表面微动按键触发锁信号。②Y: 把手按钮参与开门。③(a)是，均为门锁触发；(b)是，二值；(c)是，门把手区域；(d)无；触点未明。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 68.0,
+      "searched_queries": [
+        "大众ID.4 CROZZ 2025款 纯享版 半隐藏式门把手 按钮",
+        "大众ID.4 CROZZ 2025款 门把手 上提 应急解锁",
+        "Volkswagen ID.4 2025 door handle button lift up rescue sheet",
+        "ID.4 CROZZ 2025 使用说明书 车门把手 按钮",
+        "site:m.asemanshop.com ID.4 CROZZ 门把手 维修手册",
+        "site:www.qixiu88.com ID.4 CROZZ 门把手 电路图"
+      ],
+      "searched_providers": [
+        "web_search",
+        "recommended_sites_stage0"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}
