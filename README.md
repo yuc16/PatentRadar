@@ -43,6 +43,7 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 - **🧠 双 LLM 后端**　ChatGPT OAuth（Codex Responses SSE，gpt-5.5 默认）或任意 OpenAI 兼容网关（aihubmix / DeepSeek / 自建）一键切换
 - **📄 自动 PDF 渲染**　WeasyPrint + PingFang SC 中文字体 + 表格防溢出 CSS，markdown / PDF 双格式落盘
 - **🤖 双模运行**　既能作为独立项目跑（CLI / Web），又能作为 skill 被其他 agent 如 claude-code/codex 调用
+- **✅ 黄金集量化评估**　用 26 件「已认定侵权」的真实专利做 ground truth 端到端验证：竞品召回 Hit@5 96.2% / Hit@3 80.8% / Hit@1 65.4%，证据 URL 可达率 95.8%、准确率 93.8%（详见 [评估报告](evaluate/EVALUATION.md)）
 
 ---
 
