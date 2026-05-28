@@ -14,7 +14,7 @@
 
 ---
 
-- **黄金集**：[`测试集.xlsx`](测试集.xlsx)，共39个专利 → 已认定侵权竞品。本轮已跑 **前26个专利**。
+- **黄金集**：[`测试集.xlsx`](测试集.xlsx)，已跑共计**26 个专利** → 已认定侵权竞品。
 - **口径**：以专利为单位，命中该专利**任一**真竞品即算命中；位次按 `total_score` 并列排名（同分并列）。
 
 ## 评估指标
@@ -37,9 +37,9 @@
 
 ---
 
-附注：
+<sub><i>附注：</i></sub>
 
-<sub>1) **各指标分子 / 分母**（召回类分母统一为 26 = 已跑且在黄金集中的专利数；命中位次按 `total_score` 并列排名）</sub>
+<sub>1) **各指标分子 / 分母**（召回类分母统一为 26 = 黄金集专利数（全部已跑）；命中位次按 `total_score` 并列排名）</sub>
 
 <sub>**Hit@5** = 命中专利 / 已跑专利 = 25 / 26（命中 = 该专利任一真竞品进入 Top-5）</sub><br>
 <sub>**Hit@3** = 最佳命中位次 ≤ 3 的专利 / 26 = 21 / 26</sub><br>
@@ -49,4 +49,4 @@
 <sub>**URL 可达率** = HTTP 可访问 URL / 全部唯一证据 URL = 454 / 474</sub><br>
 <sub>**URL 准确率** = 页面正文含对应竞品标识的 URL / 可判定 URL = 380 / 405（排除 52 个 PDF / 动态渲染 / 抓取失败的 URL）</sub>
 
-<sub>2) **复现** · <code>uv run python evaluate/eval.py</code>（召回/判定）· <code>uv run python evaluate/check_urls.py</code>（可达率）· <code>uv run python evaluate/check_evidence.py</code>（准确率）｜明细：<a href="eval_result.csv">eval_result.csv</a></sub>
+<sub>2) **复现方式** · <code>uv run python evaluate/eval.py</code>（召回/判定）· <code>uv run python evaluate/check_urls.py</code>（可达率）· <code>uv run python evaluate/check_evidence.py</code>（准确率）｜明细：<a href="eval_result.csv">eval_result.csv</a></sub>
