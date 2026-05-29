@@ -56,7 +56,7 @@ def extract_tokens(desc: str) -> tuple[str, set[str]]:
     for seg in re.split(r"[\s/、,，;；]+", s):
         m = re.search(r"[一-鿿]{2,5}", seg)
         if m:
-            brand = m.group(0)[:2]
+            brand = m.group(0)  # 完整品牌词；匹配时在 match_one 内取前 2 字保持鲁棒
             break
     # 型号 token：字母(+数字+连字符)组合，length>=2，去停用
     models: set[str] = set()
@@ -94,20 +94,16 @@ def candidate_haystack(cand: dict) -> str:
 
 
 def match_one(brand: str, models: set[str], hay: str) -> str:
-    """返回 HIT / REVIEW / MISS。hay 已大写。"""
-    brand_hit = bool(brand) and brand in hay
-    model_hit = any(m in hay for m in models) if models else None
+    """返回 HIT / MISS。hay 已大写；品牌取前 2 字做包含匹配（鲁棒）。
+    有型号 token 时要求品牌+型号同时命中才算 HIT（型号不符如 M8≠M9 判 MISS）。"""
+    core = brand[:2] if brand else ""
+    brand_hit = bool(core) and core in hay
+    model_hit = any(m in hay for m in models) if models else False
 
     if models:
-        if brand_hit and model_hit:
-            return "HIT"
-        if brand_hit or model_hit:
-            return "REVIEW"
-        return "MISS"
+        return "HIT" if (brand_hit and model_hit) else "MISS"
     # 纯品牌竞品（无型号 token）
-    if brand_hit:
-        return "HIT"
-    return "MISS"
+    return "HIT" if brand_hit else "MISS"
 
 
 def score_rank(cand: dict, tops: list[dict]) -> int:
@@ -146,29 +142,23 @@ def eval_pub(pub: str, golds: list[str]) -> list[dict]:
 
         # 先在 top_competitors 里找
         for cand in tops:
-            hay = candidate_haystack(cand)
-            label = match_one(brand, models, hay)
-            if label in ("HIT", "REVIEW"):
+            if match_one(brand, models, candidate_haystack(cand)) == "HIT":
                 c = cand.get("candidate", {})
                 best = {
-                    "label": label, "rank": score_rank(cand, tops),
+                    "label": "HIT", "rank": score_rank(cand, tops),
                     "cand": f"{c.get('company','')} {c.get('product_name','')}".strip(),
                     "claim1": claim1_status(cand),
                     "note": "",
                 }
-                if label == "HIT":
-                    break  # HIT 优先，停止
+                break
 
         # top 里没命中 → 看是否被误杀（excluded）
         if best["label"] == "MISS":
             for cand in excluded:
-                hay = candidate_haystack(cand)
-                label = match_one(brand, models, hay)
-                if label in ("HIT", "REVIEW"):
+                if match_one(brand, models, candidate_haystack(cand)) == "HIT":
                     c = cand.get("candidate", {})
                     best = {
-                        "label": "EXCLUDED_HIT" if label == "HIT" else "EXCLUDED_REVIEW",
-                        "rank": "",
+                        "label": "EXCLUDED_HIT", "rank": "",
                         "cand": f"{c.get('company','')} {c.get('product_name','')}".strip(),
                         "claim1": claim1_status(cand),
                         "note": "真竞品被丢进 excluded（漏杀）",
@@ -200,7 +190,7 @@ def decision_metrics(gold: dict[str, list[str]]) -> dict:
         for g in golds:
             brand, models = extract_tokens(g)
             for c in tops:
-                if match_one(brand, models, candidate_haystack(c)) in ("HIT", "REVIEW"):
+                if match_one(brand, models, candidate_haystack(c)) == "HIT":
                     scores.append(float(c.get("claim_1_score") or 0))
                     break
         if scores:
