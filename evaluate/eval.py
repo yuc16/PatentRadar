@@ -35,6 +35,8 @@ NOISE_CN = [
     "中版", "纯电动", "增程式", "插电混动", "四驱", "两驱", "单速", "双电机",
     "六座版", "六座", "五座", "七座", "座版", "醇享版", "乾崑", "款", "版",
 ]
+# 品牌后无分隔符、启发式抽取会带入多余字的特例，直接校正显示
+BRAND_FIX = {"皇发鱼眼圆": "皇发", "智界新": "智界"}
 
 
 def _clean(desc: str) -> str:
@@ -57,6 +59,7 @@ def extract_tokens(desc: str) -> tuple[str, set[str]]:
         m = re.search(r"[一-鿿]{2,5}", seg)
         if m:
             brand = m.group(0)  # 完整品牌词；匹配时在 match_one 内取前 2 字保持鲁棒
+            brand = BRAND_FIX.get(brand, brand)
             break
     # 型号 token：字母(+数字+连字符)组合，length>=2，去停用
     models: set[str] = set()
@@ -113,13 +116,6 @@ def score_rank(cand: dict, tops: list[dict]) -> int:
     return 1 + sum(1 for o in tops if float(o.get("total_score") or 0) > s)
 
 
-def claim1_status(cand: dict) -> str:
-    for cmp in cand.get("comparisons", []):
-        if str(cmp.get("feature_id", "")).startswith("C1-F1"):
-            return cmp.get("status", "")
-    return ""
-
-
 def eval_pub(pub: str, golds: list[str]) -> list[dict]:
     out_dir = ROOT / pub / "module_2" / "top_competitors.json"
     rows = []
@@ -128,7 +124,7 @@ def eval_pub(pub: str, golds: list[str]) -> list[dict]:
             rows.append({
                 "publication_no": pub, "ran": "NO", "gold_competitor": g,
                 "label": "NOT_RUN", "rank": "", "matched_candidate": "",
-                "claim1": "", "note": "无结果目录",
+                "note": "无结果目录",
             })
         return rows
 
@@ -138,7 +134,7 @@ def eval_pub(pub: str, golds: list[str]) -> list[dict]:
 
     for g in golds:
         brand, models = extract_tokens(g)
-        best = {"label": "MISS", "rank": "", "cand": "", "claim1": "", "note": ""}
+        best = {"label": "MISS", "rank": "", "cand": "", "note": ""}
 
         # 先在 top_competitors 里找
         for cand in tops:
@@ -147,7 +143,6 @@ def eval_pub(pub: str, golds: list[str]) -> list[dict]:
                 best = {
                     "label": "HIT", "rank": score_rank(cand, tops),
                     "cand": f"{c.get('company','')} {c.get('product_name','')}".strip(),
-                    "claim1": claim1_status(cand),
                     "note": "",
                 }
                 break
@@ -160,7 +155,6 @@ def eval_pub(pub: str, golds: list[str]) -> list[dict]:
                     best = {
                         "label": "EXCLUDED_HIT", "rank": "",
                         "cand": f"{c.get('company','')} {c.get('product_name','')}".strip(),
-                        "claim1": claim1_status(cand),
                         "note": "真竞品被丢进 excluded（漏杀）",
                     }
                     break
@@ -168,7 +162,7 @@ def eval_pub(pub: str, golds: list[str]) -> list[dict]:
         rows.append({
             "publication_no": pub, "ran": "YES", "gold_competitor": g,
             "label": best["label"], "rank": best["rank"],
-            "matched_candidate": best["cand"], "claim1": best["claim1"],
+            "matched_candidate": best["cand"],
             "brand_token": brand, "model_tokens": "|".join(sorted(models)),
             "note": best["note"],
         })
@@ -211,7 +205,7 @@ def main() -> None:
         all_rows.extend(eval_pub(pub, gold[pub]))
 
     cols = ["publication_no", "ran", "gold_competitor", "label", "rank",
-            "matched_candidate", "claim1", "brand_token", "model_tokens", "note"]
+            "matched_candidate", "brand_token", "model_tokens", "note"]
     with OUT_CSV.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader()
