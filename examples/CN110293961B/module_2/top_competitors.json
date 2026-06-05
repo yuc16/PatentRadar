@@ -1,0 +1,714 @@
+{
+  "publication_no": "CN110293961B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "智界",
+        "company_en": "Luxeed",
+        "product_name": "智界新S7 Max（2025款 / 华为乾崑智驾ADS 4高阶版）",
+        "product_name_en": "Luxeed New S7 Max (MY2025 / Huawei Qiankun ADS 4 Advanced)",
+        "product_intro": "智界新S7 Max为纯电轿车，官方配置列明16.1英寸中控屏、360全景环视、泊车辅助APA、遥控泊车RPA及ADS 4高阶版硬件。",
+        "market": "中国高阶智能驾驶纯电轿车前装市场",
+        "reason_for_deep_dive": "官方用户手册直接公开自定义车位、车位框自动调整、蓝色可泊确认、APA自动泊入及系统自动标注P车位框，权1特征覆盖度高。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://hima.auto/zhijie/s7/configuration/",
+          "https://hima.auto/dam/hima-site/cn/zhijie/service/pdf/s7-product-manual-20250123.pdf",
+          "https://www.ithome.com/0/813/361.htm",
+          "https://m.asemanshop.com/page_show/"
+        ],
+        "initial_evidence_summary": "官方配置页确认Max版配备ADS 4、360全景环视、APA/RPA；2025-01-23用户手册确认APA界面、自定义车位框、车位吸附/自动调整和自动泊入。"
+      },
+      "launch_date": "2024年11月26日正式上市，2024年12月1日开启交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/813/361.htm",
+          "title": "鸿蒙智行智界新 S7 汽车发布",
+          "source_name": "IT之家",
+          "snippet": "智界新S7正式发布，12月1日开启交付，Max版售价列明。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种自动泊车系统",
+          "competitor_feature": "智界新S7 Max官方配置含泊车辅助APA、遥控泊车RPA，是量产车辆上的自动泊车系统。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hima.auto/zhijie/s7/configuration/",
+              "title": "智界新S7参数配置表",
+              "source_name": "鸿蒙智行",
+              "snippet": "辅助驾驶-泊车列明360全景环视、泊车辅助APA、遥控泊车辅助RPA。"
+            }
+          ],
+          "reasoning": "①X为自动泊车系统。②Y为Max版APA/RPA配置。③(a)是，均为自动泊车；(b)是，二值存在；(c)是，车载系统；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括显示单元以及自动泊车控制单元",
+          "competitor_feature": "智界新S7 Max配16.1英寸中控屏，并配备华为乾崑智驾ADS 4高阶版及泊车辅助功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hima.auto/zhijie/s7/configuration/",
+              "title": "智界新S7参数配置表",
+              "source_name": "鸿蒙智行",
+              "snippet": "智能座舱列16.1英寸中控屏；辅助驾驶系统为ADS 4高阶版。"
+            }
+          ],
+          "reasoning": "①X为显示单元+泊车控制单元。②Y为中控屏+ADS/APA。③(a)是；(b)是，部件存在；(c)是，整车电子架构；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "手册说明可在360全景环视/泊车界面点触自定义车位，将自定义车位框放置到安全合适位置并拖动车位框调整位置和角度。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/zhijie/service/pdf/s7-product-manual-20250123.pdf",
+              "title": "智界S7用户手册 2025-01-23",
+              "source_name": "鸿蒙智行",
+              "snippet": "在360全景环视界面进入APA；自定义车位框可拖动调整位置和角度。"
+            }
+          ],
+          "reasoning": "①X为图像上划定意向区域。②Y为360影像+拖动车位框。③(a)是；(b)是，交互区域；(c)是，环视界面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+          "competitor_feature": "手册说明自定义车位框靠近路沿或划线车位等边界目标时，车位框会参考边界目标自动调整/微调；白色框变为蓝色表示可供泊车，随后系统执行泊入。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/zhijie/service/pdf/s7-product-manual-20250123.pdf",
+              "title": "智界S7用户手册 2025-01-23",
+              "source_name": "鸿蒙智行",
+              "snippet": "车位框参考边界目标自动调整；白色框变蓝后表示该车位可供泊车。"
+            }
+          ],
+          "reasoning": "①X为识别、优化、控制泊入。②Y为车位框自动调整、蓝色可泊、自动泊入。③(a)是；(b)是，流程；(c)是，目标车位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+          "competitor_feature": "手册说明APA界面上会显示可泊车位，驾驶员可点触界面上标注P的车位框选择目标车位。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://hima.auto/dam/hima-site/cn/zhijie/service/pdf/s7-product-manual-20250123.pdf",
+              "title": "智界S7用户手册 2025-01-23",
+              "source_name": "鸿蒙智行",
+              "snippet": "驾驶员可点触界面上标注P的车位框；各车位框含义在APA界面说明。"
+            }
+          ],
+          "reasoning": "①X为系统选择并标定优选区域。②Y为APA检测并标注P车位框。③(a)是；(b)是，集合/标注；(c)是，泊车图像界面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100.0,
+      "searched_queries": [
+        "智界 新S7 Max ADS 4 泊车辅助 APA 自定义车位 用户手册",
+        "智界S7 2025 用户手册 自定义车位 车位框 360全景",
+        "智界 新S7 Max 上市 2024 11月 交付",
+        "site:m.asemanshop.com 智界S7 2025 泊车 控制器",
+        "site:www.qixiu88.com 智界S7 2025 泊车 控制器"
+      ],
+      "searched_providers": [
+        "web_search",
+        "hima.auto",
+        "m.asemanshop.com",
+        "www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "乐道汽车",
+        "company_en": "ONVO",
+        "product_name": "乐道L60（2024款创始版 / 视觉融合泊车辅助）",
+        "product_name_en": "ONVO L60 (MY2024 Founders Edition / Vision Fusion Parking Assist)",
+        "product_intro": "乐道L60为蔚来子品牌量产智能电动SUV，用户手册公开视觉融合泊车辅助、随心停、遥控泊车辅助等泊车功能。",
+        "market": "中国家庭智能电动SUV前装市场",
+        "reason_for_deep_dive": "官方在线手册公开中控屏、环视摄像头、虚拟车位、车位搜索、蓝色选中车位和自动泊入流程，和权1显示/选择/控制特征高度相关。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://cdn-public.nio.com/www-alps-cn/user-manuals/L60/index.html",
+          "https://cnevpost.com/2024/09/28/nio-onvo-begins-l60-deliveries/",
+          "https://m.asemanshop.com/page_show/"
+        ],
+        "initial_evidence_summary": "L60手册载明多点触摸中控屏、视觉融合泊车辅助、随心停生成虚拟车位、车位搜索和蓝色选中车位；上市/交付时间晚于专利申请日。"
+      },
+      "launch_date": "2024年9月19日上市，2024年9月28日开始交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://cnevpost.com/2024/09/28/nio-onvo-begins-l60-deliveries/",
+          "title": "Nio Onvo begins L60 deliveries",
+          "source_name": "CnEVPost",
+          "snippet": "Onvo L60 followed its September 19 launch and began China deliveries on September 28."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种自动泊车系统",
+          "competitor_feature": "乐道L60用户手册设有视觉融合泊车辅助、遥控泊车辅助，可自动泊入指定或选中车位。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://cdn-public.nio.com/www-alps-cn/user-manuals/L60/index.html",
+              "title": "L60用户手册",
+              "source_name": "乐道汽车",
+              "snippet": "辅助驾驶目录包含视觉融合泊车辅助、遥控泊车辅助、车辆近距召唤。"
+            }
+          ],
+          "reasoning": "①X为自动泊车系统。②Y为视觉融合泊车/遥控泊车。③(a)是；(b)是，存在性；(c)是，整车泊车；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括显示单元以及自动泊车控制单元",
+          "competitor_feature": "手册列明多点触摸中控屏，并说明视觉融合泊车依赖超声波传感器和环视摄像头功能正常。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://cdn-public.nio.com/www-alps-cn/user-manuals/L60/index.html",
+              "title": "L60用户手册",
+              "source_name": "乐道汽车",
+              "snippet": "车内设施概览列多点触摸中控屏；泊车条件列超声波传感器和环视摄像头。"
+            }
+          ],
+          "reasoning": "①X为显示+控制。②Y为中控屏+泊车感知控制。③(a)是；(b)是，部件存在；(c)是，车载电子；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "手册说明行驶至无划线区域、泊车空间不规则或较小时，可使用随心停功能生成虚拟车位；中控屏/双视角影像用于泊车交互。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://cdn-public.nio.com/www-alps-cn/user-manuals/L60/index.html",
+              "title": "L60用户手册",
+              "source_name": "乐道汽车",
+              "snippet": "无划线停车区域或空间不规则时，可使用随心停功能生成虚拟车位。"
+            }
+          ],
+          "reasoning": "①X为图像上划定区域。②Y为中控影像中生成虚拟车位。③(a)是；(b)是，目标区域；(c)是，泊车影像界面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+          "competitor_feature": "手册说明选择停车位后按界面提示开始泊车，且系统只显示判断可以泊入的停车位；但未直接写明对用户虚拟车位框自动优化。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://cdn-public.nio.com/www-alps-cn/user-manuals/L60/index.html",
+              "title": "L60用户手册",
+              "source_name": "乐道汽车",
+              "snippet": "选择安全合适停车位后按界面提示开始泊车；系统只显示判断可以泊入的停车位。"
+            }
+          ],
+          "reasoning": "①X为识别、优化并泊入。②Y为可泊判断+自动泊入。③(a)是，宽定义下接近；(b)是，流程；(c)是，目标车位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+          "competitor_feature": "手册说明车辆搜索可用车位，找到后驾驶员检查并选择安全合适停车位；选中的车位会显示蓝色。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://cdn-public.nio.com/www-alps-cn/user-manuals/L60/index.html",
+              "title": "L60用户手册",
+              "source_name": "乐道汽车",
+              "snippet": "车辆搜索可用车位；选中的车位会显示蓝色。"
+            }
+          ],
+          "reasoning": "①X为系统选择并标定优选区域。②Y为搜索可用车位并蓝色标定。③(a)是；(b)是，集合/标注；(c)是，显示屏泊车界面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 96.0,
+      "searched_queries": [
+        "乐道 L60 随心停 虚拟车位 视觉融合泊车 用户手册",
+        "ONVO L60 vision fusion parking assist custom parking",
+        "乐道L60 2024 上市 9月19日 交付",
+        "site:m.asemanshop.com 乐道L60 泊车辅助",
+        "site:www.qixiu88.com 乐道L60 泊车辅助"
+      ],
+      "searched_providers": [
+        "web_search",
+        "cdn-public.nio.com",
+        "m.asemanshop.com",
+        "www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "小鹏汽车",
+        "company_en": "XPeng",
+        "product_name": "小鹏P7+（2026款725 Max旗舰版 / AI天玑系统）",
+        "product_name_en": "XPeng P7+ (MY2026 725 Max Flagship / AI Tianji OS)",
+        "product_intro": "2026款小鹏P7+ 725 Max旗舰版官方配置列明15.6英寸中控屏、360高清环视摄像头、APA、RPA、离车泊入、车位到车位和自定义泊车。",
+        "market": "中国中大型智能纯电轿车前装市场",
+        "reason_for_deep_dive": "官方配置直接列出自定义泊车、360环视、APA/RPA；公开OTA资料说明可手动生成车位框并AI校准后辅助泊入。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.xiaopeng.com/p7_plus_2026/configuration.html",
+          "https://www.autohome.com.cn/news/202507/1307311.html",
+          "https://www.ithome.com/0/848/251.htm",
+          "https://m.asemanshop.com/www/cars/8401.html"
+        ],
+        "initial_evidence_summary": "小鹏官方配置页确认P7+ Max具备自定义泊车、APA/RPA和360高清环视；第三方OTA报道描述无划线环境下手动生成车位框、AI校准并完成辅助泊入。"
+      },
+      "launch_date": "2025年4月23日上市",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/848/251.htm",
+          "title": "小鹏 P7+ 超长续航 Max 旗舰版发布",
+          "source_name": "IT之家",
+          "snippet": "小鹏P7+超长续航Max旗舰版于2025上海车展正式上市。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种自动泊车系统",
+          "competitor_feature": "P7+ 725 Max旗舰版官方配置含APA超级智能辅助泊车、RPA遥控泊车、离车泊入和自定义泊车。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xiaopeng.com/p7_plus_2026/configuration.html",
+              "title": "2026款小鹏P7+参数配置表",
+              "source_name": "小鹏汽车",
+              "snippet": "AI辅助驾驶项列APA、RPA、直线召唤、离车泊入、自定义泊车。"
+            }
+          ],
+          "reasoning": "①X为自动泊车系统。②Y为APA/RPA/自定义泊车。③(a)是；(b)是，存在性；(c)是，车载泊车；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括显示单元以及自动泊车控制单元",
+          "competitor_feature": "官方配置列明15.6英寸悬浮中控屏、图灵AI芯片、360高清环视摄像头和APA/RPA等泊车功能。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xiaopeng.com/p7_plus_2026/configuration.html",
+              "title": "2026款小鹏P7+参数配置表",
+              "source_name": "小鹏汽车",
+              "snippet": "配置列15.6英寸中控屏、图灵AI芯片、360高清环视摄像头。"
+            }
+          ],
+          "reasoning": "①X为显示+控制。②Y为中控屏+AI芯片+泊车功能。③(a)是；(b)是，部件存在；(c)是，整车系统；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "官方配置列自定义泊车和360高清环视；公开OTA报道称无划线环境可手动生成停车位框。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.xiaopeng.com/p7_plus_2026/configuration.html",
+              "title": "2026款小鹏P7+参数配置表",
+              "source_name": "小鹏汽车",
+              "snippet": "配置表列360高清环视摄像头与自定义泊车。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/news/202507/1307311.html",
+              "title": "小鹏AI天玑OS体验升级已开启全量推送",
+              "source_name": "汽车之家",
+              "snippet": "自定义泊车可在无划线车位环境中手动生成停车位框。"
+            }
+          ],
+          "reasoning": "①X为图像上划定区域。②Y为自定义泊车+手动车位框。③(a)是；(b)是，区域框；(c)是，泊车影像；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+          "competitor_feature": "公开OTA报道称AI自动校准匹配最佳位置并最终完成辅助泊入；官方配置页确认该SKU具备自定义泊车和APA。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.autohome.com.cn/news/202507/1307311.html",
+              "title": "小鹏AI天玑OS体验升级已开启全量推送",
+              "source_name": "汽车之家",
+              "snippet": "自定义泊车可手动生成车位框，AI自动校准匹配最佳位置并完成泊入。"
+            }
+          ],
+          "reasoning": "①X为识别、优化并控制泊入。②Y为AI校准+辅助泊入。③(a)是；(b)是，流程；(c)是，目标车位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+          "competitor_feature": "P7+官方配置具备360高清环视、自定义泊车、APA，公开资料说明车位框经AI校准匹配最佳位置后泊入。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.xiaopeng.com/p7_plus_2026/configuration.html",
+              "title": "2026款小鹏P7+参数配置表",
+              "source_name": "小鹏汽车",
+              "snippet": "AI辅助驾驶列车位到车位、APA、RPA、自定义泊车。"
+            },
+            {
+              "url": "https://www.autohome.com.cn/news/202507/1307311.html",
+              "title": "小鹏AI天玑OS体验升级已开启全量推送",
+              "source_name": "汽车之家",
+              "snippet": "自定义泊车在无划线环境中可生成停车位框并完成辅助泊入。"
+            }
+          ],
+          "reasoning": "①X为系统选择并标定优选区域。②Y为车位到车位/APA与AI匹配车位框。③(a)是；(b)是，标注集合；(c)是，泊车界面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 92.0,
+      "searched_queries": [
+        "小鹏 P7+ 2026 725 Max 自定义泊车 360高清环视 配置",
+        "小鹏 P7+ 天玑 5.7 自定义泊车 车位框 AI校准",
+        "XPeng P7+ custom parking space drag parking box",
+        "site:m.asemanshop.com 小鹏P7+ 自定义泊车",
+        "site:www.qixiu88.com 小鹏P7+ 泊车辅助"
+      ],
+      "searched_providers": [
+        "web_search",
+        "xiaopeng.com",
+        "autohome.com.cn",
+        "m.asemanshop.com",
+        "www.qixiu88.com"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "小米汽车",
+        "company_en": "Xiaomi EV",
+        "product_name": "小米SU7 Max（2024款 / Xiaomi Pilot Max）",
+        "product_name_en": "Xiaomi SU7 Max (MY2024 / Xiaomi Pilot Max)",
+        "product_intro": "小米SU7 Max为高性能四驱超长续航高阶智驾版，公开资料确认搭载Xiaomi Pilot Max、360摄像头、APA、RPA和AVP相关泊车功能。",
+        "market": "中国高阶智能纯电轿车前装市场",
+        "reason_for_deep_dive": "小米SU7 Max具备360影像、智能泊车、遥控泊车和代客泊车，系统可自动寻找/选择车位；但未找到该SKU已公开的自定义划线或拖动车位框证据。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.ithome.com/0/758/799.htm",
+          "https://www.ithome.com/0/770/706.htm",
+          "https://evkx.net/models/xiaomi/su7/su7_max/specifications/"
+        ],
+        "initial_evidence_summary": "上市报道确认SU7 Max车型；公开配置资料确认360 camera、Automatic Parking Assistance System；IT之家报道确认SU7 Pro/Max具备AVP、APA、RPA等增强智驾功能。"
+      },
+      "launch_date": "2024年3月28日上市，2024年4月底Max版交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/758/799.htm",
+          "title": "小米汽车 SU7 / Pro / Max 正式发布并上市",
+          "source_name": "IT之家",
+          "snippet": "小米SU7 Max售价29.99万元，创始版4月3日启动交付。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种自动泊车系统",
+          "competitor_feature": "小米SU7 Max具备智能泊车辅助APA、遥控泊车辅助RPA和代客泊车辅助AVP。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/770/706.htm",
+              "title": "小米SU7 Pro/Max智驾功能说明",
+              "source_name": "IT之家",
+              "snippet": "SU7 Pro/Max具备代客泊车辅助、智能泊车辅助、遥控泊车辅助等功能。"
+            }
+          ],
+          "reasoning": "①X为自动泊车系统。②Y为APA/RPA/AVP。③(a)是；(b)是，存在性；(c)是，车载泊车；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括显示单元以及自动泊车控制单元",
+          "competitor_feature": "SU7 Max公开规格列360 camera，SU7 Max搭载Xiaomi Pilot Max；车机和智驾控制单元用于泊车功能交互与控制。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://evkx.net/models/xiaomi/su7/su7_max/specifications/",
+              "title": "Xiaomi SU7 Max specifications",
+              "source_name": "EVKX",
+              "snippet": "SU7 Max specifications list 360 camera and Automatic Parking Assistance System."
+            },
+            {
+              "url": "https://www.ithome.com/0/758/799.htm",
+              "title": "小米SU7发布上市",
+              "source_name": "IT之家",
+              "snippet": "SU7 Max为高性能四驱超长续航高阶智驾版。"
+            }
+          ],
+          "reasoning": "①X为显示+控制。②Y为360摄像头+Pilot Max/APA。③(a)是；(b)是，部件存在；(c)是，整车泊车；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "SU7 Max公开资料能证明360影像和APA/RPA/AVP，但未找到驾驶员在周围图像上手动划定或拖动车位框的公开证据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://evkx.net/models/xiaomi/su7/su7_max/specifications/",
+              "title": "Xiaomi SU7 Max specifications",
+              "source_name": "EVKX",
+              "snippet": "Specifications list 360 camera and automatic parking assistance."
+            }
+          ],
+          "reasoning": "①X为图像上划定意向区域。②Y仅为360影像+APA。③(a)否，缺划定；(b)否；(c)是，泊车影像；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+          "competitor_feature": "SU7 Max具备APA/AVP并可执行自动泊车；公开报道称遇障碍时可自动选择旁边空余车位泊入，但未证明识别驾驶员划定区域后的优化。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/770/706.htm",
+              "title": "小米SU7 Pro/Max智驾功能说明",
+              "source_name": "IT之家",
+              "snippet": "SU7 Pro/Max具备AVP、APA及RPA等增强版智驾功能。"
+            },
+            {
+              "url": "https://news.zol.com.cn/870/8700301.html",
+              "title": "小米汽车智能泊车功能方案公布",
+              "source_name": "中关村在线",
+              "snippet": "官方表示智能泊车支持空间车位、极窄车位等200余种车位类型。"
+            }
+          ],
+          "reasoning": "①X为识别划定区域、优化并泊入。②Y为APA/AVP自动泊入。③(a)部分按宽义可等；(b)是，流程；(c)是，目标车位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+          "competitor_feature": "公开资料称小米智能泊车可识别多类车位，并在遇占道或障碍物时自动选择旁边空余车位泊入；结合360摄像头和APA配置，可判定系统选择并标定候选车位。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://news.zol.com.cn/870/8700301.html",
+              "title": "小米汽车智能泊车功能方案公布",
+              "source_name": "中关村在线",
+              "snippet": "遇车辆占道或障碍物时，SU7会自动选择旁边空余车位进行泊入。"
+            },
+            {
+              "url": "https://evkx.net/models/xiaomi/su7/su7_max/specifications/",
+              "title": "Xiaomi SU7 Max specifications",
+              "source_name": "EVKX",
+              "snippet": "SU7 Max specifications list 360 camera and automatic parking assistance."
+            }
+          ],
+          "reasoning": "①X为系统选择并标定优选区域。②Y为自动选择空余车位+APA。③(a)是；(b)是，集合/标注；(c)是，泊车感知；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 82.0,
+      "searched_queries": [
+        "小米 SU7 Max APA AVP RPA 360 全景影像 官方",
+        "Xiaomi SU7 Max Automatic Parking Assistance 360 camera",
+        "小米SU7 Max 自定义车位 车位框 手动划线",
+        "小米SU7 智能泊车 自动选择旁边空余车位"
+      ],
+      "searched_providers": [
+        "web_search",
+        "ithome.com",
+        "evkx.net"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "特斯拉",
+        "company_en": "Tesla",
+        "product_name": "Model 3（2024款焕新版 / Vision Autopark）",
+        "product_name_en": "Tesla Model 3 (2024 Refresh / Vision Autopark)",
+        "product_intro": "2024款Model 3焕新版在中国开启交付后，特斯拉车主手册公开Autopark功能：车辆检测潜在停车位，在触摸屏显示并由驾驶员选择后自动泊入。",
+        "market": "中国及全球智能纯电轿车前装市场",
+        "reason_for_deep_dive": "Autopark具备系统检测车位、触摸屏选择车位和自动泊入流程，是典型自动泊车竞品；但不公开支持驾驶员在周围图像上自定义划线/拖框。",
+        "source_result_ids": [],
+        "source_urls": [
+          "https://www.tesla.com/ownersmanual/model3/en_gb/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+          "https://www.electrive.com/2023/10/19/tesla-kicks-off-sales-of-the-new-model-3-in-china/"
+        ],
+        "initial_evidence_summary": "Tesla手册说明Autopark在触摸屏显示潜在停车位，驾驶员选择后点击Start，车辆自动泊入；上市交付晚于申请日。"
+      },
+      "launch_date": "2023年10月在中国开启销售/交付焕新版Model 3",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.electrive.com/2023/10/19/tesla-kicks-off-sales-of-the-new-model-3-in-china/",
+          "title": "Tesla kicks off sales of the new Model 3 in China",
+          "source_name": "electrive",
+          "snippet": "Tesla launched the redesigned Model 3 in China with deliveries scheduled to begin there."
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种自动泊车系统",
+          "competitor_feature": "Tesla Model 3手册公开Autopark功能，可让车辆自动泊入停车位。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.tesla.com/ownersmanual/model3/en_gb/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+              "title": "Model 3 Owner's Manual - Autopark",
+              "source_name": "Tesla",
+              "snippet": "Autopark maneuvers Model 3 into a parking space after the driver starts the function."
+            }
+          ],
+          "reasoning": "①X为自动泊车系统。②Y为Autopark。③(a)是；(b)是，存在性；(c)是，整车泊车；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "包括显示单元以及自动泊车控制单元",
+          "competitor_feature": "Model 3手册说明驾驶员监控触摸屏，潜在停车位显示在触摸屏上，并由Autopark控制车辆泊入。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.tesla.com/ownersmanual/model3/en_gb/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+              "title": "Model 3 Owner's Manual - Autopark",
+              "source_name": "Tesla",
+              "snippet": "The detected parking spaces appear on the touchscreen; touch Start to use Autopark."
+            }
+          ],
+          "reasoning": "①X为显示+控制。②Y为触摸屏+Autopark控制。③(a)是；(b)是，部件存在；(c)是，车辆泊车；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述显示单元用于显示车身周围的图像信息，以便于驾驶员根据所述显示单元显示的所述图像信息划定意向泊车区域",
+          "competitor_feature": "Autopark要求驾驶员在触摸屏上监控系统检测到的潜在停车位并选择，但公开手册未说明可在周围图像上手动划定意向泊车区域。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.tesla.com/ownersmanual/model3/en_gb/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+              "title": "Model 3 Owner's Manual - Autopark",
+              "source_name": "Tesla",
+              "snippet": "Monitor the touchscreen to see potential parking spaces detected by Self-Driving."
+            }
+          ],
+          "reasoning": "①X为图像上划定区域。②Y为触摸屏选择检测车位。③(a)否，选择非划定；(b)否；(c)部分；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述自动泊车控制单元用于识别驾驶员划定的所述意向泊车区域，对所述意向泊车区域进行优化，优化后的所述意向泊车区域满足泊车所需要的空间大小，并控制车辆根据优化后的所述意向泊车区域实现自动泊车",
+          "competitor_feature": "Autopark能确定适当行驶路径并操纵Model 3进入所选停车位，但公开资料不支持识别驾驶员划定区域并优化该区域。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.tesla.com/ownersmanual/model3/en_gb/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+              "title": "Model 3 Owner's Manual - Autopark",
+              "source_name": "Tesla",
+              "snippet": "If Autopark cannot determine an appropriate path, reposition or park manually."
+            }
+          ],
+          "reasoning": "①X为识别划定区域、优化并泊入。②Y为系统路径规划泊入。③(a)否，缺用户划定；(b)部分；(c)是，停车位；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述自动泊车控制单元还用于根据所述图像信息选择至少一个优选泊车区域，并将所述至少一个优选泊车区域标定在所述显示单元显示的所述图像信息上",
+          "competitor_feature": "手册说明Autopark检测潜在停车位，并在触摸屏上显示，驾驶员选择一个车位后点击Start。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.tesla.com/ownersmanual/model3/en_gb/GUID-0C763E08-D0B8-4404-8180-1054F635C08C.html",
+              "title": "Model 3 Owner's Manual - Autopark",
+              "source_name": "Tesla",
+              "snippet": "Potential parking spaces are detected and displayed; choose a spot and touch Start."
+            }
+          ],
+          "reasoning": "①X为系统选择并标定优选区域。②Y为检测并显示潜在车位。③(a)是；(b)是，候选集合；(c)是，触摸屏泊车界面；(d)无。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 72.0,
+      "searched_queries": [
+        "Tesla Model 3 Autopark touchscreen choose parking space manual",
+        "Tesla Model 3 2024 Autopark camera based parking spaces touchscreen",
+        "Tesla Model 3 Highland China delivery October 2023",
+        "特斯拉 Model 3 焕新版 自动泊车 触摸屏 车位"
+      ],
+      "searched_providers": [
+        "web_search",
+        "tesla.com",
+        "electrive.com"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}
