@@ -12,7 +12,7 @@
 [![Skill](https://img.shields.io/badge/Claude_Code-Skill_ready-D97757?logo=anthropic&logoColor=white)](#模式-2作为-skill-嵌入-claude-code--codex-cli)
 [![License](https://img.shields.io/badge/license-MIT-blue)](#-license)
 
-https://github.com/user-attachments/assets/a11b8e95-edcb-4d2c-865d-fb30f17adec2
+https://github.com/user-attachments/assets/94f8f758-6a43-49a8-b16b-2e04e1d8e110
 
 [快速开始](#-快速开始) · [架构](#%EF%B8%8F-架构) · [4 模块工作流](#-4-模块工作流) · [Skill 模式](#模式-2作为-skill-嵌入-claude-code--codex-cli) · [评估](evaluate/EVALUATION.md)
 
