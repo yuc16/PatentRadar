@@ -87,14 +87,43 @@ def run_report(
     return report_path
 
 
+def _safe_pdf_url_fetcher(url: str) -> dict:
+    """WeasyPrint 抓取外部资源（<img>/@import 等）时的 SSRF 守卫。
+
+    report.md 是 LLM 生成的，可能夹带 <img src="http://127.0.0.1:..."> 之类，
+    WeasyPrint 默认会在服务端真的去 GET 它。这里：data: 内联资源放行；http(s) 复用
+    web_fetcher._safe_fetch（已含 SSRF + 逐跳重定向校验 + 大小上限），内网/回环/
+    元数据 / 非 http(s) 一律 ValueError。返回 WeasyPrint 经典 url_fetcher dict，
+    不碰已废弃的 default_url_fetcher。"""
+    if url.startswith("data:"):
+        import urllib.request
+
+        with urllib.request.urlopen(url) as resp:  # data: 由 DataHandler 解码，无网络
+            return {"string": resp.read(), "mime_type": resp.headers.get_content_type()}
+
+    from patentradar.fetcher.web_fetcher import _safe_fetch
+
+    fetched = _safe_fetch(url, timeout=15.0, headers={"User-Agent": "patent-radar (python)"})
+    if fetched is None:
+        raise ValueError(f"blocked or failed resource URL (SSRF guard): {url}")
+    content, content_type, _final = fetched
+    mime = content_type.split(";")[0].strip() or "application/octet-stream"
+    return {"string": content, "mime_type": mime}
+
+
 def render_pdf(md_path: Path) -> Path:
     """Markdown → PDF via WeasyPrint。中文走 macOS 系统字体 PingFang SC。"""
     import markdown
+    import nh3
     from weasyprint import HTML
 
-    html_body = markdown.markdown(
-        md_path.read_text(encoding="utf-8"),
-        extensions=["tables", "fenced_code"],
+    # 先按白名单消毒原始 HTML（剥 script 等），再交给 WeasyPrint；资源抓取另由
+    # _safe_pdf_url_fetcher 挡内网。两层都要：消毒去脚本，fetcher 去 SSRF。
+    html_body = nh3.clean(
+        markdown.markdown(
+            md_path.read_text(encoding="utf-8"),
+            extensions=["tables", "fenced_code"],
+        )
     )
     style = """
         @page { size: A4; margin: 18mm 14mm; }
@@ -123,7 +152,7 @@ def render_pdf(md_path: Path) -> Path:
     html_full = f"""<!doctype html><html><head><meta charset='utf-8'>
 <style>{style}</style></head><body>{html_body}</body></html>"""
     pdf_path = md_path.with_suffix(".pdf")
-    HTML(string=html_full).write_pdf(pdf_path)
+    HTML(string=html_full, url_fetcher=_safe_pdf_url_fetcher).write_pdf(pdf_path)
     return pdf_path
 
 

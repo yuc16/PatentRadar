@@ -100,13 +100,14 @@ def decompose_command(
 def competitor_search_command(
     task_package: Path = typer.Argument(..., help="Path to module-one task_package.json."),
     output_dir: Path = typer.Option(
-        Path("data/output"),
+        None,
         "--output-dir",
         "-o",
-        help="Directory where module-two JSON artifacts will be written.",
+        help="Output directory. Defaults to the task_package's own dir (data/output/<PUB>/).",
     ),
     max_workers: int = typer.Option(3, "--max-workers", help="Parallel evidence workers for step 4."),
 ) -> None:
+    output_dir = output_dir or task_package.parent
     report = run_competitor_search(
         task_package_path=task_package,
         output_dir=output_dir,
@@ -121,13 +122,14 @@ def full_claim_chart_command(
     task_package: Path = typer.Argument(..., help="Path to module-one task_package.json."),
     top_report: Path = typer.Argument(..., help="Path to module-two step5_top5_claim1_candidates.json."),
     output_dir: Path = typer.Option(
-        Path("data/output"),
+        None,
         "--output-dir",
         "-o",
-        help="Directory where module-three JSON artifacts will be written.",
+        help="Output directory. Defaults to the task_package's own dir (data/output/<PUB>/).",
     ),
     max_workers: int = typer.Option(2, "--max-workers", help="Parallel candidate workers."),
 ) -> None:
+    output_dir = output_dir or task_package.parent
     tp = load_task_package(task_package)
     tr = load_top_report(top_report)
     report = run_full_claim_chart(
@@ -145,12 +147,13 @@ def report_command(
     task_package: Path = typer.Argument(..., help="Path to module-one task_package.json."),
     full_claim_chart: Path = typer.Argument(..., help="Path to module-three top5_full_claim_chart.json."),
     output_dir: Path = typer.Option(
-        Path("data/output"),
+        None,
         "--output-dir",
         "-o",
-        help="Directory where report.md and similar_patents.json will be written.",
+        help="Output directory. Defaults to the task_package's own dir (data/output/<PUB>/).",
     ),
 ) -> None:
+    output_dir = output_dir or task_package.parent
     tp = load_report_task_package(task_package)
     fcr = load_report_full_claim_chart(full_claim_chart)
     report_path = run_report(

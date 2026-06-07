@@ -14,6 +14,17 @@ class SearchProvider(ABC):
     def search(self, *, query_id: str, query: str, max_results: int = 5) -> list[SearchResult]:
         """Return normalized search results."""
 
+    @property
+    def available(self) -> bool:
+        """Whether this provider is configured (has credentials).
+
+        Routers must skip unavailable providers WITHOUT counting them against
+        per-query provider budgets — otherwise an unconfigured provider listed
+        ahead of the only configured one silently eats the budget and the real
+        provider never runs.
+        """
+        return True
+
 
 def build_result_id(provider: str, query_id: str, rank: int) -> str:
     return f"{provider}-{query_id}-{rank:02d}"

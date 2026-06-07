@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import json
 import logging
-from collections.abc import Iterable
 from pathlib import Path
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT

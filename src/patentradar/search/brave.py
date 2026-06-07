@@ -41,6 +41,10 @@ class BraveProvider(SearchProvider):
         self.timeout = timeout
         self.country_code = (country_code or "").upper()
 
+    @property
+    def available(self) -> bool:
+        return bool(self.api_key)
+
     def search(self, *, query_id: str, query: str, max_results: int = 5) -> list[SearchResult]:
         if not self.api_key:
             return []

@@ -34,6 +34,10 @@ class ExaProvider(SearchProvider):
         self.timeout = timeout
         self._extra_exclude_domains = extra_exclude_domains or []
 
+    @property
+    def available(self) -> bool:
+        return bool(self.api_key)
+
     def search(self, *, query_id: str, query: str, max_results: int = 5) -> list[SearchResult]:
         if not self.api_key:
             return []

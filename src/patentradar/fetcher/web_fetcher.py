@@ -10,8 +10,10 @@ HTML 端的图片证据（Tier 1）：扫描 <img>/<picture>/<figure>，对疑�
 
 from __future__ import annotations
 
+import ipaddress
 import logging
 import re
+import socket
 from dataclasses import dataclass, field
 from urllib.parse import urljoin, urlparse
 
@@ -24,6 +26,9 @@ from .pdf import extract_pdf_evidence
 logger = logging.getLogger(__name__)
 
 _USER_AGENT = "patent-radar (python)"
+# 单次响应体硬上限：URL 来自 LLM / 搜索结果 / 页面里抓到的 <img src>，全是
+# 不可信输入。整包下载完再查大小会被一个超大响应打爆内存，所以边读边卡。
+_MAX_RESPONSE_BYTES = 10 * 1024 * 1024  # 10MB
 # HTML 图片抽取上限：每 page 最多 3 张图。
 # 配合 alt 去重（同 alt 只保留 score 最高的）—— 文章页 3 张同 alt 配图自然收敛
 # 为 1 张；产品页 5+ 张不同 alt 的图（主图/尺寸图/拆解图/应用图）能保留前 3。
@@ -107,6 +112,98 @@ class FetchedEvidence:
     matched_pages: list[int] = field(default_factory=list)
 
 
+_MAX_REDIRECTS = 5
+
+
+def _is_safe_url(url: str) -> bool:
+    """SSRF 守卫：只放行 http(s)，且主机解析出的所有 IP 都必须是全局可路由的
+    公网地址。用 `not is_global` 一刀切，覆盖私网 / 回环 / 链路本地 / 保留段 /
+    云元数据 169.254.169.254 / CGNAT 100.64.0.0/10 等所有非公网段（这些
+    `is_private` 并不全包，例如 100.64/10）。
+
+    注意：这是解析时校验，存在 DNS rebinding 的 TOCTOU 窗口；对本工具的威胁
+    模型（挡住 LLM/页面喂来的内网与元数据地址）已足够，不引入 IP pinning。
+    """
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+    if parsed.scheme not in ("http", "https"):
+        return False
+    host = parsed.hostname
+    if not host:
+        return False
+    try:
+        infos = socket.getaddrinfo(host, None)
+    except socket.gaierror:
+        return False
+    for info in infos:
+        try:
+            addr = ipaddress.ip_address(info[4][0])
+        except ValueError:
+            return False
+        if not addr.is_global:
+            return False
+    return True
+
+
+def _safe_fetch(
+    url: str, *, timeout: float, headers: dict[str, str]
+) -> tuple[bytes, str, str] | None:
+    """带 SSRF + 大小双重防护的 GET。返回 (content, content_type, final_url)。
+
+    - 关掉 httpx 自动重定向，自己逐跳跟随：每一跳的目标在发起请求**之前**先过
+      _is_safe_url。follow_redirects=True 会先把重定向目标请求出去再让我们看到
+      最终 URL，那时内网请求已经发生了，拦截太晚。
+    - 流式累积，超过 _MAX_RESPONSE_BYTES 立即放弃。
+    任何阻断 / 网络错误 / 超限 / 重定向过多都返回 None，调用方按"抓取失败"处理。
+    """
+    if not _is_safe_url(url):
+        logger.info("Blocked unsafe URL (SSRF guard) url=%s", url)
+        return None
+    current = url
+    try:
+        with httpx.Client(timeout=timeout, follow_redirects=False) as client:
+            for _ in range(_MAX_REDIRECTS + 1):
+                with client.stream("GET", current, headers=headers) as response:
+                    if response.is_redirect:
+                        location = response.headers.get("location")
+                        if not location:
+                            return None
+                        current = str(response.url.join(location))
+                        if not _is_safe_url(current):
+                            logger.info(
+                                "Blocked unsafe redirect target (SSRF guard) url=%s", current
+                            )
+                            return None
+                        continue
+                    response.raise_for_status()
+                    chunks: list[bytes] = []
+                    total = 0
+                    for chunk in response.iter_bytes():
+                        total += len(chunk)
+                        if total > _MAX_RESPONSE_BYTES:
+                            logger.info(
+                                "Response too large (>%d bytes), aborting url=%s",
+                                _MAX_RESPONSE_BYTES, current,
+                            )
+                            return None
+                        chunks.append(chunk)
+                    content_type = response.headers.get("content-type", "").lower()
+                    return b"".join(chunks), content_type, str(response.url)
+            logger.info("Too many redirects (>%d) url=%s", _MAX_REDIRECTS, url)
+            return None
+    except httpx.HTTPError as exc:
+        logger.info("Fetch failed url=%s error=%s", url, exc)
+        return None
+
+
+def _charset_from_content_type(content_type: str) -> str | None:
+    """从 'text/html; charset=gbk' 里抠 charset；没有就返回 None（调用方退 utf-8）。"""
+    m = re.search(r"charset=([\w\-]+)", content_type)
+    return m.group(1) if m else None
+
+
 def fetch_evidence(
     url: str,
     *,
@@ -125,30 +222,24 @@ def fetch_evidence(
     heuristic uses domain-specific boost keywords loaded from
     `configs/technology_tags.toml`.
     """
-    try:
-        with httpx.Client(timeout=timeout, follow_redirects=True) as client:
-            response = client.get(
-                url,
-                headers={"User-Agent": "patent-radar (python)"},
-            )
-            response.raise_for_status()
-    except httpx.HTTPError as exc:
-        logger.info("Fetch evidence failed url=%s error=%s", url, exc)
+    fetched = _safe_fetch(url, timeout=timeout, headers={"User-Agent": _USER_AGENT})
+    if fetched is None:
         return None
+    content, content_type, _final_url = fetched
 
-    content_type = response.headers.get("content-type", "").lower()
     is_pdf = "pdf" in content_type or url.lower().endswith(".pdf")
 
     if is_pdf:
-        return _extract_pdf(url=url, pdf_bytes=response.content, keywords=keywords or [], max_chars=max_chars)
+        return _extract_pdf(url=url, pdf_bytes=content, keywords=keywords or [], max_chars=max_chars)
 
     if "html" not in content_type and "text" not in content_type:
         # Some other binary; skip rather than false-positive.
         return None
 
+    html = content.decode(_charset_from_content_type(content_type) or "utf-8", errors="replace")
     return _extract_html(
         url=url,
-        html=response.text,
+        html=html,
         keywords=keywords or [],
         max_chars=max_chars,
         technology_tag=technology_tag,
@@ -446,17 +537,12 @@ def _download_as_png(url: str, *, timeout: float = 15.0) -> bytes | None:
 
     大图（超过 _HTML_IMG_MAX_BYTES）直接跳过，避免一张 banner 把 LLM 上下文塞爆。
     """
-    try:
-        with httpx.Client(timeout=timeout, follow_redirects=True) as client:
-            response = client.get(url, headers={"User-Agent": _USER_AGENT})
-            response.raise_for_status()
-    except httpx.HTTPError as exc:
-        logger.info("Image download failed url=%s error=%s", url, exc)
+    fetched = _safe_fetch(url, timeout=timeout, headers={"User-Agent": _USER_AGENT})
+    if fetched is None:
         return None
-    content_type = response.headers.get("content-type", "").lower()
+    data, content_type, _final_url = fetched
     if not any(t in content_type for t in ("image/", "octet-stream")):
         return None
-    data = response.content
     if len(data) > _HTML_IMG_MAX_BYTES:
         logger.info("Image too large (%d bytes) url=%s, skipping", len(data), url)
         return None

@@ -84,7 +84,7 @@ def main() -> None:
         f"\n  searched_providers: {item.searched_providers}"
         f"\n  output: {out_path}"
     )
-    print(f"\n--- per-feature breakdown ---")
+    print("\n--- per-feature breakdown ---")
     for c in item.comparisons:
         urls = len({e.url for e in c.evidence})
         print(f"  [{c.feature_id}] {c.status} score={c.score} ev_urls={urls}")

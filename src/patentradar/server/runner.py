@@ -25,6 +25,7 @@ import shlex
 import subprocess
 import sys
 import time
+import uuid
 from dataclasses import dataclass
 from pathlib import Path
 from threading import Lock
@@ -34,33 +35,45 @@ ROOT = Path(__file__).resolve().parents[3]  # PatentRadar/
 DATA_OUTPUT = ROOT / "data" / "output"
 LOGS_ROOT = ROOT / "logs"
 
-_run_locks: dict[str, Lock] = {}
+# 流水线产物的格式版本。bump 即让"整条流水线已完成"的旧 run 失效（见
+# _is_fully_cached）——否则证据白名单等修复对已经跑完的专利无效，Web 重跑会
+# 继续复用旧的高分伪造报告。
+PIPELINE_VERSION = 2
+
+# 正在运行的 pub → 不可伪造的 reservation token，整体由 _locks_guard 保护。
+# 用 token 而非单纯 set / per-pub Lock：
+#   - set + discard：任何人调 release(pub) 都能清掉别人的预留（无所有权）。
+#   - per-pub Lock + locked() 自省：存在 ABA 竞态，两线程可各拿不同 Lock 都成功。
+# 现在只有持有当初 try_begin_run 返回的 token 的人才能释放对应槽位，占位/释放/
+# 查询全在同一把 guard 内原子完成。
+_in_progress: dict[str, str] = {}
 _locks_guard = Lock()
 
 
-def _lock_for(pub: str) -> Lock:
-    with _locks_guard:
-        if pub not in _run_locks:
-            _run_locks[pub] = Lock()
-        return _run_locks[pub]
-
-
 def is_run_in_progress(pub: str) -> bool:
-    """非阻塞探测某 pub 的 pipeline 是否正在跑。用于 FastAPI 同步返回 409。"""
+    """非阻塞探测某 pub 的 pipeline 是否正在跑。"""
     with _locks_guard:
-        lock = _run_locks.get(pub)
-    if lock is None:
-        return False
-    return lock.locked()
+        return pub in _in_progress
 
 
-def _release_lock_entry(pub: str) -> None:
-    """跑完后丢弃 _run_locks 里该 pub 的条目，避免长跑服务端字典无界增长。
-    只在锁当前未被占用时弹出（防止误删一个还在跑的并发 run 的锁实例）。"""
+def try_begin_run(pub: str) -> str | None:
+    """原子地占住某 pub 的 run 槽位。成功返回一个 reservation token（调用方此后
+    必须用该 token 调 run_and_release 释放），已在跑返回 None。检查与占位在同一把
+    guard 内完成，杜绝两个并发请求都返回 started。"""
     with _locks_guard:
-        existing = _run_locks.get(pub)
-        if existing is not None and not existing.locked():
-            _run_locks.pop(pub, None)
+        if pub in _in_progress:
+            return None
+        token = uuid.uuid4().hex
+        _in_progress[pub] = token
+        return token
+
+
+def _end_run(pub: str, token: str) -> None:
+    """释放某 pub 的 run 槽位——仅当 token 与当前预留持有者一致。这样一个没有
+    持有预留的误调用无法清掉正在运行的 run 状态。"""
+    with _locks_guard:
+        if _in_progress.get(pub) == token:
+            del _in_progress[pub]
 
 
 @dataclass
@@ -140,15 +153,33 @@ def _env_for_step(step: ModuleStep, stream_log: Path) -> dict[str, str]:
 
 
 def run_pipeline(pub: str) -> None:
-    """Run the full 4-module pipeline for one publication. Blocking."""
-    lock = _lock_for(pub)
-    if not lock.acquire(blocking=False):
+    """Standalone entrypoint (CLI / direct callers): atomically reserve the run
+    slot, run, release. Raises if a run for `pub` is already in progress — never
+    runs concurrently and never releases a slot it didn't own.
+
+    The FastAPI layer does NOT use this; it reserves via try_begin_run() (for the
+    synchronous 409) and then schedules run_and_release()."""
+    token = try_begin_run(pub)
+    if token is None:
         raise RuntimeError(f"pipeline for {pub} is already running")
+    run_and_release(pub, token)
+
+
+def run_and_release(pub: str, token: str) -> None:
+    """Run the pipeline for a slot reserved via try_begin_run(), then release it
+    using the reservation token.
+
+    Verifies ownership BEFORE running: a stale/erroneous background task whose
+    token no longer matches the current reservation must not execute the
+    pipeline at all (otherwise it would concurrently write the same logs /
+    artifacts as the real holder). Only the current holder runs and releases."""
+    with _locks_guard:
+        if _in_progress.get(pub) != token:
+            return
     try:
         _run_pipeline_locked(pub)
     finally:
-        lock.release()
-        _release_lock_entry(pub)
+        _end_run(pub, token)
 
 
 def _is_fully_cached(pub: str) -> bool:
@@ -168,6 +199,10 @@ def _is_fully_cached(pub: str) -> bool:
         if ev.get("event") == "pipeline_end":
             last_pipeline_end = ev
     if not last_pipeline_end or last_pipeline_end.get("status") != "ok":
+        return False
+    # 旧版本（或无版本标记）的完成 run 不可复用——否则证据白名单 / 失格修复对
+    # 已跑完的专利永远不生效，Web 重跑会继续拿旧的伪造高分报告。
+    if last_pipeline_end.get("pipeline_version") != PIPELINE_VERSION:
         return False
 
     out = DATA_OUTPUT / pub
@@ -287,6 +322,7 @@ def _run_pipeline_locked(pub: str) -> None:
             "event": "pipeline_end",
             "status": "ok",
             "elapsed": round(time.time() - pipeline_started, 2),
+            "pipeline_version": PIPELINE_VERSION,
         },
     )
 

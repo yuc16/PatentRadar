@@ -73,7 +73,9 @@ class SearchRouter:
                 if providers_visited >= max_providers_per_query:
                     break
                 provider = self.providers.get(provider_name)
-                if provider is None:
+                # 未配置 key 的 provider（search() 只会返回 []）不能占用 per-query
+                # 名额，否则排在前面的未配置 provider 会把唯一配好的那个挤掉。
+                if provider is None or not provider.available:
                     continue
                 providers_visited += 1
                 try:
@@ -127,7 +129,7 @@ class SearchRouter:
             )
             for provider_name in self._providers_for_query(query):
                 provider = self.providers.get(provider_name)
-                if provider is None:
+                if provider is None or not provider.available:
                     continue
                 try:
                     provider_results = provider.search(

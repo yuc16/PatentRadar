@@ -50,6 +50,14 @@ class FeatureComparison(BaseModel):
 
     @model_validator(mode="after")
     def validate_score(self) -> "FeatureComparison":
+        # 可复核原则对称地适用于正反两向：任何**有后果**的结论都必须有证据 URL。
+        # - 「明确满足 / 可能满足」无证据 → 不能给分；
+        # - 「明确不满足」无证据 → 不能据此淘汰候选（derive_score 会因它失格清零）。
+        # LLM 偶尔给出判定却留空 evidence（或 evidence 被 worker 的
+        # _drop_empty_url_evidence 清掉），统一降级为「证据不足」(中性，不给分也不淘汰)。
+        # 模块二、模块三的 comparisons 都是 FeatureComparison，这里一处生效两边。
+        if self.status in ("明确满足", "可能满足", "明确不满足") and not self.evidence:
+            self.status = "证据不足"
         expected = {
             "明确满足": 1.0,
             "可能满足": 0.8,

@@ -48,6 +48,10 @@ class TavilyProvider(SearchProvider):
         self._lock = threading.Lock()
         self.timeout = timeout
 
+    @property
+    def available(self) -> bool:
+        return bool(self._keys)
+
     def search(self, *, query_id: str, query: str, max_results: int = 5) -> list[SearchResult]:
         if not self._keys:
             return []

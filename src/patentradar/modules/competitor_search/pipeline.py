@@ -13,7 +13,6 @@ from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.schemas import (
     CandidateEvidence,
     CandidateShortlist,
-    EvidenceBatchResult,
     QueryPlan,
     SearchResultsArtifact,
     TaskPackage,
@@ -27,6 +26,12 @@ from .query_generator import build_query_plan
 from .scorer import rank_top_competitors
 
 logger = logging.getLogger(__name__)
+
+# step4 单候选 evidence 断点续传缓存的格式版本。证据 URL 白名单校验
+# (_drop_empty_url_evidence allowed_urls) 是在写盘**前**做的，旧缓存里可能留有
+# 编造 URL 且以满分载入，还会被模块三纳入白名单背书。bump 此版本即让所有旧缓存
+# (无 _cache_version 字段或版本不符) 失效、强制重新计算。
+_STEP4_CACHE_VERSION = 2
 
 
 def run_competitor_search(
@@ -200,12 +205,23 @@ def run_step4_map_evidence(
         path = cand_dir / f"{candidate.candidate_id}.json"
         if path.exists():
             try:
-                cached = CandidateEvidence.model_validate(json.loads(path.read_text(encoding="utf-8")))
+                raw = json.loads(path.read_text(encoding="utf-8"))
+                # 只认带当前版本号的 wrapper；旧的扁平 CandidateEvidence dump（无
+                # _cache_version）一律视为过期 → 落到下面重新计算，应用新白名单。
+                if (
+                    isinstance(raw, dict)
+                    and raw.get("_cache_version") == _STEP4_CACHE_VERSION
+                ):
+                    cached = CandidateEvidence.model_validate(raw["evidence"])
+                    logger.info(
+                        "module2 step4 candidate=%s loaded_from_cache score=%.2f disqualified=%s",
+                        candidate.candidate_id, cached.total_score, cached.disqualified,
+                    )
+                    return cached
                 logger.info(
-                    "module2 step4 candidate=%s loaded_from_cache score=%.2f disqualified=%s",
-                    candidate.candidate_id, cached.total_score, cached.disqualified,
+                    "module2 step4 candidate=%s cache stale (version mismatch), re-running",
+                    candidate.candidate_id,
                 )
-                return cached
             except Exception as exc:  # noqa: BLE001
                 logger.warning("module2 step4 cache invalid for %s, re-running: %s", candidate.candidate_id, exc)
         # 单候选错误隔离：LLM/网络炸了不拖死整 pipeline，写一条 disqualified 占位
@@ -234,7 +250,7 @@ def run_step4_map_evidence(
         if not result.results:
             return None
         ev = result.results[0]
-        _write_json(path, ev.model_dump())
+        _write_json(path, {"_cache_version": _STEP4_CACHE_VERSION, "evidence": ev.model_dump()})
         logger.info(
             "module2 step4 candidate=%s disqualified=%s score=%.2f",
             candidate.candidate_id, ev.disqualified, ev.total_score,

@@ -20,6 +20,10 @@ class BochaProvider(SearchProvider):
         self.api_key = api_key or os.getenv("BOCHA_API_KEY", "")
         self.timeout = timeout
 
+    @property
+    def available(self) -> bool:
+        return bool(self.api_key)
+
     def search(self, *, query_id: str, query: str, max_results: int = 5) -> list[SearchResult]:
         if not self.api_key:
             return []

@@ -17,7 +17,6 @@ from __future__ import annotations
 
 import asyncio
 import json
-import os
 import time
 from pathlib import Path
 from typing import AsyncIterator
@@ -33,9 +32,9 @@ from patentradar.server.runner import (
     DATA_OUTPUT,
     LOGS_ROOT,
     ROOT,
-    is_run_in_progress,
     iter_run_events,
-    run_pipeline,
+    run_and_release,
+    try_begin_run,
 )
 
 # Load .env from project root so subprocess env inherits API keys etc.
@@ -207,14 +206,18 @@ async def start_run(pub: str, background: BackgroundTasks):
     except PatentFetchError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     _publication_root(pub)  # path-traversal 双保险（normalize 已经只返回字母数字）
-    # 同步检查 lock：BackgroundTasks 里 raise 的 RuntimeError 会被静默吞掉，
-    # 让用户以为 {"started": True} 但实际没启动。这里直接 409 让前端知道。
-    if is_run_in_progress(pub):
+    # 原子地占住 run 槽位：try_begin_run 直接 acquire 锁。失败说明已在跑 → 409。
+    # 不能用「先 is_run_in_progress 检查、再排后台任务」两步——非原子，两个并发
+    # 请求会都通过检查、都返回 started，其中一个随后在后台静默失败。
+    token = try_begin_run(pub)
+    if token is None:
         raise HTTPException(
             status_code=409,
             detail=f"pipeline for {pub} is already running",
         )
-    background.add_task(run_pipeline, pub)
+    # 已用 try_begin_run 同步占住槽位并拿到 token；后台按 token 跑完并释放，
+    # 保证只有这次预留的持有者能释放该槽位。
+    background.add_task(run_and_release, pub, token)
     return {"started": True, "publication_no": pub}
 
 
@@ -301,12 +304,19 @@ async def render_markdown(pub: str, filename: str):
             detail=f"markdown library not installed: {exc}",
         ) from exc
 
+    import html as _html
+
+    import nh3
+
     md_text = target.read_text(encoding="utf-8")
-    html_body = md_lib.markdown(md_text, extensions=["tables", "fenced_code"])
+    # report.md 是 LLM 生成的，可能夹带原始 HTML（含 <script>）。markdown 默认
+    # 放行原始 HTML，直接嵌进同源 HTMLResponse 就是存储型 XSS。渲染后用 nh3
+    # 按白名单消毒，剥掉 script/onclick 等危险标签与属性。
+    html_body = nh3.clean(md_lib.markdown(md_text, extensions=["tables", "fenced_code"]))
     page = (
         "<!doctype html><html lang='zh-CN'><head>"
         "<meta charset='utf-8'>"
-        f"<title>{filename} · {pub}</title>"
+        f"<title>{_html.escape(filename)} · {_html.escape(pub)}</title>"
         f"<style>{_REPORT_CSS}</style></head>"
         f"<body>{html_body}</body></html>"
     )
@@ -483,8 +493,15 @@ def _collect_export_outputs(pub: str) -> list[dict]:
                             md_lib = False
                     md_text = target.read_text(encoding="utf-8")
                     if md_lib:
-                        entry["html"] = md_lib.markdown(
-                            md_text, extensions=["tables", "fenced_code"]
+                        import nh3
+
+                        # 导出的回放离线 HTML 会把这段 html 直接插进 Blob 页面，
+                        # LLM markdown 里的原始 <script> 会原样执行 → 存储型 XSS。
+                        # 与 /api/render 一致用 nh3 消毒后再写出。
+                        entry["html"] = nh3.clean(
+                            md_lib.markdown(
+                                md_text, extensions=["tables", "fenced_code"]
+                            )
                         )
                     else:
                         # markdown lib missing — fall back to raw text wrapped in <pre>

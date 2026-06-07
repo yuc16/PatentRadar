@@ -11,6 +11,7 @@ from pydantic import ValidationError
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 from patentradar.core.exceptions import LLMOutputError
+from patentradar.core.launch_date import launch_before_application
 from pathlib import Path
 
 from patentradar.fetcher.image_utils import dump_visual_log, png_hash
@@ -26,6 +27,7 @@ from patentradar.schemas import (
     TaskPackage,
 )
 from patentradar.search.relevance import rank_pages_by_relevance, rank_search_results
+from patentradar.search.result_normalizer import canonical_url
 
 logger = logging.getLogger(__name__)
 
@@ -87,7 +89,15 @@ def judge_candidate_batch(
     )
     payload["publication_no"] = task_package.patent.publication_no
     payload["batch_id"] = batch_id
-    _drop_empty_url_evidence(payload)
+    _drop_empty_url_evidence(
+        payload,
+        allowed_urls_by_candidate=_allowed_urls_by_candidate(
+            candidates=candidates,
+            search_results_by_candidate=search_results_by_candidate,
+            fetched_pages_by_candidate=fetched_pages_by_candidate,
+            fetched_images_by_candidate=fetched_images_by_candidate,
+        ),
+    )
     try:
         result = EvidenceBatchResult.model_validate(payload)
     except ValidationError as exc:
@@ -95,35 +105,88 @@ def judge_candidate_batch(
     return _normalize_batch(result, task_package=task_package, candidates=candidates)
 
 
-def _drop_empty_url_evidence(payload: dict[str, Any]) -> None:
+def _allowed_urls_by_candidate(
+    *,
+    candidates: list[Candidate],
+    search_results_by_candidate: dict[str, list[SearchResult]],
+    fetched_pages_by_candidate: dict[str, list[dict[str, str]]],
+    fetched_images_by_candidate: dict[str, list[dict]] | None,
+) -> dict[str, set[str]]:
+    """逐候选收集 LLM 实际见过的 URL（canonical 化）作为合法 evidence 白名单。
+    引用任何不在其中的 URL = 编造。"""
+    fetched_images_by_candidate = fetched_images_by_candidate or {}
+    allowed: dict[str, set[str]] = {}
+    for candidate in candidates:
+        cid = candidate.candidate_id
+        urls: set[str] = set()
+        for r in search_results_by_candidate.get(cid, []):
+            if r.url:
+                urls.add(canonical_url(r.url))
+        for page in fetched_pages_by_candidate.get(cid, []):
+            if page.get("url"):
+                urls.add(canonical_url(page["url"]))
+        for img in fetched_images_by_candidate.get(cid, []):
+            if img.get("url"):
+                urls.add(canonical_url(img["url"]))
+        for src in candidate.source_urls:
+            if src:
+                urls.add(canonical_url(src))
+        allowed[cid] = urls
+    return allowed
+
+
+def _drop_empty_url_evidence(
+    payload: dict[str, Any],
+    *,
+    allowed_urls_by_candidate: dict[str, set[str]] | None = None,
+) -> None:
     """LLM 偶尔给某条 feature 配上 url='' 的 evidence 凑数；Pydantic 的
     `url must be absolute` 会让整个 batch 抛 ValidationError，拖垮 step4。
     这里就地剔除所有 url 为空字符串/None/空白的 evidence 项（含 launch_date_evidence）。
+
+    allowed_urls_by_candidate 非 None 时，额外剔除 canonical 后不在该候选抓取池里的
+    evidence——语法合法但从未抓取过的 URL 也算编造，不该作为可复核证据。
 
     清空后若 comparison.evidence 列表已空 → 同步把 status 降级为「证据不足」、
     score 降到 0.3，并在 reasoning 末尾追加说明。否则会出现「status=明确满足
     但 evidence=[]」的对外报告，让人工审核找不到任何依据。
     """
-    def _scrub(items: list | None) -> list:
+    def _scrub(items: list | None, allowed: set[str] | None) -> list:
         if not items:
             return []
-        return [i for i in items if isinstance(i.get("url"), str) and i["url"].strip()]
+        kept = []
+        for i in items:
+            url = i.get("url")
+            if not (isinstance(url, str) and url.strip()):
+                continue
+            if allowed is not None and canonical_url(url) not in allowed:
+                continue
+            kept.append(i)
+        return kept
 
     for result in payload.get("results") or []:
+        cid = (result.get("candidate") or {}).get("candidate_id")
+        allowed = (
+            allowed_urls_by_candidate.get(cid)
+            if allowed_urls_by_candidate is not None
+            else None
+        )
         for comparison in result.get("comparisons") or []:
             before = len(comparison.get("evidence") or [])
-            scrubbed = _scrub(comparison.get("evidence"))
+            scrubbed = _scrub(comparison.get("evidence"), allowed)
             comparison["evidence"] = scrubbed
             if before > 0 and not scrubbed:
-                # 原来有 evidence 但全是空 URL → 失去依据，降级 status；
-                # score 不在此处赋值——Pydantic 的 FeatureComparison.validate_score
+                # 原来有 evidence 但全被剔除（空 URL 或不在抓取池）→ 失去依据，降级
+                # status；score 不在此处赋值——Pydantic 的 FeatureComparison.validate_score
                 # 会按 status 强制重写（"证据不足" → 0.3），手动赋值是 dead code。
                 comparison["status"] = "证据不足"
                 reason = comparison.get("reasoning") or ""
-                marker = "（LLM 给出的 evidence URL 为空，按证据不足处理）"
+                marker = "（LLM 给出的 evidence URL 为空或不在抓取池内，按证据不足处理）"
                 if marker not in reason:
                     comparison["reasoning"] = (reason + " " + marker).strip()
-        result["launch_date_evidence"] = _scrub(result.get("launch_date_evidence"))
+        result["launch_date_evidence"] = _scrub(result.get("launch_date_evidence"), allowed)
+        # 失格不在此处裁定——交给 _normalize_batch 用代码判定（不信任 LLM 的
+        # disqualified）。这里只负责把编造/空 URL 清掉。
 
 
 def _load_prompt(name: str) -> str:
@@ -303,16 +366,30 @@ def _normalize_batch(
             comparison.patent_feature = feature_text
             comparisons.append(comparison)
         item.comparisons = comparisons
-        # 按侵权法「全覆盖」原则：权 1 任一特征明确不满足 → 不可能侵权 →
-        # 直接 disqualify，跳过 gap round 节省 LLM/搜索预算。LLM 已经标了
-        # disqualified=true 的不重写（保留其原因），未标的我们补上。
-        if not item.disqualified:
-            unsatisfied = [c.feature_id for c in comparisons if c.status == "明确不满足"]
-            if unsatisfied:
-                item.disqualified = True
-                item.disqualification_reason = (
-                    f"权 1 特征 {', '.join(unsatisfied)} 明确不满足，按全覆盖原则无侵权可能"
-                )
+        # 失格完全由代码裁定，**不信任 LLM 的 disqualified**（它可能凭空标 True，
+        # 或给一个晚于申请日的 launch_date 仍标失格）。合法依据只有两条：
+        #   1) 某权1特征「明确不满足」——此处 status 已是终值（无证据的负向已被
+        #      FeatureComparison.validate_score 降级为证据不足），故只剩有证据支撑的；
+        #   2) 上市日期可考证地早于专利申请日——需有 launch_date_evidence（编造/空
+        #      URL 已被 _drop_empty_url_evidence 清掉）且年份能解析并确实更早。
+        unsatisfied = [c.feature_id for c in comparisons if c.status == "明确不满足"]
+        launch_before = bool(item.launch_date_evidence) and launch_before_application(
+            item.launch_date, task_package.patent.application_date
+        )
+        if unsatisfied:
+            item.disqualified = True
+            item.disqualification_reason = (
+                f"权 1 特征 {', '.join(unsatisfied)} 明确不满足，按全覆盖原则无侵权可能"
+            )
+        elif launch_before:
+            item.disqualified = True
+            item.disqualification_reason = (
+                f"公开上市日期（{item.launch_date}）早于专利申请日"
+                f"（{task_package.patent.application_date}）"
+            )
+        else:
+            item.disqualified = False
+            item.disqualification_reason = ""
         item = CandidateEvidence.model_validate(item.model_dump())
         normalized.append(item)
     result.results = normalized
