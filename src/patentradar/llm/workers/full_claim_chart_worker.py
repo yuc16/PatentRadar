@@ -29,6 +29,7 @@ from pathlib import Path
 from patentradar.core.launch_date import launch_before_application
 from patentradar.fetcher.image_utils import dump_visual_log, png_hash
 from patentradar.llm import get_llm_provider
+from patentradar.llm.structured import generate_validated
 from patentradar.search.result_normalizer import canonical_url
 from patentradar.llm.payload_compress import compress_payload_if_needed
 from patentradar.schemas import (
@@ -76,7 +77,23 @@ def evaluate_candidate(
         dump_visual_log(visual_log_sent_dir, visual_log_candidate_id, evidence_pool_images)
     image_bytes_list = [img["png"] for img in evidence_pool_images if isinstance(img.get("png"), (bytes, bytearray))]
     images_arg = image_bytes_list or None
-    payload = provider.chat_json(
+    def _parse(payload: dict[str, Any]) -> FullClaimChartCandidate:
+        payload = _backfill_from_inputs(payload, task_package, candidate, module_two_evidence)
+        _canonicalize_claim_charts(payload, task_package)
+        _drop_empty_url_evidence(payload, allowed_urls=_allowed_evidence_urls(
+            candidate=candidate,
+            module_two_evidence=module_two_evidence,
+            evidence_pool_pages=evidence_pool_pages,
+            evidence_pool_images=evidence_pool_images,
+            new_search_results=new_search_results or [],
+        ))
+        _apply_launch_disqualification(payload, task_package, module_two_evidence)
+        try:
+            return FullClaimChartCandidate.model_validate(payload)
+        except ValidationError as exc:
+            raise LLMOutputError(f"Invalid full claim chart JSON: {exc}\nPayload: {payload}") from exc
+
+    return generate_validated(
         system=_load_prompt(),
         user_text=_build_user_text(
             task_package=task_package,
@@ -87,6 +104,7 @@ def evaluate_candidate(
             new_search_results=new_search_results or [],
             is_finalization_round=is_finalization_round,
         ),
+        parse=_parse,
         images=images_arg,
         model=model,
         reasoning_effort=reasoning_effort,
@@ -95,20 +113,6 @@ def evaluate_candidate(
         timeout=1500,
         attempts=3,
     )
-    payload = _backfill_from_inputs(payload, task_package, candidate, module_two_evidence)
-    _canonicalize_claim_charts(payload, task_package)
-    _drop_empty_url_evidence(payload, allowed_urls=_allowed_evidence_urls(
-        candidate=candidate,
-        module_two_evidence=module_two_evidence,
-        evidence_pool_pages=evidence_pool_pages,
-        evidence_pool_images=evidence_pool_images,
-        new_search_results=new_search_results or [],
-    ))
-    _apply_launch_disqualification(payload, task_package, module_two_evidence)
-    try:
-        return FullClaimChartCandidate.model_validate(payload)
-    except ValidationError as exc:
-        raise LLMOutputError(f"Invalid full claim chart JSON: {exc}\nPayload: {payload}") from exc
 
 
 def _dedupe_images(images: list[dict]) -> list[dict]:

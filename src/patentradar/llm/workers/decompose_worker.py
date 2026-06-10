@@ -15,7 +15,7 @@ from patentradar.core.constants import (
     render_technology_tags_markdown,
 )
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import get_llm_provider
+from patentradar.llm.structured import generate_validated
 from patentradar.schemas import Claim, PatentInfo, TaskPackage
 
 
@@ -30,9 +30,17 @@ def decompose_claims(
 ) -> TaskPackage:
     prompt = _load_prompt()
     user_text = _build_user_text(patent=patent, html_claims=html_claims, source=source)
-    payload = get_llm_provider().chat_json(
+    return generate_validated(
         system=prompt,
         user_text=user_text,
+        parse=lambda payload: _task_package_from_payload(
+            payload=payload,
+            patent=patent,
+            html_claims=html_claims,
+            source=source,
+            model=model,
+            reasoning_effort=reasoning_effort,
+        ),
         images=images or None,
         model=model,
         reasoning_effort=reasoning_effort,
@@ -40,14 +48,6 @@ def decompose_claims(
         response_format=_task_package_response_format(),
         timeout=1200,
         attempts=3,
-    )
-    return _task_package_from_payload(
-        payload=payload,
-        patent=patent,
-        html_claims=html_claims,
-        source=source,
-        model=model,
-        reasoning_effort=reasoning_effort,
     )
 
 
@@ -93,7 +93,15 @@ def _task_package_from_payload(
     if "patent" not in payload:
         payload["patent"] = patent.model_dump()
     else:
-        payload["patent"] = {**patent.model_dump(), **dict(payload["patent"] or {})}
+        patent_field = payload["patent"]
+        # 弱后端可能把 patent 吐成字符串/畸形列表；先判型抛 LLMOutputError 触发重生成，
+        # 不要让 dict(...) 抛宽泛的 ValueError（不在 _PARSE_FAILURES 里 → 一次就崩）。
+        if patent_field and not isinstance(patent_field, dict):
+            raise LLMOutputError(
+                f"Invalid decompose JSON: 'patent' must be an object, "
+                f"got {type(patent_field).__name__}"
+            )
+        payload["patent"] = {**patent.model_dump(), **(patent_field or {})}
 
     payload["claims_source"] = source
     payload["model"] = model

@@ -20,6 +20,7 @@ Differences vs CodexProvider:
 from __future__ import annotations
 
 import base64
+import json
 import logging
 import os
 import time
@@ -103,10 +104,14 @@ class OpenAICompatibleProvider:
             )
 
         resolved_model = model or os.getenv("PATENTRADAR_MODEL") or DEFAULT_MODEL
-        _check_prompt_size(system, user_text, resolved_model)
+        # openai 兼容后端不可靠地强制 json_schema（DeepSeek 直接 400 降级 json_object、
+        # 中转站名义接受但不强制），schema 仅靠 response_format 传不到模型，会自创结构。
+        # 故把 schema 显式注入 prompt，模型才看得到目标形状。
+        system_with_schema = system + _schema_instruction(response_format)
+        _check_prompt_size(system_with_schema, user_text, resolved_model)
 
         messages = [
-            {"role": "system", "content": system},
+            {"role": "system", "content": system_with_schema},
             {"role": "user", "content": _build_user_content(user_text, images)},
         ]
         request_body: dict[str, Any] = {
@@ -281,6 +286,26 @@ def _wrap_response_format(rf: dict[str, Any]) -> dict[str, Any]:
         return rf
     inner = {key: value for key, value in rf.items() if key != "type"}
     return {"type": "json_schema", "json_schema": inner}
+
+
+def _schema_instruction(response_format: dict[str, Any] | None) -> str:
+    """把 json_schema 渲染成 prompt 文本，让弱后端（无 API 层 schema 强制）也知道
+    目标输出形状。非 json_schema（如 json_object）或无 schema 时返回空串。
+    刻意使用小写 "json" 字样——DeepSeek 的 json_object 模式要求 prompt 含字面 "json"。
+    """
+    if not response_format or response_format.get("type") != "json_schema":
+        return ""
+    schema = response_format.get("schema")
+    if schema is None and isinstance(response_format.get("json_schema"), dict):
+        schema = response_format["json_schema"].get("schema")
+    if not schema:
+        return ""
+    return (
+        "\n\n你必须只返回一个 json 对象，严格符合以下 JSON Schema："
+        "顶层字段名、嵌套层级、类型必须完全一致，不要新增 schema 之外的字段，"
+        "不要把字段塞进自创的包装层（如 metadata），不要 markdown 代码块围栏，"
+        "不要任何解释文字。\nJSON Schema：\n" + json.dumps(schema, ensure_ascii=False)
+    )
 
 
 def _looks_like_schema_rejection(text: str) -> bool:

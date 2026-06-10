@@ -1,0 +1,753 @@
+{
+  "publication_no": "CN114512759B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P05",
+        "company": "中创新航",
+        "company_en": "CALB (China Aviation Lithium Battery)",
+        "product_name": "中创新航 One‑Stop L750 长电芯（OS平台，L750型）",
+        "product_name_en": "CALB One‑Stop L750 Long Cell (OS platform, L750 type)",
+        "product_version": "One‑Stop（OS）极简设计下的长电芯产品，命名L750暗示长度约750mm。采用磷酸铁锂或三元体系，体积利用率高达77%，支持600km续航。具体尺寸未详。",
+        "market": "电动汽车长续航车型",
+        "reason_for_deep_dive": "长度750mm落在400‑2500mm内，OS平台强调极简结构、高体积利用率，推测其厚度较薄，可能使D/V和L/S落入权1范围，值得获取规格书比对。",
+        "source_result_ids": [
+          "bocha-Q03-03",
+          "brave-Q03-02"
+        ],
+        "source_urls": [
+          "http://baa.m.yiche.com/qichezatan/thread-44322475.html",
+          "https://www.cs.com.cn/ssgs/gsxw/202304/t20230424_6339930.html"
+        ],
+        "initial_evidence_summary": "OS平台长电芯，L750型，长度约750mm，硬壳方形。体积利用率77%，系统能量密度152~180Wh/kg。具体尺寸、容量待查。"
+      },
+      "launch_date": "2023年4月23日",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.stcn.com/article/detail/849484.html",
+          "title": "续航里程600公里，中创新航新一代磷酸铁锂电池量产 - 证券时报",
+          "source_name": "证券时报",
+          "snippet": "中创新航新一代产品ONESTOP电池（下称OS电池）实现量产。4月23日，中创新航广东江门基地OS磷酸铁锂电池量产下线，该款电池采用长方体的短刀片形态，系统能量密度为153 Wh/kg。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "中创新航OS电池为单体电池，采用长方体短刀片形态，电芯产品。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.stcn.com/article/detail/849484.html",
+              "title": "续航里程600公里，中创新航新一代磷酸铁锂电池量产 - 证券时报",
+              "source_name": "证券时报",
+              "snippet": "中创新航广东江门基地OS磷酸铁锂电池量产下线，该款电池采用长方体的短刀片形态，系统能量密度为153 Wh/kg。"
+            }
+          ],
+          "reasoning": "① 权1 X：单体电池，即单个电芯。② 候选Y：公开文章明确描述OS电池为“长方体的短刀片形态”，是单体电芯。③ (a) 概念等价：是，均为单体电池。 (b) 量纲等价：是，二值（是/否）。 (c) 参考系等价：是。 (d) 无反向证据。 证据直接显示单体电池形态，满足明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池，所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "OS电池为方形铝壳硬壳电池，长方体形态（短刀片），L750命名暗示长度约750mm，宽度和厚度未知，但刀片式结构通常长度>>宽度>厚度，且公开资料称其为“长方体形”。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.stcn.com/article/detail/849484.html",
+              "title": "续航里程600公里，中创新航新一代磷酸铁锂电池量产 - 证券时报",
+              "source_name": "证券时报",
+              "snippet": "中创新航广东江门基地OS磷酸铁锂电池量产下线，该款电池采用长方体的短刀片形态。"
+            },
+            {
+              "url": "https://b2bwiki.baidu.com/article/715145921562509313",
+              "title": "揭秘中创新航电池电芯 - 百度爱采购",
+              "source_name": "百度爱采购",
+              "snippet": "中创新航100.96度电池采用方形铝壳电芯设计，单体容量约230Ah……这种设计兼顾散热效率和空间利用率。"
+            },
+            {
+              "url": "https://libattery.ofweek.com/2022-12/ART-36001-8120-30580876.html",
+              "title": "中创新航L300平台 | 领衔策动全球电池技术创新发展新趋势 - OFweek锂电网",
+              "source_name": "OFweek锂电网",
+              "snippet": "L300系列是中创新航通过对车厂技术需求解构，正向开发的、长度规格为300mm的方形电芯平台产品。"
+            }
+          ],
+          "reasoning": "① 权1 X：硬壳电池，长方体形，L > H > D。② 候选Y：公开资料称OS电池为“方形铝壳”（硬壳）、“长方体形”短刀片形态；L750命名遵循中创新航L系列规则（L300长度300mm），暗示长度约750mm；短刀片形态通常长>宽>厚，宽>厚。③ (a) 概念等价：是，硬壳、长方体形。 (b) 量纲等价：形状为二值，尺寸次序为二值。 (c) 参考系等价：是，均描述电芯几何特征。 (d) 无反向证据。 未公开具体宽度和厚度数值，但长方体与刀片形态合理推断L>H>D，故判为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "未公开D和V的具体数值，无法计算D/V。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "所有证据均未提供L750电芯的厚度D和体积V的数值，无法进行任何计算或推理，故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "未公开L750电芯的完整尺寸（长、宽、厚）和能量E，无法计算S/E。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "缺少长、宽、厚中至少两个维度以及能量数值，无法计算S和E，更无法验证S/E不等式，故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L750命名暗示长度约750mm，且中创新航L系列电芯命名规则为长度数值（L300=300mm），可推断L≈750mm。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://libattery.ofweek.com/2022-12/ART-36001-8120-30580876.html",
+              "title": "中创新航L300平台 | 领衔策动全球电池技术创新发展新趋势 - OFweek锂电网",
+              "source_name": "OFweek锂电网",
+              "snippet": "L300系列是中创新航通过对车厂技术需求解构，正向开发的、长度规格为300mm的方形电芯平台产品。"
+            }
+          ],
+          "reasoning": "① 权1 X：单体电池长度L∈[400,2500] mm。② 候选Y：型号L750直接命名为“L750”，中创新航L系列命名规则明确（L300平台对应长度300mm），可合理推断L750电芯长度约为750mm。③ (a) 概念等价：是，均为电芯长度。 (b) 量纲等价：是，长度连续量。 (c) 参考系等价：是，均为毫米单位。 (d) 无反向证据。 750mm在400~2500mm范围内，故判为可能满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "未公开L750电芯的宽度和厚度，无法计算表面积S，从而无法计算L/S。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "仅推测长度L≈750mm，但缺少宽度和厚度无法计算表面积S，无法验证L/S范围。故证据不足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 58.33,
+      "searched_queries": [
+        "中创新航 OS电池 硬壳 铝壳 方形",
+        "中创新航 OS电池 L750 厚度 宽度 尺寸 规格书",
+        "中创新航 L750 电芯 长度 750mm",
+        "中创新航 L750 电芯 表面积",
+        "中创新航 中创新航 One‑Stop L750 长电芯（OS平台，L750型） One‑Stop（OS）极简设计下的长电芯产品，命名L750暗示长度约750mm。采用磷酸铁锂或三元体系，体积利用率高达77%，支持600km续航。具体尺寸未详。 site:batteryfinds.com",
+        "[SKU自检] SKU_LOCK=OS-L750: launch_date对应OS磷酸铁锂量产（推测为L750），证据主要来自OS平台通用描述，未明确区分L750与L300；无冲突证据，大部分尺寸信息缺失，使用L300命名规则推理L750长度。SKU一致性检查：所用证据均为中创新航OS平台电芯，提及方形铝壳、长方体，但未特指L750型号，均视为SKU模糊证据。"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P03",
+        "company": "蜂巢能源",
+        "company_en": "SVOLT Energy Technology Co., Ltd. (SVOLT)",
+        "product_name": "蜂巢能源 L600 196Ah（第二代短刀）",
+        "product_name_en": "SVOLT L600 196Ah (2nd Gen Short Blade)",
+        "product_version": "第二代短刀磷酸铁锂电芯，容量提升至 196Ah，能量密度超过 185Wh/kg，体积能量密度超 430Wh/L，尺寸 21.5×574×118mm（厚×长×宽），单体能量 627.2Wh。",
+        "market": "中国乘用车及储能市场",
+        "reason_for_deep_dive": "已明确尺寸 574mm 长度在 400-2500mm 范围内；硬壳长方体；可计算 D/V≈1.48e-05 mm^-2、S/E≈263 mm^2/Wh、L/S≈0.00347 mm^-1，均落入权 1 保护范围。",
+        "source_result_ids": [
+          "brave-Q01-05",
+          "tavily-Q01-01",
+          "brave-Q02-03",
+          "tavily-Q02-05"
+        ],
+        "source_urls": [
+          "https://www.cls.cn/detail/878395",
+          "https://www.eet-china.com/mp/a226127.html",
+          "https://www.aquaenergyexpo.com/product/10178/Energy_Storage/196Ah_Blade_cell",
+          "https://www.gspowert.com/cn/sys-pd/83.html"
+        ],
+        "initial_evidence_summary": "第二代 196Ah 电芯尺寸 21.5×574×118mm，能量 627.2Wh（3.2V），体积能量密度 430Wh/L，质量能量密度 185Wh/kg。"
+      },
+      "launch_date": "2023年5月4日正式下线交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/690/530.htm",
+          "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付，全面通过“过充、撞击、震动”等国标安全测试 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "蜂巢能源宣布，第二代短刀叠片电池 196Ah 电芯在南京基地顺利下线，标志着南京基地进入量产爬坡的全新阶段。此外，南京基地自产第一款短刀电池的首款 LCTP 电池包，现阶段已按期批量交付。"
+        },
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+          "source_name": "IT之家",
+          "snippet": "蜂巢能源二代 L600 磷酸铁锂电池规格与上一代相同，长度600mm，但是单体容量提升至196Ah，能量密度超过185wh/kg，体积能量密度超过430wh/L，属于行业领先水平。预计将在2022年第三季度实现量产。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "蜂巢能源 L600 196Ah 第二代短刀片磷酸铁锂电芯",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+              "source_name": "IT之家",
+              "snippet": "今日蜂巢能源宣布，继10月底宣布第一代 L600 短刀片磷酸铁锂电芯在常州金坛工厂量产下线之后，第二代产品已经完成开发，...蜂巢能源二代 L600 磷酸铁锂电池规格与上一代相同，长度600mm，但是单体容量提升至196Ah。"
+            }
+          ],
+          "reasoning": "该文章明确提及蜂巢能源第二代L600短刀片磷酸铁锂电芯，属于一种单体电池。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池，所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "未找到明确证据证明硬壳铝壳；长度约600mm，但宽度、厚度未公开，无法验证L>H>D。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.svolt.cn/solution/passenger",
+              "title": "乘用车-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官网",
+              "snippet": "蜂巢能源推出L300-L600系列NCM和LFP短刀电池...短刀电芯更优温度均匀性..."
+            }
+          ],
+          "reasoning": "官网提及短刀电芯，但未明确说明外壳材质是否为硬壳，也未提供宽度和厚度尺寸，无法确认L>H>D的关系。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "无法计算，缺少厚度D和体积V数据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+              "source_name": "IT之家",
+              "snippet": "长度600mm，能量密度超过185wh/kg，体积能量密度超过430wh/L。"
+            }
+          ],
+          "reasoning": "已知长度600mm，缺少厚度D和宽度，无法计算体积V，因此D/V无法验证。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "无法计算S，缺少宽度和厚度。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+              "source_name": "IT之家",
+              "snippet": "长度600mm，单体能量196Ah (约3.2V，推算627.2Wh)。"
+            }
+          ],
+          "reasoning": "缺少宽度和厚度，无法计算表面积S，因此无法验证S/E≤1000。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "L=600mm，落入范围。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+              "source_name": "IT之家",
+              "snippet": "长度600mm。"
+            }
+          ],
+          "reasoning": "文章明确给出电池长度为600毫米，落在权1要求的400~2500mm范围内。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "无法计算L/S，缺少S。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市 - IT之家",
+              "source_name": "IT之家",
+              "snippet": "长度600mm。"
+            }
+          ],
+          "reasoning": "缺少宽度和厚度，无法计算表面积S，因此无法验证L/S比例。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 53.33,
+      "searched_queries": [
+        "蜂巢能源 L600 196Ah 硬壳 铝壳",
+        "蜂巢能源 L600 196Ah 尺寸 宽度 厚度",
+        "蜂巢能源 L600 196Ah（第二代短刀） 规格书 参数",
+        "SVOLT L600 196Ah datasheet dimensions",
+        "[SKU自检] SKU锁定为蜂巢能源 L600 196Ah 第二代短刀；所有evidence均指向该SKU，无冲突。"
+      ],
+      "searched_providers": [
+        "bocha",
+        "brave",
+        "tavily",
+        "exa"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P09",
+        "company": "三星SDI",
+        "company_en": "Samsung SDI",
+        "product_name": "三星SDI Gen5 方形电芯（高镍NCA，2021年匈牙利量产版）",
+        "product_name_en": "Samsung SDI Gen5 Prismatic Cell (High‑nickel NCA, Hungarian production 2021)",
+        "product_version": "第五代动力电池，采用镍含量超80%的NCA正极，方形铝壳，能量密度至少600Wh/L，续航600km以上，2021年在匈牙利工厂量产。电芯未公布具体尺寸。",
+        "market": "电动汽车（宝马等）",
+        "reason_for_deep_dive": "方形硬壳、超高能量密度（≥600Wh/L），若其长度在400‑2500mm区间，可能满足权1的比值要求，尤其S/E可能极低。",
+        "source_result_ids": [
+          "brave-Q19-04",
+          "brave-Q19-05"
+        ],
+        "source_urls": [
+          "https://news.qq.com/rain/a/20210309A06MXF00",
+          "https://www.dianyuan.com/article/57492-2-1.html"
+        ],
+        "initial_evidence_summary": "Gen5方形电芯，能量密度>600Wh/L，镍含量>80%，铝壳。具体长宽厚未知，需通过拆解或规格书获取。"
+      },
+      "launch_date": "2021年（匈牙利工厂量产）",
+      "launch_date_evidence": [
+        {
+          "url": "https://i.gasgoo.com/news/70159083.html",
+          "title": "三星SDI扩建匈牙利电池工厂-汽车资讯-盖世汽车社区",
+          "source_name": "盖世汽车社区",
+          "snippet": "大规模生产将于2021年开始。这是三星SDI首次将NCA运用在方形电池之中。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "三星SDI Gen5 方形电芯，是一种锂离子单体电池。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://i.gasgoo.com/news/70159083.html",
+              "title": "三星SDI扩建匈牙利电池工厂-汽车资讯-盖世汽车社区",
+              "source_name": "盖世汽车社区",
+              "snippet": "使用镍含量超过80%的新阴极材料，三星SDI将开始生产Gen5电池，这是三星SDI的下一代电池。"
+            }
+          ],
+          "reasoning": "公开报道明确将Gen5产品称为“电池”或“电芯”，确认其为单体电池，符合权1对产品类型的基本限定。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池，所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "三星SDI Gen5方形铝壳电芯，外形为方形（长方体），无具体尺寸但通常长度>宽度>厚度。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "http://auto.cnfol.com/cheshidongtai/20210617/28940488.shtml",
+              "title": "三星增加NCA电池中的镍含量 达到91%_车市动态_汽车_中金在线",
+              "source_name": "中金在线",
+              "snippet": "此外，新型方形电芯也已投产，能量密度为630 Wh/L...这是三星SDI首次将NCA运用在方形电池之中。"
+            }
+          ],
+          "reasoning": "① 权1 X：硬壳电池、长方体形且L>H>D。② 候选Y：公开资料描述为“方形铝壳”“方形电芯”，确认为铝制硬壳，外形为长方体。虽然未公布具体尺寸，但方形动力电芯的常规命名和结构特点（长度、宽度、厚度三轴）以及行业惯例均表明长度最大，厚度最小，故L>H>D可合理推断。③ 对比：(a) 概念是否等价：是，硬壳对应铝壳，长方体形对应方形，L>H>D对应方形电芯的标称顺序。(b) 单位/量纲是否等价：是，均为长度量纲。(c) 参考系是否等价：是，均以电池本体为参考。(d) 是否有反向证据：无。基于以上，可维持“可能满足”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "暂无任何公开尺寸数据，无法计算D/V。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "所有公开资料均未提供Gen5电芯的具体长度、宽度或厚度，缺少计算D和V的必要输入，无法验证D/V比值是否落入权利要求范围。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "已知能量密度≥600Wh/L，但缺少尺寸无法求E和S。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "虽有多篇报道提及能量密度至少600Wh/L，但无电芯能量E的明确数值，也无长、宽、厚尺寸，无法计算表面积S，从而无法验证S/E是否满足≤1000 mm²/Wh。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "长度未知。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "所有公开资料均未给出电芯的长度L的具体数值，无法判断其是否落在400-2500mm区间内。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L与S均未知。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "缺乏长度L和表面积S的具体数据，无法进行L/S比值计算。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 50.0,
+      "searched_queries": [
+        "三星SDI 第五代 方形电池 尺寸 长 宽 厚",
+        "三星SDI Gen5 方形电芯 规格参数 length width thickness",
+        "三星SDI 高镍NCA 方形电芯 尺寸",
+        "[SKU自检] 锁定SKU: Gen5匈牙利NCA方形电芯；证据URL: i.gasgoo.com (Gen5), auto.cnfol.com (描述方形电芯) 均指向同一SKU；无冲突"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "国轩高科",
+        "company_en": "Gotion High-Tech",
+        "product_name": "国轩高科 L600 启晨电芯（LMFP，2024量产版）",
+        "product_name_en": "Gotion L600 Astroinno Cell (LMFP, 2024 production version)",
+        "product_version": "LMFP（磷酸锰铁锂）体系L600启晨电芯，计划2024年量产。单体质量能量密度240Wh/kg，体积能量密度525Wh/L，循环4000次以上。电芯为方形硬壳，具体尺寸未公开，但命名暗示长度约600mm。",
+        "market": "电动汽车1000公里续航车型",
+        "reason_for_deep_dive": "名称L600表明长度约600mm，符合权1的400‑2500mm范围，且极高体积能量密度（525Wh/L）可能意味着D/V或S/E较低。需挖掘具体尺寸以验证比值。",
+        "source_result_ids": [
+          "brave-Q05-01",
+          "brave-Q05-03",
+          "brave-Q05-05",
+          "exa-Q06-01",
+          "exa-Q06-02",
+          "tavily-Q06-02",
+          "tavily-Q06-03"
+        ],
+        "source_urls": [
+          "https://chejiahao.autohome.com.cn/info/12594708",
+          "https://m.bjx.com.cn/mnews/20230522/1307895.shtml",
+          "https://news.cnpowder.com.cn/70487.html",
+          "https://www.newswire.ca/news-releases/delivering-superb-performance-with-mn-gotion-high-tech-s-astroinno-battery-features-range-of-1000km-without-using-ncm-884544627.html",
+          "https://www.batterydesign.net/gotion-l600-astroinno",
+          "https://en.gotion.com.cn/news/company-news-260.html",
+          "https://www.prnewswire.com/news-releases/delivering-superb-performance-with-mn-gotion-high-techs-astroinno-battery-features-range-of-1000km-without-using-ncm-301829419.html"
+        ],
+        "initial_evidence_summary": "LMFP方形硬壳，能量密度240Wh/kg、525Wh/L，名称L600暗示长度约600mm。具体长、宽、厚度未公开，但质量/体积能量密度为推算D/V、S/E提供可能。"
+      },
+      "launch_date": "2023年5月19日发布，计划2024年量产",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.stcn.com/article/detail/870736.html",
+          "title": "国轩高科发布续航1000km磷酸锰铁锂电池 预计2024年量产",
+          "source_name": "证券时报",
+          "snippet": "5月19，国轩高科(002074)第12届科技大会在安徽合肥开幕，会议发布公司自主研发的全新LFMP（磷酸锰铁锂）体系的L600启晨电芯及电池包，计划于2024年量产。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "国轩高科 L600 启晨电芯是一种单体电池。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "http://www.wxact.com/news/html/783.html",
+              "title": "国轩高科发布新动力电池启晨电池-ACTBOX无锡艾科特试验设备",
+              "source_name": "无锡艾科特试验设备",
+              "snippet": "启晨L600 LMFP电芯实现了240瓦时/千克的质量能量密度，525瓦时/升的体积能量密度..."
+            }
+          ],
+          "reasoning": "多个公开来源均将L600启晨称为“电芯”，表明其属于单体电池。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池，所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "公开资料显示电芯为方形，但未明确说明为硬壳电池，且尺寸L、H、D均未公开。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://news.cnpowder.com.cn/70487.html",
+              "title": "国轩高科发布L600 LMFP新品启晨电池，续航1000公里-业界动态-资讯-中国粉体网",
+              "source_name": "中国粉体网",
+              "snippet": "国轩高科自主研发方形磷酸锰铁锂锂离子蓄电池获得了“安徽省新产品”荣誉称号"
+            }
+          ],
+          "reasoning": "尽管公开信息提及“方形”（长方体），但未直接声明为硬壳电池，且尺寸数据完全缺失，无法确认L>W>D等具体形态特征。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "无任何尺寸数据，无法计算D和V及D/V值。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "http://www.wxact.com/news/html/783.html",
+              "title": "国轩高科发布新动力电池启晨电池-ACTBOX无锡艾科特试验设备",
+              "source_name": "无锡艾科特试验设备",
+              "snippet": "启晨L600 LMFP电芯实现了240瓦时/千克的质量能量密度，525瓦时/升的体积能量密度...（未提供任何尺寸参数）"
+            }
+          ],
+          "reasoning": "所有公开文献均未给出电池本体的厚度、长度、宽度或体积，无法计算D/V比值。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "容量223Ah，但电压、尺寸、能量E和表面积S均未公开，无法计算S/E。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.jrj.com.cn/madapter/stock/2023/08/17165937767437.shtml",
+              "title": "互动| 国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线-手机金融界",
+              "source_name": "金融界",
+              "snippet": "L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah，可以实现240Wh/kg的能量密度..."
+            }
+          ],
+          "reasoning": "虽已知容量和质量能量密度，但缺乏电压和具体尺寸，无法准确计算能量E和表面积S，故S/E不可得。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "产品名“L600”暗示长度约600mm，但无官方尺寸数据。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.geeknev.com/tech/301/3011619.html",
+              "title": "国轩高科发布L600 LMFP启晨电池 号称续航可达1000公里｜皆电",
+              "source_name": "皆电",
+              "snippet": "自主研发的L600 LMFP启晨电芯，系统能量密度可达到190Wh/kg...（未给出具体长度）"
+            }
+          ],
+          "reasoning": "名称中的“600”暗示长度约600mm，该值落在400-2500mm范围内，但缺少官方公开的长度数值，不能认定为明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "无尺寸数据，无法计算L和S及比值。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.stcn.com/article/detail/870736.html",
+              "title": "国轩高科发布续航1000km磷酸锰铁锂电池 预计2024年量产",
+              "source_name": "证券时报",
+              "snippet": "启晨L600 LMFP电芯质量能量密度、体积能量密度分别达240Wh/kg、525Wh/L...（未提供尺寸）"
+            }
+          ],
+          "reasoning": "所有公开信息均未包含长度L和表面积S的数值，无法验证L/S比值。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "国轩高科 L600 启晨电芯 规格书 尺寸 长 宽 厚 电压 容量",
+        "Gotion L600 Astroinno cell dimensions datasheet",
+        "国轩高科 启晨电芯 L600 大小",
+        "[SKU自检] 候选锁定LMFP 2024量产版，全部证据均指向2023年5月发布的L600启晨电芯，无SKU冲突。"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P08",
+        "company": "亿纬锂能",
+        "company_en": "EVE Energy",
+        "product_name": "亿纬锂能 LF560K 电芯（560Ah，CTT技术）",
+        "product_name_en": "EVE Energy LF560K Cell (560Ah, CTT technology)",
+        "product_version": "基于CTT（Cell to TWh）技术的大容量方形磷酸铁锂储能电芯，560Ah，单电芯能量1.792kWh，循环寿命超12000次。尺寸未正式公开，但系超大电芯，长度推测远大于400mm。",
+        "market": "储能（GWh级）",
+        "reason_for_deep_dive": "超大容量单体，长度预计>400mm，硬壳方形。需确认具体尺寸以计算D/V和S/E是否在权1范围。",
+        "source_result_ids": [
+          "bocha-Q09-01",
+          "bocha-Q09-04",
+          "brave-Q09-02",
+          "brave-Q09-04",
+          "brave-Q09-05"
+        ],
+        "source_urls": [
+          "https://www.hangyan.co/charts/3159695873269565359",
+          "https://www.toutiao.com/article/7238440115947815427",
+          "https://www.evebattery.com/news-694",
+          "http://www.inpai.com.cn/news/new/20221021/148769.html",
+          "https://www.thepaper.cn/newsDetail_forward_20396662"
+        ],
+        "initial_evidence_summary": "560Ah，1.792kWh，循环12000次，方形铝壳。具体尺寸待查，但行业信息暗示长度可能在500‑600mm左右。"
+      },
+      "launch_date": "2022年10月20日",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ceeia.com/JSQY/d/202210/37ea4e3040de470d8789a0bd8e337ab1.html",
+          "title": "亿纬锂能发布新一代LF560K储能电池",
+          "source_name": "中国电器工业协会",
+          "snippet": "10月20日，亿纬锂能举行“创‘芯’驱动发展 引领储能T时代”储能电池战略发布会。会上，亿纬储能总经理陈翔、亿纬锂能铁锂电池首席技术官苑丁丁博士共同发布了亿纬锂能全新一代储能电池LF560K。"
+        },
+        {
+          "url": "https://www.battery100.org/news/gongsi/1021114E2022.html",
+          "title": "亿纬锂能发布储能电池LF560K 循环寿命超12000次_中关村新型电池技术创新联盟官网",
+          "source_name": "电池百人会",
+          "snippet": "10月20日晚间，亿纬锂能在广东惠州举行储能电池LF560K战略发布会。会上...共同发布了亿纬锂能全新一代储能电池LF560K。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "LF560K是一种储能电池电芯，具有560Ah超大容量，单只电池可储存1.792kWh能量。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ceeia.com/JSQY/d/202210/37ea4e3040de470d8789a0bd8e337ab1.html",
+              "title": "亿纬锂能发布新一代LF560K储能电池",
+              "source_name": "中国电器工业协会",
+              "snippet": "亿纬锂能...发布了亿纬锂能全新一代储能电池LF560K。...LF560K电池采用超大电池CTT(Cell to TWh)技术...具有560Ah超大容量，单只电池可储存1.792kWh能量。"
+            },
+            {
+              "url": "https://www.thepaper.cn/newsDetail_forward_20396662",
+              "title": "循环寿命超1.2万次，亿纬锂能发布560Ah超大容量锂离子储能电池",
+              "source_name": "澎湃新闻",
+              "snippet": "10月20日晚间...亿纬锂能...发布了全新一代储能电池LF560K。该储能电池电芯具有560Ah超大容量，单只电池可储存1.792kWh能量。"
+            }
+          ],
+          "reasoning": "① 权1 X：单体电池，即单个电化学电池单元（概念为“单体电芯”）。\n② 候选 Y：公开证据显示LF560K是一款电芯，容量560Ah，单只储存1.792kWh能量。\n③ 对比：\n  (a) 概念等价：是，Y是单体电芯，与X同义。\n  (b) 量纲等价：是，X与Y均为“存在/不存在”的二值判定。\n  (c) 参考系等价：是，均指向独立电化学单元。\n  (d) 反向证据：无。\n→ 明确满足。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池，所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "未找到公开的具体尺寸数据，也未明确描述LF560K为硬壳长方体且L>H>D。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "所有已抓取的页面（含官网、行业报道）均未提供LF560K的壳体类型（硬壳）、外形（长方体）的明确说明，也无任何长宽厚尺寸或比例关系，无法证实L>H>D。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "缺少厚度D和体积V的任何公开数值。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "未找到LF560K的厚度D和体积V，无法计算D/V。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "已知E=1.792kWh=1792Wh，但缺少尺寸导致S未知，无法计算S/E。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "能量E可证，但表面积S需要长宽厚尺寸，公开资料均未提供，无法判定S/E是否≤1000。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "长度L未知，无法验证。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "所有资料均未给出LF560K的长度，无法判断是否在400~2500mm内。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L和S均未知，无法计算L/S。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [],
+          "reasoning": "缺少长度和表面积，无法验证比值范围。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 41.67,
+      "searched_queries": [
+        "LF560K 铝壳 方形 尺寸 长宽厚",
+        "LF560K 表面积 尺寸 能量",
+        "LF560K 长度 尺寸",
+        "LF560K 长宽高 表面积 长细比",
+        "亿纬锂能 LF560K 电芯 规格书 PDF",
+        "EVE LF560K datasheet dimensions",
+        "[SKU自检] LF560K-560Ah-CTT: product_version=560Ah CTT; launch_date=2022-10-20; evidence host=ceeia.com (LF560K), thepaper.cn (LF560K), evebattery.com (LF560K) 均匹配目标SKU，无冲突。"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    }
+  ],
+  "excluded_candidates": []
+}

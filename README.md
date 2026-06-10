@@ -14,7 +14,7 @@
 
 https://github.com/user-attachments/assets/94f8f758-6a43-49a8-b16b-2e04e1d8e110
 
-[快速开始](#-快速开始) · [架构](#%EF%B8%8F-架构) · [4 模块工作流](#-4-模块工作流) · [Skill 模式](#模式-2作为-skill-嵌入-claude-code--codex-cli) · [评估](evaluate/EVALUATION.md)
+[快速开始](#-快速开始) · [架构](#%EF%B8%8F-架构) · [4 模块工作流](#-4-模块工作流) · [Skill 模式](#模式-2作为-skill-嵌入-claude-code--codex-cli) · [Examples](examples/README.md) · [评估](evaluate/EVALUATION.md)
 
 </div>
 
@@ -306,8 +306,8 @@ PatentRadar/
 ### 前置依赖
 
 - 选好下面**部署方式 A 或 B** 之一（决定要装什么）
-- 至少一个搜索 API key（Tavily / Bocha / Exa / Brave 任一即可，越多越好）
-- LLM 后端二选一：
+- 至少一个搜索 API key（Tavily / Bocha / Exa / Brave 任一即可，越多越好，强烈推荐四个全部连接）
+- LLM 后端二选一（强烈推荐**GPT**系列，原生支持structured_outputs）：
   - **OpenAI 兼容**（aihubmix / DeepSeek / 自建网关）—— Docker 和本地都支持
   - **Codex**（免费 ChatGPT 订阅可用，需 `codex login` 完成 OAuth）—— **仅本地 uv 路径可用**（容器里读不到宿主机 `~/.codex/auth.json`）
 

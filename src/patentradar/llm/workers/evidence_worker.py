@@ -16,6 +16,7 @@ from pathlib import Path
 
 from patentradar.fetcher.image_utils import dump_visual_log, png_hash
 from patentradar.llm import get_llm_provider
+from patentradar.llm.structured import generate_validated
 from patentradar.llm.payload_compress import compress_payload_if_needed
 from patentradar.schemas import (
     Candidate,
@@ -76,9 +77,27 @@ def judge_candidate_batch(
     )
     image_bytes_list = _flatten_images(candidates, fetched_images_by_candidate)
     images_arg = image_bytes_list or None
-    payload = provider.chat_json(
+    def _parse(payload: dict[str, Any]) -> EvidenceBatchResult:
+        payload["publication_no"] = task_package.patent.publication_no
+        payload["batch_id"] = batch_id
+        _drop_empty_url_evidence(
+            payload,
+            allowed_urls_by_candidate=_allowed_urls_by_candidate(
+                candidates=candidates,
+                search_results_by_candidate=search_results_by_candidate,
+                fetched_pages_by_candidate=fetched_pages_by_candidate,
+                fetched_images_by_candidate=fetched_images_by_candidate,
+            ),
+        )
+        try:
+            return EvidenceBatchResult.model_validate(payload)
+        except ValidationError as exc:
+            raise LLMOutputError(f"Invalid evidence batch JSON: {exc}\nPayload: {payload}") from exc
+
+    result = generate_validated(
         system=_load_prompt("evidence_extract.md"),
         user_text=user_text,
+        parse=_parse,
         images=images_arg,
         model=model,
         reasoning_effort=reasoning_effort,
@@ -87,21 +106,6 @@ def judge_candidate_batch(
         timeout=1500,
         attempts=3,
     )
-    payload["publication_no"] = task_package.patent.publication_no
-    payload["batch_id"] = batch_id
-    _drop_empty_url_evidence(
-        payload,
-        allowed_urls_by_candidate=_allowed_urls_by_candidate(
-            candidates=candidates,
-            search_results_by_candidate=search_results_by_candidate,
-            fetched_pages_by_candidate=fetched_pages_by_candidate,
-            fetched_images_by_candidate=fetched_images_by_candidate,
-        ),
-    )
-    try:
-        result = EvidenceBatchResult.model_validate(payload)
-    except ValidationError as exc:
-        raise LLMOutputError(f"Invalid evidence batch JSON: {exc}\nPayload: {payload}") from exc
     return _normalize_batch(result, task_package=task_package, candidates=candidates)
 
 

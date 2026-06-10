@@ -1,0 +1,200 @@
+{
+  "patent": {
+    "publication_no": "CN114512759B",
+    "country_code": "CN",
+    "title": "单体电池、动力电池包及电动车",
+    "applicants": [
+      "BYD Co Ltd"
+    ],
+    "inventors": [
+      "王信月",
+      "何科峰",
+      "高新",
+      "程晗",
+      "朱燕"
+    ],
+    "application_date": "2019-06-21",
+    "google_patents_url": "https://patents.google.com/patent/CN114512759B/zh",
+    "pdf_url": "https://patentimages.storage.googleapis.com/90/db/f1/56660605aaae43/CN114512759B.pdf",
+    "fetched_at": "2026-06-10T23:17:35+08:00"
+  },
+  "technology_tag": "动力电池",
+  "claims": [
+    {
+      "claim_no": 1,
+      "claim_text": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，\n所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；\n所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；\n所述电池本体的长度L为400mm~2500mm；\n所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+      "features": [
+        {
+          "feature_id": "C1-F1",
+          "feature_text": "一种单体电池"
+        },
+        {
+          "feature_id": "C1-F2",
+          "feature_text": "所述单体电池为硬壳电池，所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D"
+        },
+        {
+          "feature_id": "C1-F3",
+          "feature_text": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2"
+        },
+        {
+          "feature_id": "C1-F4",
+          "feature_text": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1"
+        },
+        {
+          "feature_id": "C1-F5",
+          "feature_text": "所述电池本体的长度L为400mm~2500mm"
+        },
+        {
+          "feature_id": "C1-F6",
+          "feature_text": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1"
+        }
+      ]
+    },
+    {
+      "claim_no": 2,
+      "claim_text": "2.根据权利要求1所述单体电池，其特征在于，所述电池本体的长度L与所述电池本体的能量E满足：L/E=0.8 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1 。",
+      "features": [
+        {
+          "feature_id": "C2-F1",
+          "feature_text": "所述电池本体的长度L与所述电池本体的能量E满足：L/E=0.8 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1"
+        }
+      ]
+    },
+    {
+      "claim_no": 3,
+      "claim_text": "3.根据权利要求2所述单体电池，其特征在于，所述电池本体的长度L与所述电池本体的能量E满足：L/E=1.65 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1 。",
+      "features": [
+        {
+          "feature_id": "C3-F1",
+          "feature_text": "所述电池本体的长度L与所述电池本体的能量E满足：L/E=1.65 mm·Wh ﹣1 ~2.45 mm·Wh ﹣1"
+        }
+      ]
+    },
+    {
+      "claim_no": 4,
+      "claim_text": "4.根据权利要求1~3中任一项所述单体电池，其特征在于，所述电池本体的长度L为400mm~1500mm。",
+      "features": [
+        {
+          "feature_id": "C4-F1",
+          "feature_text": "所述电池本体的长度L为400mm~1500mm"
+        }
+      ]
+    },
+    {
+      "claim_no": 5,
+      "claim_text": "5.根据权利要求1~3中任一项的所述单体电池，其特征在于，所述电池本体的长度方向和厚度方向沿水平方向延伸，所述电池本体的宽度方向沿竖直方向延伸。",
+      "features": [
+        {
+          "feature_id": "C5-F1",
+          "feature_text": "所述电池本体的长度方向和厚度方向沿水平方向延伸，所述电池本体的宽度方向沿竖直方向延伸"
+        }
+      ]
+    },
+    {
+      "claim_no": 6,
+      "claim_text": "6.根据权利要求1~3中任一项所述的单体电池，其特征在于，还包括：\n第一极耳，所述第一极耳设于所述电池本体的长度方向上的一端；\n第二极耳，所述第二极耳设于所述电池本体的长度方向上的另一端。",
+      "features": [
+        {
+          "feature_id": "C6-F1",
+          "feature_text": "还包括：第一极耳，所述第一极耳设于所述电池本体的长度方向上的一端"
+        },
+        {
+          "feature_id": "C6-F2",
+          "feature_text": "第二极耳，所述第二极耳设于所述电池本体的长度方向上的另一端"
+        }
+      ]
+    },
+    {
+      "claim_no": 7,
+      "claim_text": "7.根据权利要求1~3中任一项所述的单体电池，其特征在于，所述单体电池为铝壳方形电池且所述单体电池还包括防爆阀，所述防爆阀设于所述电池本体的长度方向上的至少一端。",
+      "features": [
+        {
+          "feature_id": "C7-F1",
+          "feature_text": "所述单体电池为铝壳方形电池"
+        },
+        {
+          "feature_id": "C7-F2",
+          "feature_text": "所述单体电池还包括防爆阀，所述防爆阀设于所述电池本体的长度方向上的至少一端"
+        }
+      ]
+    },
+    {
+      "claim_no": 8,
+      "claim_text": "8.根据权利要求7中所述的单体电池，其特征在于，所述电池本体的长度方向上的两端分别设有防爆阀。",
+      "features": [
+        {
+          "feature_id": "C8-F1",
+          "feature_text": "所述电池本体的长度方向上的两端分别设有防爆阀"
+        }
+      ]
+    },
+    {
+      "claim_no": 9,
+      "claim_text": "9.根据权利要求1~3中任一项所述的单体电池，其特征在于，所述电池本体的长度L与宽度H满足：L/H=7~20。",
+      "features": [
+        {
+          "feature_id": "C9-F1",
+          "feature_text": "所述电池本体的长度L与宽度H满足：L/H=7~20"
+        }
+      ]
+    },
+    {
+      "claim_no": 10,
+      "claim_text": "10.一种动力电池包，其特征在于，包括：\n包体；\n多个根据权利要求1~9中任一项所述的单体电池，所述多个单体电池设于所述包体内。",
+      "features": [
+        {
+          "feature_id": "C10-F1",
+          "feature_text": "一种动力电池包"
+        },
+        {
+          "feature_id": "C10-F2",
+          "feature_text": "包括：包体"
+        },
+        {
+          "feature_id": "C10-F3",
+          "feature_text": "多个单体电池，所述多个单体电池设于所述包体内"
+        }
+      ]
+    },
+    {
+      "claim_no": 11,
+      "claim_text": "11.一种电动车，其特征在于，所述电动车包括权利要求10所述的动力电池包。",
+      "features": [
+        {
+          "feature_id": "C11-F1",
+          "feature_text": "一种电动车，包括：动力电池包"
+        }
+      ]
+    }
+  ],
+  "claim_1_text": "1.一种单体电池，其特征在于，所述单体电池为硬壳电池，所述单体电池包括：\n电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D，其中，\n所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2 ；\n所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1 ；\n所述电池本体的长度L为400mm~2500mm；\n所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1 。",
+  "claim_1_features": [
+    {
+      "feature_id": "C1-F1",
+      "feature_text": "一种单体电池"
+    },
+    {
+      "feature_id": "C1-F2",
+      "feature_text": "所述单体电池为硬壳电池，所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D"
+    },
+    {
+      "feature_id": "C1-F3",
+      "feature_text": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2"
+    },
+    {
+      "feature_id": "C1-F4",
+      "feature_text": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1"
+    },
+    {
+      "feature_id": "C1-F5",
+      "feature_text": "所述电池本体的长度L为400mm~2500mm"
+    },
+    {
+      "feature_id": "C1-F6",
+      "feature_text": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1"
+    }
+  ],
+  "claims_source": "html",
+  "model": "deepseek-v4-pro",
+  "reasoning_effort": "high"
+}

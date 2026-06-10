@@ -15,7 +15,7 @@ from patentradar.core.constants import (
     PATENT_COUNTRY_CODES,
 )
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import get_llm_provider
+from patentradar.llm.structured import generate_validated
 from patentradar.llm.payload_compress import compress_payload_if_needed
 from patentradar.schemas import CandidateShortlist, SearchResultsArtifact, TaskPackage
 
@@ -28,9 +28,19 @@ def filter_candidates(
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> CandidateShortlist:
     user_text = _build_user_text(task_package=task_package, search_results=search_results)
-    payload = get_llm_provider().chat_json(
+
+    def _parse(payload: dict[str, Any]) -> CandidateShortlist:
+        payload["publication_no"] = task_package.patent.publication_no
+        _normalize_candidate_ids(payload)
+        try:
+            return CandidateShortlist.model_validate(payload)
+        except ValidationError as exc:
+            raise LLMOutputError(f"Invalid candidate shortlist JSON: {exc}\nPayload: {payload}") from exc
+
+    return generate_validated(
         system=_load_prompt("candidate_extract.md"),
         user_text=user_text,
+        parse=_parse,
         model=model,
         reasoning_effort=reasoning_effort,
         verbosity="medium",
@@ -38,12 +48,6 @@ def filter_candidates(
         timeout=1200,
         attempts=3,
     )
-    payload["publication_no"] = task_package.patent.publication_no
-    _normalize_candidate_ids(payload)
-    try:
-        return CandidateShortlist.model_validate(payload)
-    except ValidationError as exc:
-        raise LLMOutputError(f"Invalid candidate shortlist JSON: {exc}\nPayload: {payload}") from exc
 
 
 def _normalize_candidate_ids(payload: dict[str, Any]) -> None:

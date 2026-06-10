@@ -14,7 +14,7 @@ from patentradar.core.constants import (
     PATENT_COUNTRY_CODES,
 )
 from patentradar.core.exceptions import LLMOutputError
-from patentradar.llm import get_llm_provider
+from patentradar.llm.structured import generate_validated
 from patentradar.schemas import QueryPlan, TaskPackage
 
 
@@ -24,9 +24,17 @@ def generate_query_plan(
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = DEFAULT_REASONING_EFFORT,
 ) -> QueryPlan:
-    payload = get_llm_provider().chat_json(
+    def _parse(payload: dict[str, Any]) -> QueryPlan:
+        payload["publication_no"] = task_package.patent.publication_no
+        try:
+            return QueryPlan.model_validate(payload)
+        except ValidationError as exc:
+            raise LLMOutputError(f"Invalid query plan JSON: {exc}\nPayload: {payload}") from exc
+
+    return generate_validated(
         system=_load_prompt("query_generation.md"),
         user_text=_build_user_text(task_package),
+        parse=_parse,
         model=model,
         reasoning_effort=reasoning_effort,
         verbosity="medium",
@@ -34,11 +42,6 @@ def generate_query_plan(
         timeout=900,
         attempts=3,
     )
-    payload["publication_no"] = task_package.patent.publication_no
-    try:
-        return QueryPlan.model_validate(payload)
-    except ValidationError as exc:
-        raise LLMOutputError(f"Invalid query plan JSON: {exc}\nPayload: {payload}") from exc
 
 
 def _load_prompt(name: str) -> str:

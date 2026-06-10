@@ -1,0 +1,1390 @@
+{
+  "publication_no": "CN114512759B",
+  "top_competitors": [
+    {
+      "candidate": {
+        "candidate_id": "P01",
+        "company": "蜂巢能源科技股份有限公司",
+        "company_en": "SVOLT Energy Technology Co., Ltd.",
+        "product_name": "L600 196Ah 磷酸铁锂短刀电芯",
+        "product_name_en": "L600 196Ah LFP short blade cell",
+        "product_version": "第二代 L600 短刀片磷酸铁锂单体电芯，公开参数为 3.2V、196Ah、能量 627.2Wh，尺寸约 21.5×574×118mm，采用短刀/长方体方壳形态与叠片工艺。资料显示其能量密度约 185Wh/kg、体积能量密度约 430Wh/L，并已在南京基地量产爬坡。",
+        "market": "中国乘用车动力电池，A 级 BEV / LCTP 电池包方案",
+        "reason_for_deep_dive": "该候选直接命中权利要求1的关键维度：单体方壳/短刀长方体电芯、长度约574/600mm落入400–2500mm，厚度约21.5mm且明显小于宽度118mm；按公开尺寸和627.2Wh粗算，D/V约1.48e-5 mm^-2、S/E约263 mm2/Wh、L/S约0.00347 mm^-1，均值得围绕C1-F4至C1-F7深挖核验。",
+        "source_result_ids": [
+          "brave-Q05-01",
+          "brave-Q05-02",
+          "brave-Q05-03",
+          "bocha-Q06-03",
+          "tavily-Q06-04",
+          "exa-Q07-01",
+          "tavily-Q07-01",
+          "tavily-Q07-04",
+          "brave-Q07-04"
+        ],
+        "source_urls": [
+          "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+          "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+          "https://www.ithome.com/0/587/804.htm",
+          "https://m.sohu.com/a/672655583_114760",
+          "https://batteryfinds.com/wp-content/uploads/2023/09/SVOLT-196Ah-3.2V-LiFePO4-Blade-Battery-Cell-SpecificationDatasheet.pdf",
+          "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+          "https://www.electrive.com/2022/01/05/svolt-presents-new-lfp-battery-cell",
+          "https://batteriesnews.com/svolt-short-blade-batteries-production-capacities-600-gwh-2025",
+          "https://svolt-energy.com/lfp-cell-196ah"
+        ],
+        "initial_evidence_summary": "搜索摘要明确给出 SVOLT L600 196Ah：3.2V、627.2Wh、尺寸21.5×574×118mm、质量能量密度185Wh/kg、体积能量密度430Wh/L；中文报道给出长度600mm、196Ah、185Wh/kg以上、430Wh/L以上，并称第二代196Ah短刀叠片电池已下线/量产爬坡。"
+      },
+      "launch_date": "2023年5月第二代196Ah电芯下线并进入量产爬坡；此前2021年11月公开称预计2022年第三季度量产",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/690/530.htm",
+          "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线交付，全面通过“过充、撞击、震动”等国标安全测试",
+          "source_name": "IT之家",
+          "snippet": "2023年5月4日消息，蜂巢能源宣布，第二代短刀叠片电池196Ah电芯在南京基地顺利下线，标志着南京基地进入量产爬坡的全新阶段；首款LCTP电池包现阶段已按期批量交付。"
+        },
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市",
+          "source_name": "IT之家",
+          "snippet": "2021年11月19日报道，蜂巢能源二代L600磷酸铁锂电池已完成开发，预计将在2022年第三季度实现量产；单体容量提升至196Ah。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未失格。针对本候选“第二代L600 196Ah”产品，公开完成开发、预计量产及下线交付时间均晚于专利申请日2019-06-21；证据中较早的L600概念/一代产品信息并非该196Ah二代型号。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "产品被公开标识为“SVOLT L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell”，蜂巢官网乘用车方案亦列出“196Ah-LFP Short Blade Cells”，属于单体电芯/单体电池。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "EVLithium",
+              "snippet": "页面标题和正文标称“Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell”；规格表列Nominal Capacity ≥196Ah。"
+            },
+            {
+              "url": "https://www.svolt.cn/en/solution/passenger",
+              "title": "Passenger Vehicles-SVOLT",
+              "source_name": "SVOLT官网",
+              "snippet": "Solution Products栏目列出“196Ah-LFP Short Blade Cells”，并描述Short Blade cell用于乘用车方案。"
+            }
+          ],
+          "reasoning": "两个公开页面均以cell/电芯层级描述196Ah-LFP Short Blade，不是电池包或模组，因此满足“单体电池”。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "候选为蜂巢L600短刀电芯；公开报道称“蜂巢短刀电池”的本质是“方型铝壳电芯”的结构创新，蜂巢官网同时称短刀电芯为prismatic shape。铝壳方形电芯属于硬壳电池。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://m.mysteel.com/22/0321/09/91A7E147E92800F6_abc.html",
+              "title": "蜂巢短刀电池不短，得之于手而应于心",
+              "source_name": "我的钢铁网/Mysteel",
+              "snippet": "报道称：“无论比亚迪刀片电池还是蜂巢短刀电池，它们的本质都是方型铝壳电芯的结构创新。”"
+            },
+            {
+              "url": "https://www.svolt.cn/en/solution/passenger",
+              "title": "Passenger Vehicles-SVOLT",
+              "source_name": "SVOLT官网",
+              "snippet": "官网说明Short Blade cell可因“prismatic shape”用于双面冷却；Solution Products中列有“196Ah-LFP Short Blade Cells”。"
+            },
+            {
+              "url": "https://winston-battery.en.made-in-china.com/product/BFxtUXevCzRi/China-Svolt-L600-3-2V-196ah-Blade-LiFePO4-Cell-High-Energy-Rechargeable-Solar-Battery.html",
+              "title": "Svolt L600 3.2V 196ah Blade LiFePO4 Cell",
+              "source_name": "Made-in-China",
+              "snippet": "图示证据：页面产品图显示长条扁平、刚性外壳的蓝色刀片电芯；Basic Info中Shape为Flat Battery。"
+            }
+          ],
+          "reasoning": "Mysteel直接把蜂巢短刀界定为方型铝壳电芯；候选被官网和产品页识别为L600/196Ah Short Blade cell，铝壳即硬壳。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "公开尺寸为21.5×574×118mm，结合短刀/扁平长条外形，取厚度D=21.5mm、长度L=574mm、宽度H=118mm；满足L>H>D，即574>118>21.5。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "EVLithium",
+              "snippet": "规格表列“Dimension 21.5 x 574 x 118 mm”；详情称SVOLT L600 196Ah尺寸为21.5×574×118mm。"
+            },
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4-battery.com",
+              "snippet": "Product Details列Dimension: 21.5 x 574 x 118 mm；Battery Weight 3380±50g。"
+            }
+          ],
+          "reasoning": "产品页直接给出三维尺寸；按短刀电芯外形将最大边作为L、中间边作为H、最小边作为D，三者严格满足574>118>21.5。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=21.5mm，L=574mm，H=118mm；V=L×H×D=574×118×21.5=1,456,238mm³；D/V=21.5/1,456,238≈0.00001476mm⁻²，落入0.0000065~0.00002mm⁻²。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "EVLithium",
+              "snippet": "规格表列Dimension 21.5 x 574 x 118 mm。"
+            },
+            {
+              "url": "https://winston-battery.en.made-in-china.com/product/BFxtUXevCzRi/China-Svolt-L600-3-2V-196ah-Blade-LiFePO4-Cell-High-Energy-Rechargeable-Solar-Battery.html",
+              "title": "Svolt L600 3.2V 196ah Blade LiFePO4 Cell",
+              "source_name": "Made-in-China",
+              "snippet": "Basic Info列Dimension 21.5 X 574 X 118mm；产品描述规格表再次列Dimension 21.5 x 574 x 118 mm。"
+            }
+          ],
+          "reasoning": "两个公开页面给出相同外形尺寸；按长方体体积计算D/V≈1.476×10^-5mm^-2，在权利要求区间内。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "L=574mm，H=118mm，D=21.5mm，E=627.2Wh；S=2(LH+LD+HD)=2×(574×118+574×21.5+118×21.5)=165,220mm²；S/E=165,220/627.2≈263.4mm²/Wh，小于1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "EVLithium",
+              "snippet": "详情称尺寸为21.5×574×118mm，voltage为3.2V，capacity为627.2Wh；规格表列Energy ≥625Wh。"
+            },
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4-battery.com",
+              "snippet": "Details称The SVOLT L600 with 196 Ah... size of 21.5 x 574 x 118 mm；Its voltage is 3.2 V, the capacity is 627.2 Wh。"
+            }
+          ],
+          "reasoning": "同一规格页给出尺寸和能量；按长方体表面积公式得S/E≈263.4mm²/Wh，明显低于1000上限。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "公开产品尺寸中长度边为574mm；中文媒体按L600系列口径称该电池长度为600mm。无论取574mm实测规格或600mm系列长度，均处于400~2500mm。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "EVLithium",
+              "snippet": "Dimension 21.5 x 574 x 118 mm；详情称SVOLT L600 196Ah尺寸为21.5×574×118mm。"
+            },
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超 185wh/kg：蜂巢能源二代 L600 短刀片磷酸铁锂电池明年上市",
+              "source_name": "IT之家",
+              "snippet": "报道称蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah。"
+            },
+            {
+              "url": "https://m.sohu.com/a/672655583_114760",
+              "title": "蜂巢能源第二代 196Ah 短刀叠片电池下线，总体性能高于标准要求",
+              "source_name": "搜狐/IT之家转载",
+              "snippet": "文章称这款电池长度为600毫米，能量密度超过185Wh/kg，体积能量密度超过430Wh/L。"
+            }
+          ],
+          "reasoning": "产品尺寸表给出长边574mm，媒体报道给出L600系列长度600mm；两种公开口径均落入400~2500mm。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=574mm，H=118mm，D=21.5mm；S=2(LH+LD+HD)=2×(574×118+574×21.5+118×21.5)=165,220mm²；L/S=574/165,220≈0.00347mm⁻¹，落入0.002~0.005mm⁻¹。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.evlithium.com/LiFePO4-Battery/196ah-short-blade-lifepo4-cell.html",
+              "title": "3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "EVLithium",
+              "snippet": "规格表和详情均给出Dimension 21.5 x 574 x 118 mm。"
+            },
+            {
+              "url": "https://www.lifepo4-battery.com/Products/LiFePO4-Battery-Cell/196ah-short-blade-lifepo4-cell.html",
+              "title": "Svolt L600 3.2V 196Ah Short Blade LiFePO4 Battery Cell",
+              "source_name": "LiFePO4-battery.com",
+              "snippet": "Product Details列Dimension: 21.5 x 574 x 118 mm；详情说明该SVOLT L600 196Ah电芯尺寸相同。"
+            }
+          ],
+          "reasoning": "公开尺寸可直接计算外表面积S=165,220mm²；L/S≈0.00347mm^-1，位于权利要求给定区间。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 100.0,
+      "searched_queries": [
+        "SVOLT L600 196Ah prismatic aluminum case hard shell datasheet",
+        "蜂巢 L600 196Ah 短刀 电芯 硬壳 铝壳",
+        "蜂巢能源科技股份有限公司 L600 196Ah 磷酸铁锂短刀电芯 中国 市场"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P08",
+        "company": "中创新航科技集团股份有限公司",
+        "company_en": "CALB Group Co., Ltd.",
+        "product_name": "684Ah 侧式叠片储能方形电芯",
+        "product_name_en": "684Ah side-mounted laminated prismatic ESS cell",
+        "product_version": "中创新航新一代684Ah储能电芯，第三方尺寸演进表列为侧式摆放、叠片工艺，尺寸约54×500×173mm；储能新品报道显示中创新航发布588Ah、684Ah两款储能电芯，循环寿命15000+次、体积能量密度450Wh/L。",
+        "market": "中国大型储能/长时储能系统",
+        "reason_for_deep_dive": "该候选公开尺寸含500mm长边，落入权1的长度范围，且为方形铝壳/叠片储能单体的可能性高；按54×500×173mm和3.2V×684Ah粗算，D/V约1.16e-5 mm^-2、S/E约112 mm2/Wh、L/S约0.00204 mm^-1，接近并可能落入权1关键比例范围，值得深挖官方规格。",
+        "source_result_ids": [
+          "tavily-Q18-01",
+          "tavily-Q18-03",
+          "tavily-Q18-04"
+        ],
+        "source_urls": [
+          "https://m.energytrend.cn/news/20251114-145905.html",
+          "https://langkawipower.com/News/evolution-prismatic-battery-cell.html",
+          "http://www.langkawipower.com/News/evolution-prismatic-battery-cell.html"
+        ],
+        "initial_evidence_summary": "尺寸演进表列出“中创新航 684Ah，侧式，叠片，54×500×173mm”；集邦新能源摘要称中创新航推出588Ah、684Ah两款储能电芯，采用热电分离、双绝缘、全生命周期补锂，15000+次循环，能量密度达450Wh/L。"
+      },
+      "launch_date": "2025年11月13日发布；2025年9月首次发布600Ah+系列大容量长寿命电芯",
+      "launch_date_evidence": [
+        {
+          "url": "https://finance.sina.com.cn/roll/2025-11-14/doc-infxirwy9390378.shtml",
+          "title": "684Ah、588Ah双线布局！中创新航\"至久\"系列储能电芯及储能系统新品发布",
+          "source_name": "新浪财经",
+          "snippet": "2025年11月13日，中创新航召开2025全球合作伙伴大会，重磅推出“至久系列”储能新品；此次发布的“至久系列电芯”包含588Ah与684Ah两款储能电芯产品。"
+        },
+        {
+          "url": "https://www.escn.com.cn/news/show-2134467.html",
+          "title": "中创新航首发下一代大容量储能电芯",
+          "source_name": "中国储能网",
+          "snippet": "发布时间：2025-09-11；9月9日至11日，中创新航携多款创新产品亮相美国，首次发布500Ah+与600Ah+两大系列大容量长寿命电芯。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未发现早于专利申请日2019-06-21的上市/发布证据；公开发布记录为2025年，晚于申请日；亦未发现明确不满足特征。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "公开报道称该产品为“588Ah与684Ah两款储能电芯产品”；舞台图片亦标注“684Ah电芯”。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://finance.sina.com.cn/roll/2025-11-14/doc-infxirwy9390378.shtml",
+              "title": "684Ah、588Ah双线布局！中创新航\"至久\"系列储能电芯及储能系统新品发布",
+              "source_name": "新浪财经",
+              "snippet": "此次发布的“至久系列电芯”包含588Ah与684Ah两款储能电芯产品。"
+            },
+            {
+              "url": "https://eraes.com.cn/newsinfo/8831676.html",
+              "title": "684Ah、588Ah双线布局！中创新航“至久”系列储能电芯及储能系统新品发布",
+              "source_name": "时代储能网",
+              "snippet": "图示证据：发布会大屏展示“定义下一代标品”，产品渲染图下方标注“684Ah电芯”。"
+            }
+          ],
+          "reasoning": "多家公开报道均将684Ah对象称为“电芯产品”，属于单体电池层级，而非仅电池包或系统。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "证据显示为“方形/Prismatic”储能电芯，发布会渲染图显示带端子、刚性长方体外壳的电芯；但未检索到直接写明“硬壳”或“铝壳”的产品级文字。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://langkawipower.com/News/evolution-prismatic-battery-cell.html",
+              "title": "Evolution of prismatic battery cell",
+              "source_name": "Langkawi Power",
+              "snippet": "第三方尺寸演进表列出中创新航684Ah为prismatic battery cell/方形电芯，侧式、叠片，尺寸54×500×173mm。"
+            },
+            {
+              "url": "https://eraes.com.cn/newsinfo/8831676.html",
+              "title": "684Ah、588Ah双线布局！中创新航“至久”系列储能电芯及储能系统新品发布",
+              "source_name": "时代储能网",
+              "snippet": "图示证据：发布会大屏中684Ah电芯渲染为带端子、规则长方体刚性外壳形态。"
+            }
+          ],
+          "reasoning": "“方形/prismatic电芯”及产品渲染均指向刚性壳体单体；但缺少“硬壳/铝壳”字面证据，因此只能作稳健推断。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "第三方表列尺寸约54×500×173mm；按三维长短定义取L=500mm、H=173mm、D=54mm，且500>173>54；“prismatic/方形电芯”和图示均为长方体形。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://langkawipower.com/News/evolution-prismatic-battery-cell.html",
+              "title": "Evolution of prismatic battery cell",
+              "source_name": "Langkawi Power",
+              "snippet": "尺寸演进表列出“CALB/中创新航 684Ah”，侧式、叠片，尺寸约54×500×173mm。"
+            },
+            {
+              "url": "https://eraes.com.cn/newsinfo/8831676.html",
+              "title": "684Ah、588Ah双线布局！中创新航“至久”系列储能电芯及储能系统新品发布",
+              "source_name": "时代储能网",
+              "snippet": "图示证据：发布会大屏展示684Ah电芯为规则长方体外形。"
+            }
+          ],
+          "reasoning": "公开尺寸给出三条正交边，按最大/中间/最小边定义L/H/D，满足L>H>D；方形电芯图示支撑长方体形态。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "L=500mm，H=173mm，D=54mm；V=L×H×D=500×173×54=4,671,000mm³；D/V=54/4,671,000≈0.00001156mm⁻²，落入0.0000065~0.00002mm⁻²。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://langkawipower.com/News/evolution-prismatic-battery-cell.html",
+              "title": "Evolution of prismatic battery cell",
+              "source_name": "Langkawi Power",
+              "snippet": "尺寸演进表列出中创新航684Ah侧式叠片方形电芯尺寸约54×500×173mm。"
+            }
+          ],
+          "reasoning": "用公开尺寸现场计算体积与D/V；即使按排序取厚度为最小边54mm，D/V≈1.156e-5，位于权利要求范围内。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "L=500,H=173,D=54mm；S=2(LH+LD+HD)=2×(500×173+500×54+173×54)=245,684mm²；V=4.671L；公开能量密度450Wh/L，则E≈450×4.671=2,101.95Wh；S/E≈245,684/2,101.95≈116.9mm²/Wh，≤1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://langkawipower.com/News/evolution-prismatic-battery-cell.html",
+              "title": "Evolution of prismatic battery cell",
+              "source_name": "Langkawi Power",
+              "snippet": "第三方尺寸表给出中创新航684Ah尺寸约54×500×173mm。"
+            },
+            {
+              "url": "https://m.energytrend.cn/news/20251114-145905.html",
+              "title": "588Ah、684Ah齐亮相！中创新航发布储能电芯及系统新品",
+              "source_name": "集邦新能源网",
+              "snippet": "该系列产品包括588Ah、684Ah两款储能电芯；能量密度达450Wh/L。"
+            },
+            {
+              "url": "https://www.seetao.com/details/252358.html",
+              "title": "中创新航发布储能新品，大容量电芯与多元系统引领行业创新",
+              "source_name": "见道网",
+              "snippet": "本次发布的核心产品包括588Ah和684Ah两款大容量储能电芯；能量密度达到450Wh/L。"
+            }
+          ],
+          "reasoning": "尺寸来源给出几何外形，报道给出450Wh/L能量密度；据此换算电芯能量并计算S/E≈116.9，远低于1000。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "公开尺寸约54×500×173mm；按最大边为长度，L=500mm，位于400~2500mm范围内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://langkawipower.com/News/evolution-prismatic-battery-cell.html",
+              "title": "Evolution of prismatic battery cell",
+              "source_name": "Langkawi Power",
+              "snippet": "尺寸演进表列出中创新航684Ah，侧式，叠片，尺寸约54×500×173mm。"
+            }
+          ],
+          "reasoning": "三维尺寸中最大边为500mm，直接落入权利要求400mm至2500mm长度区间。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=500,H=173,D=54mm；S=2(500×173+500×54+173×54)=245,684mm²；L/S=500/245,684≈0.002035mm⁻¹，位于0.002~0.005mm⁻¹。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://langkawipower.com/News/evolution-prismatic-battery-cell.html",
+              "title": "Evolution of prismatic battery cell",
+              "source_name": "Langkawi Power",
+              "snippet": "第三方尺寸演进表列出中创新航684Ah侧式叠片方形电芯尺寸约54×500×173mm。"
+            }
+          ],
+          "reasoning": "基于公开尺寸计算长方体表面积S=245,684mm²，L/S≈0.002035，略高于下限0.002并低于上限0.005。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 97.14,
+      "searched_queries": [
+        "中创新航 684Ah 侧式 叠片 54 500 173",
+        "CALB 684Ah prismatic cell dimensions 54 500 173",
+        "中创新航 至久系列 684Ah 电芯 能量密度 450Wh/L",
+        "中创新航 600Ah+ 叠片电芯 430Wh/L",
+        "CALB 684Ah side-mounted laminated prismatic ESS cell"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P09",
+        "company": "昆宇电源",
+        "company_en": "Kunyu Power",
+        "product_name": "升级版305Ah 长薄短刀储能电芯",
+        "product_name_en": "upgraded 305Ah long-thin short-blade ESS cell",
+        "product_version": "昆宇电源升级版305Ah储能电芯由第一代305Ah演进而来，摘要称厚度变薄几乎一半、长度翻倍，形成“长薄”的短刀造型；昆宇电源年产能达12GWh，全球已投运储能项目4GWh。",
+        "market": "中国储能电芯/储能项目",
+        "reason_for_deep_dive": "该产品虽未在摘要中给出完整数值尺寸，但已明确为305Ah单体电芯并采用长度翻倍、厚度减半的长薄短刀形态，极可能触及权1中L=400–2500mm及D/V、L/S比例的设计区间；适合下游优先检索规格书或客户测试报告。",
+        "source_result_ids": [
+          "brave-Q02-05",
+          "tavily-Q20-02"
+        ],
+        "source_urls": [
+          "https://www.chu21.com/html/chunengy-23640.shtml",
+          "https://m.cehome.com/news/20250216/324835.shtml"
+        ],
+        "initial_evidence_summary": "搜索摘要称昆宇电源第一代305Ah电芯尺寸同71173，升级版305Ah厚度变薄几乎一半、长度翻倍，形成长薄短刀造型；同一摘要还提到昆宇电源年产能12GWh、全球已投运储能项目4GWh。"
+      },
+      "launch_date": "2023年5月已被行业媒体公开收录；未见更早量产/交付具体日期",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.escn.com.cn/news/show-1582883.html",
+          "title": "超20款300Ah+储能电芯出击",
+          "source_name": "中国储能网",
+          "snippet": "发布时间：2023-05-17；文中列出“昆宇电源 305Ah/升级版305Ah”，称第一代305Ah电芯尺寸同71173，升级版305Ah厚度变薄几乎一半、长度翻倍。"
+        },
+        {
+          "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+          "title": "越大越好？盘点市面上300Ah+储能电芯",
+          "source_name": "国际储能网",
+          "snippet": "日期：2023-05-25；文中列出“昆宇电源 305Ah/升级版305Ah”，描述升级版形成“长薄”的短刀造型。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "未发现该升级版305Ah电芯早于专利申请日2019-06-21公开、量产或交付；现有公开收录时间为2023年5月，晚于申请日，且无明确不满足特征。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "公开资料将该产品称为“昆宇电源 305Ah/升级版305Ah”储能电芯，属于单体电池/电芯产品。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“昆宇电源 305Ah/升级版305Ah 第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20230628/77665.html",
+              "title": "18家企业300Ah+储能电芯盘点",
+              "source_name": "碳索储能网",
+              "snippet": "“昆宇电源 305Ah/升级版305Ah 第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半……”"
+            }
+          ],
+          "reasoning": "两家行业媒体均以“305Ah/升级版305Ah电芯”描述该对象，直接对应单体电池而非系统或电池包。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "昆宇官网对“储能大电芯/方形铁锂电芯”说明为“方形铝壳结构”；36氪报道昆宇电芯采用“方形铝壳加叠片式工艺”。升级版305Ah属于昆宇储能大电芯，但公开资料未逐字点名该型号为铝壳。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "“储能大电芯 优选叠片型……安全性高 方形铝壳结构 高精度防爆阀设计。”"
+            },
+            {
+              "url": "https://36kr.com/p/2155166028013568",
+              "title": "昆宇电源：突破锂电性能与应用边界",
+              "source_name": "36氪",
+              "snippet": "“采用方形铝壳加叠片式工艺设计的电芯更稳定、更安全、循环性能更佳。”"
+            }
+          ],
+          "reasoning": "官网和36氪直接证明昆宇储能方形电芯采用铝壳，铝壳通常为硬壳；但证据未对“升级版305Ah”逐型号标注，故只能作一层产品系列推断。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "公开描述：第一代305Ah尺寸同71173，升级版305Ah“厚度变薄几乎一半、长度翻倍”，形成“长薄”的短刀造型；官网储能电芯为方形铁锂电芯。缺少该型号完整L/H/D数值。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            },
+            {
+              "url": "https://www.escn.com.cn/news/show-1582883.html",
+              "title": "超20款300Ah+储能电芯出击",
+              "source_name": "中国储能网",
+              "snippet": "“昆宇电源 305Ah/升级版305Ah 第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            },
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "“储能大电芯……方形铁锂电芯……方形铝壳结构。”"
+            }
+          ],
+          "reasoning": "“方形铁锂电芯”与“长薄短刀”支持长方体/扁长形态，且长度翻倍、厚度近半支持L>D；但H与D、L与H的逐项数值未公开。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "已知信息仅为“厚度变薄几乎一半、长度翻倍”和“尺寸同71173”的来源背景；未取得升级版305Ah的L、H、D原始数值，无法计算V=L×H×D及D/V。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "“第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍……”"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20230628/77665.html",
+              "title": "18家企业300Ah+储能电芯盘点",
+              "source_name": "碳索储能网",
+              "snippet": "同样描述升级版305Ah“厚度变薄几乎一半、长度翻倍”，但未给出三维尺寸。"
+            }
+          ],
+          "reasoning": "D/V=D/(LHD)=1/(LH)，至少需要L和H。现有证据未公开升级版305Ah的完整L/H/D，不能现场计算并比对数值区间。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "容量公开为305Ah；按磷酸铁锂常见标称3.2V可估E≈976Wh，但该候选的L/H/D未公开，无法计算S=2(LH+LD+HD)，也无法得出S/E。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "列出“昆宇电源 305Ah/升级版305Ah”，但未列能量和三维尺寸。"
+            },
+            {
+              "url": "https://www.cospowers.com/solution/cndx.html",
+              "title": "方形铁锂电芯-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "官网说明昆宇储能大电芯为方形铁锂电芯，但页面未给出升级版305Ah规格参数。"
+            }
+          ],
+          "reasoning": "S/E必须由三维尺寸和能量计算。现有证据仅可识别305Ah容量和产品类别，缺少L/H/D，不能完成S=2(LH+LD+HD)计算。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "公开报道仅称升级版305Ah相对第一代“长度翻倍”，且第一代尺寸同71173；未直接披露升级版305Ah长度L的毫米数，无法验证L是否落入400~2500mm。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.escn.com.cn/news/show-1582883.html",
+              "title": "超20款300Ah+储能电芯出击",
+              "source_name": "中国储能网",
+              "snippet": "“第一代305Ah电芯，尺寸同71173，而升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20230628/77665.html",
+              "title": "18家企业300Ah+储能电芯盘点",
+              "source_name": "碳索储能网",
+              "snippet": "“升级版305Ah厚度变薄几乎一半，而长度翻倍，形成‘长薄’的短刀造型。”"
+            }
+          ],
+          "reasoning": "“长度翻倍”表明方向性变化，但没有第一代长度或升级版L的毫米值；不能用无来源的行业常识替代数值证据。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "未获得升级版305Ah的L、H、D；因此无法计算S=2(LH+LD+HD)，也无法计算L/S并与0.002~0.005mm⁻¹比较。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.chu21.com/html/chunengy-23640.shtml",
+              "title": "越大越好？盘点市面上300Ah+储能电芯",
+              "source_name": "国际储能网",
+              "snippet": "仅描述“厚度变薄几乎一半、长度翻倍”，未给出L/H/D。"
+            },
+            {
+              "url": "https://www.cospowers.com/download/brochure.html",
+              "title": "下载中心-昆宇电源官网",
+              "source_name": "昆宇电源官网",
+              "snippet": "下载中心列有储能电芯/产品手册入口，但现有抓取内容未提供升级版305Ah电芯规格表。"
+            }
+          ],
+          "reasoning": "L/S需要L、H、D全部数值。现有公开页面没有升级版305Ah规格书或尺寸表，不能进行现场计算。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 54.29,
+      "searched_queries": [
+        "昆宇电源 升级版305Ah 短刀 储能电芯 铝壳 硬壳 叠片",
+        "昆宇电源 升级版305Ah 长薄短刀 储能电芯 尺寸 厚度 长度 宽度 规格书",
+        "昆宇电源 升级版305Ah 电芯 规格书 PDF L H D",
+        "昆宇电源 305Ah 升级版 储能电芯 长度 mm 参数",
+        "Kunyu Power upgraded 305Ah long-thin short-blade ESS cell datasheet specifications"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P07",
+        "company": "国轩高科股份有限公司",
+        "company_en": "Gotion High-Tech Co., Ltd.",
+        "product_name": "L600 Astroinno 启晨磷酸锰铁锂电芯",
+        "product_name_en": "L600 Astroinno Qichen LMFP cell",
+        "product_version": "国轩/ Gotion L600 Astroinno 启晨电芯采用磷酸锰铁锂（LMFP）体系，摘要称系统能量密度190Wh/kg、单体质量能量密度240Wh/kg、体积能量密度525Wh/L，常温循环4000圈，并支持18分钟快充。",
+        "market": "中国新能源乘用车动力电池，高续航/快充平台",
+        "reason_for_deep_dive": "该产品名称含L600，显示其可能为长度约600mm的长条形电芯，直接对应权1的长度范围；同时摘要公开体积能量密度、质量能量密度和循环/快充信息，后续重点补充硬壳方形形态、长宽厚及单体Wh，以核验C1-F4至C1-F7。",
+        "source_result_ids": [
+          "brave-Q04-01"
+        ],
+        "source_urls": [
+          "https://rfnets.com/blog/lion-brand-value?tmpl=component&print=1&layout=default"
+        ],
+        "initial_evidence_summary": "搜索摘要提到“Gotion L600 Astroinno”及“L600 LMFP 启晨电芯”，给出系统能量密度190Wh/kg、质量能量密度240Wh/kg、体积能量密度525Wh/L、常温循环4000圈、高温循环1800圈、18分钟快充等参数。"
+      },
+      "launch_date": "2023年5月19日发布，计划2024年开始量产",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+          "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+          "source_name": "ACN Newswire",
+          "snippet": "2023年5月22日发布稿称，5月19日国轩高科发布全新LMFP体系的L600启晨电芯及电池包；程骞介绍该LMFP启晨L600电芯计划2024年开始量产。"
+        },
+        {
+          "url": "https://36kr.com/newsflashes/2264419278053378",
+          "title": "国轩高科发布能量密度190Wh/kg磷酸锰铁锂电池，预计2024年量产",
+          "source_name": "36氪",
+          "snippet": "2023-05-19快讯称，国轩高科发布LMFP体系的L600启晨电芯及电池包，续航可达1000公里，预计在2024年量产。"
+        }
+      ],
+      "disqualified": false,
+      "disqualification_reason": "公开记录显示产品发布于2023年5月19日、计划2024年量产，晚于专利申请日2019-06-21；现有证据亦未出现与权利要求1明确矛盾的参数。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "公开资料反复称该产品为“L600启晨电芯 / L600 Astroinno battery cell”，且另有电池包基于该电芯打造，属于单体电池层级产品。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+              "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+              "source_name": "ACN Newswire",
+              "snippet": "5月19日国轩高科发布全新LMFP体系的L600启晨电芯及电池包；文中称“启晨L600 LMFP电芯实现240Wh/kg...”"
+            },
+            {
+              "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+              "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+              "source_name": "每日经济新闻",
+              "snippet": "国轩高科在互动平台表示，L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah。"
+            }
+          ],
+          "reasoning": "ACN和每日经济新闻均直接把对象称为“电芯/cell”，并披露容量和能量密度，足以确认其为单体电池产品。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "现有证据只说明L600启晨为LMFP电芯、容量223Ah、能量密度240Wh/kg和525Wh/L；未直接披露该具体L600电芯为硬壳、铝壳、方形硬壳或软包/圆柱等外壳形态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+              "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+              "source_name": "ACN Newswire",
+              "snippet": "文中披露L600 LMFP电芯的质量能量密度、体积能量密度、循环和快充，但未给出硬壳/铝壳表述。"
+            },
+            {
+              "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+              "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+              "source_name": "每日经济新闻",
+              "snippet": "披露L600启晨电芯容量223Ah和240Wh/kg能量密度，但未披露外壳结构。"
+            }
+          ],
+          "reasoning": "证据池未见针对L600启晨电芯的“硬壳”“铝壳”“prismatic hard case”等直接文字；不能仅由动力电芯或L600型号推定。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "未取得L600启晨电芯的三维尺寸。现有公开参数为容量223Ah、质量能量密度240Wh/kg、体积能量密度525Wh/L等，不能计算或验证L>H>D，也不能确认长方体形态。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+              "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+              "source_name": "ACN Newswire",
+              "snippet": "称“启晨L600 LMFP电芯实现240Wh/kg的质量能量密度，525Wh/L的体积能量密度...”，未列长宽厚。"
+            },
+            {
+              "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+              "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+              "source_name": "每日经济新闻",
+              "snippet": "披露电芯容量223Ah、240Wh/kg能量密度；未披露长、宽、厚。"
+            }
+          ],
+          "reasoning": "“L600”仅为型号/系列名称，证据中没有明示L、H、D数值或长方体/方形外观，无法验证三维关系。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "无法计算D/V：现有证据未给出厚度D，也未给出由长×宽×厚确定的电池本体体积V。虽然披露体积能量密度525Wh/L，但缺少单体能量E或尺寸体积，不能替代D/V计算。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+              "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+              "source_name": "ACN Newswire",
+              "snippet": "披露L600 LMFP电芯体积能量密度525Wh/L，但未披露厚度D或几何体积V。"
+            },
+            {
+              "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+              "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+              "source_name": "每日经济新闻",
+              "snippet": "披露容量223Ah和240Wh/kg，未披露厚度和体积。"
+            }
+          ],
+          "reasoning": "F4必须用D和V现场计算；证据仅有体积能量密度，且缺D及几何体积，不能严谨推导D/V是否落入范围。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "无法计算S/E：未披露L、H、D，故S=2(LH+LD+HD)不能计算；亦未直接给出单体能量E（Wh）。仅有容量223Ah、质量能量密度240Wh/kg、体积能量密度525Wh/L，缺少标称电压或尺寸。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+              "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+              "source_name": "每日经济新闻",
+              "snippet": "L600启晨电芯容量为223Ah，可以实现240Wh/kg的能量密度。"
+            },
+            {
+              "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+              "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+              "source_name": "ACN Newswire",
+              "snippet": "启晨L600 LMFP电芯实现240Wh/kg质量能量密度、525Wh/L体积能量密度。"
+            }
+          ],
+          "reasoning": "S/E需要三维尺寸和Wh能量；现有223Ah不能在无标称电压下换算Wh，且无L/H/D，无法计算表面积。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "未取得公开资料明确写明“L=600mm”或其他长度数值。产品型号/名称含“L600”，但证据未说明该数字代表长度，不能据此确认L落入400~2500mm。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+              "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+              "source_name": "ACN Newswire",
+              "snippet": "多处称“L600 LMFP启晨电芯/启晨L600电芯”，但未解释L600为长度或给出mm尺寸。"
+            },
+            {
+              "url": "https://36kr.com/newsflashes/2264419278053378",
+              "title": "国轩高科发布能量密度190Wh/kg磷酸锰铁锂电池，预计2024年量产",
+              "source_name": "36氪",
+              "snippet": "称公司发布LMFP体系的L600启晨电芯及电池包，预计2024年量产；未列长度尺寸。"
+            }
+          ],
+          "reasoning": "权利要求要求长度数值范围。现有资料只出现型号L600，未明示电池本体长度，按严格标准不能认定。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "无法计算L/S：未披露长度L、宽度H、厚度D；因此S=2(LH+LD+HD)无法计算，L/S也无法与0.002~0.005mm⁻¹范围比较。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.acnnewswire.com/press-release/TraditionalChinese/84056/%E5%9C%8B%E8%BB%92%E7%99%BC%E4%BD%88%E8%87%AA%E7%A0%94%E5%85%A8%E6%96%B0LMFP%E9%AB%94%E7%B3%BBL600%E5%95%9F%E6%99%A8%E9%9B%BB%E6%B1%A0",
+              "title": "國軒發佈自研全新LMFP體系L600啟晨電池",
+              "source_name": "ACN Newswire",
+              "snippet": "披露L600 LMFP电芯能量密度、循环和快充信息，未披露长宽厚。"
+            },
+            {
+              "url": "https://www.nbd.com.cn/articles/2023-08-17/2964383.html",
+              "title": "国轩高科：L600启晨电芯采用的是磷酸锰铁锂路线，电芯容量为223Ah",
+              "source_name": "每日经济新闻",
+              "snippet": "披露容量223Ah和能量密度，未披露尺寸。"
+            }
+          ],
+          "reasoning": "L/S是几何比例约束，必须有L/H/D计算S。证据池未提供任何可核验尺寸，无法计算。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 40.0,
+      "searched_queries": [
+        "国轩 L600 启晨 电芯 硬壳 铝壳 方形",
+        "国轩 L600 启晨 电芯 尺寸 长 宽 厚 223Ah",
+        "Gotion L600 Astroinno cell prismatic hard case aluminum can",
+        "Gotion High-Tech Co., Ltd. L600 Astroinno Qichen LMFP cell datasheet specifications"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "candidate": {
+        "candidate_id": "P02",
+        "company": "蜂巢能源科技股份有限公司",
+        "company_en": "SVOLT Energy Technology Co., Ltd.",
+        "product_name": "L600 184Ah 第一代磷酸铁锂短刀电芯",
+        "product_name_en": "L600 184Ah first-generation LFP short blade cell",
+        "product_version": "第一代 L600 短刀片磷酸铁锂电芯，后续报道称第二代196Ah与上一代规格相同、容量由184Ah提升至196Ah；公开英文资料也提到第一代容量为184Ah。该产品已在常州金坛工厂量产下线，并有整车测试/配套信息。",
+        "market": "中国乘用车动力电池，短刀电芯/LCTP方案",
+        "reason_for_deep_dive": "若第一代184Ah沿用L600短刀尺寸，则其长度同样落入权利要求1的400–2500mm区间，属于长方体薄型方壳单体；与196Ah版本相比能量约588.8Wh，S/E、D/V、L/S仍需通过规格书核算，尤其适合核查C1-F4至C1-F7。",
+        "source_result_ids": [
+          "exa-Q07-01",
+          "bocha-Q06-05",
+          "tavily-Q10-03",
+          "brave-Q05-04"
+        ],
+        "source_urls": [
+          "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+          "https://libattery.ofweek.com/recommendfriends-30536371.html",
+          "http://www.cbea.com/djgc/202212/896581.html",
+          "https://libattery.ofweek.com/2022-09/ART-36008-8120-30573395.html"
+        ],
+        "initial_evidence_summary": "exa-Q07-01摘要说明第二代L600容量196Ah、第一代为184Ah；中文摘要说明第二代规格与第一代相同，并提到第一代L600短刀片磷酸铁锂电芯在常州金坛工厂量产下线；电池中国摘要提到搭载184Ah L600磷酸铁锂短刀电芯的整车安全测试。"
+      },
+      "launch_date": "2019年4月上海车展首次展示L600短刀片磷酸铁锂电芯；2021年10月底第一代L600量产下线",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.escn.com.cn/news/show-1278961.html",
+          "title": "中国储能网 - 产业观察 - 蜂巢能源L600短刀片磷酸铁锂电池量产下线",
+          "source_name": "中国储能网/高工锂电",
+          "snippet": "早在2019年4月的上海国际车展上，蜂巢能源在业内首次亮相就展示了内部代号为“L600”的短刀片磷酸铁锂电芯；10月29日，江苏常州，蜂巢能源L600短刀片磷酸铁锂电芯在其金坛工厂量产下线。"
+        },
+        {
+          "url": "https://www.ithome.com/0/587/804.htm",
+          "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+          "source_name": "IT之家",
+          "snippet": "2021年11月19日消息：继10月底宣布第一代L600短刀片磷酸铁锂电芯在常州金坛工厂量产下线之后，第二代产品已经完成开发，预计将在2022年第三季度实现量产。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "公开资料称L600短刀片磷酸铁锂电芯已于2019年4月上海车展展示，早于本专利申请日2019-06-21；虽第一代量产下线在2021年10月底，但按首次公开/发布口径该候选失格。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "SVOLT L600 184Ah为LiFePO4 Blade Battery Cell/电芯；PDF项目代码为CB0MHW3NA-184Ah，目录包含Cell Performance。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "source_name": "Battery Finds / SVOLT PDF",
+              "snippet": "蜂巢能源科技有限公司设计文件；产品标准；项目代码Project code：CB0MHW3NA-184Ah；目录列出Cell Performance。"
+            },
+            {
+              "url": "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
+              "title": "Svolt 184Ah LiFePO4 Blade Battery Cells",
+              "source_name": "Battery Finds",
+              "snippet": "标题为“Svolt 184Ah LiFePO4 Blade Battery Cells”，对应184Ah磷酸铁锂刀片电芯。"
+            }
+          ],
+          "reasoning": "PDF和产品页均以“Cell/电芯”描述184Ah LFP Blade产品，能够直接证明其为单体电池。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "公开资料称L600为long prismatic/短刀片电芯；但现有证据未直接出现“硬壳”“铝壳”“metal case”等字样。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+              "title": "SVOLT unveils its second-generation L600 short blade battery",
+              "source_name": "PushEVs",
+              "snippet": "SVOLT introduced its own long prismatic cobalt-free battery cells; prototype of the second generation SVOLT L600 short blade battery cell... first generation was 184 Ah."
+            },
+            {
+              "url": "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
+              "title": "Svolt 184Ah LiFePO4 Blade Battery Cells",
+              "source_name": "Battery Finds",
+              "snippet": "页面摘要称Battery Finds offers LiFePO4 prismatic cells，产品为SVOLT 184Ah LiFePO4 Blade Battery Cells。"
+            }
+          ],
+          "reasoning": "“prismatic/方形”刀片电芯通常对应硬壳方形电芯，但现有URL未直接给出壳体材料或硬壳描述，故仅作一阶推定。",
+          "suggested_followup_queries": [
+            "SVOLT L600 184Ah prismatic cell aluminum case hard shell",
+            "蜂巢 L600 184Ah 短刀 电芯 铝壳 硬壳 结构"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "证据显示为long prismatic/短刀片电芯，长度公开为600mm，另有文章称实际长度574mm；但当前证据未给出宽度H和厚度D，无法字面验证L>H>D。",
+          "status": "可能满足",
+          "score": 0.8,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+              "source_name": "IT之家",
+              "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm，单体容量提升至196Ah。"
+            },
+            {
+              "url": "https://www.ednchina.com/technews/13117.html",
+              "title": "蜂巢能源L600短刀片电池量产了？电芯薄片成趋势",
+              "source_name": "EDN电子技术设计",
+              "snippet": "根据作者看到的数据，L600的实际长度是574mm，比600小一点点。"
+            },
+            {
+              "url": "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+              "title": "SVOLT unveils its second-generation L600 short blade battery",
+              "source_name": "PushEVs",
+              "snippet": "SVOLT L600 is described as a long prismatic cobalt-free battery cell; first generation was 184 Ah."
+            }
+          ],
+          "reasoning": "“long prismatic/短刀片”支持长方体薄型电芯推定，且长度有直接证据；但H、D缺失，不能明确计算或确认H>D。",
+          "suggested_followup_queries": [
+            "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+            "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "现有证据仅有L≈600mm/574mm、184Ah容量线索；未取得H、D。V=L×H×D无法计算，因此D/V无法现场核算。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+              "source_name": "IT之家",
+              "snippet": "二代L600规格与上一代相同，长度600mm；单体容量提升至196Ah，体积能量密度超过430Wh/L。"
+            },
+            {
+              "url": "https://batteryfinds.com/wp-content/uploads/2022/11/SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "title": "SVOLT-184Ah-LiFePO4-Blade-Cells-Specification.pdf",
+              "source_name": "Battery Finds / SVOLT PDF",
+              "snippet": "PDF封面显示项目代码CB0MHW3NA-184Ah，但当前抓取页仅含封面和目录，未抓到尺寸表。"
+            }
+          ],
+          "reasoning": "D/V必须有厚度D和体积V；现有页面未给H、D，且184Ah规格书关键参数页未抓取到，不能计算比例。",
+          "suggested_followup_queries": [
+            "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+            "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "可由184Ah×3.2V估算E≈588.8Wh；但H、D缺失，S=2(LH+LD+HD)无法计算，故S/E无法核算。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://pushevs.com/2021/11/22/svolt-unveils-its-second-generation-l600-short-blade-battery",
+              "title": "SVOLT unveils its second-generation L600 short blade battery",
+              "source_name": "PushEVs",
+              "snippet": "Model L600 second gen: Capacity 196Ah; Voltage 3.2V; Energy 627.2Wh; first generation was 184Ah."
+            },
+            {
+              "url": "https://batteryfinds.com/product/svolt-184ah-lifepo4-blade-battery-cells",
+              "title": "Svolt 184Ah LiFePO4 Blade Battery Cells",
+              "source_name": "Battery Finds",
+              "snippet": "产品为SVOLT 184Ah LiFePO4 Blade Battery Cells，LiFePO4 cells have a cell voltage of 3.2V。"
+            }
+          ],
+          "reasoning": "能量可按184Ah×3.2V≈588.8Wh估算，但权利要求比例还需表面积S；缺少H、D导致S无法计算。",
+          "suggested_followup_queries": [
+            "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+            "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+          ],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "IT之家/OFweek称L600二代与第一代规格相同、长度600mm；EDN文章称实际长度574mm。无论取600mm或574mm，均处于400–2500mm范围内。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+              "source_name": "IT之家",
+              "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm。"
+            },
+            {
+              "url": "https://libattery.ofweek.com/2021-11/ART-36001-8460-30536087.html",
+              "title": "蜂巢能源短刀片磷酸铁锂电池明年三季度量产，能量密度超185wh/kg",
+              "source_name": "OFweek锂电网",
+              "snippet": "蜂巢能源第二代短刀片磷酸铁锂电芯规格与第一代相同，但单体容量提升至196Ah。"
+            },
+            {
+              "url": "https://www.ednchina.com/technews/13117.html",
+              "title": "蜂巢能源L600短刀片电池量产了？电芯薄片成趋势",
+              "source_name": "EDN电子技术设计",
+              "snippet": "L600的实际长度是574mm，比600小一点点。"
+            }
+          ],
+          "reasoning": "至少IT之家给出长度600mm且说明二代与第一代规格相同；EDN给出实际574mm，两者均落入400–2500mm。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "已知L≈600mm或574mm；但H、D缺失，S=2(LH+LD+HD)无法计算，因此L/S无法核算。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/587/804.htm",
+              "title": "能量密度超185wh/kg：蜂巢能源二代L600短刀片磷酸铁锂电池明年上市",
+              "source_name": "IT之家",
+              "snippet": "蜂巢能源二代L600磷酸铁锂电池规格与上一代相同，长度600mm。"
+            },
+            {
+              "url": "https://www.ednchina.com/technews/13117.html",
+              "title": "蜂巢能源L600短刀片电池量产了？电芯薄片成趋势",
+              "source_name": "EDN电子技术设计",
+              "snippet": "L600的实际长度是574mm，比600小一点点。"
+            }
+          ],
+          "reasoning": "L有直接证据，但L/S需三维尺寸计算表面积；现有证据池未给宽度H和厚度D，无法得出S及L/S。",
+          "suggested_followup_queries": [
+            "SVOLT 184Ah LiFePO4 Blade Cells datasheet dimensions thickness height",
+            "蜂巢 L600 184Ah 短刀 电芯 规格书 尺寸 厚度 高度"
+          ],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "蜂巢能源 L600 184Ah 第一代 短刀片 磷酸铁锂 电芯 量产 下线 规格",
+        "SVOLT 184Ah LiFePO4 Blade Cells Specification",
+        "蜂巢能源 L600 第二代 规格与第一代相同 长度600mm 196Ah",
+        "SVOLT L600 184Ah first generation LFP short blade cell site:batteryfinds.com",
+        "蜂巢能源 L600短刀 2019上海车展 展示"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "P04",
+        "company": "蜂巢能源科技股份有限公司",
+        "company_en": "SVOLT Energy Technology Co., Ltd.",
+        "product_name": "L500 350Ah 升级版短刀储能电芯",
+        "product_name_en": "L500 350Ah upgraded short-blade ESS cell",
+        "product_version": "L500-350Ah储能电芯基于325Ah储能电芯平台升级，摘要称尺寸不变、体系升级，单颗电芯能量达到1120Wh，循环寿命超过11000次，能量密度提升约7%。",
+        "market": "中国电力储能/液冷储能系统",
+        "reason_for_deep_dive": "该产品是L500长薄型短刀单体电芯，容量/能量信息较完整，长度信号约500mm；若后续确认其为方形硬壳且尺寸字段约为26×500×215mm一类长薄结构，则可重点核查D/V、S/E、L/S是否落入权1范围，特别是C1-F4与C1-F7的边界。",
+        "source_result_ids": [
+          "bocha-Q08-01",
+          "bocha-Q08-04",
+          "brave-Q08-03",
+          "brave-Q08-04",
+          "tavily-Q09-05"
+        ],
+        "source_urls": [
+          "http://zh.ai-ep.com/tech/202404/t20240411_34030.shtml",
+          "https://www.eefocus.com/article/1711814.html",
+          "https://www.cnesa.org/information/detail/?column_id=1&id=6319",
+          "http://www.esresearch.com.cn/report/info/?id=5585",
+          "https://ibenenergy.com/wp-content/uploads/2024/12/%E3%80%900629%E3%80%91ENSVOLT-ESS-Introduction-V3.pdf"
+        ],
+        "initial_evidence_summary": "搜索摘要显示L500-350Ah基于325Ah电芯、尺寸不变、能量1120Wh、循环寿命超过11000次、能量密度提升7%；CNESA摘要称蜂巢采用L500-325Ah/350Ah大容量储能短刀电芯；IBEN资料摘要列出L500、350Ah、3.2V、重量6.6kg、循环8000次、能量密度400Wh/L及疑似尺寸字段。"
+      },
+      "launch_date": "2024年4月11日发布；2024年9月报道称350Ah电芯量产交付",
+      "launch_date_evidence": [
+        {
+          "url": "https://www.ithome.com/0/761/292.htm",
+          "title": "6.9MWh 容量，蜂巢能源发布短刀液冷储能系统和升级版短刀储能电芯",
+          "source_name": "IT之家",
+          "snippet": "2024/4/11消息，蜂巢能源亮相ESIE2024，公布350Ah和730Ah大容量储能短刀电芯；发布L500-350Ah、L500-730Ah飞叠短刀储能电芯。"
+        },
+        {
+          "url": "https://cn.solarbe.com/news/20240919/90493.html",
+          "title": "蜂巢能源350Ah储能短刀飞叠电芯量产，性能卓越赢市场",
+          "source_name": "碳索储能网",
+          "snippet": "在成都基地成功孵化三代储能产品：首代325Ah电芯，当前正在量产交付的350Ah，以及下一代770Ah大电芯。"
+        }
+      ],
+      "disqualified": true,
+      "disqualification_reason": "公开发布/量产时间晚于专利申请日2019-06-21，上市日期不导致失格；但C1-F7按公开尺寸计算L/S≈0.001983 mm^-1，低于权利要求0.002下限，明确不满足，故候选失格。",
+      "comparisons": [
+        {
+          "feature_id": "C1-F1",
+          "patent_feature": "一种单体电池",
+          "competitor_feature": "公开资料将该产品称为“L500-350Ah储能电芯/飞叠短刀储能电芯”，单颗电芯能量1120Wh。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://www.ithome.com/0/761/292.htm",
+              "title": "6.9MWh 容量，蜂巢能源发布短刀液冷储能系统和升级版短刀储能电芯",
+              "source_name": "IT之家",
+              "snippet": "蜂巢能源发布全新的“飞叠+短刀”储能电芯升级产品：L500-350Ah、L500-730Ah飞叠短刀储能电芯；单颗电芯能量达到1120Wh。"
+            },
+            {
+              "url": "https://www.svolt.cn/innovation/innovations/cell",
+              "title": "电芯创新-蜂巢能源官方网站",
+              "source_name": "蜂巢能源官网",
+              "snippet": "储能领域：蜂巢能源推出了L500系列飞叠短刀储能电芯，有325Ah、350Ah及770Ah多款产品。"
+            }
+          ],
+          "reasoning": "多个公开页面直接称其为L500-350Ah储能电芯，且给出单颗电芯能量，产品层级是单体电芯而非仅系统。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F2",
+          "patent_feature": "所述单体电池为硬壳电池",
+          "competitor_feature": "现有证据称其为“短刀电芯”“长薄电芯”“刀片形状储能专用电芯”，并与方形尺寸/软包路线对比，但未直接出现“硬壳、方壳、铝壳、金属壳”等壳体表述。",
+          "status": "证据不足",
+          "score": 0.3,
+          "evidence": [
+            {
+              "url": "https://m.huxiu.com/article/2438494.html",
+              "title": "在短刀电池尝到甜头的蜂巢，这次要All in了",
+              "source_name": "虎嗅网",
+              "snippet": "短刀电池，是蜂巢研发的最具代表性的产品……这种基于叠片式的长薄电芯，相比传统的方型电池……"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20240919/90493.html",
+              "title": "蜂巢能源350Ah储能短刀飞叠电芯量产，性能卓越赢市场",
+              "source_name": "碳索储能网",
+              "snippet": "蜂巢能源选择了500mm长度、215mm高的最佳尺寸，定向开发了刀片形状储能专用电芯；目前方形电池生产仍以卷绕为主，而蜂巢采用叠片技术生产短刀电池。"
+            }
+          ],
+          "reasoning": "材料能证明其为长薄/短刀形态，但没有直接说明壳体为硬壳或铝壳；不能仅凭“短刀”泛化认定硬壳。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F3",
+          "patent_feature": "所述单体电池包括：电池本体，所述电池本体构造为长方体形，所述电池本体具有长度L、宽度H和厚度D，所述电池本体的长度L大于宽度H，所述电池本体的宽度H大于厚度D",
+          "competitor_feature": "L500-350Ah为刀片形状/短刀电芯；公开尺寸为26×500×215mm，结合SolarBe给出的长度500mm、高度215mm，取L=500mm、H=215mm、D=26mm，满足L>H>D。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://ibenenergy.com/wp-content/uploads/2024/12/%E3%80%900629%E3%80%91ENSVOLT-ESS-Introduction-V3.pdf",
+              "title": "ENSVOLT-ESS-Introduction-V3.pdf",
+              "source_name": "IBEN Energy",
+              "snippet": "搜索摘要摘录规格：L500；325Ah 26*500*215（mm）；350Ah 26*500*215（mm）。"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20240919/90493.html",
+              "title": "蜂巢能源350Ah储能短刀飞叠电芯量产，性能卓越赢市场",
+              "source_name": "碳索储能网",
+              "snippet": "蜂巢能源选择了500mm长度、215mm高的最佳尺寸，定向开发了刀片形状储能专用电芯。"
+            }
+          ],
+          "reasoning": "PDF摘要给出三维尺寸，SolarBe补充长度500mm、高度215mm和刀片形状；据此可确定长薄矩形电芯且500>215>26。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F4",
+          "patent_feature": "所述电池本体的厚度D与所述电池本体的体积V满足：D/V= 0.0000065 mm ﹣2 ~0.00002mm ﹣2",
+          "competitor_feature": "D=26mm，L=500mm，H=215mm；V=L×H×D=500×215×26=2,795,000mm³；D/V=26/2,795,000≈9.30×10^-6 mm^-2，落入6.5×10^-6至2.0×10^-5范围。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://ibenenergy.com/wp-content/uploads/2024/12/%E3%80%900629%E3%80%91ENSVOLT-ESS-Introduction-V3.pdf",
+              "title": "ENSVOLT-ESS-Introduction-V3.pdf",
+              "source_name": "IBEN Energy",
+              "snippet": "搜索摘要摘录规格：L500；350Ah 26*500*215（mm）。"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20240919/90493.html",
+              "title": "蜂巢能源350Ah储能短刀飞叠电芯量产，性能卓越赢市场",
+              "source_name": "碳索储能网",
+              "snippet": "蜂巢能源选择了500mm长度、215mm高的最佳尺寸，定向开发了刀片形状储能专用电芯。"
+            }
+          ],
+          "reasoning": "用公开三维尺寸直接计算体积和D/V，结果约9.30×10^-6 mm^-2，在权利要求限定区间内。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F5",
+          "patent_feature": "所述电池本体的表面积S与所述电池本体的能量E满足：S/E≤1000mm 2 ·Wh ﹣1",
+          "competitor_feature": "L=500mm，H=215mm，D=26mm，E=1120Wh；S=2(LH+LD+HD)=2×(500×215+500×26+215×26)=252,180mm²；S/E=252,180/1120≈225.16mm²/Wh，≤1000。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://ibenenergy.com/wp-content/uploads/2024/12/%E3%80%900629%E3%80%91ENSVOLT-ESS-Introduction-V3.pdf",
+              "title": "ENSVOLT-ESS-Introduction-V3.pdf",
+              "source_name": "IBEN Energy",
+              "snippet": "搜索摘要摘录规格：L500；350Ah 26*500*215（mm）。"
+            },
+            {
+              "url": "https://www.ithome.com/0/761/292.htm",
+              "title": "6.9MWh 容量，蜂巢能源发布短刀液冷储能系统和升级版短刀储能电芯",
+              "source_name": "IT之家",
+              "snippet": "L500-350Ah储能电芯……尺寸不变，体系升级，能量密度提升7%，单颗电芯能量达到1120Wh。"
+            }
+          ],
+          "reasoning": "尺寸来自PDF摘要，能量来自IT之家发布报道；按长方体表面积公式计算S/E≈225.16，显著低于1000上限。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F6",
+          "patent_feature": "所述电池本体的长度L为400mm~2500mm",
+          "competitor_feature": "公开资料给出L500短刀储能电芯长度为500mm；500mm位于400mm~2500mm范围。",
+          "status": "明确满足",
+          "score": 1.0,
+          "evidence": [
+            {
+              "url": "https://cn.solarbe.com/news/20240919/90493.html",
+              "title": "蜂巢能源350Ah储能短刀飞叠电芯量产，性能卓越赢市场",
+              "source_name": "碳索储能网",
+              "snippet": "蜂巢能源选择了500mm长度、215mm高的最佳尺寸，定向开发了刀片形状储能专用电芯。"
+            },
+            {
+              "url": "https://ibenenergy.com/wp-content/uploads/2024/12/%E3%80%900629%E3%80%91ENSVOLT-ESS-Introduction-V3.pdf",
+              "title": "ENSVOLT-ESS-Introduction-V3.pdf",
+              "source_name": "IBEN Energy",
+              "snippet": "搜索摘要摘录规格：L500；350Ah 26*500*215（mm）。"
+            }
+          ],
+          "reasoning": "SolarBe明确给出长度500mm，PDF摘要的26×500×215也与之对应；500mm在要求的400-2500mm内。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        },
+        {
+          "feature_id": "C1-F7",
+          "patent_feature": "所述电池本体的长度L与所述电池本体的表面积S满足：L/S＝0.002mm ﹣1 ～0.005mm ﹣1",
+          "competitor_feature": "L=500mm，H=215mm，D=26mm；S=2(LH+LD+HD)=2×(500×215+500×26+215×26)=252,180mm²；L/S=500/252,180≈0.001983mm^-1，低于0.002下限。",
+          "status": "明确不满足",
+          "score": 0.0,
+          "evidence": [
+            {
+              "url": "https://ibenenergy.com/wp-content/uploads/2024/12/%E3%80%900629%E3%80%91ENSVOLT-ESS-Introduction-V3.pdf",
+              "title": "ENSVOLT-ESS-Introduction-V3.pdf",
+              "source_name": "IBEN Energy",
+              "snippet": "搜索摘要摘录规格：L500；350Ah 26*500*215（mm）。"
+            },
+            {
+              "url": "https://cn.solarbe.com/news/20240919/90493.html",
+              "title": "蜂巢能源350Ah储能短刀飞叠电芯量产，性能卓越赢市场",
+              "source_name": "碳索储能网",
+              "snippet": "蜂巢能源选择了500mm长度、215mm高的最佳尺寸，定向开发了刀片形状储能专用电芯。"
+            }
+          ],
+          "reasoning": "用公开尺寸计算S=252,180mm²，L/S≈0.001983mm^-1；该值低于0.002下限，形成直接数值矛盾。",
+          "suggested_followup_queries": [],
+          "evidence_gap_brief": ""
+        }
+      ],
+      "total_score": 0.0,
+      "searched_queries": [
+        "蜂巢能源 L500 350Ah 短刀电芯 硬壳 铝壳 方形",
+        "SVOLT L500 350Ah ESS cell datasheet dimensions length width thickness"
+      ],
+      "searched_providers": [
+        "tavily",
+        "bocha",
+        "exa",
+        "brave"
+      ]
+    }
+  ]
+}

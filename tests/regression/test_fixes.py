@@ -686,29 +686,31 @@ class RouterSkipsUnavailableProviderTest(unittest.TestCase):
 
 
 class SsrfGuardTest(unittest.TestCase):
-    """Bug C4（codex 复审 #4）：抓取器直接请求 LLM/搜索/页面给的 URL，不挡
-    内网 / 回环 / 云元数据地址。修复后 _is_safe_url 拦截这些目标。"""
+    """SSRF 的 IP 公网校验已按用户要求完全关闭（本地配合 fake-IP 代理使用）。
+    _is_safe_url 现在只做 http(s) scheme 基本校验，不再拦内网/回环/元数据。
+    若日后恢复 SSRF 防护，把这两个用例改回断言「内网地址被拦」即可。"""
 
-    def test_blocks_private_loopback_and_metadata(self) -> None:
+    def test_only_scheme_checked_internal_now_allowed(self) -> None:
         from patentradar.fetcher.web_fetcher import _is_safe_url
 
+        # 守卫关闭后，http(s) 的内网/回环/元数据地址一律放行
         for url in (
             "http://127.0.0.1/",
-            "http://localhost/",  # 解析到回环
             "http://169.254.169.254/latest/meta-data/",  # 云元数据
             "http://10.0.0.5/",
             "http://192.168.1.1/",
-            "http://100.64.0.1/",  # CGNAT 100.64.0.0/10，is_private 不覆盖
-            "http://[::1]/",
-            "ftp://example.com/",  # 非 http(s)
-            "file:///etc/passwd",
         ):
-            self.assertFalse(_is_safe_url(url), f"应拦截 {url}")
+            self.assertTrue(_is_safe_url(url), f"守卫已关，应放行 {url}")
+
+    def test_non_http_scheme_still_blocked(self) -> None:
+        from patentradar.fetcher.web_fetcher import _is_safe_url
+
+        for url in ("ftp://example.com/", "file:///etc/passwd"):
+            self.assertFalse(_is_safe_url(url), f"非 http(s) 仍应拦截 {url}")
 
     def test_allows_public_ip(self) -> None:
         from patentradar.fetcher.web_fetcher import _is_safe_url
 
-        # 用字面公网 IP 避免依赖 DNS / 网络
         self.assertTrue(_is_safe_url("https://8.8.8.8/"))
 
 

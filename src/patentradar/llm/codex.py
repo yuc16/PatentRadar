@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Any, Iterator
 
 import httpx
+from json_repair import repair_json
 
 from patentradar.core.constants import DEFAULT_MODEL, DEFAULT_REASONING_EFFORT
 
@@ -214,8 +215,48 @@ def _parse_json(text: str) -> dict[str, Any]:
         start = text.find("{")
         end = text.rfind("}")
         if start >= 0 and end > start:
-            return json.loads(text[start : end + 1])
+            try:
+                return json.loads(text[start : end + 1])
+            except json.JSONDecodeError:
+                pass
+        # 最后一道打捞：json_repair 修 *完整但畸形* 的 JSON（尾逗号 / 键缺引号）。
+        # 关键——不打捞「截断」响应：截断会被 json_repair 用空串/补括号填成"看似合法
+        # 但内容残缺"的数据（如 "feature_text": 补成 ""），可能通过 schema 校验造成
+        # 静默数据丢失。仅当括号/引号已 *完全平衡*（json_repair 无需补任何闭合符、
+        # 只在内部修语法）才打捞；任何需要补闭合符的（截断）抛回 caller 触发重生成。
+        if _is_structurally_complete(text):
+            repaired = repair_json(text, return_objects=True)
+            if isinstance(repaired, dict) and repaired:
+                return repaired
         raise
+
+
+def _is_structurally_complete(text: str) -> bool:
+    """所有 {}/[] 配对平衡、无未闭合字符串 → 结构完整，畸形只在内部，可安全修复。
+    任何不平衡（缺闭合符 / 字符串没收尾）⇒ 大概率截断 ⇒ 应重生成而非猜测补全。"""
+    stack: list[str] = []
+    in_string = False
+    escape = False
+    for ch in text:
+        if in_string:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+            continue
+        if ch == '"':
+            in_string = True
+        elif ch in "{[":
+            stack.append(ch)
+        elif ch in "}]":
+            if not stack:
+                return False
+            opener = stack.pop()
+            if (ch == "}") != (opener == "{"):
+                return False
+    return not stack and not in_string
 
 
 def _check_prompt_size(*, system: str, user_text: str, model: str) -> None:

@@ -10,10 +10,8 @@ HTML 端的图片证据（Tier 1）：扫描 <img>/<picture>/<figure>，对疑�
 
 from __future__ import annotations
 
-import ipaddress
 import logging
 import re
-import socket
 from dataclasses import dataclass, field
 from urllib.parse import urljoin, urlparse
 
@@ -116,35 +114,20 @@ _MAX_REDIRECTS = 5
 
 
 def _is_safe_url(url: str) -> bool:
-    """SSRF 守卫：只放行 http(s)，且主机解析出的所有 IP 都必须是全局可路由的
-    公网地址。用 `not is_global` 一刀切，覆盖私网 / 回环 / 链路本地 / 保留段 /
-    云元数据 169.254.169.254 / CGNAT 100.64.0.0/10 等所有非公网段（这些
-    `is_private` 并不全包，例如 100.64/10）。
+    """SSRF 守卫已按用户要求完全关闭：只做 http(s) scheme 基本校验，不再校验
+    解析出的 IP 是否公网。
 
-    注意：这是解析时校验，存在 DNS rebinding 的 TOCTOU 窗口；对本工具的威胁
-    模型（挡住 LLM/页面喂来的内网与元数据地址）已足够，不引入 IP pinning。
+    原实现会拦截非全局可路由 IP（私网 / 回环 / 元数据 169.254.169.254 / CGNAT 等）。
+    关闭原因：本地配合 fake-IP 代理（Clash/Surge 把所有域名解析成 198.18.x.x 保留段）
+    时该校验会误拦全部站点。
+    ⚠️ 关闭后，LLM/搜索结果喂来的 URL 可直达内网/云元数据——仅限本地可信网络使用；
+    若部署到 Docker/server 等不可信场景，应恢复下面被移除的 IP 公网校验。
     """
     try:
         parsed = urlparse(url)
     except ValueError:
         return False
-    if parsed.scheme not in ("http", "https"):
-        return False
-    host = parsed.hostname
-    if not host:
-        return False
-    try:
-        infos = socket.getaddrinfo(host, None)
-    except socket.gaierror:
-        return False
-    for info in infos:
-        try:
-            addr = ipaddress.ip_address(info[4][0])
-        except ValueError:
-            return False
-        if not addr.is_global:
-            return False
-    return True
+    return parsed.scheme in ("http", "https") and bool(parsed.hostname)
 
 
 def _safe_fetch(
