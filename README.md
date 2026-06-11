@@ -347,6 +347,26 @@ uv sync                              # 装全部依赖（需要 Python ≥ 3.14 
 cp .env.example .env                 # 填入 API keys 和 backend 选择
 ```
 
+> **PDF 渲染的系统层依赖** —— `uv sync` 只装 Python 包；WeasyPrint 另需系统级图形库（Pango / Cairo 等），Linux 还需中文字体（macOS / Windows 系统自带中文字体，无需另装）。缺图形库 → 只产出 md、无 PDF；缺中文字体 → PDF 中文乱码。按平台装一次即可（用 Docker 方式 A 则镜像已内置，无需以下步骤）：
+
+**Linux**（Debian / Ubuntu）
+```bash
+apt install -y libpango-1.0-0 libpangoft2-1.0-0 libcairo2 \
+               libgdk-pixbuf-2.0-0 libffi8 shared-mime-info fonts-noto-cjk
+```
+> 其它发行版换包名，如 Fedora：`pango cairo gdk-pixbuf2` + `google-noto-sans-cjk-fonts`。
+
+**macOS**（Homebrew）
+```bash
+brew install pango          # 连带 cairo / gdk-pixbuf 等依赖；中文走系统自带 PingFang SC
+```
+
+**Windows**
+1. 安装 [MSYS2](https://www.msys2.org/)（默认选项）
+2. 在 MSYS2 shell 内执行：`pacman -S mingw-w64-x86_64-pango`
+3. 中文走系统自带「微软雅黑」，无需另装字体
+> 若 `uv run` 报找不到 libgobject / pango 等 DLL，把 `C:\msys64\mingw64\bin` 加入系统 PATH。
+
 > 若选 Codex 后端：到宿主机跑 `codex login` 完成 OAuth；选 OpenAI 兼容后端：直接填 `.env`。
 
 ---
