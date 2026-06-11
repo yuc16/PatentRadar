@@ -43,7 +43,7 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 - **🖼 多模态证据 + 领域感知选图**　PDF 关键页 + 产品页/拆解文章嵌图自动抓取；按当前专利的技术 tag（9 大领域）加载领域关键词做 score 启发式排序，每张图带 `surrounding_text`（figcaption + 前后段落首句）作为图-文交叉验证信号，alt 不可靠时仍能选准关键图
 - **📊 实时 Dashboard**　FastAPI + SSE 后端 + 单页 Web UI，4 个模块进度可视化，每一次 LLM 调用 / 工具调用全程留痕，支持回放与离线 HTML 导出
 - **🧠 双 LLM 后端**　ChatGPT OAuth（Codex Responses SSE，gpt-5.5 默认）或任意 OpenAI 兼容网关（aihubmix / DeepSeek / 自建）一键切换
-- **📄 自动 PDF 渲染**　WeasyPrint + Noto Sans CJK / PingFang SC 中文字体 + 表格防溢出 CSS，markdown / PDF 双格式落盘
+- **📄 自动 PDF 渲染**　WeasyPrint + 跨平台中文字体（Noto Sans CJK / PingFang SC / 微软雅黑） + 表格防溢出 CSS，markdown / PDF 双格式落盘
 - **🤖 双模运行**　既能作为独立项目跑（CLI / Web），又能作为 skill 被其他 agent 如 claude-code/codex 调用
 - **✅ 黄金集量化评估**　用 26 件「已认定侵权」的真实专利做 ground truth 端到端验证：竞品召回 Hit@5 96.2% / Hit@3 80.8% / Hit@1 65.4%，证据 URL 可达率 95.8%、准确率 93.8%（详见 [评估报告](evaluate/EVALUATION.md)）
 
@@ -476,7 +476,7 @@ skill 会自动触发，按顺序 spawn 4 个独立 subagent，每个 subagent �
 
 ### 📝 模块 4 · Report（markdown + PDF 报告）
 
-**做什么**：把模块 1 / 3 数据组装成 4 章节的 markdown 报告 → WeasyPrint 渲染 PDF（A4 + Noto Sans CJK / PingFang SC + 表格防溢出 CSS）。
+**做什么**：把模块 1 / 3 数据组装成 4 章节的 markdown 报告 → WeasyPrint 渲染 PDF（A4 + 跨平台中文字体 Noto Sans CJK / PingFang SC / 微软雅黑 + 表格防溢出 CSS）。
 
 **报告结构**：
 
