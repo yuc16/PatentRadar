@@ -197,7 +197,7 @@ URL 参数说明：
 python skills/patentradar/scripts/render_pdf.py <output_dir>/module_4/report.md <output_dir>/module_4/report.pdf
 ```
 
-脚本内置 A4 排版 + 中文字体 (PingFang SC) + 表格防溢出 CSS，输出与 markdown 视觉一致的 PDF。
+脚本内置 A4 排版 + 中文字体 (Noto Sans CJK SC / PingFang SC) + 表格防溢出 CSS，输出与 markdown 视觉一致的 PDF。
 
 **退出码**：
 - `0` → PDF 落盘成功，stdout `OK <pdf_path>`

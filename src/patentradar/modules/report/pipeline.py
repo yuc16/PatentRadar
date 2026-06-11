@@ -112,7 +112,7 @@ def _safe_pdf_url_fetcher(url: str) -> dict:
 
 
 def render_pdf(md_path: Path) -> Path:
-    """Markdown → PDF via WeasyPrint。中文走 macOS 系统字体 PingFang SC。"""
+    """Markdown → PDF via WeasyPrint。中文 Linux 走 Noto Sans CJK SC，macOS 回退 PingFang SC。"""
     import markdown
     import nh3
     from weasyprint import HTML
@@ -127,7 +127,7 @@ def render_pdf(md_path: Path) -> Path:
     )
     style = """
         @page { size: A4; margin: 18mm 14mm; }
-        body { font-family: "Noto Sans SC", "PingFang SC", "Helvetica Neue", "Arial", sans-serif;
+        body { font-family: "Noto Sans CJK SC", "Noto Sans SC", "PingFang SC", "Helvetica Neue", "Arial", sans-serif;
                font-size: 10.5pt; line-height: 1.55; color: #222; }
         h1 { font-size: 19pt; border-bottom: 2px solid #333; padding-bottom: 4pt; margin-top: 0; }
         h2 { font-size: 14pt; margin-top: 18pt; border-bottom: 1px solid #ccc; padding-bottom: 2pt; }
