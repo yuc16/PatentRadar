@@ -9,12 +9,12 @@
 
 [![uv](https://img.shields.io/badge/managed_with-uv-DE5FE9?logo=python&logoColor=white)](https://github.com/astral-sh/uv)
 [![LLM](https://img.shields.io/badge/LLM-ChatGPT_auth_/_OpenAI_compatible-10A37F?logo=openai&logoColor=white)](#-llm-后端)
-[![Skill](https://img.shields.io/badge/Claude_Code-Skill-D97757?logo=anthropic&logoColor=white)](#模式-B作为-skill-嵌入-claude-code--codex-cli)
+[![Skill](https://img.shields.io/badge/Claude_Code-Skill-D97757?logo=anthropic&logoColor=white)](#模式-b作为-skill-嵌入-claude-code--codex-cli)
 [![License](https://img.shields.io/badge/license-MIT-blue)](#-license)
 
 https://github.com/user-attachments/assets/94f8f758-6a43-49a8-b16b-2e04e1d8e110
 
-[快速开始](#-快速开始) · [Examples](examples/README.md) · [评估](evaluate/EVALUATION.md)
+[快速开始](#-快速开始) · [Skill 模式](#模式-b作为-skill-嵌入-claude-code--codex-cli) · [Examples](examples/README.md) · [评估](evaluate/EVALUATION.md)
 
 </div>
 
@@ -33,20 +33,20 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 | 维度 | 模式A：独立部署 | 模式B：skill 嵌入（最简单，推荐） |
 |---|---|---|
 | **所需依赖** | **1、至少一个搜索工具（Tavily / Bocha / Exa / Brave 任一即可）2、大模型的api** | **零额外依赖，只需要codex或其他agent** |
-| 调度 | `server/runner.py` 串 4 个 CLI subprocess | 主 agent spawn 4 个 subagent |
-| LLM 调用 | 项目内的 `llm/provider.py` 统一发包 | 由宿主 agent（Claude Code / Codex）的对话能力直接调用 |
-| 搜索 / 抓页 | 项目内的 `search/` + `fetcher/` 模块 | 由宿主 agent 的 WebSearch / WebFetch 工具直接调用 |
+| 调度 | [`server/runner.py`](src/patentradar/server/runner.py) 串 4 个 CLI subprocess | 主 agent spawn 4 个 subagent |
+| LLM 调用 | 项目内的 [`llm/provider.py`](src/patentradar/llm/provider.py) 统一发包 | 由宿主 agent（Claude Code / Codex）的对话能力直接调用 |
+| 搜索 / 抓页 | 项目内的 [`search/`](src/patentradar/search/) + [`fetcher/`](src/patentradar/fetcher/) 模块 | 由宿主 agent 的 WebSearch / WebFetch 工具直接调用 |
 | 可观测追溯 | Web Dashboard + 4 个 module log 文件 | 宿主 agent 的对话窗口 + 落盘 JSON |
 
 #### 注：关于模式A的所需依赖说明
-- **搜索工具**：推荐四个搜索工具全部连接，模式A综合使用四个搜索工具，将不同工具的搜索性能极致发挥，其中tavily是主力搜索工具，所以.env中可配置多个tavily的api-key。（如需大量低价api-key，可前往闲鱼购买）
-    - tavily:https://www.tavily.com/
-    - bocha:https://open.bochaai.com/
-    - exa:https://exa.ai/
-    - brave:https://brave.com/search/api/
+- **搜索工具**：推荐四个搜索工具全部连接，模式A综合使用四个搜索工具，将不同工具的搜索性能极致发挥，其中tavily是主力搜索工具，消耗额度较高，所以.env中可配置多个tavily的api-key轮换使用。（如需大量低价api-key，可前往闲鱼购买）
+    - [Tavily](https://www.tavily.com/)
+    - [博查 API](https://open.bochaai.com/)
+    - [Exa](https://exa.ai/)
+    - [Brave Search API](https://brave.com/search/api/)
 - **大模型**：模式A需要自己配置大模型的api-key，支持两种大模型的配置方式（推荐**chatgpt auth**，便宜、模型强、额度多，且原生支持**structured_outputs**）：
   - **chatgpt auth**（ChatGPT plus以上订阅可用，需本机安装codex cli后在终端运行 `codex login` 完成 OAuth）
-  - **其他OpenAI 兼容格式**（aihubmix / DeepSeek / 自建网关）—— 请参考.env.example
+  - **其他OpenAI 兼容格式**（aihubmix / DeepSeek / 自建网关）——请参考 [`.env.example`](.env.example)
 
 
 ---
@@ -55,7 +55,7 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 #### 方式 （1） · 本地 uv（推荐）
 
 ```bash
-git clone https://github.com/<your-org>/PatentRadar.git
+git clone https://github.com/yuc16/PatentRadar.git
 cd PatentRadar
 uv sync                              # 装全部依赖
 cp .env.example .env                 # 在.env中填入你的所有API keys
@@ -89,7 +89,7 @@ brew install pango          # 连带 cairo / gdk-pixbuf 等依赖；中文走系
 宿主机只要装 Docker，不需要 Python / uv / weasyprint 系统库。
 
 ```bash
-git clone https://github.com/<your-org>/PatentRadar.git
+git clone https://github.com/yuc16/PatentRadar.git
 cd PatentRadar
 cp .env.example .env                 # 填入 API keys（容器里必须用 openai 兼容后端）
 docker compose up -d --build         # 首次构建并后台启动
@@ -171,13 +171,13 @@ data/output/CN110293961B/
 └── report.pdf                       #         最终报告（PDF）
 ```
 
-> `scripts/run_full_pipeline.py` 是模块 2-4 的**测试 wrapper**（固定从 `tests/decompose/outputs/<PUB>/` 读模块一 fixture），仅供开发期调试，不适合跑生产专利。
+> [`scripts/run_full_pipeline.py`](scripts/run_full_pipeline.py) 是模块 2-4 的**测试 wrapper**（固定从 `tests/decompose/outputs/<PUB>/` 读模块一 fixture），仅供开发期调试，不适合跑生产专利。
 
 ---
 
 ### 模式 B：作为 skill 嵌入 Claude Code / Codex CLI
 
-把 `skills/patentradar/` 目录放到你的 agent的 skill 路径下（或软链）。
+把 [`skills/patentradar/`](skills/patentradar/) 目录放到你的 agent 的 skill 路径下（或软链）。
 
 或者直接在你的 agent 中（推荐 codex 或claude code）输入：
 ```text
@@ -533,7 +533,7 @@ PATENTRADAR_REASONING_EFFORT=high
 # 选项 2：任意 OpenAI 兼容网关
 PATENTRADAR_LLM_BACKEND=openai
 PATENTRADAR_MODEL=deepseek-v4-pro
-PATENTRADAR_OPENAI_BASE_URL=https://aihubmix.com/v1
+PATENTRADAR_OPENAI_BASE_URL=https://api.deepseek.com
 PATENTRADAR_OPENAI_API_KEY=sk-xxxxxx
 PATENTRADAR_CONTEXT_LENGTH=1000000
 PATENTRADAR_OPENAI_VISION=false       # 模型不支持图像时设 false
