@@ -15,6 +15,55 @@ from unittest import mock
 from fastapi import HTTPException
 
 
+class TopCompetitorCompanyDedupTest(unittest.TestCase):
+    """最终 TOP-N 按公司去重，但候选阶段仍可保留同公司多个 SKU。"""
+
+    @staticmethod
+    def _evidence(candidate_id: str, company: str, product_name: str, score: float):
+        from patentradar.schemas import (
+            Candidate,
+            CandidateEvidence,
+            EvidenceSource,
+            FeatureComparison,
+        )
+
+        status = "明确满足" if score == 1.0 else "可能满足"
+        candidate = Candidate(
+            candidate_id=candidate_id,
+            company=company,
+            product_name=product_name,
+            market="中国市场",
+            reason_for_deep_dive="与权1保护对象相关",
+        )
+        comparison = FeatureComparison(
+            feature_id="C1-F1",
+            patent_feature="一种测试装置",
+            competitor_feature="候选产品对应结构",
+            status=status,
+            score=score,
+            evidence=[EvidenceSource(url=f"https://example.com/{candidate_id.lower()}")],
+            reasoning="公开证据支持该判断",
+        )
+        return CandidateEvidence(candidate=candidate, comparisons=[comparison], total_score=0.0)
+
+    def test_keeps_only_highest_ranked_sku_per_company(self) -> None:
+        from patentradar.modules.competitor_search.scorer import rank_top_competitors
+
+        lower_same_company = self._evidence("P01", "蜂巢能源", "L500（SKU-1）", 0.8)
+        higher_same_company = self._evidence("P02", " 蜂巢能源 ", "L600（SKU-2）", 1.0)
+        other_company = self._evidence("P03", "国轩高科", "G系列（SKU-3）", 0.8)
+
+        report = rank_top_competitors(
+            publication_no="CN114512759B",
+            candidates=[lower_same_company, higher_same_company, other_company],
+        )
+
+        self.assertEqual(
+            [item.candidate.candidate_id for item in report.top_competitors],
+            ["P02", "P03"],
+        )
+
+
 class FullClaimChartScrubFieldNameTest(unittest.TestCase):
     """Bug X1: full_claim_chart_worker._drop_empty_url_evidence 旧版用了
     单数字段名 `claim_chart`，与 schema 的 `claim_charts` 不一致，scrub 永远

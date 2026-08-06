@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PatentRadar 远程 MCP 新手配置教程">
+  <title>PatentRadar · 专利证据雷达</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="回到顶部">
+      <span class="brand-mark">PR</span>
+      <span><strong>PatentRadar</strong><small>专利证据雷达 · MCP 1.0</small></span>
+    </a>
+    <nav aria-label="页内导航">
+      <a href="#connect">连接 Codex</a>
+      <a href="#routes">搜索设置</a>
+      <a href="#run">开始分析</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PRIVATE EVIDENCE WORKFLOW / 01</p>
+        <h1>只输入专利号，<br><em>把调查交给 Codex。</em></h1>
+        <p class="lead">不用部署代码，不用安装 Python。你的 ChatGPT 登录留在自己的电脑；PatentRadar 在服务器完成流程校验与 PDF 装订。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#connect">从第 1 步开始</a>
+          <span class="trust"><i></i> 源代码与搜索 Key 不下发</span>
+        </div>
+      </div>
+      <div class="dossier reveal delay-1" aria-label="工作流示意">
+        <div class="dossier-tab">CASE FILE</div>
+        <div class="dossier-head"><span>输入</span><strong>CN / US / EP / JP</strong></div>
+        <ol>
+          <li><b>01</b><span>权利要求拆解</span></li>
+          <li><b>02</b><span>竞品证据搜索</span></li>
+          <li><b>03</b><span>全部 Claim Chart</span></li>
+          <li><b>04</b><span>可复核 PDF 报告</span></li>
+        </ol>
+        <div class="stamp">PRIVATE<br>WORKFLOW</div>
+      </div>
+    </section>
+
+    <section class="section connect" id="connect">
+      <div class="section-index">01</div>
+      <div class="section-heading">
+        <p class="eyebrow">一次配置，之后只需说人话</p>
+        <h2>连接你的 Codex</h2>
+        <p>先创建一个工作区令牌。它只负责区分你的案件和搜索 Key，不是 ChatGPT auth。</p>
+      </div>
+
+      <div class="token-panel">
+        <div class="token-copy">
+          <span class="label">工作区身份</span>
+          <h3>创建连接凭证</h3>
+          <p>令牌只显示一次。浏览器会保存在本机，用于可选的搜索 Key 设置。</p>
+        </div>
+        <button class="button primary" id="create-workspace" type="button">创建我的工作区</button>
+        <div class="token-result" id="token-result" hidden>
+          <label for="workspace-token">你的工作区令牌</label>
+          <div class="copy-field">
+            <input id="workspace-token" type="password" readonly autocomplete="off">
+            <button class="icon-button" data-copy-target="workspace-token" type="button">复制</button>
+          </div>
+          <button class="text-button" id="toggle-token" type="button">显示令牌</button>
+          <p class="notice">请保存到密码管理器。服务器只保存摘要，无法帮你找回原令牌。</p>
+        </div>
+      </div>
+
+      <div class="os-config">
+        <div class="tab-list" role="tablist" aria-label="选择操作系统">
+          <button class="tab active" role="tab" aria-selected="true" data-os="mac">macOS</button>
+          <button class="tab" role="tab" aria-selected="false" data-os="windows">Windows</button>
+          <button class="tab" role="tab" aria-selected="false" data-os="ui">Codex 图形界面</button>
+        </div>
+        <div class="os-panel active" data-os-panel="mac">
+          <p>打开“终端”，逐行运行。页面会在创建工作区后自动填入令牌和地址。</p>
+          <pre><code id="mac-command">请先点击“创建我的工作区”</code></pre>
+          <button class="copy-code" data-copy-target="mac-command" type="button">复制 macOS 命令</button>
+        </div>
+        <div class="os-panel" data-os-panel="windows" hidden>
+          <p>打开 PowerShell，逐行运行。无需安装 Python 或 Docker。</p>
+          <pre><code id="windows-command">请先点击“创建我的工作区”</code></pre>
+          <button class="copy-code" data-copy-target="windows-command" type="button">复制 Windows 命令</button>
+        </div>
+        <div class="os-panel" data-os-panel="ui" hidden>
+          <ol class="plain-steps">
+            <li>打开 Codex 设置，进入 <strong>MCP servers</strong>。</li>
+            <li>选择 <strong>Add server → Streamable HTTP</strong>。</li>
+            <li>名称填写 <code>patentradar</code>，URL 填写 <code id="mcp-url-inline">本站地址/mcp</code>。</li>
+            <li>Bearer Token 填入上方工作区令牌，保存后重启 Codex。</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section routes" id="routes">
+      <div class="section-index">02</div>
+      <div class="section-heading">
+        <p class="eyebrow">一个入口，自动选择搜索组合</p>
+        <h2>搜索自动协同</h2>
+      </div>
+
+      <article class="route-panel active">
+        <div class="route-intro">
+          <span class="route-number">AUTO SEARCH</span>
+          <h3>Codex 内置搜索始终参与</h3>
+          <p>不填 Key 时只使用 Codex 内置搜索；有可用 Key 时，候选发现按 Codex 的查询计划最多并发三个外部源，证据补搜并发全部已配置源。申请人过滤、语义去重、正文验活和交叉验证都由你本地的 Codex 完成；外部接口无额度或失败时自动回退。</p>
+        </div>
+        <div class="route-grid">
+          <div><span>没有 Key</span><strong>仅 Codex 内置搜索</strong></div>
+          <div><span>Key 可用</span><strong>外部搜索 + Codex</strong></div>
+          <div><span>失败或无额度</span><strong>自动回退 Codex</strong></div>
+        </div>
+        <div class="route-intro key-intro">
+          <span class="route-number">可选增强</span>
+          <h3>配置你自己的搜索额度</h3>
+          <p>Tavily、Bocha、Exa、Brave 可任选一个或多个。Key 经 HTTPS 传输并加密保存，永远不会出现在 MCP 工具结果或聊天内容中。</p>
+        </div>
+        <form class="key-vault" id="key-form">
+          <div class="vault-head">
+            <div><span class="label">ENCRYPTED KEY VAULT</span><h3>搜索 Key 保险库</h3></div>
+            <span class="vault-status" id="vault-status">等待工作区令牌</span>
+          </div>
+          <div class="key-grid">
+            <label><span>Tavily <i data-key-status="tavily">未配置</i></span><input name="tavily" type="password" autocomplete="off" placeholder="tvly-…"></label>
+            <label><span>Bocha <i data-key-status="bocha">未配置</i></span><input name="bocha" type="password" autocomplete="off" placeholder="sk-…"></label>
+            <label><span>Exa <i data-key-status="exa">未配置</i></span><input name="exa" type="password" autocomplete="off" placeholder="exa-…"></label>
+            <label><span>Brave <i data-key-status="brave">未配置</i></span><input name="brave" type="password" autocomplete="off" placeholder="BSA…"></label>
+          </div>
+          <p class="form-help">留空的输入框不会覆盖已保存 Key。需要删除时，点击对应状态标签。</p>
+          <button class="button dark" type="submit">加密保存 Key</button>
+          <p class="form-message" id="key-message" role="status"></p>
+        </form>
+        <div class="prompt-box"><span>对 Codex 说</span><code>使用 PatentRadar 分析专利 CN114512759B，完成后给我 PDF。</code><button data-copy-text="使用 PatentRadar 分析专利 CN114512759B，完成后给我 PDF。" type="button">复制</button></div>
+      </article>
+    </section>
+
+    <section class="section run" id="run">
+      <div class="section-index">03</div>
+      <div class="section-heading">
+        <p class="eyebrow">RUN THE CASE</p>
+        <h2>开始你的第一份报告</h2>
+      </div>
+      <div class="run-timeline">
+        <div><b>1</b><h3>确认连接</h3><p>在 Codex 输入 <code>/mcp</code>，看到 PatentRadar 和 7 个工具。</p></div>
+        <div><b>2</b><h3>发送一句话</h3><p>替换示例里的专利号即可，不需要选择搜索方案。</p></div>
+        <div><b>3</b><h3>等待四模块完成</h3><p>Codex 会依次拆解、搜索、全权项对比和撰写。关闭后可按案件编号继续。</p></div>
+        <div><b>4</b><h3>下载 PDF</h3><p>最终链接有效 15 分钟；过期后让 Codex 再次获取即可。</p></div>
+      </div>
+      <aside class="boundary"><strong>边界说明</strong><p>报告基于公开证据生成，用于发现侵权线索，不构成律师法律意见。高风险结果建议交由专利律师人工复核。</p></aside>
+    </section>
+  </main>
+
+  <footer><span>PatentRadar MCP 1.0</span><span>PRIVATE SOURCE · USER-OWNED QUOTA</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

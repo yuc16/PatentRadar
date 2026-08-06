@@ -1,0 +1,40 @@
+[project]
+name = "patentradar-mcp"
+version = "1.0.0"
+description = "Private remote MCP service for PatentRadar"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.14",
+    "cryptography>=46",
+    "fastapi>=0.136",
+    "httpx>=0.28",
+    "jsonschema>=4.26",
+    "lxml>=6.1",
+    "markdown>=3.10",
+    "mcp>=1.26,<2",
+    "nh3>=0.3",
+    "pydantic>=2.13",
+    "uvicorn[standard]>=0.46",
+    "weasyprint>=68",
+]
+
+[project.scripts]
+patentradar-mcp = "patentradar_mcp.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/patentradar_mcp"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9",
+    "pytest-asyncio>=1.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

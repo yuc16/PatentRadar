@@ -1,0 +1,17 @@
+services:
+  patentradar-mcp:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      PATENTRADAR_MCP_HOST: 0.0.0.0
+      PATENTRADAR_MCP_PORT: 8000
+      PATENTRADAR_PUBLIC_BASE_URL: ${PATENTRADAR_PUBLIC_BASE_URL:-http://127.0.0.1:8000}
+      PATENTRADAR_MASTER_KEY: ${PATENTRADAR_MASTER_KEY:?请先配置 PATENTRADAR_MASTER_KEY}
+      PATENTRADAR_MCP_DATA_DIR: /app/data
+    volumes:
+      - patentradar-data:/app/data
+
+volumes:
+  patentradar-data:
