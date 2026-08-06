@@ -30,21 +30,21 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 
 ### 部署：两种模式
 
-| 维度 | 模式A：独立部署 | 模式B：skill 嵌入（最简单，推荐） |
+| 维度 | 模式A：独立部署（高性能） | 模式B：skill 嵌入（最简单，推荐） |
 |---|---|---|
-| **所需依赖** | **1、至少一个搜索工具（Tavily / Bocha / Exa / Brave 任一即可）2、大模型的api** | **零额外依赖，只需要codex或其他agent** |
+| **所需依赖** | **1、至少一个搜索工具（Tavily/Bocha/Exa/Brave）2、大模型的api** | **零额外依赖，只需要codex或其他agent** |
 | 调度 | [`server/runner.py`](src/patentradar/server/runner.py) 串 4 个 CLI subprocess | 主 agent spawn 4 个 subagent |
 | LLM 调用 | 项目内的 [`llm/provider.py`](src/patentradar/llm/provider.py) 统一发包 | 由宿主 agent（Claude Code / Codex）的对话能力直接调用 |
 | 搜索 / 抓页 | 项目内的 [`search/`](src/patentradar/search/) + [`fetcher/`](src/patentradar/fetcher/) 模块 | 由宿主 agent 的 WebSearch / WebFetch 工具直接调用 |
 | 可观测追溯 | Web Dashboard + 4 个 module log 文件 | 宿主 agent 的对话窗口 + 落盘 JSON |
 
 #### 注：关于模式A的所需依赖说明
-- **搜索工具**：推荐四个搜索工具全部连接，模式A综合使用四个搜索工具，将不同工具的搜索性能极致发挥，其中tavily是主力搜索工具，消耗额度较高，所以.env中可配置多个tavily的api-key轮换使用。（如需大量低价api-key，可前往闲鱼购买）
+- **搜索工具**：**推荐四个搜索工具全部连接，性能最强**，模式A综合使用四个搜索工具，将不同工具的搜索性能极致发挥，其中tavily是主力搜索工具，消耗额度较高，所以.env中可配置多个tavily的api-key轮换使用。（如需大量低价api-key，可前往闲鱼购买）
     - [Tavily](https://www.tavily.com/)
     - [博查 API](https://open.bochaai.com/)
     - [Exa](https://exa.ai/)
     - [Brave Search API](https://brave.com/search/api/)
-- **大模型**：模式A需要自己配置大模型的api-key，支持两种大模型的配置方式（推荐**chatgpt auth**，便宜、模型强、额度多，且原生支持**structured_outputs**）：
+- **大模型**：模式A需要自己配置大模型的api-key，支持两种大模型的配置方式（推荐**chatgpt auth**，便宜、模型强、额度多）：
   - **chatgpt auth**（ChatGPT plus以上订阅可用，需本机安装codex cli后在终端运行 `codex login` 完成 OAuth）
   - **其他OpenAI 兼容格式**（aihubmix / DeepSeek / 自建网关）——请参考 [`.env.example`](.env.example)
 
