@@ -1,3 +1,6 @@
+
+</think>
+
 <div align="center">
 
 # PatentRadar
@@ -57,7 +60,7 @@ PatentRadar 把这条链路压到 **1 小时**：4 个模块串行流水线 + �
 ```bash
 git clone https://github.com/yuc16/PatentRadar.git
 cd PatentRadar
-uv sync                              # 装全部依赖
+uv sync                              # 装全部依赖（需 Python >= 3.14）
 cp .env.example .env                 # 在.env中填入你的所有API keys
 ```
 
@@ -93,7 +96,7 @@ git clone https://github.com/yuc16/PatentRadar.git
 cd PatentRadar
 cp .env.example .env                 # 填入 API keys（容器里必须用 openai 兼容后端）
 docker compose up -d --build         # 首次构建并后台启动
-open http://localhost:8000           # 浏览器打开 dashboard 即可使用
+open http://localhost:8000           # macOS；Linux/Windows 请替换为 `xdg-open` / `start` 等命令
 ```
 
 常用维护命令：
