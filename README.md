@@ -14,7 +14,7 @@
 
 https://github.com/user-attachments/assets/94f8f758-6a43-49a8-b16b-2e04e1d8e110
 
-[快速开始](#-快速开始) · [Skill 模式](#模式-b作为-skill-嵌入-claude-code--codex-cli) · [Examples](examples/README.md) · [评估](evaluate/EVALUATION.md)
+[快速开始](#-快速开始) · [Skill安装（推荐使用）](#模式-b作为-skill-嵌入-claude-code--codex-cli) · [Examples](examples/README.md) · [评估](evaluate/EVALUATION.md)
 
 </div>
 
